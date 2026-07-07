@@ -8,7 +8,7 @@ The text you want the system to display, or speak, when requesting a value, aski
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst ?+
+- Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
 - visionOS ?+

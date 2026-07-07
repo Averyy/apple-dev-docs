@@ -8,7 +8,7 @@ Defines a text transformation that can affect the visual appearance of a string.
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst ?+
+- Mac Catalyst 15.0+
 - tvOS 15.0+
 - visionOS ?+
 

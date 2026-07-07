@@ -8,7 +8,6 @@ The name for this account that a person provided.
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
-- Mac Catalyst 17.4+
 
 ## Declaration
 

@@ -17,6 +17,7 @@ A spring with a predefined duration and small amount of bounce that feels more s
 ## Declaration
 
 ```swift
+@export(implementation)
 static var snappy: Spring { get }
 ```
 

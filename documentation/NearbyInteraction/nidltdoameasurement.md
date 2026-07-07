@@ -8,7 +8,6 @@ Information from a Downlink Time-Difference-of-Arrival anchor that you use to de
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst 26.0+
 
 ## Declaration
 
@@ -54,6 +53,11 @@ Only sessions that run a [`NIDLTDOAConfiguration`](nidltdoaconfiguration.md) rec
   The clock frequency offset of the responder anchor relative to the initiator anchor.
 ### Creating a measurement
 - [init?(coder: NSCoder)](nidltdoameasurement/init(coder:).md)
+### Instance Properties
+- [var rawReceiveTime: UInt64](nidltdoameasurement/rawreceivetime.md)
+  Indicates the raw reception timestamp (in units of 15.65 picoseconds).
+- [var rawTransmitTime: UInt64](nidltdoameasurement/rawtransmittime.md)
+  Indicates the raw transmission timestamp (in units of 15.65 picoseconds).
 
 ## Relationships
 

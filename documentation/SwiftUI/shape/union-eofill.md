@@ -17,8 +17,8 @@ Returns a new shape with filled regions in either this shape or the given shape.
 ## Declaration
 
 ```swift
-nonisolated
-func union<T>(_ other: T, eoFill: Bool = false) -> some Shape where T : Shape
+@export(implementation)
+nonisolated func union<T>(_ other: T, eoFill: Bool = false) -> some Shape where T : Shape
 ```
 
 #### Return Value

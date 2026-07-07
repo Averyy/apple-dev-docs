@@ -23,11 +23,6 @@ The default label used for a new document button.
 
 You don’t use this type directly. Instead, [`NewDocumentButton`](newdocumentbutton.md) uses it automatically depending on how you create a button.
 
-## Topics
-
-### Creating a label
-- [init()](defaultnewdocumentbuttonlabel/init.md)
-
 ## Relationships
 
 ### Conforms To
@@ -55,8 +50,6 @@ You don’t use this type directly. Instead, [`NewDocumentButton`](newdocumentbu
   The default actions for the document group launch scene and the document launch view.
 - [struct NewDocumentButton](newdocumentbutton.md)
   A button that creates and opens new documents.
-- [struct NewDocumentButtonDataSource](newdocumentbuttondatasource.md)
-  Describes the source of data used to create a new document.
 - [struct DocumentCreationSource](documentcreationsource.md)
   Describes the source used to create a new document.
 

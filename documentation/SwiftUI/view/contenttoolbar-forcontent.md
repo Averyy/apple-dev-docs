@@ -87,10 +87,10 @@ TabView {
   Configures the semantic role for the content populating the toolbar.
 - [func toolbarMinimizationSafeAreaAdjustment(ToolbarMinimizationSafeAreaAdjustment, for: ToolbarPlacement...) -> some View](view/toolbarminimizationsafeareaadjustment(_:for:).md)
   Sets the safe area adjustment for the specified bars during minimization.
-- [func toolbarMinimizeBehavior(ToolbarMinimizeBehavior, for: ToolbarPlacement...) -> some View](view/toolbarminimizebehavior(_:for:).md)
-  Sets the minimize behavior for the specified bars.
 - [func toolbarTitleMenu<C>(content: () -> C) -> some View](view/toolbartitlemenu(content:).md)
   Configure the title menu of a toolbar.
+- [func toolbarTitleDisplayMode(ToolbarTitleDisplayMode) -> some View](view/toolbartitledisplaymode(_:).md)
+  Configures the toolbar title display mode for this view.
 
 
 ---

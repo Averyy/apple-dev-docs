@@ -8,7 +8,7 @@ Analyzes a video file on disk at a URL for sensitive content.
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst ?+
+- Mac Catalyst 17.0+
 - macOS 14.0+
 - visionOS 2.0+
 

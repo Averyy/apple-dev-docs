@@ -8,7 +8,6 @@ A protocol that defines methods for handling Live Activity life cycle events in 
 **Availability**:
 - iOS 26.5+
 - iPadOS 26.5+
-- Mac Catalyst 26.5+
 
 ## Declaration
 

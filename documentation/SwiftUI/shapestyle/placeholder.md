@@ -17,6 +17,7 @@ A style appropriate for placeholder text.
 ## Declaration
 
 ```swift
+@export(implementation)
 static var placeholder: PlaceholderTextShapeStyle { get }
 ```
 

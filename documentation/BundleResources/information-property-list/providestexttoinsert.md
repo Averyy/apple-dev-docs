@@ -8,7 +8,6 @@ Allows this credential provider to show up in the system AutoFill context menu, 
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 
 
 

@@ -8,7 +8,6 @@ The size of the image.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -28,6 +27,7 @@ var size: CGSize { get }
   A Core Graphics image created from the pixel buffer observation.
 - [var pixelFormat: OSType](pixelbufferobservation/pixelformat.md)
   The four-character code that identifies the pixel format.
+- [var pixelBuffer: CVReadOnlyPixelBuffer](pixelbufferobservation/pixelbuffer.md)
 
 
 ---

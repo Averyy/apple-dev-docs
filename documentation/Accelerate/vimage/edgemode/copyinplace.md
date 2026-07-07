@@ -8,7 +8,7 @@ An edge mode that copies the value of the edge pixel in the source to the destin
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst ?+
+- Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
 - visionOS ?+

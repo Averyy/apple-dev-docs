@@ -8,7 +8,6 @@ A decorative footer view for a section that displays after the options.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+

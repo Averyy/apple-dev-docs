@@ -8,7 +8,7 @@ App enum schema conformance for types you use for maps functionality.
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst ?+
+- Mac Catalyst 27.0+ (Beta)
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 

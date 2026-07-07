@@ -16,23 +16,9 @@ optional func preallocateSpace(for file: FSItem, at offset: off_t, length: Int, 
 
 #### Discussion
 
-`::::: Swift ::::::::::`
-
-- reply: A block or closure to indicate success or failure. If preallocation succeeds, pass an instance of [`FSPreallocateKOIOResult`](fspreallocatekoioresult.md) containing the amount of bytes allocated, the updated [`FSItem.Attributes`](fsitem/attributes.md) of the file, the volume’s update free space, along with a `nil` error. If preallocation fails, pass the relevant error as the second parameter; FSKit ignores the [`FSPreallocateKOIOResult`](fspreallocatekoioresult.md) instance in this case. For an `async` Swift implementation, there’s no reply handler; simply return the result instance or throw an error.
-
-`::::::::::::::::::::`
-
-`::::: ObjC ::::::::::`
-
-- result: A block or closure to indicate success or failure. If preallocation succeeds, pass an instance of [`FSPreallocateKOIOResult`](fspreallocatekoioresult.md) containing the amount of bytes allocated, the updated [`FSItem.Attributes`](fsitem/attributes.md) of the file, the volume’s update free space, along with a `nil` error. If preallocation fails, pass the relevant error as the second parameter; FSKit ignores the [`FSPreallocateKOIOResult`](fspreallocatekoioresult.md) instance in this case. For an `async` Swift implementation, there’s no reply handler; simply return the result instance or throw an error.
-
-`::::::::::::::::::::`
-
-#### Discussion
-
 This method allows the module to opportunistically supply extents, avoiding future calls to [`blockmapFile(_:offset:length:flags:operationID:packer:replyHandler:)`](fsvolume/kerneloffloadediohandler/blockmapfile(_:offset:length:flags:operationid:packer:replyhandler:).md).
 
-> ❗ **Important**:  Only implement this method if your file system conforms to [`FSVolume.PreallocateHandler`](fsvolume/preallocatehandler.md).
+> ❗ **Important**: Only implement this method if your file system conforms to [`FSVolume.PreallocateHandler`](fsvolume/preallocatehandler.md).
 
 ## Parameters
 
@@ -42,6 +28,7 @@ This method allows the module to opportunistically supply extents, avoiding futu
 - `flags`: Flags that affect the preallocation behavior.
 - `packer`: An extent packer you use to pack the file’s preallocated disk space.
 - `context`: An object that enables context-aware file system decisions throughout the operation.
+- `reply`: A block or closure to indicate success or failure. If preallocation succeeds, pass an instance of [`FSPreallocateKOIOResult`](fspreallocatekoioresult.md) containing the amount of bytes allocated, the updated [`FSItem.Attributes`](fsitem/attributes.md) of the file, the volume’s update free space, along with a `nil` error. If preallocation fails, pass the relevant error as the second parameter; FSKit ignores the [`FSPreallocateKOIOResult`](fspreallocatekoioresult.md) instance in this case. For an `async` Swift implementation, there’s no reply handler; simply return the result instance or throw an error.
 
 ## See Also
 

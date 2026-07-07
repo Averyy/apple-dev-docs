@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: property
 
-The tags that were active during the last graph evaluation tick.
+The tags that were active or fired during the most recent graph evaluation tick.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -22,7 +22,7 @@ var activeTags: [AnimationGraphComponent.ActiveTag] { get }
 ## See Also
 
 - [AnimationGraphComponent.ActiveTag](animationgraphcomponent/activetag.md)
-  Contains debug information of a single tag within a compiled animation graph, used for inspection and debugging.
+  A graph-level signal raised by the graph while certain states are active.
 
 
 ---

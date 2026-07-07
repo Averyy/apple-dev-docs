@@ -22,7 +22,9 @@ func reload() throws
 ## See Also
 
 - [func save() throws](usdstage/save.md)
+  Saves the stage’s dirty layers to their sources.
 - [func saveSessionLayers() throws](usdstage/savesessionlayers.md)
+  Saves the stage’s dirty session layers to their sources.
 
 
 ---

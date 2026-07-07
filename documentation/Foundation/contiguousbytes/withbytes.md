@@ -1,18 +1,19 @@
 # withBytes(_:)
 
 **Framework**: Foundation  
-**Kind**: method
+**Kind**: method  
+**Required**: Yes
 
 Calls the given closure with the contents of underlying storage.
 
 **Availability**:
-- iOS 12.2+
-- iPadOS 12.2+
-- Mac Catalyst 12.2+
-- macOS 10.14.4+
-- tvOS 12.2+
-- visionOS 1.0+
-- watchOS 5.2+
+- iOS 27.0+ (Beta)
+- iPadOS 27.0+ (Beta)
+- Mac Catalyst 27.0+ (Beta)
+- macOS 27.0+ (Beta)
+- tvOS 27.0+ (Beta)
+- visionOS 27.0+ (Beta)
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 

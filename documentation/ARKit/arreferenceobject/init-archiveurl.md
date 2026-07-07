@@ -8,7 +8,6 @@ Loads a reference object from the specified file URL.
 **Availability**:
 - iOS 12.0+
 - iPadOS 12.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

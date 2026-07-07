@@ -8,7 +8,6 @@ A value that describes the session’s current geo-tracking state.
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
 
 ## Declaration
 

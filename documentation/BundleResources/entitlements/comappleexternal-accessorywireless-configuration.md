@@ -8,7 +8,6 @@ A Boolean value that indicates whether your app may configure MFi Wi-Fi accesso
 **Availability**:
 - iOS 3.0+
 - iPadOS 3.0+
-- Mac Catalyst 3.0+
 
 
 

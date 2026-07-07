@@ -8,7 +8,7 @@ Returns a new affine transform from a double-precision 4 x 4 matrix truncated to
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst 26.0+
 - macOS 26.0+
 - tvOS 26.0+
 - visionOS 26.0+

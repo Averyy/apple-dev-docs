@@ -8,7 +8,6 @@ Hides the object selection reticle when the session is in `.ready` state if set 
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 
 ## Declaration
 

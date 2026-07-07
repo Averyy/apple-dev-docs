@@ -53,6 +53,17 @@ A type can conform to ConvertibleFromBytes if every bit pattern for every byte o
 - [UInt64](uint64.md)
 - [UInt8](uint8.md)
 
+## See Also
+
+- [typealias FullyInhabited](fullyinhabited.md)
+  A protocol for types whose memory can safely be written as or read from raw bytes.
+- [protocol ConvertibleToBytes](convertibletobytes.md)
+  A protocol for types whose memory can safely be read as individual raw bytes.
+- [enum ByteOrder](byteorder.md)
+  A byte ordering in memory.
+- [func bitCast<T, U>(T, to: U.Type) -> U](bitcast(_:to:).md)
+  Returns the bits of the given instance, interpreted as having the specified type.
+
 
 ---
 

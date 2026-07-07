@@ -8,7 +8,7 @@ A text attachment, such as an image or view.
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst ?+
+- Mac Catalyst 17.0+
 - visionOS ?+
 
 ## Declaration

@@ -8,7 +8,7 @@ An opaque value which can be resolved to a concrete value in a `CoordinateSpace3
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst 26.0+
 - macOS 26.0+
 - tvOS 26.0+
 - visionOS 26.0+

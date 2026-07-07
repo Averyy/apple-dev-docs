@@ -8,7 +8,6 @@ A message to the user that explains why the app requested permission to read cli
 **Availability**:
 - iOS 12.0+
 - iPadOS 12.0+
-- Mac Catalyst 12.0+
 - visionOS 1.0+
 
 

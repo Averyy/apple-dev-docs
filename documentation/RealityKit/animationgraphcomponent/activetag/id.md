@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: property
 
-Returns the id of the tag.
+The unique identifier of the tag within the compiled graph.
 
 **Availability**:
 - iOS 27.0+ (Beta)

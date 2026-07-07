@@ -8,7 +8,6 @@ A description of an array’s shape, scalar type, and memory layout expectations
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 
@@ -40,14 +39,14 @@ The descriptor contains the expectations for an array value that you provide to 
   The number of dimensions in the array.
 - [var hasDynamicShape: Bool](ndarraydescriptor/hasdynamicshape.md)
   A Boolean value that indicates whether the shape has any dynamic dimensions.
-### Instance Properties
 - [var interleaveLayout: NDArray.InterleaveLayout?](ndarraydescriptor/interleavelayout.md)
   Returns the interleaved layout of this ndArray, or `nil` if there is no interleave.
+### Computing layout
 - [var minimumByteCount: Int](ndarraydescriptor/minimumbytecount.md)
   The minimum number of bytes needed for storage with this descriptor’s shape and preferred strides.
 - [var preferredStrides: [Int]](ndarraydescriptor/preferredstrides.md)
   The strides that avoid data layout transformations during inference.
-### Instance Methods
+### Resolving dynamic shapes
 - [func resolvingDynamicDimensions([Int]) -> NDArrayDescriptor](ndarraydescriptor/resolvingdynamicdimensions(_:).md)
   Returns a new descriptor with all dynamic dimensions replaced by concrete values.
 

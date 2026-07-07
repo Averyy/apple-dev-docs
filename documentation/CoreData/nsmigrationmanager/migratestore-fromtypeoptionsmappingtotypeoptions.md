@@ -8,7 +8,7 @@ Migrates the source store to the destination using the specified mapping model.
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst ?+
+- Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
 - visionOS ?+

@@ -8,7 +8,7 @@ Transforms an 8-bit planar pixel buffer in-place from premultiplied alpha format
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst ?+
+- Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
 - visionOS ?+

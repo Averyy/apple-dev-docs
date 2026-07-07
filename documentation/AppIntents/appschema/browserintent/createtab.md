@@ -8,7 +8,7 @@ An intent schema that creates a new tab with a URL loaded, or blank if omitted.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst ?+
+- Mac Catalyst 18.0+
 - macOS 15.0+
 - visionOS 2.0+
 

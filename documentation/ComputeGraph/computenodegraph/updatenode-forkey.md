@@ -1,6 +1,6 @@
 # updateNode(_:forKey:)
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: method
 
 Updates an existing node in the graph.
@@ -12,7 +12,7 @@ Updates an existing node in the graph.
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 ## Declaration
 

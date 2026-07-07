@@ -8,7 +8,6 @@ Errors associated with the top-level computation of this class.
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst 17.0+
 
 ## Declaration
 

@@ -8,7 +8,6 @@ A message that tells people why the app needs to send SMS messages.
 **Availability**:
 - iOS 18.2+
 - iPadOS 18.2+
-- Mac Catalyst 18.2+
 - watchOS 11.2+
 
 

@@ -28,9 +28,9 @@ init(@ContentBuilder content: () -> Content, @ContentBuilder label: () -> Label)
 ## See Also
 
 - [init(_:content:)](menu/init(_:content:).md)
-  Creates a menu that generates its label from a localized string key.
+  Creates a menu that generates its label from a localized string resource.
 - [init(_:image:content:)](menu/init(_:image:content:).md)
-  Creates a menu that generates its label from a localized string key and image resource.
+  Creates a menu that generates its label from a localized string resource and image resource.
 - [init(_:systemImage:content:)](menu/init(_:systemimage:content:).md)
   Creates a menu that generates its label from a localized string key and system image.
 

@@ -17,8 +17,8 @@ The style of a progress view that uses a circular gauge to indicate the partial 
 ## Declaration
 
 ```swift
-nonisolated
-static var circular: CircularProgressViewStyle { get }
+@export(implementation)
+nonisolated static var circular: CircularProgressViewStyle { get }
 ```
 
 #### Discussion

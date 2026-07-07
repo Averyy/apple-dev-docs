@@ -339,7 +339,7 @@ Requires supervision: iOS
 Requires supervision: tvOS
 - `allowRemoteScreenObservation` (boolean): If `false`, the system disables remote screen observation by the Classroom app. Nest this key beneath `allowScreenShot` as a subrestriction. If `allowScreenShot` is `false`, the Classroom app doesn’t observe remote screens. Requires a supervised device until iOS 13 and macOS 10.15. Allowed for user enrollments in macOS 12 and later. Available: iOS 9.3+ | iPadOS 9.3+ | macOS 10.14.4+
 Allowed for user enrollments: iOS | macOS
-- `allowRosettaUsageAwareness` (boolean): If `false`, disables Rosetta usage awareness. When Rosetta usage awareness is active, a pop-up dialog is displayed to the user when an app that is using Rosetta is launched. The pop-up dialog indicates that Rosetta will be removed in a future version of the operating system so that the user can contact the app vendor regarding a replacement for the current app. Available: macOS 26.4+
+- `allowRosettaUsageAwareness` (boolean): If `false`, disables Rosetta usage awareness. When Rosetta usage awareness is active, the device displays a pop-up dialog to the user when launching an app that uses Rosetta. The pop-up dialog indicates that Rosetta will be removed in a future version of the operating system so that the user can contact the app vendor regarding a replacement for the current app. Available: macOS 26.4+
 - `allowSafari` (boolean): If `false`, the system disables the Safari web browser app, and the system removes its icon from the Home Screen. This setting also prevents users from opening web clips. Requires a supervised device in iOS 13 and later. Available: iOS 4+ | iPadOS 4+
 Requires supervision: iOS
 - `allowSafariHistoryClearing` (boolean): If `false`, the system disables the ability to clear browsing history in Safari. Available: iOS 26+ | iPadOS 26+ | macOS 26+ | visionOS 26+
@@ -363,7 +363,7 @@ Requires supervision: iOS
 - `allowStartupDiskModification` (boolean): If `false`, the system prevents modification of Startup Disk settings in System Settings. Available: macOS 14+
 - `allowSystemAppRemoval` (boolean): If `false`, the system disables the removal of system apps from the device. Available: iOS 11+ | iPadOS 11+ | visionOS 2+
 Requires supervision: iOS | visionOS
-- `allowTimeMachineBackup` (boolean): If `false`, the system prevents modification of Time Machine settings in System Settings. This restriction is not supported on the user channel. Available: macOS 14+
+- `allowTimeMachineBackup` (boolean): If `false`, the system prevents modification of Time Machine settings in System Settings. This restriction isn’t supported on the user channel. Available: macOS 14+
 - `allowUIAppInstallation` (boolean): If `false`, the system disables the App Store and removes its icon from the Home Screen. However, users can continue to install or update their apps either locally (via Configurator, Xcode, and so forth), or using alternative marketplace apps. In iOS 10 and later, MDM commands can override this restriction. Available: iOS 9+ | iPadOS 9+ | visionOS 2+ | watchOS 10+
 Requires supervision: iOS | visionOS | watchOS
 - `allowUIConfigurationProfileInstallation` (boolean): If `false`, the system prohibits the user from installing configuration profiles and certificates interactively. Available: iOS 6+ | iPadOS 6+ | macOS 13+ | visionOS 2+
@@ -374,7 +374,7 @@ Allowed for user enrollments: iOS | visionOS
 - `allowUnpairedExternalBootToRecovery` (boolean): If `true`, the system allows unpaired devices to boot devices into recovery. Available: iOS 14.5+ | iPadOS 14.5+
 Requires supervision: iOS
 - `allowUntrustedTLSPrompt` (boolean): If `false`, the system automatically rejects untrusted HTTPS certificates without prompting the user. Available: iOS 5+ | iPadOS 5+ | visionOS 1.1+
-- `allowUSBRestrictedMode` (boolean): If `false`, the system allows iOS devices to always connect to USB accessories while locked. In macOS, allows new USB and Thunderbolt accessories, and SD cards to connect without authorization. If the system has Lockdown mode enabled, it ignores this value. This restriction is not supported on the user channel. Available: iOS 11.4.1+ | iPadOS 11.4.1+ | macOS 13+
+- `allowUSBRestrictedMode` (boolean): If `false`, the system allows iOS devices to always connect to USB accessories while locked. In macOS, allows new USB and Thunderbolt accessories, and SD cards to connect without authorization. If the system has Lockdown mode enabled, it ignores this value. This restriction isn’t supported on the user channel. Available: iOS 11.4.1+ | iPadOS 11.4.1+ | macOS 13+
 Requires supervision: iOS
 - `allowVideoConferencing` (boolean): If `false`, the system hides the FaceTime app. Requires a supervised device in iOS 13 and later. Available: iOS 4+ | iPadOS 4+ | visionOS 2+
 Requires supervision: iOS | visionOS
@@ -497,7 +497,7 @@ Allowed for user enrollments: iOS | macOS
 - `200`: TV-Y7
 - `100`: TV-Y
 - `0`: None Available: iOS 4+ | iPadOS 4+ | macOS 15+ | tvOS 11.3+
-- `requireManagedPasteboard` (boolean): If `true`, copy-and-paste functionality is limited by the `allowOpenFromManagedToUnmanaged` and `allowOpenFromUnmanagedToManaged` restrictions. Available: iOS 15+ | iPadOS 15+ | visionOS 2+
+- `requireManagedPasteboard` (boolean): If `true`, the `allowOpenFromManagedToUnmanaged` and `allowOpenFromUnmanagedToManaged` restrictions also limit copy-and-paste functionality. Available: iOS 15+ | iPadOS 15+ | visionOS 2+
 Allowed for user enrollments: iOS | visionOS
 - `safariAcceptCookies` (number): Defines the conditions under which the device accepts cookies. The user-facing settings changed in iOS 11, although the possible values remain the same. Support for this restriction on unsupervised devices is deprecated. Allowed values: - `0`: Enables Prevent Cross-Site Tracking and Block All Cookies, and the user canʼt disable either setting.
 - `1` or `1.5`: Enables Prevent Cross-Site Tracking, and the user canʼt disable it. Doesn’t enable Block All Cookies, but the user can enable it.

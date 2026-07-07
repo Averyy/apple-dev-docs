@@ -12,7 +12,7 @@ A text editor style with a system-defined rounded border.
 
 ```swift
 @MainActor
-@preconcurrency static var roundedBorder: RoundedBorderTextEditorStyle { get }
+@export(implementation) @preconcurrency static var roundedBorder: RoundedBorderTextEditorStyle { get }
 ```
 
 ## See Also

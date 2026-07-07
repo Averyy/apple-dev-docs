@@ -8,7 +8,6 @@ Encodes references to an array of compute pipeline states into the argument buff
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst 13.0+
 - tvOS 13.0+
 - visionOS ?+
 

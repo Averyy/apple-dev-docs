@@ -8,7 +8,6 @@ A dictionary of named coefficients representing the detected facial expression i
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

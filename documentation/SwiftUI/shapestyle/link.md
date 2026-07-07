@@ -17,6 +17,7 @@ A style appropriate for links.
 ## Declaration
 
 ```swift
+@export(implementation)
 static var link: LinkShapeStyle { get }
 ```
 

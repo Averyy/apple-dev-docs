@@ -77,7 +77,7 @@ You can initialize groups with several types other than [`View`](view.md), such 
 
 ### Creating a group
 - [init(content:)](group/init(content:).md)
-  Creates a group of map content.
+  Creates a group of content.
 - [init<Base, Result>(sections: Base, transform: (SectionCollection) -> Result)](group/init(sections:transform:).md)
   Constructs a group from the sections of the given view.
 - [init<Base, Result>(subviews: Base, transform: (SubviewsCollection) -> Result)](group/init(subviews:transform:).md)

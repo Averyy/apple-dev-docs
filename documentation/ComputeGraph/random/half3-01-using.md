@@ -1,13 +1,13 @@
 # random::half3_01_using
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: func
 
 Generates a pseudo-random 3D vector with half-precision components between 0 and 1 using a specific seed.
 
 **Availability**:
-- macOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- macOS ?+
+- Reality Composer Pro ?+
 
 ## Declaration
 

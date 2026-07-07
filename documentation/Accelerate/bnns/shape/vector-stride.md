@@ -8,7 +8,7 @@ A constant that represents a shape with a 1D vector data layout.
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst ?+
+- Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
 - visionOS ?+

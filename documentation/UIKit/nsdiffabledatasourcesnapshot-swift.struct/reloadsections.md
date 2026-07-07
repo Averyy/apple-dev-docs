@@ -8,7 +8,7 @@ Reloads the data within the specified sections of the snapshot.
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst ?+
+- Mac Catalyst 13.0+
 - tvOS 13.0+
 - visionOS ?+
 

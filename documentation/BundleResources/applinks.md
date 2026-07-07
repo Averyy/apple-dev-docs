@@ -8,7 +8,6 @@ The root object for a universal links service definition.
 **Availability**:
 - iOS 9.0+
 - iPadOS 9.0+
-- Mac Catalyst 9.0+
 - macOS 10.15+
 - tvOS 10.0+
 - visionOS 1.0+

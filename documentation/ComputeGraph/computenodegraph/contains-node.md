@@ -1,6 +1,6 @@
 # contains(node:)
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: method
 
 Returns whether the graph contains a node with the given key.
@@ -12,7 +12,7 @@ Returns whether the graph contains a node with the given key.
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 ## Declaration
 

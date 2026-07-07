@@ -8,7 +8,6 @@ Initializes a new uniform object that holds a `4 x 4` matrix of floating-point n
 **Availability**:
 - iOS 7.0+
 - iPadOS 7.0+
-- Mac Catalyst 7.0+
 - macOS 10.8+
 - tvOS ?+
 

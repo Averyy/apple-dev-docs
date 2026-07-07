@@ -8,7 +8,7 @@ Sends an application protocol data unit (APDU) to the tag and receives a respons
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst ?+
+- Mac Catalyst 14.0+
 
 ## Declaration
 

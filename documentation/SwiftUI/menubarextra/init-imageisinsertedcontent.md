@@ -11,8 +11,8 @@ Creates a menu bar extra with an image to use as the items label. The provided t
 ## Declaration
 
 ```swift
-nonisolated
-init(_ titleKey: LocalizedStringKey, image: ImageResource, isInserted: Binding<Bool>, @ContentBuilder content: () -> Content)
+@export(implementation)
+nonisolated init(_ titleResource: LocalizedStringResource, image: ImageResource, isInserted: Binding<Bool>, @ContentBuilder content: () -> Content)
 ```
 
 #### Discussion
@@ -21,7 +21,7 @@ The item will be displayed in the system menu bar when the specified binding is 
 
 ## Parameters
 
-- `titleKey`: The localized string key to use for the accessibility label of the item.
+- `titleResource`: The localized string resource to use for the accessibility label of the item.
 - `image`: The image resource to use as the label.
 - `isInserted`: Whether the item is inserted in the menu bar. The item may or may not be visible, depending on the number of items present.
 - `content`: A `View` to display when the user selects the item.

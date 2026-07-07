@@ -8,7 +8,6 @@ A status display to indicate a successful operation, such as a checkmark.
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
-- Mac Catalyst 17.4+
 
 ## Declaration
 

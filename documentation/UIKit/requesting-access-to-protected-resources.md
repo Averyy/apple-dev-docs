@@ -89,7 +89,7 @@ To reset permissions for a particular service in macOS apps, run the `tccutil re
 $ tccutil reset AppleEvents
 ```
 
-This command resets authorization access for all apps using the protected resource. You can similarly specify Camera, Calendar, Reminders, or other services to reset them individually.
+This command resets authorization access for all apps using the protected resource. You can similarly specify Camera, Calendar, Reminders, or other services to reset them individually. For more information, see [`Resetting access to protected resources in macOS`](https://developer.apple.com/documentation/Xcode/resetting-access-to-protected-resources-in-macOS).
 
 ## See Also
 

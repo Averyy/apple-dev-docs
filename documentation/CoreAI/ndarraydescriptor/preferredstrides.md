@@ -8,7 +8,6 @@ The strides that avoid data layout transformations during inference.
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 
@@ -42,6 +41,11 @@ if let contiguousElements = view.contiguousElements {
 ```
 
 > **Note**: Accessing this property on a descriptor for which `hasDynamicShape` is true, is a programming error. If the descriptor has a dynamic shape, you must first call `resolvingDynamicDimensions` to provide a concrete size for each dimension.
+
+## See Also
+
+- [var minimumByteCount: Int](ndarraydescriptor/minimumbytecount.md)
+  The minimum number of bytes needed for storage with this descriptor’s shape and preferred strides.
 
 
 ---

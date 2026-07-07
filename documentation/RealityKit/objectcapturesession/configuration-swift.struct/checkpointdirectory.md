@@ -8,7 +8,6 @@ An optional directory to store data about session progress which may be used to 
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst 17.0+
 
 ## Declaration
 

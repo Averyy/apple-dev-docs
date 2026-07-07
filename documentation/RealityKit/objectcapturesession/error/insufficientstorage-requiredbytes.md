@@ -8,7 +8,6 @@ The session can’t be started since there is not enough storage space in the pr
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst 17.0+
 
 ## Declaration
 

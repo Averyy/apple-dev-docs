@@ -18,7 +18,7 @@ Configures whether navigation links show a disclosure indicator.
 
 ```swift
 @MainActor
-@preconcurrency func navigationLinkIndicatorVisibility(_ visibility: Visibility) -> some View
+@export(implementation) @preconcurrency func navigationLinkIndicatorVisibility(_ visibility: Visibility) -> some View
 ```
 
 #### Discussion

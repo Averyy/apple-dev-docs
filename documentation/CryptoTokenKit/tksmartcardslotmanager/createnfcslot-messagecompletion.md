@@ -8,7 +8,6 @@ Creates an NFC smart card slot using the device’s hardware and presents a syst
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst 26.0+
 
 ## Declaration
 

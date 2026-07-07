@@ -8,7 +8,6 @@ The standard Apple Pay Later visual merchandising widget style.
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst 17.0+
 - visionOS ?+
 
 ## Declaration

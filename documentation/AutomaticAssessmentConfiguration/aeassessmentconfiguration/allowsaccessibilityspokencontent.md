@@ -19,7 +19,7 @@ var allowsAccessibilitySpokenContent: Bool { get set }
 
 #### Discussion
 
-Users can enable Spoken Content in the Settings app (Accessibility > Spoken Content) to have text read aloud. This includes Speak Selection, Speak Screen, and related features. An assessment session disables Spoken Content by default, but you can allow it by setting [`allowsAccessibilitySpokenContent`](aeassessmentconfiguration/allowsaccessibilityspokencontent.md) to `true` in the [`AEAssessmentConfiguration`](aeassessmentconfiguration.md) instance that you use to initialize a session.
+Users can enable Spoken Content in the Settings app (Accessibility > Read & Speak) to have text read aloud. This includes Speak Selection, Speak Screen, and related features. An assessment session disables Spoken Content by default, but you can allow it by setting [`allowsAccessibilitySpokenContent`](aeassessmentconfiguration/allowsaccessibilityspokencontent.md) to `true` in the [`AEAssessmentConfiguration`](aeassessmentconfiguration.md) instance that you use to initialize a session.
 
 
 ---

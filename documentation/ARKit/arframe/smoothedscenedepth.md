@@ -8,7 +8,6 @@ An average of distance measurements between a device’s rear camera and real-wo
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
 
 ## Declaration
 
@@ -28,8 +27,6 @@ Call [`supportsFrameSemantics(_:)`](arconfiguration/supportsframesemantics(_:).m
 
 - [var lightEstimate: ARLightEstimate?](arframe/lightestimate.md)
   An estimate of lighting conditions based on the camera image.
-- [func displayTransform(for: UIInterfaceOrientation, viewportSize: CGSize) -> CGAffineTransform](arframe/displaytransform(for:viewportsize:).md)
-  Returns an affine transform for converting between normalized image coordinates and a coordinate space appropriate for rendering the camera image onscreen.
 - [var rawFeaturePoints: ARPointCloud?](arframe/rawfeaturepoints.md)
   The current intermediate results of the scene analysis ARKit uses to perform world tracking.
 - [var capturedDepthData: AVDepthData?](arframe/captureddepthdata.md)

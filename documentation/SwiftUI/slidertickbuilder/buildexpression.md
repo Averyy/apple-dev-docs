@@ -16,6 +16,7 @@ Creates a single slider content expression.
 ## Declaration
 
 ```swift
+@export(implementation)
 static func buildExpression(_ content: some SliderTickContent<V>) -> some SliderTickContent<V>
 ```
 

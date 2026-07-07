@@ -8,7 +8,6 @@ A point on a real-world planar surface detected during the search, whose orienta
 **Availability**:
 - iOS 11.3+
 - iPadOS 11.3+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

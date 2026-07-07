@@ -8,7 +8,6 @@ Returns the projection of a point from the 2D space of a view rendering the scen
 **Availability**:
 - iOS 12.0+
 - iPadOS 12.0+
-- Mac Catalyst 12.0+
 
 ## Declaration
 
@@ -36,12 +35,6 @@ If you display AR content with SceneKit, the [`ARSCNView`](arscnview.md) class p
 
 - [var projectionMatrix: simd_float4x4](arcamera/projectionmatrix.md)
   A transform matrix appropriate for rendering 3D content to match the image captured by the camera.
-- [func projectionMatrix(for: UIInterfaceOrientation, viewportSize: CGSize, zNear: CGFloat, zFar: CGFloat) -> simd_float4x4](arcamera/projectionmatrix(for:viewportsize:znear:zfar:).md)
-  Returns a transform matrix appropriate for rendering 3D content to match the image captured by the camera, using the specified parameters.
-- [func viewMatrix(for: UIInterfaceOrientation) -> simd_float4x4](arcamera/viewmatrix(for:).md)
-  Returns a transform matrix for converting from world space to camera space.
-- [func projectPoint(simd_float3, orientation: UIInterfaceOrientation, viewportSize: CGSize) -> CGPoint](arcamera/projectpoint(_:orientation:viewportsize:).md)
-  Returns the projection of a point from the 3D world space detected by ARKit into the 2D space of a view rendering the scene.
 
 
 ---

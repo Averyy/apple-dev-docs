@@ -16,8 +16,8 @@ Creates a stepper with a title key and configured to increment and decrement a b
 ## Declaration
 
 ```swift
-nonisolated
-init<F>(_ titleKey: LocalizedStringKey, value: Binding<F.FormatInput>, step: F.FormatInput.Stride = 1, format: F, onEditingChanged: @escaping (Bool) -> Void = { _ in }) where F : ParseableFormatStyle, F.FormatInput : BinaryFloatingPoint, F.FormatOutput == String
+@export(implementation)
+nonisolated init<F>(_ titleResource: LocalizedStringResource, value: Binding<F.FormatInput>, step: F.FormatInput.Stride = 1, format: F, onEditingChanged: @escaping (Bool) -> Void = { _ in }) where F : ParseableFormatStyle, F.FormatInput : BinaryFloatingPoint, F.FormatOutput == String
 ```
 
 #### Discussion
@@ -46,7 +46,7 @@ struct StepperView: View {
 
 ## Parameters
 
-- `titleKey`: The key for the stepper’s localized title describing the purpose of the stepper.
+- `titleResource`: Text resource for the stepper’s localized title describing the purpose of the stepper.
 - `value`: A [`Binding`](binding.md) to a value that you provide.
 - `step`: The amount to increment or decrement `value` each time the user clicks or taps the stepper’s plus or minus button, respectively.  Defaults to `1`.
 - `format`: A format style of type `F` to use when converting between the string the user edits and the underlying value of type `F.FormatInput`. If `format` can’t perform the conversion, the stepper leaves `value` unchanged. If the user stops editing the text in an invalid state, the stepper updates the text to the last known valid value.
@@ -59,7 +59,7 @@ struct StepperView: View {
 - [init<F>(value: Binding<F.FormatInput>, step: F.FormatInput.Stride, format: F, label: () -> Label, onEditingChanged: (Bool) -> Void)](stepper/init(value:step:format:label:oneditingchanged:).md)
   Creates a stepper configured to increment or decrement a binding to a value using a step value you provide, displaying its value with an applied format style.
 - [init(_:value:step:onEditingChanged:)](stepper/init(_:value:step:oneditingchanged:).md)
-  Creates a stepper with a title and configured to increment and decrement a binding to a value and step amount you provide.
+  Creates a stepper with a title key and configured to increment and decrement a binding to a value and step amount you provide.
 
 
 ---

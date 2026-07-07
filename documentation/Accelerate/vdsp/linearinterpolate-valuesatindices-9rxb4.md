@@ -8,7 +8,7 @@ Returns the double-precision linearly interpolated values of a vector at the spe
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst ?+
+- Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
 - visionOS ?+

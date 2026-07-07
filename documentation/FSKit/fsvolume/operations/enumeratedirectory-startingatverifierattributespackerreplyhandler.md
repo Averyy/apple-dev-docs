@@ -37,6 +37,19 @@ When packing, make sure to use acceptable directory entry names and unambiguous 
 - `packer`: An object that your implementation uses to enumerate directory items, packing one item per callback to `enumerateDirectory`.
 - `reply`: A block or closure to indicate success or failure. If enumeration succeeds, pass the current verifier and a `nil` error. If enumeration fails, pass the relevant error as the second parameter; FSKit ignores any verifier in this case. For an `async` Swift implementation, there’s no reply handler; simply return the current verifier or throw an error.
 
+## See Also
+
+- [struct FSDirectoryCookie](fsdirectorycookie.md)
+  A value that indicates a location in a directory from which to enumerate.
+- [struct FSDirectoryCookie](fsdirectorycookie.md)
+  A value that indicates a location in a directory from which to enumerate.
+- [struct FSDirectoryVerifier](fsdirectoryverifier.md)
+  A tool to detect whether the directory contents changed since the last call to enumerate a directory.
+- [struct FSDirectoryVerifier](fsdirectoryverifier.md)
+  A tool to detect whether the directory contents changed since the last call to enumerate a directory.
+- [class FSDirectoryEntryPacker](fsdirectoryentrypacker.md)
+  An object used to provide items during a directory enumeration.
+
 
 ---
 

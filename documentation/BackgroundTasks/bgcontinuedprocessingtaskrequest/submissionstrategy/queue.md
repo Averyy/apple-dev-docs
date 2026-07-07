@@ -8,7 +8,6 @@ An option that queues a continuous background task to begin as soon as possible.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst 26.0+
 
 ## Declaration
 

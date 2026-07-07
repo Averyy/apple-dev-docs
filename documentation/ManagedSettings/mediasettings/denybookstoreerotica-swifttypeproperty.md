@@ -8,7 +8,7 @@ The metadata associated with the setting that denies access to content in the Bo
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst ?+
+- Mac Catalyst 15.0+
 
 ## Declaration
 

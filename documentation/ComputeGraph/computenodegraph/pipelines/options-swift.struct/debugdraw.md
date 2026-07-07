@@ -1,6 +1,6 @@
 # debugDraw
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: property
 
 Whether debug draw should be included in pipelines.
@@ -12,7 +12,7 @@ Whether debug draw should be included in pipelines.
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 ## Declaration
 

@@ -19,6 +19,11 @@ Use your custom types in operations that depend on testing for equality or order
 - [protocol BitwiseCopyable](bitwisecopyable.md)
 - [protocol Escapable](escapable.md)
   A type whose values can persist beyond their immediate local scope.
+### Borrowing
+- [struct Ref](ref.md)
+  A safe reference allowing in-place reads to a shared value.
+- [struct MutableRef](mutableref.md)
+  A safe mutable reference allowing in-place mutation to an exclusive value.
 ### Sets and Dictionaries
 - [protocol Hashable](hashable.md)
   A type that can be hashed into a `Hasher` to produce an integer hash value.

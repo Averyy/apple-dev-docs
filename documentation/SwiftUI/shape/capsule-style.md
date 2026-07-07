@@ -17,6 +17,7 @@ A capsule shape aligned inside the frame of the view containing it.
 ## Declaration
 
 ```swift
+@export(implementation)
 static func capsule(style: RoundedCornerStyle) -> Self
 ```
 

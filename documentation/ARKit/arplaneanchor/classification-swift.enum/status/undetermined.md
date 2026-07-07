@@ -8,7 +8,6 @@ ARKit has not yet produced a classification for the plane anchor.
 **Availability**:
 - iOS 12.0+
 - iPadOS 12.0+
-- Mac Catalyst 12.0+
 
 ## Declaration
 

@@ -8,7 +8,6 @@ Generates alpha matte at either full resolution or half the resolution of the ca
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

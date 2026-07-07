@@ -29,12 +29,6 @@ final class CVReadOnlyPixelBuffer
   Initialize a read-only pixel buffer by transferring existing CVPixelBuffer value.
 ### Instance Methods
 - [func withUnsafeBuffer<R>((CVPixelBuffer) throws -> sending R) rethrows -> sending R](cvreadonlypixelbuffer/withunsafebuffer(_:).md)
-### Type Aliases
-- [CVReadOnlyPixelBuffer.Specification](cvreadonlypixelbuffer/specification.md)
-- [CVReadOnlyPixelBuffer.UnwrappedType](cvreadonlypixelbuffer/unwrappedtype.md)
-- [CVReadOnlyPixelBuffer.ValueType](cvreadonlypixelbuffer/valuetype.md)
-### Type Properties
-- [static var defaultResolverSpecification: EmptyResolverSpecification<CVReadOnlyPixelBuffer>](cvreadonlypixelbuffer/defaultresolverspecification.md)
 
 ## Relationships
 
@@ -47,8 +41,6 @@ final class CVReadOnlyPixelBuffer
 - [Copyable](../Swift/Copyable.md)
 - [Escapable](../Swift/Escapable.md)
 - [InferenceValue.ViewRepresentable](../CoreAI/InferenceValue/ViewRepresentable.md)
-- [IntentValueConvertible](../AppIntents/IntentValueConvertible.md)
-- [IntentValueExpressing](../AppIntents/IntentValueExpressing.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 

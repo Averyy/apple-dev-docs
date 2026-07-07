@@ -8,7 +8,6 @@ The estimated intensity, in lumens, of the strongest directional light source in
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

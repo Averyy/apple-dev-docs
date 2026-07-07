@@ -18,10 +18,11 @@ enum ImageVisibility
 
 ### Enumeration Cases
 - [NSMenuItem.ImageVisibility.automatic](nsmenuitem/imagevisibility/automatic.md)
-- [NSMenuItem.ImageVisibility.hidden](nsmenuitem/imagevisibility/hidden.md)
-  The item image should always be visible. Note that in some cases, AppKit may still hide the image, overriding this preference.
-- [NSMenuItem.ImageVisibility.visible](nsmenuitem/imagevisibility/visible.md)
   AppKit should choose whether the item’s image is visible, considering the system configuration.
+- [NSMenuItem.ImageVisibility.hidden](nsmenuitem/imagevisibility/hidden.md)
+  The item image should not be visible.
+- [NSMenuItem.ImageVisibility.visible](nsmenuitem/imagevisibility/visible.md)
+  The item image should always be visible. Note that in some cases, AppKit may still hide the image, overriding this preference.
 ### Initializers
 - [init?(rawValue: Int)](nsmenuitem/imagevisibility/init(rawvalue:).md)
 

@@ -8,7 +8,7 @@ Loads the web content from the HTML you provide as if the HTML were the response
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst 26.0+
 - macOS 26.0+
 - visionOS 26.0+
 

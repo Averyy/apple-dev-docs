@@ -8,7 +8,7 @@ Appends the timed metadata group synchronously if the input is ready for more me
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst 26.0+
 - macOS 26.0+
 - tvOS 26.0+
 - visionOS 26.0+

@@ -1,6 +1,6 @@
 # definitionsMatching(inputs:)
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: method
 
 Returns all definitions whose user-editable inputs, in order, match the given value types.
@@ -12,7 +12,7 @@ Returns all definitions whose user-editable inputs, in order, match the given va
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 ## Declaration
 

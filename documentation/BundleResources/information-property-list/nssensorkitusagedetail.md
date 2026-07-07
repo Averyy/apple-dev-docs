@@ -8,7 +8,6 @@ A dictionary that includes keys for the specific information your app collects.
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
 
 
 

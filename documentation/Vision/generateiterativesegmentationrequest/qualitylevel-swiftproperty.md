@@ -8,7 +8,6 @@ Controls the resolution of the produced mask.
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
@@ -22,6 +21,11 @@ final var qualityLevel: GenerateIterativeSegmentationRequest.QualityLevel { get 
 #### Discussion
 
 Higher resolutions will produce a smoother mask. Lower resolutions will be faster.
+
+## See Also
+
+- [GenerateIterativeSegmentationRequest.QualityLevel](generateiterativesegmentationrequest/qualitylevel-swift.enum.md)
+  The resolution and quality of the segmentation mask the request produces.
 
 
 ---

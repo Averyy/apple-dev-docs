@@ -17,8 +17,8 @@ A progress view that visually indicates its progress using a horizontal bar.
 ## Declaration
 
 ```swift
-nonisolated
-static var linear: LinearProgressViewStyle { get }
+@export(implementation)
+nonisolated static var linear: LinearProgressViewStyle { get }
 ```
 
 ## See Also

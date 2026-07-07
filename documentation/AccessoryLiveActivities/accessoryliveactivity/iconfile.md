@@ -8,7 +8,6 @@ An on-demand reference to the app icon of the app that started the Live Activity
 **Availability**:
 - iOS 26.5+
 - iPadOS 26.5+
-- Mac Catalyst 26.5+
 
 ## Declaration
 

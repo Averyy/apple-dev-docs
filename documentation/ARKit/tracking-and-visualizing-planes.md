@@ -7,7 +7,6 @@ Detect surfaces in the physical environment and visualize their shape and locati
 **Availability**:
 - iOS 15.6+
 - iPadOS 15.6+
-- Mac Catalyst 15.6+
 - Xcode 16.0+
 
 #### Overview

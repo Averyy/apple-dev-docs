@@ -8,7 +8,7 @@ Creates an indirect Scribble interaction item with the specified delegate.
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst ?+
+- Mac Catalyst 14.0+
 - visionOS ?+
 
 ## Declaration

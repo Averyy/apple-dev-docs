@@ -17,8 +17,8 @@ Loads and displays a modifiable image from the specified URL using a custom plac
 ## Declaration
 
 ```swift
-nonisolated
-init<I, P>(url: URL?, scale: CGFloat = 1, @ContentBuilder content: @escaping (Image) -> I, @ContentBuilder placeholder: @escaping () -> P) where Content == _ConditionalContent<I, P>, I : View, P : View
+@export(implementation)
+nonisolated init<I, P>(url: URL?, scale: CGFloat = 1, @ContentBuilder content: @escaping (Image) -> I, @ContentBuilder placeholder: @escaping () -> P) where Content == _ConditionalContent<I, P>, I : View, P : View
 ```
 
 #### Discussion

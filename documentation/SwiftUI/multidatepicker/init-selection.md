@@ -14,13 +14,13 @@ Creates an instance that selects multiple dates with an unbounded range.
 ## Declaration
 
 ```swift
-nonisolated
-init(_ titleKey: LocalizedStringKey, selection: Binding<Set<DateComponents>>)
+@export(implementation)
+nonisolated init(_ titleResource: LocalizedStringResource, selection: Binding<Set<DateComponents>>)
 ```
 
 ## Parameters
 
-- `titleKey`: The key for the localized title of `self`, describing its purpose.
+- `titleResource`: The localized title of `self`, describing its purpose.
 - `selection`: The date values being displayed and selected.
 
 ## See Also

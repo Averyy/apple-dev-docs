@@ -1,6 +1,6 @@
 # init(position:velocity:size:color:lifetime:)
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: init
 
 Creates a new set of particle spawn parameters.
@@ -12,7 +12,7 @@ Creates a new set of particle spawn parameters.
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 ## Declaration
 

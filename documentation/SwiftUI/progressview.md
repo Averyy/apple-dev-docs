@@ -137,7 +137,7 @@ On platforms other than macOS, the circular style may appear as an indeterminate
 - [init<V>(value: V?, total: V)](progressview/init(value:total:).md)
   Creates a progress view for showing determinate progress.
 - [init(_:value:total:)](progressview/init(_:value:total:).md)
-  Creates a progress view for showing determinate progress that generates its label from a string.
+  Creates a progress view for showing determinate progress that generates its label from a localized string resource.
 - [init<V>(value: V?, total: V, label: () -> Label)](progressview/init(value:total:label:).md)
   Creates a progress view for showing determinate progress, with a custom label.
 - [init<V>(value: V?, total: V, label: () -> Label, currentValueLabel: () -> CurrentValueLabel)](progressview/init(value:total:label:currentvaluelabel:).md)
@@ -151,7 +151,7 @@ On platforms other than macOS, the circular style may appear as an indeterminate
   Creates a progress view for showing continuous progress as time passes, with descriptive and current progress labels.
 ### Initializers
 - [init(_:)](progressview/init(_:).md)
-  Creates a progress view based on a style configuration.
+  Creates a progress view for showing indeterminate progress that generates its label from a localized string resource.
 
 ## Relationships
 

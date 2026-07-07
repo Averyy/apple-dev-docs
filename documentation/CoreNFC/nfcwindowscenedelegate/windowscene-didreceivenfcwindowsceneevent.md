@@ -9,7 +9,7 @@ Informs your app that the system has received an NFC-related event.
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
-- Mac Catalyst ?+
+- Mac Catalyst 17.4+
 
 ## Declaration
 

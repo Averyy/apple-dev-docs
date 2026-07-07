@@ -74,13 +74,13 @@ For information about the language-level concurrency model that `ThrowingTaskGro
   Add a child task to the group and immediately start running it in the context of the calling thread/task.
 ### Accessing Individual Results
 - [func next() async throws -> ChildTaskResult?](throwingtaskgroup/next.md)
-- [func nextResult(isolation: isolated (any Actor)?) async -> Result<ChildTaskResult, Failure>?](throwingtaskgroup/nextresult(isolation:).md)
+- [func nextResult() async -> Result<ChildTaskResult, Failure>?](throwingtaskgroup/nextresult.md)
   Wait for the next child task to complete, and return a result containing either the value that the child task returned or the error that it threw.
 - [func next(isolation: isolated (any Actor)?) async throws -> ChildTaskResult?](throwingtaskgroup/next(isolation:).md)
   Wait for the next child task to complete, and return the value it returned or rethrow the error it threw.
 - [var isEmpty: Bool](throwingtaskgroup/isempty.md)
   A Boolean value that indicates whether the group has any remaining tasks.
-- [func waitForAll(isolation: isolated (any Actor)?) async throws](throwingtaskgroup/waitforall(isolation:).md)
+- [func waitForAll() async throws](throwingtaskgroup/waitforall.md)
   Wait for all of the group’s remaining tasks to complete.
 ### Accessing an Asynchronous Sequence of Results
 - [func makeAsyncIterator() -> ThrowingTaskGroup<ChildTaskResult, Failure>.Iterator](throwingtaskgroup/makeasynciterator.md)
@@ -139,8 +139,10 @@ For information about the language-level concurrency model that `ThrowingTaskGro
 - [func add(priority: TaskPriority?, operation: () async throws -> ChildTaskResult) async -> Bool](throwingtaskgroup/add(priority:operation:).md)
 - [func async(priority: TaskPriority?, operation: () async throws -> ChildTaskResult)](throwingtaskgroup/async(priority:operation:).md)
 - [func asyncUnlessCancelled(priority: TaskPriority?, operation: () async throws -> ChildTaskResult) -> Bool](throwingtaskgroup/asyncunlesscancelled(priority:operation:).md)
+- [func nextResult(isolation: isolated (any Actor)?) async -> Result<ChildTaskResult, Failure>?](throwingtaskgroup/nextresult(isolation:).md)
 - [func spawn(priority: TaskPriority?, operation: () async throws -> ChildTaskResult)](throwingtaskgroup/spawn(priority:operation:).md)
 - [func spawnUnlessCancelled(priority: TaskPriority?, operation: () async throws -> ChildTaskResult) -> Bool](throwingtaskgroup/spawnunlesscancelled(priority:operation:).md)
+- [func waitForAll(isolation: isolated (any Actor)?) async throws](throwingtaskgroup/waitforall(isolation:).md)
 ### Default Implementations
 - [AsyncSequence Implementations](throwingtaskgroup/asyncsequence-implementations.md)
 

@@ -9,7 +9,7 @@ The object that uniquely identifies the specific document with selected text.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst ?+
+- Mac Catalyst 16.0+
 - visionOS ?+
 
 ## Declaration

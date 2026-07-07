@@ -8,7 +8,7 @@ An immutable representation of a behavior tree.
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst ?+
+- Mac Catalyst 27.0+ (Beta)
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
@@ -53,8 +53,11 @@ entity.parameters[“MoveSpeed”] = BindableValue(Float(1.0))
 ## See Also
 
 - [struct BehaviorTreeComponent](behaviortreecomponent.md)
+  Manages which behavior tree is active for the component’s entity.
 - [protocol BehaviorTreeAction](behaviortreeaction.md)
+  A protocol that defines an action that a behavior tree action node can use.
 - [protocol BehaviorTreeActionHandler](behaviortreeactionhandler.md)
+  Behavior Tree-specific event handlers that allow an `ActionResult` to be returned from the handler.
 - [enum ActionResult](actionresult.md)
   Status values that an action can report back to the animation system.
 

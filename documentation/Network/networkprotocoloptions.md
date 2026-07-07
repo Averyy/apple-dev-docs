@@ -37,6 +37,7 @@ protocol NetworkProtocolOptions
 - [StreamProtocol](streamprotocol.md)
 ### Conforming Types
 - [Coder](coder.md)
+- [DTLS](dtls.md)
 - [Framer](framer.md)
 - [IP](ip.md)
 - [QUIC](quic.md)

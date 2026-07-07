@@ -17,6 +17,7 @@ The amount of green in the color in the extended sRGB color space.
 ## Declaration
 
 ```swift
+@export(implementation)
 var green: Float { get set }
 ```
 

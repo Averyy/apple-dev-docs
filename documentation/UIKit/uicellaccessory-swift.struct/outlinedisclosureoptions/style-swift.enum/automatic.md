@@ -8,7 +8,7 @@ The system automatically determines the style depending on whether the cell’s 
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst ?+
+- Mac Catalyst 14.0+
 - visionOS ?+
 
 ## Declaration

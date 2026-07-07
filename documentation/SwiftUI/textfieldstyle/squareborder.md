@@ -11,6 +11,7 @@ A text field style with a system-defined square border.
 ## Declaration
 
 ```swift
+@export(implementation)
 static var squareBorder: SquareBorderTextFieldStyle { get }
 ```
 

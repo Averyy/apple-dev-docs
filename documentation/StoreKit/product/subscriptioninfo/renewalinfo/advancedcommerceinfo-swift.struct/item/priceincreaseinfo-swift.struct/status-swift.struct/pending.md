@@ -8,7 +8,6 @@ A value that indicates the App Store is waiting for customer consent for the pri
 **Availability**:
 - iOS 26.2+
 - iPadOS 26.2+
-- Mac Catalyst 26.2+
 - macOS 26.2+
 - tvOS 26.2+
 - visionOS 26.2+

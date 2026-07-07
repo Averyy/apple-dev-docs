@@ -8,7 +8,6 @@ The position of the device is too low for geotracking.
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
 
 ## Declaration
 

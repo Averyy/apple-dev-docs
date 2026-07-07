@@ -17,8 +17,8 @@ The background shown beneath this view.
 ## Declaration
 
 ```swift
-nonisolated
-var background: Background { get set }
+@export(implementation)
+nonisolated var background: Background { get set }
 ```
 
 ## See Also

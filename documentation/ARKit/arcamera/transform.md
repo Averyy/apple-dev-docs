@@ -8,7 +8,6 @@ The position and orientation of the camera in world coordinate space.
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

@@ -25,7 +25,7 @@ enum KernelCacheCoherencyType
   A type that indicates writes immediately update the cache only, followed by a deferred write to storage.
 - [FSVolume.KernelCacheCoherencyType.writeThrough](fsvolume/kernelcachecoherencytype/writethrough.md)
   A type that indicates writes update cache and storage synchronously.
-### Initializers - generated
+### Initializers
 - [init?(rawValue: Int)](fsvolume/kernelcachecoherencytype/init(rawvalue:).md)
 
 ## Relationships

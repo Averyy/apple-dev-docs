@@ -8,7 +8,7 @@ Calculates the single-precision minimum of the corresponding values of two vecto
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst ?+
+- Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
 - visionOS ?+

@@ -8,7 +8,7 @@ Creates a movie that models the media at the specified URL.
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst ?+
+- Mac Catalyst 13.0+
 - macOS 10.10+
 - visionOS 1.0+
 - watchOS 6.0+

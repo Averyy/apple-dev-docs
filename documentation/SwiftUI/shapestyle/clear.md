@@ -17,6 +17,7 @@ A clear color suitable for use in UI elements.
 ## Declaration
 
 ```swift
+@export(implementation)
 static var clear: Color { get }
 ```
 

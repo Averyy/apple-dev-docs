@@ -8,7 +8,6 @@ Creates a new reference image from a Core Video pixel buffer.
 **Availability**:
 - iOS 11.3+
 - iPadOS 11.3+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

@@ -254,7 +254,7 @@ Explore samples that highlight new APIs featured at this year’s conference.
 - [Build Mail App Extensions](../MailKit/build-mail-app-extensions.md)
   Create app extensions that block content, perform message and composing actions, and help message security.
 - [Checking IDs with the Verifier API](../ProximityReader/checking-ids-with-the-verifier-api.md)
-  Read and verify mobile driver’s license information without any additional hardware.
+  Read and verify mobile driver’s license, photo ID, and National ID information without any additional hardware.
 - [Configuring a home automation device](../HomeKit/configuring-a-home-automation-device.md)
   Give users a familiar experience when they manage HomeKit accessories.
 - [Configuring the PencilKit tool picker](../PencilKit/configuring-the-pencilkit-tool-picker.md)
@@ -1246,6 +1246,8 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Use room tracking in visionOS to provide custom interactions with physical spaces.
 - [Canyon Crosser: Building a volumetric hike-planning app](../visionOS/canyon-crosser-building-a-volumetric-hike-planning-app.md)
   Create a hike planning app using SwiftUI and RealityKit.
+- [Chaparral Village: Building an immersive visionOS adventure game](../visionOS/chaparral-village-building-an-immersive-visionos-adventure-game.md)
+  Create an adventure game using SwiftUI, RealityKit, and Reality Composer Pro 3.
 - [Connecting iPadOS and visionOS apps over the local network](../visionOS/connecting-ipados-and-visionos-apps-over-the-local-network.md)
   Build an iPadOS companion app to control your visionOS app.
 - [Creating 2D shapes with SwiftUI](../visionOS/creating-2d-shapes-in-visionos-with-swiftui.md)
@@ -1264,6 +1266,8 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Display an interactive car model using gestures in a reality view.
 - [Creating SwiftUI windows in visionOS](../visionOS/creating-a-new-swiftui-window-in-visionos.md)
   Display and manage multiple SwiftUI windows in your visionOS app.
+- [Designing no-code games with Reality Composer Pro 3](../visionOS/designing-no-code-games-in-reality-composer-pro-3.md)
+  Build a video game in Reality Composer Pro without code using Script Graphs.
 - [Destination Video](../visionOS/destination-video.md)
   Leverage SwiftUI to build an immersive media experience in a multiplatform app.
 - [Diorama](../visionOS/diorama.md)
@@ -1306,6 +1310,8 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Create engaging, hands-free experiences based on barcodes in a person’s surroundings.
 - [Manipulating entities with solid collisions](../visionOS/manipulating-entities-with-solid-collisions.md)
   Extend the capabilities of your app by using entities, components, and systems to maintain solid collisions when manipulating entities.
+- [Monitoring fit and field of view coverage](../visionOS/monitoring-fit-and-field-of-view-coverage.md)
+  Respond to changes in fit and field of view coverage on Apple Vision Pro by using the Visual Fidelity API.
 - [Object tracking with Reality Composer Pro experiences](../visionOS/object-tracking-with-reality-composer-pro-experiences.md)
   Use object tracking in visionOS to attach digital content to real objects to create engaging experiences.
 - [Obscuring virtual items in a scene behind real-world items](../visionOS/obscuring-virtual-items-in-a-scene-behind-real-world-items.md)
@@ -1330,6 +1336,8 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Use hand-tracking anchors to display a visual representation of hand transforms in visionOS.
 - [Tracking specific points in world space](../visionOS/tracking-points-in-world-space.md)
   Retrieve the position and orientation of anchors your app stores in ARKit.
+- [Working with generic spatial accessories](../visionOS/working-with-generic-spatial-accessories.md)
+  Let people place digital replicas of a generic spatial accessory by tracking the accessory with ARKit.
 ### Watch
 - [Building a productivity app for Apple Watch](../watchOS-Apps/building-a-productivity-app-for-apple-watch.md)
   Create a watch app to manage and share a task list and visualize the status with a chart.

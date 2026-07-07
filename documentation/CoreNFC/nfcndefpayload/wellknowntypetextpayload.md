@@ -8,7 +8,7 @@ Returns the text and locale of a valid Well Known Type Text payload.
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst ?+
+- Mac Catalyst 13.0+
 
 ## Declaration
 

@@ -75,9 +75,9 @@ struct ContentView: View {
 - [init(label: () -> Label, description: () -> Description, actions: () -> Actions)](contentunavailableview/init(label:description:actions:).md)
   Creates an interface, consisting of a label and additional content, that you display when the content of your app is unavailable to users.
 - [init(_:image:description:)](contentunavailableview/init(_:image:description:).md)
-  Creates an interface, consisting of a title generated from a localized string, an image and additional content, that you display when the content of your app is unavailable to users.
+  Creates an interface, consisting of a title generated from a localized string resource, an image and additional content, that you display when the content of your app is unavailable to users.
 - [init(_:systemImage:description:)](contentunavailableview/init(_:systemimage:description:).md)
-  Creates an interface, consisting of a title generated from a localized string, a system icon image and additional content, that you display when the content of your app is unavailable to users.
+  Creates an interface, consisting of a title generated from a localized string resource, a system icon image and additional content, that you display when the content of your app is unavailable to users.
 ### Supporting types
 - [struct SearchUnavailableContent](searchunavailablecontent.md)
   A structure that represents the body of a static placeholder search view.

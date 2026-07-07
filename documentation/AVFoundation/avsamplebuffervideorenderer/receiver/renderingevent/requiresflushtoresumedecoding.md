@@ -8,7 +8,7 @@ The Receiver requires a flush to continue enqueuing samples.
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst ?+
+- Mac Catalyst 27.0+ (Beta)
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
@@ -16,7 +16,7 @@ The Receiver requires a flush to continue enqueuing samples.
 ## Declaration
 
 ```swift
-case requiresFlushToResumeDecoding((any Error)?)
+case requiresFlushToResumeDecoding(any Error)
 ```
 
 ## See Also

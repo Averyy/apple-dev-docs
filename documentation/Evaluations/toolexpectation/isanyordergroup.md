@@ -11,6 +11,7 @@ A Boolean value that indicates whether this expectation represents a group of ex
 - Mac Catalyst 27.0+ (Beta)
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 

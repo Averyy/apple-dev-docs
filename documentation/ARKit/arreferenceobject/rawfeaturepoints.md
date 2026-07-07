@@ -8,7 +8,6 @@ A coarse representation of the space-mapping data contained in the reference obj
 **Availability**:
 - iOS 12.0+
 - iPadOS 12.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

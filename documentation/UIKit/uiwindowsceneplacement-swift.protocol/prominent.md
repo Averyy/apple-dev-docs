@@ -8,7 +8,7 @@ Creates a placement that indicates the system should present the window more pro
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst ?+
+- Mac Catalyst 17.0+
 - tvOS ?+
 - visionOS ?+
 

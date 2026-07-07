@@ -17,6 +17,7 @@ A text field style with a system-defined border whose shape is determined by the
 ## Declaration
 
 ```swift
+@export(implementation)
 static var bordered: BorderedTextFieldStyle { get }
 ```
 

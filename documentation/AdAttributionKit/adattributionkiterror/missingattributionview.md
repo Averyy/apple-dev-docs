@@ -8,7 +8,7 @@ The attribution failed due to a missing attribution view.
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
-- Mac Catalyst ?+
+- Mac Catalyst 17.4+
 
 ## Declaration
 

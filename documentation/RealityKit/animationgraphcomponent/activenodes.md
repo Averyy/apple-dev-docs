@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: property
 
-All nodes that were active during the last graph evaluation tick.
+Every node that contributed to the most recent graph evaluation tick.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -19,18 +19,22 @@ All nodes that were active during the last graph evaluation tick.
 var activeNodes: [any AnimationGraphComponent.ActiveNode] { get }
 ```
 
+#### Discussion
+
+The returned array is a snapshot — its element type is `any` [`AnimationGraphComponent.ActiveNode`](animationgraphcomponent/activenode.md), so each entry exposes only the fields common to all node kinds. To inspect node-kind- specific state, downcast each element to [`AnimationGraphComponent.ActiveStateMachineNode`](animationgraphcomponent/activestatemachinenode.md) or [`AnimationGraphComponent.ActiveClipNode`](animationgraphcomponent/activeclipnode.md), or iterate [`activeStateMachineNodes`](animationgraphcomponent/activestatemachinenodes.md) or [`activeClipNodes`](animationgraphcomponent/activeclipnodes.md) for the same view filtered to a single kind.
+
 ## See Also
 
 - [AnimationGraphComponent.ActiveNode](animationgraphcomponent/activenode.md)
-  A protocol providing common debug information for any active node within a compiled animation graph.
+  Common debug information for any node that was active during the most recent graph evaluation tick.
 - [var activeClipNodes: [AnimationGraphComponent.ActiveClipNode]](animationgraphcomponent/activeclipnodes.md)
-  The animation clip nodes that were active during the last graph evaluation tick.
+  The animation clip nodes that were active during the most recent graph evaluation tick.
 - [AnimationGraphComponent.ActiveClipNode](animationgraphcomponent/activeclipnode.md)
-  Contains clip debug information for an active animation clip node within a compiled animation graph, used for inspection and debugging.
+  Debug information for an active animation clip node within the graph.
 - [var activeStateMachineNodes: [AnimationGraphComponent.ActiveStateMachineNode]](animationgraphcomponent/activestatemachinenodes.md)
-  The state machine nodes that were active during the last graph evaluation tick.
+  The state machine nodes that were active during the most recent graph evaluation tick.
 - [AnimationGraphComponent.ActiveStateMachineNode](animationgraphcomponent/activestatemachinenode.md)
-  Contains state machine debug information for an active state machine node within a compiled animation graph, used for inspection and debugging.
+  Debug information for an active state machine node within the graph.
 
 
 ---

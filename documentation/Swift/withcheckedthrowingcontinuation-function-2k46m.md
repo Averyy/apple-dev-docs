@@ -47,6 +47,24 @@ The checked continuation offers detection of misuse, and dropping the last refer
 - `function`: A string identifying the declaration that is the notional source for the continuation, used to identify the continuation in runtime diagnostics related to misuse of this continuation.
 - `body`: A closure that takes a `CheckedContinuation` parameter.
 
+## See Also
+
+- [struct Continuation](continuation.md)
+  A mechanism to interface between synchronous and asynchronous code, which enforces that the continuation is resumed exactly once.
+- [func withContinuation<Success>(of: Success.Type, (consuming Continuation<Success, Never>) -> Void) async -> sending Success](withcontinuation(of:_:).md)
+  Invokes the passed in closure with a non-copyable continuation for the current task.
+- [func withContinuation<Success, Failure>(of: Success.Type, throwing: Failure.Type, (consuming Continuation<Success, Failure>) -> Void) async throws(Failure) -> sending Success](withcontinuation(of:throwing:_:).md)
+  Invokes the passed in closure with a non-copyable continuation for the current task.
+- [struct CheckedContinuation](checkedcontinuation.md)
+  A mechanism to interface between synchronous and asynchronous code, logging correctness violations.
+- [func withCheckedContinuation<T>(function: String, (CheckedContinuation<T, Never>) -> Void) async -> sending T](withcheckedcontinuation(function:_:).md)
+  Invokes the passed in closure with a checked continuation for the current task.
+- [func withCheckedThrowingContinuation<T>(function: String, (CheckedContinuation<T, any Error>) -> Void) async throws -> sending T](withcheckedthrowingcontinuation(function:_:)-13yf6.md)
+- [struct UnsafeContinuation](unsafecontinuation.md)
+  A mechanism to interface between synchronous and asynchronous code, without correctness checking.
+- [func withUnsafeContinuation<T>((UnsafeContinuation<T, Never>) -> Void) async -> sending T](withunsafecontinuation(_:).md)
+  Invokes the passed in closure with a unsafe continuation for the current task.
+
 
 ---
 

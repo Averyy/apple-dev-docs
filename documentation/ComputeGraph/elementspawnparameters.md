@@ -1,6 +1,6 @@
 # ElementSpawnParameters
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: struct
 
 Parameters used to configure the initial state of a particle when it’s spawned in the simulation.
@@ -12,7 +12,7 @@ Parameters used to configure the initial state of a particle when it’s spawned
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 ## Declaration
 

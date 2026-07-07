@@ -8,7 +8,6 @@ The Core AI architecture name of the current device.
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 
@@ -25,6 +24,11 @@ static var deviceArchitectureName: String { get }
 #### Discussion
 
 When compiling model assets ahead of time with `xcrun coreai-build compile`, the toolchain produces artifacts for specific device architectures. Use this property to discover which compiled asset matches the current device.
+
+## See Also
+
+- [var bookmarkData: Data](aimodel/bookmarkdata.md)
+  Create a bookmark for this AIModel’s cached specialized asset entry as serialized data.
 
 
 ---

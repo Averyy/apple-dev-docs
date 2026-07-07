@@ -1,13 +1,13 @@
 # module
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: namespace
 
 Mutate per-particle state with operations such as setPosition, addPosition, setVelocity, setColor, setSize, and setLifetime.
 
 **Availability**:
-- macOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- macOS ?+
+- Reality Composer Pro ?+
 
 ## Topics
 

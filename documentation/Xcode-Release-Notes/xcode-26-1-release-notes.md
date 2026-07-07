@@ -6,7 +6,7 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-Xcode 26.1.1 includes Swift 6.2.1 and SDKs for iOS 26.1, iPadOS 26.1, tvOS 26.1, macOS 26.1, and visionOS 26.1. Xcode 26.1.1 supports on-device debugging in iOS 15 and later, tvOS 15 and later, watchOS 8 and later, and visionOS. Xcode 26.1.1 requires a Mac running macOS Sequoia 15.6 or later.
+Xcode 26.1.1 includes Swift 6.2.1 and SDKs for iOS 26.1, iPadOS 26.1, tvOS 26.1, watchOS 26.1, macOS 26.1, and visionOS 26.1. Xcode 26.1.1 supports on-device debugging in iOS 15 and later, tvOS 15 and later, watchOS 8 and later, and visionOS. Xcode 26.1.1 requires a Mac running macOS Sequoia 15.6 or later.
 
 ##### General
 

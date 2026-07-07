@@ -17,8 +17,8 @@ Changes the announcement provided by accessibility technologies when a user scro
 ## Declaration
 
 ```swift
-nonisolated
-func accessibilityScrollStatus(_ status: LocalizedStringResource, isEnabled: Bool = true) -> ModifiedContent<Self, AccessibilityAttachmentModifier>
+@export(implementation)
+nonisolated func accessibilityScrollStatus(_ status: LocalizedStringResource, isEnabled: Bool = true) -> ModifiedContent<Self, AccessibilityAttachmentModifier>
 ```
 
 #### Discussion

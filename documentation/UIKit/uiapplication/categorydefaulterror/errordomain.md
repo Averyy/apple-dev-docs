@@ -8,7 +8,6 @@ A string that indicates that an error happened when the system attempted to dete
 **Availability**:
 - iOS 18.2+
 - iPadOS 18.2+
-- Mac Catalyst 18.2+
 
 ## Declaration
 

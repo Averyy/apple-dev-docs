@@ -18,7 +18,7 @@ Returns a transition that scales the view.
 
 ```swift
 @MainActor
-@preconcurrency static var scale: ScaleTransition { get }
+@export(implementation) @preconcurrency static var scale: ScaleTransition { get }
 ```
 
 ## See Also

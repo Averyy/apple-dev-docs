@@ -11,6 +11,7 @@ Errors the framework throws when parsing evaluation results.
 - Mac Catalyst ?+
 - macOS ?+
 - visionOS ?+
+- watchOS ?+
 
 ## Declaration
 
@@ -51,6 +52,10 @@ do {
 
 - [enum EvaluationError](evaluationerror.md)
   Errors thrown during an evaluation run.
+- [enum EvaluatorError](evaluatorerror.md)
+  A typed reason why an evaluator failed while scoring a produced subject.
+- [enum SubjectInferenceError](subjectinferenceerror.md)
+  A typed reason why `subject(from:)` failed to produce a subject for a sample.
 
 
 ---

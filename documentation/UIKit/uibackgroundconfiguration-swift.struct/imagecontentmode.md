@@ -8,7 +8,7 @@ A property that determines the layout of a background image in a view when its b
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst ?+
+- Mac Catalyst 15.0+
 - tvOS 15.0+
 - visionOS ?+
 

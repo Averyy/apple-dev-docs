@@ -8,7 +8,6 @@ The distance, in meters, from the camera to the detected surface.
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

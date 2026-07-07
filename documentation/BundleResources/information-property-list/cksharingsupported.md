@@ -8,7 +8,6 @@ A Boolean value that indicates your app supports CloudKit Sharing.
 **Availability**:
 - iOS 10.0+
 - iPadOS 10.0+
-- Mac Catalyst 10.0+
 - macOS 10.12+
 - visionOS 1.0+
 

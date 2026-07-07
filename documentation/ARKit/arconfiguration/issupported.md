@@ -8,7 +8,6 @@ A Boolean value indicating whether the current device supports this session conf
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

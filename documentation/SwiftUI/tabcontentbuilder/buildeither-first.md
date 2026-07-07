@@ -15,6 +15,7 @@
 ## Declaration
 
 ```swift
+@export(implementation)
 static func buildEither<T, F>(first: T) -> _ConditionalContent<T, F> where TabValue == T.TabValue, T : TabContent, F : TabContent, T.TabValue == F.TabValue
 ```
 

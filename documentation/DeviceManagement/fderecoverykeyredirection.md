@@ -39,8 +39,8 @@ Note these cautions:
 
 ## Properties
 
-- `EncryptCertPayloadUUID` (string) *(required)*: The UUID of a payload within the same profile that contains a certificate used to encrypt the recovery key when it’s sent to the redirected URL. The referenced payload must be of type `com.apple.security.pkcs1`. Deprecated: macOS 10.13+
-- `RedirectURL` (string) *(required)*: The URL to which FDE recovery keys should be sent instead of to Apple. The URL must begin with https://. Deprecated: macOS 10.13+
+- `EncryptCertPayloadUUID` (string) *(required)*: The UUID of a payload within the same profile that contains a certificate used to encrypt the recovery key when the device sends it to the redirected URL. The referenced payload must be of type `com.apple.security.pkcs1`. Deprecated: macOS 10.13+
+- `RedirectURL` (string) *(required)*: The URL to which the device sends FDE recovery keys instead of to Apple. The URL must begin with https://. Deprecated: macOS 10.13+
 
 ## See Also
 

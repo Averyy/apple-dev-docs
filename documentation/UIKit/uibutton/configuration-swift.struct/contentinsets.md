@@ -8,7 +8,7 @@ The distance from the button’s content area to its bounds.
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst ?+
+- Mac Catalyst 15.0+
 - tvOS 15.0+
 - visionOS ?+
 

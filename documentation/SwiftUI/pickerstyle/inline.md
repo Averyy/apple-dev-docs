@@ -17,6 +17,7 @@ A `PickerStyle` where each option is displayed inline with other views in the cu
 ## Declaration
 
 ```swift
+@export(implementation)
 static var inline: InlinePickerStyle { get }
 ```
 

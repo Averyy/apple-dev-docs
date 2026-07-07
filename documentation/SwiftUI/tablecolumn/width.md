@@ -15,8 +15,8 @@ Sets the column’s width.
 ## Declaration
 
 ```swift
-nonisolated
-func width() -> TableColumn<RowValue, Sort, Content, Label>
+@export(implementation)
+nonisolated func width() -> TableColumn<RowValue, Sort, Content, Label>
 ```
 
 ## See Also

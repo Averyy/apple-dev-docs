@@ -65,7 +65,17 @@ A domain is a reverse-DNS string that identifies one functional area of your app
 
 At most one state is active per domain at a time. Each state has a *label* (a short string like `"High"` or `"Low"`) and optional structured metadata. Keep the number of distinct states small. For example, a game graphics settings domain might use fixed labels like `"Low"`, `"Medium"`, `"High"`, and `"Ultra"`.
 
-Avoid embedding dynamic values directly in a label or stable metadata string, as diagnostic tools aggregate metrics for each unique combination of label and stable metadata. A value like `"Score-\(score)"` creates a distinct state for every possible value of the variable `score`. A score that spans hundreds of values fragments your data into hundreds of buckets, each too small to be meaningful. Prefer a small, fixed set of labels like `"Low"`, `"Medium"`, and `"High"`, and encode the raw value in the volatile metadata.
+Avoid embedding dynamic values directly in a label or stable metadata string, as diagnostic tools aggregate metrics for each unique combination of label and stable metadata. A value like `"Score-\(score)"` creates a distinct state for every value of `score`, fragmenting your data into buckets too small to be meaningful. Prefer a small, fixed set of labels like `"Low"`, `"Medium"`, and `"High"`, and encode the raw value in the volatile metadata.
+
+#### Use Statereporting in App Extensions
+
+You can call [`reporter(for:stableMetadata:volatileMetadata:)`](statereporter/reporter(for:stablemetadata:volatilemetadata:).md) from an app extension, using the same pattern as in your main app. Create or obtain a reporter for the appropriate domain, then call [`reportTransition(to:stableMetadata:volatileMetadata:)`](statereporter/reporttransition(to:stablemetadata:volatilemetadata:).md) at state transitions within the extension.
+
+Because metric data isn’t available for app extensions, state transitions emitted from an extension don’t appear in a [`MetricReport`](https://developer.apple.com/documentation/MetricKit/MetricReport).
+
+Diagnostic reports can include extension state. States emitted by the extension appear in [`states`](https://developer.apple.com/documentation/MetricKit/DiagnosticReport/Environment-swift.struct/states), giving diagnostic tools the full state context at the time of the event. The system delivers diagnostic reports to the main app, not the extension itself.
+
+The extension must register its domains with [`MetricManager`](https://developer.apple.com/documentation/MetricKit/MetricManager) directly. Create a `MetricManager` instance within the extension and pass the relevant domains to [`enabledStateReportingDomains`](https://developer.apple.com/documentation/MetricKit/MetricManager/enabledStateReportingDomains). The extension must both register its domains and emit states and signposts.
 
 #### Define Reportable Metadata
 

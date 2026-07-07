@@ -8,7 +8,6 @@ A protocol for an extension that handles cryptographic key exchange with your ac
 **Availability**:
 - iOS 26.5+
 - iPadOS 26.5+
-- Mac Catalyst 26.5+
 
 ## Declaration
 

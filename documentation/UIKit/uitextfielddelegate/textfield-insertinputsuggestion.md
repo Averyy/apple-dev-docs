@@ -8,7 +8,6 @@ Tells the delegate when the keyboard delivers an input suggestion.
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
-- Mac Catalyst 18.4+
 
 ## Declaration
 

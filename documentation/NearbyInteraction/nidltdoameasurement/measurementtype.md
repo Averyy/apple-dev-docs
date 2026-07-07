@@ -8,7 +8,6 @@ The type of anchor message that the measurement derives from.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst 26.0+
 
 ## Declaration
 

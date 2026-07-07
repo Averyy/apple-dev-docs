@@ -8,7 +8,7 @@ Creates the default configuration you use to style a grouped list header or foot
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst ?+
+- Mac Catalyst 14.0+
 - tvOS 14.0+
 - visionOS ?+
 

@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: init
 
-Creates a sortable column with text label.
+Creates a sortable column that generates its label from a localized string resource.
 
 **Availability**:
 - iOS 16.6+
@@ -15,28 +15,28 @@ Creates a sortable column with text label.
 ## Declaration
 
 ```swift
-nonisolated
-init(_ text: Text, sortUsing comparator: Sort, @ContentBuilder content: @escaping (RowValue) -> Content)
+@export(implementation)
+nonisolated init(_ titleResource: LocalizedStringResource, sortUsing comparator: Sort, @ContentBuilder content: @escaping (RowValue) -> Content)
 ```
 
 #### Discussion
 
-This initializer creates a [`Text`](text.md) view for you, and treats the title similar to [`init(_:)`](text/init(_:).md). For more information about localizing strings, see [`Text`](text.md).
+This initializer creates a [`Text`](text.md) view on your behalf. For more information about localizing strings, see[`Text`](text.md).
 
 ## Parameters
 
-- `text`: The column’s label.
+- `titleResource`: Text resource for the column’s localized title.
 - `comparator`: The prototype sort comparator to use when representing this column. When a person taps or clicks the column header, the containing table’s `sortOrder` incorporates this value, potentially with a flipped order.
 - `content`: The view content to display for each row in a table.
 
 ## See Also
 
 - [init(_:value:content:)](tablecolumn/init(_:value:content:).md)
-  Creates a sortable column for Boolean values with a text label.
+  Creates a sortable column for Boolean values that generates its label from a localized string resource.
 - [init(_:value:comparator:)](tablecolumn/init(_:value:comparator:).md)
-  Creates a sortable column that displays a string property and has a text label.
+  Creates a sortable column that displays a string property, and generates its label from a localized string resource.
 - [init(_:value:comparator:content:)](tablecolumn/init(_:value:comparator:content:).md)
-  Creates a sortable column with a text label.
+  Creates a sortable column that generates its label from a localized string resource.
 
 
 ---

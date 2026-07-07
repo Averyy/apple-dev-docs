@@ -50,7 +50,7 @@ extension MyCustomType: Transition {
   The type used to drive selection for the containing tab view.
 ### Configuring tab content
 - [func badge(_:)](tabcontent/badge(_:).md)
-  Generates a badge for a tab from an integer value.
+  Generates a badge for the tab from a localized string resource.
 - [func contextMenu<M>(menuItems: () -> M) -> some TabContent<Self.TabValue>
 ](tabcontent/contextmenu(menuitems:).md)
   Adds a context menu to a tab.

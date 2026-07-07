@@ -54,9 +54,9 @@ In iOS, when using a text field in a navigation title, SwiftUI creates a button 
 ## See Also
 
 - [func navigationTitle(_:)](view/navigationtitle(_:).md)
-  Configures the view’s title for purposes of navigation, using a string binding.
+  Configures the view’s title for purposes of navigation, using a localized string resource.
 - [func navigationSubtitle(_:)](view/navigationsubtitle(_:).md)
-  Configures the view’s subtitle for purposes of navigation.
+  Configures the view’s subtitle for purposes of navigation, using a localized string resource.
 
 
 ---

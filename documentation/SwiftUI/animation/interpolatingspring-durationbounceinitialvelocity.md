@@ -17,6 +17,7 @@ An interpolating spring animation that uses a damped spring model to produce val
 ## Declaration
 
 ```swift
+@export(implementation)
 static func interpolatingSpring(duration: TimeInterval = 0.5, bounce: Double = 0.0, initialVelocity: Double = 0.0) -> Animation
 ```
 

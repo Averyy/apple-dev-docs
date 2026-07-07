@@ -8,7 +8,7 @@ The time ranges for the segment that have media data is readily available.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst ?+
+- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+

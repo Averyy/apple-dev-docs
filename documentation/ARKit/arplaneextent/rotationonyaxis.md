@@ -8,7 +8,6 @@ A radian value that indicates a plane’s y-axis orientation.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
 
 ## Declaration
 

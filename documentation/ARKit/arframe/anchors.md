@@ -8,7 +8,6 @@ The list of anchors representing positions tracked or objects detected in the sc
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

@@ -8,7 +8,6 @@ Responses to the Live Activity forwarding permission prompt.
 **Availability**:
 - iOS 26.5+
 - iPadOS 26.5+
-- Mac Catalyst 26.5+
 
 ## Declaration
 

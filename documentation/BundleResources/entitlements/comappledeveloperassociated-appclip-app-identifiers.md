@@ -8,7 +8,6 @@ A list of App Clip identifiers for an app with exactly one entry.
 **Availability**:
 - iOS 15.4+
 - iPadOS 15.4+
-- Mac Catalyst 15.4+
 
 
 

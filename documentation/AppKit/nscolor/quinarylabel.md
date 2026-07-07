@@ -9,7 +9,8 @@
 ## Declaration
 
 ```swift
-class var quinaryLabel: NSColor { get }
+@backDeployed(before: macOS 27.0)
+static var quinaryLabel: NSColor { get }
 ```
 
 ## See Also

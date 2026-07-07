@@ -27,14 +27,14 @@ By default, the safe area adjusts as bars minimize, allowing content to reflow i
 
 Currently, only [`navigationBar`](toolbarplacement/navigationbar.md) supports customizing the safe area adjustment.
 
-Use this modifier alongside [`toolbarMinimizeBehavior(_:for:)`](view/toolbarminimizebehavior(_:for:).md):
+Use this modifier alongside [`toolbarMinimizationBehavior(_:for:)`](view/toolbarminimizationbehavior(_:for:).md):
 
 ```swift
 NavigationStack {
     ScrollView {
         // ...
     }
-    .toolbarMinimizeBehavior(
+    .toolbarMinimizationBehavior(
         .onScrollDown, for: .navigationBar)
     .toolbarMinimizationSafeAreaAdjustment(
         .disabled, for: .navigationBar)
@@ -48,10 +48,6 @@ NavigationStack {
 
 ## See Also
 
-- [func toolbarMinimizeBehavior(ToolbarMinimizeBehavior, for: ToolbarPlacement...) -> some View](view/toolbarminimizebehavior(_:for:).md)
-  Sets the minimize behavior for the specified bars.
-- [struct ToolbarMinimizeBehavior](toolbarminimizebehavior.md)
-  The minimize behavior of a toolbar.
 - [struct ToolbarMinimizationSafeAreaAdjustment](toolbarminimizationsafeareaadjustment.md)
   The safe area adjustment during toolbar minimization.
 

@@ -17,6 +17,7 @@ A style that reflects the current tint color.
 ## Declaration
 
 ```swift
+@export(implementation)
 static var tint: TintShapeStyle { get }
 ```
 

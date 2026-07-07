@@ -1,4 +1,4 @@
 Completed scraping Trust Insights!
-Total pages scraped: 0
-Pages skipped (unchanged): 86
+Total pages scraped: 86
+Pages skipped (unchanged): 1
 Pages failed: 0

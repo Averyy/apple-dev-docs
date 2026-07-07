@@ -28,7 +28,7 @@ The MDM server returns this response when it doesn’t recognize the device maki
 
 ## Properties
 
-- `code` (string) *(required)*: Indicates that the device is not recognized by the server. This causes the device to unenroll from MDM.
+- `code` (string) *(required)*: Indicates that the device isn’t recognized by the server. This causes the device to unenroll from MDM.
 - `description` (string): A description of the error. Only use this for logging purposes and don’t display it to the user.
 - `message` (string): A description of the error to display to the user.
 

@@ -8,7 +8,7 @@ The notification the delegate posts after Spotlight updates the index.
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst ?+
+- Mac Catalyst 15.0+
 - macOS 12.0+
 - visionOS ?+
 

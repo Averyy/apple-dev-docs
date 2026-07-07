@@ -12,6 +12,8 @@ Each [`ModelSample`](modelsample.md) pairs a prompt the model receives with an o
 
 The framework adds a `makeSamples(_:targetCount:sessionProvider:validator:)` method to any array of `ModelSample` values. Call this method with a prompt that describes what to generate, and it returns new samples as an asynchronous stream.
 
+To see a command-line generator that expands a curated dataset for a real feature, see [`Book Tracker: Using Evaluations to evaluate an intelligent feature`](book-tracker-using-evaluations-to-evaluate-an-intelligent-feature.md).
+
 #### Create Your Initial Dataset
 
 Start by creating your initial dataset of samples. For guidance on dataset design principles, including golden sets, user profiles, and challenge cases, see [`Designing datasets to test your feature`](designing-evaluation-datasets.md). Include an optional *expected* value as a benchmark if your evaluation compares model output against a known answer. For evaluations that score output without a reference answer, such as model-as-judge assessments of tone or fluency, omit the expected value and generate prompt-only samples.

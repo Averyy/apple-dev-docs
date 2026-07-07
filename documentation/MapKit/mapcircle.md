@@ -8,7 +8,7 @@ A circular overlay with a configurable radius that you center on a geographic co
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst ?+
+- Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
 - visionOS ?+

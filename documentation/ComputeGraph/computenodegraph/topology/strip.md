@@ -1,6 +1,6 @@
 # ComputeNodeGraph.Topology.strip
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: case
 
 Elements share vertices in a triangle-strip winding order. Requires a simulation with a grouping of `strips`.
@@ -12,7 +12,7 @@ Elements share vertices in a triangle-strip winding order. Requires a simulation
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 ## Declaration
 

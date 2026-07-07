@@ -8,7 +8,7 @@ A type that uses a custom intent to provide a value to a control template.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst ?+
+- Mac Catalyst 18.0+
 - macOS 26.0+
 - watchOS 26.0+
 

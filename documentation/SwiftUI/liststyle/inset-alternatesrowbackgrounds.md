@@ -11,6 +11,7 @@ The list style that describes the behavior and appearance of an inset list with 
 ## Declaration
 
 ```swift
+@export(implementation)
 static func inset(alternatesRowBackgrounds: Bool) -> InsetListStyle
 ```
 

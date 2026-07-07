@@ -83,7 +83,7 @@ Reports a removed peer.
   The status item that reports information about the Content Cache service.
 - [object StatusContentCacheParents](statuscontentcacheparents.md)
   The status item that reports information about the Content Cache service parent caches.
-- [object StatusContentCacheService](statuscontentcacheservice.md)
+- [object StatusContentCacheStatus](statuscontentcachestatus.md)
   The status item that reports the status of the Content Cache service.
 
 

@@ -8,7 +8,7 @@ A type that uniquely identifies a specific instance of an app entity.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst ?+
+- Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
 - visionOS ?+
@@ -101,7 +101,6 @@ The stable identifier is NOT used for equality or hashing - two `EntityIdentifie
   A unique identifier for an app entity or transient app entity type within an application bundle.
 - [protocol AppEntityAnnotatable](appentityannotatable.md)
   An interface that system types adopt and use to manage their relationship to app entities.
-- [struct AppEntityIdentifier](appentityidentifier.md)
 
 
 ---

@@ -8,7 +8,6 @@ A dictionary that declares which media sharing extension protocols an app suppor
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 
 
 

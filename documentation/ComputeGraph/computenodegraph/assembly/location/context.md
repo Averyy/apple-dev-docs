@@ -1,6 +1,6 @@
 # ComputeNodeGraph.Assembly.Location.context
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: case
 
 Value is a context type
@@ -12,7 +12,7 @@ Value is a context type
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 ## Declaration
 

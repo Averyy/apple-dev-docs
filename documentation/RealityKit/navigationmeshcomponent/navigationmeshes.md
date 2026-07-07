@@ -3,6 +3,8 @@
 **Framework**: RealityKit  
 **Kind**: property
 
+The set of NavigationMeshResources.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)

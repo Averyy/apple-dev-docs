@@ -17,7 +17,7 @@ The default gauge view style in the current context of the view being styled.
 
 ```swift
 @MainActor
-@preconcurrency static var automatic: DefaultGaugeStyle { get }
+@export(implementation) @preconcurrency static var automatic: DefaultGaugeStyle { get }
 ```
 
 

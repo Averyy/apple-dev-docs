@@ -1,6 +1,6 @@
 # StripOrientation.deriveFromYAxis
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: case
 
 Derive the strip’s orientation from neighboring points and `axisY` float3 parameter
@@ -12,7 +12,7 @@ Derive the strip’s orientation from neighboring points and `axisY` float3 para
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 ## Declaration
 

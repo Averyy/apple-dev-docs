@@ -8,7 +8,6 @@ The size of the world map’s space-mapping data, relative to the world coordina
 **Availability**:
 - iOS 12.0+
 - iPadOS 12.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

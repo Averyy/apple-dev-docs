@@ -8,7 +8,7 @@ A flag that indicates whether to receive network scan results.
 **Availability**:
 - iOS 16.4+
 - iPadOS 16.4+
-- Mac Catalyst ?+
+- Mac Catalyst 16.4+
 - macOS 14.0+
 - visionOS ?+
 

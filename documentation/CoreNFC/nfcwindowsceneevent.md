@@ -8,7 +8,7 @@ An NFC-related event that your app uses to update its user interface.
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
-- Mac Catalyst ?+
+- Mac Catalyst 17.4+
 
 ## Declaration
 

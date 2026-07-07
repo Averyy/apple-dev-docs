@@ -8,7 +8,7 @@ Properties to configure text for a content-unavailable view.
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst ?+
+- Mac Catalyst 17.0+
 - tvOS 17.0+
 - visionOS ?+
 

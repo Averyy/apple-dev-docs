@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: init
 
-Creates a text field with a preferred axis and a text label generated from a localized title string.
+Creates a text field with a preferred axis and a text label generated from a localized title string resource.
 
 **Availability**:
 - iOS 16.0+
@@ -17,8 +17,8 @@ Creates a text field with a preferred axis and a text label generated from a loc
 ## Declaration
 
 ```swift
-nonisolated
-init(_ titleKey: LocalizedStringKey, text: Binding<String>, prompt: Text?, axis: Axis)
+@export(implementation)
+nonisolated init(_ titleResource: LocalizedStringResource, text: Binding<String>, prompt: Text?, axis: Axis)
 ```
 
 #### Discussion
@@ -29,7 +29,7 @@ Use the [`onSubmit(of:_:)`](view/onsubmit(of:_:).md) modifier to invoke an actio
 
 ## Parameters
 
-- `titleKey`: The key for the localized title of the text field, describing its purpose.
+- `titleResource`: The localized title of the text field, describing its purpose.
 - `text`: The text to display and edit.
 - `prompt`: A `Text` representing the prompt of the text field which provides users with guidance on what to type into the text field.
 - `axis`: The axis in which to scroll text when it doesn’t fit in the available space.
@@ -37,7 +37,7 @@ Use the [`onSubmit(of:_:)`](view/onsubmit(of:_:).md) modifier to invoke an actio
 ## See Also
 
 - [init(_:text:axis:)](textfield/init(_:text:axis:).md)
-  Creates a text field with a preferred axis and a text label generated from a localized title string.
+  Creates a text field with a preferred axis and a text label generated from a localized title string resource.
 - [init(text: Binding<String>, prompt: Text?, axis: Axis, label: () -> Label)](textfield/init(text:prompt:axis:label:).md)
   Creates a text field with a preferred axis and a prompt generated from a `Text`.
 

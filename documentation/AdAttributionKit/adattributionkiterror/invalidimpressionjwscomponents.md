@@ -8,7 +8,7 @@ The attribution failed due to invalid JWS components.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst ?+
+- Mac Catalyst 18.0+
 
 ## Declaration
 

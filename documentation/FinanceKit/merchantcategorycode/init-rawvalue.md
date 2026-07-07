@@ -8,7 +8,6 @@ Creates a merchant category code with the provided value.
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
-- Mac Catalyst 17.4+
 
 ## Declaration
 

@@ -72,7 +72,6 @@ struct MutableSpan<Element> where Element : ~Copyable
   Exchange the elements at the two given indices.
 - [func update(repeating: consuming Element)](mutablespan/update(repeating:).md)
   Update every element of this span to the given value.
-- [func withBytes<R, E>((RawSpan) throws(E) -> R) throws(E) -> R](mutablespan/withbytes(_:).md)
 - [func withUnsafeBufferPointer<E, Result>((UnsafeBufferPointer<Element>) throws(E) -> Result) throws(E) -> Result](mutablespan/withunsafebufferpointer(_:).md)
   Call a closure with a pointer to the viewed contiguous storage.
 - [func withUnsafeBytes<E, Result>((UnsafeRawBufferPointer) throws(E) -> Result) throws(E) -> Result](mutablespan/withunsafebytes(_:).md)
@@ -114,6 +113,7 @@ struct MutableSpan<Element> where Element : ~Copyable
   A borrowed view into contiguous memory that contains validly-encoded UTF-8 code units.
 - [struct MutableRawSpan](mutablerawspan.md)
   `MutableRawSpan` represents a contiguous region of memory which contains initialized bytes.
+- [struct SpanIterator](spaniterator.md)
 
 
 ---

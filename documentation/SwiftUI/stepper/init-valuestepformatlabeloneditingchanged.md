@@ -57,7 +57,7 @@ struct StepperView: View {
 - [init<V>(value: Binding<V>, step: V.Stride, label: () -> Label, onEditingChanged: (Bool) -> Void)](stepper/init(value:step:label:oneditingchanged:).md)
   Creates a stepper configured to increment or decrement a binding to a value using a step value you provide.
 - [init(_:value:step:onEditingChanged:)](stepper/init(_:value:step:oneditingchanged:).md)
-  Creates a stepper with a title and configured to increment and decrement a binding to a value and step amount you provide.
+  Creates a stepper with a title key and configured to increment and decrement a binding to a value and step amount you provide.
 - [init(_:value:step:format:onEditingChanged:)](stepper/init(_:value:step:format:oneditingchanged:).md)
   Creates a stepper with a title key and configured to increment and decrement a binding to a value and step amount you provide, displaying its value with an applied format style.
 

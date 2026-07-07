@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: struct
 
-Options for writing an entity to a RealityKit file.
+A set of options that control how RealityKit writes entities to a reality file.
 
 **Availability**:
 - iOS 26.0+
@@ -19,13 +19,34 @@ Options for writing an entity to a RealityKit file.
 struct WriteOptions
 ```
 
+#### Overview
+
+Use [`Entity.WriteOptions`](entity/writeoptions.md) to tune the tradeoff between export speed, file size, and runtime cost when you save a scene to a `.reality` file.
+
+Pass a value of this type to [`write(to:options:)`](entity/write(to:options:).md) or [`write(to:options:)`](entity/configurationcatalog/write(to:options:).md) as an array literal containing one or more option values.
+
+```swift
+let combinedOptions: Entity.WriteOptions = [
+    .preferFastExport,
+    .preferSmallTextureFiles(quality: .standard)
+]
+```
+
+#### Expediting Reality File Exports
+
+The [`preferFastExport`](entity/writeoptions/preferfastexport.md) reduces the time required to write a reality file but produces a larger file on disk.
+
+#### Reducing Texture File Size
+
+The [`preferSmallTextureFiles(quality:)`](entity/writeoptions/prefersmalltexturefiles(quality:).md) method returns options that instruct RealityKit to encode textures using smaller file representations,  at the cost of longer load times and higher memory usage. Specify a [`Entity.WriteOptions.TextureQuality`](entity/writeoptions/texturequality.md) level to control the tradeoff between visual fidelity and file size.
+
 ## Topics
 
 ### Configuring export options
 - [static var preferFastExport: Entity.WriteOptions](entity/writeoptions/preferfastexport.md)
-  Expedite the reality file export when possible. This may disable reality file compression, resulting in larger file size.
+  Expedite the reality file export when possible.
 - [static func preferSmallTextureFiles(quality: Entity.WriteOptions.TextureQuality) -> Entity.WriteOptions](entity/writeoptions/prefersmalltexturefiles(quality:).md)
-  Reduce textures’ file size.
+  Reduce textures’ file size while preserving its dimensions.
 - [Entity.WriteOptions.TextureQuality](entity/writeoptions/texturequality.md)
   A texture quality level.
 

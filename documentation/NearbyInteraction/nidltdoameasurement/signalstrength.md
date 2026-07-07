@@ -8,7 +8,6 @@ A value that represents the received signal strength, in dBm, from the anchor th
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst 26.0+
 
 ## Declaration
 

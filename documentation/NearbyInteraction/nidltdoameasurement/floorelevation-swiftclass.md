@@ -8,7 +8,6 @@ An object that describes how high off the ground DL-TDOA anchors reside in the e
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 
 ## Declaration
 

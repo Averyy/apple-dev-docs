@@ -8,7 +8,6 @@ Returns a video format that the framework recommends for high-resolution-still-i
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
 
 ## Declaration
 

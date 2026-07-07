@@ -8,7 +8,6 @@ The platforms for which your app requires or you recommend a game controller.
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst 15.0+
 - visionOS 1.0+
 
 

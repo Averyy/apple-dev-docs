@@ -8,7 +8,6 @@ Searches for real-world objects or AR anchors in the captured camera image.
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

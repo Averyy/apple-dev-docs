@@ -8,7 +8,7 @@ Places the item in an optional group that a person can move, add to, or remove f
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst ?+
+- Mac Catalyst 16.0+
 - visionOS ?+
 
 ## Declaration

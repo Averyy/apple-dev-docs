@@ -6,7 +6,7 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-Xcode 26.5 includes Swift 6.3 and SDKs for iOS 26.5, iPadOS 26.5, tvOS 26.5, macOS 26.5, and visionOS 26.5. Xcode 26.5 supports on-device debugging in iOS 15 and later, tvOS 15 and later, watchOS 8 and later, and visionOS. Xcode 26.5 requires a Mac running macOS Tahoe 26.2 or later.
+Xcode 26.5 includes Swift 6.3 and SDKs for iOS 26.5, iPadOS 26.5, tvOS 26.5, watchOS 26.5, macOS 26.5, and visionOS 26.5. Xcode 26.5 supports on-device debugging in iOS 15 and later, tvOS 15 and later, watchOS 8 and later, and visionOS. Xcode 26.5 requires a Mac running macOS Tahoe 26.2 or later.
 
 ##### General
 

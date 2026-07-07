@@ -1,6 +1,6 @@
-# ComputeGraph
+# Compute Graph
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: module
 
 Build and run custom particle effects and compute simulations for RealityKit using a programmable node graph.
@@ -12,7 +12,7 @@ Build and run custom particle effects and compute simulations for RealityKit usi
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 #### Overview
 

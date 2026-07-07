@@ -28,13 +28,12 @@ A [`Core ML`](https://developer.apple.com/documentation/CoreML) model encapsulat
 ### Initializing a Model
 - [convenience init(for: MLModel) throws](vncoremlmodel/init(for:).md)
   Creates a model container to use with a Core ML request.
+- [convenience init(forMLModel: MLModel) throws](vncoremlmodel/init(formlmodel:).md)
 ### Providing Features
 - [var featureProvider: (any MLFeatureProvider)?](vncoremlmodel/featureprovider.md)
   An optional object to support inputs outside Vision.
 - [var inputImageFeatureName: String](vncoremlmodel/inputimagefeaturename.md)
   The name of the feature value that Vision sets from the request handler.
-### Initializers
-- [convenience init(forMLModel: MLModel) throws](vncoremlmodel/init(formlmodel:).md)
 
 ## Relationships
 

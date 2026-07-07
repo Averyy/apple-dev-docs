@@ -17,6 +17,7 @@ A circle centered on the frame of the view containing it.
 ## Declaration
 
 ```swift
+@export(implementation)
 static var circle: Circle { get }
 ```
 

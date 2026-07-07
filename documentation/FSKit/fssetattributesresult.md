@@ -3,7 +3,7 @@
 **Framework**: FSKit  
 **Kind**: class
 
-The result of a set-attributes call.
+The restlt of a set-attributes call.
 
 **Availability**:
 - macOS 27.0+ (Beta)

@@ -8,7 +8,7 @@ Applies an in-place flood-fill operation to the interleaved 4-channel, 8-bit-per
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst ?+
+- Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
 - visionOS ?+

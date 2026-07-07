@@ -17,6 +17,7 @@ Creates a section with the provided section content.
 ## Declaration
 
 ```swift
+@export(implementation)
 init(isExpanded: Binding<Bool>, @ContentBuilder content: () -> Content, @ContentBuilder header: () -> Parent)
 ```
 

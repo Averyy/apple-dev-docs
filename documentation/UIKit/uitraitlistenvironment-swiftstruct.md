@@ -8,7 +8,7 @@ A struct that represents the list environment trait.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst ?+
+- Mac Catalyst 18.0+
 - tvOS 18.0+
 - visionOS 2.0+
 

@@ -18,7 +18,7 @@ A label style that resolves its appearance automatically based on the current co
 
 ```swift
 @MainActor
-@preconcurrency static var automatic: DefaultLabelStyle { get }
+@export(implementation) @preconcurrency static var automatic: DefaultLabelStyle { get }
 ```
 
 ## See Also

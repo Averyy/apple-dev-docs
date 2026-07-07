@@ -8,7 +8,7 @@ Transforms an 32-bit-per-channel RGBA or ARGB buffer to an RGB buffer against an
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst ?+
+- Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
 - visionOS ?+

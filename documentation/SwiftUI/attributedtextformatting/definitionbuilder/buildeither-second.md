@@ -15,6 +15,7 @@
 ## Declaration
 
 ```swift
+@export(implementation)
 static func buildEither<T, F>(second: F) -> _ConditionalContent<T, F> where Scope == T.Scope, T : AttributedTextFormattingDefinition, F : AttributedTextFormattingDefinition, T.Scope == F.Scope
 ```
 

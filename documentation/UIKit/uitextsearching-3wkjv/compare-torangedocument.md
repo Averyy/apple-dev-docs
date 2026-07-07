@@ -9,7 +9,7 @@ Compares ranges from the set of matches the aggregator provides to determine nav
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst ?+
+- Mac Catalyst 16.0+
 - visionOS ?+
 
 ## Declaration

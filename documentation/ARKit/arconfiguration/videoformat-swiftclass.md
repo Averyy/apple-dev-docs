@@ -8,7 +8,6 @@ A video size and frame rate specification for use with an AR session.
 **Availability**:
 - iOS 11.3+
 - iPadOS 11.3+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

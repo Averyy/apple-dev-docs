@@ -8,7 +8,6 @@ Creates a vibrancy effect suitable for use with certain supporting text and temp
 **Availability**:
 - iOS 10.0+
 - iPadOS 10.0+
-- Mac Catalyst 10.0+
 
 ## Declaration
 

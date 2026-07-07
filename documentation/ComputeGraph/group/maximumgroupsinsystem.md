@@ -1,13 +1,13 @@
 # group::maximumGroupsInSystem
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: func
 
 Returns the maximum number of groups allowed in the particle system.
 
 **Availability**:
-- macOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- macOS ?+
+- Reality Composer Pro ?+
 
 ## Declaration
 

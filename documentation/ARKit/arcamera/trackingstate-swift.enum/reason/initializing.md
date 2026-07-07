@@ -8,7 +8,6 @@ The AR session has not gathered enough camera or motion data to provide tracking
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 11.0+
 
 ## Declaration
 

@@ -1,6 +1,6 @@
 # ComputeNodeGraph.Library
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: class
 
 A class defining a library of node definitions that can be added to a ComputeNodeGraph
@@ -12,7 +12,7 @@ A class defining a library of node definitions that can be added to a ComputeNod
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 ## Declaration
 
@@ -30,6 +30,7 @@ These nodes are functions implemented using the Metal Shading Language and annot
 
 ### Initializers
 - [init()](computenodegraph/library/init.md)
+  Creates a new empty library.
 - [convenience init?(bundle: Bundle)](computenodegraph/library/init(bundle:).md)
   Creates a library from the Metal default library in the given bundle, if available.
 - [convenience init(from: any MTLLibrary, bundleIdentifier: String?)](computenodegraph/library/init(from:bundleidentifier:).md)

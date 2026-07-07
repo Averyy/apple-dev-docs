@@ -8,7 +8,6 @@ Checks whether someone permits the system to forward Live Activities to the give
 **Availability**:
 - iOS 26.5+
 - iPadOS 26.5+
-- Mac Catalyst 26.5+
 
 ## Declaration
 

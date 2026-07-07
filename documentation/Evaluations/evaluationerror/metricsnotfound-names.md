@@ -11,6 +11,7 @@ One or more metric columns were not found in the evaluation results.
 - Mac Catalyst 27.0+ (Beta)
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -20,7 +21,7 @@ case metricsNotFound(names: [String])
 
 #### Discussion
 
-This occurs when [`MetricsAggregator`](metricsaggregator.md) references metrics that no evaluator produced during the run.
+The evaluation runner no longer throws this. When [`MetricsAggregator`](metricsaggregator.md) references a metric that no evaluator produced, the runner materializes it as an ignored column and logs a warning instead of failing the run. This case is deprecated and will be removed before general availability.
 
 
 ---

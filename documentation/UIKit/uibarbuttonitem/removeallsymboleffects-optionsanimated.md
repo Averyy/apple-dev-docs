@@ -8,7 +8,7 @@ Removes all symbol effects from the bar button item, using the specified options
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst ?+
+- Mac Catalyst 17.0+
 - tvOS 17.0+
 - visionOS ?+
 

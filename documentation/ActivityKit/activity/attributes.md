@@ -8,7 +8,6 @@ A set of attributes that describe a Live Activity and its content.
 **Availability**:
 - iOS 16.1+
 - iPadOS 16.1+
-- Mac Catalyst 16.1+
 
 ## Declaration
 

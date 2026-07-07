@@ -63,19 +63,12 @@ You can find out more about custom executors, by referring to the [`SerialExecut
   A thread-safe type whose values can be shared across arbitrary concurrent contexts without introducing a risk of data races.
 - [protocol Actor](actor.md)
   Common protocol to which all actors conform.
-- [typealias AnyActor](anyactor.md)
-  Common marker protocol providing a shared “base” for both (local) `Actor` and (potentially remote) `DistributedActor` types.
 - [actor MainActor](mainactor.md)
   A singleton actor whose executor is equivalent to the main dispatch queue.
 - [protocol SendableMetatype](sendablemetatype.md)
   A type whose metatype can be shared across arbitrary isolation domains without introducing a risk of data races.
-- [typealias ConcurrentValue](concurrentvalue.md)
-- [protocol UnsafeSendable](unsafesendable.md)
-  A type whose values can safely be passed across concurrency domains by copying, but which disables some safety checking at the conformance site.
-- [typealias UnsafeConcurrentValue](unsafeconcurrentvalue.md)
 - [macro isolation<T>() -> T](isolation().md)
   Produce a reference to the actor to which the enclosing code is isolated, or `nil` if the code is nonisolated.
-- [func extractIsolation<each Arg, Result>((repeat each Arg) async throws -> Result) -> (any Actor)?](extractisolation(_:).md)
 
 
 ---

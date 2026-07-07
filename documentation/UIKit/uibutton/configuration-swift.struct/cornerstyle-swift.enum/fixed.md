@@ -8,7 +8,7 @@ A style that uses the background corner radius without modification.
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst ?+
+- Mac Catalyst 15.0+
 - tvOS 15.0+
 - visionOS ?+
 

@@ -8,7 +8,6 @@ Deletes a credential on the Secure Element.
 **Availability**:
 - iOS 18.1+
 - iPadOS 18.1+
-- Mac Catalyst 18.1+
 
 ## Declaration
 

@@ -8,7 +8,7 @@ A property wrapper that notifies the system that a property value change has inv
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst ?+
+- Mac Catalyst 15.0+
 - tvOS 15.0+
 - visionOS ?+
 - Swift 5.1+

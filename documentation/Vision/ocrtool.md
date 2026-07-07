@@ -8,7 +8,6 @@ A tool that recognizes text in an image.
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 
@@ -38,7 +37,7 @@ let customTool = OCRTool(
 
 ## Topics
 
-### Initializers
+### Creating a tool
 - [init(name: String?, description: String?)](ocrtool/init(name:description:).md)
   Creates a tool for recognizing text in images.
 
@@ -48,6 +47,11 @@ let customTool = OCRTool(
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 - [Tool](../FoundationModels/Tool.md)
+
+## See Also
+
+- [struct BarcodeReaderTool](barcodereadertool.md)
+  A tool that scans machine-readable codes in an image.
 
 
 ---

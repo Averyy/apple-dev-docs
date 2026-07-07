@@ -1,13 +1,13 @@
 # orient_to_velocity
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: func
 
 Orient the particle by setting its `axisY` to the velocity’s current direction.
 
 **Availability**:
-- macOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- macOS ?+
+- Reality Composer Pro ?+
 
 ## Declaration
 

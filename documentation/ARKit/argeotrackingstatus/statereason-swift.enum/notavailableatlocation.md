@@ -8,7 +8,6 @@ The location doesn’t provide geotracking.
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
 
 ## Declaration
 

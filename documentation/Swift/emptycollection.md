@@ -26,8 +26,6 @@ struct EmptyCollection<Element>
 ### Initializers
 - [init()](emptycollection/init.md)
   Creates an instance.
-### Instance Methods
-- [func withBytes<R, E>((RawSpan) throws(E) -> R) throws(E) -> R](emptycollection/withbytes(_:).md)
 ### Default Implementations
 - [BidirectionalCollection Implementations](emptycollection/bidirectionalcollection-implementations.md)
 - [Collection Implementations](emptycollection/collection-implementations.md)

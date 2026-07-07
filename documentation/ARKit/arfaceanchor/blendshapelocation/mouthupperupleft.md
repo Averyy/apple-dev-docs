@@ -8,7 +8,6 @@ The coefficient describing upward movement of the upper lip on the left side.
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

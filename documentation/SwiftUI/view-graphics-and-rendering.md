@@ -33,7 +33,7 @@ For more information about using these effects in your app, see [`Drawing and gr
 - [func scaledToFit3D() -> some View](view/scaledtofit3d.md)
   Scales this view to fit its parent.
 - [func scaleEffect(_:anchor:)](view/scaleeffect(_:anchor:).md)
-  Scales this view’s rendered output by the given amount in both the horizontal and vertical directions, relative to an anchor point.
+  Scales this view uniformly by the specified factor, relative to an anchor point.
 - [func scaleEffect(x: CGFloat, y: CGFloat, anchor: UnitPoint) -> some View](view/scaleeffect(x:y:anchor:).md)
   Scales this view’s rendered output by the given horizontal and vertical amounts, relative to an anchor point.
 - [func scaleEffect(x: CGFloat, y: CGFloat, z: CGFloat, anchor: UnitPoint3D) -> some View](view/scaleeffect(x:y:z:anchor:).md)

@@ -6,7 +6,7 @@
 A tab stop that aligns columns of numbers to each number’s decimal point.
 
 **Availability**:
-- macOS ?+
+- macOS 10.0+
 
 ## Declaration
 

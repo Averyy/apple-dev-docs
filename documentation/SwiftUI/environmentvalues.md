@@ -276,8 +276,6 @@ Clients of your value then access the value in the usual way, reading it with th
   An environment value that indicates how a text view aligns its lines when the content wraps or contains newlines.
 - [var textCase: Text.Case?](environmentvalues/textcase.md)
   A stylistic override to transform the case of `Text` when displayed, using the environment’s locale.
-- [var textInputBorderShape: TextInputBorderShape](environmentvalues/textinputbordershape.md)
-  The current border shape to use when drawing bordered text input controls.
 - [var textSelectionAffinity: TextSelectionAffinity](environmentvalues/textselectionaffinity.md)
   A representation of the direction or association of a selection or cursor relative to a text character. This concept becomes much more prominent when dealing with bidirectional text (text that contains both LTR and RTL scripts, like English and Arabic combined).
 - [var truncationMode: Text.TruncationMode](environmentvalues/truncationmode.md)

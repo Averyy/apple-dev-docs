@@ -8,7 +8,6 @@ The ClassKit development or production environment for an education app that wor
 **Availability**:
 - iOS 11.4+
 - iPadOS 11.4+
-- Mac Catalyst 11.4+
 - macOS 11.0+
 - visionOS 1.0+
 

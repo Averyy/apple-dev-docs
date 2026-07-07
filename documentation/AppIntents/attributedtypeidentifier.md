@@ -8,7 +8,7 @@ A unique identifier for an app entity or transient app entity type within an app
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst ?+
+- Mac Catalyst 27.0+ (Beta)
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
@@ -60,7 +60,6 @@ The system uses these identifiers to track and reference entity types throughout
   A unique identifier for an app entity instance within an application.
 - [protocol AppEntityAnnotatable](appentityannotatable.md)
   An interface that system types adopt and use to manage their relationship to app entities.
-- [struct AppEntityIdentifier](appentityidentifier.md)
 
 
 ---

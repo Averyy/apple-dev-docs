@@ -8,7 +8,7 @@ An action that occurs when someone selects the second item in the secondary butt
 **Availability**:
 - iOS 26.4+
 - iPadOS 26.4+
-- Mac Catalyst ?+
+- Mac Catalyst 26.4+
 
 ## Declaration
 

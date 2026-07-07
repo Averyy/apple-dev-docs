@@ -17,8 +17,8 @@ Enables user suppression of dialogs and alerts presented within `self`, with a c
 ## Declaration
 
 ```swift
-nonisolated
-func dialogSuppressionToggle(_ label: Text, isSuppressed: Binding<Bool>) -> some View
+@export(implementation)
+nonisolated func dialogSuppressionToggle(_ titleResource: LocalizedStringResource, isSuppressed: Binding<Bool>) -> some View
 ```
 
 #### Discussion
@@ -54,7 +54,7 @@ struct ConfirmEraseItems: View {
             }
         }
         .dialogSuppressionToggle(
-            Text("Do not ask about erasing items again"),
+            "Do not ask about erasing items again",
             isSuppressed: $suppressAlert)
     }
 }
@@ -62,7 +62,7 @@ struct ConfirmEraseItems: View {
 
 ## Parameters
 
-- `label`: The label of the suppression toggle in the dialog. This parameter can be elided to use the default suppression title.
+- `titleResource`: The title of the suppression toggle in the dialog. This parameter can be elided to use the default suppression title.
 - `isSuppressed`: Whether the suppression toggle is on or off in the dialog.
 
 ## See Also

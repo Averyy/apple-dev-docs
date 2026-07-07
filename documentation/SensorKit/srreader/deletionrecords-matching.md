@@ -8,7 +8,6 @@ Fetches sensor data based on the provided request parameters. The reader must be
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 
 ## Declaration
 

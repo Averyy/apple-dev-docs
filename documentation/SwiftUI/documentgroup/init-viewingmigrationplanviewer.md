@@ -8,7 +8,6 @@ Instantiates a document group for viewing documents described by the last `Schem
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst 17.0+
 - macOS 14.0+
 
 ## Declaration

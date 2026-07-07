@@ -8,7 +8,7 @@ The width and height increments between elements in the input image during convo
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst ?+
+- Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
 - visionOS ?+

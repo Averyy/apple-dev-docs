@@ -18,7 +18,7 @@ A transition that animates the insertion or removal of a view by combining blurr
 
 ```swift
 @MainActor
-@preconcurrency static func blurReplace(_ config: BlurReplaceTransition.Configuration = .downUp) -> Self
+@export(implementation) @preconcurrency static func blurReplace(_ config: BlurReplaceTransition.Configuration = .downUp) -> Self
 ```
 
 ## See Also

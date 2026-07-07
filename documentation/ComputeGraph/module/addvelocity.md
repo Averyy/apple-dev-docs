@@ -1,13 +1,13 @@
 # module::addVelocity
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: func
 
 Adds a velocity delta to the element’s current velocity.
 
 **Availability**:
-- macOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- macOS ?+
+- Reality Composer Pro ?+
 
 ## Declaration
 

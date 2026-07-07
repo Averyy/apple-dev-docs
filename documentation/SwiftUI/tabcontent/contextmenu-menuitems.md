@@ -54,7 +54,7 @@ Tab("Currently Reading", systemImage: "book") {
 ## See Also
 
 - [func badge(_:)](tabcontent/badge(_:).md)
-  Generates a badge for a tab from an integer value.
+  Generates a badge for the tab from a localized string resource.
 - [func customizationBehavior(TabCustomizationBehavior, for: AdaptableTabBarPlacement...) -> some TabContent<Self.TabValue>
 ](tabcontent/customizationbehavior(_:for:).md)
   Configures the customization behavior of customizable tab view content.

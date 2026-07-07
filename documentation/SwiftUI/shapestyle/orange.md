@@ -17,6 +17,7 @@ A context-dependent orange color suitable for use in UI elements.
 ## Declaration
 
 ```swift
+@export(implementation)
 static var orange: Color { get }
 ```
 

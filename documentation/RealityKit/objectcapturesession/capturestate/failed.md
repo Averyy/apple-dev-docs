@@ -8,7 +8,6 @@ There was an unrecoverable error and the session is now invalid and needs to be 
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst 17.0+
 
 ## Declaration
 

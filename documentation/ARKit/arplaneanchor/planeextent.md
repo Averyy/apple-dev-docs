@@ -8,7 +8,6 @@ The estimated width, length, and y-axis rotation of the detected plane.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
 
 ## Declaration
 

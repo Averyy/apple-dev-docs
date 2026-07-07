@@ -17,8 +17,8 @@ Returns a new shape with filled regions common to both shapes.
 ## Declaration
 
 ```swift
-nonisolated
-func intersection<T>(_ other: T, eoFill: Bool = false) -> some Shape where T : Shape
+@export(implementation)
+nonisolated func intersection<T>(_ other: T, eoFill: Bool = false) -> some Shape where T : Shape
 ```
 
 #### Return Value

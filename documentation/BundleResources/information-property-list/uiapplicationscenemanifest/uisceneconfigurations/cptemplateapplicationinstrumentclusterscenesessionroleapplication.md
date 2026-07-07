@@ -8,7 +8,6 @@ Configurations for scenes you use to display navigation content on a CarPlay Ins
 **Availability**:
 - iOS 15.4+
 - iPadOS 15.4+
-- Mac Catalyst 15.4+
 
 
 

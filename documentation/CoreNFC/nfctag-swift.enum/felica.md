@@ -8,7 +8,7 @@ Gets a tag as a FeliCa tag object.
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst ?+
+- Mac Catalyst 13.0+
 
 ## Declaration
 

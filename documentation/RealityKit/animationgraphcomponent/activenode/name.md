@@ -4,7 +4,7 @@
 **Kind**: property  
 **Required**: Yes
 
-Returns the name of the node.
+The author-supplied name of the node from the graph definition.
 
 **Availability**:
 - iOS 27.0+ (Beta)

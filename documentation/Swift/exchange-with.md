@@ -37,10 +37,14 @@ The original value of `item`.
   Invokes the given closure with a pointer to the given argument.
 - [func withUnsafeMutablePointer<T, E, Result>(to: inout T, (UnsafeMutablePointer<T>) throws(E) -> Result) throws(E) -> Result](withunsafemutablepointer(to:_:).md)
   Calls the given closure with a mutable pointer to the given argument.
-- [func withUnsafeBytes<T, E, Result>(of: borrowing T, (UnsafeRawBufferPointer) throws(E) -> Result) throws(E) -> Result](withunsafebytes(of:_:)-5gesg.md)
+- [func withUnsafeBytes<T, E, Result>(of: inout T, (UnsafeRawBufferPointer) throws(E) -> Result) throws(E) -> Result](withunsafebytes(of:_:)-3ywhh.md)
   Invokes the given closure with a buffer pointer covering the raw bytes of the given argument.
 - [func withUnsafeMutableBytes<T, E, Result>(of: inout T, (UnsafeMutableRawBufferPointer) throws(E) -> Result) throws(E) -> Result](withunsafemutablebytes(of:_:).md)
   Invokes the given closure with a mutable buffer pointer covering the raw bytes of the given argument.
+- [func withTemporaryAllocation<R, E>(byteCount: Int, alignment: Int, (inout OutputRawSpan) throws(E) -> R) throws(E) -> R](withtemporaryallocation(bytecount:alignment:_:).md)
+  Provides scoped access to an output raw span with the specified byte count and alignment.
+- [func withTemporaryAllocation<T, R, E>(of: T.Type, capacity: Int, (inout OutputSpan<T>) throws(E) -> R) throws(E) -> R](withtemporaryallocation(of:capacity:_:).md)
+  Provides scoped access to an output span of the specified type and capacity.
 - [func withUnsafeTemporaryAllocation<T, R, E>(of: T.Type, capacity: Int, (UnsafeMutableBufferPointer<T>) throws(E) -> R) throws(E) -> R](withunsafetemporaryallocation(of:capacity:_:).md)
   Provides scoped access to a buffer pointer to memory of the specified type and with the specified capacity.
 - [func withUnsafeTemporaryAllocation<R, E>(byteCount: Int, alignment: Int, (UnsafeMutableRawBufferPointer) throws(E) -> R) throws(E) -> R](withunsafetemporaryallocation(bytecount:alignment:_:).md)

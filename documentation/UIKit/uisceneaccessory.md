@@ -8,7 +8,6 @@ A type which can be used to register for a specific type of scene accessory pres
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 
 ## Declaration
 

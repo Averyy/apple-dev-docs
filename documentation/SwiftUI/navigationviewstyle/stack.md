@@ -16,6 +16,7 @@ A navigation view style represented by a view stack that only shows a single top
 ## Declaration
 
 ```swift
+@export(implementation)
 static var stack: StackNavigationViewStyle { get }
 ```
 

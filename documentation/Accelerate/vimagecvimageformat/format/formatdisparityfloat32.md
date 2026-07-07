@@ -8,7 +8,7 @@ A 32-bit disparity pixel format that describes the normalized shift when compari
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst ?+
+- Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
 - visionOS ?+

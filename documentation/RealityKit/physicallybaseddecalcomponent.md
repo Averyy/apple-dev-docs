@@ -55,6 +55,8 @@ struct PhysicallyBasedDecalComponent
 
 ### Conforms To
 - [Component](component.md)
+- [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 
 
 ---

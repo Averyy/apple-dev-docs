@@ -11,8 +11,8 @@ Rotates a view with impacts to its frame in a containing layout
 ## Declaration
 
 ```swift
-nonisolated
-func rotation3DLayout(_ angle: Angle, axis: (x: CGFloat, y: CGFloat, z: CGFloat)) -> some View
+@export(implementation)
+nonisolated func rotation3DLayout(_ angle: Angle, axis: (x: CGFloat, y: CGFloat, z: CGFloat)) -> some View
 ```
 
 #### Discussion

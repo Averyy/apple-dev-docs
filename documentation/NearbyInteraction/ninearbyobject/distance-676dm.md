@@ -8,7 +8,7 @@ The distance from the user’s device to the peer device in meters.
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst ?+
+- Mac Catalyst 14.0+
 - watchOS 7.3+
 
 ## Declaration

@@ -17,7 +17,7 @@ A gauge style that displays bar with a marker that appears at a point along the 
 
 ```swift
 @MainActor
-@preconcurrency static var accessoryLinear: AccessoryLinearGaugeStyle { get }
+@export(implementation) @preconcurrency static var accessoryLinear: AccessoryLinearGaugeStyle { get }
 ```
 
 #### Discussion

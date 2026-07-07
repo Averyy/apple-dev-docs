@@ -12,6 +12,7 @@ An immersion style that displays unbounded content that partially replaces passt
 ## Declaration
 
 ```swift
+@export(implementation)
 static var progressive: ProgressiveImmersionStyle { get }
 ```
 

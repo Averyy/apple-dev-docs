@@ -8,7 +8,6 @@ Tells the system that the app no longer needs the directory at the URL and it ca
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 
 ## Declaration
 

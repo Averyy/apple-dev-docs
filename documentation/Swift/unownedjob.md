@@ -67,7 +67,6 @@ An `UnownedJob` must be eventually run *exactly once* using `runSynchronously(on
   A service that executes jobs.
 - [protocol TaskExecutor](taskexecutor.md)
   An executor that may be used as preferred executor by a task.
-- [typealias PartialAsyncTask](partialasynctask.md)
 - [struct JobPriority](jobpriority.md)
   The priority of this job.
 - [struct UnownedSerialExecutor](unownedserialexecutor.md)

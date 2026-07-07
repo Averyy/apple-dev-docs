@@ -17,8 +17,8 @@ Adds the provided insets into the safe area of this view.
 ## Declaration
 
 ```swift
-nonisolated
-func safeAreaPadding(_ edges: Edge.Set = .all, _ length: CGFloat? = nil) -> some View
+@export(implementation)
+nonisolated func safeAreaPadding(_ edges: Edge.Set = .all, _ length: CGFloat? = nil) -> some View
 ```
 
 #### Discussion

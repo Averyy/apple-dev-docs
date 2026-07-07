@@ -8,7 +8,6 @@ Analyzes video frames for the given capture device input.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst 26.0+
 
 ## Declaration
 

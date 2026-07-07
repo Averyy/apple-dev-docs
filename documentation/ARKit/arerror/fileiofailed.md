@@ -8,7 +8,6 @@ An error that indicates a file access fails to read or write.
 **Availability**:
 - iOS 12.0+
 - iPadOS 12.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

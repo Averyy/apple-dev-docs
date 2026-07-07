@@ -8,7 +8,6 @@ A specification that indicates a target’s alignment with respect to gravity
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

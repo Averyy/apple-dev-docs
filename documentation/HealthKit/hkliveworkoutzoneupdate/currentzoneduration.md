@@ -8,7 +8,7 @@ The new zone duration that has just been entered, or nil if no zone is active.
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst ?+
+- Mac Catalyst 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
 
 ## Declaration

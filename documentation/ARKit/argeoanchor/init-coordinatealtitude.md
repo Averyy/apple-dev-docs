@@ -8,7 +8,6 @@ Initializes a location anchor with the given coordinate and altitude.
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
 
 ## Declaration
 

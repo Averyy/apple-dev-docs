@@ -8,7 +8,7 @@ Creates an app intent entity property.  Do not call this directly, use @Property
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst ?+
+- Mac Catalyst 27.0+ (Beta)
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 

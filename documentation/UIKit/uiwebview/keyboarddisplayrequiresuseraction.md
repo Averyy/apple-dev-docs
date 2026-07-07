@@ -8,7 +8,6 @@ A Boolean value indicating whether web content can programmatically display the 
 **Availability**:
 - iOS 6.0+
 - iPadOS 6.0+
-- Mac Catalyst 6.0+
 
 ## Declaration
 

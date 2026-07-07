@@ -3,12 +3,12 @@
 **Framework**: RealityKit  
 **Kind**: struct
 
-Clients may subscribe to this event to be notified of RealityKit taking measures to reduce the rendering impact of their GaussianSplatResource. The client can then choose how to respond. For example, they could switch to a lower splat count asset or reduce the total number of active SplatComponents in the scene.
+An event that signals the framework changed how it renders an entity’s splats to manage performance.
 
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst ?+
+- Mac Catalyst 27.0+ (Beta)
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 
@@ -18,14 +18,22 @@ Clients may subscribe to this event to be notified of RealityKit taking measures
 struct RenderingChanged
 ```
 
+#### Overview
+
+Subscribe to this event to learn when the framework throttles splat rendering. In response, you can reduce the workload yourself — for example, by switching to a lower-count asset or removing other splat components from the scene.
+
 ## Topics
 
 ### Instance Properties
 - [let entity: Entity](gaussiansplatevents/renderingchanged/entity.md)
+  The entity whose Gaussian splat rendering changed.
 - [let isRenderingLimited: Bool](gaussiansplatevents/renderingchanged/isrenderinglimited.md)
+  A Boolean value that indicates whether the framework is currently limiting the entity’s splat rendering.
 - [let renderingStatus: GaussianSplatEvents.RenderingChanged.Status](gaussiansplatevents/renderingchanged/renderingstatus.md)
+  The level of rendering the framework now applies to the entity’s splats.
 ### Enumerations
 - [GaussianSplatEvents.RenderingChanged.Status](gaussiansplatevents/renderingchanged/status.md)
+  The level of detail at which the framework renders an entity’s splats.
 
 ## Relationships
 

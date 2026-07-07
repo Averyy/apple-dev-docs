@@ -30,6 +30,7 @@ class func apply(_ vector: VNVector, to point: VNPoint) -> VNPoint
   Creates a point object with the specified coordinates.
 - [convenience init(location: CGPoint)](vnpoint/init(location:).md)
   Creates a point object from the specified Core Graphics point.
+- [init?(coder: NSCoder)](vnpoint/init(coder:).md)
 - [class var zero: VNPoint](vnpoint/zero.md)
   A point object that represents the origin.
 

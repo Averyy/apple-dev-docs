@@ -17,6 +17,7 @@ A pausable schedule of dates updating at a frequency no more quickly than the pr
 ## Declaration
 
 ```swift
+@export(implementation)
 static func animation(minimumInterval: Double? = nil, paused: Bool = false) -> AnimationTimelineSchedule
 ```
 

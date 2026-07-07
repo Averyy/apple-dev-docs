@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: method
 
-On macOS, configures the `fileExporter`, `fileImporter`, or `fileMover` with a custom text that is presented to the user, similar to a title.
+On macOS, configures the `fileExporter`, `fileImporter`, or `fileMover` with a custom message that is presented to the user, similar to a title.
 
 **Availability**:
 - iOS 17.0+
@@ -15,13 +15,13 @@ On macOS, configures the `fileExporter`, `fileImporter`, or `fileMover` with a c
 ## Declaration
 
 ```swift
-nonisolated
-func fileDialogMessage(_ message: Text?) -> some View
+@export(implementation)
+nonisolated func fileDialogMessage(_ messageResource: LocalizedStringResource) -> some View
 ```
 
 ## Parameters
 
-- `message`: The optional text to use as the file dialog message.
+- `messageResource`: The localized string resource to display.
 
 ## See Also
 

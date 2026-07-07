@@ -8,7 +8,6 @@ A Boolean value that indicates whether an app can be the default dialer app on s
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst 26.0+
 
 
 

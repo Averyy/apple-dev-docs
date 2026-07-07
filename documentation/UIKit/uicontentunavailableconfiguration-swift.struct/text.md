@@ -8,7 +8,7 @@ The primary text to display.
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst ?+
+- Mac Catalyst 17.0+
 - tvOS 17.0+
 - visionOS ?+
 

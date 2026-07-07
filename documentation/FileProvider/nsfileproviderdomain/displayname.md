@@ -8,7 +8,6 @@ The name of the domain displayed in the user interface.
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 11.0+
 - macOS 11.0+
 - visionOS 1.0+
 

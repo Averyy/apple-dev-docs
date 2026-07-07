@@ -17,6 +17,7 @@ A text field style with no decoration.
 ## Declaration
 
 ```swift
+@export(implementation)
 static var plain: PlainTextFieldStyle { get }
 ```
 

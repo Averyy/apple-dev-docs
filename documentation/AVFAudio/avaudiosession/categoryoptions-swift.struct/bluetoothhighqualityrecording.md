@@ -8,7 +8,6 @@ An option that indicates to enable high-quality audio for input and output route
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst 26.0+
 
 ## Declaration
 

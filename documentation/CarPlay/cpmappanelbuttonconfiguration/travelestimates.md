@@ -14,7 +14,7 @@ Optional travel estimates displayed alongside the primary action.
 
 ```swift
 @NSCopying
-var travelEstimates: CPTravelEstimates? { get set }
+var travelEstimates: CPTravelEstimates { get set }
 ```
 
 

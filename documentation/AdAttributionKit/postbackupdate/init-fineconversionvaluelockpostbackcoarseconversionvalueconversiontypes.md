@@ -8,7 +8,7 @@ Creates a new postback update with the conversions values, conversion types, and
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst ?+
+- Mac Catalyst 18.0+
 
 ## Declaration
 

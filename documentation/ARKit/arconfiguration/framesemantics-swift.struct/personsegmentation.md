@@ -8,7 +8,6 @@ An option that indicates that people occlude your app’s virtual content.
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

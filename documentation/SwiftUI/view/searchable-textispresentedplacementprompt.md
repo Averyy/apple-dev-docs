@@ -15,8 +15,8 @@ Marks this view as searchable with programmatic presentation of the search field
 ## Declaration
 
 ```swift
-nonisolated
-func searchable(text: Binding<String>, isPresented: Binding<Bool>, placement: SearchFieldPlacement = .automatic, prompt: LocalizedStringKey) -> some View
+@export(implementation)
+nonisolated func searchable(text: Binding<String>, isPresented: Binding<Bool>, placement: SearchFieldPlacement = .automatic, prompt: LocalizedStringResource) -> some View
 ```
 
 #### Discussion
@@ -28,7 +28,7 @@ For more information about using searchable modifiers, see [`Adding a search int
 - `text`: The text to display and edit in the search field.
 - `isPresented`: A [`Binding`](binding.md) that controls the presented state of search.
 - `placement`: The preferred placement of the search field within the containing view hierarchy.
-- `prompt`: The key for the localized prompt of the search field which provides users with guidance on what to search for.
+- `prompt`: Text resource for the localized prompt of the search field which provides users with guidance on what to search for.
 
 ## See Also
 

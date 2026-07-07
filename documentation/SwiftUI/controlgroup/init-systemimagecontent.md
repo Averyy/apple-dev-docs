@@ -16,8 +16,8 @@ Creates a new control group with the specified content that generates its label 
 ## Declaration
 
 ```swift
-nonisolated
-init<C, S>(_ title: S, systemImage: String, @ContentBuilder content: () -> C) where Content == LabeledControlGroupContent<C, Label<Text, Image>>, C : View, S : StringProtocol
+@export(implementation)
+nonisolated init<C, S>(_ title: S, systemImage: String, @ContentBuilder content: () -> C) where Content == LabeledControlGroupContent<C, Label<Text, Image>>, C : View, S : StringProtocol
 ```
 
 ## Parameters
@@ -28,7 +28,7 @@ init<C, S>(_ title: S, systemImage: String, @ContentBuilder content: () -> C) wh
 ## See Also
 
 - [init(_:image:content:)](controlgroup/init(_:image:content:).md)
-  Creates a new control group with the specified content that generates its label from a string and image name.
+  Creates a new control group with the specified content that generates its label from a localized string resource and image resource.
 
 
 ---

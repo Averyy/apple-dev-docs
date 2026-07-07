@@ -30,7 +30,7 @@ struct UnreliableRandomGenerator {
 
 ##### Convert the Throwing Expression to a Result
 
-You preserve the return value or thrown error from a throwing expression using the [`Result`](result.md) enumeration’s [`init(catching:)`](result/init(catching:).md) initializer. Invoke the throwing expression inside the closure you pass to the initializer:
+You preserve the return value or thrown error from a throwing expression using the [`Result`](result.md) enumeration’s `Swift/Result/init(catching:)` initializer. Invoke the throwing expression inside the closure you pass to the initializer:
 
 ```swift
 let singleSample = Result { try UnreliableRandomGenerator().random() }
@@ -38,7 +38,7 @@ let singleSample = Result { try UnreliableRandomGenerator().random() }
 
 In most scenarios, you use the preserved result as part of broader functionality in your code. For example, you may run a series of randomness tests and compute the statistical average of both a range of numbers returned from a random number generator, as well as the failure rate of calling the API. In these cases, you need to store the whole result rather than just the success value or that the API call failed.
 
-The following example uses the [`init(catching:)`](result/init(catching:).md) initializer in the broader context of saving a series of calls for later statistical analysis:
+The following example uses the `Swift/Result/init(catching:)` initializer in the broader context of saving a series of calls for later statistical analysis:
 
 ```swift
 struct RandomnessMonitor {
@@ -81,11 +81,6 @@ let (average, failureRate) = monitor.summary()
 print("Average value: \(average), failure rate: \(failureRate * 100.0)%.")
 // Prints values such as: "Average value: 47.95, failure rate: 48.69%."
 ```
-
-## See Also
-
-- [init(catching: () throws(Failure) -> Success)](result/init(catching:).md)
-  Creates a new result by evaluating a throwing closure, capturing the returned value as a success, or any thrown error as a failure.
 
 
 ---

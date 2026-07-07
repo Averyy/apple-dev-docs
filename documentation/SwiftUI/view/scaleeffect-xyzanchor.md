@@ -11,8 +11,8 @@ Scales this view by the specified horizontal, vertical, and depth factors, relat
 ## Declaration
 
 ```swift
-nonisolated
-func scaleEffect(x: CGFloat = 1.0, y: CGFloat = 1.0, z: CGFloat = 1.0, anchor: UnitPoint3D = .center) -> some View
+@export(implementation)
+nonisolated func scaleEffect(x: CGFloat = 1.0, y: CGFloat = 1.0, z: CGFloat = 1.0, anchor: UnitPoint3D = .center) -> some View
 ```
 
 #### Return Value
@@ -37,9 +37,7 @@ The original dimensions of the view are considered to be unchanged by scaling th
 - [func scaledToFit() -> some View](view/scaledtofit.md)
   Scales this view to fit its parent.
 - [func scaleEffect(_:anchor:)](view/scaleeffect(_:anchor:).md)
-  Scales this view’s rendered output by the given amount in both the horizontal and vertical directions, relative to an anchor point.
-- [func scaleEffect(_:anchor:)](view/scaleeffect(_:anchor:).md)
-  Scales this view’s rendered output by the given amount in both the horizontal and vertical directions, relative to an anchor point.
+  Scales this view uniformly by the specified factor, relative to an anchor point.
 - [func scaleEffect(x: CGFloat, y: CGFloat, anchor: UnitPoint) -> some View](view/scaleeffect(x:y:anchor:).md)
   Scales this view’s rendered output by the given horizontal and vertical amounts, relative to an anchor point.
 - [func aspectRatio(_:contentMode:)](view/aspectratio(_:contentmode:).md)
@@ -61,6 +59,8 @@ The original dimensions of the view are considered to be unchanged by scaling th
 - [func projectionEffect(ProjectionTransform) -> some View](view/projectioneffect(_:).md)
   Applies a projection transformation to this view’s rendered output.
 - [struct ProjectionTransform](projectiontransform.md)
+- [enum ContentMode](contentmode.md)
+  Constants that define how a view’s content fills the available space.
 
 
 ---

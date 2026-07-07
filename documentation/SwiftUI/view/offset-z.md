@@ -11,8 +11,8 @@ Brings a view forward in Z by the provided distance in points.
 ## Declaration
 
 ```swift
-nonisolated
-func offset(z: CGFloat) -> some View
+@export(implementation)
+nonisolated func offset(z: CGFloat) -> some View
 ```
 
 #### Return Value

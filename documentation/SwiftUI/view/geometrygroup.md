@@ -17,8 +17,8 @@ Isolates the geometry (e.g. position and size) of the view from its parent view.
 ## Declaration
 
 ```swift
-nonisolated
-func geometryGroup() -> some View
+@export(implementation)
+nonisolated func geometryGroup() -> some View
 ```
 
 #### Discussion

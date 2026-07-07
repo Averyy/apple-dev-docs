@@ -8,7 +8,7 @@ Resolves a detent to its value.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst ?+
+- Mac Catalyst 16.0+
 
 ## Declaration
 

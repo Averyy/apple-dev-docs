@@ -8,7 +8,6 @@ A list of identifiers specifying the groups your app belongs to.
 **Availability**:
 - iOS 3.0+
 - iPadOS 3.0+
-- Mac Catalyst 3.0+
 - macOS 10.7+
 - tvOS 9.0+
 - watchOS 2.0+

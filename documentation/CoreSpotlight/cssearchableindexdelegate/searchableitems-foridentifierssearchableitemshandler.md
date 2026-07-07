@@ -10,7 +10,7 @@ Requests that the delegate provide searchable items for the provided identifiers
 - iPadOS 18.4+
 - Mac Catalyst 18.4+
 - macOS 15.4+
-- visionOS 41.4+ (Beta)
+- visionOS 2.4+
 
 ## Declaration
 

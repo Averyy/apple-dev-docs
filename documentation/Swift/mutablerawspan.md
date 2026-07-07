@@ -86,7 +86,6 @@ struct MutableRawSpan
   Returns a new instance of the given type, constructed from the raw memory at the specified offset.
 - [func unsafeLoadUnaligned<T>(fromUncheckedByteOffset: Int, as: T.Type) -> T](mutablerawspan/unsafeloadunaligned(fromuncheckedbyteoffset:as:).md)
   Returns a new instance of the given type, constructed from the raw memory at the specified offset.
-- [func withBytes<R, E>((RawSpan) throws(E) -> R) throws(E) -> R](mutablerawspan/withbytes(_:).md)
 - [func withUnsafeBytes<E, Result>((UnsafeRawBufferPointer) throws(E) -> Result) throws(E) -> Result](mutablerawspan/withunsafebytes(_:).md)
   Calls the given closure with a pointer to the underlying bytes of the viewed contiguous storage.
 - [func withUnsafeMutableBytes<E, Result>((UnsafeMutableRawBufferPointer) throws(E) -> Result) throws(E) -> Result](mutablerawspan/withunsafemutablebytes(_:).md)
@@ -121,6 +120,7 @@ struct MutableRawSpan
   A borrowed view into contiguous memory that contains validly-encoded UTF-8 code units.
 - [struct MutableSpan](mutablespan.md)
   `MutableSpan<Element>` represents a contiguous region of memory which contains initialized instances of `Element`.
+- [struct SpanIterator](spaniterator.md)
 
 
 ---

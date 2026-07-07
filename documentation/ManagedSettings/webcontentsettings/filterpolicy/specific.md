@@ -8,7 +8,7 @@ The policy blocks the specified domains.
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst ?+
+- Mac Catalyst 15.0+
 
 ## Declaration
 

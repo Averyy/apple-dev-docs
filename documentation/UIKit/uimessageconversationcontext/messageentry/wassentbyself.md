@@ -8,7 +8,6 @@ A Boolean value that indicates whether the current user sent the message.
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
-- Mac Catalyst 18.4+
 
 ## Declaration
 

@@ -9,7 +9,7 @@ Asks the delegate to provide the frame of an element.
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst ?+
+- Mac Catalyst 14.0+
 - visionOS ?+
 
 ## Declaration

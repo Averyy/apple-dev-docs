@@ -9,7 +9,6 @@ Provides an updated Live Activity.
 **Availability**:
 - iOS 26.5+
 - iPadOS 26.5+
-- Mac Catalyst 26.5+
 
 ## Declaration
 
@@ -23,7 +22,7 @@ func activityUpdated(_ activity: AccessoryLiveActivity)
 
 #### Overview
 
-Use this callback method to keep the accessory’s display in sync with the current state of the Live Activity. Parse the activity’s details, select the information to display on your accessory, and convert it to data for transmission. Then, send the data to your accessory using the Live Activity’s corresponding [`LiveActivityForwarding.Session`](liveactivityforwarding/session.md) and its [`send(message:)`](liveactivityforwarding/session/send(message:).md) method.
+Use this callback method to keep the accessory’s display in sync with the current state of the Live Activity. Parse the activity’s details, select the information to display on your accessory, and convert it to data for transmission. Then, send the data to your accessory using the Live Activity’s corresponding [`LiveActivityForwarding.Session`](liveactivityforwarding/session.md) and its `LiveActivityForwarding/Session/send(message:)` method.
 
 If the activity’s [`state`](accessoryliveactivity/state.md) property equals [`ActivityState.dismissed`](https://developer.apple.com/documentation/ActivityKit/ActivityState/dismissed), remove the Live Activity from the accessory’s display.
 

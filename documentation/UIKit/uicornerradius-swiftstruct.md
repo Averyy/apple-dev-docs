@@ -8,7 +8,7 @@ A type that represents the radius the system uses to round a corner.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst 26.0+
 - tvOS 26.0+
 - visionOS 26.0+
 

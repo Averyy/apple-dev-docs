@@ -8,7 +8,6 @@ An object that describes a subscriber’s access to content.
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 11.0+
 - macOS ?+
 - tvOS 11.0+
 - visionOS 1.0+

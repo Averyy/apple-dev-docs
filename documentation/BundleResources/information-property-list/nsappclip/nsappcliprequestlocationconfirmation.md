@@ -8,7 +8,6 @@ A Boolean value that indicates whether an App Clip can confirm the user’s loca
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
 
 
 

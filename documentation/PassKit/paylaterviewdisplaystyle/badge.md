@@ -8,7 +8,6 @@ Displays a simple Apple Pay badge that includes an Apple Pay Later icon.
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst 17.0+
 - visionOS ?+
 
 ## Declaration

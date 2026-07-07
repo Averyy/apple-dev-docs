@@ -11,6 +11,7 @@ Scales this view by the specified horizontal, vertical, and depth factors, relat
 ## Declaration
 
 ```swift
+@export(implementation)
 func scaleEffect(x: CGFloat = 1.0, y: CGFloat = 1.0, z: CGFloat = 1.0, anchor: UnitPoint3D = .center) -> some VisualEffect
 ```
 

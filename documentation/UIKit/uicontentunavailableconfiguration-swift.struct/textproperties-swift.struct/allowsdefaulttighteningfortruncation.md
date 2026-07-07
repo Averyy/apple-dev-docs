@@ -8,7 +8,7 @@ A Boolean value that determines whether the view tightens text before truncating
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst ?+
+- Mac Catalyst 17.0+
 - tvOS 17.0+
 - visionOS ?+
 

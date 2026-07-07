@@ -8,7 +8,6 @@ Geo tracking is attempting to localize against a map.
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
 
 ## Declaration
 

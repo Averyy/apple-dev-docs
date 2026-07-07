@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: init
 
-Creates a new surroundings light object.
+Creates a surroundings light component.
 
 **Availability**:
 - macOS 27.0+ (Beta)

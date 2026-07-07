@@ -8,7 +8,6 @@ A span over the backing bytes of this tensor.
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 
@@ -29,6 +28,8 @@ var bytes: RawSpan { get }
   The shape of the tensor.
 - [var strides: Span<Int>](ndarray/rawview/strides.md)
   The strides of the tensor.
+- [var interleaveLayout: NDArray.InterleaveLayout?](ndarray/rawview/interleavelayout.md)
+  Returns which dimension is interleaved, and by what factor it is interleaved. Or returns `nil` if there is not an interleaved dimension.
 
 
 ---

@@ -17,6 +17,7 @@ Returns the fifth level of this shape style.
 ## Declaration
 
 ```swift
+@export(implementation)
 var quinary: some ShapeStyle { get }
 ```
 

@@ -8,7 +8,6 @@ The display name of the provider as it will appear in the list of providers.
 **Availability**:
 - iOS 14.2+
 - iPadOS 14.2+
-- Mac Catalyst 14.2+
 - macOS ?+
 - tvOS 14.2+
 - visionOS 1.0+

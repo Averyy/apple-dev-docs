@@ -11,6 +11,7 @@ A window toolbar style similar to [`unified`](windowtoolbarstyle/unified.md), bu
 ## Declaration
 
 ```swift
+@export(implementation)
 static var unifiedCompact: UnifiedCompactWindowToolbarStyle { get }
 ```
 

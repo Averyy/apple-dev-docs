@@ -38,8 +38,6 @@ enum Result<Success, Failure> where Failure : Error, Success : ~Copyable, Succes
 ### Converting a Throwing Expression to a Result
 - [Preserving the Results of a Throwing Expression](preserving-the-results-of-a-throwing-expression.md)
   Call the initializer that wraps a throwing expression when you need to serialize or memoize the result.
-- [init(catching: () throws(Failure) -> Success)](result/init(catching:).md)
-  Creates a new result by evaluating a throwing closure, capturing the returned value as a success, or any thrown error as a failure.
 ### Converting a Result to a Throwing Expression
 - [func get() throws(Failure) -> Success](result/get.md)
   Returns the success value as a throwing expression.
@@ -62,6 +60,11 @@ enum Result<Success, Failure> where Failure : Error, Success : ~Copyable, Succes
   A Combine publisher that publishes this instance’s result to each subscriber exactly once, or fails immediately if the result indicates failure.
 - [Result.Publisher](result/publisher-swift.struct.md)
   The type of a Combine publisher that publishes this instance’s result to each subscriber exactly once, or fails immediately if the result indicates failure.
+### Initializers
+- [init(catching: nonisolated(nonsending) () async throws(Failure) -> Success) async](result/init(catching:)-1tno.md)
+  Creates a new result by evaluating an async throwing closure, capturing the returned value as a success, or any thrown error as a failure.
+- [init(catching: () throws(Failure) -> Success)](result/init(catching:)-62kyq.md)
+  Creates a new result by evaluating a throwing closure, capturing the returned value as a success, or any thrown error as a failure.
 ### Default Implementations
 - [Equatable Implementations](result/equatable-implementations.md)
 - [Hashable Implementations](result/hashable-implementations.md)

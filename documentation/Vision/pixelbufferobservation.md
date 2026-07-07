@@ -8,7 +8,6 @@ An object that represents an image that an image-analysis request produces.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -32,6 +31,7 @@ struct PixelBufferObservation
   A Core Graphics image created from the pixel buffer observation.
 - [var pixelFormat: OSType](pixelbufferobservation/pixelformat.md)
   The four-character code that identifies the pixel format.
+- [var pixelBuffer: CVReadOnlyPixelBuffer](pixelbufferobservation/pixelbuffer.md)
 - [var size: CGSize](pixelbufferobservation/size.md)
   The size of the image.
 ### Getting pixel data
@@ -40,8 +40,6 @@ struct PixelBufferObservation
 ### Accessing the memory
 - [func withUnsafePointer<R>((UnsafeRawPointer) -> R) -> R](pixelbufferobservation/withunsafepointer(_:).md)
   Invokes the given closure with a pointer to the given argument.
-### Instance Properties
-- [var pixelBuffer: CVReadOnlyPixelBuffer](pixelbufferobservation/pixelbuffer.md)
 
 ## Relationships
 

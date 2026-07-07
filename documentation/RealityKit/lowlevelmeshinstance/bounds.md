@@ -8,7 +8,6 @@ The bounds of this mesh instance, in model space, or `nil` to derive bounds from
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 

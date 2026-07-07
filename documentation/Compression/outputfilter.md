@@ -8,7 +8,7 @@ An encoder-decoder that writes output data to a stream.
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst ?+
+- Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
 - visionOS ?+

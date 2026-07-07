@@ -87,8 +87,6 @@ Use this class to perform registration and authentication tasks, and to repair r
 
 ## See Also
 
-- [Configuring Device Management](configuring-device-management.md)
-  Configure Device Management to support device and user registration for Platform SSO.
 - [Configuring authentication with the identity provider (IdP)](configuring-authentication-with-the-identity-provider-idp.md)
   Specify how Platform SSO authenticates with the identity provider.
 - [class ASAuthorizationProviderExtensionLoginConfiguration](asauthorizationproviderextensionloginconfiguration.md)

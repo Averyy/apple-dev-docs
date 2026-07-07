@@ -17,8 +17,8 @@ Creates a text field with a text label generated from a localized title string.
 ## Declaration
 
 ```swift
-nonisolated
-init(_ titleKey: LocalizedStringKey, text: Binding<String>, onCommit: @escaping () -> Void)
+@export(implementation)
+nonisolated init(_ titleKey: LocalizedStringKey, text: Binding<String>, onCommit: @escaping () -> Void)
 ```
 
 ## Parameters

@@ -8,7 +8,7 @@ The sidebar list appearance.
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst ?+
+- Mac Catalyst 14.0+
 - visionOS ?+
 
 ## Declaration

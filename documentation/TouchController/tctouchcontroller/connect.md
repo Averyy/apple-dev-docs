@@ -8,7 +8,6 @@ Connects the touch controller to the app, allowing its controls to be drawn and 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst 26.0+
 
 ## Declaration
 

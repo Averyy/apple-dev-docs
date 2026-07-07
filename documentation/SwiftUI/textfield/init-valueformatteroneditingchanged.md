@@ -17,8 +17,8 @@ Create an instance which binds over an arbitrary type, `V`.
 ## Declaration
 
 ```swift
-nonisolated
-init<S, V>(_ title: S, value: Binding<V>, formatter: Formatter, onEditingChanged: @escaping (Bool) -> Void) where S : StringProtocol
+@export(implementation)
+nonisolated init<S, V>(_ title: S, value: Binding<V>, formatter: Formatter, onEditingChanged: @escaping (Bool) -> Void) where S : StringProtocol
 ```
 
 ## Parameters

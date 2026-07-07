@@ -8,7 +8,6 @@ A Boolean value that indicates whether the Live Activity appears in a full-scree
 **Availability**:
 - iOS 16.1+
 - iPadOS 16.1+
-- Mac Catalyst 16.1+
 
 ## Declaration
 

@@ -29,7 +29,7 @@ object SettingsResponse.Settings
 ## Properties
 
 - `ErrorChain` ([SettingsResponse.Settings.ErrorChainItem]): An array of dictionaries that describes any errors that occurred.
-- `Identifier` (string): The app identifier to which this error applies. > **Note**:  For a watchOS app, the identifier is the watch’s bundle identifier, which differs from the main bundle identifier for the iPhone to which the watch is paired. Available: iOS 7+ | iPadOS 7+ | tvOS 10.2+ | visionOS 1.1+ | watchOS 10+
+- `Identifier` (string): The app identifier to which this error applies. > **Note**:  For a watchOS app, the identifier is the watch’s bundle identifier, which differs from the main bundle identifier for the iPhone the watch pairs with. Available: iOS 7+ | iPadOS 7+ | tvOS 10.2+ | visionOS 1.1+ | watchOS 10+
 - `Status` (string) *(required)*: The status of the setting, which is one of the following values: - `Acknowledged`: The device processed the command successfully.
 - `Error`: An error occurred. See the `ErrorChain` for more details.
 

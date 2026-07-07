@@ -27,17 +27,26 @@ Create a navigation controller for an entity, then call [`requestPath(to:)`](nav
 
 ### Creating a navigation controller
 - [init(entity: Entity) throws](navigationcontroller/init(entity:).md)
+  Creates a NavigationController from an Entity with a NavigationComponent.
 ### Requesting pathfinding
 - [func requestPath(to: SIMD3<Float>)](navigationcontroller/requestpath(to:).md)
+  Requests a pathfind from the owning entity’s position to the target position.
 - [func requestPath(from: SIMD3<Float>, to: SIMD3<Float>)](navigationcontroller/requestpath(from:to:).md)
+  Requests a pathfind from a given position to the target position.
 - [func stopPathfind()](navigationcontroller/stoppathfind.md)
+  Cancels any in-progress pathfinds.
 ### Computing paths
 - [func computePath(to: SIMD3<Float>) async -> [NavigationMeshResource.PathNode]?](navigationcontroller/computepath(to:).md)
+  Asynchronously requests a pathfind from the owning entity’s position to the target position and waits for the path or a failure. If the function returns an empty path, the pathfind succeeded with no nodes (for example, the start and end positions are in the same place). If the function returns nil, the pathfinding failed to find a path.
 - [func computePath(from: SIMD3<Float>, to: SIMD3<Float>) async -> [NavigationMeshResource.PathNode]?](navigationcontroller/computepath(from:to:).md)
+  Asynchronously requests a pathfind from a given position to the target position and waits for the path or a failure. If the function returns an empty path, the pathfind succeeded with no nodes (for example, the start and end positions are in the same place). If the function returns nil, the pathfinding failed to find a path.
 ### Monitoring pathfinding status
 - [var pathfindStatus: NavigationController.PathfindStatus](navigationcontroller/pathfindstatus-swift.property.md)
+  The current pathfind status.
 - [NavigationController.PathfindStatus](navigationcontroller/pathfindstatus-swift.enum.md)
+  The status of a pathfinding request.
 - [var currentPath: [NavigationMeshResource.PathNode]](navigationcontroller/currentpath.md)
+  The computed path to the target position found by requestPath(). If called before the pathfind completes, a partial path will be returned. This partial path may be suboptimal. If the pathfind failed or was not requested, the function will return an empty array.
 
 ## See Also
 

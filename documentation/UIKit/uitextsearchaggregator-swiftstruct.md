@@ -8,7 +8,7 @@ The methods you use on a find session’s aggregator to collect matching text ra
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst ?+
+- Mac Catalyst 16.0+
 - visionOS ?+
 
 ## Declaration

@@ -8,7 +8,7 @@ A type you use to suggest app intents and their current relevance to a person.
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst ?+
+- Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
 - visionOS ?+

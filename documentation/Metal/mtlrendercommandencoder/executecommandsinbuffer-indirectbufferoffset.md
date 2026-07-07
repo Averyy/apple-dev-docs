@@ -8,7 +8,7 @@ Encodes a command that runs an indirect range of commands from an indirect comma
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst ?+
+- Mac Catalyst 13.0+
 - macOS 10.14+
 - tvOS 13.0+
 - visionOS ?+

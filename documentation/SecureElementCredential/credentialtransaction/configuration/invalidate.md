@@ -8,7 +8,6 @@ Invalidates the configuration and transitions the underlying session state to ma
 **Availability**:
 - iOS 18.1+
 - iPadOS 18.1+
-- Mac Catalyst 18.1+
 
 ## Declaration
 

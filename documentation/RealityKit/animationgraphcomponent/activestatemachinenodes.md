@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: property
 
-The state machine nodes that were active during the last graph evaluation tick.
+The state machine nodes that were active during the most recent graph evaluation tick.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -19,18 +19,22 @@ The state machine nodes that were active during the last graph evaluation tick.
 var activeStateMachineNodes: [AnimationGraphComponent.ActiveStateMachineNode] { get }
 ```
 
+#### Discussion
+
+This is the typed view of [`activeNodes`](animationgraphcomponent/activenodes.md) filtered to [`AnimationGraphComponent.ActiveStateMachineNode`](animationgraphcomponent/activestatemachinenode.md).
+
 ## See Also
 
 - [var activeNodes: [any AnimationGraphComponent.ActiveNode]](animationgraphcomponent/activenodes.md)
-  All nodes that were active during the last graph evaluation tick.
+  Every node that contributed to the most recent graph evaluation tick.
 - [AnimationGraphComponent.ActiveNode](animationgraphcomponent/activenode.md)
-  A protocol providing common debug information for any active node within a compiled animation graph.
+  Common debug information for any node that was active during the most recent graph evaluation tick.
 - [var activeClipNodes: [AnimationGraphComponent.ActiveClipNode]](animationgraphcomponent/activeclipnodes.md)
-  The animation clip nodes that were active during the last graph evaluation tick.
+  The animation clip nodes that were active during the most recent graph evaluation tick.
 - [AnimationGraphComponent.ActiveClipNode](animationgraphcomponent/activeclipnode.md)
-  Contains clip debug information for an active animation clip node within a compiled animation graph, used for inspection and debugging.
+  Debug information for an active animation clip node within the graph.
 - [AnimationGraphComponent.ActiveStateMachineNode](animationgraphcomponent/activestatemachinenode.md)
-  Contains state machine debug information for an active state machine node within a compiled animation graph, used for inspection and debugging.
+  Debug information for an active state machine node within the graph.
 
 
 ---

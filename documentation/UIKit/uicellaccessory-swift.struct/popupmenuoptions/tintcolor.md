@@ -8,7 +8,7 @@ The tint color to apply to the accessory.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst ?+
+- Mac Catalyst 16.0+
 - visionOS ?+
 
 ## Declaration

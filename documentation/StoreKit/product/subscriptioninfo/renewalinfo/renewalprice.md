@@ -8,7 +8,6 @@ The renewal price of the auto-renewable subscription that renews at the next bil
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
 - visionOS 1.0+

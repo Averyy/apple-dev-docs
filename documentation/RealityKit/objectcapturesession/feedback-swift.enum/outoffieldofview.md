@@ -8,7 +8,6 @@ The bounding box of the object is not in the field of view of the camera so auto
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst 17.0+
 
 ## Declaration
 

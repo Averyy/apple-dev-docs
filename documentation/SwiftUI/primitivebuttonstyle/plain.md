@@ -18,7 +18,7 @@ A button style that doesn’t style or decorate its content while idle, but may 
 
 ```swift
 @MainActor
-@preconcurrency static var plain: PlainButtonStyle { get }
+@export(implementation) @preconcurrency static var plain: PlainButtonStyle { get }
 ```
 
 #### Discussion

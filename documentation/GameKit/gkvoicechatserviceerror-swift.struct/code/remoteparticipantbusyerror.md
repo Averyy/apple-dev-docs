@@ -8,7 +8,6 @@ The remote participant is already connected to a voice chat.
 **Availability**:
 - iOS 3.0+
 - iPadOS 3.0+
-- Mac Catalyst 3.0+
 - tvOS 9.0+
 - visionOS 1.0+
 - watchOS 3.0+

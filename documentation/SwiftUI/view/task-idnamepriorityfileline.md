@@ -17,8 +17,8 @@ Adds a task to perform before this view appears or when a specified value change
 ## Declaration
 
 ```swift
-nonisolated
-func task<T>(id: T, name: String? = nil, priority: TaskPriority = .userInitiated, file: String = #fileID, line: Int = #line, _ action: sending @escaping @isolated(any) () async -> Void) -> some View where T : Equatable
+@export(implementation)
+nonisolated func task<T>(id: T, name: String? = nil, priority: TaskPriority = .userInitiated, file: String = #fileID, line: Int = #line, _ action: sending @escaping @isolated(any) () async -> Void) -> some View where T : Equatable
 ```
 
 #### Return Value

@@ -15,6 +15,7 @@ Produces an optional widget for conditional statements in multi-statement closur
 ## Declaration
 
 ```swift
+@export(implementation)
 static func buildIf<C>(_ content: C?) -> C? where C : Commands
 ```
 

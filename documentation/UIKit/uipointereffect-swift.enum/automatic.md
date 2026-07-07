@@ -8,7 +8,7 @@ A pointer content effect with the given preview’s view.
 **Availability**:
 - iOS 13.4+
 - iPadOS 13.4+
-- Mac Catalyst ?+
+- Mac Catalyst 13.4+
 - visionOS ?+
 
 ## Declaration

@@ -8,7 +8,6 @@ The position and orientation of the result relative to the nearest anchor or fea
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

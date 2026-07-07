@@ -8,7 +8,6 @@ Returns a fetch request configured with a given entity name.
 **Availability**:
 - iOS 4.0+
 - iPadOS 4.0+
-- Mac Catalyst 4.0+
 - visionOS 1.0+
 
 ## Declaration

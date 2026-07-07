@@ -8,7 +8,6 @@ A payment to a third party on agreed dates, typically in order to pay bills.
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
-- Mac Catalyst 17.4+
 
 ## Declaration
 

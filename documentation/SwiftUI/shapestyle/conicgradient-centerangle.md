@@ -17,6 +17,7 @@ A conic gradient that completes a full turn, optionally starting from a given an
 ## Declaration
 
 ```swift
+@export(implementation)
 static func conicGradient(_ gradient: AnyGradient, center: UnitPoint = .center, angle: Angle = .zero) -> some ShapeStyle
 ```
 

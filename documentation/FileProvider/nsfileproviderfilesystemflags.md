@@ -8,7 +8,6 @@ Flags that define an item’s on-disk properties and its appearance in the user 
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
 - macOS 11.0+
 - visionOS 1.0+
 

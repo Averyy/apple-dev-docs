@@ -8,7 +8,6 @@ The total time spent tracking the current location at the best accuracy.
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 
 ## Declaration
 

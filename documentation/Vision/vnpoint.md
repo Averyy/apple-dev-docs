@@ -26,6 +26,7 @@ class VNPoint
   Creates a point object with the specified coordinates.
 - [convenience init(location: CGPoint)](vnpoint/init(location:).md)
   Creates a point object from the specified Core Graphics point.
+- [init?(coder: NSCoder)](vnpoint/init(coder:).md)
 - [class func apply(VNVector, to: VNPoint) -> VNPoint](vnpoint/apply(_:to:).md)
   Creates a point object that’s shifted by the X and Y offsets of the specified vector.
 - [class var zero: VNPoint](vnpoint/zero.md)
@@ -42,8 +43,6 @@ class VNPoint
   Returns the distance to another point.
 - [class func distance(VNPoint, VNPoint) -> Double](vnpoint/distance(_:_:).md)
   Calculates the distance between two points.
-### Initializers
-- [init?(coder: NSCoder)](vnpoint/init(coder:).md)
 
 ## Relationships
 

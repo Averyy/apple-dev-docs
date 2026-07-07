@@ -17,8 +17,8 @@ Creates a button with a specified role that generates its label from a localized
 ## Declaration
 
 ```swift
-nonisolated
-init(_ titleKey: LocalizedStringKey, systemImage: String, role: ButtonRole?, action: @escaping @MainActor () -> Void)
+@export(implementation)
+nonisolated init(_ titleKey: LocalizedStringKey, systemImage: String, role: ButtonRole?, action: @escaping @MainActor () -> Void)
 ```
 
 #### Discussion
@@ -37,9 +37,9 @@ This initializer creates a [`Label`](label.md) view on your behalf, and treats t
 - [init(role: ButtonRole?, action: () -> Void, label: () -> Label)](button/init(role:action:label:).md)
   Creates a button with a specified role that displays a custom label.
 - [init(_:role:action:)](button/init(_:role:action:).md)
-  Creates a button with a specified role that generates its label from a localized string key.
+  Creates a button with a specified role that generates its label from a localized string resource.
 - [init(_:image:role:action:)](button/init(_:image:role:action:).md)
-  Creates a button with a specified role that generates its label from a localized string key and an image resource.
+  Creates a button with a specified role that generates its label from a localized string resource and an image resource.
 
 
 ---

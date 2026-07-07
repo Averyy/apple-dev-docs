@@ -8,7 +8,6 @@ A request that produces a floating-point number that represents the capture qual
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -74,7 +73,7 @@ If you don’t execute the request, or the request fails, the property [`capture
 - [Analyzing a selfie and visualizing its content](analyzing-a-selfie-and-visualizing-its-content.md)
   Calculate face-capture quality and visualize facial features for a collection of images using the Vision framework.
 - [struct DetectFaceLandmarksRequest](detectfacelandmarksrequest.md)
-  An image-analysis request that finds facial features like eyes and mouth in an image.
+  An image analysis request that finds facial features like eyes and mouth in an image.
 - [struct DetectFaceRectanglesRequest](detectfacerectanglesrequest.md)
   A request that finds faces within an image.
 

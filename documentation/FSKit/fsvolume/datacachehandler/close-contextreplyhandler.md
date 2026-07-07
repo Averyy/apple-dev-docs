@@ -21,7 +21,7 @@ FSKit calls this method when fully closing a file, and after the kernel finalize
 
 Your module receives this call once per item when all references are released and the kernel has completed its cache management. The module performs any necessary cleanup operations for the item.
 
-> **Note**:  This method doesn’t return or throw an error because the OS considers the file closed regardless of whether the module encounters any issues during cleanup.
+> **Note**: This method doesn’t return or throw an error because the OS considers the file closed regardless of whether the module encounters any issues during cleanup.
 
 ## Parameters
 

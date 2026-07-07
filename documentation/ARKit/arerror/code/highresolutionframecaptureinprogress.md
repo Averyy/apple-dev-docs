@@ -8,7 +8,6 @@ An error that indicates the system needs to finish a high-resolution frame reque
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
 
 ## Declaration
 

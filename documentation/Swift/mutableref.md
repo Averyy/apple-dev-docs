@@ -38,6 +38,11 @@ struct MutableRef<Value> where Value : ~Copyable
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)
 
+## See Also
+
+- [struct Ref](ref.md)
+  A safe reference allowing in-place reads to a shared value.
+
 
 ---
 

@@ -1,13 +1,13 @@
 # output::setSize
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: func
 
 Sets the size of the rendered output.
 
 **Availability**:
-- macOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- macOS ?+
+- Reality Composer Pro ?+
 
 ## Declaration
 

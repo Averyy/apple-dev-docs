@@ -16,6 +16,7 @@ A picker style represented by a navigation link that presents the options by pus
 ## Declaration
 
 ```swift
+@export(implementation)
 static var navigationLink: NavigationLinkPickerStyle { get }
 ```
 

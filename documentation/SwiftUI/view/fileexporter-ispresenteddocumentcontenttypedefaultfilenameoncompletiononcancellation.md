@@ -23,6 +23,43 @@ func fileExporter<D>(isPresented: Binding<Bool>, document: D?, contentType: UTTy
 
 In order for the dialog to appear, `document` must be non-nil. When the operation is finished, `isPresented` will be set to `false` before `onCompletion` is called. If the user cancels the operation, `isPresented` will be set to `false` and `onCancellation` will be called.
 
+Below is an example of a simple implementation of `WritableDocument`. Instead of `String`, you can use `Data` or any other type as the snapshot.
+
+```swift
+@MainActor
+final class TextDocument: WritableDocument {
+    static let writableContentTypes: [UTType] = [.utf8PlainText]
+
+    var text: String = ""
+
+    nonisolated func writer(
+        configuration: sending WriteConfiguration
+    ) -> sending FileWrapperDocumentWriter<String> {
+        FileWrapperDocumentWriter(configuration) { snapshot, _ in
+            FileWrapper(regularFileWithContents: Data(snapshot.utf8))
+        }
+    }
+
+    func snapshot(contentType: UTType) async throws -> String {
+        text
+    }
+}
+
+struct ExportView: View {
+    @State private var document = TextDocument()
+    @State private var isExporting = false
+
+    var body: some View {
+        Button("Export…") { isExporting = true }
+            .fileExporter(
+                isPresented: $isExporting,
+                document: document,
+                defaultFilename: "Untitled"
+            ) { _ in }
+    }
+}
+```
+
 ## Parameters
 
 - `isPresented`: A binding to whether the dialog should be shown.
@@ -41,7 +78,7 @@ In order for the dialog to appear, `document` must be non-nil. When the operatio
 - [func fileExporter(isPresented:document:contentTypes:defaultFilename:onCompletion:onCancellation:)](view/fileexporter(ispresented:document:contenttypes:defaultfilename:oncompletion:oncancellation:).md)
   Presents a system dialog for allowing the user to export a `FileDocument` to a file on disk.
 - [func fileExporter(isPresented:documents:contentTypes:onCompletion:onCancellation:)](view/fileexporter(ispresented:documents:contenttypes:oncompletion:oncancellation:).md)
-  Presents a system dialog for allowing the user to export a collection of documents that conform to `FileDocument` to files on disk.
+  Presents a system dialog for allowing the user to export a collection of objects conforming to `WritableDocument` to files on disk.
 - [func fileExporter<T>(isPresented: Binding<Bool>, item: T?, contentTypes: [UTType], defaultFilename: String?, onCompletion: (Result<URL, any Error>) -> Void, onCancellation: () -> Void) -> some View](view/fileexporter(ispresented:item:contenttypes:defaultfilename:oncompletion:oncancellation:).md)
   Presents a system dialog allowing the user to export a `Transferable` item to a file on disk.
 - [func fileExporter<C, T>(isPresented: Binding<Bool>, items: C, contentTypes: [UTType], onCompletion: (Result<[URL], any Error>) -> Void, onCancellation: () -> Void) -> some View](view/fileexporter(ispresented:items:contenttypes:oncompletion:oncancellation:).md)

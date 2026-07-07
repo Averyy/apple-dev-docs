@@ -12,6 +12,10 @@
 var authorizationURL: URL { get set }
 ```
 
+## Mentions
+
+- [Implementing web-based authentication with Platform Single Sign-on](implementing-web-based-authentication.md)
+
 #### Discussion
 
 The OpenID authorization request URL.  This can be overwritten when using dynamic federation.

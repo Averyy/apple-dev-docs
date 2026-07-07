@@ -1,6 +1,6 @@
 # constant
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: property
 
 Port is constant and doesn’t need to be changeable.
@@ -12,7 +12,7 @@ Port is constant and doesn’t need to be changeable.
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 ## Declaration
 

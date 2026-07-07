@@ -29,7 +29,7 @@ Creates a control, consisting of a URL and a label, used to navigate to the give
 ## See Also
 
 - [init(_:destination:)](link/init(_:destination:).md)
-  Creates a control, consisting of a URL and a title key, used to navigate to a URL.
+  Creates a control, consisting of a URL and a title resource, used to navigate to a URL.
 
 
 ---

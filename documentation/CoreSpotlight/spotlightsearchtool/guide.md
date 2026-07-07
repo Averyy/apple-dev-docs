@@ -31,6 +31,14 @@ Use this type to specify additional guidance about how you want the model to sea
   The representation format for tool responses returned to the model.
 - [let level: SpotlightSearchTool.GuidanceLevel](spotlightsearchtool/guide/level.md)
   The guidance for the model to use during a session.
+### Type Properties
+- [static var complete: SpotlightSearchTool.Guide](spotlightsearchtool/guide/complete.md)
+  A guide that uses all available search techniques.
+### Type Methods
+- [static func dynamic(SpotlightSearchTool.GuidanceProfile) -> SpotlightSearchTool.Guide](spotlightsearchtool/guide/dynamic(_:).md)
+  A guide that includes only the search techniques specified by the given profile.
+- [static func focused(SpotlightSearchTool.ContentDomain) -> SpotlightSearchTool.Guide](spotlightsearchtool/guide/focused(_:).md)
+  A guide that searches only the specified content domain using a compact, on-device-friendly schema.
 
 ## Relationships
 

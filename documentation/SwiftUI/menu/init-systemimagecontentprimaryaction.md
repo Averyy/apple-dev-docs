@@ -16,8 +16,8 @@ Creates a menu with a custom primary action that generates its label from a loca
 ## Declaration
 
 ```swift
-nonisolated
-init(_ titleKey: LocalizedStringKey, systemImage: String, @ContentBuilder content: () -> Content, primaryAction: @escaping () -> Void)
+@export(implementation)
+nonisolated init(_ titleKey: LocalizedStringKey, systemImage: String, @ContentBuilder content: () -> Content, primaryAction: @escaping () -> Void)
 ```
 
 ## Parameters
@@ -30,11 +30,11 @@ init(_ titleKey: LocalizedStringKey, systemImage: String, @ContentBuilder conten
 ## See Also
 
 - [init(_:content:primaryAction:)](menu/init(_:content:primaryaction:).md)
-  Creates a menu with a custom primary action that generates its label from a localized string key.
+  Creates a menu with a custom primary action that generates its label from a localized string resource.
 - [init(content: () -> Content, label: () -> Label, primaryAction: () -> Void)](menu/init(content:label:primaryaction:).md)
   Creates a menu with a custom primary action and custom label.
 - [init(_:image:content:primaryAction:)](menu/init(_:image:content:primaryaction:).md)
-  Creates a menu with a custom primary action that generates its label from a localized string key.
+  Creates a menu with a custom primary action that generates its label from a localized string resource.
 
 
 ---

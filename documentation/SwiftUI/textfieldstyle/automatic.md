@@ -17,6 +17,7 @@ The default text field style, based on the text field’s context.
 ## Declaration
 
 ```swift
+@export(implementation)
 static var automatic: DefaultTextFieldStyle { get }
 ```
 

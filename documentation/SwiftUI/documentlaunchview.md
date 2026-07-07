@@ -8,7 +8,6 @@ A view to present when launching document-related user experience.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 
 ## Declaration
 
@@ -106,8 +105,6 @@ extension UTType {
   The default actions for the document group launch scene and the document launch view.
 - [struct NewDocumentButton](newdocumentbutton.md)
   A button that creates and opens new documents.
-- [struct NewDocumentButtonDataSource](newdocumentbuttondatasource.md)
-  Describes the source of data used to create a new document.
 - [struct DefaultNewDocumentButtonLabel](defaultnewdocumentbuttonlabel.md)
   The default label used for a new document button.
 - [struct DocumentCreationSource](documentcreationsource.md)

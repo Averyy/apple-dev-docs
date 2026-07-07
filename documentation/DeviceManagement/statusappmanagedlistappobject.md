@@ -38,7 +38,7 @@ object StatusAppManagedListAppObject
 - `short-version` (string): The short version of the app.
 - `state` (string): The status of the app, which has the following possible values: - `optional`: The app is optional and the user has to trigger its installation.
 - `queued`: The system has started installation of the app.
-- `not-present`: Management of the app occurs after it is installed.
+- `not-present`: Management of the app occurs after it’s installed.
 - `prompting-for-consent`: The system is displaying a prompt to the user to proceed with app installation.
 - `prompting-for-login`: The system is displaying an App Store sign-in prompt to the user to allow app installation.
 - `prompting-for-management`: The system is displaying a prompt to the user to allow changing the installed app to a managed app.

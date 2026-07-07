@@ -8,7 +8,7 @@ Keys to access details in user info dictionaries of managed object context notif
 **Availability**:
 - iOS 3.0+
 - iPadOS 3.0+
-- Mac Catalyst ?+
+- Mac Catalyst 3.0+
 - macOS 10.4+
 - tvOS 3.0+
 - visionOS ?+

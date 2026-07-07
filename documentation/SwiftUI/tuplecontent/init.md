@@ -15,6 +15,7 @@
 ## Declaration
 
 ```swift
+@export(implementation)
 init(_ content: (repeat each Content))
 ```
 

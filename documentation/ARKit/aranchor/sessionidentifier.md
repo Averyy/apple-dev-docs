@@ -8,7 +8,6 @@ The unique identifier of the session that owns this anchor.
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

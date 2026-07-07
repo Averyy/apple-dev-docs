@@ -8,7 +8,6 @@ A view that displays standardized onboarding instructions to direct users toward
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst 13.1+
 - visionOS 1.0+
 
 ## Declaration
@@ -106,7 +105,6 @@ For more information about relocalization, see [`Managing Session Life Cycle and
 - [Hashable](../Swift/Hashable.md)
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIAccessibilityIdentification](../UIKit/UIAccessibilityIdentification.md)

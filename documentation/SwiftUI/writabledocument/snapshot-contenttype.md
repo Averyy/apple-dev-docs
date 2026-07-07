@@ -22,7 +22,7 @@ func snapshot(contentType: UTType) async throws -> sending Self.Writer.Snapshot
 
 #### Discussion
 
-SwiftUI calls this on the main actor when saving. Perform expensive serialization inside `DocumentWriter.write(content:to:previous:progress:)` rather than here.
+SwiftUI calls this on the main actor when saving. Perform expensive serialization inside `DocumentWriter.write(snapshot:to:previous:progress:)` rather than here.
 
 ## Parameters
 

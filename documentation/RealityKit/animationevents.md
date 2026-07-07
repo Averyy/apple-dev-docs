@@ -61,7 +61,7 @@ entitySubscription = view.scene.publisher(for:
   Raised immediately after the SkeletalPoseSystem has been updated.
 ### Recognizing root motion events
 - [AnimationEvents.RootMotionDidUpdate](animationevents/rootmotiondidupdate.md)
-  Fired each frame when the animation graph produces a root motion delta for an entity.
+  The event raised each frame when a new root motion delta is produced for an entity.
 
 ## See Also
 

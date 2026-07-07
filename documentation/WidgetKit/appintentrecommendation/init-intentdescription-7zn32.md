@@ -8,7 +8,7 @@ Creates a recommended configuration for a widget on platforms that don’t offer
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst ?+
+- Mac Catalyst 17.0+
 - macOS 14.0+
 - visionOS 26.0+
 - watchOS 10.0+

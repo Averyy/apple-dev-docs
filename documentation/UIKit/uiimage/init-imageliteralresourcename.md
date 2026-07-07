@@ -8,7 +8,7 @@ Returns the image object for the specified resource.
 **Availability**:
 - iOS 2.0+
 - iPadOS 2.0+
-- Mac Catalyst ?+
+- Mac Catalyst 2.0+
 - tvOS ?+
 - visionOS ?+
 - watchOS ?+

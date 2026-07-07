@@ -17,6 +17,7 @@ A schedule for updating a timeline view at regular intervals.
 ## Declaration
 
 ```swift
+@export(implementation)
 static func periodic(from startDate: Date, by interval: TimeInterval) -> PeriodicTimelineSchedule
 ```
 

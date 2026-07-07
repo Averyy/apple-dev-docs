@@ -17,6 +17,7 @@ Returns the third level of this shape style.
 ## Declaration
 
 ```swift
+@export(implementation)
 var tertiary: some ShapeStyle { get }
 ```
 

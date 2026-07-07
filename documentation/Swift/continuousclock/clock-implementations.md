@@ -10,10 +10,11 @@
 - [var now: ContinuousClock.Instant](continuousclock/now-swift.property.md)
   The current continuous instant.
 ### Instance Methods
-- [func measure(() throws -> Void) rethrows -> Self.Instant.Duration](continuousclock/measure(_:).md)
+- [func measure(() throws -> Void) rethrows -> Self.Instant.Duration](continuousclock/measure(_:)-73b0n.md)
   Measure the elapsed time to execute a closure.
-- [func measure(isolation: isolated (any Actor)?, () async throws -> Void) async rethrows -> Self.Instant.Duration](continuousclock/measure(isolation:_:).md)
+- [func measure(nonisolated(nonsending) () async throws -> Void) async rethrows -> Self.Instant.Duration](continuousclock/measure(_:)-9npzl.md)
   Measure the elapsed time to execute an asynchronous closure.
+- [func measure(isolation: isolated (any Actor)?, () async throws -> Void) async rethrows -> Self.Instant.Duration](continuousclock/measure(isolation:_:).md)
 - [func sleep(for: Self.Instant.Duration, tolerance: Self.Instant.Duration?) async throws](continuousclock/sleep(for:tolerance:).md)
   Suspends for the given duration.
 - [func sleep(until: ContinuousClock.Instant, tolerance: Duration?) async throws](continuousclock/sleep(until:tolerance:).md)

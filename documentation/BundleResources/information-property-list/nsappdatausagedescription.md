@@ -22,6 +22,8 @@ The system uses this message any time your app tries to access files in another 
 
 - [NSUpdateSecurityPolicy](information-property-list/nsupdatesecuritypolicy.md)
   A dictionary that identifies which apps or installer packages the operating system allows to write to the app’s bundle.
+- [NSAppBundlesUsageDescription](information-property-list/nsappbundlesusagedescription.md)
+  A message that tells people why the app needs to access the contents of other apps’ bundles.
 - [NSUserTrackingUsageDescription](information-property-list/nsusertrackingusagedescription.md)
   A message that informs the user why an app is requesting permission to use data for tracking the user or the device.
 - [NSAppleEventsUsageDescription](information-property-list/nsappleeventsusagedescription.md)

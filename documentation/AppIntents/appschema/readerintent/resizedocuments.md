@@ -8,7 +8,7 @@ An intent schema that resizes the documents to a particular width and height.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst ?+
+- Mac Catalyst 18.0+
 - macOS 15.0+
 - visionOS 2.0+
 

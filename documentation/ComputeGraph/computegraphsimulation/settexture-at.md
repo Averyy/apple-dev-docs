@@ -1,6 +1,6 @@
 # setTexture(_:at:)
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: method
 
 Binds a Metal texture to the texture slot at the given index.
@@ -12,7 +12,7 @@ Binds a Metal texture to the texture slot at the given index.
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 ## Declaration
 

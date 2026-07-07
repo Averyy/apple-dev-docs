@@ -8,7 +8,6 @@ The name of the model, which is unique to the collection.
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
 - visionOS 1.0+
 
 ## Declaration

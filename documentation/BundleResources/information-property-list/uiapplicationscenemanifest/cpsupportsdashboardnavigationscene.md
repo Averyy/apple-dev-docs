@@ -8,7 +8,6 @@ A Boolean value that indicates whether your app supports displaying navigation c
 **Availability**:
 - iOS 13.1+
 - iPadOS 13.1+
-- Mac Catalyst 13.1+
 
 
 

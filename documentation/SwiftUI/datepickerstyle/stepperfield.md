@@ -12,7 +12,7 @@ A system style that displays the components in an editable field, with adjoining
 
 ```swift
 @MainActor
-@preconcurrency static var stepperField: StepperFieldDatePickerStyle { get }
+@export(implementation) @preconcurrency static var stepperField: StepperFieldDatePickerStyle { get }
 ```
 
 #### Discussion

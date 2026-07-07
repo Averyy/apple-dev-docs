@@ -8,7 +8,6 @@ A message that tells people why the app is requesting access to the device’s N
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 11.0+
 
 
 

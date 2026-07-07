@@ -1,13 +1,13 @@
 # matrix4x4h
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: namespace
 
 Transform positions and directions using matrix4x4h.
 
 **Availability**:
-- macOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- macOS ?+
+- Reality Composer Pro ?+
 
 ## Topics
 

@@ -19,10 +19,6 @@ class CPMapPanelItem
 ### Initializers
 - [init(chargingStationConnection: CPChargingStationConnection, handler: ((CPMapPanelItem, () -> Void) -> Void)?)](cpmappanelitem/init(chargingstationconnection:handler:).md)
   Initializes a map template item wrapping a @c CPChargingStationConnection.
-- [init(gridButtons: [CPGridButton])](cpmappanelitem/init(gridbuttons:).md)
-  Initializes a map template item wrapping an array of @c CPGridButton objects.
-- [init(listItem: CPListItem)](cpmappanelitem/init(listitem:).md)
-  Initializes a map template item wrapping a @c CPListItem.
 - [init(mapTemplateWaypoint: CPMapTemplateWaypoint, image: UIImage?, handler: ((CPMapPanelItem, () -> Void) -> Void)?)](cpmappanelitem/init(maptemplatewaypoint:image:handler:).md)
   Initializes a map template item wrapping a @c CPMapTemplateWaypoint.
 - [init(routeChoice: CPRouteChoice, handler: ((CPMapPanelItem, () -> Void) -> Void)?)](cpmappanelitem/init(routechoice:handler:).md)

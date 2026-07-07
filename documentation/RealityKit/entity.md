@@ -214,7 +214,7 @@ All entities inherit a few common components from the [`Entity`](entity.md) base
 - [static func write([Entity], to: URL, options: Entity.WriteOptions) async throws](entity/write(_:to:options:).md)
   Exports an array of entities as separate scenes within a single RealityKit file.
 - [Entity.WriteOptions](entity/writeoptions.md)
-  Options for writing an entity to a RealityKit file.
+  A set of options that control how RealityKit writes entities to a reality file.
 ### Playing spatial audio
 - [func playAudio(AudioResource, at: AVAudioTime) throws -> AudioPlaybackController](entity/playaudio(_:at:).md)
   Asynchronously prepares and plays a new audio playback instance at a specified time on this entity.

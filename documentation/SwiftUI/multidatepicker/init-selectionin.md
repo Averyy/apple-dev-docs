@@ -14,13 +14,13 @@ Creates an instance that selects multiple dates on or after some start date.
 ## Declaration
 
 ```swift
-nonisolated
-init(_ titleKey: LocalizedStringKey, selection: Binding<Set<DateComponents>>, in bounds: PartialRangeFrom<Date>)
+@export(implementation)
+nonisolated init(_ titleResource: LocalizedStringResource, selection: Binding<Set<DateComponents>>, in bounds: PartialRangeFrom<Date>)
 ```
 
 ## Parameters
 
-- `titleKey`: The key for the localized title of `self`, describing its purpose.
+- `titleResource`: The localized title of `self`, describing its purpose.
 - `selection`: The date values being displayed and selected.
 - `bounds`: The open range from some selectable start date.
 

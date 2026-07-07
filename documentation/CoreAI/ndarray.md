@@ -8,7 +8,6 @@ A multidimensional array of scalar values used for model inference.
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 
@@ -33,6 +32,10 @@ An `NDArray` stores data in a layout defined by its [`shape`](ndarray/shape.md),
   Creates an array with the specified shape and scalar type.
 - [init(shape: [Int], scalarType: NDArray.ScalarType, strides: [Int])](ndarray/init(shape:scalartype:strides:).md)
   Creates an array with the specified shape, scalar type, and strides.
+- [init(shape: [Int], scalarType: NDArray.ScalarType, strides: [Int], interleaveLayout: NDArray.InterleaveLayout)](ndarray/init(shape:scalartype:strides:interleavelayout:).md)
+  Initialize an NDArray with the provided shape, scalar type, strides, and interleaved dimension.
+- [init<Scalar>(scalars: some Sequence, shape: [Int])](ndarray/init(scalars:shape:).md)
+  Initialize an ndArray with a copy of some sequence of scalars, stored in the ndArray in row-major order.
 - [init(descriptor: consuming NDArrayDescriptor)](ndarray/init(descriptor:).md)
   Creates an array with the shape and preferred strides from the specified descriptor.
 ### Inspecting an array
@@ -42,6 +45,8 @@ An `NDArray` stores data in a layout defined by its [`shape`](ndarray/shape.md),
   The scalar type of the array.
 - [var strides: [Int]](ndarray/strides.md)
   The distance, in elements, between consecutive values along each dimension.
+- [var interleaveLayout: NDArray.InterleaveLayout?](ndarray/interleavelayout-swift.property.md)
+  Returns the interleaved layout of this ndArray, or `nil` if there is no interleave.
 ### Accessing elements
 - [func view<T>(as: T.Type) -> NDArray.View<T>](ndarray/view(as:).md)
   Returns a read-only, typed view of this array’s elements.
@@ -63,19 +68,11 @@ An `NDArray` stores data in a layout defined by its [`shape`](ndarray/shape.md),
 ### Defining scalar types
 - [NDArray.ScalarType](ndarray/scalartype-swift.enum.md)
   The possible scalar types.
-### Supporting subscripts
-- [protocol RangeExpression](ndarray/rangeexpression.md)
-### Structures
+### Describing interleaved layouts
 - [NDArray.InterleaveLayout](ndarray/interleavelayout-swift.struct.md)
   Describes the interleaved memory layout of an ndArray dimension.
-### Initializers
-- [init<Scalar>(scalars: some Sequence, shape: [Int])](ndarray/init(scalars:shape:).md)
-  Initialize an ndArray with a copy of some sequence of scalars, stored in the ndArray in row-major order.
-- [init(shape: [Int], scalarType: NDArray.ScalarType, strides: [Int], interleaveLayout: NDArray.InterleaveLayout)](ndarray/init(shape:scalartype:strides:interleavelayout:).md)
-  Initialize an NDArray with the provided shape, scalar type, strides, and interleaved dimension.
-### Instance Properties
-- [var interleaveLayout: NDArray.InterleaveLayout?](ndarray/interleavelayout-swift.property.md)
-  Returns the interleaved layout of this ndArray, or `nil` if there is no interleave.
+### Supporting subscripts
+- [protocol RangeExpression](ndarray/rangeexpression.md)
 
 ## Relationships
 

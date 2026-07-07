@@ -9,7 +9,7 @@ Provides the key for the current query in the info dictionary of the user activi
 - iOS 10.0+
 - iPadOS 10.0+
 - Mac Catalyst 13.1+
-- macOS 10.11+
+- macOS 10.12+
 - visionOS 1.0+
 
 ## Declaration

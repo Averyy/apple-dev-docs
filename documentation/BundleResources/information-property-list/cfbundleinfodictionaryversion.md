@@ -8,7 +8,6 @@ The current version of the Information Property List structure.
 **Availability**:
 - iOS 2.0+
 - iPadOS 2.0+
-- Mac Catalyst 2.0+
 - macOS 10.0+
 - tvOS 9.0+
 - visionOS 1.0+

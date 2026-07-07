@@ -8,7 +8,6 @@ Indicates that the app intends to present a credential to a contactless interfac
 **Availability**:
 - iOS 18.1+
 - iPadOS 18.1+
-- Mac Catalyst 18.1+
 
 ## Declaration
 

@@ -8,7 +8,7 @@ A Boolean value that indicates whether the user is actively writing.
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst ?+
+- Mac Catalyst 14.0+
 - visionOS ?+
 
 ## Declaration

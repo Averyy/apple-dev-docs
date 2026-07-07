@@ -38,7 +38,7 @@ Text("The time is \(myDate, format: Date.FormatStyle(date: .omitted, time:.compl
 ## See Also
 
 - [func appendInterpolation(_:)](localizedstringkey/stringinterpolation/appendinterpolation(_:).md)
-  Appends an attributed string to a string interpolation.
+  Appends an attributed substring to a string interpolation.
 - [func appendInterpolation<T>(T, specifier: String)](localizedstringkey/stringinterpolation/appendinterpolation(_:specifier:).md)
   Appends a type, convertible to a string with a format specifier, to a string interpolation.
 - [func appendInterpolation(_:formatter:)](localizedstringkey/stringinterpolation/appendinterpolation(_:formatter:).md)

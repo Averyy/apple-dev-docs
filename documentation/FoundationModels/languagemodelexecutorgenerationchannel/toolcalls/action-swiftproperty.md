@@ -21,7 +21,8 @@ var action: LanguageModelExecutorGenerationChannel.ToolCalls.Action
 
 ## See Also
 
-- [LanguageModelExecutorGenerationChannel.ToolCalls.Action](languagemodelexecutorgenerationchannel/toolcalls/action-swift.enum.md)
+- [LanguageModelExecutorGenerationChannel.ToolCalls.Action](languagemodelexecutorgenerationchannel/toolcalls/action-swift.struct.md)
+  An operation that can be performed on a tool-calls entry.
 - [var entryID: String?](languagemodelexecutorgenerationchannel/toolcalls/entryid.md)
   The identifier for the entry.
 - [LanguageModelExecutorGenerationChannel.ToolCalls.ToolCall](languagemodelexecutorgenerationchannel/toolcalls/toolcall.md)

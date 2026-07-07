@@ -8,7 +8,7 @@ Creates a disbursement request with the parameters you specify.
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst ?+
+- Mac Catalyst 17.0+
 - visionOS ?+
 
 ## Declaration

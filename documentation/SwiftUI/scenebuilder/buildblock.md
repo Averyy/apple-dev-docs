@@ -3,8 +3,6 @@
 **Framework**: SwiftUI  
 **Kind**: method
 
-Passes a single scene written as a child scene through unmodified.
-
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
@@ -17,7 +15,8 @@ Passes a single scene written as a child scene through unmodified.
 ## Declaration
 
 ```swift
-static func buildBlock<Content>(_ content: Content) -> Content where Content : Scene
+@export(implementation)
+static func buildBlock<each Content>(_ content: repeat each Content) -> some Scene where repeat each Content : Scene
 ```
 
 ## See Also

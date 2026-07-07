@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: method
 
-Constructs a [`LanguageModelExecutorGenerationChannel.Response`](languagemodelexecutorgenerationchannel/response.md) event for use at `channel.send(.response(entryID:action:))` call sites.
+A response event addressed to a transcript entry.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -16,15 +16,20 @@ Constructs a [`LanguageModelExecutorGenerationChannel.Response`](languagemodelex
 ## Declaration
 
 ```swift
-static func response(entryID: String? = nil, action: LanguageModelExecutorGenerationChannel.Response.Action) -> Self
+static func response(entryID: String? = nil, action: LanguageModelExecutorGenerationChannel.Response.Action) -> LanguageModelExecutorGenerationChannel.Event
 ```
+
+## Parameters
+
+- `entryID`: The response entry this event targets. Pass `nil` to let the framework coalesce consecutive response events into a single entry; pass an explicit id to anchor the event to a specific entry.
+- `action`: The operation to perform on the response entry.
 
 ## See Also
 
-- [static func toolCalls(entryID: String?, action: LanguageModelExecutorGenerationChannel.ToolCalls.Action) -> Self](languagemodelexecutorgenerationchannel/event/toolcalls(entryid:action:).md)
-  Constructs a [`LanguageModelExecutorGenerationChannel.ToolCalls`](languagemodelexecutorgenerationchannel/toolcalls.md) event for use at `channel.send(.toolCalls(entryID:action:))` call sites.
-- [static func reasoning(entryID: String?, action: LanguageModelExecutorGenerationChannel.Reasoning.Action) -> Self](languagemodelexecutorgenerationchannel/event/reasoning(entryid:action:).md)
-  Constructs a [`LanguageModelExecutorGenerationChannel.Reasoning`](languagemodelexecutorgenerationchannel/reasoning.md) event for use at `channel.send(.reasoning(entryID:action:))` call sites.
+- [static func toolCalls(entryID: String?, action: LanguageModelExecutorGenerationChannel.ToolCalls.Action) -> LanguageModelExecutorGenerationChannel.Event](languagemodelexecutorgenerationchannel/event/toolcalls(entryid:action:).md)
+  A tool-calls event addressed to a transcript entry.
+- [static func reasoning(entryID: String?, action: LanguageModelExecutorGenerationChannel.Reasoning.Action) -> LanguageModelExecutorGenerationChannel.Event](languagemodelexecutorgenerationchannel/event/reasoning(entryid:action:).md)
+  A reasoning event addressed to a transcript entry.
 
 
 ---

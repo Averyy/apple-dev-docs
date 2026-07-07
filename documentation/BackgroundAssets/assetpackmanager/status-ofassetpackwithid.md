@@ -52,7 +52,7 @@ This method attempts to get the latest asset-pack information from the server. I
 - [func remove(assetPackWithID: String) async throws](assetpackmanager/remove(assetpackwithid:).md)
   Removes the specified asset pack from the device.
 - [func ensureLocalAvailability(of: AssetPack) async throws](assetpackmanager/ensurelocalavailability(of:).md)
-  Ensures that the specified asset pack be available locally.
+  Ensures that the specified asset pack is available locally, performing a download if necessary.
 
 
 ---

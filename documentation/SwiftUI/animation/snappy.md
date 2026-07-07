@@ -17,6 +17,7 @@ A spring animation with a predefined duration and small amount of bounce that fe
 ## Declaration
 
 ```swift
+@export(implementation)
 static var snappy: Animation { get }
 ```
 

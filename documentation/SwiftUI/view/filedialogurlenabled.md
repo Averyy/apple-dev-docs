@@ -36,7 +36,7 @@ func fileDialogURLEnabled(_ predicate: Predicate<URL>) -> some View
 - [func fileDialogImportsUnresolvedAliases(Bool) -> some View](view/filedialogimportsunresolvedaliases(_:).md)
   On macOS, configures the `fileExporter`, `fileImporter`, or `fileMover` behavior when a user chooses an alias.
 - [func fileDialogMessage(_:)](view/filedialogmessage(_:).md)
-  On macOS, configures the `fileExporter`, `fileImporter`, or `fileMover` with a custom text that is presented to the user, similar to a title.
+  On macOS, configures the `fileExporter`, `fileImporter`, or `fileMover` with a custom message that is presented to the user, similar to a title.
 - [struct FileDialogBrowserOptions](filedialogbrowseroptions.md)
   The way that file dialogs present the file system.
 

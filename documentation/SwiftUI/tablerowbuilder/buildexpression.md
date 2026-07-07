@@ -15,6 +15,7 @@ Builds an expression within the builder.
 ## Declaration
 
 ```swift
+@export(implementation)
 static func buildExpression<Content>(_ content: Content) -> Content where Value == Content.TableRowValue, Content : TableRowContent
 ```
 

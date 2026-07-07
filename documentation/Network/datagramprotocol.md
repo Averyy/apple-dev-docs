@@ -27,6 +27,7 @@ protocol DatagramProtocol : MessageProtocol
 - [NetworkProtocolOptions](networkprotocoloptions.md)
 - [OneToOneProtocol](onetooneprotocol.md)
 ### Conforming Types
+- [DTLS](dtls.md)
 - [QUICDatagram](quicdatagram.md)
 - [UDP](udp.md)
 

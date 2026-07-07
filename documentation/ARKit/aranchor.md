@@ -8,7 +8,6 @@ An object that specifies the position and orientation of an item in the physical
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

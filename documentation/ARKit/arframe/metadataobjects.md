@@ -8,7 +8,6 @@ Metadata objects associated with the current frame.
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 
 ## Declaration
 

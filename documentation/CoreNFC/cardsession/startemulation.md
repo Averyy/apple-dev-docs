@@ -8,7 +8,6 @@ Start the card emulation and present a modal user interface to the person using 
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
-- Mac Catalyst 17.4+
 
 ## Declaration
 

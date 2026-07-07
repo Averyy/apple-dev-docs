@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: init
 
-Creates a picker bound to a collection of bindings that generates its label from a string and accepts a custom current value label.
+Creates a picker that generates its label from a localized string resource and accepts a custom current value label.
 
 **Availability**:
 - iOS 18.0+
@@ -17,15 +17,15 @@ Creates a picker bound to a collection of bindings that generates its label from
 ## Declaration
 
 ```swift
-nonisolated
-init<C, S>(_ title: S, sources: C, selection: KeyPath<C.Element, Binding<SelectionValue>>, @ContentBuilder content: () -> Content, @ContentBuilder currentValueLabel: () -> some View) where C : RandomAccessCollection, S : StringProtocol
+@export(implementation)
+nonisolated init<C>(_ titleResource: LocalizedStringResource, sources: C, selection: KeyPath<C.Element, Binding<SelectionValue>>, @ContentBuilder content: () -> Content, @ContentBuilder currentValueLabel: () -> some View) where C : RandomAccessCollection
 ```
 
 #### Discussion
 
 If the wrapped values of the collection passed to `sources` are not all the same, some styles render the selection in a mixed state. The specific presentation depends on the style.  For example, a Picker with a menu style uses dashes instead of checkmarks to indicate the selected values.
 
-In the following example, a picker in a document inspector controls the thickness of borders for the currently-selected shapes, which can be of any number.
+In the following example, a picker in a document inspector controls the thickness of borders for the currently-selected shapes.
 
 ```swift
 enum Thickness: String, CaseIterable, Identifiable {
@@ -67,7 +67,7 @@ This initializer creates a [`Text`](text.md) view on your behalf. See [`Text`](t
 
 ## Parameters
 
-- `title`: A string that describes the purpose of selecting an option.
+- `titleResource`: A localized string resource that describes the purpose of selecting an option.
 - `sources`: A collection of values used as the source for displaying the Picker’s selection.
 - `selection`: The key path of the values that determines the currently-selected options. When a user selects an option from the picker, the values at the key path of all items in the `sources` collection are updated with the selected option.
 - `content`: A view that contains the set of options.

@@ -24,11 +24,6 @@ func historyTransform(_ transform: @escaping ([Transcript.Entry]) -> [Transcript
 - [Composing dynamic sessions with instructions and profiles](composing-dynamic-sessions-with-instructions-and-profiles.md)
 - [Optimizing key-value caching in language model sessions](optimizing-key-value-caching-in-language-model-sessions.md)
 
-## See Also
-
-- [func inputFilter(([Transcript.Entry]) -> [Transcript.Entry]) -> some LanguageModelSession.DynamicProfile](languagemodelsession/dynamicprofile/inputfilter(_:).md)
-  Apply a transformation to the transcript prior to invoking the model.
-
 
 ---
 

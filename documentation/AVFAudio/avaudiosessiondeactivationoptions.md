@@ -45,7 +45,7 @@ struct AVAudioSessionDeactivationOptions
 - [func setActive(Bool, options: AVAudioSession.SetActiveOptions) throws](avaudiosession/setactive(_:options:).md)
   Activates or deactivates your app’s audio session using the specified options.
 - [func activate(options: AVAudioSessionActivationOptions, completionHandler: (Bool, (any Error)?) -> Void)](avaudiosession/activate(options:completionhandler:).md)
-  Activates an audio session asynchronously on watchOS.
+  Activates an audio session asynchronously.
 - [func deactivate(options: AVAudioSessionDeactivationOptions, completionHandler: (Bool, (any Error)?) -> Void)](avaudiosession/deactivate(options:completionhandler:).md)
   Deactivates the audio session asynchronously.
 - [struct AVAudioSessionActivationOptions](avaudiosessionactivationoptions.md)

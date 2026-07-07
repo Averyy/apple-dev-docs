@@ -8,7 +8,6 @@ A flag that instructs the framework to create environment textures in HDR format
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
 
 ## Declaration
 

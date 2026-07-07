@@ -15,6 +15,7 @@ Passes a single control widget template written as a child view through unmodifi
 ## Declaration
 
 ```swift
+@export(implementation)
 static func buildBlock<Content>(_ content: Content) -> some ControlWidgetTemplate where Content : ControlWidgetTemplate
 ```
 

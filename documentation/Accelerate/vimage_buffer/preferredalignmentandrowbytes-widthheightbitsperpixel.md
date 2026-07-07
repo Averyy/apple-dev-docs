@@ -8,7 +8,7 @@ Returns the preferred alignment and row bytes for a specified size and bits per 
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst ?+
+- Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
 - visionOS ?+

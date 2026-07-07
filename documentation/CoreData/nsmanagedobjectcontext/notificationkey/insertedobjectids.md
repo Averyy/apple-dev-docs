@@ -8,7 +8,7 @@ A key for the set of inserted object identifiers.
 **Availability**:
 - iOS 10.3+
 - iPadOS 10.3+
-- Mac Catalyst ?+
+- Mac Catalyst 10.3+
 - macOS 10.12+
 - tvOS 10.2+
 - visionOS ?+

@@ -8,7 +8,7 @@ A message you can observe to receive conversation history updates if your app is
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

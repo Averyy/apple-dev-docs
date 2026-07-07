@@ -41,6 +41,8 @@ The pointer argument to `body` is valid only during the execution of `withUnsafe
   Invokes the given closure with a pointer to the given argument.
 - [func withUnsafeMutablePointer<T, E, Result>(to: inout T, (UnsafeMutablePointer<T>) throws(E) -> Result) throws(E) -> Result](withunsafemutablepointer(to:_:).md)
   Calls the given closure with a mutable pointer to the given argument.
+- [func withUnsafeBytes<T, E, Result>(of: inout T, (UnsafeRawBufferPointer) throws(E) -> Result) throws(E) -> Result](withunsafebytes(of:_:)-3ywhh.md)
+  Invokes the given closure with a buffer pointer covering the raw bytes of the given argument.
 - [func withUnsafeBytes<T, E, Result>(of: borrowing T, (UnsafeRawBufferPointer) throws(E) -> Result) throws(E) -> Result](withunsafebytes(of:_:)-5gesg.md)
   Invokes the given closure with a buffer pointer covering the raw bytes of the given argument.
 - [func withUnsafeMutableBytes<T, E, Result>(of: inout T, (UnsafeMutableRawBufferPointer) throws(E) -> Result) throws(E) -> Result](withunsafemutablebytes(of:_:).md)

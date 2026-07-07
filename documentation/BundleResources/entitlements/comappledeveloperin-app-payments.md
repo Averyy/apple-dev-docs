@@ -8,7 +8,6 @@ A list of merchant IDs your app uses for Apple Pay support.
 **Availability**:
 - iOS 6.0+
 - iPadOS 6.0+
-- Mac Catalyst 6.0+
 - visionOS 1.0+
 - watchOS 2.0+
 

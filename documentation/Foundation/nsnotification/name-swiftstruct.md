@@ -730,6 +730,8 @@ struct Name
 ### MessageUI
 - [static let MFMessageComposeViewControllerTextMessageAvailabilityDidChange: NSNotification.Name](nsnotification/name-swift.struct/mfmessagecomposeviewcontrollertextmessageavailabilitydidchange.md)
   Posted when the current device’s ability to send text messages changes.
+- [static let MFMessageComposeViewControllerTextMessageAvailabilityDidChange: NSNotification.Name](NSNotification/Name-swift.struct/MFMessageComposeViewControllerTextMessageAvailabilityDidChange.md)
+  Posted when the current device’s ability to send text messages changes.
 ### NetworkExtension
 - [static let NEFilterConfigurationDidChange: NSNotification.Name](nsnotification/name-swift.struct/nefilterconfigurationdidchange.md)
   Posted after the filter configuration stored in the Network Extension preferences changes.

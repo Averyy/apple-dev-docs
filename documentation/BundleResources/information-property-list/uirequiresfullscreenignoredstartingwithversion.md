@@ -8,7 +8,6 @@ A string value that specifies a system version after which the system ignores th
 **Availability**:
 - iOS 26.2+
 - iPadOS 26.2+
-- Mac Catalyst 26.2+
 
 
 

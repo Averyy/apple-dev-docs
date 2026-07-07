@@ -36,6 +36,15 @@ struct BorrowingIteratorAdapter<Iterator> where Iterator : IteratorProtocol
 ### Conforms To
 - [BorrowingIteratorProtocol](borrowingiteratorprotocol.md)
 
+## See Also
+
+- [protocol IteratorProtocol](iteratorprotocol.md)
+  A type that supplies the values of a sequence one at a time.
+- [protocol BorrowingIteratorProtocol](borrowingiteratorprotocol.md)
+  A type that provides borrowed access to the values of a borrowing sequence.
+- [protocol BorrowingSequence](borrowingsequence.md)
+  A type that provides sequential, borrowing access to its elements.
+
 
 ---
 

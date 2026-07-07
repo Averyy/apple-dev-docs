@@ -8,7 +8,6 @@ The user interfaces to show while an app launches in response to different URL s
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
 
 
 

@@ -8,7 +8,6 @@ The session has saved its data and can now be safely torn down and the images fo
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst 17.0+
 
 ## Declaration
 

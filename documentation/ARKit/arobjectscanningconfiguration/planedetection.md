@@ -5,6 +5,10 @@
 
 A value specifying whether and how the session attempts to automatically detect flat surfaces in the camera-captured image.
 
+**Availability**:
+- iOS ?+
+- iPadOS ?+
+
 ## Declaration
 
 ```swift

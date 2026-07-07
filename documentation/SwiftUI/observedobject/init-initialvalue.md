@@ -18,7 +18,7 @@ Creates an observed object with an initial value.
 
 ```swift
 @MainActor
-@preconcurrency init(initialValue: ObjectType)
+@export(implementation) @preconcurrency init(initialValue: ObjectType)
 ```
 
 #### Discussion

@@ -48,11 +48,11 @@ var body: some View {
 
 On macOS, people use the mouse or trackpad to select a range of text, which they can quickly copy by choosing Edit > Copy, or with the standard keyboard shortcut.
 
-![A macOS window titled New Invitation, with header Event Invite and](https://docs-assets.developer.apple.com/published/5bd237ee3357f5d698d53a63f03b0386/View-textSelection-1%402x.png)
+![A macOS window titled New Invitation, with header Event Invite and](https://docs-assets.developer.apple.com/published/b0a31c41cedda6a8e3d773bf2eb5d53c/View-textSelection-1%402x.png)
 
-On iOS, the person using the app touches and holds on a selectable `Text` view, which brings up a system menu with menu items appropriate for the current context. These menu items operate on the entire contents of the `Text` view; the person can’t select a range of text like they can on macOS.
+On iOS, the person using the app touches and holds on a selectable `Text` view to begin selecting text. In iOS 27 or later, this brings up the system text selection handles and highlight which supports selecting a range of text. In iOS 26 or earlier, this brings up a system menu with menu items appropriate for the current context. These menu items operate on the entire contents of the `Text` view.
 
-![A portion of an iOS view, with header Event Invite and](https://docs-assets.developer.apple.com/published/03f45a86d55e7b5b8c620e8204d33906/View-textSelection-2%402x.png)
+![A portion of an iOS view, with header Event Invite and the date](https://docs-assets.developer.apple.com/published/a45efabe4bfbfa27b3f63847fbecbacc/View-textSelection-2%402x.png)
 
 > **Note**: [`Button`](button.md) views don’t support text selection.
 

@@ -8,7 +8,7 @@ The value that represents the installation of an app after an ad interaction.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst ?+
+- Mac Catalyst 18.0+
 
 ## Declaration
 

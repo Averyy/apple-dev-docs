@@ -15,6 +15,8 @@ Before your app can access certain protected resources, like the Bluetooth inter
   Provide a purpose string that explains to a person why you need access to protected resources on their device.
 - [Inspecting app activity data](../Network/inspecting-app-activity-data.md)
   Verify that your app accesses only the user data and network resources that you expect it to access.
+- [Resetting access to protected resources in macOS](../Xcode/resetting-access-to-protected-resources-in-macOS.md)
+  Use Terminal to remove your app’s authorization access to protected resources during testing.
 ### Bluetooth
 - [NSBluetoothAlwaysUsageDescription](information-property-list/nsbluetoothalwaysusagedescription.md)
   A message that tells people why the app needs access to Bluetooth.
@@ -64,6 +66,8 @@ Before your app can access certain protected resources, like the Bluetooth inter
   A message that tells people why the app needs access to files on a removable volume.
 - [NSFileProviderDomainUsageDescription](information-property-list/nsfileproviderdomainusagedescription.md)
   A message that tells people why the app needs access to files managed by a file provider.
+- [NSFileProviderPresenceUsageDescription](information-property-list/nsfileproviderpresenceusagedescription.md)
+  A message that tells people why the app’s file provider needs to determine which files the person is currently accessing.
 ### Game Center
 - [NSGKFriendListUsageDescription](information-property-list/nsgkfriendlistusagedescription.md)
   A message that tells people why the app needs access to their Game Center friends list.
@@ -136,6 +140,8 @@ Before your app can access certain protected resources, like the Bluetooth inter
 ### Security
 - [NSUpdateSecurityPolicy](information-property-list/nsupdatesecuritypolicy.md)
   A dictionary that identifies which apps or installer packages the operating system allows to write to the app’s bundle.
+- [NSAppBundlesUsageDescription](information-property-list/nsappbundlesusagedescription.md)
+  A message that tells people why the app needs to access the contents of other apps’ bundles.
 - [NSAppDataUsageDescription](information-property-list/nsappdatausagedescription.md)
   A message that tells people why the app needs to access files in other apps’ sandbox containers.
 - [NSUserTrackingUsageDescription](information-property-list/nsusertrackingusagedescription.md)

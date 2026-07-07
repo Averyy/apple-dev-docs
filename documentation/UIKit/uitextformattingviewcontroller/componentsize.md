@@ -8,7 +8,6 @@ Sizes of text formatting view controller components.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 - visionOS 26.0+
 
 ## Declaration

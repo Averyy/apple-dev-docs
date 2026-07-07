@@ -8,7 +8,6 @@ A Boolean value that indicates if the capture session is paused.
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst 17.0+
 
 ## Declaration
 

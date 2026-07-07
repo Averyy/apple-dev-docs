@@ -46,13 +46,13 @@ Specify `com.apple.familycontrols.contentfilter` as the payload type.
             </array>
             <key>filterDenyList</key>
             <array>
-                <string>http://www.example2.com</string>
+                <string>http://www2.example.com</string>
             </array>
             <key>siteAllowList</key>
             <array>
                 <dict>
                     <key>address</key>
-                    <string>http://www.example3.com</string>
+                    <string>http://www3.example.com</string>
                     <key>bookmarkPath</key>
                     <string>/</string>
                     <key>pageTitle</key>
@@ -105,7 +105,7 @@ Specify `com.apple.familycontrols.contentfilter` as the payload type.
 - `filterDenyList` ([string]): The array of URLs that defines a deny list. When `restrictWeb` and `useContentFilter` are enabled, no URLs in the deny list are available to the user. Available: macOS 15.2+
 - `filterWhitelist` ([string]): Use `filterAllowList` instead. Deprecated: macOS 15.2+
 - `restrictWeb` (boolean) *(required)*: If `true`, enables web content filters.
-- `siteAllowList` ([ParentalControlsContentFilter.SiteAllowListItem]): An array of sites that defines an allow list. If specified, this defines additional allowed sites besides those in the automated allow list and deny list, including disallowed adult sites. This key is required if `allowListEnabled` is `true`. Available: macOS 15.2+
+- `siteAllowList` ([ParentalControlsContentFilter.SiteAllowListItem]): An array of sites that defines an allow list. If specified, this defines additional allowed sites besides those in the automated allow list and deny list, including disallowed adult sites. The device requires this key if `allowListEnabled` is `true`. Available: macOS 15.2+
 - `siteWhitelist` ([ParentalControlsContentFilter.SiteWhitelistItem]): Use `siteAllowList` instead. Deprecated: macOS 15.2+
 - `useContentFilter` (boolean): If `true`, filters content automatically.
 - `whitelistEnabled` (boolean): Use `allowListEnabled` instead. Deprecated: macOS 15.2+

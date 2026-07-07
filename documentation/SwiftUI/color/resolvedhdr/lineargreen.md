@@ -17,6 +17,7 @@ The amount of green in the color in the extended sRGB color space variant with l
 ## Declaration
 
 ```swift
+@export(implementation)
 var linearGreen: Float { get set }
 ```
 

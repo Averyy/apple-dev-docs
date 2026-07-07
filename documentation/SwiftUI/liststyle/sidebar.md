@@ -15,6 +15,7 @@ The list style that describes the behavior and appearance of a sidebar list.
 ## Declaration
 
 ```swift
+@export(implementation)
 static var sidebar: SidebarListStyle { get }
 ```
 

@@ -8,7 +8,6 @@ Creates a Core Image context from an EAGL context.
 **Availability**:
 - iOS 5.0+
 - iPadOS 5.0+
-- Mac Catalyst 5.0+
 - tvOS ?+
 
 ## Declaration

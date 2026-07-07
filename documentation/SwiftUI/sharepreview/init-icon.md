@@ -16,12 +16,13 @@ Creates a preview representation.
 ## Declaration
 
 ```swift
-init(_ title: Text, icon: Icon)
+@export(implementation)
+init(_ titleResource: LocalizedStringResource, icon: Icon)
 ```
 
 ## Parameters
 
-- `title`: A title to show in a preview.
+- `titleResource`: A resource for the title to show in a preview.
 - `icon`: An icon to show in a preview.
 
 ## See Also

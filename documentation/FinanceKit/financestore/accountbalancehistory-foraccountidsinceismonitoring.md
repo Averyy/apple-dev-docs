@@ -8,7 +8,6 @@ Returns the account balance history since a time specified by the provided finan
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
-- Mac Catalyst 17.4+
 
 ## Declaration
 

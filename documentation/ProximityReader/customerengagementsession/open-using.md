@@ -16,6 +16,10 @@ Opens the engagement session.
 final func open(using token: CustomerEngagement.Token? = nil) async throws
 ```
 
+#### Discussion
+
+> **Note**: [`CustomerEngagementSession.Error`](customerengagementsession/error.md) if the open request fails. This method can also throw `Foundation/URLError`.
+
 ## Parameters
 
 - `token`: `The Customer Engagement token used to authenticate your credentials. If you omit the token, you must have already created a valid [`PaymentCardReaderSession`](paymentcardreadersession.md) before calling this method.

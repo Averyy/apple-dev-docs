@@ -14,6 +14,7 @@ The list style that describes the behavior and appearance of an inset grouped li
 ## Declaration
 
 ```swift
+@export(implementation)
 static var insetGrouped: InsetGroupedListStyle { get }
 ```
 

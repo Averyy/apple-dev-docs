@@ -17,6 +17,7 @@ Creates a state property that stores an initial value.
 ## Declaration
 
 ```swift
+@export(implementation)
 init(initialValue value: Value)
 ```
 

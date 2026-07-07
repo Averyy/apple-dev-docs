@@ -53,10 +53,13 @@ For example, you can vary the size of an impulse you apply to an entity with [`I
   An action which animates the transform of an entity to rotate around a specified local axis.
 ### Behavior trees
 - [struct BehaviorTreeComponent](behaviortreecomponent.md)
+  Manages which behavior tree is active for the component’s entity.
 - [class BehaviorTreeResource](behaviortreeresource.md)
   An immutable representation of a behavior tree.
 - [protocol BehaviorTreeAction](behaviortreeaction.md)
+  A protocol that defines an action that a behavior tree action node can use.
 - [protocol BehaviorTreeActionHandler](behaviortreeactionhandler.md)
+  Behavior Tree-specific event handlers that allow an `ActionResult` to be returned from the handler.
 - [enum ActionResult](actionresult.md)
   Status values that an action can report back to the animation system.
 

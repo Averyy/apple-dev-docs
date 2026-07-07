@@ -24,7 +24,7 @@ object PrivacyPreferencesPolicyControl.Services.Identity
 - `Deny`: Equivalent to a `false` value for the `Allowed` key
 - `AllowStandardUserToSetSystemService`: Allows a standard (non-admin) user to configure the permissions for the specified app in the Privacy preferences for services that otherwise require admin authorization; only valid for the `ListenEvent` and `ScreenCapture` services > **Note**:  Every payload needs to include either `Authorization` or `Allowed`, but not both. Available: macOS 11+
 Deprecated: macOS 27+
-- `CodeRequirement` (string) *(required)*: Obtained via the command `codesign -display -r -`. Deprecated: macOS 27+
+- `CodeRequirement` (string) *(required)*: Obtain this value by running `codesign -display -r -`. Deprecated: macOS 27+
 - `Comment` (string): Not used. Deprecated: macOS 27+
 - `Identifier` (string) *(required)*: The bundle ID or installation path of the binary. > **Note**:  This value is case-sensitive. Deprecated: macOS 27+
 - `IdentifierType` (string) *(required)*: The type of identifier value. Application bundles must be identified by bundle ID. Nonbundled binaries must be identified by installation path. Helper tools embedded within an application bundle automatically inherit the permissions of their enclosing app bundle. Deprecated: macOS 27+

@@ -8,7 +8,6 @@ The instantaneous collider speed (in m/s) over which the source collider will be
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 
 ## Declaration

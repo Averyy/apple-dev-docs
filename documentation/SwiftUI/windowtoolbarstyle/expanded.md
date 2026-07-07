@@ -11,6 +11,7 @@ A window toolbar style which displays its title bar area above the toolbar.
 ## Declaration
 
 ```swift
+@export(implementation)
 static var expanded: ExpandedWindowToolbarStyle { get }
 ```
 

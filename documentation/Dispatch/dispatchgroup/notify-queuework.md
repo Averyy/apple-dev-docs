@@ -8,7 +8,7 @@ Schedules the submission of a block to a queue when all tasks in the current gro
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+
-- Mac Catalyst ?+
+- Mac Catalyst 8.0+
 - macOS 10.10+
 - tvOS ?+
 - visionOS ?+

@@ -17,8 +17,8 @@ Returns a new view with its inherited symbol image effects either removed or lef
 ## Declaration
 
 ```swift
-nonisolated
-func symbolEffectsRemoved(_ isEnabled: Bool = true) -> some View
+@export(implementation)
+nonisolated func symbolEffectsRemoved(_ isEnabled: Bool = true) -> some View
 ```
 
 #### Return Value

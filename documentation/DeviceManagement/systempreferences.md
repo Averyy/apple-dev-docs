@@ -75,7 +75,7 @@ Specify `com.apple.systempreferences` as the payload type.
 ## Properties
 
 - `DisabledPreferencePanes` ([string]): The list of disabled System Preferences panes. Deprecated: macOS 13+
-- `DisabledSystemSettings` ([string]): The list of disabled System Settings extensions. All other items will be enabled. When you specify `DisabledSystemSettings`, the device ignores `DisabledPreferencePanes` and `EnabledPreferencePanes`. > **Note**:  A given System Settings extension can supply more than one section in System Settings; disabling such an extension disables all sections it supplies. Available: macOS 13+
+- `DisabledSystemSettings` ([string]): The list of disabled System Settings extensions. The device enables all other items. When you specify `DisabledSystemSettings`, the device ignores `DisabledPreferencePanes` and `EnabledPreferencePanes`. > **Note**:  A given System Settings extension can supply more than one section in System Settings; disabling such an extension disables all sections it supplies. Available: macOS 13+
 Deprecated: macOS 13+
 - `EnabledPreferencePanes` ([string]): The list of enabled System Preferences panes. Deprecated: macOS 13+
 

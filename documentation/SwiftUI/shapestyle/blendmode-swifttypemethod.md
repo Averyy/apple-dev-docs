@@ -17,6 +17,7 @@ Returns a new style based on the current style that uses `mode` as its blend mod
 ## Declaration
 
 ```swift
+@export(implementation)
 static func blendMode(_ mode: BlendMode) -> some ShapeStyle
 ```
 

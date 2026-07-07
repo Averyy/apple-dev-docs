@@ -8,7 +8,6 @@ The bundle ID of the widget that’s available as a Home screen quick action in 
 **Availability**:
 - iOS 10.0+
 - iPadOS 10.0+
-- Mac Catalyst 10.0+
 - tvOS 9.0+
 - watchOS 2.0+
 

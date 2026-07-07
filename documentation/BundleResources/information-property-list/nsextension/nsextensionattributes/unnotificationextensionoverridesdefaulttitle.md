@@ -8,7 +8,6 @@ A Boolean value indicating whether the title of the app extension’s view contr
 **Availability**:
 - iOS 10.0+
 - iPadOS 10.0+
-- Mac Catalyst 10.0+
 
 
 

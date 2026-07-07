@@ -61,6 +61,9 @@ A [`UIBarAppearance`](uibarappearance.md) object contains the common traits shar
 ### Getting the supported idiom
 - [var idiom: UIUserInterfaceIdiom](uibarappearance/idiom.md)
   The idiom targeted by this bar appearance object.
+### Instance Properties
+- [var overrideUserInterfaceStyle: UIUserInterfaceStyle](uibarappearance/overrideuserinterfacestyle.md)
+  Overrides the userInterfaceStyle of the bar.
 
 ## Relationships
 

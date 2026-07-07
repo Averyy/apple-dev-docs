@@ -1,6 +1,6 @@
 # ComputeNodeGraph.Assembly
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: struct
 
 Fully assembled configuration of compute graph nodes.
@@ -12,7 +12,7 @@ Fully assembled configuration of compute graph nodes.
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 ## Declaration
 
@@ -35,6 +35,8 @@ Unless you need the layout before or without compiling the shaders, you can comp
   Describes how a Metal texture is bound to a compute pipeline stage.
 - [ComputeNodeGraph.Assembly.UniformBinding](computenodegraph/assembly/uniformbinding.md)
   Describes how a uniform value is located within the graph’s uniform buffer.
+### Initializers
+- [init(ComputeNodeGraph) throws](computenodegraph/assembly/init(_:).md)
 ### Instance Properties
 - [var constantBuffers: [ComputeNodeGraph.Assembly.BufferBinding]](computenodegraph/assembly/constantbuffers.md)
 - [var deviceBuffers: [ComputeNodeGraph.Assembly.BufferBinding]](computenodegraph/assembly/devicebuffers.md)

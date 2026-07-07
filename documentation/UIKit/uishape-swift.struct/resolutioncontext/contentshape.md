@@ -8,7 +8,7 @@ The resolved shape of the content to which this shape can apply.
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst ?+
+- Mac Catalyst 17.0+
 - visionOS 1.0+
 
 ## Declaration

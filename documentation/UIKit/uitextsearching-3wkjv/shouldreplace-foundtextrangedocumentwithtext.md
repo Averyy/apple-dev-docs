@@ -9,7 +9,7 @@ Determines whether the searchable object allows replacement of the text range yo
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst ?+
+- Mac Catalyst 16.0+
 - visionOS ?+
 
 ## Declaration

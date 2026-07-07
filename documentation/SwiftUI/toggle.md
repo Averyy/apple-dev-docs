@@ -101,20 +101,20 @@ You can also define custom styles by creating a type that conforms to the [`Togg
 
 ### Creating a toggle
 - [init(_:isOn:)](toggle/init(_:ison:).md)
-  Creates a toggle that generates its label from a localized string key.
+  Creates a toggle that generates its label from a localized string resource.
 - [init(isOn: Binding<Bool>, label: () -> Label)](toggle/init(ison:label:).md)
   Creates a toggle that displays a custom label.
 - [init(_:image:isOn:)](toggle/init(_:image:ison:).md)
-  Creates a toggle that generates its label from a localized string key and image resource.
+  Creates a toggle that generates its label from a localized string resource and image resource.
 - [init(_:systemImage:isOn:)](toggle/init(_:systemimage:ison:).md)
   Creates a toggle that generates its label from a localized string key and system image.
 ### Creating a toggle for a collection
 - [init(_:sources:isOn:)](toggle/init(_:sources:ison:).md)
-  Creates a toggle representing a collection of values that generates its label from a localized string key.
+  Creates a toggle representing a collection of values that generates its label from a localized string resource.
 - [init<C>(sources: C, isOn: KeyPath<C.Element, Binding<Bool>>, label: () -> Label)](toggle/init(sources:ison:label:).md)
   Creates a toggle representing a collection of values with a custom label.
 - [init(_:image:sources:isOn:)](toggle/init(_:image:sources:ison:).md)
-  Creates a toggle representing a collection of values that generates its label from a localized string key and image resource.
+  Creates a toggle representing a collection of values that generates its label from a localized string resource and image resource.
 - [init(_:systemImage:sources:isOn:)](toggle/init(_:systemimage:sources:ison:).md)
   Creates a toggle representing a collection of values that generates its label from a localized string key and system image.
 ### Creating a toggle from a configuration

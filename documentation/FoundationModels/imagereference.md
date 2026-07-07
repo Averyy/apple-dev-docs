@@ -77,8 +77,6 @@ struct MyTool: Tool {
   Analyze and extract information from images by combining them with descriptive text prompts.
 - [struct Attachment](attachment.md)
   An asset provided to the model.
-- [protocol AttachmentContent](attachmentcontent.md)
-  A type that you use as the content of an attachment.
 - [struct ImageAttachmentContent](imageattachmentcontent.md)
   A type that holds image data.
 

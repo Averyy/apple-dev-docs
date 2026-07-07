@@ -17,6 +17,7 @@ Create a Rotor entry with a specific label and range. This Rotor entry will be a
 ## Declaration
 
 ```swift
+@export(implementation)
 init(_ label: LocalizedStringResource, textRange: Range<String.Index>, prepare: @escaping () -> Void = {}) where ID == Never
 ```
 

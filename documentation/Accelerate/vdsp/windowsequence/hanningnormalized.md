@@ -8,7 +8,7 @@ The normalized-Hann window, used to reduce spectral leakage prior to discrete Fo
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst ?+
+- Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
 - visionOS ?+

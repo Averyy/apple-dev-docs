@@ -8,7 +8,7 @@ Adds an indefinite symbol effect to the image view with the specified options an
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst ?+
+- Mac Catalyst 17.0+
 - tvOS 17.0+
 - visionOS ?+
 

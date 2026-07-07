@@ -44,6 +44,9 @@ However your decide to process the result, your app needs to call [`reportConsum
   Reports the consumption status, and optionally provides one or more associated insight identifiers.
 - [func reportConsumption(InsightEvaluationConsumptionStatus, insightsUsed: [any TrustInsight])](insightevaluation/reportconsumption(_:insightsused:).md)
   Reports the consumption status, and optionally provide one or more associated insights.
+### Instance Properties
+- [var eventID: String](insightevaluation/eventid.md)
+  Identifier for this evaluation result that can be recorded with other transaction records so that in the event that fraud or abuse is later discovered associated with the transaction it can be reported to Apple as Offline feedback via Apple Business Register
 
 ## Relationships
 

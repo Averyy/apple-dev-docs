@@ -1,6 +1,6 @@
 # reset(encoder:)
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: method
 
 Resets the simulation to its initial state, clearing all live elements and accumulated time.
@@ -12,7 +12,7 @@ Resets the simulation to its initial state, clearing all live elements and accum
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 ## Declaration
 

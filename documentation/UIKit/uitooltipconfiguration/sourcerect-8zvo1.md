@@ -8,7 +8,7 @@ The region of the view or control where the pointer must hover to trigger the ap
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst ?+
+- Mac Catalyst 15.0+
 - visionOS ?+
 
 ## Declaration

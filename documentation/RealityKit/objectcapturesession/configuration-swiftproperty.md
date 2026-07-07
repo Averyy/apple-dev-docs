@@ -8,7 +8,6 @@ The read-only `Configuration` used to start the capture session.  The configurat
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst 17.0+
 
 ## Declaration
 

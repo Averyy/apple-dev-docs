@@ -17,6 +17,7 @@ A mostly opaque material.
 ## Declaration
 
 ```swift
+@export(implementation)
 static var ultraThickMaterial: Material { get }
 ```
 

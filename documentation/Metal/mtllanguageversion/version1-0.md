@@ -8,7 +8,6 @@ Version 1.0 of the Metal shading language.
 **Availability**:
 - iOS 9.0+
 - iPadOS 9.0+
-- Mac Catalyst 9.0+
 - tvOS 9.0+
 - visionOS 1.0+
 

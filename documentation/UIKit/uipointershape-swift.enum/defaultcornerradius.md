@@ -8,7 +8,7 @@ The default corner radius for a pointer using a rounded rectangle.
 **Availability**:
 - iOS 13.4+
 - iPadOS 13.4+
-- Mac Catalyst ?+
+- Mac Catalyst 13.4+
 - visionOS ?+
 
 ## Declaration

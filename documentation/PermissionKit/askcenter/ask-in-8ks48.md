@@ -8,7 +8,6 @@ Tells the system to request that a person send the the significant app update pe
 **Availability**:
 - iOS 26.2+
 - iPadOS 26.2+
-- Mac Catalyst 26.2+
 - visionOS 26.2+
 
 ## Declaration

@@ -56,6 +56,8 @@ Because the login process can happen on any network, the system sends all HTTP r
 
 ## See Also
 
+- [Implementing web-based authentication with Platform Single Sign-on](implementing-web-based-authentication.md)
+  Support modern, phishing-resistant, and flexible authentication methods.
 - [class ASAuthorizationProviderExtensionKerberosMapping](asauthorizationproviderextensionkerberosmapping.md)
   A set of Kerberos mappings that the system login process uses.
 

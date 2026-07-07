@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: enum
 
-A collection of format styles for displaying live-updating time information in [`Text`](text.md) views.
+A collection of format styles for displaying live-updating time information in text views.
 
 **Availability**:
 - iOS 18.0+
@@ -22,9 +22,9 @@ enum SystemFormatStyle
 
 #### Overview
 
-Use the format styles in this namespace to present time-based data that automatically updates as the system clock advances. Each style formats a [`Date`](https://developer.apple.com/documentation/Foundation/Date) value into an [`AttributedString`](https://developer.apple.com/documentation/Foundation/AttributedString) and conforms to both `FormatStyle` and `DiscreteFormatStyle`, allowing SwiftUI to efficiently schedule text updates at exactly the right moments.
+Use the format styles in this namespace to present time-based data in [`Text`](text.md) views that automatically updates as the system clock advances. Each style formats a [`Date`](https://developer.apple.com/documentation/Foundation/Date) value into an [`AttributedString`](https://developer.apple.com/documentation/Foundation/AttributedString) and conforms to both `FormatStyle` and `DiscreteFormatStyle`, allowing SwiftUI to efficiently schedule text updates at exactly the right moments.
 
-You typically use these styles with the `Text/init(_:format:)-2rl92` initializer:
+You typically use these styles with the [`init(_:format:)`](text/init(_:format:)-8sfgg.md) initializer:
 
 ```swift
 let startDate = Date.now

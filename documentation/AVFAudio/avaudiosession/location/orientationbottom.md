@@ -6,7 +6,7 @@
 **Availability**:
 - iOS 7.0+ - Deprecated
 - iPadOS 7.0+ - Deprecated
-- Mac Catalyst ?+
+- Mac Catalyst 7.0+ - Deprecated
 - tvOS 9.0+ - Deprecated
 - visionOS 1.0+ - Deprecated
 - watchOS 2.0+ - Deprecated

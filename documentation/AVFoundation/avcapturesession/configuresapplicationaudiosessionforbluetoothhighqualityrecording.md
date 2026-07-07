@@ -8,7 +8,6 @@ A Boolean value that indicates whether the capture session configures the app’
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst 26.0+
 
 ## Declaration
 

@@ -8,7 +8,7 @@ The collection view list section automatically determines the visibility of the 
 **Availability**:
 - iOS 14.5+
 - iPadOS 14.5+
-- Mac Catalyst ?+
+- Mac Catalyst 14.5+
 - visionOS ?+
 
 ## Declaration

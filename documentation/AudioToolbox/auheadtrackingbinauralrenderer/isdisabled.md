@@ -8,7 +8,6 @@ Indicates whether the host is bypassing the renderer due to poor performance.
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 
 ## Declaration
 

@@ -15,6 +15,7 @@ A selectability value that enables text selection by a person using your app.
 ## Declaration
 
 ```swift
+@export(implementation)
 static var enabled: EnabledTextSelectability { get }
 ```
 

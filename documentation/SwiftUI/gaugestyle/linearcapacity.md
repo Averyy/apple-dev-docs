@@ -17,7 +17,7 @@ A gauge style that displays a bar that fills from leading to trailing edges as t
 
 ```swift
 @MainActor
-@preconcurrency static var linearCapacity: LinearCapacityGaugeStyle { get }
+@export(implementation) @preconcurrency static var linearCapacity: LinearCapacityGaugeStyle { get }
 ```
 
 #### Discussion

@@ -8,7 +8,6 @@ Damping applied to the velocities of the particles, based on the velocities of t
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 
 ## Declaration

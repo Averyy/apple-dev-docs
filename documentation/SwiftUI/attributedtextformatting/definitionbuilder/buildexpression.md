@@ -15,6 +15,7 @@
 ## Declaration
 
 ```swift
+@export(implementation)
 static func buildExpression<D>(_ definition: D) -> D where Scope == D.Scope, D : AttributedTextFormattingDefinition
 ```
 

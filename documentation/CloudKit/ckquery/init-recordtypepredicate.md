@@ -35,7 +35,7 @@ You can’t query for user records, and executing a query where the record type 
 ## See Also
 
 - [init(coder: NSCoder)](ckquery/init(coder:).md)
-  Creates an operation group from a serialized instance.
+  Creates a query from a serialized instance.
 
 
 ---

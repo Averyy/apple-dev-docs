@@ -8,7 +8,6 @@ A buffer that contains pixel information identifying the shape of objects from t
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

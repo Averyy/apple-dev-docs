@@ -65,7 +65,6 @@ struct UTF8Span
   Returns an iterator that will decode the code units into `Unicode.Scalar`s.
 - [func unicodeScalarsEqual(to: some Sequence<Unicode.Scalar>) -> Bool](utf8span/unicodescalarsequal(to:).md)
   Whether this span has the same `Unicode.Scalar`s as `other`.
-- [func withBytes<R, E>((RawSpan) throws(E) -> R) throws(E) -> R](utf8span/withbytes(_:).md)
 
 ## Relationships
 
@@ -87,6 +86,7 @@ struct UTF8Span
   `MutableSpan<Element>` represents a contiguous region of memory which contains initialized instances of `Element`.
 - [struct MutableRawSpan](mutablerawspan.md)
   `MutableRawSpan` represents a contiguous region of memory which contains initialized bytes.
+- [struct SpanIterator](spaniterator.md)
 
 
 ---

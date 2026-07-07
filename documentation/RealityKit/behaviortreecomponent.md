@@ -3,6 +3,8 @@
 **Framework**: RealityKit  
 **Kind**: struct
 
+Manages which behavior tree is active for the component’s entity.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -37,7 +39,9 @@ struct BehaviorTreeComponent
 - [class BehaviorTreeResource](behaviortreeresource.md)
   An immutable representation of a behavior tree.
 - [protocol BehaviorTreeAction](behaviortreeaction.md)
+  A protocol that defines an action that a behavior tree action node can use.
 - [protocol BehaviorTreeActionHandler](behaviortreeactionhandler.md)
+  Behavior Tree-specific event handlers that allow an `ActionResult` to be returned from the handler.
 - [enum ActionResult](actionresult.md)
   Status values that an action can report back to the animation system.
 

@@ -17,6 +17,7 @@ A rectangular shape with rounded corners with different values, aligned inside t
 ## Declaration
 
 ```swift
+@export(implementation)
 static func rect(topLeadingRadius: CGFloat = 0, bottomLeadingRadius: CGFloat = 0, bottomTrailingRadius: CGFloat = 0, topTrailingRadius: CGFloat = 0, style: RoundedCornerStyle = .continuous) -> Self
 ```
 

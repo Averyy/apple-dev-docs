@@ -21,7 +21,7 @@ class func segmentBoundaryRecommendations(forVideoTrack videoAssetTrack: AVAsset
 
 #### Return Value
 
-Array of AVPlannedVideoSegmentConfigurations.
+Array of AVPlannedVideoSegmentConfiguration objects, each element specifying the configuration of a planned video segment, ordered in output PTS order
 
 #### Discussion
 

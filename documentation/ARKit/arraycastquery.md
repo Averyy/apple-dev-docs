@@ -8,7 +8,6 @@ A mathematical ray you use to find 3D positions on real-world surfaces.
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

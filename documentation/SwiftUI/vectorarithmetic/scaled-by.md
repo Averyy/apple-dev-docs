@@ -17,6 +17,7 @@ Returns a value with each component of this value multiplied by the given value.
 ## Declaration
 
 ```swift
+@export(implementation)
 func scaled(by rhs: Double) -> Self
 ```
 

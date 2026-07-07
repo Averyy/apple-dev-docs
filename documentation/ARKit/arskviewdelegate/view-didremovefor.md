@@ -8,7 +8,6 @@ Tells the delegate that the SpriteKit node corresponding to an AR anchor has bee
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

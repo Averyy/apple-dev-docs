@@ -8,7 +8,7 @@ A blur style to apply to the background of the shield.
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst ?+
+- Mac Catalyst 15.0+
 
 ## Declaration
 

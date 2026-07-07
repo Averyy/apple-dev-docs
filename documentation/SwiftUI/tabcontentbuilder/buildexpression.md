@@ -15,6 +15,7 @@
 ## Declaration
 
 ```swift
+@export(implementation)
 static func buildExpression(_ content: some TabContent<TabValue>) -> some TabContent<TabValue>
 ```
 

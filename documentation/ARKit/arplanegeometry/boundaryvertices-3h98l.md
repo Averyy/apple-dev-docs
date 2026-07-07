@@ -8,7 +8,6 @@ An array of vertex positions for each point along the plane’s boundary.
 **Availability**:
 - iOS 11.3+
 - iPadOS 11.3+
-- Mac Catalyst 11.3+
 
 ## Declaration
 

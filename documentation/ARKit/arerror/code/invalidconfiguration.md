@@ -8,7 +8,6 @@ An error that indicates the configuration contains ambiguous or erroneous data.
 **Availability**:
 - iOS 12.0+
 - iPadOS 12.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

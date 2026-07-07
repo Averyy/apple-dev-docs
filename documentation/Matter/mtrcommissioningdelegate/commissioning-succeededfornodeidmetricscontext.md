@@ -6,13 +6,13 @@
 Notification that commissioning has succeeded.
 
 **Availability**:
-- iOS 26.2+
-- iPadOS 26.2+
-- Mac Catalyst 26.2+
-- macOS 26.2+
-- tvOS 26.2+
-- visionOS 26.2+
-- watchOS 26.2+
+- iOS 27.0+ (Beta)
+- iPadOS 27.0+ (Beta)
+- Mac Catalyst 27.0+ (Beta)
+- macOS 27.0+ (Beta)
+- tvOS 27.0+ (Beta)
+- visionOS 27.0+ (Beta)
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 

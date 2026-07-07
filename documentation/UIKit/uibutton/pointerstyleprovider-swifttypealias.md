@@ -8,7 +8,7 @@ A type alias defining a closure that returns a pointer style to apply to a butto
 **Availability**:
 - iOS 13.4+
 - iPadOS 13.4+
-- Mac Catalyst ?+
+- Mac Catalyst 13.4+
 - visionOS ?+
 
 ## Declaration

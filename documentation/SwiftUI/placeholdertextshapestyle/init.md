@@ -17,6 +17,7 @@ Creates a new placeholder text shape style.
 ## Declaration
 
 ```swift
+@export(implementation)
 init()
 ```
 

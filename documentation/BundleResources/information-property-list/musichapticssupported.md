@@ -8,7 +8,6 @@ A Boolean value that indicates to the system that your app supports the Music Ha
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 
 
 

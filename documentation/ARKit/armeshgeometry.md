@@ -8,7 +8,6 @@ Mesh information stored in an efficient, array-based format.
 **Availability**:
 - iOS 13.4+
 - iPadOS 13.4+
-- Mac Catalyst 13.4+
 
 ## Declaration
 

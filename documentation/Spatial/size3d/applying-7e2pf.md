@@ -8,7 +8,7 @@ Returns a size that’s transformed by the specified scaled pose.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst ?+
+- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS ?+

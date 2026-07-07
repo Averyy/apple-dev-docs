@@ -17,8 +17,8 @@ Communicates to the user what happens after performing the view’s action.
 ## Declaration
 
 ```swift
-nonisolated
-func accessibilityHint(_ hint: LocalizedStringResource, isEnabled: Bool) -> ModifiedContent<Content, Modifier>
+@export(implementation)
+nonisolated func accessibilityHint(_ hint: LocalizedStringResource, isEnabled: Bool) -> ModifiedContent<Content, Modifier>
 ```
 
 #### Discussion

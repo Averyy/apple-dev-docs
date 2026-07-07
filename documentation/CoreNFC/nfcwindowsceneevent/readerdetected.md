@@ -8,7 +8,7 @@ The eligible device detected the RF field of an NFC reader.
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
-- Mac Catalyst ?+
+- Mac Catalyst 17.4+
 
 ## Declaration
 

@@ -8,7 +8,7 @@ Specifies the distance between centers of the lenses of the camera system that c
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst 26.0+
 - macOS 26.0+
 - tvOS 26.0+
 - visionOS 26.0+

@@ -90,7 +90,7 @@ Conform to this protocol in your subclass of [`FSVolume`](fsvolume.md). To provi
 - [FSItem.SetAttributesRequest](fsitem/setattributesrequest.md)
   A request to set attributes on an item.
 - [class FSSetAttributesResult](fssetattributesresult.md)
-  The result of a set-attributes call.
+  The restlt of a set-attributes call.
 ### Inspecting directory contents
 - [func enumerateDirectory(FSItem, startingAt: FSDirectoryCookie, verifier: FSDirectoryVerifier, attributes: FSItem.GetAttributesRequest?, packer: FSDirectoryEntryPacker, context: FSContext, replyHandler: (FSEnumerateDirectoryResult?, (any Error)?) -> Void)](fsvolume/handler/enumeratedirectory(_:startingat:verifier:attributes:packer:context:replyhandler:).md)
   Enumerates the contents of the given directory.

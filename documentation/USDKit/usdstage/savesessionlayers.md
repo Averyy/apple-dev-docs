@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: method
 
+Saves the stage’s dirty session layers to their sources.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -17,9 +19,14 @@
 func saveSessionLayers() throws
 ```
 
+#### Discussion
+
+> **Note**: An error if a layer cannot be saved. Other dirty session layers may have already been saved when the failure occurred.
+
 ## See Also
 
 - [func save() throws](usdstage/save.md)
+  Saves the stage’s dirty layers to their sources.
 - [func reload() throws](usdstage/reload.md)
   Reloads the stage’s layers from their sources, discarding any unsaved changes.
 

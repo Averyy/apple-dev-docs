@@ -26,7 +26,7 @@ If `LaunchdConfigurations` is present, the device stores the launchd configurati
 
 If both `ExecutableAssetReference` and `LaunchdConfigurations` are present, and the device changes just the executable data, it kills and restarts any running tasks associated with the launchd configurations.
 
-> **Note**:  If an executable is an app, the system can’t manage the app as it can only manage apps installed in `/Applications`. Also, the system can’t use system extensions in the app as it only loads them from apps installed in `/Applications`.
+> **Note**:  If an executable is an app, the device can’t manage the app as it can only manage apps installed in `/Applications`. Also, the device can’t use system extensions in the app as it only loads them from apps installed in `/Applications`.
 
 ##### Configuration Availability
 
@@ -71,10 +71,10 @@ This configuration sets up a background task using a launchd daemon.
 
 ## Properties
 
-- `ExecutableAssetReference` (string): Specifies the identifier of an asset declaration containing a reference to the files to be used for the background task configuration. The corresponding asset must be of type `com.apple.asset.data`. The referenced data must be a zip archive of an entire directory, that will be expanded and stored in a well known location for the background task. The asset’s “ContentType” and “Hash-SHA-256” keys in the “Reference” key are required. This file should contain background task executables, scripts, and configuration files, but not the `launchd` configuration files.
-- `LaunchdConfigurations` ([ServicesBackgroundTasksLaunchdItemObject]): An array of `launchd` configuration files used to run the background tasks.
-- `TaskDescription` (string): A description of the set of background tasks managed by this configuration.
-- `TaskType` (string) *(required)*: The unique identifier of the set of background tasks managed with this configuration. This should be a reverse DNS style identifier. The system uses this identifier to differentiate between tasks in different configurations.
+- `ExecutableAssetReference` (string): Specifies the identifier of an asset declaration containing a reference to the files to be used for the background task configuration. The corresponding asset must be of type `com.apple.asset.data`. The referenced data must be a zip archive of an entire directory that the device expands and stores in a well known location for the background task. The asset’s “ContentType” and “Hash-SHA-256” keys in the “Reference” key are required. This zip archive should contain background task executables, scripts, and configuration files, but not the `launchd` configuration files. The device stores the expanded zip archive in the tamper-proof `/var/db/ManagedConfigurationFiles/BackgroundTaskServices/Services/<TaskType>` directory, where `<TaskType>` is the value of the `TaskType` key in the configuration.
+- `LaunchdConfigurations` ([ServicesBackgroundTasksLaunchdItemObject]): An array of `launchd` configuration files used to run the background tasks. The device stores the configuration files in the tamper-proof `/var/db/ManagedConfigurationFiles/BackgroundTaskServices/LaunchDaemons` or `/var/db/ManagedConfigurationFiles/BackgroundTaskServices/LaunchAgents` directories, based on the `Context` value for each item.
+- `TaskDescription` (string): A description of the set of background tasks this configuration manages.
+- `TaskType` (string) *(required)*: The unique identifier of the set of background tasks managed with this configuration. This should be a reverse DNS style identifier. The device uses this identifier to differentiate between tasks in different configurations.
 
 ## See Also
 

@@ -8,7 +8,6 @@ The protocols that the app uses to communicate with external accessory hardware.
 **Availability**:
 - iOS 3.0+
 - iPadOS 3.0+
-- Mac Catalyst 3.0+
 
 
 

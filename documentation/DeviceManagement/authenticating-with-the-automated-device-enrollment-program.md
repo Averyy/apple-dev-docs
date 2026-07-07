@@ -1,4 +1,4 @@
-# Authenticating with the Automated Device Enrollment program
+# Authenticating for Automated Device Enrollment
 
 **Framework**: Device Management
 
@@ -6,9 +6,9 @@ Communicate securely with the web service using a server token.
 
 #### Overview
 
-The Automated Device Enrollment program uses a server token to allow a device management service to securely communicate with the program’s service.
+Automated Device Enrollment uses a server token to allow a device management service to securely communicate with the program’s service.
 
-#### Get an Automated Device Enrollment Program Server Token
+#### Get an Automated Device Enrollment Server Token
 
 To get a server token, the user must complete the following steps. You can help by automating some of the steps.
 
@@ -26,8 +26,8 @@ The token consists of these 4 items: the consumer key, the consumer secret, the 
 
 The server tokens can be deployed automatically or manually.
 
-- **Automatically**: The device management service must automatically decrypt this file when it’s uploaded, using the private key for the Automated Device Enrollment program web services.
-- **Manually**: Use the private key and an S/MIME encryption utility to manually decrypt the encrypted token file before it’s uploaded to the device management service. You then use the plain-text token file for authentication with the Automated Device Enrollment program services.
+- **Automatically**: The device management service must automatically decrypt this file when it’s uploaded, using the private key for the Automated Device Enrollment web services.
+- **Manually**: Use the private key and an S/MIME encryption utility to manually decrypt the encrypted token file before it’s uploaded to the device management service. You then use the plain-text token file for authentication with the Automated Device Enrollment services.
 
 #### Use the Oauth Credentials
 
@@ -67,14 +67,14 @@ Connection: close
 
 After a period of time, the token expires and the service returns a `401` error code. When this happens, you must request a new session token.
 
-> **Note**:  The Automated Device Enrollment program service periodically issues a new `X-ADM-Auth-Session` in its response to other service calls. Use this new header value in subsequent calls.
+> **Note**:  The Automated Device Enrollment service periodically issues a new `X-ADM-Auth-Session` in its response to other service calls. Use this new header value in subsequent calls.
 
 ## Topics
 
 ### Examples and error codes
 - [Examining server tokens](examining-server-tokens.md)
   View sample encrypted and unencrypted tokens to verify your server tokens are in the right format.
-- [Interpreting Automated Device Enrollment program error codes](interpreting-automated-device-enrollment-program-error-codes.md)
+- [Interpreting Automated Device Enrollment error codes](interpreting-automated-device-enrollment-program-error-codes.md)
   Interpret the error codes you might encounter or that can happen during authentication.
 
 ## See Also

@@ -8,7 +8,6 @@ The framework automatically determines when and where to generate environment te
 **Availability**:
 - iOS 12.0+
 - iPadOS 12.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

@@ -8,7 +8,7 @@ An array of available homes to add the new device into.
 **Availability**:
 - iOS 16.1+
 - iPadOS 16.1+
-- Mac Catalyst ?+
+- Mac Catalyst 16.1+
 - macOS 14.0+
 - visionOS ?+
 

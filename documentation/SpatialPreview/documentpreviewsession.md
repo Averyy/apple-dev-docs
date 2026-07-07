@@ -3,7 +3,7 @@
 **Framework**: Spatial Preview  
 **Kind**: class
 
-Document session allows you to present the contents of a URL or Data.
+A session that streams document content to a connected visionOS device for spatial preview.
 
 **Availability**:
 - macOS 27.0+ (Beta)
@@ -60,6 +60,7 @@ Track connection changes using [`SpatialPreviewSessionState`](spatialpreviewsess
   The display name of the document on the spatial preview
 ### Instance Methods
 - [func start(endpoint: SpatialPreviewEndpoint) async throws](documentpreviewsession/start(endpoint:).md)
+  Connects to the specified endpoint and prepares the session to send document updates.
 - [func updateContents(data: Data) async throws](documentpreviewsession/updatecontents(data:).md)
   Update the contents of the document with the provided data.
 - [func updateContents(url: URL) async throws](documentpreviewsession/updatecontents(url:).md)

@@ -8,7 +8,6 @@ A value that specifies whether and how the session automatically attempts to det
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
 
 ## Declaration
 

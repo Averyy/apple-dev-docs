@@ -8,7 +8,6 @@ A Boolean value that determines whether the device camera uses fixed focus or au
 **Availability**:
 - iOS 11.3+
 - iPadOS 11.3+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

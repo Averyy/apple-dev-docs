@@ -8,7 +8,7 @@ An intent schema that starts a capture or opens the camera in a specified mode w
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst ?+
+- Mac Catalyst 18.0+
 - macOS 15.0+
 - visionOS 2.0+
 

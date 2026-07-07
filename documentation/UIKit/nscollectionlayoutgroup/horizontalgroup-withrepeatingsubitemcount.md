@@ -8,7 +8,7 @@ Creates a group that repeats the specified subitem a certain number of times alo
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst ?+
+- Mac Catalyst 16.0+
 - tvOS ?+
 - visionOS ?+
 

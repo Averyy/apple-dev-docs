@@ -15,6 +15,7 @@
 ## Declaration
 
 ```swift
+@export(implementation)
 static func buildLimitedAvailability(_ content: any CustomizableToolbarContent) -> some CustomizableToolbarContent
 ```
 

@@ -17,7 +17,7 @@ The default control group style.
 
 ```swift
 @MainActor
-@preconcurrency static var automatic: AutomaticControlGroupStyle { get }
+@export(implementation) @preconcurrency static var automatic: AutomaticControlGroupStyle { get }
 ```
 
 #### Discussion

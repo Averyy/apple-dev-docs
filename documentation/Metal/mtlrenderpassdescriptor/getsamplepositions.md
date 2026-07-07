@@ -8,7 +8,7 @@ Returns the programmable sample positions set for a render pass.
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst ?+
+- Mac Catalyst 11.0+
 - macOS 10.13+
 - tvOS 11.0+
 - visionOS ?+

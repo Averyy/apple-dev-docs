@@ -78,7 +78,7 @@ Subviews are proxies to the view they represent, which means that modifiers that
 ## See Also
 
 - [init(content:)](group/init(content:).md)
-  Creates a group of map content.
+  Creates a group of content.
 - [init<Base, Result>(sections: Base, transform: (SectionCollection) -> Result)](group/init(sections:transform:).md)
   Constructs a group from the sections of the given view.
 

@@ -8,7 +8,6 @@ An indication of whether the add operation requires an ownership token.
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst 13.0+
 - visionOS 1.0+
 
 ## Declaration

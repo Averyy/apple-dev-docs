@@ -11,6 +11,7 @@ Creates an `EdgeInsets3D` value with values provided for each axis.
 ## Declaration
 
 ```swift
+@export(implementation)
 init(horizontal: CGFloat = 0, vertical: CGFloat = 0, depth: CGFloat = 0)
 ```
 

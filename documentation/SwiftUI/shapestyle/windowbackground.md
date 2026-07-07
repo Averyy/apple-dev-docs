@@ -16,6 +16,7 @@ A style appropriate for elements that should match the background of their conta
 ## Declaration
 
 ```swift
+@export(implementation)
 static var windowBackground: WindowBackgroundShapeStyle { get }
 ```
 

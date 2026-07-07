@@ -8,7 +8,7 @@ An instruction for the system to open your parental controls app that is respons
 **Availability**:
 - iOS 26.5+
 - iPadOS 26.5+
-- Mac Catalyst ?+
+- Mac Catalyst 26.5+
 
 ## Declaration
 

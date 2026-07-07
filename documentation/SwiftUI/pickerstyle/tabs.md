@@ -16,6 +16,7 @@ A picker style that presents options as segmented tabs.
 ## Declaration
 
 ```swift
+@export(implementation)
 static var tabs: TabsPickerStyle { get }
 ```
 

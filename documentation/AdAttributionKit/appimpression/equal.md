@@ -8,7 +8,7 @@ Returns a Boolean value that indicates whether two values are equal.
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
-- Mac Catalyst ?+
+- Mac Catalyst 17.4+
 
 ## Declaration
 

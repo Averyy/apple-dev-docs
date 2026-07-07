@@ -12,7 +12,7 @@ A button style for buttons that emulate links.
 
 ```swift
 @MainActor
-@preconcurrency static var link: LinkButtonStyle { get }
+@export(implementation) @preconcurrency static var link: LinkButtonStyle { get }
 ```
 
 #### Discussion

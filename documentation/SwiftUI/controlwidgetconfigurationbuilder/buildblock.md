@@ -15,6 +15,7 @@ Passes a single control widget configuration written as a child control through 
 ## Declaration
 
 ```swift
+@export(implementation)
 static func buildBlock<Content>(_ content: Content) -> some ControlWidgetConfiguration where Content : ControlWidgetConfiguration
 ```
 

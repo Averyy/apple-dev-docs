@@ -8,7 +8,6 @@ An indication of whether the add operation requires a setup payload URL.
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+
-- Mac Catalyst 8.0+
 - visionOS 1.0+
 
 ## Declaration

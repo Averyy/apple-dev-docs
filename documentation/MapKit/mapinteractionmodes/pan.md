@@ -8,7 +8,7 @@ The map allows a person to pan around to different areas of the map.
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst ?+
+- Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
 - visionOS ?+

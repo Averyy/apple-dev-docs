@@ -8,7 +8,6 @@ A message that tells people why the app is requesting the ability to authenticat
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 11.0+
 
 
 

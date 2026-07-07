@@ -8,7 +8,7 @@ The index of an extremum rotation or translation in a Composite part
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
-- Mac Catalyst ?+
+- Mac Catalyst 18.4+
 - macOS 15.4+
 - tvOS 18.4+
 - visionOS 2.4+

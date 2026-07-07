@@ -42,7 +42,7 @@ Monitor device state using status reports.
   The status item that reports information about the Content Cache service parent caches.
 - [object StatusContentCachePeers](statuscontentcachepeers.md)
   The status item that reports information about the Content Cache service peer caches.
-- [object StatusContentCacheService](statuscontentcacheservice.md)
+- [object StatusContentCacheStatus](statuscontentcachestatus.md)
   The status item that reports the status of the Content Cache service.
 ### Device property items
 - [object StatusDeviceBatteryHealth](statusdevicebatteryhealth.md)
@@ -74,7 +74,7 @@ Monitor device state using status reports.
 - [object StatusDeviceUDID](statusdeviceudid.md)
   The status item that reports the device’s UDID.
 ### Enhanced logging items
-- [object StatusEnhancedLogging](statusenhancedlogging.md)
+- [object StatusEnhancedLoggingStatus](statusenhancedloggingstatus.md)
   The status item that reports the device’s enhanced log collection session status.
 - [object StatusEnhancedLoggingAppleCareToken](statusenhancedloggingapplecaretoken.md)
   The status item that reports the device’s enhanced log collection session AppleCare token.

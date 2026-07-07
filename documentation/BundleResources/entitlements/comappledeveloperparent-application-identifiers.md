@@ -8,7 +8,6 @@ A list of parent application identifiers for an App Clip with exactly one entry.
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
 
 
 

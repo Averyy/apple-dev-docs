@@ -8,7 +8,7 @@ Processes click-through interactions on your custom rendered ad content, and del
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst ?+
+- Mac Catalyst 18.0+
 
 ## Declaration
 

@@ -8,7 +8,6 @@ The message contains other data, such as data that represents a sticker or a pay
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
-- Mac Catalyst 18.4+
 
 ## Declaration
 

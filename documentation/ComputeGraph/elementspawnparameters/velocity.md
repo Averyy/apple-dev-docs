@@ -1,6 +1,6 @@
 # velocity
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: property
 
 The initial velocity vector of the particle in world space units per second.
@@ -12,7 +12,7 @@ The initial velocity vector of the particle in world space units per second.
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 ## Declaration
 

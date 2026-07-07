@@ -3,31 +3,31 @@
 **Framework**: SwiftUI  
 **Kind**: init
 
-Creates a picker that generates its label from a localized string key.
+Creates a picker that generates its label from a localized string resource.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.0+
-- macOS 10.15+
-- tvOS 13.0+
+- iOS 16.0+
+- iPadOS 16.0+
+- Mac Catalyst 16.0+
+- macOS 13.0+
+- tvOS 16.0+
 - visionOS 1.0+
-- watchOS 6.0+
+- watchOS 9.0+
 
 ## Declaration
 
 ```swift
-nonisolated
-init(_ titleKey: LocalizedStringKey, selection: Binding<SelectionValue>, @ContentBuilder content: () -> Content)
+@export(implementation)
+nonisolated init(_ titleResource: LocalizedStringResource, selection: Binding<SelectionValue>, @ContentBuilder content: () -> Content)
 ```
 
 #### Discussion
 
-This initializer creates a [`Text`](text.md) view on your behalf, and treats the localized key similar to [`init(_:tableName:bundle:comment:)`](text/init(_:tablename:bundle:comment:).md). See [`Text`](text.md) for more information about localizing strings.
+This initializer creates a [`Text`](text.md) view on your behalf. See [`Text`](text.md) for more information about localizing strings.
 
 ## Parameters
 
-- `titleKey`: A localized string key that describes the purpose of selecting an option.
+- `titleResource`: A localized string resource that describes the purpose of selecting an option.
 - `selection`: A binding to a property that determines the currently-selected option.
 - `content`: A view that contains the set of options.
 

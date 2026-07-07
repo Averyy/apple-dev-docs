@@ -8,7 +8,6 @@ Sets the model container and associated model context in this view’s environme
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
 - watchOS 10.0+

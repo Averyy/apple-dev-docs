@@ -8,7 +8,6 @@ A 64-bit, unsigned integer indicating the order of the favorite item in the Favo
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 11.0+
 - visionOS 1.0+
 
 ## Declaration

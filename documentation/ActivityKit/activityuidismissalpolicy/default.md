@@ -8,7 +8,6 @@ The system’s default dismissal policy for the Live Activity.
 **Availability**:
 - iOS 16.1+
 - iPadOS 16.1+
-- Mac Catalyst 16.1+
 
 ## Declaration
 

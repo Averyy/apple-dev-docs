@@ -6,7 +6,6 @@
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+
-- Mac Catalyst 8.0+
 - visionOS 27.0+ (Beta)
 
 ## Declaration

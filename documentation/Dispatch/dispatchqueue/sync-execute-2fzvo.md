@@ -8,7 +8,7 @@ Submits a work item for execution on the current queue and returns after that bl
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+
-- Mac Catalyst ?+
+- Mac Catalyst 8.0+
 - macOS 10.10+
 - tvOS ?+
 - visionOS ?+

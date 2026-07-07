@@ -8,7 +8,7 @@ The styles to apply to buttons you use to open your app’s page in the Shortcut
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst ?+
+- Mac Catalyst 16.0+
 - visionOS ?+
 
 ## Declaration

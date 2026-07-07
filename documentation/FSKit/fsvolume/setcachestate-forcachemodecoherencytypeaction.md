@@ -24,9 +24,9 @@ Volumes conforming to [`FSVolume.DataCacheHandler`](fsvolume/datacachehandler.md
 
 When downgrading coherency type, the action must be [`FSVolume.KernelCacheCoherencyAction.push`](fsvolume/kernelcachecoherencyaction/push.md), [`FSVolume.KernelCacheCoherencyAction.pushInvalidate`](fsvolume/kernelcachecoherencyaction/pushinvalidate.md), or [`FSVolume.KernelCacheCoherencyAction.invalidate`](fsvolume/kernelcachecoherencyaction/invalidate.md) to instruct the kernel how to handle cached data. If the action fails, the cache state remains unchanged and the method returns an error.
 
-> ❗ **Important**:  This method must be called without holding any module-internal locks. The kernel may issue additional operations back into the module to satisfy cache state changes, which could result in deadlock if locks are held.
+> ❗ **Important**: This method must be called without holding any module-internal locks. The kernel may issue additional operations back into the module to satisfy cache state changes, which could result in deadlock if locks are held.
 
-> **Note**:  This method is only functional for volumes that conform to [`FSVolume.DataCacheHandler`](fsvolume/datacachehandler.md). For volumes that don’t conform to the protocol, this method returns `ENOTSUP`.
+> **Note**: This method is only functional for volumes that conform to [`FSVolume.DataCacheHandler`](fsvolume/datacachehandler.md). For volumes that don’t conform to the protocol, this method returns `ENOTSUP`.
 
 ## Parameters
 

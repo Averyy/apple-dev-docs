@@ -25,7 +25,7 @@ struct ToolbarMinimizationSafeAreaAdjustment
 Use this type with the [`toolbarMinimizationSafeAreaAdjustment(_:for:)`](view/toolbarminimizationsafeareaadjustment(_:for:).md) modifier to control whether the safe area updates as bars minimize. By default the safe area adjusts interactively, but you can disable this to keep content in place – for example, when displaying full-bleed media beneath a minimizing bar.
 
 ```swift
-.toolbarMinimizeBehavior(
+.toolbarMinimizationBehavior(
     .onScrollDown, for: .navigationBar)
 .toolbarMinimizationSafeAreaAdjustment(
     .disabled, for: .navigationBar)
@@ -51,10 +51,6 @@ Use this type with the [`toolbarMinimizationSafeAreaAdjustment(_:for:)`](view/to
 
 ## See Also
 
-- [func toolbarMinimizeBehavior(ToolbarMinimizeBehavior, for: ToolbarPlacement...) -> some View](view/toolbarminimizebehavior(_:for:).md)
-  Sets the minimize behavior for the specified bars.
-- [struct ToolbarMinimizeBehavior](toolbarminimizebehavior.md)
-  The minimize behavior of a toolbar.
 - [func toolbarMinimizationSafeAreaAdjustment(ToolbarMinimizationSafeAreaAdjustment, for: ToolbarPlacement...) -> some View](view/toolbarminimizationsafeareaadjustment(_:for:).md)
   Sets the safe area adjustment for the specified bars during minimization.
 

@@ -17,6 +17,7 @@ A guide that marks the top-most text baseline in a view.
 ## Declaration
 
 ```swift
+@export(implementation)
 static var centerFirstTextBaseline: Alignment { get }
 ```
 

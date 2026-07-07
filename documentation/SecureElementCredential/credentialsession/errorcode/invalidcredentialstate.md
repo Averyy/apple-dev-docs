@@ -8,7 +8,6 @@ A credential is in a state that doesn’t permit that function.
 **Availability**:
 - iOS 18.1+
 - iPadOS 18.1+
-- Mac Catalyst 18.1+
 
 ## Declaration
 

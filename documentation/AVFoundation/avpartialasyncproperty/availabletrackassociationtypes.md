@@ -8,7 +8,7 @@ An array of association types that the track uses to associate with other tracks
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst ?+
+- Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
 - visionOS 1.0+

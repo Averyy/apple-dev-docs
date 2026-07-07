@@ -11,6 +11,7 @@ The represented gesture recognizer’s current translation in the coordinate spa
 ## Declaration
 
 ```swift
+@export(implementation)
 var localTranslation: CGPoint? { get }
 ```
 

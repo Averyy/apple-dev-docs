@@ -45,7 +45,7 @@ Because this initializer takes a value that conforms to the [`Codable`](https://
 ## See Also
 
 - [init(_:value:)](navigationlink/init(_:value:).md)
-  Creates a navigation link that presents the view corresponding to a codable value, with a text label that the link generates from a localized string key.
+  Creates a navigation link that presents the view corresponding to a codable value, with a text label that the link generates from a localized string resource.
 
 
 ---

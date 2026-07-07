@@ -17,6 +17,7 @@ The default navigation view style in the current context of the view being style
 ## Declaration
 
 ```swift
+@export(implementation)
 static var automatic: DefaultNavigationViewStyle { get }
 ```
 

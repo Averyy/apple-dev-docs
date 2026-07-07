@@ -8,7 +8,6 @@ A reference to a conversation, such as a mail or messaging thread.
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
-- Mac Catalyst 18.4+
 
 ## Declaration
 

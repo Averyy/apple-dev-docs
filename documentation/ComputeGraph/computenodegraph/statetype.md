@@ -1,6 +1,6 @@
 # ComputeNodeGraph.StateType
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: enum
 
 The shape of a value stored in a compute graph’s state.
@@ -12,7 +12,7 @@ The shape of a value stored in a compute graph’s state.
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 ## Declaration
 

@@ -25,11 +25,11 @@ This class represents the set of all detectable facial landmarks and regions, ex
 
 ## Topics
 
+### Creating an Instance
+- [init?(coder: NSCoder)](vnfacelandmarks/init(coder:).md)
 ### Determining Accuracy
 - [var confidence: VNConfidence](vnfacelandmarks/confidence.md)
   A confidence estimate for the detected landmarks.
-### Initializers
-- [init?(coder: NSCoder)](vnfacelandmarks/init(coder:).md)
 
 ## Relationships
 

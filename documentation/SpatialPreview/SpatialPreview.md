@@ -22,15 +22,16 @@ Use Spatial Preview to work with spatial content from a macOS app to a connected
   Sync edits between an application with its own OpenUSD runtime and a Spatial Preview session using a shared `USDLayer` as the exchange mechanism.
 ### Nearby devices
 - [struct SpatialPreviewEndpoint](spatialpreviewendpoint.md)
-  An endpoint representing a destination that that can be connected to
+  An endpoint representing a visionOS device you can connect to for spatial preview.
 - [struct SpatialPreviewDevicePicker](spatialpreviewdevicepicker.md)
   Presents nearby companion devices and allows the user to make a selection.
 - [class ConnectedSpatialEndpointObserver](connectedspatialendpointobserver.md)
+  An observer that provides access to the endpoint for a device connected via Mac Virtual Display.
 ### Preview sessions
 - [protocol SpatialPreviewSession](spatialpreviewsession.md)
   A session that manages the lifecycle and connection state of a spatial preview on a visionOS device.
 - [class DocumentPreviewSession](documentpreviewsession.md)
-  Document session allows you to present the contents of a URL or Data.
+  A session that streams document content to a connected visionOS device for spatial preview.
 - [class USDPreviewSession](usdpreviewsession.md)
   A session that enables you to present the contents of a Universal Scene Description (USD) stage.
 ### Session state and errors

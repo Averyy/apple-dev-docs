@@ -8,7 +8,6 @@ A value that indicates a customer accepted the new subscription price.
 **Availability**:
 - iOS 26.2+
 - iPadOS 26.2+
-- Mac Catalyst 26.2+
 - macOS 26.2+
 - tvOS 26.2+
 - visionOS 26.2+

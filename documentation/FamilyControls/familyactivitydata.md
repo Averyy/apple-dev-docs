@@ -8,7 +8,6 @@ An interface to a person’s family activity data.
 **Availability**:
 - iOS 26.4+
 - iPadOS 26.4+
-- Mac Catalyst 26.4+
 
 ## Declaration
 

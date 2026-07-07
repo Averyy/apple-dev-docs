@@ -8,7 +8,6 @@ An integer percentage of minimum battery charge required to allow the activity t
 **Availability**:
 - iOS 7.0+
 - iPadOS 7.0+
-- Mac Catalyst 7.0+
 - tvOS ?+
 - visionOS 1.0+
 - watchOS 2.0+

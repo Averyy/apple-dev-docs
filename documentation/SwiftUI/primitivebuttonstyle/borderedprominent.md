@@ -17,8 +17,8 @@ A button style that applies the standard bordered prominent style based on the b
 ## Declaration
 
 ```swift
-nonisolated
-static var borderedProminent: BorderedProminentButtonStyle { get }
+@export(implementation)
+nonisolated static var borderedProminent: BorderedProminentButtonStyle { get }
 ```
 
 #### Discussion

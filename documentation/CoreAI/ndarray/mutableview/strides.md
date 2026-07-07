@@ -8,7 +8,6 @@ The strides of the tensor.
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 
@@ -26,6 +25,8 @@ var strides: Span<Int> { get }
   The rank of the tensor.
 - [var shape: Span<Int>](ndarray/mutableview/shape.md)
   The shape of the tensor.
+- [var interleaveLayout: NDArray.InterleaveLayout?](ndarray/mutableview/interleavelayout.md)
+  Returns which dimension is interleaved, and by what factor it is interleaved. Or returns `nil` if there is not an interleaved dimension.
 
 
 ---

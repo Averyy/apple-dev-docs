@@ -8,7 +8,6 @@ Represents a single on-screen touchpad that reports absolute coordinates or delt
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst 26.0+
 
 ## Declaration
 

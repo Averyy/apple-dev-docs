@@ -8,7 +8,7 @@ Creates a menu configuration object with the specified action and preview provid
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst ?+
+- Mac Catalyst 13.0+
 - tvOS 17.0+
 - visionOS ?+
 

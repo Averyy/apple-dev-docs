@@ -36,7 +36,7 @@ object DeviceInformationCommand.Command.Queries
 - `DeviceCapacity` (string): The key to get the device’s total capacity. Requires the Device Information access right. Available: iOS 4+ | iPadOS 4+ | macOS 10.7+ | visionOS 1.1+ | watchOS 10+
 - `DeviceID` (string): The key to get the device ID. Requires the Device Information access right. Available: tvOS 9+
 - `DeviceName` (string): The key to get the device name. Requires the Device Information access right.
-- `DevicePropertiesAttestation` (string): The key to get an attestation of the device’s properties. The hardware requirements for attestation are described below. Available: iOS 16+ | iPadOS 16+ | macOS 14+ | tvOS 16+ | visionOS 1.1+ | watchOS 10+
+- `DevicePropertiesAttestation` (string): The key to get an attestation of the device’s properties. See the hardware requirements for attestation below. Available: iOS 16+ | iPadOS 16+ | macOS 14+ | tvOS 16+ | visionOS 1.1+ | watchOS 10+
 - `DiagnosticSubmissionEnabled` (string): The key to determine whether the system enabled the diagnostic submission setting on the device. Requires the Device Information access right. Available: iOS 9.3+ | iPadOS 9.3+ | visionOS 1.1+ | watchOS 10+
 - `EACSPreflight` (string): The key to determine whether the device can perform an [`EraseDeviceCommand`](erasedevicecommand.md) using Erase All Content and Settings (EACS). Available: macOS 13.3+
 - `EASDeviceIdentifier` (string): The key to get the device identifier for Exchange ActiveSync (EAS). Requires the Device Information access right. Available: iOS 7+ | iPadOS 7+ | visionOS 1.1+

@@ -12,6 +12,7 @@ The default immersion style.
 ## Declaration
 
 ```swift
+@export(implementation)
 static var automatic: AutomaticImmersionStyle { get }
 ```
 

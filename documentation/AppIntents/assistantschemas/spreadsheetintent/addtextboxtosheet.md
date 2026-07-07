@@ -8,7 +8,7 @@ The app intent conforms to the schema for adding a textbox to a sheet in a sprea
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst ?+
+- Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
 - visionOS 1.0+

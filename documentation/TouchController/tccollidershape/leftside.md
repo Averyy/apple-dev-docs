@@ -8,7 +8,6 @@ A collider representing the left side of the view the touch controller is embedd
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst 26.0+
 
 ## Declaration
 

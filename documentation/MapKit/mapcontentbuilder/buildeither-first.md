@@ -8,7 +8,7 @@ Compares content in a multistatement closure, resulting in use of the conditiona
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst ?+
+- Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
 - visionOS ?+

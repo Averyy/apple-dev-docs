@@ -8,7 +8,6 @@ A placement that locates the subscription controls in a bar near the bottom of t
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 - macOS 15.0+
 - visionOS 2.0+
 

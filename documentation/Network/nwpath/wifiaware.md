@@ -8,7 +8,6 @@ Current status and performance information for Wi-Fi Aware, or `nil` if this pat
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst 26.0+
 
 ## Declaration
 

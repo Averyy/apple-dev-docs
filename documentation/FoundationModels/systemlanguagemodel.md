@@ -11,7 +11,6 @@ An on-device Apple Foundation Model capable of text generation tasks.
 - Mac Catalyst 26.0+
 - macOS 26.0+
 - visionOS 26.0+
-- watchOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -27,17 +26,15 @@ final class SystemLanguageModel
 
 #### Overview
 
-The `SystemLanguageModel` refers to the on-device text foundation model that powers Apple Intelligence. Use [`default`](systemlanguagemodel/default.md) to access the base version of the model and perform general-purpose text generation tasks. To access a specialized version of the model, initialize the model with [`SystemLanguageModel.UseCase`](systemlanguagemodel/usecase.md) to perform tasks like [`contentTagging`](systemlanguagemodel/usecase/contenttagging.md). Apple will periodically update `SystemLanguageModel` in routine OS updates to improve the on-device model’s abilities and performance. Currently there are 2 model versions that align with:
+The `SystemLanguageModel` refers to the on-device text foundation model that powers Apple Intelligence. Use [`default`](systemlanguagemodel/default.md) to access the base version of the model and perform general-purpose text generation tasks. To access a specialized version of the model, initialize the model with [`SystemLanguageModel.UseCase`](systemlanguagemodel/usecase.md) to perform tasks like [`contentTagging`](systemlanguagemodel/usecase/contenttagging.md). Apple periodically updates `SystemLanguageModel` in routine OS updates to improve the on-device model’s abilities and performance. Currently there are 3 model versions that align with:
 
-- iOS, iPadOS, macOS, and visionOS **26.0 - 26.3**
-- iOS, iPadOS, macOS, visionOS **26.4**
+- iOS, iPadOS, macOS, and visionOS 26.0 - 26.3
+- iOS, iPadOS, macOS, and visionOS 26.4
+- iOS, iPadOS, macOS, visionOS, and watchOS 27.0
 
-To better understand the impact of model version on your app, see the guide [`Updating prompts for new model versions`](updating-prompts-for-new-model-versions.md).
+For more infomation about how model versions affect your app, see [`Updating prompts for new model versions`](updating-prompts-for-new-model-versions.md).
 
-Before you use the model, you’ll need to verify its availability. Model availability depends on device factors like:
-
-- The device must support Apple Intelligence.
-- Apple Intelligence must be turned on in Settings.
+Before you use the model, you need to verify its availability. Model availability depends on whether the device and region supports Apple Intelligence. For a list of supported devices, see [`Apple Intelligence`](https://developer.apple.comhttps://www.apple.com/apple-intelligence/).
 
 Use [`SystemLanguageModel.Availability`](systemlanguagemodel/availability-swift.enum.md) to change what your app shows to people based on the availability condition:
 
@@ -52,11 +49,8 @@ struct GenerativeView: View {
             // Show your intelligence UI.
         case .unavailable(.deviceNotEligible):
             // Show an alternative UI.
-        case .unavailable(.appleIntelligenceNotEnabled):
-            // Ask the person to turn on Apple Intelligence.
         case .unavailable(.modelNotReady):
-            // The model isn't ready because it's downloading or because
-            // of other system reasons.
+            // The model isn't ready because it's downloading or because of other system reasons.
         case .unavailable(let other):
             // The model is unavailable for an unknown reason.
         }

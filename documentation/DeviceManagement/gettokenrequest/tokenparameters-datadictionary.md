@@ -20,9 +20,9 @@ object GetTokenRequest.TokenParameters
 
 ## Properties
 
-- `PhoneUDID` (string): The identifier of the phone paired to the watch. Required by the `com.apple.watch.pairing` service type. Available: iOS 17+ | iPadOS 17+
-- `SecurityToken` (string): A security token to generate the server token. Required by the `com.apple.watch.pairing` service type. Available: iOS 17+ | iPadOS 17+
-- `WatchUDID` (string): The identifier of the watch paired to the phone. Required by the `com.apple.watch.pairing` service type. Available: iOS 17+ | iPadOS 17+
+- `PhoneUDID` (string): The identifier of the phone paired to the watch. The `com.apple.watch.pairing` service type requires this key. Available: iOS 17+ | iPadOS 17+
+- `SecurityToken` (string): A security token to generate the server token. The `com.apple.watch.pairing` service type requires this key. Available: iOS 17+ | iPadOS 17+
+- `WatchUDID` (string): The identifier of the watch paired to the phone. The `com.apple.watch.pairing` service type requires this key. Available: iOS 17+ | iPadOS 17+
 
 
 ---

@@ -1,13 +1,13 @@
 # group
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: namespace
 
 Nodes for querying the group for a current particle. Requires a system whose simulation stage is configured as either `strips` or `grouped`.
 
 **Availability**:
-- macOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- macOS ?+
+- Reality Composer Pro ?+
 
 ## Topics
 

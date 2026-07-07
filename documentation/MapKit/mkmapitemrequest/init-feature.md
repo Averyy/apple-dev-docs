@@ -8,7 +8,7 @@ Creates a new map item request with the specified map feature.
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst ?+
+- Mac Catalyst 17.0+
 - visionOS ?+
 
 ## Declaration

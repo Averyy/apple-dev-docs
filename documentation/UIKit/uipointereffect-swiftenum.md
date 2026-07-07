@@ -8,7 +8,7 @@ An effect that alters a view’s appearance when a pointer enters the current re
 **Availability**:
 - iOS 13.4+
 - iPadOS 13.4+
-- Mac Catalyst ?+
+- Mac Catalyst 13.4+
 - visionOS ?+
 
 ## Declaration

@@ -8,7 +8,6 @@ An error that indicates the app lacks user permission for the device’s current
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
 
 ## Declaration
 

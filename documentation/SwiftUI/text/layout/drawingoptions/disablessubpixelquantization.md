@@ -17,6 +17,7 @@ If set, subpixel quantization requested by the text engine is disabled. This can
 ## Declaration
 
 ```swift
+@export(implementation)
 static var disablesSubpixelQuantization: Text.Layout.DrawingOptions { get }
 ```
 

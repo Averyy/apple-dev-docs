@@ -9,7 +9,6 @@ Delivers a message from the paired accessory to your data provider extension.
 **Availability**:
 - iOS 26.5+
 - iPadOS 26.5+
-- Mac Catalyst 26.5+
 
 ## Declaration
 

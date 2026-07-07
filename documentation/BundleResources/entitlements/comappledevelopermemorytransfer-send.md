@@ -8,7 +8,6 @@ An entitlement that grants an alternative browser engine’s rendering extension
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
-- Mac Catalyst 17.4+
 
 
 

@@ -17,6 +17,7 @@ If observers of this observed object should be notified when the produced image 
 ## Declaration
 
 ```swift
+@export(implementation)
 final var isObservationEnabled: Bool { get set }
 ```
 

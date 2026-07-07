@@ -8,7 +8,6 @@ Initialize an empty compute stream.
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 
@@ -17,6 +16,11 @@ Initialize an empty compute stream.
 ```swift
 convenience init()
 ```
+
+## See Also
+
+- [init(commandQueue: any MTLCommandQueue)](computestream/init(commandqueue:).md)
+  Initialize a compute stream which will encode its work to the provided command queue.
 
 
 ---

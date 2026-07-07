@@ -8,7 +8,6 @@ A raycast target that specifies a detected plane, regardless of its size and sha
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

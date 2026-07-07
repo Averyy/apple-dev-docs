@@ -17,6 +17,7 @@ The default picker style, based on the picker’s context.
 ## Declaration
 
 ```swift
+@export(implementation)
 static var automatic: DefaultPickerStyle { get }
 ```
 

@@ -8,7 +8,6 @@ The card session failed because the NFC radio is disabled.
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
-- Mac Catalyst 17.4+
 
 ## Declaration
 

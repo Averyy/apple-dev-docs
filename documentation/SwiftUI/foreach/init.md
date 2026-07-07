@@ -15,8 +15,8 @@ Creates an instance that uniquely identifies and creates table rows across updat
 ## Declaration
 
 ```swift
-nonisolated
-init(_ data: Data) where ID == Data.Element.ID, Content == TableRow<Data.Element>, Data.Element : Identifiable
+@export(implementation)
+nonisolated init(_ data: Data) where ID == Data.Element.ID, Content == TableRow<Data.Element>, Data.Element : Identifiable
 ```
 
 #### Discussion

@@ -28,7 +28,7 @@ The return value, if any, of the `body` closure.
 
 If you call this function from the body of an asynchronous function, the unsafe task handle passed to the closure is always non-`nil` because an asynchronous function always runs in the context of a task. However, if you call this function from the body of a synchronous function, and that function isn’t executing in the context of any task, the unsafe task handle is `nil`.
 
-Don’t store an unsafe task reference for use outside this method’s closure. Storing an unsafe reference doesn’t affect the task’s actual life cycle, and the behavior of accessing an unsafe task reference outside of the `withUnsafeCurrentTask(body:)` method’s closure isn’t defined. There’s no safe way to retrieve a reference to the current task and save it for long-term use. To query the current task without saving a reference to it, use properties like `currentPriority`. If you need to store a reference to a task, create an unstructured task using `Task.detached(priority:operation:)` instead.
+Storing an unsafe reference to a task doesn’t affect the task’s actual life cycle, and the behavior of accessing an unsafe task reference outside of the `withUnsafeCurrentTask(body:)` method’s closure is unsafe and undefined behavior. There’s no safe way to retrieve a reference to the current task and save it for long-term use. To query the current task without saving a reference to it, use properties like `currentPriority`. If you need to store a reference to a task, create an unstructured task using `Task.detached(priority:operation:)` instead.
 
 ## Parameters
 
@@ -36,7 +36,8 @@ Don’t store an unsafe task reference for use outside this method’s closure. 
 
 ## See Also
 
-- [func withUnsafeCurrentTask<T>(body: (UnsafeCurrentTask?) async throws -> T) async rethrows -> T](withunsafecurrenttask(body:)-2cbzn.md)
+- [func withUnsafeCurrentTask<T>(body: nonisolated(nonsending) (UnsafeCurrentTask?) async throws -> T) async rethrows -> T](withunsafecurrenttask(body:)-udlb.md)
+  Calls a closure with an unsafe reference to the current task.
 
 
 ---

@@ -3,7 +3,7 @@
 **Framework**: FSKit  
 **Kind**: property
 
-Inherited from `CustomNSError.errorDomain`.
+The domain of the data cache error.
 
 **Availability**:
 - macOS 27.0+ (Beta)

@@ -8,7 +8,6 @@ A flag that determines whether SceneKit applies image noise characteristics to y
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

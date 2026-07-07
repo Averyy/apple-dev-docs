@@ -160,19 +160,19 @@ VStack {
 
 ### Creating a picker
 - [init(_:selection:content:)](picker/init(_:selection:content:).md)
-  Creates a picker that generates its label from a localized string key.
+  Creates a picker that generates its label from a localized string resource.
 - [init(selection: Binding<SelectionValue>, content: () -> Content, label: () -> Label)](picker/init(selection:content:label:).md)
   Creates a picker that displays a custom label.
 ### Creating a picker for a collection
 - [init(_:sources:selection:content:)](picker/init(_:sources:selection:content:).md)
-  Creates a picker bound to a collection of bindings that generates its label from a string.
+  Creates a picker that generates its label from a localized string resource.
 - [init<C>(sources: C, selection: KeyPath<C.Element, Binding<SelectionValue>>, content: () -> Content, label: () -> Label)](picker/init(sources:selection:content:label:).md)
   Creates a picker that displays a custom label.
 ### Creating a picker with an image label
 - [init(_:image:selection:content:)](picker/init(_:image:selection:content:).md)
-  Creates a picker that generates its label from a localized string key and image resource
+  Creates a picker that generates its label from a localized string resource and image resource
 - [init(_:image:sources:selection:content:)](picker/init(_:image:sources:selection:content:).md)
-  Creates a picker bound to a collection of bindings that generates its label from a string and image resource.
+  Creates a picker that generates its label from a localized string resource and image resource.
 - [init(_:systemImage:selection:content:)](picker/init(_:systemimage:selection:content:).md)
   Creates a picker that generates its label from a localized string key and system image.
 - [init(_:systemImage:sources:selection:content:)](picker/init(_:systemimage:sources:selection:content:).md)
@@ -182,13 +182,13 @@ VStack {
   Creates a picker that displays a custom label.
 ### Initializers
 - [init(_:image:selection:content:currentValueLabel:)](picker/init(_:image:selection:content:currentvaluelabel:).md)
-  Creates a picker that accepts a custom current value label and generates its label from a localized string key and image resource
+  Creates a picker that accepts a custom current value label and generates its label from a localized string key and image resource.
 - [init(_:image:sources:selection:content:currentValueLabel:)](picker/init(_:image:sources:selection:content:currentvaluelabel:).md)
-  Creates a picker bound to a collection of bindings that accepts a custom current value label and generates its label from a string and image resource.
+  Creates a picker that accepts a custom current value label generates its label from a localized string key and image resource.
 - [init(_:selection:content:currentValueLabel:)](picker/init(_:selection:content:currentvaluelabel:).md)
-  Creates a picker that generates its label from a localized string key and accepts a custom current value label.
+  Creates a picker that generates its label from a localized string resource and accepts a custom current value label.
 - [init(_:sources:selection:content:currentValueLabel:)](picker/init(_:sources:selection:content:currentvaluelabel:).md)
-  Creates a picker bound to a collection of bindings that generates its label from a string and accepts a custom current value label.
+  Creates a picker that generates its label from a localized string resource and accepts a custom current value label.
 - [init(_:systemImage:selection:content:currentValueLabel:)](picker/init(_:systemimage:selection:content:currentvaluelabel:).md)
   Creates a picker that accepts a custom current value label and generates its label from a localized string key and system image.
 - [init(_:systemImage:sources:selection:content:currentValueLabel:)](picker/init(_:systemimage:sources:selection:content:currentvaluelabel:).md)

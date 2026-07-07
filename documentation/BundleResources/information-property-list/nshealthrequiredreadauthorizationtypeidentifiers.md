@@ -8,7 +8,6 @@ The clinical record data types that your app must get permission to read.
 **Availability**:
 - iOS 12.0+
 - iPadOS 12.0+
-- Mac Catalyst 12.0+
 - visionOS 1.0+
 
 

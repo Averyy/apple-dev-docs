@@ -8,7 +8,7 @@ The style applied to the option, affecting its visual appearance in the system U
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst 26.0+
 - macOS 26.0+
 - tvOS 26.0+
 - visionOS 26.0+

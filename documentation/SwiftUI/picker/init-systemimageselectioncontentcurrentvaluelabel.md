@@ -17,8 +17,8 @@ Creates a picker that accepts a custom current value label and generates its lab
 ## Declaration
 
 ```swift
-nonisolated
-init(_ titleKey: LocalizedStringKey, systemImage: String, selection: Binding<SelectionValue>, @ContentBuilder content: () -> Content, @ContentBuilder currentValueLabel: () -> some View)
+@export(implementation)
+nonisolated init(_ titleKey: LocalizedStringKey, systemImage: String, selection: Binding<SelectionValue>, @ContentBuilder content: () -> Content, @ContentBuilder currentValueLabel: () -> some View)
 ```
 
 #### Discussion

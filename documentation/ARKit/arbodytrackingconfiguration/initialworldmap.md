@@ -8,7 +8,6 @@ The state from a previous AR session to attempt to resume with this session conf
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

@@ -26,7 +26,7 @@ The requested record.
 
 #### Discussion
 
-This method throws an error if the record cannot be found or if request fails, such as when the network is unavailable or the device doesn’t have an active iCloud account.
+This method throws an error if the record cannot be found or if the request fails, such as when the network is unavailable or the device doesn’t have an active iCloud account.
 
 For information on a more convenient way to fetch specific records, see [`records(for:desiredKeys:)`](ckdatabase/records(for:desiredkeys:).md).
 

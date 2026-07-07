@@ -39,7 +39,8 @@ The first event for a given id opens the tool call (using `name` from the enclos
 
 - [var action: LanguageModelExecutorGenerationChannel.ToolCalls.ToolCall.Action](languagemodelexecutorgenerationchannel/toolcalls/toolcall/action-swift.property.md)
   The action to perform.
-- [LanguageModelExecutorGenerationChannel.ToolCalls.ToolCall.Action](languagemodelexecutorgenerationchannel/toolcalls/toolcall/action-swift.enum.md)
+- [LanguageModelExecutorGenerationChannel.ToolCalls.ToolCall.Action](languagemodelexecutorgenerationchannel/toolcalls/toolcall/action-swift.struct.md)
+  An operation that can be performed on a tool call.
 - [var id: String](languagemodelexecutorgenerationchannel/toolcalls/toolcall/id.md)
   The identifier for the tool call.
 - [var name: String](languagemodelexecutorgenerationchannel/toolcalls/toolcall/name.md)

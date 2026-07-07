@@ -15,8 +15,8 @@ A URL of the open document if it is saved to disk.
 ## Declaration
 
 ```swift
-nonisolated
-(unsafe) final var fileURL: URL? { get set }
+@MainActor
+final var fileURL: URL? { get set }
 ```
 
 #### Discussion

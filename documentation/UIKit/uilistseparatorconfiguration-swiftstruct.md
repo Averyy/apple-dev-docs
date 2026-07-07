@@ -8,7 +8,7 @@ A configuration that controls the list separator appearance in a list section.
 **Availability**:
 - iOS 14.5+
 - iPadOS 14.5+
-- Mac Catalyst ?+
+- Mac Catalyst 14.5+
 - visionOS ?+
 
 ## Declaration

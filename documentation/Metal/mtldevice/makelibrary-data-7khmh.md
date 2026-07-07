@@ -8,7 +8,7 @@ Creates a Metal library instance that contains the functions in a precompiled Me
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+
-- Mac Catalyst ?+
+- Mac Catalyst 8.0+
 - macOS 10.11+
 - tvOS 8.0+
 - visionOS ?+

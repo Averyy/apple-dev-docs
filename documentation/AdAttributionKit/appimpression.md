@@ -8,7 +8,7 @@ A structure that represents an attributable impression you generate in response 
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
-- Mac Catalyst ?+
+- Mac Catalyst 17.4+
 
 ## Declaration
 

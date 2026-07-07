@@ -8,7 +8,6 @@ A Boolean value that indicates whether your app can use the TV Provider Authenti
 **Availability**:
 - iOS 10.0+
 - iPadOS 10.0+
-- Mac Catalyst 10.0+
 - macOS 10.14+
 - tvOS 10.0+
 

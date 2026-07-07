@@ -12,10 +12,6 @@
 var uniqueIdentifierClaimName: String? { get set }
 ```
 
-## Mentions
-
-- [Configuring Device Management](configuring-device-management.md)
-
 ## See Also
 
 - [var additionalAuthorizationScopes: String?](asauthorizationproviderextensionloginconfiguration/additionalauthorizationscopes.md)

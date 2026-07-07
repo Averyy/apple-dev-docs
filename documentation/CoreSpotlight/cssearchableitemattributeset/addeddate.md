@@ -9,7 +9,7 @@ The date on which the item was moved into its current location.
 - iOS 9.0+
 - iPadOS 9.0+
 - Mac Catalyst 13.1+
-- macOS 10.13+
+- macOS 10.11+
 - visionOS 1.0+
 
 ## Declaration

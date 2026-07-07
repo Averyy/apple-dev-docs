@@ -7,7 +7,6 @@ Track specific geographic areas of interest and render them in an AR experience.
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
 - Xcode 16.0+
 
 #### Overview

@@ -20,7 +20,7 @@ Your module populates these attributes in [`FSItem.Attributes`](fsitem/attribute
 
 Different operations may require different attribute sets. Access this property through the relevant result subclass, such as ``FSLookupItemResult.requestedAttributes`.
 
-> ❗ **Important**:  Be sure to populate all requested attributes. FSKit caches all populated attributes and may use them in subsequent operations, even if not explicitly requested.
+> ❗ **Important**: Be sure to populate all requested attributes. FSKit caches all populated attributes and may use them in subsequent operations, even if not explicitly requested.
 
 
 ---

@@ -8,7 +8,6 @@ The domain for Location Push Service Extension errors.
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst 15.0+
 
 ## Declaration
 

@@ -8,7 +8,6 @@ A base class that represents a conversation between participants, such as in an 
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
-- Mac Catalyst 18.4+
 
 ## Declaration
 

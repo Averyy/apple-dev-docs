@@ -8,7 +8,6 @@ The number of elements from the interleaved dimension stored contiguously per bl
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 
@@ -17,6 +16,11 @@ The number of elements from the interleaved dimension stored contiguously per bl
 ```swift
 var factor: Int { get }
 ```
+
+## See Also
+
+- [var dimension: Int](ndarray/interleavelayout-swift.struct/dimension.md)
+  The index of the interleaved dimension.
 
 
 ---

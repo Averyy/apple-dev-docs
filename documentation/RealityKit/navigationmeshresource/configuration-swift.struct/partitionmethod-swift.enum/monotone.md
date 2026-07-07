@@ -3,6 +3,8 @@
 **Framework**: RealityKit  
 **Kind**: case
 
+The fastest method. On large, empty areas it tends to create long, thin polygons, so it is not ideal for generating the mesh offline or with large open regions in the geometry.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -20,7 +22,9 @@ case monotone
 ## See Also
 
 - [NavigationMeshResource.Configuration.PartitionMethod.watershed](navigationmeshresource/configuration-swift.struct/partitionmethod-swift.enum/watershed.md)
+  The default method. Watershed is usually the slowest but creates the best-looking meshes.
 - [NavigationMeshResource.Configuration.PartitionMethod.layer](navigationmeshresource/configuration-swift.struct/partitionmethod-swift.enum/layer.md)
+  A fast method, but slower than Monotone. It can create poor-looking meshes when used on large open regions, similar to Monotone, but will still generally create better-looking meshes than Monotone.
 
 
 ---

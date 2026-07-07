@@ -17,6 +17,7 @@ A convenience for a `spring` animation with a lower `response` value, intended f
 ## Declaration
 
 ```swift
+@export(implementation)
 static func interactiveSpring(duration: TimeInterval = 0.15, extraBounce: Double = 0.0, blendDuration: TimeInterval = 0.25) -> Animation
 ```
 

@@ -8,7 +8,6 @@ Tracking is available and the session detects no problems..
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst 17.0+
 
 ## Declaration
 

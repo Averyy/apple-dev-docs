@@ -8,7 +8,7 @@ A little-endian 16-bit, RGBA pixel format with 5 bits per color channel and 1-bi
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst ?+
+- Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
 - visionOS ?+

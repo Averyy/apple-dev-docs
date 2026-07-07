@@ -16,13 +16,13 @@ Creates an instance, with a custom label, that presents the share interface.
 ## Declaration
 
 ```swift
-nonisolated
-init<I>(_ title: Text, item: I, subject: Text? = nil, message: Text? = nil, preview: SharePreview<PreviewImage, PreviewIcon>) where Data == CollectionOfOne<I>, I : Transferable
+@export(implementation)
+nonisolated init<I>(_ titleResource: LocalizedStringResource, item: I, subject: Text? = nil, message: Text? = nil, preview: SharePreview<PreviewImage, PreviewIcon>) where Data == CollectionOfOne<I>, I : Transferable
 ```
 
 ## Parameters
 
-- `title`: The title of the share action.
+- `titleResource`: A resource for the title of the share action.
 - `item`: The item to share.
 - `subject`: A title for the item to show when sharing to activities that support a subject field.
 - `message`: A description of the item to show when sharing to activities that support a message field. Activities may support attributed text or HTML strings.

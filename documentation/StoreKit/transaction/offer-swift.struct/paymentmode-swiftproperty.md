@@ -8,7 +8,6 @@ The payment mode for a subscription offer on an auto-renewable subscription that
 **Availability**:
 - iOS 17.2+
 - iPadOS 17.2+
-- Mac Catalyst 17.2+
 - macOS 14.2+
 - tvOS 17.2+
 - visionOS 1.1+

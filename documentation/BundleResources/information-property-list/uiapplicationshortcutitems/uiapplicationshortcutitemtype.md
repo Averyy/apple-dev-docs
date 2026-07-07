@@ -6,7 +6,6 @@
 **Availability**:
 - iOS 9.0+
 - iPadOS 9.0+
-- Mac Catalyst 9.0+
 
 
 

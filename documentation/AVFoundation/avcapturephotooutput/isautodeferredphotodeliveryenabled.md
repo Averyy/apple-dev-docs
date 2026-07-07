@@ -8,7 +8,6 @@ A Boolean value that indicates the enabled state of automatic deferred photo del
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst 17.0+
 
 ## Declaration
 

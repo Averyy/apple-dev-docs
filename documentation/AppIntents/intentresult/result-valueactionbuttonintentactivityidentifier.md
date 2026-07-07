@@ -8,7 +8,7 @@ Creates a result container with a value, a follow-on intent, and an identifier.
 **Availability**:
 - iOS 17.2+
 - iPadOS 17.2+
-- Mac Catalyst ?+
+- Mac Catalyst 17.2+
 - macOS 14.2+
 - tvOS 17.2+
 - visionOS ?+

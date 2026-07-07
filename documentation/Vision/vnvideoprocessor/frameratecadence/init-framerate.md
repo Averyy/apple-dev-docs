@@ -17,6 +17,11 @@
 init(frameRate: Int)
 ```
 
+## See Also
+
+- [init(Int)](vnvideoprocessor/frameratecadence/init(_:).md)
+  Creates a new frame-based cadence with a frame rate.
+
 
 ---
 

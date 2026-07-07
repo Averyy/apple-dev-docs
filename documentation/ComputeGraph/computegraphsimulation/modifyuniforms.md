@@ -1,6 +1,6 @@
 # modifyUniforms(_:)
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: method
 
 Provides read/write access to the entire uniforms buffer for CPU access.
@@ -12,7 +12,7 @@ Provides read/write access to the entire uniforms buffer for CPU access.
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 ## Declaration
 

@@ -8,7 +8,6 @@ Access the element at a multi-dimensional `index`.
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 
@@ -25,6 +24,11 @@ subscript<let rank : Int>(scalarAt index: InlineArray<rank, Int>) -> Element { g
 ## Parameters
 
 - `index`: The multi-dimensional index of the element to access. It must have the same count as rank of this view.
+
+## See Also
+
+- [var contiguousElements: MutableSpan<Element>?](ndarray/mutableview/contiguouselements.md)
+  Returns a `MutableSpan` over the backing memory of this view if the memory is in a contiguous layout, otherwise returns `nil`.
 
 
 ---

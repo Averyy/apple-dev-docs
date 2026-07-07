@@ -8,7 +8,6 @@ A Boolean value that indicates whether the control behaves as a digital button.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst 26.0+
 
 ## Declaration
 

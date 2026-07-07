@@ -8,7 +8,6 @@ Indicates the supported aspect ratios for the device format.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst 26.0+
 
 ## Declaration
 

@@ -8,7 +8,6 @@ A collection of properties that explains your appâ€™s need to observe the userâ€
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst 17.0+
 
 
 

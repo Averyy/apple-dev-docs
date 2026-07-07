@@ -143,18 +143,18 @@ You can also create custom styles. To add a custom appearance with standard inte
 - [init(action: () -> Void, label: () -> Label)](button/init(action:label:).md)
   Creates a button that displays a custom label.
 - [init(_:action:)](button/init(_:action:).md)
-  Creates a button that generates its label from a localized string key.
+  Creates a button that generates its label from a localized string resource.
 - [init(_:image:action:)](button/init(_:image:action:).md)
-  Creates a button that generates its label from a localized string key and image resource.
+  Creates a button that generates its label from a localized string resource and image resource.
 - [init(_:systemImage:action:)](button/init(_:systemimage:action:).md)
   Creates a button that generates its label from a localized string key and system image name.
 ### Creating a button with a role
 - [init(role: ButtonRole?, action: () -> Void, label: () -> Label)](button/init(role:action:label:).md)
   Creates a button with a specified role that displays a custom label.
 - [init(_:role:action:)](button/init(_:role:action:).md)
-  Creates a button with a specified role that generates its label from a localized string key.
+  Creates a button with a specified role that generates its label from a localized string resource.
 - [init(_:image:role:action:)](button/init(_:image:role:action:).md)
-  Creates a button with a specified role that generates its label from a localized string key and an image resource.
+  Creates a button with a specified role that generates its label from a localized string resource and an image resource.
 - [init(_:systemImage:role:action:)](button/init(_:systemimage:role:action:).md)
   Creates a button with a specified role that generates its label from a localized string key and a system image.
 ### Creating a button from a configuration

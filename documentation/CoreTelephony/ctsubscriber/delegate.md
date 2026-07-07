@@ -8,7 +8,6 @@ A delegate that receives updates on the subscriber information.
 **Availability**:
 - iOS 12.1+
 - iPadOS 12.1+
-- Mac Catalyst 12.1+
 
 ## Declaration
 

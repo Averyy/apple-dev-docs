@@ -8,7 +8,6 @@ A cryptographic signature your server generates to sign a promotional offer for 
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
-- Mac Catalyst 17.4+
 - macOS 14.4+
 - tvOS 17.4+
 - visionOS 1.1+

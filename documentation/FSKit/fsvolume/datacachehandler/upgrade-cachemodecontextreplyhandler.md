@@ -17,20 +17,6 @@ func upgrade(_ item: FSItem, cacheMode: FSVolume.DataCacheMode, context: FSConte
 
 #### Discussion
 
-`::::: Swift ::::::::::`
-
-- reply: A block or closure to indicate success or failure. If successful, pass an instance of [`FSUpgradeItemResult`](fsupgradeitemresult.md) containing the granted [`FSVolume.KernelCacheCoherencyType`](fsvolume/kernelcachecoherencytype.md), along with a `nil` error. If upgrading fails, pass the relevant error as the second parameter; FSKit ignores the [`FSUpgradeItemResult`](fsupgradeitemresult.md) instance in this case. For an `async` Swift implementation, there’s no reply handler; simply return the result instance or throw an error.
-
-`::::::::::::::::::::`
-
-`::::: ObjC ::::::::::`
-
-- result: A block or closure to indicate success or failure. If successful, pass an instance of [`FSUpgradeItemResult`](fsupgradeitemresult.md) containing the granted [`FSVolume.KernelCacheCoherencyType`](fsvolume/kernelcachecoherencytype.md), along with a `nil` error. If upgrading fails, pass the relevant error as the second parameter; FSKit ignores the [`FSUpgradeItemResult`](fsupgradeitemresult.md) instance in this case. For an `async` Swift implementation, there’s no reply handler; simply return the result instance or throw an error.
-
-`::::::::::::::::::::`
-
-#### Discussion
-
 FSKit calls this method when transitioning to a cache mode that allows more aggressive caching.
 
 ## Parameters
@@ -38,6 +24,7 @@ FSKit calls this method when transitioning to a cache mode that allows more aggr
 - `item`: The item for which to upgrade the cache mode.
 - `cacheMode`: The new (more permissive) cache mode being requested.
 - `context`: An object that enables context-aware file system decisions throughout the operation.
+- `reply`: A block or closure to indicate success or failure. If successful, pass an instance of [`FSUpgradeItemResult`](fsupgradeitemresult.md) containing the granted [`FSVolume.KernelCacheCoherencyType`](fsvolume/kernelcachecoherencytype.md), along with a `nil` error. If upgrading fails, pass the relevant error as the second parameter; FSKit ignores the [`FSUpgradeItemResult`](fsupgradeitemresult.md) instance in this case. For an `async` Swift implementation, there’s no reply handler; simply return the result instance or throw an error.
 
 ## See Also
 

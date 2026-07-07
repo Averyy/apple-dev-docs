@@ -11,6 +11,7 @@ A named scoring dimension for a model judge evaluator.
 - Mac Catalyst 27.0+ (Beta)
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -53,23 +54,24 @@ let _ = ScoreDimension("Safety", scale: .custom(SafetyLevel.self))
 
 ## Topics
 
+### Creating a dimension
+- [init(String, description: String?, scale: ScoringScale)](scoredimension/init(_:description:scale:).md)
+  Creates a scoring dimension.
+### Inspecting a dimension
+- [var metric: Metric](scoredimension/metric.md)
+  A metric identifier derived from this dimension’s name.
+- [let scale: ScoringScale](scoredimension/scale.md)
+  The scoring scale for this dimension.
+- [let description: String?](scoredimension/description.md)
+  An optional description providing additional context for the judge about what this dimension measures.
 ### Defining scales
 - [struct ScoringScale](scoringscale.md)
   A scoring scale that defines the set of options a judge can assign.
 - [protocol ScoreLevel](scorelevel.md)
   A type that defines individual levels within a scoring scale.
-### Initializers
-- [init(String, description: String?, scale: ScoringScale)](scoredimension/init(_:description:scale:).md)
-  Creates a scoring dimension.
 ### Instance Properties
-- [let description: String?](scoredimension/description.md)
-  An optional description providing additional context for the judge about what this dimension measures.
-- [var metric: Metric](scoredimension/metric.md)
-  A metric identifier derived from this dimension’s name.
 - [let name: String](scoredimension/name.md)
   The name of the dimension, used as the DataFrame column name.
-- [let scale: ScoringScale](scoredimension/scale.md)
-  The scoring scale for this dimension.
 
 ## Relationships
 

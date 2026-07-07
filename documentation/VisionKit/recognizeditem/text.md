@@ -8,7 +8,6 @@ An object that represents a text item that the scanner recognizes.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
 - visionOS 1.0+
 
 ## Declaration

@@ -1,6 +1,6 @@
 # worldToLocal
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: property
 
 The transform from world space to the system’s local space.
@@ -12,7 +12,7 @@ The transform from world space to the system’s local space.
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 ## Declaration
 

@@ -8,7 +8,7 @@ A Boolean value indicating whether the work item has been canceled.
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+
-- Mac Catalyst ?+
+- Mac Catalyst 8.0+
 - macOS 10.10+
 - tvOS ?+
 - visionOS ?+

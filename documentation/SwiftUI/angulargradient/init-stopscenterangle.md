@@ -17,8 +17,8 @@ Creates a conic gradient from a collection of color stops that completes a full 
 ## Declaration
 
 ```swift
-nonisolated
-init(stops: [Gradient.Stop], center: UnitPoint, angle: Angle = .zero)
+@export(implementation)
+nonisolated init(stops: [Gradient.Stop], center: UnitPoint, angle: Angle = .zero)
 ```
 
 ## See Also

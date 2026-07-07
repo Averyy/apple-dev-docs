@@ -8,7 +8,6 @@ Creates a new sensor reader for the specified sensor type.
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 
 ## Declaration
 

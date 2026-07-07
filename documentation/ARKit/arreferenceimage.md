@@ -8,7 +8,6 @@ A 2D image that you want ARKit to detect in the physical environment.
 **Availability**:
 - iOS 11.3+
 - iPadOS 11.3+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

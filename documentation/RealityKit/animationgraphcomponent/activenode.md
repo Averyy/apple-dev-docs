@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: protocol
 
-A protocol providing common debug information for any active node within a compiled animation graph.
+Common debug information for any node that was active during the most recent graph evaluation tick.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -19,16 +19,20 @@ A protocol providing common debug information for any active node within a compi
 protocol ActiveNode : Identifiable, Sendable
 ```
 
+#### Overview
+
+`AnimationGraphComponent` reports active nodes through this protocol so that tools can iterate every node uniformly. To inspect node-kind-specific state, downcast to [`AnimationGraphComponent.ActiveStateMachineNode`](animationgraphcomponent/activestatemachinenode.md) or [`AnimationGraphComponent.ActiveClipNode`](animationgraphcomponent/activeclipnode.md), or iterate the typed accessors [`activeStateMachineNodes`](animationgraphcomponent/activestatemachinenodes.md) and [`activeClipNodes`](animationgraphcomponent/activeclipnodes.md) directly.
+
 ## Topics
 
 ### Inspecting the active node
 - [var id: Int](animationgraphcomponent/activenode/id.md)
-  Returns the id of the node.
+  The unique identifier of the node within the compiled graph.
 - [var wasReset: Bool](animationgraphcomponent/activenode/wasreset.md)
-  Returns `true` if the node was reset during the last tick.
+  A Boolean value that indicates whether the node was reset during the last evaluation tick.
 ### Instance Properties
 - [var name: String](animationgraphcomponent/activenode/name.md)
-  Returns the name of the node.
+  The author-supplied name of the node from the graph definition.
 
 ## Relationships
 
@@ -43,15 +47,15 @@ protocol ActiveNode : Identifiable, Sendable
 ## See Also
 
 - [var activeNodes: [any AnimationGraphComponent.ActiveNode]](animationgraphcomponent/activenodes.md)
-  All nodes that were active during the last graph evaluation tick.
+  Every node that contributed to the most recent graph evaluation tick.
 - [var activeClipNodes: [AnimationGraphComponent.ActiveClipNode]](animationgraphcomponent/activeclipnodes.md)
-  The animation clip nodes that were active during the last graph evaluation tick.
+  The animation clip nodes that were active during the most recent graph evaluation tick.
 - [AnimationGraphComponent.ActiveClipNode](animationgraphcomponent/activeclipnode.md)
-  Contains clip debug information for an active animation clip node within a compiled animation graph, used for inspection and debugging.
+  Debug information for an active animation clip node within the graph.
 - [var activeStateMachineNodes: [AnimationGraphComponent.ActiveStateMachineNode]](animationgraphcomponent/activestatemachinenodes.md)
-  The state machine nodes that were active during the last graph evaluation tick.
+  The state machine nodes that were active during the most recent graph evaluation tick.
 - [AnimationGraphComponent.ActiveStateMachineNode](animationgraphcomponent/activestatemachinenode.md)
-  Contains state machine debug information for an active state machine node within a compiled animation graph, used for inspection and debugging.
+  Debug information for an active state machine node within the graph.
 
 
 ---

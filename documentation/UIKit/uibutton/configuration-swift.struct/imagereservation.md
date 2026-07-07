@@ -8,7 +8,7 @@ A value that reserves space for the image in the same axis as the edge against w
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst ?+
+- Mac Catalyst 15.0+
 - tvOS 15.0+
 - visionOS ?+
 

@@ -11,8 +11,8 @@ Allows the view to be manipulated using a manipulation gesture attached to a dif
 ## Declaration
 
 ```swift
-nonisolated
-func manipulable(using gestureState: Manipulable.GestureState) -> some View
+@export(implementation)
+nonisolated func manipulable(using gestureState: Manipulable.GestureState) -> some View
 ```
 
 #### Return Value

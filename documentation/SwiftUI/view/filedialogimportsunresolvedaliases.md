@@ -38,7 +38,7 @@ By default, file dialogs resolve aliases and provide the URL of the item referre
 - [func fileDialogDefaultDirectory(URL?) -> some View](view/filedialogdefaultdirectory(_:).md)
   Configures the `fileExporter`, `fileImporter`, or `fileMover` to open with the specified default directory.
 - [func fileDialogMessage(_:)](view/filedialogmessage(_:).md)
-  On macOS, configures the `fileExporter`, `fileImporter`, or `fileMover` with a custom text that is presented to the user, similar to a title.
+  On macOS, configures the `fileExporter`, `fileImporter`, or `fileMover` with a custom message that is presented to the user, similar to a title.
 - [func fileDialogURLEnabled(Predicate<URL>) -> some View](view/filedialogurlenabled(_:).md)
   On macOS, configures the `fileImporter` or `fileMover` to conditionally disable presented URLs.
 - [struct FileDialogBrowserOptions](filedialogbrowseroptions.md)

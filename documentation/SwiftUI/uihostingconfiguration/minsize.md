@@ -15,6 +15,7 @@ Sets the minimum size for the configuration.
 ## Declaration
 
 ```swift
+@export(implementation)
 func minSize() -> UIHostingConfiguration<Content, Background>
 ```
 

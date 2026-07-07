@@ -8,7 +8,6 @@ There was an ARKit failure in one of the sensors.
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst 17.0+
 
 ## Declaration
 

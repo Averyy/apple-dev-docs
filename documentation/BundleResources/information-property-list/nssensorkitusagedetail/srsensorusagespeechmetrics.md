@@ -8,7 +8,6 @@ A collection of properties that explain your app’s need to analyze the user’
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst 15.0+
 
 
 

@@ -8,7 +8,6 @@ Values that represent the different presentations of a Live Activity in the Dyna
 **Availability**:
 - iOS 16.2+
 - iPadOS 16.2+
-- Mac Catalyst 16.2+
 
 ## Declaration
 

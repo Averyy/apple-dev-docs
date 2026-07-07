@@ -8,7 +8,6 @@ Checks once for intersections between a ray and real-world surfaces.
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

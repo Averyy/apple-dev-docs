@@ -30,7 +30,7 @@ Browse notable changes in [`SwiftUI`](https://developer.apple.com/documentation/
 - Use the [`visibilityPriority(_:)`](https://developer.apple.com/documentation/SwiftUI/ToolbarContent/visibilityPriority(_:)) modifier to prioritize important toolbar actions so SwiftUI keeps them visible as space shrinks, moving lower-priority items to the overflow menu first.
 - Send secondary toolbar actions, like archive or delete, directly to the overflow menu by wrapping them in a [`ToolbarOverflowMenu`](https://developer.apple.com/documentation/SwiftUI/ToolbarOverflowMenu), keeping your primary toolbar focused on key actions.
 - Anchor a toolbar item to the trailing edge of the top bar using the [`topBarPinnedTrailing`](https://developer.apple.com/documentation/SwiftUI/ToolbarItemPlacement/topBarPinnedTrailing) placement so it stays in place even as other items shift or move to the overflow menu.
-- Control how toolbars minimize in response to scrolling using the [`toolbarMinimizeBehavior(_:for:)`](https://developer.apple.com/documentation/SwiftUI/View/toolbarMinimizeBehavior(_:for:)) modifier.
+- Control how toolbars minimize in response to scrolling using the doc://com.apple.documentation/documentation/swiftui/view/toolbarminimizebehavior(_:for:) modifier.
 
 ##### Documents
 

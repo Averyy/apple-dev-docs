@@ -8,7 +8,7 @@ Optionally, the AppIntent that replaces this one. Note: This is used by the Shor
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst ?+
+- Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
 - visionOS ?+

@@ -6,7 +6,7 @@
 The size of the text container’s bounding rectangle.
 
 **Availability**:
-- macOS ?+
+- macOS 10.0+
 
 ## Declaration
 

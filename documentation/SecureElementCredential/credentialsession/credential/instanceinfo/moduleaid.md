@@ -8,7 +8,6 @@ The module identifier of the package with which this instance is associated.
 **Availability**:
 - iOS 18.1+
 - iPadOS 18.1+
-- Mac Catalyst 18.1+
 
 ## Declaration
 

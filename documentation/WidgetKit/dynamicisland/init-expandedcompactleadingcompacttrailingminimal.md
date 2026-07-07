@@ -8,7 +8,6 @@ Creates a configuration object with views that appear in the Dynamic Island.
 **Availability**:
 - iOS 16.1+
 - iPadOS 16.1+
-- Mac Catalyst 16.1+
 
 ## Declaration
 

@@ -8,7 +8,6 @@ A catalog of node definitions supported by RealityKit.
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 
@@ -32,13 +31,14 @@ let pbr = graph.addNode(pbrNode)
 ## Topics
 
 ### Structures
-- [ShaderGraph.NodeLibrary.Version](shadergraph/nodelibrary/version.md)
+- [ShaderGraph.NodeLibrary.Version](shadergraph/nodelibrary/version-swift.struct.md)
 ### Initializers
 - [init(version: ShaderGraph.NodeLibrary.Version)](shadergraph/nodelibrary/init(version:).md)
   Creates a library containing all node definitions supported by RealityKit for the given library version.
 ### Instance Properties
 - [var definitions: some Collection<ShaderGraph.NodeDefinition>](shadergraph/nodelibrary/definitions.md)
   All node definitions in this library.
+- [let version: ShaderGraph.NodeLibrary.Version](shadergraph/nodelibrary/version-swift.property.md)
 ### Instance Methods
 - [func definition(named: String) -> ShaderGraph.NodeDefinition?](shadergraph/nodelibrary/definition(named:).md)
   Returns the definition with the given name, or `nil` if no such definition exists in this library.

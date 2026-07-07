@@ -23,7 +23,7 @@ enum DataCacheMode
   A mode that indicates read access with caching enabled.
 - [FSVolume.DataCacheMode.readWriteWithCache](fsvolume/datacachemode/readwritewithcache.md)
   A mode that indicates read-write access with caching enabled.
-### Initializers - generated
+### Initializers
 - [init?(rawValue: Int)](fsvolume/datacachemode/init(rawvalue:).md)
 
 ## Relationships

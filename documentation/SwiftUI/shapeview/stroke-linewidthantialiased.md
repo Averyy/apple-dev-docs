@@ -17,8 +17,8 @@ Traces the outline of this shape with a color or gradient.
 ## Declaration
 
 ```swift
-nonisolated
-func stroke<S>(_ content: S, lineWidth: CGFloat = 1, antialiased: Bool = true) -> StrokeShapeView<Self.Content, S, Self> where S : ShapeStyle
+@export(implementation)
+nonisolated func stroke<S>(_ content: S, lineWidth: CGFloat = 1, antialiased: Bool = true) -> StrokeShapeView<Self.Content, S, Self> where S : ShapeStyle
 ```
 
 #### Return Value

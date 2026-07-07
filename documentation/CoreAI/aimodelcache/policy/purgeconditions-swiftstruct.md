@@ -8,7 +8,6 @@ A set of conditions that determine when the system purges specialized assets.
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 
@@ -24,7 +23,7 @@ struct PurgeConditions
 
 ## Topics
 
-### Type Properties
+### Identifying purge conditions
 - [static let sourceAssetChangedOrDeleted: AIModelCache.Policy.PurgeConditions](aimodelcache/policy/purgeconditions-swift.struct/sourceassetchangedordeleted.md)
   A condition that allows purging when the source model changes or no longer exists.
 - [static let storagePressure: AIModelCache.Policy.PurgeConditions](aimodelcache/policy/purgeconditions-swift.struct/storagepressure.md)

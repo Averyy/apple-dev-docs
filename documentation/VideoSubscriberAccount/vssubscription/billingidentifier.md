@@ -8,7 +8,6 @@ The subscriber’s billing group.
 **Availability**:
 - iOS 11.3+
 - iPadOS 11.3+
-- Mac Catalyst 11.3+
 - macOS ?+
 - tvOS 11.3+
 - visionOS 1.0+

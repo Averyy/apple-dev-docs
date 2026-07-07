@@ -8,7 +8,6 @@ A flag that indicates if the device tracks App Clip Codes.
 **Availability**:
 - iOS 14.3+
 - iPadOS 14.3+
-- Mac Catalyst 14.3+
 
 ## Declaration
 

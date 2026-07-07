@@ -11,6 +11,7 @@ Runs the evaluation against the dataset and computes metric results.
 - Mac Catalyst 27.0+ (Beta)
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -32,6 +33,8 @@ The resulting [`EvaluationResult`](evaluationresult.md) contains typed data in i
 - The Input column contains the full `Sample` from the dataset.
 - The Response column contains the full subject that the system under test produces.
 - Metric columns contain [`Metric`](metric.md) values directly, preserving pass/fail/score semantics and rationale.
+- The SubjectInferenceError column contains the failure reason for any sample whose subject could not be produced by `subject(from:)` (the same rows whose Response is `nil`). It is present only when at least one subject failed.
+- The EvaluatorErrors column contains the failure reason(s), labeled by evaluator type, for any sample whose subject was produced but one or more evaluators threw. It is present only when at least one evaluator failed.
 
 ## Parameters
 

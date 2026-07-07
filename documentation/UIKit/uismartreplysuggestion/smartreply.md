@@ -8,7 +8,6 @@ A string from the Smart Reply option the user selected.
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
-- Mac Catalyst 18.4+
 
 ## Declaration
 

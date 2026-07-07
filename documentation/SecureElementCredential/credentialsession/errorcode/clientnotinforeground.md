@@ -8,7 +8,6 @@ Your app isn’t in the foreground, which is required to use the credential sess
 **Availability**:
 - iOS 18.1+
 - iPadOS 18.1+
-- Mac Catalyst 18.1+
 
 ## Declaration
 

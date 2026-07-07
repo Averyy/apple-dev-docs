@@ -11,8 +11,8 @@ Positions this view within an invisible frame having the specified depth constra
 ## Declaration
 
 ```swift
-nonisolated
-func frame(minDepth: CGFloat? = nil, idealDepth: CGFloat? = nil, maxDepth: CGFloat? = nil, alignment: DepthAlignment = .center) -> some View
+@export(implementation)
+nonisolated func frame(minDepth: CGFloat? = nil, idealDepth: CGFloat? = nil, maxDepth: CGFloat? = nil, alignment: DepthAlignment = .center) -> some View
 ```
 
 #### Return Value

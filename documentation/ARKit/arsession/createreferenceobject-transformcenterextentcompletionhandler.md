@@ -8,7 +8,6 @@ Creates a reference object (for 3D object detection) from the specified region o
 **Availability**:
 - iOS 12.0+
 - iPadOS 12.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

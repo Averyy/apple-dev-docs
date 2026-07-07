@@ -8,7 +8,7 @@ Creates a key command that you can use as a menu element with a shortcut key, or
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst ?+
+- Mac Catalyst 13.0+
 - tvOS 14.0+
 - visionOS ?+
 

@@ -14,8 +14,8 @@ Creates a launch scene for document-based applications with a title, a set of ac
 ## Declaration
 
 ```swift
-nonisolated
-init(_ title: LocalizedStringKey, @ContentBuilder _ actions: () -> Actions, @ContentBuilder background: () -> some View, @ContentBuilder backgroundAccessoryView: @escaping (DocumentLaunchGeometryProxy) -> some View, @ContentBuilder overlayAccessoryView: @escaping (DocumentLaunchGeometryProxy) -> some View)
+@export(implementation)
+nonisolated init(_ title: LocalizedStringResource, @ContentBuilder _ actions: () -> Actions, @ContentBuilder background: () -> some View, @ContentBuilder backgroundAccessoryView: @escaping (DocumentLaunchGeometryProxy) -> some View, @ContentBuilder overlayAccessoryView: @escaping (DocumentLaunchGeometryProxy) -> some View)
 ```
 
 #### Discussion
@@ -24,7 +24,7 @@ Use a `DocumentGroupLaunchScene` alongside any [`DocumentGroup`](documentgroup.m
 
 ## Parameters
 
-- `title`: A key to use for the view title.
+- `title`: A resource to use for the view title.
 - `actions`: A content builder for returning the view’s actions.
 - `background`: The background of the scene.
 - `backgroundAccessoryView`: A content builder for returning the view’s background accessory view.

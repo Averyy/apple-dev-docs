@@ -8,7 +8,6 @@ An anchor that tracks the position and orientation of an App Clip Code in the ph
 **Availability**:
 - iOS 14.3+
 - iPadOS 14.3+
-- Mac Catalyst 14.3+
 
 ## Declaration
 

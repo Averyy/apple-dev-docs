@@ -8,7 +8,6 @@ A message that informs the user why an app is requesting permission to use data 
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
 - tvOS 14.0+
 - visionOS 1.0+
 
@@ -36,6 +35,8 @@ See [`Apple’s Human Interface Guidelines`](https://developer.apple.comhttps://
 
 - [NSUpdateSecurityPolicy](information-property-list/nsupdatesecuritypolicy.md)
   A dictionary that identifies which apps or installer packages the operating system allows to write to the app’s bundle.
+- [NSAppBundlesUsageDescription](information-property-list/nsappbundlesusagedescription.md)
+  A message that tells people why the app needs to access the contents of other apps’ bundles.
 - [NSAppDataUsageDescription](information-property-list/nsappdatausagedescription.md)
   A message that tells people why the app needs to access files in other apps’ sandbox containers.
 - [NSAppleEventsUsageDescription](information-property-list/nsappleeventsusagedescription.md)

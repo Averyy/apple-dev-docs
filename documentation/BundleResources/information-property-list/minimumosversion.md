@@ -8,7 +8,6 @@ The minimum version of the operating system required for the app to run in iOS, 
 **Availability**:
 - iOS 3.0+
 - iPadOS 3.0+
-- Mac Catalyst 3.0+
 - tvOS 9.0+
 - visionOS 1.0+
 - watchOS 1.0+

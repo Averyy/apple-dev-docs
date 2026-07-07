@@ -8,7 +8,6 @@ Creates a vibrancy effect for the specified style.
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst 13.0+
 
 ## Declaration
 

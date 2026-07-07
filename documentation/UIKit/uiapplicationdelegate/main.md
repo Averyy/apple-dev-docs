@@ -8,7 +8,7 @@ Provides the top-level entry point for the app.
 **Availability**:
 - iOS 2.0+
 - iPadOS 2.0+
-- Mac Catalyst ?+
+- Mac Catalyst 2.0+
 - tvOS ?+
 - visionOS ?+
 

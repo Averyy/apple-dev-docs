@@ -8,7 +8,6 @@ Creates a new identifier from the provided value.
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 11.0+
 - macOS 11.0+
 - visionOS 1.0+
 

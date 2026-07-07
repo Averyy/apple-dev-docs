@@ -8,7 +8,6 @@ An object that creates matte textures you use to occlude your app’s virtual co
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

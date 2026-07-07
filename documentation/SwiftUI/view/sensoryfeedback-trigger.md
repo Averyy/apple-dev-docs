@@ -17,8 +17,8 @@ Plays feedback when returned from the `feedback` closure after the provided `tri
 ## Declaration
 
 ```swift
-nonisolated
-func sensoryFeedback<T>(trigger: T, _ feedback: @escaping () -> SensoryFeedback?) -> some View where T : Equatable
+@export(implementation)
+nonisolated func sensoryFeedback<T>(trigger: T, _ feedback: @escaping () -> SensoryFeedback?) -> some View where T : Equatable
 ```
 
 #### Discussion

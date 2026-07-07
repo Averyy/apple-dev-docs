@@ -20,7 +20,7 @@ SwiftUI provides views, controls, and layout structures for declaring your app�
 
 Define your app structure using the [`App`](app.md) protocol, and populate it with scenes that contain the views that make up your app’s user interface. Create your own custom views that conform to the [`View`](view.md) protocol, and compose them with SwiftUI views for displaying text, images, and custom shapes using stacks, lists, and more. Apply powerful modifiers to built-in views and your own views to customize their rendering and interactivity. Share code between apps on multiple platforms with views and controls that adapt to their context and presentation.
 
-![An image of the Landmarks sample app on Mac, iPad, and iPhone showing the Mount Fuji landmark.](https://docs-assets.developer.apple.com/published/ce193ec494e91d4150c3356442824213/landmarks-app-article-hero%402x.png)
+![An image of the Landmarks sample app on Mac, iPad, and iPhone showing the Mount Fuji landmark.](https://docs-assets.developer.apple.com/published/f217ba608fadb4dcc6daeb0f9c6c0128/landmarks-app-article-hero%402x.png)
 
 You can integrate SwiftUI views with objects from the [`UIKit`](https://developer.apple.com/documentation/UIKit), [`AppKit`](https://developer.apple.com/documentation/AppKit), and [`WatchKit`](https://developer.apple.com/documentation/WatchKit) frameworks to take further advantage of platform-specific functionality. You can also customize accessibility support in SwiftUI, and localize your app’s interface for different languages, countries, or cultural regions.
 
@@ -145,6 +145,11 @@ You can integrate SwiftUI views with objects from the [`UIKit`](https://develope
   Expose custom views and modifiers in the Xcode library.
 - [Performance analysis](performance-analysis.md)
   Measure and improve your app’s responsiveness.
+### Structures
+- [struct ToolbarMinimizationBehavior](toolbarminimizationbehavior.md)
+  The minimization behavior of a toolbar.
+- [struct ToolbarMinimizationRestoration](toolbarminimizationrestoration.md)
+  The restoration behavior during toolbar minimization.
 
 
 ---

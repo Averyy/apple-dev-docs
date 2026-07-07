@@ -18,6 +18,11 @@ The declaration to configure Extensible Single Sign-On.
 object ExtensibleSSO
 ```
 
+## Mentions
+
+- [Configuring Platform Single Sign-on](configuring-platform-single-sign-on.md)
+- [Implementing Platform SSO for unattended device enrollment](implementing-platform-sso-for-unattended-device-enrollment.md)
+
 #### Discussion
 
 Specify `com.apple.configuration.extensible-sso` as the declaration type.

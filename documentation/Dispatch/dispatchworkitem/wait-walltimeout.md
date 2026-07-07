@@ -8,7 +8,7 @@ Causes the caller to wait synchronously until the dispatch work item finishes ex
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+
-- Mac Catalyst ?+
+- Mac Catalyst 8.0+
 - macOS 10.10+
 - tvOS ?+
 - visionOS ?+

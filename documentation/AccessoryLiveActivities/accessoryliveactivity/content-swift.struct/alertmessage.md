@@ -8,7 +8,6 @@ The content you use as an alert for a Live Activity update on your accessory.
 **Availability**:
 - iOS 26.5+
 - iPadOS 26.5+
-- Mac Catalyst 26.5+
 
 ## Declaration
 

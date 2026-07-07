@@ -8,7 +8,7 @@ Moves the section from its current position in the snapshot to the position imme
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst ?+
+- Mac Catalyst 13.0+
 - tvOS 13.0+
 - visionOS ?+
 

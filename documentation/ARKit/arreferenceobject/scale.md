@@ -8,7 +8,6 @@ A scale factor for the local coordinate space the reference object defines.
 **Availability**:
 - iOS 12.0+
 - iPadOS 12.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

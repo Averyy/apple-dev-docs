@@ -8,7 +8,6 @@ A view controller that manages the interface for inserting content into a canvas
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst 26.0+
 - visionOS 26.0+
 
 ## Declaration

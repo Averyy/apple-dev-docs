@@ -32,8 +32,9 @@ Presents nearby companion devices and allows the user to make a selection.
 ## See Also
 
 - [struct SpatialPreviewEndpoint](spatialpreviewendpoint.md)
-  An endpoint representing a destination that that can be connected to
+  An endpoint representing a visionOS device you can connect to for spatial preview.
 - [class ConnectedSpatialEndpointObserver](connectedspatialendpointobserver.md)
+  An observer that provides access to the endpoint for a device connected via Mac Virtual Display.
 
 
 ---

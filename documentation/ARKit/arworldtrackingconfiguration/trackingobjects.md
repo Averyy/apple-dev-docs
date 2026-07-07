@@ -8,7 +8,6 @@ Objects to track in the scene.
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 
 ## Declaration
 
@@ -18,7 +17,11 @@ var trackingObjects: Set<ARReferenceObject> { get set }
 
 #### Discussion
 
-If set, the session will attempt to track the specified objects. When an object is detected an `ARObjectAnchor` will be added to the session.
+The system tracks the object at the full frame rate of the selected `videoFormat`. When an object is tracked, an `ARObjectAnchor` is added to the session.
+
+Use this property for moving or handheld objects that require precise, per-frame pose updates. High frame-rate tracking significantly increases power consumption and processing load. For mostly stationary objects, use `detectionObjects` instead.
+
+> **Note**: Only the `.referenceobject` format (introduced in iOS 27) is supported; the older `.arobject` format works only with `detectionObjects`. A single session can’t use both formats.
 
 ## See Also
 

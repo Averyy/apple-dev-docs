@@ -8,7 +8,7 @@ Creates a zoom transition from the view that the source provider specifies.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst ?+
+- Mac Catalyst 18.0+
 - tvOS ?+
 - visionOS ?+
 

@@ -41,7 +41,7 @@ The above example assumes that you define a `TextDocument` that conforms to the 
 
 ### Calling the action
 - [func callAsFunction(_:)](newdocumentaction/callasfunction(_:).md)
-  Presents a new document window.
+  Presents a new document window for the in-memory document returned by the provided closure.
 - [func callAsFunction(contentType: UTType)](newdocumentaction/callasfunction(contenttype:).md)
   Presents a new document window.
 - [func callAsFunction(contentType: UTType, prepareDocument: (ModelContext) -> Void)](newdocumentaction/callasfunction(contenttype:preparedocument:).md)

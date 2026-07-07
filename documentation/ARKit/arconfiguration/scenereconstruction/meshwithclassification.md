@@ -8,7 +8,6 @@ An approximate shape of the physical environment, including classification of th
 **Availability**:
 - iOS 13.4+
 - iPadOS 13.4+
-- Mac Catalyst 13.4+
 
 ## Declaration
 

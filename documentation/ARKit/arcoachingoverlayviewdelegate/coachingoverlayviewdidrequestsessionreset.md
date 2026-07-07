@@ -8,7 +8,6 @@ Tells you when the user taps the coaching overlay view’s Start Over button whi
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

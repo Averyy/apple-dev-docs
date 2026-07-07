@@ -17,8 +17,8 @@ Attaches a gesture to the view to process simultaneously with gestures defined b
 ## Declaration
 
 ```swift
-nonisolated
-func simultaneousGesture<T>(_ gesture: T, isEnabled: Bool) -> some View where T : Gesture
+@export(implementation)
+nonisolated func simultaneousGesture<T>(_ gesture: T, isEnabled: Bool) -> some View where T : Gesture
 ```
 
 #### Discussion

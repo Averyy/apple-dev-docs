@@ -11,7 +11,6 @@ An error that indicates an error that occurs if the model is prompted to respond
 - Mac Catalyst 26.0+
 - macOS 26.0+
 - visionOS 26.0+
-- watchOS 27.0+ (Beta)
 
 ## Declaration
 

@@ -8,7 +8,6 @@ A raycast target that specifies nonplanar surfaces, or planes about which ARKit 
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

@@ -13,7 +13,7 @@ Initializes a map panel button configuration with a primary action, optional tra
 ## Declaration
 
 ```swift
-init(primaryAction: CPTextButton, secondaryButton: CPButton?, travelEstimates: CPTravelEstimates?)
+init(primaryAction: CPTextButton, secondaryButton: CPButton?, travelEstimates: CPTravelEstimates)
 ```
 
 #### Return Value
@@ -24,7 +24,7 @@ A new @c CPMapPanelButtonConfiguration instance.
 
 - `primaryAction`: The primary text button for the panel.
 - `secondaryButton`: An optional secondary button. Note: only the image property of this button is used. Any title provided will be dropped.
-- `travelEstimates`: Optional travel estimates to display alongside the primary button.
+- `travelEstimates`: The travel estimates to display alongside the primary button.
 
 
 ---

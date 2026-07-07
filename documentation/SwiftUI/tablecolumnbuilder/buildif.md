@@ -13,6 +13,7 @@
 ## Declaration
 
 ```swift
+@export(implementation)
 static func buildIf<C>(_ content: C?) -> C? where RowValue == C.TableRowValue, C : TableColumnContent, C.TableColumnSortComparator == Never
 ```
 

@@ -8,7 +8,7 @@ Apple Pay Later is unavailable because there’s a recurring payment or subscrip
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst ?+
+- Mac Catalyst 17.0+
 - macOS 14.0+
 - visionOS ?+
 - watchOS ?+

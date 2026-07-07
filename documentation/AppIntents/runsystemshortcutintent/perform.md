@@ -8,7 +8,7 @@ Performs a widget’s configured action, like opening another app or performing 
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst ?+
+- Mac Catalyst 27.0+ (Beta)
 
 ## Declaration
 

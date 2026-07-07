@@ -8,7 +8,7 @@ Creates a new calendar view decoration with the image, color, and size that you 
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst ?+
+- Mac Catalyst 16.0+
 - visionOS ?+
 
 ## Declaration

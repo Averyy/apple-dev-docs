@@ -112,7 +112,6 @@ In particular, note that `j`, the index of the second day with absences, was fou
   Removes and returns the element at the specified position.
 - [func reserveCapacity(Int)](arrayslice/reservecapacity(_:).md)
   Reserves enough space to store the specified number of elements.
-- [func withBytes<R, E>((RawSpan) throws(E) -> R) throws(E) -> R](arrayslice/withbytes(_:).md)
 - [func withUnsafeBufferPointer<R, E>((UnsafeBufferPointer<Element>) throws(E) -> R) throws(E) -> R](arrayslice/withunsafebufferpointer(_:).md)
   Calls a closure with a pointer to the array’s contiguous storage.
 - [func withUnsafeBytes<R>((UnsafeRawBufferPointer) throws -> R) rethrows -> R](arrayslice/withunsafebytes(_:).md)

@@ -17,6 +17,7 @@ A rectangular shape with rounded corners, aligned inside the frame of the view c
 ## Declaration
 
 ```swift
+@export(implementation)
 static func rect(cornerSize: CGSize, style: RoundedCornerStyle = .continuous) -> Self
 ```
 

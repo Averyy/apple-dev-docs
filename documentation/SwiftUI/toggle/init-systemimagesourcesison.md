@@ -17,8 +17,8 @@ Creates a toggle representing a collection of values that generates its label fr
 ## Declaration
 
 ```swift
-nonisolated
-init<C>(_ titleKey: LocalizedStringKey, systemImage: String, sources: C, isOn: KeyPath<C.Element, Binding<Bool>>) where C : RandomAccessCollection
+@export(implementation)
+nonisolated init<C>(_ titleKey: LocalizedStringKey, systemImage: String, sources: C, isOn: KeyPath<C.Element, Binding<Bool>>) where C : RandomAccessCollection
 ```
 
 #### Discussion
@@ -52,11 +52,11 @@ Toggle("Enable all alarms", sources: $alarms, isOn: \.isOn)
 ## See Also
 
 - [init(_:sources:isOn:)](toggle/init(_:sources:ison:).md)
-  Creates a toggle representing a collection of values that generates its label from a localized string key.
+  Creates a toggle representing a collection of values that generates its label from a localized string resource.
 - [init<C>(sources: C, isOn: KeyPath<C.Element, Binding<Bool>>, label: () -> Label)](toggle/init(sources:ison:label:).md)
   Creates a toggle representing a collection of values with a custom label.
 - [init(_:image:sources:isOn:)](toggle/init(_:image:sources:ison:).md)
-  Creates a toggle representing a collection of values that generates its label from a localized string key and image resource.
+  Creates a toggle representing a collection of values that generates its label from a localized string resource and image resource.
 
 
 ---

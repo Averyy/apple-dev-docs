@@ -15,6 +15,7 @@
 ## Declaration
 
 ```swift
+@export(implementation)
 static func buildLimitedAvailability<T>(_ content: T) -> AnyTabContent<T.TabValue> where T : TabContent
 ```
 

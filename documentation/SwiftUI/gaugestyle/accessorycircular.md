@@ -17,7 +17,7 @@ A gauge style that displays an open ring with a marker that appears at a point a
 
 ```swift
 @MainActor
-@preconcurrency static var accessoryCircular: AccessoryCircularGaugeStyle { get }
+@export(implementation) @preconcurrency static var accessoryCircular: AccessoryCircularGaugeStyle { get }
 ```
 
 #### Discussion

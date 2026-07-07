@@ -8,7 +8,6 @@ Returns a sub-view with the same rank as this view by slicing the dimensions at 
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 
@@ -45,6 +44,15 @@ func incrementRegion(
 ## Parameters
 
 - `ranges`: The range expressions describing where to slice along each dimension. `indexRank` must be ≤ `rank`. Unspecified trailing dimensions are assumed to be `.all`.
+
+## See Also
+
+- [func slice(at: [any NDArray.RangeExpression]) -> NDArray.MutableView<Element>](ndarray/mutableview/slice(at:)-qyjq.md)
+  Returns a sub-view with the same rank as this view by slicing the dimensions at the provided ranges.
+- [func mutatingSlice<let indexRank : Int>(at: [indexRank of any NDArray.RangeExpression]) -> NDArray.MutableView<Element>](ndarray/mutableview/mutatingslice(at:)-30asd.md)
+  Returns a sub-view with the same rank as this view by slicing the dimensions at the provided ranges.
+- [func mutatingSlice(at: [any NDArray.RangeExpression]) -> NDArray.MutableView<Element>](ndarray/mutableview/mutatingslice(at:)-9pmi4.md)
+  Returns a sub-view with the same rank as this view by slicing the dimensions at the provided ranges.
 
 
 ---

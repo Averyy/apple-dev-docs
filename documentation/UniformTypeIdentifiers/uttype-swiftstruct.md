@@ -313,6 +313,8 @@ To define your own types in your app’s `Info.plist`, see [`Defining file and d
   A type that represents plain text encoded as UTF-16 in native byte order with an optional bill of materials.
 - [static var utf16ExternalPlainText: UTType](uttype-swift.struct/utf16externalplaintext.md)
   A type that represents plain text encoded as UTF-16 with an optional bill of materials.
+- [static var markdown: UTType](uttype-swift.struct/markdown.md)
+  A type that represents Markdown data.
 ### URLs
 - [static var url: UTType](uttype-swift.struct/url.md)
   A type that represents a URL.
@@ -394,8 +396,6 @@ To define your own types in your app’s `Info.plist`, see [`Defining file and d
   A JPEG-XL encoded image.
 - [static var linkPresentationMetadata: UTType](uttype-swift.struct/linkpresentationmetadata.md)
   Serialized LinkPresentation metadata.
-- [static var markdown: UTType](uttype-swift.struct/markdown.md)
-  Markdown data
 - [static let paperkit: UTType](uttype-swift.struct/paperkit.md)
   The UTType for storing paper data.
 - [static var tarArchive: UTType](uttype-swift.struct/tararchive.md)

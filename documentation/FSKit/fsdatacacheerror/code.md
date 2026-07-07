@@ -27,7 +27,7 @@ enum Code
   Failed to invalidate (clear) cached data.
 - [FSDataCacheError.Code.errorCacheOperationConflict](fsdatacacheerror/code/errorcacheoperationconflict.md)
   A conflicting cache operation is in progress.
-### Initializers - generated
+### Initializers
 - [init?(rawValue: Int)](fsdatacacheerror/code/init(rawvalue:).md)
 
 ## Relationships

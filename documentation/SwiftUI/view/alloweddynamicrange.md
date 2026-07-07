@@ -16,8 +16,8 @@ Returns a new view configured with the specified allowed dynamic range.
 ## Declaration
 
 ```swift
-nonisolated
-func allowedDynamicRange(_ range: Image.DynamicRange?) -> some View
+@export(implementation)
+nonisolated func allowedDynamicRange(_ range: Image.DynamicRange?) -> some View
 ```
 
 #### Return Value

@@ -8,7 +8,7 @@ A transition where the current view fades out while the new view fades in at the
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst ?+
+- Mac Catalyst 18.0+
 - tvOS ?+
 - visionOS ?+
 

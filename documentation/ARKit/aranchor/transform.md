@@ -8,7 +8,6 @@ A matrix encoding the position, orientation, and scale of the anchor relative to
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

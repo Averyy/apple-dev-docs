@@ -8,7 +8,7 @@ A description of the setting that controls which apps a user can launch on their
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst ?+
+- Mac Catalyst 15.0+
 
 ## Declaration
 

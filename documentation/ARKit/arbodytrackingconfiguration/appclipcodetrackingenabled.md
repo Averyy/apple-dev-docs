@@ -8,7 +8,6 @@ A Boolean value that indicates if the framework searches the physical environmen
 **Availability**:
 - iOS 14.3+
 - iPadOS 14.3+
-- Mac Catalyst 14.3+
 
 ## Declaration
 

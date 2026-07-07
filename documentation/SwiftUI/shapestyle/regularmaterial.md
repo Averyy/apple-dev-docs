@@ -17,6 +17,7 @@ A material that’s somewhat translucent.
 ## Declaration
 
 ```swift
+@export(implementation)
 static var regularMaterial: Material { get }
 ```
 

@@ -8,7 +8,7 @@ The format the manager uses to send blocked URL reports.
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst ?+
+- Mac Catalyst 27.0+ (Beta)
 - macOS 27.0+ (Beta)
 
 ## Declaration
@@ -45,7 +45,7 @@ For strings under 128 bytes, the length is a single byte. For longer strings, th
 
 The following example shows the encoding of the URL `https://example.com`:
 
-```not specified
+```None
 Example encoding for URL "https://example.com":
 [0x0A]    [0x13]    [h][t][t][p][s][:][/][/][e][x][a][m][p][l][e][.][c][o][m]
 ^tag      ^len=19   ^------------ 19 bytes of UTF-8 string data ------------^

@@ -8,7 +8,7 @@ A message that is posted in NotificationCenter when ManagedSettingsStore tokens 
 **Availability**:
 - iOS 26.5+
 - iPadOS 26.5+
-- Mac Catalyst ?+
+- Mac Catalyst 26.5+
 
 ## Declaration
 

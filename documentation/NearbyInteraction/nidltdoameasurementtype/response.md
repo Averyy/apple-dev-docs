@@ -8,7 +8,6 @@ A type that indicates the measurement derives from responder anchors’ messages
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst 26.0+
 
 ## Declaration
 

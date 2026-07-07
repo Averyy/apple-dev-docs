@@ -1,6 +1,6 @@
 # init(bundle:)
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: init
 
 Creates a library from the Metal default library in the given bundle, if available.
@@ -12,7 +12,7 @@ Creates a library from the Metal default library in the given bundle, if availab
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 ## Declaration
 

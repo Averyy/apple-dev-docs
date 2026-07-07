@@ -8,7 +8,6 @@ A Boolean value that indicates whether your app can start a Live Activity.
 **Availability**:
 - iOS 16.1+
 - iPadOS 16.1+
-- Mac Catalyst 16.1+
 
 ## Declaration
 

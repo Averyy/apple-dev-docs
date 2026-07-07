@@ -8,7 +8,7 @@ The number of axes of the current part; zero if no part set
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
-- Mac Catalyst ?+
+- Mac Catalyst 18.4+
 - macOS 15.4+
 - tvOS 18.4+
 - visionOS 2.4+

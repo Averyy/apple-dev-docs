@@ -1,6 +1,6 @@
 # init(_:)
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: init
 
 Assembles and compiles pipelines from the provided graph.
@@ -12,7 +12,7 @@ Assembles and compiles pipelines from the provided graph.
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 ## Declaration
 

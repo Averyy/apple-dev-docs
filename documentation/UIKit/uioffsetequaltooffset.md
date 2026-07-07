@@ -8,7 +8,7 @@ Returns a Boolean value that indicates whether two offsets are equal.
 **Availability**:
 - iOS 7.0+
 - iPadOS 7.0+
-- Mac Catalyst ?+
+- Mac Catalyst 7.0+
 - tvOS ?+
 - visionOS ?+
 - watchOS 2.0+

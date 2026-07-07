@@ -12,7 +12,7 @@ The table style that describes the behavior and appearance of a table with stand
 
 ```swift
 @MainActor
-@preconcurrency static func bordered(alternatesRowBackgrounds: Bool) -> BorderedTableStyle
+@export(implementation) @preconcurrency static func bordered(alternatesRowBackgrounds: Bool) -> BorderedTableStyle
 ```
 
 #### Discussion

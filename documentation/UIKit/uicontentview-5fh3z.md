@@ -8,7 +8,7 @@ The requirements for a content view that you create using a configuration.
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst ?+
+- Mac Catalyst 14.0+
 - tvOS 14.0+
 - visionOS ?+
 

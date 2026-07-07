@@ -17,8 +17,8 @@ Returns a view thatâ€™s the result of insetting this view by half of its styleâ€
 ## Declaration
 
 ```swift
-nonisolated
-func strokeBorder<S>(_ content: S = .foreground, style: StrokeStyle, antialiased: Bool = true) -> StrokeBorderShapeView<Self.Content, S, Self> where S : ShapeStyle
+@export(implementation)
+nonisolated func strokeBorder<S>(_ content: S = .foreground, style: StrokeStyle, antialiased: Bool = true) -> StrokeBorderShapeView<Self.Content, S, Self> where S : ShapeStyle
 ```
 
 #### Discussion

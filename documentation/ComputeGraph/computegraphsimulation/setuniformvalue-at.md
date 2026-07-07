@@ -1,6 +1,6 @@
 # setUniformValue(_:at:)
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: method
 
 Copies the contents of `value` into the location specified by `relocation`
@@ -12,7 +12,7 @@ Copies the contents of `value` into the location specified by `relocation`
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 ## Declaration
 

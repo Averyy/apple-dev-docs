@@ -24,7 +24,6 @@ struct DefaultHistoryUpdate<Model> where Model : PersistentModel
 ### Operators
 - [static func == (DefaultHistoryUpdate<Model>, DefaultHistoryUpdate<Model>) -> Bool](defaulthistoryupdate/==(_:_:).md)
 ### Instance Methods
-- [func containsAttribute(any PartialKeyPath<Model> & Sendable) -> Bool](defaulthistoryupdate/containsattribute(_:).md)
 - [func hash(into: inout Hasher)](defaulthistoryupdate/hash(into:).md)
 ### Type Aliases
 - [DefaultHistoryUpdate.PropertyUpdate](defaulthistoryupdate/propertyupdate.md)

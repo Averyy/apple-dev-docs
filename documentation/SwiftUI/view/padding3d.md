@@ -11,8 +11,8 @@ Pads this view using the edge insets you specify.
 ## Declaration
 
 ```swift
-nonisolated
-func padding3D(_ edges: Edge3D.Set = .all, _ length: CGFloat? = nil) -> some View
+@export(implementation)
+nonisolated func padding3D(_ edges: Edge3D.Set = .all, _ length: CGFloat? = nil) -> some View
 ```
 
 #### Return Value

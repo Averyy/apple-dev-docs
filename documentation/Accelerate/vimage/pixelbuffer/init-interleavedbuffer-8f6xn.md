@@ -8,7 +8,7 @@ Creates a 4-channel, 8-bit-per-channel mutiple-plane buffer from a 4-channel, 8-
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst ?+
+- Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
 - visionOS ?+

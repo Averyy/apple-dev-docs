@@ -8,7 +8,6 @@ A flag that determines whether ARKit estimates the height of a body that it’s 
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

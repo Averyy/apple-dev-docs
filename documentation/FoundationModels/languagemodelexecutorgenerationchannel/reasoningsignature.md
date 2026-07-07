@@ -37,14 +37,12 @@ The signature is an opaque, producer-supplied token; each `updateSignature` even
 
 ## See Also
 
-- [LanguageModelExecutorGenerationChannel.EventKind](languagemodelexecutorgenerationchannel/eventkind.md)
-  A kind of event that can be sent on a generation channel.
 - [LanguageModelExecutorGenerationChannel.Metadata](languagemodelexecutorgenerationchannel/metadata.md)
   Snapshot of an entry’s metadata dictionary.
 - [LanguageModelExecutorGenerationChannel.Reasoning](languagemodelexecutorgenerationchannel/reasoning.md)
   A reasoning event.
 - [LanguageModelExecutorGenerationChannel.TextFragment](languagemodelexecutorgenerationchannel/textfragment.md)
-  Append text to a streaming entry’s current text segment. Used by both [`LanguageModelExecutorGenerationChannel.Response.Action.appendText(_:)`](languagemodelexecutorgenerationchannel/response/action-swift.enum/appendtext(_:).md) and [`LanguageModelExecutorGenerationChannel.Reasoning.Action.appendText(_:)`](languagemodelexecutorgenerationchannel/reasoning/action-swift.enum/appendtext(_:).md).
+  Append text to a streaming entry’s current text segment. Used by both `Response/Action/appendText(_:)` and `Reasoning/Action/appendText(_:)`.
 - [LanguageModelExecutorGenerationChannel.TextSegmentReplacement](languagemodelexecutorgenerationchannel/textsegmentreplacement.md)
   Replace a streaming entry’s current text segment with `content`.
 - [LanguageModelExecutorGenerationChannel.Response](languagemodelexecutorgenerationchannel/response.md)

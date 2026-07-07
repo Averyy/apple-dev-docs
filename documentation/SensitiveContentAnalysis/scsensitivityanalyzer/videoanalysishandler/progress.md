@@ -8,7 +8,7 @@ An object that provides the app with status updates while a sensitive content ch
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst ?+
+- Mac Catalyst 17.0+
 - macOS 14.0+
 - visionOS 2.0+
 

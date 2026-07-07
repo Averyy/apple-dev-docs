@@ -8,7 +8,6 @@ An array of model objects the framework inserted into the finance store.
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
-- Mac Catalyst 17.4+
 
 ## Declaration
 

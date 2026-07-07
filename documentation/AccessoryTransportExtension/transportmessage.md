@@ -8,7 +8,6 @@ A structure that represents a message for transmission between the system and an
 **Availability**:
 - iOS 26.5+
 - iPadOS 26.5+
-- Mac Catalyst 26.5+
 
 ## Declaration
 

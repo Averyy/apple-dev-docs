@@ -8,7 +8,7 @@ Creates a new map with the initial camera position, bounds, interaction modes, s
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst ?+
+- Mac Catalyst 17.0+
 - visionOS ?+
 
 ## Declaration

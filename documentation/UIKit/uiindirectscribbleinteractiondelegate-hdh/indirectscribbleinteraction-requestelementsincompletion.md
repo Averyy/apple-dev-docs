@@ -9,7 +9,7 @@ Asks the delegate to return the locations of text input elements inside the spec
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst ?+
+- Mac Catalyst 14.0+
 - visionOS ?+
 
 ## Declaration

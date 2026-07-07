@@ -8,7 +8,6 @@ Tells the system a widget is relevant close to points of interest of a specific 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst 26.0+
 - tvOS 26.0+
 - visionOS 26.0+
 - watchOS 26.0+

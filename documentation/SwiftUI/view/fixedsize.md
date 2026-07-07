@@ -17,8 +17,8 @@ Fixes this view at its ideal size.
 ## Declaration
 
 ```swift
-nonisolated
-func fixedSize() -> some View
+@export(implementation)
+nonisolated func fixedSize() -> some View
 ```
 
 #### Return Value

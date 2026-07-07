@@ -8,7 +8,7 @@ The edges on which the configuration adds the containing view’s layout margins
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst ?+
+- Mac Catalyst 14.0+
 - tvOS 14.0+
 - visionOS ?+
 

@@ -8,7 +8,6 @@ The reasons why subscription offers are applied to the purchase of auto-renewabl
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
-- Mac Catalyst 18.4+
 - macOS 15.4+
 - tvOS 18.4+
 - visionOS 2.4+

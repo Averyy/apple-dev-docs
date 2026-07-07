@@ -8,7 +8,6 @@ Removes the specified anchor from tracking by the session.
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

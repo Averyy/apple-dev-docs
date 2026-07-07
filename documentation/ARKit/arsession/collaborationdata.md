@@ -8,7 +8,6 @@ An object that holds information that a user has collected about the physical en
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

@@ -17,6 +17,7 @@ A schedule for updating a timeline view at explicit points in time.
 ## Declaration
 
 ```swift
+@export(implementation)
 static func explicit<S>(_ dates: S) -> ExplicitTimelineSchedule<S> where Self == ExplicitTimelineSchedule<S>, S : Sequence, S.Element == Date
 ```
 

@@ -17,6 +17,7 @@ A context-dependent red color suitable for use in UI elements.
 ## Declaration
 
 ```swift
+@export(implementation)
 static var red: Color { get }
 ```
 

@@ -8,7 +8,6 @@ A view that blends virtual 2D content from SpriteKit into the 3D space of an aug
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 13.1+
 - visionOS 1.0+
 
 ## Declaration
@@ -65,9 +64,6 @@ Use the [`ARSKView`](arskview.md) class to create augmented reality experiences 
 - [Hashable](../Swift/Hashable.md)
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
 - [UIAccessibilityIdentification](../UIKit/UIAccessibilityIdentification.md)
 - [UIActivityItemsConfigurationProviding](../UIKit/UIActivityItemsConfigurationProviding.md)
 - [UIAppearance](../UIKit/UIAppearance.md)

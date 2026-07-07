@@ -12,6 +12,10 @@
 var authorizationURLKeypath: String { get set }
 ```
 
+## Mentions
+
+- [Implementing web-based authentication with Platform Single Sign-on](implementing-web-based-authentication.md)
+
 #### Discussion
 
 The claim in the preauthentication response that contains the OpenID authorization URL.

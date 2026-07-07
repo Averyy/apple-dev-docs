@@ -8,7 +8,6 @@ The number of bytes for each index.
 **Availability**:
 - iOS 13.4+
 - iPadOS 13.4+
-- Mac Catalyst 13.4+
 
 ## Declaration
 

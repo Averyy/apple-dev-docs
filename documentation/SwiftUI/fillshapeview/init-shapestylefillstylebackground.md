@@ -17,8 +17,8 @@ Create a FillShapeView.
 ## Declaration
 
 ```swift
-nonisolated
-init(shape: Content, style: Style, fillStyle: FillStyle, background: Background)
+@export(implementation)
+nonisolated init(shape: Content, style: Style, fillStyle: FillStyle, background: Background)
 ```
 
 

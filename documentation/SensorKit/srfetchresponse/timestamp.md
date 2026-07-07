@@ -8,7 +8,6 @@ Retrieves the timestamp when the sensor sample was written to the data store.
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 
 ## Declaration
 

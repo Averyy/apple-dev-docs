@@ -8,7 +8,6 @@ A Boolean that indicates whether a home supports all of the requirements for add
 **Availability**:
 - iOS 13.2+
 - iPadOS 13.2+
-- Mac Catalyst 13.2+
 - tvOS 13.2+
 - visionOS 1.0+
 - watchOS 6.1+

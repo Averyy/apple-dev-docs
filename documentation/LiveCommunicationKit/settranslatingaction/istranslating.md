@@ -8,7 +8,6 @@ A value that indicates whether to start or stop translation.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst 26.0+
 
 ## Declaration
 

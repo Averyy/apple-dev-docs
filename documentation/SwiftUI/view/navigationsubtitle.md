@@ -3,19 +3,19 @@
 **Framework**: SwiftUI  
 **Kind**: method
 
-Configures the view’s subtitle for purposes of navigation.
+Configures the view’s subtitle for purposes of navigation, using a localized string resource.
 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
+- Mac Catalyst 16.0+
+- macOS 13.0+
 
 ## Declaration
 
 ```swift
-nonisolated
-func navigationSubtitle(_ subtitle: Text) -> some View
+@export(implementation)
+nonisolated func navigationSubtitle(_ subtitleKey: LocalizedStringResource) -> some View
 ```
 
 #### Discussion
@@ -24,12 +24,12 @@ A view’s navigation subtitle is used to provide additional contextual informat
 
 ## Parameters
 
-- `subtitle`: The subtitle to display.
+- `subtitleKey`: The key to a localized string to display.
 
 ## See Also
 
 - [func navigationTitle(_:)](view/navigationtitle(_:).md)
-  Configures the view’s title for purposes of navigation, using a string binding.
+  Configures the view’s title for purposes of navigation, using a localized string resource.
 - [func navigationDocument(_:)](view/navigationdocument(_:).md)
   Configures the view’s document for purposes of navigation.
 - [func navigationDocument(_:preview:)](view/navigationdocument(_:preview:).md)

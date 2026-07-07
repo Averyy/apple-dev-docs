@@ -8,7 +8,7 @@ Allocates a tensor with existing size and stride populated by `Context.tensor(fo
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst 26.0+
 - macOS 26.0+
 - tvOS 26.0+
 - visionOS 26.0+

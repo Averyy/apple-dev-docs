@@ -68,7 +68,7 @@ Picker(
 ## See Also
 
 - [init(_:sources:selection:content:)](picker/init(_:sources:selection:content:).md)
-  Creates a picker bound to a collection of bindings that generates its label from a string.
+  Creates a picker that generates its label from a localized string resource.
 
 
 ---

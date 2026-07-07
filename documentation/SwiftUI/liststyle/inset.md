@@ -15,6 +15,7 @@ The list style that describes the behavior and appearance of an inset list.
 ## Declaration
 
 ```swift
+@export(implementation)
 static var inset: InsetListStyle { get }
 ```
 

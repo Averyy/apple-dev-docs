@@ -8,7 +8,6 @@ A Boolean value indicating whether the app continues working if the system purge
 **Availability**:
 - iOS 9.3+
 - iPadOS 9.3+
-- Mac Catalyst 9.3+
 - visionOS 1.0+
 
 

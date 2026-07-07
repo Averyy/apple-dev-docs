@@ -8,7 +8,6 @@ A Boolean that specifies whether the launch image should respect the safe area i
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
 
 
 

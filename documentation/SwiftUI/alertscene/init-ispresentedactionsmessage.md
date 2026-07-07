@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: init
 
-Creates an alert scene with a title, a set of actions, and a message.
+Creates an alert scene with a title, a set of actions, and a message. Note that this creates a text view on your behalf.
 
 **Availability**:
 - macOS 15.0+
@@ -11,13 +11,13 @@ Creates an alert scene with a title, a set of actions, and a message.
 ## Declaration
 
 ```swift
-nonisolated
-init(_ title: Text, isPresented: Binding<Bool>, @ContentBuilder actions: () -> Actions, @ContentBuilder message: () -> Message)
+@export(implementation)
+nonisolated init(_ titleResource: LocalizedStringResource, isPresented: Binding<Bool>, @ContentBuilder actions: () -> Actions, @ContentBuilder message: () -> Message)
 ```
 
 ## Parameters
 
-- `title`: The title of the alert.
+- `titleResource`: Text resource for the localized string that is the title of the alert.
 - `isPresented`: A binding to a Boolean value that determines whether to present the alert. When someone presses or taps one of the alert’s actions, the system sets this value to `false` and dismisses.
 - `actions`: A [`ContentBuilder`](contentbuilder.md) returning the actions for the dialog.
 - `message`: A [`ContentBuilder`](contentbuilder.md) returning the message for the dialog.

@@ -3,31 +3,27 @@
 **Framework**: SwiftUI  
 **Kind**: method
 
-Presents a new document window.
+Presents a new document window for the in-memory document returned by the provided closure.
 
 **Availability**:
-- macOS 13.0+
+- macOS 27.0+ (Beta)
 
 ## Declaration
 
 ```swift
 @MainActor
-@preconcurrency func callAsFunction<D>(_ newDocument: @autoclosure @escaping @Sendable () -> D) where D : FileDocument
+@preconcurrency func callAsFunction<D>(_ newDocument: @autoclosure @escaping @Sendable () -> sending D) where D : ReadableDocument
 ```
 
 #### Discussion
 
-Don’t call this method directly. SwiftUI calls it when you call the [`newDocument`](environmentvalues/newdocument.md) action:
+Don’t call this method directly. SwiftUI calls it when you call the [`newDocument`](environmentvalues/newdocument.md) action with a [`ReadableDocument`](readabledocument.md) factory.
 
-```swift
-newDocument(TextDocument(text: selectedText))
-```
-
-For information about how Swift uses the `callAsFunction()` method to simplify call site syntax, see [`Methods with Special Names`](https://developer.apple.comhttps://docs.swift.org/swift-book/ReferenceManual/Declarations.html#ID622) in *The Swift Programming Language*.
+The factory closure runs when SwiftUI needs the document instance. SwiftUI then injects the instance into the matching [`DocumentGroup`](documentgroup.md) and presents its window. The matching document group is the first creatable group whose readable content types overlap with `D.readableContentTypes`.
 
 ## Parameters
 
-- `newDocument`: The new file document to present.
+- `newDocument`: A closure that produces the in-memory document to present.
 
 ## See Also
 

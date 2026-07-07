@@ -8,7 +8,6 @@ Options for transitioning an AR session’s current state when you change its co
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

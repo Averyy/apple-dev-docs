@@ -8,7 +8,6 @@ Creates a new transaction query with the provided sort descriptors, predicate, a
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
-- Mac Catalyst 17.4+
 
 ## Declaration
 

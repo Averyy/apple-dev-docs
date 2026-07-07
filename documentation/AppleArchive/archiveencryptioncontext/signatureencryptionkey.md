@@ -8,7 +8,7 @@ The signature encryption key that the context requires to sign an encrypted arch
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst ?+
+- Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
 - visionOS ?+

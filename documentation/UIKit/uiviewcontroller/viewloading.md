@@ -8,7 +8,7 @@ A property wrapper that loads the view controller’s view before accessing the 
 **Availability**:
 - iOS 16.4+
 - iPadOS 16.4+
-- Mac Catalyst ?+
+- Mac Catalyst 16.4+
 - tvOS 16.4+
 - visionOS ?+
 - Swift 5.1+

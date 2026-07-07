@@ -29,9 +29,9 @@ init(isOn: Binding<Bool>, @ContentBuilder label: () -> Label)
 ## See Also
 
 - [init(_:isOn:)](toggle/init(_:ison:).md)
-  Creates a toggle that generates its label from a localized string key.
+  Creates a toggle that generates its label from a localized string resource.
 - [init(_:image:isOn:)](toggle/init(_:image:ison:).md)
-  Creates a toggle that generates its label from a localized string key and image resource.
+  Creates a toggle that generates its label from a localized string resource and image resource.
 - [init(_:systemImage:isOn:)](toggle/init(_:systemimage:ison:).md)
   Creates a toggle that generates its label from a localized string key and system image.
 

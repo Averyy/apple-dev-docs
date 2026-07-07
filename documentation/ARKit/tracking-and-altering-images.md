@@ -7,7 +7,6 @@ Create images from rectangular shapes found in the user’s environment, and aug
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst 13.0+
 - Xcode 16.0+
 
 #### Overview

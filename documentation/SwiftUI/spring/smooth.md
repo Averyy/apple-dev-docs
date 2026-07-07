@@ -17,6 +17,7 @@ A smooth spring with a predefined duration and no bounce.
 ## Declaration
 
 ```swift
+@export(implementation)
 static var smooth: Spring { get }
 ```
 

@@ -17,6 +17,7 @@ Creates a rectangle with individual styles for each corner.
 ## Declaration
 
 ```swift
+@export(implementation)
 static func rect(topLeadingCorner: Edge.Corner.Style, topTrailingCorner: Edge.Corner.Style, bottomLeadingCorner: Edge.Corner.Style, bottomTrailingCorner: Edge.Corner.Style) -> Self
 ```
 

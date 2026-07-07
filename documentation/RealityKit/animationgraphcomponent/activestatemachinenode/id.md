@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: property
 
-Returns the id of the node.
+The unique identifier of the node within the compiled graph.
 
 **Availability**:
 - iOS 27.0+ (Beta)

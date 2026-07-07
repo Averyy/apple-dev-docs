@@ -10,10 +10,11 @@
 - [var now: SuspendingClock.Instant](suspendingclock/now-swift.property.md)
   The current instant accounting for machine suspension.
 ### Instance Methods
-- [func measure(() throws -> Void) rethrows -> Self.Instant.Duration](suspendingclock/measure(_:).md)
+- [func measure(nonisolated(nonsending) () async throws -> Void) async rethrows -> Self.Instant.Duration](suspendingclock/measure(_:)-1zuvn.md)
+  Measure the elapsed time to execute an asynchronous closure.
+- [func measure(() throws -> Void) rethrows -> Self.Instant.Duration](suspendingclock/measure(_:)-6nlcy.md)
   Measure the elapsed time to execute a closure.
 - [func measure(isolation: isolated (any Actor)?, () async throws -> Void) async rethrows -> Self.Instant.Duration](suspendingclock/measure(isolation:_:).md)
-  Measure the elapsed time to execute an asynchronous closure.
 - [func sleep(for: Self.Instant.Duration, tolerance: Self.Instant.Duration?) async throws](suspendingclock/sleep(for:tolerance:).md)
   Suspends for the given duration.
 - [func sleep(until: SuspendingClock.Instant, tolerance: Duration?) async throws](suspendingclock/sleep(until:tolerance:).md)

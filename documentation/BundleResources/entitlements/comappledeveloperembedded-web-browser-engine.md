@@ -8,7 +8,6 @@ An entitlement that enables an app to embed an alternative browser engine.
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
-- Mac Catalyst 17.4+
 
 
 

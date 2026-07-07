@@ -1,6 +1,6 @@
 # ComputeNodeGraph.LibraryReference
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: struct
 
 A Metal library and an optional bundle identifier that locates shader functions.
@@ -12,7 +12,7 @@ A Metal library and an optional bundle identifier that locates shader functions.
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 ## Declaration
 

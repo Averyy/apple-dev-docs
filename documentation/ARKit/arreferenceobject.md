@@ -8,7 +8,6 @@ The description of a 3D object that you want ARKit to detect in the physical env
 **Availability**:
 - iOS 12.0+
 - iPadOS 12.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

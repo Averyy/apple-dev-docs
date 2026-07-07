@@ -8,7 +8,7 @@ A value that indicates the status of the data the sample buffer contains.
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst ?+
+- Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
 - visionOS 1.0+

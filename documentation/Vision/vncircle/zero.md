@@ -25,6 +25,7 @@ class var zero: VNCircle { get }
   Creates a circle with the specified center and radius.
 - [convenience init(center: VNPoint, diameter: Double)](vncircle/init(center:diameter:).md)
   Creates a circle with the specified center and diameter.
+- [init?(coder: NSCoder)](vncircle/init(coder:).md)
 
 
 ---

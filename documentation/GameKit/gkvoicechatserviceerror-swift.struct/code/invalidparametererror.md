@@ -8,7 +8,6 @@ A parameter had an unrecognized value.
 **Availability**:
 - iOS 3.0+
 - iPadOS 3.0+
-- Mac Catalyst 3.0+
 - tvOS 9.0+
 - visionOS 1.0+
 - watchOS 3.0+

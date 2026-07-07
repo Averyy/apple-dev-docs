@@ -20,7 +20,7 @@ In addition to verifying the base software installation:
 
 - Accept the Xcode license agreement. In Terminal, enter `sudo xcodebuild -license` and press Return, then follow the prompts to accept the license agreement.
 - Verify that `zsh` is your default UNIX shell. In Terminal, enter `echo $SHELL` and press Return. If Terminal returns something other than `/bin/zsh`, change shells by entering `chsh -s /bin/zsh` and pressing Return.
-- Download the [`Game Porting Toolkit 3.0`](https://developer.apple.comhttps://developer.apple.com/downloads?q=Game%20Porting), and double-click `Mac Remote Development Tools for Windows.pkg` to run the installer. The installer guides you through the automatic configuration of your Mac as a remote build and debug target.
+- Download the [`Game Porting Toolkit`](https://developer.apple.comhttps://developer.apple.com/download/all/?q=game%20porting%20toolkit), and double-click `Mac Remote Development Tools for Windows.pkg` to run the installer. The installer guides you through the automatic configuration of your Mac as a remote build and debug target.
 - Download and install the [`Metal shader converter`](https://developer.apple.comhttps://developer.apple.com/metal/shader-converter/) on your Mac if your build process requires building DXIL shaders.
 - In System Settings, choose General > Sharing, and ensure that both Remote Management and Remote Login are turned on to allow VNC and SSH access, respectively.
 
@@ -103,7 +103,7 @@ Add the following contents to the `CMakePresets.json` file you created:
 
 ```
 
-> **Note**: The Game Porting Toolkit 3.0 includes a project “gptk-sample” that includes an example `CMakeLists.txt` file ready for remote building on a target Mac from your PC. Use it to explore building a game remotely from within Visual Studio.
+> **Note**: The Game Porting Toolkit includes a project “gptk-sample” that includes an example `CMakeLists.txt` file ready for remote building on a target Mac from your PC. Use it to explore building a game remotely from within Visual Studio.
 
 #### Set Up the Default Debugger Environment
 

@@ -17,6 +17,7 @@ A context-dependent yellow color suitable for use in UI elements.
 ## Declaration
 
 ```swift
+@export(implementation)
 static var yellow: Color { get }
 ```
 

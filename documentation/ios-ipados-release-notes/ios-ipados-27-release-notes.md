@@ -1,4 +1,4 @@
-# iOS & iPadOS 27 Beta 2 Release Notes
+# iOS & iPadOS 27 Beta 3 Release Notes
 
 **Framework**: iOS & iPadOS Release Notes
 
@@ -6,7 +6,7 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad running iOS & iPadOS 27 beta 2. The SDK comes bundled with Xcode 27, available from the Mac App Store. For information on the compatibility requirements for Xcode 27, see [`Xcode 27 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-27-release-notes).
+The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad running iOS & iPadOS 27 beta 3. The SDK comes bundled with Xcode 27, available from the Mac App Store. For information on the compatibility requirements for Xcode 27, see [`Xcode 27 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-27-release-notes).
 
 ##### Airplay
 
@@ -101,6 +101,7 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 ###### New Features
 
 - iOS 27 includes Neural Engine improvements for Apple Intelligence capable devices. The system now restricts background access to the Neural Engine, similar to GPU usage restrictions. Large model loading (over 1 GB) performance is improved on the Neural Engine. Neural Engine memory usage is now attributed to your app process instead of the system, and appears in the Allocations instrument.  (174796039)
+- Access to the Neural engine when your app is in the background requires the new entitlement: “com.apple.developer.background-tasks.continued-processing.inference”.  (179282606)
 
 ###### Resolved Issues
 
@@ -113,10 +114,10 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 - When inference runs on the GPU, `InferenceFunction.encode` blocks until all compute is complete instead of returning as soon as encoding is done, unless the model is specialized with a preferred compute device of GPU.  (175789258)
 - Certain weight and activation configurations may not run on the Neural Engine, such as FP8-quantized weights and activations, palettized weights with quantized (non-Float16) values, and sparse weights. Affected models may run on the CPU or GPU instead.  (176210080)
 - When you run `InferenceFunction.run` on functions with both state arguments and outputs with dynamic shapes, the framework might be unable to infer the shape of the outputs and throw an error.  (176807213) **Workaround:** If you know what the output shape will be, pre-allocate the output and provide it through the `outputViews` arguments on `InferenceFunction.run`.
+- On-device specialization fails when loading an `.aimodel` converted with `coreai-torch` v0.4.0.  (177008303) **Workaround:** Convert the model with `coreai-torch` v0.4.1 or greater.
 - Inference might fail or crash for models with control flow over dynamic-shape tensors (for example, linear-attention LLMs such as Qwen3.5/3.6).  (177354777)
 - Ahead-of-time (AOT) compilation might fail unexpectedly for certain models.  (177729331)
 - Models with custom Metal kernels will fail to load.  (178056451)
-- You cannot access the Neural Engine when your app is in the background.  (179282606) **Workaround:** Restrict your models to CPU only or prefer GPU with the appropriate [`Background GPU Access entitlement.`](https://developer.apple.comhttps://developer.apple.com/documentation/bundleresources/entitlements/com.apple.developer.background-tasks.continued-processing.gpu)
 
 ##### Core Bluetooth
 
@@ -143,6 +144,12 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 - When you explicitly dictate punctuation— such as “Period” or “Colon” — both the spoken command word and the punctuation character might be inserted instead of the punctuation character alone.  (178078177)
 - Dictation might not recognize names from your contacts.  (178079519)
 - Dictation might insert extra words at the end of a dictated passage that you did not speak.  (178269104)
+
+##### Files
+
+###### Known Issues
+
+- Deleting Files from Recently Deleted may sometimes fail with an error or be really slow  (179787658)
 
 ##### Finder
 
@@ -181,13 +188,13 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 - Fixed: `@Generable` on an `enum` produces a deprecation warning about `GenerationError` that cannot be silenced.  (177899620)
 - Fixed: Truncating transcript history in the `onPrompt` modifier might cause an unexpected runtime error.  (177901494)
 - Fixed: `onPrompt` might not be called when applied to a `Profile` without instructions.   (177902488)
+- Fixed: Passing an `any LanguageModel` to the `model(_:)` modifier will lead to a compiler error.  (178545978)
 
 ###### Known Issues
 
 - Private Cloud Compute might not work when you use simulators.   (177684296) **Workaround:** Use a physical device running OS 27.0.
 - When using the on-device Apple Foundation Model for both tool calling and guided generation, some prompts might cause the model to call tools excessively.  (177748926) **Workaround:** Adjust your instructions, prompts, and attachment labels.
-- `PrivateCloudComputeLanguageModel` always uses greedy decoding.  (178181782)
-- Passing an `any LanguageModel` to the `model(_:)` modifier will lead to a compiler error.  (178545978) **Workaround:** Import the [`Foundation Models framework utilities`](https://developer.apple.comhttps://github.com/apple/foundation-models-utilities) package, which contains a built-in workaround that will compile your code.
+- `PrivateCloudComputeLanguageModel` always uses greedy decoding.  (178181782) **Workaround:** Specify `samplingMode` in `GenerationOptions` with a custom seed, e.g. `GenerationOptions(samplingMode: .randomThreshold(0.95, seed: 42))`.
 
 ##### Game Center
 
@@ -206,6 +213,7 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 ###### New Features
 
 - HealthKit now supports heart rate and cycling power zones.  (135746152)
+- Updated HealthKit permissions flow now lets users grant apps access to limited history or full history.  (172310874)
 - HealthKit adds support for tracking menopausal state and bleeding after menopause; two new sample types are available. HKCategoryTypeIdentifierMenopausalState records a person’s current menopausal state. Values defined by HKCategoryValueMenopausalState are menopause, perimenopause, and none. HKCategoryTypeIdentifierBleedingAfterMenopause records bleeding episodes occurring after menopause. Values use the existing vaginal bleeding flow levels: unspecified, light, medium, and heavy. Both types are read/write, classified under Reproductive Health, and require the standard HealthKit category type authorization.  (178532053)
 
 ##### Hearing Test
@@ -235,6 +243,12 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 - When Image Wand encounters an error — such as an unsupported flow or unsafe output — you might see the misleading message “Connect to Wi-Fi to create images” even when your device is already connected to Wi-Fi.  (177710762)
 - If required models are downloading, you might see an error message instead of download progress information.  (177833994) **Workaround:** This issue occurs only on first install. Wait for the models to finish downloading, then try again.
 - In the Image Playground photo picker, the All and Suggested tabs are missing, which might limit the number of photos available for you to choose from.  (178256174)
+
+##### Keyboard
+
+###### Known Issues
+
+- Unlocalized text can appear for paste candidates.  (180881635) **Workaround:** Restart your device.
 
 ##### Ldcm
 
@@ -284,10 +298,6 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 
 ##### Metal
 
-###### New Features
-
-- Metal 4.1 is now supported. See [`Metal`](https://developer.apple.comhttps://developer.apple.com/metal/) for additional details.  (176468465)
-
 ###### Resolved Issues
 
 - Fixed: When you use a sampler to read from a texture with clamp-to-edge addressing mode, the result might be clamped to zero.  (172520325)
@@ -327,6 +337,12 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 ###### Resolved Issues
 
 - Fixed: When an active VPN configuration sets `includeAllNetworks` to true, `excludeLocalNetworks` fails to exclude wired connections to CarPlay.  (176839377)
+
+##### Notifications
+
+###### Known Issues
+
+- Critical alerts will be automatically turned on for any apps that request your permission to enable notifications   (179179362) **Workaround:** If you do not want these notifications turned on, turn them off in Settings → Notifications → [App] → Critical Alerts
 
 ##### On Demand Resources
 
@@ -394,7 +410,7 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 
 ###### Known Issues
 
-- Turning on or off Safari extensions created via the “Describe an Extension” feature might not take  effect until Safari is relaunched.  (179293939) **Workaround:** Quit and relaunch Safari.
+- Turning on or off Safari extensions created via the “Describe an Extension” feature might not take effect until Safari is relaunched.  (179293939) **Workaround:** Quit and relaunch Safari.
 
 ##### Screen Time
 
@@ -421,6 +437,7 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 - If an app intent uses Duration or `LPLinkMetadata`, creating a shortcut with that intent and then attempting to edit it with “Describe a change” might fail.   (166068090) **Workaround:** If the model discards the action, press “Undo” to recover the unsupported intent.
 - When an app intent defines a `UnionValue` parameter with two number-related types (for example, both Int and Double), the number option appears twice in the parameter picker menu and shows as double-selected.   (168315587) **Workaround:** Define only one number-related type in the `UnionValue` parameter (for example, use only Int or only Double, not both).
 - Writing Tools actions are unavailable in Shortcuts.  (179846468)
+- The Use Model action may fail to run when using the On-Device option for some output types.  (181071784) **Workaround:** Try another output type where possible or use the Cloud option.
 
 ##### Siri
 
@@ -466,12 +483,19 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 - Siri might not respond to your voice correctly.  (178489724) **Workaround:** Force quit the Siri app and relaunch it.
 - In the Siri app, conversations might be deleted a few minutes after receiving streaming responses.  (178560562)
 - When you say “Save Parking Location,” the parking location information displays with reduced detail compared to Beta 1.  (179195692)
+- When the Camera app is open the Siri Orb waveform will not animate correctly on some older iPads and “Hey Siri” requests may fail. Affected devices are J407/J408 (iPad Air (5th gen, 2022)), J410/J411 (iPad mini (7th gen, 2024), J517/J517X/J518/J518X (iPad Pro 11” (3rd gen, 2021)), and J522/J522X/J523/J523X (iPad Pro 12.9” (5th gen, 2021))  (180751246) **Workaround:** No workaround
 
 ##### Siri Spotlight and Mail App Search
 
 ###### Known Issues
 
 - Mail older than 6 months might not be searchable by body content, but is still searchable by sender and subject.  (177942110)
+
+##### Siriai Cannot Search in Specific Folders on Macos
+
+###### Known Issues
+
+- On macOS, SiriAI cannot search within specific locations, such as Desktop, Documents or some specific folder. Searching for files may include results from other locations other than what was requested.  (180333394)
 
 ##### Sleep Focus
 
@@ -484,6 +508,12 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 ###### Known Issues
 
 - StandBy Clocks may be missing.  (178061326)
+
+##### Status Bar
+
+###### Known Issues
+
+- Status bar may appear blurred while apps are foregrounded   (179470940) **Workaround:** Reboot your iPhone
 
 ##### Storekit
 
@@ -504,10 +534,7 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 - Fixed: The renewal behavior preference is not respected when using the `purchaseDate(_:renewalBehavior:)` purchase option to make purchases using `SKTestSession`.  (162014134) (FB20537538)
 - Fixed: Re-purchasing a previously refunded non-consumable fails with an already owned error when using StoreKit Testing in Xcode.  (174560379) (FB22475017)
 - Fixed: Using `pricingTerms.commitmentInfo.price` in StoreKit Testing in Xcode returns an incorrect price for monthly subscriptions with a 12-month commitment.  (177942756)
-
-###### Known Issues
-
-- Transactions for upgraded subscriptions are immediately marked as expired when using StoreKit Testing in Xcode.  (178441109)
+- Fixed: Transactions for upgraded subscriptions are immediately marked as expired when using StoreKit Testing in Xcode.  (178441109)
 
 ##### Suggestions in Messages
 
@@ -615,6 +642,7 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 - You can now use the `Document` protocol for representing documents in `DocumentGroup`. This protocol combines `ReadableDocument` and `WritableDocument` for common read-and-write cases. Use `Document` instead of `ReferenceFileDocument` and `FileDocument`, which are now deprecated.  (177458781)
 - `@ContentBuilder` type checking performance is further improved for valid code compared to Beta 1.  (177526032)
 - You can use `toolbarMinimizationBehavior` to control bar minimization behavior. This modifier replaces `toolbarMinimizeBehavior`.  (177954148)
+- The new data item or error object based `alert` and `confirmationDialog` modifiers can now be used by projects targetting iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, and visionOS 1.0.  (179388848)
 - In macOS apps built with the macOS 27 SDK, the action retrieved from the `\.newDocument` environment value accepts an in-memory `ReadableDocument` produced by an autoclosure. SwiftUI presents a new document window populated with the supplied instance, instead of invoking the document group’s default factory. Use this to implement “New from Template” commands and similar flows.  (180300890)
 - A new `fileExporter(isPresented:documents:contentTypes:onCompletion:onCancellation:)` modifier exports a collection of values that conform to `WritableDocument` whose `Writer.Destination` is `URL`. The system presents a single export dialog, writes each document to the chosen destination, and reports the resulting URLs through `onCompletion`.  (180301165)
 - The `makeFileWrapper` closure of `FileWrapperDocumentWriter` now receives a second argument, `previous: FileWrapper?`, holding the `FileWrapper` from the document’s most recent read or write when one is available. Package documents can mutate `previous` in place and return it so that `FileWrapper` only writes children whose contents changed, avoiding rewriting an entire package on every save. Documents stored as a single file can ignore the second argument and return a fresh `FileWrapper` as before. Existing call sites must update their closures to accept the new parameter.  (180301399)
@@ -630,6 +658,10 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 - Fixed: Certain control-related view modifiers unexpectedly affect sheet and popover content. In apps built with the 27.0 SDKs, the `controlSize`, `buttonSizing`, `buttonRepeatBehavior`, `menuIndicatorVisibility`, and `ButtonBorderShape` environment values are now reset to their default values in sheets and popovers.  (167448274)
 - Fixed: A Button containing both an icon and a title placed inside a `List` `Section` header or footer has incorrect spacing between its icon and title.  (175681345)
 - Fixed: When you present a `fullScreenCover` with a `.navigationTransition(_:)` and set `@FocusState` to `true` via `.onAppear`, the keyboard does not animate concurrently with the zoom transition. Instead, it waits for the entire zoom animation to complete before the keyboard begins animating up, resulting in a visually jarring 2-step animation.  (178421089)
+- Fixed: `@State` variable named using a raw identifier fails to compile.  (179149051) (FB23015259)
+- The `read(from:progress:)` and `write(content:to:previous:progress:)` requirements of `DocumentReader` and `DocumentWriter` are declared with `@concurrent` instead of `nonisolated`. With approachable-concurrency defaults that infer `MainActor` isolation, an unannotated `nonisolated` async method runs on the main actor, defeating the intent of off-main reading and writing. Conforming types that previously used `nonisolated` should switch to `@concurrent` to match.  (180302015)
+- The `makeDocument:` and `makeReadableDocument:` closures passed to `DocumentGroup` initializers are now `@MainActor`-isolated. SwiftUI invokes these factories on the main actor when constructing a document instance, allowing the closure body to access main-actor state — including the supplied `URLDocumentConfiguration` — without hopping isolation domains.  (180302065)
+- `URLDocumentConfiguration` is a `@MainActor`-isolated `@Observable` reference type and no longer conforms to `Sendable`. Code that captured a configuration in a `Sendable` closure or stored it in a `Sendable` value should drop the constraint and access the configuration on the main actor.  (180302075)
 
 ###### Known Issues
 
@@ -645,9 +677,9 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 
 - System now provides Swift APIs for the C `stat`, `lstat`, `fstat`, and `fstatat` system calls. This includes a new `Stat` type with initializers from `FilePath`, `FileDescriptor`, or a C string; `FilePath.stat()` and `FileDescriptor.stat()` instance methods; and supporting types (`FileType`, `FileMode`, `FileFlags`, `UserID`, `GroupID`, `DeviceID`, and `Inode`). See [`SYS-0006`](https://developer.apple.comhttps://github.com/apple/swift-system/blob/main/Proposals/0006-system-stat.md) for more details.  (160612181)
 
-###### Known Issues
+###### Resolved Issues
 
-- Custom `FilePath` or `FileDescriptor` extensions that make unqualified calls to `stat()` or `stat(_:_:)` (without the `Darwin.` qualification) might conflict with the new Swift `stat()` instance methods introduced in [`SYS-0006`](https://developer.apple.comhttps://github.com/apple/swift-system/blob/main/Proposals/0006-system-stat.md), causing build errors.   (177911316) **Workaround:** Migrate to the new Swift `stat()` methods, or disambiguate using `Darwin.stat()` and `Darwin.stat(_:_:)`. See [`SYS-0008`](https://developer.apple.comhttps://github.com/apple/swift-system/blob/main/Proposals/0008-backdeploy-cinterop-stat.md) for more details.
+- Fixed: Custom `FilePath` or `FileDescriptor` extensions that make unqualified calls to `stat()` or `stat(_)` (without the `Darwin.` qualification) might conflict with the new Swift `stat()` instance methods introduced in [`SYS-0006`](https://developer.apple.comhttps://github.com/apple/swift-system/blob/main/Proposals/0006-system-stat.md), causing build errors. See [`SYS-0008`](https://developer.apple.comhttps://github.com/apple/swift-system/blob/main/Proposals/0008-backdeploy-cinterop-stat.md) for more details.  (177911316)
 
 ##### System Experience
 
@@ -687,6 +719,8 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 - On iPadOS 27.0 and macOS 27.0, the menu bar and context menus present a reduced set of menu item images and do not display images set on menu elements by default. You can use the new `preferredImageVisibility` property on `UIMenuElement` — including updated initializers on `UIMenu`, `UIAction`, `UICommand`, and `UIKeyCommand` — to customize the visibility of each element’s image in these menus. Review the updated Human Interface Guidelines to determine which menu elements in your app should display images. UIKit automatically provides default visible menu element images for certain common system-wide menu items, such as Settings, Share, and Print.  (170479084)
 - In apps built with the iOS 27.0 SDK, when `UISearchController` uses center search-bar placement, the scope bar appears inline on the same row as the search field rather than on a separate row beneath it. When the search field is hosted inside a navigation bar, the scope bar sits inline beside the search field within that navigation bar.  (173860616)
 - In apps built with the iOS 27.0 SDK, `windowExternalDisplayNonInteractive` scenes are no longer offered automatically by the system. Use `UIViewController.registerSceneAccessory(_:)` with a `UISceneAccessory.externalNonInteractive` instance to display non-interactive content on external display scenes.  (177015874)
+- Use `UINavigationItem.navigationBarMinimization` to control navigation bar minimization behavior. This property replaces `UINavigationItem.barMinimizeBehavior` and `UINavigationItem.barMinimizationSafeAreaAdjustment`.  (177953926)
+- The container view of a `UIScrollEdgeElementContainerInteraction` may contribute its size and position to the overall shape of the scroll edge effect.  (179191941) (FB23027596)
 
 ###### Resolved Issues
 

@@ -15,6 +15,7 @@
 ## Declaration
 
 ```swift
+@export(implementation)
 static func buildBlock<F, each D>(_ first: F, _ definition: repeat each D) -> AttributedTextFormatting.TupleDefinition<F.Scope, F, repeat each D> where F : AttributedTextFormattingDefinition, repeat each D : AttributedTextFormattingDefinition
 ```
 

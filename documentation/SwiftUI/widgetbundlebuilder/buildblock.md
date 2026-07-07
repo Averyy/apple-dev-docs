@@ -3,8 +3,6 @@
 **Framework**: SwiftUI  
 **Kind**: method
 
-Builds a single Widget written as a child view (e..g, `{ MyWidget() }`) through unmodified.
-
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
@@ -16,7 +14,8 @@ Builds a single Widget written as a child view (e..g, `{ MyWidget() }`) through 
 ## Declaration
 
 ```swift
-static func buildBlock<Content>(_ content: Content) -> some Widget where Content : Widget
+@export(implementation)
+static func buildBlock<each C>(_ c: repeat each C) -> some Widget where repeat each C : Widget
 ```
 
 ## See Also

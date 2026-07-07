@@ -9,7 +9,7 @@ Returns the data for the requested item during a drag-and-drop operation.
 - iOS 11.0+
 - iPadOS 11.0+
 - Mac Catalyst 13.1+
-- macOS 10.11+
+- macOS 10.13+
 - visionOS 1.0+
 
 ## Declaration

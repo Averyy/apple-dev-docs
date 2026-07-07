@@ -8,7 +8,6 @@ An entitlement you enable so your app can use Managed App Distribution.
 **Availability**:
 - iOS 17.2+
 - iPadOS 17.2+
-- Mac Catalyst 17.2+
 
 
 

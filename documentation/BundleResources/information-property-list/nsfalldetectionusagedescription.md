@@ -8,7 +8,6 @@ A message to the user that explains the app’s request for permission to access
 **Availability**:
 - iOS 14.2+
 - iPadOS 14.2+
-- Mac Catalyst 14.2+
 - visionOS 1.0+
 - watchOS 7.2+
 

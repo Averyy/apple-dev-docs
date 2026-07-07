@@ -8,7 +8,6 @@ A Boolean value that determines whether the layer presents its content using a C
 **Availability**:
 - iOS 9.0+
 - iPadOS 9.0+
-- Mac Catalyst 9.0+
 - tvOS 9.0+
 
 ## Declaration

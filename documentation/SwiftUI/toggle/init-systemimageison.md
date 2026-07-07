@@ -17,8 +17,8 @@ Creates a toggle that generates its label from a localized string key and system
 ## Declaration
 
 ```swift
-nonisolated
-init(_ titleKey: LocalizedStringKey, systemImage: String, isOn: Binding<Bool>)
+@export(implementation)
+nonisolated init(_ titleKey: LocalizedStringKey, systemImage: String, isOn: Binding<Bool>)
 ```
 
 #### Discussion
@@ -34,11 +34,11 @@ This initializer creates a [`Text`](text.md) view on your behalf, and treats the
 ## See Also
 
 - [init(_:isOn:)](toggle/init(_:ison:).md)
-  Creates a toggle that generates its label from a localized string key.
+  Creates a toggle that generates its label from a localized string resource.
 - [init(isOn: Binding<Bool>, label: () -> Label)](toggle/init(ison:label:).md)
   Creates a toggle that displays a custom label.
 - [init(_:image:isOn:)](toggle/init(_:image:ison:).md)
-  Creates a toggle that generates its label from a localized string key and image resource.
+  Creates a toggle that generates its label from a localized string resource and image resource.
 
 
 ---

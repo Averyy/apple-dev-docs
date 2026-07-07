@@ -21,7 +21,8 @@ var action: LanguageModelExecutorGenerationChannel.Reasoning.Action
 
 ## See Also
 
-- [LanguageModelExecutorGenerationChannel.Reasoning.Action](languagemodelexecutorgenerationchannel/reasoning/action-swift.enum.md)
+- [LanguageModelExecutorGenerationChannel.Reasoning.Action](languagemodelexecutorgenerationchannel/reasoning/action-swift.struct.md)
+  An operation that can be performed on a reasoning entry.
 - [var entryID: String?](languagemodelexecutorgenerationchannel/reasoning/entryid.md)
   The identifier for the entry.
 

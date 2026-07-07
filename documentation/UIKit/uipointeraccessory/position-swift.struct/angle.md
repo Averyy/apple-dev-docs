@@ -8,7 +8,7 @@ The angle of the accessory’s position, measured in radians clockwise from the 
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst ?+
+- Mac Catalyst 15.0+
 - visionOS ?+
 
 ## Declaration

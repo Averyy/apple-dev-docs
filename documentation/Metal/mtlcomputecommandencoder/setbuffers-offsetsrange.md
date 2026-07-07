@@ -8,7 +8,7 @@ Binds multiple buffers to the buffer argument table at once, allowing compute ke
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+
-- Mac Catalyst ?+
+- Mac Catalyst 8.0+
 - macOS 10.11+
 - tvOS 8.0+
 - visionOS ?+

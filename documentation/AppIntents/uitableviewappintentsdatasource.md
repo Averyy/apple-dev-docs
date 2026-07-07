@@ -8,7 +8,7 @@ The methods that an object adopts to make items in a table view discoverable by 
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
-- Mac Catalyst ?+
+- Mac Catalyst 18.4+
 - tvOS 18.4+
 - visionOS 2.4+
 

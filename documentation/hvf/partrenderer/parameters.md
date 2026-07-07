@@ -8,7 +8,7 @@ Parameters that control how the part is rendered. The default is to set all axes
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
-- Mac Catalyst ?+
+- Mac Catalyst 18.4+
 - macOS 15.4+
 - tvOS 18.4+
 - visionOS 2.4+

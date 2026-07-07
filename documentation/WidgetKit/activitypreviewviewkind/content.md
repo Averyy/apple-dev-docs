@@ -8,7 +8,6 @@ The Live Activity presentation that appears on the Lock Screen and as a banner o
 **Availability**:
 - iOS 16.2+
 - iPadOS 16.2+
-- Mac Catalyst 16.2+
 
 ## Declaration
 

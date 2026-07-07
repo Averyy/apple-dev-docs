@@ -18,7 +18,7 @@ The default progress view style in the current context of the view being styled.
 
 ```swift
 @MainActor
-@preconcurrency static var automatic: DefaultProgressViewStyle { get }
+@export(implementation) @preconcurrency static var automatic: DefaultProgressViewStyle { get }
 ```
 
 #### Discussion

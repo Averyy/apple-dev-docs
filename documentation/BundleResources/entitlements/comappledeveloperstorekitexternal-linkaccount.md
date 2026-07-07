@@ -8,7 +8,6 @@ A Boolean value that indicates whether your app can link to an external website 
 **Availability**:
 - iOS 15.4+
 - iPadOS 15.4+
-- Mac Catalyst 15.4+
 - tvOS 16.4+
 
 

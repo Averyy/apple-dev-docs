@@ -8,7 +8,6 @@ An action the provides the standard price breakdown calculator for Apple Pay Lat
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst 17.0+
 - visionOS ?+
 
 ## Declaration

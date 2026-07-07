@@ -8,7 +8,6 @@ The identifier of the default launch storyboard to use.
 **Availability**:
 - iOS 9.0+
 - iPadOS 9.0+
-- Mac Catalyst 9.0+
 
 
 

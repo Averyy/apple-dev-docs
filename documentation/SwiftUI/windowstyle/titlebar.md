@@ -11,6 +11,7 @@ A window style which displays the title bar section of the window.
 ## Declaration
 
 ```swift
+@export(implementation)
 static var titleBar: TitleBarWindowStyle { get }
 ```
 

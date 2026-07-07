@@ -8,7 +8,6 @@ A Boolean value that indicates if an iOS or iPadOS app supports Assistive Access
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst 26.0+
 
 
 

@@ -8,7 +8,7 @@ Returns `true` if the transform is affine and uniform over the specified dimensi
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst 26.0+
 - macOS 26.0+
 - tvOS 26.0+
 - visionOS 26.0+

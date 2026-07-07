@@ -18,7 +18,7 @@ The default tab view style.
 
 ```swift
 @MainActor
-@preconcurrency static var automatic: DefaultTabViewStyle { get }
+@export(implementation) @preconcurrency static var automatic: DefaultTabViewStyle { get }
 ```
 
 ## See Also

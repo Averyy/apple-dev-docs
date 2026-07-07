@@ -8,7 +8,6 @@ An entitlement that enables your app extension to send sensitive data to an acce
 **Availability**:
 - iOS 26.2+
 - iPadOS 26.2+
-- Mac Catalyst 26.2+
 
 
 

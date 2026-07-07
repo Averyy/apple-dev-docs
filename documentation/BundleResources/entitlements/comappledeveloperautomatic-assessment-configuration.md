@@ -8,7 +8,6 @@ A Boolean value that indicates whether an app may create an assessment session.
 **Availability**:
 - iOS 13.4+
 - iPadOS 13.4+
-- Mac Catalyst 13.4+
 - macOS 10.15.4+
 
 

@@ -8,7 +8,6 @@ A request that determines the direction change of vectors for each pixel from a 
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -81,7 +80,7 @@ This request generates an [`OpticalFlowObservation`](opticalflowobservation.md) 
 - [class DetectTrajectoriesRequest](detecttrajectoriesrequest.md)
   A request that detects the trajectories of shapes moving along a parabolic path.
 - [class TrackObjectRequest](trackobjectrequest.md)
-  An image-analysis request that tracks the movement of a previously identified object across multiple images or video frames.
+  An image analysis request that tracks the movement of a previously identified object across multiple images or video frames.
 - [class TrackRectangleRequest](trackrectanglerequest.md)
   An image-analysis request that tracks movement of a previously identified rectangular object across multiple images or video frames.
 

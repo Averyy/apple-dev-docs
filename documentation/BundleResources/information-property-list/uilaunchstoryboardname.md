@@ -8,7 +8,6 @@ The filename of the storyboard from which to generate the app’s launch image.
 **Availability**:
 - iOS 9.0+
 - iPadOS 9.0+
-- Mac Catalyst 9.0+
 - tvOS 9.0+
 - watchOS 2.0+
 

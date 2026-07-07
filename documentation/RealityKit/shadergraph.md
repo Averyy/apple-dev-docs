@@ -6,7 +6,6 @@
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 
@@ -31,6 +30,8 @@ final class ShaderGraph
 - [convenience init(from: Data) throws](shadergraph/init(from:).md)
   Creates a graph from data previously produced by [`encode()`](shadergraph/encode().md).
 - [init(named: String, inputs: [ShaderGraph.NodeDefinition.Input], outputs: [ShaderGraph.NodeDefinition.Output]) throws](shadergraph/init(named:inputs:outputs:).md)
+  Creates a shader graph with the given name, inputs, and outputs.
+- [init(named: String, inputs: [ShaderGraph.NodeDefinition.Input], outputs: [ShaderGraph.NodeDefinition.Output], nodeLibrary: ShaderGraph.NodeLibrary) throws](shadergraph/init(named:inputs:outputs:nodelibrary:).md)
   Creates a shader graph with the given name, inputs, and outputs.
 ### Instance Properties
 - [var arguments: ShaderGraph.Node](shadergraph/arguments.md)
@@ -72,6 +73,8 @@ final class ShaderGraph
   Replaces all nodes and edges in the graph.
 - [func updateNode(ShaderGraph.Node, forKey: String) throws](shadergraph/updatenode(_:forkey:).md)
   Replaces the node stored under the given name.
+- [func validate() -> Bool](shadergraph/validate.md)
+  Checks whether the graph is well-formed without producing a Metal library.
 - [func validateAddingEdge(ShaderGraph.Edge) throws](shadergraph/validateaddingedge(_:).md)
   Validates that an edge can be added to the graph without adding it, throwing a descriptive error if not.
 - [func validateAddingNode(ShaderGraph.Node) throws](shadergraph/validateaddingnode(_:).md)

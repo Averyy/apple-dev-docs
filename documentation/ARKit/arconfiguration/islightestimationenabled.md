@@ -8,7 +8,6 @@ A Boolean value specifying whether ARKit analyzes scene lighting in captured cam
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

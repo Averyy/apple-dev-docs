@@ -11,6 +11,7 @@ Creates a custom alignment value with the specified horizontal, vertical and dep
 ## Declaration
 
 ```swift
+@export(implementation)
 init(horizontal: HorizontalAlignment, vertical: VerticalAlignment, depth: DepthAlignment)
 ```
 

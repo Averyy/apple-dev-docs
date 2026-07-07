@@ -23,6 +23,10 @@ init(_ timeInterval: CFTimeInterval)
 
 - `timeInterval`: The time interval at which to process video.
 
+## See Also
+
+- [init(timeInterval: CFTimeInterval)](vnvideoprocessor/timeintervalcadence/init(timeinterval:).md)
+
 
 ---
 

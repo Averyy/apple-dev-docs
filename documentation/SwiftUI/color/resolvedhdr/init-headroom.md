@@ -17,6 +17,7 @@ Initializes a new resolved color value.
 ## Declaration
 
 ```swift
+@export(implementation)
 init(_ color: Color.Resolved, headroom: Float? = nil)
 ```
 

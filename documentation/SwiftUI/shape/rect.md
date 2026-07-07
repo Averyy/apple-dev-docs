@@ -17,6 +17,7 @@ A rectangular shape aligned inside the frame of the view containing it.
 ## Declaration
 
 ```swift
+@export(implementation)
 static var rect: Rectangle { get }
 ```
 

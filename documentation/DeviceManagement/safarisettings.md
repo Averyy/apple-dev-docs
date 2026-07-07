@@ -47,6 +47,8 @@ The user can change the website privacy permission settings in Safari settings i
 
 ##### Configuration Examples
 
+###### Settings and Restrictions Examples
+
 **Start page**:
 
 This configuration sets the Safari start page to show a specific website.
@@ -86,7 +88,9 @@ This configuration restricts several Safari features.
 }
 ```
 
-**Website privacy (1)**:
+###### Website Privacy Examples
+
+**One website**:
 
 This configuration sets the camera permission default in Safari for one specific website.
 
@@ -108,7 +112,7 @@ This configuration sets the camera permission default in Safari for one specific
 }
 ```
 
-**Website privacy (2)**:
+**One website and its children**:
 
 This configuration sets the camera and microphone permission defaults in Safari for a specific website and its child websites.
 

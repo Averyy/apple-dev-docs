@@ -8,7 +8,6 @@ A localized message that describes how to recover from the error.
 **Availability**:
 - iOS 16.1+
 - iPadOS 16.1+
-- Mac Catalyst 16.1+
 
 ## Declaration
 

@@ -1,6 +1,6 @@
 # sharedUniforms
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: property
 
 Uniforms that are shared across multiple graphs, keyed by typeName.
@@ -12,7 +12,7 @@ Uniforms that are shared across multiple graphs, keyed by typeName.
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 ## Declaration
 

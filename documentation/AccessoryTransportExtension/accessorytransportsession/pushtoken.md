@@ -8,7 +8,6 @@ A token that identifies the iOS device to the Apple Push Notification service fo
 **Availability**:
 - iOS 26.5+
 - iPadOS 26.5+
-- Mac Catalyst 26.5+
 
 ## Declaration
 

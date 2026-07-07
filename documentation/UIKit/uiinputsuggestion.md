@@ -8,7 +8,6 @@ A base class you use to handle suggestions from the keyboard or system.
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
-- Mac Catalyst 18.4+
 
 ## Declaration
 

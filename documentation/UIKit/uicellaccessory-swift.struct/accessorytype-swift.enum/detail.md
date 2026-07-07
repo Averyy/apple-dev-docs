@@ -8,7 +8,7 @@ The detail accessory type.
 **Availability**:
 - iOS 15.4+
 - iPadOS 15.4+
-- Mac Catalyst ?+
+- Mac Catalyst 15.4+
 - tvOS 15.4+
 - visionOS ?+
 

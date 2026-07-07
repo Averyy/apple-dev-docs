@@ -8,7 +8,7 @@ A protocol you use for app intents which begin their work with the app in the ba
 **Availability**:
 - iOS 16.4+
 - iPadOS 16.4+
-- Mac Catalyst ?+
+- Mac Catalyst 16.4+
 - macOS 13.3+
 - tvOS 16.4+
 - visionOS ?+

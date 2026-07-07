@@ -6,10 +6,10 @@
 The fully formatted address of the item, received from MapKit.
 
 **Availability**:
-- iOS 9.0+
-- iPadOS 9.0+
+- iOS 10.0+
+- iPadOS 10.0+
 - Mac Catalyst 13.1+
-- macOS 10.13+
+- macOS 10.12+
 - visionOS 1.0+
 
 ## Declaration

@@ -8,7 +8,6 @@ A view that displays the phrase a person uses to invoke an App Shortcut.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
 - visionOS ?+
 
 ## Declaration

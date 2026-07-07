@@ -17,6 +17,7 @@ An overlay fill style for filling shapes.
 ## Declaration
 
 ```swift
+@export(implementation)
 static var fill: FillShapeStyle { get }
 ```
 

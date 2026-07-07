@@ -39,7 +39,7 @@ If the value is non-`nil`, but outside the range of `0.0` through `total`, the p
 - [init<V>(value: V?, total: V)](progressview/init(value:total:).md)
   Creates a progress view for showing determinate progress.
 - [init(_:value:total:)](progressview/init(_:value:total:).md)
-  Creates a progress view for showing determinate progress that generates its label from a string.
+  Creates a progress view for showing determinate progress that generates its label from a localized string resource.
 - [init<V>(value: V?, total: V, label: () -> Label)](progressview/init(value:total:label:).md)
   Creates a progress view for showing determinate progress, with a custom label.
 

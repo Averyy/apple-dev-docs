@@ -17,6 +17,7 @@ Create an `AccessibilityCustomContentKey` with the specified label and identifie
 ## Declaration
 
 ```swift
+@export(implementation)
 init(_ label: LocalizedStringResource, id: String)
 ```
 

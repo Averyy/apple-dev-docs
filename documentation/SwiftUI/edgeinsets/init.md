@@ -11,6 +11,7 @@ Creates a 2D `EdgeInsets` from an `EdgeInsets3D`, dropping its `front` and `back
 ## Declaration
 
 ```swift
+@export(implementation)
 init(_ i: EdgeInsets3D)
 ```
 

@@ -24,7 +24,7 @@ struct AccessibilityActionCategory
 
 ### Initializers
 - [init(_:)](accessibilityactioncategory/init(_:).md)
-  Creates a custom action category labeled by `name`.
+  Creates a custom action category labeled by `nameResource`.
 ### Type Properties
 - [static let `default`: AccessibilityActionCategory](accessibilityactioncategory/default.md)
   An accessibility action category for the default actions of a view. This category replaces the system provided actions rotor for accessibility technologies like VoiceOver.

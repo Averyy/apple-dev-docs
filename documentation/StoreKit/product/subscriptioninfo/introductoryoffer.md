@@ -8,7 +8,6 @@ Information about the introductory offer available for the auto-renewable subscr
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
 - visionOS 1.0+

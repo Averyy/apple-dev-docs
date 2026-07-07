@@ -43,11 +43,11 @@ object StatusEnhancedLoggingAppleCareToken
 
 ## Properties
 
-- `enhanced-logging.applecare-token` (string): The current enhanced log collection session AppleCare token. The device returns an empty string if there is no session status to report.
+- `enhanced-logging.applecare-token` (string): The current enhanced log collection session AppleCare token. The device returns an empty string if there’s no session status to report.
 
 ## See Also
 
-- [object StatusEnhancedLogging](statusenhancedlogging.md)
+- [object StatusEnhancedLoggingStatus](statusenhancedloggingstatus.md)
   The status item that reports the device’s enhanced log collection session status.
 - [object StatusEnhancedLoggingTimestamp](statusenhancedloggingtimestamp.md)
   The status item that reports the device’s enhanced log collection session timestamp.

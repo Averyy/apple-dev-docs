@@ -8,7 +8,7 @@ The representation of a room that appears in the picker during device setup.
 **Availability**:
 - iOS 16.1+
 - iPadOS 16.1+
-- Mac Catalyst ?+
+- Mac Catalyst 16.1+
 - macOS 14.0+
 - visionOS ?+
 

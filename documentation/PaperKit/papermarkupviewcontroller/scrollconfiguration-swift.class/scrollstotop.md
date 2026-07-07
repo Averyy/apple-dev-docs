@@ -8,7 +8,6 @@ A Boolean value that controls whether the scroll-to-top gesture is enabled.
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 

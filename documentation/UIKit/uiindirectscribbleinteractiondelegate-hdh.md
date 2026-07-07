@@ -8,7 +8,7 @@ Methods that customize behavior on views that aren’t formally text input views
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst ?+
+- Mac Catalyst 14.0+
 - visionOS ?+
 
 ## Declaration

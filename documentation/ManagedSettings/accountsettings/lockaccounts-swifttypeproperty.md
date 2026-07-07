@@ -8,7 +8,7 @@ A description of the setting that controls whether a user can modify their accou
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst ?+
+- Mac Catalyst 15.0+
 
 ## Declaration
 

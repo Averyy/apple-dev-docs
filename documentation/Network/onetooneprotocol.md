@@ -30,6 +30,7 @@ protocol OneToOneProtocol : NetworkProtocolOptions
 - [StreamProtocol](streamprotocol.md)
 ### Conforming Types
 - [Coder](coder.md)
+- [DTLS](dtls.md)
 - [Framer](framer.md)
 - [QUICDatagram](quicdatagram.md)
 - [QUICStream](quicstream.md)

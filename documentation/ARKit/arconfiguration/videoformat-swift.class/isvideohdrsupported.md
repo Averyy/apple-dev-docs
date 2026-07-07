@@ -8,7 +8,6 @@ Determines whether the format supports high dynamic range (HDR).
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
 
 ## Declaration
 

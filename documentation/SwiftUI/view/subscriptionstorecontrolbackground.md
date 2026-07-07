@@ -8,7 +8,6 @@ Set a standard effect to use for the background of subscription store view contr
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst 17.0+
 - macOS 14.0+
 
 ## Declaration

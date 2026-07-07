@@ -16,40 +16,40 @@ For more information about how to use these modifiers, see [`Modal presentations
 
 ### Alerts
 - [func alert(_:isPresented:actions:)](view/alert(_:ispresented:actions:).md)
-  Presents an alert when a given condition is true, using a text view for the title.
+  Presents an alert when a given condition is true, using a localized string resource for the title.
 - [func alert(_:isPresented:presenting:actions:)](view/alert(_:ispresented:presenting:actions:).md)
-  Presents an alert using the given data to produce the alert’s content and a text view as a title.
+  Presents an alert using the given data to produce the alert’s content and a localized string resource for a title.
 - [func alert(_:item:actions:)](view/alert(_:item:actions:).md)
   Presents an alert using the given data to produce the alert’s content and a text view as a title.
-- [func alert<E, A>(error: Binding<E?>, actions: () -> A) -> some View](view/alert(error:actions:).md)
+- [func alert(error:actions:)](view/alert(error:actions:).md)
   Presents an alert when an error is present.
 - [func alert<E, A>(isPresented: Binding<Bool>, error: E?, actions: () -> A) -> some View](view/alert(ispresented:error:actions:).md)
   Presents an alert when an error is present.
 ### Alerts with a message
 - [func alert(_:isPresented:actions:message:)](view/alert(_:ispresented:actions:message:).md)
-  Presents an alert with a message when a given condition is true using a text view as a title.
+  Presents an alert with a message when a given condition is true, using a localized string resource for a title.
 - [func alert(_:isPresented:presenting:actions:message:)](view/alert(_:ispresented:presenting:actions:message:).md)
-  Presents an alert with a message using the given data to produce the alert’s content and a text view for a title.
+  Presents an alert with a message using the given data to produce the alert’s content and a localized string resource for a title.
 - [func alert(_:item:actions:message:)](view/alert(_:item:actions:message:).md)
   Presents an alert with a message using the given data to produce the alert’s content and a localized string key for a title.
-- [func alert<E, A, M>(error: Binding<E?>, actions: (E) -> A, message: (E) -> M) -> some View](view/alert(error:actions:message:).md)
+- [func alert(error:actions:message:)](view/alert(error:actions:message:).md)
   Presents an alert with a message when an error is present.
 - [func alert<E, A, M>(isPresented: Binding<Bool>, error: E?, actions: (E) -> A, message: (E) -> M) -> some View](view/alert(ispresented:error:actions:message:).md)
   Presents an alert with a message when an error is present.
 ### Confirmation dialogs
 - [func confirmationDialog(_:isPresented:titleVisibility:actions:)](view/confirmationdialog(_:ispresented:titlevisibility:actions:).md)
-  Presents a confirmation dialog when a given condition is true, using a text view for the title.
+  Presents a confirmation dialog when a given condition is true, using a localized string resource for the title.
 - [func confirmationDialog(_:isPresented:titleVisibility:presenting:actions:)](view/confirmationdialog(_:ispresented:titlevisibility:presenting:actions:).md)
-  Presents a confirmation dialog using data to produce the dialog’s content and a text view for the title.
+  Presents a confirmation dialog using data to produce the dialog’s content and a localized string resource for the title.
 - [func confirmationDialog(_:item:titleVisibility:actions:)](view/confirmationdialog(_:item:titlevisibility:actions:).md)
   Presents a confirmation dialog using data to produce the dialog’s content and a text view for the title.
 - [func dismissalConfirmationDialog(_:shouldPresent:actions:)](view/dismissalconfirmationdialog(_:shouldpresent:actions:).md)
   Presents a confirmation dialog when a dismiss action has been triggered.
 ### Confirmation dialogs with a message
 - [func confirmationDialog(_:isPresented:titleVisibility:actions:message:)](view/confirmationdialog(_:ispresented:titlevisibility:actions:message:).md)
-  Presents a confirmation dialog with a message when a given condition is true, using a text view for the title.
+  Presents a confirmation dialog with a message when a given condition is true, using a localized string resource for the title.
 - [func confirmationDialog(_:isPresented:titleVisibility:presenting:actions:message:)](view/confirmationdialog(_:ispresented:titlevisibility:presenting:actions:message:).md)
-  Presents a confirmation dialog with a message using data to produce the dialog’s content and a text view for the message.
+  Presents a confirmation dialog with a message using data to produce the dialog’s content and a localized string resource for the title.
 - [func confirmationDialog(_:item:titleVisibility:actions:message:)](view/confirmationdialog(_:item:titlevisibility:actions:message:).md)
   Presents a confirmation dialog with a message using data to produce the dialog’s content and a text view for the message.
 - [func dismissalConfirmationDialog(_:shouldPresent:actions:message:)](view/dismissalconfirmationdialog(_:shouldpresent:actions:message:).md)
@@ -117,7 +117,7 @@ For more information about how to use these modifiers, see [`Modal presentations
 - [func fileExporter(isPresented:document:contentTypes:defaultFilename:onCompletion:onCancellation:)](view/fileexporter(ispresented:document:contenttypes:defaultfilename:oncompletion:oncancellation:).md)
   Presents a system dialog for allowing the user to export a `FileDocument` to a file on disk.
 - [func fileExporter(isPresented:documents:contentTypes:onCompletion:onCancellation:)](view/fileexporter(ispresented:documents:contenttypes:oncompletion:oncancellation:).md)
-  Presents a system dialog for allowing the user to export a collection of documents that conform to `FileDocument` to files on disk.
+  Presents a system dialog for allowing the user to export a collection of objects conforming to `WritableDocument` to files on disk.
 - [func fileExporter<T>(isPresented: Binding<Bool>, item: T?, contentTypes: [UTType], defaultFilename: String?, onCompletion: (Result<URL, any Error>) -> Void, onCancellation: () -> Void) -> some View](view/fileexporter(ispresented:item:contenttypes:defaultfilename:oncompletion:oncancellation:).md)
   Presents a system dialog allowing the user to export a `Transferable` item to a file on disk.
 - [func fileExporter<C, T>(isPresented: Binding<Bool>, items: C, contentTypes: [UTType], onCompletion: (Result<[URL], any Error>) -> Void, onCancellation: () -> Void) -> some View](view/fileexporter(ispresented:items:contenttypes:oncompletion:oncancellation:).md)
@@ -152,7 +152,7 @@ For more information about how to use these modifiers, see [`Modal presentations
 - [func fileDialogImportsUnresolvedAliases(Bool) -> some View](view/filedialogimportsunresolvedaliases(_:).md)
   On macOS, configures the `fileExporter`, `fileImporter`, or `fileMover` behavior when a user chooses an alias.
 - [func fileDialogMessage(_:)](view/filedialogmessage(_:).md)
-  On macOS, configures the `fileExporter`, `fileImporter`, or `fileMover` with a custom text that is presented to the user, similar to a title.
+  On macOS, configures the `fileExporter`, `fileImporter`, or `fileMover` with a custom message that is presented to the user, similar to a title.
 - [func fileDialogURLEnabled(Predicate<URL>) -> some View](view/filedialogurlenabled(_:).md)
   On macOS, configures the `fileImporter` or `fileMover` to conditionally disable presented URLs.
 ### Foveated streaming

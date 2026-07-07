@@ -11,8 +11,8 @@ A toggle style that displays a checkbox followed by its label.
 ## Declaration
 
 ```swift
-nonisolated
-static var checkbox: CheckboxToggleStyle { get }
+@export(implementation)
+nonisolated static var checkbox: CheckboxToggleStyle { get }
 ```
 
 #### Discussion

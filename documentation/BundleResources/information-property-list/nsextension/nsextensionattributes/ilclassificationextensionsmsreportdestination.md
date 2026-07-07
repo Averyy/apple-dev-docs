@@ -8,7 +8,6 @@ The phone number that receives SMS messages when the user reports an SMS message
 **Availability**:
 - iOS 12.0+
 - iPadOS 12.0+
-- Mac Catalyst 12.0+
 
 
 

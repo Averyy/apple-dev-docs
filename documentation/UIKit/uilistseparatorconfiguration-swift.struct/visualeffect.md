@@ -8,7 +8,7 @@ The visual effect to use for the separators of the item the configuration applie
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst ?+
+- Mac Catalyst 15.0+
 - visionOS ?+
 
 ## Declaration

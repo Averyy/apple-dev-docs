@@ -12,7 +12,7 @@ The table style that describes the behavior and appearance of a table with its c
 
 ```swift
 @MainActor
-@preconcurrency static func inset(alternatesRowBackgrounds: Bool) -> InsetTableStyle
+@export(implementation) @preconcurrency static func inset(alternatesRowBackgrounds: Bool) -> InsetTableStyle
 ```
 
 ## Parameters

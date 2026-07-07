@@ -17,6 +17,7 @@ Create a Rotor entry with a specific label, identifier and namespace, and with a
 ## Declaration
 
 ```swift
+@export(implementation)
 init(_ label: LocalizedStringResource, id: ID, in namespace: Namespace.ID, textRange: Range<String.Index>? = nil, prepare: @escaping () -> Void = {})
 ```
 

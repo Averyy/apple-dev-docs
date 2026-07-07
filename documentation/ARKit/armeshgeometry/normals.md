@@ -8,7 +8,6 @@ Rays that define which direction is outside for each face.
 **Availability**:
 - iOS 13.4+
 - iPadOS 13.4+
-- Mac Catalyst 13.4+
 
 ## Declaration
 

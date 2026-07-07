@@ -8,7 +8,7 @@ A constant that specifies a placeholder size for separator insets.
 **Availability**:
 - iOS 14.5+
 - iPadOS 14.5+
-- Mac Catalyst ?+
+- Mac Catalyst 14.5+
 - visionOS ?+
 
 ## Declaration

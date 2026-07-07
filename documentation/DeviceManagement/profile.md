@@ -20,8 +20,8 @@ object Profile
 - [Returning a managed device to service](returning-a-managed-device-to-service.md)
 - [Providing information about your device management service](providing-information-about-your-device-management-service.md)
 - [Authenticating through web views](authenticating-through-web-views.md)
+- [Implementing Platform SSO during Automated Device Enrollment](implementing-platform-sso-during-automated-device-enrollment.md)
 - [Implementing Platform SSO for unattended device enrollment](implementing-platform-sso-for-unattended-device-enrollment.md)
-- [Implementing Platform SSO during device enrollment](implementing-platform-sso-during-device-enrollment.md)
 
 ## Topics
 

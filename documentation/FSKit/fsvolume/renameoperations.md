@@ -16,16 +16,16 @@ protocol RenameOperations : NSObjectProtocol
 
 #### Overview
 
-> **Note**:  Use [`FSVolume.RenameHandler`](fsvolume/renamehandler.md) instead.
+> **Note**: Use [`FSVolume.RenameHandler`](fsvolume/renamehandler.md) instead.
 
 ## Topics
 
+### Renaming the volume
+- [func setVolumeName(FSFileName, replyHandler: (FSFileName?, (any Error)?) -> Void)](fsvolume/renameoperations/setvolumename(_:replyhandler:).md)
+  Sets a new name for the volume.
 ### Inspecting volume properties
 - [var isVolumeRenameInhibited: Bool](fsvolume/renameoperations/isvolumerenameinhibited.md)
   A Boolean value that instructs FSKit not to call this protocol’s methods, even if the volume conforms to it.
-### Instance Methods
-- [func setVolumeName(FSFileName, replyHandler: (FSFileName?, (any Error)?) -> Void)](fsvolume/renameoperations/setvolumename(_:replyhandler:).md)
-  Sets a new name for the volume.
 
 ## Relationships
 

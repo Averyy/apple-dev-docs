@@ -8,7 +8,7 @@ Translates a point index set into a unit distance along the shape.
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst ?+
+- Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
 - visionOS ?+

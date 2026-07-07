@@ -8,7 +8,7 @@ Sets the current playback time to the time specified by the date object.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst ?+
+- Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
 - visionOS 1.0+

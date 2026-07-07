@@ -8,7 +8,7 @@ Creates a new instance of a store with a custom name.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst ?+
+- Mac Catalyst 16.0+
 
 ## Declaration
 

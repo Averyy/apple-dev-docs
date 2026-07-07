@@ -11,13 +11,13 @@ Creates an alert scene, using the given data to produce the alert’s content wi
 ## Declaration
 
 ```swift
-nonisolated
-init<S, T>(_ title: S, isPresented: Binding<Bool>, presenting data: T?, @ContentBuilder actions: (T) -> Actions, @ContentBuilder message: (T) -> Message) where S : StringProtocol
+@export(implementation)
+nonisolated init<T>(_ titleResource: LocalizedStringResource, isPresented: Binding<Bool>, presenting data: T?, @ContentBuilder actions: (T) -> Actions, @ContentBuilder message: (T) -> Message)
 ```
 
 ## Parameters
 
-- `title`: A text string used as the title of the alert.
+- `titleResource`: Text resource for the localized string that is the title of the alert.
 - `isPresented`: A binding to a Boolean value that determines whether to present the alert. When someone presses or taps one of the alert’s actions, the system sets this value to `false` and dismisses.
 - `data`: A source of truth that is passed to the alert to populate the message and actions.
 - `actions`: A [`ContentBuilder`](contentbuilder.md) returning the actions for the dialog.

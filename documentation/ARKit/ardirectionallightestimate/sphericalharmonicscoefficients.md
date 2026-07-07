@@ -8,7 +8,6 @@ Data describing the estimated lighting environment in all directions.
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

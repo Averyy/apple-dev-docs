@@ -8,7 +8,6 @@ A structure that can observe whether you can update Live Activities with frequen
 **Availability**:
 - iOS 16.2+
 - iPadOS 16.2+
-- Mac Catalyst 16.2+
 
 ## Declaration
 

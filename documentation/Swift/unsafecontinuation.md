@@ -58,17 +58,21 @@ A *continuation* is an opaque representation of program state. To create a conti
 
 ## See Also
 
+- [struct Continuation](continuation.md)
+  A mechanism to interface between synchronous and asynchronous code, which enforces that the continuation is resumed exactly once.
+- [func withContinuation<Success>(of: Success.Type, (consuming Continuation<Success, Never>) -> Void) async -> sending Success](withcontinuation(of:_:).md)
+  Invokes the passed in closure with a non-copyable continuation for the current task.
+- [func withContinuation<Success, Failure>(of: Success.Type, throwing: Failure.Type, (consuming Continuation<Success, Failure>) -> Void) async throws(Failure) -> sending Success](withcontinuation(of:throwing:_:).md)
+  Invokes the passed in closure with a non-copyable continuation for the current task.
 - [struct CheckedContinuation](checkedcontinuation.md)
   A mechanism to interface between synchronous and asynchronous code, logging correctness violations.
-- [func withCheckedContinuation<T>(isolation: isolated (any Actor)?, function: String, (CheckedContinuation<T, Never>) -> Void) async -> sending T](withcheckedcontinuation(isolation:function:_:).md)
-  Source-compatibility overload; replaced by [`withCheckedContinuation(function:_:)`](withcheckedcontinuation(function:_:).md).
-- [func withCheckedThrowingContinuation<T>(isolation: isolated (any Actor)?, function: String, (CheckedContinuation<T, any Error>) -> Void) async throws -> sending T](withcheckedthrowingcontinuation(isolation:function:_:).md)
-  Source-compatibility overload; replaced by `withCheckedThrowingContinuation(function:_:)`.
-- [func withUnsafeContinuation<T>(isolation: isolated (any Actor)?, (UnsafeContinuation<T, Never>) -> Void) async -> sending T](withunsafecontinuation(isolation:_:).md)
-  Source-compatibility overload; replaced by [`withUnsafeContinuation(_:)`](withunsafecontinuation(_:).md).
-- [typealias UnsafeThrowingContinuation](unsafethrowingcontinuation.md)
-- [func withUnsafeThrowingContinuation<T>(isolation: isolated (any Actor)?, (UnsafeContinuation<T, any Error>) -> Void) async throws -> sending T](withunsafethrowingcontinuation(isolation:_:).md)
-  Source-compatibility overload; replaced by `withUnsafeThrowingContinuation(_:)`.
+- [func withCheckedContinuation<T>(function: String, (CheckedContinuation<T, Never>) -> Void) async -> sending T](withcheckedcontinuation(function:_:).md)
+  Invokes the passed in closure with a checked continuation for the current task.
+- [func withCheckedThrowingContinuation<T>(function: String, (CheckedContinuation<T, any Error>) -> Void) async throws -> sending T](withcheckedthrowingcontinuation(function:_:)-13yf6.md)
+- [func withCheckedThrowingContinuation<T, E>(function: String, (CheckedContinuation<T, E>) -> Void) async throws(E) -> sending T](withcheckedthrowingcontinuation(function:_:)-2k46m.md)
+  Invokes the passed in closure with a checked continuation for the current task.
+- [func withUnsafeContinuation<T>((UnsafeContinuation<T, Never>) -> Void) async -> sending T](withunsafecontinuation(_:).md)
+  Invokes the passed in closure with a unsafe continuation for the current task.
 
 
 ---

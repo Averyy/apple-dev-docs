@@ -22,7 +22,7 @@ object CertificateTransparency
 
 ## Mentions
 
-- [Implementing Platform SSO during device enrollment](implementing-platform-sso-during-device-enrollment.md)
+- [Implementing Platform SSO during Automated Device Enrollment](implementing-platform-sso-during-automated-device-enrollment.md)
 
 #### Discussion
 
@@ -100,7 +100,7 @@ Specify `com.apple.security.certificatetransparency` as the payload type.
 ## Properties
 
 - `DisabledForCerts` ([CertificateTransparency.SubjectPublicKeyInfoHashDict]): An array of certificates for which certificate transparency is disabled. One of the following conditions needs to be met to disable certificate transparency enforcement when this policy is set: - The hash is of the server certificate’s `subjectPublicKeyInfo`.
-- The hash is of a `subjectPublicKeyInfo` that appears in a CA certificate in the certificate chain; the CA certificate is constrained through the X.509v3 `nameConstraints` extension. One or more `directoryName` `nameConstraints` are present in the `permittedSubtrees`, and the `directoryName` contains an `organizationName` attribute.
+- The hash is of a `subjectPublicKeyInfo` that appears in a CA certificate in the certificate chain; the X.509v3 `nameConstraints` extension constrains the CA certificate. One or more `directoryName` `nameConstraints` are present in the `permittedSubtrees`, and the `directoryName` contains an `organizationName` attribute.
 - The hash is of a `subjectPublicKeyInfo` that appears in a CA certificate in the certificate chain. The CA certificate has one or more `organizationName` attributes in the certificate `Subject`, and the server’s certificate contains the same number of `organizationName` attributes, in the same order, and with byte-for-byte identical values.
 - `DisabledForDomains` ([string]): An array of strings that represent the domains to exclude from certificate transparency enforcement. The system supports using a leading period (`.`) to signify subdomains. However, the system doesn’t support wildcards. If you include a leading period, the domain can’t be a top-level domain, such as `.com` and `.co.uk`.
 

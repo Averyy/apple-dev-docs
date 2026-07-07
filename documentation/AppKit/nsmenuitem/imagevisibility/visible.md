@@ -3,7 +3,7 @@
 **Framework**: AppKit  
 **Kind**: case
 
-AppKit should choose whether the item’s image is visible, considering the system configuration.
+The item image should always be visible. Note that in some cases, AppKit may still hide the image, overriding this preference.
 
 **Availability**:
 - macOS 27.0+ (Beta)

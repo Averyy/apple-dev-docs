@@ -8,7 +8,7 @@ An object containing the response from the tag.
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst ?+
+- Mac Catalyst 14.0+
 
 ## Declaration
 

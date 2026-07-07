@@ -18,7 +18,7 @@ The default toggle style.
 
 ```swift
 @MainActor
-@preconcurrency static var automatic: DefaultToggleStyle { get }
+@export(implementation) @preconcurrency static var automatic: DefaultToggleStyle { get }
 ```
 
 #### Discussion

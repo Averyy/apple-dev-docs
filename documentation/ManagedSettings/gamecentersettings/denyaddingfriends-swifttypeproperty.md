@@ -8,7 +8,7 @@ The metadata for the setting that prevents the user from adding friends in Game 
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst ?+
+- Mac Catalyst 15.0+
 
 ## Declaration
 

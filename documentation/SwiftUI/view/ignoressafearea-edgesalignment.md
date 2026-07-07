@@ -17,8 +17,8 @@ Expands the safe area of a view aligning content within the new bounds using the
 ## Declaration
 
 ```swift
-nonisolated
-func ignoresSafeArea(_ regions: SafeAreaRegions = .all, edges: Edge.Set = .all, alignment: Alignment?) -> some View
+@export(implementation)
+nonisolated func ignoresSafeArea(_ regions: SafeAreaRegions = .all, edges: Edge.Set = .all, alignment: Alignment?) -> some View
 ```
 
 #### Return Value

@@ -17,8 +17,8 @@ Creates a picker bound to a collection of bindings that generates its label from
 ## Declaration
 
 ```swift
-nonisolated
-init<C, S>(_ title: S, systemImage: String, sources: C, selection: KeyPath<C.Element, Binding<SelectionValue>>, @ContentBuilder content: () -> Content) where C : RandomAccessCollection, S : StringProtocol, C.Element == Binding<SelectionValue>
+@export(implementation)
+nonisolated init<C, S>(_ title: S, systemImage: String, sources: C, selection: KeyPath<C.Element, Binding<SelectionValue>>, @ContentBuilder content: () -> Content) where C : RandomAccessCollection, S : StringProtocol, C.Element == Binding<SelectionValue>
 ```
 
 #### Discussion
@@ -68,9 +68,9 @@ Picker(
 ## See Also
 
 - [init(_:image:selection:content:)](picker/init(_:image:selection:content:).md)
-  Creates a picker that generates its label from a localized string key and image resource
+  Creates a picker that generates its label from a localized string resource and image resource
 - [init(_:image:sources:selection:content:)](picker/init(_:image:sources:selection:content:).md)
-  Creates a picker bound to a collection of bindings that generates its label from a string and image resource.
+  Creates a picker that generates its label from a localized string resource and image resource.
 - [init(_:systemImage:selection:content:)](picker/init(_:systemimage:selection:content:).md)
   Creates a picker that generates its label from a localized string key and system image.
 

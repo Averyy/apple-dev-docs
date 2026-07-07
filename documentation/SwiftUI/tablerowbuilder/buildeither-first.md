@@ -15,6 +15,7 @@ Creates a row result for the first of two row content alternatives.
 ## Declaration
 
 ```swift
+@export(implementation)
 static func buildEither<T, F>(first: T) -> _ConditionalContent<T, F> where Value == T.TableRowValue, T : TableRowContent, F : TableRowContent, T.TableRowValue == F.TableRowValue
 ```
 

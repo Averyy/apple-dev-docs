@@ -8,7 +8,7 @@ An interface that allows you to include an entity in your app’s Spotlight inde
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst ?+
+- Mac Catalyst 18.0+
 - macOS 15.0+
 - visionOS 2.0+
 

@@ -17,6 +17,7 @@ An interpolating spring animation that uses a damped spring model to produce val
 ## Declaration
 
 ```swift
+@export(implementation)
 static var interpolatingSpring: Animation { get }
 ```
 

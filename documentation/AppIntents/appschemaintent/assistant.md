@@ -8,7 +8,7 @@ The collection of intent schemas in the assistant domain.
 **Availability**:
 - iOS 26.2+
 - iPadOS 26.2+
-- Mac Catalyst ?+
+- Mac Catalyst 26.2+
 
 ## Declaration
 

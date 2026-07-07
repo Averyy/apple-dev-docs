@@ -11,6 +11,7 @@ Creates a generator for custom, generable evaluation samples.
 - Mac Catalyst 27.0+ (Beta)
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -26,6 +27,11 @@ init(_ prompt: Prompt, samples: [SampleType], targetCount: Int, sessionProvider:
 - `sessionProvider`: A closure that creates a new language model session.
 - `samplingStrategy`: The strategy for selecting example samples.
 - `validator`: An optional closure that decides whether a generated sample is valid.
+
+## See Also
+
+- [init<T>(Prompt, samples: [SampleType], targetCount: Int, sessionProvider: (() -> LanguageModelSession)?, samplingStrategy: SampleGenerator<SampleType>.SamplingStrategy?, validator: ((SampleType) async throws -> Bool)?)](samplegenerator/init(_:samples:targetcount:sessionprovider:samplingstrategy:validator:)-8t01x.md)
+  Creates a generator for sample values with a generable-expected value type.
 
 
 ---

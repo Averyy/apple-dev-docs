@@ -37,8 +37,6 @@ object NetworkVPNAlwaysOnTunnelConfigurationElement_IKEV2_OnDemandObject
   Settings that control authentication.
 - [object NetworkVPNAlwaysOnTunnelConfigurationElement_IKEV2_IdleObject](networkvpnalwaysontunnelconfigurationelement_ikev2_idleobject.md)
   Specifies details about how the system handles idle VPN connections.
-- [object NetworkVPNAlwaysOnTunnelConfigurationElement_IKEV2_NetworkRoutingObject](networkvpnalwaysontunnelconfigurationelement_ikev2_networkroutingobject.md)
-  Specifies details about how the VPN routes different types of network traffic.
 - [object NetworkVPNAlwaysOnTunnelConfigurationElement_IKEV2_PostQuantumKeyExchangeObject](networkvpnalwaysontunnelconfigurationelement_ikev2_postquantumkeyexchangeobject.md)
   Post Quantum Key Exchange settings.
 - [object NetworkVPNAlwaysOnTunnelConfigurationElement_IKEV2_ProviderObject](networkvpnalwaysontunnelconfigurationelement_ikev2_providerobject.md)

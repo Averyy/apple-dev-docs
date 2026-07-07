@@ -8,7 +8,7 @@ A Boolean value that indicates whether a detected tag is available.
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst ?+
+- Mac Catalyst 13.0+
 
 ## Declaration
 

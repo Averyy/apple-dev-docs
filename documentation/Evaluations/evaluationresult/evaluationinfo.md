@@ -11,6 +11,7 @@ User-defined information about this evaluation, such as the model name, prompt v
 - Mac Catalyst 27.0+ (Beta)
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -30,6 +31,8 @@ let evaluationInfo: [String : String]
   A unique identifier for this particular result.
 - [var reportMetadata: [String : any Sendable]](evaluationresult/reportmetadata.md)
   Framework-generated metadata used for report presentation.
+- [func aggregateValue(AggregationOperation) -> Double](evaluationresult/aggregatevalue(_:).md)
+  Returns the first aggregate value matching the given operation, or `-1` if not found.
 - [EvaluationResult.DataFrameKind](evaluationresult/dataframekind.md)
   The kind of DataFrame to convert for JSON serialization.
 

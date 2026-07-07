@@ -8,7 +8,6 @@ An interface for objects that track the location of real-world objects or locati
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

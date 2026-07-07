@@ -8,7 +8,6 @@ The coefficient describing upward movement of the left corner of the mouth.
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

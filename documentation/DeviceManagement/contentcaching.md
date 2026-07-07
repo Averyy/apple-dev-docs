@@ -103,7 +103,7 @@ This configuration sets up content caching with a parent cache server, a restric
 - `ListenRanges` ([ContentCachingRangesItemObject]): An array of dictionaries that describe a range of client IP addresses to serve.
 - `ListenRangesOnly` (boolean): If `true`, the content cache provides content to the clients in the `ListenRanges`.
 - `ListenWithPeersAndParents` (boolean): If `true`, the content cache provides content to the clients in the union of the `ListenRanges`, `PeerListenRanges` and `Parents`.
-- `LocalSubnetsOnly` (boolean): If `true`, the content cache offers content to clients only on the same immediate local network only. No content is offered to clients on other networks reachable by the content cache. If `LocalSubnetsOnly` is `true`, the system ignores `ListenRanges`.
+- `LocalSubnetsOnly` (boolean): If `true`, the content cache offers content to clients only on the same immediate local network only. The content cache offers no content to clients on other networks reachable by the content cache. If `LocalSubnetsOnly` is `true`, the system ignores `ListenRanges`.
 - `LogClientIdentity` (boolean): If `true`, the Content Cache logs the IP address and port number of the clients that request content.
 - `ManagementReportingInterval` (integer): The reporting interval in seconds the system uses when `ManagementStatusTarget` is present. The reporting interval can’t be less than 60 (1 per minute) or larger than 86400 (1 per day), and defaults to 300 (1 per 5 min).
 - `ManagementSecurityConfig` (string): If the `ManagementStatusTarget` is an https URL, the system uses this field to determine how the connection is secured. - `no-cert`: The system uses regular https processing using the built-in anchor certificates.

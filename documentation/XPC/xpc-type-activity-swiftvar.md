@@ -8,7 +8,7 @@ A type that represents the XPC activity object.
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+
-- Mac Catalyst ?+
+- Mac Catalyst 8.0+
 - macOS 10.10+
 - tvOS 9.0+
 - visionOS ?+

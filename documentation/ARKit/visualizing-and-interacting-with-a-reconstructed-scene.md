@@ -7,7 +7,6 @@ Estimate the shape of the physical environment using a polygonal mesh.
 **Availability**:
 - iOS 13.4+
 - iPadOS 13.4+
-- Mac Catalyst 13.4+
 - Xcode 16.0+
 
 #### Overview

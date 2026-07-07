@@ -219,6 +219,7 @@ if tappedPoints.contains(nextTap) {
 - [Unicode.UTF32](unicode/utf32.md)
 - [Unicode.UTF8.ValidationError](unicode/utf8/validationerror.md)
 - [Unicode.UTF8.ValidationError.Kind](unicode/utf8/validationerror/kind-swift.struct.md)
+- [UniqueArray](uniquearray.md)
 - [UnownedTaskExecutor](unownedtaskexecutor.md)
 - [UnsafeCurrentTask](unsafecurrenttask.md)
 - [UnsafeMutablePointer](unsafemutablepointer.md)

@@ -6,7 +6,7 @@
 Initializes a text container with a specified bounding rectangle.
 
 **Availability**:
-- macOS ?+
+- macOS 10.0+
 
 ## Declaration
 

@@ -8,7 +8,6 @@ A future which will provide an inference value once any pending write is complet
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 
@@ -40,7 +39,7 @@ Async values can be used in async pipelines of inference to dispatch multiple in
 
 ## Topics
 
-### Initializers
+### Creating an async value
 - [init(CVReadOnlyPixelBuffer)](inferencefunction/asyncvalue/init(_:)-5qtut.md)
   Initialize the `AsyncValue` holding the provided pixel buffer.
 - [init(consuming InferenceFunction.AsyncMutableValue)](inferencefunction/asyncvalue/init(_:)-90hbj.md)
@@ -49,7 +48,7 @@ Async values can be used in async pipelines of inference to dispatch multiple in
   Initialize the `AsyncValue` holding the provided ndArray.
 - [init(unsafeBuffer: consuming any MTLBuffer, byteOffset: Int, scalarType: NDArray.ScalarType, shape: [Int], strides: [Int], interleaveLayout: NDArray.InterleaveLayout?)](inferencefunction/asyncvalue/init(unsafebuffer:byteoffset:scalartype:shape:strides:interleavelayout:).md)
   Creates an async ndArray value that directly references the provided metal buffer, interpreted as the specified scalar type and shape.
-### Instance Properties
+### Accessing an async value
 - [var kind: InferenceValue.Kind](inferencefunction/asyncvalue/kind.md)
   The kind of inference value held by this async value.
 - [var ndArray: NDArray?](inferencefunction/asyncvalue/ndarray.md)
@@ -62,6 +61,13 @@ Async values can be used in async pipelines of inference to dispatch multiple in
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [InferenceFunction.AsyncMutableValue](inferencefunction/asyncmutablevalue.md)
+  An async value which can be provided as a mutable argument to an inference function.
+- [InferenceFunction.AsyncMutableViews](inferencefunction/asyncmutableviews.md)
+  A collection of mutable references to async states, used as the states argument to an inference function.
 
 
 ---

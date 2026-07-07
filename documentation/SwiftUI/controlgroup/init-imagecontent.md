@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: init
 
-Creates a new control group with the specified content that generates its label from a string and image name.
+Creates a new control group with the specified content that generates its label from a localized string resource and image resource.
 
 **Availability**:
 - iOS 17.0+
@@ -16,13 +16,13 @@ Creates a new control group with the specified content that generates its label 
 ## Declaration
 
 ```swift
-nonisolated
-init<C, S>(_ title: S, image: ImageResource, @ContentBuilder content: () -> C) where Content == LabeledControlGroupContent<C, Label<Text, Image>>, C : View, S : StringProtocol
+@export(implementation)
+nonisolated init<C>(_ titleResource: LocalizedStringResource, image: ImageResource, @ContentBuilder content: () -> C) where Content == LabeledControlGroupContent<C, Label<Text, Image>>, C : View
 ```
 
 ## Parameters
 
-- `title`: A string that describes the contents of the group.
+- `titleResource`: Text resource for the group’s localized title, that describes the contents of the group.
 
 ## See Also
 

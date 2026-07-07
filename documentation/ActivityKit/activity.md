@@ -8,7 +8,6 @@ The object you use to start, update, and end a Live Activity.
 **Availability**:
 - iOS 16.1+
 - iPadOS 16.1+
-- Mac Catalyst 16.1+
 
 ## Declaration
 

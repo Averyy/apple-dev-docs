@@ -8,7 +8,6 @@ Presents a visual picker interface that contains events and images that a person
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst 26.0+
 
 ## Declaration
 

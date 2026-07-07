@@ -8,7 +8,6 @@ Deletes a cache entry referenced by bookmark data.
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 
@@ -27,6 +26,15 @@ Use this method to delete a cache entry referenced by bookmark data previously o
 ## Parameters
 
 - `bookmark`: Data previously obtained from `AIModel.bookmarkData`.
+
+## See Also
+
+- [func deleteEntry(for: URL, options: SpecializationOptions) throws](aimodelcache/deleteentry(for:options:).md)
+  Deletes the cache entry for a specific model and specialization options combination.
+- [func deleteEntries(for: URL) throws](aimodelcache/deleteentries(for:).md)
+  Deletes all cache entries for a specific model, regardless of specialization options.
+- [func deleteAll() throws](aimodelcache/deleteall.md)
+  Deletes all entries in the cache.
 
 
 ---

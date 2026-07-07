@@ -17,8 +17,8 @@ Applies the given transaction mutation function to all animations used within th
 ## Declaration
 
 ```swift
-nonisolated
-func transaction(value: some Equatable, _ transform: @escaping (inout Transaction) -> Void) -> some View
+@export(implementation)
+nonisolated func transaction(value: some Equatable, _ transform: @escaping (inout Transaction) -> Void) -> some View
 ```
 
 #### Return Value

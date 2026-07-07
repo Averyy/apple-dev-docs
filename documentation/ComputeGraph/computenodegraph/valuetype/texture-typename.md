@@ -1,6 +1,6 @@
 # ComputeNodeGraph.ValueType.texture(typeName:)
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: case
 
 Value is an texture with the given type name (e.g. texture2d)
@@ -12,7 +12,7 @@ Value is an texture with the given type name (e.g. texture2d)
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 ## Declaration
 

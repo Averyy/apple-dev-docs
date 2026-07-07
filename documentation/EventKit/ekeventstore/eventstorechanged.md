@@ -8,7 +8,7 @@ A notification posted when changes are made to the Calendar or Reminders databas
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst 26.0+
 - macOS 26.0+
 - visionOS 26.0+
 - watchOS 26.0+

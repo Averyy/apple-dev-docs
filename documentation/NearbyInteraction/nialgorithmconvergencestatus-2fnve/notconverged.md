@@ -8,7 +8,7 @@ A status that indicates the framework’s Camera Assistance feature requires act
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst ?+
+- Mac Catalyst 16.0+
 - watchOS 9.0+
 
 ## Declaration

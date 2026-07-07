@@ -8,7 +8,6 @@ A generic container that holds sensor data samples retrieved from SensorKit data
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 
 ## Declaration
 

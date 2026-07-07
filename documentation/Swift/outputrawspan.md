@@ -72,7 +72,6 @@ struct OutputRawSpan
   Remove the last byte from this span.
 - [func removeLast(Int)](outputrawspan/removelast(_:).md)
   Remove the last n bytes from this span, returning the memory they occupy to the uninitialized state.
-- [func withBytes<R, E>((RawSpan) throws(E) -> R) throws(E) -> R](outputrawspan/withbytes(_:).md)
 - [func withUnsafeMutableBytes<E, R>((UnsafeMutableRawBufferPointer, inout Int) throws(E) -> R) throws(E) -> R](outputrawspan/withunsafemutablebytes(_:).md)
   Call the given closure with the unsafe buffer pointer addressed by this OutputRawSpan and a mutable reference to its count of initialized bytes.
 ### Subscripts
@@ -102,6 +101,7 @@ struct OutputRawSpan
   `MutableSpan<Element>` represents a contiguous region of memory which contains initialized instances of `Element`.
 - [struct MutableRawSpan](mutablerawspan.md)
   `MutableRawSpan` represents a contiguous region of memory which contains initialized bytes.
+- [struct SpanIterator](spaniterator.md)
 
 
 ---

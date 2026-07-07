@@ -17,8 +17,8 @@ Creates a new instance that’s scrollable in the direction of the given axis an
 ## Declaration
 
 ```swift
-nonisolated
-init(_ axes: Axis.Set = .vertical, @ContentBuilder content: () -> Content)
+@export(implementation)
+nonisolated init(_ axes: Axis.Set = .vertical, @ContentBuilder content: () -> Content)
 ```
 
 ## Parameters

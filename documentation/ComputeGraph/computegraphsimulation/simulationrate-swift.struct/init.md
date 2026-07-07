@@ -1,6 +1,6 @@
 # init()
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: init
 
 Initializes a SimulationRate structure using default values.
@@ -12,7 +12,7 @@ Initializes a SimulationRate structure using default values.
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 ## Declaration
 

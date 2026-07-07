@@ -8,7 +8,6 @@ A type that specifies the appearance and interaction of controls in the subscrip
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
 - visionOS 1.0+

@@ -10,8 +10,10 @@ Use Platform Single Sign-on and Managed Device Attestation on managed devices.
 - [Managing passcodes](managing-passcodes.md)
   Ensure data security by managing device passcodes and compliance with policies.
 ### Platform Single Sign-on
-- [Configuring Device Management](../AuthenticationServices/configuring-device-management.md)
-  Configure Device Management to support device and user registration for Platform SSO.
+- [Enrollment with Platform Single Sign-on](enrolling-with-platform-single-sign-on.md)
+  Authenticate users during Automated Device Enrollment using Platform Single Sign-on.
+- [Configuring Platform Single Sign-on](configuring-platform-single-sign-on.md)
+  Provide a seamless login and authentication experience when integrating with your identity provider.
 ### Managed Device Attestation
 - [Validating a Managed Device Attestation](validating-a-managed-device-attestation-attestation.md)
   Verify an attestation that a managed device returns by performing the required steps.

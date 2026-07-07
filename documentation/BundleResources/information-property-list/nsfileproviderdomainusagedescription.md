@@ -35,6 +35,8 @@ $ tccutil reset FileProviderDomain <bundleID>
   A message that tells people why the app needs access to files on a network volume.
 - [NSRemovableVolumesUsageDescription](information-property-list/nsremovablevolumesusagedescription.md)
   A message that tells people why the app needs access to files on a removable volume.
+- [NSFileProviderPresenceUsageDescription](information-property-list/nsfileproviderpresenceusagedescription.md)
+  A message that tells people why the app’s file provider needs to determine which files the person is currently accessing.
 
 
 ---

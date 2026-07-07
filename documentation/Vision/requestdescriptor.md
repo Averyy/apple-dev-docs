@@ -8,7 +8,6 @@ A type that describes the request and revision combination.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -35,6 +34,8 @@ enum RequestDescriptor
   A descriptor that describes a generate person instance mask request.
 - [case generatePersonSegmentationRequest(GeneratePersonSegmentationRequest.Revision)](requestdescriptor/generatepersonsegmentationrequest(_:).md)
   A descriptor that describes a generate person segmentation request.
+### Getting the iterative and selected object descriptor
+- [case generateIterativeSegmentationRequest(GenerateIterativeSegmentationRequest.Revision)](requestdescriptor/generateiterativesegmentationrequest(_:).md)
 ### Getting the image aesthetics descriptor
 - [case calculateImageAestheticsScoresRequest(CalculateImageAestheticsScoresRequest.Revision)](requestdescriptor/calculateimageaestheticsscoresrequest(_:).md)
   A descriptor that describes a calculate image aesthetics scores request.
@@ -100,8 +101,6 @@ enum RequestDescriptor
 ### Getting the machine learning image-analysis descriptor
 - [case coreMLRequest(CoreMLRequest.Revision)](requestdescriptor/coremlrequest(_:).md)
   A descriptor that describes a Core ML request.
-### Enumeration Cases
-- [case generateIterativeSegmentationRequest(GenerateIterativeSegmentationRequest.Revision)](requestdescriptor/generateiterativesegmentationrequest(_:).md)
 
 ## Relationships
 

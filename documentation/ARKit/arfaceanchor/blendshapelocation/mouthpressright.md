@@ -8,7 +8,6 @@ The coefficient describing upward compression of the lower lip on the right side
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

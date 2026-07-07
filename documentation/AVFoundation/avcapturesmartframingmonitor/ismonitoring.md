@@ -8,7 +8,6 @@ Yes when the receiver is actively monitoring.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst 26.0+
 
 ## Declaration
 

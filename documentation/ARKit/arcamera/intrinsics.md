@@ -8,7 +8,6 @@ A matrix that converts between the 2D camera plane and 3D world coordinate space
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

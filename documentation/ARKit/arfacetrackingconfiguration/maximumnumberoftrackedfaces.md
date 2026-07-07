@@ -8,7 +8,6 @@ The number of faces to track during the session.
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

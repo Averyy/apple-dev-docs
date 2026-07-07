@@ -8,7 +8,7 @@ Marks the a list of conversations as read.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

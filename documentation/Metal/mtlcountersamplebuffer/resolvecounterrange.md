@@ -8,7 +8,7 @@ Transforms samples of a GPU’s counter set from the driver’s internal format 
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst ?+
+- Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
 - visionOS ?+

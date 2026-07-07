@@ -6,31 +6,31 @@
 Associates a transition with the view.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.0+
-- macOS 10.15+
-- tvOS 13.0+
+- iOS 17.0+
+- iPadOS 17.0+
+- Mac Catalyst 17.0+
+- macOS 14.0+
+- tvOS 17.0+
 - visionOS 1.0+
-- watchOS 6.0+
+- watchOS 10.0+
 
 ## Declaration
 
 ```swift
-nonisolated
-func transition(_ t: AnyTransition) -> some View
+@export(implementation)
+nonisolated func transition<T>(_ transition: T) -> some View where T : Transition
 ```
 
 #### Discussion
 
 When this view appears or disappears, the transition will be applied to it, allowing for animating it in and out.
 
-The following code will conditionally show MyView, and when it appears or disappears, will use a slide transition to show it.
+The following code will conditionally show MyView, and when it appears or disappears, will use a custom RotatingFadeTransition transition to show it.
 
 ```swift
 if isActive {
     MyView()
-        .transition(.slide)
+        .transition(RotatingFadeTransition())
 }
 Button("Toggle") {
     withAnimation {

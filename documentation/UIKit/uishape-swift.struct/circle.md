@@ -8,7 +8,7 @@ Creates a circular shape, with a radius equal to half the length of the frame re
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst ?+
+- Mac Catalyst 17.0+
 - visionOS 1.0+
 
 ## Declaration

@@ -8,7 +8,7 @@ The position of the baseline relative to the bottom of the image.
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst ?+
+- Mac Catalyst 13.0+
 - tvOS 13.0+
 - visionOS ?+
 - watchOS 6.0+

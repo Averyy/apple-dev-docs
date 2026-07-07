@@ -11,6 +11,7 @@ The automatic window toolbar style.
 ## Declaration
 
 ```swift
+@export(implementation)
 static var automatic: DefaultWindowToolbarStyle { get }
 ```
 

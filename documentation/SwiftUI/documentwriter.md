@@ -21,11 +21,12 @@ protocol DocumentWriter<Snapshot>
 ## Topics
 
 ### Writing a document
-- [func write(content: sending Self.Snapshot, to: sending Self.Destination, previous: sending Self.Snapshot?, progress: consuming Subprogress) async throws](documentwriter/write(content:to:previous:progress:).md)
-  Writes the document content to disk.
 - [associatedtype Snapshot](documentwriter/snapshot.md)
   A type that represents the document’s stored content.
-- [associatedtype Destination](documentwriter/destination.md)
+- [associatedtype Destination = URL](documentwriter/destination.md)
+### Instance Methods
+- [func write(snapshot: sending Self.Snapshot, to: sending Self.Destination, previous: sending Self.Snapshot?, progress: consuming Subprogress) async throws](documentwriter/write(snapshot:to:previous:progress:).md)
+  Writes the document content to disk.
 
 ## Relationships
 

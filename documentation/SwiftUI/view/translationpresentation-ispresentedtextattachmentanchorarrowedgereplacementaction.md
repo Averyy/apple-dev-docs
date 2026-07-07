@@ -8,7 +8,6 @@ Presents a translation popover when a given condition is true.
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
-- Mac Catalyst 17.4+
 - macOS 14.4+
 
 ## Declaration

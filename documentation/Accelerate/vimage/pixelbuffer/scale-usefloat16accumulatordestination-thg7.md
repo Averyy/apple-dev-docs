@@ -8,7 +8,7 @@ Scales a floating-point 16-bit-per-channel, two-channel interleaved pixel buffer
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst ?+
+- Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
 - visionOS ?+

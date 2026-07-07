@@ -17,6 +17,11 @@
 init(timeInterval: CFTimeInterval)
 ```
 
+## See Also
+
+- [init(CFTimeInterval)](vnvideoprocessor/timeintervalcadence/init(_:).md)
+  Creates a new time-based cadence with a time interval.
+
 
 ---
 

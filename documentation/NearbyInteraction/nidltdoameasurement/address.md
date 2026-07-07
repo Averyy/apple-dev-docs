@@ -8,7 +8,6 @@ A value that uniquely identifies an anchor in a tracked area.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst 26.0+
 
 ## Declaration
 

@@ -8,7 +8,6 @@ The app version that the customer originally purchased from the App Store.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
 - visionOS 1.0+

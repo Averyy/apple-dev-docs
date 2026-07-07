@@ -8,7 +8,6 @@ Generates dilated depth at the resolution of the segmentation stencil.
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

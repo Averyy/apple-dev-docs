@@ -72,7 +72,8 @@ Cancellation handlers which acquire locks must take care to avoid deadlock. The 
   A Boolean value that indicates whether the task should stop executing.
 - [static func checkCancellation() throws](task/checkcancellation.md)
   Throws an error if the task was canceled.
-- [func withTaskCancellationHandler<T>(handler: () -> Void, operation: () async throws -> T) async rethrows -> T](withtaskcancellationhandler(handler:operation:).md)
+- [func withTaskCancellationHandler<Return, Failure>(operation: nonisolated(nonsending) () async throws(Failure) -> Return, onCancel: sending () -> Void) async throws(Failure) -> Return](withtaskcancellationhandler(operation:oncancel:).md)
+  Execute an operation with a cancellation handler that’s immediately invoked if the current task is canceled.
 
 
 ---

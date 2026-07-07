@@ -17,8 +17,8 @@ The style that strokes this view’s shape.
 ## Declaration
 
 ```swift
-nonisolated
-var style: Style { get set }
+@export(implementation)
+nonisolated var style: Style { get set }
 ```
 
 ## See Also

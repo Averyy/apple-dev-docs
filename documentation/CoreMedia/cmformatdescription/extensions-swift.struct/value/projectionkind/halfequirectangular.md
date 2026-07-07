@@ -8,7 +8,7 @@ Indicates half equirectangular projection of a 180 degree hemisphere to a rectan
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst 26.0+
 - macOS 26.0+
 - tvOS 26.0+
 - visionOS 26.0+

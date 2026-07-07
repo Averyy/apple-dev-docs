@@ -3,6 +3,8 @@
 **Framework**: RealityKit  
 **Kind**: property
 
+The number of walkable cells in a region below which the region will be merged with nearby regions to simplify the Navigation Mesh.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -20,8 +22,11 @@ var minimumCellsToMergeRegions: Int
 ## See Also
 
 - [var partitionMethod: NavigationMeshResource.Configuration.PartitionMethod](navigationmeshresource/configuration-swift.struct/partitionmethod-swift.property.md)
+  The partitioning method to use when creating the polygon regions of the Navigation Mesh.
 - [NavigationMeshResource.Configuration.PartitionMethod](navigationmeshresource/configuration-swift.struct/partitionmethod-swift.enum.md)
+  The partitioning method to use for creating the polygons of the mesh.
 - [var minimumCellsPerRegion: Int](navigationmeshresource/configuration-swift.struct/minimumcellsperregion.md)
+  The minimum number of cells allowed to generate isolated regions or islands in the Navigation Mesh.
 
 
 ---

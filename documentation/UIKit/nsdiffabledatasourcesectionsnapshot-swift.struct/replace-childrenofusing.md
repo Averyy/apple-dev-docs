@@ -8,7 +8,7 @@ Replaces all child items of the specified parent item with the provided section 
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst ?+
+- Mac Catalyst 14.0+
 - tvOS 14.0+
 - visionOS ?+
 

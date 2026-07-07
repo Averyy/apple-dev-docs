@@ -16,7 +16,7 @@ The navigation control group style.
 
 ```swift
 @MainActor
-@preconcurrency static var navigation: NavigationControlGroupStyle { get }
+@export(implementation) @preconcurrency static var navigation: NavigationControlGroupStyle { get }
 ```
 
 #### Discussion

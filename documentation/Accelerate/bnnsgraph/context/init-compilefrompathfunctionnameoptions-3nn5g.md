@@ -8,7 +8,7 @@ Returns a new context that wraps a graph object which represents the compiled `.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst ?+
+- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS ?+

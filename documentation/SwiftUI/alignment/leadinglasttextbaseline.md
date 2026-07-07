@@ -17,6 +17,7 @@ A guide that marks the leading edge and bottom-most text baseline in a view.
 ## Declaration
 
 ```swift
+@export(implementation)
 static var leadingLastTextBaseline: Alignment { get }
 ```
 

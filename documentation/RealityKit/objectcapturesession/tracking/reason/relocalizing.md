@@ -8,7 +8,6 @@ The session is attempting to resume tracking after an interruption, such as the 
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst 17.0+
 
 ## Declaration
 

@@ -17,7 +17,7 @@ A `TabViewStyle` that implements a paged scrolling `TabView` with an index displ
 
 ```swift
 @MainActor
-@preconcurrency static func page(indexDisplayMode: PageTabViewStyle.IndexDisplayMode) -> PageTabViewStyle
+@export(implementation) @preconcurrency static func page(indexDisplayMode: PageTabViewStyle.IndexDisplayMode) -> PageTabViewStyle
 ```
 
 #### Discussion

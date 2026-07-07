@@ -8,7 +8,6 @@ Returns a `MutableSpan` over the backing memory of this view if the memory is in
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 
@@ -22,6 +21,11 @@ var contiguousElements: MutableSpan<Element>? { mutating get }
 #### Discussion
 
 > **Note**: `contiguous` here refers to elements in row-major order with zero padding.
+
+## See Also
+
+- [subscript<let rank : Int>(scalarAt _: InlineArray<rank, Int>) -> Element](ndarray/mutableview/subscript(scalarat:).md)
+  Access the element at a multi-dimensional `index`.
 
 
 ---

@@ -8,7 +8,6 @@ An error that indicates a problem in the system’s capture pipeline.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
 
 ## Declaration
 

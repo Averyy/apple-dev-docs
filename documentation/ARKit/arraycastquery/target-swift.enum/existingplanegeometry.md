@@ -8,7 +8,6 @@ A raycast target that requires a plane to have a definitive size and shape.
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

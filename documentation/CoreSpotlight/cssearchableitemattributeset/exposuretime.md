@@ -9,7 +9,7 @@ The time that the lens was open during exposure, in seconds.
 - iOS 9.0+
 - iPadOS 9.0+
 - Mac Catalyst 13.1+
-- macOS 10.13+
+- macOS 10.11+
 - visionOS 1.0+
 
 ## Declaration

@@ -74,9 +74,9 @@ This payload can only exist in a device profile. If the payload is present in a 
 
 ## Properties
 
-- `Comment` (string): This string appears in the System Policy UI. If it’s missing, `PayloadDisplayName` or `PayloadDescription` is entered into this field before the rule is added to the System Policy database.
+- `Comment` (string): This string appears in the System Policy UI. If it’s missing, the device enters `PayloadDisplayName` or `PayloadDescription` into this field before adding the rule to the System Policy database.
 - `Expiration` (date): The expiration date for rules being processed.
-- `LeafCertificate` (data): The single leaf certificate for the app that is in the allow list.
+- `LeafCertificate` (data): The single leaf certificate for the app that’s in the allow list.
 - `OperationType` (string): The type of operation.
 - `Priority` (number): The rule’s priority.
 - `Requirement` (string): The policy requirement. This key must follow the syntax described in [`Code Signing Requirement Language`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Security/Conceptual/CodeSigningGuide/RequirementLang/RequirementLang.html#//apple_ref/doc/uid/TP40005929-CH5).

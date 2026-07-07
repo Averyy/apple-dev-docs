@@ -8,7 +8,6 @@ Returns a new reference object created by applying the specified transform to th
 **Availability**:
 - iOS 12.0+
 - iPadOS 12.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

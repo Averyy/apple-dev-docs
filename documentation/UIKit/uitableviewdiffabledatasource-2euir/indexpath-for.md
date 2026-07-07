@@ -8,7 +8,7 @@ Returns an index path for the item with the specified identifier in the table vi
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst ?+
+- Mac Catalyst 13.0+
 - tvOS 13.0+
 - visionOS ?+
 

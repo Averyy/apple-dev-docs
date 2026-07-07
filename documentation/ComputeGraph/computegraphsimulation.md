@@ -1,6 +1,6 @@
 # ComputeGraphSimulation
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: class
 
 A simulation of particles, which use a single pipeline.
@@ -12,7 +12,7 @@ A simulation of particles, which use a single pipeline.
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 ## Declaration
 

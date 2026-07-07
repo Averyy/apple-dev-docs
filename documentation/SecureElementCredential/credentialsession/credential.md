@@ -8,7 +8,6 @@ Information about a credential that a credential session retrieves from the Secu
 **Availability**:
 - iOS 18.1+
 - iPadOS 18.1+
-- Mac Catalyst 18.1+
 
 ## Declaration
 

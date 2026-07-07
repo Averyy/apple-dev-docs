@@ -8,7 +8,6 @@ An array of dictionaries containing a list of ad network IDs.
 **Availability**:
 - iOS 11.3+
 - iPadOS 11.3+
-- Mac Catalyst 11.3+
 
 
 

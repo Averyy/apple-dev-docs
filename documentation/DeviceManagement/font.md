@@ -77,7 +77,7 @@ In iPadOS 18 and later, the font profile is available on the user channel for Sh
 ## Properties
 
 - `Font` (data) *(required)*: The contents of the font file.
-- `Name` (string): The user-visible name for the font. This field is replaced by the actual name of the font after installation. Each payload must contain exactly one font file in trueType (.ttf) or OpenType (.otf) format. Collection formats (.ttc or .otc) are not supported. Fonts are identified by their embedded PostScript names. Two fonts with the same PostScript name are considered to be the same font even if their contents differ. Installing two different fonts with the same PostScript name isn’t supported, and the resulting behavior is undefined.
+- `Name` (string): The user-visible name for the font. The device replaces this field with the actual name of the font after installation. Each payload must contain exactly one font file in trueType (.ttf) or OpenType (.otf) format. The device doesn’t support collection formats (.ttc or .otc). The device identifies fonts by their embedded PostScript names. The device considers two fonts with the same PostScript name to be the same font, even if their contents differ. The device doesn’t support installing two different fonts with the same PostScript name, and the resulting behavior is undefined.
 
 ## See Also
 

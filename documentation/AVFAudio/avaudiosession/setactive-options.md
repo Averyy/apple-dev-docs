@@ -43,7 +43,7 @@ When your app deactivates a session, the return value is [`false`](https://devel
 ## See Also
 
 - [func activate(options: AVAudioSessionActivationOptions, completionHandler: (Bool, (any Error)?) -> Void)](avaudiosession/activate(options:completionhandler:).md)
-  Activates an audio session asynchronously on watchOS.
+  Activates an audio session asynchronously.
 - [func deactivate(options: AVAudioSessionDeactivationOptions, completionHandler: (Bool, (any Error)?) -> Void)](avaudiosession/deactivate(options:completionhandler:).md)
   Deactivates the audio session asynchronously.
 - [struct AVAudioSessionActivationOptions](avaudiosessionactivationoptions.md)

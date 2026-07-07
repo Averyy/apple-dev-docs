@@ -15,6 +15,7 @@
 ## Declaration
 
 ```swift
+@export(implementation)
 static func buildIf(_ content: (some TabContent<TabValue>)?) -> (some TabContent<TabValue>)?
 ```
 

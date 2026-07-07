@@ -1,6 +1,6 @@
 # ComputeNodeGraph.NodeDefinition.Kind.function(name:bundle:)
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: case
 
 Node refers to a MTLFunction with name and optional bundle.
@@ -12,7 +12,7 @@ Node refers to a MTLFunction with name and optional bundle.
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 ## Declaration
 

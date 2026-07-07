@@ -78,7 +78,6 @@ A `RawSpan` instance is a non-owning, non-escaping view into memory. When a `Raw
   Returns a new instance of the given type, constructed from the raw memory at the specified offset.
 - [func unsafeLoadUnaligned<T>(fromUncheckedByteOffset: Int, as: T.Type) -> T](rawspan/unsafeloadunaligned(fromuncheckedbyteoffset:as:).md)
   Returns a new instance of the given type, constructed from the raw memory at the specified offset.
-- [func withBytes<R, E>((RawSpan) throws(E) -> R) throws(E) -> R](rawspan/withbytes(_:).md)
 - [func withUnsafeBytes<E, Result>((UnsafeRawBufferPointer) throws(E) -> Result) throws(E) -> Result](rawspan/withunsafebytes(_:).md)
   Calls the given closure with a pointer to the underlying bytes of the viewed contiguous storage.
 ### Subscripts
@@ -112,6 +111,7 @@ A `RawSpan` instance is a non-owning, non-escaping view into memory. When a `Raw
   `MutableSpan<Element>` represents a contiguous region of memory which contains initialized instances of `Element`.
 - [struct MutableRawSpan](mutablerawspan.md)
   `MutableRawSpan` represents a contiguous region of memory which contains initialized bytes.
+- [struct SpanIterator](spaniterator.md)
 
 
 ---

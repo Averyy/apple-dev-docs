@@ -8,7 +8,7 @@ Returns a count of the objects the specified request fetches when it executes.
 **Availability**:
 - iOS 3.0+
 - iPadOS 3.0+
-- Mac Catalyst ?+
+- Mac Catalyst 3.0+
 - macOS 10.5+
 - tvOS 3.0+
 - visionOS ?+

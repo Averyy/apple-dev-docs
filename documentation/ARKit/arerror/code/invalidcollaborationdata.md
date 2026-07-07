@@ -8,7 +8,6 @@ An error that indicates the framework fails to parse collaboration data the app 
 **Availability**:
 - iOS 13.2+
 - iPadOS 13.2+
-- Mac Catalyst 13.2+
 
 ## Declaration
 

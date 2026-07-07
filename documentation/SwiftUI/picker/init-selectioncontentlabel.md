@@ -17,8 +17,8 @@ Creates a picker that displays a custom label.
 ## Declaration
 
 ```swift
-nonisolated
-init(selection: Binding<SelectionValue>, @ContentBuilder content: () -> Content, @ContentBuilder label: () -> Label)
+@export(implementation)
+nonisolated init(selection: Binding<SelectionValue>, @ContentBuilder content: () -> Content, @ContentBuilder label: () -> Label)
 ```
 
 ## Parameters
@@ -30,7 +30,7 @@ init(selection: Binding<SelectionValue>, @ContentBuilder content: () -> Content,
 ## See Also
 
 - [init(_:selection:content:)](picker/init(_:selection:content:).md)
-  Creates a picker that generates its label from a localized string key.
+  Creates a picker that generates its label from a localized string resource.
 
 
 ---

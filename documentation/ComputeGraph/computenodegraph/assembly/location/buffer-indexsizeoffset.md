@@ -1,6 +1,6 @@
 # ComputeNodeGraph.Assembly.Location.buffer(index:sizeOffset:)
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: case
 
 Buffer that’s bound separately from other data. Size of buffer is stored at sizeOffset in uniforms
@@ -12,7 +12,7 @@ Buffer that’s bound separately from other data. Size of buffer is stored at si
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 ## Declaration
 

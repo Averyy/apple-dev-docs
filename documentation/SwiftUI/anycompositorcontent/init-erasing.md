@@ -10,8 +10,8 @@
 ## Declaration
 
 ```swift
-nonisolated
-init<T>(erasing: T) where T : CompositorContent
+@export(implementation)
+nonisolated init<T>(erasing: T) where T : CompositorContent
 ```
 
 

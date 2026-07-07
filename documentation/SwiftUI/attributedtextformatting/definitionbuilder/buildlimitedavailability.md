@@ -15,6 +15,7 @@
 ## Declaration
 
 ```swift
+@export(implementation)
 static func buildLimitedAvailability<D>(_ definition: D) -> AttributedTextFormatting.AnyDefinition<Scope> where Scope == D.Scope, D : AttributedTextFormattingDefinition
 ```
 

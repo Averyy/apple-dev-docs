@@ -15,6 +15,7 @@ Creates a row result for conditional statements.
 ## Declaration
 
 ```swift
+@export(implementation)
 static func buildIf<C>(_ content: C?) -> C? where Value == C.TableRowValue, C : TableRowContent
 ```
 

@@ -8,7 +8,6 @@ The game controller instance associated with this touch controller.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst 26.0+
 
 ## Declaration
 

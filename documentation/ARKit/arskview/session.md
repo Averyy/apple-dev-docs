@@ -8,7 +8,6 @@ The AR session that manages motion tracking and camera image processing for the 
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

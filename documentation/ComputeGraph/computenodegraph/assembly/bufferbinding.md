@@ -1,6 +1,6 @@
 # ComputeNodeGraph.Assembly.BufferBinding
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: struct
 
 Describes how a Metal buffer is bound to a compute pipeline stage.
@@ -12,7 +12,7 @@ Describes how a Metal buffer is bound to a compute pipeline stage.
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 ## Declaration
 

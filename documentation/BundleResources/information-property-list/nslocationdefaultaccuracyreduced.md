@@ -8,7 +8,6 @@ A Boolean value that indicates whether the app requests reduced location accurac
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
 - visionOS 1.0+
 - watchOS 7.0+
 

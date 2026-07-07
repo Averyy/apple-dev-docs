@@ -147,7 +147,7 @@ Specify `com.apple.vpn.managed` as the payload type.
 - F5 SSL: `com.f5.F5-Edge-Client.vpnplugin`
 - SonicWALL Mobile Connect: `com.sonicwall.SonicWALL-SSLVPN.vpnplugin`
 - ``Aruba VIA: `com.arubanetworks.aruba-via.vpnplugin` If the configuration targets a VPN solution that uses a network extension provider, then this field contains the bundle identifier of the app that contains the provider. Contact the VPN solution vendor for the value of the identifier. If `VPNType` is `IKEv2`, then the `VPNSubType` field is optional and reserved for future use. If it’s specified, it needs to contain an empty string. Not available in watchOS.
-- `VPNType` (string) *(required)*: The type of the VPN, which defines which settings are appropriate for this VPN payload. If the type is `VPN` or `TransparentProxy`, then the system requires a value for `VPNSubType`. `TransparentProxy` is only available in macOS. `L2TP` and `IPSec` aren’t available in tvOS. `AlwaysOn` is only available on iOS and Apple Watch pairing isn’t supported with `AlwaysOn`. For a previously paired Apple Watch, all phone-watch communications cease when `AlwaysOn` is enabled. Not available in watchOS.
+- `VPNType` (string) *(required)*: The type of the VPN, which defines which settings are appropriate for this VPN payload. If the type is `VPN` or `TransparentProxy`, then the system requires a value for `VPNSubType`. `TransparentProxy` is only available in macOS. `L2TP` and `IPSec` aren’t available in tvOS. `AlwaysOn` is only available on iOS and `AlwaysOn` doesn’t support Apple Watch pairing. For a previously paired Apple Watch, all phone-watch communications cease when `AlwaysOn` is enabled. Not available in watchOS.
 
 ## See Also
 

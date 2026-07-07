@@ -8,7 +8,7 @@ The endpoint that the filter manager sends blocked URL reports to.
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst ?+
+- Mac Catalyst 27.0+ (Beta)
 - macOS 27.0+ (Beta)
 
 ## Declaration

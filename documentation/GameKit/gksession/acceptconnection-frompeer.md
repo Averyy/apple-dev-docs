@@ -8,7 +8,6 @@ Called by the delegate to accept a connection request received from a remote pee
 **Availability**:
 - iOS 3.0+
 - iPadOS 3.0+
-- Mac Catalyst 3.0+
 - macOS 10.8+
 - visionOS 1.0+
 - watchOS 2.0+

@@ -8,7 +8,6 @@ An immutable view of this mutable view.
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 
@@ -18,6 +17,11 @@ An immutable view of this mutable view.
 @export(implementation)
 var view: NDArray.View<Element> { get }
 ```
+
+## See Also
+
+- [var mutableRawView: NDArray.MutableRawView](ndarray/mutableview/mutablerawview.md)
+  Returns a mutable raw view over the same data.
 
 
 ---

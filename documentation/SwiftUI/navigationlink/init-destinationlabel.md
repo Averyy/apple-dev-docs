@@ -17,8 +17,8 @@ Creates a navigation link that presents the destination view.
 ## Declaration
 
 ```swift
-nonisolated
-init(@ContentBuilder destination: () -> Destination, @ContentBuilder label: () -> Label)
+@export(implementation)
+nonisolated init(@ContentBuilder destination: () -> Destination, @ContentBuilder label: () -> Label)
 ```
 
 ## Mentions

@@ -8,7 +8,7 @@ A pixel buffer pool that will vend and efficiently recycle pixel buffer objects 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst 26.0+
 - macOS 26.0+
 - visionOS 26.0+
 

@@ -16,7 +16,7 @@ A text editor style with no decoration.
 
 ```swift
 @MainActor
-@preconcurrency static var plain: PlainTextEditorStyle { get }
+@export(implementation) @preconcurrency static var plain: PlainTextEditorStyle { get }
 ```
 
 ## See Also

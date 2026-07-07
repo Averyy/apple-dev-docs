@@ -52,23 +52,25 @@ If you’ve trained a model in [`MLX`](https://developer.apple.comhttps://ml-exp
 
 ---
 
-#### Evaluate the Quality of Your Custom Models
-
-Evaluating the performance of models is an important task of machine learning. In Xcode, preview your model’s behavior by using sample data files or using the device’s camera and microphone. Review the performance of your model’s predictions directly from Xcode, or [`Analyzing model runtime performance with Instruments`](https://developer.apple.com/documentation/CoreAI/analyzing-model-runtime-performance-with-instruments) to get a thorough performance analysis. After adding a model to your project, select it to see the expected prediction latency, load times, and which compute units support and run each operation.
-
-![An Xcode screenshot that shows a selected model file. The UI shows the performance report for the Resnet50 image classification model with median times for prediction, load, and compilation. It also shows the compute unit mapping and that each unit ran on the Neural Engine.](https://docs-assets.developer.apple.com/published/f2802f7da80e540fc2f173f4c4fbd630/xcode-model-performance-tab%402x.png)
-
-To build a deeper understanding of the model you’re working with, Xcode allows you to visualize the structure of the full model architecture and dive into the details of any operation. This visualization helps you debug issues and find performance enhancing opportunities.
-
----
-
-#### Measure the Quality of Your Intelligence Powered Features
+#### Evaluate the Quality of Your Intelligence Powered Features
 
 When your feature depends on a generative model, use the [`Evaluations`](https://developer.apple.com/documentation/Evaluations) framework to see how well it’s working. Evaluations provides a systematic way to measure the output quality of any intelligence-powered feature you build, and a way to catch regressions when an underlying model changes or your prompt evolves.
 
 An [`Evaluating language model responses`](https://developer.apple.com/documentation/Evaluations/evaluating-language-model-responses) bundles the feature under test, a dataset of representative inputs, and evaluators that score each response. Use code-based evaluators for criteria with a clear programmatic definition, and use a [`ModelJudgeEvaluator`](https://developer.apple.com/documentation/Evaluations/ModelJudgeEvaluator) to score subjective qualities like tone, helpfulness, or accuracy.
 
+![An Xcode screenshot of an Evaluations results view. The left pane shows precision, recall, and accuracy ratios for a sentiment classification evaluation, each with a pass rate and bar chart. The right pane shows a single sample with pass results for accuracy, recall, and precision, confidence scores, and a table of scored responses.](https://docs-assets.developer.apple.com/published/87c236147cf1f327bf4ab4e15d2c1461/evaluations-framework%402x.png)
+
 Run evaluations from Xcode to view results and compare them against previous runs. Integrate evaluations into your everyday workflow to track quality over time and build confidence before shipping your app.
+
+---
+
+#### Measure the Performance of Your Custom Models
+
+Measuring the performance of models is an important task of machine learning. In Xcode, preview your model’s behavior by using sample data files or using the device’s camera and microphone. Review the performance of your model’s predictions directly from Xcode, or [`Analyzing model runtime performance with Instruments`](https://developer.apple.com/documentation/CoreAI/analyzing-model-runtime-performance-with-instruments) to get a thorough performance analysis. After adding a model to your project, select it to see the expected prediction latency, load times, and which compute units support and run each operation.
+
+![An Xcode screenshot that shows a selected model file. The UI shows the performance report for the Resnet50 image classification model with median times for prediction, load, and compilation. It also shows the compute unit mapping and that each unit ran on the Neural Engine.](https://docs-assets.developer.apple.com/published/f2802f7da80e540fc2f173f4c4fbd630/xcode-model-performance-tab%402x.png)
+
+To build a deeper understanding of the model you’re working with, Xcode allows you to visualize the structure of the full model architecture and dive into the details of any operation. This visualization helps you debug issues and find performance enhancing opportunities.
 
 ---
 

@@ -1,6 +1,6 @@
 # ComputeNodeGraph.Assembly.Location.constantBuffer(index:offset:)
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: case
 
 Value is in the constantBuffers table at the specified index and offset
@@ -12,7 +12,7 @@ Value is in the constantBuffers table at the specified index and offset
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 ## Declaration
 

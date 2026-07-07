@@ -16,6 +16,7 @@ The current drag velocity.
 ## Declaration
 
 ```swift
+@export(implementation)
 var velocity: CGSize { get }
 ```
 

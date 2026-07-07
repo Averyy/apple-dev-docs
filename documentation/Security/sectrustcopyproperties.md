@@ -8,7 +8,6 @@ Returns an array containing the properties of a trust object.
 **Availability**:
 - iOS 2.0+
 - iPadOS 2.0+
-- Mac Catalyst 2.0+
 - macOS 10.7+
 - tvOS 9.0+
 - visionOS 1.0+

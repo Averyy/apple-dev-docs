@@ -98,13 +98,6 @@ If you don’t provide a custom label, the system provides a button with the def
 - [init(_:contentType:source:prepareDocumentURL:)](newdocumentbutton/init(_:contenttype:source:preparedocumenturl:).md)
   Creates and opens new URL-based documents from a template picker.
 - [init(_:for:contentType:prepareDocument:)](newdocumentbutton/init(_:for:contenttype:preparedocument:).md)
-  Creates and opens new documents.
-- [init(_:for:contentType:source:_:)](newdocumentbutton/init(_:for:contenttype:source:_:).md)
-  Creates and opens new documents from a template picker.
-- [init(for:source:)](newdocumentbutton/init(for:source:).md)
-  Creates a button that creates new documents using data from pasteboard.
-- [init(source: NewDocumentButtonDataSource)](newdocumentbutton/init(source:).md)
-  Creates and opens new documents from a specified source.
 
 ## Relationships
 
@@ -131,8 +124,6 @@ If you don’t provide a custom label, the system provides a button with the def
   A proxy for access to the frame of the scene and its title view.
 - [struct DefaultDocumentGroupLaunchActions](defaultdocumentgrouplaunchactions.md)
   The default actions for the document group launch scene and the document launch view.
-- [struct NewDocumentButtonDataSource](newdocumentbuttondatasource.md)
-  Describes the source of data used to create a new document.
 - [struct DefaultNewDocumentButtonLabel](defaultnewdocumentbuttonlabel.md)
   The default label used for a new document button.
 - [struct DocumentCreationSource](documentcreationsource.md)

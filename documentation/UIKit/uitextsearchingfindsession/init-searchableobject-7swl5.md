@@ -8,7 +8,7 @@ Initializes an object to manage the search for the searchable object you specify
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst ?+
+- Mac Catalyst 16.0+
 - visionOS ?+
 
 ## Declaration

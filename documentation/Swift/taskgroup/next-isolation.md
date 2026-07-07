@@ -71,7 +71,7 @@ Don’t call this method from outside the task where you created this task group
 - [func next() async -> ChildTaskResult?](taskgroup/next.md)
 - [var isEmpty: Bool](taskgroup/isempty.md)
   A Boolean value that indicates whether the group has any remaining tasks.
-- [func waitForAll(isolation: isolated (any Actor)?) async](taskgroup/waitforall(isolation:).md)
+- [func waitForAll() async](taskgroup/waitforall.md)
   Wait for all of the group’s remaining tasks to complete.
 
 

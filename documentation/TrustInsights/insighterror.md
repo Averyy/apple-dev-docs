@@ -33,12 +33,10 @@ Error values the framework returns for specific insights within the overall eval
 ## Relationships
 
 ### Conforms To
-- [Copyable](../Swift/Copyable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Error](../Swift/Error.md)
-- [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
-- [RawRepresentable](../Swift/RawRepresentable.md)
+- [LocalizedError](../Foundation/LocalizedError.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 

@@ -83,7 +83,7 @@ For design guidance, see [`Lists and tables`](https://developer.apple.com/design
   The prominence of backgrounds underneath other views.
 ### Displaying a badge on a list item
 - [func badge(_:)](view/badge(_:).md)
-  Generates a badge for the view from an integer value.
+  Generates a badge for the view from a localized string resource.
 - [func badgeProminence(BadgeProminence) -> some View](view/badgeprominence(_:).md)
   Specifies the prominence of badges created by this view.
 - [var badgeProminence: BadgeProminence](environmentvalues/badgeprominence.md)

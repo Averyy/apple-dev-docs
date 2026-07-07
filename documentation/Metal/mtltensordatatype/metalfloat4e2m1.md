@@ -10,6 +10,8 @@ A 4-bit floating point format data type with 2 exponent bits, 1 mantissa bit and
 - iPadOS 27.0+ (Beta)
 - Mac Catalyst 27.0+ (Beta)
 - macOS 27.0+ (Beta)
+- tvOS 27.0+ (Beta)
+- visionOS 27.0+ (Beta)
 
 ## Declaration
 

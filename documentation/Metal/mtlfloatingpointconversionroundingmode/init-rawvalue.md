@@ -4,8 +4,12 @@
 **Kind**: init
 
 **Availability**:
+- iOS ?+
+- iPadOS ?+
 - Mac Catalyst ?+
 - macOS ?+
+- tvOS ?+
+- visionOS ?+
 
 ## Declaration
 

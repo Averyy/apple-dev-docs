@@ -8,7 +8,7 @@ Creates a warp geometry grid of a specific size and warp translation, in point a
 **Availability**:
 - iOS 10.0+
 - iPadOS 10.0+
-- Mac Catalyst ?+
+- Mac Catalyst 10.0+
 - macOS 10.12+
 - tvOS 10.0+
 - visionOS ?+

@@ -8,7 +8,6 @@ A background placement behind the marketing content of a subscription store view
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 18.0+
 

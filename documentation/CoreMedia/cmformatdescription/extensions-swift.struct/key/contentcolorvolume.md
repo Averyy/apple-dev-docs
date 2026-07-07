@@ -8,7 +8,7 @@ Matches payload of ITU-T-H.265:11/2019, D.2.40 Content Colour Volume SEI message
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst ?+
+- Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
 - visionOS 1.0+

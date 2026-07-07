@@ -3,6 +3,8 @@
 **Framework**: SwiftUI  
 **Kind**: struct
 
+The feathered glass background effect.
+
 **Availability**:
 - visionOS 2.4+
 
@@ -12,7 +14,7 @@
 struct FeatheredGlassBackgroundEffect
 ```
 
-##### Overview
+#### Overview
 
 You can also use [`feathered`](glassbackgroundeffect/feathered.md) to construct this effect.
 
@@ -24,7 +26,7 @@ The layout size of a view with feathered glass background is based on the conten
 - [init()](featheredglassbackgroundeffect/init.md)
   Creates a feathered glass background effect.
 - [init(padding: CGFloat, softEdgeRadius: CGFloat?)](featheredglassbackgroundeffect/init(padding:softedgeradius:).md)
-  Creates a feathered glass background effect.
+  Creates a feathered glassBackground effect.
 
 ## Relationships
 

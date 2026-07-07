@@ -16,6 +16,8 @@ The Hitches pane of the Xcode Organizer window displays information about the hi
 
 Hitch-rate data is only available for iOS and iPadOS devices.
 
+> **Note**: The Hitches instrument and hitch-rate metrics aren’t available for visionOS. Use the RealityKit Trace template in Instruments to analyze rendering performance and dropped frames. For more information, see [`Analyzing the performance of your visionOS app`](https://developer.apple.com/documentation/visionOS/analyzing-the-performance-of-your-visionOS-app).
+
 ##### View Your Apps Hang Rate
 
 Xcode Organizer reports the hang rate as the number of seconds per hour that the app is unresponsive, while only counting periods of unresponsiveness of more than 250 ms. The Organizer window shows both the median hang rate of a typical user experience, and the extreme 90th percentile hang rate. [`MetricKit`](https://developer.apple.com/documentation/MetricKit) provides the same hang rate metric as a histogram.
@@ -24,7 +26,7 @@ Xcode Organizer reports the hang rate as the number of seconds per hour that the
 
 Apple operating systems support a broad variety of devices with different hardware capabilities and performance characteristics. Code that performs flawlessly on one hardware model can hang on another. Use the device filter at the top of the Organizer window to filter the hang rate for specific device types and uncover hangs that only manifest in certain circumstances.
 
-Hang rate data is available for iOS and macOS devices.
+Hang rate data is available for iOS, macOS, and visionOS devices.
 
 ##### Analyze Hang Reports to Determine a Course of Action
 

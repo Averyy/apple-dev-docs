@@ -8,7 +8,7 @@ A transition where the new view slides up from the bottom of the screen.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst ?+
+- Mac Catalyst 18.0+
 - tvOS ?+
 - visionOS ?+
 

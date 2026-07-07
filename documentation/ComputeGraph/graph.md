@@ -1,13 +1,13 @@
 # graph
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: namespace
 
 A set of nodes usable in any stage within a ComputeGraph.
 
 **Availability**:
-- macOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- macOS ?+
+- Reality Composer Pro ?+
 
 ## Topics
 

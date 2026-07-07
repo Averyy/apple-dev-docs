@@ -8,7 +8,6 @@ Called when the provider performs the specified set translation action.
 **Availability**:
 - iOS 10.0+
 - iPadOS 10.0+
-- Mac Catalyst 10.0+
 
 ## Declaration
 

@@ -18,16 +18,15 @@ protocol ReadWriteOperations : NSObjectProtocol
 
 Most volumes conform to either this protocol or [`FSVolumeKernelOffloadedIOOperations`](fsvolumekerneloffloadediooperations.md). You can conform to both if you need to provide kernel-offloaded I/O only for certain files. In that case, files with the [`inhibitKernelOffloadedIO`](fsitem/attribute/inhibitkerneloffloadedio.md) attribute set use this protocol, and those without it use [`FSVolumeKernelOffloadedIOOperations`](fsvolumekerneloffloadediooperations.md). A volume that doesn’t conform to either protocol can’t support any I/O operation.
 
-> **Note**:  Use [`FSVolume.ReadWriteHandler`](fsvolume/readwritehandler.md) instead.
+> **Note**: Use [`FSVolume.ReadWriteHandler`](fsvolume/readwritehandler.md) instead.
 
 ## Topics
 
 ### Reading and writing
-- [class FSMutableFileDataBuffer](fsmutablefiledatabuffer.md)
-  A wrapper object for a data buffer.
-### Instance Methods
 - [func read(from: FSItem, at: off_t, length: Int, into: FSMutableFileDataBuffer, replyHandler: (Int, (any Error)?) -> Void)](fsvolume/readwriteoperations/read(from:at:length:into:replyhandler:).md)
   Reads the contents of the given file item.
+- [class FSMutableFileDataBuffer](fsmutablefiledatabuffer.md)
+  A wrapper object for a data buffer.
 - [func write(contents: Data, to: FSItem, at: off_t, replyHandler: (Int, (any Error)?) -> Void)](fsvolume/readwriteoperations/write(contents:to:at:replyhandler:).md)
   Writes contents to the given file item.
 

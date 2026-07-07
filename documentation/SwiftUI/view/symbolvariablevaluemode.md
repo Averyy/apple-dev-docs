@@ -17,8 +17,8 @@ Sets the variable value mode mode for symbol images within this view.
 ## Declaration
 
 ```swift
-nonisolated
-func symbolVariableValueMode(_ mode: SymbolVariableValueMode?) -> some View
+@export(implementation)
+nonisolated func symbolVariableValueMode(_ mode: SymbolVariableValueMode?) -> some View
 ```
 
 #### Return Value

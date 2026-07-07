@@ -57,7 +57,7 @@ Immersive Media Support enables you to create custom workflows for processing Ap
   An object that helps convert the original wide field of view video asset to parametric immersive asset.
 ### Immersive video rendering support
 - [struct ImmersiveVideoFrame](immersivevideoframe.md)
-  A type that represents an immersive video frame. An immersive video frame contains: - layout (SideBySide, OverUnder, Separate, Mono) - presentationTime: frame presentation time - pixelBuffers: an array with one or more images representing the frame.
+  A type that represents an immersive video frame, including its layout, presentation time, and pixel buffer data.
 - [struct ImmersiveCameraViewModel](immersivecameraviewmodel.md)
   A view model that holds all the resources needed to render an immersive camera view.
 - [struct ImmersiveVideoMask](immersivevideomask.md)

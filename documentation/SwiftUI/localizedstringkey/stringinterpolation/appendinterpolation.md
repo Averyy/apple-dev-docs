@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: method
 
-Appends an attributed string to a string interpolation.
+Appends an attributed substring to a string interpolation.
 
 **Availability**:
 - iOS 15.0+
@@ -17,35 +17,25 @@ Appends an attributed string to a string interpolation.
 ## Declaration
 
 ```swift
-mutating func appendInterpolation(_ attributedString: AttributedString)
+@export(implementation)
+mutating func appendInterpolation(_ attributedSubstring: AttributedSubstring)
 ```
 
 #### Discussion
 
 Don’t call this method directly; it’s used by the compiler when interpreting string interpolations.
 
-The following example shows how to use a string interpolation to format an [`AttributedString`](https://developer.apple.com/documentation/Foundation/AttributedString) and append it to static text. The resulting interpolation implicitly creates a [`LocalizedStringKey`](localizedstringkey.md), which a [`Text`](text.md) view uses to provide its content.
+The following example shows how to use a string interpolation to format an [`AttributedSubstring`](https://developer.apple.com/documentation/Foundation/AttributedSubstring) and append it to static text. The resulting interpolation implicitly creates a [`LocalizedStringKey`](localizedstringkey.md), which a [`Text`](text.md) view uses to provide its content.
 
 ```swift
 struct ContentView: View {
 
-    var nextDate: AttributedString {
-        var result = Calendar.current
-            .nextWeekend(startingAfter: Date.now)!
-            .start
-            .formatted(
-                .dateTime
-                .month(.wide)
-                .day()
-                .attributed
-            )
-        result.backgroundColor = .green
-        result.foregroundColor = .white
-        return result
+    var identificationNumberSuffix: AttributedSubstring {
+        // …
     }
 
     var body: some View {
-        Text("Our next catch-up is on \(nextDate)!")
+        Text("Identification: •••• •••• \(identificationNumberSuffix)!")
     }
 }
 ```
@@ -53,16 +43,14 @@ struct ContentView: View {
 For this example, assume that the app runs on a device set to a Russian locale, and has the following entry in a Russian-localized `Localizable.strings` file:
 
 ```swift
-"Our next catch-up is on %@!" = "Наша следующая встреча состоится %@!";
+"Identification: •••• •••• %@" = "Идентификация: •••• •••• %@";
 ```
 
-The attributed string `nextDate` replaces the format specifier `%@`,  maintaining its color and date-formatting attributes, when the [`Text`](text.md) view renders its contents:
-
-![A text view with Russian text, ending with a date that uses white](https://docs-assets.developer.apple.com/published/68c95cae63ea252ddb42d0cfdba106dd/LocalizedStringKey-AttributedString-Russian%402x.png)
+The attributed string `identificationNumberSuffix` replaces the format specifier `%@`,  maintaining its color attributes, when the [`Text`](text.md) view renders its contents:
 
 ## Parameters
 
-- `attributedString`: The attributed string to append.
+- `attributedSubstring`: The attributed substring to append.
 
 ## See Also
 

@@ -55,7 +55,7 @@ Text("Rotation by passing an angle in degrees")
 - [func rotation3DEffect(Rotation3D, anchor: UnitPoint3D) -> some VisualEffect](visualeffect/rotation3deffect(_:anchor:).md)
   Rotates content by the specified 3D rotation value.
 - [func rotation3DEffect(_:axis:anchor:)](visualeffect/rotation3deffect(_:axis:anchor:).md)
-  Rotates content by an angle about an axis that you specify as a tuple of elements.
+  Rotates content by an angle about an axis that you specify as a rotation axis value.
 
 
 ---

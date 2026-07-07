@@ -5,6 +5,10 @@
 
 Initializes a new object scanning configuration.
 
+**Availability**:
+- iOS ?+
+- iPadOS ?+
+
 ## Declaration
 
 ```swift

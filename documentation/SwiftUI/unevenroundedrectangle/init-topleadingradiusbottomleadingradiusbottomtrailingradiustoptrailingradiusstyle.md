@@ -17,6 +17,7 @@ Creates a new rounded rectangle shape with uneven corners.
 ## Declaration
 
 ```swift
+@export(implementation)
 init(topLeadingRadius: CGFloat = 0, bottomLeadingRadius: CGFloat = 0, bottomTrailingRadius: CGFloat = 0, topTrailingRadius: CGFloat = 0, style: RoundedCornerStyle = .continuous)
 ```
 

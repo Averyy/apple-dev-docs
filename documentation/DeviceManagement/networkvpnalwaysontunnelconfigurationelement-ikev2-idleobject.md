@@ -32,8 +32,6 @@ object NetworkVPNAlwaysOnTunnelConfigurationElement_IKEV2_IdleObject
   These parameters apply to Child Security Association unless `ChildSecurityAssociationParameters` is specified.
 - [object NetworkVPNAlwaysOnTunnelConfigurationElement_IKEV2_AuthenticationObject](networkvpnalwaysontunnelconfigurationelement_ikev2_authenticationobject.md)
   Settings that control authentication.
-- [object NetworkVPNAlwaysOnTunnelConfigurationElement_IKEV2_NetworkRoutingObject](networkvpnalwaysontunnelconfigurationelement_ikev2_networkroutingobject.md)
-  Specifies details about how the VPN routes different types of network traffic.
 - [object NetworkVPNAlwaysOnTunnelConfigurationElement_IKEV2_OnDemandObject](networkvpnalwaysontunnelconfigurationelement_ikev2_ondemandobject.md)
   Specifies details about how the system controls on-demand VPN.
 - [object NetworkVPNAlwaysOnTunnelConfigurationElement_IKEV2_PostQuantumKeyExchangeObject](networkvpnalwaysontunnelconfigurationelement_ikev2_postquantumkeyexchangeobject.md)

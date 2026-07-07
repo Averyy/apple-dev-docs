@@ -8,7 +8,6 @@ An asynchronous sequence you use to observe whether your app can start a Live Ac
 **Availability**:
 - iOS 16.1+
 - iPadOS 16.1+
-- Mac Catalyst 16.1+
 
 ## Declaration
 

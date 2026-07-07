@@ -17,6 +17,7 @@ A context-dependent gray color suitable for use in UI elements.
 ## Declaration
 
 ```swift
+@export(implementation)
 static var gray: Color { get }
 ```
 

@@ -1,6 +1,6 @@
 # type
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: property
 
 The texture type (e.g. `.type2D`, `.typeCube`), or `nil` if unspecified.
@@ -12,7 +12,7 @@ The texture type (e.g. `.type2D`, `.typeCube`), or `nil` if unspecified.
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 ## Declaration
 

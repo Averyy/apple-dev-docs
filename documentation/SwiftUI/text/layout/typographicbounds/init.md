@@ -17,6 +17,7 @@ Initializes to an empty bounds with zero origin.
 ## Declaration
 
 ```swift
+@export(implementation)
 init()
 ```
 

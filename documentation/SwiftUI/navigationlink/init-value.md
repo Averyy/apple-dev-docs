@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: init
 
-Creates a navigation link that presents the view corresponding to a codable value, with a text label that the link generates from a localized string key.
+Creates a navigation link that presents the view corresponding to a codable value, with a text label that the link generates from a localized string resource.
 
 **Availability**:
 - iOS 16.0+
@@ -17,8 +17,8 @@ Creates a navigation link that presents the view corresponding to a codable valu
 ## Declaration
 
 ```swift
-nonisolated
-init<P>(_ titleKey: LocalizedStringKey, value: P?) where Label == Text, P : Decodable, P : Encodable, P : Hashable
+@export(implementation)
+nonisolated init<P>(_ titleResource: LocalizedStringResource, value: P?) where Label == Text, P : Decodable, P : Encodable, P : Hashable
 ```
 
 ## Mentions
@@ -38,7 +38,7 @@ Because this initializer takes a value that conforms to the [`Codable`](https://
 
 ## Parameters
 
-- `titleKey`: A localized string that describes the view that this link presents.
+- `titleResource`: A localized string that describes the view that this link presents.
 - `value`: An optional value to present. When someone taps or clicks the link, SwiftUI stores a copy of the value. Pass a `nil` value to disable the link.
 
 ## See Also

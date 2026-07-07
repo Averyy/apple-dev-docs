@@ -8,7 +8,6 @@ A specialized model for running inference on a device.
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 
@@ -52,10 +51,9 @@ Use [`functionDescriptor(for:)`](aimodel/functiondescriptor(for:).md) to inspect
 ### Specializing a model
 - [static func specialize(contentsOf: URL, options: SpecializationOptions, cache: AIModelCache, cachePolicy: AIModelCache.Policy) async throws -> AIModel](aimodel/specialize(contentsof:options:cache:cachepolicy:).md)
   Specializes a model for the current device.
-### Instance Properties
+### Inspecting a model
 - [var bookmarkData: Data](aimodel/bookmarkdata.md)
   Create a bookmark for this AIModel’s cached specialized asset entry as serialized data.
-### Type Properties
 - [static var deviceArchitectureName: String](aimodel/devicearchitecturename.md)
   The Core AI architecture name of the current device.
 

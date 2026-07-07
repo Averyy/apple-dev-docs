@@ -1,6 +1,6 @@
 # color
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: property
 
 The initial color and alpha (transparency) of the particle.
@@ -12,7 +12,7 @@ The initial color and alpha (transparency) of the particle.
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 ## Declaration
 

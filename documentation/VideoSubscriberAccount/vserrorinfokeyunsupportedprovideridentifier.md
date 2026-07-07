@@ -8,7 +8,6 @@ The identifier of the unsupported subscription provider.
 **Availability**:
 - iOS 10.2+
 - iPadOS 10.2+
-- Mac Catalyst 10.2+
 - macOS ?+
 - tvOS 10.2+
 - visionOS 1.0+

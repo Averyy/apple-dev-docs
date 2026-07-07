@@ -8,7 +8,6 @@ Returns a joint name that corresponds to a key point defined in a human body pos
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
 
 ## Declaration
 

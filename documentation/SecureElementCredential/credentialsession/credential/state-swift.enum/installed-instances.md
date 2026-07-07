@@ -8,7 +8,6 @@ The credential installation is complete for one or more instances.
 **Availability**:
 - iOS 18.1+
 - iPadOS 18.1+
-- Mac Catalyst 18.1+
 
 ## Declaration
 

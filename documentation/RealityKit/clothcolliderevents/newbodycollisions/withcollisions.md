@@ -8,7 +8,6 @@ Provides access to the collisions with cloth bodies that took place.
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 
 ## Declaration

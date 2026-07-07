@@ -8,7 +8,6 @@ An anchor for a unique face that is visible in the front-facing camera.
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

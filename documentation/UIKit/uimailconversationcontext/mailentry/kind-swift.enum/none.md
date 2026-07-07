@@ -8,7 +8,6 @@ The email does not fit in a specific category.
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
-- Mac Catalyst 18.4+
 
 ## Declaration
 

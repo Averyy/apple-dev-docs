@@ -8,7 +8,6 @@ The session’s condition with respect to geographic tracking at the time the se
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
 
 ## Declaration
 

@@ -8,7 +8,6 @@ An object that contains details about the location and content of text and glyph
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
 - visionOS 1.0+
 
 ## Declaration

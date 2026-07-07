@@ -8,7 +8,6 @@ Restart the polling sequence in this session to discover new tags using the prov
 **Availability**:
 - iOS 26.4+
 - iPadOS 26.4+
-- Mac Catalyst 26.4+
 
 ## Declaration
 

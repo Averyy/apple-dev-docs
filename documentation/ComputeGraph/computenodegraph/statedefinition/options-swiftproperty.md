@@ -1,6 +1,6 @@
 # options
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: property
 
 Whether this state is read, written, or both. See [`ComputeNodeGraph.StateDefinition.Options`](computenodegraph/statedefinition/options-swift.struct.md).
@@ -12,7 +12,7 @@ Whether this state is read, written, or both. See [`ComputeNodeGraph.StateDefini
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 ## Declaration
 

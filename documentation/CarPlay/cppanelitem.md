@@ -22,6 +22,10 @@ Subclasses represent items specific to a particular template context (e.g., @c C
 
 ### Initializers
 - [init?(coder: NSCoder)](cppanelitem/init(coder:).md)
+- [init(gridButtons: [CPGridButton])](cppanelitem/init(gridbuttons:).md)
+  Initializes a panel item wrapping an array of @c CPGridButton objects.
+- [init(listItem: CPListItem)](cppanelitem/init(listitem:).md)
+  Initializes a panel item wrapping a @c CPListItem.
 ### Instance Properties
 - [var isEnabled: Bool](cppanelitem/isenabled.md)
   Whether the item is interactable. Defaults to @c YES.

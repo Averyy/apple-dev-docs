@@ -16,7 +16,7 @@ The default table style in the current context.
 
 ```swift
 @MainActor
-@preconcurrency static var automatic: AutomaticTableStyle { get }
+@export(implementation) @preconcurrency static var automatic: AutomaticTableStyle { get }
 ```
 
 ## See Also

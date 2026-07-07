@@ -12,6 +12,7 @@ Processes scene content for a conditional compiler-control statement that perfor
 ## Declaration
 
 ```swift
+@export(implementation)
 static func buildLimitedAvailability(_ content: some CompositorContent) -> _LimitedAvailabilityCompositorContent
 ```
 

@@ -8,7 +8,6 @@ A one-time request for user permission to begin an interaction session with near
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
 
 
 

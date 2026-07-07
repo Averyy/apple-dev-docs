@@ -18,7 +18,7 @@ Returns a transition that scales the view by the specified amount.
 
 ```swift
 @MainActor
-@preconcurrency static func scale(_ scale: Double, anchor: UnitPoint = .center) -> Self
+@export(implementation) @preconcurrency static func scale(_ scale: Double, anchor: UnitPoint = .center) -> Self
 ```
 
 ## See Also

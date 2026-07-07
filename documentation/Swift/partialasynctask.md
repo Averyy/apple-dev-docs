@@ -20,25 +20,27 @@ typealias PartialAsyncTask = UnownedJob
 
 ## See Also
 
-- [protocol Executor](executor.md)
-  A service that can execute jobs.
-- [struct ExecutorJob](executorjob.md)
-  A unit of schedulable work.
-- [protocol SerialExecutor](serialexecutor.md)
-  A service that executes jobs.
-- [protocol TaskExecutor](taskexecutor.md)
-  An executor that may be used as preferred executor by a task.
-- [struct UnownedJob](unownedjob.md)
-  A unit of schedulable work.
-- [struct JobPriority](jobpriority.md)
-  The priority of this job.
-- [struct UnownedSerialExecutor](unownedserialexecutor.md)
-  An unowned reference to a serial executor (a `SerialExecutor` value).
-- [struct UnownedTaskExecutor](unownedtaskexecutor.md)
-- [var globalConcurrentExecutor: any TaskExecutor](globalconcurrentexecutor.md)
-  The global concurrent executor that is used by default for Swift Concurrency tasks.
-- [func withTaskExecutorPreference<T, Failure>((any TaskExecutor)?, isolation: isolated (any Actor)?, operation: () async throws(Failure) -> T) async throws(Failure) -> T](withtaskexecutorpreference(_:isolation:operation:).md)
-  Configure the current task hierarchy’s task executor preference to the passed [`TaskExecutor`](taskexecutor.md), and execute the passed in closure by immediately hopping to that executor.
+- [func extractIsolation<each Arg, Result>((repeat each Arg) async throws -> Result) -> (any Actor)?](extractisolation(_:).md)
+- [func withCheckedContinuation<T>(isolation: isolated (any Actor)?, function: String, (CheckedContinuation<T, Never>) -> Void) async -> sending T](withcheckedcontinuation(isolation:function:_:).md)
+  Source-compatibility overload; replaced by [`withCheckedContinuation(function:_:)`](withcheckedcontinuation(function:_:).md).
+- [func withCheckedThrowingContinuation<T>(isolation: isolated (any Actor)?, function: String, (CheckedContinuation<T, any Error>) -> Void) async throws -> sending T](withcheckedthrowingcontinuation(isolation:function:_:).md)
+  Source-compatibility overload; replaced by `withCheckedThrowingContinuation(function:_:)`.
+- [func withUnsafeContinuation<T>(isolation: isolated (any Actor)?, (UnsafeContinuation<T, Never>) -> Void) async -> sending T](withunsafecontinuation(isolation:_:).md)
+  Source-compatibility overload; replaced by [`withUnsafeContinuation(_:)`](withunsafecontinuation(_:).md).
+- [typealias AnyActor](anyactor.md)
+  Common marker protocol providing a shared “base” for both (local) `Actor` and (potentially remote) `DistributedActor` types.
+- [typealias ConcurrentValue](concurrentvalue.md)
+- [struct Job](job.md)
+  Deprecated equivalent of [`ExecutorJob`](executorjob.md).
+- [typealias UnsafeConcurrentValue](unsafeconcurrentvalue.md)
+- [protocol UnsafeSendable](unsafesendable.md)
+  A type whose values can safely be passed across concurrency domains by copying, but which disables some safety checking at the conformance site.
+- [typealias UnsafeThrowingContinuation](unsafethrowingcontinuation.md)
+- [func withUnsafeThrowingContinuation<T, E>((UnsafeContinuation<T, E>) -> Void) async throws(E) -> sending T](withunsafethrowingcontinuation(_:)-32nwt.md)
+  Invokes the passed in closure with a unsafe continuation for the current task.
+- [func withUnsafeThrowingContinuation<T>((UnsafeContinuation<T, any Error>) -> Void) async throws -> sending T](withunsafethrowingcontinuation(_:)-7zhvy.md)
+- [func withUnsafeThrowingContinuation<T>(isolation: isolated (any Actor)?, (UnsafeContinuation<T, any Error>) -> Void) async throws -> sending T](withunsafethrowingcontinuation(isolation:_:).md)
+  Source-compatibility overload; replaced by `withUnsafeThrowingContinuation(_:)`.
 
 
 ---

@@ -9,7 +9,7 @@ Registers a list of traits to observe and a closure to execute when one of the o
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst ?+
+- Mac Catalyst 17.0+
 - tvOS 17.0+
 - visionOS ?+
 

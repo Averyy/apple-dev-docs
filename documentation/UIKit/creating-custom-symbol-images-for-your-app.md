@@ -15,7 +15,7 @@ You can create your own custom symbol images with the same capabilities that SF 
 3. Export the file from your drawing app as an SVG file.
 4. Validate the SVG file using the SF Symbols app.
 5. Import the custom symbol into the SF Symbols app and organize it into a group.
-6. Add annotations, if necessary.
+6. Add annotations to support rendering modes or animations, if needed.
 7. Export a template file for distribution.
 
 One way to begin creating your own symbol is by basing it on an existing symbol you find in the SF Symbols app. For example, the circle symbol can give you a great reference point to start working with.

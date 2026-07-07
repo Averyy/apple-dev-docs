@@ -39,7 +39,7 @@ If the item’s `bsdFlags` contain the `UF_COMPRESSED` flag, your file system re
 - [FSItem.SetAttributesRequest](fsitem/setattributesrequest.md)
   A request to set attributes on an item.
 - [class FSSetAttributesResult](fssetattributesresult.md)
-  The result of a set-attributes call.
+  The restlt of a set-attributes call.
 
 
 ---

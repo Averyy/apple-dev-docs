@@ -6,19 +6,19 @@
 Adds a textual description of the value that the view contains.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
+- iOS 16.0+
+- iPadOS 16.0+
+- Mac Catalyst 16.0+
+- macOS 13.0+
+- tvOS 16.0+
 - visionOS 1.0+
-- watchOS 7.0+
+- watchOS 9.0+
 
 ## Declaration
 
 ```swift
-nonisolated
-func accessibilityValue(_ valueDescription: Text) -> ModifiedContent<Content, Modifier>
+@export(implementation)
+nonisolated func accessibilityValue(_ valueResource: LocalizedStringResource) -> ModifiedContent<Content, Modifier>
 ```
 
 #### Discussion

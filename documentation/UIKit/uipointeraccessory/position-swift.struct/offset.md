@@ -8,7 +8,7 @@ The offset of the accessory from the primary pointer.
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst ?+
+- Mac Catalyst 15.0+
 - visionOS ?+
 
 ## Declaration

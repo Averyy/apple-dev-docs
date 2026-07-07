@@ -8,7 +8,7 @@ An identifier for an app entity that refers to a document or other file.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst ?+
+- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -64,7 +64,6 @@ struct FileEntityIdentifier
   A unique identifier for an app entity or transient app entity type within an application bundle.
 - [protocol AppEntityAnnotatable](appentityannotatable.md)
   An interface that system types adopt and use to manage their relationship to app entities.
-- [struct AppEntityIdentifier](appentityidentifier.md)
 
 
 ---

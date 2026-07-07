@@ -29,6 +29,10 @@ struct ResponseFormat
 ### Inspecting a response format
 - [var name: String](transcript/responseformat/name.md)
   A name associated with the response format.
+### Instance Properties
+- [let kind: Transcript.ResponseFormat.Kind](transcript/responseformat/kind-swift.property.md)
+### Enumerations
+- [Transcript.ResponseFormat.Kind](transcript/responseformat/kind-swift.enum.md)
 
 ## Relationships
 

@@ -3,6 +3,8 @@
 **Framework**: RealityKit  
 **Kind**: init
 
+Creates a NavigationController from an Entity with a NavigationComponent.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)

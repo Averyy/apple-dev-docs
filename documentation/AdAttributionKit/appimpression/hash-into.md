@@ -8,7 +8,7 @@ A function that hashes the essential components of the value by passing them int
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
-- Mac Catalyst ?+
+- Mac Catalyst 17.4+
 
 ## Declaration
 

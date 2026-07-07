@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: init
 
-Creates a picker bound to a collection of bindings that generates its label from a string.
+Creates a picker that generates its label from a localized string resource.
 
 **Availability**:
 - iOS 16.0+
@@ -17,8 +17,8 @@ Creates a picker bound to a collection of bindings that generates its label from
 ## Declaration
 
 ```swift
-nonisolated
-init<C, S>(_ title: S, sources: C, selection: KeyPath<C.Element, Binding<SelectionValue>>, @ContentBuilder content: () -> Content) where C : RandomAccessCollection, S : StringProtocol
+@export(implementation)
+nonisolated init<C>(_ titleResource: LocalizedStringResource, sources: C, selection: KeyPath<C.Element, Binding<SelectionValue>>, @ContentBuilder content: () -> Content) where C : RandomAccessCollection
 ```
 
 #### Discussion
@@ -61,7 +61,7 @@ This initializer creates a [`Text`](text.md) view on your behalf. See [`Text`](t
 
 ## Parameters
 
-- `title`: A string that describes the purpose of selecting an option.
+- `titleResource`: A localized string resource that describes the purpose of selecting an option.
 - `sources`: A collection of values used as the source for displaying the Picker’s selection.
 - `selection`: The key path of the values that determines the currently-selected options. When a user selects an option from the picker, the values at the key path of all items in the `sources` collection are updated with the selected option.
 - `content`: A view that contains the set of options.

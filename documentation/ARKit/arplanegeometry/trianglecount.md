@@ -8,7 +8,6 @@ The number of triangles described by the [`triangleIndices`](arplanegeometry/tri
 **Availability**:
 - iOS 11.3+
 - iPadOS 11.3+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

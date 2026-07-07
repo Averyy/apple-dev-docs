@@ -23,6 +23,10 @@ init(url videoURL: URL)
 
 - `videoURL`: The video asset URL. The specified asset must be a video format supported by AVFoundation.
 
+## See Also
+
+- [init(URL: URL)](vnvideoprocessor/init(url:)-38vj9.md)
+
 
 ---
 

@@ -15,7 +15,7 @@ A coordinator that can be used to coordinate additional read and write operation
 ## Declaration
 
 ```swift
-nonisolated
+@MainActor
 final func makeFileCoordinator() -> sending NSFileCoordinator
 ```
 

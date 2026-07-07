@@ -17,6 +17,7 @@ A context-dependent purple color suitable for use in UI elements.
 ## Declaration
 
 ```swift
+@export(implementation)
 static var purple: Color { get }
 ```
 

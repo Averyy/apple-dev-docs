@@ -26,6 +26,7 @@ class VNCircle
   Creates a circle with the specified center and radius.
 - [convenience init(center: VNPoint, diameter: Double)](vncircle/init(center:diameter:).md)
   Creates a circle with the specified center and diameter.
+- [init?(coder: NSCoder)](vncircle/init(coder:).md)
 - [class var zero: VNCircle](vncircle/zero.md)
   A circle object centered at the origin, with a radius of zero.
 ### Inspecting a Circle
@@ -39,8 +40,6 @@ class VNCircle
   Determines if this circle, including its boundary, contains the specified point.
 - [func contains(VNPoint, inCircumferentialRingOfWidth: Double) -> Bool](vncircle/contains(_:incircumferentialringofwidth:).md)
   Determines if a ring around this circle’s circumference contains the specified point.
-### Initializers
-- [init?(coder: NSCoder)](vncircle/init(coder:).md)
 
 ## Relationships
 

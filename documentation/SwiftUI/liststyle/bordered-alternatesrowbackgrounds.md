@@ -11,6 +11,7 @@ The list style that describes the behavior and appearance of a list with standar
 ## Declaration
 
 ```swift
+@export(implementation)
 static func bordered(alternatesRowBackgrounds: Bool) -> BorderedListStyle
 ```
 

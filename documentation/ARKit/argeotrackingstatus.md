@@ -8,7 +8,6 @@ The state, accuracy, and reason that are possible for geo-tracking’s current c
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
 
 ## Declaration
 

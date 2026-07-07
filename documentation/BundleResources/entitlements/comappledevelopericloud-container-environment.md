@@ -8,7 +8,6 @@ The development or production environment to use for the iCloud containers.
 **Availability**:
 - iOS 3.0+
 - iPadOS 3.0+
-- Mac Catalyst 3.0+
 - macOS 10.7+
 - tvOS 9.0+
 - visionOS 1.0+

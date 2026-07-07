@@ -8,7 +8,6 @@ Requests a frame outside of the normal frequency that contains a high-resolution
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
 
 ## Declaration
 

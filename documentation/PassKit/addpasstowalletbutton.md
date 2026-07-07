@@ -8,7 +8,7 @@ A type that provides a button that enables people to add a new or existing pass 
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst ?+
+- Mac Catalyst 16.0+
 - visionOS ?+
 
 ## Declaration

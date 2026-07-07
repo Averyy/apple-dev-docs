@@ -20,7 +20,7 @@ object StatusAccountListGoogleAccountObject
 
 ## Properties
 
-- `_removed` (boolean): If `true`, the account is removed and the status item object only contains this key and the `identifier` key.
+- `_removed` (boolean): If `true`, the device removed the account and the status item object only contains this key and the `identifier` key.
 - `are-calendars-enabled` (boolean): A Boolean value that indicates whether the Calendar app displays calendars and events for this account.
 - `are-contacts-enabled` (boolean): A Boolean value that indicates whether the Contacts app displays contacts for this account.
 - `are-notes-enabled` (boolean): A Boolean value that indicates whether the Notes app displays notes for this account.

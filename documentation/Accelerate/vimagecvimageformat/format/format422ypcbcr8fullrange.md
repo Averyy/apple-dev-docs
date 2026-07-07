@@ -8,7 +8,7 @@ A full-range, component YpCbCr 4:2:2 pixel format with 8 bits per channel.
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst ?+
+- Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
 - visionOS ?+

@@ -1,6 +1,6 @@
 # ComputeNodeGraph.NodeDefinition.Kind.convert(from:to:)
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: case
 
 Convert from one primitive MTLDataType to another.
@@ -12,7 +12,7 @@ Convert from one primitive MTLDataType to another.
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 ## Declaration
 

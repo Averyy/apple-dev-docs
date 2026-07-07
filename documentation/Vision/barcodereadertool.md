@@ -8,9 +8,9 @@ A tool that scans machine-readable codes in an image.
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -40,7 +40,7 @@ let customTool = BarcodeReaderTool(
 
 ## Topics
 
-### Initializers
+### Creating a tool
 - [init(name: String?, description: String?)](barcodereadertool/init(name:description:).md)
   Creates a tool for decoding machine-readable codes.
 
@@ -50,6 +50,11 @@ let customTool = BarcodeReaderTool(
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 - [Tool](../FoundationModels/Tool.md)
+
+## See Also
+
+- [struct OCRTool](ocrtool.md)
+  A tool that recognizes text in an image.
 
 
 ---

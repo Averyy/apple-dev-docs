@@ -8,7 +8,8 @@ A rectangular widget.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst ?+
+- Mac Catalyst 16.0+
+- visionOS 27.0+ (Beta)
 - watchOS 9.0+
 
 ## Declaration

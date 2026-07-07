@@ -32,7 +32,7 @@ object InstallApplicationResponse
 - `EnrollmentID` (string) *(required)*: The per-enrollment identifier for the device. The system requires this value if the enrollment type is a user enrollment. Available: iOS 13+ | iPadOS 13+ | macOS 10.15+ | visionOS 1.1+
 - `EnrollmentUserID` (string) *(required)*: The per-enrollment identifier for the user. The system requires this value if the enrollment type is a user enrollment on the user channel. Available: macOS 10.15+
 - `ErrorChain` ([InstallApplicationResponse.ErrorChainItem]): An array of dictionaries that describes any errors that occur.
-- `Identifier` (string): The app’s bundle identifier, if the user accepted the request. > **Note**:  For a watchOS app, the identifier is the watch’s bundle identifier, which differs from the main bundle identifier for the iPhone that the watch is paired to.
+- `Identifier` (string): The app’s bundle identifier, if the user accepted the request. > **Note**:  For a watchOS app, the identifier is the watch’s bundle identifier, which differs from the main bundle identifier for the iPhone the watch pairs with.
 - `NotOnConsole` (boolean) *(required)*: If `true`, the device isn’t on-console.
 - `RejectionReason` (string): The reason, if installation fails. macOS always returns “Other”.
 - `State` (string): The app’s installation state, if the user accepted the request. If this value is `NeedsRedemption`, the server needs to send a redemption code to complete the app installation.

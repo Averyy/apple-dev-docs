@@ -17,6 +17,7 @@ A context-dependent brown color suitable for use in UI elements.
 ## Declaration
 
 ```swift
+@export(implementation)
 static var brown: Color { get }
 ```
 

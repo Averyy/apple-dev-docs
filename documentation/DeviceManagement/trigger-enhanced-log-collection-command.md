@@ -30,7 +30,7 @@ You can cancel an active enhanced log collection session by sending the [`Cancel
 
 The enhanced log collection process reports declarative status to the device management service using the following status items:
 
-- `enhanced-logging.status`: Reports the device’s enhanced log collection session state. See [`StatusEnhancedLogging`](statusenhancedlogging.md).
+- `enhanced-logging.status`: Reports the device’s enhanced log collection session state. See [`StatusEnhancedLoggingStatus`](statusenhancedloggingstatus.md).
 - `enhanced-logging.applecare-token`: Reports the device’s enhanced log collection session AppleCare token. See [`StatusEnhancedLoggingAppleCareToken`](statusenhancedloggingapplecaretoken.md).
 - `enhanced-logging.timestamp`: Reports the device’s enhanced log collection session timestamp. See [`StatusEnhancedLoggingTimestamp`](statusenhancedloggingtimestamp.md).
 

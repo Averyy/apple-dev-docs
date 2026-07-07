@@ -8,7 +8,7 @@ Indicates that the users might be too far apart.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst ?+
+- Mac Catalyst 16.0+
 - watchOS 9.0+
 
 ## Declaration

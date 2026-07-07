@@ -108,10 +108,6 @@ For design guidance, see [`Toolbars`](https://developer.apple.com/design/Human-I
 - [struct ToolbarItemVisibilityPriority](toolbaritemvisibilitypriority.md)
   A value that defines the visibility priority of a toolbar item.
 ### Minimizing a toolbar
-- [func toolbarMinimizeBehavior(ToolbarMinimizeBehavior, for: ToolbarPlacement...) -> some View](view/toolbarminimizebehavior(_:for:).md)
-  Sets the minimize behavior for the specified bars.
-- [struct ToolbarMinimizeBehavior](toolbarminimizebehavior.md)
-  The minimize behavior of a toolbar.
 - [func toolbarMinimizationSafeAreaAdjustment(ToolbarMinimizationSafeAreaAdjustment, for: ToolbarPlacement...) -> some View](view/toolbarminimizationsafeareaadjustment(_:for:).md)
   Sets the safe area adjustment for the specified bars during minimization.
 - [struct ToolbarMinimizationSafeAreaAdjustment](toolbarminimizationsafeareaadjustment.md)

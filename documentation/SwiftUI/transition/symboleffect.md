@@ -18,7 +18,7 @@ A transition that applies the default symbol effect transition to symbol images 
 
 ```swift
 @MainActor
-@preconcurrency static var symbolEffect: SymbolEffectTransition { get }
+@export(implementation) @preconcurrency static var symbolEffect: SymbolEffectTransition { get }
 ```
 
 ## See Also

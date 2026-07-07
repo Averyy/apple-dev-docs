@@ -8,7 +8,7 @@ Creates an image object backed by the given SF Symbol name, with optional config
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst ?+
+- Mac Catalyst 16.0+
 - tvOS 16.0+
 - visionOS ?+
 - watchOS 9.0+

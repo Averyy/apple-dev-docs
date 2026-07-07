@@ -1,6 +1,6 @@
 # dataType
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: property
 
 Data type. For types such as `.struct` and `.pointer`, see [`typeName`](computenodegraph/structurelayout/member/typename.md) and `components` for additional information.
@@ -12,7 +12,7 @@ Data type. For types such as `.struct` and `.pointer`, see [`typeName`](computen
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 ## Declaration
 

@@ -8,7 +8,6 @@ An error code that indicates the app was unable to start the location push servi
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst 15.0+
 
 ## Declaration
 

@@ -8,7 +8,7 @@ The accessory, shown as an annotation callout on the map.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst ?+
+- Mac Catalyst 18.0+
 - macOS 15.0+
 - visionOS 2.0+
 

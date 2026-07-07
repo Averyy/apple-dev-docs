@@ -8,7 +8,6 @@ A list of content from your catalog that the subscriber can access.
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 11.0+
 - macOS ?+
 - tvOS 11.0+
 - visionOS 1.0+

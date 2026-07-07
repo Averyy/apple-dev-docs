@@ -8,7 +8,6 @@ Returns a sub-view with the same rank as this view by slicing the dimensions at 
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 
@@ -43,6 +42,11 @@ func sumOfRow(
 ## Parameters
 
 - `ranges`: The range expressions describing where to slice along each dimension. `indexRank` must be ≤ `rank`. Unspecified trailing dimensions are assumed to be `.all`.
+
+## See Also
+
+- [func slice(at: [any NDArray.RangeExpression]) -> NDArray.View<Element>](ndarray/view/slice(at:)-32gsh.md)
+  Returns a sub-view with the same rank as this view by slicing the dimensions at the provided ranges.
 
 
 ---

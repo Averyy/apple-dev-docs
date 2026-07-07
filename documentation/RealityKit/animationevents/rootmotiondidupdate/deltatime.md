@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: property
 
-The elapsed time since the last update.
+The elapsed time since the last update, in seconds.
 
 **Availability**:
 - iOS 27.0+ (Beta)

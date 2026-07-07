@@ -8,7 +8,7 @@ Appends the caption group synchronously if the input is ready for more media dat
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst 26.0+
 - macOS 26.0+
 
 ## Declaration

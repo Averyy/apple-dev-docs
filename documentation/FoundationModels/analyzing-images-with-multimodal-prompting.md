@@ -146,8 +146,6 @@ For more information on creating tools, see [`Expanding generation with tool cal
 
 - [struct Attachment](attachment.md)
   An asset provided to the model.
-- [protocol AttachmentContent](attachmentcontent.md)
-  A type that you use as the content of an attachment.
 - [struct ImageAttachmentContent](imageattachmentcontent.md)
   A type that holds image data.
 - [struct ImageReference](imagereference.md)

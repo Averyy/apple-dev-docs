@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: init
 
-Creates a text field with a binding to the current selection and a text label generated from a localized title string.
+Creates a text field with a binding to the current selection and a text label generated from a localized title string resource.
 
 **Availability**:
 - iOS 18.0+
@@ -15,8 +15,8 @@ Creates a text field with a binding to the current selection and a text label ge
 ## Declaration
 
 ```swift
-nonisolated
-init(_ titleKey: LocalizedStringKey, text: Binding<String>, selection: Binding<TextSelection?>, prompt: Text? = nil, axis: Axis? = nil)
+@export(implementation)
+nonisolated init(_ titleResource: LocalizedStringResource, text: Binding<String>, selection: Binding<TextSelection?>, prompt: Text? = nil, axis: Axis? = nil)
 ```
 
 #### Discussion
@@ -40,7 +40,7 @@ Use the [`onSubmit(of:_:)`](view/onsubmit(of:_:).md) modifier to invoke an actio
 
 ## Parameters
 
-- `titleKey`: The key for the localized title of the text field, describing its purpose.
+- `titleResource`: The localized title of the text field, describing its purpose.
 - `text`: The text to display and edit.
 - `selection`: A [`Binding`](binding.md) to the variable containing the selection.
 - `prompt`: A `Text` representing the prompt of the text field which provides users with guidance on what to type into the text field. Defaults to `nil`.

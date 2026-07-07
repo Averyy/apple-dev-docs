@@ -8,7 +8,7 @@ The handler that provides the section snapshot for expanding the parent item.
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst ?+
+- Mac Catalyst 14.0+
 - tvOS 14.0+
 - visionOS ?+
 

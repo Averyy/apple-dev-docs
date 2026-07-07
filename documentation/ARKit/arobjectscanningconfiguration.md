@@ -5,6 +5,10 @@
 
 A configuration that recognizes objects and collects high-fidelity data about specific objects using the rear-facing camera.
 
+**Availability**:
+- iOS ?+
+- iPadOS ?+
+
 ## Declaration
 
 ```swift

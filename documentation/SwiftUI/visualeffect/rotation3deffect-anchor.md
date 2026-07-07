@@ -11,6 +11,7 @@ Rotates content by the specified 3D rotation value.
 ## Declaration
 
 ```swift
+@export(implementation)
 func rotation3DEffect(_ rotation: Rotation3D, anchor: UnitPoint3D = .center) -> some VisualEffect
 ```
 
@@ -46,7 +47,7 @@ During an animation, this modifier uses spherical linear interpolation, which pr
 - [func perspectiveRotationEffect(Angle, axis: (x: CGFloat, y: CGFloat, z: CGFloat), anchor: UnitPoint3D, perspective: CGFloat) -> some VisualEffect](visualeffect/perspectiverotationeffect(_:axis:anchor:perspective:).md)
   Renders content as if it’s rotated in three dimensions around the specified axis.
 - [func rotation3DEffect(_:axis:anchor:)](visualeffect/rotation3deffect(_:axis:anchor:).md)
-  Rotates content by an angle about an axis that you specify as a tuple of elements.
+  Rotates content by an angle about an axis that you specify as a rotation axis value.
 
 
 ---

@@ -8,7 +8,6 @@ An action that scales the image and maintains the aspect ratio to fit on the lon
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+

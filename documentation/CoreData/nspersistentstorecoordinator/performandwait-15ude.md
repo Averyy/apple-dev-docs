@@ -8,7 +8,7 @@ Executes the provided closure on the coordinator’s queue and waits for it to f
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst ?+
+- Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
 - visionOS ?+

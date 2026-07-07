@@ -8,7 +8,7 @@ Sets up an observer for the status notification and models it as an asynchronous
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst 26.0+
 - macOS 26.0+
 
 ## Declaration

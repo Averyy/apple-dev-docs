@@ -6,7 +6,7 @@
 The user cancelled the completion.
 
 **Availability**:
-- macOS ?+
+- macOS 10.0+
 
 ## Declaration
 

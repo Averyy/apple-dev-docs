@@ -9,7 +9,7 @@ The track number of a song or audio composition when part of an album.
 - iOS 9.0+
 - iPadOS 9.0+
 - Mac Catalyst 13.1+
-- macOS 10.13+
+- macOS 10.11+
 - visionOS 1.0+
 
 ## Declaration

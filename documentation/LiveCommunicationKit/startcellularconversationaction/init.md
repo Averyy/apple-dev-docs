@@ -8,7 +8,7 @@ Creates an action that initiates a cellular conversation using information from 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

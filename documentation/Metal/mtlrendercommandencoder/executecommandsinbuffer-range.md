@@ -8,7 +8,7 @@ Encodes a command that runs a range of commands from an indirect command buffer 
 **Availability**:
 - iOS 12.0+
 - iPadOS 12.0+
-- Mac Catalyst ?+
+- Mac Catalyst 12.0+
 - macOS 10.14+
 - tvOS 12.0+
 - visionOS ?+

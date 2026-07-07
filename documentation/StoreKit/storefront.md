@@ -8,7 +8,6 @@ The region and unique identifier of the App Store storefront for the device.
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
 - visionOS 1.0+

@@ -6,19 +6,19 @@
 Create an Accessibility Rotor with the specified user-visible label and entries.
 
 **Availability**:
-- iOS 15.0+
-- iPadOS 15.0+
-- Mac Catalyst 15.0+
-- macOS 12.0+
-- tvOS 15.0+
+- iOS 16.0+
+- iPadOS 16.0+
+- Mac Catalyst 16.0+
+- macOS 13.0+
+- tvOS 16.0+
 - visionOS 1.0+
-- watchOS 8.0+
+- watchOS 9.0+
 
 ## Declaration
 
 ```swift
-nonisolated
-func accessibilityRotor<EntryModel, ID>(_ rotorLabel: Text, entries: [EntryModel], entryID: KeyPath<EntryModel, ID>, entryLabel: KeyPath<EntryModel, String>) -> some View where ID : Hashable
+@export(implementation)
+nonisolated func accessibilityRotor<EntryModel, ID>(_ rotorLabelResource: LocalizedStringResource, entries: [EntryModel], entryID: KeyPath<EntryModel, ID>, entryLabel: KeyPath<EntryModel, String>) -> some View where ID : Hashable
 ```
 
 #### Discussion
@@ -31,7 +31,7 @@ In the following example, a Message application creates a Rotor allowing users t
 
 ```swift
 // `messages` is a list of `Message`s that have a `subject` and a
-// `uuid`. `vipMessages` is a filtered version of that list
+// `uuid`. `vipMesages` is a filtered version of that list
 // containing only messages from VIPs.
 ScrollView {
     LazyVStack {
@@ -42,12 +42,12 @@ ScrollView {
 }
 .accessibilityElement(children: .contain)
 .accessibilityRotor("VIPs", entries: vipMessages,
-    id: \.uuid, label: \.subject)
+    entryID: \.uuid, entryLabel: \.subject)
 ```
 
 ## Parameters
 
-- `rotorLabel`: Localized label identifying this Rotor to the user.
+- `rotorLabelResource`: Localized label identifying this Rotor to the user.
 - `entries`: An array of values that will be used to generate the entries of the Rotor.
 - `entryID`: Key path on the entry type that can be used to generate an identifier for the Entry. The identifiers must match up with identifiers in `ForEach` or explicit `id` calls within the `ScrollView`.
 - `entryLabel`: Key path on the entry type that can be used to get a user-visible label for every Rotor entry. This is used on macOS when the user opens the list of entries for the Rotor.

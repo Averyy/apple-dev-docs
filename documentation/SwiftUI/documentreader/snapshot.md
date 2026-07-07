@@ -23,7 +23,7 @@ associatedtype Snapshot
 
 - [func read(from: sending Self.Source, progress: consuming Subprogress) async throws -> sending Self.Snapshot](documentreader/read(from:progress:).md)
   Reads the document from disk.
-- [associatedtype Source](documentreader/source.md)
+- [associatedtype Source = URL](documentreader/source.md)
 
 
 ---

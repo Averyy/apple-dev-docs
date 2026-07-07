@@ -8,7 +8,6 @@ A Boolean value that indicates whether to extend the configuration to subdomains
 **Availability**:
 - iOS 9.0+
 - iPadOS 9.0+
-- Mac Catalyst 9.0+
 - macOS 10.11+
 - visionOS 1.0+
 

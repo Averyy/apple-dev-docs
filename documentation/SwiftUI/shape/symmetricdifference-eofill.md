@@ -17,8 +17,8 @@ Returns a new shape with filled regions either from this shape or the given shap
 ## Declaration
 
 ```swift
-nonisolated
-func symmetricDifference<T>(_ other: T, eoFill: Bool = false) -> some Shape where T : Shape
+@export(implementation)
+nonisolated func symmetricDifference<T>(_ other: T, eoFill: Bool = false) -> some Shape where T : Shape
 ```
 
 #### Return Value

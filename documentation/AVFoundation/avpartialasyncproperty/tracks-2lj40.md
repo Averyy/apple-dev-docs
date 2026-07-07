@@ -8,7 +8,7 @@ The tracks that a movie contains.
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst ?+
+- Mac Catalyst 15.0+
 - macOS 12.0+
 - visionOS 1.0+
 - watchOS 8.0+

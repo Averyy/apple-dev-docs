@@ -17,6 +17,7 @@ A spring animation with a predefined duration and higher amount of bounce.
 ## Declaration
 
 ```swift
+@export(implementation)
 static var bouncy: Animation { get }
 ```
 

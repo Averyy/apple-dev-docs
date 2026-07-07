@@ -11,6 +11,7 @@ A presentation style that animates an outline around the view when the accessibi
 ## Declaration
 
 ```swift
+@export(implementation)
 static var outline: AccessibilityQuickActionOutlineStyle { get }
 ```
 

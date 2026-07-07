@@ -8,7 +8,6 @@ An object that defines motion and scene tracking behaviors for the session.
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

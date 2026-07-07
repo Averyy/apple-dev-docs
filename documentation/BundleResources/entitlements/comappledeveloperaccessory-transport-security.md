@@ -8,7 +8,6 @@ An entitlement that enables your app extension to exchange cryptographic keys wi
 **Availability**:
 - iOS 26.5+
 - iPadOS 26.5+
-- Mac Catalyst 26.5+
 
 
 

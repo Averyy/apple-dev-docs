@@ -8,7 +8,6 @@ The current system setting or hardware configuation isn’t eligible to use the 
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
-- Mac Catalyst 17.4+
 
 ## Declaration
 

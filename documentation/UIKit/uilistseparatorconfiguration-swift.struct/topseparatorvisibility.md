@@ -8,7 +8,7 @@ The visibility of the top separator for the item the configuration applies to.
 **Availability**:
 - iOS 14.5+
 - iPadOS 14.5+
-- Mac Catalyst ?+
+- Mac Catalyst 14.5+
 - visionOS ?+
 
 ## Declaration

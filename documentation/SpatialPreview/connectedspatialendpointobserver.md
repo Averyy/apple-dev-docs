@@ -3,6 +3,8 @@
 **Framework**: Spatial Preview  
 **Kind**: class
 
+An observer that provides access to the endpoint for a device connected via Mac Virtual Display.
+
 **Availability**:
 - macOS 27.0+ (Beta)
 - visionOS ?+
@@ -14,6 +16,10 @@
 final class ConnectedSpatialEndpointObserver
 ```
 
+#### Overview
+
+You can choose to discover another device using [`SpatialPreviewDevicePicker`](spatialpreviewdevicepicker.md).
+
 ## Topics
 
 ### Structures
@@ -24,7 +30,7 @@ final class ConnectedSpatialEndpointObserver
   Creates a new observer for monitoring connected device endpoint availability.
 ### Instance Properties
 - [var endpoint: SpatialPreviewEndpoint](connectedspatialendpointobserver/endpoint.md)
-  The endpoint for the connected device (if available). If no connected device is available, then an `UnavailableError` error will be thrown. You may choose to discover another device using `SpatialPreviewDevicePicker`.
+  The endpoint for the visionOS device currently connected via Mac Virtual Display.
 - [var isEndpointAvailable: Bool](connectedspatialendpointobserver/isendpointavailable.md)
   Indicates whether a connected device endpoint is currently connected.
 
@@ -40,7 +46,7 @@ final class ConnectedSpatialEndpointObserver
 ## See Also
 
 - [struct SpatialPreviewEndpoint](spatialpreviewendpoint.md)
-  An endpoint representing a destination that that can be connected to
+  An endpoint representing a visionOS device you can connect to for spatial preview.
 - [struct SpatialPreviewDevicePicker](spatialpreviewdevicepicker.md)
   Presents nearby companion devices and allows the user to make a selection.
 

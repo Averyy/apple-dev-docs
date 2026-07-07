@@ -6,7 +6,7 @@
 Constants that specify the type of tab stop.
 
 **Availability**:
-- macOS ?+
+- macOS 10.0+
 
 ## Declaration
 

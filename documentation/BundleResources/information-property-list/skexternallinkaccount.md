@@ -8,7 +8,6 @@ A dictionary that contains localized URLs to an external website for account cre
 **Availability**:
 - iOS 15.4+
 - iPadOS 15.4+
-- Mac Catalyst 15.4+
 - tvOS 16.4+
 
 

@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: init
 
-Creates a custom action category labeled by `name`.
+Creates a custom action category labeled by `nameResource`.
 
 **Availability**:
 - iOS 18.0+
@@ -17,7 +17,8 @@ Creates a custom action category labeled by `name`.
 ## Declaration
 
 ```swift
-init(_ name: Text)
+@export(implementation)
+init(_ nameResource: LocalizedStringResource)
 ```
 
 #### Discussion
@@ -26,7 +27,7 @@ Extension AccessibilityActionCategory { static let table = AccessibilityActionCa
 
 var body: some View { TableCellView() .accessibilityActions(category: .table) { ForEach(tableCellActions) { action in Button(action.title) { action() } } } }
 
-- Parameter: - name: The name for the category of the accessibility actions.
+- Parameter: - nameResource: The name for the category of the accessibility actions.
 
 
 ---

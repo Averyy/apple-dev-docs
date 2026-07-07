@@ -15,8 +15,8 @@ Marks this view as searchable, which configures the display of a search field.
 ## Declaration
 
 ```swift
-nonisolated
-func searchable<C>(text: Binding<String>, editableTokens: Binding<C>, placement: SearchFieldPlacement = .automatic, prompt: LocalizedStringKey, @ContentBuilder token: @escaping (Binding<C.Element>) -> some View) -> some View where C : RandomAccessCollection, C : RangeReplaceableCollection, C.Element : Identifiable
+@export(implementation)
+nonisolated func searchable<C>(text: Binding<String>, editableTokens: Binding<C>, placement: SearchFieldPlacement = .automatic, prompt: LocalizedStringResource, @ContentBuilder token: @escaping (Binding<C.Element>) -> some View) -> some View where C : RandomAccessCollection, C : RangeReplaceableCollection, C.Element : Identifiable
 ```
 
 #### Discussion
@@ -28,7 +28,7 @@ For more information about using searchable modifiers, see [`Adding a search int
 - `text`: The text to display and edit in the search field.
 - `editableTokens`: A collection of tokens to display and edit in the search field.
 - `placement`: The preferred placement of the search field within the containing view hierarchy.
-- `prompt`: The key for the localized prompt of the search field which provides users with guidance on what to search for.
+- `prompt`: Text resource for the localized prompt of the search field which provides users with guidance on what to search for.
 - `token`: A content builder that creates a view given an element in tokens.
 
 ## See Also

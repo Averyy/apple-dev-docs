@@ -8,7 +8,6 @@ Retrieves a list of of credentials to which the app has access rights.
 **Availability**:
 - iOS 18.1+
 - iPadOS 18.1+
-- Mac Catalyst 18.1+
 
 ## Declaration
 

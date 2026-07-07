@@ -8,7 +8,7 @@ Encodes multiple texture samplers for the compute function, specifying clamp val
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+
-- Mac Catalyst ?+
+- Mac Catalyst 8.0+
 - macOS 10.11+
 - tvOS 8.0+
 - visionOS ?+

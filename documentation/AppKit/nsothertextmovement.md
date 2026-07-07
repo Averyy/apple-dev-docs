@@ -6,7 +6,7 @@
 The user performed some undefined action.
 
 **Availability**:
-- macOS ?+
+- macOS 10.0+
 
 ## Declaration
 

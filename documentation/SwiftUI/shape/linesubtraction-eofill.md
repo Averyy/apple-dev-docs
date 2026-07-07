@@ -17,8 +17,8 @@ Returns a new shape with a line from this shape that does not overlap the filled
 ## Declaration
 
 ```swift
-nonisolated
-func lineSubtraction<T>(_ other: T, eoFill: Bool = false) -> some Shape where T : Shape
+@export(implementation)
+nonisolated func lineSubtraction<T>(_ other: T, eoFill: Bool = false) -> some Shape where T : Shape
 ```
 
 #### Return Value

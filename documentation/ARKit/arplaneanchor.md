@@ -8,7 +8,6 @@ An anchor for a 2D planar surface that ARKit detects in the physical environment
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

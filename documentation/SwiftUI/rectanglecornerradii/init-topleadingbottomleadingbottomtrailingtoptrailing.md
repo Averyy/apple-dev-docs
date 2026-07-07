@@ -17,6 +17,7 @@ Creates a new set of corner radii for a rounded rectangle with uneven corners.
 ## Declaration
 
 ```swift
+@export(implementation)
 init(topLeading: CGFloat = 0, bottomLeading: CGFloat = 0, bottomTrailing: CGFloat = 0, topTrailing: CGFloat = 0)
 ```
 

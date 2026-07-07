@@ -9,7 +9,6 @@ Tells the input delegate when text has changed in the input object for a convers
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
-- Mac Catalyst 18.4+
 
 ## Declaration
 

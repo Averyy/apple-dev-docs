@@ -36,6 +36,7 @@ struct GlassBackgroundEffectConfiguration
 - [struct AutomaticGlassBackgroundEffect](automaticglassbackgroundeffect.md)
   The automatic glass background effect.
 - [struct FeatheredGlassBackgroundEffect](featheredglassbackgroundeffect.md)
+  The feathered glass background effect.
 - [struct PlateGlassBackgroundEffect](plateglassbackgroundeffect.md)
   The plate glass background effect.
 

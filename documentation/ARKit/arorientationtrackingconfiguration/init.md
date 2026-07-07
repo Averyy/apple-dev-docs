@@ -8,7 +8,6 @@ Initializes a new orientation tracking configuration.
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

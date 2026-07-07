@@ -8,7 +8,6 @@ A raw value for a configuration option.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
 
 ## Declaration
 

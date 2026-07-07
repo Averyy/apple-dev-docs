@@ -8,7 +8,6 @@ Begins monitoring the device’s active scene and making framing recommendations
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst 26.0+
 
 ## Declaration
 

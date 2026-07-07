@@ -8,7 +8,7 @@ A string that presents the compact representation of the impression’s JSON Web
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
-- Mac Catalyst ?+
+- Mac Catalyst 17.4+
 
 ## Declaration
 

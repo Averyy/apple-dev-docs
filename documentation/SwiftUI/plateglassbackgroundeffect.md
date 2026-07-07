@@ -44,6 +44,7 @@ You can also use [`plate`](glassbackgroundeffect/plate.md) to construct this eff
 - [struct GlassBackgroundEffectConfiguration](glassbackgroundeffectconfiguration.md)
   A configuration used to build a custom effect.
 - [struct FeatheredGlassBackgroundEffect](featheredglassbackgroundeffect.md)
+  The feathered glass background effect.
 
 
 ---

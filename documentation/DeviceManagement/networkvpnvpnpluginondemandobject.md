@@ -27,7 +27,7 @@ object NetworkVPNVPNPluginOnDemandObject
 
 ## Properties
 
-- `DisableUserOverride` (boolean): If `true`, the Connect On Demand toggle in Settings is disabled for this configuration. Available: iOS 27+ | iPadOS 27+ | tvOS 27+ | visionOS 27+
+- `DisableUserOverride` (boolean): If `true`, the device disables the Connect On Demand toggle in Settings for this configuration. Available: iOS 27+ | iPadOS 27+ | tvOS 27+ | visionOS 27+
 - `Enabled` (boolean): If `true`, enables VPN On Demand.
 - `Rules` ([NetworkVPNVPNPluginRulesElementObject]): An array of dictionaries defining On Demand Rules.
 

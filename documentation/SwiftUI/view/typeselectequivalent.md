@@ -17,8 +17,8 @@ Sets an explicit type select equivalent text in a collection, such as a list or 
 ## Declaration
 
 ```swift
-nonisolated
-func typeSelectEquivalent(_ stringKey: LocalizedStringKey) -> some View
+@export(implementation)
+nonisolated func typeSelectEquivalent(_ stringKey: LocalizedStringKey) -> some View
 ```
 
 #### Discussion

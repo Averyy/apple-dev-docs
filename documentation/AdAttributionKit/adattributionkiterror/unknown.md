@@ -8,7 +8,7 @@ The attribution failed due to an unknown, unrecoverable error.
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
-- Mac Catalyst ?+
+- Mac Catalyst 17.4+
 
 ## Declaration
 

@@ -6,19 +6,19 @@
 Add additional accessibility information to the view.
 
 **Availability**:
-- iOS 15.0+
-- iPadOS 15.0+
-- Mac Catalyst 15.0+
-- macOS 12.0+
-- tvOS 15.0+
+- iOS 16.0+
+- iPadOS 16.0+
+- Mac Catalyst 16.0+
+- macOS 13.0+
+- tvOS 16.0+
 - visionOS 1.0+
-- watchOS 8.0+
+- watchOS 9.0+
 
 ## Declaration
 
 ```swift
-nonisolated
-func accessibilityCustomContent(_ key: AccessibilityCustomContentKey, _ value: Text?, importance: AXCustomContent.Importance = .default) -> ModifiedContent<Self, AccessibilityAttachmentModifier>
+@export(implementation)
+nonisolated func accessibilityCustomContent(_ key: AccessibilityCustomContentKey, _ valueResource: LocalizedStringResource, importance: AXCustomContent.Importance = .default) -> ModifiedContent<Self, AccessibilityAttachmentModifier>
 ```
 
 #### Discussion
@@ -30,7 +30,8 @@ Use this method to add information you want accessibility users to be able to ac
 ## Parameters
 
 - `key`: Key used to specify the identifier and label of the of the additional accessibility information entry.
-- `value`: Text value for the additional accessibility information. For example: “landscape.” A value of `nil` will remove any entry of additional information added earlier for any `key` with the same identifier.
+- `valueResource`: Text resource for the additional accessibility information. For example: “landscape.” A value of `nil` will remove any entry of additional information added earlier for any `key` withthe same identifier.
+- `importance`: Importance of the accessibility information. High-importance information gets read out immediately, while default-importance information must be explicitly asked for by the user.
 
 ## See Also
 

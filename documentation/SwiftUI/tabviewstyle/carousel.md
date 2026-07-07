@@ -12,7 +12,7 @@ A style that implements the carousel interaction and appearance.
 
 ```swift
 @MainActor
-@preconcurrency static var carousel: CarouselTabViewStyle { get }
+@export(implementation) @preconcurrency static var carousel: CarouselTabViewStyle { get }
 ```
 
 ## See Also

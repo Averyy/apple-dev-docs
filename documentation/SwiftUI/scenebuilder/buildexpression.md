@@ -17,13 +17,13 @@ Builds an expression within the builder.
 ## Declaration
 
 ```swift
+@export(implementation)
 static func buildExpression<Content>(_ content: Content) -> Content where Content : Scene
 ```
 
 ## See Also
 
 - [static buildBlock(_:)](scenebuilder/buildblock(_:).md)
-  Passes a single scene written as a child scene through unmodified.
 - [static func buildLimitedAvailability(some Scene) -> any Scene & _LimitedAvailabilitySceneMarker](scenebuilder/buildlimitedavailability(_:).md)
   Processes scene content for a conditional compiler-control statement that performs an availability check.
 - [static func buildOptional((any Scene & _LimitedAvailabilitySceneMarker)?) -> some Scene](scenebuilder/buildoptional(_:).md)

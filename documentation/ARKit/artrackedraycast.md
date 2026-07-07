@@ -8,7 +8,6 @@ A raycast query that ARKit repeats in succession to give you refined results ove
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

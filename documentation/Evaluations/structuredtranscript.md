@@ -9,6 +9,7 @@
 - Mac Catalyst 27.0+ (Beta)
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -35,6 +36,12 @@ struct StructuredTranscript
   The tool outputs extracted from the transcript.
 - [enum StructuredValue](structuredvalue.md)
   A type-safe representation of JSON values.
+
+## Relationships
+
+### Conforms To
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 

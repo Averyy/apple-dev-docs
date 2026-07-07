@@ -17,6 +17,7 @@ A persistent spring animation. When mixed with other `spring()` or `interactiveS
 ## Declaration
 
 ```swift
+@export(implementation)
 static var spring: Animation { get }
 ```
 

@@ -8,7 +8,7 @@ Updates the conversion value with the provided fine and coarse conversion values
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
-- Mac Catalyst ?+
+- Mac Catalyst 17.4+
 
 ## Declaration
 

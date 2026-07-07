@@ -8,7 +8,6 @@ The achievement’s artwork that you display when the player completes the achie
 **Availability**:
 - iOS 4.1+
 - iPadOS 4.1+
-- Mac Catalyst 4.1+
 - macOS 10.8+
 - tvOS 9.0+
 - visionOS 1.0+

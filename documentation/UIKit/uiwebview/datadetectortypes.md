@@ -8,7 +8,6 @@ The types of data converted to clickable URLs in the web view’s content.
 **Availability**:
 - iOS 3.0+
 - iPadOS 3.0+
-- Mac Catalyst 3.0+
 
 ## Declaration
 

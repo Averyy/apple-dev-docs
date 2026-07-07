@@ -11,6 +11,7 @@ An actor that generates evaluation samples using a language model.
 - Mac Catalyst 27.0+ (Beta)
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -30,6 +31,11 @@ Create a generator, configure its properties, then call [`run()`](samplegenerato
 
 ## Topics
 
+### Creating a generator
+- [init(Prompt, samples: [SampleType], targetCount: Int, sessionProvider: (() -> LanguageModelSession)?, samplingStrategy: SampleGenerator<SampleType>.SamplingStrategy?, validator: ((SampleType) async throws -> Bool)?)](samplegenerator/init(_:samples:targetcount:sessionprovider:samplingstrategy:validator:)-2804x.md)
+  Creates a generator for custom, generable evaluation samples.
+- [init<T>(Prompt, samples: [SampleType], targetCount: Int, sessionProvider: (() -> LanguageModelSession)?, samplingStrategy: SampleGenerator<SampleType>.SamplingStrategy?, validator: ((SampleType) async throws -> Bool)?)](samplegenerator/init(_:samples:targetcount:sessionprovider:samplingstrategy:validator:)-8t01x.md)
+  Creates a generator for sample values with a generable-expected value type.
 ### Configuring generation
 - [var samplingStrategy: SampleGenerator<SampleType>.SamplingStrategy?](samplegenerator/samplingstrategy-swift.property.md)
   The strategy for selecting existing samples as examples in the prompt.
@@ -46,11 +52,6 @@ Create a generator, configure its properties, then call [`run()`](samplegenerato
   All samples — initial and generated — from the most recent run.
 - [var invalidSamples: [SampleType]](samplegenerator/invalidsamples.md)
   Samples that the validator rejected during the most recent run.
-### Initializers
-- [init(Prompt, samples: [SampleType], targetCount: Int, sessionProvider: (() -> LanguageModelSession)?, samplingStrategy: SampleGenerator<SampleType>.SamplingStrategy?, validator: ((SampleType) async throws -> Bool)?)](samplegenerator/init(_:samples:targetcount:sessionprovider:samplingstrategy:validator:)-2804x.md)
-  Creates a generator for custom, generable evaluation samples.
-- [init<T>(Prompt, samples: [SampleType], targetCount: Int, sessionProvider: (() -> LanguageModelSession)?, samplingStrategy: SampleGenerator<SampleType>.SamplingStrategy?, validator: ((SampleType) async throws -> Bool)?)](samplegenerator/init(_:samples:targetcount:sessionprovider:samplingstrategy:validator:)-8t01x.md)
-  Creates a generator for sample values with a generable-expected value type.
 
 ## Relationships
 

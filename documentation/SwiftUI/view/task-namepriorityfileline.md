@@ -17,8 +17,8 @@ Adds an asynchronous task to perform before this view appears.
 ## Declaration
 
 ```swift
-nonisolated
-func task(name: String? = nil, priority: TaskPriority = .userInitiated, file: String = #fileID, line: Int = #line, _ action: sending @escaping @isolated(any) () async -> Void) -> some View
+@export(implementation)
+nonisolated func task(name: String? = nil, priority: TaskPriority = .userInitiated, file: String = #fileID, line: Int = #line, _ action: sending @escaping @isolated(any) () async -> Void) -> some View
 ```
 
 #### Return Value

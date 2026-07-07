@@ -12,7 +12,7 @@ A date picker style that displays the components in an editable field.
 
 ```swift
 @MainActor
-@preconcurrency static var field: FieldDatePickerStyle { get }
+@export(implementation) @preconcurrency static var field: FieldDatePickerStyle { get }
 ```
 
 #### Discussion

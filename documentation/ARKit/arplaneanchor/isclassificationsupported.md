@@ -8,7 +8,6 @@ A Boolean value that indicates whether plane classification is available on the 
 **Availability**:
 - iOS 12.0+
 - iPadOS 12.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

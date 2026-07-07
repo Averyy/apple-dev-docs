@@ -9,7 +9,7 @@ A localized string that specifies the name of a container to which the item belo
 - iOS 9.0+
 - iPadOS 9.0+
 - Mac Catalyst 13.1+
-- macOS 10.13+
+- macOS 10.11+
 - visionOS 1.0+
 
 ## Declaration

@@ -8,7 +8,6 @@ A string that indicates the preferred initial interface orientation for iPad and
 **Availability**:
 - iOS 2.0+
 - iPadOS 2.0+
-- Mac Catalyst 2.0+
 
 
 

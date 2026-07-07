@@ -8,7 +8,6 @@ The layout of content in the web view.
 **Availability**:
 - iOS 7.0+
 - iPadOS 7.0+
-- Mac Catalyst 7.0+
 
 ## Declaration
 

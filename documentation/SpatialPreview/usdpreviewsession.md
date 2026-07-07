@@ -21,7 +21,7 @@ final class USDPreviewSession
 
 #### Overview
 
-To create a `USDPreviewSession`, initialize one with a doc://com.apple.documentation/documentation/usdkit/usdstage-4sfi1 from [`USDKit`](https://developer.apple.com/documentation/USDKit):
+To create a `USDPreviewSession`, initialize one with a [`USDStage`](https://developer.apple.com/documentation/USDKit/USDStage) from [`USDKit`](https://developer.apple.com/documentation/USDKit):
 
 ```swift
 let observer = ConnectedSpatialEndpointObserver()
@@ -34,13 +34,13 @@ let endpoint = try await observer.endpoint
 try await session.start(endpoint: endpoint)
 ```
 
-After [`start(endpoint:parameters:viewerOptions:)`](usdpreviewsession/start(endpoint:parameters:vieweroptions:).md) returns, the session’s `state` transitions to [`SpatialPreviewSessionState.connected`](spatialpreviewsessionstate/connected.md) and the device starts loading the USD content. Then use [`USDKit`](https://developer.apple.com/documentation/USDKit) to make edits to the doc://com.apple.documentation/documentation/usdkit/usdstage-4sfi1 to update the content. Changes on visionOS are automatically synchronized back to [`USDKit`](https://developer.apple.com/documentation/USDKit) in your macOS app.
+After [`start(endpoint:parameters:viewerOptions:)`](usdpreviewsession/start(endpoint:parameters:vieweroptions:).md) returns, the session’s `state` transitions to [`SpatialPreviewSessionState.connected`](spatialpreviewsessionstate/connected.md) and the device starts loading the USD content. Then use [`USDKit`](https://developer.apple.com/documentation/USDKit) to make edits to the [`USDStage`](https://developer.apple.com/documentation/USDKit/USDStage) to update the content. Changes on visionOS are automatically synchronized back to [`USDKit`](https://developer.apple.com/documentation/USDKit) in your macOS app.
 
 ## Topics
 
 ### Protocols
 - [USDPreviewSession.ChangeListDelegate](usdpreviewsession/changelistdelegate.md)
-  Protocol to provide shared undo/redo tracking in a USDPreviewSession
+  A protocol to provide shared undo/redo tracking in a USDPreviewSession.
 ### Structures
 - [USDPreviewSession.OptimizationSteps](usdpreviewsession/optimizationsteps.md)
   A set of optimization steps to apply to a USD stage before previewing on a device.
@@ -50,15 +50,16 @@ After [`start(endpoint:parameters:viewerOptions:)`](usdpreviewsession/start(endp
 - [convenience init(stage: USDStage)](usdpreviewsession/init(stage:).md)
 ### Instance Properties
 - [var delegate: (any USDPreviewSession.ChangeListDelegate)?](usdpreviewsession/delegate.md)
-  Synchronous undo/redo event delegate
+  Optional synchronous undo/redo event delegate
 - [let events: any AsyncSequence<USDPreviewSession.Event, Never>](usdpreviewsession/events.md)
   Async sequence of session events
 - [var isPlaying: Bool](usdpreviewsession/isplaying.md)
 - [var time: TimeInterval](usdpreviewsession/time.md)
 ### Instance Methods
 - [func start(endpoint: SpatialPreviewEndpoint, parameters: USDPreviewSession.OptimizationParameters, viewerOptions: USDPreviewSession.SpatialViewerOptions) async throws](usdpreviewsession/start(endpoint:parameters:vieweroptions:).md)
+  Connects to the specified endpoint and begins streaming the USD stage for spatial preview.
 - [func updateUndoRedoCounts(undo: UInt, redo: UInt) async throws](usdpreviewsession/updateundoredocounts(undo:redo:).md)
-  Update the count of undoable and redoable actions in the USDPreviewSession
+  Update the count of undoable and redoable actions in the USDPreviewSession which is reflected in the UI on visionOS.
 ### Enumerations
 - [USDPreviewSession.Error](usdpreviewsession/error.md)
   Errors that can occur during a USD preview session
@@ -81,7 +82,7 @@ After [`start(endpoint:parameters:viewerOptions:)`](usdpreviewsession/start(endp
 - [protocol SpatialPreviewSession](spatialpreviewsession.md)
   A session that manages the lifecycle and connection state of a spatial preview on a visionOS device.
 - [class DocumentPreviewSession](documentpreviewsession.md)
-  Document session allows you to present the contents of a URL or Data.
+  A session that streams document content to a connected visionOS device for spatial preview.
 
 
 ---

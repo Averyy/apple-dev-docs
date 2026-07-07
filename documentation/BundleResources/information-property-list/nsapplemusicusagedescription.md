@@ -8,7 +8,6 @@ A message that tells people why the app is requesting access to their media libr
 **Availability**:
 - iOS 2.0+
 - iPadOS 2.0+
-- Mac Catalyst 2.0+
 - macOS 15.0+
 - visionOS 1.0+
 

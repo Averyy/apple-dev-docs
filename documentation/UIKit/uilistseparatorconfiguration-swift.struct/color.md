@@ -8,7 +8,7 @@ The color to use for the separators of the item the configuration applies to.
 **Availability**:
 - iOS 14.5+
 - iPadOS 14.5+
-- Mac Catalyst ?+
+- Mac Catalyst 14.5+
 - visionOS ?+
 
 ## Declaration

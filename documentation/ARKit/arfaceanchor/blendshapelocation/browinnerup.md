@@ -8,7 +8,6 @@ The coefficient describing upward movement of the inner portion of both eyebrows
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

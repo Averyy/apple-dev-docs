@@ -36,7 +36,7 @@ A URL that begins with the prefix `www.` is treated as though it doesn’t conta
 
 Trailing slashes are ignored.
 
-If a domain string contains a port number, the system considers only addresses that specify that port number managed. Otherwise, the system matches the domain without regard to the port number specified. For example, the pattern `*.example.com:8080` matches `http://site.example.com:8080/page.html` but not `http://site.example.com/page.html`, while the pattern `*.example.com` matches both URLs.
+If a domain string contains a port number, the system considers only addresses that specify that port number managed. Otherwise, the system matches the domain without regard to the port number specified. For example, the pattern `\*.example.com:8080` matches `http://site.example.com:8080/page.html` but not `http://site.example.com/page.html`, while the pattern `\*.example.com` matches both URLs.
 
 ##### Profile Availability
 

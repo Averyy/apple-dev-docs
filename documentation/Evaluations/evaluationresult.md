@@ -11,6 +11,7 @@ The results of running a model evaluation.
 - Mac Catalyst 27.0+ (Beta)
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -42,8 +43,17 @@ A structure that contains the summary and detailed results from an evaluation ru
   A unique identifier for this particular result.
 - [var reportMetadata: [String : any Sendable]](evaluationresult/reportmetadata.md)
   Framework-generated metadata used for report presentation.
+- [func aggregateValue(AggregationOperation) -> Double](evaluationresult/aggregatevalue(_:).md)
+  Returns the first aggregate value matching the given operation, or `-1` if not found.
 - [EvaluationResult.DataFrameKind](evaluationresult/dataframekind.md)
   The kind of DataFrame to convert for JSON serialization.
+### Inspecting timing
+- [let startTime: Date](evaluationresult/starttime.md)
+  The time when the evaluation run started.
+- [let endTime: Date](evaluationresult/endtime.md)
+  The time when the evaluation run finished.
+- [var duration: TimeInterval](evaluationresult/duration.md)
+  The total duration of the evaluation run.
 ### Formatting results
 - [var groupedSummary: String](evaluationresult/groupedsummary.md)
   A formatted description of summary metrics organized by groups.
@@ -60,16 +70,6 @@ A structure that contains the summary and detailed results from an evaluation ru
   Loads an array of evaluation results from a JSONL file on disk.
 - [init(jsonData: Data) throws](evaluationresult/init(jsondata:).md)
   Creates an evaluation result by parsing JSON data.
-### Instance Properties
-- [var duration: TimeInterval](evaluationresult/duration.md)
-  The total duration of the evaluation run.
-- [let endTime: Date](evaluationresult/endtime.md)
-  The time when the evaluation run finished.
-- [let startTime: Date](evaluationresult/starttime.md)
-  The time when the evaluation run started.
-### Instance Methods
-- [func aggregateValue(AggregationOperation) -> Double](evaluationresult/aggregatevalue(_:).md)
-  Returns the first aggregate value matching the given operation, or `-1` if not found.
 
 ## Relationships
 

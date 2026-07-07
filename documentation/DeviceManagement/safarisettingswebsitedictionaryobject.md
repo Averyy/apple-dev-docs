@@ -19,10 +19,10 @@ object SafariSettingsWebsiteDictionaryObject
 
 ## Properties
 
-- `Camera` (string): Controls whether a website privacy permission default is set. - `None`: No website privacy permission default is set for use of the camera.
-- `Allow`: The website privacy permission default is set to allow use of the camera.
-- `Microphone` (string): Controls whether a website privacy permission default is set. - `None`: No website privacy permission default is set for use of the microphone.
-- `Allow`: The website privacy permission default is set to allow use of the microphone.
+- `Camera` (string): Controls whether a website privacy permission default is set. - `None`: Safari sets no website privacy permission default for use of the camera.
+- `Allow`: Safari sets the website privacy permission default to allow use of the camera.
+- `Microphone` (string): Controls whether a website privacy permission default is set. - `None`: Safari sets no website privacy permission default for use of the microphone.
+- `Allow`: Safari sets the website privacy permission default to allow use of the microphone.
 - `OrganizationJustification` (string) *(required)*: Text that clearly explains to the Safari user the reason why the organization requires these website privacy permission defaults. Safari includes this text in the permission consent prompt it displays when it first displays the website.
 
 

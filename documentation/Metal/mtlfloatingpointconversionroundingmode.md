@@ -4,8 +4,12 @@
 **Kind**: enum
 
 **Availability**:
+- iOS ?+
+- iPadOS ?+
 - Mac Catalyst ?+
 - macOS ?+
+- tvOS ?+
+- visionOS ?+
 
 ## Declaration
 

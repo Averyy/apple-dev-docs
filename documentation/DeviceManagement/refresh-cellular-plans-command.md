@@ -44,7 +44,7 @@ An error response uses one of the following error codes:
         <key>RequestType</key>
         <string>RefreshCellularPlans</string>
         <key>eSIMServerURL</key>
-        <string>http://example.server.com</string>
+        <string>http://server.example.com</string>
     </dict>
     <key>CommandUUID</key>
     <string>0001_RefreshCellularPlans</string>

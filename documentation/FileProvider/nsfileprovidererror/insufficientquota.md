@@ -8,7 +8,6 @@ An error indicating that the File Provider extension can’t upload the item bec
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 11.0+
 - macOS 11.0+
 - visionOS 1.0+
 

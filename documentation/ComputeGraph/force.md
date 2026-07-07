@@ -1,13 +1,13 @@
 # force
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: namespace
 
 Apply physics forces including gravity, drag, noise, and twist.
 
 **Availability**:
-- macOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- macOS ?+
+- Reality Composer Pro ?+
 
 ## Topics
 

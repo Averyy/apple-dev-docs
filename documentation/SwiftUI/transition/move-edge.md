@@ -18,7 +18,7 @@ Returns a transition that moves the view away, towards the specified edge of the
 
 ```swift
 @MainActor
-@preconcurrency static func move(edge: Edge) -> Self
+@export(implementation) @preconcurrency static func move(edge: Edge) -> Self
 ```
 
 ## See Also

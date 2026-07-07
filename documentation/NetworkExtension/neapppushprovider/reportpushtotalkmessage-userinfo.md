@@ -8,7 +8,6 @@ Informs the manager about a push-to-talk message on the connection.
 **Availability**:
 - iOS 16.4+
 - iPadOS 16.4+
-- Mac Catalyst 16.4+
 - visionOS 1.0+
 
 ## Declaration

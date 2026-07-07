@@ -8,7 +8,6 @@ Provides device ranging estimates for a Downlink Time-Difference-of-Arrival sess
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst 26.0+
 
 ## Declaration
 

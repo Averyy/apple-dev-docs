@@ -6,7 +6,7 @@ Enable your accessory to receive forwarded Live Activities by updating your data
 
 #### Overview
 
-To receive forwarded Live Activities on your accessory and alert people about Live Activity updates, you use an extension model that handles secure communication between iPhone and your accessory. Before adding support for Live Activity forwarding, you need to adopt iOS system notification forwarding and implement the extensions that handle communication between iPhone and your accessory. For more information, see doc://com.apple.documentation/documentation/accessorynotifications/receiving-ios-notifications-on-an-accessory.
+To receive forwarded Live Activities on your accessory and alert people about Live Activity updates, you use an extension model that handles secure communication between iPhone and your accessory. Before adding support for Live Activity forwarding, you need to adopt iOS system notification forwarding and implement the extensions that handle communication between iPhone and your accessory. For more information, see [`Receiving iOS notifications on an accessory`](https://developer.apple.com/documentation/AccessoryTransportExtension/receiving-ios-notifications-on-an-accessory).
 
 > **Note**: Your accessory’s companion app doesn’t have access to forwarded Live Activities and notifications. To keep Live Activity and notification content secure, only the extensions that manage the secure connection between iPhone and your accessory can access it.
 
@@ -106,7 +106,7 @@ When the system forwards a Live Activity update to your data provider extension,
 
 If the callback’s activity’s [`state`](accessoryliveactivity/state.md) property equals [`ActivityState.dismissed`](https://developer.apple.com/documentation/ActivityKit/ActivityState/dismissed), remove the Live Activity from the accessory’s display.
 
-To send forwarded Live Activities from your data provider extension to your accessory, use the extension model and code you added to support iOS system notifications. For more information, see doc://com.apple.documentation/documentation/accessorynotifications/receiving-ios-notifications-on-an-accessory.
+To send forwarded Live Activities from your data provider extension to your accessory, use the extension model and code you added to support iOS system notifications. For more information, see [`Receiving iOS notifications on an accessory`](https://developer.apple.com/documentation/AccessoryTransportExtension/receiving-ios-notifications-on-an-accessory).
 
 #### Avoid Duplicated Alerts Across Devices
 
@@ -127,7 +127,7 @@ func loadIcon(from iconFile: AccessoryLiveActivity.IconFile) async throws -> Dat
 
 #### Send Forwarded Live Activities to Your Accessory Securely
 
-To send forwarded Live Activities to your accessory, use the [`AccessoryTransportSecurity`](https://developer.apple.com/documentation/AccessoryTransportExtension/AccessoryTransportSecurity) and [`AccessoryTransportAppExtension`](https://developer.apple.com/documentation/AccessoryTransportExtension/AccessoryTransportAppExtension) extensions you create when you add support for receiving forwarded iOS system notifications. For more information about securely sending Live Activity and notification content to your accessory, see doc://com.apple.documentation/documentation/accessorynotifications/receiving-ios-notifications-on-an-accessory.
+To send forwarded Live Activities to your accessory, use the [`AccessoryTransportSecurity`](https://developer.apple.com/documentation/AccessoryTransportExtension/AccessoryTransportSecurity) and [`AccessoryTransportAppExtension`](https://developer.apple.com/documentation/AccessoryTransportExtension/AccessoryTransportAppExtension) extensions you create when you add support for receiving forwarded iOS system notifications. For more information about securely sending Live Activity and notification content to your accessory, see [`Receiving iOS notifications on an accessory`](https://developer.apple.com/documentation/AccessoryTransportExtension/receiving-ios-notifications-on-an-accessory).
 
 #### Check for Permission
 

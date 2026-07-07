@@ -8,7 +8,6 @@ An estimate of lighting conditions based on the camera image.
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 
@@ -24,8 +23,6 @@ This property’s value is `nil` if the [`isLightEstimationEnabled`](arconfigura
 
 ## See Also
 
-- [func displayTransform(for: UIInterfaceOrientation, viewportSize: CGSize) -> CGAffineTransform](arframe/displaytransform(for:viewportsize:).md)
-  Returns an affine transform for converting between normalized image coordinates and a coordinate space appropriate for rendering the camera image onscreen.
 - [var rawFeaturePoints: ARPointCloud?](arframe/rawfeaturepoints.md)
   The current intermediate results of the scene analysis ARKit uses to perform world tracking.
 - [var capturedDepthData: AVDepthData?](arframe/captureddepthdata.md)

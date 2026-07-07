@@ -8,7 +8,6 @@ The case that indicates a target is aligned horizontally with respect to gravity
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

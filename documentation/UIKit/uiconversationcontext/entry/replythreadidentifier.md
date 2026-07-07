@@ -8,7 +8,6 @@ An optional string that identifies another message in a conversation, when this 
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
-- Mac Catalyst 18.4+
 
 ## Declaration
 

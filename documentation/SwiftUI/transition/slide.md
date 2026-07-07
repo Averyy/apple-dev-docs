@@ -18,7 +18,7 @@ A transition that inserts by moving in from the leading edge, and removes by mov
 
 ```swift
 @MainActor
-@preconcurrency static var slide: SlideTransition { get }
+@export(implementation) @preconcurrency static var slide: SlideTransition { get }
 ```
 
 #### Discussion

@@ -8,7 +8,6 @@ The initial size of the view controller’s view for an app extension, expressed
 **Availability**:
 - iOS 10.0+
 - iPadOS 10.0+
-- Mac Catalyst 10.0+
 
 
 

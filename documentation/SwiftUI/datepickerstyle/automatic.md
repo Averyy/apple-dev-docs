@@ -17,7 +17,7 @@ The default style for date pickers.
 
 ```swift
 @MainActor
-@preconcurrency static var automatic: DefaultDatePickerStyle { get }
+@export(implementation) @preconcurrency static var automatic: DefaultDatePickerStyle { get }
 ```
 
 ## See Also

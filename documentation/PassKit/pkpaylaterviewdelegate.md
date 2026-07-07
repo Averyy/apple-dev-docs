@@ -8,7 +8,6 @@ Methods the framework calls when the Apple Pay Later view’s size changes.
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst 17.0+
 - visionOS 1.0+
 
 ## Declaration

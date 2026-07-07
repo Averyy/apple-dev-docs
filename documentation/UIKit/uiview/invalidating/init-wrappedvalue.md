@@ -8,7 +8,7 @@ Creates a property wrapper that notifies the system when a change in the propert
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst ?+
+- Mac Catalyst 15.0+
 - tvOS 15.0+
 - visionOS ?+
 - Swift 5.1+

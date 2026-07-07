@@ -3,6 +3,8 @@
 **Framework**: RealityKit  
 **Kind**: property
 
+The splat data and rendering options the component displays.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)

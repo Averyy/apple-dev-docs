@@ -8,7 +8,7 @@ The methods you use on a find session’s searchable objects to perform search o
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst ?+
+- Mac Catalyst 16.0+
 - visionOS ?+
 
 ## Declaration

@@ -8,7 +8,6 @@ The width and height, in pixels, of the captured camera image.
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 
@@ -18,7 +17,7 @@ var imageResolution: CGSize { get }
 
 #### Discussion
 
-This size describes the image in the [`capturedImage`](arframe/capturedimage.md) buffer, which contains image data in the camera device’s native sensor orientation. To convert image coordinates to match a specific display orientation of that image, use the [`viewMatrix(for:)`](arcamera/viewmatrix(for:).md) or [`projectPoint(_:orientation:viewportSize:)`](arcamera/projectpoint(_:orientation:viewportsize:).md) method.
+This size describes the image in the [`capturedImage`](arframe/capturedimage.md) buffer, which contains image data in the camera device’s native sensor orientation. To convert image coordinates to match a specific display orientation of that image, use the `ARCamera/viewMatrix(for:)` or `ARCamera/projectPoint(_:orientation:viewportSize:)` method.
 
 ## See Also
 

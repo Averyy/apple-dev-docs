@@ -8,7 +8,6 @@ Finds and adds nearby accessories to the home.
 **Availability**:
 - iOS 10.0+
 - iPadOS 10.0+
-- Mac Catalyst 10.0+
 
 ## Declaration
 

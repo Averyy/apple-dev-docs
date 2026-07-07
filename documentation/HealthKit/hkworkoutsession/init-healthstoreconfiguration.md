@@ -8,7 +8,6 @@ Returns a newly instantiated workout session with an associated workout builder.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst 26.0+
 - watchOS 5.0+
 
 ## Declaration

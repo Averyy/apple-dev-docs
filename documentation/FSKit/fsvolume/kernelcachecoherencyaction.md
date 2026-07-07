@@ -27,7 +27,7 @@ enum KernelCacheCoherencyAction
   An action to update the coherency mode while keeping the cache valid, requiring no push or invalidation.
 - [FSVolume.KernelCacheCoherencyAction.revoke](fsvolume/kernelcachecoherencyaction/revoke.md)
   An action to invalidate all caches, revoke all access to the item, and trigger vnode reclamation.
-### Initializers - generated
+### Initializers
 - [init?(rawValue: Int)](fsvolume/kernelcachecoherencyaction/init(rawvalue:).md)
 
 ## Relationships

@@ -217,22 +217,22 @@ The dismiss action doesn’t close the window if you call it from a modal — li
 - [init<D, C>(for: D.Type, content: (Binding<D?>) -> C)](windowgroup/init(for:content:).md)
   Creates a data-presenting window group.
 - [init(_:for:content:)](windowgroup/init(_:for:content:).md)
-  Creates a data-presenting window group with a text view title.
+  Creates a data-presenting window group with a localized title string.
 ### Providing default data to a window group
 - [init<D, C>(for: D.Type, content: (Binding<D>) -> C, defaultValue: () -> D)](windowgroup/init(for:content:defaultvalue:).md)
   Creates a data-presenting window group with a default value.
 - [init(_:for:content:defaultValue:)](windowgroup/init(_:for:content:defaultvalue:).md)
-  Creates a data-presenting window group with a text view title and a default value.
+  Creates a data-presenting window group with a localized title string and a default value.
 ### Identifying a data-driven window group
 - [init<D, C>(id: String, for: D.Type, content: (Binding<D?>) -> C)](windowgroup/init(id:for:content:).md)
   Creates a data-presenting window group with an identifier.
 - [init(_:id:for:content:)](windowgroup/init(_:id:for:content:).md)
-  Creates a data-presenting window group with a text view title and an identifier.
+  Creates a data-presenting window group with a localized title string and an identifier.
 ### Identifying a window group that has default data
 - [init<D, C>(id: String, for: D.Type, content: (Binding<D>) -> C, defaultValue: () -> D)](windowgroup/init(id:for:content:defaultvalue:).md)
   Creates a data-presenting window group with an identifier and a default value.
 - [init(_:id:for:content:defaultValue:)](windowgroup/init(_:id:for:content:defaultvalue:).md)
-  Creates a data-presenting window group with a text view title, an identifier, and a default value.
+  Creates a data-presenting window group with a localized title string, an identifier, and a default value.
 ### Supporting types
 - [struct PresentedWindowContent](presentedwindowcontent.md)
   A view that represents the content of a presented window.

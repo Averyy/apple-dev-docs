@@ -9,7 +9,7 @@ A Boolean value that indicates whether the current query is no longer running.
 - iOS 10.0+
 - iPadOS 10.0+
 - Mac Catalyst 13.1+
-- macOS 10.13+
+- macOS 10.12+
 - visionOS 1.0+
 
 ## Declaration

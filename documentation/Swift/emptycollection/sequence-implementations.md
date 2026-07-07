@@ -76,7 +76,9 @@
   Returns a Boolean value indicating whether the initial elements of the sequence are the same as the elements in another sequence.
 - [func starts<PossiblePrefix>(with: PossiblePrefix, by: (Self.Element, PossiblePrefix.Element) throws -> Bool) rethrows -> Bool](emptycollection/starts(with:by:).md)
   Returns a Boolean value indicating whether the initial elements of the sequence are equivalent to the elements in another sequence, using the given predicate as the equivalence test.
-- [func withContiguousStorageIfAvailable<R>((UnsafeBufferPointer<Self.Element>) throws -> R) rethrows -> R?](emptycollection/withcontiguousstorageifavailable(_:).md)
+- [func withContiguousStorageIfAvailable<R, E>((UnsafeBufferPointer<Element>) throws(E) -> R) throws(E) -> R?](emptycollection/withcontiguousstorageifavailable(_:).md)
+  Executes a closure on the sequence’s contiguous storage.
+- [func withContiguousStorageIfAvailable<R>((UnsafeBufferPointer<Self.Element>) throws -> R) rethrows -> R?](emptycollection/withcontiguousstorageifavailable(_:)-5tfdr.md)
   Executes a closure on the sequence’s contiguous storage.
 
 

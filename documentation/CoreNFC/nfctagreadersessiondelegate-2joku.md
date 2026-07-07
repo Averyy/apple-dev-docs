@@ -8,7 +8,7 @@ A protocol that an object implements to receive callbacks sent from an NFC tag r
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst ?+
+- Mac Catalyst 13.0+
 
 ## Declaration
 

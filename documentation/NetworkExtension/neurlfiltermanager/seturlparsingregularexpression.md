@@ -8,7 +8,7 @@ Sets a regular expression for use in URL parsing.
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst ?+
+- Mac Catalyst 27.0+ (Beta)
 - macOS 27.0+ (Beta)
 
 ## Declaration
@@ -25,7 +25,7 @@ Calling this method validates the `pattern` you provide for the regular expressi
 
 The result is a single string that uses the space character for a delimiter between each name-value pair, such as:
 
-```not specified
+```None
 <group-1-name>=<group-1-value> <group-2-name>=<group-2-value> <group-3-name>=...
 ```
 

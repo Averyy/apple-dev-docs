@@ -8,7 +8,6 @@ Custom App Transport Security (ATS) configurations for named domains.
 **Availability**:
 - iOS 9.0+
 - iPadOS 9.0+
-- Mac Catalyst 9.0+
 - macOS 10.11+
 - visionOS 1.0+
 

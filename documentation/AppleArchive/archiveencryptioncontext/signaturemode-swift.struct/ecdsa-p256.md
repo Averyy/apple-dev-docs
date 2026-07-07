@@ -8,7 +8,7 @@ A constant that represents an ECDSA Nist P-256 signature.
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst ?+
+- Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
 - visionOS ?+

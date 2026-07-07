@@ -17,6 +17,7 @@ Creates a rectangle with the same corner style set on four corners.
 ## Declaration
 
 ```swift
+@export(implementation)
 static func rect(corners: Edge.Corner.Style, isUniform: Bool = false) -> Self
 ```
 

@@ -16,6 +16,7 @@ A picker style that presents the options as a menu when the user presses a butto
 ## Declaration
 
 ```swift
+@export(implementation)
 static var menu: MenuPickerStyle { get }
 ```
 

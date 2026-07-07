@@ -16,7 +16,7 @@ A control group style that presents its content as a palette.
 
 ```swift
 @MainActor
-@preconcurrency static var palette: PaletteControlGroupStyle { get }
+@export(implementation) @preconcurrency static var palette: PaletteControlGroupStyle { get }
 ```
 
 #### Discussion

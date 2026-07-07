@@ -29,7 +29,7 @@ The following combinations of binary identifiers are supported for each key:
 
 - `AllowedBinaries`: - Either `CDHash` or `TeamID` needs to be present.
 - `SigningID`, `PathPrefix`, or `SigningState` may be present.
-- `DeniedBinaries` - Either `CDHash` or `TeamID` or `SigningID` needs to be present.
+- `DeniedBinaries`: - Either `CDHash` or `TeamID` or `SigningID` needs to be present.
 - `PathPrefix` or `SigningState` may be present.
 
 ##### Privacy Permission Defaults
@@ -57,7 +57,7 @@ Only AppKit-based apps on macOS support this feature.
 | Allowed in user scope | macOS, Shared iPad |
 | Apply | Multiple configurations are combined and applied as a single effective configuration |
 
-##### Configuration Examples
+##### App Privacy Examples
 
 **Allow various permission defaults for several apps in iOS**:
 

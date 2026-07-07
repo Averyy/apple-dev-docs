@@ -1,6 +1,6 @@
 # assembly
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: property
 
 The assembled compute graph layout that defines the graph’s buffer, uniform, and texture configuration.
@@ -12,7 +12,7 @@ The assembled compute graph layout that defines the graph’s buffer, uniform, a
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 ## Declaration
 

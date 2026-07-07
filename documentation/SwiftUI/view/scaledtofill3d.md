@@ -11,8 +11,8 @@ Scales this view to fill its parent.
 ## Declaration
 
 ```swift
-nonisolated
-func scaledToFill3D() -> some View
+@export(implementation)
+nonisolated func scaledToFill3D() -> some View
 ```
 
 #### Return Value
@@ -45,7 +45,7 @@ Model3D(named: "Sphere") { resolved in
 - [func scaledToFit3D() -> some View](view/scaledtofit3d.md)
   Scales this view to fit its parent.
 - [func scaleEffect(_:anchor:)](view/scaleeffect(_:anchor:).md)
-  Scales this view’s rendered output by the given amount in both the horizontal and vertical directions, relative to an anchor point.
+  Scales this view uniformly by the specified factor, relative to an anchor point.
 - [func scaleEffect(x: CGFloat, y: CGFloat, anchor: UnitPoint) -> some View](view/scaleeffect(x:y:anchor:).md)
   Scales this view’s rendered output by the given horizontal and vertical amounts, relative to an anchor point.
 - [func scaleEffect(x: CGFloat, y: CGFloat, z: CGFloat, anchor: UnitPoint3D) -> some View](view/scaleeffect(x:y:z:anchor:).md)

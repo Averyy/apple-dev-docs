@@ -90,7 +90,6 @@ An `UnsafeMutableBufferPointer` instance is a view into memory and does not own 
   Updates the buffer’s initialized memory with every element of the source.
 - [func update(repeating: Element)](unsafemutablebufferpointer/update(repeating:).md)
   Updates every element of this buffer’s initialized memory.
-- [func withBytes<R, E>((RawSpan) throws(E) -> R) throws(E) -> R](unsafemutablebufferpointer/withbytes(_:).md)
 - [func withMemoryRebound<T, E, Result>(to: T.Type, (UnsafeMutableBufferPointer<T>) throws(E) -> Result) throws(E) -> Result](unsafemutablebufferpointer/withmemoryrebound(to:_:).md)
   Executes the given closure while temporarily binding the memory referenced by this buffer to the given type.
 ### Subscripts

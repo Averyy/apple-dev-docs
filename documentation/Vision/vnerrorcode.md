@@ -48,6 +48,8 @@ enum VNErrorCode
   The system doesn’t have enough memory to complete the request.
 - [VNErrorCode.requestCancelled](vnerrorcode/requestcancelled.md)
   An app canceled the request.
+- [VNErrorCode.resourceCorrupted](vnerrorcode/resourcecorrupted.md)
+- [VNErrorCode.resourceUnavailable](vnerrorcode/resourceunavailable.md)
 - [VNErrorCode.timeStampNotFound](vnerrorcode/timestampnotfound.md)
   The system can’t find a timestamp.
 - [VNErrorCode.unknownError](vnerrorcode/unknownerror.md)
@@ -64,9 +66,6 @@ enum VNErrorCode
   The requested operation timed out.
 ### Creating an Error Code
 - [init?(rawValue: Int)](vnerrorcode/init(rawvalue:).md)
-### Enumeration Cases
-- [VNErrorCode.resourceCorrupted](vnerrorcode/resourcecorrupted.md)
-- [VNErrorCode.resourceUnavailable](vnerrorcode/resourceunavailable.md)
 
 ## Relationships
 

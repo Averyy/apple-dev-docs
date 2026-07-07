@@ -16,7 +16,7 @@ The table style that describes the behavior and appearance of a table with its c
 
 ```swift
 @MainActor
-@preconcurrency static var inset: InsetTableStyle { get }
+@export(implementation) @preconcurrency static var inset: InsetTableStyle { get }
 ```
 
 #### Discussion

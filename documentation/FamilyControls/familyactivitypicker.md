@@ -8,7 +8,6 @@ A view in which users specify applications, web domains, and categories without 
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst 15.0+
 
 ## Declaration
 

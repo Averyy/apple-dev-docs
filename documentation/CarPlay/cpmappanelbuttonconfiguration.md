@@ -17,12 +17,12 @@ class CPMapPanelButtonConfiguration
 ## Topics
 
 ### Initializers
-- [init(primaryAction: CPTextButton, secondaryButton: CPButton?, travelEstimates: CPTravelEstimates?)](cpmappanelbuttonconfiguration/init(primaryaction:secondarybutton:travelestimates:).md)
+- [init(primaryAction: CPTextButton, secondaryButton: CPButton?, travelEstimates: CPTravelEstimates)](cpmappanelbuttonconfiguration/init(primaryaction:secondarybutton:travelestimates:).md)
   Initializes a map panel button configuration with a primary action, optional travel estimates, and an optional secondary button.
 ### Instance Properties
 - [var secondaryButton: CPButton?](cpmappanelbuttonconfiguration/secondarybutton.md)
   An optional secondary button shown with this configuration. Note: only the image property of this button is used.
-- [var travelEstimates: CPTravelEstimates?](cpmappanelbuttonconfiguration/travelestimates.md)
+- [var travelEstimates: CPTravelEstimates](cpmappanelbuttonconfiguration/travelestimates.md)
   Optional travel estimates displayed alongside the primary action.
 
 ## Relationships

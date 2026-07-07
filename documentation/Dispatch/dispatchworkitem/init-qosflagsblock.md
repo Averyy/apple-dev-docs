@@ -8,7 +8,7 @@ Creates a new dispatch work item from an existing block and assigns it the speci
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+
-- Mac Catalyst ?+
+- Mac Catalyst 8.0+
 - macOS 10.10+
 - tvOS ?+
 - visionOS ?+

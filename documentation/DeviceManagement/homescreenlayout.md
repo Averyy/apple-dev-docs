@@ -127,7 +127,7 @@ To disable deletion of apps, set `allowAppRemoval` to `false` with [`Restriction
                         <key>Type</key>
                         <string>WebClip</string>
                         <key>URL</key>
-                        <string>https://www.apple.com</string>
+                        <string>https://www.example.com</string>
                         <key>DisplayName</key>
                         <string>Custom Home Screen Layout</string>
                     </dict>

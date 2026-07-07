@@ -8,7 +8,7 @@ An interface that system types adopt and use to manage their relationship to app
 **Availability**:
 - iOS 18.2+
 - iPadOS 18.2+
-- Mac Catalyst ?+
+- Mac Catalyst 18.2+
 - macOS 15.2+
 - tvOS 18.2+
 - visionOS 2.2+
@@ -56,7 +56,6 @@ System types adopt the `AppEntityAnnotatable` protocol and use it to store a ref
   A unique identifier for an app entity instance within an application.
 - [struct AttributedTypeIdentifier](attributedtypeidentifier.md)
   A unique identifier for an app entity or transient app entity type within an application bundle.
-- [struct AppEntityIdentifier](appentityidentifier.md)
 
 
 ---

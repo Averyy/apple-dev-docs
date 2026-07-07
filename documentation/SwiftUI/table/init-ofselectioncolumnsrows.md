@@ -15,8 +15,8 @@ Creates a table with the given columns and rows that supports selecting multiple
 ## Declaration
 
 ```swift
-nonisolated
-init(of valueType: Value.Type, selection: Binding<Set<Value.ID>>, @TableColumnBuilder<Value, Never> columns: () -> Columns, @TableRowBuilder<Value> rows: () -> Rows)
+@export(implementation)
+nonisolated init(of valueType: Value.Type, selection: Binding<Set<Value.ID>>, @TableColumnBuilder<Value, Never> columns: () -> Columns, @TableRowBuilder<Value> rows: () -> Rows)
 ```
 
 ## Parameters

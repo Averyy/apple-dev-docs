@@ -8,7 +8,6 @@ Preview a widget with an activity configuration, using the specified attributes 
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst 17.0+
 
 ## Declaration
 

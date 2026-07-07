@@ -11,15 +11,15 @@ Creates a TextFieldLink which when pressed will request text input from the user
 ## Declaration
 
 ```swift
-nonisolated
-init(_ titleKey: LocalizedStringKey, prompt: Text? = nil, onSubmit: @escaping (String) -> Void)
+@export(implementation)
+nonisolated init(_ titleResource: LocalizedStringResource, prompt: Text? = nil, onSubmit: @escaping (String) -> Void)
 ```
 
 ## Parameters
 
-- `titleKey`: A key for the TextFieldLink’s localized title, that describes the purpose of requesting text input.
+- `titleResource`: A key for the TextFieldLink’s localized title, that describes the purpose of requesting text input.
 - `prompt`: Text which describes the reason for requesting text input.
-- `onSubmit`: An action to perform when text input has been accepted and dismissed
+- `onSubmit`: An action to perform when text input has been accepted and dismissed.
 
 ## See Also
 

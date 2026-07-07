@@ -567,7 +567,6 @@ When the destination array’s element type is a nonclass type that bridges to a
 ](array/makesamples(_:targetcount:sessionprovider:validator:)-5s9y1.md)
   Generates synthetic data based on this dataset and returns a stream of new samples.
 - [func toDictionary<Key>(with: (Element) -> Key) -> [Key : Element]](array/todictionary(with:).md)
-- [func withBytes<R, E>((RawSpan) throws(E) -> R) throws(E) -> R](array/withbytes(_:).md)
 - [func withUnsafeTaggedBuffers<R>(([CMTaggedBuffer]) throws -> sending R) rethrows -> sending R](array/withunsafetaggedbuffers(_:).md)
   Access the underlying CMTaggedBuffers.
 ### Subscripts

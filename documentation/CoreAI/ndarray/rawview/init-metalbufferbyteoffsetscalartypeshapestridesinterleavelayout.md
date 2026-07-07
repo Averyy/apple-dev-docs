@@ -8,7 +8,6 @@ Initialize a raw view from an existing metal buffer, interpreted as the specifie
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 
@@ -34,6 +33,13 @@ This initializer is unsafe, you are responsible for ensuring that no other code 
 - shape: The shape of the resulting view.
 - strides: The strides of the resulting view. If left empty, they will be computed as contiguous row-major.
 - interleaveLayout: Which dimension is interleaved and by what factor. See [`NDArray.InterleaveLayout`](ndarray/interleavelayout-swift.struct.md).
+
+## See Also
+
+- [init(bytes: RawSpan, byteOffset: Int, scalarType: NDArray.ScalarType, shape: [Int], strides: [Int], interleaveLayout: NDArray.InterleaveLayout?)](ndarray/rawview/init(bytes:byteoffset:scalartype:shape:strides:interleavelayout:).md)
+  Initialize a raw view from existing raw memory, interpreted as the specified scalar type.
+- [init(ioSurface: borrowing IOSurface, byteOffset: Int, scalarType: NDArray.ScalarType, shape: [Int], strides: [Int], interleaveLayout: NDArray.InterleaveLayout?)](ndarray/rawview/init(iosurface:byteoffset:scalartype:shape:strides:interleavelayout:).md)
+  Initialize a raw view from an existing IOSurface, interpreted as the specified scalar type.
 
 
 ---

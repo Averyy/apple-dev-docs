@@ -75,9 +75,9 @@ Dynamically move, rotate, and scale entities at runtime.
   A numerical representation of the impact an animation has on a scene or entity.
 ### Animation graphs
 - [class AnimationGraphResource](animationgraphresource.md)
-  A compiled animation graph resource that drives skeletal animation on an entity.
+  A compiled animation graph that drives skeletal animation on an entity by blending and transitioning between animation clips at runtime.
 - [struct AnimationGraphComponent](animationgraphcomponent.md)
-  A component that drives skeletal animation on an entity using a node-based animation graph.
+  A component that drives skeletal animation on an entity using an animation graph.
 
 ## See Also
 

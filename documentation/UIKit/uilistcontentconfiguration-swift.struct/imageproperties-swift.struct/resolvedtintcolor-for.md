@@ -8,7 +8,7 @@ Generates the resolved tint color for the specified tint color, using the tint c
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst ?+
+- Mac Catalyst 14.0+
 - tvOS 14.0+
 - visionOS ?+
 

@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: case
 
+Insert at the front of the append list.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)

@@ -17,6 +17,7 @@ The radius of the bottom-leading corner.
 ## Declaration
 
 ```swift
+@export(implementation)
 var bottomLeading: CGFloat { get set }
 ```
 

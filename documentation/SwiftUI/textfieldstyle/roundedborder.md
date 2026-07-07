@@ -15,6 +15,7 @@ A text field style with a system-defined rounded border.
 ## Declaration
 
 ```swift
+@export(implementation)
 static var roundedBorder: RoundedBorderTextFieldStyle { get }
 ```
 

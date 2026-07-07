@@ -17,6 +17,7 @@ The amount of blue in the color in the extended sRGB color space.
 ## Declaration
 
 ```swift
+@export(implementation)
 var blue: Float { get set }
 ```
 

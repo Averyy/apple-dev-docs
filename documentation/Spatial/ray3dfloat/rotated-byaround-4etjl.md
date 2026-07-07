@@ -8,7 +8,7 @@ Returns a ray that’s rotated by the specified rotation around a specified pivo
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst 26.0+
 - macOS 26.0+
 - tvOS 26.0+
 - visionOS 26.0+

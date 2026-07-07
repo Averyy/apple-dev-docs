@@ -1,6 +1,6 @@
 # ComputeNodeGraph.Topology.triangle
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: case
 
 Each element emits three vertices, rendered as an independent triangle.
@@ -12,7 +12,7 @@ Each element emits three vertices, rendered as an independent triangle.
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 ## Declaration
 

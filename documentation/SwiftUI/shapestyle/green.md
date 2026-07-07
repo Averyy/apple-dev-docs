@@ -17,6 +17,7 @@ A context-dependent green color suitable for use in UI elements.
 ## Declaration
 
 ```swift
+@export(implementation)
 static var green: Color { get }
 ```
 

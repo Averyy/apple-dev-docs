@@ -8,7 +8,6 @@ The position or motion of the device makes geotracking unstable.
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
 
 ## Declaration
 

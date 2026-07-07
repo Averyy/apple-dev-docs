@@ -17,6 +17,7 @@ A context-dependent pink color suitable for use in UI elements.
 ## Declaration
 
 ```swift
+@export(implementation)
 static var pink: Color { get }
 ```
 

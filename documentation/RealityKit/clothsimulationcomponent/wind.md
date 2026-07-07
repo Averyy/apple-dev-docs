@@ -8,7 +8,6 @@ The wind force affecting all the cloth bodies in the simulation, in Newtons.
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 
 ## Declaration

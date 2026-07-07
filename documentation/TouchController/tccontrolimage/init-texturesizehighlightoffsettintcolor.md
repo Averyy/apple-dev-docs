@@ -8,7 +8,6 @@ Creates a new image with the specified texture, size, highlight texture, offset,
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst 26.0+
 
 ## Declaration
 

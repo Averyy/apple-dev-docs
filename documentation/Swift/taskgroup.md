@@ -117,7 +117,7 @@ For information about the language-level concurrency model that `TaskGroup` is p
   Waits for the next child task to complete, and returns the value it returned.
 - [var isEmpty: Bool](taskgroup/isempty.md)
   A Boolean value that indicates whether the group has any remaining tasks.
-- [func waitForAll(isolation: isolated (any Actor)?) async](taskgroup/waitforall(isolation:).md)
+- [func waitForAll() async](taskgroup/waitforall.md)
   Wait for all of the group’s remaining tasks to complete.
 ### Accessing an Asynchronous Sequence of Results
 - [func makeAsyncIterator() -> TaskGroup<ChildTaskResult>.Iterator](taskgroup/makeasynciterator.md)
@@ -180,6 +180,8 @@ For information about the language-level concurrency model that `TaskGroup` is p
 - [func asyncUnlessCancelled(priority: TaskPriority?, operation: () async -> ChildTaskResult) -> Bool](taskgroup/asyncunlesscancelled(priority:operation:).md)
 - [func spawn(priority: TaskPriority?, operation: () async -> ChildTaskResult)](taskgroup/spawn(priority:operation:).md)
 - [func spawnUnlessCancelled(priority: TaskPriority?, operation: () async -> ChildTaskResult) -> Bool](taskgroup/spawnunlesscancelled(priority:operation:).md)
+- [func waitForAll(isolation: isolated (any Actor)?) async](taskgroup/waitforall(isolation:).md)
+  Wait for all of the group’s remaining tasks to complete.
 ### Default Implementations
 - [AsyncSequence Implementations](taskgroup/asyncsequence-implementations.md)
 

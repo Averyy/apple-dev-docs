@@ -52,9 +52,9 @@ Configure navigation containers by adding view modifiers like [`navigationSplitV
   A view that represents a column in a navigation split view.
 ### Setting titles for navigation content
 - [func navigationTitle(_:)](view/navigationtitle(_:).md)
-  Configures the view’s title for purposes of navigation, using a string binding.
+  Configures the view’s title for purposes of navigation, using a localized string resource.
 - [func navigationSubtitle(_:)](view/navigationsubtitle(_:).md)
-  Configures the view’s subtitle for purposes of navigation.
+  Configures the view’s subtitle for purposes of navigation, using a localized string resource.
 - [func navigationDocument(_:)](view/navigationdocument(_:).md)
   Configures the view’s document for purposes of navigation.
 - [func navigationDocument(_:preview:)](view/navigationdocument(_:preview:).md)

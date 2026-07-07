@@ -17,6 +17,7 @@ Returns a shape style that applies the specified shadow style to the current sty
 ## Declaration
 
 ```swift
+@export(implementation)
 static func shadow(_ style: ShadowStyle) -> some ShapeStyle
 ```
 

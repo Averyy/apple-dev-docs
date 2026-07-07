@@ -11,6 +11,7 @@ An immersion style that displays unbounded content intermixed with other app con
 ## Declaration
 
 ```swift
+@export(implementation)
 static var mixed: MixedImmersionStyle { get }
 ```
 

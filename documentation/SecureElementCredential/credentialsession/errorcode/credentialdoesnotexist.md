@@ -8,7 +8,6 @@ The credential doesn’t exist, or you don’t have access to it.
 **Availability**:
 - iOS 18.1+
 - iPadOS 18.1+
-- Mac Catalyst 18.1+
 
 ## Declaration
 

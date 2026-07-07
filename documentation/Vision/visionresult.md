@@ -8,7 +8,6 @@ The result the framework produces by performing a request.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -36,7 +35,10 @@ Each result contains the original [`VisionRequest`](visionrequest.md), along wit
   A result from performing a generate person segmentation request.
 - [case detectDocumentSegmentation(DetectDocumentSegmentationRequest, DetectedDocumentObservation?)](visionresult/detectdocumentsegmentation(_:_:).md)
   A result from performing a detect document segmentation request.
+- [case generateIterativeSegmentation(GenerateIterativeSegmentationRequest, PixelBufferObservation?)](visionresult/generateiterativesegmentation(_:_:).md)
 - [case recognizeDocuments(RecognizeDocumentsRequest, [DocumentObservation])](visionresult/recognizedocuments(_:_:).md)
+### Getting the iterative and selected object result
+- [case generateIterativeSegmentation(GenerateIterativeSegmentationRequest, PixelBufferObservation?)](visionresult/generateiterativesegmentation(_:_:).md)
 ### Getting the image aesthetics and lens smudge result
 - [case calculateImageAestheticsScores(CalculateImageAestheticsScoresRequest, ImageAestheticsScoresObservation)](visionresult/calculateimageaestheticsscores(_:_:).md)
   A result from performing a calculate image aesthetics scores request.
@@ -106,8 +108,6 @@ Each result contains the original [`VisionRequest`](visionrequest.md), along wit
 ### Getting the error result
 - [case error(any VisionRequest, any Error)](visionresult/error(_:_:).md)
   A result from encountering a framework error.
-### Enumeration Cases
-- [case generateIterativeSegmentation(GenerateIterativeSegmentationRequest, PixelBufferObservation)](visionresult/generateiterativesegmentation(_:_:).md)
 
 ## Relationships
 

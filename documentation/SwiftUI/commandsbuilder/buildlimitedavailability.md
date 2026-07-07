@@ -15,6 +15,7 @@ Processes commands for a conditional compiler-control statement that performs an
 ## Declaration
 
 ```swift
+@export(implementation)
 static func buildLimitedAvailability(_ content: any Commands) -> some Commands
 ```
 

@@ -8,7 +8,7 @@ Creates a capsule shape, a rounded rectangle with a corner radius equal to half 
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst ?+
+- Mac Catalyst 17.0+
 - visionOS 1.0+
 
 ## Declaration

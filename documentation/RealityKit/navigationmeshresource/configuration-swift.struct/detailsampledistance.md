@@ -3,6 +3,8 @@
 **Framework**: RealityKit  
 **Kind**: property
 
+The sampling distance used when generating the detailed Navigation Mesh heightmap, in meters.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -20,6 +22,7 @@ var detailSampleDistance: Double
 ## See Also
 
 - [var detailSampleMaximumError: Double](navigationmeshresource/configuration-swift.struct/detailsamplemaximumerror.md)
+  The maximum deviation from the original heightfield data allowed when creating the detailed heightmap, in meters.
 
 
 ---

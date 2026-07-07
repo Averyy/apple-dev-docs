@@ -16,6 +16,7 @@ A picker style that presents the options in a segmented control.
 ## Declaration
 
 ```swift
+@export(implementation)
 static var segmented: SegmentedPickerStyle { get }
 ```
 

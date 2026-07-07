@@ -25,7 +25,7 @@ protocol DocumentReader<Snapshot>
   Reads the document from disk.
 - [associatedtype Snapshot](documentreader/snapshot.md)
   A type that represents the document’s stored content.
-- [associatedtype Source](documentreader/source.md)
+- [associatedtype Source = URL](documentreader/source.md)
 
 ## Relationships
 

@@ -8,7 +8,7 @@ Applies the provided content effect and pointer shape to the current region.
 **Availability**:
 - iOS 13.4+
 - iPadOS 13.4+
-- Mac Catalyst ?+
+- Mac Catalyst 13.4+
 - visionOS ?+
 
 ## Declaration

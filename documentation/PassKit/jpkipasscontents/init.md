@@ -8,7 +8,6 @@ Initializes with the digital identity state of the provided pass.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 
 ## Declaration
 

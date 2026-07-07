@@ -220,7 +220,7 @@ For a complete walkthrough of building an app that uses your reference accessory
 ## See Also
 
 - [Working with generic spatial accessories](../visionOS/working-with-generic-spatial-accessories.md)
-  Use generic spatial accessories to track purpose-built devices in your visionOS app.
+  Let people place digital replicas of a generic spatial accessory by tracking the accessory with ARKit.
 - [class AccessoryTrackingProvider](accessorytrackingprovider.md)
   Provides the real time position of accessories in the user’s environment.
 - [struct Accessory](accessory.md)

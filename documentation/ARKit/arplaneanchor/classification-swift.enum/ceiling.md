@@ -8,7 +8,6 @@ The plane anchor represents a real-world ceiling or similar overhead horizontal 
 **Availability**:
 - iOS 12.0+
 - iPadOS 12.0+
-- Mac Catalyst 12.0+
 
 ## Declaration
 

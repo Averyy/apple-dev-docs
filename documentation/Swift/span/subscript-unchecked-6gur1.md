@@ -17,7 +17,7 @@ Accesses the element at the specified index in the `Span`.
 ## Declaration
 
 ```swift
-subscript(unchecked position: Span<Element>.Index) -> Element { get }
+subscript(unchecked position: Span<Element>.Index) -> Element { borrow }
 ```
 
 #### Overview

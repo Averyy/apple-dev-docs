@@ -10,6 +10,7 @@
 ## Declaration
 
 ```swift
+@export(implementation)
 static func buildExpression<C>(_ content: C) -> C where C : CompositorContent
 ```
 

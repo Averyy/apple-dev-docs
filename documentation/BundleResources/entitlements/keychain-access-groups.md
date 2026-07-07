@@ -8,7 +8,6 @@ The identifiers for the keychain groups that the app may share items with.
 **Availability**:
 - iOS 3.0+
 - iPadOS 3.0+
-- Mac Catalyst 3.0+
 - macOS 10.7+
 - tvOS 9.0+
 - visionOS 1.0+

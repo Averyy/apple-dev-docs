@@ -13,6 +13,7 @@ The represented gesture recognizer’s current location in the coordinate space 
 ## Declaration
 
 ```swift
+@export(implementation)
 var localLocation: CGPoint { get }
 ```
 

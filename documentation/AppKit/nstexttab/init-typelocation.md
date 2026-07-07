@@ -6,7 +6,7 @@
 Initializes a newly allocated text tab with the specified alignment and location.
 
 **Availability**:
-- macOS ?+
+- macOS 10.0+
 
 ## Declaration
 

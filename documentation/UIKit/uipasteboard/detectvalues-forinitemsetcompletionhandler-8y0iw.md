@@ -8,7 +8,7 @@ Determines whether pasteboard items match the specified patterns, reading the co
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst ?+
+- Mac Catalyst 14.0+
 - visionOS 1.0+
 
 ## Declaration

@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: property
 
-Controls whether subscribing suppresses automatic root motion application.
+A Boolean value that controls whether subscribing to the event suppresses automatic application of the root motion delta.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -21,9 +21,9 @@ var suppressesAutomaticApplication: Bool { get nonmutating set }
 
 #### Discussion
 
-Defaults to `true` — the system will not apply root motion automatically when this event has subscribers. Set to `false` to allow automatic application even while observing the event.
+The default value is `true` — while the event has subscribers, the system doesn’t apply the delta automatically and the subscriber takes over. Set to `false` to keep automatic application in place while still observing the event.
 
-> **Note**: This property only takes effect when using `scene.subscribe(to:on:)`. Changes made via `scene.publisher(for:on:)` are not written back to the engine.
+> **Note**: This property only takes effect when subscribing through `scene.subscribe(to:on:)`. Changes made via `scene.publisher(for:on:)` aren’t written back to the engine.
 
 ## See Also
 

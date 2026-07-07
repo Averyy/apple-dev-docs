@@ -3,7 +3,7 @@
 **Framework**: AVFAudio  
 **Kind**: method
 
-Activates an audio session asynchronously on watchOS.
+Activates an audio session asynchronously.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -21,13 +21,22 @@ func activate(options: AVAudioSessionActivationOptions = []) async throws -> Boo
 
 #### Discussion
 
-Use this method to play long-form audio—such as music, podcasts, or audio books—on Apple Watch. Before calling this method to activate longform playback, you must call [`setCategory(_:mode:policy:options:)`](avaudiosession/setcategory(_:mode:policy:options:).md), set the category to [`playback`](avaudiosession/category-swift.struct/playback.md), and route sharing policy to [`longForm`](avaudiosession/routesharingpolicy-swift.enum/longform.md).
+Configure the session before activating it: call [`setCategory(_:mode:policy:options:)`](avaudiosession/setcategory(_:mode:policy:options:).md) to set the category and route sharing policy you need.
 
-This method asynchronously activates the audio session. The system calls the completion handler as soon as the session has successfully activated or if the activation fails.
+This method begins activating the audio session asynchronously. The system calls the completion handler as soon as the session has successfully activated or if the activation fails.
 
-Playback of long-form audio on watchOS requires a Bluetooth audio route. If necessary, the system presents an audio route picker to the user, letting them choose the Bluetooth route. If the user has previously selected a Bluetooth route or if AirPods or other W1-equipped Bluetooth headphones are nearby, the system automatically picks the audio route without displaying a picker view to the user. If no applicable Bluetooth route is selected (either automatically or by the user), the system passes an error to the completion handler.
+#### Activate Playback on Watchos
 
-> **Note**:  You may use the [`activate(options:completionHandler:)`](avaudiosession/activate(options:completionhandler:).md) method instead of the [`setActive(_:options:)`](avaudiosession/setactive(_:options:).md) method to authorize other categories and sharing policies. The system only presents the audio route picker for the [`playback`](avaudiosession/category-swift.struct/playback.md) category and [`longForm`](avaudiosession/routesharingpolicy-swift.enum/longform.md) route sharing policy.
+On watchOS, activating a session with the [`playback`](avaudiosession/category-swift.struct/playback.md) category and the [`AVAudioSession.RouteSharingPolicy.longFormAudio`](avaudiosession/routesharingpolicy-swift.enum/longformaudio.md) or [`AVAudioSession.RouteSharingPolicy.longFormVideo`](avaudiosession/routesharingpolicy-swift.enum/longformvideo.md) route-sharing policy requires a Bluetooth output route. On supported Apple Watch models running watchOS 11.0 or later, the built-in speaker also satisfies this routing requirement.
+
+The system selects a reachable route automatically when one is available. If no Bluetooth route is available, or when supported AirPods or Beats headphones are nearby:
+
+- If the watch supports speaker playback, the system routes to the watch’s built-in speaker.
+- If the watch does not support speaker playback, the system presents the route picker. If the user dismisses the picker without selecting a valid route, the system calls the completion handler with false.
+
+The system only presents the audio route picker for the [`playback`](avaudiosession/category-swift.struct/playback.md) category and [`longForm`](avaudiosession/routesharingpolicy-swift.enum/longform.md) route sharing policy. Use the [`activate(options:completionHandler:)`](avaudiosession/activate(options:completionhandler:).md) method instead of [`setActive(_:options:)`](avaudiosession/setactive(_:options:).md) to authorize other categories and sharing policies.
+
+> **Note**: On watchOS, long-form audio can’t play through the built-in speaker while the watch is charging.
 
 ## Parameters
 

@@ -8,7 +8,6 @@ Provides a newly captured camera image and accompanying AR information to the de
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

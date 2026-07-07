@@ -58,9 +58,11 @@ References are composition arcs that bring content from another layer into this 
 - [var references: USDPrim.ReferenceCollection](usdprim/references.md)
   The reference composition arcs on this prim.
 - [USDPrim.ReferenceCollection](usdprim/referencecollection.md)
+  Manages reference composition arcs on a prim.
 - [USDPrim.Payload](usdprim/payload.md)
   A payload to an external asset.
 - [USDPrim.ListPosition](usdprim/listposition.md)
+  Where a new composition arc should be inserted relative to existing arcs.
 
 
 ---

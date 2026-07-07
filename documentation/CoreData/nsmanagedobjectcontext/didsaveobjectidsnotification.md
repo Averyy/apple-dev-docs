@@ -8,7 +8,7 @@ A notification that posts after a context finishes saving changes to its managed
 **Availability**:
 - iOS 10.3+
 - iPadOS 10.3+
-- Mac Catalyst ?+
+- Mac Catalyst 10.3+
 - macOS 10.12+
 - tvOS 10.2+
 - visionOS ?+

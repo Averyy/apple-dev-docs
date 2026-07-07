@@ -8,7 +8,7 @@ Encodes references to an array of render pipeline states into the argument buffe
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst ?+
+- Mac Catalyst 13.0+
 - macOS 10.14+
 - tvOS 13.0+
 - visionOS ?+

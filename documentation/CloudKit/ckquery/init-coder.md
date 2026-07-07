@@ -3,7 +3,7 @@
 **Framework**: CloudKit  
 **Kind**: init
 
-Creates an operation group from a serialized instance.
+Creates a query from a serialized instance.
 
 **Availability**:
 - iOS 8.0+
@@ -22,7 +22,7 @@ init(coder aDecoder: NSCoder)
 
 ## Parameters
 
-- `aDecoder`: The coder to use when deserializing the group.
+- `aDecoder`: The coder to use when deserializing the query.
 
 ## See Also
 

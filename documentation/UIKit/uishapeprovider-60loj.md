@@ -8,7 +8,7 @@ An interface for a type that provides a custom shape by resolving it dynamically
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst ?+
+- Mac Catalyst 17.0+
 - visionOS 1.0+
 
 ## Declaration

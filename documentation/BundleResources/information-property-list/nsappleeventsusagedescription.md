@@ -22,6 +22,8 @@ An app using Apple events to control another app might be able to gain access to
 
 - [NSUpdateSecurityPolicy](information-property-list/nsupdatesecuritypolicy.md)
   A dictionary that identifies which apps or installer packages the operating system allows to write to the app’s bundle.
+- [NSAppBundlesUsageDescription](information-property-list/nsappbundlesusagedescription.md)
+  A message that tells people why the app needs to access the contents of other apps’ bundles.
 - [NSAppDataUsageDescription](information-property-list/nsappdatausagedescription.md)
   A message that tells people why the app needs to access files in other apps’ sandbox containers.
 - [NSUserTrackingUsageDescription](information-property-list/nsusertrackingusagedescription.md)

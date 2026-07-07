@@ -15,6 +15,7 @@ A picker style that presents the options in a scrollable wheel that shows the se
 ## Declaration
 
 ```swift
+@export(implementation)
 static var wheel: WheelPickerStyle { get }
 ```
 

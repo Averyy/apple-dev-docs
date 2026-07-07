@@ -20,7 +20,7 @@ object SafariExtensionSettingsExtensionDictionaryObject
 
 ## Properties
 
-- `AllowedDomains` ([string]): Controls the domains and sub-domains the extension is granted access to. The device ignores this key when the extension identifier is a single “*” character.
+- `AllowedDomains` ([string]): Controls the domains and sub-domains the extension can access. The device ignores this key when the extension identifier is a single “*” character.
 - `DeniedDomains` ([string]): Controls the domains and sub-domains the extension isn’t allowed to access. The device uses this key when the extension identifier is a composed identifier or a single “*” character.
 - `PrivateBrowsing` (string): Controls whether an extension is allowed in Private Browsing. The device uses this key when the extension identifier is a composed identifier or a single “*” character. - `Allowed` - The user is allowed to turn the extension on or off in Private Browsing.
 - `AlwaysOn` - The extension will always be on in Private Browsing if the extension is on outside of Private Browsing.

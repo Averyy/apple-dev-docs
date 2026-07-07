@@ -17,6 +17,7 @@ A shape style that maps to the first level of the current content style.
 ## Declaration
 
 ```swift
+@export(implementation)
 static var primary: HierarchicalShapeStyle { get }
 ```
 

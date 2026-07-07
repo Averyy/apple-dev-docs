@@ -9,7 +9,7 @@ Asks the data source to return an app entity identifier for a cell at a particul
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
-- Mac Catalyst ?+
+- Mac Catalyst 18.4+
 - tvOS 18.4+
 - visionOS 2.4+
 

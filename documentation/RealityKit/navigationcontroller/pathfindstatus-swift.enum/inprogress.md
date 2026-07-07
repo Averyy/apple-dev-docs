@@ -3,6 +3,8 @@
 **Framework**: RealityKit  
 **Kind**: case
 
+The pathfind is still running and has not completed.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -20,8 +22,11 @@ case inProgress
 ## See Also
 
 - [NavigationController.PathfindStatus.succeeded](navigationcontroller/pathfindstatus-swift.enum/succeeded.md)
+  The pathfind succeeded in finding a path.
 - [NavigationController.PathfindStatus.failed](navigationcontroller/pathfindstatus-swift.enum/failed.md)
+  The pathfind failed to run or find a path.
 - [NavigationController.PathfindStatus.none](navigationcontroller/pathfindstatus-swift.enum/none.md)
+  No pathfind request was made or any existing ones were cancelled.
 
 
 ---

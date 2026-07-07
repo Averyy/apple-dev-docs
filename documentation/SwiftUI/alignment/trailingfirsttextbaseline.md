@@ -17,6 +17,7 @@ A guide that marks the trailing edge and top-most text baseline in a view.
 ## Declaration
 
 ```swift
+@export(implementation)
 static var trailingFirstTextBaseline: Alignment { get }
 ```
 

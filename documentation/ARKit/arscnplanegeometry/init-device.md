@@ -8,7 +8,6 @@ Creates a SceneKit plane geometry for rendering with the specified Metal device 
 **Availability**:
 - iOS 11.3+
 - iPadOS 11.3+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

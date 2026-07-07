@@ -17,6 +17,7 @@ The list style that describes a platform’s default behavior and appearance for
 ## Declaration
 
 ```swift
+@export(implementation)
 static var automatic: DefaultListStyle { get }
 ```
 

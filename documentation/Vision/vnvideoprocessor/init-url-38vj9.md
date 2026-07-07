@@ -17,6 +17,11 @@
 init(URL videoURL: URL)
 ```
 
+## See Also
+
+- [init(url: URL)](vnvideoprocessor/init(url:)-94b7.md)
+  Creates a video processor to perform Vision requests against the specified video asset.
+
 
 ---
 

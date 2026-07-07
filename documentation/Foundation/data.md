@@ -172,12 +172,8 @@ The [`Data`](data.md) value type allows simple byte buffers to take on the behav
 - [init(bytes: Array<UInt8>)](data/init(bytes:)-5krj4.md)
 - [init<S>(bytes: S)](data/init(bytes:)-5s0rs.md)
 - [init(bytes: ArraySlice<UInt8>)](data/init(bytes:)-9othw.md)
-- [init<E>(capacity: Int, initializingWith: (inout OutputSpan<UInt8>) throws(E) -> Void) throws(E)](data/init(capacity:initializingwith:).md)
-  Creates a data instance with the specified capacity, and then calls the given closure with an output span covering the instance’s uninitialized memory.
 - [init(contentsOf: URL, options: Data.ReadingOptions) throws](data/init(contentsof:options:).md)
   Creates data by reading from the specified URL.
-- [init<E>(rawCapacity: Int, initializingWith: (inout OutputRawSpan) throws(E) -> Void) throws(E)](data/init(rawcapacity:initializingwith:).md)
-  Creates a data instance with the specified capacity, and then calls the given closure with an output span covering the instance’s uninitialized memory.
 - [init(referencing: NSData)](data/init(referencing:).md)
   Initialize a `Data` by adopting a reference type.
 - [init(repeating: UInt8, count: Int)](data/init(repeating:count:).md)

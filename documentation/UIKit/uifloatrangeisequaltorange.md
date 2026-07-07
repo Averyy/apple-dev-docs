@@ -8,7 +8,7 @@ Returns a Boolean indicating whether two float ranges are equivalent.
 **Availability**:
 - iOS 7.0+
 - iPadOS 7.0+
-- Mac Catalyst ?+
+- Mac Catalyst 7.0+
 - tvOS ?+
 - visionOS ?+
 - Swift 1.0+

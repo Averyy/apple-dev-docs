@@ -17,6 +17,7 @@ A guide that marks the bottom-most text baseline in a view.
 ## Declaration
 
 ```swift
+@export(implementation)
 static var centerLastTextBaseline: Alignment { get }
 ```
 

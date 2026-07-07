@@ -8,7 +8,6 @@ Information about a real-world surface found by examining a point on the screen.
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

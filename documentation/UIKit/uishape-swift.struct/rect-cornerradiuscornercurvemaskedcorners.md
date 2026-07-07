@@ -8,7 +8,7 @@ Creates a rectangular shape with rounded corners, using the provided corner radi
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst ?+
+- Mac Catalyst 17.0+
 - visionOS 1.0+
 
 ## Declaration

@@ -8,7 +8,6 @@ An error code that indicates the app is missing the entitlement it needs to use 
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst 15.0+
 
 ## Declaration
 

@@ -8,7 +8,6 @@ An object that describes the distance to regions of the real world from the plan
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
 
 ## Declaration
 

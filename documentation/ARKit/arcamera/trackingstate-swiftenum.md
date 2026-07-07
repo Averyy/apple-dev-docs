@@ -8,7 +8,6 @@ Values for position tracking quality, with possible causes when tracking quality
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 11.0+
 
 ## Declaration
 

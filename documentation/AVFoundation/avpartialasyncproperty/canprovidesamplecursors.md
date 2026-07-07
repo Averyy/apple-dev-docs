@@ -8,7 +8,7 @@ A Boolean value that indicates whether the track can provide instances of sample
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst ?+
+- Mac Catalyst 16.0+
 - macOS 12.0+
 - tvOS 16.0+
 - visionOS 1.0+

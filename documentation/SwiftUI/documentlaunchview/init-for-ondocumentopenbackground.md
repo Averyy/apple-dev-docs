@@ -8,13 +8,12 @@ Creates a view to present when launching document-related user experiences using
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 
 ## Declaration
 
 ```swift
-nonisolated
-init(_ title: LocalizedStringKey, for contentTypes: [UTType], @ContentBuilder _ actions: () -> Actions, @ContentBuilder onDocumentOpen: @escaping (URL) -> DocumentView, @ContentBuilder background: () -> some View)
+@export(implementation)
+nonisolated init(_ title: LocalizedStringResource, for contentTypes: [UTType], @ContentBuilder _ actions: () -> Actions, @ContentBuilder onDocumentOpen: @escaping (URL) -> DocumentView, @ContentBuilder background: () -> some View)
 ```
 
 #### Discussion
@@ -23,7 +22,7 @@ init(_ title: LocalizedStringKey, for contentTypes: [UTType], @ContentBuilder _ 
 
 ## Parameters
 
-- `title`: A title key to use for the view title.
+- `title`: A title resource to use for the view title.
 - `contentTypes`: Content types that the view can open.
 - `actions`: A content builder returning the view’s actions
 - `onDocumentOpen`: A closure that handles an open file.

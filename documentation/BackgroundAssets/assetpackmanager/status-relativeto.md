@@ -60,7 +60,7 @@ This method doesn’t automatically trigger any downloads, updates, or removals.
 - [func status(ofAssetPackWithID: String) async throws -> AssetPack.Status](assetpackmanager/status(ofassetpackwithid:).md)
   Checks an asset pack’s status.
 - [func ensureLocalAvailability(of: AssetPack) async throws](assetpackmanager/ensurelocalavailability(of:).md)
-  Ensures that the specified asset pack be available locally.
+  Ensures that the specified asset pack is available locally, performing a download if necessary.
 
 
 ---

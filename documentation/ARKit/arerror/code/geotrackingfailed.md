@@ -8,7 +8,6 @@ An error that indicates when localization imagery fails to match the device’s 
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
 
 ## Declaration
 

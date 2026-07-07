@@ -8,7 +8,6 @@ The server that a Message Filter app extension may defer a query to.
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 11.0+
 
 
 

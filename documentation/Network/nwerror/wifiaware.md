@@ -8,7 +8,6 @@ The underlying error that occurred, if applicable.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst 26.0+
 
 ## Declaration
 

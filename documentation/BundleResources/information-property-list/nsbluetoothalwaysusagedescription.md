@@ -8,7 +8,6 @@ A message that tells people why the app needs access to Bluetooth.
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst 13.0+
 - macOS 11.0+
 - tvOS 13.0+
 - visionOS 1.0+

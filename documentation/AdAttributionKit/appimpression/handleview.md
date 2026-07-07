@@ -8,7 +8,7 @@ Handles a view through ad impression.
 **Availability**:
 - iOS 26.2+
 - iPadOS 26.2+
-- Mac Catalyst ?+
+- Mac Catalyst 26.2+
 
 ## Declaration
 

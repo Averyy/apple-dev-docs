@@ -8,7 +8,7 @@ A data store that applies settings to the current user or device.
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst ?+
+- Mac Catalyst 15.0+
 - tvOS 26.0+
 
 ## Declaration

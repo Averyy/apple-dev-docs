@@ -23,7 +23,8 @@ var entryID: String?
 
 - [var action: LanguageModelExecutorGenerationChannel.Response.Action](languagemodelexecutorgenerationchannel/response/action-swift.property.md)
   The action to perform.
-- [LanguageModelExecutorGenerationChannel.Response.Action](languagemodelexecutorgenerationchannel/response/action-swift.enum.md)
+- [LanguageModelExecutorGenerationChannel.Response.Action](languagemodelexecutorgenerationchannel/response/action-swift.struct.md)
+  An operation that can be performed on a response entry.
 - [LanguageModelExecutorGenerationChannel.TextSegmentReplacement](languagemodelexecutorgenerationchannel/textsegmentreplacement.md)
   Replace a streaming entry’s current text segment with `content`.
 

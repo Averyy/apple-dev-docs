@@ -6,10 +6,9 @@
 This device is passive; cellular service is held by another device.
 
 **Availability**:
-- iOS 4.0+
-- iPadOS 4.0+
-- Mac Catalyst 14.0+
-- macOS 10.10+
+- iOS 27.0+ (Beta)
+- iPadOS 27.0+ (Beta)
+- Mac Catalyst 27.0+ (Beta)
 
 ## Declaration
 

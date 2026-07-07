@@ -8,7 +8,6 @@ Estimated environmental lighting information associated with a captured video fr
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

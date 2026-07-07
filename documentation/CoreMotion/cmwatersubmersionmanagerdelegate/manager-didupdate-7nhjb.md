@@ -8,7 +8,6 @@ Provides the delegate with a new set of pressure and depth measurements.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
 - visionOS 1.0+
 - watchOS 9.0+
 

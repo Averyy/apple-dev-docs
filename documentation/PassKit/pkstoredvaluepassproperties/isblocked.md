@@ -8,7 +8,7 @@ A Boolean value that indicates the pass issuer disabled a stored-value pass.
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst ?+
+- Mac Catalyst 15.0+
 - macOS 12.0+
 - visionOS ?+
 - watchOS 8.0+

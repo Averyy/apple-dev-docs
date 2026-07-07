@@ -17,7 +17,7 @@ Accesses the element at the specified index in the `MutableSpan`.
 ## Declaration
 
 ```swift
-subscript(position: MutableSpan<Element>.Index) -> Element { get set }
+subscript(position: MutableSpan<Element>.Index) -> Element { borrow mutate }
 ```
 
 #### Overview

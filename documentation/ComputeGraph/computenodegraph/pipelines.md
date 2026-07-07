@@ -1,6 +1,6 @@
 # ComputeNodeGraph.Pipelines
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: struct
 
 Fully-compiled shaders for a compute graph.
@@ -12,7 +12,7 @@ Fully-compiled shaders for a compute graph.
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 ## Declaration
 

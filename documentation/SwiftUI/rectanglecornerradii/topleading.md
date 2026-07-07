@@ -17,6 +17,7 @@ The radius of the top-leading corner.
 ## Declaration
 
 ```swift
+@export(implementation)
 var topLeading: CGFloat { get set }
 ```
 

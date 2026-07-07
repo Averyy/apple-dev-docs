@@ -8,7 +8,6 @@ A component that renders a USD stage as RealityKit entities.
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
@@ -49,6 +48,9 @@ Attach a `USDStageComponent` to an entity to render USD content as child entitie
   Waits for automatic rendering to complete.
 - [USDStageComponent.RenderResult](usdstagecomponent/renderresult.md)
   The result of a render operation.
+### Type Methods
+- [static func coordinateSpace(on: Entity, at: USDLayer.Path, timeCode: USDStage.TimeCode?) -> some CoordinateSpace3DFloat](usdstagecomponent/coordinatespace(on:at:timecode:).md)
+  Returns a coordinate space anchored to the closest rendered ancestor of `path`.
 
 ## Relationships
 

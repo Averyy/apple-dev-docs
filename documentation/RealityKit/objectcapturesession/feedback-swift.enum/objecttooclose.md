@@ -8,7 +8,6 @@ The camera is too close to the object and it cannot be tracked well.
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst 17.0+
 
 ## Declaration
 

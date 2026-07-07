@@ -8,7 +8,6 @@ A Boolean value that indicates whether the Games app excludes game information f
 **Availability**:
 - iOS 26.4+
 - iPadOS 26.4+
-- Mac Catalyst 26.4+
 - macOS 26.4+
 
 

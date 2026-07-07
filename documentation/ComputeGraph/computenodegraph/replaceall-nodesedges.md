@@ -1,6 +1,6 @@
 # replaceAll(nodes:edges:)
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: method
 
 Replaces all nodes and edges in the graph with the provided collections.
@@ -12,7 +12,7 @@ Replaces all nodes and edges in the graph with the provided collections.
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 ## Declaration
 

@@ -72,6 +72,8 @@ Reality Composer Pro Beta 2 is now a standalone app you can download from the [`
 
 - [Reality Composer Pro Release Notes](reality-composer-pro-release-notes.md)
   Review known issues and changes in Reality Composer Pro 3.
+- [Reality Composer Pro Beta 3 Release Notes](reality-composer-pro-beta-3-release-notes.md)
+  Review known issues and changes in Reality Composer Pro 3.
 
 
 ---

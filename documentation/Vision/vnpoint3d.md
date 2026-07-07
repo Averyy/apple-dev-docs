@@ -24,11 +24,10 @@ class VNPoint3D
 ### Creating a Point
 - [init?(position: simd_float4x4)](vnpoint3d/init(position:).md)
   Creates a point object with the position you specify.
+- [init?(coder: NSCoder)](vnpoint3d/init(coder:).md)
 ### Getting the Position
 - [var position: simd_float4x4](vnpoint3d/position.md)
   The three-dimensional position.
-### Initializers
-- [init?(coder: NSCoder)](vnpoint3d/init(coder:).md)
 
 ## Relationships
 

@@ -8,7 +8,6 @@ An array of one or more SKUs on which the current subscription offer depends.
 **Availability**:
 - iOS 26.2+
 - iPadOS 26.2+
-- Mac Catalyst 26.2+
 - macOS 26.2+
 - tvOS 26.2+
 - visionOS 26.2+

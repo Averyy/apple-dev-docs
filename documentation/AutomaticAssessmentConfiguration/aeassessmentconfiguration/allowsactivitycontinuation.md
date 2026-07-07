@@ -8,7 +8,6 @@ A Boolean value that indicates whether to allow Handoff during an assessment.
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
 
 ## Declaration
 

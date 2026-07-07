@@ -8,7 +8,6 @@ The color space ARKit uses to configure the capture session when this video form
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst 26.0+
 
 ## Declaration
 

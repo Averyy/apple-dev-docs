@@ -1,6 +1,6 @@
 # canAddNode(with:)
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: method
 
 Whether a node with the given definition can be used in this stage.
@@ -12,7 +12,7 @@ Whether a node with the given definition can be used in this stage.
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 ## Declaration
 

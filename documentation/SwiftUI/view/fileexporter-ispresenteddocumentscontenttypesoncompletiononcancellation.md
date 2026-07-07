@@ -3,53 +3,56 @@
 **Framework**: SwiftUI  
 **Kind**: method
 
-Presents a system dialog for allowing the user to export a collection of documents that conform to `FileDocument` to files on disk.
+Presents a system dialog for allowing the user to export a collection of objects conforming to `WritableDocument` to files on disk.
 
 **Availability**:
-- iOS 17.0+
-- iPadOS 17.0+
-- Mac Catalyst 17.0+
-- macOS 14.0+
-- visionOS 1.0+
+- iOS 27.0+ (Beta)
+- iPadOS 27.0+ (Beta)
+- Mac Catalyst 27.0+ (Beta)
+- macOS 27.0+ (Beta)
+- visionOS 27.0+ (Beta)
 
 ## Declaration
 
 ```swift
 nonisolated
-func fileExporter<C>(isPresented: Binding<Bool>, documents: C, contentTypes: [UTType] = [], onCompletion: @escaping (Result<[URL], any Error>) -> Void, onCancellation: @escaping () -> Void = {}) -> some View where C : Collection, C.Element : FileDocument
+func fileExporter<C>(isPresented: Binding<Bool>, documents: C, contentTypes: [UTType] = [], onCompletion: @escaping (Result<[URL], any Error>) -> Void, onCancellation: (() -> Void)? = nil) -> some View where C : Collection, C.Element : WritableDocument, C.Element.Writer.Destination == URL
 ```
 
 #### Discussion
 
-In order for the dialog to appear, `isPresented` must be `true`. When the operation is finished, `isPresented` will be set to `false` before `onCompletion` is called. If the user cancels the operation, `isPresented` will be set to `false` and `onCancellation` will be called.
-
-To further configure the dialog’s appearance and behavior, use these view modifiers: [`fileDialogDefaultDirectory(_:)`](view/filedialogdefaultdirectory(_:).md), [`fileDialogConfirmationLabel(_:)`](view/filedialogconfirmationlabel(_:).md), [`fileDialogMessage(_:)`](view/filedialogmessage(_:).md), [`fileDialogBrowserOptions(_:)`](view/filedialogbrowseroptions(_:).md), [`fileExporterFilenameLabel(_:)`](view/fileexporterfilenamelabel(_:).md), and [`fileDialogCustomizationID(_:)`](view/filedialogcustomizationid(_:).md).
-
-For example, a button that exports a collection of documents and handles cancellation might look like this:
+In order for the dialog to appear, `documents` must be non-empty. When the operation is finished, `isPresented` will be set to `false` before `onCompletion` is called. If the user cancels the operation, `isPresented` will be set to `false` and `onCancellation` will be called.
 
 ```swift
-struct ExportAllButton: View {
-    @State private var isExporterPresented = false
-    var documents: [TextFile]
+@MainActor
+final class TextDocument: WritableDocument {
+    static let writableContentTypes: [UTType] = [.utf8PlainText]
+
+    var text: String = ""
+
+    nonisolated func writer(
+        configuration: sending WriteConfiguration
+    ) -> sending FileWrapperDocumentWriter<String> {
+        FileWrapperDocumentWriter(configuration) { snapshot, _ in
+            FileWrapper(regularFileWithContents: Data(snapshot.utf8))
+        }
+    }
+
+    func snapshot(contentType: UTType) async throws -> String {
+        text
+    }
+}
+
+struct ExportView: View {
+    @Binding var documents: [TextDocument]
+    @State private var isExporting = false
 
     var body: some View {
-        Button("Export All") {
-            isExporterPresented = true
-        }
-        .fileExporter(
-            isPresented: $isExporterPresented,
-            documents: documents,
-            contentTypes: [.utf8PlainText]
-        ) { result in
-            switch result {
-            case .success(let urls):
-                urls.forEach { print("Saved to \($0)") }
-            case .failure(let error):
-                print(error)
-            }
-        } onCancellation: {
-            print("Export cancelled")
-        }
+        Button("Export…") { isExporting = true }
+            .fileExporter(
+                isPresented: $isExporting,
+                documents: documents
+            ) { _ in }
     }
 }
 ```
@@ -58,7 +61,7 @@ struct ExportAllButton: View {
 
 - `isPresented`: A binding to whether the dialog should be shown.
 - `documents`: The in-memory documents to export.
-- `contentTypes`: The list of supported content types which can be exported. If not provided, `FileDocument.writableContentTypes` are used.
+- `contentTypes`: The content types to export to. If not provided, `WritableDocument.writableContentTypes` are used.
 - `onCompletion`: A callback that will be invoked when the operation has succeeded or failed. The `result` indicates whether the operation succeeded or failed.
 - `onCancellation`: A callback that will be invoked if the user cancels the operation.
 

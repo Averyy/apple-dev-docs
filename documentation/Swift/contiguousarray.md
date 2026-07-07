@@ -56,7 +56,6 @@ For more information about using arrays, see `Array` and `ArraySlice`, with whic
   Removes and returns the element at the specified position.
 - [func reserveCapacity(Int)](contiguousarray/reservecapacity(_:).md)
   Reserves enough space to store the specified number of elements.
-- [func withBytes<R, E>((RawSpan) throws(E) -> R) throws(E) -> R](contiguousarray/withbytes(_:).md)
 - [func withUnsafeBufferPointer<R, E>((UnsafeBufferPointer<Element>) throws(E) -> R) throws(E) -> R](contiguousarray/withunsafebufferpointer(_:).md)
   Calls a closure with a pointer to the array’s contiguous storage.
 - [func withUnsafeBytes<R>((UnsafeRawBufferPointer) throws -> R) rethrows -> R](contiguousarray/withunsafebytes(_:).md)

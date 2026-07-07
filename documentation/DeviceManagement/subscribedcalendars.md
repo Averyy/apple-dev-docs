@@ -46,7 +46,7 @@ Specify `com.apple.subscribedcalendar.account` as the payload type.
             <key>SubCalAccountDescription</key>
             <string>US Holiday Calendar</string>
             <key>SubCalAccountHostName</key>
-            <string>http://ical.mac.com/ical/US32Holidays.ics</string>
+            <string>https://holidays.example.com/USHolidays.ics</string>
             <key>SubCalAccountUseSSL</key>
             <true/>
             <key>PayloadIdentifier</key>

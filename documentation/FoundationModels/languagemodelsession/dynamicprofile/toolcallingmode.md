@@ -17,10 +17,6 @@
 func toolCallingMode(_ toolCallingMode: GenerationOptions.ToolCallingMode?) -> some LanguageModelSession.DynamicProfile
 ```
 
-## See Also
-
-- [func toolCalling(GenerationOptions.ToolCallingMode?) -> some LanguageModelSession.DynamicProfile](languagemodelsession/dynamicprofile/toolcalling(_:).md)
-
 
 ---
 

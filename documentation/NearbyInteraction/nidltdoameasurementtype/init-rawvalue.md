@@ -8,7 +8,6 @@ Creates a measurement type from the given underlying value.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst 26.0+
 
 ## Declaration
 

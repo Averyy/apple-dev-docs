@@ -12,6 +12,10 @@
 case openID
 ```
 
+## Mentions
+
+- [Implementing web-based authentication with Platform Single Sign-on](implementing-web-based-authentication.md)
+
 
 ---
 

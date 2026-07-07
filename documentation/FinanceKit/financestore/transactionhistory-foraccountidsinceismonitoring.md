@@ -8,7 +8,6 @@ Returns the transactions for the specified account ID, optional starting time, a
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
-- Mac Catalyst 17.4+
 
 ## Declaration
 

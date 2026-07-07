@@ -8,7 +8,6 @@ A Boolean value that indicates whether an app supports Live Activities.
 **Availability**:
 - iOS 16.1+
 - iPadOS 16.1+
-- Mac Catalyst 16.1+
 
 
 

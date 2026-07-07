@@ -17,8 +17,8 @@ A button style that applies the standard border style based on the button’s co
 ## Declaration
 
 ```swift
-nonisolated
-static var bordered: BorderedButtonStyle { get }
+@export(implementation)
+nonisolated static var bordered: BorderedButtonStyle { get }
 ```
 
 #### Discussion

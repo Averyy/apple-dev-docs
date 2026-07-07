@@ -17,6 +17,7 @@ Returns a Boolean value indicating whether the value of the first argument is gr
 ## Declaration
 
 ```swift
+@export(implementation)
 static func > (lhs: ContentSizeCategory, rhs: ContentSizeCategory) -> Bool
 ```
 

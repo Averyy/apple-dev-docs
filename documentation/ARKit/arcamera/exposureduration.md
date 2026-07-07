@@ -8,7 +8,6 @@ A value you use to effect motion blur when rendering your app’s virtual conten
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

@@ -18,7 +18,7 @@ A transition from transparent to opaque on insertion, and from opaque to transpa
 
 ```swift
 @MainActor
-@preconcurrency static var opacity: OpacityTransition { get }
+@export(implementation) @preconcurrency static var opacity: OpacityTransition { get }
 ```
 
 ## See Also

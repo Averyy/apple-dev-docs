@@ -23,6 +23,10 @@ init(_ frameRate: Int)
 
 - `frameRate`: The frame rate at which to process video.
 
+## See Also
+
+- [init(frameRate: Int)](vnvideoprocessor/frameratecadence/init(framerate:).md)
+
 
 ---
 

@@ -1,6 +1,6 @@
 # ComputeNodeGraph.PipelinesDescriptor
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: struct
 
 Specifies the configuration used to compile a set of compute pipelines for a compute graph effect.
@@ -12,7 +12,7 @@ Specifies the configuration used to compile a set of compute pipelines for a com
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 ## Declaration
 

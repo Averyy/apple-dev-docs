@@ -1,6 +1,6 @@
 # ComputeNodeGraph.StateDefinition
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: struct
 
 A declaration of a named state value and where it lives in the simulation.
@@ -12,7 +12,7 @@ A declaration of a named state value and where it lives in the simulation.
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 ## Declaration
 

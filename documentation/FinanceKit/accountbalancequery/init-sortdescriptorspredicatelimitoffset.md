@@ -8,7 +8,6 @@ Creates a new account balance query structure with the provided sort descriptors
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
-- Mac Catalyst 17.4+
 
 ## Declaration
 

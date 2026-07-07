@@ -6,7 +6,7 @@
 A right-aligned tab stop.
 
 **Availability**:
-- macOS ?+
+- macOS 10.0+
 
 ## Declaration
 

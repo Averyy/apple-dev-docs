@@ -71,7 +71,9 @@
   Returns a Boolean value indicating whether the initial elements of the sequence are the same as the elements in another sequence.
 - [func starts<PossiblePrefix>(with: PossiblePrefix, by: (Self.Element, PossiblePrefix.Element) throws -> Bool) rethrows -> Bool](collectionofone/starts(with:by:).md)
   Returns a Boolean value indicating whether the initial elements of the sequence are equivalent to the elements in another sequence, using the given predicate as the equivalence test.
-- [func withContiguousStorageIfAvailable<R>((UnsafeBufferPointer<Self.Element>) throws -> R) rethrows -> R?](collectionofone/withcontiguousstorageifavailable(_:).md)
+- [func withContiguousStorageIfAvailable<R, E>((UnsafeBufferPointer<Element>) throws(E) -> R) throws(E) -> R?](collectionofone/withcontiguousstorageifavailable(_:).md)
+  Executes a closure on the sequence’s contiguous storage.
+- [func withContiguousStorageIfAvailable<R>((UnsafeBufferPointer<Self.Element>) throws -> R) rethrows -> R?](collectionofone/withcontiguousstorageifavailable(_:)-4oidv.md)
   Executes a closure on the sequence’s contiguous storage.
 
 

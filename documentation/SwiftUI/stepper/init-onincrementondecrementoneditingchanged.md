@@ -6,18 +6,18 @@
 Creates a stepper that uses a title key and executes the closures you provide when the user clicks or taps the stepper’s increment and decrement buttons.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.0+
-- macOS 10.15+
+- iOS 16.0+
+- iPadOS 16.0+
+- Mac Catalyst 16.0+
+- macOS 13.0+
 - visionOS 1.0+
 - watchOS 9.0+
 
 ## Declaration
 
 ```swift
-nonisolated
-init(_ titleKey: LocalizedStringKey, onIncrement: (() -> Void)?, onDecrement: (() -> Void)?, onEditingChanged: @escaping (Bool) -> Void = { _ in })
+@export(implementation)
+nonisolated init(_ titleResource: LocalizedStringResource, onIncrement: (() -> Void)?, onDecrement: (() -> Void)?, onEditingChanged: @escaping (Bool) -> Void = { _ in })
 ```
 
 #### Discussion
@@ -52,11 +52,11 @@ struct StepperView: View {
 }
 ```
 
-![A view displaying a stepper that uses a title key for the stepper’s](https://docs-assets.developer.apple.com/published/454b319c800c954fe79070014aaa7d83/SwiftUI-Stepper-increment-decrement-closures%402x.png)
+![A view displaying a stepper that uses a title resource for the](https://docs-assets.developer.apple.com/published/454b319c800c954fe79070014aaa7d83/SwiftUI-Stepper-increment-decrement-closures%402x.png)
 
 ## Parameters
 
-- `titleKey`: The key for the stepper’s localized title describing the purpose of the stepper.
+- `titleResource`: Text resource for the stepper’s localized title describing the purpose of the stepper.
 - `onIncrement`: The closure to execute when the user clicks or taps the control’s plus button.
 - `onDecrement`: The closure to execute when the user clicks or taps the control’s minus button.
 - `onEditingChanged`: A closure that’s called when editing begins and ends. For example, on iOS, the user may touch and hold the increment or decrement buttons on a `Stepper` which causes the execution of the `onEditingChanged` closure at the start and end of the gesture.

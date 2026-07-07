@@ -8,7 +8,6 @@ The identifier of an app entity that you associate with a custom view.
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
-- Mac Catalyst 18.4+
 - tvOS 18.4+
 - visionOS 2.4+
 

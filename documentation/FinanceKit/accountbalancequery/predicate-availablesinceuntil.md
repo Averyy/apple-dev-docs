@@ -8,7 +8,6 @@ A predicate that returns available account balances since a specified date, and,
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
-- Mac Catalyst 17.4+
 
 ## Declaration
 

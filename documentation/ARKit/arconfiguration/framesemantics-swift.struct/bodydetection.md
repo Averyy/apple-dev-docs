@@ -8,7 +8,6 @@ An option that indicates that 2D body detection is enabled.
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

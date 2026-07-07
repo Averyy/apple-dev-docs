@@ -8,7 +8,6 @@ Asks the delegate to provide a SceneKit node corresponding to a newly added anch
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

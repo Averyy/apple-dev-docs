@@ -8,7 +8,6 @@ A Boolean value indicating whether the app extension ignores appearance changes 
 **Availability**:
 - iOS 10.0+
 - iPadOS 10.0+
-- Mac Catalyst 10.0+
 - visionOS 1.0+
 
 

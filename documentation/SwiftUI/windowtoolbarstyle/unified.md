@@ -11,6 +11,7 @@ A window toolbar style which displays its toolbar and title bar inline.
 ## Declaration
 
 ```swift
+@export(implementation)
 static var unified: UnifiedWindowToolbarStyle { get }
 ```
 

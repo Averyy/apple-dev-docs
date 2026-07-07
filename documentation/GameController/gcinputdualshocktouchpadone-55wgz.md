@@ -8,7 +8,7 @@ The name of the first finger element to touch down on the DualShock 4 touchpad.
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst ?+
+- Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
 - visionOS ?+

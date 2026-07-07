@@ -26,8 +26,6 @@ A retry may succeed.
   An error that indicates the framework couldn’t produce an evaluation for the provided context.
 - [InsightEvaluator.EvaluationError.denied](insightevaluator/evaluationerror/denied.md)
   An error that indicates evaluations are unavailable due to a person’s options.
-- [InsightEvaluator.EvaluationError.evaluationResultSignatureInvalid](insightevaluator/evaluationerror/evaluationresultsignatureinvalid.md)
-  An error that indicates the payload signature for the evaluation result from the server was invalid.
 - [InsightEvaluator.EvaluationError.notAvailable](insightevaluator/evaluationerror/notavailable.md)
   An error that indicates evaluations are not available on this device.
 - [InsightEvaluator.EvaluationError.rateLimitExceeded](insightevaluator/evaluationerror/ratelimitexceeded.md)

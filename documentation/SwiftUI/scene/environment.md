@@ -17,8 +17,8 @@ Sets the environment value of the specified key path to the given value.
 ## Declaration
 
 ```swift
-nonisolated
-func environment<V>(_ keyPath: WritableKeyPath<EnvironmentValues, V>, _ value: V) -> some Scene
+@export(implementation)
+nonisolated func environment<V>(_ keyPath: WritableKeyPath<EnvironmentValues, V>, _ value: V) -> some Scene
 ```
 
 #### Return Value

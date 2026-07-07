@@ -8,7 +8,6 @@ The associated domains for specific services, such as shared web credentials, un
 **Availability**:
 - iOS 9.0+
 - iPadOS 9.0+
-- Mac Catalyst 9.0+
 - macOS 10.15+
 - tvOS 9.0+
 - visionOS 1.0+

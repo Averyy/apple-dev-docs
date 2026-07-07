@@ -8,7 +8,7 @@ The format of the media doesn’t match the sample buffer’s format description
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst ?+
+- Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
 - visionOS 1.0+

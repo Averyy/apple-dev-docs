@@ -8,7 +8,7 @@ An effect that defines how to apply a tint to a view during a pointer interactio
 **Availability**:
 - iOS 13.4+
 - iPadOS 13.4+
-- Mac Catalyst ?+
+- Mac Catalyst 13.4+
 - visionOS ?+
 
 ## Declaration

@@ -8,7 +8,7 @@ A notification that posts before a context writes pending changes to disk.
 **Availability**:
 - iOS 3.0+
 - iPadOS 3.0+
-- Mac Catalyst ?+
+- Mac Catalyst 3.0+
 - macOS 10.5+
 - tvOS 3.0+
 - visionOS ?+

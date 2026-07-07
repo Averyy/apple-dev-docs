@@ -1,6 +1,6 @@
 # ComputeNodeGraph.Assembly.UniformBinding
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: struct
 
 Describes how a uniform value is located within the graph’s uniform buffer.
@@ -12,7 +12,7 @@ Describes how a uniform value is located within the graph’s uniform buffer.
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 ## Declaration
 

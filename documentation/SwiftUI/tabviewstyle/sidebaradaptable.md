@@ -17,7 +17,7 @@ A tab bar style that adapts to each platform.
 
 ```swift
 @MainActor
-@preconcurrency static var sidebarAdaptable: SidebarAdaptableTabViewStyle { get }
+@export(implementation) @preconcurrency static var sidebarAdaptable: SidebarAdaptableTabViewStyle { get }
 ```
 
 #### Discussion

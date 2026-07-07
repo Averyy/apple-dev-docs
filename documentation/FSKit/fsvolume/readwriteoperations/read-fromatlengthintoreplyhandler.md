@@ -27,6 +27,13 @@ If the number of bytes requested exceeds the number of bytes available before th
 - `buffer`: A buffer to receive the bytes read from the file.
 - `reply`: A block or closure to indicate success or failure. If reading succeeds, pass the number of bytes read and a `nil` error. If reading fails, pass the number of bytes read prior to the error along with the relevant error. For an `async` Swift implementation, there’s no reply handler; simply return the byte count or throw an error.
 
+## See Also
+
+- [class FSMutableFileDataBuffer](fsmutablefiledatabuffer.md)
+  A wrapper object for a data buffer.
+- [func write(contents: Data, to: FSItem, at: off_t, replyHandler: (Int, (any Error)?) -> Void)](fsvolume/readwriteoperations/write(contents:to:at:replyhandler:).md)
+  Writes contents to the given file item.
+
 
 ---
 

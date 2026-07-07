@@ -8,7 +8,6 @@ A Boolean value that indicates whether the capture session supports using the ca
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
 - tvOS 17.0+
 
 ## Declaration

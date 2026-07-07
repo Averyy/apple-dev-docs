@@ -20,6 +20,8 @@ When a frame is late, it’s usually due to a delay occurring somewhere in the r
 
 > 💡 **Tip**:  Hitches are related to hangs because an unresponsive main thread can cause both. Whether long-running work on the main thread causes a commit hitch or a hang depends on which user interaction the main thread work coincides with. The hang detection tools detect all cases of extended unresponsive main thread periods, so they can also detect a major source of commit hitches. If you fix all hangs in the area of the app you’re investigating, you’re likely to eliminate many hitches as well. For more information about hangs, see [`Understanding hangs in your app`](understanding-hangs-in-your-app.md).
 
+> **Note**: The Hitches instrument isn’t available for visionOS, and hitch metrics in Xcode Organizer aren’t available for tvOS or visionOS. For visionOS apps, use the RealityKit Trace template in Instruments to analyze rendering performance and dropped frames. For more information, see [`Analyzing the performance of your visionOS app`](https://developer.apple.com/documentation/visionOS/analyzing-the-performance-of-your-visionOS-app).
+
 ##### Understand the Render Loop
 
 Whereas the main thread handles only a single event at a time, the render loop prepares a frame in multiple stages. Although each stage processes only one frame at a time, all stages work together on multiple frames in parallel. Each stage has a tight deadline to hand off its frame to the next stage to ensure it’s ready for the screen refresh.

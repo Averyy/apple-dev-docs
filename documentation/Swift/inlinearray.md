@@ -123,7 +123,6 @@ An *empty* `InlineArray`’s size is zero. Its stride and alignment are both one
   Returns the position immediately before the given index.
 - [func swapAt(InlineArray<count, Element>.Index, InlineArray<count, Element>.Index)](inlinearray/swapat(_:_:).md)
   Exchanges the values at the specified indices of the array.
-- [func withBytes<R, E>((RawSpan) throws(E) -> R) throws(E) -> R](inlinearray/withbytes(_:).md)
 ### Subscripts
 - [subscript(InlineArray<count, Element>.Index) -> Element](inlinearray/subscript(_:).md)
   Accesses the element at the specified position.

@@ -8,7 +8,7 @@ Configures the render pipeline with multiple viewports that apply transformation
 **Availability**:
 - iOS 12.0+
 - iPadOS 12.0+
-- Mac Catalyst ?+
+- Mac Catalyst 12.0+
 - macOS 10.13+
 - tvOS 14.5+
 - visionOS ?+

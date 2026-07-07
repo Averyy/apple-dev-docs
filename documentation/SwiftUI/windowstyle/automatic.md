@@ -12,6 +12,7 @@ The default window style.
 ## Declaration
 
 ```swift
+@export(implementation)
 static var automatic: DefaultWindowStyle { get }
 ```
 

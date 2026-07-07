@@ -9,7 +9,6 @@ A Boolean value that indicates whether the object’s transform is valid.
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

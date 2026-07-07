@@ -8,7 +8,6 @@ A Boolean value indicating whether only the app extension’s custom view contro
 **Availability**:
 - iOS 10.0+
 - iPadOS 10.0+
-- Mac Catalyst 10.0+
 
 
 

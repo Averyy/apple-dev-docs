@@ -17,8 +17,8 @@ Modifies the view to use a given transition as its method of animating changes t
 ## Declaration
 
 ```swift
-nonisolated
-func contentTransition(_ transition: ContentTransition) -> some View
+@export(implementation)
+nonisolated func contentTransition(_ transition: ContentTransition) -> some View
 ```
 
 #### Discussion

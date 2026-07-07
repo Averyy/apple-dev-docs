@@ -31,7 +31,7 @@ struct FSDataCacheError
   A conflicting cache operation is in progress.
 ### Identifying the error domain
 - [static var errorDomain: String](fsdatacacheerror/errordomain.md)
-  Inherited from `CustomNSError.errorDomain`.
+  The domain of the data cache error.
 
 ## Relationships
 

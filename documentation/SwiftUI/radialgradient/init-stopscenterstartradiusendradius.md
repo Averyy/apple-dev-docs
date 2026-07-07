@@ -17,8 +17,8 @@ Creates a radial gradient from a collection of color stops.
 ## Declaration
 
 ```swift
-nonisolated
-init(stops: [Gradient.Stop], center: UnitPoint, startRadius: CGFloat, endRadius: CGFloat)
+@export(implementation)
+nonisolated init(stops: [Gradient.Stop], center: UnitPoint, startRadius: CGFloat, endRadius: CGFloat)
 ```
 
 ## See Also

@@ -8,7 +8,6 @@ A request that finds rectangular regions that contain people in an image.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -19,10 +18,6 @@ A request that finds rectangular regions that contain people in an image.
 ```swift
 struct DetectHumanRectanglesRequest
 ```
-
-#### Overview
-
-The request returns the resulting rectangle data in a collection of [`HumanObservation`](humanobservation.md) objects.
 
 ## Topics
 

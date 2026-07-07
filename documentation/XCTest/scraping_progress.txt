@@ -1,4 +1,4 @@
 Completed scraping XCTest!
-Total pages scraped: 0
-Pages skipped (unchanged): 446
+Total pages scraped: 444
+Pages skipped (unchanged): 2
 Pages failed: 0

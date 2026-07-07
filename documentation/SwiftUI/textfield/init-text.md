@@ -17,8 +17,8 @@ Creates a text field with a text label generated from a localized title string.
 ## Declaration
 
 ```swift
-nonisolated
-init(_ titleKey: LocalizedStringKey, text: Binding<String>)
+@export(implementation)
+nonisolated init(_ titleKey: LocalizedStringKey, text: Binding<String>)
 ```
 
 ## Parameters
@@ -29,7 +29,7 @@ init(_ titleKey: LocalizedStringKey, text: Binding<String>)
 ## See Also
 
 - [init(_:text:prompt:)](textfield/init(_:text:prompt:).md)
-  Creates a text field with a text label generated from a localized title string.
+  Creates a text field with a text label generated from a localized title string resource.
 - [init(text: Binding<String>, prompt: Text?, label: () -> Label)](textfield/init(text:prompt:label:).md)
   Creates a text field with a prompt generated from a `Text`.
 

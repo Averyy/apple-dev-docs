@@ -8,7 +8,7 @@ Updates the UI to reflect the state of the data in the snapshot, optionally anim
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst ?+
+- Mac Catalyst 13.0+
 - tvOS 13.0+
 - visionOS ?+
 

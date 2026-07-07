@@ -8,7 +8,6 @@ The protocol for a type that builds evidence of a condition over time.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -68,6 +67,10 @@ protocol StatefulRequest : VisionRequest
   A type for objects produced by image-analysis requests.
 - [protocol VisionRequest](visionrequest.md)
   A type for image-analysis requests.
+- [protocol DownloadableAssetsRequest](downloadableassetsrequest.md)
+  A request whose execution depends on assets that may need to be downloaded.
+- [enum DownloadableAssetsRequestStatus](downloadableassetsrequeststatus.md)
+  The status of the assets required by a [`DownloadableAssetsRequest`](downloadableassetsrequest.md).
 
 
 ---

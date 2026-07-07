@@ -8,7 +8,6 @@ An error that the launch failed because authentication failed and the device is 
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 
 ## Declaration
 

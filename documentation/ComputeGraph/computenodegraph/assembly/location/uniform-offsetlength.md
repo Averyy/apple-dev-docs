@@ -1,6 +1,6 @@
 # ComputeNodeGraph.Assembly.Location.uniform(offset:length:)
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: case
 
 Value is located in uniforms. Its value is located at `offset` in the uniforms with length `length`.
@@ -12,7 +12,7 @@ Value is located in uniforms. Its value is located at `offset` in the uniforms w
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 ## Declaration
 

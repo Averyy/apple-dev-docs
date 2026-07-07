@@ -57,7 +57,6 @@ Define app entities for core types and concepts that you want to make available 
   A unique identifier for an app entity or transient app entity type within an application bundle.
 - [protocol AppEntityAnnotatable](appentityannotatable.md)
   An interface that system types adopt and use to manage their relationship to app entities.
-- [struct AppEntityIdentifier](appentityidentifier.md)
 ### Entity queries
 - [Entity queries](entity-queries.md)
   Implement one or more query types to help the system find your app’s entities.

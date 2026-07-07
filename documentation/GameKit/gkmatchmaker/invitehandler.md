@@ -8,7 +8,6 @@ A block that GameKit calls when an invitation to join a match is accepted by the
 **Availability**:
 - iOS 4.1+
 - iPadOS 4.1+
-- Mac Catalyst 4.1+
 - macOS 10.8+
 - visionOS 1.0+
 

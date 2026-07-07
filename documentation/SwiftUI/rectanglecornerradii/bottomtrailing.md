@@ -17,6 +17,7 @@ The radius of the bottom-trailing corner.
 ## Declaration
 
 ```swift
+@export(implementation)
 var bottomTrailing: CGFloat { get set }
 ```
 

@@ -70,9 +70,6 @@ For design guidance, see [`Menus`](https://developer.apple.com/design/Human-Inte
   Sets the menu indicator visibility for controls within this view.
 - [var menuIndicatorVisibility: Visibility](environmentvalues/menuindicatorvisibility.md)
   The menu indicator visibility to apply to controls within a view.
-### Responding to menu item interaction
-- [func onMenuItemHighlight(perform: (Bool) -> Void) -> some View](view/onmenuitemhighlight(perform:).md)
-  Adds an action to perform when the highlight state of a menu item changes.
 ### Configuring menu dismissal
 - [func menuActionDismissBehavior(MenuActionDismissBehavior) -> some View](view/menuactiondismissbehavior(_:).md)
   Tells a menu whether to dismiss after performing an action.

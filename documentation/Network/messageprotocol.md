@@ -35,6 +35,7 @@ protocol MessageProtocol : OneToOneProtocol
 - [DatagramProtocol](datagramprotocol.md)
 ### Conforming Types
 - [Coder](coder.md)
+- [DTLS](dtls.md)
 - [Framer](framer.md)
 - [QUICDatagram](quicdatagram.md)
 - [TLV](tlv.md)

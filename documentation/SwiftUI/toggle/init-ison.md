@@ -3,31 +3,31 @@
 **Framework**: SwiftUI  
 **Kind**: init
 
-Creates a toggle that generates its label from a localized string key.
+Creates a toggle that generates its label from a localized string resource.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.0+
-- macOS 10.15+
-- tvOS 13.0+
+- iOS 16.0+
+- iPadOS 16.0+
+- Mac Catalyst 16.0+
+- macOS 13.0+
+- tvOS 16.0+
 - visionOS 1.0+
-- watchOS 6.0+
+- watchOS 9.0+
 
 ## Declaration
 
 ```swift
-nonisolated
-init(_ titleKey: LocalizedStringKey, isOn: Binding<Bool>)
+@export(implementation)
+nonisolated init(_ titleResource: LocalizedStringResource, isOn: Binding<Bool>)
 ```
 
 #### Discussion
 
-This initializer creates a [`Text`](text.md) view on your behalf, and treats the localized key similar to [`init(_:tableName:bundle:comment:)`](text/init(_:tablename:bundle:comment:).md). See `Text` for more information about localizing strings.
+This initializer creates a [`Text`](text.md) view on your behalf. See `Text` for more information about localizing strings.
 
 ## Parameters
 
-- `titleKey`: The key for the toggle’s localized title, that describes the purpose of the toggle.
+- `titleResource`: Text resource for the toggle’s localized title, that describes the purpose of the toggle.
 - `isOn`: A binding to a property that indicates whether the toggle is on or off.
 
 ## See Also
@@ -35,7 +35,7 @@ This initializer creates a [`Text`](text.md) view on your behalf, and treats the
 - [init(isOn: Binding<Bool>, label: () -> Label)](toggle/init(ison:label:).md)
   Creates a toggle that displays a custom label.
 - [init(_:image:isOn:)](toggle/init(_:image:ison:).md)
-  Creates a toggle that generates its label from a localized string key and image resource.
+  Creates a toggle that generates its label from a localized string resource and image resource.
 - [init(_:systemImage:isOn:)](toggle/init(_:systemimage:ison:).md)
   Creates a toggle that generates its label from a localized string key and system image.
 

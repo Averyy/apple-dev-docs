@@ -8,7 +8,7 @@ Globally adaptive integrator that is based on 21-point or 15-point Gauss–Kronr
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst ?+
+- Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
 - visionOS ?+

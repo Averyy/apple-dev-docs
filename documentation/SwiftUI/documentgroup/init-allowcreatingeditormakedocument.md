@@ -16,7 +16,7 @@ Creates a document group capable of creating, viewing, and editing documents.
 
 ```swift
 nonisolated
-init(allowCreating: Bool = true, @ContentBuilder editor: @escaping (Document) -> Content, makeDocument: @escaping (URLDocumentConfiguration, DocumentCreationContext) async throws -> Document)
+init(allowCreating: Bool = true, @ContentBuilder editor: @escaping (Document) -> Content, makeDocument: @escaping @MainActor (URLDocumentConfiguration, DocumentCreationContext) async throws -> Document)
 ```
 
 ## Parameters

@@ -8,7 +8,6 @@ An Application Programming Data Unit (APDU) received from the NFC card reader.
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
-- Mac Catalyst 17.4+
 
 ## Declaration
 

@@ -17,6 +17,7 @@ The scroll behavior that aligns scroll targets to container-based geometry.
 ## Declaration
 
 ```swift
+@export(implementation)
 static var paging: PagingScrollTargetBehavior { get }
 ```
 

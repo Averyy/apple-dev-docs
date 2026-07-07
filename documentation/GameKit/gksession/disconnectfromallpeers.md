@@ -8,7 +8,6 @@ Disconnects the session from all connected peers.
 **Availability**:
 - iOS 3.0+
 - iPadOS 3.0+
-- Mac Catalyst 3.0+
 - macOS 10.8+
 - visionOS 1.0+
 - watchOS 2.0+

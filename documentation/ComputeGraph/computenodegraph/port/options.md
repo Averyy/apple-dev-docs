@@ -1,6 +1,6 @@
 # ComputeNodeGraph.Port.Options
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: struct
 
 Flags that modify how a port’s value is treated during compilation and execution.
@@ -12,7 +12,7 @@ Flags that modify how a port’s value is treated during compilation and executi
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 ## Declaration
 

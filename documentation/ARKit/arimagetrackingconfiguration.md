@@ -8,7 +8,6 @@ A configuration that tracks known images using the rear-facing camera.
 **Availability**:
 - iOS 12.0+
 - iPadOS 12.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

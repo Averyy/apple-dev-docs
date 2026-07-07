@@ -8,7 +8,6 @@ A state that indicates the completed decoding of an App Clip Code URL.
 **Availability**:
 - iOS 14.3+
 - iPadOS 14.3+
-- Mac Catalyst 14.3+
 
 ## Declaration
 

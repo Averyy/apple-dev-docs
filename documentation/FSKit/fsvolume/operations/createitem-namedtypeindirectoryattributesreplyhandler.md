@@ -27,6 +27,23 @@ If an item named `name` already exists in the directory indicated by `directory`
 - `newAttributes`: Attributes to apply to the new item.
 - `reply`: A block or closure to indicate success or failure. If creation succeeds, pass the newly-created [`FSItem`](fsitem.md) and its [`FSFileName`](fsfilename.md), along with a `nil` error. If creation fails, pass the relevant error as the third parameter; FSKit ignores any [`FSItem`](fsitem.md) or [`FSFileName`](fsfilename.md) in this case. For an `async` Swift implementation, there’s no reply handler; simply return a tuple of the [`FSItem`](fsitem.md) and its [`FSFileName`](fsfilename.md) or throw an error.
 
+## See Also
+
+- [class FSFileName](fsfilename.md)
+  The name of a file, expressed as a data buffer.
+- [FSItem.ItemType](fsitem/itemtype.md)
+  An enumeration of item types, such as file, directory, or symbolic link.
+- [FSItem.SetAttributesRequest](fsitem/setattributesrequest.md)
+  A request to set attributes on an item.
+- [func lookupItem(named: FSFileName, inDirectory: FSItem, replyHandler: (FSItem?, FSFileName?, (any Error)?) -> Void)](fsvolume/operations/lookupitem(named:indirectory:replyhandler:).md)
+  Looks up an item within a directory.
+- [func removeItem(FSItem, named: FSFileName, fromDirectory: FSItem, replyHandler: ((any Error)?) -> Void)](fsvolume/operations/removeitem(_:named:fromdirectory:replyhandler:).md)
+  Removes an existing item from a given directory.
+- [func renameItem(FSItem, inDirectory: FSItem, named: FSFileName, to: FSFileName, inDirectory: FSItem, overItem: FSItem?, replyHandler: (FSFileName?, (any Error)?) -> Void)](fsvolume/operations/renameitem(_:indirectory:named:to:indirectory:overitem:replyhandler:).md)
+  Renames an item from one path in the file system to another.
+- [func reclaimItem(FSItem, replyHandler: ((any Error)?) -> Void)](fsvolume/operations/reclaimitem(_:replyhandler:).md)
+  Reclaims an item, releasing any resources allocated for the item.
+
 
 ---
 

@@ -6,11 +6,11 @@
 If present, configures Calendar and Reminders Intelligence features.
 
 **Availability**:
-- iOS 26.4+
-- iPadOS 26.4+
-- Mac Catalyst 26.4+
-- macOS 26.4+
-- visionOS 26.4+
+- iOS 27.0+ (Beta)
+- iPadOS 27.0+ (Beta)
+- Mac Catalyst 27.0+ (Beta)
+- macOS 27.0+ (Beta)
+- visionOS 27.0+ (Beta)
 
 ## Declaration
 

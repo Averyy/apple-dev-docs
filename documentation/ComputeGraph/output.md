@@ -1,13 +1,13 @@
 # output
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: namespace
 
 Nodes usable within the output stage of an element. You can use these nodes to change the appearance of an element without making modifications to the element itself.
 
 **Availability**:
-- macOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- macOS ?+
+- Reality Composer Pro ?+
 
 ## Topics
 

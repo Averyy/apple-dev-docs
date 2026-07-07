@@ -12,6 +12,7 @@ Produces content for a conditional statement in a multi-statement closure when t
 ## Declaration
 
 ```swift
+@export(implementation)
 static func buildEither<F>(first: _ConditionalContent<_LimitedAvailabilityCompositorContent, _LimitedAvailabilityCompositorContent>) -> _ConditionalContent<_LimitedAvailabilityCompositorContent, F> where F : CompositorContent
 ```
 

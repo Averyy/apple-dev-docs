@@ -8,7 +8,6 @@ The GPU family 5, version 1 feature set for iOS.
 **Availability**:
 - iOS 12.0+
 - iPadOS 12.0+
-- Mac Catalyst 12.0+
 - visionOS 1.0+
 
 ## Declaration

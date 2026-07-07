@@ -8,7 +8,6 @@ Tells the system that the application is ready to appear after delaying the appe
 **Availability**:
 - iOS 18.1+
 - iPadOS 18.1+
-- Mac Catalyst 18.1+
 
 ## Declaration
 

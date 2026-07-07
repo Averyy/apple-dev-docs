@@ -8,7 +8,6 @@ A string that describes the insight suite an app should use with the TrustInsigh
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 
 
 

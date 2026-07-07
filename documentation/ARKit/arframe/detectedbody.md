@@ -8,7 +8,6 @@ The screen position information of a body that ARKit recognizes in the camera im
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

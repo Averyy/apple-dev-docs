@@ -45,7 +45,7 @@ Many modifiers apply to specific kinds of views or behaviors, but some apply mor
   Mark the receiver as their content might be invalidated.
 ### Providing contextual help
 - [func help(_:)](view/help(_:).md)
-  Adds help text to a view using a text view that you provide.
+  Adds help text to a view using a localized string resource that you provide.
 ### Detecting and requesting the light or dark appearance
 - [func preferredColorScheme(ColorScheme?) -> some View](view/preferredcolorscheme(_:).md)
   Sets the preferred color scheme for this presentation.

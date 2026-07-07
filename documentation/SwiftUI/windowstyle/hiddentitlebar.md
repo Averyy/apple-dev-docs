@@ -11,6 +11,7 @@ A window style which hides both the window’s title and the backing of the titl
 ## Declaration
 
 ```swift
+@export(implementation)
 static var hiddenTitleBar: HiddenTitleBarWindowStyle { get }
 ```
 

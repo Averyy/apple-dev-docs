@@ -8,7 +8,6 @@ Authorization timed out while waiting for the person using the app.
 **Availability**:
 - iOS 18.1+
 - iPadOS 18.1+
-- Mac Catalyst 18.1+
 
 ## Declaration
 

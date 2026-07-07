@@ -1,4 +1,4 @@
-# tvOS 27 Beta 2 Release Notes
+# tvOS 27 Beta 3 Release Notes
 
 **Framework**: tvOS Release Notes
 
@@ -6,7 +6,7 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The tvOS 27 SDK provides support to develop tvOS apps for Apple TV devices running tvOS 27 beta 2. The SDK comes bundled with Xcode 27, available from the Mac App Store. For information on the compatibility requirements for Xcode 27, see [`Xcode 27 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-27-release-notes).
+The tvOS 27 SDK provides support to develop tvOS apps for Apple TV devices running tvOS 27 beta 3. The SDK comes bundled with Xcode 27, available from the Mac App Store. For information on the compatibility requirements for Xcode 27, see [`Xcode 27 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-27-release-notes).
 
 ##### Apple Tv
 
@@ -107,10 +107,7 @@ The tvOS 27 SDK provides support to develop tvOS apps for Apple TV devices runni
 - Fixed: The renewal behavior preference is not respected when using the `purchaseDate(_:renewalBehavior:)` purchase option to make purchases using `SKTestSession`.  (162014134) (FB20537538)
 - Fixed: Re-purchasing a previously refunded non-consumable fails with an already owned error when using StoreKit Testing in Xcode.  (174560379) (FB22475017)
 - Fixed: Using `pricingTerms.commitmentInfo.price` in StoreKit Testing in Xcode returns an incorrect price for monthly subscriptions with a 12-month commitment.  (177942756)
-
-###### Known Issues
-
-- Transactions for upgraded subscriptions are immediately marked as expired when using StoreKit Testing in Xcode.  (178441109)
+- Fixed: Transactions for upgraded subscriptions are immediately marked as expired when using StoreKit Testing in Xcode.  (178441109)
 
 ##### Swift Charts
 
@@ -196,6 +193,7 @@ The tvOS 27 SDK provides support to develop tvOS apps for Apple TV devices runni
 - The @Entry macro now warns of potential issues if you store default class instances or closures in the environment. The SwiftUI Specialist skill in Xcode provides guidance for resolving these issues.  (175902616)
 - You can now access `concentricCornerRadii` and `concentricCornerRadii(in:)` on `GeometryProxy`. These APIs return the corner radii that are concentric with the view’s container shape as a `RectangleCornerRadii?`. You can use these values to drive custom drawing or layout that responds to the container’s corners without rendering a `ConcentricRectangle` directly.  (177185166)
 - `@ContentBuilder` type checking performance is further improved for valid code compared to Beta 1.  (177526032)
+- The new data item or error object based `alert` and `confirmationDialog` modifiers can now be used by projects targetting iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, and visionOS 1.0.  (179388848)
 
 ###### Resolved Issues
 
@@ -203,9 +201,11 @@ The tvOS 27 SDK provides support to develop tvOS apps for Apple TV devices runni
 - Fixed: In apps built with the 27.0 SDKs, `containerRelativeFrame(_:alignment:)` incorrectly accounts for safe-area insets on a `ScrollView`’s non-scrollable axis, causing the calculated scrollable content size to be too small. For example, a view using `containerRelativeFrame(.vertical)` inside a horizontal `ScrollView` extends into vertical safe-area regions, such as the navigation bar and home indicator, because only the scrollable axis insets are applied.  (165913417)
 - Fixed: Certain control-related view modifiers unexpectedly affect sheet and popover content. In apps built with the 27.0 SDKs, the `controlSize`, `buttonSizing`, `buttonRepeatBehavior`, `menuIndicatorVisibility`, and `ButtonBorderShape` environment values are now reset to their default values in sheets and popovers.  (167448274)
 - Fixed: A Button containing both an icon and a title placed inside a `List` `Section` header or footer has incorrect spacing between its icon and title.  (175681345)
+- Fixed: `@State` variable named using a raw identifier fails to compile.  (179149051) (FB23015259)
 
 ###### Known Issues
 
+- `Menu` labels can’t contain controls, views with gestures, or view representables with gesture recognizers.  (169091260) **Workaround:** Position your interactive views above a `Menu` in a `ZStack` or as an `overlay`.
 - Buttons on tvOS no longer automatically use the accent color from an app’s asset catalog as a label tint color when building against the tvOS 27 SDK.  (171830912) **Workaround:** To get accent-tinted buttons, use `.tint(.accentColor)` to adopt your accent color as a button’s complete tint. `.bordered` and `.borderedProminent` use the tint in more and less subtle ways, respectively.
 
 ##### System
@@ -214,9 +214,9 @@ The tvOS 27 SDK provides support to develop tvOS apps for Apple TV devices runni
 
 - System now provides Swift APIs for the C `stat`, `lstat`, `fstat`, and `fstatat` system calls. This includes a new `Stat` type with initializers from `FilePath`, `FileDescriptor`, or a C string; `FilePath.stat()` and `FileDescriptor.stat()` instance methods; and supporting types (`FileType`, `FileMode`, `FileFlags`, `UserID`, `GroupID`, `DeviceID`, and `Inode`). See [`SYS-0006`](https://developer.apple.comhttps://github.com/apple/swift-system/blob/main/Proposals/0006-system-stat.md) for more details.  (160612181)
 
-###### Known Issues
+###### Resolved Issues
 
-- Custom `FilePath` or `FileDescriptor` extensions that make unqualified calls to `stat()` or `stat(_:_:)` (without the `Darwin.` qualification) might conflict with the new Swift `stat()` instance methods introduced in [`SYS-0006`](https://developer.apple.comhttps://github.com/apple/swift-system/blob/main/Proposals/0006-system-stat.md), causing build errors.   (177911316) **Workaround:** Migrate to the new Swift `stat()` methods, or disambiguate using `Darwin.stat()` and `Darwin.stat(_:_:)`. See [`SYS-0008`](https://developer.apple.comhttps://github.com/apple/swift-system/blob/main/Proposals/0008-backdeploy-cinterop-stat.md) for more details.
+- Fixed: Custom `FilePath` or `FileDescriptor` extensions that make unqualified calls to `stat()` or `stat(_)` (without the `Darwin.` qualification) might conflict with the new Swift `stat()` instance methods introduced in [`SYS-0006`](https://developer.apple.comhttps://github.com/apple/swift-system/blob/main/Proposals/0006-system-stat.md), causing build errors. See [`SYS-0008`](https://developer.apple.comhttps://github.com/apple/swift-system/blob/main/Proposals/0008-backdeploy-cinterop-stat.md) for more details.  (177911316)
 
 ##### Textkit
 

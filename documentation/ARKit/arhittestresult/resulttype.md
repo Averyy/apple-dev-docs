@@ -8,7 +8,6 @@ Possible types for specifying a hit-test search, or for the result of a hit-test
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

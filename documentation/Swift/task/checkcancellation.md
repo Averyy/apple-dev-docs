@@ -36,7 +36,8 @@ The error is always an instance of `CancellationError`.
   A Boolean value that indicates whether the task should stop executing.
 - [static var isCancelled: Bool](task/iscancelled-swift.type.property.md)
   A Boolean value that indicates whether the task should stop executing.
-- [func withTaskCancellationHandler<T>(handler: () -> Void, operation: () async throws -> T) async rethrows -> T](withtaskcancellationhandler(handler:operation:).md)
+- [func withTaskCancellationHandler<Return, Failure>(operation: nonisolated(nonsending) () async throws(Failure) -> Return, onCancel: sending () -> Void) async throws(Failure) -> Return](withtaskcancellationhandler(operation:oncancel:).md)
+  Execute an operation with a cancellation handler that’s immediately invoked if the current task is canceled.
 - [func withTaskCancellationHandler<T>(operation: () async throws -> T, onCancel: () -> Void, isolation: isolated (any Actor)?) async rethrows -> T](withtaskcancellationhandler(operation:oncancel:isolation:).md)
   Execute an operation with a cancellation handler that’s immediately invoked if the current task is canceled.
 

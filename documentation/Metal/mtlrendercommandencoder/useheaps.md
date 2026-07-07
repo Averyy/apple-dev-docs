@@ -8,7 +8,7 @@ Ensures the shaders in the render pass’s subsequent draw commands have access 
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst ?+
+- Mac Catalyst 11.0+
 - macOS 10.13+
 - tvOS 11.0+
 - visionOS ?+

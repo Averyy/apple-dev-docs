@@ -17,6 +17,7 @@ An angular gradient, which applies the color function as the angle changes betwe
 ## Declaration
 
 ```swift
+@export(implementation)
 static func angularGradient(_ gradient: AnyGradient, center: UnitPoint = .center, startAngle: Angle, endAngle: Angle) -> some ShapeStyle
 ```
 

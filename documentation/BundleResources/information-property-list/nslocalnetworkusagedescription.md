@@ -8,7 +8,6 @@ A message that tells people why the app is requesting access to the local networ
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
 - macOS 11.0+
 - tvOS 14.0+
 - visionOS 1.0+

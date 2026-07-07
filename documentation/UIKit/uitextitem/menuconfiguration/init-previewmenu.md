@@ -8,7 +8,7 @@ Creates a text item menu configuration with the specified menu and preview.
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst ?+
+- Mac Catalyst 17.0+
 - visionOS ?+
 
 ## Declaration

@@ -18,7 +18,7 @@ The default form style.
 
 ```swift
 @MainActor
-@preconcurrency static var automatic: AutomaticFormStyle { get }
+@export(implementation) @preconcurrency static var automatic: AutomaticFormStyle { get }
 ```
 
 ## See Also

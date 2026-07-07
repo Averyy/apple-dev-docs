@@ -16,7 +16,7 @@ Reads the document from disk.
 ## Declaration
 
 ```swift
-nonisolated
+@concurrent
 func read(from source: sending Self.Source, progress: consuming Subprogress) async throws -> sending Self.Snapshot
 ```
 
@@ -29,7 +29,7 @@ func read(from source: sending Self.Source, progress: consuming Subprogress) asy
 
 - [associatedtype Snapshot](documentreader/snapshot.md)
   A type that represents the document’s stored content.
-- [associatedtype Source](documentreader/source.md)
+- [associatedtype Source = URL](documentreader/source.md)
 
 
 ---

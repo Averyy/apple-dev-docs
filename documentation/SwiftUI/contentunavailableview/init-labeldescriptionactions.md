@@ -30,9 +30,9 @@ init(@ContentBuilder label: () -> Label, @ContentBuilder description: () -> Desc
 ## See Also
 
 - [init(_:image:description:)](contentunavailableview/init(_:image:description:).md)
-  Creates an interface, consisting of a title generated from a localized string, an image and additional content, that you display when the content of your app is unavailable to users.
+  Creates an interface, consisting of a title generated from a localized string resource, an image and additional content, that you display when the content of your app is unavailable to users.
 - [init(_:systemImage:description:)](contentunavailableview/init(_:systemimage:description:).md)
-  Creates an interface, consisting of a title generated from a localized string, a system icon image and additional content, that you display when the content of your app is unavailable to users.
+  Creates an interface, consisting of a title generated from a localized string resource, a system icon image and additional content, that you display when the content of your app is unavailable to users.
 
 
 ---

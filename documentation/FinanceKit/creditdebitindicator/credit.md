@@ -8,7 +8,6 @@ A value that indicates an amount which increases an asset or decreases a liabili
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
-- Mac Catalyst 17.4+
 
 ## Declaration
 

@@ -11,8 +11,8 @@ Adds secondary views within the 3D bounds of this view.
 ## Declaration
 
 ```swift
-nonisolated
-func spatialOverlay<V>(alignment: Alignment3D = .center, @ContentBuilder content: () -> V) -> some View where V : View
+@export(implementation)
+nonisolated func spatialOverlay<V>(alignment: Alignment3D = .center, @ContentBuilder content: () -> V) -> some View where V : View
 ```
 
 #### Return Value

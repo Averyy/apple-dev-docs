@@ -8,7 +8,7 @@ An interface for converting between an entity’s identifier and its string repr
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst ?+
+- Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
 - visionOS ?+
@@ -71,7 +71,6 @@ extension MusicItemID: EntityIdentifierConvertible {
   A unique identifier for an app entity or transient app entity type within an application bundle.
 - [protocol AppEntityAnnotatable](appentityannotatable.md)
   An interface that system types adopt and use to manage their relationship to app entities.
-- [struct AppEntityIdentifier](appentityidentifier.md)
 
 
 ---

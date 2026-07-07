@@ -8,7 +8,7 @@ Executes the provided closure asynchronously on the coordinator’s queue and aw
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst ?+
+- Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
 - visionOS ?+

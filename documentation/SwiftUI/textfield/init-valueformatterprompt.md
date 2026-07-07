@@ -3,22 +3,22 @@
 **Framework**: SwiftUI  
 **Kind**: init
 
-Creates a text field that applies a formatter to a bound value, with a label generated from a title string.
+Creates a text field that applies a formatter to a bound value, with a label generated from a localized title string resource.
 
 **Availability**:
-- iOS 15.0+
-- iPadOS 15.0+
-- Mac Catalyst 15.0+
-- macOS 12.0+
-- tvOS 15.0+
+- iOS 16.0+
+- iPadOS 16.0+
+- Mac Catalyst 16.0+
+- macOS 13.0+
+- tvOS 16.0+
 - visionOS 1.0+
-- watchOS 8.0+
+- watchOS 9.0+
 
 ## Declaration
 
 ```swift
-nonisolated
-init<S, V>(_ title: S, value: Binding<V>, formatter: Formatter, prompt: Text?) where S : StringProtocol
+@export(implementation)
+nonisolated init<V>(_ titleResource: LocalizedStringResource, value: Binding<V>, formatter: Formatter, prompt: Text?)
 ```
 
 #### Discussion
@@ -30,7 +30,6 @@ Use the [`onSubmit(of:_:)`](view/onsubmit(of:_:).md) modifier to invoke an actio
 The following example uses a [`Double`](https://developer.apple.com/documentation/Swift/Double) as the bound value, and a [`NumberFormatter`](https://developer.apple.com/documentation/Foundation/NumberFormatter) instance to convert to and from a string representation. The formatter uses the [`NumberFormatter.Style.decimal`](https://developer.apple.com/documentation/Foundation/NumberFormatter/Style/decimal) style, to allow entering a fractional part. As the user types, the bound value updates, which in turn updates three [`Text`](text.md) views that use different format styles. If the user enters text that doesn’t represent a valid `Double`, the bound value doesn’t update.
 
 ```swift
-@State private var label = "Double"
 @State private var myDouble: Double = 0.673
 @State private var numberFormatter: NumberFormatter = {
     var nf = NumberFormatter()
@@ -41,7 +40,7 @@ The following example uses a [`Double`](https://developer.apple.com/documentatio
 var body: some View {
     VStack {
         TextField(
-            label,
+            "Double",
             value: $myDouble,
             formatter: numberFormatter
         )
@@ -54,7 +53,7 @@ var body: some View {
 
 ## Parameters
 
-- `title`: The title of the text field, describing its purpose.
+- `titleResource`: The localized title of the text field, describing its purpose.
 - `value`: The underlying value to edit.
 - `formatter`: A formatter to use when converting between the string the user edits and the underlying value of type `V`. If `formatter` can’t perform the conversion, the text field doesn’t modify `binding.value`.
 - `prompt`: A `Text` which provides users with guidance on what to enter into the text field.
@@ -62,7 +61,7 @@ var body: some View {
 ## See Also
 
 - [init(_:value:format:prompt:)](textfield/init(_:value:format:prompt:).md)
-  Creates a text field that applies a format style to a bound value, with a label generated from a localized title string.
+  Creates a text field that applies a format style to a bound value, with a label generated from a localized title string resource.
 - [init(value:format:prompt:label:)](textfield/init(value:format:prompt:label:).md)
   Creates a text field that applies a format style to a bound value, with a label generated from a content builder.
 - [init(_:value:formatter:)](textfield/init(_:value:formatter:).md)

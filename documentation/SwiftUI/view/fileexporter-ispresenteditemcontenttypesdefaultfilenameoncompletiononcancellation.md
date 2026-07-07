@@ -76,7 +76,7 @@ To further configure the dialog’s appearance and behavior, use these view modi
 - [func fileExporter(isPresented:document:contentTypes:defaultFilename:onCompletion:onCancellation:)](view/fileexporter(ispresented:document:contenttypes:defaultfilename:oncompletion:oncancellation:).md)
   Presents a system dialog for allowing the user to export a `FileDocument` to a file on disk.
 - [func fileExporter(isPresented:documents:contentTypes:onCompletion:onCancellation:)](view/fileexporter(ispresented:documents:contenttypes:oncompletion:oncancellation:).md)
-  Presents a system dialog for allowing the user to export a collection of documents that conform to `FileDocument` to files on disk.
+  Presents a system dialog for allowing the user to export a collection of objects conforming to `WritableDocument` to files on disk.
 - [func fileExporter<C, T>(isPresented: Binding<Bool>, items: C, contentTypes: [UTType], onCompletion: (Result<[URL], any Error>) -> Void, onCancellation: () -> Void) -> some View](view/fileexporter(ispresented:items:contenttypes:oncompletion:oncancellation:).md)
   Presents a system dialog allowing the user to export a collection of `Transferable` items to files on disk.
 - [func fileExporterFilenameLabel(_:)](view/fileexporterfilenamelabel(_:).md)

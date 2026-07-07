@@ -152,7 +152,7 @@ The list coordinates with the navigation logic so that changing the selection st
   Creates a navigation link that presents the destination view.
 ### Presenting a value
 - [init(_:value:)](navigationlink/init(_:value:).md)
-  Creates a navigation link that presents the view corresponding to a codable value, with a text label that the link generates from a localized string key.
+  Creates a navigation link that presents the view corresponding to a codable value, with a text label that the link generates from a localized string resource.
 - [init(value:label:)](navigationlink/init(value:label:).md)
   Creates a navigation link that presents the view corresponding to a codable value.
 ### Configuring the link

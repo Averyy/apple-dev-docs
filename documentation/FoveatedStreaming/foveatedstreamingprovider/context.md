@@ -24,10 +24,10 @@ Provides access to session state, endpoint information, focus region data, and h
 ### Instance Properties
 - [let endpoint: FoveatedStreamingProvider.Endpoint](foveatedstreamingprovider/context/endpoint.md)
   The endpoint for which a connection is being requested (local IP or remote URL).
-- [var isMicrophoneEnabled: Bool](foveatedstreamingprovider/context/ismicrophoneenabled.md)
-  Reports if microphone support is enabled for the process.
 - [var latestFocusRegion: FoveatedStreamingProvider.FocusRegion?](foveatedstreamingprovider/context/latestfocusregion.md)
   The latest eye input data, to be used to enable foveated streaming.
+- [var requestedInputCapabilities: Set<FoveatedStreamingSession.InputCapability>](foveatedstreamingprovider/context/requestedinputcapabilities.md)
+  The set of input capabilities the host app has requested for this session.
 - [var status: FoveatedStreamingProvider.Status](foveatedstreamingprovider/context/status.md)
   Reports the current status of the foveated streaming provider.
 ### Instance Methods

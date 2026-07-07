@@ -1,6 +1,6 @@
 # ComputeNodeGraph.Format.propertyList
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: case
 
 A compact binary property list representation.
@@ -12,7 +12,7 @@ A compact binary property list representation.
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 ## Declaration
 

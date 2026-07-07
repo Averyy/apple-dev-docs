@@ -25,7 +25,7 @@ object ExtensibleSingleSignOn.ExtensionData
 ## See Also
 
 - [object ExtensibleSingleSignOn.PlatformSSO](extensiblesinglesignon/platformsso-data.dictionary.md)
-  The dictionary to configure Platform SSO. Requires `Type` to be set to `Redirect`.
+  The dictionary to configure Platform SSO. Requires setting `Type` to `Redirect`.
 
 
 ---

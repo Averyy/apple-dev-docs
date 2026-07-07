@@ -8,7 +8,6 @@ Send a wired command Application Protocol Data Unit (APDU) to the credential to 
 **Availability**:
 - iOS 18.1+
 - iPadOS 18.1+
-- Mac Catalyst 18.1+
 
 ## Declaration
 

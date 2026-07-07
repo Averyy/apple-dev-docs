@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: case
 
+Insert at the back of the prepend list.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)

@@ -17,6 +17,7 @@ Creates a binding from the value of another binding.
 ## Declaration
 
 ```swift
+@export(implementation)
 init(projectedValue: Binding<Value>)
 ```
 

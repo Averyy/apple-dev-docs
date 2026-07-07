@@ -8,7 +8,6 @@ The minimum Transport Layer Security (TLS) version for network connections.
 **Availability**:
 - iOS 9.0+
 - iPadOS 9.0+
-- Mac Catalyst 9.0+
 - macOS 10.11+
 - visionOS 1.0+
 

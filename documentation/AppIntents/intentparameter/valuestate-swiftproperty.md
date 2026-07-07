@@ -8,7 +8,7 @@ Check if an IntentParameter was provided an initial value
 **Availability**:
 - iOS 18.2+
 - iPadOS 18.2+
-- Mac Catalyst ?+
+- Mac Catalyst 18.2+
 - macOS 15.2+
 - tvOS 18.2+
 - visionOS 2.2+

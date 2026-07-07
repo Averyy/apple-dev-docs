@@ -17,6 +17,7 @@ The amount of red in the color in the extended sRGB color space.
 ## Declaration
 
 ```swift
+@export(implementation)
 var red: Float { get set }
 ```
 

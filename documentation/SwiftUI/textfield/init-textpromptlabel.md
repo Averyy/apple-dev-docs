@@ -36,7 +36,7 @@ Use the [`onSubmit(of:_:)`](view/onsubmit(of:_:).md) modifier to invoke an actio
 - [init(_:text:)](textfield/init(_:text:).md)
   Creates a text field with a text label generated from a localized title string.
 - [init(_:text:prompt:)](textfield/init(_:text:prompt:).md)
-  Creates a text field with a text label generated from a localized title string.
+  Creates a text field with a text label generated from a localized title string resource.
 
 
 ---

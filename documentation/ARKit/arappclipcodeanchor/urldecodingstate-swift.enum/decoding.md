@@ -8,7 +8,6 @@ A state that indicates the continuing process of decoding an App Clip Code’s U
 **Availability**:
 - iOS 14.3+
 - iPadOS 14.3+
-- Mac Catalyst 14.3+
 
 ## Declaration
 

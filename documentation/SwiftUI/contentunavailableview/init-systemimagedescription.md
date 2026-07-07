@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: init
 
-Creates an interface, consisting of a title generated from a localized string, a system icon image and additional content, that you display when the content of your app is unavailable to users.
+Creates an interface, consisting of a title generated from a localized string resource, a system icon image and additional content, that you display when the content of your app is unavailable to users.
 
 **Availability**:
 - iOS 17.0+
@@ -17,8 +17,8 @@ Creates an interface, consisting of a title generated from a localized string, a
 ## Declaration
 
 ```swift
-nonisolated
-init(_ title: LocalizedStringKey, systemImage name: String, description: Text? = nil)
+@export(implementation)
+nonisolated init(_ title: LocalizedStringResource, systemImage name: String, description: Text? = nil)
 ```
 
 ## Parameters
@@ -32,7 +32,7 @@ init(_ title: LocalizedStringKey, systemImage name: String, description: Text? =
 - [init(label: () -> Label, description: () -> Description, actions: () -> Actions)](contentunavailableview/init(label:description:actions:).md)
   Creates an interface, consisting of a label and additional content, that you display when the content of your app is unavailable to users.
 - [init(_:image:description:)](contentunavailableview/init(_:image:description:).md)
-  Creates an interface, consisting of a title generated from a localized string, an image and additional content, that you display when the content of your app is unavailable to users.
+  Creates an interface, consisting of a title generated from a localized string resource, an image and additional content, that you display when the content of your app is unavailable to users.
 
 
 ---

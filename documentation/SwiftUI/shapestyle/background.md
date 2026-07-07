@@ -17,6 +17,7 @@ The background style in the current context.
 ## Declaration
 
 ```swift
+@export(implementation)
 static var background: BackgroundStyle { get }
 ```
 

@@ -3,10 +3,12 @@
 **Framework**: RealityKit  
 **Kind**: property
 
+The projection technique the framework uses for splat footprints.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst ?+
+- Mac Catalyst 27.0+ (Beta)
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 
@@ -15,6 +17,10 @@
 ```swift
 final var projectionMode: GaussianSplatResource.ProjectionMode
 ```
+
+#### Discussion
+
+The default value uses a tangential approximation.
 
 
 ---

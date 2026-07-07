@@ -8,7 +8,6 @@ Vertical view positions of an expanded Live Activity that appears in the Dynamic
 **Availability**:
 - iOS 16.1+
 - iPadOS 16.1+
-- Mac Catalyst 16.1+
 
 ## Declaration
 

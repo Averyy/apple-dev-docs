@@ -24,7 +24,7 @@ For iOS, iPadOS, tvOS, and visionOS this flow is supported during initial setup 
 
 ## See Also
 
-- [Authenticating with the Automated Device Enrollment program](authenticating-with-the-automated-device-enrollment-program.md)
+- [Authenticating for Automated Device Enrollment](authenticating-with-the-automated-device-enrollment-program.md)
   Communicate securely with the web service using a server token.
 
 

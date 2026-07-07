@@ -8,7 +8,6 @@ The length, in bytes, of the start of one vector in the buffer to the start of t
 **Availability**:
 - iOS 13.4+
 - iPadOS 13.4+
-- Mac Catalyst 13.4+
 
 ## Declaration
 

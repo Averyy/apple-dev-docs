@@ -1,6 +1,6 @@
 # graphUniforms
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: property
 
 Returns a read-only copy of the uniforms buffer.
@@ -12,7 +12,7 @@ Returns a read-only copy of the uniforms buffer.
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 ## Declaration
 

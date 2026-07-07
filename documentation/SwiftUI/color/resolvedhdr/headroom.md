@@ -17,6 +17,7 @@ The content headroom of the color.
 ## Declaration
 
 ```swift
+@export(implementation)
 var headroom: Float? { get set }
 ```
 

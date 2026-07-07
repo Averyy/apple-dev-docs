@@ -8,7 +8,7 @@ The URL string you use to deep link to your app’s notification settings in the
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst ?+
+- Mac Catalyst 16.0+
 - tvOS ?+
 - visionOS ?+
 

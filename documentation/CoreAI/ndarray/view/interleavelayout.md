@@ -8,7 +8,6 @@ Returns which dimension is interleaved, and by what factor it is interleaved. Or
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 
@@ -21,6 +20,17 @@ var interleaveLayout: NDArray.InterleaveLayout? { get }
 #### Discussion
 
 See [`NDArray.InterleaveLayout`](ndarray/interleavelayout-swift.struct.md) for full documentation.
+
+## See Also
+
+- [var isContiguous: Bool](ndarray/view/iscontiguous.md)
+  Returns `true` if the elements in this view have a row-major contiguous layout.
+- [var rank: Int](ndarray/view/rank.md)
+  The rank of the tensor.
+- [var shape: Span<Int>](ndarray/view/shape.md)
+  The shape of the tensor.
+- [var strides: Span<Int>](ndarray/view/strides.md)
+  The strides of the tensor.
 
 
 ---

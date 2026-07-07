@@ -11,8 +11,8 @@ Enables user suppression of an alert with a custom suppression message.
 ## Declaration
 
 ```swift
-nonisolated
-func dialogSuppressionToggle(_ label: Text, isSuppressed: Binding<Bool>) -> some Scene
+@export(implementation)
+nonisolated func dialogSuppressionToggle(_ titleResource: LocalizedStringResource, isSuppressed: Binding<Bool>) -> some Scene
 ```
 
 #### Discussion
@@ -54,7 +54,7 @@ struct MyApp: App {
 
 ## Parameters
 
-- `label`: The label of the suppression toggle in the dialog. This parameter can be elided to use the default suppression title.
+- `titleResource`: The title of the suppression toggle in the dialog. This parameter can be elided to use the default suppression title.
 - `isSuppressed`: Whether the suppression toggle is on or off in the dialog.
 
 ## See Also

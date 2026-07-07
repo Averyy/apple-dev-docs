@@ -27,9 +27,9 @@ A `CKQueryOperation` object is a concrete operation that you can use to execute 
 To perform a new search:
 
 1. Initialize a `CKQueryOperation` object with a [`CKQuery`](ckquery.md) object that contains the search criteria and sorting information for the records you want.
-2. Assign a handler to the [`queryCompletionBlock`](ckqueryoperation/querycompletionblock.md) property so that you can process the results and execute the operation.
-
-If the search yields many records, the operation object may deliver a portion of the total results to your blocks immediately, along with a cursor for obtaining the remaining records. Use the cursor to initialize and execute a separate `CKQueryOperation` instance when you’re ready to process the next batch of results. 3. Optionally, configure the results by specifying values for the [`resultsLimit`](ckqueryoperation/resultslimit.md) and [`desiredKeys`](ckqueryoperation/desiredkeys-4a6vy.md) properties. 4. Pass the query operation object to the [`add(_:)`](ckdatabase/add(_:).md) method of the target database to execute the operation.
+2. Assign a handler to the [`queryCompletionBlock`](ckqueryoperation/querycompletionblock.md) property so that you can process the results and execute the operation. If the search yields many records, the operation object may deliver a portion of the total results to your blocks immediately, along with a cursor for obtaining the remaining records. Use the cursor to initialize and execute a separate `CKQueryOperation` instance when you’re ready to process the next batch of results.
+3. Optionally, configure the results by specifying values for the [`resultsLimit`](ckqueryoperation/resultslimit.md) and [`desiredKeys`](ckqueryoperation/desiredkeys-4a6vy.md) properties.
+4. Pass the query operation object to the [`add(_:)`](ckdatabase/add(_:).md) method of the target database to execute the operation.
 
 CloudKit restricts queries to the records in a single record zone. For new queries, you specify the zone when you initialize the query operation object. For cursor-based queries, the cursor contains the zone information. To search for records in multiple zones, you must create a separate `CKQueryOperation` object for each zone you want to search, although you can initialize each of them with the same [`CKQuery`](ckquery.md) object.
 

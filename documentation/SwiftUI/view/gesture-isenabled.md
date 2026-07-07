@@ -17,8 +17,8 @@ Attaches a gesture to the view with a lower precedence than gestures defined by 
 ## Declaration
 
 ```swift
-nonisolated
-func gesture<T>(_ gesture: T, isEnabled: Bool) -> some View where T : Gesture
+@export(implementation)
+nonisolated func gesture<T>(_ gesture: T, isEnabled: Bool) -> some View where T : Gesture
 ```
 
 #### Discussion

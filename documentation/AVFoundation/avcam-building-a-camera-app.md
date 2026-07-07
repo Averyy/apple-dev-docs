@@ -225,7 +225,7 @@ The capture service delegates handling of the app’s photo capture features to 
 
 ```swift
 /// The app calls this method when the user taps the photo capture button.
-func capturePhoto(with features: EnabledPhotoFeatures) async throws -> Photo {
+func capturePhoto(with features: PhotoFeatures) async throws -> Photo {
     // Wrap the delegate-based capture API in a continuation to use it in an async context.
     try await withCheckedThrowingContinuation { continuation in
         

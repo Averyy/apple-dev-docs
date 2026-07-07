@@ -8,7 +8,6 @@ A Boolean value indicating whether the web view suppresses content rendering unt
 **Availability**:
 - iOS 6.0+
 - iPadOS 6.0+
-- Mac Catalyst 6.0+
 
 ## Declaration
 

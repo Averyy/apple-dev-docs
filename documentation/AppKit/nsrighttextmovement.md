@@ -6,7 +6,7 @@
 The right arrow key was pressed.
 
 **Availability**:
-- macOS ?+
+- macOS 10.0+
 
 ## Declaration
 

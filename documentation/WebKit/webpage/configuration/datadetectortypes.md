@@ -8,7 +8,7 @@ The types of data detectors to apply to the webpage’s content.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst 26.0+
 - visionOS 26.0+
 
 ## Declaration

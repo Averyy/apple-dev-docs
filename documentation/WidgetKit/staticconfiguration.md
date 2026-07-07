@@ -8,7 +8,7 @@ An object describing the content of a widget that has no user-configurable optio
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst ?+
+- Mac Catalyst 14.0+
 - macOS 11.0+
 - visionOS 26.0+
 - watchOS 9.0+

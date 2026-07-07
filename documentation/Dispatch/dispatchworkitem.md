@@ -8,7 +8,7 @@ The work you want to perform, encapsulated in a way that lets you attach a compl
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+
-- Mac Catalyst ?+
+- Mac Catalyst 8.0+
 - macOS 10.10+
 - tvOS ?+
 - visionOS ?+

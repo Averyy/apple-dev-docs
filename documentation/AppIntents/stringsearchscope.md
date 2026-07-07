@@ -8,7 +8,7 @@ Constants that help the system understand the in-app search functionality and it
 **Availability**:
 - iOS 17.2+
 - iPadOS 17.2+
-- Mac Catalyst ?+
+- Mac Catalyst 17.2+
 - macOS 14.2+
 - tvOS 17.2+
 - visionOS ?+

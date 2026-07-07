@@ -8,7 +8,7 @@ An array of `width * height * channelCount` values that’s a copy of the buffer
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst ?+
+- Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
 - visionOS ?+

@@ -8,7 +8,7 @@ Indicates whether the item with the specified identifier is in an expanded state
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst ?+
+- Mac Catalyst 14.0+
 - tvOS 14.0+
 - visionOS ?+
 

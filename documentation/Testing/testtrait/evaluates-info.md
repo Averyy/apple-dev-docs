@@ -11,6 +11,7 @@ Creates a trait that runs a single evaluation and makes its result available thr
 - Mac Catalyst 27.0+ (Beta)
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
+- watchOS 27.0+ (Beta)
 - Swift 6.0+
 - Xcode 16.0+
 

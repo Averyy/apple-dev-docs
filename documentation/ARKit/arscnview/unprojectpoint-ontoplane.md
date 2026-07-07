@@ -8,7 +8,6 @@ Returns the projection of a point from 2D view onto a plane in the 3D world spac
 **Availability**:
 - iOS 12.0+
 - iPadOS 12.0+
-- Mac Catalyst 12.0+
 
 ## Declaration
 

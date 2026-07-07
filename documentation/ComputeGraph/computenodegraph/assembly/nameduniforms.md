@@ -1,6 +1,6 @@
 # namedUniforms
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: property
 
 Uniforms that are named and exposed as parameters of this graph, keyed by name.
@@ -12,7 +12,7 @@ Uniforms that are named and exposed as parameters of this graph, keyed by name.
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 ## Declaration
 

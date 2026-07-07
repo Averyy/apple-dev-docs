@@ -8,7 +8,7 @@ Informs the provider that no more reconfiguration of time ranges is necessary an
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst 26.0+
 - macOS 26.0+
 - tvOS 26.0+
 - visionOS 26.0+

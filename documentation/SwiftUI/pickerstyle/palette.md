@@ -15,6 +15,7 @@ A picker style that presents the options as a row of compact elements.
 ## Declaration
 
 ```swift
+@export(implementation)
 static var palette: PalettePickerStyle { get }
 ```
 

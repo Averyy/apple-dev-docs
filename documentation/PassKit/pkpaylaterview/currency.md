@@ -8,7 +8,6 @@ The ISO-4217 currency code for the country or region of the merchant’s princip
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst 17.0+
 - visionOS ?+
 
 ## Declaration

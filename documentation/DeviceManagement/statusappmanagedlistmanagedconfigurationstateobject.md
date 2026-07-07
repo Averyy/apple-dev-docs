@@ -20,9 +20,9 @@ object StatusAppManagedListManagedConfigurationStateObject
 
 ## Properties
 
-- `state` (string) *(required)*: The managed configuration status. - `unknown`: The managed configuration has not been read
-- `invalid`: The managed configuration was read and deemed to be invalid
-- `valid`: The managed configuration was read and deemed to be valid
+- `state` (string) *(required)*: The managed configuration status. - `unknown`: The device hasn’t read the managed configuration.
+- `invalid`: The device read the managed configuration and found it to be invalid.
+- `valid`: The device read the managed configuration and found it to be valid.
 
 ## See Also
 

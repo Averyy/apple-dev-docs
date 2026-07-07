@@ -8,7 +8,6 @@ Notifies your app extension that the system is about to terminate the extension 
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst 15.0+
 
 ## Declaration
 

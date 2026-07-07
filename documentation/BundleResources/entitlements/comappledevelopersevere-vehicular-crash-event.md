@@ -8,7 +8,6 @@ The entitlement for accessing Crash Detection events.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
 - watchOS 10.1+
 
 

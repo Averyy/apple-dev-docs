@@ -16,8 +16,8 @@ Creates a stepper configured to increment or decrement a binding to a value usin
 ## Declaration
 
 ```swift
-nonisolated
-init<V>(value: Binding<V>, step: V.Stride = 1, @ContentBuilder label: () -> Label, onEditingChanged: @escaping (Bool) -> Void = { _ in }) where V : Strideable
+@export(implementation)
+nonisolated init<V>(value: Binding<V>, step: V.Stride = 1, @ContentBuilder label: () -> Label, onEditingChanged: @escaping (Bool) -> Void = { _ in }) where V : Strideable
 ```
 
 #### Discussion
@@ -54,7 +54,7 @@ struct StepperView: View {
 - [init<F>(value: Binding<F.FormatInput>, step: F.FormatInput.Stride, format: F, label: () -> Label, onEditingChanged: (Bool) -> Void)](stepper/init(value:step:format:label:oneditingchanged:).md)
   Creates a stepper configured to increment or decrement a binding to a value using a step value you provide, displaying its value with an applied format style.
 - [init(_:value:step:onEditingChanged:)](stepper/init(_:value:step:oneditingchanged:).md)
-  Creates a stepper with a title and configured to increment and decrement a binding to a value and step amount you provide.
+  Creates a stepper with a title key and configured to increment and decrement a binding to a value and step amount you provide.
 - [init(_:value:step:format:onEditingChanged:)](stepper/init(_:value:step:format:oneditingchanged:).md)
   Creates a stepper with a title key and configured to increment and decrement a binding to a value and step amount you provide, displaying its value with an applied format style.
 

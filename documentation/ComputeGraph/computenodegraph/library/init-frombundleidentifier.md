@@ -1,6 +1,6 @@
 # init(from:bundleIdentifier:)
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: init
 
 Creates a library by extracting node definitions from a Metal library.
@@ -12,7 +12,7 @@ Creates a library by extracting node definitions from a Metal library.
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 ## Declaration
 

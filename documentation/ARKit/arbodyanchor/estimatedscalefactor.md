@@ -8,7 +8,6 @@ A factor that relates the body’s default height with the height ARKit estimate
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

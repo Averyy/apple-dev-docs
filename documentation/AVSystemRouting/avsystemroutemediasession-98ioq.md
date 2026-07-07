@@ -30,7 +30,7 @@ Use this object to access playback controls and a data channel for communicating
 ### Instance Properties
 - [var dataChannel: AVSystemRoute.DataChannel?](avsystemroutemediasession-98ioq/datachannel.md)
   The data channel for sending and receiving data with the remote app.
-- [var playbackControl: (any AVInterfaceControllable)?](avsystemroutemediasession-98ioq/playbackcontrol.md)
+- [var playbackControl: (any AVPlaybackUserInterfaceControllable)?](avsystemroutemediasession-98ioq/playbackcontrol.md)
   The playback control interface for the remote session.
 
 ## Relationships

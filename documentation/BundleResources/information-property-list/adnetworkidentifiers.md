@@ -8,7 +8,6 @@ An array of strings that identifies the ad networks a publisher app shows advert
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
-- Mac Catalyst 17.4+
 
 
 

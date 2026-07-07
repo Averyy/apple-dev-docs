@@ -6,19 +6,19 @@
 Creates a secure field with a prompt generated from a `Text`.
 
 **Availability**:
-- iOS 15.0+
-- iPadOS 15.0+
-- Mac Catalyst 15.0+
-- macOS 12.0+
-- tvOS 15.0+
+- iOS 16.0+
+- iPadOS 16.0+
+- Mac Catalyst 16.0+
+- macOS 13.0+
+- tvOS 16.0+
 - visionOS 1.0+
-- watchOS 8.0+
+- watchOS 9.0+
 
 ## Declaration
 
 ```swift
-nonisolated
-init(_ titleKey: LocalizedStringKey, text: Binding<String>, prompt: Text?)
+@export(implementation)
+nonisolated init(_ titleResource: LocalizedStringResource, text: Binding<String>, prompt: Text?)
 ```
 
 #### Discussion
@@ -27,7 +27,7 @@ Use the [`onSubmit(of:_:)`](view/onsubmit(of:_:).md) modifier to invoke an actio
 
 ## Parameters
 
-- `titleKey`: The key for the field’s localized title. The title describes the purpose of the field.
+- `titleResource`: Text resource for the field’s localized title. The title describes the purpose of the field.
 - `text`: A binding to the text that the field displays and edits.
 - `prompt`: A [`Text`](text.md) view that represents the secure field’s prompt. The prompt provides guidance on what people should type into the secure field.
 

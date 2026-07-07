@@ -105,6 +105,8 @@ Use this framework when you need direct access to protocols like TLS, TCP, and U
   Advertise a Bonjour service.
 - [struct Coder](coder.md)
   A protocol that frames and encodes/decodes Codable types.
+- [struct DTLS](dtls.md)
+  The system definition of the Datagram Transport Layer Security (DTLS) protocol.
 - [struct DefaultProtocolStorage](defaultprotocolstorage.md)
 - [struct Framer](framer.md)
   An instance of a Framer protocol to load into a protocol stack.

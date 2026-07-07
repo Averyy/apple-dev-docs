@@ -8,7 +8,6 @@ A stream of work to be run asynchronously.
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 
@@ -24,12 +23,12 @@ A compute stream is what is provided to [`encode(inputs:states:outputViews:to:)`
 
 ## Topics
 
-### Initializers
+### Creating a stream
 - [convenience init()](computestream/init.md)
   Initialize an empty compute stream.
 - [init(commandQueue: any MTLCommandQueue)](computestream/init(commandqueue:).md)
   Initialize a compute stream which will encode its work to the provided command queue.
-### Instance Methods
+### Waiting for work to finish
 - [func currentWorkCompleted() async](computestream/currentworkcompleted.md)
   Waits for all previous work encoded to this stream to be complete.
 

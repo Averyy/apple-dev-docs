@@ -30,9 +30,9 @@ nonisolated init(role: ButtonRole?, action: @escaping @MainActor () -> Void, @Co
 ## See Also
 
 - [init(_:role:action:)](button/init(_:role:action:).md)
-  Creates a button with a specified role that generates its label from a localized string key.
+  Creates a button with a specified role that generates its label from a localized string resource.
 - [init(_:image:role:action:)](button/init(_:image:role:action:).md)
-  Creates a button with a specified role that generates its label from a localized string key and an image resource.
+  Creates a button with a specified role that generates its label from a localized string resource and an image resource.
 - [init(_:systemImage:role:action:)](button/init(_:systemimage:role:action:).md)
   Creates a button with a specified role that generates its label from a localized string key and a system image.
 

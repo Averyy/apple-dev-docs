@@ -8,7 +8,6 @@ A value specifying how the session maps real-world device motion into a 3D scene
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

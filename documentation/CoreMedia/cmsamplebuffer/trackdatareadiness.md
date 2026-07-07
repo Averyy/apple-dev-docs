@@ -8,7 +8,7 @@ Associates a sample buffer’s data readiness with that of another sample buffer
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst ?+
+- Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
 - visionOS 1.0+

@@ -8,7 +8,6 @@ A flag that opts you in to a peer-to-peer multiuser AR experience.
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

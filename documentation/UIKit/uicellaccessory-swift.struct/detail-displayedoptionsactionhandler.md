@@ -8,7 +8,7 @@ Creates a detail system accessory with the specified display state, configuratio
 **Availability**:
 - iOS 15.4+
 - iPadOS 15.4+
-- Mac Catalyst ?+
+- Mac Catalyst 15.4+
 - tvOS 15.4+
 - visionOS ?+
 

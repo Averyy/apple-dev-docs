@@ -11,6 +11,7 @@ Creates a spatial container layout with the specified 3D alignment.
 ## Declaration
 
 ```swift
+@export(implementation)
 init(alignment: Alignment3D = .center)
 ```
 

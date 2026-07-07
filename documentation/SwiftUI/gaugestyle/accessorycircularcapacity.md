@@ -17,7 +17,7 @@ A gauge style that displays a closed ring that’s partially filled in to indica
 
 ```swift
 @MainActor
-@preconcurrency static var accessoryCircularCapacity: AccessoryCircularCapacityGaugeStyle { get }
+@export(implementation) @preconcurrency static var accessoryCircularCapacity: AccessoryCircularCapacityGaugeStyle { get }
 ```
 
 #### Discussion

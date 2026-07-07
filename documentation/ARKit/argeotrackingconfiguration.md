@@ -8,7 +8,6 @@ A configuration that tracks locations with GPS, map data, and a device’s compa
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
 
 ## Declaration
 

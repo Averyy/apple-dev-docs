@@ -9,7 +9,7 @@ A unique identifier for a control that isn’t a text field in a Scribble intera
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst ?+
+- Mac Catalyst 14.0+
 - visionOS ?+
 
 ## Declaration

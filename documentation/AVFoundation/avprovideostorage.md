@@ -24,16 +24,21 @@ class AVProVideoStorage
 
 ## Topics
 
+### Structures
+- [AVProVideoStorage.BusyReason](avprovideostorage/busyreason.md)
+  A reason that Pro Video Storage may be busy.
 ### Instance Properties
+- [var busyReasons: Set<AVProVideoStorage.BusyReason>](avprovideostorage/busyreasons.md)
+  Whether Pro Video Storage is busy and the associated reasons.
 - [var initialCapacity: Int](avprovideostorage/initialcapacity.md)
   Initial size of Pro Video Storage in bytes.
-- [var isBusy: Bool](avprovideostorage/isbusy.md)
-  Indicates whether Pro Video Storage is currently busy.
 - [var remainingCapacity: Int](avprovideostorage/remainingcapacity.md)
   Current size of Pro Video Storage in bytes.
 ### Instance Methods
 - [func openSettings()](avprovideostorage/opensettings.md)
   Opens the Pro Video Storage UI in Settings app.
+- [func replenishCapacity(completionHandler: ((Int, (any Error)?) -> Void)?)](avprovideostorage/replenishcapacity(completionhandler:).md)
+  Performs a best-effort attempt to restore Pro Video Storage to the initial capacity specified by the user in Settings app.
 ### Type Properties
 - [class var isSupported: Bool](avprovideostorage/issupported.md)
   Whether Pro Video Storage is supported in its current configuration.

@@ -1,6 +1,6 @@
 # StripOrientation.auto
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: case
 
 Automatically derive the orientation of the strip via neighbors and any provided axisY or axisZ values.
@@ -12,7 +12,7 @@ Automatically derive the orientation of the strip via neighbors and any provided
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 ## Declaration
 

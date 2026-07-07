@@ -3,7 +3,7 @@
 **Framework**: Spatial Preview  
 **Kind**: property
 
-Synchronous undo/redo event delegate
+Optional synchronous undo/redo event delegate
 
 **Availability**:
 - macOS 27.0+ (Beta)

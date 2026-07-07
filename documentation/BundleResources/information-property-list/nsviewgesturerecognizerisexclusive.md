@@ -20,7 +20,7 @@ Set this key to `NO` to allow gesture recognizers in multiple views to activate 
 
 By default, AppKit allows only one view to process a gesture at a time. Once a gesture recognizer in one view becomes active, touches in other views won’t activate their gesture recognizers until the first gesture completes. This prevents multiple simultaneous gestures from conflicting with each other.
 
-For finer-grained control, use the doc://com.apple.documentation/documentation/appkit/nsview/exclusivegesturebehavior property instead of this key to configure exclusivity on individual views and their subviews, rather than applying a single setting to the entire app.
+For finer-grained control, use the [`exclusiveGestureBehavior`](https://developer.apple.com/documentation/AppKit/NSView/exclusiveGestureBehavior-swift.property) property instead of this key to configure exclusivity on individual views and their subviews, rather than applying a single setting to the entire app.
 
 The default value is `YES`.
 

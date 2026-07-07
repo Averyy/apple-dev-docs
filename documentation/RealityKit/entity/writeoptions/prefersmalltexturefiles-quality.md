@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: method
 
-Reduce textures’ file size.
+Reduce textures’ file size while preserving its dimensions.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -20,16 +20,16 @@ static func preferSmallTextureFiles(quality: Entity.WriteOptions.TextureQuality)
 
 #### Discussion
 
-RealityKit reduces the file size while preserving its dimensions. RealityKit can use various strategies to reduce the file size including lossy encoding the texture as an image or storing the original source image. Mipmaps can also be regenerated.
+The returned option instructs RealityKit to encode textures using smaller file representations. RealityKit selects the best strategy for each texture based on context, which may include lossy image encoding, preserving the original source image, or regenerating mipmaps.
 
-Writing smaller texture files can increase memory usage and load time. Without this option, textures can be written to a compressed pixel format, resulting in larger file sizes but smaller memory usage and load time.
+> ⚠️ **Warning**: While writing smaller texture files reduces the size of reality files on disk, loading those textures can increase memory usage and load times compared to the default compressed format. Larger memory region can also consume more power during rendering due to increased cache pressure.
 
 > **Note**: RealityKit ignores this option for textures created with [`none`](textureresource/compression/none.md).
 
 ## See Also
 
 - [static var preferFastExport: Entity.WriteOptions](entity/writeoptions/preferfastexport.md)
-  Expedite the reality file export when possible. This may disable reality file compression, resulting in larger file size.
+  Expedite the reality file export when possible.
 - [Entity.WriteOptions.TextureQuality](entity/writeoptions/texturequality.md)
   A texture quality level.
 

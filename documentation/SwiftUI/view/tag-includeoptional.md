@@ -17,8 +17,8 @@ Sets the unique tag value of this view.
 ## Declaration
 
 ```swift
-nonisolated
-func tag<V>(_ tag: V, includeOptional: Bool = true) -> some View where V : Hashable
+@export(implementation)
+nonisolated func tag<V>(_ tag: V, includeOptional: Bool = true) -> some View where V : Hashable
 ```
 
 #### Return Value

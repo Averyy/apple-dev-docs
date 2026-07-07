@@ -8,7 +8,6 @@ A set of strings that identifies the secondary recipients of the message, such a
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
-- Mac Catalyst 18.4+
 
 ## Declaration
 

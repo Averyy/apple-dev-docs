@@ -8,7 +8,7 @@ Creates a 4-channel, 8-bit-per-channel interleaved buffer from a planar Yp buffe
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst ?+
+- Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
 - visionOS ?+

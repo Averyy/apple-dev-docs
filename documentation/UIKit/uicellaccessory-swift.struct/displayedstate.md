@@ -8,7 +8,7 @@ Constants that describe the cell-editing states that the accessory appears in.
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst ?+
+- Mac Catalyst 14.0+
 - tvOS 14.0+
 - visionOS ?+
 

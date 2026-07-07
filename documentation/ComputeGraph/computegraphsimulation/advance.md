@@ -1,6 +1,6 @@
 # advance(_:)
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: method
 
 Advances the simulation by one time step, encoding all simulation stage dispatches into the command buffer and encoder provided by `params`.
@@ -12,7 +12,7 @@ Advances the simulation by one time step, encoding all simulation stage dispatch
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 ## Declaration
 

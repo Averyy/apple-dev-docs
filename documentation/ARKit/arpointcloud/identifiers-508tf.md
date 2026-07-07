@@ -8,7 +8,6 @@ A list of unique identifiers corresponding to detected feature points.
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 11.0+
 
 ## Declaration
 

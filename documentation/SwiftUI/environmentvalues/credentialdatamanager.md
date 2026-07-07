@@ -8,7 +8,6 @@ This environment variable is for SwiftUI clients of the ASCredentialDataManager 
 **Availability**:
 - iOS 26.2+
 - iPadOS 26.2+
-- Mac Catalyst 26.2+
 - macOS 26.2+
 - visionOS 26.2+
 

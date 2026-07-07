@@ -8,7 +8,7 @@ A value that represents a developer-defined, coarse conversion value that is hig
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
-- Mac Catalyst ?+
+- Mac Catalyst 17.4+
 
 ## Declaration
 

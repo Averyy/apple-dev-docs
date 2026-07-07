@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: property
 
-The current playback cycle.
+The current playback cycle of the clip.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -22,9 +22,9 @@ var currentCycle: Float { get }
 ## See Also
 
 - [let id: Int](animationgraphcomponent/activeclipnode/id.md)
-  Returns the id of the node.
+  The unique identifier of the node within the compiled graph.
 - [var wasReset: Bool](animationgraphcomponent/activeclipnode/wasreset.md)
-  Returns `true` if the node was reset during the last tick.
+  A Boolean value that indicates whether the node was reset during the last evaluation tick.
 
 
 ---

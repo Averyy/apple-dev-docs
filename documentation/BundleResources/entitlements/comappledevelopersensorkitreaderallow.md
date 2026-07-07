@@ -8,7 +8,6 @@ The necessary entitlement to access sensor data that’s required by your app’
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
 - visionOS 1.0+
 
 

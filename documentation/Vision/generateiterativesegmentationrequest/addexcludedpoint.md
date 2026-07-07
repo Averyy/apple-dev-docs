@@ -3,12 +3,11 @@
 **Framework**: Vision  
 **Kind**: method
 
-Refines the mask with a point that is excluded from the desired segmentation. Throws an error if the total number of added points exceeded the limitation. (13 points when seedPoint or seedScribbleBuffer were used or 11 points when seedBox was used)
+Refines the mask with a point that is excluded from the desired segmentation. Throws an error if the total number of added points exceeds the limit. (13 points when seedPoint or seedScribbleBuffer was used, or 11 points when seedBox was used)
 
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
@@ -18,6 +17,11 @@ Refines the mask with a point that is excluded from the desired segmentation. Th
 ```swift
 final func addExcludedPoint(_ point: NormalizedPoint) throws
 ```
+
+## See Also
+
+- [func addIncludedPoint(NormalizedPoint) throws](generateiterativesegmentationrequest/addincludedpoint(_:).md)
+  Refines the mask with a point that is part of the desired segmentation. Throws an error if the total number of added points exceeds the limit. (13 points when seedPoint or seedScribbleBuffer was used, or 11 points when seedBox was used)
 
 
 ---

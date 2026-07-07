@@ -1,6 +1,6 @@
 # ComputeNodeGraph.Assembly.Location.state(index:offset:length:)
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: case
 
 A context-dependent state value.
@@ -12,7 +12,7 @@ A context-dependent state value.
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 ## Declaration
 

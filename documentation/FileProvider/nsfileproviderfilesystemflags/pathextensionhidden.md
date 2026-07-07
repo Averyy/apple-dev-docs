@@ -8,7 +8,6 @@ By default, the system hides the item’s extension when showing its filename.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
 - macOS 11.0+
 - visionOS 1.0+
 

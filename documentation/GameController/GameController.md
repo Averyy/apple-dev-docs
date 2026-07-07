@@ -117,7 +117,7 @@ To support racing wheel devices in your macOS app, see [`Racing wheel device sup
 ### Deprecated symbols
 - [Deprecated symbols](deprecated-symbols.md)
 ### Classes
-- [class GCControllerHomeButtonSettingsManager](gccontrollerhomebuttonsettingsmanager.md)
+- [class GCControllerHomeButtonSettingsManager](gccontrollerhomebuttonsettingsmanager-258mu.md)
   Access the game controller system Home button settings.
 - [class GCDeviceType](gcdevicetype.md)
   A class representing a type of spatial accessory.
@@ -125,6 +125,15 @@ To support racing wheel devices in your macOS app, see [`Racing wheel device sup
 ### Protocols
 - [protocol GCPhysicalInputExtents](gcphysicalinputextents.md)
   Physical extents scale the normalized value reported by `GCLinearInput` into physical units.
+### Enumerations
+- [enum GCControllerHomeButtonSettingCustomizationStatus](gccontrollerhomebuttonsettingcustomizationstatus.md)
+  An additional returned flag indicating whether a setting has been modified by the user.
+- [enum GCControllerHomeButtonSettingInAppAction](gccontrollerhomebuttonsettinginappaction.md)
+  How the system responds to a press of the game controller Home button while your application is front-most.
+- [enum GCControllerHomeButtonSettingSystemAction](gccontrollerhomebuttonsettingsystemaction.md)
+  How the system responds to a press of the game controller Home button outside of contexts where an action of the front-most app takes priority.
+- [enum GCControllerHomeButtonSettingsCustomizationActivity](gccontrollerhomebuttonsettingscustomizationactivity.md)
+  A hint passed to `-openControllerHomeButtonSettingsForActivity:` to indicate the reason the app is requesting to open Settings.
 
 
 ---

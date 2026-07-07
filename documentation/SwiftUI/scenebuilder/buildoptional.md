@@ -17,6 +17,7 @@ Produces an optional scene for conditional statements in multi-statement closure
 ## Declaration
 
 ```swift
+@export(implementation)
 static func buildOptional(_ scene: (any Scene & _LimitedAvailabilitySceneMarker)?) -> some Scene
 ```
 
@@ -37,7 +38,6 @@ var body: some Scene {
 ## See Also
 
 - [static buildBlock(_:)](scenebuilder/buildblock(_:).md)
-  Passes a single scene written as a child scene through unmodified.
 - [static func buildExpression<Content>(Content) -> Content](scenebuilder/buildexpression(_:).md)
   Builds an expression within the builder.
 - [static func buildLimitedAvailability(some Scene) -> any Scene & _LimitedAvailabilitySceneMarker](scenebuilder/buildlimitedavailability(_:).md)

@@ -16,8 +16,8 @@ A control group style that presents its content as a menu when the user presses 
 ## Declaration
 
 ```swift
-nonisolated
-static var menu: MenuControlGroupStyle { get }
+@export(implementation)
+nonisolated static var menu: MenuControlGroupStyle { get }
 ```
 
 #### Discussion

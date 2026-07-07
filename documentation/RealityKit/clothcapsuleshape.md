@@ -8,7 +8,6 @@ Shape representing a capsule (full height is `height + 2 * radius`).
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 
 ## Declaration

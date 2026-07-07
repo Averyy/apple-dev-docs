@@ -8,7 +8,6 @@ An enumeration of the possible states of a card session.
 **Availability**:
 - iOS 18.1+
 - iPadOS 18.1+
-- Mac Catalyst 18.1+
 
 ## Declaration
 

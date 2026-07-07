@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: struct
 
-Contains state machine debug information for an active state machine node within a compiled animation graph, used for inspection and debugging.
+Debug information for an active state machine node within the graph.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -19,23 +19,27 @@ Contains state machine debug information for an active state machine node within
 struct ActiveStateMachineNode
 ```
 
+#### Overview
+
+Use this type to read the current and previous states of a state machine, along with the most recent transition the state machine took. The state and transition values are IDs into the graph definition rather than human-readable strings.
+
 ## Topics
 
 ### Identifying the node
 - [let id: Int](animationgraphcomponent/activestatemachinenode/id.md)
-  Returns the id of the node.
+  The unique identifier of the node within the compiled graph.
 ### Inspecting the node state
 - [var currentState: Int](animationgraphcomponent/activestatemachinenode/currentstate.md)
-  The ID of the current state.
+  The ID of the state the state machine is currently in.
 - [var previousState: Int](animationgraphcomponent/activestatemachinenode/previousstate.md)
-  The ID of the previous state.
+  The ID of the state the state machine was in immediately before [`currentState`](animationgraphcomponent/activestatemachinenode/currentstate.md).
 - [var lastTransition: Int](animationgraphcomponent/activestatemachinenode/lasttransition.md)
-  The ID of the last active transition.
+  The ID of the most recent transition the state machine took.
 - [var wasReset: Bool](animationgraphcomponent/activestatemachinenode/wasreset.md)
-  Returns `true` if the node was reset during the last tick.
+  A Boolean value that indicates whether the node was reset during the last evaluation tick.
 ### Instance Properties
 - [let name: String](animationgraphcomponent/activestatemachinenode/name.md)
-  Returns the name of the node.
+  The author-supplied name of the node from the graph definition.
 
 ## Relationships
 
@@ -49,15 +53,15 @@ struct ActiveStateMachineNode
 ## See Also
 
 - [var activeNodes: [any AnimationGraphComponent.ActiveNode]](animationgraphcomponent/activenodes.md)
-  All nodes that were active during the last graph evaluation tick.
+  Every node that contributed to the most recent graph evaluation tick.
 - [AnimationGraphComponent.ActiveNode](animationgraphcomponent/activenode.md)
-  A protocol providing common debug information for any active node within a compiled animation graph.
+  Common debug information for any node that was active during the most recent graph evaluation tick.
 - [var activeClipNodes: [AnimationGraphComponent.ActiveClipNode]](animationgraphcomponent/activeclipnodes.md)
-  The animation clip nodes that were active during the last graph evaluation tick.
+  The animation clip nodes that were active during the most recent graph evaluation tick.
 - [AnimationGraphComponent.ActiveClipNode](animationgraphcomponent/activeclipnode.md)
-  Contains clip debug information for an active animation clip node within a compiled animation graph, used for inspection and debugging.
+  Debug information for an active animation clip node within the graph.
 - [var activeStateMachineNodes: [AnimationGraphComponent.ActiveStateMachineNode]](animationgraphcomponent/activestatemachinenodes.md)
-  The state machine nodes that were active during the last graph evaluation tick.
+  The state machine nodes that were active during the most recent graph evaluation tick.
 
 
 ---

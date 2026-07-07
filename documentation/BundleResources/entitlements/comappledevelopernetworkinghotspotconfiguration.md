@@ -8,7 +8,6 @@ A Boolean value indicating whether your app can use the hotspot manager to confi
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 11.0+
 - visionOS 1.0+
 
 

@@ -8,7 +8,7 @@ An instruction for the system to close the current application or web browser.
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst ?+
+- Mac Catalyst 15.0+
 
 ## Declaration
 

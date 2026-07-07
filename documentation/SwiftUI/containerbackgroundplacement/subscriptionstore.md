@@ -8,7 +8,6 @@ An automatic placement within a subscription store view, based on the view’s c
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
 

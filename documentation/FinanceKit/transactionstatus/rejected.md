@@ -8,7 +8,6 @@ The transaction is in a rejected state.
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
-- Mac Catalyst 17.4+
 
 ## Declaration
 

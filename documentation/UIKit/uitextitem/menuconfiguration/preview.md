@@ -8,7 +8,7 @@ Constants that indicate what type of preview to display alongside the text itemâ
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst ?+
+- Mac Catalyst 17.0+
 - visionOS ?+
 
 ## Declaration

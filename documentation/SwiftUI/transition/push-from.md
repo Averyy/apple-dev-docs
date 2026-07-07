@@ -18,7 +18,7 @@ Creates a transition that when added to a view will animate the view’s inserti
 
 ```swift
 @MainActor
-@preconcurrency static func push(from edge: Edge) -> Self
+@export(implementation) @preconcurrency static func push(from edge: Edge) -> Self
 ```
 
 #### Return Value

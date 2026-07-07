@@ -6,10 +6,10 @@
 The local file URL of the thumbnail image for the item when Dark Mode is active.
 
 **Availability**:
-- iOS 9.0+
-- iPadOS 9.0+
-- Mac Catalyst 13.1+
-- macOS 10.13+
+- iOS 15.0+
+- iPadOS 15.0+
+- Mac Catalyst 15.0+
+- macOS 12.0+
 - visionOS 1.0+
 
 ## Declaration

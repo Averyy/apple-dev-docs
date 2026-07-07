@@ -15,8 +15,8 @@ Creates a group box with the provided label and view content.
 ## Declaration
 
 ```swift
-nonisolated
-init(@ContentBuilder content: () -> Content, @ContentBuilder label: () -> Label)
+@export(implementation)
+nonisolated init(@ContentBuilder content: () -> Content, @ContentBuilder label: () -> Label)
 ```
 
 ## Parameters

@@ -60,8 +60,6 @@ let content = MusicContent(
   A unique identifier for this animated artwork asset.
 - [let supportedAspectRatios: [AnimatedArtwork.AspectRatio]](animatedartwork/supportedaspectratios.md)
   The aspect ratios this artwork supports.
-### Instance Methods
-- [func extract(into: inout [String : Any])](animatedartwork/extract(into:).md)
 ### Enumerations
 - [AnimatedArtwork.AspectRatio](animatedartwork/aspectratio.md)
   The aspect ratio of the animated artwork.

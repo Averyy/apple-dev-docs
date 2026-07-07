@@ -40,9 +40,9 @@ Over-the-air (OTA) enrollment allows your device management service to validate 
 
 To replace an installed profile, install a new profile with the same top-level `PayloadIdentifier` as the installed profile. This restarts the check-in process. Include an ACME or SCEP payload to create a new client identity. The system restores the old configuration if the update fails.
 
-#### Use the Automated Device Enrollment Program
+#### Use Automated Device Enrollment
 
-The Automated Device Enrollment program enables your device management service to automatically deploy device management (MDM) enrollment profiles over the air to devices that you own. If you use this method at the time of purchase, devices that you enroll in this program prompt the user to begin the enrollment process upon activation. This avoids the need to preconfigure each device.
+Automated Device Enrollment enables your device management service to automatically deploy device management (MDM) enrollment profiles over the air to devices that you own. If you use this method at the time of purchase, devices that you enroll in this program prompt the user to begin the enrollment process upon activation. This avoids the need to preconfigure each device.
 
 Devices that you enroll using ADE become supervised devices during activation. This allows a device management service to send additional configuration commands and to apply additional restrictions, such as installing an always-on VPN configuration. Users can be prevented from removing MDM profiles that you deliver using ADE.
 

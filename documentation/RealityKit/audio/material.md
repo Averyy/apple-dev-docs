@@ -51,6 +51,11 @@ struct Material
 - [func scalingScattering(by: (Float) -> Float) -> Audio.Material](audio/material/scalingscattering(by:).md)
 ### Instance Properties
 - [var name: String?](audio/material/name.md)
+### Instance Methods
+- [func absorption(Audio.Absorption) -> Audio.Material](audio/material/absorption(_:).md)
+  Creates a new audio material with the provided absorption data.
+- [func scattering(Audio.Scattering) -> Audio.Material](audio/material/scattering(_:).md)
+  Creates a new audio material with the provided scattering data.
 ### Type Properties
 - [static let `default`: Audio.Material](audio/material/default.md)
 

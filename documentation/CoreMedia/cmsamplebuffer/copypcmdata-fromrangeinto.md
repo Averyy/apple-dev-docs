@@ -8,7 +8,7 @@ Copies PCM audio data from a sample buffer into a prepopulated audio buffer list
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst ?+
+- Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
 - visionOS 1.0+

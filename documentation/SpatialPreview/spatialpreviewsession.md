@@ -37,7 +37,7 @@ protocol SpatialPreviewSession : AnyObject, Observable
 ## See Also
 
 - [class DocumentPreviewSession](documentpreviewsession.md)
-  Document session allows you to present the contents of a URL or Data.
+  A session that streams document content to a connected visionOS device for spatial preview.
 - [class USDPreviewSession](usdpreviewsession.md)
   A session that enables you to present the contents of a Universal Scene Description (USD) stage.
 

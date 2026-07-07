@@ -1,6 +1,6 @@
 # ComputeNodeGraph.Node.Kind.grouping(nodes:)
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: case
 
 Node is a visual grouping of nodes. This can be presented as, for example, a box around the nodes, indicating that they are related, but without changing their structure.
@@ -12,7 +12,7 @@ Node is a visual grouping of nodes. This can be presented as, for example, a box
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 ## Declaration
 

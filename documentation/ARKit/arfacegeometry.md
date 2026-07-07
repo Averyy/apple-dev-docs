@@ -8,7 +8,6 @@ A 3D mesh describing face topology for use in face-tracking AR sessions.
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

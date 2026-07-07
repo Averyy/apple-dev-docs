@@ -154,7 +154,7 @@ Use RealityKit’s rich functionality to create compelling augmented reality (AR
 - [class ComputeGraphSharedUniforms](computegraphshareduniforms.md)
   A transient component that stores typed uniform values shared across all ComputeGraph simulations.
 - [class GaussianSplatResource](gaussiansplatresource.md)
-  A component that renders 3D Gaussian splat data.
+  A container for the splat data and rendering options that a Gaussian splat component displays.
 - [class MaterialXTarget](materialxtarget.md)
 - [class ShaderGraph](shadergraph.md)
 ### Structures
@@ -167,11 +167,12 @@ Use RealityKit’s rich functionality to create compelling augmented reality (AR
 - [struct ComputeGraphViewpointComponent](computegraphviewpointcomponent.md)
   A transient component that provides camera viewpoint information to the particle simulation.
 - [struct GaussianSplatComponent](gaussiansplatcomponent.md)
+  A component that renders 3D Gaussian splat data.
 - [struct MaterialDecodingConfiguration](materialdecodingconfiguration.md)
 - [struct MaterialXVersion](materialxversion.md)
 ### Enumerations
 - [enum GaussianSplatEvents](gaussiansplatevents.md)
-  Events associated with Gaussian Splat component
+  A namespace for events about Gaussian splat rendering.
 - [enum MaterialXAvailability](materialxavailability.md)
 - [enum SGBlending](sgblending.md)
 - [enum SGDataType](sgdatatype.md)

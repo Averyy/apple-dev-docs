@@ -8,7 +8,7 @@ A custom playground Quick Look for this instance.
 **Availability**:
 - iOS 7.0+
 - iPadOS 7.0+
-- Mac Catalyst ?+
+- Mac Catalyst 7.0+
 - macOS 10.9+
 - tvOS 9.0+
 - visionOS 1.0+

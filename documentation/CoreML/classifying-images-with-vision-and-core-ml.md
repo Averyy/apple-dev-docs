@@ -64,8 +64,8 @@ Vision rotates the image based on `orientation` — a [`CGImagePropertyOrientati
 
 If the image you want to classify has a URL, create a Vision image request handler with one of these initializers:
 
-- `VNImageRequestHandler(url:options:)`
-- `VNImageRequestHandler(url:orientation:options:)`
+- [`init(url:options:)`](https://developer.apple.com/documentation/Vision/VNImageRequestHandler/init(url:options:)-4k623)
+- [`init(url:orientation:options:)`](https://developer.apple.com/documentation/Vision/VNImageRequestHandler/init(url:orientation:options:)-70nta)
 
 ##### Start the Request
 

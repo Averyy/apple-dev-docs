@@ -3,7 +3,7 @@
 **Framework**: Immersive Media Support  
 **Kind**: struct
 
-A type that represents an immersive video frame. An immersive video frame contains: - layout (SideBySide, OverUnder, Separate, Mono) - presentationTime: frame presentation time - pixelBuffers: an array with one or more images representing the frame.
+A type that represents an immersive video frame, including its layout, presentation time, and pixel buffer data.
 
 **Availability**:
 - macOS 26.0+

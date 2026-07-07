@@ -17,6 +17,7 @@ Creates a view state that’s derived from a gesture with an initial state value
 ## Declaration
 
 ```swift
+@export(implementation)
 init(initialValue: Value, resetTransaction: Transaction)
 ```
 

@@ -17,8 +17,8 @@ A transition that returns the input view, unmodified, as the output view.
 ## Declaration
 
 ```swift
-nonisolated
-static var identity: IdentityTransition { get }
+@export(implementation)
+nonisolated static var identity: IdentityTransition { get }
 ```
 
 ## See Also

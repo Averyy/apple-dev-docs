@@ -8,7 +8,6 @@ A request that detects the trajectories of shapes moving along a parabolic path.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -77,7 +76,7 @@ After the request detects a trajectory, it produces a collection of [`Trajectory
 ## See Also
 
 - [class TrackObjectRequest](trackobjectrequest.md)
-  An image-analysis request that tracks the movement of a previously identified object across multiple images or video frames.
+  An image analysis request that tracks the movement of a previously identified object across multiple images or video frames.
 - [class TrackOpticalFlowRequest](trackopticalflowrequest.md)
   A request that determines the direction change of vectors for each pixel from a previous to current image.
 - [class TrackRectangleRequest](trackrectanglerequest.md)

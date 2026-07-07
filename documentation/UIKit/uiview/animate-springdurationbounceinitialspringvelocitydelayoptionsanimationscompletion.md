@@ -8,7 +8,7 @@ Animates changes to one or more views using a spring animation with the specifie
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst ?+
+- Mac Catalyst 17.0+
 - tvOS 17.0+
 - visionOS 1.0+
 

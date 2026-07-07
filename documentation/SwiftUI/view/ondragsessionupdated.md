@@ -29,11 +29,12 @@ Below is an example of a view that displays a book and supports dragging to copy
 
        var body: some View {
            BookView()
-               .draggable(
-                   configuration: DragConfiguration(
+               .draggable(Book(id: id))
+               .dragConfiguration(
+                   DragConfiguration(
                        operationsWithinApp: .init(allowMove: true, allowDelete: true),
                        operationsOutsideApp: .init(allowMove: true, allowDelete: true)
-                   ), Book(id: id))
+                   ))
                .onDragSessionUpdated { session in
                    switch session.phase {
                    case .ended(at: _, with: let operation):

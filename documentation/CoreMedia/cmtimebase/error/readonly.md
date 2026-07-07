@@ -8,7 +8,7 @@ A timebase error that indicates the system attempts to modify a read-only timeba
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst ?+
+- Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
 - visionOS 1.0+

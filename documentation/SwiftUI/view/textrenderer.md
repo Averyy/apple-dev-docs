@@ -17,8 +17,8 @@ Returns a new view such that any text views within it will use `renderer` to dra
 ## Declaration
 
 ```swift
-nonisolated
-func textRenderer<T>(_ renderer: T) -> some View where T : TextRenderer
+@export(implementation)
+nonisolated func textRenderer<T>(_ renderer: T) -> some View where T : TextRenderer
 ```
 
 #### Return Value

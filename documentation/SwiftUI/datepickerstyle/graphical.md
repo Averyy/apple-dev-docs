@@ -16,7 +16,7 @@ A date picker style that displays an interactive calendar or clock.
 
 ```swift
 @MainActor
-@preconcurrency static var graphical: GraphicalDatePickerStyle { get }
+@export(implementation) @preconcurrency static var graphical: GraphicalDatePickerStyle { get }
 ```
 
 #### Discussion

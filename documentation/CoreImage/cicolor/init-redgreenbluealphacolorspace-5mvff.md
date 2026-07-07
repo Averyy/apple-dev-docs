@@ -8,7 +8,6 @@ Create a Core Image color object with the specified red, green, blue, and alpha 
 **Availability**:
 - iOS 10.0+
 - iPadOS 10.0+
-- Mac Catalyst 10.0+
 - visionOS 1.0+
 
 ## Declaration

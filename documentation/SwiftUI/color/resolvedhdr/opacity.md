@@ -17,6 +17,7 @@ The opacity of the color, in the range `0` to `1`.
 ## Declaration
 
 ```swift
+@export(implementation)
 var opacity: Float { get set }
 ```
 

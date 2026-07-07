@@ -1,6 +1,6 @@
 # StripOrientation.useZAxis
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: case
 
 Use the `axisZ` float3 parameter without re-orienting. Derive Y-axis from neighboring points and `axisZ`.
@@ -12,7 +12,7 @@ Use the `axisZ` float3 parameter without re-orienting. Derive Y-axis from neighb
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 ## Declaration
 

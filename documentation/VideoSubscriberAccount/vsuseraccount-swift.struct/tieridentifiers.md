@@ -8,7 +8,6 @@ An array of strings that identify a subset of content from your catalog that the
 **Availability**:
 - iOS 16.4+
 - iPadOS 16.4+
-- Mac Catalyst 16.4+
 - macOS 13.3+
 - tvOS 16.4+
 - visionOS ?+

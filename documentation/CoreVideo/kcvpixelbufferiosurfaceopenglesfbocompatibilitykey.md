@@ -8,7 +8,6 @@ A key to a Boolean value that indicates whether OpenGL ES can create a valid tex
 **Availability**:
 - iOS 5.0+
 - iPadOS 5.0+
-- Mac Catalyst 5.0+
 - tvOS 9.0+
 
 ## Declaration

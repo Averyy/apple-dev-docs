@@ -8,7 +8,7 @@ An array of strings that define the items to display in the secondary button’s
 **Availability**:
 - iOS 26.4+
 - iPadOS 26.4+
-- Mac Catalyst ?+
+- Mac Catalyst 26.4+
 
 ## Declaration
 

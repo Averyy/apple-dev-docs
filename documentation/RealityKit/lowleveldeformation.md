@@ -8,7 +8,6 @@ An object that encodes blend-shape, skinning, and renormalization passes into a 
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 
@@ -65,7 +64,6 @@ final class LowLevelDeformation
 
 - [class LowLevelDeformationContext](lowleveldeformationcontext.md)
   An object that manages shared resources for [`LowLevelDeformation`](lowleveldeformation.md) instances.
-- [class CanaryDescription](canarydescription.md)
 
 
 ---

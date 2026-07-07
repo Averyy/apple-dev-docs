@@ -17,6 +17,7 @@ A linear gradient defined by a collection of colors.
 ## Declaration
 
 ```swift
+@export(implementation)
 static func linearGradient(colors: [Color], startPoint: UnitPoint, endPoint: UnitPoint) -> LinearGradient
 ```
 

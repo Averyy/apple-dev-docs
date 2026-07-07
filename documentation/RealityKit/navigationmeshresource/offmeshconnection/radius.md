@@ -3,6 +3,8 @@
 **Framework**: RealityKit  
 **Kind**: property
 
+The distance to the connection that counts as being close enough to use it.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)

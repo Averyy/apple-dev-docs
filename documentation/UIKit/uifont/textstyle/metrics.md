@@ -8,7 +8,7 @@ The corresponding font metrics object for the text style.
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst ?+
+- Mac Catalyst 11.0+
 - tvOS 11.0+
 - visionOS ?+
 - watchOS 4.0+

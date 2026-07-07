@@ -8,7 +8,6 @@ A list of named strings and an associated array of string values that define cus
 **Availability**:
 - iOS 13.5+
 - iPadOS 13.5+
-- Mac Catalyst 13.5+
 - macOS 10.15.6+
 - tvOS 13.4+
 - visionOS 1.0+

@@ -61,8 +61,6 @@ The groups are normal local groups on the Mac, and other processes could modify 
 - [enum ASAuthorizationProviderExtensionRegistrationResult](asauthorizationproviderextensionregistrationresult.md)
   The registration result.
 ### Configuration
-- [Configuring Device Management](configuring-device-management.md)
-  Configure Device Management to support device and user registration for Platform SSO.
 - [Configuring authentication with the identity provider (IdP)](configuring-authentication-with-the-identity-provider-idp.md)
   Specify how Platform SSO authenticates with the identity provider.
 - [class ASAuthorizationProviderExtensionLoginConfiguration](asauthorizationproviderextensionloginconfiguration.md)
@@ -72,6 +70,8 @@ The groups are normal local groups on the Mac, and other processes could modify 
 ### Authentication
 - [Authentication process](authentication-process.md)
   Use a system-supported method to authenticate with an identity provider.
+- [Implementing web-based authentication with Platform Single Sign-on](implementing-web-based-authentication.md)
+  Support modern, phishing-resistant, and flexible authentication methods.
 - [class ASAuthorizationProviderExtensionKerberosMapping](asauthorizationproviderextensionkerberosmapping.md)
   A set of Kerberos mappings that the system login process uses.
 

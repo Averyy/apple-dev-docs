@@ -41,7 +41,7 @@ Refer to the following sections to determine supported channels and requirements
     <key>Command</key>
     <dict>
         <key>InvitationURL</key>
-        <string>https://buy.itunes.apple.com/WebObjects/MZFinance.woa/wa/associateVPPUserWithITSAccount?cc=us&amp;inviteCode=7770596534cf46b58fb0254e7112a5e5&amp;mt=8</string>
+        <string>https://invite.example.com/invitation?id=39E92FBA-C853-4973-9922-17AF04DDDB3C</string>
         <key>ProgramID</key>
         <string>com.apple.cloudvpp</string>
         <key>RequestType</key>

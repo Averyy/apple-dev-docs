@@ -65,13 +65,11 @@ func respond(
 - [init()](languagemodelexecutorgenerationchannel/init.md)
   Creates a new generation channel instance.
 ### Sending an event
-- [func send(some LanguageModelExecutorGenerationChannel.Event) async](languagemodelexecutorgenerationchannel/send(_:).md)
-  Performs a send on the channel.
+- [func send(LanguageModelExecutorGenerationChannel.Event) async](languagemodelexecutorgenerationchannel/send(_:).md)
+  Sends a generation event on the channel.
 - [LanguageModelExecutorGenerationChannel.Event](languagemodelexecutorgenerationchannel/event.md)
-  A typed event that can be sent on a generation channel.
+  A generation event sent on a [`LanguageModelExecutorGenerationChannel`](languagemodelexecutorgenerationchannel.md).
 ### Accessing the event types
-- [LanguageModelExecutorGenerationChannel.EventKind](languagemodelexecutorgenerationchannel/eventkind.md)
-  A kind of event that can be sent on a generation channel.
 - [LanguageModelExecutorGenerationChannel.Metadata](languagemodelexecutorgenerationchannel/metadata.md)
   Snapshot of an entry’s metadata dictionary.
 - [LanguageModelExecutorGenerationChannel.Reasoning](languagemodelexecutorgenerationchannel/reasoning.md)
@@ -79,7 +77,7 @@ func respond(
 - [LanguageModelExecutorGenerationChannel.ReasoningSignature](languagemodelexecutorgenerationchannel/reasoningsignature.md)
   Payload for a reasoning entry’s signature update.
 - [LanguageModelExecutorGenerationChannel.TextFragment](languagemodelexecutorgenerationchannel/textfragment.md)
-  Append text to a streaming entry’s current text segment. Used by both [`LanguageModelExecutorGenerationChannel.Response.Action.appendText(_:)`](languagemodelexecutorgenerationchannel/response/action-swift.enum/appendtext(_:).md) and [`LanguageModelExecutorGenerationChannel.Reasoning.Action.appendText(_:)`](languagemodelexecutorgenerationchannel/reasoning/action-swift.enum/appendtext(_:).md).
+  Append text to a streaming entry’s current text segment. Used by both `Response/Action/appendText(_:)` and `Reasoning/Action/appendText(_:)`.
 - [LanguageModelExecutorGenerationChannel.TextSegmentReplacement](languagemodelexecutorgenerationchannel/textsegmentreplacement.md)
   Replace a streaming entry’s current text segment with `content`.
 - [LanguageModelExecutorGenerationChannel.Response](languagemodelexecutorgenerationchannel/response.md)

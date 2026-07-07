@@ -6,7 +6,6 @@
 **Availability**:
 - iOS 6.0+
 - iPadOS 6.0+
-- Mac Catalyst 6.0+
 - macOS 10.8+
 - tvOS 9.0+
 - visionOS 1.0+

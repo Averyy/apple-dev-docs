@@ -8,7 +8,7 @@ Sets and configures an array of item providers for the pasteboard, based on a sp
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst ?+
+- Mac Catalyst 11.0+
 - visionOS ?+
 
 ## Declaration

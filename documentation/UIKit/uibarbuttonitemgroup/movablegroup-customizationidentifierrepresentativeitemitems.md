@@ -8,7 +8,7 @@ Creates a movable group that a person can move but can’t remove from the navig
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst ?+
+- Mac Catalyst 16.0+
 - visionOS ?+
 
 ## Declaration

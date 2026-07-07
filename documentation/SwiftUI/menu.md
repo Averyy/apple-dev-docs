@@ -110,20 +110,20 @@ Menu("Editing") {
 
 ### Creating a menu from content
 - [init(_:content:)](menu/init(_:content:).md)
-  Creates a menu that generates its label from a localized string key.
+  Creates a menu that generates its label from a localized string resource.
 - [init(content: () -> Content, label: () -> Label)](menu/init(content:label:).md)
   Creates a menu with a custom label.
 - [init(_:image:content:)](menu/init(_:image:content:).md)
-  Creates a menu that generates its label from a localized string key and image resource.
+  Creates a menu that generates its label from a localized string resource and image resource.
 - [init(_:systemImage:content:)](menu/init(_:systemimage:content:).md)
   Creates a menu that generates its label from a localized string key and system image.
 ### Creating a menu with a primary action
 - [init(_:content:primaryAction:)](menu/init(_:content:primaryaction:).md)
-  Creates a menu with a custom primary action that generates its label from a localized string key.
+  Creates a menu with a custom primary action that generates its label from a localized string resource.
 - [init(content: () -> Content, label: () -> Label, primaryAction: () -> Void)](menu/init(content:label:primaryaction:).md)
   Creates a menu with a custom primary action and custom label.
 - [init(_:image:content:primaryAction:)](menu/init(_:image:content:primaryaction:).md)
-  Creates a menu with a custom primary action that generates its label from a localized string key.
+  Creates a menu with a custom primary action that generates its label from a localized string resource.
 - [init(_:systemImage:content:primaryAction:)](menu/init(_:systemimage:content:primaryaction:).md)
   Creates a menu with a custom primary action that generates its label from a localized string key and system image.
 ### Creating a menu from a configuration

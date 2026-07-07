@@ -8,7 +8,6 @@ An entitlement that enables an app to vend other apps as an alternative app mark
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
-- Mac Catalyst 17.4+
 
 
 

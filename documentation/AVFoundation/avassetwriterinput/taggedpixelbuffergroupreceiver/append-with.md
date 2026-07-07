@@ -8,7 +8,7 @@ Suspends until the input is ready for more media data, then appends the tagged p
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst 26.0+
 - macOS 26.0+
 - visionOS 26.0+
 

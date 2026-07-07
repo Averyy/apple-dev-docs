@@ -17,20 +17,6 @@ func open(_ item: FSItem, modes: FSVolume.OpenModes, cacheMode: FSVolume.DataCac
 
 #### Discussion
 
-`::::: Swift ::::::::::`
-
-- reply: A block or closure to indicate success or failure. If opening succeeds, pass an instance of [`FSOpenItemResult`](fsopenitemresult.md) containing the granted [`FSVolume.KernelCacheCoherencyType`](fsvolume/kernelcachecoherencytype.md), along with a `nil` error. If opening fails, pass the relevant error as the second parameter; FSKit ignores the [`FSOpenItemResult`](fsopenitemresult.md) instance in this case. For an `async` Swift implementation, there’s no reply handler; simply return the result instance or throw an error.
-
-`::::::::::::::::::::`
-
-`::::: ObjC ::::::::::`
-
-- result: A block or closure to indicate success or failure. If opening succeeds, pass an instance of [`FSOpenItemResult`](fsopenitemresult.md) containing the granted [`FSVolume.KernelCacheCoherencyType`](fsvolume/kernelcachecoherencytype.md), along with a `nil` error. If opening fails, pass the relevant error as the second parameter; FSKit ignores the [`FSOpenItemResult`](fsopenitemresult.md) instance in this case. For an `async` Swift implementation, there’s no reply handler; simply return the result instance or throw an error.
-
-`::::::::::::::::::::`
-
-#### Discussion
-
 FSKit calls this method when opening a file, providing the requested cache mode. The module implementation determines what level of caching it can support for this item, considering factors such as server lease availability, file locking state, or other coherency requirements.
 
 The granted coherency type must be compatible with the requested cache mode, as defined by the cache-mode-to-coherency-type mappings documented in the discussion of the [`FSVolume.DataCacheHandler`](fsvolume/datacachehandler.md) protocol. If the module grants a coherency type that exceeds the cache mode’s permissions, the kernel downgrades to a valid coherency type.
@@ -41,6 +27,7 @@ The granted coherency type must be compatible with the requested cache mode, as 
 - `modes`: The open modes, such as read and write.
 - `cacheMode`: The requested cache mode, indicating what data is eligible for caching.
 - `context`: An object that enables context-aware file system decisions throughout the operation.
+- `reply`: A block or closure to indicate success or failure. If opening succeeds, pass an instance of [`FSOpenItemResult`](fsopenitemresult.md) containing the granted [`FSVolume.KernelCacheCoherencyType`](fsvolume/kernelcachecoherencytype.md), along with a `nil` error. If opening fails, pass the relevant error as the second parameter; FSKit ignores the [`FSOpenItemResult`](fsopenitemresult.md) instance in this case. For an `async` Swift implementation, there’s no reply handler; simply return the result instance or throw an error.
 
 ## See Also
 

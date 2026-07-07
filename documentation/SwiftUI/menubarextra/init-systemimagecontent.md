@@ -11,8 +11,8 @@ Creates a menu bar extra with a system image to use as the items label. The prov
 ## Declaration
 
 ```swift
-nonisolated
-init(_ titleKey: LocalizedStringKey, systemImage: String, @ContentBuilder content: () -> Content)
+@export(implementation)
+nonisolated init(_ titleResource: LocalizedStringResource, systemImage: String, @ContentBuilder content: () -> Content)
 ```
 
 #### Discussion
@@ -23,7 +23,7 @@ When this item is removed from the system menu bar by the user, the application 
 
 ## Parameters
 
-- `titleKey`: The localized string key to use for the accessibility label of the item.
+- `titleResource`: The localized string resource to use for the accessibility label of the item.
 - `systemImage`: The name of a system image to use as the label.
 - `content`: A `View` to display when the user selects the item.
 

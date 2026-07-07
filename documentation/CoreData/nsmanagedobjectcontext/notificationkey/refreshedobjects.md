@@ -8,7 +8,7 @@ A key for the context’s set of refreshed objects.
 **Availability**:
 - iOS 3.0+
 - iPadOS 3.0+
-- Mac Catalyst ?+
+- Mac Catalyst 3.0+
 - macOS 10.5+
 - tvOS 3.0+
 - visionOS ?+

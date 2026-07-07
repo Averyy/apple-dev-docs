@@ -8,7 +8,6 @@ A string that identifies the message’s sender.
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
-- Mac Catalyst 18.4+
 
 ## Declaration
 

@@ -8,7 +8,7 @@ Creates an app intent parameter with a list of selectable options that can conve
 **Availability**:
 - iOS 26.4+
 - iPadOS 26.4+
-- Mac Catalyst ?+
+- Mac Catalyst 26.4+
 - macOS 26.4+
 - tvOS 26.4+
 - visionOS 26.4+

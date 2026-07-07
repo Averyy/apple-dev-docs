@@ -9,7 +9,7 @@ A type that specifies the date to display a widget, and, optionally, indicates t
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst ?+
+- Mac Catalyst 14.0+
 - macOS 11.0+
 - visionOS 26.0+
 - watchOS 9.0+

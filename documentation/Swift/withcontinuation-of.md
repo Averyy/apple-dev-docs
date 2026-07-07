@@ -36,6 +36,24 @@ You must invoke the continuation’s `resume` method exactly once. The continuat
 - `of`: The `Success` type returned by the continuation
 - `body`: A closure that takes a `Continuation` parameter
 
+## See Also
+
+- [struct Continuation](continuation.md)
+  A mechanism to interface between synchronous and asynchronous code, which enforces that the continuation is resumed exactly once.
+- [func withContinuation<Success, Failure>(of: Success.Type, throwing: Failure.Type, (consuming Continuation<Success, Failure>) -> Void) async throws(Failure) -> sending Success](withcontinuation(of:throwing:_:).md)
+  Invokes the passed in closure with a non-copyable continuation for the current task.
+- [struct CheckedContinuation](checkedcontinuation.md)
+  A mechanism to interface between synchronous and asynchronous code, logging correctness violations.
+- [func withCheckedContinuation<T>(function: String, (CheckedContinuation<T, Never>) -> Void) async -> sending T](withcheckedcontinuation(function:_:).md)
+  Invokes the passed in closure with a checked continuation for the current task.
+- [func withCheckedThrowingContinuation<T>(function: String, (CheckedContinuation<T, any Error>) -> Void) async throws -> sending T](withcheckedthrowingcontinuation(function:_:)-13yf6.md)
+- [func withCheckedThrowingContinuation<T, E>(function: String, (CheckedContinuation<T, E>) -> Void) async throws(E) -> sending T](withcheckedthrowingcontinuation(function:_:)-2k46m.md)
+  Invokes the passed in closure with a checked continuation for the current task.
+- [struct UnsafeContinuation](unsafecontinuation.md)
+  A mechanism to interface between synchronous and asynchronous code, without correctness checking.
+- [func withUnsafeContinuation<T>((UnsafeContinuation<T, Never>) -> Void) async -> sending T](withunsafecontinuation(_:).md)
+  Invokes the passed in closure with a unsafe continuation for the current task.
+
 
 ---
 

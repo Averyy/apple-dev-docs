@@ -8,7 +8,7 @@ Initializes a parameter summary Switch statement over widget family.
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst ?+
+- Mac Catalyst 17.0+
 - macOS 14.0+
 - visionOS ?+
 - watchOS 10.0+

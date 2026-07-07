@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: init
 
-Creates an unsortable column with a text label
+Creates an unsortable column that generates its label from a localized string resource.
 
 **Availability**:
 - iOS 16.6+
@@ -15,23 +15,23 @@ Creates an unsortable column with a text label
 ## Declaration
 
 ```swift
-nonisolated
-init(_ text: Text, @ContentBuilder content: @escaping (RowValue) -> Content)
+@export(implementation)
+nonisolated init(_ titleResource: LocalizedStringResource, @ContentBuilder content: @escaping (RowValue) -> Content)
 ```
 
 #### Discussion
 
-This initializer creates a [`Text`](text.md) view for you, and treats the title similar to [`init(_:)`](text/init(_:).md). For information about localizing strings, see [`Text`](text.md).
+This initializer creates a [`Text`](text.md) view for you. For more information about localizing strings, see [`Text`](text.md).
 
 ## Parameters
 
-- `text`: The column’s label.
+- `titleResource`: Text resource for the column’s localized title.
 - `content`: The view content to display for each row in a table.
 
 ## See Also
 
 - [init(_:value:)](tablecolumn/init(_:value:).md)
-  Creates an unsortable column that displays a string property with a text label.
+  Creates an unsortable column that displays a string property that generates its label from a localized string resource.
 
 
 ---

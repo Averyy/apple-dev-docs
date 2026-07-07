@@ -17,8 +17,8 @@ Sets whether to disable autocorrection for this view.
 ## Declaration
 
 ```swift
-nonisolated
-func autocorrectionDisabled(_ disable: Bool = true) -> some View
+@export(implementation)
+nonisolated func autocorrectionDisabled(_ disable: Bool = true) -> some View
 ```
 
 #### Discussion

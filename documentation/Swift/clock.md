@@ -37,10 +37,11 @@ For more information about specific clocks see `ContinuousClock` and `Suspending
 - [var minimumResolution: Self.Duration](clock/minimumresolution.md)
 - [var now: Self.Instant](clock/now.md)
 ### Instance Methods
-- [func measure(() throws -> Void) rethrows -> Self.Instant.Duration](clock/measure(_:).md)
+- [func measure(() throws -> Void) rethrows -> Self.Instant.Duration](clock/measure(_:)-2emvx.md)
   Measure the elapsed time to execute a closure.
-- [func measure(isolation: isolated (any Actor)?, () async throws -> Void) async rethrows -> Self.Instant.Duration](clock/measure(isolation:_:).md)
+- [func measure(nonisolated(nonsending) () async throws -> Void) async rethrows -> Self.Instant.Duration](clock/measure(_:)-7l47m.md)
   Measure the elapsed time to execute an asynchronous closure.
+- [func measure(isolation: isolated (any Actor)?, () async throws -> Void) async rethrows -> Self.Instant.Duration](clock/measure(isolation:_:).md)
 - [func sleep(for: Self.Instant.Duration, tolerance: Self.Instant.Duration?) async throws](clock/sleep(for:tolerance:).md)
   Suspends for the given duration.
 - [func sleep(until: Self.Instant, tolerance: Self.Instant.Duration?) async throws](clock/sleep(until:tolerance:).md)

@@ -8,7 +8,7 @@ An activity’s category, such as Entertainment or Social.
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst ?+
+- Mac Catalyst 15.0+
 
 ## Declaration
 

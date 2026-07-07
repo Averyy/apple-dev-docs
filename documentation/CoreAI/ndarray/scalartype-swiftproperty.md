@@ -8,7 +8,6 @@ The scalar type of the array.
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 
@@ -24,6 +23,8 @@ var scalarType: NDArray.ScalarType { get }
   The length of each dimension of the array.
 - [var strides: [Int]](ndarray/strides.md)
   The distance, in elements, between consecutive values along each dimension.
+- [var interleaveLayout: NDArray.InterleaveLayout?](ndarray/interleavelayout-swift.property.md)
+  Returns the interleaved layout of this ndArray, or `nil` if there is no interleave.
 
 
 ---

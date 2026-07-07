@@ -8,7 +8,7 @@ An effect where visual changes apply to the view and the pointer retains its def
 **Availability**:
 - iOS 13.4+
 - iPadOS 13.4+
-- Mac Catalyst ?+
+- Mac Catalyst 13.4+
 - visionOS ?+
 
 ## Declaration

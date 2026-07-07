@@ -8,7 +8,6 @@ The strides of the ndArray.
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 
@@ -24,6 +23,10 @@ var strides: Span<Int> { get }
   The scalar type of the ndArray.
 - [var shape: Span<Int>](ndarray/mutablerawview/shape.md)
   The shape of the ndArray.
+- [var mutableBytes: MutableRawSpan](ndarray/mutablerawview/mutablebytes.md)
+  A mutable span over the backing bytes of this tensor.
+- [var interleaveLayout: NDArray.InterleaveLayout?](ndarray/mutablerawview/interleavelayout.md)
+  Returns which dimension is interleaved, and by what factor it is interleaved. Or returns `nil` if there is not an interleaved dimension.
 
 
 ---

@@ -34,6 +34,7 @@ static func withCancellationHandler<T>(handler: @Sendable () -> Void, operation:
 - [static func runDetached(priority: TaskPriority?, operation: () async -> Success) -> Task<Success, Never>](task/rundetached(priority:operation:)-8s8lh.md)
   Deprecated, available only for source compatibility reasons.
 - [static func withGroup<TaskResult, BodyResult>(resultType: TaskResult.Type, returning: BodyResult.Type, body: (inout Task<Success, Failure>.Group<TaskResult>) async throws -> BodyResult) async rethrows -> BodyResult](task/withgroup(resulttype:returning:body:).md)
+- [func withTaskCancellationHandler<T>(handler: () -> Void, operation: () async throws -> T) async rethrows -> T](withtaskcancellationhandler(handler:operation:).md)
 
 
 ---

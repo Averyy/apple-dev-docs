@@ -8,7 +8,6 @@ A Boolean value that indicates whether an App Clip can schedule or receive notif
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
 
 
 

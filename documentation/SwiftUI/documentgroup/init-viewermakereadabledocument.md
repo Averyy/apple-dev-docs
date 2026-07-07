@@ -16,7 +16,7 @@ Creates a document group capable of opening and viewing read-only documents.
 
 ```swift
 nonisolated
-init(@ContentBuilder viewer: @escaping (Document) -> Content, makeReadableDocument: @escaping (URLDocumentConfiguration, DocumentCreationContext) async throws -> Document)
+init(@ContentBuilder viewer: @escaping (Document) -> Content, makeReadableDocument: @escaping @MainActor (URLDocumentConfiguration, DocumentCreationContext) async throws -> Document)
 ```
 
 ## Parameters
@@ -25,7 +25,7 @@ init(@ContentBuilder viewer: @escaping (Document) -> Content, makeReadableDocume
 
 ## See Also
 
-- [init(allowCreating:editor:makeDocument:)](documentgroup/init(allowcreating:editor:makedocument:).md)
+- [init(allowCreating: Bool, editor: (Document) -> Content, makeDocument: (URLDocumentConfiguration, DocumentCreationContext) async throws -> Document)](documentgroup/init(allowcreating:editor:makedocument:).md)
   Creates a document group capable of creating, viewing, and editing documents.
 - [init(newDocument:editor:)](documentgroup/init(newdocument:editor:).md)
   Creates a document group for creating and editing file documents.

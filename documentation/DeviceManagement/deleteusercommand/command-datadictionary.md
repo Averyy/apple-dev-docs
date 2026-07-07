@@ -23,7 +23,7 @@ object DeleteUserCommand.Command
 - `ForceDeletion` (boolean): If `true`, the system deletes the account even if the user has data that’s pending sync to the cloud. Available: iOS 9.3+ | iPadOS 9.3+
 - `RequestRequiresNetworkTether` (boolean): If `true`, the device needs to be network-tethered to run the command.
 - `RequestType` (string) *(required)*: The request type for this command.
-- `UserName` (string): The user name of the account to delete. This key is required when the value for `DeleteAllUsers` is absent or `false`.
+- `UserName` (string): The user name of the account to delete. The device requires this key when the value for `DeleteAllUsers` is absent or `false`.
 
 
 ---

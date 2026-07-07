@@ -8,7 +8,6 @@ An error that indicates a failure with an unknown cause.
 **Availability**:
 - iOS 26.2+
 - iPadOS 26.2+
-- Mac Catalyst 26.2+
 
 ## Declaration
 

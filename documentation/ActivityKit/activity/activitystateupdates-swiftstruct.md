@@ -8,7 +8,6 @@ A structure that offers functionality to observe state changes of a Live Activit
 **Availability**:
 - iOS 16.1+
 - iPadOS 16.1+
-- Mac Catalyst 16.1+
 
 ## Declaration
 

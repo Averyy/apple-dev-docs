@@ -8,7 +8,6 @@ The coefficient describing contraction of both lips into an open shape.
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

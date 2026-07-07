@@ -8,7 +8,7 @@ A layer object that wraps a crop-resize filter and manages its deinitialization.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst ?+
+- Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
 - visionOS ?+

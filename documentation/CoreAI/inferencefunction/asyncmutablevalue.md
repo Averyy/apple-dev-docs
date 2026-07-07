@@ -8,7 +8,6 @@ An async value which can be provided as a mutable argument to an inference funct
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 
@@ -28,7 +27,7 @@ When encoding a sequence of inferences which each mutate the same `AsyncMutableV
 
 ## Topics
 
-### Initializers
+### Creating an async mutable value
 - [init(consuming CVMutablePixelBuffer)](inferencefunction/asyncmutablevalue/init(_:)-4aqgq.md)
   Initialize the state from an existing pixel buffer.
 - [init(consuming NDArray)](inferencefunction/asyncmutablevalue/init(_:)-x6se.md)
@@ -37,11 +36,18 @@ When encoding a sequence of inferences which each mutate the same `AsyncMutableV
   Initialize a new state by creating a value matching the provided descriptor.
 - [init(unsafeBuffer: consuming any MTLBuffer, byteOffset: Int, scalarType: NDArray.ScalarType, shape: [Int], strides: [Int], interleaveLayout: NDArray.InterleaveLayout?)](inferencefunction/asyncmutablevalue/init(unsafebuffer:byteoffset:scalartype:shape:strides:interleavelayout:).md)
   Creates an async ndArray value that directly references the provided metal buffer, interpreted as the specified scalar type and shape.
-### Instance Properties
+### Accessing an async mutable value
 - [var ndArray: NDArray?](inferencefunction/asyncmutablevalue/ndarray.md)
   Consume this value to access the underlying NDArray once any pending write is complete.
 - [var pixelBuffer: CVMutablePixelBuffer?](inferencefunction/asyncmutablevalue/pixelbuffer.md)
   Consume this value to access the underlying pixel buffer once any pending write is complete.
+
+## See Also
+
+- [InferenceFunction.AsyncValue](inferencefunction/asyncvalue.md)
+  A future which will provide an inference value once any pending write is complete.
+- [InferenceFunction.AsyncMutableViews](inferencefunction/asyncmutableviews.md)
+  A collection of mutable references to async states, used as the states argument to an inference function.
 
 
 ---

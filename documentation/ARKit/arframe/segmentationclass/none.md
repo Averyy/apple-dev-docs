@@ -8,7 +8,6 @@ A classification of a pixel in the segmentation buffer as unidentified.
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

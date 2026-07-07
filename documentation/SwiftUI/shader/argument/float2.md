@@ -16,6 +16,7 @@ Returns an argument value representing the MSL value `float2(x, y)`.
 ## Declaration
 
 ```swift
+@export(implementation)
 static func float2<T>(_ x: T, _ y: T) -> Shader.Argument where T : BinaryFloatingPoint
 ```
 

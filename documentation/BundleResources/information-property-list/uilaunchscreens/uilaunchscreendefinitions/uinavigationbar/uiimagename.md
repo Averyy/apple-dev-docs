@@ -8,7 +8,6 @@ A custom image that replaces the navigation bar during launch.
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
 
 
 

@@ -401,7 +401,6 @@ To access a Matter accessory on a network, you must commission it. Commissionin
 - [let MTRDeviceControllerRegistrationNodeIDKey: String](mtrdevicecontrollerregistrationnodeidkey.md)
 - [let MTRDeviceControllerRegistrationNodeIDsKey: String](mtrdevicecontrollerregistrationnodeidskey.md)
 - [let MTRUnpoweredInitialPhase: String](mtrunpoweredinitialphase.md)
-- [let MTRUnpoweredPhaseOverNFCKey: String](mtrunpoweredphaseovernfckey.md)
 ### Functions
 - [func MTREventNameForID(MTRClusterIDType, MTREventIDType) -> String!](mtreventnameforid(_:_:).md)
   Resolve Matter event IDs into a descriptive string.

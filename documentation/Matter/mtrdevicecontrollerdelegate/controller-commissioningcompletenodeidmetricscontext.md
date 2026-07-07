@@ -6,13 +6,13 @@
 Notify the delegate when commissioning is completed.
 
 **Availability**:
-- iOS 16.4+
-- iPadOS 16.4+
-- Mac Catalyst 16.4+
-- macOS 13.3+
-- tvOS 16.4+
-- visionOS 1.0+
-- watchOS 9.4+
+- iOS 27.0+ (Beta)
+- iPadOS 27.0+ (Beta)
+- Mac Catalyst 27.0+ (Beta)
+- macOS 27.0+ (Beta)
+- tvOS 27.0+ (Beta)
+- visionOS 27.0+ (Beta)
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 

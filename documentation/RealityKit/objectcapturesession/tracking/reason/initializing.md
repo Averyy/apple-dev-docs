@@ -8,7 +8,6 @@ Tracking is still initializing, usually at the start of a new session.
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst 17.0+
 
 ## Declaration
 

@@ -1,6 +1,6 @@
 # UnaryOperation
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: enum
 
 An enumeration of single-operand operations.
@@ -12,7 +12,7 @@ An enumeration of single-operand operations.
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 ## Declaration
 

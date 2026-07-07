@@ -8,7 +8,7 @@ Evaluates a JavaScript string in the context of the specified frame and content 
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst ?+
+- Mac Catalyst 15.0+
 - macOS 12.0+
 - visionOS ?+
 

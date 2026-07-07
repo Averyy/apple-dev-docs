@@ -125,12 +125,14 @@ To build a macOS app, you can use [`SwiftUI`](https://developer.apple.com/docume
   A configuration specifying a confirmation dialog that will be shown before a user action will result in destruction of the scene session and the disconnection of the scene.
 ### Structures
 - [struct UIBarButtonItemVisibilityPriority](uibarbuttonitemvisibilitypriority.md)
+- [struct UIBarMinimization](uibarminimization-swift.struct.md)
 ### Macros
 - [macro Preview<T>(String?, traits: PreviewTrait<Preview.ViewTraits>..., arguments: [T], body: (T) -> UIView)](preview(_:traits:arguments:body:)-6gm4c.md)
 - [macro Preview<T>(String?, traits: PreviewTrait<Preview.ViewTraits>..., arguments: [T], body: (T) -> UIViewController)](preview(_:traits:arguments:body:)-7cbjv.md)
 ### Enumerations
+- [enum UIBarMinimizationBehavior](uibarminimizationbehavior.md)
+- [enum UIBarMinimizationRestorationBehavior](uibarminimizationrestorationbehavior.md)
 - [enum UIBarMinimizationSafeAreaAdjustment](uibarminimizationsafeareaadjustment.md)
-- [enum UIBarMinimizeBehavior](uibarminimizebehavior.md)
 
 
 ---

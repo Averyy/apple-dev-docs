@@ -33,6 +33,8 @@ To configure the sample code project:
   A request that produces a mask of individual people it finds in the input image.
 - [class GeneratePersonSegmentationRequest](generatepersonsegmentationrequest.md)
   A request that produces a matte image for a person it finds in the input image.
+- [class GenerateIterativeSegmentationRequest](generateiterativesegmentationrequest.md)
+  A request that generates a segmentation mask from points, a rectangle, or a scribble.
 
 
 ---

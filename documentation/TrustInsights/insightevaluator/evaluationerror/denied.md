@@ -20,8 +20,6 @@ case denied
 
 - [InsightEvaluator.EvaluationError.contextInvalid(_:)](insightevaluator/evaluationerror/contextinvalid(_:).md)
   An error that indicates the framework couldn’t produce an evaluation for the provided context.
-- [InsightEvaluator.EvaluationError.evaluationResultSignatureInvalid](insightevaluator/evaluationerror/evaluationresultsignatureinvalid.md)
-  An error that indicates the payload signature for the evaluation result from the server was invalid.
 - [InsightEvaluator.EvaluationError.localError](insightevaluator/evaluationerror/localerror.md)
   An error that indicates the framework couldn’t complete the evaluation.
 - [InsightEvaluator.EvaluationError.notAvailable](insightevaluator/evaluationerror/notavailable.md)

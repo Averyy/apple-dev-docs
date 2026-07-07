@@ -25,6 +25,8 @@ A single [`VNRecognizedTextObservation`](vnrecognizedtextobservation.md) can con
 
 ## Topics
 
+### Creating a Recognized Text Instance
+- [init?(coder: NSCoder)](vnrecognizedtext/init(coder:).md)
 ### Determining Recognized Text
 - [var string: String](vnrecognizedtext/string.md)
   The top candidate for recognized text.
@@ -33,8 +35,6 @@ A single [`VNRecognizedTextObservation`](vnrecognizedtextobservation.md) can con
 ### Locating Recognized Text
 - [func boundingBox(for: Range<String.Index>) throws -> VNRectangleObservation?](vnrecognizedtext/boundingbox(for:).md)
   Calculates the bounding box around the characters in the range of a string.
-### Initializers
-- [init?(coder: NSCoder)](vnrecognizedtext/init(coder:).md)
 
 ## Relationships
 

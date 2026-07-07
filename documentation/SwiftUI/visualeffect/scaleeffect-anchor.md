@@ -11,6 +11,7 @@ Scales this view uniformly by the specified factor, relative to an anchor point.
 ## Declaration
 
 ```swift
+@export(implementation)
 func scaleEffect(_ s: CGFloat, anchor: UnitPoint3D = .center) -> some VisualEffect
 ```
 

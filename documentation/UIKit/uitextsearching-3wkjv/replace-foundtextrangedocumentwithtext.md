@@ -9,7 +9,7 @@ Informs the searchable object to replace the text range for the highlighted sear
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst ?+
+- Mac Catalyst 16.0+
 - visionOS ?+
 
 ## Declaration

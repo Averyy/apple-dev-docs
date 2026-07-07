@@ -8,7 +8,7 @@ An object that contains common types of data that the data detection system matc
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst ?+
+- Mac Catalyst 15.0+
 - visionOS ?+
 
 ## Declaration

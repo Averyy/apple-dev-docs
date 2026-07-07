@@ -4,7 +4,7 @@
 **Kind**: method  
 **Required**: Yes
 
-Event emitted to the ChangelistDelegate indicating the start of a USD change
+An event emitted to the ChangeListDelegate indicating the start of a USD change.
 
 **Availability**:
 - macOS 27.0+ (Beta)
@@ -14,13 +14,13 @@ Event emitted to the ChangelistDelegate indicating the start of a USD change
 
 ```swift
 @MainActor
-func willApplyChanges(instanceIdentifier: String, operationIdentifier: UInt64)
+func willApplyChanges(instanceIdentifier: String, operationIdentifier: UInt)
 ```
 
 ## Parameters
 
-- `instanceIdentifier`: The Spatial Preview receiver instance making the change
-- `operationIdentifier`: Multiple changes with the same operation identifier can be grouped together
+- `instanceIdentifier`: The Spatial Preview receiver instance making the change.
+- `operationIdentifier`: Multiple changes with the same operation identifier can be grouped together.
 
 
 ---

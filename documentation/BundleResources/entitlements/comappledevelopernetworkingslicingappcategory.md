@@ -8,7 +8,6 @@ The key that defines the app category entitlement to enable Cellular Network Sli
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst 17.0+
 
 
 

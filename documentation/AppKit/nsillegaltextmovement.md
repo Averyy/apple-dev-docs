@@ -6,7 +6,7 @@
 Currently unused.
 
 **Availability**:
-- macOS ?+
+- macOS 10.0+
 
 ## Declaration
 

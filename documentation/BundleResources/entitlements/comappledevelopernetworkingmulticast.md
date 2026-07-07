@@ -8,7 +8,6 @@ A Boolean value that indicates whether an app can send or receive IP multicast t
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
 - visionOS 1.0+
 
 

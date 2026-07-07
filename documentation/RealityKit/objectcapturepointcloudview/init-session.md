@@ -8,7 +8,6 @@ Creates an object capture view from an existing session using the current segmen
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst 17.0+
 
 ## Declaration
 

@@ -17,6 +17,7 @@ A context-dependent blue color suitable for use in UI elements.
 ## Declaration
 
 ```swift
+@export(implementation)
 static var blue: Color { get }
 ```
 

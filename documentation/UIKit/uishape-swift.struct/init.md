@@ -8,7 +8,7 @@ Creates a dynamic shape that resolves using the provided resolver closure and re
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst ?+
+- Mac Catalyst 17.0+
 - visionOS 1.0+
 
 ## Declaration

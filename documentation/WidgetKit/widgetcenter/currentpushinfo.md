@@ -8,7 +8,7 @@ Provides the current push information for widget reloads and relevance refreshes
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst 26.0+
 - macOS 26.0+
 - visionOS 26.0+
 - watchOS 26.0+

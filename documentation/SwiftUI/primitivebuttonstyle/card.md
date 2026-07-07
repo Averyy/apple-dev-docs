@@ -12,7 +12,7 @@ A button style that doesn’t pad the content, and applies a Liquid Glass effect
 
 ```swift
 @MainActor
-@preconcurrency static var card: CardButtonStyle { get }
+@export(implementation) @preconcurrency static var card: CardButtonStyle { get }
 ```
 
 #### Discussion

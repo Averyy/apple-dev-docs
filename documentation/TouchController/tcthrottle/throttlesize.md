@@ -8,7 +8,6 @@ The size (width, height) of the throttle itself, providing boundaries for the in
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst 26.0+
 
 ## Declaration
 

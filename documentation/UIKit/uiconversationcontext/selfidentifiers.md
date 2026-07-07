@@ -8,7 +8,6 @@ A set of strings that identifies the active person in the conversation on the cu
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
-- Mac Catalyst 18.4+
 
 ## Declaration
 

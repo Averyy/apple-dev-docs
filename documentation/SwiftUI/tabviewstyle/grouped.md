@@ -12,7 +12,7 @@ A tab view style that displays a tab bar that groups its tabs together.
 
 ```swift
 @MainActor
-@preconcurrency static var grouped: GroupedTabViewStyle { get }
+@export(implementation) @preconcurrency static var grouped: GroupedTabViewStyle { get }
 ```
 
 #### Discussion

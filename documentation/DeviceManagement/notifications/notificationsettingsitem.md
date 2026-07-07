@@ -29,12 +29,12 @@ object Notifications.NotificationSettingsItem
 - `1`: By app: Group notifications into one group.
 - `2`: Off: Don’t group notifications. Available: iOS 12+ | iPadOS 12+
 - `NotificationsEnabled` (boolean): If `true`, enables notifications for this app.
-- `PreviewType` (integer): The type previews for notifications. This key overrides the value at Settings>Notifications>Show Previews. - `0` - Always: Previews will be shown when the device is locked and unlocked
-- `1` - When Unlocked: Previews will only be shown when the device is unlocked
-- `2` - Never: Previews will never be shown Available: iOS 14+ | iPadOS 14+
+- `PreviewType` (integer): The type previews for notifications. This key overrides the value at Settings>Notifications>Show Previews. - `0` - Always: The device shows previews when locked and unlocked
+- `1` - When Unlocked: The device shows previews only when unlocked
+- `2` - Never: The device never shows previews Available: iOS 14+ | iPadOS 14+
 - `ShowInCarPlay` (boolean): If `true`, enables notifications in CarPlay for this app. Available: iOS 12+ | iPadOS 12+
 - `ShowInLockScreen` (boolean): If `true`, enables notifications on the Lock Screen for this app.
-- `ShowInNotificationCenter` (boolean): If `true`, enables notifications in the notification center for this app.
+- `ShowInNotificationCenter` (boolean): If `true`, enables notifications in the Notification Center for this app.
 - `SoundsEnabled` (boolean): If `true`, enables sounds for this app.
 
 

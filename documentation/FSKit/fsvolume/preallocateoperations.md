@@ -20,19 +20,18 @@ A preallocation operation allocates space for a file without writing to it yet. 
 
 In a kernel-based file system, you typically preallocate space with the `VNOP_ALLOCATE` operation, called from `fcntl(F_PREALLOCATE)`.
 
-> **Note**:  Use [`FSVolume.PreallocateHandler`](fsvolume/preallocatehandler.md) instead.
+> **Note**: Use [`FSVolume.PreallocateHandler`](fsvolume/preallocatehandler.md) instead.
 
 ## Topics
 
 ### Preallocating space
+- [func preallocateSpace(for: FSItem, at: off_t, length: Int, flags: FSVolume.PreallocateFlags, replyHandler: (Int, (any Error)?) -> Void)](fsvolume/preallocateoperations/preallocatespace(for:at:length:flags:replyhandler:).md)
+  Preallocates disk space for the given item.
 - [FSVolume.PreallocateFlags](fsvolume/preallocateflags.md)
   Behavior flags for preallocation operations.
 ### Inspecting volume properties
 - [var isPreallocateInhibited: Bool](fsvolume/preallocateoperations/ispreallocateinhibited.md)
   A Boolean value that instructs FSKit not to call this protocol’s methods, even if the volume conforms to it.
-### Instance Methods
-- [func preallocateSpace(for: FSItem, at: off_t, length: Int, flags: FSVolume.PreallocateFlags, replyHandler: (Int, (any Error)?) -> Void)](fsvolume/preallocateoperations/preallocatespace(for:at:length:flags:replyhandler:).md)
-  Preallocates disk space for the given item.
 
 ## Relationships
 

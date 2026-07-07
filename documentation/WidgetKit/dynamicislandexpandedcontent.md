@@ -8,7 +8,6 @@ A view that describes the expanded presentation of a Live Activity that appears 
 **Availability**:
 - iOS 16.1+
 - iPadOS 16.1+
-- Mac Catalyst 16.1+
 
 ## Declaration
 

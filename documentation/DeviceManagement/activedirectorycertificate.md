@@ -82,7 +82,7 @@ To get a certificate from a Microsoft CA, follow the instructions at [`Request a
 
 - `AllowAllAppsAccess` (boolean): If `true`, gives apps access to the private key. Available: macOS 10.10+
 - `CertificateAcquisitionMechanism` (string): This value is most commonly `RPC`; if using web enrollment, use `HTTP`. Available: macOS 10.8+
-- `CertificateAuthority` (string): The name of the certificate authority (CA), which is determined from the common name (CN) of the Active Directory entry. Valid values: - CN=
+- `CertificateAuthority` (string): The name of the certificate authority (CA), which the device determines from the common name (CN) of the Active Directory entry. Valid values: - CN=
 - CN=`Certification Authorities`
 - CN=`Public Key Services`
 - CN=`Services`

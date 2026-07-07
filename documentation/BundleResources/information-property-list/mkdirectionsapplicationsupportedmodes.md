@@ -8,7 +8,6 @@ The modes of transportation for which the app is capable of giving directions.
 **Availability**:
 - iOS 6.0+
 - iPadOS 6.0+
-- Mac Catalyst 6.0+
 - visionOS 1.0+
 
 

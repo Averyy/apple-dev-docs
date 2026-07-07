@@ -3,6 +3,8 @@
 **Framework**: RealityKit  
 **Kind**: method
 
+Marks all polygons in this box with a flag.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -20,12 +22,19 @@ func markFlagInBox(boundingBox: BoundingBox, flag: NavigationMeshResource.Flag)
 ## See Also
 
 - [func markAreaInBox(boundingBox: BoundingBox, area: NavigationMeshResource.Area)](navigationmeshresource/markareainbox(boundingbox:area:).md)
+  Marks all polygons in this box with an area.
 - [func markAreaInCylinder(position: SIMD3<Float>, radius: Float, halfHeight: Float, area: NavigationMeshResource.Area)](navigationmeshresource/markareaincylinder(position:radius:halfheight:area:).md)
+  Marks all polygons in this cylinder with an area.
 - [func markFlagInCylinder(position: SIMD3<Float>, radius: Float, halfHeight: Float, flag: NavigationMeshResource.Flag)](navigationmeshresource/markflagincylinder(position:radius:halfheight:flag:).md)
+  Marks all polygons in this cylinder with a flag.
 - [func markAreaOnPolygons(polygonIndices: [Int], area: NavigationMeshResource.Area)](navigationmeshresource/markareaonpolygons(polygonindices:area:).md)
+  Marks the polygons at these indices with an area.
 - [func markFlagOnPolygons(polygonIndices: [Int], flag: NavigationMeshResource.Flag)](navigationmeshresource/markflagonpolygons(polygonindices:flag:).md)
+  Marks the polygons at these indices with a flag.
 - [func markAreaOnOffMeshConnections(offMeshConnectionIndices: [Int], area: NavigationMeshResource.Area)](navigationmeshresource/markareaonoffmeshconnections(offmeshconnectionindices:area:).md)
+  Marks the off-mesh connections at these indices with an area.
 - [func markFlagOnOffMeshConnections(offMeshConnectionIndices: [Int], flag: NavigationMeshResource.Flag)](navigationmeshresource/markflagonoffmeshconnections(offmeshconnectionindices:flag:).md)
+  Marks the off-mesh connections at these indices with a flag.
 
 
 ---

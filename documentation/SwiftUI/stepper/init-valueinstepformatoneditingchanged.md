@@ -16,8 +16,8 @@ Creates a stepper instance that increments and decrements a binding to a value, 
 ## Declaration
 
 ```swift
-nonisolated
-init<F>(_ titleKey: LocalizedStringKey, value: Binding<F.FormatInput>, in bounds: ClosedRange<F.FormatInput>, step: F.FormatInput.Stride = 1, format: F, onEditingChanged: @escaping (Bool) -> Void = { _ in }) where F : ParseableFormatStyle, F.FormatInput : BinaryFloatingPoint, F.FormatOutput == String
+@export(implementation)
+nonisolated init<F>(_ titleResource: LocalizedStringResource, value: Binding<F.FormatInput>, in bounds: ClosedRange<F.FormatInput>, step: F.FormatInput.Stride = 1, format: F, onEditingChanged: @escaping (Bool) -> Void = { _ in }) where F : ParseableFormatStyle, F.FormatInput : BinaryFloatingPoint, F.FormatOutput == String
 ```
 
 #### Discussion
@@ -26,7 +26,7 @@ Use `Stepper(_:value:in:step:format:onEditingChanged:)` to create a stepper that
 
 ```swift
 struct StepperView: View {
-    @State private var value = 0
+    @State private var value = 0.0
     private let step = 5.0
     private let range = 1.0...50.0
 
@@ -44,7 +44,7 @@ struct StepperView: View {
 
 ## Parameters
 
-- `titleKey`: The key for the stepper’s localized title describing the purpose of the stepper.
+- `titleResource`: Text resource for the stepper’s localized title describing the purpose of the stepper.
 - `value`: A [`Binding`](binding.md) to a value that your provide.
 - `bounds`: A closed range that describes the upper and lower bounds permitted by the stepper.
 - `step`: The amount to increment or decrement `value` each time the user clicks or taps the stepper’s increment or decrement button, respectively. Defaults to `1`.

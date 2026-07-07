@@ -17,8 +17,8 @@ Creates a new gradient mesh specified as a 2D grid of colored points.
 ## Declaration
 
 ```swift
-nonisolated
-init(width: Int, height: Int, points: [SIMD2<Float>], colors: [Color], background: Color = .clear, smoothsColors: Bool = true, colorSpace: Gradient.ColorSpace = .device)
+@export(implementation)
+nonisolated init(width: Int, height: Int, points: [SIMD2<Float>], colors: [Color], background: Color = .clear, smoothsColors: Bool = true, colorSpace: Gradient.ColorSpace = .device)
 ```
 
 ## Parameters

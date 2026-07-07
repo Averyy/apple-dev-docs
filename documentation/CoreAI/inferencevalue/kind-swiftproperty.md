@@ -8,7 +8,6 @@ The kind of data this value contains.
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 
@@ -22,6 +21,8 @@ var kind: InferenceValue.Kind { get }
 
 - [var ndArray: NDArray?](inferencevalue/ndarray.md)
   The array that the value wraps.
+- [var pixelBuffer: CVMutablePixelBuffer?](inferencevalue/pixelbuffer.md)
+  Consume this value to access the underlying pixel buffer.
 
 
 ---

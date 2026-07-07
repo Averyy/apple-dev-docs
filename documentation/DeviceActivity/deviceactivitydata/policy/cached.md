@@ -8,7 +8,6 @@ A policy that fetches device activity data from the cache.
 **Availability**:
 - iOS 26.4+
 - iPadOS 26.4+
-- Mac Catalyst 26.4+
 
 ## Declaration
 

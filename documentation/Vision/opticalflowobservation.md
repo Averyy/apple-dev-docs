@@ -8,7 +8,6 @@ An object that represents an optical flow that an image-analysis request produce
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -32,6 +31,7 @@ The optical flow is a 2D image, with each pixel representing the directional cha
 ### Inspecting an observation
 - [var pixelFormat: OSType](opticalflowobservation/pixelformat.md)
   The four-character code that identifies the pixel format.
+- [var pixelBuffer: CVReadOnlyPixelBuffer](opticalflowobservation/pixelbuffer.md)
 - [var size: CGSize](opticalflowobservation/size.md)
   The size of the observation image.
 ### Getting the optical flow
@@ -40,8 +40,6 @@ The optical flow is a 2D image, with each pixel representing the directional cha
 ### Accessing the memory
 - [func withUnsafePointer<R>((UnsafeRawPointer) -> R) -> R](opticalflowobservation/withunsafepointer(_:).md)
   Invokes the given closure with a pointer to the given argument.
-### Instance Properties
-- [var pixelBuffer: CVReadOnlyPixelBuffer](opticalflowobservation/pixelbuffer.md)
 
 ## Relationships
 

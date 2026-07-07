@@ -8,7 +8,7 @@ An effect where the pointer slides under the given view and morphs into the view
 **Availability**:
 - iOS 13.4+
 - iPadOS 13.4+
-- Mac Catalyst ?+
+- Mac Catalyst 13.4+
 - visionOS ?+
 
 ## Declaration

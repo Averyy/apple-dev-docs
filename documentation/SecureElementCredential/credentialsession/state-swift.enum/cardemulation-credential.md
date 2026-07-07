@@ -8,7 +8,6 @@ The state for performing card emulation with a given credential.
 **Availability**:
 - iOS 18.1+
 - iPadOS 18.1+
-- Mac Catalyst 18.1+
 
 ## Declaration
 

@@ -1,68 +1,68 @@
 {
   "metadata": {
-    "last_updated": "2026-07-03T07:45:19.765329",
+    "last_updated": "2026-07-07T07:32:22.926782",
     "total_pages": 8,
-    "session_id": "2026-07-03T07:45:18.662944"
+    "session_id": "2026-07-07T07:32:21.496006"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/apple-school-and-business-manager-api.json": {
-      "hash": "1de1978833350083a1439bcba3bb1b3db19f184c9e7ba2166267dbb5ed082a0d",
-      "last_checked": "2026-07-03T07:45:18.996482",
+      "hash": "362c1d8e1c74fe7bbb0834e9bfc2d3865038a8c66b3cbcad04ed62e1da1b90d5",
+      "last_checked": "2026-07-07T07:32:21.940033",
       "status": "unchanged",
-      "session_id": "2026-07-03T07:45:18.662944",
-      "etag": "W/\"e744e4ed1ba2f273e483cdb93011654a\"",
+      "session_id": "2026-07-07T07:32:21.496006",
+      "etag": "W/\"f8a85c7fab628a1a4462fa6cf903f8f9\"",
       "file_path": "documentation/apple-school-and-business-manager-api/apple-school-and-business-manager-api.md"
     },
     "https://developer.apple.com/documentation/apple-school-and-business-manager-api": {
-      "hash": "1de1978833350083a1439bcba3bb1b3db19f184c9e7ba2166267dbb5ed082a0d",
-      "last_checked": "2026-07-03T07:45:18.876642",
+      "hash": "362c1d8e1c74fe7bbb0834e9bfc2d3865038a8c66b3cbcad04ed62e1da1b90d5",
+      "last_checked": "2026-07-07T07:32:21.827643",
       "status": "unchanged",
-      "session_id": "2026-07-03T07:45:18.662944",
-      "etag": "W/\"e744e4ed1ba2f273e483cdb93011654a\"",
+      "session_id": "2026-07-07T07:32:21.496006",
+      "etag": "W/\"f8a85c7fab628a1a4462fa6cf903f8f9\"",
       "file_path": "documentation/apple-school-and-business-manager-api/apple-school-and-business-manager-api.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-school-and-business-manager-api/appleschoolmanagerapi.json": {
       "hash": "",
-      "last_checked": "2026-07-03T07:45:19.300178",
+      "last_checked": "2026-07-07T07:32:22.417272",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-school-and-business-manager-api/applebusinessapi.json": {
       "hash": "",
-      "last_checked": "2026-07-03T07:45:19.455977",
+      "last_checked": "2026-07-07T07:32:22.758564",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-school-and-business-manager-api/apple-school-manager-and-apple-business-api-changelog.json": {
-      "hash": "8c97d2280ee76ae0792b088a48a5a38e1c8b76a1542fa91bcf66892ef34c5008",
-      "last_checked": "2026-07-03T07:45:19.565359",
+      "hash": "495531a0b6506ca808b2320ccb530191c0c7654e04d1162cc779f85bc06eea9c",
+      "last_checked": "2026-07-07T07:32:22.862702",
       "status": "unchanged",
-      "session_id": "2026-07-03T07:45:18.662944",
-      "etag": "W/\"97a18fb9eb4d9bcbde04094a91e27fb9\"",
+      "session_id": "2026-07-07T07:32:21.496006",
+      "etag": "W/\"8ec462f88d70ffad49a5798749ddfaf2\"",
       "file_path": "documentation/apple-school-and-business-manager-api/apple-school-manager-and-apple-business-api-changelog.md"
     },
     "https://developer.apple.com/documentation/apple-school-and-business-manager-api/apple-school-manager-and-apple-business-api-changelog": {
-      "hash": "8c97d2280ee76ae0792b088a48a5a38e1c8b76a1542fa91bcf66892ef34c5008",
-      "last_checked": "2026-06-26T07:31:38.225681",
+      "hash": "495531a0b6506ca808b2320ccb530191c0c7654e04d1162cc779f85bc06eea9c",
+      "last_checked": "2026-07-07T07:32:22.862795",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:37.341403",
-      "etag": "W/\"97a18fb9eb4d9bcbde04094a91e27fb9\"",
+      "session_id": "2026-07-07T07:32:21.496006",
+      "etag": "W/\"8ec462f88d70ffad49a5798749ddfaf2\"",
       "file_path": "documentation/apple-school-and-business-manager-api/apple-school-manager-and-apple-business-api-changelog.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-school-and-business-manager-api/implementing-oauth-for-the-apple-school-manager-and-apple-business-api.json": {
-      "hash": "45ac3e55ea8c2a0e7e5b4e08f9052a018e1491c3c686d26b8075ce362e63f664",
-      "last_checked": "2026-07-03T07:45:19.761407",
+      "hash": "92b3976be6cfebc9f67ca7e77be31a69b5136dc8763e5fcacf7836f3f6643788",
+      "last_checked": "2026-07-07T07:32:22.925699",
       "status": "unchanged",
-      "session_id": "2026-07-03T07:45:18.662944",
-      "etag": "W/\"429a7c83e70c30cccd4042321f88d00f\"",
+      "session_id": "2026-07-07T07:32:21.496006",
+      "etag": "W/\"51bb567282c5f9ba86b9b33b89b649fd\"",
       "file_path": "documentation/apple-school-and-business-manager-api/implementing-oauth-for-the-apple-school-manager-and-apple-business-api.md"
     },
     "https://developer.apple.com/documentation/apple-school-and-business-manager-api/implementing-oauth-for-the-apple-school-manager-and-apple-business-api": {
-      "hash": "45ac3e55ea8c2a0e7e5b4e08f9052a018e1491c3c686d26b8075ce362e63f664",
-      "last_checked": "2026-06-26T07:31:38.311366",
+      "hash": "92b3976be6cfebc9f67ca7e77be31a69b5136dc8763e5fcacf7836f3f6643788",
+      "last_checked": "2026-07-07T07:32:22.925809",
       "status": "unchanged",
-      "session_id": "2026-06-26T07:31:37.341403",
-      "etag": "W/\"429a7c83e70c30cccd4042321f88d00f\"",
+      "session_id": "2026-07-07T07:32:21.496006",
+      "etag": "W/\"51bb567282c5f9ba86b9b33b89b649fd\"",
       "file_path": "documentation/apple-school-and-business-manager-api/implementing-oauth-for-the-apple-school-manager-and-apple-business-api.md"
     }
   }

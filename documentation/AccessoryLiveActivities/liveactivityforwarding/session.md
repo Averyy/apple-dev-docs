@@ -8,7 +8,6 @@ An object that represents the active connection between your data provider exten
 **Availability**:
 - iOS 26.5+
 - iPadOS 26.5+
-- Mac Catalyst 26.5+
 
 ## Declaration
 
@@ -29,12 +28,11 @@ Each `Session` has one corresponding [`LiveActivityForwarding.AccessoryLiveActiv
 ### Working with Live Activities
 - [var liveActivities: [AccessoryLiveActivity]](liveactivityforwarding/session/liveactivities.md)
   The currently active Live Activities that the accessory is authorized to receive.
-- [func send(message: AccessoryMessage) async throws](liveactivityforwarding/session/send(message:).md)
-  Sends a message to the paired accessory.
 
 ## Relationships
 
 ### Conforms To
+- [AccessoryFeatureSession](../AccessoryTransportExtension/AccessoryFeatureSession.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 

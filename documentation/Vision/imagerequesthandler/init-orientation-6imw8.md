@@ -8,7 +8,6 @@ Creates a handler for performing requests on an image at the specified URL.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -32,6 +31,8 @@ convenience init(_ imageURL: URL, orientation: CGImagePropertyOrientation? = nil
   Creates a request handler that performs requests on an image contained within a sample buffer.
 - [convenience init(CIImage, orientation: CGImagePropertyOrientation?)](imagerequesthandler/init(_:orientation:)-2hvfr.md)
   Creates a handler for performing requests on Core Image images.
+- [convenience init(CVPixelBuffer, orientation: CGImagePropertyOrientation?)](imagerequesthandler/init(_:orientation:)-3zrh5.md)
+- [convenience init(CMSampleBuffer, orientation: CGImagePropertyOrientation?)](imagerequesthandler/init(_:orientation:)-8q7vz.md)
 
 
 ---

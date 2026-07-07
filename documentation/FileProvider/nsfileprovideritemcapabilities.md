@@ -8,7 +8,6 @@ An item’s capabilities, which define the actions that the user can perform in 
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 11.0+
 - macOS 11.0+
 - visionOS 1.0+
 

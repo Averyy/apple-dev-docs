@@ -17,20 +17,6 @@ func createFile(named name: FSFileName, in directory: FSItem, attributes newAttr
 
 #### Discussion
 
-`::::: Swift ::::::::::`
-
-- reply: A block or closure to indicate success or failure. If creation succeeds, pass an instance of [`FSCreateFileKOIOResult`](fscreatefilekoioresult.md) containing the newly-created [`FSItem`](fsitem.md), its [`FSFileName`](fsfilename.md), its [`FSItem.Attributes`](fsitem/attributes.md), the updated [`FSItem.Attributes`](fsitem/attributes.md) of the parent directory, the volume’s update free space, along with a `nil` error. If creation fails, pass the relevant error as the second parameter; FSKit ignores the [`FSCreateFileKOIOResult`](fscreatefilekoioresult.md) instance in this case. For an `async` Swift implementation, there’s no reply handler; simply return the result instance or throw an error.
-
-`::::::::::::::::::::`
-
-`::::: ObjC ::::::::::`
-
-- result: A block or closure to indicate success or failure. If creation succeeds, pass an instance of [`FSCreateFileKOIOResult`](fscreatefilekoioresult.md) containing the newly-created [`FSItem`](fsitem.md), its [`FSFileName`](fsfilename.md), its [`FSItem.Attributes`](fsitem/attributes.md), the updated [`FSItem.Attributes`](fsitem/attributes.md) of the parent directory, the volume’s update free space, along with a `nil` error. If creation fails, pass the relevant error as the second parameter; FSKit ignores the [`FSCreateFileKOIOResult`](fscreatefilekoioresult.md) instance in this case. For an `async` Swift implementation, there’s no reply handler; simply return the result instance or throw an error.
-
-`::::::::::::::::::::`
-
-#### Discussion
-
 This method allows the module to opportunistically supply extents, avoiding future calls to [`blockmapFile(_:offset:length:flags:operationID:packer:replyHandler:)`](fsvolume/kerneloffloadediohandler/blockmapfile(_:offset:length:flags:operationid:packer:replyhandler:).md). Only perform this technique opportunistically. In particular, don’t perform additional I/O to fetch extent data.
 
 Packing extents in this method requires that `attributes` defines a size greater than 0.
@@ -44,6 +30,7 @@ An implementation that doesn’t supply the extents can ignore the packer and ca
 - `newAttributes`: Attributes to apply to the new file.
 - `packer`: An extent packer you use to pack the file’s allocated disk space.
 - `context`: An object that enables context-aware file system decisions throughout the operation.
+- `reply`: A block or closure to indicate success or failure. If creation succeeds, pass an instance of [`FSCreateFileKOIOResult`](fscreatefilekoioresult.md) containing the newly-created [`FSItem`](fsitem.md), its [`FSFileName`](fsfilename.md), its [`FSItem.Attributes`](fsitem/attributes.md), the updated [`FSItem.Attributes`](fsitem/attributes.md) of the parent directory, the volume’s update free space, along with a `nil` error. If creation fails, pass the relevant error as the second parameter; FSKit ignores the [`FSCreateFileKOIOResult`](fscreatefilekoioresult.md) instance in this case. For an `async` Swift implementation, there’s no reply handler; simply return the result instance or throw an error.
 
 ## See Also
 

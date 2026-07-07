@@ -8,7 +8,6 @@ A class you use to handle a Smart Reply suggestion.
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
-- Mac Catalyst 18.4+
 
 ## Declaration
 

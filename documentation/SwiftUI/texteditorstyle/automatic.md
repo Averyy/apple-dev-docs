@@ -16,7 +16,7 @@ The default text editor style, based on the text editor’s context.
 
 ```swift
 @MainActor
-@preconcurrency static var automatic: AutomaticTextEditorStyle { get }
+@export(implementation) @preconcurrency static var automatic: AutomaticTextEditorStyle { get }
 ```
 
 #### Discussion

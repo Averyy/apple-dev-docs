@@ -8,7 +8,6 @@ Values that describe errors the Critical Messaging API returns.
 **Availability**:
 - iOS 18.2+
 - iPadOS 18.2+
-- Mac Catalyst 18.2+
 
 ## Declaration
 

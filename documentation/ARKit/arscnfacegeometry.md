@@ -8,7 +8,6 @@ A SceneKit representation of face topology for use with face information that an
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

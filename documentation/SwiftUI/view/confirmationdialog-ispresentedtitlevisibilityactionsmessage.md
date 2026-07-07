@@ -3,22 +3,22 @@
 **Framework**: SwiftUI  
 **Kind**: method
 
-Presents a confirmation dialog with a message when a given condition is true, using a text view for the title.
+Presents a confirmation dialog with a message when a given condition is true, using a localized string resource for the title.
 
 **Availability**:
-- iOS 15.0+
-- iPadOS 15.0+
-- Mac Catalyst 15.0+
-- macOS 12.0+
-- tvOS 15.0+
+- iOS 16.0+
+- iPadOS 16.0+
+- Mac Catalyst 16.0+
+- macOS 13.0+
+- tvOS 16.0+
 - visionOS 1.0+
-- watchOS 8.0+
+- watchOS 9.0+
 
 ## Declaration
 
 ```swift
-nonisolated
-func confirmationDialog<A, M>(_ title: Text, isPresented: Binding<Bool>, titleVisibility: Visibility = .automatic, @ContentBuilder actions: () -> A, @ContentBuilder message: () -> M) -> some View where A : View, M : View
+@export(implementation)
+nonisolated func confirmationDialog<A, M>(_ titleResource: LocalizedStringResource, isPresented: Binding<Bool>, titleVisibility: Visibility = .automatic, @ContentBuilder actions: () -> A, @ContentBuilder message: () -> M) -> some View where A : View, M : View
 ```
 
 #### Discussion
@@ -33,7 +33,7 @@ struct ConfirmEraseItems: View {
             isShowingDialog = true
         }
         .confirmationDialog(
-            Text("Permanently erase the items in the trash?"),
+            "Permanently erase the items in the Trash?",
             isPresented: $isShowingDialog
         ) {
             Button("Empty Trash", role: .destructive) {
@@ -54,9 +54,13 @@ Dialogs include a standard dismiss action by default. If you provide a button wi
 
 > **Note**: In regular size classes in iOS, the system renders confirmation dialogs as a popover that the user dismisses by tapping anywhere outside the popover, rather than displaying the standard dismiss action.
 
+On iOS, tvOS, and watchOS, confirmation dialogs only support controls with labels that are `Text`. Passing any other type of view results in the content being omitted.
+
+This modifier creates a [`Text`](text.md) view for the title on your behalf. See [`Text`](text.md) for more information about localizing strings.
+
 ## Parameters
 
-- `title`: The title of the dialog.
+- `titleResource`: Text resource for the localized string that describes the title of the dialog.
 - `isPresented`: A binding to a Boolean value that determines whether to present the dialog. When the user presses or taps the dialog’s default action button, the system sets this value to `false`, dismissing the dialog.
 - `titleVisibility`: The visibility of the dialog’s title. The default value is [`Visibility.automatic`](visibility/automatic.md).
 - `actions`: A [`ContentBuilder`](contentbuilder.md) returning the dialog’s actions.
@@ -65,7 +69,7 @@ Dialogs include a standard dismiss action by default. If you provide a button wi
 ## See Also
 
 - [func confirmationDialog(_:isPresented:titleVisibility:presenting:actions:message:)](view/confirmationdialog(_:ispresented:titlevisibility:presenting:actions:message:).md)
-  Presents a confirmation dialog with a message using data to produce the dialog’s content and a text view for the message.
+  Presents a confirmation dialog with a message using data to produce the dialog’s content and a localized string resource for the title.
 - [func dismissalConfirmationDialog(_:shouldPresent:actions:message:)](view/dismissalconfirmationdialog(_:shouldpresent:actions:message:).md)
   Presents a confirmation dialog when a dismiss action has been triggered.
 

@@ -1,13 +1,13 @@
 # matrix4x4h::transformDirection
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: func
 
 Transforms a half-precision direction vector by a 4x4 matrix, ignoring translation.
 
 **Availability**:
-- macOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- macOS ?+
+- Reality Composer Pro ?+
 
 ## Declaration
 

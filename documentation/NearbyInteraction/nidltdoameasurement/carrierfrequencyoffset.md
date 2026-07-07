@@ -8,7 +8,6 @@ The drift, as a ratio, across the frequencies of the receiver and the anchor.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst 26.0+
 
 ## Declaration
 

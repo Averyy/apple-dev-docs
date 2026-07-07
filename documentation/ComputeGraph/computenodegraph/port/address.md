@@ -1,6 +1,6 @@
 # ComputeNodeGraph.Port.Address
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: struct
 
 A location of a specific port on a node, identified by the node and the port’s index.
@@ -12,7 +12,7 @@ A location of a specific port on a node, identified by the node and the port’s
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 ## Declaration
 

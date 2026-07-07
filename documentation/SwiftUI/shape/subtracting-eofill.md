@@ -17,8 +17,8 @@ Returns a new shape with filled regions from this shape that are not in the give
 ## Declaration
 
 ```swift
-nonisolated
-func subtracting<T>(_ other: T, eoFill: Bool = false) -> some Shape where T : Shape
+@export(implementation)
+nonisolated func subtracting<T>(_ other: T, eoFill: Bool = false) -> some Shape where T : Shape
 ```
 
 #### Return Value

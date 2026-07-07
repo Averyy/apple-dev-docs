@@ -17,6 +17,7 @@ A context-dependent cyan color suitable for use in UI elements.
 ## Declaration
 
 ```swift
+@export(implementation)
 static var cyan: Color { get }
 ```
 

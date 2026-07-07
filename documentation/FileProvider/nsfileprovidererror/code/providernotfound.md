@@ -8,7 +8,6 @@ An error indicating that the File Provider manager can’t find the specified pr
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
 - macOS 11.0+
 - visionOS 1.0+
 

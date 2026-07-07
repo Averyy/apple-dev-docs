@@ -21,12 +21,12 @@ let rootMotionTransform: Transform
 
 #### Discussion
 
-This is not cumulative — it represents only the delta from the last frame.
+This value is the delta from the previous frame, not a cumulative transform.
 
 ## See Also
 
 - [var suppressesAutomaticApplication: Bool](animationevents/rootmotiondidupdate/suppressesautomaticapplication.md)
-  Controls whether subscribing suppresses automatic root motion application.
+  A Boolean value that controls whether subscribing to the event suppresses automatic application of the root motion delta.
 
 
 ---

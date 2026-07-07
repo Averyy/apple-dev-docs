@@ -8,7 +8,7 @@ An activation function that returns the softmax function of its input.
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst ?+
+- Mac Catalyst 11.0+
 - macOS 10.13+
 - tvOS 11.0+
 - visionOS ?+

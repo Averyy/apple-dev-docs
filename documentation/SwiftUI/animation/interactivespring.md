@@ -17,6 +17,7 @@ A convenience for a `spring` animation with a lower `duration` value, intended f
 ## Declaration
 
 ```swift
+@export(implementation)
 static var interactiveSpring: Animation { get }
 ```
 

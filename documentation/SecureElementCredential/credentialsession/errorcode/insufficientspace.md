@@ -8,7 +8,6 @@ The hardware storage has insufficient space for the attempted provisioning.
 **Availability**:
 - iOS 18.1+
 - iPadOS 18.1+
-- Mac Catalyst 18.1+
 
 ## Declaration
 

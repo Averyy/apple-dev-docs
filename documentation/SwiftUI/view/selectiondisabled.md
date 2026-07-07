@@ -17,8 +17,8 @@ Adds a condition that controls whether users can select this view.
 ## Declaration
 
 ```swift
-nonisolated
-func selectionDisabled(_ isDisabled: Bool = true) -> some View
+@export(implementation)
+nonisolated func selectionDisabled(_ isDisabled: Bool = true) -> some View
 ```
 
 #### Discussion

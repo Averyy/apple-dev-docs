@@ -15,13 +15,14 @@ Creates a writer that uses `FileWrapper` to write documents to disk.
 ## Declaration
 
 ```swift
-init(_ configuration: sending FileWrapperDocumentWriter<Snapshot>.WriteConfiguration, makeFileWrapper: @escaping (Snapshot) async throws -> FileWrapper)
+init(_ configuration: sending FileWrapperDocumentWriter<Snapshot>.WriteConfiguration, makeFileWrapper: @escaping (Snapshot, FileWrapper?) async throws -> FileWrapper)
 ```
 
 ## Parameters
 
 - `configuration`: Properties required to write a document to disk.
-- `makeFileWrapper`: Serializes a `Snapshot` into a `FileWrapper`.
+- `makeFileWrapper`: Serializes a `Snapshot` into a `FileWrapper`. The closure takes the following parameters: - `snapshot`: The snapshot to serialize into a `FileWrapper`.
+- `previous`: The previous file wrapper that can be reused to optimize writing. If the latest operation for the document was writing, it is the file wrapper used for writing. If the latest operation was reading, SwiftUI passes the file wrapper read by a companion `FileWrapperDocumentReader`.
 
 ## See Also
 

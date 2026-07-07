@@ -28,14 +28,6 @@ enum MTLTensorDataType
   A half-precision floating point data type.
 - [MTLTensorDataType.float32](mtltensordatatype/float32.md)
   A single-precision floating point data type.
-- [MTLTensorDataType.float4e2m1](mtltensordatatype/float4e2m1.md)
-  A 4-bit floating point format data type with 2 exponent bits, 1 mantissa bit and 1 sign bit.
-- [MTLTensorDataType.float8e4m3](mtltensordatatype/float8e4m3.md)
-  An 8-bit floating point format data type with 4 exponent bits, 3 mantissa bits and 1 sign bit.
-- [MTLTensorDataType.float8e5m2](mtltensordatatype/float8e5m2.md)
-  An 8-bit floating point format data type with 5 exponent bits, 2 mantissa bits and 1 sign bit.
-- [MTLTensorDataType.float8ue8m0](mtltensordatatype/float8ue8m0.md)
-  An 8-bit floating point format data type with 8 exponent bits.
 - [MTLTensorDataType.int16](mtltensordatatype/int16.md)
   A 16-bit signed integer data type.
 - [MTLTensorDataType.int2](mtltensordatatype/int2.md)

@@ -20,6 +20,7 @@ object ErrorCodeSoftwareUpdateRequired
 
 ## Mentions
 
+- [Implementing Platform SSO during Automated Device Enrollment](implementing-platform-sso-during-automated-device-enrollment.md)
 - [Returning a managed device to service](returning-a-managed-device-to-service.md)
 
 #### Discussion

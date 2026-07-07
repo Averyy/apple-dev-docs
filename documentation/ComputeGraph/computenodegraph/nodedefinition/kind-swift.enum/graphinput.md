@@ -1,6 +1,6 @@
 # ComputeNodeGraph.NodeDefinition.Kind.graphInput
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: case
 
 Return a uniform value supplied externally.
@@ -12,7 +12,7 @@ Return a uniform value supplied externally.
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 ## Declaration
 

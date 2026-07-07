@@ -17,6 +17,7 @@ A material that’s more translucent than opaque.
 ## Declaration
 
 ```swift
+@export(implementation)
 static var thinMaterial: Material { get }
 ```
 

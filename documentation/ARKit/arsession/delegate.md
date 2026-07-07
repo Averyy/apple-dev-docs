@@ -8,7 +8,6 @@ An object you provide to receive captured video images and tracking information,
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

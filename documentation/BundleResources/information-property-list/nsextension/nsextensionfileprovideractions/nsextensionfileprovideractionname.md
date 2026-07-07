@@ -8,7 +8,6 @@ The localized name for a File Provider extension action that appears in the cont
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 11.0+
 - visionOS 1.0+
 
 

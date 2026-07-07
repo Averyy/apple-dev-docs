@@ -8,7 +8,6 @@ Attempts to refresh the carrier token.
 **Availability**:
 - iOS 6.0+
 - iPadOS 6.0+
-- Mac Catalyst 6.0+
 
 ## Declaration
 

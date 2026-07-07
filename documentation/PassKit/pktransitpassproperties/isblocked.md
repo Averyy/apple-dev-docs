@@ -8,7 +8,7 @@ A Boolean value that indicates the pass issuer disabled the pass.
 **Availability**:
 - iOS 14.5+
 - iPadOS 14.5+
-- Mac Catalyst ?+
+- Mac Catalyst 14.5+
 - macOS 11.3+
 - visionOS ?+
 - watchOS 7.5+

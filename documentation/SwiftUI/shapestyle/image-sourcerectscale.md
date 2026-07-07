@@ -17,6 +17,7 @@ A shape style that fills a shape by repeating a region of an image.
 ## Declaration
 
 ```swift
+@export(implementation)
 static func image(_ image: Image, sourceRect: CGRect = CGRect(x: 0, y: 0, width: 1, height: 1), scale: CGFloat = 1) -> ImagePaint
 ```
 

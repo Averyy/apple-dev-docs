@@ -8,7 +8,6 @@ Tells the delegate that one or more anchors have been removed from the session.
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

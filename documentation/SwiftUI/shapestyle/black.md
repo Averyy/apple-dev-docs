@@ -17,6 +17,7 @@ A black color suitable for use in UI elements.
 ## Declaration
 
 ```swift
+@export(implementation)
 static var black: Color { get }
 ```
 

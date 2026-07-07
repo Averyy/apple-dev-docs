@@ -16,6 +16,7 @@ Builds an expression within the builder.
 ## Declaration
 
 ```swift
+@export(implementation)
 static func buildExpression<Content>(_ content: Content) -> Content where Content : Widget
 ```
 
@@ -24,7 +25,6 @@ static func buildExpression<Content>(_ content: Content) -> Content where Conten
 - [static func buildBlock() -> some Widget](widgetbundlebuilder/buildblock.md)
   Builds an empty Widget from a block containing no statements, `{ }`.
 - [static buildBlock(_:)](widgetbundlebuilder/buildblock(_:).md)
-  Builds a single Widget written as a child view (e..g, `{ MyWidget() }`) through unmodified.
 - [static buildLimitedAvailability(_:)](widgetbundlebuilder/buildlimitedavailability(_:).md)
   Builds an availability check within the builder
 - [static func buildOptional((any Widget & _LimitedAvailabilityWidgetMarker)?) -> some Widget](widgetbundlebuilder/buildoptional(_:).md)

@@ -3,6 +3,8 @@
 **Framework**: RealityKit  
 **Kind**: case
 
+A point that is part of an off-mesh connection.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -20,6 +22,7 @@ case offMeshConnection
 ## See Also
 
 - [NavigationMeshResource.PathNode.Category.meshPoint](navigationmeshresource/pathnode/category-swift.enum/meshpoint.md)
+  A regular point on the Navigation Mesh.
 
 
 ---

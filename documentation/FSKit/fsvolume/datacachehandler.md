@@ -47,7 +47,7 @@ When transitioning to more permissive caching, kernel performs an “upgrade” 
 
 Transitioning to a less permissive coherency type is considered a “downgrade”. Your module initiates this process by calling [`setCacheState(for:cacheMode:coherencyType:action:)`](fsvolume/setcachestate(for:cachemode:coherencytype:action:).md) when conditions change. In this scenario, set the `action` to [`FSVolume.KernelCacheCoherencyAction.push`](fsvolume/kernelcachecoherencyaction/push.md), [`FSVolume.KernelCacheCoherencyAction.pushInvalidate`](fsvolume/kernelcachecoherencyaction/pushinvalidate.md), or [`FSVolume.KernelCacheCoherencyAction.invalidate`](fsvolume/kernelcachecoherencyaction/invalidate.md). Handle any dirty data by flushing or purging it before downgrading with this method call.
 
-> ❗ **Important**:  If a file system doesn’t conform to this protocol, the kernel may still cache it. However, such a file system has no control over caching behavior; the kernel caches data as it sees fit.
+> ❗ **Important**: If a file system doesn’t conform to this protocol, the kernel may still cache it. However, such a file system has no control over caching behavior; the kernel caches data as it sees fit.
 
 ## Topics
 

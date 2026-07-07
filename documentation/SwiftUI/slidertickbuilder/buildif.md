@@ -16,6 +16,7 @@ Produces an optional slider content for conditional statements in multi-statemen
 ## Declaration
 
 ```swift
+@export(implementation)
 static func buildIf(_ content: some SliderTickContent<V>) -> some SliderTickContent<V>
 ```
 

@@ -8,7 +8,7 @@ A closure that returns the alignment rectangle for the starting and ending views
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst ?+
+- Mac Catalyst 18.0+
 - tvOS ?+
 - visionOS ?+
 

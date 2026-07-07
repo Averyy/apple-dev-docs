@@ -8,7 +8,6 @@ The position, rotation, and scale, of the ray’s intersection with the target.
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

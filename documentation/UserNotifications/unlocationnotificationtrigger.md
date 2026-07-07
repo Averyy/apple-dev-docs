@@ -8,7 +8,6 @@ A trigger condition that causes the system to deliver a notification when the us
 **Availability**:
 - iOS 10.0+
 - iPadOS 10.0+
-- Mac Catalyst 10.0+
 - watchOS 3.0+
 
 ## Declaration

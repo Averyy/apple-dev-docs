@@ -18,7 +18,7 @@ Creates a transition that applies the provided effect to symbol images within th
 
 ```swift
 @MainActor
-@preconcurrency static func symbolEffect<T>(_ effect: T, options: SymbolEffectOptions = .default) -> SymbolEffectTransition where T : SymbolEffect, T : TransitionSymbolEffect
+@export(implementation) @preconcurrency static func symbolEffect<T>(_ effect: T, options: SymbolEffectOptions = .default) -> SymbolEffectTransition where T : SymbolEffect, T : TransitionSymbolEffect
 ```
 
 #### Return Value

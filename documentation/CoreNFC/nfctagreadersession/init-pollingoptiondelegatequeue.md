@@ -8,7 +8,7 @@ Creates an NFC tag reader session.
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst ?+
+- Mac Catalyst 13.0+
 
 ## Declaration
 

@@ -15,6 +15,7 @@ The list style that describes the behavior and appearance of a grouped list.
 ## Declaration
 
 ```swift
+@export(implementation)
 static var grouped: GroupedListStyle { get }
 ```
 

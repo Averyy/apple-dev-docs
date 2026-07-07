@@ -8,7 +8,7 @@ Searches for the specified string in the web view’s content.
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst ?+
+- Mac Catalyst 14.0+
 - macOS 11.0+
 - visionOS ?+
 

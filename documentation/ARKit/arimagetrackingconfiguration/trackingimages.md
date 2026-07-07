@@ -8,7 +8,6 @@ A set of images that ARKit searches for and tracks in the user’s environment.
 **Availability**:
 - iOS 12.0+
 - iPadOS 12.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

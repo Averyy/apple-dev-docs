@@ -45,7 +45,7 @@ object StatusMDMEnrollmentType
 
 ## Properties
 
-- `mdm.enrollment-type` (string) *(required)*: The device management enrollment type that indicates how the device is enrolled, which has the following possible values: - `none`: Device is not enrolled
+- `mdm.enrollment-type` (string) *(required)*: The device management enrollment type that indicates how the device is enrolled, which has the following possible values: - `none`: Device isn’t enrolled
 - `supervised`: Device is supervised
 - `device`: Device enrollment
 - `user`: User enrollment

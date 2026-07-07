@@ -8,7 +8,6 @@ Creates a new button descriptor with default values.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst 26.0+
 
 ## Declaration
 

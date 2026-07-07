@@ -9,7 +9,7 @@ Starts searching the index for items that match the current query string and par
 - iOS 10.0+
 - iPadOS 10.0+
 - Mac Catalyst 13.1+
-- macOS 10.13+
+- macOS 10.12+
 - visionOS 1.0+
 
 ## Declaration

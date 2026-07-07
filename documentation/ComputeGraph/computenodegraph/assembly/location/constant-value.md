@@ -1,6 +1,6 @@
 # ComputeNodeGraph.Assembly.Location.constant(value:)
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: case
 
 Value is a fixed 64-bit constant
@@ -12,7 +12,7 @@ Value is a fixed 64-bit constant
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 ## Declaration
 

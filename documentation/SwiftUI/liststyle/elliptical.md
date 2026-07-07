@@ -11,6 +11,7 @@ The list style that describes the behavior and appearance of an elliptical list.
 ## Declaration
 
 ```swift
+@export(implementation)
 static var elliptical: EllipticalListStyle { get }
 ```
 

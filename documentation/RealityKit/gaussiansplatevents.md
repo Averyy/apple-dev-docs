@@ -3,12 +3,12 @@
 **Framework**: RealityKit  
 **Kind**: enum
 
-Events associated with Gaussian Splat component
+A namespace for events about Gaussian splat rendering.
 
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst ?+
+- Mac Catalyst 27.0+ (Beta)
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 
@@ -22,7 +22,7 @@ enum GaussianSplatEvents
 
 ### Structures
 - [GaussianSplatEvents.RenderingChanged](gaussiansplatevents/renderingchanged.md)
-  Clients may subscribe to this event to be notified of RealityKit taking measures to reduce the rendering impact of their GaussianSplatResource. The client can then choose how to respond. For example, they could switch to a lower splat count asset or reduce the total number of active SplatComponents in the scene.
+  An event that signals the framework changed how it renders an entity’s splats to manage performance.
 
 
 ---

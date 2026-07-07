@@ -15,6 +15,7 @@ optional func supportedGrantTypes() -> ASAuthorizationProviderExtensionSupported
 ## Mentions
 
 - [Creating extensions that support Platform SSO](creating-extensions-that-support-platform-sso.md)
+- [Implementing web-based authentication with Platform Single Sign-on](implementing-web-based-authentication.md)
 
 ## See Also
 

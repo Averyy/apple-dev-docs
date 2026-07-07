@@ -8,7 +8,7 @@ Creates a fixed group that a person can’t move or remove from the navigation b
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst ?+
+- Mac Catalyst 16.0+
 - visionOS ?+
 
 ## Declaration

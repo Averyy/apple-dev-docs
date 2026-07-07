@@ -1,6 +1,6 @@
 # ComputeNodeGraph.Port.Kind.event
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: case
 
 Carries a typed event payload. Triggers downstream execution per event AND carries data (e.g. spawn/update/terminate events with element data).
@@ -12,7 +12,7 @@ Carries a typed event payload. Triggers downstream execution per event AND carri
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 ## Declaration
 

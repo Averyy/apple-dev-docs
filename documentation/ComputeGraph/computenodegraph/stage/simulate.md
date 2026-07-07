@@ -1,6 +1,6 @@
 # simulate
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: property
 
 Updates particle state each frame (position, velocity, lifetime, etc.).
@@ -12,7 +12,7 @@ Updates particle state each frame (position, velocity, lifetime, etc.).
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 ## Declaration
 

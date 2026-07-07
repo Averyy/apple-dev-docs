@@ -3,7 +3,7 @@
 **Framework**: Background Assets  
 **Kind**: method
 
-Ensures that the specified asset pack be available locally.
+Ensures that the specified asset pack is available locally, performing a download if necessary.
 
 **Availability**:
 - iOS 26.0+
@@ -25,7 +25,7 @@ func ensureLocalAvailability(of assetPack: AssetPack) async throws
 
 #### Discussion
 
-This method checks whether the asset pack is currently downloaded. If it isn’t, then the system schedules it to be downloaded and waits for the download to complete. It’s guaranteed that the requested asset pack will be available locally once this method returns without throwing. If the method throws, then the asset pack is **not** guaranteed to be available locally. You can optionally monitor download progress by awaiting status updates from [`statusUpdates`](assetpackmanager/statusupdates.md) or [`statusUpdates(forAssetPackWithID:)`](assetpackmanager/statusupdates(forassetpackwithid:).md) in a separate task.
+This method checks whether the asset pack is currently downloaded. If it isn’t, then the system schedules it to be downloaded and waits for the download to complete. It’s guaranteed that the requested asset pack will be available locally once this method returns without throwing. If the method throws, then the asset pack *isn’t* guaranteed to be available locally. You can optionally monitor download progress by awaiting status updates from [`statusUpdates`](assetpackmanager/statusupdates.md) or [`statusUpdates(forAssetPackWithID:)`](assetpackmanager/statusupdates(forassetpackwithid:).md) in a separate task.
 
 > **Note**: When the asset pack can’t be downloaded.
 

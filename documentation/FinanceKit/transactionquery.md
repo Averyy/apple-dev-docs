@@ -8,7 +8,6 @@ A structure that describes the parameters to use for a transaction query.
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
-- Mac Catalyst 17.4+
 
 ## Declaration
 

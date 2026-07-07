@@ -8,7 +8,6 @@ Creates an async ndArray value that directly references the provided metal buffe
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 
@@ -30,6 +29,15 @@ Initializing an async value this way requires that you manually ensure the provi
 - shape: The shape of the resulting value.
 - strides: The strides of the resulting value. If left empty, they will be computed as contiguous row-major.
 - interleaveLayout: Which dimension is interleaved and by what factor. See [`NDArray.InterleaveLayout`](ndarray/interleavelayout-swift.struct.md).
+
+## See Also
+
+- [init(CVReadOnlyPixelBuffer)](inferencefunction/asyncvalue/init(_:)-5qtut.md)
+  Initialize the `AsyncValue` holding the provided pixel buffer.
+- [init(consuming InferenceFunction.AsyncMutableValue)](inferencefunction/asyncvalue/init(_:)-90hbj.md)
+  Initialize an async value from an existing mutable async value.
+- [init(consuming NDArray)](inferencefunction/asyncvalue/init(_:)-9wk3.md)
+  Initialize the `AsyncValue` holding the provided ndArray.
 
 
 ---

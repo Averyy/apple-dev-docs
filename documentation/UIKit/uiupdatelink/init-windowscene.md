@@ -8,7 +8,6 @@ Creates a UI update link for the specified window.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 - tvOS 18.0+
 - visionOS 2.0+
 

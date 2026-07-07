@@ -54,7 +54,7 @@ ContentView()
   Creates a new control group with the specified content that generates its label from a string.
 ### Creating a control group with an image
 - [init(_:image:content:)](controlgroup/init(_:image:content:).md)
-  Creates a new control group with the specified content that generates its label from a string and image name.
+  Creates a new control group with the specified content that generates its label from a localized string resource and image resource.
 - [init(_:systemImage:content:)](controlgroup/init(_:systemimage:content:).md)
   Creates a new control group with the specified content that generates its label from a string and image name.
 ### Creating a configured control group

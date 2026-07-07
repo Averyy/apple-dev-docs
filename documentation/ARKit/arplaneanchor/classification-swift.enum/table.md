@@ -8,7 +8,6 @@ The plane anchor represents a real-world table, desk, bar, or similar flat surfa
 **Availability**:
 - iOS 12.0+
 - iPadOS 12.0+
-- Mac Catalyst 12.0+
 
 ## Declaration
 

@@ -11,12 +11,20 @@ An optional description providing additional context for the judge about what th
 - Mac Catalyst 27.0+ (Beta)
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 
 ```swift
 let description: String?
 ```
+
+## See Also
+
+- [var metric: Metric](scoredimension/metric.md)
+  A metric identifier derived from this dimension’s name.
+- [let scale: ScoringScale](scoredimension/scale.md)
+  The scoring scale for this dimension.
 
 
 ---

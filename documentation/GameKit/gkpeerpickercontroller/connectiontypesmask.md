@@ -8,7 +8,6 @@ A mask that determines the types of connections a dialog presents to the user.
 **Availability**:
 - iOS 3.0+
 - iPadOS 3.0+
-- Mac Catalyst 3.0+
 - visionOS 1.0+
 
 ## Declaration

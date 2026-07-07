@@ -8,7 +8,7 @@ A view representing the default action label for a `ControlWidgetButton` if none
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst ?+
+- Mac Catalyst 18.0+
 - macOS 26.0+
 - watchOS 26.0+
 

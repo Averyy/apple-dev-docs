@@ -29,9 +29,9 @@ init(@ContentBuilder content: () -> Content, @ContentBuilder label: () -> Label,
 ## See Also
 
 - [init(_:content:primaryAction:)](menu/init(_:content:primaryaction:).md)
-  Creates a menu with a custom primary action that generates its label from a localized string key.
+  Creates a menu with a custom primary action that generates its label from a localized string resource.
 - [init(_:image:content:primaryAction:)](menu/init(_:image:content:primaryaction:).md)
-  Creates a menu with a custom primary action that generates its label from a localized string key.
+  Creates a menu with a custom primary action that generates its label from a localized string resource.
 - [init(_:systemImage:content:primaryAction:)](menu/init(_:systemimage:content:primaryaction:).md)
   Creates a menu with a custom primary action that generates its label from a localized string key and system image.
 

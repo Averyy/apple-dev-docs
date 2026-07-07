@@ -95,9 +95,11 @@ struct USDPrim
 - [USDPrim.Reference](usdprim/reference.md)
   A reference to an external layer or asset.
 - [USDPrim.ReferenceCollection](usdprim/referencecollection.md)
+  Manages reference composition arcs on a prim.
 - [USDPrim.Payload](usdprim/payload.md)
   A payload to an external asset.
 - [USDPrim.ListPosition](usdprim/listposition.md)
+  Where a new composition arc should be inserted relative to existing arcs.
 ### Authoring variants
 - [USDPrim.VariantSpec](usdprim/variantspec.md)
   A handle to a single variant option within a variant set.
@@ -119,14 +121,46 @@ struct USDPrim
   A handle to a prim definition stored in a layer.
 - [USDPrim.PseudoRootSpec](usdprim/pseudorootspec.md)
   A handle to a layer’s pseudo-root — the implicit parent of all top-level prims in a layer.
+### Structures
+- [USDPrim.InheritCollection](usdprim/inheritcollection.md)
+  Manages inherit composition arcs on a prim.
+- [USDPrim.PayloadCollection](usdprim/payloadcollection.md)
+  Manages payload composition arcs on a prim.
+- [USDPrim.SpecializeCollection](usdprim/specializecollection.md)
+  Manages specializes composition arcs on a prim.
+- [USDPrim.VariantSet](usdprim/variantset.md)
+  Represents a single variant set on a prim.
+- [USDPrim.VariantSetCollection](usdprim/variantsetcollection.md)
+  Manages variant sets on a prim.
+### Instance Properties
+- [var hasAuthoredInherits: Bool](usdprim/hasauthoredinherits.md)
+  A Boolean value indicating whether the prim has authored inherit arcs.
+- [var hasAuthoredPayloads: Bool](usdprim/hasauthoredpayloads.md)
+  A Boolean value indicating whether the prim has authored payload arcs.
+- [var hasAuthoredReferences: Bool](usdprim/hasauthoredreferences.md)
+  A Boolean value indicating whether the prim has authored reference arcs.
+- [var hasAuthoredSpecializes: Bool](usdprim/hasauthoredspecializes.md)
+  A Boolean value indicating whether the prim has authored specializes arcs.
+- [var inherits: USDPrim.InheritCollection](usdprim/inherits.md)
+  The inherit composition arcs on this prim.
+- [var payloads: USDPrim.PayloadCollection](usdprim/payloads.md)
+  The payload composition arcs on this prim.
+- [var specializes: USDPrim.SpecializeCollection](usdprim/specializes.md)
+  The specializes composition arcs on this prim.
+- [var transformOperations: [USDTransformOperation]](usdprim/transformoperations.md)
+  The transform operations on this prim, in evaluation order.
+- [var variantSets: USDPrim.VariantSetCollection](usdprim/variantsets.md)
+  The variant sets on this prim.
 ### Instance Methods
+- [func clearTransformOperations()](usdprim/cleartransformoperations.md)
+  Removes all transform operations from the prim’s transform stack.
 - [func hasAPISchema(USDToken) -> Bool](usdprim/hasapischema(_:).md)
   Returns true if this prim has a particular API schema applied.
 - [func isSchema(USDToken) -> Bool](usdprim/isschema(_:).md)
   Returns true if this prim has the given type or a more derived type.
 - [func makeRelationship(named: USDToken, custom: Bool) -> USDPrim.Relationship](usdprim/makerelationship(named:custom:).md)
-- [func resetTransform(to: AffineTransform3D)](usdprim/resettransform(to:).md)
-  Resets this prim’s transform stack to a given transform.
+- [func transform(at: USDStage.TimeCode) -> USDValue.Matrix4d?](usdprim/transform(at:).md)
+  Computes the prim’s composed local transform at the specified time.
 ### Subscripts
 - [subscript(USDToken, as _: Int.Type) -> Int?](usdprim/subscript(_:as:)-127jz.md)
 - [subscript<T>(USDToken, as _: T.Type) -> T?](usdprim/subscript(_:as:)-1frls.md)

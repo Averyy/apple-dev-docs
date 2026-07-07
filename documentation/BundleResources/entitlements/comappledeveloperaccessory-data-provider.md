@@ -8,7 +8,6 @@ An entitlement that enables your app extension to receive data for an accessory.
 **Availability**:
 - iOS 26.5+
 - iPadOS 26.5+
-- Mac Catalyst 26.5+
 
 
 

@@ -22,11 +22,11 @@ mutating func waitForAll(isolation: isolated (any Actor)? = #isolation) async
 
 ## See Also
 
-- [func next() async -> ChildTaskResult?](taskgroup/next.md)
-- [func next(isolation: isolated (any Actor)?) async -> ChildTaskResult?](taskgroup/next(isolation:).md)
-  Waits for the next child task to complete, and returns the value it returned.
-- [var isEmpty: Bool](taskgroup/isempty.md)
-  A Boolean value that indicates whether the group has any remaining tasks.
+- [func add(priority: TaskPriority?, operation: () async -> ChildTaskResult) async -> Bool](taskgroup/add(priority:operation:).md)
+- [func async(priority: TaskPriority?, operation: () async -> ChildTaskResult)](taskgroup/async(priority:operation:).md)
+- [func asyncUnlessCancelled(priority: TaskPriority?, operation: () async -> ChildTaskResult) -> Bool](taskgroup/asyncunlesscancelled(priority:operation:).md)
+- [func spawn(priority: TaskPriority?, operation: () async -> ChildTaskResult)](taskgroup/spawn(priority:operation:).md)
+- [func spawnUnlessCancelled(priority: TaskPriority?, operation: () async -> ChildTaskResult) -> Bool](taskgroup/spawnunlesscancelled(priority:operation:).md)
 
 
 ---

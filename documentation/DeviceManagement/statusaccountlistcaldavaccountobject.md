@@ -20,7 +20,7 @@ object StatusAccountListCalDAVAccountObject
 
 ## Properties
 
-- `_removed` (boolean): If `true`, the account is removed and the status item object only contains this key and the `identifier` key.
+- `_removed` (boolean): If `true`, the device has removed the account and the status item object only contains this key and the `identifier` key.
 - `are-calendars-enabled` (boolean): If `true`, the Calendar app is displaying calendars and events for the account.
 - `are-reminders-enabled` (boolean): If `true`, the Reminders app is displaying reminders for the account.
 - `declaration-identifier` (string): The identifier of the declaration that installed the account. Only present if a declaration installed the account.

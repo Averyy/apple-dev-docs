@@ -15,6 +15,7 @@ A navigation view style represented by a series of views in columns.
 ## Declaration
 
 ```swift
+@export(implementation)
 static var columns: ColumnNavigationViewStyle { get }
 ```
 

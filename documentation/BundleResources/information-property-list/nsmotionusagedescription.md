@@ -8,7 +8,6 @@ A message that tells people why the app is requesting access to the device’s m
 **Availability**:
 - iOS 7.0+
 - iPadOS 7.0+
-- Mac Catalyst 7.0+
 - macOS 10.15+
 - visionOS 1.0+
 

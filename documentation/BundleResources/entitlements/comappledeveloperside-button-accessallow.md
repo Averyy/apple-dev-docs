@@ -8,7 +8,6 @@ A Boolean value that indicates whether a person in Japan can configure the side 
 **Availability**:
 - iOS 26.2+
 - iPadOS 26.2+
-- Mac Catalyst 26.2+
 
 
 

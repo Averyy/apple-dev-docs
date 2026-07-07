@@ -41,6 +41,23 @@ Implement renaming along the lines of this algorithm:
 - `overItem`: The file system object if the destination exists, as discovered in a prior lookup. If this parameter is non-`nil`, mark `overItem` as deleted, so the file system can free its allocated space on the next call to `reclaimItem(_:)`. After doing so, ensure the operation finishes without errors.
 - `reply`: A block or closure to indicate success or failure. If renaming succeeds, pass the [`FSFileName`](fsfilename.md) as it exists within `destinationDirectory` and a `nil` error. If renaming fails, pass the relevant error as the second parameter; FSKit ignores any [`FSFileName`](fsfilename.md) in this case. For an `async` Swift implementation, there’s no reply handler; simply return the [`FSFileName`](fsfilename.md) or throw an error.
 
+## See Also
+
+- [func createItem(named: FSFileName, type: FSItem.ItemType, inDirectory: FSItem, attributes: FSItem.SetAttributesRequest, replyHandler: (FSItem?, FSFileName?, (any Error)?) -> Void)](fsvolume/operations/createitem(named:type:indirectory:attributes:replyhandler:).md)
+  Creates a new file or directory item.
+- [class FSFileName](fsfilename.md)
+  The name of a file, expressed as a data buffer.
+- [FSItem.ItemType](fsitem/itemtype.md)
+  An enumeration of item types, such as file, directory, or symbolic link.
+- [FSItem.SetAttributesRequest](fsitem/setattributesrequest.md)
+  A request to set attributes on an item.
+- [func lookupItem(named: FSFileName, inDirectory: FSItem, replyHandler: (FSItem?, FSFileName?, (any Error)?) -> Void)](fsvolume/operations/lookupitem(named:indirectory:replyhandler:).md)
+  Looks up an item within a directory.
+- [func removeItem(FSItem, named: FSFileName, fromDirectory: FSItem, replyHandler: ((any Error)?) -> Void)](fsvolume/operations/removeitem(_:named:fromdirectory:replyhandler:).md)
+  Removes an existing item from a given directory.
+- [func reclaimItem(FSItem, replyHandler: ((any Error)?) -> Void)](fsvolume/operations/reclaimitem(_:replyhandler:).md)
+  Reclaims an item, releasing any resources allocated for the item.
+
 
 ---
 

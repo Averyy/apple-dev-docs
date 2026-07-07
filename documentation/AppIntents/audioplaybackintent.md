@@ -8,7 +8,7 @@ An App Intent that plays, pauses, or otherwise modifies audio playback state whe
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst ?+
+- Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
 - visionOS ?+

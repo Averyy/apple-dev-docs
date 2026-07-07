@@ -8,7 +8,7 @@ Creates a 4-channel, 32-bit-per-channel interleaved buffer from four 32-bit plan
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst ?+
+- Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
 - visionOS ?+

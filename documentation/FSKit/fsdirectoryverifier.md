@@ -20,12 +20,12 @@ Your implementation of [`enumerateDirectory(_:startingAt:verifier:attributes:pac
 
 ## Topics
 
+### Initializing a verifier
+- [init(UInt64)](fsdirectoryverifier/init(_:).md)
+- [init(rawValue: UInt64)](fsdirectoryverifier/init(rawvalue:).md)
 ### Using defined verifier values
 - [static let initial: FSDirectoryVerifier](fsdirectoryverifier/initial.md)
   The constant initial value for the directory-enumeration verifier.
-### Initializers
-- [init(UInt64)](fsdirectoryverifier/init(_:).md)
-- [init(rawValue: UInt64)](fsdirectoryverifier/init(rawvalue:).md)
 
 ## Relationships
 

@@ -8,7 +8,7 @@ An intent that starts, pauses, or otherwise modifies a Live Activity.
 **Availability**:
 - iOS 16.1+
 - iPadOS 16.1+
-- Mac Catalyst ?+
+- Mac Catalyst 16.1+
 - visionOS ?+
 
 ## Declaration

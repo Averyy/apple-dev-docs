@@ -8,7 +8,6 @@ Returns a properly formatted error object with a `NSFileProviderItemCollisionErr
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 11.0+
 - macOS 11.0+
 - visionOS 1.0+
 

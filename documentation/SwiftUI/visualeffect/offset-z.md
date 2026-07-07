@@ -11,6 +11,7 @@ Brings a view forward in Z by the provided distance in points.
 ## Declaration
 
 ```swift
+@export(implementation)
 func offset(z: CGFloat) -> some VisualEffect
 ```
 

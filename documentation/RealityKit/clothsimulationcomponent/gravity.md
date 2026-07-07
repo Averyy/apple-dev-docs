@@ -8,7 +8,6 @@ The gravitational acceleration for the bodies in the simulation, in m/s².
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 
 ## Declaration

@@ -17,6 +17,7 @@ Combines the specified views into a single composite view using the layout algor
 ## Declaration
 
 ```swift
+@export(implementation)
 func callAsFunction<V>(@ContentBuilder _ content: () -> V) -> some View where V : View
 ```
 

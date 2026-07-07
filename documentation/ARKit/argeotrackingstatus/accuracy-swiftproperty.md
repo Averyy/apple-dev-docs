@@ -8,7 +8,6 @@ The accuracy of geo tracking at the time the session captured the frame.
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
 
 ## Declaration
 

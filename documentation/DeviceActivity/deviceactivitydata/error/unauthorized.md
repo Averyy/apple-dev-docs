@@ -8,7 +8,6 @@ An error indicating the app isn’t authorized to provide parental controls and 
 **Availability**:
 - iOS 26.4+
 - iPadOS 26.4+
-- Mac Catalyst 26.4+
 
 ## Declaration
 

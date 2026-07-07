@@ -17,6 +17,7 @@ A context-dependent indigo color suitable for use in UI elements.
 ## Declaration
 
 ```swift
+@export(implementation)
 static var indigo: Color { get }
 ```
 

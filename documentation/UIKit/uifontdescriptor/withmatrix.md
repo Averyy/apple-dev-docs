@@ -8,7 +8,6 @@ Returns a new font descriptor that’s the same as the existing font descriptor,
 **Availability**:
 - iOS 7.0+
 - iPadOS 7.0+
-- Mac Catalyst 7.0+
 - tvOS ?+
 - visionOS 1.0+
 - watchOS 2.0+

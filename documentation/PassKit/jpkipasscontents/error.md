@@ -8,7 +8,6 @@ Defines a set of possible errors.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 
 ## Declaration
 

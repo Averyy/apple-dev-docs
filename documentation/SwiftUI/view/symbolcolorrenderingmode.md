@@ -17,8 +17,8 @@ Sets the color rendering mode for symbol images.
 ## Declaration
 
 ```swift
-nonisolated
-func symbolColorRenderingMode(_ mode: SymbolColorRenderingMode?) -> some View
+@export(implementation)
+nonisolated func symbolColorRenderingMode(_ mode: SymbolColorRenderingMode?) -> some View
 ```
 
 #### Return Value

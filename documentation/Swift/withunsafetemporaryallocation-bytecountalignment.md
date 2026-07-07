@@ -32,8 +32,6 @@ This function is useful for cheaply allocating raw storage for a brief duration.
 
 When `body` is called, the contents of the buffer pointer passed to it are in an unspecified, uninitialized state. `body` is responsible for initializing the buffer pointer before it is used *and* for deinitializing it before returning, but deallocation is automatic.
 
-The implementation may allocate a larger buffer pointer than is strictly necessary to contain `byteCount` bytes. The behavior of a program that attempts to access any such additional storage is undefined.
-
 The buffer pointer passed to `body` (as well as any pointers to elements in the buffer) must not escape. It will be deallocated when `body` returns and cannot be used afterward.
 
 ## Parameters
@@ -50,10 +48,14 @@ The buffer pointer passed to `body` (as well as any pointers to elements in the 
   Invokes the given closure with a pointer to the given argument.
 - [func withUnsafeMutablePointer<T, E, Result>(to: inout T, (UnsafeMutablePointer<T>) throws(E) -> Result) throws(E) -> Result](withunsafemutablepointer(to:_:).md)
   Calls the given closure with a mutable pointer to the given argument.
-- [func withUnsafeBytes<T, E, Result>(of: borrowing T, (UnsafeRawBufferPointer) throws(E) -> Result) throws(E) -> Result](withunsafebytes(of:_:)-5gesg.md)
+- [func withUnsafeBytes<T, E, Result>(of: inout T, (UnsafeRawBufferPointer) throws(E) -> Result) throws(E) -> Result](withunsafebytes(of:_:)-3ywhh.md)
   Invokes the given closure with a buffer pointer covering the raw bytes of the given argument.
 - [func withUnsafeMutableBytes<T, E, Result>(of: inout T, (UnsafeMutableRawBufferPointer) throws(E) -> Result) throws(E) -> Result](withunsafemutablebytes(of:_:).md)
   Invokes the given closure with a mutable buffer pointer covering the raw bytes of the given argument.
+- [func withTemporaryAllocation<R, E>(byteCount: Int, alignment: Int, (inout OutputRawSpan) throws(E) -> R) throws(E) -> R](withtemporaryallocation(bytecount:alignment:_:).md)
+  Provides scoped access to an output raw span with the specified byte count and alignment.
+- [func withTemporaryAllocation<T, R, E>(of: T.Type, capacity: Int, (inout OutputSpan<T>) throws(E) -> R) throws(E) -> R](withtemporaryallocation(of:capacity:_:).md)
+  Provides scoped access to an output span of the specified type and capacity.
 - [func withUnsafeTemporaryAllocation<T, R, E>(of: T.Type, capacity: Int, (UnsafeMutableBufferPointer<T>) throws(E) -> R) throws(E) -> R](withunsafetemporaryallocation(of:capacity:_:).md)
   Provides scoped access to a buffer pointer to memory of the specified type and with the specified capacity.
 - [func swap<T>(inout T, inout T)](swap(_:_:).md)

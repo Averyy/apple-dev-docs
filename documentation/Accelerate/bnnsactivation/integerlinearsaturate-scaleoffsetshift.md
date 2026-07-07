@@ -8,7 +8,7 @@ Returns an activation function that computes an arithmetic shift, preserving sig
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst ?+
+- Mac Catalyst 11.0+
 - macOS 10.13+
 - tvOS 11.0+
 - visionOS ?+

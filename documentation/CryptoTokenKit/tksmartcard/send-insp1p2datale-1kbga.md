@@ -8,7 +8,7 @@ Synchronously sends an APDU command to the smart card.
 **Availability**:
 - iOS 10.0+
 - iPadOS 10.0+
-- Mac Catalyst ?+
+- Mac Catalyst 10.0+
 - macOS 10.12+
 - tvOS 11.0+
 - visionOS 1.0+

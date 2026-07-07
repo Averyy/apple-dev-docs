@@ -13,6 +13,7 @@ The represented gesture recognizer’s current velocity in the coordinate space 
 ## Declaration
 
 ```swift
+@export(implementation)
 var localVelocity: CGPoint? { get }
 ```
 

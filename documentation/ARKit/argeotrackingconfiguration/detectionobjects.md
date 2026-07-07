@@ -8,7 +8,6 @@ A set of 3D objects that the framework attempts to detect in the user’s enviro
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
 
 ## Declaration
 

@@ -8,7 +8,7 @@ Get or set a value in this dictionary as an XPCArray.
 **Availability**:
 - iOS 18.5+
 - iPadOS 18.5+
-- Mac Catalyst ?+
+- Mac Catalyst 18.5+
 - macOS 15.5+
 - tvOS 18.5+
 - visionOS 2.5+

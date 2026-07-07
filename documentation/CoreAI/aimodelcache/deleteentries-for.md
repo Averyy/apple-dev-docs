@@ -8,7 +8,6 @@ Deletes all cache entries for a specific model, regardless of specialization opt
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 
@@ -31,6 +30,15 @@ A model may have multiple entries in the cache. For example, one with [`cpuOnly`
 ## Parameters
 
 - `modelURL`: The URL of an `.aimodel` file that you previously specialized.
+
+## See Also
+
+- [func deleteEntry(for: URL, options: SpecializationOptions) throws](aimodelcache/deleteentry(for:options:).md)
+  Deletes the cache entry for a specific model and specialization options combination.
+- [func deleteAll() throws](aimodelcache/deleteall.md)
+  Deletes all entries in the cache.
+- [static func deleteEntry(referencedBy: Data) throws](aimodelcache/deleteentry(referencedby:).md)
+  Deletes a cache entry referenced by bookmark data.
 
 
 ---

@@ -8,7 +8,6 @@ The type that allows iteration over an array’s elements.
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
-- Mac Catalyst 17.4+
 
 ## Declaration
 

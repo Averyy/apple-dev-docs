@@ -13,7 +13,7 @@ The playback control interface for the remote session.
 ## Declaration
 
 ```swift
-final var playbackControl: (any AVInterfaceControllable)? { get }
+final var playbackControl: (any AVPlaybackUserInterfaceControllable)? { get }
 ```
 
 ## Mentions

@@ -8,7 +8,7 @@ Creates an alert view with the specified values.
 **Availability**:
 - iOS 2.0+
 - iPadOS 2.0+
-- Mac Catalyst ?+
+- Mac Catalyst 2.0+
 
 ## Declaration
 

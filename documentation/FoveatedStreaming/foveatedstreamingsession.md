@@ -72,8 +72,8 @@ struct FoveatedStreamingApp: App {
   A transform matrix which maps from the streamed scene’s coordinate space origin to the origin of the app’s immersive space.
 - [var immersiveSpaceFromRemoteSpaceTransform: simd_float4x4](foveatedstreamingsession/immersivespacefromremotespacetransform.md)
   A transform matrix which maps from the streamed scene’s coordinate space origin to the origin of the app’s immersive space.
-- [var isMicrophoneEnabled: Bool](foveatedstreamingsession/ismicrophoneenabled.md)
-  Whether the microphone is currently enabled for this session.
+- [var requestedInputCapabilities: Set<FoveatedStreamingSession.InputCapability>](foveatedstreamingsession/requestedinputcapabilities.md)
+  A list of input data types which should be included as part of the stream.
 - [var status: FoveatedStreamingSession.Status](foveatedstreamingsession/status-swift.property.md)
   The connection status of the session.
 ### Instance Methods
@@ -87,12 +87,20 @@ struct FoveatedStreamingApp: App {
   Creates or retrieves a message channel for the given message channel ID.
 - [func pause() async throws](foveatedstreamingsession/pause.md)
   Pauses a session without ending it.
+- [func queryAuthorization(for: [FoveatedStreamingSession.InputCapability]) async -> [FoveatedStreamingSession.InputCapability : FoveatedStreamingSession.AuthorizationStatus]](foveatedstreamingsession/queryauthorization(for:).md)
+  Returns the current authorization status of the given input capabilities without presenting an authorization prompt.
+- [func requestAuthorization(for: [FoveatedStreamingSession.InputCapability]) async -> [FoveatedStreamingSession.InputCapability : FoveatedStreamingSession.AuthorizationStatus]](foveatedstreamingsession/requestauthorization(for:).md)
+  Requests authorization for the given input capabilities, prompting the user for any capability whose status is [`FoveatedStreamingSession.AuthorizationStatus.notDetermined`](foveatedstreamingsession/authorizationstatus/notdetermined.md).
 - [func resume() async throws](foveatedstreamingsession/resume.md)
   Resumes a previously paused session.
 ### Type Methods
 - [static func queryStreamingProviders() async -> [FoveatedStreamingSession.StreamingProvider]](foveatedstreamingsession/querystreamingproviders.md)
   Returns a list of currently-available streaming providers.
 ### Enumerations
+- [FoveatedStreamingSession.AuthorizationStatus](foveatedstreamingsession/authorizationstatus.md)
+  The authorization status of an [`FoveatedStreamingSession.InputCapability`](foveatedstreamingsession/inputcapability.md).
+- [FoveatedStreamingSession.InputCapability](foveatedstreamingsession/inputcapability.md)
+  An input source that a streaming session can request to send.
 - [FoveatedStreamingSession.Status](foveatedstreamingsession/status-swift.enum.md)
   The connection state of a foveated streaming session.
 

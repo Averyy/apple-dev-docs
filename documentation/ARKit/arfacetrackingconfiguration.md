@@ -8,7 +8,6 @@ A configuration that tracks facial movement and expressions using the front came
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

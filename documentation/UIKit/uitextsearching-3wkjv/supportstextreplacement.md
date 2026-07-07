@@ -9,7 +9,7 @@ A Boolean value that indicates whether the searchable object supports replacing 
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst ?+
+- Mac Catalyst 16.0+
 - visionOS ?+
 
 ## Declaration

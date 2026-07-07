@@ -1,6 +1,6 @@
 # ComputeNodeGraph.Scope
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: struct
 
 A scope is a named region of memory, indicating where a value lives
@@ -12,7 +12,7 @@ A scope is a named region of memory, indicating where a value lives
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 ## Declaration
 

@@ -17,7 +17,7 @@ A button style that applies a prominent Liquid Glass effect based on the buttonâ
 
 ```swift
 @MainActor
-@preconcurrency static var glassProminent: GlassProminentButtonStyle { get }
+@export(implementation) @preconcurrency static var glassProminent: GlassProminentButtonStyle { get }
 ```
 
 #### Discussion

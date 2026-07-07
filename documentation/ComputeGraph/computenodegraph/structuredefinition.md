@@ -1,6 +1,6 @@
 # ComputeNodeGraph.StructureDefinition
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: struct
 
 A named structure type, pairing a type name with its in-memory layout.
@@ -12,7 +12,7 @@ A named structure type, pairing a type name with its in-memory layout.
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 ## Declaration
 

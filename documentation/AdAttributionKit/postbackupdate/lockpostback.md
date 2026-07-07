@@ -8,7 +8,7 @@ A Boolean value that indicates whether the system should lock the postback, redu
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst ?+
+- Mac Catalyst 18.0+
 
 ## Declaration
 

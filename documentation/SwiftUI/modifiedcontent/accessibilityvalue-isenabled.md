@@ -17,8 +17,8 @@ Adds a textual description of the value that the view contains.
 ## Declaration
 
 ```swift
-nonisolated
-func accessibilityValue(_ valueDescription: Text, isEnabled: Bool) -> ModifiedContent<Content, Modifier>
+@export(implementation)
+nonisolated func accessibilityValue(_ valueResource: LocalizedStringResource, isEnabled: Bool) -> ModifiedContent<Content, Modifier>
 ```
 
 #### Discussion
@@ -27,7 +27,7 @@ Use this method to describe the value represented by a view, but only if that’
 
 ## Parameters
 
-- `valueDescription`: The accessibility value to apply.
+- `valueResource`: The accessibility value to apply.
 - `isEnabled`: If true the accessibility value is applied; otherwise the accessibility value is unchanged.
 
 

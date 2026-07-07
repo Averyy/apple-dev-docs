@@ -6,10 +6,9 @@
 Values that describe a device’s quick switch status.
 
 **Availability**:
-- iOS 4.0+
-- iPadOS 4.0+
-- Mac Catalyst 14.0+
-- macOS 10.10+
+- iOS 27.0+ (Beta)
+- iPadOS 27.0+ (Beta)
+- Mac Catalyst 27.0+ (Beta)
 
 ## Declaration
 

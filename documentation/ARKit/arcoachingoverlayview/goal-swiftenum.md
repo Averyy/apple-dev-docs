@@ -8,7 +8,6 @@ The options that specify your app’s tracking requirements.
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

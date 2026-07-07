@@ -8,7 +8,6 @@ A predicate that returns transactions that match any of the provided merchant ca
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
-- Mac Catalyst 17.4+
 
 ## Declaration
 

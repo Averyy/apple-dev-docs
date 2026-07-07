@@ -8,7 +8,6 @@ Tells the delegate that a SpriteKit node’s properties have been updated to mat
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

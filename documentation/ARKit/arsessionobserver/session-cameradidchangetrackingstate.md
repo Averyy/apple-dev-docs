@@ -8,7 +8,6 @@ Informs the delegate of changes to the quality of ARKit’s device position trac
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

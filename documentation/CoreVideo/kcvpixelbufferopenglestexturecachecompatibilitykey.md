@@ -8,7 +8,6 @@ A key to a Boolean value that indicates whether OpenGL ES performs format conver
 **Availability**:
 - iOS 9.0+
 - iPadOS 9.0+
-- Mac Catalyst 9.0+
 - tvOS 9.0+
 
 ## Declaration

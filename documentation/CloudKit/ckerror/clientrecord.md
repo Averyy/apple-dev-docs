@@ -24,7 +24,7 @@ var clientRecord: CKRecord? { get }
 
 This property’s value is available only when the error’s `code` is [`serverRecordChanged`](ckerror/serverrecordchanged.md), which indicates the server’s record is newer than the version you try to save. Use this property’s value, along with those of [`ancestorRecord`](ckerror/ancestorrecord.md) and [`serverRecord`](ckerror/serverrecord.md), to resolve the conflict.
 
-The error’s `userInfo` dictionary contains the same value as this property. you can access it using the [`CKRecordChangedErrorClientRecordKey`](ckrecordchangederrorclientrecordkey.md) key.
+The error’s `userInfo` dictionary contains the same value as this property. You can access it using the [`CKRecordChangedErrorClientRecordKey`](ckrecordchangederrorclientrecordkey.md) key.
 
 ## See Also
 

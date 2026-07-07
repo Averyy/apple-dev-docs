@@ -8,7 +8,6 @@ An error code that indicates the app is missing a Location Push Service Extensio
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst 15.0+
 
 ## Declaration
 

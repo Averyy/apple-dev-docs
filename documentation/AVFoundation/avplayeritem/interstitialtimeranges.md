@@ -8,7 +8,6 @@ An array of time ranges that identify interstitial content.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
 - tvOS ?+
 - visionOS 1.0+
 

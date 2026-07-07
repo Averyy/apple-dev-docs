@@ -66,7 +66,7 @@ This pattern applies to all Vision requests, whether you’re detecting faces, t
 - [struct DetectFaceCaptureQualityRequest](detectfacecapturequalityrequest.md)
   A request that produces a floating-point number that represents the capture quality of a face in a photo.
 - [struct DetectFaceLandmarksRequest](detectfacelandmarksrequest.md)
-  An image-analysis request that finds facial features like eyes and mouth in an image.
+  An image analysis request that finds facial features like eyes and mouth in an image.
 - [struct DetectFaceRectanglesRequest](detectfacerectanglesrequest.md)
   A request that finds faces within an image.
 ### Image segmentation and subject lifting
@@ -78,6 +78,8 @@ This pattern applies to all Vision requests, whether you’re detecting faces, t
   A request that produces a mask of individual people it finds in the input image.
 - [class GeneratePersonSegmentationRequest](generatepersonsegmentationrequest.md)
   A request that produces a matte image for a person it finds in the input image.
+- [class GenerateIterativeSegmentationRequest](generateiterativesegmentationrequest.md)
+  A request that generates a segmentation mask from points, a rectangle, or a scribble.
 ### Pose analysis
 - [struct DetectAnimalBodyPoseRequest](detectanimalbodyposerequest.md)
   A request that detects an animal body pose.
@@ -122,7 +124,7 @@ This pattern applies to all Vision requests, whether you’re detecting faces, t
 - [class DetectTrajectoriesRequest](detecttrajectoriesrequest.md)
   A request that detects the trajectories of shapes moving along a parabolic path.
 - [class TrackObjectRequest](trackobjectrequest.md)
-  An image-analysis request that tracks the movement of a previously identified object across multiple images or video frames.
+  An image analysis request that tracks the movement of a previously identified object across multiple images or video frames.
 - [class TrackOpticalFlowRequest](trackopticalflowrequest.md)
   A request that determines the direction change of vectors for each pixel from a previous to current image.
 - [class TrackRectangleRequest](trackrectanglerequest.md)
@@ -137,6 +139,11 @@ This pattern applies to all Vision requests, whether you’re detecting faces, t
 ### Custom Core ML integration
 - [struct CoreMLRequest](coremlrequest.md)
   An image-analysis request that uses a Core ML model to process images.
+### Foundation Models integration
+- [struct BarcodeReaderTool](barcodereadertool.md)
+  A tool that scans machine-readable codes in an image.
+- [struct OCRTool](ocrtool.md)
+  A tool that recognizes text in an image.
 ### Protocols
 - [protocol ImageProcessingRequest](imageprocessingrequest.md)
   A type for image-analysis requests that focus on a specific part of an image.
@@ -151,6 +158,9 @@ This pattern applies to all Vision requests, whether you’re detecting faces, t
 - [protocol VisionRequest](visionrequest.md)
   A type for image-analysis requests.
 - [protocol DownloadableAssetsRequest](downloadableassetsrequest.md)
+  A request whose execution depends on assets that may need to be downloaded.
+- [enum DownloadableAssetsRequestStatus](downloadableassetsrequeststatus.md)
+  The status of the assets required by a [`DownloadableAssetsRequest`](downloadableassetsrequest.md).
 ### Request handlers
 - [class ImageRequestHandler](imagerequesthandler.md)
   An object that processes one or more image-analysis requests pertaining to a single image.
@@ -180,16 +190,6 @@ This pattern applies to all Vision requests, whether you’re detecting faces, t
   The errors that the framework produces.
 ### Legacy API
 - [Original Objective-C and Swift API](original-objective-c-and-swift-api.md)
-### Classes
-- [class GenerateIterativeSegmentationRequest](generateiterativesegmentationrequest.md)
-  Generates a segmentation mask based on the provided points, rectangle, or scribble The request supports a maximum of 13 points or 11 points and a box
-### Structures
-- [struct BarcodeReaderTool](barcodereadertool.md)
-  A tool that scans machine-readable codes in an image.
-- [struct OCRTool](ocrtool.md)
-  A tool that recognizes text in an image.
-### Enumerations
-- [enum DownloadableAssetsRequestStatus](downloadableassetsrequeststatus.md)
 
 
 ---

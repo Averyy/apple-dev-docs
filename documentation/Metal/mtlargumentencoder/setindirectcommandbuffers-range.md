@@ -8,7 +8,7 @@ Encodes an array of indirect command buffers into the argument buffer.
 **Availability**:
 - iOS 12.0+
 - iPadOS 12.0+
-- Mac Catalyst ?+
+- Mac Catalyst 12.0+
 - macOS 10.14+
 - tvOS 12.0+
 - visionOS ?+

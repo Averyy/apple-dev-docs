@@ -18,7 +18,7 @@ class var quinarySystemFill: NSColor { get }
 
 - [class var quaternarySystemFill: NSColor](nscolor/quaternarysystemfill.md)
   A color appropriate for filling large areas, such as a group box or tab pane.
-- [class var quinaryLabel: NSColor](nscolor/quinarylabel.md)
+- [static var quinaryLabel: NSColor](nscolor/quinarylabel.md)
 - [class var secondarySystemFill: NSColor](nscolor/secondarysystemfill.md)
   A color appropriate for filling small-size shapes, such as the backing of a progress indicator.
 - [class var systemFill: NSColor](nscolor/systemfill.md)

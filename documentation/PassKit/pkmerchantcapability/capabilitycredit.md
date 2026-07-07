@@ -6,7 +6,7 @@
 **Availability**:
 - iOS 9.0+
 - iPadOS 9.0+
-- Mac Catalyst ?+
+- Mac Catalyst 9.0+
 - macOS 11.0+
 - visionOS ?+
 - watchOS 3.0+

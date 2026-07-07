@@ -42,8 +42,6 @@ let b = a + CollectionOfOne(toAdd)
   A mutable span over the single element of this collection.
 - [var span: Span<Element>](collectionofone/span.md)
   A span over the single element of this collection.
-### Instance Methods
-- [func withBytes<R, E>((RawSpan) throws(E) -> R) throws(E) -> R](collectionofone/withbytes(_:).md)
 ### Default Implementations
 - [BidirectionalCollection Implementations](collectionofone/bidirectionalcollection-implementations.md)
 - [Collection Implementations](collectionofone/collection-implementations.md)

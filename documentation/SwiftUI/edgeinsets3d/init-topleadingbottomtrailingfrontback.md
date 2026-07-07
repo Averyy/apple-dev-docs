@@ -11,6 +11,7 @@ Creates an `EdgeInsets3D` value with values provided for each face.
 ## Declaration
 
 ```swift
+@export(implementation)
 init(top: CGFloat = 0, leading: CGFloat = 0, bottom: CGFloat = 0, trailing: CGFloat = 0, front: CGFloat = 0, back: CGFloat = 0)
 ```
 

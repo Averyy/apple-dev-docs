@@ -8,7 +8,6 @@ The coefficient describing contraction and compression of both closed lips.
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

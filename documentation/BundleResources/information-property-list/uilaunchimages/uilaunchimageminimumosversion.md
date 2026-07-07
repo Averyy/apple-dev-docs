@@ -8,7 +8,6 @@ A string representing the minimum iOS version number for which the image is inte
 **Availability**:
 - iOS 7.0+
 - iPadOS 7.0+
-- Mac Catalyst 7.0+
 - tvOS 9.0+
 
 

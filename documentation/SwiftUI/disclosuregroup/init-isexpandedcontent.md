@@ -3,32 +3,32 @@
 **Framework**: SwiftUI  
 **Kind**: init
 
-Creates a disclosure group, using a provided localized string key to create a text view for the label, and a binding to the expansion state (expanded or collapsed).
+Creates a disclosure group, using a provided localized string resource to create a text view for the label, and a binding to the expansion state (expanded or collapsed).
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
+- iOS 16.0+
+- iPadOS 16.0+
+- Mac Catalyst 16.0+
+- macOS 13.0+
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
-nonisolated
-init(_ titleKey: LocalizedStringKey, isExpanded: Binding<Bool>, @ContentBuilder content: @escaping () -> Content)
+@export(implementation)
+nonisolated init(_ titleResource: LocalizedStringResource, isExpanded: Binding<Bool>, @ContentBuilder content: @escaping () -> Content)
 ```
 
 ## Parameters
 
-- `titleKey`: The key for the localized label of `self` that describes the content of the disclosure group.
+- `titleResource`: The localized label of `self` that describes the content of the disclosure group.
 - `isExpanded`: A binding to a Boolean value that determines the group’s expansion state (expanded or collapsed).
 - `content`: The content shown when the disclosure group expands.
 
 ## See Also
 
 - [init(_:content:)](disclosuregroup/init(_:content:).md)
-  Creates a disclosure group, using a provided localized string key to create a text view for the label.
+  Creates a disclosure group, using a provided localized string resource to create a text view for the label.
 - [init(content: () -> Content, label: () -> Label)](disclosuregroup/init(content:label:).md)
   Creates a disclosure group with the given label and content views.
 - [init(isExpanded: Binding<Bool>, content: () -> Content, label: () -> Label)](disclosuregroup/init(isexpanded:content:label:).md)

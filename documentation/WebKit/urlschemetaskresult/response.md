@@ -8,7 +8,7 @@ The response to return to WebKit. The response value must include the MIME type 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst 26.0+
 - macOS 26.0+
 - visionOS 26.0+
 

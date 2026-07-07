@@ -1,6 +1,6 @@
 # resetRandomSeeds(using:)
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: method
 
 Resets random seeds using the provided randomness function.
@@ -12,7 +12,7 @@ Resets random seeds using the provided randomness function.
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 ## Declaration
 

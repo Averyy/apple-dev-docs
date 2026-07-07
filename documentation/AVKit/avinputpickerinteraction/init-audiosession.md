@@ -8,7 +8,6 @@ Creates a new instance of AVInputPickerInteraction using a specific `AVAudioSess
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst 26.0+
 
 ## Declaration
 

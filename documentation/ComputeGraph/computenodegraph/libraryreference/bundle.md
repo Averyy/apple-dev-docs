@@ -1,6 +1,6 @@
 # bundle
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: property
 
 The bundle identifier used to scope shader function lookup, or `nil` if the library does not require one.
@@ -12,7 +12,7 @@ The bundle identifier used to scope shader function lookup, or `nil` if the libr
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 ## Declaration
 

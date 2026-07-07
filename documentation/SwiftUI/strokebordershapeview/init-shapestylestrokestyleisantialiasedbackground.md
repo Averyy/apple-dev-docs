@@ -17,8 +17,8 @@ Create a stroke border shape.
 ## Declaration
 
 ```swift
-nonisolated
-init(shape: Content, style: Style, strokeStyle: StrokeStyle, isAntialiased: Bool, background: Background)
+@export(implementation)
+nonisolated init(shape: Content, style: Style, strokeStyle: StrokeStyle, isAntialiased: Bool, background: Background)
 ```
 
 

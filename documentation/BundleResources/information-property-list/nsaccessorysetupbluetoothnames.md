@@ -8,7 +8,6 @@ An array of strings that represent the Bluetooth device names or substrings for 
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 
 
 

@@ -8,7 +8,7 @@ The methods adopted by the object you use to make items in a collection view dis
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
-- Mac Catalyst ?+
+- Mac Catalyst 18.4+
 - tvOS 18.4+
 - visionOS 2.4+
 

@@ -17,6 +17,7 @@ A content transition that applies the default symbol effect transition to symbol
 ## Declaration
 
 ```swift
+@export(implementation)
 static var symbolEffect: ContentTransition { get }
 ```
 

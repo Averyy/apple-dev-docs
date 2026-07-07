@@ -8,7 +8,7 @@ Asks the system to activate an existing scene or create a new scene and associat
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst ?+
+- Mac Catalyst 17.0+
 - tvOS 17.0+
 - visionOS ?+
 

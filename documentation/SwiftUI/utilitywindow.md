@@ -57,7 +57,7 @@ struct PhotoInfoViewer: View {
 
 ### Initializers
 - [init(_:id:content:)](utilitywindow/init(_:id:content:).md)
-  Creates a utility window with a title and identifier.
+  Creates a utility window with a localized title and identifier.
 
 ## Relationships
 

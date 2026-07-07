@@ -107,12 +107,12 @@ Specify `com.apple.wifi.managed` as the payload type.
 
 ## Properties
 
-- `AllowJoinBeforeFirstUnlock` (boolean): If `true`, the device makes this network available for joining before the device is unlocked for the first time following a reboot, on a device configured for return to service. Any network credentials are placed into Class D storage within the keychain, and information about the network is stored on disk in Class D. There are several restrictions on the use of this flag: - This property is only available in the return to service mode.
-- Only one network can be designated as available before first unlock.
+- `AllowJoinBeforeFirstUnlock` (boolean): If `true`, the device makes this network available for joining before the device is unlocked for the first time following a reboot, on a device configured for return to service. The device places any network credentials into Class D storage within the keychain and stores information about the network on disk in Class D. There are several restrictions on the use of this flag: - This property is only available in the return to service mode.
+- You can designate only one network as available before first unlock.
 - `EAPClientConfiguration` must not be present.
 - If `IsHotspot` is present, it must be set to `false`.
 - `QoSMarkingPolicy` must not be present.
-- If `ProxyType` is present, it must be set to `None`. The device fails to install the profile payload if any of these conditions are not met. Available: visionOS 26+
+- If `ProxyType` is present, it must be set to `None`. The device fails to install the profile payload if any of these conditions aren’t met. Available: visionOS 26+
 - `AutoJoin` (boolean): If `true`, the device joins the network automatically. If `false`, the user must tap the network name to join it. Available: iOS 5+ | iPadOS 5+ | macOS 10.7+ | tvOS 9+ | visionOS 1+ | watchOS 3.2+
 - `CaptiveBypass` (boolean): If `true`, the system bypasses Captive Network detection when the device connects to the network. Available: iOS 10+ | iPadOS 10+ | tvOS 9+ | visionOS 1+ | watchOS 3.2+
 - `DisableAssociationMACRandomization` (boolean): If `true,` disables MAC address randomization for a Wi-Fi network while associated with that network. This feature also shows a privacy warning in Settings indicating that the network has reduced privacy protections. If `false`, then the system enables MAC address randomization on iOS, watchOS, and visionOS. This value is only locked when MDM installs the profile. If the profile is manually installed, the system sets the value but the user can change it. Available: iOS 14+ | iPadOS 14+ | macOS 15+ | visionOS 1+ | watchOS 7+

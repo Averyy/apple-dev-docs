@@ -8,7 +8,6 @@ An object that enables you to alter the appearance of a frame’s captured image
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
 
 ## Declaration
 

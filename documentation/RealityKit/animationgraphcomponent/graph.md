@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: property
 
-Returns the animation graph resource associated with this component.
+The compiled animation graph that backs this component.
 
 **Availability**:
 - iOS 27.0+ (Beta)

@@ -8,7 +8,6 @@ Adds an action to perform before withdrawing an assigned document submission.
 **Availability**:
 - iOS 26.4+
 - iPadOS 26.4+
-- Mac Catalyst 26.4+
 - macOS 26.4+
 - visionOS 26.4+
 

@@ -8,7 +8,6 @@ Describes the interleaved memory layout of an ndArray dimension.
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 
@@ -54,9 +53,9 @@ When `factor` does not divide the dimension size evenly, the shape/stride equiva
 
 ## Topics
 
-### Initializers
+### Creating a layout
 - [init(dimension: Int, factor: Int)](ndarray/interleavelayout-swift.struct/init(dimension:factor:).md)
-### Instance Properties
+### Inspecting the layout
 - [var dimension: Int](ndarray/interleavelayout-swift.struct/dimension.md)
   The index of the interleaved dimension.
 - [var factor: Int](ndarray/interleavelayout-swift.struct/factor.md)

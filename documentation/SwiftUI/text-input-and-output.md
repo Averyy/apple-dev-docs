@@ -156,7 +156,7 @@ For design guidance, see [`Typography`](https://developer.apple.com/design/Human
   An environment value that indicates how a text view aligns its lines when the content wraps or contains newlines.
 ### Formatting date and time
 - [enum SystemFormatStyle](systemformatstyle.md)
-  A collection of format styles for displaying live-updating time information in [`Text`](text.md) views.
+  A collection of format styles for displaying live-updating time information in text views.
 - [struct TimeDataSource](timedatasource.md)
   A source of time related data.
 ### Managing text entry

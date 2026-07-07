@@ -8,7 +8,7 @@ Horizontal field of view in thousandths of a degree (i.e., 123456 is 123.456 deg
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst ?+
+- Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
 - visionOS 1.0+

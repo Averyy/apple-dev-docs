@@ -21,7 +21,8 @@ var action: LanguageModelExecutorGenerationChannel.Response.Action
 
 ## See Also
 
-- [LanguageModelExecutorGenerationChannel.Response.Action](languagemodelexecutorgenerationchannel/response/action-swift.enum.md)
+- [LanguageModelExecutorGenerationChannel.Response.Action](languagemodelexecutorgenerationchannel/response/action-swift.struct.md)
+  An operation that can be performed on a response entry.
 - [var entryID: String?](languagemodelexecutorgenerationchannel/response/entryid.md)
   The identifier for the entry.
 - [LanguageModelExecutorGenerationChannel.TextSegmentReplacement](languagemodelexecutorgenerationchannel/textsegmentreplacement.md)

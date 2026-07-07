@@ -8,7 +8,6 @@ A value provided in the SwiftUI environment that views can use to perform author
 **Availability**:
 - iOS 16.4+
 - iPadOS 16.4+
-- Mac Catalyst 16.4+
 - macOS 13.3+
 - tvOS 16.4+
 - watchOS 9.4+

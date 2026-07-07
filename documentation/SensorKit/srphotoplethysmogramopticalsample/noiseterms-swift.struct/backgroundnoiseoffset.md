@@ -8,7 +8,6 @@ The white noise variance estimate in the background noise signal.
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
-- Mac Catalyst 17.4+
 
 ## Declaration
 

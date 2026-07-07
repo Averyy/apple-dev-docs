@@ -45,7 +45,7 @@ If the caller attempts to set an attribute not supported by the on-disk file sys
 - [FSItem.SetAttributesRequest](fsitem/setattributesrequest.md)
   A request to set attributes on an item.
 - [class FSSetAttributesResult](fssetattributesresult.md)
-  The result of a set-attributes call.
+  The restlt of a set-attributes call.
 
 
 ---

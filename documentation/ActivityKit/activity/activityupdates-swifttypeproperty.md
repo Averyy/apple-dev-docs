@@ -8,7 +8,6 @@ An asynchronous sequence you use to observe changes to ongoing Live Activities a
 **Availability**:
 - iOS 16.1+
 - iPadOS 16.1+
-- Mac Catalyst 16.1+
 
 ## Declaration
 

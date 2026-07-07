@@ -37,6 +37,8 @@ $ tccutil reset SystemPolicyDesktopFolder <bundleID>
   A message that tells people why the app needs access to files on a removable volume.
 - [NSFileProviderDomainUsageDescription](information-property-list/nsfileproviderdomainusagedescription.md)
   A message that tells people why the app needs access to files managed by a file provider.
+- [NSFileProviderPresenceUsageDescription](information-property-list/nsfileproviderpresenceusagedescription.md)
+  A message that tells people why the app’s file provider needs to determine which files the person is currently accessing.
 
 
 ---

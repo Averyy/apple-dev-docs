@@ -17,6 +17,7 @@ A radial gradient.
 ## Declaration
 
 ```swift
+@export(implementation)
 static func radialGradient(_ gradient: AnyGradient, center: UnitPoint = .center, startRadius: CGFloat = 0, endRadius: CGFloat) -> some ShapeStyle
 ```
 

@@ -8,7 +8,6 @@ Configurations for scenes that you use to display template content on a CarPlay-
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst 13.0+
 
 
 

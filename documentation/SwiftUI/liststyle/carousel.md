@@ -11,6 +11,7 @@ The carousel list style.
 ## Declaration
 
 ```swift
+@export(implementation)
 static var carousel: CarouselListStyle { get }
 ```
 

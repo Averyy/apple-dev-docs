@@ -29,6 +29,7 @@ Attach a navigation mesh component to an entity to supply the walkable surfaces 
 - [init(navigationMeshes: [NavigationMeshResource])](navigationmeshcomponent/init(navigationmeshes:).md)
 ### Accessing the navigation meshes
 - [var navigationMeshes: [NavigationMeshResource]](navigationmeshcomponent/navigationmeshes.md)
+  The set of NavigationMeshResources.
 
 ## Relationships
 

@@ -8,7 +8,6 @@ Converts a position in the framework’s local coordinate system to latitude, lo
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
 
 ## Declaration
 

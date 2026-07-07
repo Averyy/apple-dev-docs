@@ -15,6 +15,7 @@ Builds an availability check within the builder
 ## Declaration
 
 ```swift
+@export(implementation)
 static func buildLimitedAvailability(_ widget: some ControlWidget) -> any Widget & _LimitedAvailabilityWidgetMarker
 ```
 
@@ -23,7 +24,6 @@ static func buildLimitedAvailability(_ widget: some ControlWidget) -> any Widget
 - [static func buildBlock() -> some Widget](widgetbundlebuilder/buildblock.md)
   Builds an empty Widget from a block containing no statements, `{ }`.
 - [static buildBlock(_:)](widgetbundlebuilder/buildblock(_:).md)
-  Builds a single Widget written as a child view (e..g, `{ MyWidget() }`) through unmodified.
 - [static buildExpression(_:)](widgetbundlebuilder/buildexpression(_:).md)
   Builds an expression within the builder.
 - [static func buildOptional((any Widget & _LimitedAvailabilityWidgetMarker)?) -> some Widget](widgetbundlebuilder/buildoptional(_:).md)

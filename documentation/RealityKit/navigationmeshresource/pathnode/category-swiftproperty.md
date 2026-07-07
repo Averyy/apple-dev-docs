@@ -3,6 +3,8 @@
 **Framework**: RealityKit  
 **Kind**: property
 
+The category of the node.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -20,6 +22,7 @@ var category: NavigationMeshResource.PathNode.Category
 ## See Also
 
 - [NavigationMeshResource.PathNode.Category](navigationmeshresource/pathnode/category-swift.enum.md)
+  The categories of path nodes.
 
 
 ---

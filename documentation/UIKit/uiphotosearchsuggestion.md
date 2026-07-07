@@ -8,7 +8,6 @@ An input suggestion that carries photo search metadata for people, subjects, loc
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 
 ## Declaration
 

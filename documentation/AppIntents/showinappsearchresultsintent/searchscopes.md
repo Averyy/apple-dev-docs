@@ -9,7 +9,7 @@ Values that help the system understand the scope of an app intent that shows the
 **Availability**:
 - iOS 17.2+
 - iPadOS 17.2+
-- Mac Catalyst ?+
+- Mac Catalyst 17.2+
 - macOS 14.2+
 - tvOS 17.2+
 - visionOS ?+

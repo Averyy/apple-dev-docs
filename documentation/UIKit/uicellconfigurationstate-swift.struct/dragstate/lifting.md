@@ -8,7 +8,7 @@ A user interaction is lifting the cell, but it isn’t yet part of an active dra
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst ?+
+- Mac Catalyst 14.0+
 - tvOS 14.0+
 - visionOS ?+
 

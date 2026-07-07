@@ -8,7 +8,7 @@ Types that support discrete Fourier transform operations.
 **Availability**:
 - iOS 13.0+ - Deprecated
 - iPadOS 13.0+ - Deprecated
-- Mac Catalyst ?+
+- Mac Catalyst 13.0+ - Deprecated
 - macOS 10.15+ - Deprecated
 - tvOS 13.0+ - Deprecated
 - visionOS ?+

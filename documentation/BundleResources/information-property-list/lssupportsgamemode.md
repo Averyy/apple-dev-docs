@@ -8,7 +8,6 @@ A Boolean value indicating whether the app supports Game Mode.
 **Availability**:
 - iOS 18.6+
 - iPadOS 18.6+
-- Mac Catalyst 18.6+
 - macOS 26.0+
 
 

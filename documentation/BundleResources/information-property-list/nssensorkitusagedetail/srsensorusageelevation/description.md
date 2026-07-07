@@ -8,7 +8,6 @@ An explanatory string that details the manner in which your study uses the senso
 **Availability**:
 - iOS 15.4+
 - iPadOS 15.4+
-- Mac Catalyst 15.4+
 
 
 

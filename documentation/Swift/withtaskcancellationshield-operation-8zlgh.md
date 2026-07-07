@@ -84,6 +84,11 @@ await withTaskGroup(of: Void.self) { group in
 }
 ```
 
+## See Also
+
+- [func withTaskCancellationShield<Value, Failure>(operation: () throws(Failure) -> Value) throws(Failure) -> Value](withtaskcancellationshield(operation:)-2lzl8.md)
+  Enters a scope in which a task cancellation shield is active.
+
 
 ---
 

@@ -8,7 +8,6 @@ A string that contains the message’s text.
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
-- Mac Catalyst 18.4+
 
 ## Declaration
 

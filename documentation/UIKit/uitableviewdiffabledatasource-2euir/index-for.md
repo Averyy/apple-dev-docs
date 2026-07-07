@@ -8,7 +8,7 @@ Returns an index for the section with the identifier you specify in the table vi
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst ?+
+- Mac Catalyst 15.0+
 - tvOS 15.0+
 - visionOS ?+
 

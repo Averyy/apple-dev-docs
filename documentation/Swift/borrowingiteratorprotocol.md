@@ -38,6 +38,14 @@ protocol BorrowingIteratorProtocol<Element> : ~Copyable, ~Escapable
 - [BorrowingIteratorAdapter](borrowingiteratoradapter.md)
 - [SpanIterator](spaniterator.md)
 
+## See Also
+
+- [protocol IteratorProtocol](iteratorprotocol.md)
+  A type that supplies the values of a sequence one at a time.
+- [struct BorrowingIteratorAdapter](borrowingiteratoradapter.md)
+- [protocol BorrowingSequence](borrowingsequence.md)
+  A type that provides sequential, borrowing access to its elements.
+
 
 ---
 

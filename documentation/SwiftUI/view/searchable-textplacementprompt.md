@@ -6,19 +6,19 @@
 Marks this view as searchable, which configures the display of a search field.
 
 **Availability**:
-- iOS 15.0+
-- iPadOS 15.0+
-- Mac Catalyst 15.0+
-- macOS 12.0+
-- tvOS 15.0+
+- iOS 16.0+
+- iPadOS 16.0+
+- Mac Catalyst 16.0+
+- macOS 13.0+
+- tvOS 16.0+
 - visionOS 1.0+
-- watchOS 8.0+
+- watchOS 9.0+
 
 ## Declaration
 
 ```swift
-nonisolated
-func searchable(text: Binding<String>, placement: SearchFieldPlacement = .automatic, prompt: LocalizedStringKey) -> some View
+@export(implementation)
+nonisolated func searchable(text: Binding<String>, placement: SearchFieldPlacement = .automatic, prompt: LocalizedStringResource) -> some View
 ```
 
 ## Mentions
@@ -35,7 +35,7 @@ For more information about using searchable modifiers, see [`Adding a search int
 
 - `text`: The text to display and edit in the search field.
 - `placement`: The preferred placement of the search field within the containing view hierarchy.
-- `prompt`: The key for the localized prompt of the search field which provides users with guidance on what to search for.
+- `prompt`: Text resource for the localized prompt of the search field which provides users with guidance on what to search for.
 
 ## See Also
 

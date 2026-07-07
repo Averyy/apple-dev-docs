@@ -6,13 +6,16 @@
 Presents a confirmation dialog when a dismiss action has been triggered.
 
 **Availability**:
+- iOS 27.0+ (Beta)
+- iPadOS 27.0+ (Beta)
+- Mac Catalyst 27.0+ (Beta)
 - macOS 15.0+
 
 ## Declaration
 
 ```swift
-nonisolated
-func dismissalConfirmationDialog<A, M>(_ title: Text, shouldPresent: Bool, @ContentBuilder actions: () -> A, @ContentBuilder message: () -> M) -> some View where A : View, M : View
+@export(implementation)
+nonisolated func dismissalConfirmationDialog<A, M>(_ titleResource: LocalizedStringResource, shouldPresent: Bool, @ContentBuilder actions: () -> A, @ContentBuilder message: () -> M) -> some View where A : View, M : View
 ```
 
 #### Discussion
@@ -59,7 +62,7 @@ On iOS, in addition to the standard cancellation action, the dismissal dialog al
 
 ## Parameters
 
-- `title`: The title of the dialog.
+- `titleResource`: Text resource for the localized string that describes the title of the dialog.
 - `shouldPresent`: A Boolean value that determines whether to present the dialog upon dismissal.
 - `actions`: A content builder returning the dialog’s actions.
 - `message`: A content builder returning the message for the dialog.
@@ -67,9 +70,9 @@ On iOS, in addition to the standard cancellation action, the dismissal dialog al
 ## See Also
 
 - [func confirmationDialog(_:isPresented:titleVisibility:actions:message:)](view/confirmationdialog(_:ispresented:titlevisibility:actions:message:).md)
-  Presents a confirmation dialog with a message when a given condition is true, using a text view for the title.
+  Presents a confirmation dialog with a message when a given condition is true, using a localized string resource for the title.
 - [func confirmationDialog(_:isPresented:titleVisibility:presenting:actions:message:)](view/confirmationdialog(_:ispresented:titlevisibility:presenting:actions:message:).md)
-  Presents a confirmation dialog with a message using data to produce the dialog’s content and a text view for the message.
+  Presents a confirmation dialog with a message using data to produce the dialog’s content and a localized string resource for the title.
 
 
 ---

@@ -14,7 +14,7 @@
 ## Declaration
 
 ```swift
-associatedtype Source
+associatedtype Source = URL
 ```
 
 ## See Also

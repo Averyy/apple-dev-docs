@@ -8,7 +8,6 @@ Consume this value to access the underlying pixel buffer once any pending write 
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 
@@ -21,6 +20,11 @@ var pixelBuffer: CVMutablePixelBuffer? { get async throws }
 #### Return Value
 
 The underlying pixel buffer or `nil` if this was not an image value.
+
+## See Also
+
+- [var ndArray: NDArray?](inferencefunction/asyncmutablevalue/ndarray.md)
+  Consume this value to access the underlying NDArray once any pending write is complete.
 
 
 ---

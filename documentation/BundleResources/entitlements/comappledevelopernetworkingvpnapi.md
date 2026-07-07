@@ -8,7 +8,6 @@ The API an app can use to create and control a custom system VPN configuration.
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+
-- Mac Catalyst 8.0+
 - macOS 10.10+
 - visionOS 1.0+
 

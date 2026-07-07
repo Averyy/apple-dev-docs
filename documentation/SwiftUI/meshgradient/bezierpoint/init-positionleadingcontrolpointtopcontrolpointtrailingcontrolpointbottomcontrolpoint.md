@@ -17,6 +17,7 @@ Creates a new vertex.
 ## Declaration
 
 ```swift
+@export(implementation)
 init(position: SIMD2<Float>, leadingControlPoint: SIMD2<Float>, topControlPoint: SIMD2<Float>, trailingControlPoint: SIMD2<Float>, bottomControlPoint: SIMD2<Float>)
 ```
 

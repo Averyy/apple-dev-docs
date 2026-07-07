@@ -8,7 +8,6 @@ Disconnects the touch controller from the app, preventing its controls from bein
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst 26.0+
 
 ## Declaration
 

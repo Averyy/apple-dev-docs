@@ -8,7 +8,6 @@ The minimum number of bytes needed for storage with this descriptor’s shape an
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 
@@ -50,6 +49,11 @@ var outputs = inferenceFunction.run(inputs: inputs)
 ```
 
 `hasDynamicShape` must be false when accessing this property, as the size is unknown if there are dynamic shapes.
+
+## See Also
+
+- [var preferredStrides: [Int]](ndarraydescriptor/preferredstrides.md)
+  The strides that avoid data layout transformations during inference.
 
 
 ---

@@ -45,7 +45,7 @@ You tell the system about the app’s role with respect to the document type by 
 
 ## See Also
 
-- [init(allowCreating:editor:makeDocument:)](documentgroup/init(allowcreating:editor:makedocument:).md)
+- [init(allowCreating: Bool, editor: (Document) -> Content, makeDocument: (URLDocumentConfiguration, DocumentCreationContext) async throws -> Document)](documentgroup/init(allowcreating:editor:makedocument:).md)
   Creates a document group capable of creating, viewing, and editing documents.
 - [init(newDocument:editor:)](documentgroup/init(newdocument:editor:).md)
   Creates a document group for creating and editing file documents.

@@ -106,7 +106,7 @@ fragment float4 capturedImageFragmentShader(ImageColorInOut in [[stage_in]],
 }
 ```
 
-> **Note**:  Use the [`displayTransform(for:viewportSize:)`](arframe/displaytransform(for:viewportsize:).md) method to make sure the camera image covers the entire view. For example use of this method, as well as complete Metal pipeline setup code, see the full Xcode template. (Create a new iOS application with the Augmented Reality template, and choose Metal from the Content Technology popup menu.)
+> **Note**:  Use the `ARFrame/displayTransform(for:viewportSize:)` method to make sure the camera image covers the entire view. For example use of this method, as well as complete Metal pipeline setup code, see the full Xcode template. (Create a new iOS application with the Augmented Reality template, and choose Metal from the Content Technology popup menu.)
 
 ##### Track and Render Overlay Content
 

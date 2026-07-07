@@ -17,8 +17,8 @@ Creates a toolbar item with the specified placement and content, which allows fo
 ## Declaration
 
 ```swift
-nonisolated
-init(id: String, placement: ToolbarItemPlacement = .automatic, @ContentBuilder content: () -> Content)
+@export(implementation)
+nonisolated init(id: String, placement: ToolbarItemPlacement = .automatic, @ContentBuilder content: () -> Content)
 ```
 
 ## Parameters

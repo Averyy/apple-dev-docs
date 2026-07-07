@@ -99,6 +99,11 @@ A type conforming to this protocol inherits `@preconcurrency @MainActor` isolati
 ### Deprecated modifiers
 - [Deprecated modifiers](view-deprecated.md)
   Review unsupported modifiers and their replacements.
+### Instance Methods
+- [func toolbarMinimizationBehavior(ToolbarMinimizationBehavior, for: ToolbarPlacement...) -> some View](view/toolbarminimizationbehavior(_:for:).md)
+  Sets the minimize behavior for the specified bars.
+- [func toolbarMinimizationRestoration(ToolbarMinimizationRestoration, for: ToolbarPlacement...) -> some View](view/toolbarminimizationrestoration(_:for:).md)
+  Sets the restoration behavior for the specified bars during minimization.
 
 ## Relationships
 

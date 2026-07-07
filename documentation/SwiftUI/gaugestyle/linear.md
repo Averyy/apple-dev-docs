@@ -12,7 +12,7 @@ A gauge style that displays a bar with a marker that appears at a point along th
 
 ```swift
 @MainActor
-@preconcurrency static var linear: LinearGaugeStyle { get }
+@export(implementation) @preconcurrency static var linear: LinearGaugeStyle { get }
 ```
 
 #### Discussion

@@ -8,7 +8,6 @@ The coefficient describing a widening of the eyelids around the right eye.
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

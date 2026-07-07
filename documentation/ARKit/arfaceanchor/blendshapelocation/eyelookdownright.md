@@ -8,7 +8,6 @@ The coefficient describing movement of the right eyelids consistent with a downw
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

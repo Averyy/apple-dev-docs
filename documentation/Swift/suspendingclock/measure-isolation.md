@@ -3,8 +3,6 @@
 **Framework**: Swift  
 **Kind**: method
 
-Measure the elapsed time to execute an asynchronous closure.
-
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
@@ -18,15 +16,6 @@ Measure the elapsed time to execute an asynchronous closure.
 
 ```swift
 func measure(isolation: isolated (any Actor)? = #isolation, _ work: () async throws -> Void) async rethrows -> Self.Instant.Duration
-```
-
-#### Discussion
-
-```swift
-  let clock = ContinuousClock()
-  let elapsed = await clock.measure {
-     await someWork()
-  }
 ```
 
 

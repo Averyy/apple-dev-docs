@@ -8,7 +8,6 @@ A string containing the name of the image file.
 **Availability**:
 - iOS 7.0+
 - iPadOS 7.0+
-- Mac Catalyst 7.0+
 - tvOS 9.0+
 
 

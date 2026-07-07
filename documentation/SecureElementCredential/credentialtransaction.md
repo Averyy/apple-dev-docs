@@ -8,7 +8,6 @@ A transaction object for performing wired and contactless operations in SwiftUI 
 **Availability**:
 - iOS 18.1+
 - iPadOS 18.1+
-- Mac Catalyst 18.1+
 
 ## Declaration
 

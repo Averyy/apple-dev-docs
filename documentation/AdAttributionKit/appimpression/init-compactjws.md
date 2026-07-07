@@ -8,7 +8,7 @@ Creates a new app impression with the provided compact JSON Web Signature (JWS).
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
-- Mac Catalyst ?+
+- Mac Catalyst 17.4+
 
 ## Declaration
 

@@ -89,6 +89,7 @@ To learn more about the kinds of views that you use to display text and the ways
   Sets the direction of a selection or cursor relative to a text character.
 ### Data detection
 - [func dataDetection(DataDetector.MatchType, options: DataDetector.Options) -> some View](view/datadetection(_:options:).md)
+  Asynchronously detects data in the view’s content and styles them to indicate they are clickable.
 ### Text entry
 - [func autocorrectionDisabled(Bool) -> some View](view/autocorrectiondisabled(_:).md)
   Sets whether to disable autocorrection for this view.

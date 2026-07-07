@@ -17,20 +17,6 @@ func lookupItem(named name: FSFileName, in directory: FSItem, packer: FSExtentPa
 
 #### Discussion
 
-`::::: Swift ::::::::::`
-
-- reply: A block or closure to indicate success or failure. If lookup succeeds, pass an instance of [`FSLookupItemKOIOResult`](fslookupitemkoioresult.md) containing the found [`FSItem`](fsitem.md) together with its [`FSFileName`](fsfilename.md) (as saved within the file system) and its [`FSItem.Attributes`](fsitem/attributes.md), along with a `nil` error. If lookup fails, pass the relevant error as the second parameter; FSKit ignores the [`FSLookupItemKOIOResult`](fslookupitemkoioresult.md) instance in this case. For an `async` Swift implementation, there’s no reply handler; simply return the result instance or throw an error.
-
-`::::::::::::::::::::`
-
-`::::: ObjC ::::::::::`
-
-- result: A block or closure to indicate success or failure. If lookup succeeds, pass an instance of [`FSLookupItemKOIOResult`](fslookupitemkoioresult.md) containing the found [`FSItem`](fsitem.md) together with its [`FSFileName`](fsfilename.md) (as saved within the file system) and its [`FSItem.Attributes`](fsitem/attributes.md), along with a `nil` error. If lookup fails, pass the relevant error as the second parameter; FSKit ignores the [`FSLookupItemKOIOResult`](fslookupitemkoioresult.md) instance in this case. For an `async` Swift implementation, there’s no reply handler; simply return the result instance or throw an error.
-
-`::::::::::::::::::::`
-
-#### Discussion
-
 This method allows the module to opportunistically supply extents, avoiding future calls to [`blockmapFile(_:offset:length:flags:operationID:packer:replyHandler:)`](fsvolume/kerneloffloadediohandler/blockmapfile(_:offset:length:flags:operationid:packer:replyhandler:).md). Only perform this technique opportunistically. In particular, don’t perform additional I/O to fetch extent data.
 
 ## Parameters
@@ -39,6 +25,7 @@ This method allows the module to opportunistically supply extents, avoiding futu
 - `directory`: The directory in which to look up the file.
 - `packer`: An extent packer you use to pack the file’s allocated disk space.
 - `context`: An object that enables context-aware file system decisions throughout the operation.
+- `reply`: A block or closure to indicate success or failure. If lookup succeeds, pass an instance of [`FSLookupItemKOIOResult`](fslookupitemkoioresult.md) containing the found [`FSItem`](fsitem.md) together with its [`FSFileName`](fsfilename.md) (as saved within the file system) and its [`FSItem.Attributes`](fsitem/attributes.md), along with a `nil` error. If lookup fails, pass the relevant error as the second parameter; FSKit ignores the [`FSLookupItemKOIOResult`](fslookupitemkoioresult.md) instance in this case. For an `async` Swift implementation, there’s no reply handler; simply return the result instance or throw an error.
 
 ## See Also
 

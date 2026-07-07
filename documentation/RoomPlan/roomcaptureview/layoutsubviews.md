@@ -8,7 +8,6 @@ Instructs the view’s subviews to position within the view.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
 
 ## Declaration
 

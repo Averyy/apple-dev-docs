@@ -8,7 +8,6 @@ The unique identifier of the security domain you use to install the instance.
 **Availability**:
 - iOS 18.1+
 - iPadOS 18.1+
-- Mac Catalyst 18.1+
 
 ## Declaration
 

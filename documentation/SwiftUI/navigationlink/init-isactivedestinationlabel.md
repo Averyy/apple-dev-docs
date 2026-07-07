@@ -17,8 +17,8 @@ Creates a navigation link that presents the destination view when active.
 ## Declaration
 
 ```swift
-nonisolated
-init(isActive: Binding<Bool>, @ContentBuilder destination: () -> Destination, @ContentBuilder label: () -> Label)
+@export(implementation)
+nonisolated init(isActive: Binding<Bool>, @ContentBuilder destination: () -> Destination, @ContentBuilder label: () -> Label)
 ```
 
 ## Parameters

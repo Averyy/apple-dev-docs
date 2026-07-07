@@ -6,7 +6,7 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-Xcode 26.2 includes Swift 6.2.3 and SDKs for iOS 26.2, iPadOS 26.2, tvOS 26.2, macOS 26.2, and visionOS 26.2. Xcode 26.2 supports on-device debugging in iOS 15 and later, tvOS 15 and later, watchOS 8 and later, and visionOS. Xcode 26.2 requires a Mac running macOS Sequoia 15.6 or later.
+Xcode 26.2 includes Swift 6.2.3 and SDKs for iOS 26.2, iPadOS 26.2, tvOS 26.2, watchOS 26.2, macOS 26.2, and visionOS 26.2. Xcode 26.2 supports on-device debugging in iOS 15 and later, tvOS 15 and later, watchOS 8 and later, and visionOS. Xcode 26.2 requires a Mac running macOS Sequoia 15.6 or later.
 
 ##### Address Sanitizer
 

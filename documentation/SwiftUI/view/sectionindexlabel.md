@@ -17,8 +17,8 @@ Sets the label that is used in a section index to point to this section, typical
 ## Declaration
 
 ```swift
-nonisolated
-func sectionIndexLabel(_ label: Text?) -> some View
+@export(implementation)
+nonisolated func sectionIndexLabel(_ label: Text?) -> some View
 ```
 
 #### Discussion

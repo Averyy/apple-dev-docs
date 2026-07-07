@@ -8,7 +8,6 @@ An entitlement that enables someone’s head movement to determine the orientati
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 

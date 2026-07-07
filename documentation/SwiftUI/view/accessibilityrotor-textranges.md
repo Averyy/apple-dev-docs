@@ -17,8 +17,8 @@ Create an Accessibility Rotor with the specified user-visible label and entries 
 ## Declaration
 
 ```swift
-nonisolated
-func accessibilityRotor(_ label: LocalizedStringResource, textRanges: [Range<String.Index>]) -> some View
+@export(implementation)
+nonisolated func accessibilityRotor(_ label: LocalizedStringResource, textRanges: [Range<String.Index>]) -> some View
 ```
 
 #### Discussion

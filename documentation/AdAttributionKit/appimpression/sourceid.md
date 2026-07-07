@@ -8,7 +8,7 @@ A four-digit integer that ad networks define to represent the ad campaign.
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
-- Mac Catalyst ?+
+- Mac Catalyst 17.4+
 
 ## Declaration
 

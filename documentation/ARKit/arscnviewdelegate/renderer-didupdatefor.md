@@ -8,7 +8,6 @@ Tells the delegate that a SceneKit node’s properties have been updated to matc
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

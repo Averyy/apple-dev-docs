@@ -17,8 +17,8 @@ Sets a particular container value of a view.
 ## Declaration
 
 ```swift
-nonisolated
-func containerValue<V>(_ keyPath: WritableKeyPath<ContainerValues, V>, _ value: V) -> some View
+@export(implementation)
+nonisolated func containerValue<V>(_ keyPath: WritableKeyPath<ContainerValues, V>, _ value: V) -> some View
 ```
 
 #### Return Value

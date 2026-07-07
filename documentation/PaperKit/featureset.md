@@ -8,7 +8,6 @@ The features PaperKit supports in its UI and data models.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst 26.0+
 - macOS 26.0+
 - visionOS 26.0+
 

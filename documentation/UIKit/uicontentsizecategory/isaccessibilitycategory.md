@@ -8,7 +8,7 @@ A Boolean value that indicates whether the content size category is associated w
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst ?+
+- Mac Catalyst 11.0+
 - tvOS 11.0+
 - visionOS ?+
 

@@ -41,18 +41,18 @@ TableColumn("Given name", value: \.givenName)
 
 ### Creating an unsortable column
 - [init(_:value:)](tablecolumn/init(_:value:).md)
-  Creates an unsortable column that displays a string property with a text label.
+  Creates an unsortable column that displays a string property that generates its label from a localized string resource.
 - [init(_:content:)](tablecolumn/init(_:content:).md)
-  Creates an unsortable column with a text label
+  Creates an unsortable column that generates its label from a localized string resource.
 ### Creating a sortable column
 - [init(_:value:content:)](tablecolumn/init(_:value:content:).md)
-  Creates a sortable column for Boolean values with a text label.
+  Creates a sortable column for Boolean values that generates its label from a localized string resource.
 - [init(_:value:comparator:)](tablecolumn/init(_:value:comparator:).md)
-  Creates a sortable column that displays a string property and has a text label.
+  Creates a sortable column that displays a string property, and generates its label from a localized string resource.
 - [init(_:value:comparator:content:)](tablecolumn/init(_:value:comparator:content:).md)
-  Creates a sortable column with a text label.
+  Creates a sortable column that generates its label from a localized string resource.
 - [init(_:sortUsing:content:)](tablecolumn/init(_:sortusing:content:).md)
-  Creates a sortable column with text label.
+  Creates a sortable column that generates its label from a localized string resource.
 ### Setting the column width
 - [func width(CGFloat?) -> TableColumn<RowValue, Sort, Content, Label>](tablecolumn/width(_:).md)
   Creates a fixed width table column that isn’t user resizable.

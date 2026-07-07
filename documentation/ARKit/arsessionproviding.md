@@ -6,6 +6,8 @@
 An object that provides a session.
 
 **Availability**:
+- iOS ?+
+- iPadOS ?+
 - visionOS 1.0+
 
 ## Declaration

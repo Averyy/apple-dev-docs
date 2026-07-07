@@ -17,6 +17,7 @@ The list style that describes the behavior and appearance of a plain list.
 ## Declaration
 
 ```swift
+@export(implementation)
 static var plain: PlainListStyle { get }
 ```
 

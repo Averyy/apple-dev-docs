@@ -17,6 +17,7 @@ A linear gradient defined by a collection of color stops.
 ## Declaration
 
 ```swift
+@export(implementation)
 static func linearGradient(stops: [Gradient.Stop], startPoint: UnitPoint, endPoint: UnitPoint) -> LinearGradient
 ```
 

@@ -8,7 +8,6 @@ Presents a Quick Look preview of the URLs you provide.
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
 - macOS 11.0+
 
 ## Declaration

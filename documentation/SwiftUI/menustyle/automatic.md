@@ -17,7 +17,7 @@ The default menu style, based on the menu’s context.
 
 ```swift
 @MainActor
-@preconcurrency static var automatic: DefaultMenuStyle { get }
+@export(implementation) @preconcurrency static var automatic: DefaultMenuStyle { get }
 ```
 
 #### Discussion

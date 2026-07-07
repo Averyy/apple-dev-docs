@@ -112,7 +112,6 @@ destBytes[0..<n] = someBytes[n..<(n + n)]
   Moves every element of an initialized source buffer slice into the uninitialized memory referenced by this buffer, leaving the source memory uninitialized and this buffer’s memory initialized.
 - [func storeBytes<T>(of: T, toByteOffset: Int, as: T.Type)](unsafemutablerawbufferpointer/storebytes(of:tobyteoffset:as:).md)
   Stores a value’s bytes into the buffer pointer’s raw memory at the specified byte offset.
-- [func withBytes<R, E>((RawSpan) throws(E) -> R) throws(E) -> R](unsafemutablerawbufferpointer/withbytes(_:).md)
 - [func withMemoryRebound<T, E, Result>(to: T.Type, (UnsafeMutableBufferPointer<T>) throws(E) -> Result) throws(E) -> Result](unsafemutablerawbufferpointer/withmemoryrebound(to:_:).md)
   Executes the given closure while temporarily binding the buffer to instances of type `T`.
 ### Type Methods

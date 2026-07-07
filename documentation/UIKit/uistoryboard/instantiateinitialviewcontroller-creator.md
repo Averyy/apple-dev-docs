@@ -8,7 +8,7 @@ Creates the initial view controller from the storyboard and initializes it using
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst ?+
+- Mac Catalyst 13.0+
 - tvOS 13.0+
 - visionOS ?+
 

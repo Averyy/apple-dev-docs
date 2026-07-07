@@ -8,7 +8,7 @@ A Boolean value indicating whether the view modifies the font size of the text t
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst ?+
+- Mac Catalyst 17.0+
 - tvOS 17.0+
 - visionOS ?+
 

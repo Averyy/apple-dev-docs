@@ -8,7 +8,6 @@ Whether the speed of cloth bodies should be limited to improve self-collision ro
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 
 ## Declaration

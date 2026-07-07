@@ -8,7 +8,7 @@ Creates a web extension initialized with a specified resource base URL, which ca
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
-- Mac Catalyst ?+
+- Mac Catalyst 18.4+
 - macOS 15.4+
 - visionOS 2.4+
 

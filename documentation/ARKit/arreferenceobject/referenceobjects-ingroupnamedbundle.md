@@ -8,7 +8,6 @@ Loads all reference objects in the specified AR Resource Group in your Xcode pro
 **Availability**:
 - iOS 12.0+
 - iPadOS 12.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

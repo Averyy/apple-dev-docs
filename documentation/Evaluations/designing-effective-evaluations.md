@@ -71,9 +71,9 @@ Skipping systematic evaluation can quietly undermine your product in ways that d
 - **False confidence**: Passing a handful of manual checks can mask issues that surface under real-world usage. Five good results don’t tell you about the five hundred that fail.
 - **Inability to measure progress**: Without quantified scores, you cannot tell whether a change is a genuine improvement or simply a different set of tradeoffs. You lose the ability to compare approaches objectively.
 - **Erosion of user trust**: Inconsistent or incorrect outputs erode trust over time, sometimes from a single bad experience.
-- **Compounding drift**: Each unverified change compounds. Over weeks of development, your feature can drift far from its original quality bar without any single change appearing to be the cause.
+- **Compounding drift**: Each unverified change compounds. Over weeks of development, your feature can drift far from its original quality level without any single change appearing to be the cause.
 
-A quantified score for your feature’s performance means you can make objective decisions, track quality over time, compare different prompts or models, and set a clear bar for what “good enough to ship” means.
+A quantified score for your feature’s performance means you can make objective decisions, track quality over time, compare different prompts or models, and set a clear threshold for what “good enough to ship” means.
 
 #### Understand the Components of an Evaluation
 
@@ -147,6 +147,8 @@ Here are some additional safeguards:
 - **Watch for brittle fixes.** If a change requires very specific wording to work, it may be fragile. Prefer changes that teach the model a principle over changes that enumerate specific prohibitions.
 - **Test with new data periodically.** As real users interact with your feature, add fresh samples that you never tuned your prompt against. These are your best signal for generalization.
 
+To see these practices in use in a complete app, where a model as judge is calibrated against expert scores so you can trust it while iterating on a prompt, see [`Book Tracker: Using Evaluations to evaluate an intelligent feature`](book-tracker-using-evaluations-to-evaluate-an-intelligent-feature.md).
+
 #### Capture Result Failures to Prevent Regressions
 
 When you discover an input that your model handles poorly, add it to your dataset with the expected behavior documented. Over time, your dataset becomes a regression suite that prevents previously fixed issues from reappearing. For more information about structuring your dataset, see [`Designing datasets to test your feature`](designing-evaluation-datasets.md).
@@ -159,7 +161,7 @@ Here’s a straightforward workflow:
 4. You fix the issue (prompt change, model setting, or feature logic).
 5. The test case remains permanently, catching any future change that might reintroduce the problem.
 
-This creates an incrementing effect: your quality bar can only go up. Each failure you capture and fix becomes a permanent guard against regression.
+This creates an incrementing effect: your quality level can only go up. Each failure you capture and fix becomes a permanent guard against regression.
 
 #### Grow Your Evaluation Suite Over Time
 

@@ -8,7 +8,6 @@ A value describing the world mapping status for the area visible in a given fram
 **Availability**:
 - iOS 12.0+
 - iPadOS 12.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

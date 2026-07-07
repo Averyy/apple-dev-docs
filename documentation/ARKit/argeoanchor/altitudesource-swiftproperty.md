@@ -8,7 +8,6 @@ A record of the source from which an altitude came.
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
 
 ## Declaration
 

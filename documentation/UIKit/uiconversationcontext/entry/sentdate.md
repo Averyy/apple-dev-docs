@@ -8,7 +8,6 @@ A date that notes when the sender added the message to the conversation.
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
-- Mac Catalyst 18.4+
 
 ## Declaration
 

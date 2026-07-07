@@ -17,6 +17,7 @@ The scroll behavior that aligns scroll targets to view-based geometry.
 ## Declaration
 
 ```swift
+@export(implementation)
 static func viewAligned(anchor: UnitPoint?) -> Self
 ```
 

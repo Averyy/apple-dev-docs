@@ -15,6 +15,7 @@ A material matching the style of system toolbars.
 ## Declaration
 
 ```swift
+@export(implementation)
 static var bar: Material { get }
 ```
 

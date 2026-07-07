@@ -8,7 +8,6 @@ The user has access to free content with a valid account.
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 11.0+
 - macOS ?+
 - tvOS 11.0+
 - visionOS 1.0+

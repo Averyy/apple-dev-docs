@@ -8,7 +8,6 @@ A request to add an accessory to a particular home.
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+
-- Mac Catalyst 8.0+
 - visionOS 1.0+
 
 ## Declaration

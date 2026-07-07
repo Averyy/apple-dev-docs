@@ -8,7 +8,6 @@ A Boolean value that instructs a session to provide the app with the device’s 
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

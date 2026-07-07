@@ -10,7 +10,7 @@ A component that specifies a map of a projective texture or cookie light to use 
 - iPadOS 27.0+ (Beta)
 - Mac Catalyst 27.0+ (Beta)
 - macOS 27.0+ (Beta)
-- tvOS ?+
+- tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 
 ## Declaration
@@ -47,6 +47,8 @@ Cookie lights or projective lights in RealityKit are essentially a light mask ad
 
 ### Conforms To
 - [Component](component.md)
+- [Copyable](../Swift/Copyable.md)
+- [Escapable](../Swift/Escapable.md)
 
 ## See Also
 

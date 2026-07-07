@@ -8,7 +8,7 @@ The base class for the principal object of an app extension that configures a sh
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst ?+
+- Mac Catalyst 15.0+
 
 ## Declaration
 

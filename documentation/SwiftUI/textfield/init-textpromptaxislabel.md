@@ -37,9 +37,9 @@ Use the [`onSubmit(of:_:)`](view/onsubmit(of:_:).md) modifier to invoke an actio
 ## See Also
 
 - [init(_:text:axis:)](textfield/init(_:text:axis:).md)
-  Creates a text field with a preferred axis and a text label generated from a localized title string.
+  Creates a text field with a preferred axis and a text label generated from a localized title string resource.
 - [init(_:text:prompt:axis:)](textfield/init(_:text:prompt:axis:).md)
-  Creates a text field with a preferred axis and a text label generated from a localized title string.
+  Creates a text field with a preferred axis and a text label generated from a localized title string resource.
 
 
 ---

@@ -8,7 +8,6 @@ A style that you display inside of a checkout view that presents Apple Pay and o
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst 17.0+
 - visionOS ?+
 
 ## Declaration

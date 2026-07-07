@@ -8,7 +8,7 @@ Creates the description of an RGB image encoding in a Core Video pixel buffer fr
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst ?+
+- Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
 - visionOS ?+

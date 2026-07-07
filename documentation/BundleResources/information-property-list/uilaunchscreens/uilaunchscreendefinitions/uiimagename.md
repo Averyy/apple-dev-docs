@@ -8,7 +8,6 @@ The name of an image to display during app launch.
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
 
 
 

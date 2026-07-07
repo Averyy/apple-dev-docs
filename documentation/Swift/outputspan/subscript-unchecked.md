@@ -17,7 +17,7 @@ Accesses the element at the specified index.
 ## Declaration
 
 ```swift
-subscript(unchecked index: OutputSpan<Element>.Index) -> Element { get set }
+subscript(unchecked index: OutputSpan<Element>.Index) -> Element { borrow mutate }
 ```
 
 #### Overview

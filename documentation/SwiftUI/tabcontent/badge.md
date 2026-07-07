@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: method
 
-Generates a badge for a tab from an integer value.
+Generates a badge for the tab from a localized string resource.
 
 **Availability**:
 - iOS 18.0+
@@ -15,31 +15,33 @@ Generates a badge for a tab from an integer value.
 ## Declaration
 
 ```swift
-nonisolated
-func badge(_ count: Int) -> some TabContent<Self.TabValue>
+@export(implementation)
+nonisolated func badge(_ resource: LocalizedStringResource) -> some TabContent<Self.TabValue>
 ```
 
 #### Discussion
 
-Use a badge to convey optional, supplementary information about a view. The number provided will appear as a numerical indicator on the given tab.
+Use a badge to convey optional, supplementary information about a view. Keep the contents of the badge as short as possible. The string provided will appear as an indicator on the given tab.
 
-The following example shows a [`TabView`](tabview.md) with the value of `alerts.count` displayed as a badge on the alerts tab.
+This modifier creates a [`Text`](text.md) view on your behalf. For more information about localizing strings, see [`Text`](text.md). The following example shows a tab that has a “New Alerts” badge when there are new alerts.
 
 ```swift
-TabView {
-    Tab("Home", systemImage: "house") {
-        HomeView()
+var body: some View {
+    TabView {
+        Tab("Home", systemImage: "house") {
+            HomeView()
+        }
+        Tab("Alerts", systemImage: "bell") {
+            AlertsView()
+        }
+        .badge("New Alerts")
     }
-    Tab("Alerts", systemImage: "bell") {
-        AlertsView()
-    }
-    .badge(alerts.count)
 }
 ```
 
 ## Parameters
 
-- `count`: An integer value to display in the badge. Set the value to zero to hide the badge.
+- `resource`: A string resource to display as a badge.
 
 ## See Also
 

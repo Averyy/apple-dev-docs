@@ -8,7 +8,7 @@ A CSS media type as defined by the [`CSS specification`](https://developer.apple
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst 26.0+
 - macOS 26.0+
 - visionOS 26.0+
 

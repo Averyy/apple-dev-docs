@@ -8,7 +8,6 @@ An error that indicates the app lacks user permission for the microphone.
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

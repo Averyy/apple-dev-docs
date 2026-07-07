@@ -8,7 +8,6 @@ An object that processes one or more image-analysis requests pertaining to a sin
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -39,6 +38,8 @@ Instantiate this handler to perform Vision requests on a single image. You speci
   Creates a request handler that performs requests on an image contained within a sample buffer.
 - [convenience init(CIImage, orientation: CGImagePropertyOrientation?)](imagerequesthandler/init(_:orientation:)-2hvfr.md)
   Creates a handler for performing requests on Core Image images.
+- [convenience init(CVPixelBuffer, orientation: CGImagePropertyOrientation?)](imagerequesthandler/init(_:orientation:)-3zrh5.md)
+- [convenience init(CMSampleBuffer, orientation: CGImagePropertyOrientation?)](imagerequesthandler/init(_:orientation:)-8q7vz.md)
 ### Performing the request
 - [func perform<each T>(repeat each T) async throws -> (repeat (each T).Result)](imagerequesthandler/perform(_:)-l6er.md)
   Performs one or more framework requests on the handler’s image.
@@ -47,9 +48,6 @@ Instantiate this handler to perform Vision requests on a single image. You speci
 - [func performAll(some Collection<any VisionRequest>) -> some AsyncSequence<VisionResult, Never>
 ](imagerequesthandler/performall(_:).md)
   Schedules a collection of framework requests to perform on the handler’s image.
-### Initializers
-- [convenience init(CVPixelBuffer, orientation: CGImagePropertyOrientation?)](imagerequesthandler/init(_:orientation:)-3zrh5.md)
-- [convenience init(CMSampleBuffer, orientation: CGImagePropertyOrientation?)](imagerequesthandler/init(_:orientation:)-8q7vz.md)
 
 ## Relationships
 

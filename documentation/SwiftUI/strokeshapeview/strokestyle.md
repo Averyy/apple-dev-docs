@@ -17,8 +17,8 @@ The stroke style used when stroking this view’s shape.
 ## Declaration
 
 ```swift
-nonisolated
-var strokeStyle: StrokeStyle { get set }
+@export(implementation)
+nonisolated var strokeStyle: StrokeStyle { get set }
 ```
 
 ## See Also

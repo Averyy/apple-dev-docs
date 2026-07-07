@@ -3,6 +3,8 @@
 **Framework**: RealityKit  
 **Kind**: method
 
+Requests a pathfind from a given position to the target position.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -20,7 +22,9 @@ func requestPath(from startPosition: SIMD3<Float>, to targetPosition: SIMD3<Floa
 ## See Also
 
 - [func requestPath(to: SIMD3<Float>)](navigationcontroller/requestpath(to:).md)
+  Requests a pathfind from the owning entity’s position to the target position.
 - [func stopPathfind()](navigationcontroller/stoppathfind.md)
+  Cancels any in-progress pathfinds.
 
 
 ---

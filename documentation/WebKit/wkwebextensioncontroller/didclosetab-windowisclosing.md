@@ -8,7 +8,7 @@ Should be called by the app when a tab is closed to fire appropriate events with
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
-- Mac Catalyst ?+
+- Mac Catalyst 18.4+
 - macOS 15.4+
 - visionOS 2.4+
 

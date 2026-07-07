@@ -17,6 +17,7 @@ The amount of blue in the color in the extended sRGB color space variant with li
 ## Declaration
 
 ```swift
+@export(implementation)
 var linearBlue: Float { get set }
 ```
 

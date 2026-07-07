@@ -12,6 +12,7 @@ The plain window style.
 ## Declaration
 
 ```swift
+@export(implementation)
 static var plain: PlainWindowStyle { get }
 ```
 

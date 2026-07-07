@@ -62,7 +62,7 @@ object StatusContentCacheInfo
   The status item that reports information about the Content Cache service parent caches.
 - [object StatusContentCachePeers](statuscontentcachepeers.md)
   The status item that reports information about the Content Cache service peer caches.
-- [object StatusContentCacheService](statuscontentcacheservice.md)
+- [object StatusContentCacheStatus](statuscontentcachestatus.md)
   The status item that reports the status of the Content Cache service.
 
 

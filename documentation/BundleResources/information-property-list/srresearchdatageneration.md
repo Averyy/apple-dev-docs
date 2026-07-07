@@ -8,7 +8,6 @@ A Boolean value that indicates whether use of an app contributes data to SensorK
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst 17.0+
 
 
 

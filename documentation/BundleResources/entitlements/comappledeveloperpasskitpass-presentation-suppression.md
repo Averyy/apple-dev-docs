@@ -8,7 +8,6 @@ An entitlement that prevents the system from initiating Apple Pay while the app 
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst 15.0+
 - watchOS 8.0+
 
 

@@ -17,6 +17,7 @@ A value that says whether a built-in navigation link would show a disclosure ind
 ## Declaration
 
 ```swift
+@export(implementation)
 var navigationLinkIndicatorVisibility: Visibility { get }
 ```
 

@@ -8,7 +8,6 @@ System interpreted user info key When setting a value to that user info on a dom
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst 26.0+
 - macOS 26.0+
 - visionOS 26.0+
 

@@ -8,7 +8,7 @@ Returns a Boolean value that indicates whether the trait overrides contain a cha
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst ?+
+- Mac Catalyst 17.0+
 - tvOS 17.0+
 - visionOS ?+
 

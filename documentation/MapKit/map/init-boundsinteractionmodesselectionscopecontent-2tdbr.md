@@ -8,7 +8,7 @@ Creates a new map with the bounds, interaction modes, selected value, scope, and
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst ?+
+- Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
 - visionOS ?+

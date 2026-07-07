@@ -1,6 +1,6 @@
 # ComputeNodeGraph.Topology
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: enum
 
 The primitive topology used to assemble output geometry for an output stage.
@@ -12,7 +12,7 @@ The primitive topology used to assemble output geometry for an output stage.
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 ## Declaration
 

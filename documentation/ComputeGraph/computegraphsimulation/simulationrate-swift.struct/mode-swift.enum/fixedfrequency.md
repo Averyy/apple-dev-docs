@@ -1,6 +1,6 @@
 # ComputeGraphSimulation.SimulationRate.Mode.fixedFrequency
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: case
 
 Simulate using a fixed number of steps per second.
@@ -12,7 +12,7 @@ Simulate using a fixed number of steps per second.
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 ## Declaration
 

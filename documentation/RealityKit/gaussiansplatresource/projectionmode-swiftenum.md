@@ -3,12 +3,12 @@
 **Framework**: RealityKit  
 **Kind**: enum
 
-Controls how 2D splat footprints are computed from 3D Gaussian primitives:
+The technique the framework uses to project a 3D splat onto the 2D screen.
 
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst ?+
+- Mac Catalyst 27.0+ (Beta)
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 
@@ -18,16 +18,13 @@ Controls how 2D splat footprints are computed from 3D Gaussian primitives:
 enum ProjectionMode
 ```
 
-#### Overview
-
-- [`GaussianSplatResource.ProjectionMode.perspective`](gaussiansplatresource/projectionmode-swift.enum/perspective.md) — Projects splats using a standard perspective projection.
-- [`GaussianSplatResource.ProjectionMode.tangential`](gaussiansplatresource/projectionmode-swift.enum/tangential.md) — Projects splats using a tangential approximation. May result in fewer artifacts.
-
 ## Topics
 
 ### Enumeration Cases
 - [GaussianSplatResource.ProjectionMode.perspective](gaussiansplatresource/projectionmode-swift.enum/perspective.md)
+  Projects splats using a standard perspective projection.
 - [GaussianSplatResource.ProjectionMode.tangential](gaussiansplatresource/projectionmode-swift.enum/tangential.md)
+  Projects splats using a tangential approximation, which can reduce artifacts.
 
 ## Relationships
 

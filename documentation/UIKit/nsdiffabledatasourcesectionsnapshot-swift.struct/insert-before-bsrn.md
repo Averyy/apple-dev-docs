@@ -8,7 +8,7 @@ Inserts the provided section snapshot immediately before the item with the speci
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst ?+
+- Mac Catalyst 14.0+
 - tvOS 14.0+
 - visionOS ?+
 

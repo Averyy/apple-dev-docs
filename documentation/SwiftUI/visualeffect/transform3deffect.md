@@ -11,6 +11,7 @@ Applies a 3D transformation to this view’s rendered output.
 ## Declaration
 
 ```swift
+@export(implementation)
 func transform3DEffect(_ transform: AffineTransform3D) -> some VisualEffect
 ```
 

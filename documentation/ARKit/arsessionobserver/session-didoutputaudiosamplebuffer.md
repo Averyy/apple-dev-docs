@@ -8,7 +8,6 @@ Tells the delegate that a new sample buffer of recorded audio is available.
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

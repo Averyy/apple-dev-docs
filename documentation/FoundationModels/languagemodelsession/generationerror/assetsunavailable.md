@@ -11,7 +11,6 @@ An error that indicates the assets required for the session are unavailable.
 - Mac Catalyst 26.0+
 - macOS 26.0+
 - visionOS 26.0+
-- watchOS 27.0+ (Beta)
 
 ## Declaration
 

@@ -18,14 +18,18 @@ struct FSDirectoryCookie
 
 Your implementation of [`enumerateDirectory(_:startingAt:verifier:attributes:packer:context:replyHandler:)`](fsvolume/handler/enumeratedirectory(_:startingat:verifier:attributes:packer:context:replyhandler:).md) defines the semantics of this value; it’s opaque to FSKit.
 
+A value that indicates a location in a directory from which to enumerate.
+
+Your implementation of [`enumerateDirectory(_:startingAt:verifier:attributes:packer:replyHandler:)`](fsvolume/operations/enumeratedirectory(_:startingat:verifier:attributes:packer:replyhandler:).md) defines the semantics of this value; it’s opaque to FSKit.
+
 ## Topics
 
+### Initializing a cookie
+- [init(UInt64)](fsdirectorycookie/init(_:).md)
+- [init(rawValue: UInt64)](fsdirectorycookie/init(rawvalue:).md)
 ### Using defined cookie values
 - [static let initial: FSDirectoryCookie](fsdirectorycookie/initial.md)
   The constant initial value for the directory-enumeration cookie.
-### Initializers
-- [init(UInt64)](fsdirectorycookie/init(_:).md)
-- [init(rawValue: UInt64)](fsdirectorycookie/init(rawvalue:).md)
 
 ## Relationships
 

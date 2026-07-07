@@ -8,7 +8,6 @@ A request that generates an instance mask of noticeable objects to separate from
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -72,6 +71,8 @@ This request generates an [`InstanceMaskObservation`](instancemaskobservation.md
   A request that produces a mask of individual people it finds in the input image.
 - [class GeneratePersonSegmentationRequest](generatepersonsegmentationrequest.md)
   A request that produces a matte image for a person it finds in the input image.
+- [class GenerateIterativeSegmentationRequest](generateiterativesegmentationrequest.md)
+  A request that generates a segmentation mask from points, a rectangle, or a scribble.
 
 
 ---

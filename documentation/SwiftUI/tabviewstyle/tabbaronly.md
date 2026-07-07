@@ -17,7 +17,7 @@ A tab view style that displays a tab bar when possible.
 
 ```swift
 @MainActor
-@preconcurrency static var tabBarOnly: TabBarOnlyTabViewStyle { get }
+@export(implementation) @preconcurrency static var tabBarOnly: TabBarOnlyTabViewStyle { get }
 ```
 
 #### Discussion

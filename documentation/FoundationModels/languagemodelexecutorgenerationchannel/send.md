@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: method
 
-Performs a send on the channel.
+Sends a generation event on the channel.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -17,7 +17,7 @@ Performs a send on the channel.
 
 ```swift
 nonisolated
-(nonsending) func send(_ event: some LanguageModelExecutorGenerationChannel.Event) async
+(nonsending) func send(_ event: LanguageModelExecutorGenerationChannel.Event) async
 ```
 
 ## Parameters
@@ -27,7 +27,7 @@ nonisolated
 ## See Also
 
 - [LanguageModelExecutorGenerationChannel.Event](languagemodelexecutorgenerationchannel/event.md)
-  A typed event that can be sent on a generation channel.
+  A generation event sent on a [`LanguageModelExecutorGenerationChannel`](languagemodelexecutorgenerationchannel.md).
 
 
 ---

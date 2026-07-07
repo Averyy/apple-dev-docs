@@ -62,13 +62,13 @@ var body: some View {
 ## See Also
 
 - [init(_:value:format:prompt:)](textfield/init(_:value:format:prompt:).md)
-  Creates a text field that applies a format style to a bound value, with a label generated from a localized title string.
+  Creates a text field that applies a format style to a bound value, with a label generated from a localized title string resource.
 - [init(value:format:prompt:label:)](textfield/init(value:format:prompt:label:).md)
   Creates a text field that applies a format style to a bound value, with a label generated from a content builder.
 - [init(_:value:formatter:)](textfield/init(_:value:formatter:).md)
   Create an instance which binds over an arbitrary type, `V`.
 - [init(_:value:formatter:prompt:)](textfield/init(_:value:formatter:prompt:).md)
-  Creates a text field that applies a formatter to a bound value, with a label generated from a title string.
+  Creates a text field that applies a formatter to a bound value, with a label generated from a localized title string resource.
 
 
 ---

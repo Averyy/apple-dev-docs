@@ -17,6 +17,7 @@ Returns the second level of this shape style.
 ## Declaration
 
 ```swift
+@export(implementation)
 var secondary: some ShapeStyle { get }
 ```
 

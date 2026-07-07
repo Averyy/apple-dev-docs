@@ -27,6 +27,15 @@ If the item’s `bsdFlags` contain the `UF_COMPRESSED` flag, your file system re
 - `item`: The item to get attributes for.
 - `reply`: A block or closure to indicate success or failure. If getting attributes succeeds, pass an [`FSItem.Attributes`](fsitem/attributes.md) with the requested attributes populated and a `nil` error. If getting attributes fails, pass the relevant error as the second parameter; FSKit ignores any [`FSItem.Attributes`](fsitem/attributes.md) in this case. For an `async` Swift implementation, there’s no reply handler; simply return the [`FSItem.Attributes`](fsitem/attributes.md) or throw an error.
 
+## See Also
+
+- [FSItem.GetAttributesRequest](fsitem/getattributesrequest.md)
+  A request to get attributes from an item.
+- [func setAttributes(FSItem.SetAttributesRequest, on: FSItem, replyHandler: (FSItem.Attributes?, (any Error)?) -> Void)](fsvolume/operations/setattributes(_:on:replyhandler:).md)
+  Sets the given attributes on an item.
+- [FSItem.SetAttributesRequest](fsitem/setattributesrequest.md)
+  A request to set attributes on an item.
+
 
 ---
 

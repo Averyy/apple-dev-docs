@@ -3,6 +3,8 @@
 **Framework**: RealityKit  
 **Kind**: property
 
+The end point of the off-mesh connection.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -20,7 +22,9 @@ var endPoint: SIMD3<Float>
 ## See Also
 
 - [var startPoint: SIMD3<Float>](navigationmeshresource/offmeshconnection/startpoint.md)
+  The start point of the off-mesh connection.
 - [var isBidirectional: Bool](navigationmeshresource/offmeshconnection/isbidirectional.md)
+  Whether the connection is bidirectional. If false, pathfinds will only allow going from startPoint to endPoint. If true, pathfinds will allow going in both directions.
 
 
 ---

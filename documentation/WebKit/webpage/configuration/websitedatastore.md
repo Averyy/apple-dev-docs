@@ -8,7 +8,7 @@ The object you use to get and set the site’s cookies and to track the cached d
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst 26.0+
 - macOS 26.0+
 - visionOS 26.0+
 

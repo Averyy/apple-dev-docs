@@ -8,7 +8,7 @@ Requests a configuration to use for a shield that covers an application because 
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst ?+
+- Mac Catalyst 15.0+
 
 ## Declaration
 

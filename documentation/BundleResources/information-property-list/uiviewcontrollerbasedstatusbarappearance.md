@@ -8,7 +8,6 @@ A Boolean value that indicates whether the system bases the appearance of the st
 **Availability**:
 - iOS 7.0+
 - iPadOS 7.0+
-- Mac Catalyst 7.0+
 
 
 

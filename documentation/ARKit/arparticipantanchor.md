@@ -8,7 +8,6 @@ An anchor for another user in multiuser augmented reality experiences.
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

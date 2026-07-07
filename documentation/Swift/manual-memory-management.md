@@ -24,6 +24,18 @@ Allocate and manage memory manually.
   `MutableSpan<Element>` represents a contiguous region of memory which contains initialized instances of `Element`.
 - [struct MutableRawSpan](mutablerawspan.md)
   `MutableRawSpan` represents a contiguous region of memory which contains initialized bytes.
+- [struct SpanIterator](spaniterator.md)
+### Safe Access to Raw Bytes
+- [typealias FullyInhabited](fullyinhabited.md)
+  A protocol for types whose memory can safely be written as or read from raw bytes.
+- [protocol ConvertibleFromBytes](convertiblefrombytes.md)
+  A protocol for types whose memory can safely be populated from raw bytes, resulting in a valid instance.
+- [protocol ConvertibleToBytes](convertibletobytes.md)
+  A protocol for types whose memory can safely be read as individual raw bytes.
+- [enum ByteOrder](byteorder.md)
+  A byte ordering in memory.
+- [func bitCast<T, U>(T, to: U.Type) -> U](bitcast(_:to:).md)
+  Returns the bits of the given instance, interpreted as having the specified type.
 ### Typed Pointers
 - [struct UnsafePointer](unsafepointer.md)
   A pointer for accessing data of a specific type.
@@ -49,10 +61,14 @@ Allocate and manage memory manually.
   Invokes the given closure with a pointer to the given argument.
 - [func withUnsafeMutablePointer<T, E, Result>(to: inout T, (UnsafeMutablePointer<T>) throws(E) -> Result) throws(E) -> Result](withunsafemutablepointer(to:_:).md)
   Calls the given closure with a mutable pointer to the given argument.
-- [func withUnsafeBytes<T, E, Result>(of: borrowing T, (UnsafeRawBufferPointer) throws(E) -> Result) throws(E) -> Result](withunsafebytes(of:_:)-5gesg.md)
+- [func withUnsafeBytes<T, E, Result>(of: inout T, (UnsafeRawBufferPointer) throws(E) -> Result) throws(E) -> Result](withunsafebytes(of:_:)-3ywhh.md)
   Invokes the given closure with a buffer pointer covering the raw bytes of the given argument.
 - [func withUnsafeMutableBytes<T, E, Result>(of: inout T, (UnsafeMutableRawBufferPointer) throws(E) -> Result) throws(E) -> Result](withunsafemutablebytes(of:_:).md)
   Invokes the given closure with a mutable buffer pointer covering the raw bytes of the given argument.
+- [func withTemporaryAllocation<R, E>(byteCount: Int, alignment: Int, (inout OutputRawSpan) throws(E) -> R) throws(E) -> R](withtemporaryallocation(bytecount:alignment:_:).md)
+  Provides scoped access to an output raw span with the specified byte count and alignment.
+- [func withTemporaryAllocation<T, R, E>(of: T.Type, capacity: Int, (inout OutputSpan<T>) throws(E) -> R) throws(E) -> R](withtemporaryallocation(of:capacity:_:).md)
+  Provides scoped access to an output span of the specified type and capacity.
 - [func withUnsafeTemporaryAllocation<T, R, E>(of: T.Type, capacity: Int, (UnsafeMutableBufferPointer<T>) throws(E) -> R) throws(E) -> R](withunsafetemporaryallocation(of:capacity:_:).md)
   Provides scoped access to a buffer pointer to memory of the specified type and with the specified capacity.
 - [func withUnsafeTemporaryAllocation<R, E>(byteCount: Int, alignment: Int, (UnsafeMutableRawBufferPointer) throws(E) -> R) throws(E) -> R](withunsafetemporaryallocation(bytecount:alignment:_:).md)
@@ -64,6 +80,11 @@ Allocate and manage memory manually.
 ### Memory Layout
 - [enum MemoryLayout](memorylayout.md)
   The memory layout of a type, describing its size, stride, and alignment.
+### Heap Storage
+- [struct UniqueArray](uniquearray.md)
+  A dynamically self-resizing, heap allocated, noncopyable array of potentially noncopyable elements.
+- [struct UniqueBox](uniquebox.md)
+  A smart pointer type that uniquely owns an instance of `Value` on the heap.
 ### Reference Counting
 - [struct Unmanaged](unmanaged.md)
   A type for propagating an unmanaged object reference.

@@ -17,6 +17,7 @@ Returns this value interpolated with `other` by the specified `amount`.
 ## Declaration
 
 ```swift
+@export(implementation)
 func interpolated(towards other: Self, amount: Double) -> Self
 ```
 

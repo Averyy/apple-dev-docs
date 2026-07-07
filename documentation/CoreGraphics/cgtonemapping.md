@@ -4,13 +4,13 @@
 **Kind**: enum
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
-- watchOS ?+
+- iOS 18.0+
+- iPadOS 18.0+
+- Mac Catalyst 18.0+
+- macOS 15.0+
+- tvOS 18.0+
+- visionOS 2.0+
+- watchOS 11.0+
 
 ## Declaration
 
@@ -27,6 +27,7 @@ enum CGToneMapping
 - [CGToneMapping.ituRecommended](cgtonemapping/iturecommended.md)
 - [CGToneMapping.none](cgtonemapping/none.md)
 - [CGToneMapping.referenceWhiteBased](cgtonemapping/referencewhitebased.md)
+- [CGToneMapping.headroomAdaptiveGainCurve](cgtonemapping/headroomadaptivegaincurve.md)
 ### Initializers
 - [init?(rawValue: UInt32)](cgtonemapping/init(rawvalue:).md)
 

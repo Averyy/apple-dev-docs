@@ -8,7 +8,6 @@ Listen and react to geo-tracking state changes.
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
 
 ## Declaration
 

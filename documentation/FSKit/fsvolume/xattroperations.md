@@ -16,11 +16,17 @@ protocol XattrOperations : NSObjectProtocol
 
 #### Overview
 
-> **Note**:  Use [`FSVolume.XattrHandler`](fsvolume/xattrhandler.md)
+> **Note**: Use [`FSVolume.XattrHandler`](fsvolume/xattrhandler.md)
 
 ## Topics
 
 ### Reading and writing
+- [func getXattr(named: FSFileName, of: FSItem, replyHandler: (Data?, (any Error)?) -> Void)](fsvolume/xattroperations/getxattr(named:of:replyhandler:).md)
+  Gets the specified extended attribute of the given item.
+- [func listXattrs(of: FSItem, replyHandler: ([FSFileName]?, (any Error)?) -> Void)](fsvolume/xattroperations/listxattrs(of:replyhandler:).md)
+  Gets the list of extended attributes currently set on the given item.
+- [func setXattr(named: FSFileName, to: Data?, on: FSItem, policy: FSVolume.SetXattrPolicy, replyHandler: ((any Error)?) -> Void)](fsvolume/xattroperations/setxattr(named:to:on:policy:replyhandler:).md)
+  Sets the specified extended attribute data on the given item.
 - [FSVolume.SetXattrPolicy](fsvolume/setxattrpolicy.md)
   Flags to specify the policy when setting extended file attributes.
 - [func supportedXattrNames(for: FSItem) -> [FSFileName]](fsvolume/xattroperations/supportedxattrnames(for:).md)
@@ -28,13 +34,6 @@ protocol XattrOperations : NSObjectProtocol
 ### Inspecting volume properties
 - [var xattrOperationsInhibited: Bool](fsvolume/xattroperations/xattroperationsinhibited.md)
   A Boolean value that instructs FSKit not to call this protocol’s methods, even if the volume conforms to it.
-### Instance Methods
-- [func getXattr(named: FSFileName, of: FSItem, replyHandler: (Data?, (any Error)?) -> Void)](fsvolume/xattroperations/getxattr(named:of:replyhandler:).md)
-  Gets the specified extended attribute of the given item.
-- [func listXattrs(of: FSItem, replyHandler: ([FSFileName]?, (any Error)?) -> Void)](fsvolume/xattroperations/listxattrs(of:replyhandler:).md)
-  Gets the list of extended attributes currently set on the given item.
-- [func setXattr(named: FSFileName, to: Data?, on: FSItem, policy: FSVolume.SetXattrPolicy, replyHandler: ((any Error)?) -> Void)](fsvolume/xattroperations/setxattr(named:to:on:policy:replyhandler:).md)
-  Sets the specified extended attribute data on the given item.
 
 ## Relationships
 

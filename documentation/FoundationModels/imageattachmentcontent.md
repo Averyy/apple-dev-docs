@@ -26,7 +26,6 @@ You don’t create `ImageAttachmentContent` directly. Instead, use one of the [`
 ## Relationships
 
 ### Conforms To
-- [AttachmentContent](attachmentcontent.md)
 - [Equatable](../Swift/Equatable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
@@ -37,8 +36,6 @@ You don’t create `ImageAttachmentContent` directly. Instead, use one of the [`
   Analyze and extract information from images by combining them with descriptive text prompts.
 - [struct Attachment](attachment.md)
   An asset provided to the model.
-- [protocol AttachmentContent](attachmentcontent.md)
-  A type that you use as the content of an attachment.
 - [struct ImageReference](imagereference.md)
   A reference to an image in a session’s transcript.
 

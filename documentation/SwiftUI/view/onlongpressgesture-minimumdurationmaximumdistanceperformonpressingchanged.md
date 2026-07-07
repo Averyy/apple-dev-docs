@@ -16,8 +16,8 @@ Adds an action to perform when this view recognizes a long press gesture.
 ## Declaration
 
 ```swift
-nonisolated
-func onLongPressGesture(minimumDuration: Double = 0.5, maximumDistance: CGFloat = 10, perform action: @escaping () -> Void, onPressingChanged: ((Bool) -> Void)? = nil) -> some View
+@export(implementation)
+nonisolated func onLongPressGesture(minimumDuration: Double = 0.5, maximumDistance: CGFloat = 10, perform action: @escaping () -> Void, onPressingChanged: ((Bool) -> Void)? = nil) -> some View
 ```
 
 ## Parameters

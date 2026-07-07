@@ -17,6 +17,7 @@ Returns a new color with an exposure adjustment applied.
 ## Declaration
 
 ```swift
+@export(implementation)
 func exposureAdjust(_ stops: Double) -> Color
 ```
 

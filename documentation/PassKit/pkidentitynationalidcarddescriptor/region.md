@@ -8,7 +8,7 @@ A string used to specify the region associated with the ID.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst ?+
+- Mac Catalyst 18.0+
 - visionOS ?+
 
 ## Declaration

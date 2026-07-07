@@ -52,9 +52,6 @@ DocumentGroup(newDocument: { MyDocument() }) { configuration in
 ### Creating a source
 - [init(id: String)](documentcreationsource/init(id:).md)
   Creates a document creation source with the given identifier.
-### Identifying a source
-- [let id: String](documentcreationsource/id.md)
-  A string that uniquely identifies this creation source within your app.
 
 ## Relationships
 
@@ -86,8 +83,6 @@ DocumentGroup(newDocument: { MyDocument() }) { configuration in
   The default actions for the document group launch scene and the document launch view.
 - [struct NewDocumentButton](newdocumentbutton.md)
   A button that creates and opens new documents.
-- [struct NewDocumentButtonDataSource](newdocumentbuttondatasource.md)
-  Describes the source of data used to create a new document.
 - [struct DefaultNewDocumentButtonLabel](defaultnewdocumentbuttonlabel.md)
   The default label used for a new document button.
 

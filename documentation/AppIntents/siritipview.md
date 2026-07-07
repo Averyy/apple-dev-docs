@@ -8,7 +8,6 @@ A SwiftUI view that displays the phrase someone uses to invoke an App Shortcut.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
 - tvOS 16.0+
 - visionOS ?+
 - watchOS 9.0+

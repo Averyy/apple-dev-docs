@@ -6,13 +6,13 @@
 Creates an alert scene, using the given data to produce the alert’s content with a title, and a set of actions. Note that this creates a text view on your behalf.
 
 **Availability**:
-- macOS 27.0+ (Beta)
+- macOS 15.0+
 
 ## Declaration
 
 ```swift
-nonisolated
-init<S, T>(_ title: S, item data: Binding<T?>, @ContentBuilder actions: (T) -> Actions) where Message == EmptyView, S : StringProtocol
+@export(implementation)
+nonisolated init<S, T>(_ title: S, item data: Binding<T?>, @ContentBuilder actions: (T) -> Actions) where Message == EmptyView, S : StringProtocol
 ```
 
 ## Parameters

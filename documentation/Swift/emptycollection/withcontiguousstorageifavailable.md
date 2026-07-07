@@ -17,7 +17,7 @@ Executes a closure on the sequence’s contiguous storage.
 ## Declaration
 
 ```swift
-func withContiguousStorageIfAvailable<R>(_ body: (UnsafeBufferPointer<Self.Element>) throws -> R) rethrows -> R?
+func withContiguousStorageIfAvailable<R, E>(_ body: (UnsafeBufferPointer<Element>) throws(E) -> R) throws(E) -> R? where E : Error, R : ~Copyable
 ```
 
 #### Return Value

@@ -8,7 +8,6 @@ Fetches the thumbnails for items that have been enumerated by the file provider.
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 11.0+
 - visionOS 1.0+
 
 ## Declaration

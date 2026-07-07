@@ -1,6 +1,6 @@
 # data(using:)
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: method
 
 Returns the graph encoded in the specified format.
@@ -12,7 +12,7 @@ Returns the graph encoded in the specified format.
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 ## Declaration
 

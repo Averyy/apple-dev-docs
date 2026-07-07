@@ -17,8 +17,8 @@ Creates a secure field with a prompt generated from a `Text`.
 ## Declaration
 
 ```swift
-nonisolated
-init(_ titleKey: LocalizedStringKey, text: Binding<String>)
+@export(implementation)
+nonisolated init(_ titleKey: LocalizedStringKey, text: Binding<String>)
 ```
 
 #### Discussion

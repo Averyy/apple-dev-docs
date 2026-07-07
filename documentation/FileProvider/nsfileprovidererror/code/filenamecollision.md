@@ -8,7 +8,6 @@ An error indicating that an item with the same name already exists in the same d
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 11.0+
 - macOS 11.0+
 - visionOS 1.0+
 

@@ -8,7 +8,7 @@ Creates a verify identity button that starts the identity authorization flow, wi
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst ?+
+- Mac Catalyst 16.0+
 - visionOS ?+
 
 ## Declaration

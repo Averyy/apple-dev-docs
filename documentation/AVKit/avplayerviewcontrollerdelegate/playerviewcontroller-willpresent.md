@@ -8,7 +8,6 @@ Tells the delegate when the player view controller is about to start playing a r
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
 - tvOS 9.0+
 - visionOS 1.0+
 

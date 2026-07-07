@@ -8,7 +8,6 @@ A Boolean value that indicates whether the app may exchange audio with other Int
 **Availability**:
 - iOS 2.2+
 - iPadOS 2.2+
-- Mac Catalyst 2.2+
 
 
 

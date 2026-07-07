@@ -8,7 +8,6 @@ A Boolean value that indicates whether to tag memory that contains only data.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst 26.0+
 
 
 

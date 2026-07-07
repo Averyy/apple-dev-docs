@@ -17,8 +17,8 @@ Creates a conic gradient from a collection of colors that completes a full turn.
 ## Declaration
 
 ```swift
-nonisolated
-init(colors: [Color], center: UnitPoint, angle: Angle = .zero)
+@export(implementation)
+nonisolated init(colors: [Color], center: UnitPoint, angle: Angle = .zero)
 ```
 
 ## See Also

@@ -8,7 +8,6 @@ A list of application identifiers that the app supports.
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst 13.0+
 
 
 

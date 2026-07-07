@@ -8,7 +8,6 @@ The number of image anchors to monitor closely for position and orientation upda
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
 
 ## Declaration
 

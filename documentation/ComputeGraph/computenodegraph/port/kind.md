@@ -1,6 +1,6 @@
 # ComputeNodeGraph.Port.Kind
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: enum
 
 The semantic role of a port, determining what it carries along an edge and whether the edge imposes execution ordering between its endpoints.
@@ -12,7 +12,7 @@ The semantic role of a port, determining what it carries along an edge and wheth
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 ## Declaration
 

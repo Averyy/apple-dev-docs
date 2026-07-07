@@ -8,7 +8,6 @@ An anchor for a real-world 3D object that ARKit detects in the physical environm
 **Availability**:
 - iOS 12.0+
 - iPadOS 12.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

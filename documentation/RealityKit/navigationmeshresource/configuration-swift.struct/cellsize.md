@@ -3,6 +3,8 @@
 **Framework**: RealityKit  
 **Kind**: property
 
+The x-z size of a cell, in meters.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -20,6 +22,7 @@ var cellSize: Double
 ## See Also
 
 - [var cellHeight: Double](navigationmeshresource/configuration-swift.struct/cellheight.md)
+  The height of a cell, in meters.
 
 
 ---

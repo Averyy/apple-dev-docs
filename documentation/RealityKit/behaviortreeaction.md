@@ -3,6 +3,8 @@
 **Framework**: RealityKit  
 **Kind**: protocol
 
+A protocol that defines an action that a behavior tree action node can use.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -15,6 +17,21 @@
 
 ```swift
 protocol BehaviorTreeAction : EntityAction
+```
+
+#### Overview
+
+Conform to this protocol as:
+
+```swift
+struct CustomBehaviorTreeAction: BehaviorTreeAction, Codable {
+
+    public var isReversible: Bool { false }
+    public var isAdditive: Bool { false }
+    public var animatedValueType: (any AnimatableData.Type)? { nil }
+
+    // Add your action-specific properties, functions and subscriptions here.
+}
 ```
 
 ## Topics
@@ -36,9 +53,11 @@ protocol BehaviorTreeAction : EntityAction
 ## See Also
 
 - [struct BehaviorTreeComponent](behaviortreecomponent.md)
+  Manages which behavior tree is active for the component’s entity.
 - [class BehaviorTreeResource](behaviortreeresource.md)
   An immutable representation of a behavior tree.
 - [protocol BehaviorTreeActionHandler](behaviortreeactionhandler.md)
+  Behavior Tree-specific event handlers that allow an `ActionResult` to be returned from the handler.
 - [enum ActionResult](actionresult.md)
   Status values that an action can report back to the animation system.
 

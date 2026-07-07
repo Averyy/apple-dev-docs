@@ -8,7 +8,7 @@ A transition where one corner of the current view curls up, revealing the new vi
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst ?+
+- Mac Catalyst 18.0+
 - tvOS ?+
 - visionOS ?+
 

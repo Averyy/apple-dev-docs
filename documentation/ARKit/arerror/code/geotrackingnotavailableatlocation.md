@@ -8,7 +8,6 @@ An error that indicates a location lacks geotracking support.
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
 
 ## Declaration
 

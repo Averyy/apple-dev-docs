@@ -8,7 +8,6 @@ Presents a view controller with a Messages sheet for the player to request frien
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst 15.0+
 - visionOS 1.0+
 
 ## Declaration

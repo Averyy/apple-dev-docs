@@ -17,6 +17,7 @@ Returns a new style based on the current style that multiplies by `opacity` when
 ## Declaration
 
 ```swift
+@export(implementation)
 static func opacity(_ opacity: Double) -> some ShapeStyle
 ```
 

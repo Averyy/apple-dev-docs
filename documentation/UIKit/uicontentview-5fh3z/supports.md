@@ -9,7 +9,7 @@ Determines whether the view is compatible with the provided configuration.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst ?+
+- Mac Catalyst 16.0+
 - tvOS 16.0+
 - visionOS ?+
 

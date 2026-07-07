@@ -8,7 +8,6 @@ Repeats a ray-cast query over time to notify you of updated surfaces in the phys
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

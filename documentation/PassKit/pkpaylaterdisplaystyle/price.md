@@ -8,7 +8,6 @@ A style that shows the Apple Pay Later view beneath a product’s price.
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst 17.0+
 - visionOS 1.0+
 
 ## Declaration

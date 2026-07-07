@@ -8,7 +8,6 @@ Returns a new reference object that combines spatial information from both this 
 **Availability**:
 - iOS 12.0+
 - iPadOS 12.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

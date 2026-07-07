@@ -8,7 +8,6 @@ The framework sets the altitude using a coarse digital-elevation model.
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
 
 ## Declaration
 

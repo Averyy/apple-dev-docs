@@ -11,11 +11,12 @@ Creates a multi-metric evaluator with default prompt configuration.
 - Mac Catalyst 27.0+ (Beta)
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 
 ```swift
-init(judge: any LanguageModel = SystemLanguageModel(), dimensions: [ScoreDimension], scoringMode: ScoringMode = .discrete)
+init(judge: any LanguageModel, dimensions: [ScoreDimension], scoringMode: ScoringMode = .discrete)
 ```
 
 ## Parameters

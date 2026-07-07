@@ -1,6 +1,6 @@
 # ComputeNodeGraph.ValueType
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: enum
 
 Describes the storage and layout of a port’s value, ranging from Metal primitives and structures to opaque references and stateful bindings.
@@ -12,7 +12,7 @@ Describes the storage and layout of a port’s value, ranging from Metal primiti
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 ## Declaration
 

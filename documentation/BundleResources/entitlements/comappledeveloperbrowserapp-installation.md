@@ -8,7 +8,6 @@ An entitlement that enables a browser to install alternative distribution apps f
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
-- Mac Catalyst 17.4+
 
 
 

@@ -8,7 +8,6 @@ The reasons for the app’s geotracking status.
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
 
 ## Declaration
 

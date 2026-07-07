@@ -8,7 +8,6 @@ An interface that enables you to configure and manage communication between your
 **Availability**:
 - iOS 26.2+
 - iPadOS 26.2+
-- Mac Catalyst 26.2+
 
 ## Declaration
 

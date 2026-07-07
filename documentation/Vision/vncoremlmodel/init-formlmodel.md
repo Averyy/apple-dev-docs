@@ -17,6 +17,11 @@
 convenience init(forMLModel model: MLModel) throws
 ```
 
+## See Also
+
+- [convenience init(for: MLModel) throws](vncoremlmodel/init(for:).md)
+  Creates a model container to use with a Core ML request.
+
 
 ---
 

@@ -8,7 +8,6 @@ An error that indicates a sensor fails to provide required input.
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

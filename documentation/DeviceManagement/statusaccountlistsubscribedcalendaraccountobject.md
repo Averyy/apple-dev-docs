@@ -20,7 +20,7 @@ object StatusAccountListSubscribedCalendarAccountObject
 
 ## Properties
 
-- `_removed` (boolean): If `true`, the subscribed calendar is removed and the status item object only contains this key and the `identifier` key.
+- `_removed` (boolean): If `true`, the device removed the subscribed calendar and the status item object only contains this key and the `identifier` key.
 - `calendar-url` (string): The URL of the subscribed calendar.
 - `declaration-identifier` (string): The identifier of the declaration that installed the subscribed calendar. Only present if a declaration installed the subscribed calendar.
 - `identifier` (string) *(required)*: The unique identifier for the subscribed calendar.

@@ -8,7 +8,6 @@ Integrate hardware sensing features to produce augmented reality apps and games.
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 14.0+
 - visionOS 1.0+
 
 ## Mentions

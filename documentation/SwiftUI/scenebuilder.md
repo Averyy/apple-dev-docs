@@ -25,7 +25,6 @@ struct SceneBuilder
 
 ### Building content
 - [static buildBlock(_:)](scenebuilder/buildblock(_:).md)
-  Passes a single scene written as a child scene through unmodified.
 - [static func buildExpression<Content>(Content) -> Content](scenebuilder/buildexpression(_:).md)
   Builds an expression within the builder.
 - [static func buildLimitedAvailability(some Scene) -> any Scene & _LimitedAvailabilitySceneMarker](scenebuilder/buildlimitedavailability(_:).md)

@@ -8,7 +8,6 @@ Copies Kerberos 5 credentials into the passed cache.
 **Availability**:
 - iOS 5.0+
 - iPadOS 5.0+
-- Mac Catalyst 5.0+
 - visionOS 1.0+
 
 ## Declaration

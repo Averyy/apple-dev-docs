@@ -14,7 +14,7 @@ Notifies the system that a remote application has successfully started on the ta
 
 ```swift
 @MainActor
-final func started<T>(application applicationIdentifier: String?, playbackControl: T, session: MediaOutputSession) where T : AnyObject, T : AVInterfaceControllable
+final func started<T>(application applicationIdentifier: String?, playbackControl: T, session: MediaOutputSession) where T : AVPlaybackUserInterfaceControllable
 ```
 
 #### Discussion
@@ -34,12 +34,12 @@ After calling this function, the system will be able to route media playback to 
 
 > **Note**: [`sessionFailed(_:error:)`](mediadeviceroutingmanager/sessionfailed(_:error:).md)
 
-> **Note**: `AVInterfaceControllable`
+> **Note**: `AVPlaybackUserInterfaceControllable`
 
 ## Parameters
 
 - `applicationIdentifier`: A unique identifier for the application running on the remote device. For a default media playback experience on the remote device, use `nil`.
-- `playbackControl`: An object conforming to `AVInterfaceControllable` that provides playback control capabilities (play, pause, seek, etc.) for the remote session.
+- `playbackControl`: An object conforming to `AVPlaybackUserInterfaceControllable` that provides playback control capabilities (play, pause, seek, etc.) for the remote session.
 - `session`: The [`MediaOutputSession`](mediaoutputsession.md) associated with this playback session.
 
 

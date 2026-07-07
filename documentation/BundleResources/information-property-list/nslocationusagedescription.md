@@ -8,7 +8,6 @@ A message that tells people why the app is requesting access to their location i
 **Availability**:
 - iOS 6.0+
 - iPadOS 6.0+
-- Mac Catalyst 6.0+
 - macOS 10.14+
 
 

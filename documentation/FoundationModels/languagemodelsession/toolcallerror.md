@@ -11,7 +11,6 @@ An error that occurs while a language model is calling a tool.
 - Mac Catalyst 26.0+
 - macOS 26.0+
 - visionOS 26.0+
-- watchOS 27.0+ (Beta)
 
 ## Declaration
 

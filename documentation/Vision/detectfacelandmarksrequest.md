@@ -3,12 +3,11 @@
 **Framework**: Vision  
 **Kind**: struct
 
-An image-analysis request that finds facial features like eyes and mouth in an image.
+An image analysis request that finds facial features like eyes and mouth in an image.
 
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -22,9 +21,7 @@ struct DetectFaceLandmarksRequest
 
 #### Overview
 
-By default, a request for face landmarks first locates all faces in the input image, then analyzes each to detect facial features.
-
-If you already located all the faces in an image, or want to detect landmarks in only a subset of the faces in the image, set the [`inputFaceObservations`](detectfacecapturequalityrequest/inputfaceobservations.md) property to an array of [`FaceObservation`](faceobservation.md) objects representing the faces you want to analyze. You can either use face observations output by a [`DetectFaceRectanglesRequest`](detectfacerectanglesrequest.md) or manually create [`FaceObservation`](faceobservation.md) instances with the bounding boxes of the faces you want to analyze.
+By default, a face landmarks request first locates all faces in the input image, then analyzes each to detect facial features. If you’ve already located all the faces in an image, or want to detect landmarks in only a subset of the faces in the image, set the inputFaceObservations property to an array of [`FaceObservation`](faceobservation.md) objects representing the faces you want to analyze. You can either use face observations output by a [`DetectFaceRectanglesRequest`](detectfacerectanglesrequest.md) or manually create `FaceObservation` instances with the bounding boxes of the faces you want to analyze.
 
 ## Topics
 

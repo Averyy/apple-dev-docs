@@ -8,7 +8,6 @@ User has perform gesture on device to request for app presentation
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
-- Mac Catalyst 17.4+
 
 ## Declaration
 

@@ -158,10 +158,7 @@ When specifying buttons for a navigation item, you must use [`UIBarButtonItem`](
 - [protocol UINavigationItemRenameDelegate](uinavigationitemrenamedelegate-5j4ws.md)
   Methods an object implements to rename a navigation item.
 ### Instance Properties
-- [var barMinimizationSafeAreaAdjustment: UIBarMinimizationSafeAreaAdjustment](uinavigationitem/barminimizationsafeareaadjustment.md)
-  The safe area adjustment during navigation bar minimization.
-- [var barMinimizeBehavior: UIBarMinimizeBehavior](uinavigationitem/barminimizebehavior.md)
-  The minimize behavior for the navigation bar.
+- [var navigationBarMinimization: UIBarMinimization](uinavigationitem/navigationbarminimization-1kj9z.md)
 
 ## Relationships
 

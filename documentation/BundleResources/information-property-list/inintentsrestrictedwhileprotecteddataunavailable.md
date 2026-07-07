@@ -8,7 +8,6 @@ The names of the intent classes your app can’t handle when the user locks the 
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
 - tvOS 14.0+
 - visionOS 1.0+
 

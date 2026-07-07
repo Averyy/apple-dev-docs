@@ -8,7 +8,7 @@ Creates a radius that represents a fixed corner radius in points.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst 26.0+
 - tvOS 26.0+
 - visionOS 26.0+
 

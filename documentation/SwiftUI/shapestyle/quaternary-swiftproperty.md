@@ -17,6 +17,7 @@ Returns the fourth level of this shape style.
 ## Declaration
 
 ```swift
+@export(implementation)
 var quaternary: some ShapeStyle { get }
 ```
 

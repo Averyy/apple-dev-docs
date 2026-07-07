@@ -56,7 +56,7 @@ All filtering options are active simultaneously. The system only permits URLs an
             <true/>
             <key>DenylistURLs</key>
             <array>
-                <string>https://notallowedname.company.com</string>
+                <string>https://notallowed.example.com</string>
             </array>
             <key>FilterBrowsers</key>
             <true/>
@@ -66,7 +66,7 @@ All filtering options are active simultaneously. The system only permits URLs an
             <string>BuiltIn</string>
             <key>PermittedURLs</key>
             <array>
-                <string>https://example.company.com</string>
+                <string>https://allowed.example.com</string>
             </array>
             <key>PayloadIdentifier</key>
             <string>com.example.mywebcontentfilterpayload</string>

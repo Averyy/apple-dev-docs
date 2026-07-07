@@ -10,7 +10,7 @@ Programmatic evaluators work well when correctness is easily measurable, for exa
 
 [`ModelJudgeEvaluator`](modeljudgeevaluator.md) uses a language model to score the output of another model. You configure the model as judge with a scoring scale that defines what quality levels look like and, optionally, a [`ModelJudgePrompt`](modeljudgeprompt.md) with domain-specific instructions.
 
-The model as judge scores each response alongside a written rationale explaining its reasoning. The result is a [`Metric`](metric.md) you can aggregate and track just as with any code-based evaluator. For guidance on when to use a model as judge versus a code-based evaluator, see [`Designing specific, measurable criteria in an evaluation suite`](designing-evaluation-criteria.md). For best practices on scoring scales and calibration, see [`Designing effective model-as-judge evaluators`](designing-effective-model-judges.md).
+The model as judge scores each response alongside a written rationale explaining its reasoning. The result is a [`Metric`](metric.md) you can aggregate and track just as with any code-based evaluator. For guidance on when to use a model as judge versus a code-based evaluator, see [`Designing specific, measurable criteria in an evaluation suite`](designing-evaluation-criteria.md). For best practices on scoring scales and calibration, see [`Designing effective model-as-judge evaluators`](designing-effective-model-judges.md). To see a model-as-judge evaluator scoring a real feature alongside code-based checks, see [`Book Tracker: Using Evaluations to evaluate an intelligent feature`](book-tracker-using-evaluations-to-evaluate-an-intelligent-feature.md).
 
 The Evaluations Framework supports two modes:
 
@@ -153,7 +153,7 @@ The following prompt demonstrates a role, criteria, and evaluation steps for the
 ```swift
 ModelJudgePrompt(
     instructions: """
-        You are evaluating automatically generated tags for Shelf, a personal
+        You are evaluating automatically generated tags for Book Tracker, a personal
         book-tracking app. A good tag describes the book itself: its genre, themes, tone,
         or setting. A bad tag picks up the reader's personal reactions rather than
         describing the book.
@@ -294,7 +294,7 @@ ModelJudgeEvaluator(
     judge: SystemLanguageModel.default,
     prompt: ModelJudgePrompt(
         instructions: """
-            You are evaluating automatically generated tags for Shelf, a personal
+            You are evaluating automatically generated tags for Book Tracker, a personal
             book-tracking app. A good tag is specific, relevant to the book's content, and useful
             for organizing a personal library. A bad tag is generic, irrelevant, or misleading.
             Compare the generated tags against the expected tags and evaluate step by step.

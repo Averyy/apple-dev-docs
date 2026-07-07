@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: property
 
-Returns the name of the tag.
+The author-supplied name of the tag from the graph definition.
 
 **Availability**:
 - iOS 27.0+ (Beta)

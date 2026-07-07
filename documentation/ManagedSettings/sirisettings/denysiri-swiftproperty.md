@@ -8,7 +8,7 @@ A Boolean value that indicates whether to prevent access to Siri.
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst ?+
+- Mac Catalyst 15.0+
 
 ## Declaration
 

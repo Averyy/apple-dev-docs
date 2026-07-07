@@ -21,9 +21,7 @@ associatedtype Snapshot
 
 ## See Also
 
-- [func write(content: sending Self.Snapshot, to: sending Self.Destination, previous: sending Self.Snapshot?, progress: consuming Subprogress) async throws](documentwriter/write(content:to:previous:progress:).md)
-  Writes the document content to disk.
-- [associatedtype Destination](documentwriter/destination.md)
+- [associatedtype Destination = URL](documentwriter/destination.md)
 
 
 ---

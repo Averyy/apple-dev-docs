@@ -174,6 +174,8 @@ For design guidance, see Human Interface Guidelines > [`Color`](https://develope
 - [init(forControlTint: NSControlTint)](nscolor/init(forcontroltint:).md)
 - [init?(fromPasteboard: NSPasteboard)](nscolor/init(frompasteboard:).md)
 - [init?(pasteboardPropertyList: Any, ofType: NSPasteboard.PasteboardType)](nscolor/init(pasteboardpropertylist:oftype:).md)
+### Type Properties
+- [class var quinaryLabelColor: NSColor](nscolor/quinarylabelcolor.md)
 ### Default Implementations
 - [NSColor Implementations](nscolor/nscolor-implementations.md)
 

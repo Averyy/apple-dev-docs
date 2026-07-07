@@ -8,7 +8,6 @@ A policy that controls when the system purges specialized assets from a cache.
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 
@@ -30,20 +29,20 @@ Defines the conditions under which the system may purge specialized assets in an
 
 ## Topics
 
-### Structures
-- [AIModelCache.Policy.PurgeConditions](aimodelcache/policy/purgeconditions-swift.struct.md)
-  A set of conditions that determine when the system purges specialized assets.
-### Initializers
-- [init(purgeConditions: AIModelCache.Policy.PurgeConditions)](aimodelcache/policy/init(purgeconditions:).md)
-  Creates a policy with the specified purge conditions.
-### Instance Properties
-- [var purgeConditions: AIModelCache.Policy.PurgeConditions](aimodelcache/policy/purgeconditions-swift.property.md)
-  The conditions under which the system may purge specialized assets.
-### Type Properties
+### Using preset policies
 - [static let `default`: AIModelCache.Policy](aimodelcache/policy/default.md)
   A policy that marks specialized assets as purgeable.
 - [static let persistent: AIModelCache.Policy](aimodelcache/policy/persistent.md)
   A policy that prevents automatic purging of specialized assets.
+### Creating a custom policy
+- [init(purgeConditions: AIModelCache.Policy.PurgeConditions)](aimodelcache/policy/init(purgeconditions:).md)
+  Creates a policy with the specified purge conditions.
+### Inspecting a policy
+- [var purgeConditions: AIModelCache.Policy.PurgeConditions](aimodelcache/policy/purgeconditions-swift.property.md)
+  The conditions under which the system may purge specialized assets.
+### Describing purge conditions
+- [AIModelCache.Policy.PurgeConditions](aimodelcache/policy/purgeconditions-swift.struct.md)
+  A set of conditions that determine when the system purges specialized assets.
 
 ## Relationships
 

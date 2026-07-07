@@ -132,8 +132,6 @@ This class provides login configuration information for platform single sign-on.
 
 ## See Also
 
-- [Configuring Device Management](configuring-device-management.md)
-  Configure Device Management to support device and user registration for Platform SSO.
 - [Configuring authentication with the identity provider (IdP)](configuring-authentication-with-the-identity-provider-idp.md)
   Specify how Platform SSO authenticates with the identity provider.
 - [class ASAuthorizationProviderExtensionLoginManager](asauthorizationproviderextensionloginmanager.md)

@@ -29,8 +29,11 @@ Add a navigation component to an entity to make it a navigation agent. Its [`lay
 - [init(layer: NavigationMeshResource.Layer?, filter: NavigationComponent.Filter?)](navigationcomponent/init(layer:filter:).md)
 ### Configuring navigation
 - [var layer: NavigationMeshResource.Layer?](navigationcomponent/layer.md)
+  The layer to use when searching for a NavigationMeshResource in a Scene. If not set, the first available NavigationMeshResource will be used.
 - [var filter: NavigationComponent.Filter?](navigationcomponent/filter-swift.property.md)
+  The filter to use when pathfinding.
 - [NavigationComponent.Filter](navigationcomponent/filter-swift.struct.md)
+  A struct that stores information about flags to ignore and include, and area costs for a pathfind.
 
 ## Relationships
 

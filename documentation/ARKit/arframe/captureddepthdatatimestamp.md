@@ -8,7 +8,6 @@ The time at which depth data for the frame (if any) was captured.
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 
@@ -26,8 +25,6 @@ The depth-sensing camera provides data at a different frame rate than the color 
 
 - [var lightEstimate: ARLightEstimate?](arframe/lightestimate.md)
   An estimate of lighting conditions based on the camera image.
-- [func displayTransform(for: UIInterfaceOrientation, viewportSize: CGSize) -> CGAffineTransform](arframe/displaytransform(for:viewportsize:).md)
-  Returns an affine transform for converting between normalized image coordinates and a coordinate space appropriate for rendering the camera image onscreen.
 - [var rawFeaturePoints: ARPointCloud?](arframe/rawfeaturepoints.md)
   The current intermediate results of the scene analysis ARKit uses to perform world tracking.
 - [var capturedDepthData: AVDepthData?](arframe/captureddepthdata.md)

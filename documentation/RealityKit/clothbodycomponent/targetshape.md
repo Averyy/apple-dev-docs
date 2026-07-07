@@ -8,7 +8,6 @@ Pulls particles of a cloth body toward positions in either local or simulation s
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 
 ## Declaration

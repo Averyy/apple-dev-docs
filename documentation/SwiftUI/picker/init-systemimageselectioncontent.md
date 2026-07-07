@@ -17,8 +17,8 @@ Creates a picker that generates its label from a localized string key and system
 ## Declaration
 
 ```swift
-nonisolated
-init(_ titleKey: LocalizedStringKey, systemImage: String, selection: Binding<SelectionValue>, @ContentBuilder content: () -> Content)
+@export(implementation)
+nonisolated init(_ titleKey: LocalizedStringKey, systemImage: String, selection: Binding<SelectionValue>, @ContentBuilder content: () -> Content)
 ```
 
 #### Discussion
@@ -35,9 +35,9 @@ This initializer creates a [`Text`](text.md) view on your behalf, and treats the
 ## See Also
 
 - [init(_:image:selection:content:)](picker/init(_:image:selection:content:).md)
-  Creates a picker that generates its label from a localized string key and image resource
+  Creates a picker that generates its label from a localized string resource and image resource
 - [init(_:image:sources:selection:content:)](picker/init(_:image:sources:selection:content:).md)
-  Creates a picker bound to a collection of bindings that generates its label from a string and image resource.
+  Creates a picker that generates its label from a localized string resource and image resource.
 - [init(_:systemImage:sources:selection:content:)](picker/init(_:systemimage:sources:selection:content:).md)
   Creates a picker bound to a collection of bindings that generates its label from a string.
 

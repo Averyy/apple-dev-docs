@@ -1,4 +1,4 @@
-# visionOS 27 Beta 2 Release Notes
+# visionOS 27 Beta 3 Release Notes
 
 **Framework**: visionOS Release Notes
 
@@ -6,7 +6,7 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The visionOS 27 SDK provides support for developing apps for Apple Vision Pro devices running visionOS 27 beta 2. The SDK comes bundled with Xcode 27, available from the Mac App Store. For information on the compatibility requirements for Xcode 27, see [`Xcode 27 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-27-release-notes).
+The visionOS 27 SDK provides support for developing apps for Apple Vision Pro devices running visionOS 27 beta 3. The SDK comes bundled with Xcode 27, available from the Mac App Store. For information on the compatibility requirements for Xcode 27, see [`Xcode 27 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-27-release-notes).
 
 ##### App Intents
 
@@ -25,6 +25,10 @@ The visionOS 27 SDK provides support for developing apps for Apple Vision Pro de
 - When you view Apple Intelligence Report entries for Home Intelligence, some data that was sent to Private Cloud Compute won’t appear in the report.  (176056930)
 
 ##### Arkit
+
+###### Resolved Issues
+
+- Fixed: Due to a bug fix for ARKit Object Tracking, callers of the C API functions for loading reference objects (`ar_reference_object_load_from_url`, `ar_reference_object_load_with_name`, and similar) must now retain the reference objects and errors returned by the completion handlers that client code passes to these functions, in contexts where ARC is not enabled. **Note**,`ar_retain` must be called in the completion handler for reference objects, and also errors (if there is a desire to hold onto these items beyond the scope of the completion handler). Otherwise, the items will be invalid to use after the completion handler finishes execution.  (173812495)
 
 ###### Known Issues
 
@@ -67,7 +71,7 @@ The visionOS 27 SDK provides support for developing apps for Apple Vision Pro de
 
 - Private Cloud Compute might not work when you use simulators.   (177684296) **Workaround:** Use a physical device running OS 27.0.
 - When using the on-device Apple Foundation Model for both tool calling and guided generation, some prompts might cause the model to call tools excessively.  (177748926) **Workaround:** Adjust your instructions, prompts, and attachment labels.
-- `PrivateCloudComputeLanguageModel` always uses greedy decoding.  (178181782)
+- `PrivateCloudComputeLanguageModel` always uses greedy decoding.  (178181782) **Workaround:** Specify `samplingMode` in `GenerationOptions` with a custom seed, e.g. `GenerationOptions(samplingMode: .randomThreshold(0.95, seed: 42))`.
 
 ##### Foveated Streaming
 
@@ -148,12 +152,13 @@ The visionOS 27 SDK provides support for developing apps for Apple Vision Pro de
 - Annotation text might become blank, preventing you from creating, selecting, or deleting additional annotations.   (177726175) **Workaround:** Close and reopen the file to remove the blank annotation. Alternatively, add a new annotation to replace the blank annotation.
 - In annotation mode, annotations don’t respond to direct touch input and flicker when directly touched.  (178087194) **Workaround:** Use indirect pinch gestures to interact with annotation UI elements.
 - In annotation mode, the Delete button sometimes switches the annotation to the editing UI.  (178087667) **Workaround:** Cancel the editing UI and try again, or delete the annotation in Preview.
+- When at an interior Viewpoint in a USD preview, using drag gestures to move the scene can cause a severe jump of the asset position.  (180152079) **Workaround:** Apply the gesture slowly, avoiding a quick hand motion. Reset the positioning by choosing the desired Viewpoint again.
 
 ##### Reality Composer Pro Preview on Visionos
 
-###### Known Issues
+###### Resolved Issues
 
-- Reality Composer Pro Preview, which lets you preview your content on visionOS in real time directly from your Mac, is not yet available. For more information on the Reality Composer Pro macOS app, see [`Reality Composer Pro Release Notes`](https://developer.apple.comhttps://developer.apple.com/documentation/realitycomposerpro/reality-composer-pro-release-notes).  (179045352)
+- Fixed: Reality Composer Pro Preview, which lets you preview your content on visionOS in real time directly from your Mac, is not yet available. For more information on the Reality Composer Pro macOS app, see [`Reality Composer Pro Release Notes`](https://developer.apple.comhttps://developer.apple.com/documentation/realitycomposerpro/reality-composer-pro-release-notes).  (179045352)
 
 ##### Realitykit
 
@@ -193,6 +198,7 @@ The visionOS 27 SDK provides support for developing apps for Apple Vision Pro de
 
 - If an app intent uses Duration or `LPLinkMetadata`, creating a shortcut with that intent and then attempting to edit it with “Describe a change” might fail.   (166068090) **Workaround:** If the model discards the action, press “Undo” to recover the unsupported intent.
 - When an app intent defines a `UnionValue` parameter with two number-related types (for example, both Int and Double), the number option appears twice in the parameter picker menu and shows as double-selected.   (168315587) **Workaround:** Define only one number-related type in the `UnionValue` parameter (for example, use only Int or only Double, not both).
+- The Use Model action might fail to run when using the On-Device option for some output types.  (181071784) **Workaround:** Try another output type where possible or use the Cloud option.
 
 ##### Siri
 
@@ -279,13 +285,14 @@ The visionOS 27 SDK provides support for developing apps for Apple Vision Pro de
 - Fixed: The `SKTestSession` `disableDialogs` setting is not always respected for all system dialogs.  (154390284) (FB18403150)
 - Fixed: Subscription upgrades performed with the Xcode Transaction Manager are not reported in `Transaction.updates`.  (160698598) (FB20269723)
 - Fixed: The renewal behavior preference is not respected when using the `purchaseDate(_:renewalBehavior:)` purchase option to make purchases using `SKTestSession`.  (162014134) (FB20537538)
+- Fixed: StoreKit UI actions (manage subscriptions, redeem offer code, and refund request) don’t perform the desired action on visionOS when using StoreKit Testing in Xcode.  (172677527)
 - Fixed: Re-purchasing a previously refunded non-consumable fails with an already owned error when using StoreKit Testing in Xcode.  (174560379) (FB22475017)
 - Fixed: Using `pricingTerms.commitmentInfo.price` in StoreKit Testing in Xcode returns an incorrect price for monthly subscriptions with a 12-month commitment.  (177942756)
+- Fixed: Transactions for upgraded subscriptions are immediately marked as expired when using StoreKit Testing in Xcode.  (178441109)
 
 ###### Known Issues
 
-- StoreKit UI actions (manage subscriptions, redeem offer code, and refund request) don’t perform the desired action on visionOS when using StoreKit Testing in Xcode.  (172677527)
-- Transactions for upgraded subscriptions are immediately marked as expired when using StoreKit Testing in Xcode.  (178441109)
+- Purchases started initiated from the an offer code redemption and in the manage subscriptions sheet fail on visionOS.  (180741834)
 
 ##### Swift Charts
 
@@ -379,6 +386,7 @@ The visionOS 27 SDK provides support for developing apps for Apple Vision Pro de
 - You can now access `concentricCornerRadii` and `concentricCornerRadii(in:)` on `GeometryProxy`. These APIs return the corner radii that are concentric with the view’s container shape as a `RectangleCornerRadii?`. You can use these values to drive custom drawing or layout that responds to the container’s corners without rendering a `ConcentricRectangle` directly.  (177185166)
 - You can now use the `Document` protocol for representing documents in `DocumentGroup`. This protocol combines `ReadableDocument` and `WritableDocument` for common read-and-write cases. Use `Document` instead of `ReferenceFileDocument` and `FileDocument`, which are now deprecated.  (177458781)
 - `@ContentBuilder` type checking performance is further improved for valid code compared to Beta 1.  (177526032)
+- The new data item or error object based `alert` and `confirmationDialog` modifiers can now be used by projects targetting iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, and visionOS 1.0.  (179388848)
 - In macOS apps built with the macOS 27 SDK, the action retrieved from the `\.newDocument` environment value accepts an in-memory `ReadableDocument` produced by an autoclosure. SwiftUI presents a new document window populated with the supplied instance, instead of invoking the document group’s default factory. Use this to implement “New from Template” commands and similar flows.  (180300890)
 - A new `fileExporter(isPresented:documents:contentTypes:onCompletion:onCancellation:)` modifier exports a collection of values that conform to `WritableDocument` whose `Writer.Destination` is `URL`. The system presents a single export dialog, writes each document to the chosen destination, and reports the resulting URLs through `onCompletion`.  (180301165)
 - The `makeFileWrapper` closure of `FileWrapperDocumentWriter` now receives a second argument, `previous: FileWrapper?`, holding the `FileWrapper` from the document’s most recent read or write when one is available. Package documents can mutate `previous` in place and return it so that `FileWrapper` only writes children whose contents changed, avoiding rewriting an entire package on every save. Documents stored as a single file can ignore the second argument and return a fresh `FileWrapper` as before. Existing call sites must update their closures to accept the new parameter.  (180301399)
@@ -389,9 +397,14 @@ The visionOS 27 SDK provides support for developing apps for Apple Vision Pro de
 - Fixed: When you apply both `.fileExporter(_:...)` and `.fileMover(_:...)` modifiers to a view, some dialogs might not present correctly.  (154080867)
 - Fixed: In apps built with the 27.0 SDKs, `containerRelativeFrame(_:alignment:)` incorrectly accounts for safe-area insets on a `ScrollView`’s non-scrollable axis, causing the calculated scrollable content size to be too small. For example, a view using `containerRelativeFrame(.vertical)` inside a horizontal `ScrollView` extends into vertical safe-area regions, such as the navigation bar and home indicator, because only the scrollable axis insets are applied.  (165913417)
 - Fixed: Certain control-related view modifiers unexpectedly affect sheet and popover content. In apps built with the 27.0 SDKs, the `controlSize`, `buttonSizing`, `buttonRepeatBehavior`, `menuIndicatorVisibility`, and `ButtonBorderShape` environment values are now reset to their default values in sheets and popovers.  (167448274)
+- Fixed: `@State` variable named using a raw identifier fails to compile.  (179149051) (FB23015259)
 - The `read(from:progress:)` and `write(content:to:previous:progress:)` requirements of `DocumentReader` and `DocumentWriter` are declared with `@concurrent` instead of `nonisolated`. With approachable-concurrency defaults that infer `MainActor` isolation, an unannotated `nonisolated` async method runs on the main actor, defeating the intent of off-main reading and writing. Conforming types that previously used `nonisolated` should switch to `@concurrent` to match.  (180302015)
 - The `makeDocument:` and `makeReadableDocument:` closures passed to `DocumentGroup` initializers are now `@MainActor`-isolated. SwiftUI invokes these factories on the main actor when constructing a document instance, allowing the closure body to access main-actor state — including the supplied `URLDocumentConfiguration` — without hopping isolation domains.  (180302065)
 - `URLDocumentConfiguration` is a `@MainActor`-isolated `@Observable` reference type and no longer conforms to `Sendable`. Code that captured a configuration in a `Sendable` closure or stored it in a `Sendable` value should drop the constraint and access the configuration on the main actor.  (180302075)
+
+###### Known Issues
+
+- `Menu` labels can’t contain controls, views with gestures, or view representables with gesture recognizers.  (169091260) **Workaround:** Position your interactive views above a `Menu` in a `ZStack` or as an `overlay`.
 
 ###### Deprecations
 
@@ -403,9 +416,9 @@ The visionOS 27 SDK provides support for developing apps for Apple Vision Pro de
 
 - System now provides Swift APIs for the C `stat`, `lstat`, `fstat`, and `fstatat` system calls. This includes a new `Stat` type with initializers from `FilePath`, `FileDescriptor`, or a C string; `FilePath.stat()` and `FileDescriptor.stat()` instance methods; and supporting types (`FileType`, `FileMode`, `FileFlags`, `UserID`, `GroupID`, `DeviceID`, and `Inode`). See [`SYS-0006`](https://developer.apple.comhttps://github.com/apple/swift-system/blob/main/Proposals/0006-system-stat.md) for more details.  (160612181)
 
-###### Known Issues
+###### Resolved Issues
 
-- Custom `FilePath` or `FileDescriptor` extensions that make unqualified calls to `stat()` or `stat(_:_:)` (without the `Darwin.` qualification) might conflict with the new Swift `stat()` instance methods introduced in [`SYS-0006`](https://developer.apple.comhttps://github.com/apple/swift-system/blob/main/Proposals/0006-system-stat.md), causing build errors.   (177911316) **Workaround:** Migrate to the new Swift `stat()` methods, or disambiguate using `Darwin.stat()` and `Darwin.stat(_:_:)`. See [`SYS-0008`](https://developer.apple.comhttps://github.com/apple/swift-system/blob/main/Proposals/0008-backdeploy-cinterop-stat.md) for more details.
+- Fixed: Custom `FilePath` or `FileDescriptor` extensions that make unqualified calls to `stat()` or `stat(_)` (without the `Darwin.` qualification) might conflict with the new Swift `stat()` instance methods introduced in [`SYS-0006`](https://developer.apple.comhttps://github.com/apple/swift-system/blob/main/Proposals/0006-system-stat.md), causing build errors. See [`SYS-0008`](https://developer.apple.comhttps://github.com/apple/swift-system/blob/main/Proposals/0008-backdeploy-cinterop-stat.md) for more details.  (177911316)
 
 ##### Testflight
 
@@ -442,7 +455,7 @@ The visionOS 27 SDK provides support for developing apps for Apple Vision Pro de
 
 ###### Deprecations
 
-- Meshes compressed using the USDKit export API or `usdcrush tool` in Beta 1 cannot be decoded by Beta 2, and meshes from Beta 2 cannot be decoded by Beta 1.  (177417812)
+- Meshes compressed using the USDKit export API or `usdcrush tool` in Beta 1 cannot be decoded by Beta 2, and  meshes from Beta 2 cannot be decoded by Beta 1.  (177417812)
 
 ##### Videotoolbox
 

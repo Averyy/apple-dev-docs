@@ -8,7 +8,7 @@ An object that defines the appearance of a shield to display over an application
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst ?+
+- Mac Catalyst 15.0+
 
 ## Declaration
 

@@ -3,22 +3,22 @@
 **Framework**: SwiftUI  
 **Kind**: init
 
-Creates a control, consisting of a URL and a title key, used to navigate to a URL.
+Creates a control, consisting of a URL and a title resource, used to navigate to a URL.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
+- iOS 16.0+
+- iPadOS 16.0+
+- Mac Catalyst 16.0+
+- macOS 13.0+
+- tvOS 16.0+
 - visionOS 1.0+
-- watchOS 7.0+
+- watchOS 9.0+
 
 ## Declaration
 
 ```swift
-nonisolated
-init(_ titleKey: LocalizedStringKey, destination: URL)
+@export(implementation)
+nonisolated init(_ titleResource: LocalizedStringResource, destination: URL)
 ```
 
 #### Discussion
@@ -32,7 +32,7 @@ Link("Visit Example Co",
 
 ## Parameters
 
-- `titleKey`: The key for the localized title that describes the purpose of this link.
+- `titleResource`: The localized title that describes the purpose of this link.
 - `destination`: The URL for the link.
 
 ## See Also

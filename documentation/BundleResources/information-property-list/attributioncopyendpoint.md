@@ -8,7 +8,6 @@ A key that defines a URL that AdAttributionKit uses to deliver copies of ad attr
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
-- Mac Catalyst 17.4+
 
 
 

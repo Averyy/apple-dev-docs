@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: property
 
-Returns `true` if the node was reset during the last tick.
+A Boolean value that indicates whether the node was reset during the last evaluation tick.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -22,9 +22,9 @@ var wasReset: Bool { get }
 ## See Also
 
 - [let id: Int](animationgraphcomponent/activeclipnode/id.md)
-  Returns the id of the node.
+  The unique identifier of the node within the compiled graph.
 - [var currentCycle: Float](animationgraphcomponent/activeclipnode/currentcycle.md)
-  The current playback cycle.
+  The current playback cycle of the clip.
 
 
 ---

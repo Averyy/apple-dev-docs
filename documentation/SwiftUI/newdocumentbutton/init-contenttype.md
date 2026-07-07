@@ -15,13 +15,13 @@ Creates and opens new documents.
 ## Declaration
 
 ```swift
-nonisolated
-init(_ label: Text? = nil, contentType: UTType? = nil)
+@export(implementation)
+nonisolated init(_ title: LocalizedStringResource, contentType: UTType? = nil)
 ```
 
 ## Parameters
 
-- `label`: A label to use for the button.
+- `title`: A title resource to use as the button title.
 - `contentType`: An optional content type of the document to create.
 
 

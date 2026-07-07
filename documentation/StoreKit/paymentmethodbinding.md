@@ -8,7 +8,6 @@ A binding that makes payment methods available in apps for an Apple Account.
 **Availability**:
 - iOS 16.4+
 - iPadOS 16.4+
-- Mac Catalyst 16.4+
 - visionOS 1.0+
 
 ## Declaration

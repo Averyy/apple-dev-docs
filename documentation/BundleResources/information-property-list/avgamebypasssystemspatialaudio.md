@@ -8,7 +8,6 @@ A key that ignores the system spatial-audio toggle in Control Center.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 - tvOS 18.0+
 
 

@@ -8,7 +8,6 @@ The anchor for the plane that the ray intersected.
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

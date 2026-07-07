@@ -8,7 +8,6 @@ The framework doesn’t generate environment textures.
 **Availability**:
 - iOS 12.0+
 - iPadOS 12.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

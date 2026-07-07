@@ -8,7 +8,6 @@ A cache that stores the specialized model artifacts for inference.
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 
@@ -24,27 +23,27 @@ The cache holds the optimized, device-specific artifacts that [`AIModel`](aimode
 
 ## Topics
 
-### Structures
-- [AIModelCache.Policy](aimodelcache/policy.md)
-  A policy that controls when the system purges specialized assets from a cache.
-### Initializers
-- [init?(appGroup: String)](aimodelcache/init(appgroup:).md)
-  Creates a cache that shares specialized assets across an app group.
-### Instance Methods
-- [func deleteAll() throws](aimodelcache/deleteall.md)
-  Deletes all entries in the cache.
-- [func deleteEntries(for: URL) throws](aimodelcache/deleteentries(for:).md)
-  Deletes all cache entries for a specific model, regardless of specialization options.
-- [func deleteEntry(for: URL, options: SpecializationOptions) throws](aimodelcache/deleteentry(for:options:).md)
-  Deletes the cache entry for a specific model and specialization options combination.
-- [func model(for: URL, options: SpecializationOptions) throws -> AIModel?](aimodelcache/model(for:options:).md)
-  Returns a previously specialized model from the cache, if available.
-### Type Properties
+### Accessing the default cache
 - [static let `default`: AIModelCache](aimodelcache/default.md)
   The shared cache scoped to your app bundle.
-### Type Methods
+### Creating a shared cache
+- [init?(appGroup: String)](aimodelcache/init(appgroup:).md)
+  Creates a cache that shares specialized assets across an app group.
+### Loading a specialized model
+- [func model(for: URL, options: SpecializationOptions) throws -> AIModel?](aimodelcache/model(for:options:).md)
+  Returns a previously specialized model from the cache, if available.
+### Deleting cache entries
+- [func deleteEntry(for: URL, options: SpecializationOptions) throws](aimodelcache/deleteentry(for:options:).md)
+  Deletes the cache entry for a specific model and specialization options combination.
+- [func deleteEntries(for: URL) throws](aimodelcache/deleteentries(for:).md)
+  Deletes all cache entries for a specific model, regardless of specialization options.
+- [func deleteAll() throws](aimodelcache/deleteall.md)
+  Deletes all entries in the cache.
 - [static func deleteEntry(referencedBy: Data) throws](aimodelcache/deleteentry(referencedby:).md)
   Deletes a cache entry referenced by bookmark data.
+### Controlling cache persistence
+- [AIModelCache.Policy](aimodelcache/policy.md)
+  A policy that controls when the system purges specialized assets from a cache.
 
 ## Relationships
 

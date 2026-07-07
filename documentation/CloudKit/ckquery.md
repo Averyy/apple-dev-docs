@@ -190,7 +190,7 @@ Queries always run asynchronously and deliver results to a completion handler th
 
 ### Creating a Query
 - [init(coder: NSCoder)](ckquery/init(coder:).md)
-  Creates an operation group from a serialized instance.
+  Creates a query from a serialized instance.
 - [convenience init(recordType: CKRecord.RecordType, predicate: NSPredicate)](ckquery/init(recordtype:predicate:).md)
   Creates a query with the specified record type and predicate.
 ### Accessing the Query Parameters

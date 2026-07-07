@@ -8,7 +8,7 @@ Creates a new instance of a store.
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst ?+
+- Mac Catalyst 15.0+
 - tvOS 26.0+
 
 ## Declaration

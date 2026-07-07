@@ -17,6 +17,7 @@ A schedule for updating a timeline view at the start of every minute.
 ## Declaration
 
 ```swift
+@export(implementation)
 static var everyMinute: EveryMinuteTimelineSchedule { get }
 ```
 

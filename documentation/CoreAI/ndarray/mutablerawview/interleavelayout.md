@@ -8,7 +8,6 @@ Returns which dimension is interleaved, and by what factor it is interleaved. Or
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 
@@ -21,6 +20,17 @@ var interleaveLayout: NDArray.InterleaveLayout? { get }
 #### Discussion
 
 See [`NDArray.InterleaveLayout`](ndarray/interleavelayout-swift.struct.md) for full documentation.
+
+## See Also
+
+- [var scalarType: NDArray.ScalarType](ndarray/mutablerawview/scalartype.md)
+  The scalar type of the ndArray.
+- [var shape: Span<Int>](ndarray/mutablerawview/shape.md)
+  The shape of the ndArray.
+- [var strides: Span<Int>](ndarray/mutablerawview/strides.md)
+  The strides of the ndArray.
+- [var mutableBytes: MutableRawSpan](ndarray/mutablerawview/mutablebytes.md)
+  A mutable span over the backing bytes of this tensor.
 
 
 ---

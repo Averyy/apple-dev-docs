@@ -8,7 +8,7 @@ Initializes a shield configuration with optional submenu items for the secondary
 **Availability**:
 - iOS 26.4+
 - iPadOS 26.4+
-- Mac Catalyst ?+
+- Mac Catalyst 26.4+
 
 ## Declaration
 

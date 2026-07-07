@@ -11,8 +11,8 @@ Presents an ornament.
 ## Declaration
 
 ```swift
-nonisolated
-func ornament<Content>(visibility: Visibility = .automatic, attachmentAnchor: OrnamentAttachmentAnchor, contentAlignment: Alignment3D = .back, @ContentBuilder ornament: () -> Content) -> some View where Content : View
+@export(implementation)
+nonisolated func ornament<Content>(visibility: Visibility = .automatic, attachmentAnchor: OrnamentAttachmentAnchor, contentAlignment: Alignment3D = .back, @ContentBuilder ornament: () -> Content) -> some View where Content : View
 ```
 
 #### Discussion

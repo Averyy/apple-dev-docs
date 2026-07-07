@@ -18,7 +18,7 @@ Returns a transition that offset the view by the specified amount.
 
 ```swift
 @MainActor
-@preconcurrency static func offset(_ offset: CGSize) -> Self
+@export(implementation) @preconcurrency static func offset(_ offset: CGSize) -> Self
 ```
 
 ## See Also

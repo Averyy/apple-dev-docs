@@ -8,7 +8,6 @@ An enumeration of reasons an error happens when the system discovers whether you
 **Availability**:
 - iOS 18.2+
 - iPadOS 18.2+
-- Mac Catalyst 18.2+
 
 ## Declaration
 

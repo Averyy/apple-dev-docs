@@ -16,6 +16,7 @@ Produces content for a conditional statement in a multi-statement closure when t
 ## Declaration
 
 ```swift
+@export(implementation)
 static func buildEither<T, F>(second: F) -> _ConditionalContent<T, F> where V == T.Value, T : SliderTickContent, F : SliderTickContent, T.Body == F.Body
 ```
 

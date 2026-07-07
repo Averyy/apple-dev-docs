@@ -8,7 +8,6 @@ Provides a 4K video format if the device and configuration support it.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
 
 ## Declaration
 

@@ -8,7 +8,6 @@ List of ISO7816 Application Identifiers to be used in tag detection when NFCTagR
 **Availability**:
 - iOS 26.4+
 - iPadOS 26.4+
-- Mac Catalyst 26.4+
 
 ## Declaration
 

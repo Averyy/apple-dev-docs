@@ -45,6 +45,11 @@ struct UniqueBox<Value> where Value : ~Copyable
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)
 
+## See Also
+
+- [struct UniqueArray](uniquearray.md)
+  A dynamically self-resizing, heap allocated, noncopyable array of potentially noncopyable elements.
+
 
 ---
 

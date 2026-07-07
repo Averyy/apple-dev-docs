@@ -8,7 +8,6 @@ It is not recommended to flip this object since is is unlikely the algorithm wil
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst 17.0+
 
 ## Declaration
 

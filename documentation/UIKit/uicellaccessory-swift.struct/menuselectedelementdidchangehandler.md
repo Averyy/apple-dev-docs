@@ -8,7 +8,7 @@ A closure type that defines a handler to perform when a user selects an element 
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst ?+
+- Mac Catalyst 14.0+
 - visionOS ?+
 
 ## Declaration

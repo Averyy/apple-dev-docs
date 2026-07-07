@@ -28,7 +28,7 @@ init(selection: Binding<CGColor>, supportsOpacity: Bool = true, @ContentBuilder 
 ## See Also
 
 - [init(_:selection:supportsOpacity:)](colorpicker/init(_:selection:supportsopacity:).md)
-  Creates a color picker with a text label generated from a title string key.
+  Creates a color picker with a text label generated from a title string resource.
 
 
 ---

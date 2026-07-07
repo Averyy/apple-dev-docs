@@ -17,11 +17,6 @@
 case greedy
 ```
 
-## See Also
-
-- [GenerationOptions.SamplingMode.Kind.nucleus(threshold:seed:)](generationoptions/samplingmode-swift.struct/kind-swift.enum/nucleus(threshold:seed:).md)
-- [GenerationOptions.SamplingMode.Kind.top(k:seed:)](generationoptions/samplingmode-swift.struct/kind-swift.enum/top(k:seed:).md)
-
 
 ---
 

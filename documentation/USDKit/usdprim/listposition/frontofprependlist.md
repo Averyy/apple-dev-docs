@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: case
 
+Insert at the front of the prepend list, making this the strongest arc.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)

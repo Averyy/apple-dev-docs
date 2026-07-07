@@ -1,6 +1,6 @@
 # ComputeNodeGraph.NodeDefinition.Kind.sampleTexture(sampler:)
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: case
 
 A texture sampling operation with specified settings.
@@ -12,7 +12,7 @@ A texture sampling operation with specified settings.
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 ## Declaration
 

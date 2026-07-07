@@ -8,7 +8,6 @@ The session’s presentment intent assertion timed out.
 **Availability**:
 - iOS 18.1+
 - iPadOS 18.1+
-- Mac Catalyst 18.1+
 
 ## Declaration
 

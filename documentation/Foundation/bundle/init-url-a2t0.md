@@ -8,7 +8,6 @@ Returns an `NSBundle` object that corresponds to the specified file URL.
 **Availability**:
 - iOS 4.0+
 - iPadOS 4.0+
-- Mac Catalyst 4.0+
 - visionOS 1.0+
 
 ## Declaration

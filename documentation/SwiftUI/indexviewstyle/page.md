@@ -16,6 +16,7 @@ An index view style that places a page index view over its content.
 ## Declaration
 
 ```swift
+@export(implementation)
 static var page: PageIndexViewStyle { get }
 ```
 

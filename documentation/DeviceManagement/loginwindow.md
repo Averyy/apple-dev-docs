@@ -115,6 +115,7 @@ Specify `com.apple.loginwindow` as the payload type.
 ## Properties
 
 - `AdminHostInfo` (string): The admin host info. If present in the payload, the system displays its value in the Login Window as additional computer information. Before macOS 10.10, this string could only contain host name, system version, or IP address. After macOS 10.10, setting this key to any value allows the user to click the time area of the menu bar to toggle through various computer information values.
+- `AdminMayDisableMCX` (boolean): If `true`, a local administrator user can bypass or disable managed preferences (MCX settings) for their login session. The device presents the user with this option at login only when the user is a local administrator, and other users are not logged in.
 - `AllowList` ([string]): The list of user GUIDs or group GUIDs of users that the system allows to log in. An asterisk (`*`) string specifies all users or groups. This only applies to network accounts and mobile accounts.
 - `AutologinPassword` (string): An optional user password to set up auto login. This must match the `AutologinUsername` user’s current password. Available: macOS 14+
 - `AutologinUsername` (string): The user short name for an existing user to set up auto login. Available: macOS 14+
@@ -131,6 +132,7 @@ Specify `com.apple.loginwindow` as the payload type.
 - `PowerOffDisabledWhileLoggedIn` (boolean): If `true`, the system disables the Power Off menu item when the user is logged in.
 - `RestartDisabled` (boolean): If `true`, the system disables the Restart item.
 - `RestartDisabledWhileLoggedIn` (boolean): If `true`, the system disables the Restart menu item when the user is logged in.
+- `RetriesUntilHint` (integer): If specified, allows a certain number of retries until the device shows a password hint. The device shows no hints if set to a value of 0.
 - `SHOWFULLNAME` (boolean): If `true`, the system shows the name and password dialog. If `false`, the system displays a list of users.
 - `showInputMenu` (boolean): If `true`, the system shows the Input Menu in the Login Window. Available: macOS 10.8+
 - `SHOWOTHERUSERS_MANAGED` (boolean): If `true`, the system displays “Other…” when it shows a list of users.

@@ -8,7 +8,6 @@ A collection of named input values for an inference function.
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 
@@ -39,6 +38,8 @@ Build an `Inputs` collection by calling `insert(_:for:)` for each named input th
 
 - [InferenceFunction.Outputs](inferencefunction/outputs.md)
   The output values produced by running an inference function.
+- [InferenceFunction.MutableViews](inferencefunction/mutableviews.md)
+  A collection of `InferenceValue.MutableView`s which can be updated in-place by an `InferenceFunction`.
 
 
 ---

@@ -15,8 +15,8 @@ Creates a new menu with a localized name for a collection of app- specific comma
 ## Declaration
 
 ```swift
-nonisolated
-init(_ name: LocalizedStringResource, @ContentBuilder content: () -> Content)
+@export(implementation)
+nonisolated init(_ name: LocalizedStringResource, @ContentBuilder content: () -> Content)
 ```
 
 

@@ -8,7 +8,6 @@ The device is submerged at least 1 meter under water.
 **Availability**:
 - iOS 4.0+
 - iPadOS 4.0+
-- Mac Catalyst 4.0+
 - visionOS 1.0+
 - watchOS 2.0+
 

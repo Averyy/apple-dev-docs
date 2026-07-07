@@ -8,7 +8,7 @@ Designates intent that will launch an activity that uses device’s camera to ca
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst ?+
+- Mac Catalyst 18.0+
 
 ## Declaration
 

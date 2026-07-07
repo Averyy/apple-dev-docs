@@ -3,7 +3,7 @@
 **Framework**: AVFoundation  
 **Kind**: property
 
-An array of AVPlannedSegmentConfigurations, each element specifying the configuration of a planned segment, ordered in output PTS order.
+Array of AVPlannedSegmentConfigurations, each element specifying the configuration of a planned segment, ordered in output PTS order.
 
 **Availability**:
 - iOS 27.0+ (Beta)

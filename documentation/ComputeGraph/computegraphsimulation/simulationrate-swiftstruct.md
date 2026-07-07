@@ -1,6 +1,6 @@
 # ComputeGraphSimulation.SimulationRate
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: struct
 
 Specifies the rate and mode for simulation.
@@ -12,7 +12,7 @@ Specifies the rate and mode for simulation.
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 ## Declaration
 

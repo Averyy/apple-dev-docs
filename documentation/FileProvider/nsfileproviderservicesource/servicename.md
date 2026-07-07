@@ -9,7 +9,6 @@ A name that uniquely identifies the service (reverse domain name notation is rec
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 11.0+
 - macOS 11.0+
 - visionOS 1.0+
 

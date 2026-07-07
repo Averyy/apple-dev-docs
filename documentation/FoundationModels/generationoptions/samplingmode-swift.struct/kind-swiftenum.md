@@ -21,8 +21,9 @@ enum Kind
 
 ### Sampling cases
 - [GenerationOptions.SamplingMode.Kind.greedy](generationoptions/samplingmode-swift.struct/kind-swift.enum/greedy.md)
-- [GenerationOptions.SamplingMode.Kind.nucleus(threshold:seed:)](generationoptions/samplingmode-swift.struct/kind-swift.enum/nucleus(threshold:seed:).md)
-- [GenerationOptions.SamplingMode.Kind.top(k:seed:)](generationoptions/samplingmode-swift.struct/kind-swift.enum/top(k:seed:).md)
+### Enumeration Cases
+- [GenerationOptions.SamplingMode.Kind.randomProbabilityThreshold(_:seed:)](generationoptions/samplingmode-swift.struct/kind-swift.enum/randomprobabilitythreshold(_:seed:).md)
+- [GenerationOptions.SamplingMode.Kind.randomTopK(_:seed:)](generationoptions/samplingmode-swift.struct/kind-swift.enum/randomtopk(_:seed:).md)
 
 ## Relationships
 

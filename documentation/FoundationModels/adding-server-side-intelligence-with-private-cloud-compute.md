@@ -60,7 +60,7 @@ case .unavailable(let other):
 }
 ```
 
-> **Note**: To use either the on-device model or the model on PCC, people need to turn on Apple Intelligence on their device. For a list of supported devices, see [`Apple Intelligence`](https://developer.apple.comhttps://www.apple.com/apple-intelligence/).
+> **Note**: Model availability depends on whether the device and region supports Apple Intelligence. For a list of supported devices, see [`Apple Intelligence`](https://developer.apple.comhttps://www.apple.com/apple-intelligence/).
 
 #### Handle Usage Limits From Using Pcc
 

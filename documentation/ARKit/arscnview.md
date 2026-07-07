@@ -9,6 +9,7 @@ A view that blends virtual 3D content from SceneKit into your augmented reality 
 - iOS 11.0+
 - iPadOS 11.0+
 - Mac Catalyst 13.1+
+- visionOS ?+
 
 ## Declaration
 
@@ -89,7 +90,6 @@ Because ARKit requires Metal, use only Metal features of SceneKit. For example:
 - [Hashable](../Swift/Hashable.md)
 - [NSCoding](../Foundation/NSCoding.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
-- [NSTouchBarProvider](../AppKit/NSTouchBarProvider.md)
 - [SCNSceneRenderer](../SceneKit/SCNSceneRenderer.md)
 - [SCNTechniqueSupport](../SceneKit/SCNTechniqueSupport.md)
 - [Sendable](../Swift/Sendable.md)

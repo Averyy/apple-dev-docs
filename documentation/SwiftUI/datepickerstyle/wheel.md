@@ -16,7 +16,7 @@ A date picker style that displays each component as columns in a scrollable whee
 
 ```swift
 @MainActor
-@preconcurrency static var wheel: WheelDatePickerStyle { get }
+@export(implementation) @preconcurrency static var wheel: WheelDatePickerStyle { get }
 ```
 
 ## See Also

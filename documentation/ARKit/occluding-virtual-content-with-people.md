@@ -7,7 +7,6 @@ Cover your app’s virtual content with people that ARKit perceives in the camer
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst 13.0+
 - Xcode 16.0+
 
 #### Overview

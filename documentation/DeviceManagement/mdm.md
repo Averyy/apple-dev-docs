@@ -24,7 +24,7 @@ object MDM
 
 - [Deploy software updates using declarative management](deploy-software-updates-using-declarative-management.md)
 - [Displaying managed apps and packages](displaying-managed-apps-and-packages.md)
-- [Implementing Platform SSO during device enrollment](implementing-platform-sso-during-device-enrollment.md)
+- [Implementing Platform SSO during Automated Device Enrollment](implementing-platform-sso-during-automated-device-enrollment.md)
 - [Implementing the simple authentication account-driven enrollment flow](implementing-the-simple-authentication-account-driven-enrollment-flow.md)
 - [Managing devices and users in macOS](managing-devices-and-users-in-macos.md)
 - [Migrating managed devices](migrating-managed-devices.md)

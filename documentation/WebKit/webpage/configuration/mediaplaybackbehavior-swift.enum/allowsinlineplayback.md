@@ -8,7 +8,7 @@ Allows videos to play inline. When adding a video element to an HTML document on
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst 26.0+
 - visionOS 26.0+
 
 ## Declaration

@@ -8,7 +8,7 @@ A type that specifies the behaviors to use when loading and rendering page conte
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst 26.0+
 - macOS 26.0+
 - visionOS 26.0+
 
@@ -32,6 +32,8 @@ Create a `NavigationPreferences` value when you want to change the default rende
   Indicates whether JavaScript from web content is allowed to run.
 - [var alternateRequest: URLRequest?](webpage/navigationpreferences/alternaterequest.md)
   Used to make changes to the network request that will be used for this navigation’s main resource load.
+- [var isGlobalPrivacyControlEnabled: Bool](webpage/navigationpreferences/isglobalprivacycontrolenabled.md)
+  Whether the Global Privacy Control (GPC) signal is enabled for the navigation.
 - [var isLockdownModeEnabled: Bool](webpage/navigationpreferences/islockdownmodeenabled.md)
   A Boolean value that indicates whether to use Lockdown Mode in the web page.
 - [var overrideReferrer: String?](webpage/navigationpreferences/overridereferrer.md)

@@ -8,7 +8,7 @@ The user pressed the optional secondary button underneath the primary button of 
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst ?+
+- Mac Catalyst 15.0+
 
 ## Declaration
 

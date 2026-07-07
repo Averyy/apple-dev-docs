@@ -8,7 +8,6 @@ The scene visible to the camera doesn’t contain enough distinguishable feature
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 11.0+
 
 ## Declaration
 

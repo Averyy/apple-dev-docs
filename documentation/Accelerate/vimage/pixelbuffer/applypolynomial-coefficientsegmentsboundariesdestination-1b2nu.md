@@ -8,7 +8,7 @@ Applies a set of piecewise polynomials to a 4-channel, 32-bit interleaved buffer
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst ?+
+- Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
 - visionOS ?+

@@ -132,23 +132,23 @@ Specify `com.apple.dock` as the payload type.
 - `magnification` (boolean): If `true`, enables magnification.
 - `magnify-immutable` (boolean): If `true`, locks magnification.
 - `magsize-immutable` (boolean): If `true`, locks the magnification slider.
-- `MCXDockSpecialFolders` ([string]): One or more special folders that may be created at user login time and placed in the Dock. The “My Applications” item is only used for Simple Finder environments. The “Original Network Home” item is only used for mobile account users.
+- `MCXDockSpecialFolders` ([string]): One or more special folders that the device may create at user login time and place in the Dock. The “My Applications” item is only used for Simple Finder environments. The “Original Network Home” item is only used for mobile account users.
 - `mineffect` (string): The minimize effect.
 - `mineffect-immutable` (boolean): If `true`, locks “Minimize windows using.”
 - `minimize-to-application` (boolean): If `true`, enables “Minimize windows into application icon.”
 - `minintoapp-immutable` (boolean): If `true`, disables the “Minimize windows into application icon” checkbox. Available: macOS 10.14+
 - `orientation` (string): The orientation of the Dock.
-- `persistent-apps` ([Dock.StaticItem]): An array of items located on the Applications side of the Dock that can be removed from the Dock.
-- `persistent-others` ([Dock.StaticItem]): An array of items located on the Documents side of the Dock that can be removed from the Dock.
+- `persistent-apps` ([Dock.StaticItem]): An array of items located on the Applications side of the Dock that users can remove from the Dock.
+- `persistent-others` ([Dock.StaticItem]): An array of items located on the Documents side of the Dock that users can remove from the Dock.
 - `position-immutable` (boolean): If `true`, locks the position.
 - `show-process-indicators` (boolean): If true, shows the process indicator.
 - `show-recents` (boolean): If `true`, enables “Show recent items.” Available: macOS 10.14+
 - `showindicators-immutable` (boolean): If `true`, locks “Show indicators.”
 - `showrecents-immutable` (boolean): If `true`, disables “Show recent applications” checkbox. Available: macOS 10.15+
 - `size-immutable` (boolean): If `true`, locks the size slider.
-- `static-apps` ([Dock.StaticItem]): An array of items located on the Applications side of the Dock and cannot be removed from that location.
+- `static-apps` ([Dock.StaticItem]): An array of items located on the Applications side of the Dock that users can’t remove from that location.
 - `static-only` (boolean): If `true`, uses the `static-apps` and `static-others` dictionaries for the Dock and ignores any items in the `persistent-apps` and `persistent-others` dictionaries. If `false`, the contents are merged with the static items listed first.
-- `static-others` ([Dock.StaticItem]): An array of items located on the Documents side of the Dock and cannot be removed from that location.
+- `static-others` ([Dock.StaticItem]): An array of items located on the Documents side of the Dock that users can’t remove from that location.
 - `tilesize` (integer): The tile size. Values must be in the range from 16 to 128.
 - `windowtabbing` (string): Set the “Prefer tabs when opening documents” to the provided value. Available: macOS 10.15+
 - `windowtabbing-immutable` (boolean): If `true`, disables “Prefer tabs when opening documents” checkbox. Available: macOS 10.12+

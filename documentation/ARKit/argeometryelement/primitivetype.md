@@ -8,7 +8,6 @@ The geometry’s type of data (triangle, or line).
 **Availability**:
 - iOS 13.4+
 - iPadOS 13.4+
-- Mac Catalyst 13.4+
 
 ## Declaration
 

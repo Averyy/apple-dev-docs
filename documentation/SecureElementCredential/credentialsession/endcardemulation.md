@@ -8,7 +8,6 @@ Ends card emulation and transitions the session to management state.
 **Availability**:
 - iOS 18.1+
 - iPadOS 18.1+
-- Mac Catalyst 18.1+
 
 ## Declaration
 

@@ -8,7 +8,6 @@ Represents a SAML authentication scheme.
 **Availability**:
 - iOS 10.2+
 - iPadOS 10.2+
-- Mac Catalyst 10.2+
 - macOS ?+
 - tvOS 10.1+
 - visionOS 1.0+

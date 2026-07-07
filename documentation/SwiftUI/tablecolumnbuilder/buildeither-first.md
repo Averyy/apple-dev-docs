@@ -15,6 +15,7 @@ Creates a column result for the first of two column content alternatives.
 ## Declaration
 
 ```swift
+@export(implementation)
 static func buildEither<T, F>(first: T) -> _ConditionalContent<T, F> where RowValue == T.TableRowValue, Sort == T.TableColumnSortComparator, T : TableColumnContent, F : TableColumnContent, T.TableColumnSortComparator == F.TableColumnSortComparator, T.TableRowValue == F.TableRowValue
 ```
 

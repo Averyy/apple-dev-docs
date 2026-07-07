@@ -8,7 +8,7 @@ Creates a new, empty map with the bounds, interaction modes, a binding to a map 
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst ?+
+- Mac Catalyst 17.0+
 - visionOS ?+
 
 ## Declaration

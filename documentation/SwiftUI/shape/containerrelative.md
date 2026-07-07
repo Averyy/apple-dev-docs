@@ -17,6 +17,7 @@ A shape that is replaced by an inset version of the current container shape. If 
 ## Declaration
 
 ```swift
+@export(implementation)
 static var containerRelative: ContainerRelativeShape { get }
 ```
 

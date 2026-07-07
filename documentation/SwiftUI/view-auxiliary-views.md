@@ -14,9 +14,9 @@ Use these modifiers to manage supplemental views that present context-specific c
 - [Configure your apps navigation titles](configure-your-apps-navigation-titles.md)
   Use a navigation title to display the current navigation state of an interface.
 - [func navigationTitle(_:)](view/navigationtitle(_:).md)
-  Configures the view’s title for purposes of navigation, using a string binding.
+  Configures the view’s title for purposes of navigation, using a localized string resource.
 - [func navigationSubtitle(_:)](view/navigationsubtitle(_:).md)
-  Configures the view’s subtitle for purposes of navigation.
+  Configures the view’s subtitle for purposes of navigation, using a localized string resource.
 ### Navigation title configuration
 - [func navigationDocument(_:)](view/navigationdocument(_:).md)
   Configures the view’s document for purposes of navigation.
@@ -99,8 +99,6 @@ Use these modifiers to manage supplemental views that present context-specific c
   Configures the semantic role for the content populating the toolbar.
 - [func toolbarMinimizationSafeAreaAdjustment(ToolbarMinimizationSafeAreaAdjustment, for: ToolbarPlacement...) -> some View](view/toolbarminimizationsafeareaadjustment(_:for:).md)
   Sets the safe area adjustment for the specified bars during minimization.
-- [func toolbarMinimizeBehavior(ToolbarMinimizeBehavior, for: ToolbarPlacement...) -> some View](view/toolbarminimizebehavior(_:for:).md)
-  Sets the minimize behavior for the specified bars.
 - [func toolbarTitleMenu<C>(content: () -> C) -> some View](view/toolbartitlemenu(content:).md)
   Configure the title menu of a toolbar.
 - [func toolbarTitleDisplayMode(ToolbarTitleDisplayMode) -> some View](view/toolbartitledisplaymode(_:).md)
@@ -114,11 +112,9 @@ Use these modifiers to manage supplemental views that present context-specific c
   Adds a context menu with a custom preview to a view.
 - [func contextMenu<I, M>(forSelectionType: I.Type, menu: (Set<I>) -> M, primaryAction: ((Set<I>) -> Void)?) -> some View](view/contextmenu(forselectiontype:menu:primaryaction:).md)
   Adds an item-based context menu to a view.
-- [func onMenuItemHighlight(perform: (Bool) -> Void) -> some View](view/onmenuitemhighlight(perform:).md)
-  Adds an action to perform when the highlight state of a menu item changes.
 ### Badges
 - [func badge(_:)](view/badge(_:).md)
-  Generates a badge for the view from an integer value.
+  Generates a badge for the view from a localized string resource.
 - [func badgeProminence(BadgeProminence) -> some View](view/badgeprominence(_:).md)
   Specifies the prominence of badges created by this view.
 ### Lists
@@ -126,7 +122,7 @@ Use these modifiers to manage supplemental views that present context-specific c
   Sets the label that is used in a section index to point to this section, typically only a single character long.
 ### Help text
 - [func help(_:)](view/help(_:).md)
-  Adds help text to a view using a text view that you provide.
+  Adds help text to a view using a localized string resource that you provide.
 ### Status bar
 - [func statusBarHidden(Bool) -> some View](view/statusbarhidden(_:).md)
   Sets the visibility of the status bar.

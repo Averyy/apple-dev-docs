@@ -3,40 +3,30 @@
 **Framework**: SwiftUI  
 **Kind**: method
 
-Scales this view’s rendered output by the given amount in both the horizontal and vertical directions, relative to an anchor point.
+Scales this view uniformly by the specified factor, relative to an anchor point.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.0+
 - visionOS 1.0+
 
 ## Declaration
 
 ```swift
-nonisolated
-func scaleEffect(_ s: CGFloat, anchor: UnitPoint = .center) -> ModifiedContent<Self, _UniformScaleEffect>
+@export(implementation)
+nonisolated func scaleEffect(_ s: CGFloat, anchor: UnitPoint3D = .center) -> some View
 ```
+
+#### Return Value
+
+A view that scales this view by `s` in all dimensions.
 
 #### Discussion
 
-Use `scaleEffect(_:anchor:)` to apply a horizontally and vertically scaling transform to a view.
-
-```swift
-Image(systemName: "envelope.badge.fill")
-    .resizable()
-    .frame(width: 100, height: 100, alignment: .center)
-    .foregroundColor(Color.red)
-    .scaleEffect(2, anchor: .leading)
-    .border(Color.gray)
-```
-
-![A screenshot showing a 100x100 pixel red envelope scaled up to 2x the](https://docs-assets.developer.apple.com/published/03d5679315ce726a01d960fc8a3a8f96/SwiftUI-View-scaleEffect-cgfloat%402x.png)
+The original dimensions of the view are considered to be unchanged by scaling the contents. To change the dimensions of the view, use a modifier like `frame()` instead.
 
 ## Parameters
 
-- `s`: The amount to scale the view in the view in both the horizontal and vertical directions.
-- `anchor`: The anchor point with a default of [`center`](unitpoint/center.md) that indicates the starting position for the scale operation.
+- `s`: The scale factor for this view.
+- `anchor`: The anchor point about which to scale the view. Defaults to center.
 
 ## See Also
 

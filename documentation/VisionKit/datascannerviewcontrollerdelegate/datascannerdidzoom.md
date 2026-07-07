@@ -9,7 +9,6 @@ Responds when a person or your code changes the zoom factor.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
 - visionOS 1.0+
 
 ## Declaration

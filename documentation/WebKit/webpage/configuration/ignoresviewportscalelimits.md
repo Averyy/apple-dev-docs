@@ -8,7 +8,7 @@ Determines whether a webpage allows scaling of the webpage.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst 26.0+
 - visionOS 26.0+
 
 ## Declaration

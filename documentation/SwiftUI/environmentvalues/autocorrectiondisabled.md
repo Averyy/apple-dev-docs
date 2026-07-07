@@ -17,6 +17,7 @@ A Boolean value that determines whether the view hierarchy has auto-correction e
 ## Declaration
 
 ```swift
+@export(implementation)
 var autocorrectionDisabled: Bool { get set }
 ```
 

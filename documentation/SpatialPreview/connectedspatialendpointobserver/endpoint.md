@@ -3,7 +3,7 @@
 **Framework**: Spatial Preview  
 **Kind**: property
 
-The endpoint for the connected device (if available). If no connected device is available, then an `UnavailableError` error will be thrown. You may choose to discover another device using `SpatialPreviewDevicePicker`.
+The endpoint for the visionOS device currently connected via Mac Virtual Display.
 
 **Availability**:
 - macOS 27.0+ (Beta)
@@ -15,6 +15,12 @@ The endpoint for the connected device (if available). If no connected device is 
 @MainActor
 final var endpoint: SpatialPreviewEndpoint { get async throws }
 ```
+
+#### Discussion
+
+Check [`isEndpointAvailable`](connectedspatialendpointobserver/isendpointavailable.md) before accessing this property to avoid catching an [`ConnectedSpatialEndpointObserver.UnavailableError`](connectedspatialendpointobserver/unavailableerror.md).
+
+> **Note**: [`ConnectedSpatialEndpointObserver.UnavailableError`](connectedspatialendpointobserver/unavailableerror.md) if no device is currently connected via Mac Virtual Display.
 
 
 ---

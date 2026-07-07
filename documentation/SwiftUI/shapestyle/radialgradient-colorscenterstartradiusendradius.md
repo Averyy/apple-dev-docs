@@ -17,6 +17,7 @@ A radial gradient defined by a collection of colors.
 ## Declaration
 
 ```swift
+@export(implementation)
 static func radialGradient(colors: [Color], center: UnitPoint, startRadius: CGFloat, endRadius: CGFloat) -> RadialGradient
 ```
 

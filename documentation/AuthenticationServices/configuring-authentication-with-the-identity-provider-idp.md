@@ -73,8 +73,6 @@ When Device registration completes successfully, the system initiates user regis
 
 ## See Also
 
-- [Configuring Device Management](configuring-device-management.md)
-  Configure Device Management to support device and user registration for Platform SSO.
 - [class ASAuthorizationProviderExtensionLoginConfiguration](asauthorizationproviderextensionloginconfiguration.md)
   An interface for configuring platform single sign-on.
 - [class ASAuthorizationProviderExtensionLoginManager](asauthorizationproviderextensionloginmanager.md)

@@ -8,7 +8,6 @@ Initializes a DL-TDOA configuration with a network identifier and discovery meth
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 
 ## Declaration
 

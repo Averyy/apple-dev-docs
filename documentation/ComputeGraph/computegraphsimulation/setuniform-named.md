@@ -1,6 +1,6 @@
 # setUniform(_:named:)
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: method
 
 Finds the named uniform and sets it to the given BitwiseCopyable value.
@@ -12,7 +12,7 @@ Finds the named uniform and sets it to the given BitwiseCopyable value.
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 ## Declaration
 

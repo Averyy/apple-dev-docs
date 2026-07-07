@@ -22,7 +22,7 @@ object CertificateRoot
 
 ## Mentions
 
-- [Implementing Platform SSO during device enrollment](implementing-platform-sso-during-device-enrollment.md)
+- [Implementing Platform SSO during Automated Device Enrollment](implementing-platform-sso-during-automated-device-enrollment.md)
 
 #### Discussion
 

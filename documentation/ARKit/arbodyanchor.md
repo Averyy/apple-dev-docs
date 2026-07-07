@@ -8,7 +8,6 @@ An anchor that tracks the position and movement of a human body in the rear-faci
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

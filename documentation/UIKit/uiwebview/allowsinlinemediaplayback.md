@@ -8,7 +8,6 @@ A Boolean value that determines whether HTML5 videos play inline or use the nati
 **Availability**:
 - iOS 4.0+
 - iPadOS 4.0+
-- Mac Catalyst 4.0+
 
 ## Declaration
 

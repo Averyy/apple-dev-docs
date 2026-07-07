@@ -15,6 +15,7 @@ Creates a generic, unsortable single column expression.
 ## Declaration
 
 ```swift
+@export(implementation)
 static func buildExpression<Column>(_ column: Column) -> Column where RowValue == Column.TableRowValue, Column : TableColumnContent, Column.TableColumnSortComparator == Never
 ```
 

@@ -8,7 +8,6 @@ A mutable view over the storage of a tensor.
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 
@@ -36,6 +35,13 @@ struct MutableView<Element> where Element : BitwiseCopyable
   The shape of the tensor.
 - [var strides: Span<Int>](ndarray/mutableview/strides.md)
   The strides of the tensor.
+- [var interleaveLayout: NDArray.InterleaveLayout?](ndarray/mutableview/interleavelayout.md)
+  Returns which dimension is interleaved, and by what factor it is interleaved. Or returns `nil` if there is not an interleaved dimension.
+### Accessing elements
+- [var contiguousElements: MutableSpan<Element>?](ndarray/mutableview/contiguouselements.md)
+  Returns a `MutableSpan` over the backing memory of this view if the memory is in a contiguous layout, otherwise returns `nil`.
+- [subscript<let rank : Int>(scalarAt _: InlineArray<rank, Int>) -> Element](ndarray/mutableview/subscript(scalarat:).md)
+  Access the element at a multi-dimensional `index`.
 ### Writing data
 - [func copyElements(from: some Sequence<Element>)](ndarray/mutableview/copyelements(from:).md)
   Copies the elements from `sequence` into this view in row-major order.
@@ -44,28 +50,20 @@ struct MutableView<Element> where Element : BitwiseCopyable
 ### Accessing memory
 - [func withUnsafeMutablePointer<R, E>((UnsafeMutablePointer<Element>, Span<Int>, Span<Int>) throws(E) -> R) throws(E) -> R](ndarray/mutableview/withunsafemutablepointer(_:).md)
   Invokes the provided closure with the backing data and memory layout of this view.
-### Converting to immutable
-- [var view: NDArray.View<Element>](ndarray/mutableview/view.md)
-  An immutable view of this mutable view.
-### Instance Properties
-- [var contiguousElements: MutableSpan<Element>?](ndarray/mutableview/contiguouselements.md)
-  Returns a `MutableSpan` over the backing memory of this view if the memory is in a contiguous layout, otherwise returns `nil`.
-- [var interleaveLayout: NDArray.InterleaveLayout?](ndarray/mutableview/interleavelayout.md)
-  Returns which dimension is interleaved, and by what factor it is interleaved. Or returns `nil` if there is not an interleaved dimension.
-- [var mutableRawView: NDArray.MutableRawView](ndarray/mutableview/mutablerawview.md)
-  Returns a mutable raw view over the same data.
-### Instance Methods
-- [func mutatingSlice<let indexRank : Int>(at: [indexRank of any NDArray.RangeExpression]) -> NDArray.MutableView<Element>](ndarray/mutableview/mutatingslice(at:)-30asd.md)
-  Returns a sub-view with the same rank as this view by slicing the dimensions at the provided ranges.
-- [func mutatingSlice(at: [any NDArray.RangeExpression]) -> NDArray.MutableView<Element>](ndarray/mutableview/mutatingslice(at:)-9pmi4.md)
-  Returns a sub-view with the same rank as this view by slicing the dimensions at the provided ranges.
+### Slicing the view
 - [func slice<let indexRank : Int>(at: [indexRank of any NDArray.RangeExpression]) -> NDArray.MutableView<Element>](ndarray/mutableview/slice(at:)-50cpv.md)
   Returns a sub-view with the same rank as this view by slicing the dimensions at the provided ranges.
 - [func slice(at: [any NDArray.RangeExpression]) -> NDArray.MutableView<Element>](ndarray/mutableview/slice(at:)-qyjq.md)
   Returns a sub-view with the same rank as this view by slicing the dimensions at the provided ranges.
-### Subscripts
-- [subscript<let rank : Int>(scalarAt _: InlineArray<rank, Int>) -> Element](ndarray/mutableview/subscript(scalarat:).md)
-  Access the element at a multi-dimensional `index`.
+- [func mutatingSlice<let indexRank : Int>(at: [indexRank of any NDArray.RangeExpression]) -> NDArray.MutableView<Element>](ndarray/mutableview/mutatingslice(at:)-30asd.md)
+  Returns a sub-view with the same rank as this view by slicing the dimensions at the provided ranges.
+- [func mutatingSlice(at: [any NDArray.RangeExpression]) -> NDArray.MutableView<Element>](ndarray/mutableview/mutatingslice(at:)-9pmi4.md)
+  Returns a sub-view with the same rank as this view by slicing the dimensions at the provided ranges.
+### Converting to other views
+- [var view: NDArray.View<Element>](ndarray/mutableview/view.md)
+  An immutable view of this mutable view.
+- [var mutableRawView: NDArray.MutableRawView](ndarray/mutableview/mutablerawview.md)
+  Returns a mutable raw view over the same data.
 
 ## See Also
 

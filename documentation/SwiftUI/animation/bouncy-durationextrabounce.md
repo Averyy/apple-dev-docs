@@ -17,6 +17,7 @@ A spring animation with a predefined duration and higher amount of bounce that c
 ## Declaration
 
 ```swift
+@export(implementation)
 static func bouncy(duration: TimeInterval = 0.5, extraBounce: Double = 0.0) -> Animation
 ```
 

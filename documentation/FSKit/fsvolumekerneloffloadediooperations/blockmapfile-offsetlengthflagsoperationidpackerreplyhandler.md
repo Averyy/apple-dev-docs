@@ -31,6 +31,15 @@ If satisfying a blockmap request requires more extents than `packer` can handle,
 - `packer`: An extent packer you use to pack the requested range of the file’s allocated disk space. FSKit sends all of the packed extents to the kernel when it invokes `reply`.
 - `reply`: A block or closure to indicate success or failure. If mapping fails, pass an error as the one parameter to the reply handler. If mapping succeeds, pass `nil`. For an `async` Swift implementation, there’s no reply handler; simply throw an error or return normally.
 
+## See Also
+
+- [struct FSBlockmapFlags](fsblockmapflags.md)
+  Flags that describe the behavior of a blockmap operation.
+- [func completeIO(for: FSItem, offset: off_t, length: Int, status: any Error, flags: FSCompleteIOFlags, operationID: FSOperationID, replyHandler: ((any Error)?) -> Void)](fsvolumekerneloffloadediooperations/completeio(for:offset:length:status:flags:operationid:replyhandler:).md)
+  Completes an I/O operation for a given file.
+- [struct FSCompleteIOFlags](fscompleteioflags.md)
+  Flags that describe the behavior of an I/O completion operation.
+
 
 ---
 

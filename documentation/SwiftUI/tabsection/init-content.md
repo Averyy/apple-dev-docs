@@ -17,12 +17,13 @@ Creates a section with the provided content.
 ## Declaration
 
 ```swift
-init(_ titleKey: LocalizedStringKey, @TabContentBuilder<SelectionValue> content: () -> Content) where Header == Text, Footer == EmptyView
+@export(implementation)
+init(_ titleResource: LocalizedStringResource, @TabContentBuilder<SelectionValue> content: () -> Content) where Header == Text, Footer == EmptyView
 ```
 
 ## Parameters
 
-- `titleKey`: The localized string key label for the section’s header.
+- `titleResource`: The localized string resource label for the section’s header.
 - `content`: The section’s content.
 
 ## See Also

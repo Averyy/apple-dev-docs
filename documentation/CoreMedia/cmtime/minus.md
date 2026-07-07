@@ -8,7 +8,7 @@ Returns a new time that represents the difference between two times.
 **Availability**:
 - iOS 4.0+
 - iPadOS 4.0+
-- Mac Catalyst ?+
+- Mac Catalyst 4.0+
 - macOS 10.7+
 - tvOS 9.0+
 - visionOS 1.0+

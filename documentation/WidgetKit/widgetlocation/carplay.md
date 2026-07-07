@@ -8,7 +8,7 @@ The CarPlay location for a widget.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

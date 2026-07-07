@@ -52,11 +52,11 @@ var body: some View {
 
 ### Creating a disclosure group
 - [init(_:content:)](disclosuregroup/init(_:content:).md)
-  Creates a disclosure group, using a provided localized string key to create a text view for the label.
+  Creates a disclosure group, using a provided localized string resource to create a text view for the label.
 - [init(content: () -> Content, label: () -> Label)](disclosuregroup/init(content:label:).md)
   Creates a disclosure group with the given label and content views.
 - [init(_:isExpanded:content:)](disclosuregroup/init(_:isexpanded:content:).md)
-  Creates a disclosure group, using a provided localized string key to create a text view for the label, and a binding to the expansion state (expanded or collapsed).
+  Creates a disclosure group, using a provided localized string resource to create a text view for the label, and a binding to the expansion state (expanded or collapsed).
 - [init(isExpanded: Binding<Bool>, content: () -> Content, label: () -> Label)](disclosuregroup/init(isexpanded:content:label:).md)
   Creates a disclosure group with the given label and content views, and a binding to the expansion state (expanded or collapsed).
 

@@ -6,10 +6,10 @@
 The attributes the system fetches for the searchable items.
 
 **Availability**:
-- iOS 10.0+
-- iPadOS 10.0+
-- Mac Catalyst 13.1+
-- macOS 10.13+
+- iOS 16.0+
+- iPadOS 16.0+
+- Mac Catalyst 16.0+
+- macOS 13.0+
 - visionOS 1.0+
 
 ## Declaration

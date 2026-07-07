@@ -8,7 +8,6 @@ The Live Activity content is out of date and needs an update.
 **Availability**:
 - iOS 16.2+
 - iPadOS 16.2+
-- Mac Catalyst 16.2+
 
 ## Declaration
 

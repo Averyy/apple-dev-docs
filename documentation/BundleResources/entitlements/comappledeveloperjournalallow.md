@@ -8,7 +8,6 @@ An entitlement that enables an app to present the journaling suggestions picker.
 **Availability**:
 - iOS 17.2+
 - iPadOS 17.2+
-- Mac Catalyst 17.2+
 
 
 

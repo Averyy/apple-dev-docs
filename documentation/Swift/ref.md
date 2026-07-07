@@ -18,7 +18,7 @@ A safe reference allowing in-place reads to a shared value.
 
 ```swift
 @frozen
-struct Ref<Value> where Value : ~Copyable, Value : ~Escapable
+struct Ref<Value> where Value : ~Copyable
 ```
 
 ## Topics
@@ -39,6 +39,11 @@ struct Ref<Value> where Value : ~Copyable, Value : ~Escapable
 - [Copyable](copyable.md)
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)
+
+## See Also
+
+- [struct MutableRef](mutableref.md)
+  A safe mutable reference allowing in-place mutation to an exclusive value.
 
 
 ---

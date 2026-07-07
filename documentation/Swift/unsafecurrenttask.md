@@ -33,7 +33,8 @@ For information about the language-level concurrency model that `UnsafeCurrentTa
 ### Getting an Unsafe Reference to the Current Task
 - [func withUnsafeCurrentTask<T>(body: (UnsafeCurrentTask?) throws -> T) rethrows -> T](withunsafecurrenttask(body:)-6gvhl.md)
   Calls a closure with an unsafe reference to the current task.
-- [func withUnsafeCurrentTask<T>(body: (UnsafeCurrentTask?) async throws -> T) async rethrows -> T](withunsafecurrenttask(body:)-2cbzn.md)
+- [func withUnsafeCurrentTask<T>(body: nonisolated(nonsending) (UnsafeCurrentTask?) async throws -> T) async rethrows -> T](withunsafecurrenttask(body:)-udlb.md)
+  Calls a closure with an unsafe reference to the current task.
 ### Instance Properties
 - [var basePriority: TaskPriority](unsafecurrenttask/basepriority.md)
   The current task’s base priority.

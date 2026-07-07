@@ -8,7 +8,7 @@ Allows the extension to respond to a user action when the system displays a shie
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst ?+
+- Mac Catalyst 15.0+
 
 ## Declaration
 

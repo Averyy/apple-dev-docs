@@ -8,7 +8,6 @@ An entitlement that indicates whether you own the alternative browser engine tha
 **Availability**:
 - iOS 26.2+
 - iPadOS 26.2+
-- Mac Catalyst 26.2+
 
 
 

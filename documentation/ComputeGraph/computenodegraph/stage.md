@@ -1,6 +1,6 @@
 # ComputeNodeGraph.Stage
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: struct
 
 An execution context within a compute node graph that groups related nodes into a processing phase.
@@ -12,7 +12,7 @@ An execution context within a compute node graph that groups related nodes into 
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 ## Declaration
 

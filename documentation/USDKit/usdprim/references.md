@@ -24,9 +24,11 @@ var references: USDPrim.ReferenceCollection { get }
 - [USDPrim.Reference](usdprim/reference.md)
   A reference to an external layer or asset.
 - [USDPrim.ReferenceCollection](usdprim/referencecollection.md)
+  Manages reference composition arcs on a prim.
 - [USDPrim.Payload](usdprim/payload.md)
   A payload to an external asset.
 - [USDPrim.ListPosition](usdprim/listposition.md)
+  Where a new composition arc should be inserted relative to existing arcs.
 
 
 ---

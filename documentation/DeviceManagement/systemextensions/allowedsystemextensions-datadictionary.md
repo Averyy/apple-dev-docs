@@ -16,7 +16,7 @@ object SystemExtensions.AllowedSystemExtensions
 
 ## Properties
 
-- `ANY` ([string]): The mapping of team identifiers to arrays of bundle identifiers, where the bundle identifier is that of the system extension to be installed.
+- `ANY` ([string]): The mapping of team identifiers to arrays of bundle identifiers, where the bundle identifier defines the system extension to install.
 
 ## See Also
 

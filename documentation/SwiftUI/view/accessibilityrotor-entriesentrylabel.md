@@ -6,19 +6,19 @@
 Create an Accessibility Rotor with the specified user-visible label and entries.
 
 **Availability**:
-- iOS 15.0+
-- iPadOS 15.0+
-- Mac Catalyst 15.0+
-- macOS 12.0+
-- tvOS 15.0+
+- iOS 16.0+
+- iPadOS 16.0+
+- Mac Catalyst 16.0+
+- macOS 13.0+
+- tvOS 16.0+
 - visionOS 1.0+
-- watchOS 8.0+
+- watchOS 9.0+
 
 ## Declaration
 
 ```swift
-nonisolated
-func accessibilityRotor<EntryModel>(_ rotorLabel: Text, entries: [EntryModel], entryLabel: KeyPath<EntryModel, String>) -> some View where EntryModel : Identifiable
+@export(implementation)
+nonisolated func accessibilityRotor<EntryModel>(_ rotorLabelResource: LocalizedStringResource, entries: [EntryModel], entryLabel: KeyPath<EntryModel, String>) -> some View where EntryModel : Identifiable
 ```
 
 #### Discussion
@@ -43,12 +43,13 @@ ScrollView {
     }
 }
 .accessibilityElement(children: .contain)
-.accessibilityRotor("VIPs", entries: vipMessages, label: \.subject)
+.accessibilityRotor("VIPs", entries: vipMessages,
+    entryLabel: \.subject)
 ```
 
 ## Parameters
 
-- `rotorLabel`: Localized label identifying this Rotor to the user.
+- `rotorLabelResource`: Localized label identifying this Rotor to the user.
 - `entries`: An array of identifiable values that will be used to generate the entries of the Rotor. The identifiers of the `Identifiable` values must match up with identifiers in a `ForEach` or explicit `id` calls within the `ScrollView`. When the user navigates to entries from this Rotor, SwiftUI will automatically scroll them into place as needed.
 - `entryLabel`: Key path on the `Identifiable` type that can be used to get a user-visible label for every Rotor entry. This is used on macOS when the user opens the list of entries for the Rotor.
 

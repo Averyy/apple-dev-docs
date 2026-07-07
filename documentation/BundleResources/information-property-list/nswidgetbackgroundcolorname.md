@@ -8,7 +8,6 @@ The name of a color in an asset catalog to use for a widget’s configuration in
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
 - macOS 11.0+
 
 

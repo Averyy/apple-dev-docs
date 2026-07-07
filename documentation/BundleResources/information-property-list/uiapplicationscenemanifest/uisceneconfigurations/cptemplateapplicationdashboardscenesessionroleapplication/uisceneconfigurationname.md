@@ -8,7 +8,6 @@ The app-specific name you use to identify the scene.
 **Availability**:
 - iOS 13.4+
 - iPadOS 13.4+
-- Mac Catalyst 13.4+
 
 
 

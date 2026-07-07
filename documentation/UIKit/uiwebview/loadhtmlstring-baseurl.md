@@ -8,7 +8,6 @@ Sets the main page content and base URL.
 **Availability**:
 - iOS 2.0+
 - iPadOS 2.0+
-- Mac Catalyst 2.0+
 
 ## Declaration
 

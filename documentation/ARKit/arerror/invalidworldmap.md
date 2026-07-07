@@ -8,7 +8,6 @@ An error that indicates the framework fails to process a world map.
 **Availability**:
 - iOS 12.0+
 - iPadOS 12.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

@@ -8,7 +8,6 @@ Returns the SpriteKit node associated with the specified AR anchor, if any.
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

@@ -17,8 +17,8 @@ A label style that only displays the icon of the label.
 ## Declaration
 
 ```swift
-nonisolated
-static var iconOnly: IconOnlyLabelStyle { get }
+@export(implementation)
+nonisolated static var iconOnly: IconOnlyLabelStyle { get }
 ```
 
 #### Discussion

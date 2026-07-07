@@ -16,7 +16,7 @@ object SystemExtensions.AllowedSystemExtensionTypes
 
 ## Properties
 
-- `ANY` ([string]): The mapping of team identifier to an array of strings, where each string is a type of system extension that may be installed for that team identifier.
+- `ANY` ([string]): The mapping of team identifier to an array of strings, where each string is a type of system extension that you can install for that team identifier.
 
 ## See Also
 

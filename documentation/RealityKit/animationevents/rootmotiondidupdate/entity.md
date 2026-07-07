@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: property
 
-The entity being animated.
+The entity the root motion delta was produced for.
 
 **Availability**:
 - iOS 27.0+ (Beta)

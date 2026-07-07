@@ -16,7 +16,7 @@
 
 ```swift
 @MainActor
-@preconcurrency init<T>(effect: T, options: SymbolEffectOptions) where T : SymbolEffect, T : TransitionSymbolEffect
+@export(implementation) @preconcurrency init<T>(effect: T, options: SymbolEffectOptions) where T : SymbolEffect, T : TransitionSymbolEffect
 ```
 
 

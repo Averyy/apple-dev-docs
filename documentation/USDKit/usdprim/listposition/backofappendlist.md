@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: case
 
+Insert at the back of the append list, making this the weakest arc.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)

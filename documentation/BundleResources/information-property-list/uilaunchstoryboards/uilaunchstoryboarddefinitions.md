@@ -8,7 +8,6 @@ An array of dictionaries mapping launch storyboard identifiers to storyboards.
 **Availability**:
 - iOS 9.0+
 - iPadOS 9.0+
-- Mac Catalyst 9.0+
 
 
 

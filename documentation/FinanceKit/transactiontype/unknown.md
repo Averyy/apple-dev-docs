@@ -8,7 +8,6 @@ The transaction’s category doesn’t map to a known value.
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
-- Mac Catalyst 17.4+
 
 ## Declaration
 

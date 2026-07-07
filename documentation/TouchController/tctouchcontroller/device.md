@@ -8,7 +8,6 @@ The Metal device the touch control uses for rendering the touch controls.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst 26.0+
 
 ## Declaration
 

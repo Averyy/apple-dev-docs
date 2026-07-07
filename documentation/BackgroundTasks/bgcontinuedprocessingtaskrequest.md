@@ -8,7 +8,6 @@ A request for a workload that the system continues processing even if a person b
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst 26.0+
 
 ## Declaration
 

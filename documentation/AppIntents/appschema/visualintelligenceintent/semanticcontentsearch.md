@@ -8,7 +8,7 @@ An intent schema that shows more and richer visual search results in the app.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst 26.0+
 - macOS 27.0+ (Beta)
 
 ## Declaration

@@ -38,6 +38,8 @@ This type conforms to [`UTTypePlainText`](uttypeplaintext.md).
   A type that represents plain text encoded as UTF-8.
 - [static var utf16PlainText: UTType](uttype-swift.struct/utf16plaintext.md)
   A type that represents plain text encoded as UTF-16 in native byte order with an optional bill of materials.
+- [static var markdown: UTType](uttype-swift.struct/markdown.md)
+  A type that represents Markdown data.
 
 
 ---

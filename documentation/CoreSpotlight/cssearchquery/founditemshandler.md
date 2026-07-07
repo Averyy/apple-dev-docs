@@ -9,7 +9,7 @@ The block to execute when the query delivers a new batch of matching items.
 - iOS 10.0+
 - iPadOS 10.0+
 - Mac Catalyst 13.1+
-- macOS 10.13+
+- macOS 10.12+
 - visionOS 1.0+
 
 ## Declaration

@@ -8,7 +8,6 @@ A Boolean value that indicates whether your app’s study relies on this sensor.
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
-- Mac Catalyst 17.4+
 
 
 

@@ -44,7 +44,7 @@ struct FormattingControls: View {
 
 ### Creating a color picker
 - [init(_:selection:supportsOpacity:)](colorpicker/init(_:selection:supportsopacity:).md)
-  Creates a color picker with a text label generated from a title string key.
+  Creates a color picker with a text label generated from a title string resource.
 - [init(selection:supportsOpacity:label:)](colorpicker/init(selection:supportsopacity:label:).md)
   Creates an instance that selects a color.
 

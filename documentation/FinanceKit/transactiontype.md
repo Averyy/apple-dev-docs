@@ -8,7 +8,6 @@ Values that describe kinds of transactions.
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
-- Mac Catalyst 17.4+
 
 ## Declaration
 

@@ -17,8 +17,8 @@ The fill style used when filling this view’s shape.
 ## Declaration
 
 ```swift
-nonisolated
-var fillStyle: FillStyle { get set }
+@export(implementation)
+nonisolated var fillStyle: FillStyle { get set }
 ```
 
 ## See Also

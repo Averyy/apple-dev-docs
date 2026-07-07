@@ -8,7 +8,7 @@ Provides support for “if” statements with “available” macro clauses in m
 **Availability**:
 - iOS 17.5+
 - iPadOS 17.5+
-- Mac Catalyst ?+
+- Mac Catalyst 17.5+
 - macOS 14.5+
 - tvOS 17.5+
 - visionOS 1.2+

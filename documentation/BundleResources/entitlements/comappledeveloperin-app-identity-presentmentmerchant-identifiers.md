@@ -8,7 +8,6 @@ An entitlement for the merchant identifier associated with the in-app identity p
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
 
 
 

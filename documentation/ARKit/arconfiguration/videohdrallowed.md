@@ -8,7 +8,6 @@ Enables high dynamic range (HDR) for the session’s camera feed.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
 
 ## Declaration
 

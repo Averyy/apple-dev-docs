@@ -8,7 +8,6 @@ A set of actions for viewing and updating PINs, passwords, and signing abilities
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 
 ## Declaration
 

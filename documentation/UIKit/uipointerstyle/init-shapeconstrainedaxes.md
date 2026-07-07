@@ -8,7 +8,7 @@ Morphs the pointer into the provided shape when hovering over the current region
 **Availability**:
 - iOS 13.4+
 - iPadOS 13.4+
-- Mac Catalyst ?+
+- Mac Catalyst 13.4+
 - visionOS ?+
 
 ## Declaration

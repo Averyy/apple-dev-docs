@@ -8,7 +8,6 @@ An error that indicates the framework requires more features to complete a task.
 **Availability**:
 - iOS 12.0+
 - iPadOS 12.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

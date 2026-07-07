@@ -22,34 +22,33 @@ This protocol uses *extents* to provide the kernel the logical-to-physical mappi
 
 Most volumes conform to either this protocol or [`FSVolume.ReadWriteOperations`](fsvolume/readwriteoperations.md). You can conform to both if you need to provide kernel-offloaded I/O only for certain files. In that case, files with the [`inhibitKernelOffloadedIO`](fsitem/attribute/inhibitkerneloffloadedio.md) attribute set use [`FSVolume.ReadWriteOperations`](fsvolume/readwriteoperations.md), and those without it use this protocol. A volume that doesn’t conform to either protocol can’t support any file I/O operation.
 
-> **Note**:  Use [`FSVolume.KernelOffloadedIOHandler`](fsvolume/kerneloffloadediohandler.md) instead.
+> **Note**: Use [`FSVolume.KernelOffloadedIOHandler`](fsvolume/kerneloffloadediohandler.md) instead.
 
 ## Topics
 
 ### Performing mapped I/O
+- [func blockmapFile(FSItem, offset: off_t, length: Int, flags: FSBlockmapFlags, operationID: FSOperationID, packer: FSExtentPacker, replyHandler: ((any Error)?) -> Void)](fsvolumekerneloffloadediooperations/blockmapfile(_:offset:length:flags:operationid:packer:replyhandler:).md)
+  Maps a file’s disk space into extents, allowing the kernel to perform I/O with that space.
 - [struct FSBlockmapFlags](fsblockmapflags.md)
   Flags that describe the behavior of a blockmap operation.
+- [func completeIO(for: FSItem, offset: off_t, length: Int, status: any Error, flags: FSCompleteIOFlags, operationID: FSOperationID, replyHandler: ((any Error)?) -> Void)](fsvolumekerneloffloadediooperations/completeio(for:offset:length:status:flags:operationid:replyhandler:).md)
+  Completes an I/O operation for a given file.
 - [struct FSCompleteIOFlags](fscompleteioflags.md)
   Flags that describe the behavior of an I/O completion operation.
 ### Working with items
+- [func createFile(name: FSFileName, in: FSItem, attributes: FSItem.SetAttributesRequest, packer: FSExtentPacker, replyHandler: (FSItem?, FSFileName?, (any Error)?) -> Void)](fsvolumekerneloffloadediooperations/createfile(name:in:attributes:packer:replyhandler:).md)
+  Creates a new file item and map its disk space.
 - [FSItem.SetAttributesRequest](fsitem/setattributesrequest.md)
   A request to set attributes on an item.
+- [func lookupItem(name: FSFileName, in: FSItem, packer: FSExtentPacker, replyHandler: (FSItem?, FSFileName?, (any Error)?) -> Void)](fsvolumekerneloffloadediooperations/lookupitem(name:in:packer:replyhandler:).md)
+  Looks up an item within a directory and maps its disk space.
+- [func preallocateSpace(for: FSItem, at: off_t, length: Int, flags: FSVolume.PreallocateFlags, packer: FSExtentPacker, replyHandler: (Int, (any Error)?) -> Void)](fsvolumekerneloffloadediooperations/preallocatespace(for:at:length:flags:packer:replyhandler:).md)
+  Preallocates and maps disk space for the given file.
 - [FSVolume.PreallocateFlags](fsvolume/preallocateflags.md)
   Behavior flags for preallocation operations.
 ### Mapping file extents
 - [class FSExtentPacker](fsextentpacker.md)
   A type that directs the kernel to map space on disk to a specific file managed by this file system.
-### Instance Methods
-- [func blockmapFile(FSItem, offset: off_t, length: Int, flags: FSBlockmapFlags, operationID: FSOperationID, packer: FSExtentPacker, replyHandler: ((any Error)?) -> Void)](fsvolumekerneloffloadediooperations/blockmapfile(_:offset:length:flags:operationid:packer:replyhandler:).md)
-  Maps a file’s disk space into extents, allowing the kernel to perform I/O with that space.
-- [func completeIO(for: FSItem, offset: off_t, length: Int, status: any Error, flags: FSCompleteIOFlags, operationID: FSOperationID, replyHandler: ((any Error)?) -> Void)](fsvolumekerneloffloadediooperations/completeio(for:offset:length:status:flags:operationid:replyhandler:).md)
-  Completes an I/O operation for a given file.
-- [func createFile(name: FSFileName, in: FSItem, attributes: FSItem.SetAttributesRequest, packer: FSExtentPacker, replyHandler: (FSItem?, FSFileName?, (any Error)?) -> Void)](fsvolumekerneloffloadediooperations/createfile(name:in:attributes:packer:replyhandler:).md)
-  Creates a new file item and map its disk space.
-- [func lookupItem(name: FSFileName, in: FSItem, packer: FSExtentPacker, replyHandler: (FSItem?, FSFileName?, (any Error)?) -> Void)](fsvolumekerneloffloadediooperations/lookupitem(name:in:packer:replyhandler:).md)
-  Looks up an item within a directory and maps its disk space.
-- [func preallocateSpace(for: FSItem, at: off_t, length: Int, flags: FSVolume.PreallocateFlags, packer: FSExtentPacker, replyHandler: (Int, (any Error)?) -> Void)](fsvolumekerneloffloadediooperations/preallocatespace(for:at:length:flags:packer:replyhandler:).md)
-  Preallocates and maps disk space for the given file.
 
 ## Relationships
 

@@ -8,7 +8,7 @@ A rule that considers a region to be interior to a path if the winding number fo
 **Availability**:
 - iOS 7.0+
 - iPadOS 7.0+
-- Mac Catalyst ?+
+- Mac Catalyst 7.0+
 - macOS 10.9+
 - tvOS 9.0+
 - visionOS 1.0+

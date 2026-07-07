@@ -8,7 +8,7 @@ Indicates whether the web view limits navigation to pages within the app’s dom
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst 26.0+
 - macOS 26.0+
 - visionOS 26.0+
 

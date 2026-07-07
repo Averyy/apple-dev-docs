@@ -49,6 +49,7 @@ Use a value of this type to indicate when to display a glass background that you
 - [struct GlassBackgroundEffectConfiguration](glassbackgroundeffectconfiguration.md)
   A configuration used to build a custom effect.
 - [struct FeatheredGlassBackgroundEffect](featheredglassbackgroundeffect.md)
+  The feathered glass background effect.
 - [struct PlateGlassBackgroundEffect](plateglassbackgroundeffect.md)
   The plate glass background effect.
 

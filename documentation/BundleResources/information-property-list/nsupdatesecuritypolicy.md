@@ -94,6 +94,8 @@ The following sample code describes a complete update policy, in JSON format, th
 
 ## See Also
 
+- [NSAppBundlesUsageDescription](information-property-list/nsappbundlesusagedescription.md)
+  A message that tells people why the app needs to access the contents of other apps’ bundles.
 - [NSAppDataUsageDescription](information-property-list/nsappdatausagedescription.md)
   A message that tells people why the app needs to access files in other apps’ sandbox containers.
 - [NSUserTrackingUsageDescription](information-property-list/nsusertrackingusagedescription.md)

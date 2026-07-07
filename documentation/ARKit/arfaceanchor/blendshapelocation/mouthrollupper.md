@@ -8,7 +8,6 @@ The coefficient describing movement of the upper lip toward the inside of the mo
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

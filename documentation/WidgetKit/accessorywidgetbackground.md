@@ -8,7 +8,7 @@ An adaptive background view that provides a standard appearance based on the the
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst ?+
+- Mac Catalyst 16.0+
 - macOS 13.0+
 - visionOS 26.0+
 - watchOS 9.0+

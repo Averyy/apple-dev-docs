@@ -9,7 +9,7 @@ The transform’s rotation. This is `nil` if the transform isn’t scale-rotate-
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst 26.0+
 - macOS 26.0+
 - tvOS 26.0+
 - visionOS 26.0+

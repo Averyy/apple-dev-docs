@@ -19,8 +19,12 @@ enum DeviceFitStatus
 ### Enumeration Cases
 - [DeviceFitStatus.eyesAbove](devicefitstatus/eyesabove.md)
   User’s eyes are positioned above the optimal device fit range.
+- [DeviceFitStatus.eyesBackward](devicefitstatus/eyesbackward.md)
+  User’s eyes are positioned farther from the display than the optimal device fit range.
 - [DeviceFitStatus.eyesBelow](devicefitstatus/eyesbelow.md)
   User’s eyes are positioned below the optimal device fit range.
+- [DeviceFitStatus.eyesForward](devicefitstatus/eyesforward.md)
+  User’s eyes are positioned closer to the display than the optimal device fit range.
 - [DeviceFitStatus.eyesLeft](devicefitstatus/eyesleft.md)
   User’s eyes are positioned to the left of the optimal device fit range.
 - [DeviceFitStatus.eyesRight](devicefitstatus/eyesright.md)

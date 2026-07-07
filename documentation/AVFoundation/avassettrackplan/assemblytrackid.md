@@ -28,7 +28,7 @@ The assemblyTrackID serves the purpose as a unique identifier of the track in th
 - [var mediaType: AVMediaType](avassettrackplan/mediatype.md)
   The media type of this track.
 - [var segmentConfigurations: [AVPlannedSegmentConfiguration]](avassettrackplan/segmentconfigurations.md)
-  An array of AVPlannedSegmentConfigurations, each element specifying the configuration of a planned segment, ordered in output PTS order.
+  Array of AVPlannedSegmentConfigurations, each element specifying the configuration of a planned segment, ordered in output PTS order.
 
 
 ---

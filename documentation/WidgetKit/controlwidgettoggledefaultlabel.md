@@ -8,7 +8,7 @@ A view that represents the default label for a toggle control if you don’t pro
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst ?+
+- Mac Catalyst 18.0+
 - macOS 26.0+
 - watchOS 26.0+
 

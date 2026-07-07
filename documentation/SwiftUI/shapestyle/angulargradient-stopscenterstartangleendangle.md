@@ -17,6 +17,7 @@ An angular gradient defined by a collection of color stops.
 ## Declaration
 
 ```swift
+@export(implementation)
 static func angularGradient(stops: [Gradient.Stop], center: UnitPoint, startAngle: Angle, endAngle: Angle) -> AngularGradient
 ```
 

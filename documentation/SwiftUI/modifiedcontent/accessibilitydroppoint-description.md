@@ -15,8 +15,8 @@ The point an assistive technology should use to end a drag interaction.
 ## Declaration
 
 ```swift
-nonisolated
-func accessibilityDropPoint(_ point: UnitPoint, description: LocalizedStringKey) -> ModifiedContent<Content, Modifier>
+@export(implementation)
+nonisolated func accessibilityDropPoint(_ point: UnitPoint, description: LocalizedStringResource) -> ModifiedContent<Content, Modifier>
 ```
 
 #### Discussion

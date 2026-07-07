@@ -8,7 +8,6 @@ The center point of the plane relative to its anchor position.
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

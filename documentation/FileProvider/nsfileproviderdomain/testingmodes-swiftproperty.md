@@ -8,7 +8,6 @@ A mode that gives the File Provider extension more control over the system’s b
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
 - macOS 11.3+
 - visionOS 1.0+
 

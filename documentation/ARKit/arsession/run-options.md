@@ -8,7 +8,6 @@ Starts AR processing for the session with the specified configuration and option
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

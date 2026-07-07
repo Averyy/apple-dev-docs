@@ -3,6 +3,8 @@
 **Framework**: RealityKit  
 **Kind**: struct
 
+An identifier for a Navigation Mesh, used by a [`NavigationComponent`](navigationcomponent.md) to select a specific Navigation Mesh for pathfinding.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -32,12 +34,19 @@ struct Layer
 ## See Also
 
 - [NavigationMeshResource.Configuration](navigationmeshresource/configuration-swift.struct.md)
+  The NavigationMeshResource configuration that defines how the mesh is created.
 - [NavigationMeshResource.Area](navigationmeshresource/area.md)
+  An identifier for different areas on a Navigation Mesh.
 - [NavigationMeshResource.Flag](navigationmeshresource/flag.md)
+  An identifier for different flags on a Navigation Mesh.
 - [NavigationMeshResource.FlagGroup](navigationmeshresource/flaggroup.md)
+  A collection of Flags.
 - [NavigationMeshResource.OffMeshConnection](navigationmeshresource/offmeshconnection.md)
+  A container for the data associated with an off-mesh connection.
 - [NavigationMeshResource.HeightData](navigationmeshresource/heightdata-swift.struct.md)
+  A container for the detailed height data of the NavigationMeshResource.
 - [NavigationMeshResource.PathNode](navigationmeshresource/pathnode.md)
+  A container for the path node data.
 
 
 ---

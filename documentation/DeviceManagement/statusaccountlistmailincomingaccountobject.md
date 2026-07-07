@@ -20,7 +20,7 @@ object StatusAccountListMailIncomingAccountObject
 
 ## Properties
 
-- `_removed` (boolean): If `true`, the account is removed and the status item object only contains this key and the `identifier` key.
+- `_removed` (boolean): If `true`, the device removed the account and the status item object only contains this key and the `identifier` key.
 - `are-notes-enabled` (boolean): A Boolean value that indicates whether the Notes app displays notes for this account.
 - `declaration-identifier` (string): The identifier of the declaration that installed the account. Only present if a declaration installed the account.
 - `hostname` (string): The server host name for the account.

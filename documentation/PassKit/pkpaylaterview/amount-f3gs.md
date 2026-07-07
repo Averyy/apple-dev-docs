@@ -8,7 +8,6 @@ The decimal value that represents the amount of the customer’s shopping cart o
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst 17.0+
 - visionOS ?+
 
 ## Declaration

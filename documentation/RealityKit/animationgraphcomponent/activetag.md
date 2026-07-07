@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: struct
 
-Contains debug information of a single tag within a compiled animation graph, used for inspection and debugging.
+A graph-level signal raised by the graph while certain states are active.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -19,14 +19,18 @@ Contains debug information of a single tag within a compiled animation graph, us
 struct ActiveTag
 ```
 
+#### Overview
+
+Use tags to observe outputs the graph emits back to the rest of the application — for example, to play a footstep sound while the character is in a “running” state. The graph reports tags that are currently active or that fired during the most recent evaluation tick through [`activeTags`](animationgraphcomponent/activetags.md).
+
 ## Topics
 
 ### Identifying the tag
 - [let id: Int](animationgraphcomponent/activetag/id.md)
-  Returns the id of the tag.
+  The unique identifier of the tag within the compiled graph.
 ### Instance Properties
 - [let name: String](animationgraphcomponent/activetag/name.md)
-  Returns the name of the tag.
+  The author-supplied name of the tag from the graph definition.
 
 ## Relationships
 
@@ -39,7 +43,7 @@ struct ActiveTag
 ## See Also
 
 - [var activeTags: [AnimationGraphComponent.ActiveTag]](animationgraphcomponent/activetags.md)
-  The tags that were active during the last graph evaluation tick.
+  The tags that were active or fired during the most recent graph evaluation tick.
 
 
 ---

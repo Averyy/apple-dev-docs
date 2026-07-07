@@ -8,7 +8,7 @@ A device matches the given criteria if it does not match the provided criteria.
 **Availability**:
 - iOS 16.1+
 - iPadOS 16.1+
-- Mac Catalyst ?+
+- Mac Catalyst 16.1+
 - macOS 14.0+
 - visionOS ?+
 

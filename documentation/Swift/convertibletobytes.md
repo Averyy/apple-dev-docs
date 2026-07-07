@@ -70,6 +70,17 @@ A type that conforms to ConvertibleToBytes must have:
 - [UnsafeRawBufferPointer](unsaferawbufferpointer.md)
 - [UnsafeRawPointer](unsaferawpointer.md)
 
+## See Also
+
+- [typealias FullyInhabited](fullyinhabited.md)
+  A protocol for types whose memory can safely be written as or read from raw bytes.
+- [protocol ConvertibleFromBytes](convertiblefrombytes.md)
+  A protocol for types whose memory can safely be populated from raw bytes, resulting in a valid instance.
+- [enum ByteOrder](byteorder.md)
+  A byte ordering in memory.
+- [func bitCast<T, U>(T, to: U.Type) -> U](bitcast(_:to:).md)
+  Returns the bits of the given instance, interpreted as having the specified type.
+
 
 ---
 

@@ -86,7 +86,6 @@ byteArray += someBytes[n..<someBytes.count]
 - [func loadUnaligned<T>(fromByteOffset: Int, as: T.Type) -> T](unsaferawbufferpointer/loadunaligned(frombyteoffset:as:)-4ll4e.md)
   Returns a new instance of the given type, constructed from the raw memory at the specified offset.
 - [func loadUnaligned<T>(fromByteOffset: Int, as: T.Type) -> T](unsaferawbufferpointer/loadunaligned(frombyteoffset:as:)-95fln.md)
-- [func withBytes<R, E>((RawSpan) throws(E) -> R) throws(E) -> R](unsaferawbufferpointer/withbytes(_:).md)
 - [func withMemoryRebound<T, E, Result>(to: T.Type, (UnsafeBufferPointer<T>) throws(E) -> Result) throws(E) -> Result](unsaferawbufferpointer/withmemoryrebound(to:_:).md)
   Executes the given closure while temporarily binding the buffer to instances of type `T`.
 ### Default Implementations

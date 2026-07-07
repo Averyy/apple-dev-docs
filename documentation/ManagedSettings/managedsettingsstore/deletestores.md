@@ -8,7 +8,7 @@ Deletes the given stores configured by your app if they exist
 **Availability**:
 - iOS 26.5+
 - iPadOS 26.5+
-- Mac Catalyst ?+
+- Mac Catalyst 26.5+
 
 ## Declaration
 

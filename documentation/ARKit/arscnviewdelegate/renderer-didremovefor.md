@@ -8,7 +8,6 @@ Tells the delegate that the SceneKit node corresponding to a removed AR anchor h
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

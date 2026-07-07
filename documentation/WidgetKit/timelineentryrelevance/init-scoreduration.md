@@ -8,7 +8,7 @@ Creates an object that represents the importance of a widget and the length of t
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst ?+
+- Mac Catalyst 14.0+
 - macOS 11.0+
 - visionOS 26.0+
 - watchOS 9.0+

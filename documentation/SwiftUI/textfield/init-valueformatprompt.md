@@ -3,22 +3,22 @@
 **Framework**: SwiftUI  
 **Kind**: init
 
-Creates a text field that applies a format style to a bound value, with a label generated from a localized title string.
+Creates a text field that applies a format style to a bound value, with a label generated from a localized title string resource.
 
 **Availability**:
-- iOS 15.0+
-- iPadOS 15.0+
-- Mac Catalyst 15.0+
-- macOS 12.0+
-- tvOS 15.0+
+- iOS 16.0+
+- iPadOS 16.0+
+- Mac Catalyst 16.0+
+- macOS 13.0+
+- tvOS 16.0+
 - visionOS 1.0+
-- watchOS 8.0+
+- watchOS 9.0+
 
 ## Declaration
 
 ```swift
-nonisolated
-init<F>(_ titleKey: LocalizedStringKey, value: Binding<F.FormatInput>, format: F, prompt: Text? = nil) where F : ParseableFormatStyle, F.FormatOutput == String
+@export(implementation)
+nonisolated init<F>(_ titleResource: LocalizedStringResource, value: Binding<F.FormatInput>, format: F, prompt: Text? = nil) where F : ParseableFormatStyle, F.FormatOutput == String
 ```
 
 #### Discussion
@@ -49,7 +49,7 @@ var body: some View {
 
 ## Parameters
 
-- `titleKey`: The title of the text field, describing its purpose.
+- `titleResource`: The title of the text field, describing its purpose.
 - `value`: The underlying value to edit.
 - `format`: A format style of type `F` to use when converting between the string the user edits and the underlying value of type `F.FormatInput`. If `format` can’t perform the conversion, the text field leaves `binding.value` unchanged. If the user stops editing the text in an invalid state, the text field updates the field’s text to the last known valid value.
 - `prompt`: A `Text` which provides users with guidance on what to type into the text field.
@@ -61,7 +61,7 @@ var body: some View {
 - [init(_:value:formatter:)](textfield/init(_:value:formatter:).md)
   Create an instance which binds over an arbitrary type, `V`.
 - [init(_:value:formatter:prompt:)](textfield/init(_:value:formatter:prompt:).md)
-  Creates a text field that applies a formatter to a bound value, with a label generated from a title string.
+  Creates a text field that applies a formatter to a bound value, with a label generated from a localized title string resource.
 - [init<V>(value: Binding<V>, formatter: Formatter, prompt: Text?, label: () -> Label)](textfield/init(value:formatter:prompt:label:).md)
   Creates a text field that applies a formatter to a bound optional value, with a label generated from a content builder.
 

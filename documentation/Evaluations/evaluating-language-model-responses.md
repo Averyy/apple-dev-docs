@@ -17,6 +17,8 @@ To create an evaluation, you:
 - Add evaluators that score each response against metrics you define.
 - Aggregate those scores into a metric summary you compare across runs.
 
+To see these four steps in use in a complete app, with code-based and model-as-judge scoring, synthetic data, and tool-call evaluation, see [`Book Tracker: Using Evaluations to evaluate an intelligent feature`](book-tracker-using-evaluations-to-evaluate-an-intelligent-feature.md).
+
 #### Provide Input
 
 Define your dataset. Each sample carries a [`prompt`](modelsample/prompt.md) that the model receives and an optional [`expected`](modelsample/expected.md) value:
@@ -61,7 +63,7 @@ You can inspect both the output and the transcript in the detailed results.
 
 #### Add Evaluators
 
-Add evaluators that score each response. For guidance on choosing between code-based and model-judge evaluators, see [`Designing specific, measurable criteria in an evaluation suite`](designing-evaluation-criteria.md). Declare a [`Metric`](metric.md) for each measurement, then return one of its result values: [`passing(rationale:)`](metric/passing(rationale:).md) or [`failing(rationale:)`](metric/failing(rationale:).md) for binary checks, and [`scoring(_:rationale:)`](metric/scoring(_:rationale:).md) for continuous values.
+Add evaluators that score each response. For guidance on choosing between code-based and model-as-judge evaluators, see [`Designing specific, measurable criteria in an evaluation suite`](designing-evaluation-criteria.md). Declare a [`Metric`](metric.md) for each measurement, then return one of its result values: [`passing(rationale:)`](metric/passing(rationale:).md) or [`failing(rationale:)`](metric/failing(rationale:).md) for binary checks, and [`scoring(_:rationale:)`](metric/scoring(_:rationale:).md) for continuous values.
 
 The first evaluator below checks whether the count is exactly correct. The second measures how much the model’s answer deviates from the correct answer:
 

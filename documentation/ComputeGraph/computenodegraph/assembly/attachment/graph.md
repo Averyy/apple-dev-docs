@@ -1,6 +1,6 @@
 # ComputeNodeGraph.Assembly.Attachment.graph
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: case
 
 The resource is owned by the graph and shared across all stages.
@@ -12,7 +12,7 @@ The resource is owned by the graph and shared across all stages.
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 ## Declaration
 

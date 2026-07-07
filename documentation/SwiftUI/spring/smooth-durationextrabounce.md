@@ -17,6 +17,7 @@ A smooth spring with a predefined duration and no bounce that can be tuned.
 ## Declaration
 
 ```swift
+@export(implementation)
 static func smooth(duration: TimeInterval = 0.5, extraBounce: Double = 0.0) -> Spring
 ```
 

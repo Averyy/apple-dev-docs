@@ -8,7 +8,6 @@ The persistent identifier for the parent of all trashed items.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
 - macOS 11.0+
 - visionOS 1.0+
 

@@ -8,7 +8,6 @@ A message that tells people why the app is requesting to send user data to Siri.
 **Availability**:
 - iOS 10.0+
 - iPadOS 10.0+
-- Mac Catalyst 10.0+
 - visionOS 1.0+
 
 

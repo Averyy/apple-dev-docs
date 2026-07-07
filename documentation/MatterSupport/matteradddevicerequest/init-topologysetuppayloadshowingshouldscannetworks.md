@@ -8,7 +8,7 @@ Create the request with an optional network scan.
 **Availability**:
 - iOS 16.4+
 - iPadOS 16.4+
-- Mac Catalyst ?+
+- Mac Catalyst 16.4+
 - macOS 14.0+
 - visionOS ?+
 

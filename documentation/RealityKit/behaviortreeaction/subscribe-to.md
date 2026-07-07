@@ -26,7 +26,7 @@ For example, you can call this method to subscribe to the update event, which th
 
 ```swift
 struct MyAction: BehaviorTreeAction, Codable {
-    ...
+    // ...
 }
 MyAction.subscribe(to: .updated) { event in
     // Return value is the action result.

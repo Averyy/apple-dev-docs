@@ -90,8 +90,6 @@ The actions are displayed in the document browser navigation bar when a document
   The default actions for the document group launch scene and the document launch view.
 - [struct NewDocumentButton](newdocumentbutton.md)
   A button that creates and opens new documents.
-- [struct NewDocumentButtonDataSource](newdocumentbuttondatasource.md)
-  Describes the source of data used to create a new document.
 - [struct DefaultNewDocumentButtonLabel](defaultnewdocumentbuttonlabel.md)
   The default label used for a new document button.
 - [struct DocumentCreationSource](documentcreationsource.md)

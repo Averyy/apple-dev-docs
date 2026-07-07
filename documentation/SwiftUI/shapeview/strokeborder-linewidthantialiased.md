@@ -17,8 +17,8 @@ Returns a view that’s the result of filling an inner stroke of this view with 
 ## Declaration
 
 ```swift
-nonisolated
-func strokeBorder<S>(_ content: S = .foreground, lineWidth: CGFloat = 1, antialiased: Bool = true) -> StrokeBorderShapeView<Self.Content, S, Self> where S : ShapeStyle
+@export(implementation)
+nonisolated func strokeBorder<S>(_ content: S = .foreground, lineWidth: CGFloat = 1, antialiased: Bool = true) -> StrokeBorderShapeView<Self.Content, S, Self> where S : ShapeStyle
 ```
 
 #### Discussion

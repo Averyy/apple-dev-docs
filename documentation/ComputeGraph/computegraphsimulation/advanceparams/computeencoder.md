@@ -1,6 +1,6 @@
 # computeEncoder
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: property
 
 The compute command encoder to encode simulation dispatches with.
@@ -12,7 +12,7 @@ The compute command encoder to encode simulation dispatches with.
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 ## Declaration
 

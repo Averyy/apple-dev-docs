@@ -8,7 +8,7 @@ Creates a default calendar view decoration with a filled circle image, using the
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst ?+
+- Mac Catalyst 16.0+
 - visionOS ?+
 
 ## Declaration

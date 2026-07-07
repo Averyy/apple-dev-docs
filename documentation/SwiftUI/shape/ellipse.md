@@ -17,6 +17,7 @@ An ellipse aligned inside the frame of the view containing it.
 ## Declaration
 
 ```swift
+@export(implementation)
 static var ellipse: Ellipse { get }
 ```
 

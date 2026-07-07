@@ -8,7 +8,6 @@ A Boolean value indicating whether a custom keyboard displays standard ASCII cha
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+
-- Mac Catalyst 8.0+
 
 
 

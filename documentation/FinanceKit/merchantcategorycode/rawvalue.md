@@ -8,7 +8,6 @@ A integer that represents the raw value of a merchant category code.
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
-- Mac Catalyst 17.4+
 
 ## Declaration
 

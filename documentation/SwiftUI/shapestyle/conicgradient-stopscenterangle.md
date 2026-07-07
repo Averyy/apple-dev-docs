@@ -17,6 +17,7 @@ A conic gradient defined by a collection of color stops that completes a full tu
 ## Declaration
 
 ```swift
+@export(implementation)
 static func conicGradient(stops: [Gradient.Stop], center: UnitPoint, angle: Angle = .zero) -> AngularGradient
 ```
 

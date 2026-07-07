@@ -11,6 +11,7 @@ Errors thrown during an evaluation run.
 - Mac Catalyst 27.0+ (Beta)
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -22,9 +23,9 @@ enum EvaluationError
 
 ```swift
 do {
-    throw EvaluationError.metricsNotFound(names: ["Accuracy"])
-} catch EvaluationError.metricsNotFound(let names) {
-    print("Missing metrics: \(names)")
+    let result = try await evaluation.run()
+} catch EvaluationError.missingTranscript(let evaluatorType) {
+    print("'\(evaluatorType)' requires a transcript")
 }
 ```
 
@@ -46,6 +47,10 @@ do {
 
 ## See Also
 
+- [enum EvaluatorError](evaluatorerror.md)
+  A typed reason why an evaluator failed while scoring a produced subject.
+- [enum SubjectInferenceError](subjectinferenceerror.md)
+  A typed reason why `subject(from:)` failed to produce a subject for a sample.
 - [enum EvaluationResultsError](evaluationresultserror.md)
   Errors the framework throws when parsing evaluation results.
 

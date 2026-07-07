@@ -13,6 +13,7 @@
 ## Declaration
 
 ```swift
+@export(implementation)
 static func buildLimitedAvailability(_ content: any TableColumnContent<RowValue, Never>) -> some TableColumnContent<RowValue, Never>
 ```
 

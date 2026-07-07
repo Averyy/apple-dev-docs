@@ -8,7 +8,7 @@ Constants that describe a user’s action for your extension to handle.
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst ?+
+- Mac Catalyst 15.0+
 
 ## Declaration
 

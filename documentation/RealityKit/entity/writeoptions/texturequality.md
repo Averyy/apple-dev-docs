@@ -40,9 +40,9 @@ struct TextureQuality
 ## See Also
 
 - [static var preferFastExport: Entity.WriteOptions](entity/writeoptions/preferfastexport.md)
-  Expedite the reality file export when possible. This may disable reality file compression, resulting in larger file size.
+  Expedite the reality file export when possible.
 - [static func preferSmallTextureFiles(quality: Entity.WriteOptions.TextureQuality) -> Entity.WriteOptions](entity/writeoptions/prefersmalltexturefiles(quality:).md)
-  Reduce textures’ file size.
+  Reduce textures’ file size while preserving its dimensions.
 
 
 ---

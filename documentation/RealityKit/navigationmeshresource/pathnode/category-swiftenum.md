@@ -3,6 +3,8 @@
 **Framework**: RealityKit  
 **Kind**: enum
 
+The categories of path nodes.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -21,7 +23,9 @@ enum Category
 
 ### Identifying node categories
 - [NavigationMeshResource.PathNode.Category.meshPoint](navigationmeshresource/pathnode/category-swift.enum/meshpoint.md)
+  A regular point on the Navigation Mesh.
 - [NavigationMeshResource.PathNode.Category.offMeshConnection](navigationmeshresource/pathnode/category-swift.enum/offmeshconnection.md)
+  A point that is part of an off-mesh connection.
 
 ## Relationships
 
@@ -34,6 +38,7 @@ enum Category
 ## See Also
 
 - [var category: NavigationMeshResource.PathNode.Category](navigationmeshresource/pathnode/category-swift.property.md)
+  The category of the node.
 
 
 ---

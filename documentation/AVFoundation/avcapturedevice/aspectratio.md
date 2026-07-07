@@ -8,7 +8,6 @@ String constants describing the different video aspect ratios you can configure 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst 26.0+
 
 ## Declaration
 

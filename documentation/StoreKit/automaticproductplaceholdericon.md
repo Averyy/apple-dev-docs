@@ -8,7 +8,6 @@ A view that represents the default placeholder icon for an in-app store product.
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
 - watchOS 10.0+

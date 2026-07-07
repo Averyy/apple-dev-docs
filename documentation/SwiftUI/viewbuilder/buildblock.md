@@ -17,6 +17,7 @@ Passes a single piece of content written as a child view through unmodified.
 ## Declaration
 
 ```swift
+@export(implementation)
 static func buildBlock<Content>(_ content: Content) -> Content
 ```
 

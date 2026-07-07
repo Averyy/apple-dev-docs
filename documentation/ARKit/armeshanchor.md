@@ -8,7 +8,6 @@ An anchor for a physical object that ARKit detects and recreates virtually using
 **Availability**:
 - iOS 13.4+
 - iPadOS 13.4+
-- Mac Catalyst 13.4+
 
 ## Declaration
 

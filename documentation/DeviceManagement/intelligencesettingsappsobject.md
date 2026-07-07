@@ -32,7 +32,7 @@ object IntelligenceSettingsAppsObject
 
 ## Properties
 
-- `Calendar` (IntelligenceSettingsApps_CalendarObject): If present, configures Calendar and Reminders Intelligence features.
+- `Calendar` (IntelligenceSettingsApps_CalendarObject): If present, configures Calendar and Reminders Intelligence features. Available: iOS 27+ | iPadOS 27+ | macOS 27+ | visionOS 27+
 - `Mail` (IntelligenceSettingsApps_MailObject): If present, configures Mail Intelligence features.
 - `Notes` (IntelligenceSettingsApps_NotesObject): If present, configures Notes Intelligence features.
 - `Safari` (IntelligenceSettingsApps_SafariObject): If present, configures Safari intelligence features.

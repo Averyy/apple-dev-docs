@@ -54,13 +54,15 @@ This release of Reality Composer Pro is a complete 3D development platform. The 
 - [Configuring the project workspace](realitycomposerpro-essentials-configuringprojectworkspace.md)
   Open a project and arrange the workspace’s tabs and panes to fit your task.
 - [Navigating the Reality Composer Pro workspace](realitycomposerpro-essentials-workspaceoverview.md)
-  Navigate the panes and toolbars that make up the Reality Composer Pro editing environment.
+  Explore the panes and toolbars that make up the Reality Composer Pro editing environment.
 - [Adding entities and assets to a scene](realitycomposerpro-essentials-addingentitiestoscene.md)
   Import assets to design Reality Composer Pro scenes for your app.
 - [Working with the Graph Editor](realitycomposerpro-essentials-grapheditoroverview.md)
-  Add and connect nodes in Reality Composer Pro to create materials, animations, audio effects, scripts, and more.
+  Use Reality Composer Pro’s node-based editor to build materials, animations, audio effects, and scripts without writing code.
 - [Reusing assets with prototypes and instances](realitycomposerpro-essentials-understandingprototypes.md)
-  Reuse a single asset across many scene placements by editing prototypes once and propagating the changes to every instance.
+  Edit a prototype once and propagate the change to every placement of that asset in a scene.
+- [Previewing content and running simulations](realitycomposerpro-essentials-previewcontentrunsimulations.md)
+  Test and iterate on your scenes directly in Reality Composer Pro, with or without a linked Xcode project.
 ### Materials
 - [Building materials in Reality Composer Pro](building-materials-in-reality-composer-pro.md)
   Apply surface properties such as color, roughness, and transparency to 3D entities in your scene.
@@ -77,18 +79,23 @@ This release of Reality Composer Pro is a complete 3D development platform. The 
 ### Character Intelligence
 - [Defining a behavior with Behavior Trees](defining-a-behavior-with-behavior-trees.md)
   Set up and connect Behavior Tree nodes to drive entity decision-making in your scene.
+### Navmesh
+- [Building a navmesh in Reality Composer Pro](building-a-navmesh-in-reality-composer-pro.md)
+  Configure a navigation mesh in Reality Composer Pro to define walkable areas and paths for AI-controlled entities in your scene.
 ### Animation
 - [Creating animation sequences](creating-animation-sequences.md)
   Build and customize animation sequences to control entity movement and behavior in your scene.
 - [Working with the Animation Graph](working-with-the-animation-graph.md)
   Define and control character animations using a visual, node-based state machine in Reality Composer Pro.
 ### Assistant
-- [Working with the Reality Composer Pro assistant](working-with-the-reality-composer-pro-assistant.md)
-  Connect an AI model to Reality Composer Pro to generate assets, organize scenes, and get feature guidance.
+- [Working with the Reality Composer Pro Assistant](working-with-the-reality-composer-pro-assistant.md)
+  Connect an AI model to Reality Composer Pro to generate assets and get contextual help building scenes.
 ### Release notes
 - [Reality Composer Pro Release Notes](reality-composer-pro-release-notes.md)
   Review known issues and changes in Reality Composer Pro 3.
 - [Reality Composer Pro Beta 2 Release Notes](reality-composer-pro-beta-2-release-notes.md)
+  Review known issues and changes in Reality Composer Pro 3.
+- [Reality Composer Pro Beta 3 Release Notes](reality-composer-pro-beta-3-release-notes.md)
   Review known issues and changes in Reality Composer Pro 3.
 
 

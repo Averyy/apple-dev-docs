@@ -8,7 +8,7 @@ A transition where the current view flips horizontally to reveal the new view.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst ?+
+- Mac Catalyst 18.0+
 - tvOS ?+
 - visionOS ?+
 

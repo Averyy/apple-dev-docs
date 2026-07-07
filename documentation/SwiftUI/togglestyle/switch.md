@@ -17,8 +17,8 @@ A toggle style that displays a leading label and a trailing switch.
 ## Declaration
 
 ```swift
-nonisolated
-static var `switch`: SwitchToggleStyle { get }
+@export(implementation)
+nonisolated static var `switch`: SwitchToggleStyle { get }
 ```
 
 #### Discussion

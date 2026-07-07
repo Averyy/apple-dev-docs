@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: method
 
-Rotates content by an angle about an axis that you specify as a tuple of elements.
+Rotates content by an angle about an axis that you specify as a rotation axis value.
 
 **Availability**:
 - visionOS 1.0+
@@ -11,7 +11,8 @@ Rotates content by an angle about an axis that you specify as a tuple of element
 ## Declaration
 
 ```swift
-func rotation3DEffect(_ angle: Angle, axis: (x: CGFloat, y: CGFloat, z: CGFloat), anchor: UnitPoint3D = .center) -> some VisualEffect
+@export(implementation)
+func rotation3DEffect(_ angle: Angle, axis: RotationAxis3D, anchor: UnitPoint3D = .center) -> some VisualEffect
 ```
 
 #### Return Value
@@ -20,29 +21,20 @@ A rotation effect.
 
 #### Discussion
 
-> **Note**: During an animation, the angle and each element of the axis is interpolated separately, which may cause undesirable results. To achieve more natural animations, consider using [`rotation3DEffect(_:anchor:)`](view/rotation3deffect(_:anchor:).md)
-
 This effect causes the content to appear rotated, but doesn’t change the content’s frame. The following code applies a rotation of 45° about the y-axis, using the default anchor point at the center of the content:
 
 ```swift
 Model3D(named: "robot")
     .visualEffect { content, geometryProxy in
         content
-            .rotation3DEffect(.degrees(45), axis: (x: 0, y: 1, z: 0))
+            .rotation3DEffect(.degrees(45), axis: .y)
     }
-```
-
-> **Note**: The following example is not equivalent to the previous. This example will use spherical linear interpolation during an animation.
-
-```swift
-Model3D(named: "robot")
-    .rotation3DEffect(Rotation3D(.init(degrees: 45), axis: .y)
 ```
 
 ## Parameters
 
-- `angle`: The angle by which to rotate the content.
-- `axis`: The axis of rotation, specified as a tuple with named elements for each of the three spatial dimensions.
+- `angle`: The angle by which to rotate the view’s content.
+- `axis`: The axis of rotation.
 - `anchor`: The unit point within the content about which to perform the rotation. The default value is [`center`](unitpoint3d/center.md).
 
 ## See Also

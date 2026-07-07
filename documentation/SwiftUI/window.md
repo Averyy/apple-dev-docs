@@ -101,7 +101,7 @@ If your app uses a single window as its primary scene, the app quits when the wi
 
 ### Creating a window
 - [init(_:id:content:)](window/init(_:id:content:).md)
-  Creates a window with a title and an identifier.
+  Creates a window with a localized title and an identifier.
 
 ## Relationships
 

@@ -8,7 +8,7 @@ A link to a resource, such as an item on a remote server or the path to a local 
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst ?+
+- Mac Catalyst 17.0+
 - visionOS ?+
 
 ## Declaration

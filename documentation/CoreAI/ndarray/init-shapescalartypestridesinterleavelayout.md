@@ -8,7 +8,6 @@ Initialize an NDArray with the provided shape, scalar type, strides, and interle
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 
@@ -28,6 +27,17 @@ init(shape: [Int], scalarType: NDArray.ScalarType, strides: [Int], interleaveLay
 - `scalarType`: The type of elements in the ndArray.
 - `strides`: The strides of the ndArray.
 - `interleaveLayout`: Which dimension is interleaved and by what factor. See [`NDArray.InterleaveLayout`](ndarray/interleavelayout-swift.struct.md).
+
+## See Also
+
+- [init(shape: [Int], scalarType: NDArray.ScalarType)](ndarray/init(shape:scalartype:).md)
+  Creates an array with the specified shape and scalar type.
+- [init(shape: [Int], scalarType: NDArray.ScalarType, strides: [Int])](ndarray/init(shape:scalartype:strides:).md)
+  Creates an array with the specified shape, scalar type, and strides.
+- [init<Scalar>(scalars: some Sequence, shape: [Int])](ndarray/init(scalars:shape:).md)
+  Initialize an ndArray with a copy of some sequence of scalars, stored in the ndArray in row-major order.
+- [init(descriptor: consuming NDArrayDescriptor)](ndarray/init(descriptor:).md)
+  Creates an array with the shape and preferred strides from the specified descriptor.
 
 
 ---

@@ -16,7 +16,7 @@ The default style for group box views.
 
 ```swift
 @MainActor
-@preconcurrency static var automatic: DefaultGroupBoxStyle { get }
+@export(implementation) @preconcurrency static var automatic: DefaultGroupBoxStyle { get }
 ```
 
 

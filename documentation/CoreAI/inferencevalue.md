@@ -8,7 +8,6 @@ A value that an inference function accepts as input or produces as output.
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 
@@ -33,6 +32,8 @@ An `InferenceValue` wraps either an [`NDArray`](ndarray.md) or a pixel buffer, a
   The kind of data this value contains.
 - [var ndArray: NDArray?](inferencevalue/ndarray.md)
   The array that the value wraps.
+- [var pixelBuffer: CVMutablePixelBuffer?](inferencevalue/pixelbuffer.md)
+  Consume this value to access the underlying pixel buffer.
 ### Creating a value
 - [init(consuming CVMutablePixelBuffer)](inferencevalue/init(_:).md)
   Creates an inference value that wraps the specified pixel buffer.
@@ -53,9 +54,6 @@ An `InferenceValue` wraps either an [`NDArray`](ndarray.md) or a pixel buffer, a
   A type that can provide a read-only view of itself as an inference value.
 - [InferenceValue.MutableViewRepresentable](inferencevalue/mutableviewrepresentable.md)
   A type that can provide a mutable view of itself as an inference value.
-### Instance Properties
-- [var pixelBuffer: CVMutablePixelBuffer?](inferencevalue/pixelbuffer.md)
-  Consume this value to access the underlying pixel buffer.
 
 ## See Also
 

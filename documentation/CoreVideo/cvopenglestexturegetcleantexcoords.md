@@ -8,7 +8,6 @@ Returns convenient normalized texture coordinates for the part of the image that
 **Availability**:
 - iOS 5.0+
 - iPadOS 5.0+
-- Mac Catalyst 5.0+
 - tvOS 9.0+
 
 ## Declaration

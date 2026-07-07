@@ -16,8 +16,8 @@ Creates a menu that generates its label from a localized string key and system i
 ## Declaration
 
 ```swift
-nonisolated
-init(_ titleKey: LocalizedStringKey, systemImage: String, @ContentBuilder content: () -> Content)
+@export(implementation)
+nonisolated init(_ titleKey: LocalizedStringKey, systemImage: String, @ContentBuilder content: () -> Content)
 ```
 
 ## Parameters
@@ -29,11 +29,11 @@ init(_ titleKey: LocalizedStringKey, systemImage: String, @ContentBuilder conten
 ## See Also
 
 - [init(_:content:)](menu/init(_:content:).md)
-  Creates a menu that generates its label from a localized string key.
+  Creates a menu that generates its label from a localized string resource.
 - [init(content: () -> Content, label: () -> Label)](menu/init(content:label:).md)
   Creates a menu with a custom label.
 - [init(_:image:content:)](menu/init(_:image:content:).md)
-  Creates a menu that generates its label from a localized string key and image resource.
+  Creates a menu that generates its label from a localized string resource and image resource.
 
 
 ---

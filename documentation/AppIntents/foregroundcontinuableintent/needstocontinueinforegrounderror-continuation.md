@@ -8,7 +8,7 @@ A method you call to ask a person to continue an intent’s action in the foregr
 **Availability**:
 - iOS 16.4+
 - iPadOS 16.4+
-- Mac Catalyst ?+
+- Mac Catalyst 16.4+
 - macOS 13.3+
 - tvOS 16.4+
 - visionOS ?+

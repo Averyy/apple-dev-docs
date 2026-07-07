@@ -18,7 +18,7 @@ Returns a transition that offset the view by the specified x and y values.
 
 ```swift
 @MainActor
-@preconcurrency static func offset(x: CGFloat = 0, y: CGFloat = 0) -> Self
+@export(implementation) @preconcurrency static func offset(x: CGFloat = 0, y: CGFloat = 0) -> Self
 ```
 
 ## See Also

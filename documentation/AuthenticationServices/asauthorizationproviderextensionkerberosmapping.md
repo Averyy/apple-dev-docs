@@ -56,6 +56,8 @@ This class contains a set of mappings for the sign-on token when importing the K
 
 - [Authentication process](authentication-process.md)
   Use a system-supported method to authenticate with an identity provider.
+- [Implementing web-based authentication with Platform Single Sign-on](implementing-web-based-authentication.md)
+  Support modern, phishing-resistant, and flexible authentication methods.
 
 
 ---

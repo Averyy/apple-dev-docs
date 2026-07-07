@@ -8,7 +8,7 @@ Converts the contents of the 32-bit-per-channel, 2-channel interleaved pixel buf
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst ?+
+- Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
 - visionOS ?+

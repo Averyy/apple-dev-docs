@@ -8,7 +8,6 @@ The name of the symbol to show in the action sheet, and in Finder’s sidebar on
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst 13.0+
 
 
 

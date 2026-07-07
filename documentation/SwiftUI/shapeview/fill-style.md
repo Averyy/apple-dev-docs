@@ -17,8 +17,8 @@ Fills this shape with a color or gradient.
 ## Declaration
 
 ```swift
-nonisolated
-func fill<S>(_ content: S = .foreground, style: FillStyle = FillStyle()) -> FillShapeView<Self.Content, S, Self> where S : ShapeStyle
+@export(implementation)
+nonisolated func fill<S>(_ content: S = .foreground, style: FillStyle = FillStyle()) -> FillShapeView<Self.Content, S, Self> where S : ShapeStyle
 ```
 
 #### Return Value

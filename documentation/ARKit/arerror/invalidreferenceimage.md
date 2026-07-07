@@ -8,7 +8,6 @@ An error that indicates the framework fails to process a reference image.
 **Availability**:
 - iOS 11.3+
 - iPadOS 11.3+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

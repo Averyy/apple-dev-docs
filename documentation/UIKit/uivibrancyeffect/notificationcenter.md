@@ -8,7 +8,6 @@ Creates a vibrancy effect for use in Notification Center.
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+
-- Mac Catalyst 8.0+
 
 ## Declaration
 

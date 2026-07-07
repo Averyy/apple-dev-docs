@@ -8,7 +8,6 @@ A Boolean value that indicates whether an app supports URL-based playback via a 
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 
 
 

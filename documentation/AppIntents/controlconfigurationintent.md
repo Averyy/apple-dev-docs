@@ -8,7 +8,7 @@ An interface for configuring a Control Center module.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst ?+
+- Mac Catalyst 18.0+
 - macOS 26.0+
 - watchOS 26.0+
 

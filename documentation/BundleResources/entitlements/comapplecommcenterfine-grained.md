@@ -8,7 +8,6 @@ An entitlement that grants access to CoreTelephony services.
 **Availability**:
 - iOS 10.0+
 - iPadOS 10.0+
-- Mac Catalyst 10.0+
 
 
 

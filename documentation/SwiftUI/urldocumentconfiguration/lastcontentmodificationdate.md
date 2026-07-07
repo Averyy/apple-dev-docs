@@ -15,8 +15,8 @@ The date on which the contents of the document were last modified, if available.
 ## Declaration
 
 ```swift
-nonisolated
-(unsafe) final var lastContentModificationDate: Date? { get set }
+@MainActor
+final var lastContentModificationDate: Date? { get set }
 ```
 
 ## See Also

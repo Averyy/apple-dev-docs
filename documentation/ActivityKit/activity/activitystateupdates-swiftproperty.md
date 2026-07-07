@@ -8,7 +8,6 @@ An asynchronous sequence you use to observe activity state changes.
 **Availability**:
 - iOS 16.1+
 - iPadOS 16.1+
-- Mac Catalyst 16.1+
 
 ## Declaration
 

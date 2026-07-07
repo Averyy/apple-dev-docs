@@ -8,7 +8,7 @@ Begins recording a view-through impression when ad content corresponding to the 
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
-- Mac Catalyst ?+
+- Mac Catalyst 17.4+
 
 ## Declaration
 

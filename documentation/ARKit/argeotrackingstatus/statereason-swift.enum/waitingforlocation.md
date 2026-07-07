@@ -8,7 +8,6 @@ A state in which the framework performs a check for the user’s GPS position.
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
 
 ## Declaration
 

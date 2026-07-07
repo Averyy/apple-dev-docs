@@ -8,7 +8,6 @@ A transform matrix indicating the position and orientation of the face’s right
 **Availability**:
 - iOS 12.0+
 - iPadOS 12.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

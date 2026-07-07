@@ -24,11 +24,10 @@ class FrameRateCadence
 ### Creating a Cadence
 - [init(Int)](vnvideoprocessor/frameratecadence/init(_:).md)
   Creates a new frame-based cadence with a frame rate.
+- [init(frameRate: Int)](vnvideoprocessor/frameratecadence/init(framerate:).md)
 ### Inspecting the Frame Rate
 - [var frameRate: Int](vnvideoprocessor/frameratecadence/framerate.md)
   The frame rate at which to process video.
-### Initializers
-- [init(frameRate: Int)](vnvideoprocessor/frameratecadence/init(framerate:).md)
 
 ## Relationships
 

@@ -15,8 +15,8 @@
 ## Declaration
 
 ```swift
-nonisolated
-init<V>(erasing view: V) where V : View
+@export(implementation)
+nonisolated init<V>(erasing view: V) where V : View
 ```
 
 ## See Also

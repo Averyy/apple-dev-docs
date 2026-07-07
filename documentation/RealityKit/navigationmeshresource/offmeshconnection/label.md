@@ -3,6 +3,8 @@
 **Framework**: RealityKit  
 **Kind**: property
 
+The label on the connection for other systems to know what type of movement should occur here.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)

@@ -8,7 +8,6 @@ The GPU family 2, version 1 feature set for iOS.
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+
-- Mac Catalyst 8.0+
 - visionOS 1.0+
 
 ## Declaration

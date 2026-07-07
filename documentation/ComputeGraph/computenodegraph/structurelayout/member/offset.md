@@ -1,6 +1,6 @@
 # offset
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: property
 
 Offset, in bytes, of this member in its containing structure
@@ -12,7 +12,7 @@ Offset, in bytes, of this member in its containing structure
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 ## Declaration
 

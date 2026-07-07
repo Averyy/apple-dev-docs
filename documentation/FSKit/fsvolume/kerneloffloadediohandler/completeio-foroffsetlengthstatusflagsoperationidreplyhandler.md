@@ -17,20 +17,6 @@ func completeIO(for file: FSItem, offset: off_t, length: Int, status: any Error,
 
 #### Discussion
 
-`::::: Swift ::::::::::`
-
-- reply: A block or closure to indicate success or failure. If completing I/O succeeds, pass an instance of [`FSCompleteIOResult`](fscompleteioresult.md) containing the updated [`FSItem.Attributes`](fsitem/attributes.md) of the file, along with a `nil` error. If completing I/O fails, pass the relevant error as the second parameter; FSKit ignores the [`FSCompleteIOResult`](fscompleteioresult.md) instance in this case. For an `async` Swift implementation, there’s no reply handler; simply return the result instance or throw an error.
-
-`::::::::::::::::::::`
-
-`::::: ObjC ::::::::::`
-
-- result: A block or closure to indicate success or failure. If completing I/O succeeds, pass an instance of [`FSCompleteIOResult`](fscompleteioresult.md) containing the updated [`FSItem.Attributes`](fsitem/attributes.md) of the file, along with a `nil` error. If completing I/O fails, pass the relevant error as the second parameter; FSKit ignores the [`FSCompleteIOResult`](fscompleteioresult.md) instance in this case. For an `async` Swift implementation, there’s no reply handler; simply return the result instance or throw an error.
-
-`::::::::::::::::::::`
-
-#### Discussion
-
 Implement this method by updating a file’s metadata, such as its size and modification time.
 
 FSKit may call this method without an earlier call to [`blockmapFile(_:offset:length:flags:operationID:packer:replyHandler:)`](fsvolume/kerneloffloadediohandler/blockmapfile(_:offset:length:flags:operationid:packer:replyhandler:).md). In this case, the `operationID` is `0` (Objective-C) or [`unspecified`](fsoperationid/unspecified.md) (Swift).
@@ -43,6 +29,7 @@ FSKit may call this method without an earlier call to [`blockmapFile(_:offset:le
 - `status`: Any error that occurred during the operation. If no error occurred, this parameter is `nil`.
 - `flags`: Flags that affect the behavior of the complete I/O operation.
 - `operationID`: A unique identifier of the blockmap call. Any value other than `0` (Objective-C) or [`unspecified`](fsoperationid/unspecified.md) (Swift) corresponds to a previous call to [`blockmapFile(_:offset:length:flags:operationID:packer:replyHandler:)`](fsvolume/kerneloffloadediohandler/blockmapfile(_:offset:length:flags:operationid:packer:replyhandler:).md) with the same `operationID`.
+- `reply`: A block or closure to indicate success or failure. If completing I/O succeeds, pass an instance of [`FSCompleteIOResult`](fscompleteioresult.md) containing the updated [`FSItem.Attributes`](fsitem/attributes.md) of the file, along with a `nil` error. If completing I/O fails, pass the relevant error as the second parameter; FSKit ignores the [`FSCompleteIOResult`](fscompleteioresult.md) instance in this case. For an `async` Swift implementation, there’s no reply handler; simply return the result instance or throw an error.
 
 ## See Also
 

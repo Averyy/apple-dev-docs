@@ -8,7 +8,7 @@ An app intent you use in widgets to open another app or perform an App Shortcut,
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst ?+
+- Mac Catalyst 27.0+ (Beta)
 
 ## Declaration
 

@@ -8,7 +8,6 @@ The request’s configured revision.
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
@@ -18,6 +17,12 @@ The request’s configured revision.
 ```swift
 final let revision: GenerateIterativeSegmentationRequest.Revision
 ```
+
+## See Also
+
+- [GenerateIterativeSegmentationRequest.Revision](generateiterativesegmentationrequest/revision-swift.enum.md)
+- [static let supportedRevisions: [GenerateIterativeSegmentationRequest.Revision]](generateiterativesegmentationrequest/supportedrevisions.md)
+  The revisions supported by [`GenerateIterativeSegmentationRequest`](generateiterativesegmentationrequest.md).
 
 
 ---

@@ -14,8 +14,8 @@ Sets the visibility of the status bar.
 ## Declaration
 
 ```swift
-nonisolated
-func statusBarHidden(_ hidden: Bool = true) -> some View
+@export(implementation)
+nonisolated func statusBarHidden(_ hidden: Bool = true) -> some View
 ```
 
 ## Parameters

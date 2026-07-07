@@ -11,7 +11,6 @@ A sampling strategy for how the model picks tokens when generating a response.
 - Mac Catalyst 26.0+
 - macOS 26.0+
 - visionOS 26.0+
-- watchOS 27.0+ (Beta)
 
 ## Declaration
 

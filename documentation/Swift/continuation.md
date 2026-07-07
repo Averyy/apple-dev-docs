@@ -55,6 +55,24 @@ To resume the task, suspended on a continuation, call `resume(returning:)`, [`re
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)
 
+## See Also
+
+- [func withContinuation<Success>(of: Success.Type, (consuming Continuation<Success, Never>) -> Void) async -> sending Success](withcontinuation(of:_:).md)
+  Invokes the passed in closure with a non-copyable continuation for the current task.
+- [func withContinuation<Success, Failure>(of: Success.Type, throwing: Failure.Type, (consuming Continuation<Success, Failure>) -> Void) async throws(Failure) -> sending Success](withcontinuation(of:throwing:_:).md)
+  Invokes the passed in closure with a non-copyable continuation for the current task.
+- [struct CheckedContinuation](checkedcontinuation.md)
+  A mechanism to interface between synchronous and asynchronous code, logging correctness violations.
+- [func withCheckedContinuation<T>(function: String, (CheckedContinuation<T, Never>) -> Void) async -> sending T](withcheckedcontinuation(function:_:).md)
+  Invokes the passed in closure with a checked continuation for the current task.
+- [func withCheckedThrowingContinuation<T>(function: String, (CheckedContinuation<T, any Error>) -> Void) async throws -> sending T](withcheckedthrowingcontinuation(function:_:)-13yf6.md)
+- [func withCheckedThrowingContinuation<T, E>(function: String, (CheckedContinuation<T, E>) -> Void) async throws(E) -> sending T](withcheckedthrowingcontinuation(function:_:)-2k46m.md)
+  Invokes the passed in closure with a checked continuation for the current task.
+- [struct UnsafeContinuation](unsafecontinuation.md)
+  A mechanism to interface between synchronous and asynchronous code, without correctness checking.
+- [func withUnsafeContinuation<T>((UnsafeContinuation<T, Never>) -> Void) async -> sending T](withunsafecontinuation(_:).md)
+  Invokes the passed in closure with a unsafe continuation for the current task.
+
 
 ---
 

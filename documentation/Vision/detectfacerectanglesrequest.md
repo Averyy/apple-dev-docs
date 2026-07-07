@@ -8,7 +8,6 @@ A request that finds faces within an image.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -22,7 +21,7 @@ struct DetectFaceRectanglesRequest
 
 #### Overview
 
-The request returns the resulting rectangle data in a collection of [`FaceObservation`](faceobservation.md) objects.
+This request returns faces as rectangular bounding boxes with origin and size.
 
 ## Topics
 
@@ -71,7 +70,7 @@ The request returns the resulting rectangle data in a collection of [`FaceObserv
 - [struct DetectFaceCaptureQualityRequest](detectfacecapturequalityrequest.md)
   A request that produces a floating-point number that represents the capture quality of a face in a photo.
 - [struct DetectFaceLandmarksRequest](detectfacelandmarksrequest.md)
-  An image-analysis request that finds facial features like eyes and mouth in an image.
+  An image analysis request that finds facial features like eyes and mouth in an image.
 
 
 ---

@@ -8,7 +8,7 @@ Determines whether the first pasteboard item matches the specified patterns, wit
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst ?+
+- Mac Catalyst 14.0+
 - visionOS 1.0+
 
 ## Declaration

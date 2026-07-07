@@ -31,7 +31,7 @@ Generate entire Swift data structures with guided generation. With the `@Generab
 
 Use [`Tool`](tool.md) to create custom tools that the model can call to assist with handling your request. For example, the model can call a tool that searches a local or online database for information, or calls a service in your app.
 
-To use Apple Foundation Models, people need to turn on Apple Intelligence on their device. For a list of supported devices, see [`Apple Intelligence`](https://developer.apple.comhttps://www.apple.com/apple-intelligence/).
+To use Apple Foundation Models, people need a device that supports Apple Intelligence. For a list of supported devices, see [`Apple Intelligence`](https://developer.apple.comhttps://www.apple.com/apple-intelligence/).
 
 ##### Whats New
 
@@ -70,8 +70,6 @@ To use Apple Foundation Models, people need to turn on Apple Intelligence on the
   Analyze and extract information from images by combining them with descriptive text prompts.
 - [struct Attachment](attachment.md)
   An asset provided to the model.
-- [protocol AttachmentContent](attachmentcontent.md)
-  A type that you use as the content of an attachment.
 - [struct ImageAttachmentContent](imageattachmentcontent.md)
   A type that holds image data.
 - [struct ImageReference](imagereference.md)

@@ -16,19 +16,18 @@ protocol AccessCheckOperations : NSObjectProtocol
 
 #### Overview
 
-> **Note**:  Use [`FSVolume.AccessCheckHandler`](fsvolume/accesscheckhandler.md) instead.
+> **Note**: Use [`FSVolume.AccessCheckHandler`](fsvolume/accesscheckhandler.md) instead.
 
 ## Topics
 
 ### Checking access
+- [func checkAccess(to: FSItem, requestedAccess: FSVolume.AccessMask, replyHandler: (Bool, (any Error)?) -> Void)](fsvolume/accesscheckoperations/checkaccess(to:requestedaccess:replyhandler:).md)
+  Checks whether the file system allows access to the given item.
 - [FSVolume.AccessMask](fsvolume/accessmask.md)
   A bitmask of access rights.
 ### Inspecting volume properties
 - [var isAccessCheckInhibited: Bool](fsvolume/accesscheckoperations/isaccesscheckinhibited.md)
   A Boolean value that instructs FSKit not to call this protocol’s methods, even if the volume conforms to it.
-### Instance Methods
-- [func checkAccess(to: FSItem, requestedAccess: FSVolume.AccessMask, replyHandler: (Bool, (any Error)?) -> Void)](fsvolume/accesscheckoperations/checkaccess(to:requestedaccess:replyhandler:).md)
-  Checks whether the file system allows access to the given item.
 
 ## Relationships
 

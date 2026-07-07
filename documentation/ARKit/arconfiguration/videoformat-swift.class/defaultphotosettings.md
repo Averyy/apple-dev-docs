@@ -8,7 +8,6 @@ The default AVCapturePhotoSettings object that ARKit uses when capturing a high 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst 26.0+
 
 ## Declaration
 

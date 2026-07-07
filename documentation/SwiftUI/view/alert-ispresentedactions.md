@@ -3,22 +3,22 @@
 **Framework**: SwiftUI  
 **Kind**: method
 
-Presents an alert when a given condition is true, using a text view for the title.
+Presents an alert when a given condition is true, using a localized string resource for the title.
 
 **Availability**:
-- iOS 15.0+
-- iPadOS 15.0+
-- Mac Catalyst 15.0+
-- macOS 12.0+
-- tvOS 15.0+
+- iOS 16.0+
+- iPadOS 16.0+
+- Mac Catalyst 16.0+
+- macOS 13.0+
+- tvOS 16.0+
 - visionOS 1.0+
-- watchOS 8.0+
+- watchOS 9.0+
 
 ## Declaration
 
 ```swift
-nonisolated
-func alert<A>(_ title: Text, isPresented: Binding<Bool>, @ContentBuilder actions: () -> A) -> some View where A : View
+@export(implementation)
+nonisolated func alert<A>(_ titleResource: LocalizedStringResource, isPresented: Binding<Bool>, @ContentBuilder actions: () -> A) -> some View where A : View
 ```
 
 #### Discussion
@@ -28,12 +28,11 @@ In the example below, a login form conditionally presents an alert by setting th
 ```swift
 struct Login: View {
     @State private var didFail = false
-    let alertTitle: String = "Login failed."
 
     var body: some View {
         LoginForm(didFail: $didFail)
             .alert(
-                Text(alertTitle),
+                "Login failed.",
                 isPresented: $didFail
             ) {
                 Button("OK") {
@@ -52,9 +51,11 @@ If no actions are present, the system includes a standard “OK” action. No de
 
 On iOS, tvOS, and watchOS, alerts only support controls with labels that are [`Text`](text.md). Passing any other type of view results in the content being omitted.
 
+This modifier creates a [`Text`](text.md) view for the title on your behalf. See [`Text`](text.md) for more information about localizing strings.
+
 ## Parameters
 
-- `title`: The title of the alert.
+- `titleResource`: Text resource for the localized string that describes the title of the alert.
 - `isPresented`: A binding to a Boolean value that determines whether to present the alert. When the user presses or taps one of the alert’s actions, the system sets this value to `false` and dismisses.
 - `actions`: A [`ContentBuilder`](contentbuilder.md) returning the alert’s actions.
 
@@ -63,20 +64,20 @@ On iOS, tvOS, and watchOS, alerts only support controls with labels that are [`T
 - [struct AlertScene](alertscene.md)
   A scene that renders itself as a standalone alert dialog.
 - [func alert(_:isPresented:presenting:actions:)](view/alert(_:ispresented:presenting:actions:).md)
-  Presents an alert using the given data to produce the alert’s content and a text view as a title.
+  Presents an alert using the given data to produce the alert’s content and a localized string resource for a title.
 - [func alert(_:item:actions:)](view/alert(_:item:actions:).md)
   Presents an alert using the given data to produce the alert’s content and a text view as a title.
-- [func alert<E, A>(error: Binding<E?>, actions: () -> A) -> some View](view/alert(error:actions:).md)
+- [func alert(error:actions:)](view/alert(error:actions:).md)
   Presents an alert when an error is present.
 - [func alert<E, A>(isPresented: Binding<Bool>, error: E?, actions: () -> A) -> some View](view/alert(ispresented:error:actions:).md)
   Presents an alert when an error is present.
 - [func alert(_:isPresented:actions:message:)](view/alert(_:ispresented:actions:message:).md)
-  Presents an alert with a message when a given condition is true using a text view as a title.
+  Presents an alert with a message when a given condition is true, using a localized string resource for a title.
 - [func alert(_:isPresented:presenting:actions:message:)](view/alert(_:ispresented:presenting:actions:message:).md)
-  Presents an alert with a message using the given data to produce the alert’s content and a text view for a title.
+  Presents an alert with a message using the given data to produce the alert’s content and a localized string resource for a title.
 - [func alert(_:item:actions:message:)](view/alert(_:item:actions:message:).md)
   Presents an alert with a message using the given data to produce the alert’s content and a localized string key for a title.
-- [func alert<E, A, M>(error: Binding<E?>, actions: (E) -> A, message: (E) -> M) -> some View](view/alert(error:actions:message:).md)
+- [func alert(error:actions:message:)](view/alert(error:actions:message:).md)
   Presents an alert with a message when an error is present.
 - [func alert<E, A, M>(isPresented: Binding<Bool>, error: E?, actions: (E) -> A, message: (E) -> M) -> some View](view/alert(ispresented:error:actions:message:).md)
   Presents an alert with a message when an error is present.

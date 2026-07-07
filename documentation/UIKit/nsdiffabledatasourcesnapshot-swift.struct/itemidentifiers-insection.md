@@ -8,7 +8,7 @@ Returns the identifiers of all of the items in the specified section of the snap
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst ?+
+- Mac Catalyst 13.0+
 - tvOS 13.0+
 - visionOS ?+
 

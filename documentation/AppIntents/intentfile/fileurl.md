@@ -8,7 +8,7 @@ URL to the file on disk, if any. If the file isn’t stored on disk, access the 
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst ?+
+- Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
 - visionOS ?+

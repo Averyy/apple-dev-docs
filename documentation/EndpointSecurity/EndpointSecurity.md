@@ -141,6 +141,7 @@ Develop your system extension with Endpoint Security and package it in an app th
   Set the minimum deadline in milliseconds for specified auth event types for this client
 - [func es_set_deadline_miss_mode(OpaquePointer, es_deadline_miss_mode_t) -> es_return_t](es_set_deadline_miss_mode(_:_:).md)
   Set the deadline miss mode for the specified client
+- [func es_sync_client(OpaquePointer, () -> Void) -> es_return_t](es_sync_client(_:_:).md)
 
 
 ---

@@ -3,6 +3,8 @@
 **Framework**: RealityKit  
 **Kind**: property
 
+The computed path to the target position found by requestPath(). If called before the pathfind completes, a partial path will be returned. This partial path may be suboptimal. If the pathfind failed or was not requested, the function will return an empty array.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -20,7 +22,9 @@ var currentPath: [NavigationMeshResource.PathNode] { get }
 ## See Also
 
 - [var pathfindStatus: NavigationController.PathfindStatus](navigationcontroller/pathfindstatus-swift.property.md)
+  The current pathfind status.
 - [NavigationController.PathfindStatus](navigationcontroller/pathfindstatus-swift.enum.md)
+  The status of a pathfinding request.
 
 
 ---

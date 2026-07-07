@@ -70,7 +70,6 @@ A `Span` instance is a non-owning, non-escaping view into memory. When a `Span` 
   Returns a Boolean value indicating whether two instances refer to the same memory region.
 - [func isTriviallyIdentical(to: Span<Element>) -> Bool](span/istriviallyidentical(to:).md)
   Returns a Boolean value indicating whether two instances refer to the same memory region.
-- [func withBytes<R, E>((RawSpan) throws(E) -> R) throws(E) -> R](span/withbytes(_:).md)
 - [func withUnsafeBufferPointer<E, Result>((UnsafeBufferPointer<Element>) throws(E) -> Result) throws(E) -> Result](span/withunsafebufferpointer(_:).md)
   Calls a closure with a pointer to the viewed contiguous storage.
 - [func withUnsafeBytes<E, Result>((UnsafeRawBufferPointer) throws(E) -> Result) throws(E) -> Result](span/withunsafebytes(_:).md)
@@ -113,6 +112,7 @@ A `Span` instance is a non-owning, non-escaping view into memory. When a `Span` 
   `MutableSpan<Element>` represents a contiguous region of memory which contains initialized instances of `Element`.
 - [struct MutableRawSpan](mutablerawspan.md)
   `MutableRawSpan` represents a contiguous region of memory which contains initialized bytes.
+- [struct SpanIterator](spaniterator.md)
 
 
 ---

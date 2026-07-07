@@ -8,7 +8,6 @@ A structure that contains the file type and file creator codes for an item.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
 - macOS 12.0+
 - visionOS 1.0+
 

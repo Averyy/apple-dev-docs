@@ -17,6 +17,7 @@ Produces optional content for conditional statements in multi-statement closures
 ## Declaration
 
 ```swift
+@export(implementation)
 static func buildIf<Content>(_ content: Content?) -> Content?
 ```
 

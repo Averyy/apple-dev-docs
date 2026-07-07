@@ -17,7 +17,7 @@ A `TabViewStyle` that displays a paged scrolling `TabView`.
 
 ```swift
 @MainActor
-@preconcurrency static var page: PageTabViewStyle { get }
+@export(implementation) @preconcurrency static var page: PageTabViewStyle { get }
 ```
 
 #### Discussion

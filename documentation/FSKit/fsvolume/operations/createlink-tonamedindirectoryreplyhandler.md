@@ -30,6 +30,13 @@ If creating the link fails, complete the request with an error with a domain of 
 - `directory`: The directory in which to create the link.
 - `reply`: A block or closure to indicate success or failure. If creation succeeds, pass an [`FSFileName`](fsfilename.md) of the newly-created link and a `nil` error. If creation fails, pass the relevant error as the second parameter; FSKit ignores any [`FSFileName`](fsfilename.md) in this case. For an `async` Swift implementation, there’s no reply handler; simply return the [`FSFileName`](fsfilename.md) or throw an error.
 
+## See Also
+
+- [func createSymbolicLink(named: FSFileName, inDirectory: FSItem, attributes: FSItem.SetAttributesRequest, linkContents: FSFileName, replyHandler: (FSItem?, FSFileName?, (any Error)?) -> Void)](fsvolume/operations/createsymboliclink(named:indirectory:attributes:linkcontents:replyhandler:).md)
+  Creates a new symbolic link.
+- [func readSymbolicLink(FSItem, replyHandler: (FSFileName?, (any Error)?) -> Void)](fsvolume/operations/readsymboliclink(_:replyhandler:).md)
+  Reads a symbolic link.
+
 
 ---
 

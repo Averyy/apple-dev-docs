@@ -1,4 +1,4 @@
-# Interpreting Automated Device Enrollment program error codes
+# Interpreting Automated Device Enrollment error codes
 
 **Framework**: Device Management
 

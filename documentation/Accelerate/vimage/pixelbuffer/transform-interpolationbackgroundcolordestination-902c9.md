@@ -8,7 +8,7 @@ Applies a perspective warp to an interleaved 4-channel, 8-bit planar image.
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst ?+
+- Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
 - visionOS ?+

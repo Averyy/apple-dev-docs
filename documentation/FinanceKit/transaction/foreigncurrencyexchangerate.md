@@ -8,7 +8,6 @@ The currency exchange rate, if the transaction was carried out in a foreign curr
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 
 ## Declaration
 

@@ -11,6 +11,7 @@ Returns the first aggregate value matching the given operation, or `-1` if not f
 - Mac Catalyst 27.0+ (Beta)
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -21,6 +22,23 @@ func aggregateValue(_ operation: AggregationOperation) -> Double
 ## Parameters
 
 - `operation`: The aggregation operation to match.
+
+## See Also
+
+- [var summary: DataFrame](evaluationresult/summary.md)
+  Aggregated statistics for each metric in the evaluation.
+- [var detailed: DataFrame](evaluationresult/detailed.md)
+  Individual results for each sample in the evaluation.
+- [let evaluationInfo: [String : String]](evaluationresult/evaluationinfo.md)
+  User-defined information about this evaluation, such as the model name, prompt version, or dataset.
+- [let evaluationID: String](evaluationresult/evaluationid.md)
+  The identifier of the evaluation that produced these results.
+- [let resultID: UUID](evaluationresult/resultid.md)
+  A unique identifier for this particular result.
+- [var reportMetadata: [String : any Sendable]](evaluationresult/reportmetadata.md)
+  Framework-generated metadata used for report presentation.
+- [EvaluationResult.DataFrameKind](evaluationresult/dataframekind.md)
+  The kind of DataFrame to convert for JSON serialization.
 
 
 ---

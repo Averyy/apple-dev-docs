@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: property
 
-The ID of the last active transition.
+The ID of the most recent transition the state machine took.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -22,11 +22,11 @@ var lastTransition: Int { get }
 ## See Also
 
 - [var currentState: Int](animationgraphcomponent/activestatemachinenode/currentstate.md)
-  The ID of the current state.
+  The ID of the state the state machine is currently in.
 - [var previousState: Int](animationgraphcomponent/activestatemachinenode/previousstate.md)
-  The ID of the previous state.
+  The ID of the state the state machine was in immediately before [`currentState`](animationgraphcomponent/activestatemachinenode/currentstate.md).
 - [var wasReset: Bool](animationgraphcomponent/activestatemachinenode/wasreset.md)
-  Returns `true` if the node was reset during the last tick.
+  A Boolean value that indicates whether the node was reset during the last evaluation tick.
 
 
 ---

@@ -6,24 +6,24 @@
 Creates a label with a system icon image and a title generated from a localized string.
 
 **Availability**:
-- iOS 14.0+
-- iPadOS 14.0+
-- Mac Catalyst 14.0+
-- macOS 11.0+
-- tvOS 14.0+
+- iOS 16.0+
+- iPadOS 16.0+
+- Mac Catalyst 16.0+
+- macOS 13.0+
+- tvOS 16.0+
 - visionOS 1.0+
-- watchOS 7.0+
+- watchOS 9.0+
 
 ## Declaration
 
 ```swift
-nonisolated
-init(_ titleKey: LocalizedStringKey, systemImage name: String)
+@export(implementation)
+nonisolated init(_ titleResource: LocalizedStringResource, systemImage name: String)
 ```
 
 ## Parameters
 
-- `titleKey`: A title generated from a localized string.
+- `titleResource`: A title generated from a localized string.
 
 ## See Also
 

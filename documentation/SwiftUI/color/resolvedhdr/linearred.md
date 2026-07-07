@@ -17,6 +17,7 @@ The amount of red in the color in the extended sRGB color space variant with lin
 ## Declaration
 
 ```swift
+@export(implementation)
 var linearRed: Float { get set }
 ```
 

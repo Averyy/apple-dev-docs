@@ -127,25 +127,25 @@ var body: some View {
 - [init(_:text:)](textfield/init(_:text:).md)
   Creates a text field with a text label generated from a localized title string.
 - [init(_:text:prompt:)](textfield/init(_:text:prompt:).md)
-  Creates a text field with a text label generated from a localized title string.
+  Creates a text field with a text label generated from a localized title string resource.
 - [init(text: Binding<String>, prompt: Text?, label: () -> Label)](textfield/init(text:prompt:label:).md)
   Creates a text field with a prompt generated from a `Text`.
 ### Creating a scrollable text field
 - [init(_:text:axis:)](textfield/init(_:text:axis:).md)
-  Creates a text field with a preferred axis and a text label generated from a localized title string.
+  Creates a text field with a preferred axis and a text label generated from a localized title string resource.
 - [init(_:text:prompt:axis:)](textfield/init(_:text:prompt:axis:).md)
-  Creates a text field with a preferred axis and a text label generated from a localized title string.
+  Creates a text field with a preferred axis and a text label generated from a localized title string resource.
 - [init(text: Binding<String>, prompt: Text?, axis: Axis, label: () -> Label)](textfield/init(text:prompt:axis:label:).md)
   Creates a text field with a preferred axis and a prompt generated from a `Text`.
 ### Creating a text field with a value
 - [init(_:value:format:prompt:)](textfield/init(_:value:format:prompt:).md)
-  Creates a text field that applies a format style to a bound value, with a label generated from a localized title string.
+  Creates a text field that applies a format style to a bound value, with a label generated from a localized title string resource.
 - [init(value:format:prompt:label:)](textfield/init(value:format:prompt:label:).md)
   Creates a text field that applies a format style to a bound value, with a label generated from a content builder.
 - [init(_:value:formatter:)](textfield/init(_:value:formatter:).md)
   Create an instance which binds over an arbitrary type, `V`.
 - [init(_:value:formatter:prompt:)](textfield/init(_:value:formatter:prompt:).md)
-  Creates a text field that applies a formatter to a bound value, with a label generated from a title string.
+  Creates a text field that applies a formatter to a bound value, with a label generated from a localized title string resource.
 - [init<V>(value: Binding<V>, formatter: Formatter, prompt: Text?, label: () -> Label)](textfield/init(value:formatter:prompt:label:).md)
   Creates a text field that applies a formatter to a bound optional value, with a label generated from a content builder.
 ### Deprecated initializers
@@ -153,7 +153,7 @@ var body: some View {
   Review deprecated text field initializers.
 ### Initializers
 - [init(_:text:selection:prompt:axis:)](textfield/init(_:text:selection:prompt:axis:).md)
-  Creates a text field with a binding to the current selection and a text label generated from a localized title string.
+  Creates a text field with a binding to the current selection and a text label generated from a localized title string resource.
 - [init(text: Binding<String>, selection: Binding<TextSelection?>, prompt: Text?, axis: Axis?, label: () -> Label)](textfield/init(text:selection:prompt:axis:label:).md)
   Creates a text field with a binding to the current selection and a prompt generated from a `Text`.
 

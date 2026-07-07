@@ -8,7 +8,7 @@ A structure that provides methods you use to update conversion values for ad att
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
-- Mac Catalyst ?+
+- Mac Catalyst 17.4+
 
 ## Declaration
 

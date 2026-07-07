@@ -8,7 +8,6 @@ A Boolean value that tells you whether the iOS device supports tracking the user
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

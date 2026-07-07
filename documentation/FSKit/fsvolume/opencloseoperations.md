@@ -20,21 +20,20 @@ When a file system volume conforms to this protocol, the kernel layer issues an 
 
 If a file system volume doesn’t conform to this protocol, the kernel layer can skip making such calls to the volume.
 
-> **Note**:  Use [`FSVolume.OpenCloseHandler`](fsvolume/openclosehandler.md) instead.
+> **Note**: Use [`FSVolume.OpenCloseHandler`](fsvolume/openclosehandler.md) instead.
 
 ## Topics
 
 ### Opening and closing
+- [func openItem(FSItem, modes: FSVolume.OpenModes, replyHandler: ((any Error)?) -> Void)](fsvolume/opencloseoperations/openitem(_:modes:replyhandler:).md)
+  Opens a file for access.
+- [func closeItem(FSItem, modes: FSVolume.OpenModes, replyHandler: ((any Error)?) -> Void)](fsvolume/opencloseoperations/closeitem(_:modes:replyhandler:).md)
+  Closes a file from further access.
 - [FSVolume.OpenModes](fsvolume/openmodes.md)
   Defined modes for opening a file.
 ### Inspecting volume properties
 - [var isOpenCloseInhibited: Bool](fsvolume/opencloseoperations/isopencloseinhibited.md)
   A Boolean value that instructs FSKit not to call this protocol’s methods, even if the volume conforms to it.
-### Instance Methods
-- [func closeItem(FSItem, modes: FSVolume.OpenModes, replyHandler: ((any Error)?) -> Void)](fsvolume/opencloseoperations/closeitem(_:modes:replyhandler:).md)
-  Closes a file from further access.
-- [func openItem(FSItem, modes: FSVolume.OpenModes, replyHandler: ((any Error)?) -> Void)](fsvolume/opencloseoperations/openitem(_:modes:replyhandler:).md)
-  Opens a file for access.
 
 ## Relationships
 

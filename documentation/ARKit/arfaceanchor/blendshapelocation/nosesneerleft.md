@@ -8,7 +8,6 @@ The coefficient describing a raising of the left side of the nose around the nos
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

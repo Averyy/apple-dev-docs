@@ -17,6 +17,7 @@ Creates a rectangle with a corner style uniformly set on the two top corners, an
 ## Declaration
 
 ```swift
+@export(implementation)
 static func rect(uniformTopCorners: Edge.Corner.Style, uniformBottomCorners: Edge.Corner.Style) -> Self
 ```
 

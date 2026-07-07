@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: init
 
-Creates a picker bound to a collection of bindings that accepts a custom current value label and generates its label from a string and image resource.
+Creates a picker that accepts a custom current value label generates its label from a localized string key and image resource.
 
 **Availability**:
 - iOS 18.0+
@@ -17,15 +17,15 @@ Creates a picker bound to a collection of bindings that accepts a custom current
 ## Declaration
 
 ```swift
-nonisolated
-init<C, S>(_ title: S, image: ImageResource, sources: C, selection: KeyPath<C.Element, Binding<SelectionValue>>, @ContentBuilder content: () -> Content, @ContentBuilder currentValueLabel: () -> some View) where C : RandomAccessCollection, S : StringProtocol, C.Element == Binding<SelectionValue>
+@export(implementation)
+nonisolated init<C>(_ titleResource: LocalizedStringResource, image: ImageResource, sources: C, selection: KeyPath<C.Element, Binding<SelectionValue>>, @ContentBuilder content: () -> Content, @ContentBuilder currentValueLabel: () -> some View) where C : RandomAccessCollection, C.Element == Binding<SelectionValue>
 ```
 
 ## Parameters
 
-- `title`: A string that describes the purpose of selecting an option.
+- `titleResource`: A localized string resource that describes the purpose of selecting an option.
 - `image`: The name of the image resource to lookup.
-- `sources`: A collection of values used as the source for displaying the Picker’s selection.
+- `sources`: A collection of values used as the source for displaying he Picker’s selection.
 - `selection`: The key path of the values that determines the currently-selected options. When a user selects an option from the picker, the values at the key path of all items in the `sources` collection are updated with the selected option.
 - `content`: A view that contains the set of options.
 - `currentValueLabel`: A view that represents the current value of the picker.

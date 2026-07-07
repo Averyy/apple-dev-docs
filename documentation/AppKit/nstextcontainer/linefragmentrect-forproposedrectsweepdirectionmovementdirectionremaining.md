@@ -6,7 +6,7 @@
 Calculates and returns the longest rectangle available in the proposed rectangle for displaying text.
 
 **Availability**:
-- macOS ?+
+- macOS 10.0+
 
 ## Declaration
 

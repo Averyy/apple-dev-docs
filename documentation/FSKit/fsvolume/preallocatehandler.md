@@ -20,7 +20,7 @@ A preallocation operation allocates space for a file without writing to it yet. 
 
 In a kernel-based file system, you typically preallocate space with the `VNOP_ALLOCATE` operation, called from `fcntl(F_PREALLOCATE)`.
 
-> ❗ **Important**:  This protocol replaces the [`FSVolume.PreallocateOperations`](fsvolume/preallocateoperations.md) protocol. It exposes the same functionality, while using the [`FSPreallocateResult`](fspreallocateresult.md) object. This objects adds the ability to reply with [`FSItem.Attributes`](fsitem/attributes.md) and free space from [`preallocateSpace(for:at:length:flags:context:replyHandler:)`](fsvolume/preallocatehandler/preallocatespace(for:at:length:flags:context:replyhandler:).md).
+> ❗ **Important**: This protocol replaces the [`FSVolume.PreallocateOperations`](fsvolume/preallocateoperations.md) protocol. It exposes the same functionality, while using the [`FSPreallocateResult`](fspreallocateresult.md) object. This objects adds the ability to reply with [`FSItem.Attributes`](fsitem/attributes.md) and free space from [`preallocateSpace(for:at:length:flags:context:replyHandler:)`](fsvolume/preallocatehandler/preallocatespace(for:at:length:flags:context:replyhandler:).md).
 
 ## Topics
 

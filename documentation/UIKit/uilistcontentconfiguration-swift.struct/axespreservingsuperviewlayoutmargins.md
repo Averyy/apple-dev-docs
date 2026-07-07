@@ -8,7 +8,7 @@ A Boolean value that determines whether the content view preserves the layout ma
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst ?+
+- Mac Catalyst 14.0+
 - tvOS 14.0+
 - visionOS ?+
 

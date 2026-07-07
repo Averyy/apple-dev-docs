@@ -13,6 +13,7 @@ A placement for items in the title area of the navigation bar.
 ## Declaration
 
 ```swift
+@export(implementation)
 static var title: ToolbarItemPlacement { get }
 ```
 

@@ -11,8 +11,8 @@ Uses the specified preference value from the view to produce another view occupy
 ## Declaration
 
 ```swift
-nonisolated
-func spatialOverlayPreferenceValue<K, V>(_ key: K.Type, alignment: Alignment3D = .center, @ContentBuilder _ transform: @escaping (K.Value) -> V) -> some View where K : PreferenceKey, V : View
+@export(implementation)
+nonisolated func spatialOverlayPreferenceValue<K, V>(_ key: K.Type, alignment: Alignment3D = .center, @ContentBuilder _ transform: @escaping (K.Value) -> V) -> some View where K : PreferenceKey, V : View
 ```
 
 ## See Also

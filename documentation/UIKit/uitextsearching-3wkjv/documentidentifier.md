@@ -9,7 +9,7 @@ An object that uniquely identifies a specific document when searching for matchi
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst ?+
+- Mac Catalyst 16.0+
 - visionOS ?+
 
 ## Declaration

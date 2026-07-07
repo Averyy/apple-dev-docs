@@ -16,7 +16,7 @@ A date picker style that displays the components in a compact, textual format.
 
 ```swift
 @MainActor
-@preconcurrency static var compact: CompactDatePickerStyle { get }
+@export(implementation) @preconcurrency static var compact: CompactDatePickerStyle { get }
 ```
 
 #### Discussion

@@ -21,10 +21,10 @@ object NetworkVPNIKEV2PostQuantumKeyExchangeObject
 
 ## Properties
 
-- `AllowFallback` (boolean): If set to `false`, the VPN doesn’t establish a connection if the server does not support or doesn’t allow post-quantum key exchanges. Thd device ignores this key if `PostQuantumKeyExchangeMethods` is not present in `IKESecurityAssociationParameters` or `ChildSecurityAssociationParameters`.
+- `AllowFallback` (boolean): If set to `false`, the VPN doesn’t establish a connection if the server doesn’t support or doesn’t allow post-quantum key exchanges. Thd device ignores this key if `PostQuantumKeyExchangeMethods` isn’t present in `IKESecurityAssociationParameters` or `ChildSecurityAssociationParameters`.
 - `PPK` (string): The Post-quantum Pre-shared key (PPK) the device uses for this VPN. This key is is used with VPN servers that support RFC 8784. If this key is present `PPKIdentifier` must also be present.
 - `PPKIdentifier` (string): The identifier for the Post-quantum Pre-shared key (PPK) the device uses for this VPN. This key is is used with VPN servers that support RFC 8784. If this key is present `PPK` must also be present.
-- `PPKMandatory` (boolean): If set to `true`, the VPN doesn’t establish a connection if the server doesn’t support RFC 8784 or doesn’t accept the PPK identifier specified in `PPKIdentifier`. The device ignores this key if `PPK` and `PPKIdentifier` are not present.
+- `PPKMandatory` (boolean): If set to `true`, the VPN doesn’t establish a connection if the server doesn’t support RFC 8784 or doesn’t accept the PPK identifier specified in `PPKIdentifier`. The device ignores this key if `PPK` and `PPKIdentifier` aren’t present.
 
 ## See Also
 

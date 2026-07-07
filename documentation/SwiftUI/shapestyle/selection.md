@@ -15,6 +15,7 @@ A style used to visually indicate selection following platform conventional colo
 ## Declaration
 
 ```swift
+@export(implementation)
 static var selection: SelectionShapeStyle { get }
 ```
 

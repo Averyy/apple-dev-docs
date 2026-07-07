@@ -8,7 +8,7 @@ A policy that indicates the device accepts cookies from all websites.
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst ?+
+- Mac Catalyst 15.0+
 
 ## Declaration
 

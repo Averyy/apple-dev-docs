@@ -55,7 +55,7 @@ List(folders) { folder in
 ## See Also
 
 - [func badge(_:)](view/badge(_:).md)
-  Generates a badge for the view from an integer value.
+  Generates a badge for the view from a localized string resource.
 - [func badgeProminence(BadgeProminence) -> some View](view/badgeprominence(_:).md)
   Specifies the prominence of badges created by this view.
 - [var badgeProminence: BadgeProminence](environmentvalues/badgeprominence.md)

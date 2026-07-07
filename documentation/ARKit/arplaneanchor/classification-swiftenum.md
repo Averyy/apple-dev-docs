@@ -8,7 +8,6 @@ Possible characterizations of real-world surfaces represented by plane anchors.
 **Availability**:
 - iOS 12.0+
 - iPadOS 12.0+
-- Mac Catalyst 12.0+
 
 ## Declaration
 

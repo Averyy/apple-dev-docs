@@ -8,7 +8,6 @@ An array that contains the view’s subviews.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
 
 ## Declaration
 

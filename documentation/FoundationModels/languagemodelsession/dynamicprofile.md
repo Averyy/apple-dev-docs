@@ -73,8 +73,6 @@ Profile {
 ### Transforming the history
 - [func historyTransform(([Transcript.Entry]) -> [Transcript.Entry]) -> some LanguageModelSession.DynamicProfile](languagemodelsession/dynamicprofile/historytransform(_:).md)
   Apply a transformation to the history prior to invoking the model.
-- [func inputFilter(([Transcript.Entry]) -> [Transcript.Entry]) -> some LanguageModelSession.DynamicProfile](languagemodelsession/dynamicprofile/inputfilter(_:).md)
-  Apply a transformation to the transcript prior to invoking the model.
 ### Observing life cycle modifiers
 - [func onActivate(perform: sending () async -> Void) -> some LanguageModelSession.DynamicProfile](languagemodelsession/dynamicprofile/onactivate(perform:).md)
   Runs an action when this dynamic profile becomes active.
@@ -90,7 +88,6 @@ Profile {
   Runs an action whenever a tool call output is received within this dynamic profile.
 ### Applying tool modifiers
 - [func toolCallingMode(GenerationOptions.ToolCallingMode?) -> some LanguageModelSession.DynamicProfile](languagemodelsession/dynamicprofile/toolcallingmode(_:).md)
-- [func toolCalling(GenerationOptions.ToolCallingMode?) -> some LanguageModelSession.DynamicProfile](languagemodelsession/dynamicprofile/toolcalling(_:).md)
 ### Configuring the model
 - [func model(_:)](languagemodelsession/dynamicprofile/model(_:).md)
   Sets the model.
@@ -107,6 +104,9 @@ Profile {
 ### Handling the error policy
 - [func transcriptErrorHandlingPolicy(TranscriptErrorHandlingPolicy?) -> some LanguageModelSession.DynamicProfile](languagemodelsession/dynamicprofile/transcripterrorhandlingpolicy(_:).md)
   The session’s policy for managing the transcript when errors occur.
+### Instance Methods
+- [func onReasoning(perform:)](languagemodelsession/dynamicprofile/onreasoning(perform:).md)
+  Runs an action whenever this dynamic profile produces reasoning.
 
 ## Relationships
 

@@ -8,7 +8,7 @@ Creates a scaled pose from the specified 4 x 4 double-precision matrix.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst ?+
+- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS ?+

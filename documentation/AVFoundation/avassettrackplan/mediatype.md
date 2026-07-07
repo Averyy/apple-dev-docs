@@ -22,7 +22,7 @@ var mediaType: AVMediaType { get }
 ## See Also
 
 - [var segmentConfigurations: [AVPlannedSegmentConfiguration]](avassettrackplan/segmentconfigurations.md)
-  An array of AVPlannedSegmentConfigurations, each element specifying the configuration of a planned segment, ordered in output PTS order.
+  Array of AVPlannedSegmentConfigurations, each element specifying the configuration of a planned segment, ordered in output PTS order.
 - [var assemblyTrackID: CMPersistentTrackID](avassettrackplan/assemblytrackid.md)
   This is the track ID of this track when it is included in the assemblyComposition the planner passes to the completion handler to assemble all planned segments of all tracks into a single AVComposition.
 

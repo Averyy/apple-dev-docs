@@ -8,7 +8,6 @@ A data blob which contains the security domain On-Board Generated Key (OBGK).
 **Availability**:
 - iOS 18.1+
 - iPadOS 18.1+
-- Mac Catalyst 18.1+
 
 ## Declaration
 

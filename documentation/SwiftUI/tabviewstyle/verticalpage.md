@@ -12,7 +12,7 @@ A `TabViewStyle` that displays a vertical page `TabView` interaction and appeara
 
 ```swift
 @MainActor
-@preconcurrency static var verticalPage: VerticalPageTabViewStyle { get }
+@export(implementation) @preconcurrency static var verticalPage: VerticalPageTabViewStyle { get }
 ```
 
 #### Discussion

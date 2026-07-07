@@ -7,7 +7,7 @@ Manage devices for your students and employees.
 ## Topics
 
 ### Authentication
-- [Authenticating with the Automated Device Enrollment program](authenticating-with-the-automated-device-enrollment-program.md)
+- [Authenticating for Automated Device Enrollment](authenticating-with-the-automated-device-enrollment-program.md)
   Communicate securely with the web service using a server token.
 - [Authenticating through web views](authenticating-through-web-views.md)
   Use your own custom web interfaces to authenticate users.

@@ -1,6 +1,6 @@
 # addUserResource(_:)
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: method
 
 Registers a resource for residency on all command encoders used by this simulation.
@@ -12,7 +12,7 @@ Registers a resource for residency on all command encoders used by this simulati
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 ## Declaration
 

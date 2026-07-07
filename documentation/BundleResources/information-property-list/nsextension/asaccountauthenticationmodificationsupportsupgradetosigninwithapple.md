@@ -8,7 +8,6 @@ A Boolean value that indicates whether the extension supports upgrading from usi
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst 14.0+
 - visionOS 1.0+
 
 

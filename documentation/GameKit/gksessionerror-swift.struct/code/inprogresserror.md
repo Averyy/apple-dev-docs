@@ -8,7 +8,6 @@ The peer your application attempted to connect to has already requested a connec
 **Availability**:
 - iOS 3.0+
 - iPadOS 3.0+
-- Mac Catalyst 3.0+
 - tvOS 9.0+
 - visionOS 1.0+
 - watchOS 3.0+

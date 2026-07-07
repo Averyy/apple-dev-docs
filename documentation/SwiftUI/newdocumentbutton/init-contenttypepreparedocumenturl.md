@@ -15,8 +15,8 @@ Creates and opens new documents.
 ## Declaration
 
 ```swift
-nonisolated
-init(_ label: Text? = nil, contentType: UTType, prepareDocumentURL: @escaping () async throws -> URL? = { nil })
+@export(implementation)
+nonisolated init(_ title: LocalizedStringResource, contentType: UTType, prepareDocumentURL: @escaping () async throws -> URL? = { nil })
 ```
 
 #### Discussion
@@ -30,8 +30,8 @@ This initializer allows presenting a template picker, where a document can be pr
 
 var body: some Scene {
     DocumentGroupLaunchScene("My Documents") {
-        NewDocumentButton(Text("Start Writing…"))
-        NewDocumentButton(Text("Choose a Template")) {
+        NewDocumentButton("Start Writing…")
+        NewDocumentButton("Choose a Template") {
             try await withCheckedThrowingContinuation { continuation in
                 documentCreationContinuation = continuation
                 isTemplatePickerPresented = true
@@ -82,7 +82,6 @@ struct TemplatePicker: View {
 
 ## Parameters
 
-- `label`: A label for the button.
 - `contentType`: A content type of the document to create.
 - `prepareDocumentURL`: A closure that is called when a user presses the button. At this point, you can present a document template picker or another UI that allows users to choose a theme, configuration, or a template to create a document from. Return a prepared document, or throw an error if document creation failed. Return `nil` to request creation of an empty document.
 

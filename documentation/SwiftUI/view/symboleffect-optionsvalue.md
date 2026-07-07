@@ -17,8 +17,8 @@ Returns a new view with a symbol effect added to it.
 ## Declaration
 
 ```swift
-nonisolated
-func symbolEffect<T, U>(_ effect: T, options: SymbolEffectOptions = .default, value: U) -> some View where T : DiscreteSymbolEffect, T : SymbolEffect, U : Equatable
+@export(implementation)
+nonisolated func symbolEffect<T, U>(_ effect: T, options: SymbolEffectOptions = .default, value: U) -> some View where T : DiscreteSymbolEffect, T : SymbolEffect, U : Equatable
 ```
 
 #### Return Value

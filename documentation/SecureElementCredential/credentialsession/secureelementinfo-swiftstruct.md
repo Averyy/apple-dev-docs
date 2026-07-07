@@ -8,7 +8,6 @@ A type that provides information about the Secure Element hardware.
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
-- Mac Catalyst 18.4+
 
 ## Declaration
 
@@ -23,6 +22,9 @@ struct SecureElementInfo
   A string that encodes the hardware and software release versions of the Secure Element.
 - [let secureElementPlatformSigningCertificate: Data](credentialsession/secureelementinfo-swift.struct/secureelementplatformsigningcertificate.md)
   A certificate you use to authenticate against the Certification Authority of the Secure Element hardware.
+### Instance Properties
+- [let platformIdentifier: String](credentialsession/secureelementinfo-swift.struct/platformidentifier.md)
+  A unique identifier that describes the hardware and operating system combination of a device, along with its version information.
 
 ## Relationships
 

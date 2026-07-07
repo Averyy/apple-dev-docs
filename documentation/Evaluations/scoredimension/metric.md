@@ -11,6 +11,7 @@ A metric identifier derived from this dimension’s name.
 - Mac Catalyst 27.0+ (Beta)
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -26,6 +27,13 @@ Use this to reference the dimension’s metric in [`MetricsAggregator`](metricsa
 let relevance = ScoreDimension("Relevance", scale: .numeric([...]))
 aggregator.computeMean(of: relevance.metric)
 ```
+
+## See Also
+
+- [let scale: ScoringScale](scoredimension/scale.md)
+  The scoring scale for this dimension.
+- [let description: String?](scoredimension/description.md)
+  An optional description providing additional context for the judge about what this dimension measures.
 
 
 ---

@@ -16,8 +16,8 @@ Creates a new control group with the specified content that generates its label 
 ## Declaration
 
 ```swift
-nonisolated
-init<C, S>(_ title: S, @ContentBuilder content: () -> C) where Content == LabeledControlGroupContent<C, Text>, C : View, S : StringProtocol
+@export(implementation)
+nonisolated init<C, S>(_ title: S, @ContentBuilder content: () -> C) where Content == LabeledControlGroupContent<C, Text>, C : View, S : StringProtocol
 ```
 
 ## Parameters

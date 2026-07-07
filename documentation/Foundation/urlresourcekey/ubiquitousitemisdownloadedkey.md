@@ -8,7 +8,6 @@ The key for a Boolean value that indicates whether the system downloaded this it
 **Availability**:
 - iOS 5.0+
 - iPadOS 5.0+
-- Mac Catalyst 5.0+
 - tvOS 9.0+
 - visionOS 1.0+
 - watchOS 2.0+

@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: class
 
-A compiled animation graph resource that drives skeletal animation on an entity.
+A compiled animation graph that drives skeletal animation on an entity by blending and transitioning between animation clips at runtime.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -21,31 +21,43 @@ class AnimationGraphResource
 
 #### Overview
 
-An `AnimationGraphResource` can be produced by compiling a JSON graph definition. Once compiled, assign it to an entity via [`AnimationGraphComponent`](animationgraphcomponent.md) to begin driving animation:
+Compile an animation graph definition once into an [`AnimationGraphResource`](animationgraphresource.md), then attach it to one or more entities through [`AnimationGraphComponent`](animationgraphcomponent.md). The same resource can drive many entities — each [`AnimationGraphComponent`](animationgraphcomponent.md) keeps its own per-instance evaluation state, so animation timing, state-machine progress, and parameter values stay independent across characters that share a graph.
+
+##### Compile and Attach a Graph
 
 ```swift
-let resource = try AnimationGraphResource(definition: Data(animationGraphDefinition.utf8), nodeResourceMapping: clips, skeletonResource: skeleton)
+let resource = try AnimationGraphResource(
+    definition: graphDefinition,
+    nodeResourceMapping: clips,
+    skeletonResource: skeleton
+)
 entity.components.set(AnimationGraphComponent(graph: resource))
 ```
 
-#### Parameters
+##### Drive the Graph with Parameters
 
-The graph exposes a set of named parameters that control its behavior at runtime, such as movement speed or a trigger to initiate a transition. Read the available parameters via [`parameterNames`](animationgraphresource/parameternames.md). To set values at runtime, use the entity’s parameter binding:
+A graph exposes a set of named, typed parameters that control its behavior at runtime, such as a movement speed or a trigger that initiates a transition. List the parameters declared by the graph through [`parameterNames`](animationgraphresource/parameternames.md). Set values through the owning entity’s parameter binding rather than through the resource itself:
 
 ```swift
 entity.parameters["MoveSpeed"] = BindableValue(Float(1.0))
 ```
 
+When the graph evaluates next, it picks up the values bound on the entity whose names and types match the graph’s declared parameters.
+
+##### Validate Before Compiling
+
+To check a graph definition for errors without producing a resource — for example, in editor tooling — call [`validate(definition:nodeResourceMapping:skeletonResource:)`](animationgraphresource/validate(definition:noderesourcemapping:skeletonresource:).md), which returns compiler diagnostics rather than throwing.
+
 ## Topics
 
 ### Creating an animation graph
 - [convenience init(definition: Data, nodeResourceMapping: [Int : AnimationResource], skeletonResource: SkeletonResource) throws](animationgraphresource/init(definition:noderesourcemapping:skeletonresource:).md)
-  Compile a new resource from data, throws on failure.
+  Compiles an animation graph definition into a resource that can drive animation on an entity.
 - [static func validate(definition: Data, nodeResourceMapping: [Int : AnimationResource], skeletonResource: SkeletonResource) -> [String]](animationgraphresource/validate(definition:noderesourcemapping:skeletonresource:).md)
-  Run the compiler and return all graph errors without producing a resource.
+  Compiles an animation graph definition and returns any diagnostic messages the compiler produced, without producing a resource.
 ### Accessing parameters
 - [var parameterNames: [String]](animationgraphresource/parameternames.md)
-  Returns the names of all parameters in the resource.
+  The names of all parameters declared by the graph definition.
 
 ## Relationships
 
@@ -57,7 +69,7 @@ entity.parameters["MoveSpeed"] = BindableValue(Float(1.0))
 ## See Also
 
 - [struct AnimationGraphComponent](animationgraphcomponent.md)
-  A component that drives skeletal animation on an entity using a node-based animation graph.
+  A component that drives skeletal animation on an entity using an animation graph.
 
 
 ---

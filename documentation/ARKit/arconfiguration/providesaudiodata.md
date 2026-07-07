@@ -8,7 +8,6 @@ A Boolean value that specifies whether to capture audio during the AR session.
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

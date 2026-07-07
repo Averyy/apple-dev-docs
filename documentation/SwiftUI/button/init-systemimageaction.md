@@ -17,8 +17,8 @@ Creates a button that generates its label from a localized string key and system
 ## Declaration
 
 ```swift
-nonisolated
-init(_ titleKey: LocalizedStringKey, systemImage: String, action: @escaping @MainActor () -> Void)
+@export(implementation)
+nonisolated init(_ titleKey: LocalizedStringKey, systemImage: String, action: @escaping @MainActor () -> Void)
 ```
 
 ## Mentions
@@ -40,9 +40,9 @@ This initializer creates a [`Label`](label.md) view on your behalf, and treats t
 - [init(action: () -> Void, label: () -> Label)](button/init(action:label:).md)
   Creates a button that displays a custom label.
 - [init(_:action:)](button/init(_:action:).md)
-  Creates a button that generates its label from a localized string key.
+  Creates a button that generates its label from a localized string resource.
 - [init(_:image:action:)](button/init(_:image:action:).md)
-  Creates a button that generates its label from a localized string key and image resource.
+  Creates a button that generates its label from a localized string resource and image resource.
 
 
 ---

@@ -8,7 +8,6 @@ A value that specifies the amount of grain present in the camera grain texture.
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

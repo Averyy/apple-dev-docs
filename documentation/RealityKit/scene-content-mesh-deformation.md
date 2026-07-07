@@ -59,7 +59,6 @@ This collection covers the building blocks for modifying the vertices of a model
   An object that encodes blend-shape, skinning, and renormalization passes into a Metal compute command encoder.
 - [class LowLevelDeformationContext](lowleveldeformationcontext.md)
   An object that manages shared resources for [`LowLevelDeformation`](lowleveldeformation.md) instances.
-- [class CanaryDescription](canarydescription.md)
 
 ## See Also
 

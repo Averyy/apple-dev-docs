@@ -88,7 +88,7 @@ SectionedStack {
 ## See Also
 
 - [init(content:)](group/init(content:).md)
-  Creates a group of map content.
+  Creates a group of content.
 - [init<Base, Result>(subviews: Base, transform: (SubviewsCollection) -> Result)](group/init(subviews:transform:).md)
   Constructs a group from the subviews of the given view.
 

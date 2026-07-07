@@ -17,8 +17,8 @@ Adds a textual description of the value that the tab contains.
 ## Declaration
 
 ```swift
-nonisolated
-func accessibilityValue(_ valueDescription: Text, isEnabled: Bool = true) -> some TabContent<Self.TabValue>
+@export(implementation)
+nonisolated func accessibilityValue(_ valueResource: LocalizedStringResource, isEnabled: Bool = true) -> some TabContent<Self.TabValue>
 ```
 
 #### Discussion
@@ -41,7 +41,7 @@ var body: some View {
 
 ## Parameters
 
-- `valueDescription`: The accessibility value to apply.
+- `valueResource`: The accessibility value to apply.
 - `isEnabled`: If true the accessibility value is applied; otherwise the accessibility value is unchanged.
 
 ## See Also

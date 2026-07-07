@@ -8,13 +8,12 @@ Creates a view to present when launching document-related user experiences using
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 
 ## Declaration
 
 ```swift
-nonisolated
-init<B>(_ title: LocalizedStringKey, for contentTypes: [UTType], backgroundStyle: B, @ContentBuilder _ actions: () -> Actions, @ContentBuilder onDocumentOpen: @escaping (URL) -> DocumentView, @ContentBuilder overlayAccessoryView: @escaping (DocumentLaunchGeometryProxy) -> some View) where B : ShapeStyle
+@export(implementation)
+nonisolated init<B>(_ title: LocalizedStringResource, for contentTypes: [UTType], backgroundStyle: B, @ContentBuilder _ actions: () -> Actions, @ContentBuilder onDocumentOpen: @escaping (URL) -> DocumentView, @ContentBuilder overlayAccessoryView: @escaping (DocumentLaunchGeometryProxy) -> some View) where B : ShapeStyle
 ```
 
 #### Discussion
@@ -23,7 +22,7 @@ init<B>(_ title: LocalizedStringKey, for contentTypes: [UTType], backgroundStyle
 
 ## Parameters
 
-- `title`: A title key to use for the view title.
+- `title`: A title resource to use for the view title.
 - `contentTypes`: Content types that the view can open.
 - `backgroundStyle`: An optional background style of the view.
 - `actions`: A content builder returning the view’s actions

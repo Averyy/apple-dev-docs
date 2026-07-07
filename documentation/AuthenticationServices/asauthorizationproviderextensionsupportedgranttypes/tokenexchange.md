@@ -12,6 +12,10 @@
 static var tokenExchange: ASAuthorizationProviderExtensionSupportedGrantTypes { get }
 ```
 
+## Mentions
+
+- [Implementing web-based authentication with Platform Single Sign-on](implementing-web-based-authentication.md)
+
 
 ---
 

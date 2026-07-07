@@ -8,7 +8,6 @@ The persistent identifier representing the working set of documents and director
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 11.0+
 - macOS 11.0+
 - visionOS 1.0+
 

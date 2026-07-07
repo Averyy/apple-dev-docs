@@ -97,6 +97,8 @@ How you configure your model as judge affects the validity of its scores. The mo
 
 This workflow requires no code changes, only configuration changes to criteria, scoring levels, evaluation steps, and examples. After calibration, the model as judge can run at scale and you can be more confident that its scores reflect the same quality standard your human reviewers applied.
 
+You can see this calibration in use in [`Book Tracker: Using Evaluations to evaluate an intelligent feature`](book-tracker-using-evaluations-to-evaluate-an-intelligent-feature.md), a sample app that applies a judge-calibration evaluation, measures a model-as-judge’s scores against expert ratings with Cohen’s kappa, and then uses them to track tagging quality as the prompt changes.
+
 #### Debug Scores with Rationales
 
 When you use a [`ModelJudgeEvaluator`](modeljudgeevaluator.md), the model as judge produces a written rationale alongside every score. A single rationale tells you about one sample. Reviewing multiple rationales reveals patterns in how the model as judge interprets your instructions, applies your scale, and weighs your criteria.

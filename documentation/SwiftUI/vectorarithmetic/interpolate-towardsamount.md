@@ -17,6 +17,7 @@ Interpolates this value with `other` by the specified `amount`.
 ## Declaration
 
 ```swift
+@export(implementation)
 mutating func interpolate(towards other: Self, amount: Double)
 ```
 

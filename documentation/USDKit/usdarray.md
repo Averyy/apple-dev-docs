@@ -24,6 +24,7 @@ struct USDArray<Element> where Element : USDValueProtocol
 - [init()](usdarray/init-g2wc.md)
 - [init()](usdarray/init-opb4.md)
 - [init(some Sequence<Element>)](usdarray/init(_:)-1re5y.md)
+  Creates an array containing the elements of `s`.
 - [init(some Sequence<Int>)](usdarray/init(_:)-3buv9.md)
 - [init(some Sequence<UInt>)](usdarray/init(_:)-4jk2a.md)
 - [init(arrayLiteral: UInt...)](usdarray/init(arrayliteral:)-7x1vs.md)

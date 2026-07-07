@@ -8,7 +8,7 @@ Creates a block buffer with at least `subBlockCapacity` number of sub blocks.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst 26.0+
 - macOS 26.0+
 - tvOS 26.0+
 - visionOS 26.0+

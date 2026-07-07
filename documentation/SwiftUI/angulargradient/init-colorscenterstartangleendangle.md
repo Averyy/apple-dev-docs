@@ -17,8 +17,8 @@ Creates an angular gradient from a collection of colors.
 ## Declaration
 
 ```swift
-nonisolated
-init(colors: [Color], center: UnitPoint, startAngle: Angle, endAngle: Angle)
+@export(implementation)
+nonisolated init(colors: [Color], center: UnitPoint, startAngle: Angle, endAngle: Angle)
 ```
 
 ## See Also

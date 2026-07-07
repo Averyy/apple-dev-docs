@@ -11,6 +11,7 @@ A picker style that presents the options as a group of radio buttons.
 ## Declaration
 
 ```swift
+@export(implementation)
 static var radioGroup: RadioGroupPickerStyle { get }
 ```
 

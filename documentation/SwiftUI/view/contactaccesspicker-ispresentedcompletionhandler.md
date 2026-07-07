@@ -8,7 +8,6 @@ Modally present UI which allows the user to select which contacts your app has a
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 
 ## Declaration
 

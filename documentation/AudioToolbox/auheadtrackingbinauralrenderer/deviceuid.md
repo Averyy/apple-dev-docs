@@ -8,7 +8,6 @@ The Unique Identifier (UID) of the Bluetooth headphone device providing IMU sens
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 
 ## Declaration
 

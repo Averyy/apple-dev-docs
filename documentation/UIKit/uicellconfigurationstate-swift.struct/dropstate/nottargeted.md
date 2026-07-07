@@ -8,7 +8,7 @@ A drag session is active and can perform a drop in the cell’s container, but t
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
-- Mac Catalyst ?+
+- Mac Catalyst 14.0+
 - tvOS 14.0+
 - visionOS ?+
 

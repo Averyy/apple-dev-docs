@@ -24,11 +24,10 @@ class TimeIntervalCadence
 ### Creating a Cadence
 - [init(CFTimeInterval)](vnvideoprocessor/timeintervalcadence/init(_:).md)
   Creates a new time-based cadence with a time interval.
+- [init(timeInterval: CFTimeInterval)](vnvideoprocessor/timeintervalcadence/init(timeinterval:).md)
 ### Inspecting the Time Interval
 - [var timeInterval: CFTimeInterval](vnvideoprocessor/timeintervalcadence/timeinterval.md)
   The time interval of the cadence.
-### Initializers
-- [init(timeInterval: CFTimeInterval)](vnvideoprocessor/timeintervalcadence/init(timeinterval:).md)
 
 ## Relationships
 

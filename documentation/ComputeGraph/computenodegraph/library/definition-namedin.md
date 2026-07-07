@@ -1,6 +1,6 @@
 # definition(named:in:)
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: method
 
 Returns the first node definition with the given name, or `nil` if none is found.
@@ -12,7 +12,7 @@ Returns the first node definition with the given name, or `nil` if none is found
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 ## Declaration
 

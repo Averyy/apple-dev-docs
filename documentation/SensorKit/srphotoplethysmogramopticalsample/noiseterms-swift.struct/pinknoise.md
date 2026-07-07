@@ -8,7 +8,6 @@ An estimate of the pink noise of the sensor.
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
-- Mac Catalyst 17.4+
 
 ## Declaration
 

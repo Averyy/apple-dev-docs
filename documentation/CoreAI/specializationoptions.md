@@ -6,7 +6,6 @@
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 
@@ -27,16 +26,17 @@ struct SpecializationOptions
   Options that allow the model to use all available compute units.
 - [static let cpuOnly: SpecializationOptions](specializationoptions/cpuonly.md)
   Options that restrict compute to the CPU only.
-### Initializers
+### Creating custom options
 - [init(preferredComputeUnitKind: ComputeUnitKind)](specializationoptions/init(preferredcomputeunitkind:).md)
   Creates options with a preferred compute unit kind.
-### Instance Properties
+### Configuring compute units
 - [var allowedComputeUnitKinds: Set<ComputeUnitKind>](specializationoptions/allowedcomputeunitkinds.md)
   The set of compute units the specialized model can use.
-- [var expectFrequentReshapes: Bool](specializationoptions/expectfrequentreshapes.md)
-  Setting to allow more optimal specialization if the model performs frequent reshapes based on usage
 - [var preferredComputeUnitKind: ComputeUnitKind?](specializationoptions/preferredcomputeunitkind.md)
   The preferred compute unit kind, if one was specified.
+### Configuring specialization behavior
+- [var expectFrequentReshapes: Bool](specializationoptions/expectfrequentreshapes.md)
+  Setting to allow more optimal specialization if the model performs frequent reshapes based on usage
 
 ## Relationships
 

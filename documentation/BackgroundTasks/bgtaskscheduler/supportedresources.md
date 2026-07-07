@@ -8,7 +8,6 @@ Additional system resources that a continuous background task can request.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst 26.0+
 
 ## Declaration
 

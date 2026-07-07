@@ -8,7 +8,7 @@ A two-plane pixel format that contains a video-range 8-bit YpCbCr 4:2:2 plane an
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst ?+
+- Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
 - visionOS ?+

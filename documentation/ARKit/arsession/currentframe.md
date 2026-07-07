@@ -8,7 +8,6 @@ The most recent still frame captured by the active camera feed, including ARKitâ
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

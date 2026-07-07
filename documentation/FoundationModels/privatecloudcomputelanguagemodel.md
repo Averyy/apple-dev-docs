@@ -34,10 +34,7 @@ let session = LanguageModelSession(model: PrivateCloudComputeLanguageModel())
 let response = try await session.respond(to: "Analyze this document...")
 ```
 
-Before using the model, verify its availability. Model availability depends on device factors like:
-
-- The device must support Apple Intelligence.
-- Apple Intelligence must be turned on in Settings.
+Before using the model, verify its availability. Model availability depends on whether the device and region supports Apple Intelligence. For a list of supported devices, see [`Apple Intelligence`](https://developer.apple.comhttps://www.apple.com/apple-intelligence/).
 
 > ❗ **Important**: To develop with PCC you must meet certain eligibility requirements. To learn more and request access to the managed entitlement, see [`Accessing Private Cloud Compute`](https://developer.apple.comhttps://developer.apple.com/private-cloud-compute/).
 

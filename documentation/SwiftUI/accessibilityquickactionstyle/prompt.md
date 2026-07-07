@@ -11,6 +11,7 @@ A presentation style that displays a prompt to the user when the accessibility q
 ## Declaration
 
 ```swift
+@export(implementation)
 static var prompt: AccessibilityQuickActionPromptStyle { get }
 ```
 

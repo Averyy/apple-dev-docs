@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: init
 
-Creates a sortable column that displays a string property and has a text label.
+Creates a sortable column that displays a string property, and generates its label from a localized string resource.
 
 **Availability**:
 - iOS 16.6+
@@ -15,28 +15,28 @@ Creates a sortable column that displays a string property and has a text label.
 ## Declaration
 
 ```swift
-nonisolated
-init(_ text: Text, value: KeyPath<RowValue, String>, comparator: String.StandardComparator = .localizedStandard) where Content == Text
+@export(implementation)
+nonisolated init(_ titleResource: LocalizedStringResource, value: KeyPath<RowValue, String>, comparator: String.StandardComparator = .localizedStandard) where Content == Text
 ```
 
 #### Discussion
 
-This initializer creates a [`Text`](text.md) view for you, and treats the title similar to [`init(_:)`](text/init(_:).md). For more information about localizing strings, see [`Text`](text.md).
+This initializer creates a [`Text`](text.md) view for you. For more information about localizing strings, see [`Text`](text.md).
 
 ## Parameters
 
-- `text`: The column’s label.
+- `titleResource`: Text resource for the column’s localized title.
 - `value`: The path to the property associated with the column, to display verbatim as text in each row of a table, and the key path used to create a sort comparator when sorting the column.
 - `comparator`: The `SortComparator` used to order the string values.
 
 ## See Also
 
 - [init(_:value:content:)](tablecolumn/init(_:value:content:).md)
-  Creates a sortable column for Boolean values with a text label.
+  Creates a sortable column for Boolean values that generates its label from a localized string resource.
 - [init(_:value:comparator:content:)](tablecolumn/init(_:value:comparator:content:).md)
-  Creates a sortable column with a text label.
+  Creates a sortable column that generates its label from a localized string resource.
 - [init(_:sortUsing:content:)](tablecolumn/init(_:sortusing:content:).md)
-  Creates a sortable column with text label.
+  Creates a sortable column that generates its label from a localized string resource.
 
 
 ---

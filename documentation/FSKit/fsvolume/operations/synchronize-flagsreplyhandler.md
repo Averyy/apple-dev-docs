@@ -24,6 +24,11 @@ After calling this method, FSKit assumes that the volume has sent all pending I/
 - `flags`: Timing flags, as defined in `mount.h.` These flags let the file system know whether to run the operation in a blocking or nonblocking fashion.
 - `reply`: A block or closure to indicate success or failure. If synchronization fails, pass an error as the one parameter to the reply handler. If synchronization succeeds, pass `nil`. For an `async` Swift implementation, there’s no reply handler; simply throw an error or return normally.
 
+## See Also
+
+- [enum FSSyncFlags](fssyncflags.md)
+  Behavior flags for use with synchronization calls.
+
 
 ---
 

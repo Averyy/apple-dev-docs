@@ -12,7 +12,7 @@ A gauge style that displays an open ring with a marker that appears at a point a
 
 ```swift
 @MainActor
-@preconcurrency static var circular: CircularGaugeStyle { get }
+@export(implementation) @preconcurrency static var circular: CircularGaugeStyle { get }
 ```
 
 #### Discussion

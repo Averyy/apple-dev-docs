@@ -8,7 +8,6 @@ An entitlement that allows an app to access financial data in FinanceKit.
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst 13.0+
 - macOS 10.15+
 
 

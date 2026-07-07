@@ -41,7 +41,6 @@ struct GameWidgets: WidgetBundle {
 - [static func buildBlock() -> some Widget](widgetbundlebuilder/buildblock.md)
   Builds an empty Widget from a block containing no statements, `{ }`.
 - [static buildBlock(_:)](widgetbundlebuilder/buildblock(_:).md)
-  Builds a single Widget written as a child view (e..g, `{ MyWidget() }`) through unmodified.
 - [static buildExpression(_:)](widgetbundlebuilder/buildexpression(_:).md)
   Builds an expression within the builder.
 - [static buildLimitedAvailability(_:)](widgetbundlebuilder/buildlimitedavailability(_:).md)

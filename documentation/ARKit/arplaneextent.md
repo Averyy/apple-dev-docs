@@ -8,7 +8,6 @@ The size and y-axis rotation of a detected plane.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
 
 ## Declaration
 

@@ -8,7 +8,6 @@ An object that contains global state data about the domain.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
 - macOS 11.3+
 - visionOS 1.0+
 

@@ -1,6 +1,6 @@
 # merge(contentsOf:)
 
-**Framework**: ComputeGraph  
+**Framework**: Compute Graph  
 **Kind**: method
 
 Merges nodes from specified library into this library.
@@ -12,7 +12,7 @@ Merges nodes from specified library into this library.
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro 27.0+ (Beta)
+- Reality Composer Pro ?+
 
 ## Declaration
 

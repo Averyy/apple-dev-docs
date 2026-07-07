@@ -6,19 +6,19 @@
 Presents a confirmation dialog using data to produce the dialog’s content and a text view for the title.
 
 **Availability**:
-- iOS 27.0+ (Beta)
-- iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
-- macOS 27.0+ (Beta)
-- tvOS 27.0+ (Beta)
-- visionOS 27.0+ (Beta)
-- watchOS 27.0+ (Beta)
+- iOS 15.0+
+- iPadOS 15.0+
+- Mac Catalyst 15.0+
+- macOS 12.0+
+- tvOS 15.0+
+- visionOS 1.0+
+- watchOS 8.0+
 
 ## Declaration
 
 ```swift
-nonisolated
-func confirmationDialog<A, T>(_ title: Text, item data: Binding<T?>, titleVisibility: Visibility = .automatic, @ContentBuilder actions: (T) -> A) -> some View where A : View
+@export(implementation)
+nonisolated func confirmationDialog<A, T>(_ title: Text, item data: Binding<T?>, titleVisibility: Visibility = .automatic, @ContentBuilder actions: (T) -> A) -> some View where A : View
 ```
 
 ## Parameters
@@ -31,9 +31,9 @@ func confirmationDialog<A, T>(_ title: Text, item data: Binding<T?>, titleVisibi
 ## See Also
 
 - [func confirmationDialog(_:isPresented:titleVisibility:actions:)](view/confirmationdialog(_:ispresented:titlevisibility:actions:).md)
-  Presents a confirmation dialog when a given condition is true, using a text view for the title.
+  Presents a confirmation dialog when a given condition is true, using a localized string resource for the title.
 - [func confirmationDialog(_:isPresented:titleVisibility:presenting:actions:)](view/confirmationdialog(_:ispresented:titlevisibility:presenting:actions:).md)
-  Presents a confirmation dialog using data to produce the dialog’s content and a text view for the title.
+  Presents a confirmation dialog using data to produce the dialog’s content and a localized string resource for the title.
 - [func dismissalConfirmationDialog(_:shouldPresent:actions:)](view/dismissalconfirmationdialog(_:shouldpresent:actions:).md)
   Presents a confirmation dialog when a dismiss action has been triggered.
 

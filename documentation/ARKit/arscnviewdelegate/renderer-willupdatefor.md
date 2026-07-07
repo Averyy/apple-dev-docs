@@ -8,7 +8,6 @@ Tells the delegate that a SceneKit node’s properties will be updated to match 
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

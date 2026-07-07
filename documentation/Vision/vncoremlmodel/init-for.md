@@ -27,6 +27,10 @@ This method may fail if the framework doesn’t support the Core ML model. For e
 
 - `model`: The model to create the model container from.
 
+## See Also
+
+- [convenience init(forMLModel: MLModel) throws](vncoremlmodel/init(formlmodel:).md)
+
 
 ---
 

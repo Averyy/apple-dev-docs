@@ -8,7 +8,7 @@ Identifies intent schemas in the visual intelligence domain.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst 26.0+
 - macOS 27.0+ (Beta)
 
 ## Declaration

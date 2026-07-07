@@ -8,7 +8,6 @@ The delegate that handles user interaction with items recognized by the data sca
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst 16.0+
 - visionOS 1.0+
 
 ## Declaration

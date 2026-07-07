@@ -8,7 +8,6 @@ Will be `true` only when a call to [`requestImageCapture()`](objectcapturesessio
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst 17.0+
 
 ## Declaration
 

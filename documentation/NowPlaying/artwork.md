@@ -51,8 +51,6 @@ let content = MusicContent(
 ### Instance Properties
 - [let id: String](artwork/id.md)
   A unique identifier for this artwork, which the system uses to cache artwork across fetches.
-### Instance Methods
-- [func extract(into: inout [String : Any])](artwork/extract(into:).md)
 
 ## Relationships
 

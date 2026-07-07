@@ -8,7 +8,6 @@ Called when a user has entered or updated a coupon code. This is required if the
 **Availability**:
 - iOS 15.5+
 - iPadOS 15.5+
-- Mac Catalyst 15.5+
 - macOS 12.5+
 
 ## Declaration

@@ -17,6 +17,7 @@ A linear gradient.
 ## Declaration
 
 ```swift
+@export(implementation)
 static func linearGradient(_ gradient: AnyGradient, startPoint: UnitPoint, endPoint: UnitPoint) -> some ShapeStyle
 ```
 

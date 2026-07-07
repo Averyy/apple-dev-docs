@@ -3,25 +3,27 @@
 **Framework**: SwiftUI  
 **Kind**: init
 
-Creates a group of map content.
+Creates a group of content.
 
 **Availability**:
-- iOS 17.0+
-- iPadOS 17.0+
-- Mac Catalyst 17.0+
-- macOS 14.0+
-- tvOS 17.0+
-- watchOS 10.0+
+- iOS 13.0+
+- iPadOS 13.0+
+- Mac Catalyst 13.0+
+- macOS 10.15+
+- tvOS 13.0+
+- visionOS 1.0+
+- watchOS 6.0+
 
 ## Declaration
 
 ```swift
-init(@MapContentBuilder content: () -> Content)
+@export(implementation)
+nonisolated init(@ContentBuilder content: () -> Content)
 ```
 
 ## Parameters
 
-- `content`: A map content builder that produces the map content to group.
+- `content`: A [`ContentBuilder`](contentbuilder.md) that produces the content to group.
 
 ## See Also
 

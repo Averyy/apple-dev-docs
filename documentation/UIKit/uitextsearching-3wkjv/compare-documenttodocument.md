@@ -9,7 +9,7 @@ Compares documents containing matching ranges from the set the aggregator provid
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
-- Mac Catalyst ?+
+- Mac Catalyst 16.0+
 - visionOS ?+
 
 ## Declaration

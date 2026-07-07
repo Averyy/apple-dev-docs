@@ -17,6 +17,7 @@ A radial gradient that draws an ellipse defined by a collection of colors.
 ## Declaration
 
 ```swift
+@export(implementation)
 static func ellipticalGradient(colors: [Color], center: UnitPoint = .center, startRadiusFraction: CGFloat = 0, endRadiusFraction: CGFloat = 0.5) -> EllipticalGradient
 ```
 

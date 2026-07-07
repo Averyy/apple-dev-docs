@@ -17,6 +17,15 @@
 init?(coder: NSCoder)
 ```
 
+## See Also
+
+- [init(center: VNPoint, radius: Double)](vncircle/init(center:radius:).md)
+  Creates a circle with the specified center and radius.
+- [convenience init(center: VNPoint, diameter: Double)](vncircle/init(center:diameter:).md)
+  Creates a circle with the specified center and diameter.
+- [class var zero: VNCircle](vncircle/zero.md)
+  A circle object centered at the origin, with a radius of zero.
+
 
 ---
 

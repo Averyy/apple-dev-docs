@@ -8,7 +8,7 @@ Creates an asset that models the media at the specified URL.
 **Availability**:
 - iOS 4.0+
 - iPadOS 4.0+
-- Mac Catalyst ?+
+- Mac Catalyst 4.0+
 - macOS 10.7+
 - tvOS 9.0+
 - visionOS 1.0+

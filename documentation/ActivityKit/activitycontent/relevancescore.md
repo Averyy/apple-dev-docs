@@ -8,7 +8,6 @@ A score you assign that determines the order in which your Live Activities appea
 **Availability**:
 - iOS 16.2+
 - iPadOS 16.2+
-- Mac Catalyst 16.2+
 
 ## Declaration
 

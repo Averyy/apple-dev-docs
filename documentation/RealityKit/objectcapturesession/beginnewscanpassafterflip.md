@@ -8,7 +8,6 @@ Starts the capturing of a new side of the object, to be called after the object 
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst 17.0+
 
 ## Declaration
 

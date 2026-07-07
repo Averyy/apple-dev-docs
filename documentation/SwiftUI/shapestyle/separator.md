@@ -17,6 +17,7 @@ A style appropriate for foreground separator or border lines.
 ## Declaration
 
 ```swift
+@export(implementation)
 static var separator: SeparatorShapeStyle { get }
 ```
 

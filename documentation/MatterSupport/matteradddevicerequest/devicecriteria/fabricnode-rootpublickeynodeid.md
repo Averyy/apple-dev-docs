@@ -8,7 +8,7 @@ A device matches if it’s paired to a fabric using the provided fabric and node
 **Availability**:
 - iOS 16.1+
 - iPadOS 16.1+
-- Mac Catalyst ?+
+- Mac Catalyst 16.1+
 - macOS 14.0+
 - visionOS ?+
 

@@ -8,7 +8,6 @@ A Boolean value that indicates whether core features of your app may perform bet
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
-- Mac Catalyst 15.0+
 - visionOS 2.5+
 
 

@@ -15,8 +15,8 @@ The point an assistive technology should use to begin a drag interaction.
 ## Declaration
 
 ```swift
-nonisolated
-func accessibilityDragPoint(_ point: UnitPoint, description: LocalizedStringKey) -> ModifiedContent<Content, Modifier>
+@export(implementation)
+nonisolated func accessibilityDragPoint(_ point: UnitPoint, description: LocalizedStringResource) -> ModifiedContent<Content, Modifier>
 ```
 
 #### Discussion

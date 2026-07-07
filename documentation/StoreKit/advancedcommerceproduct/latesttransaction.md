@@ -8,7 +8,6 @@ The most recent transaction associated with the generic product ID, if it exists
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
-- Mac Catalyst 18.4+
 - macOS 15.4+
 - tvOS 18.4+
 - visionOS 2.4+

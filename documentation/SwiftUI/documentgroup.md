@@ -154,7 +154,7 @@ The URL can be used, for example, to present the file path of the file name in t
 ## Topics
 
 ### Creating a document group
-- [init(allowCreating:editor:makeDocument:)](documentgroup/init(allowcreating:editor:makedocument:).md)
+- [init(allowCreating: Bool, editor: (Document) -> Content, makeDocument: (URLDocumentConfiguration, DocumentCreationContext) async throws -> Document)](documentgroup/init(allowcreating:editor:makedocument:).md)
   Creates a document group capable of creating, viewing, and editing documents.
 - [init(newDocument:editor:)](documentgroup/init(newdocument:editor:).md)
   Creates a document group for creating and editing file documents.

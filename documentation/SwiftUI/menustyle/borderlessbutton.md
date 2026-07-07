@@ -16,8 +16,8 @@ A menu style that displays a borderless button that toggles the display of the m
 ## Declaration
 
 ```swift
-nonisolated
-static var borderlessButton: BorderlessButtonMenuStyle { get }
+@export(implementation)
+nonisolated static var borderlessButton: BorderlessButtonMenuStyle { get }
 ```
 
 #### Discussion

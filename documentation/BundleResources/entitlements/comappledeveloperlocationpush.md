@@ -8,7 +8,6 @@ An entitlement to enable a location-sharing app to query someone’s location in
 **Availability**:
 - iOS 7.0+
 - iPadOS 7.0+
-- Mac Catalyst 7.0+
 - macOS 10.9+
 
 

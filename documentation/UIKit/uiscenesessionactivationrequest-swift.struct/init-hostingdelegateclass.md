@@ -8,7 +8,7 @@ Creates a `UISceneSessionActivationRequest` customized to open a SwiftUI scene.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst ?+
+- Mac Catalyst 26.0+
 - tvOS 27.0+ (Beta)
 - visionOS 26.0+
 

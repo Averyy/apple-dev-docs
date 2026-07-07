@@ -17,6 +17,7 @@ A conic gradient defined by a collection of colors that completes a full turn.
 ## Declaration
 
 ```swift
+@export(implementation)
 static func conicGradient(colors: [Color], center: UnitPoint, angle: Angle = .zero) -> AngularGradient
 ```
 

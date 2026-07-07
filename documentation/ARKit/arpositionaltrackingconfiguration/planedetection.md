@@ -8,7 +8,6 @@ A value that specifies if and how the session automatically attempts to detect f
 **Availability**:
 - iOS 13.0+
 - iPadOS 13.0+
-- Mac Catalyst 13.1+
 
 ## Declaration
 

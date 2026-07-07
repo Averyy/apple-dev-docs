@@ -9,7 +9,7 @@ Registers a list of traits to observe, and calls a method on the specified targe
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst ?+
+- Mac Catalyst 17.0+
 - tvOS 17.0+
 - visionOS ?+
 

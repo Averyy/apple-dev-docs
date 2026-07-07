@@ -47,7 +47,7 @@ Logs with the prefix [RealityKit File Compatibility Info] will be posted to the 
 
 - [func write(to: URL, options: Entity.WriteOptions) async throws](entity/write(to:options:).md)
 - [Entity.WriteOptions](entity/writeoptions.md)
-  Options for writing an entity to a RealityKit file.
+  A set of options that control how RealityKit writes entities to a reality file.
 
 
 ---

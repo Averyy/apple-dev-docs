@@ -39,10 +39,7 @@ The model can complete complex generative tasks when you use guided generation o
 
 Before you use the on-device model in your app, check that the model is available by creating an instance of [`SystemLanguageModel`](systemlanguagemodel.md) with the [`default`](systemlanguagemodel/default.md) property.
 
-Model availability depends on device factors like:
-
-- The device must support Apple Intelligence.
-- The device must have Apple Intelligence turned on in Settings.
+Model availability depends on whether the device and region supports Apple Intelligence. For a list of supported devices, see [`Apple Intelligence`](https://developer.apple.comhttps://www.apple.com/apple-intelligence/).
 
 > **Note**: It can take some time for the model to download and become available when a person turns on Apple Intelligence.
 
@@ -59,8 +56,6 @@ struct GenerativeView: View {
             // Show your intelligence UI.
         case .unavailable(.deviceNotEligible):
             // Show an alternative UI.
-        case .unavailable(.appleIntelligenceNotEnabled):
-            // Ask the person to turn on Apple Intelligence.
         case .unavailable(.modelNotReady):
             // The model isn't ready because it's downloading or because of other system reasons.
         case .unavailable(let other):

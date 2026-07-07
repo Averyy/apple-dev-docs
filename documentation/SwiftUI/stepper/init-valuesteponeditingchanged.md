@@ -3,49 +3,50 @@
 **Framework**: SwiftUI  
 **Kind**: init
 
-Creates a stepper with a title and configured to increment and decrement a binding to a value and step amount you provide.
+Creates a stepper with a title key and configured to increment and decrement a binding to a value and step amount you provide.
 
 **Availability**:
-- iOS 13.0+
-- iPadOS 13.0+
-- Mac Catalyst 13.0+
-- macOS 10.15+
+- iOS 16.0+
+- iPadOS 16.0+
+- Mac Catalyst 16.0+
+- macOS 13.0+
 - visionOS 1.0+
 - watchOS 9.0+
 
 ## Declaration
 
 ```swift
-nonisolated
-init<S, V>(_ title: S, value: Binding<V>, step: V.Stride = 1, onEditingChanged: @escaping (Bool) -> Void = { _ in }) where S : StringProtocol, V : Strideable
+@export(implementation)
+nonisolated init<V>(_ titleResource: LocalizedStringResource, value: Binding<V>, step: V.Stride = 1, onEditingChanged: @escaping (Bool) -> Void = { _ in }) where V : Strideable
 ```
 
 #### Discussion
 
 Use `Stepper(_:value:step:onEditingChanged:)` to create a stepper with a custom title that increments or decrements a binding to value by the step size you specify.
 
-In the example below, the stepper increments or decrements the binding value by `5` each time one of the user clicks or taps the control’s increment or decrement buttons:
+In the example below, the stepper increments or decrements the binding value by `5` each time the user clicks or taps on the control’s increment or decrement buttons, respectively:
 
 ```swift
 struct StepperView: View {
     @State private var value = 1
     let step = 5
-    let title: String
 
     var body: some View {
-        Stepper(title, value: $value, step: step)
+        Stepper("Current value: \(value), step: \(step)",
+                value: $value,
+                step: step)
             .padding(10)
     }
 }
 ```
 
-![A view displaying a stepper that increments or decrements by 1 each](https://docs-assets.developer.apple.com/published/a85ed9351b703c8cc865d291ef62b2e9/SwiftUI-Stepper-value-step%402x.png)
+![A view displaying a stepper that increments or decrements by 5 each](https://docs-assets.developer.apple.com/published/a85ed9351b703c8cc865d291ef62b2e9/SwiftUI-Stepper-value-step%402x.png)
 
 ## Parameters
 
-- `title`: A string describing the purpose of the stepper.
-- `value`: The [`Binding`](binding.md) to a value that you provide.
-- `step`: The amount to increment or decrement `value` each time the user clicks or taps the stepper’s increment or decrement button, respectively. Defaults to `1`.
+- `titleResource`: Text resource for the stepper’s localized title describing the purpose of the stepper.
+- `value`: A [`Binding`](binding.md) to a value that you provide.
+- `step`: The amount to increment or decrement `value` each time the user clicks or taps the stepper’s plus or minus button, respectively.  Defaults to `1`.
 - `onEditingChanged`: A closure that’s called when editing begins and ends. For example, on iOS, the user may touch and hold the increment or decrement buttons on a `Stepper` which causes the execution of the `onEditingChanged` closure at the start and end of the gesture.
 
 ## See Also

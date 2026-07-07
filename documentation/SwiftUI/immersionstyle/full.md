@@ -12,6 +12,7 @@ An immersion style that displays unbounded content that completely replaces pass
 ## Declaration
 
 ```swift
+@export(implementation)
 static var full: FullImmersionStyle { get }
 ```
 

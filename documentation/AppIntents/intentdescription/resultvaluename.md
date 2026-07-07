@@ -8,7 +8,7 @@ A name for the result of this intent, which will be displayed in the Shortcuts e
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst ?+
+- Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
 - visionOS ?+

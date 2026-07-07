@@ -64,20 +64,20 @@ This modifier creates a [`Text`](text.md) view for the title on your behalf, and
 - [struct AlertScene](alertscene.md)
   A scene that renders itself as a standalone alert dialog.
 - [func alert(_:isPresented:actions:)](view/alert(_:ispresented:actions:).md)
-  Presents an alert when a given condition is true, using a text view for the title.
+  Presents an alert when a given condition is true, using a localized string resource for the title.
 - [func alert(_:isPresented:presenting:actions:)](view/alert(_:ispresented:presenting:actions:).md)
-  Presents an alert using the given data to produce the alert’s content and a text view as a title.
+  Presents an alert using the given data to produce the alert’s content and a localized string resource for a title.
 - [func alert(_:item:actions:)](view/alert(_:item:actions:).md)
   Presents an alert using the given data to produce the alert’s content and a text view as a title.
-- [func alert<E, A>(error: Binding<E?>, actions: () -> A) -> some View](view/alert(error:actions:).md)
+- [func alert(error:actions:)](view/alert(error:actions:).md)
   Presents an alert when an error is present.
 - [func alert(_:isPresented:actions:message:)](view/alert(_:ispresented:actions:message:).md)
-  Presents an alert with a message when a given condition is true using a text view as a title.
+  Presents an alert with a message when a given condition is true, using a localized string resource for a title.
 - [func alert(_:isPresented:presenting:actions:message:)](view/alert(_:ispresented:presenting:actions:message:).md)
-  Presents an alert with a message using the given data to produce the alert’s content and a text view for a title.
+  Presents an alert with a message using the given data to produce the alert’s content and a localized string resource for a title.
 - [func alert(_:item:actions:message:)](view/alert(_:item:actions:message:).md)
   Presents an alert with a message using the given data to produce the alert’s content and a localized string key for a title.
-- [func alert<E, A, M>(error: Binding<E?>, actions: (E) -> A, message: (E) -> M) -> some View](view/alert(error:actions:message:).md)
+- [func alert(error:actions:message:)](view/alert(error:actions:message:).md)
   Presents an alert with a message when an error is present.
 - [func alert<E, A, M>(isPresented: Binding<Bool>, error: E?, actions: (E) -> A, message: (E) -> M) -> some View](view/alert(ispresented:error:actions:message:).md)
   Presents an alert with a message when an error is present.

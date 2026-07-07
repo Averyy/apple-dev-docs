@@ -10,6 +10,7 @@
 ## Declaration
 
 ```swift
+@export(implementation)
 static func buildBlock<C>(_ content: C) -> C where C : CompositorContent
 ```
 

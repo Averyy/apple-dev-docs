@@ -47,7 +47,7 @@ This method waits for any downloads that it schedules to be registered with the 
 - [func status(ofAssetPackWithID: String) async throws -> AssetPack.Status](assetpackmanager/status(ofassetpackwithid:).md)
   Checks an asset pack’s status.
 - [func ensureLocalAvailability(of: AssetPack) async throws](assetpackmanager/ensurelocalavailability(of:).md)
-  Ensures that the specified asset pack be available locally.
+  Ensures that the specified asset pack is available locally, performing a download if necessary.
 
 
 ---
