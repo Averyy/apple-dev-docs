@@ -29,7 +29,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.fa
 
 # mlx.core.fast.metal_kernel
 
-**metal_kernel(*name: str*, *input_names: Sequence[str]*, *output_names: Sequence[str]*, *source: str*, *header: str = ''*, *ensure_row_contiguous: bool = True*, *atomic_outputs: bool = False*) → [object](https://docs.python.org/3/library/functions.html#object)**
+**metal_kernel(*name: str*, *input_names: Sequence[str]*, *output_names: Sequence[str]*, *source: str*, *header: str = ''*, *ensure_row_contiguous: bool = True*, *atomic_outputs: bool = False*, *compile_options: object | None = None*) → [object](https://docs.python.org/3/library/functions.html#object)**
 : A jit-compiled custom Metal kernel defined from a source string.
 Full documentation: [Custom Metal Kernels](../../dev/custom_metal_kernels.html#custom-metal-kernels).
 
@@ -49,6 +49,12 @@ the main function body.
 before the kernel runs. Default: `True`.
 **atomic_outputs** ([bool](https://docs.python.org/3/library/functions.html#bool)) – Whether to use atomic outputs in the function signature
 e.g. `device atomic<float>`. Default: `False`.
+**compile_options** ([dict](https://docs.python.org/3/library/stdtypes.html#dict)*, **optional*) – Options to compile the Metal kernel
+with. Supported options:
+
+`"math_mode"`: The Metal math mode: `"safe"`, `"relaxed"`,
+or `"fast"`. `"safe"` preserves IEEE behavior for special
+values such as `exp(-inf) == 0`. Default: `"safe"`.
 
 Returns:
 Callable `metal_kernel`.

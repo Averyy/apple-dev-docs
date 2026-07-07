@@ -1,6 +1,6 @@
 # init(rawValue:)
 
-**Framework**: IOSurface  
+**Framework**: Iosurface  
 **Kind**: init
 
 **Availability**:

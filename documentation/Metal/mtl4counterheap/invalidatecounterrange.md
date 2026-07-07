@@ -1,4 +1,4 @@
-# invalidateCounterRange(_:)
+# invalidateCounterRange:
 
 **Framework**: Metal  
 **Kind**: method
@@ -16,7 +16,7 @@ Invalidates a range of entries in this counter heap.
 ## Declaration
 
 ```swift
-func invalidateCounterRange(_ range: Range<Int>)
+- (void) invalidateCounterRange:(NSRange) range;
 ```
 
 #### Discussion
@@ -32,4 +32,4 @@ The effect of this call is immediate on the CPU timeline. You are responsible fo
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metal/mtl4counterheap/invalidatecounterrange(_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/metal/mtl4counterheap/invalidatecounterrange:)*

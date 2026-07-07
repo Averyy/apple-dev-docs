@@ -45,7 +45,7 @@ Parameters:
 **rho** ([float](https://docs.python.org/3/library/functions.html#float)*, **optional*) – The coefficient \(\rho\) used for computing a
 running average of squared gradients. Default: `0.9`
 **eps** ([float](https://docs.python.org/3/library/functions.html#float)*, **optional*) – The term \(\epsilon\) added to the denominator to improve
-numerical stability. Default: 1e-8
+numerical stability. Default: `1e-6`
 
 Methods
 

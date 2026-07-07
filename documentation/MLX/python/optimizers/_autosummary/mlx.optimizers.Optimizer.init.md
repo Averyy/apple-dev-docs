@@ -39,7 +39,7 @@ to have access to the [Optimizer.state](mlx.optimizers.Optimizer.state.html#mlx.
 [Optimizer.update()](mlx.optimizers.Optimizer.update.html#mlx.optimizers.Optimizer.update).
 
 Parameters:
-**model** ([dict](https://docs.python.org/3/library/stdtypes.html#dict)) – A Python tree of parameters.
+**parameters** ([dict](https://docs.python.org/3/library/stdtypes.html#dict)) – A Python tree of parameters.
 
 Example
 >>> optimizer = optim.SGD(learning_rate=1e-1, momentum=0.9)

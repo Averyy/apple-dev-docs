@@ -1,4 +1,4 @@
-# UIFloatRangeIsEqualToRange(_:_:)
+# UIFloatRangeIsEqualToRange
 
 **Framework**: UIKit  
 **Kind**: func
@@ -6,17 +6,16 @@
 Returns a Boolean indicating whether two float ranges are equivalent.
 
 **Availability**:
-- iOS 7.0+
-- iPadOS 7.0+
-- Mac Catalyst 7.0+
+- iOS ?+
+- iPadOS ?+
+- Mac Catalyst ?+
 - tvOS ?+
 - visionOS ?+
-- Swift 1.0+
 
 ## Declaration
 
 ```swift
-func UIFloatRangeIsEqualToRange(_ range: UIFloatRange, _ otherRange: UIFloatRange) -> Bool
+static BOOL UIFloatRangeIsEqualToRange(UIFloatRange range, UIFloatRange otherRange);
 ```
 
 #### Discussion
@@ -36,4 +35,4 @@ Two ranges are considered equal when their minimum values are the same and their
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uifloatrangeisequaltorange(_:_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uifloatrangeisequaltorange)*

@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-07-07T07:31:27.819952",
+    "last_updated": "2026-07-07T18:14:19.853156",
     "total_pages": 336,
-    "session_id": "2026-07-07T07:31:12.119253"
+    "session_id": "2026-07-07T18:13:58.321499"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/SiriKitCloudMedia.json": {
       "hash": "d08d86c6c5259af93d258aaef82d18ba2b7118b7b2f8e5214a8c726fd03abe40",
-      "last_checked": "2026-07-07T07:31:12.430610",
+      "last_checked": "2026-07-07T18:13:58.609557",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"65e4bf4c0f1524cc0d29e95afcc0ecdb\"",
       "file_path": "documentation/SiriKitCloudMedia/SiriKitCloudMedia.md"
     },
     "https://developer.apple.com/documentation/SiriKitCloudMedia": {
       "hash": "d08d86c6c5259af93d258aaef82d18ba2b7118b7b2f8e5214a8c726fd03abe40",
-      "last_checked": "2026-07-07T07:31:12.296933",
+      "last_checked": "2026-07-07T18:13:58.506827",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"65e4bf4c0f1524cc0d29e95afcc0ecdb\"",
       "file_path": "documentation/SiriKitCloudMedia/SiriKitCloudMedia.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/configuration-resource.json": {
       "hash": "42d191e07b7997bc19e17841cb34d19dbbc359f03b5040e2d4e62d8d241c1d9d",
-      "last_checked": "2026-07-07T07:31:12.676803",
+      "last_checked": "2026-07-07T18:13:58.910682",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"151dbbe4c634a628fb228a678220a220\"",
       "file_path": "documentation/SiriKitCloudMedia/configuration-resource.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/extensionconfigtag.json": {
       "hash": "f824df27153268dbc97b1a394d8775087128f875ef5d4c28444896246184f8b5",
-      "last_checked": "2026-07-07T07:31:12.735023",
+      "last_checked": "2026-07-07T18:13:59.041136",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"138a73d81d6e3b01d0892050e94e8130\"",
       "file_path": "documentation/SiriKitCloudMedia/extensionconfigtag.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/extensionconfig.json": {
       "hash": "f264f132bb1e848630735901c7741df2ae9f3071f80f8be60820672de7029b82",
-      "last_checked": "2026-07-07T07:31:12.834342",
+      "last_checked": "2026-07-07T18:13:59.182157",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"c13a4c1161845c38a06601fd4968007e\"",
       "file_path": "documentation/SiriKitCloudMedia/extensionconfig.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/playmediacontrolactivity.json": {
       "hash": "495e29649628a9e473261aec15c63bb0628ccd9c1485b746912e24e7383ef68c",
-      "last_checked": "2026-07-07T07:31:12.931172",
+      "last_checked": "2026-07-07T18:13:59.172911",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"e4ae654b7ec69ad0564e9d2977a363d8\"",
       "file_path": "documentation/SiriKitCloudMedia/playmediacontrolactivity.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/playmedia-1g2o9.json": {
       "hash": "77430b37b38d7a6774ff01147f9201d75eb4c779412728b36bed4cd2f44e4e5c",
-      "last_checked": "2026-07-07T07:31:13.044445",
+      "last_checked": "2026-07-07T18:13:59.204411",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"31a40ad1f6a45995cf0f64c7d1383918\"",
       "file_path": "documentation/SiriKitCloudMedia/playmedia-1g2o9.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/playmedia-1onzj.json": {
       "hash": "dde087fcd921fdc8092ebfcc1c185d02feb78dc9098131de7eb160c0265c5e0e",
-      "last_checked": "2026-07-07T07:31:13.134569",
+      "last_checked": "2026-07-07T18:13:59.400811",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"a63c7d34702148a7886f78d2e7fd35d9\"",
       "file_path": "documentation/SiriKitCloudMedia/playmedia-1onzj.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/contentprotectionkey.json": {
       "hash": "19780ca6b3e24748879477d32e8b8a80fddf81a0c0e6ad003135fb94f307f7e0",
-      "last_checked": "2026-07-07T07:31:13.300805",
+      "last_checked": "2026-07-07T18:13:59.315977",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"50557292ca493c445e6ad71224e54319\"",
       "file_path": "documentation/SiriKitCloudMedia/contentprotectionkey.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/contentprotectionkeyrequest.json": {
       "hash": "25edf516b73f6945e99fb9dea0f704ffed14e0f7d3e1c3af464ee61d41b17110",
-      "last_checked": "2026-07-07T07:31:13.413523",
+      "last_checked": "2026-07-07T18:13:59.513888",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"23560456f36fa13b5988754cd64db82b\"",
       "file_path": "documentation/SiriKitCloudMedia/contentprotectionkeyrequest.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/contentprotectionkeyresponse.json": {
       "hash": "5663cb0b05e7e68da6beae02b7e54b505fc3836caa90977fdd49f456259c52ac",
-      "last_checked": "2026-07-07T07:31:13.508839",
+      "last_checked": "2026-07-07T18:13:59.442481",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"cbae22d4cc9adf5e3693ed2e20330771\"",
       "file_path": "documentation/SiriKitCloudMedia/contentprotectionkeyresponse.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/contentprotectionkeysystem.json": {
       "hash": "f832eb9fd44e349fae60587148081501aba9b2aa6bdd536ae8c1b5723cb63263",
-      "last_checked": "2026-07-07T07:31:13.620587",
+      "last_checked": "2026-07-07T18:13:59.618730",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"bbd5da5b296172a1fe9950de6cb33d39\"",
       "file_path": "documentation/SiriKitCloudMedia/contentprotectionkeysystem.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/queueactivityreportevent.json": {
       "hash": "64f718e5b4c579e0e4352bc6101898baa31c7b6147610a58efab8fc1f58ceb05",
-      "last_checked": "2026-07-07T07:31:13.735359",
+      "last_checked": "2026-07-07T18:13:59.574103",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"c6858a3a7a06c21685752f6978d7c258\"",
       "file_path": "documentation/SiriKitCloudMedia/queueactivityreportevent.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/updateactivity.json": {
       "hash": "5819af4b48d7ce871b2a581e2e6cc4619b052327ed9ba28d780d71c42677252f",
-      "last_checked": "2026-07-07T07:31:13.850855",
+      "last_checked": "2026-07-07T18:13:59.641651",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"cc12dbd05632121aec79bd710308b8ed\"",
       "file_path": "documentation/SiriKitCloudMedia/updateactivity.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/updateactivityrequest.json": {
       "hash": "8bb7238657bcd5e0f2c4fe1fc05eaef24f22575831f85775dd96929211c582b3",
-      "last_checked": "2026-07-07T07:31:13.913242",
+      "last_checked": "2026-07-07T18:13:59.697268",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"080cbd53d96d361b98f0740cf854d194\"",
       "file_path": "documentation/SiriKitCloudMedia/updateactivityrequest.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/updateactivityresponse.json": {
       "hash": "e930539a34f7382268e15720da123c7ff4bb8a13eae6efc1a5049db6a71f6e9a",
-      "last_checked": "2026-07-07T07:31:13.970763",
+      "last_checked": "2026-07-07T18:13:59.781057",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"6bd13618bb13d0b961576b94a2d870c8\"",
       "file_path": "documentation/SiriKitCloudMedia/updateactivityresponse.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/updatemediaaffinity.json": {
       "hash": "06c21511b75d14a1c8dff7e193baa1a61d7fb50e6550e1816450506a35c8a660",
-      "last_checked": "2026-07-07T07:31:14.083461",
+      "last_checked": "2026-07-07T18:13:59.835191",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"05f2d5e74ec6abf903aaf9668b9b8b02\"",
       "file_path": "documentation/SiriKitCloudMedia/updatemediaaffinity.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/contentplaybackfailure.json": {
       "hash": "698aa0ffffd6e29a7948911decc8c006977250f5c337e7c5a645c7a9253ccb39",
-      "last_checked": "2026-07-07T07:31:14.190014",
+      "last_checked": "2026-07-07T18:13:59.895674",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"d399a98c0026dac910314c9182f46766\"",
       "file_path": "documentation/SiriKitCloudMedia/contentplaybackfailure.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/contentfailure.json": {
       "hash": "df367ea6eb8eab7b0fd17e1772eb4179a593368d101d224a36589370d1ffffab",
-      "last_checked": "2026-07-07T07:31:14.297079",
+      "last_checked": "2026-07-07T18:13:59.962044",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"2b7704cc7baa172e2c53905ee6416734\"",
       "file_path": "documentation/SiriKitCloudMedia/contentfailure.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/contentplaybackfailurerequest.json": {
       "hash": "091ba9aebdf91e0742f45f05fb211fee8b221710efdb3c5f64429b93889bd4b4",
-      "last_checked": "2026-07-07T07:31:14.540580",
+      "last_checked": "2026-07-07T18:14:00.008598",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"570103decad49f00ed107229b1c58502\"",
       "file_path": "documentation/SiriKitCloudMedia/contentplaybackfailurerequest.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/contentplaybackfailureresponse.json": {
       "hash": "3985ba1e78c3c4a8fec13fc7fe47747092c5c9de183971076b62be89b5340c3b",
-      "last_checked": "2026-07-07T07:31:14.607311",
+      "last_checked": "2026-07-07T18:14:00.081090",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"136202b3694c6c019da2acad7c6ec02e\"",
       "file_path": "documentation/SiriKitCloudMedia/contentplaybackfailureresponse.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/addmedia.json": {
       "hash": "af5eed86dc703c14d791e46b3e37aedbbed2327fd3598cbab6a6d79f1e47a8f7",
-      "last_checked": "2026-07-07T07:31:14.710665",
+      "last_checked": "2026-07-07T18:14:00.124876",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"c2dd4c0835e44b0eed101ed10aea489d\"",
       "file_path": "documentation/SiriKitCloudMedia/addmedia.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/mediaitem.json": {
       "hash": "cc67a087ccc65567efe399362b2fcd52fb9e7e0a84f18c78fc1a93349c27f2b5",
-      "last_checked": "2026-07-07T07:31:14.818383",
+      "last_checked": "2026-07-07T18:14:00.314891",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"f379528282a2d4290496aa8da1429e98\"",
       "file_path": "documentation/SiriKitCloudMedia/mediaitem.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/mediareference.json": {
       "hash": "b04bee276ee2acabbb194aa79b520b7ad83d564662f84004f6fdc5aa675d7bc3",
-      "last_checked": "2026-07-07T07:31:14.928571",
+      "last_checked": "2026-07-07T18:14:00.247901",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"e16da12e09d9420a9b21c0a15aaf4b71\"",
       "file_path": "documentation/SiriKitCloudMedia/mediareference.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/mediasearch.json": {
       "hash": "9989981b5fd27c6c01155d15f1561a0b09d2128a5560c4b3c6e49559141266df",
-      "last_checked": "2026-07-07T07:31:14.988133",
+      "last_checked": "2026-07-07T18:14:00.336002",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"a02fd2ffae8a6a46f4ce94528ca5a03c\"",
       "file_path": "documentation/SiriKitCloudMedia/mediasearch.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/mediaitemtype.json": {
       "hash": "ab60dd491f7a9ab7231d3734b97eaf28477758f608267f6c4b79ad226016c65d",
-      "last_checked": "2026-07-07T07:31:15.077315",
+      "last_checked": "2026-07-07T18:14:00.396093",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"932b7cfbcc3993091af8f959a33fc8f0\"",
       "file_path": "documentation/SiriKitCloudMedia/mediaitemtype.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/invocation.json": {
       "hash": "b38ab3b1803d28e6fb70626b408474d9d4bcbf3d75a912615db7590e7cc5bc33",
-      "last_checked": "2026-07-07T07:31:15.153351",
+      "last_checked": "2026-07-07T18:14:00.586255",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"897211e54363f7a6d1555290ee833ef1\"",
       "file_path": "documentation/SiriKitCloudMedia/invocation.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/session.json": {
       "hash": "5a502bc9dd8f34e67231c652b86503cfa1b05d89b11dc22ad229cad8e161fa5c",
-      "last_checked": "2026-07-07T07:31:15.212662",
+      "last_checked": "2026-07-07T18:14:02.150827",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"02a94ebfc1f926fc70b87a0dd94f51e0\"",
       "file_path": "documentation/SiriKitCloudMedia/session.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/constraints.json": {
       "hash": "1e925214f1f12e17bd5452f885625b4f2d705deb2ae0948e55d90c2fe929ace6",
-      "last_checked": "2026-07-07T07:31:15.273950",
+      "last_checked": "2026-07-07T18:14:02.117588",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"67e58e06c79ef93bf184e791561cad17\"",
       "file_path": "documentation/SiriKitCloudMedia/constraints.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/playercontext.json": {
       "hash": "6d27b37004f7197e1cfec5df3eea295eaf660d0010fc284d0b1b02022fe3152e",
-      "last_checked": "2026-07-07T07:31:15.332506",
+      "last_checked": "2026-07-07T18:14:02.193888",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"fa1d02c31c9366f7fbd0b8aacfcb0978\"",
       "file_path": "documentation/SiriKitCloudMedia/playercontext.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/invocationresponse.json": {
       "hash": "c77d8a376acf50a9b7d1b9b1345b374c094ecd77d097a1ec6aee9673429e01c8",
-      "last_checked": "2026-07-07T07:31:15.440512",
+      "last_checked": "2026-07-07T18:14:02.302520",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"0e2cb5dc9f75fcf33c23794bcfedd374\"",
       "file_path": "documentation/SiriKitCloudMedia/invocationresponse.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/intent.json": {
       "hash": "c358d91e13aaa6754e21a65e16f38249762f76593ad1290b9021702ebafb1bea",
-      "last_checked": "2026-07-07T07:31:15.550015",
+      "last_checked": "2026-07-07T18:14:02.368257",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"53bc28e22fb0ee23b15ea9f5066a2207\"",
       "file_path": "documentation/SiriKitCloudMedia/intent.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/intentresponse.json": {
       "hash": "efbcf5e7283ca3e54d6b94570c844615591fbcb21e41ca57f1f36bbcc9acd75e",
-      "last_checked": "2026-07-07T07:31:15.609957",
+      "last_checked": "2026-07-07T18:14:02.433584",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"7653c55cabe52efe26a432a5cb5946e5\"",
       "file_path": "documentation/SiriKitCloudMedia/intentresponse.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/useractivity.json": {
       "hash": "d2e95837d9d71ecdcb1dceebc371d01fdbbf0920c1b95af55e2ca1d9893d6194",
-      "last_checked": "2026-07-07T07:31:15.666964",
+      "last_checked": "2026-07-07T18:14:02.493488",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"57c1bca320e1cd2a91ec38ef4684ac38\"",
       "file_path": "documentation/SiriKitCloudMedia/useractivity.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/intentresolutionresult.json": {
       "hash": "8f6464cf6fb0ef7040a091df0d9bcae72c06370aa75fe4c10004944f68830b2a",
-      "last_checked": "2026-07-07T07:31:15.770417",
+      "last_checked": "2026-07-07T18:14:02.562624",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"dfb7bf9457a86751a410c37cac9eb809\"",
       "file_path": "documentation/SiriKitCloudMedia/intentresolutionresult.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/booleanresolutionresult.json": {
       "hash": "e2404bfd6725769a9b68cb8543ea6adc8696fcb0543caca8b7681e8a8c3c2028",
-      "last_checked": "2026-07-07T07:31:15.828845",
+      "last_checked": "2026-07-07T18:14:02.635379",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"7acda45d193c590f8cea3abb29a7a2f7\"",
       "file_path": "documentation/SiriKitCloudMedia/booleanresolutionresult.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/protocolexceptioninvocationresponse.json": {
       "hash": "26a13344e5e65cff304aaea5bb05bfdb407497330f7826515854da57c263c360",
-      "last_checked": "2026-07-07T07:31:15.891957",
+      "last_checked": "2026-07-07T18:14:02.680397",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"8290917b6b77bbc8209261503d31f827\"",
       "file_path": "documentation/SiriKitCloudMedia/protocolexceptioninvocationresponse.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/protocolexception.json": {
       "hash": "e36ffd9b2f6ae38db7a839440e15637408f700acee0718c7058554d699e3ee39",
-      "last_checked": "2026-07-07T07:31:15.974564",
+      "last_checked": "2026-07-07T18:14:02.787571",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"211359c754f1ec9d6d748185a39ce954\"",
       "file_path": "documentation/SiriKitCloudMedia/protocolexception.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/protocolexceptionreason.json": {
       "hash": "e6e62a0797aea32208069f7958e1ac0555d3508a1acdac4ff76f6682e40d3800",
-      "last_checked": "2026-07-07T07:31:16.037889",
+      "last_checked": "2026-07-07T18:14:02.823226",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"5a695b12d365d466250f7ee108d99b86\"",
       "file_path": "documentation/SiriKitCloudMedia/protocolexceptionreason.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/underlyingerror.json": {
       "hash": "c924b3053411c7207cedb46a8cb917afe609c1b3b2f14e2acea4fdf05499f900",
-      "last_checked": "2026-07-07T07:31:16.105052",
+      "last_checked": "2026-07-07T18:14:02.890750",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"c69c6e0c2c47e3259be576f6b047baf1\"",
       "file_path": "documentation/SiriKitCloudMedia/underlyingerror.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/extensionconfig/hdr-data.dictionary.json": {
       "hash": "762c71b5725b255fe641184902bc1306aaecf47c0e8eb6505030d2248355714d",
-      "last_checked": "2026-07-07T07:31:16.171843",
+      "last_checked": "2026-07-07T18:14:02.938080",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"59a8e211016182cf771f3f3f73e6297e\"",
       "file_path": "documentation/SiriKitCloudMedia/extensionconfig/hdr-datadictionary.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/extensionendpointconfig/hdr-data.dictionary.json": {
       "hash": "7e6c76b2f39c2cce9117b56181cdf3ea73c5910c44203d667e2e08fb4d8b91a8",
-      "last_checked": "2026-07-07T07:31:16.293815",
+      "last_checked": "2026-07-07T18:14:03.003203",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"d902d1c9d2e0a4252a6028d3ce2469a5\"",
       "file_path": "documentation/SiriKitCloudMedia/extensionendpointconfig/hdr-datadictionary.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/extensionconfig/intent-data.dictionary/hdr-data.dictionary.json": {
       "hash": "c5c93074431817da0ae782830dc6fd6d03bda629591d9b81039e13ca2352e75f",
-      "last_checked": "2026-07-07T07:31:16.354615",
+      "last_checked": "2026-07-07T18:14:03.060520",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"c985eddd2299dba677b6a0de8ab69b70\"",
       "file_path": "documentation/SiriKitCloudMedia/extensionconfig/intent-data.dictionary/hdr-datadictionary.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/extensionconfig/media-data.dictionary/queues-data.dictionary/hdr-data.dictionary.json": {
       "hash": "7bb10215360f9edd70f0b0f5b049ea76a4a1311c393a53cca549061ce4a145e0",
-      "last_checked": "2026-07-07T07:31:16.788785",
+      "last_checked": "2026-07-07T18:14:03.111481",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"d43417749f83c2602cbc2e7a271216e6\"",
       "file_path": "documentation/SiriKitCloudMedia/extensionconfig/media-data.dictionary/queues-data.dictionary/hdr-datadictionary.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/extensionconfig/media-data.dictionary/queues-data.dictionary/playmedia-data.dictionary/hdr-data.dictionary.json": {
       "hash": "b63a84a48d537e5a8eecc3e29269441d573ff8c33bce6672c9347d41ecc7eb64",
-      "last_checked": "2026-07-07T07:31:16.848855",
+      "last_checked": "2026-07-07T18:14:03.263554",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"41742970fbdfbc426b24bb330950dd33\"",
       "file_path": "documentation/SiriKitCloudMedia/extensionconfig/media-data.dictionary/queues-data.dictionary/playmedia-data.dictionary/hdr-datadictionary.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/extensionconfig/media-data.dictionary/queues-data.dictionary/updateactivity-data.dictionary/hdr-data.dictionary.json": {
       "hash": "4a0099adf79232441805ad887797a5496992cd04fb68072fda864d2c1470e197",
-      "last_checked": "2026-07-07T07:31:16.915900",
+      "last_checked": "2026-07-07T18:14:03.245578",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"5f52478d6a88e496a356f7d3c65209e8\"",
       "file_path": "documentation/SiriKitCloudMedia/extensionconfig/media-data.dictionary/queues-data.dictionary/updateactivity-data.dictionary/hdr-datadictionary.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/extensionendpointconfig.json": {
       "hash": "b1603b760f2aaf151dacc1e9611fc4eeaa37ea5d61426f6a7463954ba63e5e28",
-      "last_checked": "2026-07-07T07:31:17.017205",
+      "last_checked": "2026-07-07T18:14:03.311183",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"cf438d1edc510b42d18ea5635df6b3f7\"",
       "file_path": "documentation/SiriKitCloudMedia/extensionendpointconfig.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/extensionconfig/intent-data.dictionary.json": {
       "hash": "844ae58c4990374abf55b7b93c2be6931929428c4e5f4d1c553db4a06c47abc9",
-      "last_checked": "2026-07-07T07:31:17.126226",
+      "last_checked": "2026-07-07T18:14:03.371623",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"057d80e94867806cdcf26e51572af7d4\"",
       "file_path": "documentation/SiriKitCloudMedia/extensionconfig/intent-datadictionary.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/extensionconfig/media-data.dictionary.json": {
       "hash": "0d9fd6d0824a3116e2ea5665e91510834a50df19d2e040ca02541790bf8ed885",
-      "last_checked": "2026-07-07T07:31:17.221360",
+      "last_checked": "2026-07-07T18:14:03.457922",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"f6dc48d43c8f15a4eaf22a77cf119c1a\"",
       "file_path": "documentation/SiriKitCloudMedia/extensionconfig/media-datadictionary.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/playmediaintent.json": {
       "hash": "cc94ac407dda14e3cafbdaff837ede7edc2fa6e83f814e54277498aad79eaea6",
-      "last_checked": "2026-07-07T07:31:17.279242",
+      "last_checked": "2026-07-07T18:14:03.506351",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"50087c5d6ac287b69cb128d7e7043754\"",
       "file_path": "documentation/SiriKitCloudMedia/playmediaintent.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/playmediaintenthandlinginvocation.json": {
       "hash": "ed90292774df527312032221225944f90a9869cf7ba5ba6bd6959d080326b174",
-      "last_checked": "2026-07-07T07:31:17.335071",
+      "last_checked": "2026-07-07T18:14:03.577942",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"5cdb2583647a94483b6a36175c498dfc\"",
       "file_path": "documentation/SiriKitCloudMedia/playmediaintenthandlinginvocation.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/playmediaintenthandlinginvocationresponse.json": {
       "hash": "40b781a227f24b89e40e526df7ad2c7b490278ccf4ed56d50d8408f104b17e83",
-      "last_checked": "2026-07-07T07:31:17.409696",
+      "last_checked": "2026-07-07T18:14:03.800538",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"3f6a3b802b7e4cff40960f6f154bbace\"",
       "file_path": "documentation/SiriKitCloudMedia/playmediaintenthandlinginvocationresponse.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/playmediaintenthandlingresolvemediaitemsinvocationresponse.json": {
       "hash": "f95aba227ff599d7c6924ef62c3cbcaab1b718bbbc4a3e0d1ef5c9c927a22f12",
-      "last_checked": "2026-07-07T07:31:17.518124",
+      "last_checked": "2026-07-07T18:14:05.175764",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"f9629cb669a3fcda4787f2b201771584\"",
       "file_path": "documentation/SiriKitCloudMedia/playmediaintenthandlingresolvemediaitemsinvocationresponse.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/playmediamediaitemresolutionresult.json": {
       "hash": "b90c65a30a48ce5aafa3224d407c9e8f20a31e89c628129355d55dc5afae1905",
-      "last_checked": "2026-07-07T07:31:17.582389",
+      "last_checked": "2026-07-07T18:14:05.292710",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"e5073526ff28ae257e9300292e9254b7\"",
       "file_path": "documentation/SiriKitCloudMedia/playmediamediaitemresolutionresult.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/playmediamediaitemunsupportedreason.json": {
       "hash": "b1d9fa3b8221e28b8e16fa8f42ebf19d904b57dabfba54bd6d0d7af406b6b838",
-      "last_checked": "2026-07-07T07:31:17.673140",
+      "last_checked": "2026-07-07T18:14:05.348683",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"37119cf9ec3a72c4287fd284638d9f7b\"",
       "file_path": "documentation/SiriKitCloudMedia/playmediamediaitemunsupportedreason.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/playmediaintenthandlinghandleinvocationresponse.json": {
       "hash": "3ff4a34f5a89cf38aa724e0bfad0ab92072121aa7b74425d5899f231389dd533",
-      "last_checked": "2026-07-07T07:31:17.769925",
+      "last_checked": "2026-07-07T18:14:05.410836",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"77634a6f2f5245843fbd2cc9702d9ebf\"",
       "file_path": "documentation/SiriKitCloudMedia/playmediaintenthandlinghandleinvocationresponse.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/playmediaintentresponse.json": {
       "hash": "a1e10923a18b4091720254f19dc2663708c498b1c5b4bcc3c3cd982c285ea0b8",
-      "last_checked": "2026-07-07T07:31:17.834442",
+      "last_checked": "2026-07-07T18:14:05.433893",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"a1a7ed4755fc1f621b6731f870716131\"",
       "file_path": "documentation/SiriKitCloudMedia/playmediaintentresponse.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/playmediaintentresponsecode.json": {
       "hash": "ae5eaa7d2928764c32d538f8f746368a1e451672faa4fc107d8a95d2f231cc17",
-      "last_checked": "2026-07-07T07:31:17.935115",
+      "last_checked": "2026-07-07T18:14:05.538932",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"60a3bc20fd51a710cd95c5ab2dbfa309\"",
       "file_path": "documentation/SiriKitCloudMedia/playmediaintentresponsecode.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/playmediaintenthandlingresolveplaybackrepeatmodeinvocationresponse.json": {
       "hash": "2600d3671ba9bfa0728d76fc3746be705a863f185ca6a4c3c475c8c2bbe02c00",
-      "last_checked": "2026-07-07T07:31:18.019176",
+      "last_checked": "2026-07-07T18:14:05.559080",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"9cd8609a80068de4b8cf95762d1cdfa7\"",
       "file_path": "documentation/SiriKitCloudMedia/playmediaintenthandlingresolveplaybackrepeatmodeinvocationresponse.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/playmediaintenthandlingresolveplaybackrepeatmodeinvocationresponse/result-data.dictionary.json": {
       "hash": "36a1469c9e248a34006ef4ecad07d2f4bc56f54f2dfa5e00836bb38878d89280",
-      "last_checked": "2026-07-07T07:31:18.088996",
+      "last_checked": "2026-07-07T18:14:05.671112",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"d85762bdda86ca14f3c03ec677eafbd8\"",
       "file_path": "documentation/SiriKitCloudMedia/playmediaintenthandlingresolveplaybackrepeatmodeinvocationresponse/result-datadictionary.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/playbackrepeatmoderesolutionresult.json": {
       "hash": "f777e727020fff691d85f8b90c932f9a429267f0eef6469271e189f310fd8575",
-      "last_checked": "2026-07-07T07:31:18.208398",
+      "last_checked": "2026-07-07T18:14:05.738214",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"816e0fcce65c35e4795a0b86dcfc2488\"",
       "file_path": "documentation/SiriKitCloudMedia/playbackrepeatmoderesolutionresult.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/playbackrepeatmode.json": {
       "hash": "e9db543a41f9a4f990232521d9032223931fc0c493f91293a302524dbbb31f27",
-      "last_checked": "2026-07-07T07:31:18.307475",
+      "last_checked": "2026-07-07T18:14:05.889626",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"5e2ab4ba765d25199f5c7ddbb1919dc0\"",
       "file_path": "documentation/SiriKitCloudMedia/playbackrepeatmode.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/playmediaintenthandlingresolveplaybackqueuelocationinvocationresponse.json": {
       "hash": "e2fc4136e25fd8093164d5ebd8306d3c23bcfdf247bb846115230614cbd2c8f5",
-      "last_checked": "2026-07-07T07:31:18.389470",
+      "last_checked": "2026-07-07T18:14:05.859278",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"243bcd4b5c84a43f70b68a68cfbae3e3\"",
       "file_path": "documentation/SiriKitCloudMedia/playmediaintenthandlingresolveplaybackqueuelocationinvocationresponse.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/playbackqueuelocationresolutionresult.json": {
       "hash": "09369aaf61d78e7ae2c7d2dacbc4d33ae8782ccee1164d0eb79f291d90045525",
-      "last_checked": "2026-07-07T07:31:18.455326",
+      "last_checked": "2026-07-07T18:14:05.852123",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"30d73a768711bf2509f3257d56df8b96\"",
       "file_path": "documentation/SiriKitCloudMedia/playbackqueuelocationresolutionresult.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/playbackqueuelocation.json": {
       "hash": "3578b27c62e383e19182be40630771aa83c1e7529c78c716d49c69811ad412ff",
-      "last_checked": "2026-07-07T07:31:18.511158",
+      "last_checked": "2026-07-07T18:14:06.030740",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"dc7b8e28599db7f6ca7bca69e0cd4a2d\"",
       "file_path": "documentation/SiriKitCloudMedia/playbackqueuelocation.md"
     },
@@ -1031,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/playmediaintenthandlingresolveresumeplaybackinvocationresponse.json": {
       "hash": "7b491ff4b3a36d5fce2e1382b66ab21e99f9963e6b2387bcb7a72c6c3f04867e",
-      "last_checked": "2026-07-07T07:31:18.592784",
+      "last_checked": "2026-07-07T18:14:06.011000",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"ed367c489ef2d972dfac3cd95d2865ad\"",
       "file_path": "documentation/SiriKitCloudMedia/playmediaintenthandlingresolveresumeplaybackinvocationresponse.md"
     },
@@ -1047,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/playmediaintenthandlingresolveplayshuffledinvocationresponse.json": {
       "hash": "f108fd2b99b80a6da79f9998c69b887419386bd096723def6f0fcfa51f4e7d10",
-      "last_checked": "2026-07-07T07:31:18.688993",
+      "last_checked": "2026-07-07T18:14:06.030509",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"5ce6cdbdbf217384fc508763b70a3852\"",
       "file_path": "documentation/SiriKitCloudMedia/playmediaintenthandlingresolveplayshuffledinvocationresponse.md"
     },
@@ -1063,9 +1063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/playmediarequest.json": {
       "hash": "6ade76f255083c8305cfbc3657ffb75b6169ed0bc50a4fa6445b194838c0a5f2",
-      "last_checked": "2026-07-07T07:31:18.759988",
+      "last_checked": "2026-07-07T18:14:06.135201",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"b0c369ba1fa1be7376aadd482511855e\"",
       "file_path": "documentation/SiriKitCloudMedia/playmediarequest.md"
     },
@@ -1079,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/queue.json": {
       "hash": "709d30fd0c54ae218bf92036a04d7b03138aae5fb04d1dea993a6d939cedf5be",
-      "last_checked": "2026-07-07T07:31:18.843737",
+      "last_checked": "2026-07-07T18:14:06.227487",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"d184bfe616491df7cf90b2f8e533f91e\"",
       "file_path": "documentation/SiriKitCloudMedia/queue.md"
     },
@@ -1095,9 +1095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/queueidentifier.json": {
       "hash": "e61e529f98f87fcb0d255b7c1513705763f8e35e7f2788ba8c977c46b57331c8",
-      "last_checked": "2026-07-07T07:31:18.904709",
+      "last_checked": "2026-07-07T18:14:06.195306",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"e68a014066ffd4a88e8d5be3f2757389\"",
       "file_path": "documentation/SiriKitCloudMedia/queueidentifier.md"
     },
@@ -1111,9 +1111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/queueinsertpointer.json": {
       "hash": "5f84a35dcb1485b77d1941ec58143189d5ba8fa20b02f406a947c214a35e7864",
-      "last_checked": "2026-07-07T07:31:18.971009",
+      "last_checked": "2026-07-07T18:14:06.319731",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"78a4b89e95e84d10d11ac0fae5573b92\"",
       "file_path": "documentation/SiriKitCloudMedia/queueinsertpointer.md"
     },
@@ -1127,9 +1127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/queueplaypointer.json": {
       "hash": "a91c5905ff3c3cc15a52003e49edf26cee3825bc0d5fadc143b640e7f0af3082",
-      "last_checked": "2026-07-07T07:31:19.036230",
+      "last_checked": "2026-07-07T18:14:06.375224",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"9f1cd6bcc8225fcebe9e676867a30eca\"",
       "file_path": "documentation/SiriKitCloudMedia/queueplaypointer.md"
     },
@@ -1143,9 +1143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/content.json": {
       "hash": "6f3c45d839ab5ec062179533564a9fec470bb216b21af93086f2025878dc9fbc",
-      "last_checked": "2026-07-07T07:31:19.097689",
+      "last_checked": "2026-07-07T18:14:06.379767",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"1a1a50570a34fe6fba3d6cbd631b832c\"",
       "file_path": "documentation/SiriKitCloudMedia/content.md"
     },
@@ -1159,9 +1159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/contentidentifier.json": {
       "hash": "59426b9bdd66f11563800ec40844e3b3f0578fa2072da7a7f88acc57d13ea7a1",
-      "last_checked": "2026-07-07T07:31:19.174595",
+      "last_checked": "2026-07-07T18:14:06.486467",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"58cae1132c03de7f8b5f594e72c6d7b8\"",
       "file_path": "documentation/SiriKitCloudMedia/contentidentifier.md"
     },
@@ -1175,9 +1175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/contentattributes.json": {
       "hash": "b6b9a09f4e3904aab879417f741e74e7c84f2f77d227560dfbb76595996b1dfa",
-      "last_checked": "2026-07-07T07:31:19.271140",
+      "last_checked": "2026-07-07T18:14:06.592665",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"c69b0e1d66b0ddc79aed924ff3fb32b0\"",
       "file_path": "documentation/SiriKitCloudMedia/contentattributes.md"
     },
@@ -1191,9 +1191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/queuecontrolmapping.json": {
       "hash": "3c173bed3c2a53176b2e7c14d7d657ddecaeea387b96fbe562379e937546bae0",
-      "last_checked": "2026-07-07T07:31:19.374384",
+      "last_checked": "2026-07-07T18:14:06.659157",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"56a324e5e42774f081c230845e6bd229\"",
       "file_path": "documentation/SiriKitCloudMedia/queuecontrolmapping.md"
     },
@@ -1207,9 +1207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/playmediacontrol.json": {
       "hash": "a04ed2f60104579ed734a52a943c138106e37d84834bf207dddb502642e22302",
-      "last_checked": "2026-07-07T07:31:19.447750",
+      "last_checked": "2026-07-07T18:14:06.715071",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"11590c0888962ca7ad1de53a6946d593\"",
       "file_path": "documentation/SiriKitCloudMedia/playmediacontrol.md"
     },
@@ -1223,9 +1223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/playmediacontrolscheme.json": {
       "hash": "9f405eba4db1ead837681297bb8212b067507ff46c495b3c6c33ba7bb136294e",
-      "last_checked": "2026-07-07T07:31:19.512494",
+      "last_checked": "2026-07-07T18:14:08.146858",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"764914a99ecbe1ef5e5131100cecb9b2\"",
       "file_path": "documentation/SiriKitCloudMedia/playmediacontrolscheme.md"
     },
@@ -1239,9 +1239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/playmediacontrolcommandset.json": {
       "hash": "43765a698048377a96d464c39a48abaaa8a191d92c119483a90cc73bc81870b0",
-      "last_checked": "2026-07-07T07:31:19.636694",
+      "last_checked": "2026-07-07T18:14:08.427799",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"93ce0354f49e6307ffd71d3498a47bee\"",
       "file_path": "documentation/SiriKitCloudMedia/playmediacontrolcommandset.md"
     },
@@ -1255,9 +1255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/updatemediaaffinityintent.json": {
       "hash": "90ee2a0a6bd2e83a2ae5b156786321bd1e3b2d682f56273190f5b71a83a37803",
-      "last_checked": "2026-07-07T07:31:19.720580",
+      "last_checked": "2026-07-07T18:14:08.413427",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"965b9c38314c01a9e44e6d448f3b0e81\"",
       "file_path": "documentation/SiriKitCloudMedia/updatemediaaffinityintent.md"
     },
@@ -1271,9 +1271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/updatemediaaffinityintenthandlinginvocation.json": {
       "hash": "ac10b2db9408ec5c628c37ec65de5b7802987987e747cb98b699ecda45ab3bd0",
-      "last_checked": "2026-07-07T07:31:19.789872",
+      "last_checked": "2026-07-07T18:14:08.535958",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"da6bc9f87c3d9b78370f86efb584eeaa\"",
       "file_path": "documentation/SiriKitCloudMedia/updatemediaaffinityintenthandlinginvocation.md"
     },
@@ -1287,9 +1287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/updatemediaaffinityintenthandlinginvocationresponse.json": {
       "hash": "fac1e92279abf7e287e8fe756ea05bb36023de78478cf2622e595782134b39aa",
-      "last_checked": "2026-07-07T07:31:19.851985",
+      "last_checked": "2026-07-07T18:14:08.620833",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"bee876772761364e850043c40d02a9a3\"",
       "file_path": "documentation/SiriKitCloudMedia/updatemediaaffinityintenthandlinginvocationresponse.md"
     },
@@ -1303,9 +1303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/updatemediaaffinityintenthandlingresolvemediaitemsinvocationresponse.json": {
       "hash": "24ceca531ee8dfba0f073396955b7228c9bd7d881b4435733149547d33fb18b6",
-      "last_checked": "2026-07-07T07:31:19.916935",
+      "last_checked": "2026-07-07T18:14:08.634692",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"aded91fc3ea407495c35482908bd219c\"",
       "file_path": "documentation/SiriKitCloudMedia/updatemediaaffinityintenthandlingresolvemediaitemsinvocationresponse.md"
     },
@@ -1319,9 +1319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/updatemediaaffinitymediaitemresolutionresult.json": {
       "hash": "3d3bbf1544c4a6eb107a9959633fb6584ca4e18d16248c03465e6a1aaae046db",
-      "last_checked": "2026-07-07T07:31:20.164993",
+      "last_checked": "2026-07-07T18:14:08.688605",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"f0cc91707ebfcbab8797805dbae50133\"",
       "file_path": "documentation/SiriKitCloudMedia/updatemediaaffinitymediaitemresolutionresult.md"
     },
@@ -1335,9 +1335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/updatemediaaffinitymediaitemunsupportedreason.json": {
       "hash": "ad05cdff1a99efbdf65e402b42be88e23111078364c811891de4b89dedfe96e5",
-      "last_checked": "2026-07-07T07:31:20.233068",
+      "last_checked": "2026-07-07T18:14:08.760190",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"ef6adb89156a94aa31dbc027feaa9942\"",
       "file_path": "documentation/SiriKitCloudMedia/updatemediaaffinitymediaitemunsupportedreason.md"
     },
@@ -1351,9 +1351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/mediaaffinitytype.json": {
       "hash": "564ccad7f6ef750df3dbdb44467b7d6debc1aeb6e60d95240e59ec7d27adb690",
-      "last_checked": "2026-07-07T07:31:20.308139",
+      "last_checked": "2026-07-07T18:14:08.820092",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"69ec07f3875b8a9437c33a2e200795b6\"",
       "file_path": "documentation/SiriKitCloudMedia/mediaaffinitytype.md"
     },
@@ -1367,9 +1367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/updatemediaaffinityintenthandlingresolveaffinitytypeinvocationresponse.json": {
       "hash": "d4e5b8642bc158f41c4a4c99291aff15850785358140e0eacf15f4ff04e7cd19",
-      "last_checked": "2026-07-07T07:31:20.411183",
+      "last_checked": "2026-07-07T18:14:08.882365",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"c252d71833915db047488740808b327d\"",
       "file_path": "documentation/SiriKitCloudMedia/updatemediaaffinityintenthandlingresolveaffinitytypeinvocationresponse.md"
     },
@@ -1383,9 +1383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/mediaaffinitytyperesolutionresult.json": {
       "hash": "8570cee18ba0e188737d7333bff261d362afbf8128512ce1d880f3167df9c50d",
-      "last_checked": "2026-07-07T07:31:20.485316",
+      "last_checked": "2026-07-07T18:14:09.089575",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"248dac29c92679deeecd67396f7ab88d\"",
       "file_path": "documentation/SiriKitCloudMedia/mediaaffinitytyperesolutionresult.md"
     },
@@ -1399,9 +1399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/updatemediaaffinityintenthandlinghandleinvocationresponse.json": {
       "hash": "8e2d9f90d70229256b880bd98ab492536791801edf2e1109e4c71853886992bf",
-      "last_checked": "2026-07-07T07:31:20.549049",
+      "last_checked": "2026-07-07T18:14:09.012525",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"f567436f46f09eb132c05984efb292c8\"",
       "file_path": "documentation/SiriKitCloudMedia/updatemediaaffinityintenthandlinghandleinvocationresponse.md"
     },
@@ -1415,9 +1415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/updatemediaaffinityintentresponse.json": {
       "hash": "37d134475d7e13db53aeffad67da90c9bb024e1f92da7178b7978c7c784a7f41",
-      "last_checked": "2026-07-07T07:31:20.612859",
+      "last_checked": "2026-07-07T18:14:09.065284",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"cd2194a8ff50519f3bc478c9d44021ec\"",
       "file_path": "documentation/SiriKitCloudMedia/updatemediaaffinityintentresponse.md"
     },
@@ -1431,9 +1431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/updatemediaaffinityintentresponsecode.json": {
       "hash": "5d70d9179b415ae6fa684cd44062a63782296af08c1abab6a43a57a2313787c8",
-      "last_checked": "2026-07-07T07:31:20.667856",
+      "last_checked": "2026-07-07T18:14:09.142919",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"20c7a7784ecb97f1156e4123c2f30393\"",
       "file_path": "documentation/SiriKitCloudMedia/updatemediaaffinityintentresponsecode.md"
     },
@@ -1447,9 +1447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/addmediaintent.json": {
       "hash": "eeae60ab205f025f612be7406b43c51f5ef3ddbb809f21512bdabb3b4f2b295b",
-      "last_checked": "2026-07-07T07:31:20.776532",
+      "last_checked": "2026-07-07T18:14:09.215820",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"eac436f5ab6538f2b2862d31748f879c\"",
       "file_path": "documentation/SiriKitCloudMedia/addmediaintent.md"
     },
@@ -1463,9 +1463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/addmediaintenthandlinginvocation.json": {
       "hash": "39159562a70ff21687f459f76d72180284a70eaaf7a268e0d174b16910d2028d",
-      "last_checked": "2026-07-07T07:31:20.842023",
+      "last_checked": "2026-07-07T18:14:09.288317",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"e8844bf11ec41a10e622a7200f51f1ca\"",
       "file_path": "documentation/SiriKitCloudMedia/addmediaintenthandlinginvocation.md"
     },
@@ -1479,9 +1479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/addmediaintenthandlinginvocationresponse.json": {
       "hash": "c428acdd75ffbbef3fdf04797a82408f6a9771b873de9120a2fc2b0e4bdf4802",
-      "last_checked": "2026-07-07T07:31:20.908109",
+      "last_checked": "2026-07-07T18:14:09.346459",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"aa9d7a9df0075c9a845c5e4d9eb844f4\"",
       "file_path": "documentation/SiriKitCloudMedia/addmediaintenthandlinginvocationresponse.md"
     },
@@ -1495,9 +1495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/addmediaintenthandlingresolvemediaitemsinvocationresponse.json": {
       "hash": "1aaaf0de8be8b325558b51262f8c3731e2f02406fab2e5f2ef828de920d06092",
-      "last_checked": "2026-07-07T07:31:20.992217",
+      "last_checked": "2026-07-07T18:14:09.424823",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"ce2ec221cfb7f41ee566104f5a60ff8f\"",
       "file_path": "documentation/SiriKitCloudMedia/addmediaintenthandlingresolvemediaitemsinvocationresponse.md"
     },
@@ -1511,9 +1511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/addmediamediaitemresolutionresult.json": {
       "hash": "f959fb82c9680850197ae8cc628e12ff34955074bd832c10cd8bcd8d4dd5102d",
-      "last_checked": "2026-07-07T07:31:21.053616",
+      "last_checked": "2026-07-07T18:14:09.488062",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"2be7a30cdf911580913069752bad7c92\"",
       "file_path": "documentation/SiriKitCloudMedia/addmediamediaitemresolutionresult.md"
     },
@@ -1527,9 +1527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/addmediaintenthandlingresolvemediadestinationinvocationresponse.json": {
       "hash": "ea0d9a1063af5f2c4bc363ee366a0494c374fa36055d393940494a88b7d0115c",
-      "last_checked": "2026-07-07T07:31:21.130435",
+      "last_checked": "2026-07-07T18:14:09.544916",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"638d2677dfdd499f4b9d6f10d7134e40\"",
       "file_path": "documentation/SiriKitCloudMedia/addmediaintenthandlingresolvemediadestinationinvocationresponse.md"
     },
@@ -1543,9 +1543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/addmediamediadestinationresolutionresult.json": {
       "hash": "0b75f41e12745a85c54c911d5db37dd29d8a84a0bdcc38571c5ed2a7f2a1aec6",
-      "last_checked": "2026-07-07T07:31:21.193268",
+      "last_checked": "2026-07-07T18:14:09.611752",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"b1dd13eed4fecdfab729394512b1f76e\"",
       "file_path": "documentation/SiriKitCloudMedia/addmediamediadestinationresolutionresult.md"
     },
@@ -1559,9 +1559,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/addmediaintentresponse.json": {
       "hash": "996ac9c628f9967c5bc5b2ebbe5cd400e5970ca57e6c69bb5912871f725a215f",
-      "last_checked": "2026-07-07T07:31:21.315389",
+      "last_checked": "2026-07-07T18:14:09.677432",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"77d55244b521496233aae337e4fc7305\"",
       "file_path": "documentation/SiriKitCloudMedia/addmediaintentresponse.md"
     },
@@ -1575,9 +1575,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/addmediaintentresponsecode.json": {
       "hash": "b4374c9dcaae5aef72f8c8ffed12aa7dfea03e62c3e331300b2e06250bc6c57f",
-      "last_checked": "2026-07-07T07:31:21.417427",
+      "last_checked": "2026-07-07T18:14:09.749119",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"6708d48c7333b1bf064b6d269e7e346b\"",
       "file_path": "documentation/SiriKitCloudMedia/addmediaintentresponsecode.md"
     },
@@ -1591,9 +1591,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/addmediaintenthandlingconfirminvocationresponse.json": {
       "hash": "a59a06a7f7c792d8e64392f01f45936af8cdc34b46bdabe774068d7a6bc03aba",
-      "last_checked": "2026-07-07T07:31:21.482256",
+      "last_checked": "2026-07-07T18:14:09.800301",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"6f13b8d3dc3f819d6bb6d7643b69b95a\"",
       "file_path": "documentation/SiriKitCloudMedia/addmediaintenthandlingconfirminvocationresponse.md"
     },
@@ -1607,9 +1607,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/addmediaintenthandlinghandleinvocationresponse.json": {
       "hash": "4d437541a938bf5e93641b8c89ba5e02d0ee98daa7ef20af11640b372ef31924",
-      "last_checked": "2026-07-07T07:31:21.542752",
+      "last_checked": "2026-07-07T18:14:09.937754",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"373b2bc87415302fdaaf81da09a6f519\"",
       "file_path": "documentation/SiriKitCloudMedia/addmediaintenthandlinghandleinvocationresponse.md"
     },
@@ -1623,9 +1623,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/mediasortorder.json": {
       "hash": "840a9f87236ad7f0682bf82809fc2b7464e53747678e14e350dfb96bacb5f404",
-      "last_checked": "2026-07-07T07:31:21.638984",
+      "last_checked": "2026-07-07T18:14:11.462089",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"a32ee37584690dc28063ca86e7e16476\"",
       "file_path": "documentation/SiriKitCloudMedia/mediasortorder.md"
     },
@@ -1639,9 +1639,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/datecomponentsrange.json": {
       "hash": "1a80c03a15ba38fa73a77671db1a1f9ac53b6267add73ea173790c98871db27c",
-      "last_checked": "2026-07-07T07:31:21.704496",
+      "last_checked": "2026-07-07T18:14:11.596978",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"f02602d3b22e8998dd30ef154b230a87\"",
       "file_path": "documentation/SiriKitCloudMedia/datecomponentsrange.md"
     },
@@ -1655,9 +1655,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/datecomponents.json": {
       "hash": "25730c627b65b18c1f682f39e156f426ea2b8a9cc5fbc9c2cb31d633193843bc",
-      "last_checked": "2026-07-07T07:31:21.834408",
+      "last_checked": "2026-07-07T18:14:11.661997",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"06206f4c33819fbee307ed86af2de937\"",
       "file_path": "documentation/SiriKitCloudMedia/datecomponents.md"
     },
@@ -1671,9 +1671,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/explicitdatecomponents.json": {
       "hash": "6d1720d67a963bf2a7e1b8c43df5688b091a73dc427cc4fea6feb789623aa77b",
-      "last_checked": "2026-07-07T07:31:21.892740",
+      "last_checked": "2026-07-07T18:14:11.695674",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"7ca592041e759a3ccf185a75db1868ec\"",
       "file_path": "documentation/SiriKitCloudMedia/explicitdatecomponents.md"
     },
@@ -1687,9 +1687,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/invocation/params-data.dictionary.json": {
       "hash": "81f7abe9de76fa87894c5c6cfb388937fb4f70e8cc331d16af00089b89fcf86f",
-      "last_checked": "2026-07-07T07:31:22.006739",
+      "last_checked": "2026-07-07T18:14:11.769472",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"8a67d3b6a865cd5411317649b525321c\"",
       "file_path": "documentation/SiriKitCloudMedia/invocation/params-datadictionary.md"
     },
@@ -1703,9 +1703,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/invocationresponse/result-data.dictionary.json": {
       "hash": "c008a997202ba433e7faeb68aba9976e80ab6db922392cf4194acf122a58f9c9",
-      "last_checked": "2026-07-07T07:31:22.090485",
+      "last_checked": "2026-07-07T18:14:11.826201",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"0feda226325d6ecbefd5b410957a28b2\"",
       "file_path": "documentation/SiriKitCloudMedia/invocationresponse/result-datadictionary.md"
     },
@@ -1719,9 +1719,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/executionmetrics.json": {
       "hash": "ae8743866062ffb14f3899017a483805fa51f2048a5ff7031923015729ba6e26",
-      "last_checked": "2026-07-07T07:31:22.185213",
+      "last_checked": "2026-07-07T18:14:11.879808",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"55c8896220f641c55c5555c1fe2bff7a\"",
       "file_path": "documentation/SiriKitCloudMedia/executionmetrics.md"
     },
@@ -1735,9 +1735,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/servicedebugreference.json": {
       "hash": "52d7dade4a3ced029381a90861ffb0370cca1ae38edae88f9f7221b8bb636420",
-      "last_checked": "2026-07-07T07:31:22.245605",
+      "last_checked": "2026-07-07T18:14:11.947176",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"db0367d9a3b5af120d7f595872ca7665\"",
       "file_path": "documentation/SiriKitCloudMedia/servicedebugreference.md"
     },
@@ -1751,9 +1751,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/useractivity/useractivityuserinfo.json": {
       "hash": "817188558921c413dba788560123d741def6260ff07806899d5f31816413f229",
-      "last_checked": "2026-07-07T07:31:22.332010",
+      "last_checked": "2026-07-07T18:14:12.012896",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"e6c22dc664587d3d2ac9b275891081bf\"",
       "file_path": "documentation/SiriKitCloudMedia/useractivity/useractivityuserinfo.md"
     },
@@ -1767,9 +1767,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/intentresolutionresult/needsvalue-data.dictionary.json": {
       "hash": "13ed15f50a93d7c2ec58b8f4405947408d5c456ef6aa858cd235025509b99476",
-      "last_checked": "2026-07-07T07:31:22.408075",
+      "last_checked": "2026-07-07T18:14:12.079166",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"8e13283b1c4473bd260fb0cefc70c3e4\"",
       "file_path": "documentation/SiriKitCloudMedia/intentresolutionresult/needsvalue-datadictionary.md"
     },
@@ -1783,9 +1783,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/intentresolutionresult/notrequired-data.dictionary.json": {
       "hash": "930bd242d36518eeb6ea72e934f925dbe537ebcda75a28c8d3cad21efc24032f",
-      "last_checked": "2026-07-07T07:31:22.468945",
+      "last_checked": "2026-07-07T18:14:12.149280",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"18b852217b794066c4d779c94ea28219\"",
       "file_path": "documentation/SiriKitCloudMedia/intentresolutionresult/notrequired-datadictionary.md"
     },
@@ -1799,9 +1799,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/intentresolutionresult/unsupported-data.dictionary.json": {
       "hash": "b1f0c5e1c5a573b5c4fdec2de46b34147039c075b71b02c70a1491d7a5977cdf",
-      "last_checked": "2026-07-07T07:31:22.534831",
+      "last_checked": "2026-07-07T18:14:12.205971",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"28805a04bdd953d7ba210e3ce835430d\"",
       "file_path": "documentation/SiriKitCloudMedia/intentresolutionresult/unsupported-datadictionary.md"
     },
@@ -1815,9 +1815,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/booleanresolutionresult/confirmationrequired-data.dictionary.json": {
       "hash": "ba8a12f21ceead0d222fcc5078811e02704f3597478aa5b314e3d689b6c7fd83",
-      "last_checked": "2026-07-07T07:31:22.607394",
+      "last_checked": "2026-07-07T18:14:12.266489",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"23f7947a6662b266629578fe59fb2bb6\"",
       "file_path": "documentation/SiriKitCloudMedia/booleanresolutionresult/confirmationrequired-datadictionary.md"
     },
@@ -1831,9 +1831,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/booleanresolutionresult/success-data.dictionary.json": {
       "hash": "669e15add57aa11f565bd9f5727eabb2a467d06f78950475d4bef64bd3514d3e",
-      "last_checked": "2026-07-07T07:31:22.675654",
+      "last_checked": "2026-07-07T18:14:12.348001",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"9c78712518c6b8aa9ae16e1cc0fde724\"",
       "file_path": "documentation/SiriKitCloudMedia/booleanresolutionresult/success-datadictionary.md"
     },
@@ -1847,9 +1847,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/extensionconfig/intent-data.dictionary/addmedia-data.dictionary.json": {
       "hash": "17a2bb0cd84911d2355f043d06c94f2cff0e12246c924c6f35654a173fd3267b",
-      "last_checked": "2026-07-07T07:31:22.738423",
+      "last_checked": "2026-07-07T18:14:12.400794",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"7218cae82f33b722db734194099b2a26\"",
       "file_path": "documentation/SiriKitCloudMedia/extensionconfig/intent-data.dictionary/addmedia-datadictionary.md"
     },
@@ -1863,9 +1863,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/extensionconfig/intent-data.dictionary/playmedia-data.dictionary.json": {
       "hash": "00be579152163a434280bd4843bb82efcef024cce3ed300837ed496caf04e860",
-      "last_checked": "2026-07-07T07:31:22.811184",
+      "last_checked": "2026-07-07T18:14:12.462205",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"dcb9385904e8c8cf51564af073d6edc0\"",
       "file_path": "documentation/SiriKitCloudMedia/extensionconfig/intent-data.dictionary/playmedia-datadictionary.md"
     },
@@ -1879,9 +1879,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/extensionconfig/intent-data.dictionary/updatemediaaffinity-data.dictionary.json": {
       "hash": "277d8b967068904fb0bb37efff46fc27d6b6ec6fa29b770be9b4f85300a4c7e9",
-      "last_checked": "2026-07-07T07:31:22.906239",
+      "last_checked": "2026-07-07T18:14:12.525129",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"7a2e91a806a6083e3fac20858cd23109\"",
       "file_path": "documentation/SiriKitCloudMedia/extensionconfig/intent-data.dictionary/updatemediaaffinity-datadictionary.md"
     },
@@ -1895,9 +1895,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/extensionconfig/media-data.dictionary/queues-data.dictionary.json": {
       "hash": "450c0d0ab3a20db67d3baec60ce8e4a7990a08720c5859e5a1ed9988acd9c6c9",
-      "last_checked": "2026-07-07T07:31:22.974158",
+      "last_checked": "2026-07-07T18:14:12.599068",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"3887deb27d952b1757960749053d088d\"",
       "file_path": "documentation/SiriKitCloudMedia/extensionconfig/media-data.dictionary/queues-datadictionary.md"
     },
@@ -1911,9 +1911,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/playmediaintenthandlinginvocation/params-data.dictionary.json": {
       "hash": "044fc65f1326273187eec4e08a592bb3eb69234be6b32f00e309178c6ce869d1",
-      "last_checked": "2026-07-07T07:31:23.046530",
+      "last_checked": "2026-07-07T18:14:12.668311",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"d7d577bc6f1f0902eb5cf7acf56172c9\"",
       "file_path": "documentation/SiriKitCloudMedia/playmediaintenthandlinginvocation/params-datadictionary.md"
     },
@@ -1927,9 +1927,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/playmediaintenthandlingresolvemediaitemsinvocationresponse/result-data.dictionary.json": {
       "hash": "a3c69385bec4cacff8ff0708cc239586d1815484d8a7ccd2746fc9912dfa1aee",
-      "last_checked": "2026-07-07T07:31:23.155200",
+      "last_checked": "2026-07-07T18:14:12.740554",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"fddf5c5d18ccb78dbca33d5fd4fb0806\"",
       "file_path": "documentation/SiriKitCloudMedia/playmediaintenthandlingresolvemediaitemsinvocationresponse/result-datadictionary.md"
     },
@@ -1943,9 +1943,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/playmediamediaitemresolutionresult/success-data.dictionary.json": {
       "hash": "142c534662798d420ac12f23430ecd42b6b057c8b52a07f4b12a130f21dc163c",
-      "last_checked": "2026-07-07T07:31:23.259751",
+      "last_checked": "2026-07-07T18:14:12.802555",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"6aa12012d49c7373fc309c8c8c27895e\"",
       "file_path": "documentation/SiriKitCloudMedia/playmediamediaitemresolutionresult/success-datadictionary.md"
     },
@@ -1959,9 +1959,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/playmediamediaitemresolutionresult/unsupported-data.dictionary.json": {
       "hash": "b09a41dad42329dce318d6d57094e75acae4fd06fc57785fa60507a681e77a4d",
-      "last_checked": "2026-07-07T07:31:23.323183",
+      "last_checked": "2026-07-07T18:14:12.879921",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"14c5bdd4b30b146b8f6c20f09074c395\"",
       "file_path": "documentation/SiriKitCloudMedia/playmediamediaitemresolutionresult/unsupported-datadictionary.md"
     },
@@ -1975,9 +1975,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/playmediamediaitemresolutionresult/disambiguation-data.dictionary.json": {
       "hash": "0eb9db9061384df193a479e2597329ee615aa20e336222670fb86374d6b884c4",
-      "last_checked": "2026-07-07T07:31:23.394677",
+      "last_checked": "2026-07-07T18:14:12.930270",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"768750ee82734dfe96879fdf504f8054\"",
       "file_path": "documentation/SiriKitCloudMedia/playmediamediaitemresolutionresult/disambiguation-datadictionary.md"
     },
@@ -1991,9 +1991,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/playmediamediaitemresolutionresult/confirmationrequired-data.dictionary.json": {
       "hash": "891edc91d9abe464738507c801682c67afd85e071d14236c52442f6ab8952b9f",
-      "last_checked": "2026-07-07T07:31:23.453923",
+      "last_checked": "2026-07-07T18:14:12.978768",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"7a497ef51ddbc1b2d7d93ba9c597804d\"",
       "file_path": "documentation/SiriKitCloudMedia/playmediamediaitemresolutionresult/confirmationrequired-datadictionary.md"
     },
@@ -2007,9 +2007,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/playmediaintenthandlinghandleinvocationresponse/result-data.dictionary.json": {
       "hash": "0e4399520d6db879512b089ac22f8e6e7292ba29095fa83da63dc56e2697c70b",
-      "last_checked": "2026-07-07T07:31:23.555140",
+      "last_checked": "2026-07-07T18:14:13.125491",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"264eedbd636242cc3993d23b2f059bda\"",
       "file_path": "documentation/SiriKitCloudMedia/playmediaintenthandlinghandleinvocationresponse/result-datadictionary.md"
     },
@@ -2023,9 +2023,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/playbackrepeatmoderesolutionresult/success-data.dictionary.json": {
       "hash": "fda7544714a8cec7e711691767535b32172d9c12799fdf945da2baa835eac2bd",
-      "last_checked": "2026-07-07T07:31:23.652111",
+      "last_checked": "2026-07-07T18:14:14.652075",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"c7ffdebe4563ac2693e24c43bd6aec97\"",
       "file_path": "documentation/SiriKitCloudMedia/playbackrepeatmoderesolutionresult/success-datadictionary.md"
     },
@@ -2039,9 +2039,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/playbackrepeatmoderesolutionresult/confirmationrequired-data.dictionary.json": {
       "hash": "b9b054cbfafcb5721c29e5e6295ae1b343aeb407edf09b40607b5040d977315d",
-      "last_checked": "2026-07-07T07:31:23.711234",
+      "last_checked": "2026-07-07T18:14:14.718507",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"5cca12130cc9596814b31211eb2473b9\"",
       "file_path": "documentation/SiriKitCloudMedia/playbackrepeatmoderesolutionresult/confirmationrequired-datadictionary.md"
     },
@@ -2055,9 +2055,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/playmediaintenthandlingresolveplaybackqueuelocationinvocationresponse/result-data.dictionary.json": {
       "hash": "07d415ec10f3dcde66a6480a462e44cde49245e12e908bb72ae5714fc34ef25f",
-      "last_checked": "2026-07-07T07:31:23.778725",
+      "last_checked": "2026-07-07T18:14:14.979847",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"9469ecc42ff0e09e4fb53872f5838537\"",
       "file_path": "documentation/SiriKitCloudMedia/playmediaintenthandlingresolveplaybackqueuelocationinvocationresponse/result-datadictionary.md"
     },
@@ -2071,9 +2071,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/playbackqueuelocationresolutionresult/success-data.dictionary.json": {
       "hash": "9526315a7289d138c592a111d9bbb98db97a6bab4b1f9bd1d9ca623e48ffba24",
-      "last_checked": "2026-07-07T07:31:23.836835",
+      "last_checked": "2026-07-07T18:14:14.858652",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"c81d3723cc1929788ca08a67bd978e0f\"",
       "file_path": "documentation/SiriKitCloudMedia/playbackqueuelocationresolutionresult/success-datadictionary.md"
     },
@@ -2087,9 +2087,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/playbackqueuelocationresolutionresult/confirmationrequired-data.dictionary.json": {
       "hash": "df1272718de06e875e0479e039be1bfbb77ea062fd1fcca01a195b443b0af8b7",
-      "last_checked": "2026-07-07T07:31:23.901297",
+      "last_checked": "2026-07-07T18:14:14.913439",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"fc0091f70f98af4e0b1853112115cc8f\"",
       "file_path": "documentation/SiriKitCloudMedia/playbackqueuelocationresolutionresult/confirmationrequired-datadictionary.md"
     },
@@ -2103,9 +2103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/playmediaintenthandlingresolveresumeplaybackinvocationresponse/result-data.dictionary.json": {
       "hash": "6e99e9b3c8b7631683e2d8eb8ed0c453638a33b49de0de4c5e75bcf2d6fa64e5",
-      "last_checked": "2026-07-07T07:31:23.970181",
+      "last_checked": "2026-07-07T18:14:15.060388",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"63d1b131d66e39e030c2ea89c9398afb\"",
       "file_path": "documentation/SiriKitCloudMedia/playmediaintenthandlingresolveresumeplaybackinvocationresponse/result-datadictionary.md"
     },
@@ -2119,9 +2119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/playmediaintenthandlingresolveplayshuffledinvocationresponse/result-data.dictionary.json": {
       "hash": "e32b923362685b3fa75eb34b77780c86fb5325d7e6538e9d12c1eceb52f1095a",
-      "last_checked": "2026-07-07T07:31:24.254573",
+      "last_checked": "2026-07-07T18:14:15.122119",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"695cd57e6a6eabe024abe2e3fc74240d\"",
       "file_path": "documentation/SiriKitCloudMedia/playmediaintenthandlingresolveplayshuffledinvocationresponse/result-datadictionary.md"
     },
@@ -2135,9 +2135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/contentattributes/artwork-data.dictionary.json": {
       "hash": "5c26e9b1d08324a82417b0b9f95ac66ccdc356650d2ae1a51bb0d786ad295b9e",
-      "last_checked": "2026-07-07T07:31:24.354775",
+      "last_checked": "2026-07-07T18:14:15.182450",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"c3a26721e5c914da23a09e43051933a0\"",
       "file_path": "documentation/SiriKitCloudMedia/contentattributes/artwork-datadictionary.md"
     },
@@ -2151,9 +2151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/updatemediaaffinityintenthandlinginvocation/params-data.dictionary.json": {
       "hash": "ce3f89ffba1b923a4030a1011c226611eebbc6975f538c1800379946ffc13ad9",
-      "last_checked": "2026-07-07T07:31:24.422318",
+      "last_checked": "2026-07-07T18:14:15.250933",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"2292c835653e084bff1be3242f35aa8a\"",
       "file_path": "documentation/SiriKitCloudMedia/updatemediaaffinityintenthandlinginvocation/params-datadictionary.md"
     },
@@ -2167,9 +2167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/updatemediaaffinityintenthandlingresolvemediaitemsinvocationresponse/result-data.dictionary.json": {
       "hash": "da4663b3564d7ef488c83fb4ff3f404a0967f6992dc099d817a62a1894ea592b",
-      "last_checked": "2026-07-07T07:31:24.498411",
+      "last_checked": "2026-07-07T18:14:15.308785",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"1ad7d60f0746837b7d8f07dfa59d4642\"",
       "file_path": "documentation/SiriKitCloudMedia/updatemediaaffinityintenthandlingresolvemediaitemsinvocationresponse/result-datadictionary.md"
     },
@@ -2183,9 +2183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/updatemediaaffinitymediaitemresolutionresult/success-data.dictionary.json": {
       "hash": "d432c66fd8fe93f0dea94dfd35055ce96379f94ba39ecf1cbfe10644855a32bc",
-      "last_checked": "2026-07-07T07:31:24.556964",
+      "last_checked": "2026-07-07T18:14:15.382469",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"e301309431f08a8a6772389d8ca71557\"",
       "file_path": "documentation/SiriKitCloudMedia/updatemediaaffinitymediaitemresolutionresult/success-datadictionary.md"
     },
@@ -2199,9 +2199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/updatemediaaffinitymediaitemresolutionresult/unsupported-data.dictionary.json": {
       "hash": "c73b893b6e8f56fcd431bbad1ca31f02c7cb60db6ae79c0b5b62e3def10948f3",
-      "last_checked": "2026-07-07T07:31:24.636711",
+      "last_checked": "2026-07-07T18:14:15.443739",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"e8df9ced99223a8d17a544662df4793f\"",
       "file_path": "documentation/SiriKitCloudMedia/updatemediaaffinitymediaitemresolutionresult/unsupported-datadictionary.md"
     },
@@ -2215,9 +2215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/updatemediaaffinitymediaitemresolutionresult/disambiguation-data.dictionary.json": {
       "hash": "aaaface806d852f3b4e2beaf72518800e3d86224f476fce1670fadda7140c6a3",
-      "last_checked": "2026-07-07T07:31:24.736638",
+      "last_checked": "2026-07-07T18:14:15.504774",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"fa4587d6e2ac421e51e20f0668b6de12\"",
       "file_path": "documentation/SiriKitCloudMedia/updatemediaaffinitymediaitemresolutionresult/disambiguation-datadictionary.md"
     },
@@ -2231,9 +2231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/updatemediaaffinitymediaitemresolutionresult/confirmationrequired-data.dictionary.json": {
       "hash": "3f0c18efc95f2c446f783b985cce0b5af0eaefbee0aca570914b7062394152ec",
-      "last_checked": "2026-07-07T07:31:24.799495",
+      "last_checked": "2026-07-07T18:14:15.557463",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"4f5290bedf631bdbd60d4958e22cb039\"",
       "file_path": "documentation/SiriKitCloudMedia/updatemediaaffinitymediaitemresolutionresult/confirmationrequired-datadictionary.md"
     },
@@ -2247,9 +2247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/updatemediaaffinityintenthandlingresolveaffinitytypeinvocationresponse/result-data.dictionary.json": {
       "hash": "6fd68f076ae110434b80af359ee205fce2461ce909878953ab2355da6f36d66f",
-      "last_checked": "2026-07-07T07:31:24.856380",
+      "last_checked": "2026-07-07T18:14:15.602437",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"7c6f19bb5070ae21c4af4f7f55e33cf6\"",
       "file_path": "documentation/SiriKitCloudMedia/updatemediaaffinityintenthandlingresolveaffinitytypeinvocationresponse/result-datadictionary.md"
     },
@@ -2263,9 +2263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/mediaaffinitytyperesolutionresult/confirmationrequired-data.dictionary.json": {
       "hash": "c0a37d88c8bd3c7d1e048f4758457ab91d2518912f8c128d0ed15cd679e94f50",
-      "last_checked": "2026-07-07T07:31:24.931997",
+      "last_checked": "2026-07-07T18:14:15.765409",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"f2c1488d2cf4505e0648b67f919af614\"",
       "file_path": "documentation/SiriKitCloudMedia/mediaaffinitytyperesolutionresult/confirmationrequired-datadictionary.md"
     },
@@ -2279,9 +2279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/mediaaffinitytyperesolutionresult/success-data.dictionary.json": {
       "hash": "d49d15527ed10a8913104ecf2bd885152cdbdfa9f5ec8b9cf8275478ea2169c0",
-      "last_checked": "2026-07-07T07:31:25.040478",
+      "last_checked": "2026-07-07T18:14:15.815069",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"554e1be4489c7ffd2575a6f0378330b4\"",
       "file_path": "documentation/SiriKitCloudMedia/mediaaffinitytyperesolutionresult/success-datadictionary.md"
     },
@@ -2295,9 +2295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/updatemediaaffinityintenthandlinghandleinvocationresponse/result-data.dictionary.json": {
       "hash": "28659f37ac2775ad8b5919edbdadb5f26ad396736a19627ca7d4c5edf40c2982",
-      "last_checked": "2026-07-07T07:31:25.101159",
+      "last_checked": "2026-07-07T18:14:15.676660",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"83359c4f5ba177c603c99deb395a5517\"",
       "file_path": "documentation/SiriKitCloudMedia/updatemediaaffinityintenthandlinghandleinvocationresponse/result-datadictionary.md"
     },
@@ -2311,9 +2311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/addmediaintenthandlinginvocation/params-data.dictionary.json": {
       "hash": "f1212de7d9cbfc06fcfce2a8ab792e879e7226b49a6efeb906abcb156aa64046",
-      "last_checked": "2026-07-07T07:31:25.194174",
+      "last_checked": "2026-07-07T18:14:15.879408",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"0098396b6dd907dee1538fd4cebbe53e\"",
       "file_path": "documentation/SiriKitCloudMedia/addmediaintenthandlinginvocation/params-datadictionary.md"
     },
@@ -2327,9 +2327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/addmediaintenthandlingresolvemediaitemsinvocationresponse/result-data.dictionary.json": {
       "hash": "2a2bda3392cb0e9a4bb2bfafc9399f54ca3c9769faf23e917ce7a77b188466eb",
-      "last_checked": "2026-07-07T07:31:25.260996",
+      "last_checked": "2026-07-07T18:14:15.936892",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"6ebdd11ba97289aa26e6ced442dab6c1\"",
       "file_path": "documentation/SiriKitCloudMedia/addmediaintenthandlingresolvemediaitemsinvocationresponse/result-datadictionary.md"
     },
@@ -2343,9 +2343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/addmediamediaitemresolutionresult/success-data.dictionary.json": {
       "hash": "03a12aa29eda3bbaebd535e33425e4de3a2375323f2ba689d29c05327243bb7f",
-      "last_checked": "2026-07-07T07:31:25.344299",
+      "last_checked": "2026-07-07T18:14:16.029032",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"be7586713bf7105db1a3473233aa4e28\"",
       "file_path": "documentation/SiriKitCloudMedia/addmediamediaitemresolutionresult/success-datadictionary.md"
     },
@@ -2359,9 +2359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/addmediamediaitemresolutionresult/unsupported-data.dictionary.json": {
       "hash": "6e6f1ce942940968d92f0f80f3680441a94d584bab5af36918fac66751b2e49f",
-      "last_checked": "2026-07-07T07:31:25.447231",
+      "last_checked": "2026-07-07T18:14:16.040638",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"bbe36021aca40a7ebd1023ab4171f5f4\"",
       "file_path": "documentation/SiriKitCloudMedia/addmediamediaitemresolutionresult/unsupported-datadictionary.md"
     },
@@ -2375,9 +2375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/addmediamediaitemunsupportedreason.json": {
       "hash": "68e323b3c22b1f4fe030d51de80a33618cde31a1fd203a4dd3c3e67e05af384c",
-      "last_checked": "2026-07-07T07:31:25.510293",
+      "last_checked": "2026-07-07T18:14:16.267983",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"70a5b106d4dcc8d464f0660f9f85d7ec\"",
       "file_path": "documentation/SiriKitCloudMedia/addmediamediaitemunsupportedreason.md"
     },
@@ -2391,9 +2391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/addmediamediaitemresolutionresult/confirmationrequired-data.dictionary.json": {
       "hash": "f37bbf58c6479a63ca7637730f660620517792f3d56c87e026cf780094de229f",
-      "last_checked": "2026-07-07T07:31:25.607796",
+      "last_checked": "2026-07-07T18:14:16.162638",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"041a827c749eed71c55759f3f1591d38\"",
       "file_path": "documentation/SiriKitCloudMedia/addmediamediaitemresolutionresult/confirmationrequired-datadictionary.md"
     },
@@ -2407,9 +2407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/addmediamediaitemresolutionresult/disambiguation-data.dictionary.json": {
       "hash": "d7dd4675f0b230f5da5938c4776817aedaac752009433b7d462057ca623b47aa",
-      "last_checked": "2026-07-07T07:31:25.667826",
+      "last_checked": "2026-07-07T18:14:16.348297",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"7ed69eea81a038d1e431f6fa9eb30c46\"",
       "file_path": "documentation/SiriKitCloudMedia/addmediamediaitemresolutionresult/disambiguation-datadictionary.md"
     },
@@ -2423,9 +2423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/addmediaintenthandlingresolvemediadestinationinvocationresponse/result-data.dictionary.json": {
       "hash": "54b4a4e331aa1b4d49833bcac3e2c5e1486dd087a3c582d18933ea6b734c7191",
-      "last_checked": "2026-07-07T07:31:25.738623",
+      "last_checked": "2026-07-07T18:14:17.622022",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"c663e944cb8755177e8d8c1644edf4c7\"",
       "file_path": "documentation/SiriKitCloudMedia/addmediaintenthandlingresolvemediadestinationinvocationresponse/result-datadictionary.md"
     },
@@ -2439,9 +2439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/addmediamediadestinationresolutionresult/success-data.dictionary.json": {
       "hash": "fa75486db5a93bcf79978d7f8e827a243e3cf23d7ae294a1f65c4a69baad2615",
-      "last_checked": "2026-07-07T07:31:25.809912",
+      "last_checked": "2026-07-07T18:14:17.749371",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"f810aecfc1dd478093a7c43ccce8ef0f\"",
       "file_path": "documentation/SiriKitCloudMedia/addmediamediadestinationresolutionresult/success-datadictionary.md"
     },
@@ -2455,9 +2455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/mediadestination.json": {
       "hash": "407abb6c0d56943f10ded337d8d4852344dfb7328bf69aac0fff106800edd63c",
-      "last_checked": "2026-07-07T07:31:25.868342",
+      "last_checked": "2026-07-07T18:14:17.960570",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"6926d46509eb49a83ad425ba860356ec\"",
       "file_path": "documentation/SiriKitCloudMedia/mediadestination.md"
     },
@@ -2471,9 +2471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/mediadestinationlibrary.json": {
       "hash": "4088153d82fdaf4a0058d82a73c1da46b9be1e920db2029d58c4cf504dd910f9",
-      "last_checked": "2026-07-07T07:31:25.941005",
+      "last_checked": "2026-07-07T18:14:18.018577",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"e493204795e48b22387a1ac528e7e6dd\"",
       "file_path": "documentation/SiriKitCloudMedia/mediadestinationlibrary.md"
     },
@@ -2487,9 +2487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/mediadestinationplaylist.json": {
       "hash": "6e6fb04919f7cec302e4217da211874ea1f00e6bc083b21042d560f6149528ed",
-      "last_checked": "2026-07-07T07:31:26.011252",
+      "last_checked": "2026-07-07T18:14:18.108835",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"e9f5d601cc666fa8ff020e9147ab0831\"",
       "file_path": "documentation/SiriKitCloudMedia/mediadestinationplaylist.md"
     },
@@ -2503,9 +2503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/addmediamediadestinationresolutionresult/unsupported-data.dictionary.json": {
       "hash": "ef59e3eee6f41a83defe7e713db221ba4f26cee9654603a8e48bd3efdb4889f5",
-      "last_checked": "2026-07-07T07:31:26.112678",
+      "last_checked": "2026-07-07T18:14:18.147335",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"25309c95bec9ed1ccf7c50d7b2c97bf6\"",
       "file_path": "documentation/SiriKitCloudMedia/addmediamediadestinationresolutionresult/unsupported-datadictionary.md"
     },
@@ -2519,9 +2519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/addmediamediadestinationunsupportedreason.json": {
       "hash": "f277093ea5c03d9598977322a9c3b1a007cf4c11d1841f41ac8789035649de46",
-      "last_checked": "2026-07-07T07:31:26.221299",
+      "last_checked": "2026-07-07T18:14:18.210347",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"72e62a1e77836d747c6508c86cc656a1\"",
       "file_path": "documentation/SiriKitCloudMedia/addmediamediadestinationunsupportedreason.md"
     },
@@ -2535,9 +2535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/addmediamediadestinationresolutionresult/confirmationrequired-data.dictionary.json": {
       "hash": "876ecfa1f0493d1bd96dd5169f8f8f22d11731751cd9f177320fa44aa78b7b7e",
-      "last_checked": "2026-07-07T07:31:26.343798",
+      "last_checked": "2026-07-07T18:14:18.290606",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"6c18cde93d88aa54f00eee6ba687f7b5\"",
       "file_path": "documentation/SiriKitCloudMedia/addmediamediadestinationresolutionresult/confirmationrequired-datadictionary.md"
     },
@@ -2551,9 +2551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/addmediamediadestinationresolutionresult/disambiguation-data.dictionary.json": {
       "hash": "ae1b8975c8f0a64972765cec341e851502ada8416e38a5073748469a6ba0eca0",
-      "last_checked": "2026-07-07T07:31:26.419074",
+      "last_checked": "2026-07-07T18:14:18.324882",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"41e6fdca6773d784e8577e7c66f5c545\"",
       "file_path": "documentation/SiriKitCloudMedia/addmediamediadestinationresolutionresult/disambiguation-datadictionary.md"
     },
@@ -2567,9 +2567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/addmediaintenthandlingconfirminvocationresponse/result-data.dictionary.json": {
       "hash": "f0313d0433d405b1c5e125a96b33b8bcffb87fe33b51617277bc6d645dd581b5",
-      "last_checked": "2026-07-07T07:31:26.490023",
+      "last_checked": "2026-07-07T18:14:18.407751",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"489ec7916afe1ec0043860f458501318\"",
       "file_path": "documentation/SiriKitCloudMedia/addmediaintenthandlingconfirminvocationresponse/result-datadictionary.md"
     },
@@ -2583,9 +2583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/addmediaintenthandlinghandleinvocationresponse/result-data.dictionary.json": {
       "hash": "2ddb38e12fde511461679c06eff53f4561d440e60d37f1bb4c8e1d09333d8ccd",
-      "last_checked": "2026-07-07T07:31:26.598454",
+      "last_checked": "2026-07-07T18:14:18.531159",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"8926688a7849f9f3f02a4cf79045c3e5\"",
       "file_path": "documentation/SiriKitCloudMedia/addmediaintenthandlinghandleinvocationresponse/result-datadictionary.md"
     },
@@ -2599,9 +2599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/extensionconfig/media-data.dictionary/queues-data.dictionary/playmedia-data.dictionary.json": {
       "hash": "0f382fb519307d7e0e885a3c4101c112fb4afe89ca7d962c33e84a0773d42a16",
-      "last_checked": "2026-07-07T07:31:26.653602",
+      "last_checked": "2026-07-07T18:14:18.515992",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"a8fdc7809b884da9e2385f2a013ec02f\"",
       "file_path": "documentation/SiriKitCloudMedia/extensionconfig/media-data.dictionary/queues-data.dictionary/playmedia-datadictionary.md"
     },
@@ -2615,9 +2615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/extensionconfig/media-data.dictionary/queues-data.dictionary/updateactivity-data.dictionary.json": {
       "hash": "238b8a3c46e363aed6f1d1d141781432b31258cd6f9cda188c16cb9c70dcb9ef",
-      "last_checked": "2026-07-07T07:31:26.728846",
+      "last_checked": "2026-07-07T18:14:18.653284",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"cae6560d06494b083657ba8b79b9c312\"",
       "file_path": "documentation/SiriKitCloudMedia/extensionconfig/media-data.dictionary/queues-data.dictionary/updateactivity-datadictionary.md"
     },
@@ -2631,9 +2631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/extensionconfig/media-data.dictionary/queues-data.dictionary/contentplaybackfailure-data.dictionary.json": {
       "hash": "26ffb3e928a8058d7381ee7ae200b0bb32eb6d3602e66c062b7dda5d0937dada",
-      "last_checked": "2026-07-07T07:31:26.799388",
+      "last_checked": "2026-07-07T18:14:18.676195",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"249559cc68494ae1f2390da5b86ef7ba\"",
       "file_path": "documentation/SiriKitCloudMedia/extensionconfig/media-data.dictionary/queues-data.dictionary/contentplaybackfailure-datadictionary.md"
     },
@@ -2647,9 +2647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/extensionconfig/media-data.dictionary/queues-data.dictionary/contentprotectionkey-data.dictionary.json": {
       "hash": "8fdd01345a9ff7a0dc15b6eecc1e3e2111b51fb7dc20e5c2f99bb764e0e08dcd",
-      "last_checked": "2026-07-07T07:31:27.636564",
+      "last_checked": "2026-07-07T18:14:18.703559",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"2c867edfa660554cd2121f442d3d8d4c\"",
       "file_path": "documentation/SiriKitCloudMedia/extensionconfig/media-data.dictionary/queues-data.dictionary/contentprotectionkey-datadictionary.md"
     },
@@ -2663,9 +2663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/extensionconfig/media-data.dictionary/queues-data.dictionary/contentprotectionkey-data.dictionary/cks-data.dictionary.json": {
       "hash": "bf462f162c36de8d77cafa6abd727df6483fee9c7563d1f77437327dab608ee4",
-      "last_checked": "2026-07-07T07:31:27.713254",
+      "last_checked": "2026-07-07T18:14:19.728120",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"2ddd706ff3b9a82f28f8c3bfc9ebac15\"",
       "file_path": "documentation/SiriKitCloudMedia/extensionconfig/media-data.dictionary/queues-data.dictionary/contentprotectionkey-data.dictionary/cks-datadictionary.md"
     },
@@ -2679,9 +2679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/sirikitcloudmedia/extensionconfig/media-data.dictionary/queues-data.dictionary/contentprotectionkey-data.dictionary/hdr-data.dictionary.json": {
       "hash": "d605c0ea325bafc29e9e976bf0069fed22a01bf25f4c2a11d5756cf2b6bff326",
-      "last_checked": "2026-07-07T07:31:27.818636",
+      "last_checked": "2026-07-07T18:14:19.793408",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:12.119253",
+      "session_id": "2026-07-07T18:13:58.321499",
       "etag": "W/\"776762ff4e89bc15ce5a1fab7c6fc1ed\"",
       "file_path": "documentation/SiriKitCloudMedia/extensionconfig/media-data.dictionary/queues-data.dictionary/contentprotectionkey-data.dictionary/hdr-datadictionary.md"
     },

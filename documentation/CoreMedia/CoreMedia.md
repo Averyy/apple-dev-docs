@@ -120,4 +120,4 @@ The Core Media framework defines the media pipeline used by AVFoundation and oth
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CoreMedia)*
+*[View on Apple Developer](https://developer.apple.com/documentation/coremedia)*

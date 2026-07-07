@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-07-07T07:32:20.812510",
+    "last_updated": "2026-07-07T18:15:48.557491",
     "total_pages": 36,
-    "session_id": "2026-07-07T07:32:18.024182"
+    "session_id": "2026-07-07T18:15:45.892802"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/MediaSetup.json": {
       "hash": "2b554b9c4396bb38032df6e25379b9fff333c2e1afc62e95bf88bd80a005e438",
-      "last_checked": "2026-07-07T07:32:18.281080",
+      "last_checked": "2026-07-07T18:15:46.231551",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:32:18.024182",
+      "session_id": "2026-07-07T18:15:45.892802",
       "etag": "W/\"e6c1671cf173413cf8469b58ff3c10b0\"",
       "file_path": "documentation/MediaSetup/MediaSetup.md"
     },
     "https://developer.apple.com/documentation/MediaSetup": {
       "hash": "2b554b9c4396bb38032df6e25379b9fff333c2e1afc62e95bf88bd80a005e438",
-      "last_checked": "2026-07-07T07:32:18.179931",
+      "last_checked": "2026-07-07T18:15:46.148662",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:32:18.024182",
+      "session_id": "2026-07-07T18:15:45.892802",
       "etag": "W/\"e6c1671cf173413cf8469b58ff3c10b0\"",
       "file_path": "documentation/MediaSetup/MediaSetup.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/mediasetup/mssetupsession.json": {
       "hash": "6782b5e6772bcbd4f300fb31c97c7494b79d23f0c564fc2ff219548755fe52df",
-      "last_checked": "2026-07-07T07:32:18.531978",
+      "last_checked": "2026-07-07T18:15:46.480551",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:32:18.024182",
+      "session_id": "2026-07-07T18:15:45.892802",
       "etag": "W/\"580ae184dc9e59d14282569e6d7b2ea2\"",
       "file_path": "documentation/MediaSetup/mssetupsession.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mediasetup/msserviceaccount.json": {
       "hash": "a40096a89a4290c715934178ff1e73af3ee6ad81aa14864c21806bf748616da8",
-      "last_checked": "2026-07-07T07:32:18.602374",
+      "last_checked": "2026-07-07T18:15:46.650467",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:32:18.024182",
+      "session_id": "2026-07-07T18:15:45.892802",
       "etag": "W/\"f7f21a123274d41ec27128f19d4abf25\"",
       "file_path": "documentation/MediaSetup/msserviceaccount.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mediasetup/mssetupsession/init(serviceaccount:).json": {
       "hash": "a0e07cb7d5d4c601ad5fd67c628b883ff5eb7422e424613e3d1ed96c7aedbe08",
-      "last_checked": "2026-07-07T07:32:18.720913",
+      "last_checked": "2026-07-07T18:15:46.711455",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:32:18.024182",
+      "session_id": "2026-07-07T18:15:45.892802",
       "etag": "W/\"f64b28c90adb5d63eb9f17a18256e76d\"",
       "file_path": "documentation/MediaSetup/mssetupsession/init-serviceaccount.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mediasetup/mssetupsession/account.json": {
       "hash": "231ce24b3328ac98e2ca20d93234bc7c2940d398849120f17b060c99ca86253c",
-      "last_checked": "2026-07-07T07:32:18.833370",
+      "last_checked": "2026-07-07T18:15:46.839658",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:32:18.024182",
+      "session_id": "2026-07-07T18:15:45.892802",
       "etag": "W/\"bf7760d50702653494ad33a858ffe10f\"",
       "file_path": "documentation/MediaSetup/mssetupsession/account.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mediasetup/mssetupsession/presentationcontext.json": {
       "hash": "0c5c9da98db13df446f6d34db722534c97c4d7c467c201851f427ff53a739e5d",
-      "last_checked": "2026-07-07T07:32:18.915473",
+      "last_checked": "2026-07-07T18:15:46.898969",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:32:18.024182",
+      "session_id": "2026-07-07T18:15:45.892802",
       "etag": "W/\"9f4587364a7703fe9f8e4668761039d1\"",
       "file_path": "documentation/MediaSetup/mssetupsession/presentationcontext.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mediasetup/msauthenticationpresentationcontext.json": {
       "hash": "6c2a4e28106027a08637a817a64a4462fc38cee1f95ad5cbbcb85e795c28f51f",
-      "last_checked": "2026-07-07T07:32:19.009673",
+      "last_checked": "2026-07-07T18:15:47.022065",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:32:18.024182",
+      "session_id": "2026-07-07T18:15:45.892802",
       "etag": "W/\"f75fbc42fcf8979738a3d0c7c4a883c2\"",
       "file_path": "documentation/MediaSetup/msauthenticationpresentationcontext.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mediasetup/mssetupsession/start().json": {
       "hash": "ce3226d5dd4100d6d52f521281a087a28e8fab798afada24a87bbacdf990d915",
-      "last_checked": "2026-07-07T07:32:19.166430",
+      "last_checked": "2026-07-07T18:15:46.997108",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:32:18.024182",
+      "session_id": "2026-07-07T18:15:45.892802",
       "etag": "W/\"1cf3050f016ca0de8630ee7057a33704\"",
       "file_path": "documentation/MediaSetup/mssetupsession/start.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mediasetup/msserviceaccount/init(servicename:accountname:).json": {
       "hash": "fa5a83df9874c297a615d9214c35fb60746cf71688a324101e2e65af1c17286f",
-      "last_checked": "2026-07-07T07:32:19.256717",
+      "last_checked": "2026-07-07T18:15:47.374420",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:32:18.024182",
+      "session_id": "2026-07-07T18:15:45.892802",
       "etag": "W/\"0b550badbee6a908392ed1c50460f3f2\"",
       "file_path": "documentation/MediaSetup/msserviceaccount/init-servicenameaccountname.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mediasetup/msserviceaccount/servicename.json": {
       "hash": "3b1b2ce18022c2a9f785ed4ddf32f01e88b0e36cd675250364ed7e44ba302294",
-      "last_checked": "2026-07-07T07:32:19.395351",
+      "last_checked": "2026-07-07T18:15:47.431430",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:32:18.024182",
+      "session_id": "2026-07-07T18:15:45.892802",
       "etag": "W/\"7fc1a31f4c8595f6af4850c6546f6c9a\"",
       "file_path": "documentation/MediaSetup/msserviceaccount/servicename.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mediasetup/msserviceaccount/accountname.json": {
       "hash": "3fbcb85def5d57e10d6186b41cce030c89b60976641b4b3409c03289b5bd1929",
-      "last_checked": "2026-07-07T07:32:19.476580",
+      "last_checked": "2026-07-07T18:15:47.536643",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:32:18.024182",
+      "session_id": "2026-07-07T18:15:45.892802",
       "etag": "W/\"5a3cee2b80a2fe81b533234a82648a4f\"",
       "file_path": "documentation/MediaSetup/msserviceaccount/accountname.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mediasetup/msserviceaccount/authorizationtokenurl.json": {
       "hash": "e818715991facc8bc2aaa58314226fbfa488b958f7d05db6895df55984b7b4fa",
-      "last_checked": "2026-07-07T07:32:19.714457",
+      "last_checked": "2026-07-07T18:15:47.564799",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:32:18.024182",
+      "session_id": "2026-07-07T18:15:45.892802",
       "etag": "W/\"dcf1e99944b61a3c21a5f6cf145653d1\"",
       "file_path": "documentation/MediaSetup/msserviceaccount/authorizationtokenurl.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mediasetup/msserviceaccount/authorizationscope.json": {
       "hash": "a6a42296b141cdd228bfbe10aef4c81156e7364b800cf3cc5507ee52500ead3d",
-      "last_checked": "2026-07-07T07:32:19.776172",
+      "last_checked": "2026-07-07T18:15:47.656791",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:32:18.024182",
+      "session_id": "2026-07-07T18:15:45.892802",
       "etag": "W/\"1a611f085e3172c41aec1d8ca5940752\"",
       "file_path": "documentation/MediaSetup/msserviceaccount/authorizationscope.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mediasetup/msserviceaccount/clientid.json": {
       "hash": "1c2efaa6b3c46765d9213d38a9e034f871aab9d7e0a6dc84a61f84c3d18d6007",
-      "last_checked": "2026-07-07T07:32:20.018637",
+      "last_checked": "2026-07-07T18:15:47.646983",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:32:18.024182",
+      "session_id": "2026-07-07T18:15:45.892802",
       "etag": "W/\"547fac389f690974252accb3bc30f12d\"",
       "file_path": "documentation/MediaSetup/msserviceaccount/clientid.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mediasetup/msserviceaccount/clientsecret.json": {
       "hash": "8b738c1b36f966e72e79177e57672be6f481e92b7aa51c2508974dfa1f5af981",
-      "last_checked": "2026-07-07T07:32:20.265026",
+      "last_checked": "2026-07-07T18:15:47.717223",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:32:18.024182",
+      "session_id": "2026-07-07T18:15:45.892802",
       "etag": "W/\"35c59e3696bd0194bd3a287b6d346f8c\"",
       "file_path": "documentation/MediaSetup/msserviceaccount/clientsecret.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mediasetup/msserviceaccount/configurationurl.json": {
       "hash": "cf0693e745aff9819c6ac933ee248f398945c8de0780ac09b2a87864eaa73a38",
-      "last_checked": "2026-07-07T07:32:20.322808",
+      "last_checked": "2026-07-07T18:15:47.814993",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:32:18.024182",
+      "session_id": "2026-07-07T18:15:45.892802",
       "etag": "W/\"ba8d2f776a28225b17c539b753ca1c90\"",
       "file_path": "documentation/MediaSetup/msserviceaccount/configurationurl.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mediasetup/msauthenticationpresentationcontext/presentationanchor().json": {
       "hash": "c1aabd38d84f0c78e123776f8e9c592187f88d1220d6d8098319fe92d562d72f",
-      "last_checked": "2026-07-07T07:32:20.575217",
+      "last_checked": "2026-07-07T18:15:48.442482",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:32:18.024182",
+      "session_id": "2026-07-07T18:15:45.892802",
       "etag": "W/\"229dbe0776c4f595e600db467561e779\"",
       "file_path": "documentation/MediaSetup/msauthenticationpresentationcontext/presentationanchor.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mediasetup/mspresentationanchor.json": {
       "hash": "5518ef829cf2044f98219e13f627f518bc7f82e484ed3b914be429ba16fecbb2",
-      "last_checked": "2026-07-07T07:32:20.811383",
+      "last_checked": "2026-07-07T18:15:48.407669",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:32:18.024182",
+      "session_id": "2026-07-07T18:15:45.892802",
       "etag": "W/\"32fbc07c51df84c963dae8afb39674ce\"",
       "file_path": "documentation/MediaSetup/mspresentationanchor.md"
     },

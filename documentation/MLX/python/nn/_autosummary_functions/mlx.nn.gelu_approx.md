@@ -35,6 +35,6 @@ See [gelu()](mlx.nn.gelu.html#mlx.nn.gelu) for the exact computation.
 This function approximates `gelu` with a maximum absolute error \(<
 0.0005\) in the range \([-6, 6]\) using the following
 
-\[x = 0.5 * x * \left(1 + \text{Tanh}\left((\sqrt{2 / \pi} * \left(x + 0.044715 * x^3\right)\right)\right)\]
+\[x = 0.5 * x * \left(1 + \text{Tanh}\left(\sqrt{2 / \pi} * \left(x + 0.044715 * x^3\right)\right)\right)\]
 
 ** Contents

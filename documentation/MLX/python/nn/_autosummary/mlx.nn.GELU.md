@@ -36,7 +36,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.G
 where \(\Phi(x)\) is the Gaussian CDF.
 However, if `approx` is set to ‘precise’ or ‘fast’ it applies
 
-\[\begin{split}\textrm{GELUApprox}(x) &= 0.5 * x * \left(1 + \text{Tanh}\left((\sqrt{2 / \pi} * \left(x + 0.044715 * x^3\right)\right)\right) \\
+\[\begin{split}\textrm{GELUApprox}(x) &= 0.5 * x * \left(1 + \text{Tanh}\left(\sqrt{2 / \pi} * \left(x + 0.044715 * x^3\right)\right)\right) \\
 \textrm{GELUFast}(x) &= x * \sigma\left(1.702 * x\right)\end{split}\]
 respectively.
 

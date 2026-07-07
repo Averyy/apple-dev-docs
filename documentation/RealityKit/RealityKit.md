@@ -181,4 +181,4 @@ Use RealityKit’s rich functionality to create compelling augmented reality (AR
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit)*
+*[View on Apple Developer](https://developer.apple.com/documentation/realitykit)*

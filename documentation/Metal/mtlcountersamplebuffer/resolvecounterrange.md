@@ -1,4 +1,4 @@
-# resolveCounterRange(_:)
+# resolveCounterRange:
 
 **Framework**: Metal  
 **Kind**: method
@@ -9,23 +9,19 @@ Transforms samples of a GPU’s counter set from the driver’s internal format 
 - iOS 14.0+
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
-- macOS 11.0+
+- macOS 10.15+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS 1.0+
 
 ## Declaration
 
 ```swift
-func resolveCounterRange(_ range: Range<Int>) throws -> Data?
+- (NSData *) resolveCounterRange:(NSRange) range;
 ```
-
-## Mentions
-
-- [Converting a GPU’s counter data into a readable format](converting-a-gpus-counter-data-into-a-readable-format.md)
 
 #### Return Value
 
-A [`Data`](https://developer.apple.com/documentation/Foundation/Data) instance in Swift, or an [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) instance in Objective-C, if the method successfully resolves the range of samples in the buffer; otherwise, `nil`.
+An [`NSData`](https://developer.apple.com/documentation/Foundation/NSData) instance if the method successfully resolves the range of samples in the buffer; otherwise, `nil`.
 
 #### Discussion
 
@@ -40,4 +36,4 @@ You can only call this method on a counter sample buffer that you create with [`
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metal/mtlcountersamplebuffer/resolvecounterrange(_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/metal/mtlcountersamplebuffer/resolvecounterrange:)*

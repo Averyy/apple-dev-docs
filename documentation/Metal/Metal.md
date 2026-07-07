@@ -146,4 +146,4 @@ Many high-level Apple frameworks leverage the performance of Metal, including [`
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Metal)*
+*[View on Apple Developer](https://developer.apple.com/documentation/metal)*

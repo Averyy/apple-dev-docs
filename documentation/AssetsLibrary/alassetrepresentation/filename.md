@@ -1,34 +1,15 @@
-# filename()
+# filename
 
 **Framework**: Assets Library  
 **Kind**: method
 
-Returns a string representing the filename of the representation on disk.
-
 ## Declaration
 
 ```swift
-func filename() -> String!
+- (NSString *) filename;
 ```
-
-#### Return Value
-
-A string representing the filename of the representation on disk.
-
-#### Discussion
-
-For representations synced from iTunes, this will be the filename of the representation on the host.
-
-## See Also
-
-- [func orientation() -> ALAssetOrientation](alassetrepresentation/orientation.md)
-  Returns the representation’s orientation.
-- [func scale() -> Float](alassetrepresentation/scale.md)
-  Returns the representation’s scale.
-- [func dimensions() -> CGSize](alassetrepresentation/dimensions.md)
-  Returns the representation’s dimensions.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/assetslibrary/alassetrepresentation/filename())*
+*[View on Apple Developer](https://developer.apple.com/documentation/assetslibrary/alassetrepresentation/filename)*

@@ -1,4 +1,4 @@
 Completed scraping Spatial!
-Total pages scraped: 1440
-Pages skipped (unchanged): 1
+Total pages scraped: 0
+Pages skipped (unchanged): 1441
 Pages failed: 0

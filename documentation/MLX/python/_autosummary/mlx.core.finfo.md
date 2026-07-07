@@ -40,6 +40,9 @@ Methods
 
 Attributes
 
+`bits`
+The number of bits occupied by the type.
+
 `dtype`
 The [Dtype](mlx.core.Dtype.html#mlx.core.Dtype).
 
@@ -51,5 +54,8 @@ The largest representable number.
 
 `min`
 The smallest representable number.
+
+`smallest_normal`
+The smallest positive normal number.
 
 ** Contents

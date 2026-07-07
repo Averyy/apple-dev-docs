@@ -8,7 +8,7 @@ Signature for the block executed during enumeration of assets.
 ## Declaration
 
 ```swift
-typealias ALAssetsGroupEnumerationResultsBlock = (ALAsset?, Int, UnsafeMutablePointer<ObjCBool>?) -> Void
+typedef void (^)(ALAsset *, unsigned long, _Bool *) ALAssetsGroupEnumerationResultsBlock;
 ```
 
 #### Discussion
@@ -29,7 +29,7 @@ If the application is not given access to the data, `result` is `nil`, `index` i
 ## See Also
 
 - [Group Property Names](group-property-names.md)
-  Constants for the names of group properties, used by [`value(forProperty:)`](alassetsgroup/value(forproperty:).md).
+  Constants for the names of group properties, used by `ALAssetsGroup/value(forProperty:)`.
 
 
 ---

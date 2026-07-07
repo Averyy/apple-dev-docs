@@ -33,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.lo
 : Element-wise log-add-exp.
 This is a numerically stable log-add-exp of two arrays with numpy-style
 broadcasting semantics. Either or both input arrays can also be scalars.
-The computation is is a numerically stable version of `log(exp(a) + exp(b))`.
+The computation is a numerically stable version of `log(exp(a) + exp(b))`.
 
 Parameters:
 

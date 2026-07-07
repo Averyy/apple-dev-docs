@@ -471,4 +471,4 @@ To access a Matter accessory on a network, you must commission it. Commissionin
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Matter)*
+*[View on Apple Developer](https://developer.apple.com/documentation/matter)*

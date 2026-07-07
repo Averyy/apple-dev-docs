@@ -104,4 +104,4 @@ For more about Core Foundation, see [`Core Foundation Design Concepts`](https://
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/CoreFoundation)*
+*[View on Apple Developer](https://developer.apple.com/documentation/corefoundation)*

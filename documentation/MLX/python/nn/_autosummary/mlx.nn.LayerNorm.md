@@ -33,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.L
 : Applies layer normalization [1] on the inputs.
 Computes
 
-\[y = \frac{x - E[x]}{\sqrt{Var[x]} + \epsilon} \gamma + \beta,\]
+\[y = \frac{x - E[x]}{\sqrt{Var[x] + \epsilon}} \gamma + \beta,\]
 where \(\gamma\) and \(\beta\) are learned per feature dimension
 parameters initialized at 1 and 0 respectively.
 [1]: [https://arxiv.org/abs/1607.06450](https://arxiv.org/abs/1607.06450)

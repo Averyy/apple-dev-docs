@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-07-07T07:32:21.847497",
+    "last_updated": "2026-07-07T18:15:48.642317",
     "total_pages": 32,
-    "session_id": "2026-07-07T07:32:18.946487"
+    "session_id": "2026-07-07T18:15:46.252997"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/BrowserEngineCore.json": {
       "hash": "7a156b2c571c9453ea27d1325a301823091bb451c702fa7f6c78af9f85ef53b6",
-      "last_checked": "2026-07-07T07:32:19.343864",
+      "last_checked": "2026-07-07T18:15:46.561634",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:32:18.946487",
+      "session_id": "2026-07-07T18:15:46.252997",
       "etag": "W/\"3d3667e1705d014356432f2343128b6a\"",
       "file_path": "documentation/BrowserEngineCore/BrowserEngineCore.md"
     },
     "https://developer.apple.com/documentation/BrowserEngineCore": {
       "hash": "7a156b2c571c9453ea27d1325a301823091bb451c702fa7f6c78af9f85ef53b6",
-      "last_checked": "2026-07-07T07:32:19.254459",
+      "last_checked": "2026-07-07T18:15:46.481176",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:32:18.946487",
+      "session_id": "2026-07-07T18:15:46.252997",
       "etag": "W/\"3d3667e1705d014356432f2343128b6a\"",
       "file_path": "documentation/BrowserEngineCore/BrowserEngineCore.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginecore/be_kevent(_:_:_:_:_:_:).json": {
       "hash": "0737f2187bbd5d588d217071f0c3d90ef5e3884e666e8305ec7ebb9938efb033",
-      "last_checked": "2026-07-07T07:32:19.651758",
+      "last_checked": "2026-07-07T18:15:46.791967",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:32:18.946487",
+      "session_id": "2026-07-07T18:15:46.252997",
       "etag": "W/\"817de07e2ec9f354664299badcfbc416\"",
       "file_path": "documentation/BrowserEngineCore/be-kevent.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginecore/be_kevent64(_:_:_:_:_:_:).json": {
       "hash": "5cc3947d6ce8883183839d1e65fb501a98e1e517f6f955aa85f41a441d749cd0",
-      "last_checked": "2026-07-07T07:32:19.894487",
+      "last_checked": "2026-07-07T18:15:46.996894",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:32:18.946487",
+      "session_id": "2026-07-07T18:15:46.252997",
       "etag": "W/\"fe66fa93481008b71c0a22f0d951ce65\"",
       "file_path": "documentation/BrowserEngineCore/be-kevent64.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginecore/be_kevent_no_flags.json": {
       "hash": "4005817a590545c2ae5a7a94f55cb505f56eeb3c206608862d54569a76b83adb",
-      "last_checked": "2026-07-07T07:32:20.139887",
+      "last_checked": "2026-07-07T18:15:46.962995",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:32:18.946487",
+      "session_id": "2026-07-07T18:15:46.252997",
       "etag": "W/\"e32a50eab6a5b9a0c9f22ccd074497bd\"",
       "file_path": "documentation/BrowserEngineCore/be-kevent-no-flags.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginecore/be_kevent_return_immediately.json": {
       "hash": "65e237e50cadd860e7cfab62e554a666fea4fdcf7dae3debe8b26198139d0f28",
-      "last_checked": "2026-07-07T07:32:20.369925",
+      "last_checked": "2026-07-07T18:15:47.138351",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:32:18.946487",
+      "session_id": "2026-07-07T18:15:46.252997",
       "etag": "W/\"e55904c5b1926bc6d6bd393b06affb4d\"",
       "file_path": "documentation/BrowserEngineCore/be-kevent-return-immediately.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginecore/be_jit_write_protect_tag.json": {
       "hash": "7f5201499e97ea67eba3589886610f4490b883d7777c2b8a7eb7204c64acf75b",
-      "last_checked": "2026-07-07T07:32:20.600472",
+      "last_checked": "2026-07-07T18:15:47.091697",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:32:18.946487",
+      "session_id": "2026-07-07T18:15:46.252997",
       "etag": "W/\"6bb73a5e41edad8374f6340b57b5e0c7\"",
       "file_path": "documentation/BrowserEngineCore/be-jit-write-protect-tag.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginecore/beaudiosession-6b7ig.json": {
       "hash": "f1b3be12930dd73b96a307bf0b64a2fa83dda24f904bdb9d38d428a6b60f6b2d",
-      "last_checked": "2026-07-07T07:32:20.921005",
+      "last_checked": "2026-07-07T18:15:47.250329",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:32:18.946487",
+      "session_id": "2026-07-07T18:15:46.252997",
       "etag": "W/\"c9ffdc986b870d40b0667d03dada5738\"",
       "file_path": "documentation/BrowserEngineCore/beaudiosession-6b7ig.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginecore/beaudiosession-7bb2q.json": {
       "hash": "24b0bb10a713c18e371aca9c36dc3d6305dba6ca2794e6c7c7e4693bf15df6a9",
-      "last_checked": "2026-07-07T07:32:20.663281",
+      "last_checked": "2026-07-07T18:15:47.198975",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:32:18.946487",
+      "session_id": "2026-07-07T18:15:46.252997",
       "etag": "W/\"339ab6ba589181c9b9f1258d13255216\"",
       "file_path": "documentation/BrowserEngineCore/beaudiosession-7bb2q.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginecore/beaudiosession-6b7ig/init(audiosession:).json": {
       "hash": "748818e5a82492de33148a769b38d27f6cf7d837f69e0b2ccd2d26be5c682c75",
-      "last_checked": "2026-07-07T07:32:21.615117",
+      "last_checked": "2026-07-07T18:15:48.019994",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:32:18.946487",
+      "session_id": "2026-07-07T18:15:46.252997",
       "etag": "W/\"6954baa6a49109852001dc3cd65e8119\"",
       "file_path": "documentation/BrowserEngineCore/beaudiosession-6b7ig/init-audiosession.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginecore/beaudiosession-6b7ig/availableoutputs.json": {
       "hash": "dacc4958d51d01cde0ce93bcc9dcc944f3bb089765020aa2cae81e53d9ff3361",
-      "last_checked": "2026-07-07T07:32:21.715169",
+      "last_checked": "2026-07-07T18:15:48.080949",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:32:18.946487",
+      "session_id": "2026-07-07T18:15:46.252997",
       "etag": "W/\"6ed0ee04c80359030b691e28a317b812\"",
       "file_path": "documentation/BrowserEngineCore/beaudiosession-6b7ig/availableoutputs.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginecore/beaudiosession-6b7ig/preferredoutput.json": {
       "hash": "318928d2f6ae7bff3e0f1551c415861bb044ec1749ce810c5ac4c6bf2d135128",
-      "last_checked": "2026-07-07T07:32:21.782204",
+      "last_checked": "2026-07-07T18:15:48.123357",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:32:18.946487",
+      "session_id": "2026-07-07T18:15:46.252997",
       "etag": "W/\"275a0728830a9b0a9c528f0a6ced6256\"",
       "file_path": "documentation/BrowserEngineCore/beaudiosession-6b7ig/preferredoutput.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginecore/beaudiosession-6b7ig/setpreferredoutput(_:).json": {
       "hash": "bbae29c938df73520a6ca0aebb080fb4b16e4c96a0249afe1d99b15caa2dc9f2",
-      "last_checked": "2026-07-07T07:32:21.846318",
+      "last_checked": "2026-07-07T18:15:48.163502",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:32:18.946487",
+      "session_id": "2026-07-07T18:15:46.252997",
       "etag": "W/\"58a7d7f03ba589f02f5d9c5d450deae8\"",
       "file_path": "documentation/BrowserEngineCore/beaudiosession-6b7ig/setpreferredoutput.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginecore/beaudiosession-7bb2q/init(audiosession:).json": {
       "hash": "8d1722a0033ec330cefe31a96ff7a3641bc24969212b8f828416ada92469201b",
-      "last_checked": "2026-07-07T07:32:21.021491",
+      "last_checked": "2026-07-07T18:15:47.758944",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:32:18.946487",
+      "session_id": "2026-07-07T18:15:46.252997",
       "etag": "W/\"f732874ffd39aba18a59ae46b17ee586\"",
       "file_path": "documentation/BrowserEngineCore/beaudiosession-7bb2q/init-audiosession.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginecore/beaudiosession-7bb2q/availableoutputs.json": {
       "hash": "2abe64f14c85621011688e8b9d1f8a8a6cef4a02b5a3338d440fbed4bacd8b0a",
-      "last_checked": "2026-07-07T07:32:21.251333",
+      "last_checked": "2026-07-07T18:15:47.794599",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:32:18.946487",
+      "session_id": "2026-07-07T18:15:46.252997",
       "etag": "W/\"737d5b4d3b17a1403ee7bcf9a4e6ff22\"",
       "file_path": "documentation/BrowserEngineCore/beaudiosession-7bb2q/availableoutputs.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginecore/beaudiosession-7bb2q/preferredoutput.json": {
       "hash": "952cfad0bdb1c127d0529280bbd13278bc70bbac7d6bd23190c0d44fb1d558fd",
-      "last_checked": "2026-07-07T07:32:21.396503",
+      "last_checked": "2026-07-07T18:15:47.863048",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:32:18.946487",
+      "session_id": "2026-07-07T18:15:46.252997",
       "etag": "W/\"9b3b20a4ab2d3624e1ce01ed7d0fdce4\"",
       "file_path": "documentation/BrowserEngineCore/beaudiosession-7bb2q/preferredoutput.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/browserenginecore/beaudiosession-7bb2q/setpreferredoutput(_:).json": {
       "hash": "52a27bef519695ec29f671d6e374a4110c132c30abaa149b9948735cae08b051",
-      "last_checked": "2026-07-07T07:32:21.516051",
+      "last_checked": "2026-07-07T18:15:47.923189",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:32:18.946487",
+      "session_id": "2026-07-07T18:15:46.252997",
       "etag": "W/\"65a26f6aaf154f85b908c33d939d893f\"",
       "file_path": "documentation/BrowserEngineCore/beaudiosession-7bb2q/setpreferredoutput.md"
     },

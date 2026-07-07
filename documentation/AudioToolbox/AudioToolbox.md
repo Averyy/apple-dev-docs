@@ -151,4 +151,4 @@ The AudioToolbox framework provides interfaces for recording, playback, and stre
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AudioToolbox)*
+*[View on Apple Developer](https://developer.apple.com/documentation/audiotoolbox)*

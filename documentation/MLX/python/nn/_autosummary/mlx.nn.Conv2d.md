@@ -48,6 +48,7 @@ applying the filter. Default: `1`.
 **padding** ([int](https://docs.python.org/3/library/functions.html#int)* or *[tuple](https://docs.python.org/3/library/stdtypes.html#tuple)*, **optional*) – How many positions to 0-pad
 the input with. Default: `0`.
 **dilation** ([int](https://docs.python.org/3/library/functions.html#int)* or *[tuple](https://docs.python.org/3/library/stdtypes.html#tuple)*, **optional*) – The dilation of the convolution.
+Default: `1`.
 **groups** ([int](https://docs.python.org/3/library/functions.html#int)*, **optional*) – The number of groups for the convolution.
 Default: `1`.
 **bias** ([bool](https://docs.python.org/3/library/functions.html#bool)*, **optional*) – If `True` add a learnable bias to the

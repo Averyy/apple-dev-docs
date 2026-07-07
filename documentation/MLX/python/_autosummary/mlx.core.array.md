@@ -32,7 +32,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ar
 **class array(**args*, ***kwargs*)**
 : An N-dimensional array object.
 
-__init__(*self: array*, *val: scalar | list | tuple | ndarray | array*, *dtype: Dtype | None = None*)
+__init__(*self: array*, *val: scalar | list | tuple | DLPackCompatible | array*, *dtype: Dtype | None = None*)
 
 Methods
 

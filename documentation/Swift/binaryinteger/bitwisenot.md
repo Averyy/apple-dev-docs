@@ -1,8 +1,7 @@
 # ~(_:)
 
 **Framework**: Swift  
-**Kind**: op  
-**Required**: Yes
+**Kind**: op
 
 Returns the inverse of the bits set in the argument.
 
@@ -38,14 +37,7 @@ let allOnes = ~UInt8.min   // 0b11111111
 
 > **Note**: O(1).
 
-## See Also
-
-- [static func & (Self, Self) -> Self](binaryinteger/&(_:_:).md)
-  Returns the result of performing a bitwise AND operation on the two given values.
-- [static func &= (inout Self, Self)](binaryinteger/&=(_:_:).md)
-  Stores the result of performing a bitwise AND operation on the two given values in the left-hand-side variable.
-
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swift/binaryinteger/~(_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/binaryinteger/~(_:)-6mr7y)*

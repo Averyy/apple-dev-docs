@@ -107,4 +107,4 @@ AppKit also works with [`SwiftUI`](https://developer.apple.com/documentation/Swi
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AppKit)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit)*

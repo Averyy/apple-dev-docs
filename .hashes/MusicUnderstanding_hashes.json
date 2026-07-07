@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-07-07T07:31:54.659642",
-    "total_pages": 188,
-    "session_id": "2026-07-07T07:31:47.015309"
+    "last_updated": "2026-07-07T18:15:05.332084",
+    "total_pages": 178,
+    "session_id": "2026-07-07T18:14:53.439314"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/MusicUnderstanding.json": {
       "hash": "df152113e6f3db791f0d5bd8b90b8adcee89a189752ecd6d0b725d62bd01ac9b",
-      "last_checked": "2026-07-07T07:31:47.296662",
+      "last_checked": "2026-07-07T18:14:53.937959",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"3f292de5ea7b61424da295398db44a05\"",
       "file_path": "documentation/MusicUnderstanding/MusicUnderstanding.md"
     },
     "https://developer.apple.com/documentation/MusicUnderstanding": {
       "hash": "df152113e6f3db791f0d5bd8b90b8adcee89a189752ecd6d0b725d62bd01ac9b",
-      "last_checked": "2026-07-07T07:31:47.186287",
+      "last_checked": "2026-07-07T18:14:53.834125",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"3f292de5ea7b61424da295398db44a05\"",
       "file_path": "documentation/MusicUnderstanding/MusicUnderstanding.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/create-visuals-using-musicunderstanding-analysis-results.json": {
       "hash": "d208b5f8a94bdf55750d712c427df3945fc11d63026ca532fba9a40bd4eef7c6",
-      "last_checked": "2026-07-07T07:31:47.514018",
+      "last_checked": "2026-07-07T18:14:54.226318",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"ce6ce2bb56f6582e73b8ad7d000b4f65\"",
       "file_path": "documentation/MusicUnderstanding/create-visuals-using-musicunderstanding-analysis-results.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/musicunderstandingsession.json": {
       "hash": "140f0d4611f1a5e7255d1614d4e42428a37953f458576368a168be7c755b258a",
-      "last_checked": "2026-07-07T07:31:47.648511",
+      "last_checked": "2026-07-07T18:14:54.434205",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"46e1ae860c072d411ffffc4311eec04d\"",
       "file_path": "documentation/MusicUnderstanding/musicunderstandingsession.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/musicunderstandingsession/sessionresult.json": {
       "hash": "4484d7a998ea7236c61fe25db4dd8e840e8f926cc92d0e2ed88bfdedb364b444",
-      "last_checked": "2026-07-07T07:31:47.732958",
+      "last_checked": "2026-07-07T18:14:54.553843",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"35c42b5b2540362abe78e7c2f534758e\"",
       "file_path": "documentation/MusicUnderstanding/musicunderstandingsession/sessionresult.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/rhythmresult.json": {
       "hash": "4ab16b5a6315fa9489a24ec7e94822ac005253e31b6027aff8fb8e97343fe28b",
-      "last_checked": "2026-07-07T07:31:47.837123",
+      "last_checked": "2026-07-07T18:14:54.598593",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"2114b9ebd17fd1dcaf6bfe4fd1f5fe99\"",
       "file_path": "documentation/MusicUnderstanding/rhythmresult.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/keyresult.json": {
       "hash": "d92b5c83adfa620b43196836fa39e061c80104b86f4ac21a6a30b40906e19483",
-      "last_checked": "2026-07-07T07:31:47.945276",
+      "last_checked": "2026-07-07T18:14:54.684673",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"c034b926612906dc3a3c565e49ddcb8d\"",
       "file_path": "documentation/MusicUnderstanding/keyresult.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/loudnessresult.json": {
       "hash": "66ceb38e8cc803cd3e8874cc709c66849dd1d30dab0a033cdedebce40a913edb",
-      "last_checked": "2026-07-07T07:31:48.024613",
+      "last_checked": "2026-07-07T18:14:54.598798",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"94254cb89c1930c695b829ebe4ebbeff\"",
       "file_path": "documentation/MusicUnderstanding/loudnessresult.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/paceresult.json": {
       "hash": "6a36bde7b566b70485d4a481c7e7cc50b8b1aa87b8f6ef05ce05a899caf6b45b",
-      "last_checked": "2026-07-07T07:31:48.088374",
+      "last_checked": "2026-07-07T18:14:54.713701",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"26cc295f8f9a3fe81d578a7afd52bec8\"",
       "file_path": "documentation/MusicUnderstanding/paceresult.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/structureresult.json": {
       "hash": "7b0cfba23f3fcaa30b3eb57a68a1e198c95f4dcf624e2f9b4a1b4d80548c62bd",
-      "last_checked": "2026-07-07T07:31:48.217813",
+      "last_checked": "2026-07-07T18:14:54.717345",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"3be9872316a124bc0be8193769413d4e\"",
       "file_path": "documentation/MusicUnderstanding/structureresult.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/instrumentactivityresult.json": {
       "hash": "6a94da8924ac423e397aa1c7fd5c0e9c9f80e958d65eb37ca119cb3c8a465f59",
-      "last_checked": "2026-07-07T07:31:48.364567",
+      "last_checked": "2026-07-07T18:14:54.886135",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"f12e8457e064d2bdc1037268b03624f4\"",
       "file_path": "documentation/MusicUnderstanding/instrumentactivityresult.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/musicunderstandingsession/timedvalue.json": {
       "hash": "827a3dede394072d6dd6005426d3e1c5bef55dde042455976cbae6044c7f89f4",
-      "last_checked": "2026-07-07T07:31:48.467976",
+      "last_checked": "2026-07-07T18:14:55.101315",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"878f06c61cd6fe578fc259ea39edf6cd\"",
       "file_path": "documentation/MusicUnderstanding/musicunderstandingsession/timedvalue.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/musicunderstandingsession/rangedvalue.json": {
       "hash": "b3a85a19df86f1df8e7130ff67126e800e265822cbfa2ea387a68b2e2ab2aaa1",
-      "last_checked": "2026-07-07T07:31:48.537401",
+      "last_checked": "2026-07-07T18:14:55.020379",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"e69809b319c22847f7cf965671747c30\"",
       "file_path": "documentation/MusicUnderstanding/musicunderstandingsession/rangedvalue.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/analysistype.json": {
       "hash": "ec5236d0d85c20baca876df2499d086dc7350377d4a97e40b1128f98ba7dbac2",
-      "last_checked": "2026-07-07T07:31:48.625908",
+      "last_checked": "2026-07-07T18:14:55.090622",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"3ec9d2f777dfec44c6db2bb35e175a46\"",
       "file_path": "documentation/MusicUnderstanding/analysistype.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/musicunderstandingerror.json": {
       "hash": "e8fc67e957052d4030fa63981d880ac5c994404af731a5832a037a61e7794729",
-      "last_checked": "2026-07-07T07:31:48.693269",
+      "last_checked": "2026-07-07T18:14:55.153639",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"0c34505375e8dd5eae28db1e09b1793b\"",
       "file_path": "documentation/MusicUnderstanding/musicunderstandingerror.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/musicunderstandingsession/init(audioprovider:).json": {
       "hash": "2fb22e80934d4840961c52de2813afdf47499ee019790ede5e1eac881b83d0c6",
-      "last_checked": "2026-07-07T07:31:48.771224",
+      "last_checked": "2026-07-07T18:14:55.881346",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"d46a7a37918e4b94189a8f862fc9efc1\"",
       "file_path": "documentation/MusicUnderstanding/musicunderstandingsession/init-audioprovider.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/musicunderstandingsession/init(asset:).json": {
       "hash": "f152d0ac1e3b4637968543bed8f64a15adb8975a77605c81621e883598f0aeb0",
-      "last_checked": "2026-07-07T07:31:48.881759",
+      "last_checked": "2026-07-07T18:14:55.748796",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"0a76abb089c86725f3db010b8768fd46\"",
       "file_path": "documentation/MusicUnderstanding/musicunderstandingsession/init-asset.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/musicunderstandingsession/analyze().json": {
       "hash": "dbfafbac73fda45b1308a680d4adcc674c6e078a3677e05766e5f5dac6dcf035",
-      "last_checked": "2026-07-07T07:31:48.991617",
+      "last_checked": "2026-07-07T18:14:55.909748",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"72a871e3a3f1567066aecf6e5aafb077\"",
       "file_path": "documentation/MusicUnderstanding/musicunderstandingsession/analyze.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/musicunderstandingsession/analyze(for:).json": {
       "hash": "0e8239a78d6cba6c73dcad794edb73ad8c9dc7a786e3323271b788509f971c03",
-      "last_checked": "2026-07-07T07:31:49.098029",
+      "last_checked": "2026-07-07T18:14:55.958365",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"d2439a79f22123813783e0c92b75df33\"",
       "file_path": "documentation/MusicUnderstanding/musicunderstandingsession/analyze-for.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/musicunderstandingsession/loudnessresults.json": {
       "hash": "f89a987217b5d2f0f9852745b47b5017ff559af5d7105194087f6d1f2a2d2c11",
-      "last_checked": "2026-07-07T07:31:49.163028",
+      "last_checked": "2026-07-07T18:14:55.904486",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"31aa70b284c75a8ebf6a0ade0ee702e4\"",
       "file_path": "documentation/MusicUnderstanding/musicunderstandingsession/loudnessresults.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/musicunderstandingsession/cancel().json": {
       "hash": "9dcdaf581273c5b86037198a42556b5e9e855837a6613704e974322b6b178fc9",
-      "last_checked": "2026-07-07T07:31:49.242461",
+      "last_checked": "2026-07-07T18:14:56.092382",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"f985e65fc95cb727de45c14d63ede94f\"",
       "file_path": "documentation/MusicUnderstanding/musicunderstandingsession/cancel.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/musicunderstandingsession/sessionresult/instrumentactivity.json": {
       "hash": "d886b78686755427ab89ea1d2c3f86b251313915679a826742456c7cbfc5cc0d",
-      "last_checked": "2026-07-07T07:31:49.356710",
+      "last_checked": "2026-07-07T18:14:56.261466",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"2d5aba4dbe3517e242cb95dbd7166545\"",
       "file_path": "documentation/MusicUnderstanding/musicunderstandingsession/sessionresult/instrumentactivity.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/musicunderstandingsession/sessionresult/key.json": {
       "hash": "f83f5baec59aa8b36d1b6c1ba0a48711bb18448d92631279b191fce5a5ac8957",
-      "last_checked": "2026-07-07T07:31:49.416371",
+      "last_checked": "2026-07-07T18:14:56.328637",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"62e97b30030b57b024d7ba7ed38a0306\"",
       "file_path": "documentation/MusicUnderstanding/musicunderstandingsession/sessionresult/key.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/musicunderstandingsession/sessionresult/loudness.json": {
       "hash": "f49dcb0c8fc0a524620bb7e721e142d8731c2365aeec335be8c65eef411200b4",
-      "last_checked": "2026-07-07T07:31:49.606723",
+      "last_checked": "2026-07-07T18:14:56.508587",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"7da135dc770720896d6c51196679a29e\"",
       "file_path": "documentation/MusicUnderstanding/musicunderstandingsession/sessionresult/loudness.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/musicunderstandingsession/sessionresult/pace.json": {
       "hash": "7e2c8fc956fa5829ee76695e2a1075e4d1bad1f9650cdf9e0b912c22cbe531e1",
-      "last_checked": "2026-07-07T07:31:49.715219",
+      "last_checked": "2026-07-07T18:14:56.428728",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"72651bee172964d76bfd560de35dfcb8\"",
       "file_path": "documentation/MusicUnderstanding/musicunderstandingsession/sessionresult/pace.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/musicunderstandingsession/sessionresult/rhythm.json": {
       "hash": "cd50b77d83616e0b3691441de6e6370bc5626955bd8b1382d932b9b59ea1cfb4",
-      "last_checked": "2026-07-07T07:31:49.777756",
+      "last_checked": "2026-07-07T18:14:56.467163",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"6a399d9ec5ac882ad72b5e0cd24c81cf\"",
       "file_path": "documentation/MusicUnderstanding/musicunderstandingsession/sessionresult/rhythm.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/musicunderstandingsession/sessionresult/structure.json": {
       "hash": "33c75586a87b9e945b3140b8a5841954ef7b3a37a61bf1477756785a8fa275ff",
-      "last_checked": "2026-07-07T07:31:49.866816",
+      "last_checked": "2026-07-07T18:14:56.624120",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"ed87c580d67ec20b61752fcca0cc39e8\"",
       "file_path": "documentation/MusicUnderstanding/musicunderstandingsession/sessionresult/structure.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/rhythmresult/bars.json": {
       "hash": "d95a8e2370b8bf4f9b137d3e36e8df02be724c3a334dc784606857572b9378c3",
-      "last_checked": "2026-07-07T07:31:49.972335",
+      "last_checked": "2026-07-07T18:14:57.553704",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"03070ce1391b151e2b25f96e3b19dda7\"",
       "file_path": "documentation/MusicUnderstanding/rhythmresult/bars.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/rhythmresult/beats.json": {
       "hash": "3c06667c09807bc7e049219fb8bcb36c7523bc73967eb8763f465995b8e81a3d",
-      "last_checked": "2026-07-07T07:31:50.031764",
+      "last_checked": "2026-07-07T18:14:57.702332",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"e55a803e3add27bbb4e3d32313b9f407\"",
       "file_path": "documentation/MusicUnderstanding/rhythmresult/beats.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/rhythmresult/beatsperminute.json": {
       "hash": "6be49678d71ef7a1d433a095655c52f7867a1241324ca2ccd6588f0e54cec760",
-      "last_checked": "2026-07-07T07:31:50.101393",
+      "last_checked": "2026-07-07T18:14:57.761947",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"070d362934923c7201412b128839a15f\"",
       "file_path": "documentation/MusicUnderstanding/rhythmresult/beatsperminute.md"
     },
@@ -469,27 +469,11 @@
       "etag": "W/\"070d362934923c7201412b128839a15f\"",
       "file_path": "documentation/MusicUnderstanding/rhythmresult/beatsperminute.md"
     },
-    "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/rhythmresult/debugdescription.json": {
-      "hash": "f435568929e7b9058611ee19c20446764ce3cc6cba68ea1f8b4327f480f9793f",
-      "last_checked": "2026-06-19T07:44:28.986293",
-      "status": "unchanged",
-      "session_id": "2026-06-19T07:44:22.284689",
-      "etag": "W/\"050da04df1755f6a6de36c04a0f999ce\"",
-      "file_path": "documentation/MusicUnderstanding/rhythmresult/debugdescription.md"
-    },
-    "https://developer.apple.com/documentation/musicunderstanding/rhythmresult/debugdescription": {
-      "hash": "f435568929e7b9058611ee19c20446764ce3cc6cba68ea1f8b4327f480f9793f",
-      "last_checked": "2026-06-12T07:45:11.298937",
-      "status": "unchanged",
-      "session_id": "2026-06-12T07:45:06.390083",
-      "etag": "W/\"050da04df1755f6a6de36c04a0f999ce\"",
-      "file_path": "documentation/MusicUnderstanding/rhythmresult/debugdescription.md"
-    },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/keyresult/ranges.json": {
       "hash": "942e768b4bc48cdad4c43a153fab5f5ddf4996fceb3ab5fa0c12c921ef39b6f9",
-      "last_checked": "2026-07-07T07:31:50.202039",
+      "last_checked": "2026-07-07T18:14:56.959893",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"114e459894edfa8874e5543f85b8cf1d\"",
       "file_path": "documentation/MusicUnderstanding/keyresult/ranges.md"
     },
@@ -503,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/keyresult/keysignature/mode.json": {
       "hash": "93f4f9c8f30f2c674588a5f63b6a7d89e87ff421ebfae25f96932634541e9a88",
-      "last_checked": "2026-07-07T07:31:50.272748",
+      "last_checked": "2026-07-07T18:14:56.981909",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"37946bd19629a5e78b020c5f06f48d65\"",
       "file_path": "documentation/MusicUnderstanding/keyresult/keysignature/mode.md"
     },
@@ -519,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/keyresult/keysignature.json": {
       "hash": "c7b493e1b07c53e484fb406c32c94a032f802b762726baadb8ddf5edd68cb765",
-      "last_checked": "2026-07-07T07:31:50.346317",
+      "last_checked": "2026-07-07T18:14:56.978832",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"e821dc1e1f5b2dec10418b9fd4488167\"",
       "file_path": "documentation/MusicUnderstanding/keyresult/keysignature.md"
     },
@@ -535,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/keyresult/keysignature/tonic.json": {
       "hash": "1256458d5cbfd8c87ea6d9e765987647f2a28bc63dca17439dc84f7da8a539e0",
-      "last_checked": "2026-07-07T07:31:50.441480",
+      "last_checked": "2026-07-07T18:14:57.141639",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"154dc4da2d113c707496a443225615fd\"",
       "file_path": "documentation/MusicUnderstanding/keyresult/keysignature/tonic.md"
     },
@@ -551,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/keyresult/mode.json": {
       "hash": "6979d654ce854b292add5dc6d3ad40c547a3b315cb90be1a6096af7632e28806",
-      "last_checked": "2026-07-07T07:31:50.503797",
+      "last_checked": "2026-07-07T18:14:57.181677",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"704353066a69cba8f50f175052013e45\"",
       "file_path": "documentation/MusicUnderstanding/keyresult/mode.md"
     },
@@ -567,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/keyresult/tonic.json": {
       "hash": "0bf57244c397c63ac89c46fc33d6d5cca44bf4a471f2ec700e789d4b20f4a5f4",
-      "last_checked": "2026-07-07T07:31:50.592443",
+      "last_checked": "2026-07-07T18:14:57.186856",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"5f820c89ee2349a510387f368bc2bc8c\"",
       "file_path": "documentation/MusicUnderstanding/keyresult/tonic.md"
     },
@@ -583,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/loudnessresult/integrated.json": {
       "hash": "0d1a322606b0b5e4832d61cb71eb983abeee8c617bccad504252481a5c40ab94",
-      "last_checked": "2026-07-07T07:31:50.646401",
+      "last_checked": "2026-07-07T18:14:56.620414",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"360fd7f09f95b37f79dd9e22f3c649c7\"",
       "file_path": "documentation/MusicUnderstanding/loudnessresult/integrated.md"
     },
@@ -599,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/loudnessresult/momentary.json": {
       "hash": "b9940e9ef9f7a9a8faf84e3323878ae2acfe7e6270e2fc980f41af058839070a",
-      "last_checked": "2026-07-07T07:31:50.718006",
+      "last_checked": "2026-07-07T18:14:56.745554",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"07e0b15ac7b89ac3fbf24988210429c7\"",
       "file_path": "documentation/MusicUnderstanding/loudnessresult/momentary.md"
     },
@@ -615,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/loudnessresult/peak.json": {
       "hash": "b4f92ada561426eadbb97863f30e7b79c72bdb2f57d50a5381b5f2239e634010",
-      "last_checked": "2026-07-07T07:31:50.839589",
+      "last_checked": "2026-07-07T18:14:56.716224",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"b30d7d571e93a2d9f829c664f9042c1f\"",
       "file_path": "documentation/MusicUnderstanding/loudnessresult/peak.md"
     },
@@ -631,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/loudnessresult/shortterm.json": {
       "hash": "6c2c812251b04f0b566bb56ba2af2473b87a7f604d31df630b72255fc67eb3c3",
-      "last_checked": "2026-07-07T07:31:50.931981",
+      "last_checked": "2026-07-07T18:14:56.791900",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"8089a415afcdc5bbefddd5d8fbad1e67\"",
       "file_path": "documentation/MusicUnderstanding/loudnessresult/shortterm.md"
     },
@@ -645,27 +629,11 @@
       "etag": "W/\"8089a415afcdc5bbefddd5d8fbad1e67\"",
       "file_path": "documentation/MusicUnderstanding/loudnessresult/shortterm.md"
     },
-    "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/loudnessresult/debugdescription.json": {
-      "hash": "4ead173860d318aae23c3490dc4580b655915232a02de9d9b11f1e1bd3c6d1c5",
-      "last_checked": "2026-06-19T07:44:31.044130",
-      "status": "unchanged",
-      "session_id": "2026-06-19T07:44:22.284689",
-      "etag": "W/\"d4e92bbd9b9e799a9c9d25e9b5771455\"",
-      "file_path": "documentation/MusicUnderstanding/loudnessresult/debugdescription.md"
-    },
-    "https://developer.apple.com/documentation/musicunderstanding/loudnessresult/debugdescription": {
-      "hash": "4ead173860d318aae23c3490dc4580b655915232a02de9d9b11f1e1bd3c6d1c5",
-      "last_checked": "2026-06-12T07:45:12.334980",
-      "status": "unchanged",
-      "session_id": "2026-06-12T07:45:06.390083",
-      "etag": "W/\"d4e92bbd9b9e799a9c9d25e9b5771455\"",
-      "file_path": "documentation/MusicUnderstanding/loudnessresult/debugdescription.md"
-    },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/paceresult/ranges.json": {
       "hash": "d31cf2a5198fca67a97c3f68ad6a58ef354ade4a22ed57dcbec2e0cd2187a12a",
-      "last_checked": "2026-07-07T07:31:51.010748",
+      "last_checked": "2026-07-07T18:14:58.727903",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"e01fb293e0888e7ced6bffacc0d7e649\"",
       "file_path": "documentation/MusicUnderstanding/paceresult/ranges.md"
     },
@@ -677,43 +645,11 @@
       "etag": "W/\"e01fb293e0888e7ced6bffacc0d7e649\"",
       "file_path": "documentation/MusicUnderstanding/paceresult/ranges.md"
     },
-    "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/paceresult/debugdescription.json": {
-      "hash": "9c5ac42e5963b6cfd12a7bf5e562762a73a8f2457788881639fb1a75df3820d0",
-      "last_checked": "2026-06-19T07:44:31.516542",
-      "status": "unchanged",
-      "session_id": "2026-06-19T07:44:22.284689",
-      "etag": "W/\"b2dfa98a0e24970dfb7c028639c1e387\"",
-      "file_path": "documentation/MusicUnderstanding/paceresult/debugdescription.md"
-    },
-    "https://developer.apple.com/documentation/musicunderstanding/paceresult/debugdescription": {
-      "hash": "9c5ac42e5963b6cfd12a7bf5e562762a73a8f2457788881639fb1a75df3820d0",
-      "last_checked": "2026-06-12T07:45:12.497209",
-      "status": "unchanged",
-      "session_id": "2026-06-12T07:45:06.390083",
-      "etag": "W/\"b2dfa98a0e24970dfb7c028639c1e387\"",
-      "file_path": "documentation/MusicUnderstanding/paceresult/debugdescription.md"
-    },
-    "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/structureresult/debugdescription.json": {
-      "hash": "9abbabc06c2f943f7fc063fc5b66ade89c27a2bce3857e8f903f707be2a07ac5",
-      "last_checked": "2026-06-19T07:44:31.681371",
-      "status": "unchanged",
-      "session_id": "2026-06-19T07:44:22.284689",
-      "etag": "W/\"8b74f8b159a61f13944b8454c14beabb\"",
-      "file_path": "documentation/MusicUnderstanding/structureresult/debugdescription.md"
-    },
-    "https://developer.apple.com/documentation/musicunderstanding/structureresult/debugdescription": {
-      "hash": "9abbabc06c2f943f7fc063fc5b66ade89c27a2bce3857e8f903f707be2a07ac5",
-      "last_checked": "2026-06-12T07:45:12.621546",
-      "status": "unchanged",
-      "session_id": "2026-06-12T07:45:06.390083",
-      "etag": "W/\"8b74f8b159a61f13944b8454c14beabb\"",
-      "file_path": "documentation/MusicUnderstanding/structureresult/debugdescription.md"
-    },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/structureresult/phrases.json": {
       "hash": "5b9b62778c801934648e6a49e16a941556adbdbdf7ace2fec0a1848f2d98dec9",
-      "last_checked": "2026-07-07T07:31:51.086683",
+      "last_checked": "2026-07-07T18:14:59.604989",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"1fb4b4a74d2299eefbce8f42db427566\"",
       "file_path": "documentation/MusicUnderstanding/structureresult/phrases.md"
     },
@@ -727,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/structureresult/sections.json": {
       "hash": "40c59c8ec395dba187a8f91ef67be4bdaf26aa6f5bb8f52e8bf5884e1fb6ded5",
-      "last_checked": "2026-07-07T07:31:51.143734",
+      "last_checked": "2026-07-07T18:14:59.616443",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"e4b4d1858e996de0eeedac2deec937d0\"",
       "file_path": "documentation/MusicUnderstanding/structureresult/sections.md"
     },
@@ -743,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/structureresult/segments.json": {
       "hash": "7f0b198b911867c7b4e6e34a1668e55b7d8a479fb794c8123cff49e57382c83a",
-      "last_checked": "2026-07-07T07:31:51.211148",
+      "last_checked": "2026-07-07T18:14:59.695248",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"4f5e8bb731310a75a5725972d628c37a\"",
       "file_path": "documentation/MusicUnderstanding/structureresult/segments.md"
     },
@@ -759,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/instrumentactivityresult/instrument.json": {
       "hash": "6829d8d78c4d2aae3200f9090272919f28f31e5f09306bbfba80c440958a3980",
-      "last_checked": "2026-07-07T07:31:51.333765",
+      "last_checked": "2026-07-07T18:14:58.939868",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"90cf9cc529a8ff63bb29352be28494a3\"",
       "file_path": "documentation/MusicUnderstanding/instrumentactivityresult/instrument.md"
     },
@@ -775,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/instrumentactivityresult/activity.json": {
       "hash": "5419d0e215fee3f0465d7270ab8dedf4b780276e8c4aac3592ca124c4522722d",
-      "last_checked": "2026-07-07T07:31:51.444506",
+      "last_checked": "2026-07-07T18:14:58.975255",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"980402edf69fe6544333fd570b0605d0\"",
       "file_path": "documentation/MusicUnderstanding/instrumentactivityresult/activity.md"
     },
@@ -789,27 +725,11 @@
       "etag": "W/\"980402edf69fe6544333fd570b0605d0\"",
       "file_path": "documentation/MusicUnderstanding/instrumentactivityresult/activity.md"
     },
-    "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/instrumentactivityresult/debugdescription.json": {
-      "hash": "c132a98fea844138f53ec86d9846943d216aba12c7d7fc3b34be48a529cecd96",
-      "last_checked": "2026-06-19T07:44:32.697056",
-      "status": "unchanged",
-      "session_id": "2026-06-19T07:44:22.284689",
-      "etag": "W/\"b914d2035f875cd81395f1ce302d4e08\"",
-      "file_path": "documentation/MusicUnderstanding/instrumentactivityresult/debugdescription.md"
-    },
-    "https://developer.apple.com/documentation/musicunderstanding/instrumentactivityresult/debugdescription": {
-      "hash": "c132a98fea844138f53ec86d9846943d216aba12c7d7fc3b34be48a529cecd96",
-      "last_checked": "2026-06-12T07:45:13.142849",
-      "status": "unchanged",
-      "session_id": "2026-06-12T07:45:06.390083",
-      "etag": "W/\"b914d2035f875cd81395f1ce302d4e08\"",
-      "file_path": "documentation/MusicUnderstanding/instrumentactivityresult/debugdescription.md"
-    },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/instrumentactivityresult/ranges.json": {
       "hash": "3ec584cb5121d01aeabf0caa34829ceed3d48e33984d31f4f943c52789d3069f",
-      "last_checked": "2026-07-07T07:31:51.519294",
+      "last_checked": "2026-07-07T18:14:59.037268",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"e1b9a14fba4e31aa17726e4c58329016\"",
       "file_path": "documentation/MusicUnderstanding/instrumentactivityresult/ranges.md"
     },
@@ -823,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/musicunderstandingsession/timedvalue/time.json": {
       "hash": "756cd42bad81457ab6bb46023cae6be4d3164790b3ad0210a67215e20ba62d84",
-      "last_checked": "2026-07-07T07:31:51.599400",
+      "last_checked": "2026-07-07T18:15:00.687562",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"a630fa6d446833bea69b72056183a1c0\"",
       "file_path": "documentation/MusicUnderstanding/musicunderstandingsession/timedvalue/time.md"
     },
@@ -839,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/musicunderstandingsession/timedvalue/value.json": {
       "hash": "7ddf1ed9ec26756aa6c8e65442d08461509a76208bc2662684d169c662ccc72a",
-      "last_checked": "2026-07-07T07:31:51.671735",
+      "last_checked": "2026-07-07T18:15:00.833560",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"d4d1479f38de8437ce94cd3ab4e5c7bb\"",
       "file_path": "documentation/MusicUnderstanding/musicunderstandingsession/timedvalue/value.md"
     },
@@ -855,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/musicunderstandingsession/timedvalue/init(from:).json": {
       "hash": "f86eea0756246e71511669439fc763ce4eea40f4235fba88eb0d278cb18c557e",
-      "last_checked": "2026-07-07T07:31:51.742251",
+      "last_checked": "2026-07-07T18:15:00.930801",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"6fd879c65dea403c3b9c0758f35db714\"",
       "file_path": "documentation/MusicUnderstanding/musicunderstandingsession/timedvalue/init-from.md"
     },
@@ -871,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/musicunderstandingsession/timedvalue/encode(to:).json": {
       "hash": "41abbbd3356fb1cc4eff8f4abf9d46b2033350e614bb4ba8cee7798f5187915b",
-      "last_checked": "2026-07-07T07:31:51.809826",
+      "last_checked": "2026-07-07T18:15:01.971744",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"4b9fc655693dbd39d0e5f615e31e5ff8\"",
       "file_path": "documentation/MusicUnderstanding/musicunderstandingsession/timedvalue/encode-to.md"
     },
@@ -887,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/musicunderstandingsession/rangedvalue/range.json": {
       "hash": "6f63ce405b86cb31a5a6646e6a80d26a5ab291887c74aad0bf8714557e49b6dd",
-      "last_checked": "2026-07-07T07:31:51.894389",
+      "last_checked": "2026-07-07T18:14:59.154056",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"d43d3f246e5ec42598f4d2e20d2fb997\"",
       "file_path": "documentation/MusicUnderstanding/musicunderstandingsession/rangedvalue/range.md"
     },
@@ -903,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/musicunderstandingsession/rangedvalue/value.json": {
       "hash": "6276e95a813e13dffed09283f823b5ed0cc80f429079a263855892743f924670",
-      "last_checked": "2026-07-07T07:31:51.967211",
+      "last_checked": "2026-07-07T18:14:59.358871",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"79fc9a10fceb01aa28de7bc1c9ff5184\"",
       "file_path": "documentation/MusicUnderstanding/musicunderstandingsession/rangedvalue/value.md"
     },
@@ -919,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/musicunderstandingsession/rangedvalue/init(from:).json": {
       "hash": "ca2fdc6ffbba945de9f9453332e15f53a578a06f68f4f6959c4f010d913ade21",
-      "last_checked": "2026-07-07T07:31:52.033962",
+      "last_checked": "2026-07-07T18:14:59.428423",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"25bfe9e7dfb2b355b146c61a8d48654f\"",
       "file_path": "documentation/MusicUnderstanding/musicunderstandingsession/rangedvalue/init-from.md"
     },
@@ -935,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/musicunderstandingsession/rangedvalue/encode(to:).json": {
       "hash": "e7ba124a07a74bb60a8b6dfe417a7452661234aab6f3b7aa7196de95c3994df0",
-      "last_checked": "2026-07-07T07:31:52.097280",
+      "last_checked": "2026-07-07T18:14:59.507210",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"fb3e42c9aa1b4ff16e5ab0ef27e259f1\"",
       "file_path": "documentation/MusicUnderstanding/musicunderstandingsession/rangedvalue/encode-to.md"
     },
@@ -951,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/analysistype/key.json": {
       "hash": "7ca36ff8878a993218a5c3b47a268035e7f4e1e81ac07a70f754c843bf046ee1",
-      "last_checked": "2026-07-07T07:31:52.175122",
+      "last_checked": "2026-07-07T18:15:00.035956",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"c196b2d4e138d7e245ff405178d63036\"",
       "file_path": "documentation/MusicUnderstanding/analysistype/key.md"
     },
@@ -967,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/analysistype/instrumentactivity.json": {
       "hash": "bf5c93c745c560e6b88b50f8c90d8254ff51e9ef16aacb59a852d58f5fa9a48d",
-      "last_checked": "2026-07-07T07:31:52.257115",
+      "last_checked": "2026-07-07T18:15:00.095012",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"a3412b8e800405cfc5a2382b7b6bf41b\"",
       "file_path": "documentation/MusicUnderstanding/analysistype/instrumentactivity.md"
     },
@@ -983,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/analysistype/loudness.json": {
       "hash": "82440ca433a787bf3f93dfbcb4bbe90506b0a064a5ec7351284d4d8fcedc0eea",
-      "last_checked": "2026-07-07T07:31:52.312518",
+      "last_checked": "2026-07-07T18:15:00.186423",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"b84e24f559276b907840ac88358d4a3a\"",
       "file_path": "documentation/MusicUnderstanding/analysistype/loudness.md"
     },
@@ -999,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/analysistype/pace.json": {
       "hash": "088196c77cc3ac95b9e314d344e0b5180f0b2d10e776b1f1b42b50399404dfce",
-      "last_checked": "2026-07-07T07:31:52.409005",
+      "last_checked": "2026-07-07T18:15:00.219762",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"3aa4f472b230f048214e892e25677f80\"",
       "file_path": "documentation/MusicUnderstanding/analysistype/pace.md"
     },
@@ -1015,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/analysistype/rawvalue.json": {
       "hash": "e5e1ff00f6f49c02e45ba9ab6d5864ba6003fbb238e871dd8c5721a6dafff4ab",
-      "last_checked": "2026-07-07T07:31:52.482347",
+      "last_checked": "2026-07-07T18:15:00.270727",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"57c2d5ca3d07642ede85004754a8343f\"",
       "file_path": "documentation/MusicUnderstanding/analysistype/rawvalue.md"
     },
@@ -1031,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/analysistype/rhythm.json": {
       "hash": "247fb8df17e0625c34cd6038e0fb55fcd468202ffc361843f91a588e7d793548",
-      "last_checked": "2026-07-07T07:31:52.554941",
+      "last_checked": "2026-07-07T18:15:00.361583",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"e634333802a747ad35999b162ede3352\"",
       "file_path": "documentation/MusicUnderstanding/analysistype/rhythm.md"
     },
@@ -1047,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/analysistype/structure.json": {
       "hash": "41add9b203b9c31215bf72f7b7d897a47f4ab8bc04662be3c2dcd00d68af4fc6",
-      "last_checked": "2026-07-07T07:31:52.616934",
+      "last_checked": "2026-07-07T18:15:00.564609",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"ed496c8e1bd7edc3a2ef0c17f4fb2fac\"",
       "file_path": "documentation/MusicUnderstanding/analysistype/structure.md"
     },
@@ -1063,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/musicunderstandingerror/emptyanalysisset.json": {
       "hash": "34f04c63d2979702707cd325dae79a2a008a90af06f85cba6a294bd09938253d",
-      "last_checked": "2026-07-07T07:31:52.685276",
+      "last_checked": "2026-07-07T18:14:59.802422",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"e4d76563e6a6cf4fc3d2b265ae0db49e\"",
       "file_path": "documentation/MusicUnderstanding/musicunderstandingerror/emptyanalysisset.md"
     },
@@ -1079,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/musicunderstandingerror/internalerror.json": {
       "hash": "d03a36d4cae9192d0d410ddb7143deed555d791e1a66c486f84d3be6635b704d",
-      "last_checked": "2026-07-07T07:31:52.802818",
+      "last_checked": "2026-07-07T18:14:59.831145",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"34be638fd1fe67ef2c837bc5e4f69e0f\"",
       "file_path": "documentation/MusicUnderstanding/musicunderstandingerror/internalerror.md"
     },
@@ -1095,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/musicunderstandingerror/invalidasset.json": {
       "hash": "ab4983f73928d912c9706d7cbf690f0718cac560e85b0f177e32a742c079f727",
-      "last_checked": "2026-07-07T07:31:52.888513",
+      "last_checked": "2026-07-07T18:15:00.001744",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"d5196b283bafe6a00d2ec58d9e10cd5c\"",
       "file_path": "documentation/MusicUnderstanding/musicunderstandingerror/invalidasset.md"
     },
@@ -1111,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/musicunderstandingerror/sessioninprogress.json": {
       "hash": "ba7f85b3dfeb66c0ac9c8695a095d8cfc6b8633413fcb285dbcd7a40d13c9fc8",
-      "last_checked": "2026-07-07T07:31:52.958373",
+      "last_checked": "2026-07-07T18:14:59.989054",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"88bfa79edddf4468695b35aff20997d3\"",
       "file_path": "documentation/MusicUnderstanding/musicunderstandingerror/sessioninprogress.md"
     },
@@ -1127,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/keyresult/mode/major.json": {
       "hash": "ca695bd8dc8c3535a5f7e27cb1b8e972b2d444e227696bb8e7156e1f0c07020b",
-      "last_checked": "2026-07-07T07:31:53.019284",
+      "last_checked": "2026-07-07T18:15:02.017360",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"41c86b3c48582d0338787007e0ba3158\"",
       "file_path": "documentation/MusicUnderstanding/keyresult/mode/major.md"
     },
@@ -1143,9 +1063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/keyresult/mode/minor.json": {
       "hash": "8dcc9c294c3c31fc836623e84a00fef94b487f50011a181f492fc0442b876272",
-      "last_checked": "2026-07-07T07:31:53.084266",
+      "last_checked": "2026-07-07T18:15:02.155415",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"765fa8f50157288c781a949df7725258\"",
       "file_path": "documentation/MusicUnderstanding/keyresult/mode/minor.md"
     },
@@ -1159,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/keyresult/tonic/a.json": {
       "hash": "f4dbaeed8f93072306edaacac17622a3d07e07bf3d57b489b91271fa6a3ed68a",
-      "last_checked": "2026-07-07T07:31:53.140463",
+      "last_checked": "2026-07-07T18:15:02.242834",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"fcd19afb788a8e879c0ca512866f56f5\"",
       "file_path": "documentation/MusicUnderstanding/keyresult/tonic/a.md"
     },
@@ -1175,9 +1095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/keyresult/tonic/aflat.json": {
       "hash": "a9ac3e509292a14ba9559c2b1d3011f0516b5e210bc4401c0fbe9ce4cbbd79a1",
-      "last_checked": "2026-07-07T07:31:53.245983",
+      "last_checked": "2026-07-07T18:15:02.339530",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"2e7559ab7de6a1fbb9f0db14119e8bc2\"",
       "file_path": "documentation/MusicUnderstanding/keyresult/tonic/aflat.md"
     },
@@ -1191,9 +1111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/keyresult/tonic/asharp.json": {
       "hash": "58400c79d55dc47e7810d96cc66d745227ac7f7f317e101cd3bf0a78b8363196",
-      "last_checked": "2026-07-07T07:31:53.309710",
+      "last_checked": "2026-07-07T18:15:02.469222",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"808a7ad28323d31910f22f95020805aa\"",
       "file_path": "documentation/MusicUnderstanding/keyresult/tonic/asharp.md"
     },
@@ -1207,9 +1127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/keyresult/tonic/b.json": {
       "hash": "0bb6c86f3733d23d36e97d4072de2a05c3d5710b802f3e035d5d4f893c7ce9cc",
-      "last_checked": "2026-07-07T07:31:53.368363",
+      "last_checked": "2026-07-07T18:15:02.579101",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"5a35f1f52e3ff73946c2d6c872eb16d1\"",
       "file_path": "documentation/MusicUnderstanding/keyresult/tonic/b.md"
     },
@@ -1223,9 +1143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/keyresult/tonic/bflat.json": {
       "hash": "8496136b1a4edbf423b6135f714066754c82d0eba13e9d79e9fb8647c9e9412b",
-      "last_checked": "2026-07-07T07:31:53.436974",
+      "last_checked": "2026-07-07T18:15:02.736336",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"34fefe965669c55b602b9f8f95871ce1\"",
       "file_path": "documentation/MusicUnderstanding/keyresult/tonic/bflat.md"
     },
@@ -1239,9 +1159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/keyresult/tonic/c.json": {
       "hash": "3a00bc4f486aa194cfaf3f78bc2301e0ec639b823c08ca8c6f6e6b8009668b06",
-      "last_checked": "2026-07-07T07:31:53.503037",
+      "last_checked": "2026-07-07T18:15:02.783490",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"4451b274db544841297d693605618bfb\"",
       "file_path": "documentation/MusicUnderstanding/keyresult/tonic/c.md"
     },
@@ -1255,9 +1175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/keyresult/tonic/csharp.json": {
       "hash": "8b2787a82d6cf41f69e7863bf7d0fe5a0a01b33abf3847291e80ca09d4c84113",
-      "last_checked": "2026-07-07T07:31:53.561405",
+      "last_checked": "2026-07-07T18:15:02.833765",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"ac0ad5d620f06184a0133a971676d74f\"",
       "file_path": "documentation/MusicUnderstanding/keyresult/tonic/csharp.md"
     },
@@ -1271,9 +1191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/keyresult/tonic/d.json": {
       "hash": "b965bbb799402e9411cd170f527da9590871407ef5e8cdf142ca5026075e13bf",
-      "last_checked": "2026-07-07T07:31:53.628281",
+      "last_checked": "2026-07-07T18:15:02.871182",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"b0f4837b2c49ff8f570f673bc3c1e485\"",
       "file_path": "documentation/MusicUnderstanding/keyresult/tonic/d.md"
     },
@@ -1287,9 +1207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/keyresult/tonic/dflat.json": {
       "hash": "36136122d47f23cee40c9c4b007ef725017505dc06bfbe501ca8f8ed99e449ad",
-      "last_checked": "2026-07-07T07:31:53.699665",
+      "last_checked": "2026-07-07T18:15:02.992345",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"1adda08d341c3a517816304f8a8b1bea\"",
       "file_path": "documentation/MusicUnderstanding/keyresult/tonic/dflat.md"
     },
@@ -1303,9 +1223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/keyresult/tonic/dsharp.json": {
       "hash": "91359f3c2f9bb6be69acecd8a6f0fcd36573ae5789b7cc8924d19a0cd5d0ecf7",
-      "last_checked": "2026-07-07T07:31:53.763846",
+      "last_checked": "2026-07-07T18:15:03.027458",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"762ea48354d5d7d07a602f683193b203\"",
       "file_path": "documentation/MusicUnderstanding/keyresult/tonic/dsharp.md"
     },
@@ -1319,9 +1239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/keyresult/tonic/e.json": {
       "hash": "fcd0110255f3159a4d7e817db36756a984e5af29e2b40a105e0afe285a1dfd92",
-      "last_checked": "2026-07-07T07:31:53.846316",
+      "last_checked": "2026-07-07T18:15:03.135039",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"7461719557b03c7a5b842c3655956cba\"",
       "file_path": "documentation/MusicUnderstanding/keyresult/tonic/e.md"
     },
@@ -1335,9 +1255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/keyresult/tonic/eflat.json": {
       "hash": "1fea04e960f01124531db12292faaf6e3659e52ffe38089903a1c76f3a6fb2a5",
-      "last_checked": "2026-07-07T07:31:53.905219",
+      "last_checked": "2026-07-07T18:15:03.194160",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"834e02b54d7886b995706b2fe0b06465\"",
       "file_path": "documentation/MusicUnderstanding/keyresult/tonic/eflat.md"
     },
@@ -1351,9 +1271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/keyresult/tonic/f.json": {
       "hash": "15255bbcd213a4fffeb470900c58153b835d19da01e2dd560861bbe3ec84d333",
-      "last_checked": "2026-07-07T07:31:53.960928",
+      "last_checked": "2026-07-07T18:15:03.254456",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"c90448f1d1f85b751008872d1171b2d8\"",
       "file_path": "documentation/MusicUnderstanding/keyresult/tonic/f.md"
     },
@@ -1367,9 +1287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/keyresult/tonic/fsharp.json": {
       "hash": "48ea22402976db30eb4a7c7c1f3014f175d452ad1c47a3cb68b82f365c6d7965",
-      "last_checked": "2026-07-07T07:31:54.058778",
+      "last_checked": "2026-07-07T18:15:03.275749",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"d7af047f77d6ed68ec81c0cfdec75592\"",
       "file_path": "documentation/MusicUnderstanding/keyresult/tonic/fsharp.md"
     },
@@ -1383,9 +1303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/keyresult/tonic/g.json": {
       "hash": "bbca84ba1825551fe95276a8c0ad41808fb5d146c8b70275ea3ea99f41077dee",
-      "last_checked": "2026-07-07T07:31:54.128217",
+      "last_checked": "2026-07-07T18:15:03.403775",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"5dcd0953bd15e1d05d4f674a0e3ce4ee\"",
       "file_path": "documentation/MusicUnderstanding/keyresult/tonic/g.md"
     },
@@ -1399,9 +1319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/keyresult/tonic/gflat.json": {
       "hash": "6ff92820eb020a3a0ef2446963093d6df7d7196de1eee08724fb005eba2da7ae",
-      "last_checked": "2026-07-07T07:31:54.206394",
+      "last_checked": "2026-07-07T18:15:03.464673",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"45519677fd7047965679e70fd24f9ca2\"",
       "file_path": "documentation/MusicUnderstanding/keyresult/tonic/gflat.md"
     },
@@ -1415,9 +1335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/keyresult/tonic/gsharp.json": {
       "hash": "7253520c0d8e2c588b6141f21cc28750543e249fc65d2e746d2ced4cbe6962a4",
-      "last_checked": "2026-07-07T07:31:54.312860",
+      "last_checked": "2026-07-07T18:15:03.528294",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"e2347a0f882ccf8626b4a31928c793d0\"",
       "file_path": "documentation/MusicUnderstanding/keyresult/tonic/gsharp.md"
     },
@@ -1431,9 +1351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/instrumentactivityresult/instrument/rawvalue.json": {
       "hash": "4c66af00eca514213628c5bacd1ef662737dc1117cb37b8b2c86da185c84cf1f",
-      "last_checked": "2026-07-07T07:31:54.386286",
+      "last_checked": "2026-07-07T18:15:03.585421",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"e1f76eb05606d793d0e395974bbb6421\"",
       "file_path": "documentation/MusicUnderstanding/instrumentactivityresult/instrument/rawvalue.md"
     },
@@ -1447,9 +1367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/instrumentactivityresult/instrument/bass.json": {
       "hash": "fdb4f3cd5dbbd121f614ba54165064c99b7c98d1d616851c12ca7906ffe158a5",
-      "last_checked": "2026-07-07T07:31:54.440299",
+      "last_checked": "2026-07-07T18:15:03.729064",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"e74c6c0cc76a108774632ec1fac1f457\"",
       "file_path": "documentation/MusicUnderstanding/instrumentactivityresult/instrument/bass.md"
     },
@@ -1463,9 +1383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/instrumentactivityresult/instrument/drum.json": {
       "hash": "299b66452d092559068710873d73c0fc15c17d396674f4b99cce54f298b56087",
-      "last_checked": "2026-07-07T07:31:54.524875",
+      "last_checked": "2026-07-07T18:15:03.885429",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"7db282d511511caae30b5acf63ef37c5\"",
       "file_path": "documentation/MusicUnderstanding/instrumentactivityresult/instrument/drum.md"
     },
@@ -1479,9 +1399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/instrumentactivityresult/instrument/other.json": {
       "hash": "461ef7322ed1ec17d59bbee845486be0878886d5a83deb0cf41482da16cd1669",
-      "last_checked": "2026-07-07T07:31:54.591208",
+      "last_checked": "2026-07-07T18:15:04.136517",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"151aa2f8fdcf2bba59a61c8504acce2a\"",
       "file_path": "documentation/MusicUnderstanding/instrumentactivityresult/instrument/other.md"
     },
@@ -1495,9 +1415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/musicunderstanding/instrumentactivityresult/instrument/vocal.json": {
       "hash": "26802798e54391c4c3971fda66dc05d309653fe9713a1df2fa6934137d62fb24",
-      "last_checked": "2026-07-07T07:31:54.655906",
+      "last_checked": "2026-07-07T18:15:04.215292",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:31:47.015309",
+      "session_id": "2026-07-07T18:14:53.439314",
       "etag": "W/\"6387cceab175e334303eb49f2f89e1e5\"",
       "file_path": "documentation/MusicUnderstanding/instrumentactivityresult/instrument/vocal.md"
     },

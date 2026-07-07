@@ -105,4 +105,4 @@ Swift is developed in the open. To learn more about the open source Swift projec
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Swift)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swift)*

@@ -34,3 +34,4 @@ url: https://ml-explore.github.io/mlx/build/html/python/fast.html
 | scaled_dot_product_attention(q, k, v, *, scale) | A fast implementation of multi-head attention:O=softmax(Q@K.T,dim=-1)@V. |
 | metal_kernel(name, input_names, ...[, ...]) | A jit-compiled custom Metal kernel defined from a source string. |
 | cuda_kernel(name, input_names, output_names, ...) | A jit-compiled custom CUDA kernel defined from a source string. |
+| precompiled_cuda_kernel(*, name, ...) | Run a precompiled CUDA kernel defined from PTX or cubin. |

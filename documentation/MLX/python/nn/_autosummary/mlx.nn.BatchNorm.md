@@ -30,10 +30,10 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.B
 # mlx.nn.BatchNorm
 
 **class BatchNorm(*num_features: int*, *eps: float = 1e-05*, *momentum: float = 0.1*, *affine: bool = True*, *track_running_stats: bool = True*)**
-: Applies Batch Normalization over a 2D or 3D input.
+: Applies Batch Normalization over a 2D, 3D or 4D input.
 Computes
 
-\[y = \frac{x - E[x]}{\sqrt{Var[x]} + \epsilon} \gamma + \beta,\]
+\[y = \frac{x - E[x]}{\sqrt{Var[x] + \epsilon}} \gamma + \beta,\]
 where \(\gamma\) and \(\beta\) are learned per feature dimension
 parameters initialized at 1 and 0 respectively.
 The input shape is specified as `NC` or `NLC`, where `N` is the

@@ -8,7 +8,7 @@ An instance of `ALAssetsLibrary` provides access to the videos and photos that a
 ## Declaration
 
 ```swift
-class ALAssetsLibrary
+@interface ALAssetsLibrary : NSObject
 ```
 
 #### Overview
@@ -29,55 +29,26 @@ Many of the methods declared by `ALAssetsLibrary` take blocks for failure and su
 
 ## Topics
 
-### Accessing Assets
-- [class func authorizationStatus() -> ALAuthorizationStatus](alassetslibrary/authorizationstatus.md)
-  Returns photo data authorization status for this application.
-### Managing Notifications
-- [class func disableSharedPhotoStreamsSupport()](alassetslibrary/disablesharedphotostreamssupport.md)
-  Disables shared photo streams notifications and asset retrieval.
-### Finding Assets
-- [func asset(for: URL!, resultBlock: ALAssetsLibraryAssetForURLResultBlock!, failureBlock: ALAssetsLibraryAccessFailureBlock!)](alassetslibrary/asset(for:resultblock:failureblock:).md)
-  Invokes a given block passing as a parameter an asset identified by a specified file URL.
-### Enumerating Assets
-- [func enumerateGroups(withTypes: ALAssetsGroupType, using: ALAssetsLibraryGroupsEnumerationResultsBlock!, failureBlock: ALAssetsLibraryAccessFailureBlock!)](alassetslibrary/enumerategroups(withtypes:using:failureblock:).md)
-  Invokes a given block passing as a parameter each of the asset groups that match the given asset group type.
-- [func enumerateGroupsWithTypes(UInt32, usingBlock: ALAssetsLibraryGroupsEnumerationResultsBlock!, failureBlock: ALAssetsLibraryAccessFailureBlock!)](alassetslibrary/enumerategroupswithtypes(_:usingblock:failureblock:).md)
-### Saving Assets
-- [func writeVideoAtPath(toSavedPhotosAlbum: URL!, completionBlock: ((URL?, (any Error)?) -> Void)!)](alassetslibrary/writevideoatpath(tosavedphotosalbum:completionblock:).md)
-  Saves a video identified by a given URL to the Saved Photos album.
-- [func videoAtPathIs(compatibleWithSavedPhotosAlbum: URL!) -> Bool](alassetslibrary/videoatpathis(compatiblewithsavedphotosalbum:).md)
-  Returns a Boolean value that indicates whether a video identified by a given URL is compatible with the Saved Photos album.
-- [func writeImage(toSavedPhotosAlbum: CGImage!, orientation: ALAssetOrientation, completionBlock: ((URL?, (any Error)?) -> Void)!)](alassetslibrary/writeimage(tosavedphotosalbum:orientation:completionblock:).md)
-  Saves a given image to the Saved Photos album.
-- [func writeImageData(toSavedPhotosAlbum: Data!, metadata: [AnyHashable : Any]!, completionBlock: ((URL?, (any Error)?) -> Void)!)](alassetslibrary/writeimagedata(tosavedphotosalbum:metadata:completionblock:).md)
-  Writes given image data and metadata to the Photos Album.
-- [func writeImage(toSavedPhotosAlbum: CGImage!, metadata: [AnyHashable : Any]!, completionBlock: ((URL?, (any Error)?) -> Void)!)](alassetslibrary/writeimage(tosavedphotosalbum:metadata:completionblock:).md)
-  Writes a given image and metadata to the Photos Album.
-### Managing Asset Groups
-- [func addAssetsGroupAlbum(withName: String!, resultBlock: ALAssetsLibraryGroupResultBlock!, failureBlock: ALAssetsLibraryAccessFailureBlock!)](alassetslibrary/addassetsgroupalbum(withname:resultblock:failureblock:).md)
-  Adds a new assets group to the library.
-- [func group(for: URL!, resultBlock: ALAssetsLibraryGroupResultBlock!, failureBlock: ALAssetsLibraryAccessFailureBlock!)](alassetslibrary/group(for:resultblock:failureblock:).md)
-  Returns an assets group in the result block for a URL previously retrieved from an `ALAssetsGroup` object.
 ### Constants
-- [typealias ALAssetsGroupType](alassetsgrouptype.md)
+- [ALAssetsGroupType](alassetsgrouptype.md)
   A bitfield to identify types of asset.
 - [Types of Asset](types-of-asset.md)
   Constants to identify types of asset.
-- [enum ALAssetOrientation](alassetorientation.md)
+- [ALAssetOrientation](alassetorientation.md)
   Constants to indicate the orientation of an asset.
-- [typealias ALAssetsLibraryGroupsEnumerationResultsBlock](alassetslibrarygroupsenumerationresultsblock.md)
-  Signature for the block executed when a match is found during enumeration using [`enumerateGroups(withTypes:using:failureBlock:)`](alassetslibrary/enumerategroups(withtypes:using:failureblock:).md).
-- [typealias ALAssetsLibraryAssetForURLResultBlock](alassetslibraryassetforurlresultblock.md)
-  Signature for the block executed if the user has granted access to the caller to access the data managed by the framework in [`asset(for:resultBlock:failureBlock:)`](alassetslibrary/asset(for:resultblock:failureblock:).md).
-- [typealias ALAssetsLibraryWriteImageCompletionBlock](alassetslibrarywriteimagecompletionblock.md)
-  Signature for the block executed when [`writeImage(toSavedPhotosAlbum:orientation:completionBlock:)`](alassetslibrary/writeimage(tosavedphotosalbum:orientation:completionblock:).md) completes.
-- [typealias ALAssetsLibraryWriteVideoCompletionBlock](alassetslibrarywritevideocompletionblock.md)
-  Signature for the block executed when [`writeVideoAtPath(toSavedPhotosAlbum:completionBlock:)`](alassetslibrary/writevideoatpath(tosavedphotosalbum:completionblock:).md) completes.
-- [typealias ALAssetsLibraryAccessFailureBlock](alassetslibraryaccessfailureblock.md)
+- [ALAssetsLibraryGroupsEnumerationResultsBlock](alassetslibrarygroupsenumerationresultsblock.md)
+  Signature for the block executed when a match is found during enumeration using `ALAssetsLibrary/enumerateGroups(withTypes:using:failureBlock:)`.
+- [ALAssetsLibraryAssetForURLResultBlock](alassetslibraryassetforurlresultblock.md)
+  Signature for the block executed if the user has granted access to the caller to access the data managed by the framework in `ALAssetsLibrary/asset(for:resultBlock:failureBlock:)`.
+- [ALAssetsLibraryWriteImageCompletionBlock](alassetslibrarywriteimagecompletionblock.md)
+  Signature for the block executed when `ALAssetsLibrary/writeImage(toSavedPhotosAlbum:orientation:completionBlock:)` completes.
+- [ALAssetsLibraryWriteVideoCompletionBlock](alassetslibrarywritevideocompletionblock.md)
+  Signature for the block executed when `ALAssetsLibrary/writeVideoAtPath(toSavedPhotosAlbum:completionBlock:)` completes.
+- [ALAssetsLibraryAccessFailureBlock](alassetslibraryaccessfailureblock.md)
   Signature for the block executed if the user does not grant access to the caller to access the data managed by the framework.
-- [typealias ALAssetsLibraryGroupResultBlock](alassetslibrarygroupresultblock.md)
+- [ALAssetsLibraryGroupResultBlock](alassetslibrarygroupresultblock.md)
   Signature for the block executed if the user grants access to the caller to access the data managed by the framework..
-- [enum ALAuthorizationStatus](alauthorizationstatus.md)
+- [ALAuthorizationStatus](alauthorizationstatus.md)
   Constants to indicate authorization status.
 - [Notification Keys](notification-keys.md)
   Keys used to get values from the user information dictionary of the [`ALAssetsLibraryChangedNotification`](alassetslibrarychangednotification.md) notification.
@@ -86,30 +57,36 @@ Many of the methods declared by `ALAssetsLibrary` take blocks for failure and su
 - [Error Codes](error-codes.md)
   AssetsLibrary-related error codes
 ### Notifications
-- [static let ALAssetsLibraryChanged: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/ALAssetsLibraryChanged.md)
+- [ALAssetsLibraryChangedNotification](alassetslibrarychangednotification.md)
   Sent when the contents of the assets library have changed from under the app that is using the data.
+### Instance Methods
+- [- addAssetsGroupAlbumWithName:resultBlock:failureBlock:](alassetslibrary/addassetsgroupalbumwithname:resultblock:failureblock:.md)
+- [- assetForURL:resultBlock:failureBlock:](alassetslibrary/assetforurl:resultblock:failureblock:.md)
+- [- enumerateGroupsWithTypes:usingBlock:failureBlock:](alassetslibrary/enumerategroupswithtypes:usingblock:failureblock:.md)
+- [- groupForURL:resultBlock:failureBlock:](alassetslibrary/groupforurl:resultblock:failureblock:.md)
+- [- videoAtPathIsCompatibleWithSavedPhotosAlbum:](alassetslibrary/videoatpathiscompatiblewithsavedphotosalbum:.md)
+- [- writeImageDataToSavedPhotosAlbum:metadata:completionBlock:](alassetslibrary/writeimagedatatosavedphotosalbum:metadata:completionblock:.md)
+- [- writeImageToSavedPhotosAlbum:metadata:completionBlock:](alassetslibrary/writeimagetosavedphotosalbum:metadata:completionblock:.md)
+- [- writeImageToSavedPhotosAlbum:orientation:completionBlock:](alassetslibrary/writeimagetosavedphotosalbum:orientation:completionblock:.md)
+- [- writeVideoAtPathToSavedPhotosAlbum:completionBlock:](alassetslibrary/writevideoatpathtosavedphotosalbum:completionblock:.md)
+### Type Methods
+- [+ authorizationStatus](alassetslibrary/authorizationstatus.md)
+- [+ disableSharedPhotoStreamsSupport](alassetslibrary/disablesharedphotostreamssupport.md)
 
 ## Relationships
 
 ### Inherits From
 - [NSObject](../ObjectiveC/NSObject-swift.class.md)
-### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 
-- [class ALAsset](alasset.md)
+- [ALAsset](alasset.md)
   An `ALAsset` object represents a photo or a video managed by the Photo application.
-- [class ALAssetRepresentation](alassetrepresentation.md)
+- [ALAssetRepresentation](alassetrepresentation.md)
   An `ALAssetRepresentation` object encapsulates one of the representations of a given [`ALAsset`](alasset.md) object.
-- [class ALAssetsFilter](alassetsfilter.md)
+- [ALAssetsFilter](alassetsfilter.md)
   `ALAssetsFilter` encapsulates filtering criteria to be used when retrieving assets from a group.
-- [class ALAssetsGroup](alassetsgroup.md)
+- [ALAssetsGroup](alassetsgroup.md)
   An `ALAssetsGroup` object represents an ordered set of the assets managed by the Photos application. The order of the elements is the same as the user sees in the Photos application. An asset can belong to multiple assets groups.
 
 

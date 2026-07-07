@@ -42,3 +42,4 @@ Dictionaries should have keys that are valid python identifiers.
 | tree_map(fn, tree, *rest[, is_leaf]) | Appliesfnto the leaves of the Python treetreeand returns a new collection with the results. |
 | tree_map_with_path(fn, tree, *rest[, ...]) | Appliesfnto the path and leaves of the Python treetreeand returns a new collection with the results. |
 | tree_reduce(fn, tree[, initializer, is_leaf]) | Applies a reduction to the leaves of a Python tree. |
+| tree_merge(tree_a, tree_b[, merge_fn]) | Merge two Python trees in one containing the values of both. |

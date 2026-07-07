@@ -33,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.G
 : Applies Group Normalization [1] to the inputs.
 Computes the same normalization as layer norm, namely
 
-\[y = \frac{x - E[x]}{\sqrt{Var[x]} + \epsilon} \gamma + \beta,\]
+\[y = \frac{x - E[x]}{\sqrt{Var[x] + \epsilon}} \gamma + \beta,\]
 where \(\gamma\) and \(\beta\) are learned per feature dimension
 parameters initialized at 1 and 0 respectively. However, the mean and
 variance are computed over the spatial dimensions and each group of

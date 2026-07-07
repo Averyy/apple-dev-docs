@@ -8,7 +8,7 @@ An `ALAssetsGroup` object represents an ordered set of the assets managed by the
 ## Declaration
 
 ```swift
-class ALAssetsGroup
+@interface ALAssetsGroup : NSObject
 ```
 
 #### Overview
@@ -19,55 +19,37 @@ Assets groups themselves are synced via iTunes, created to hold the user’s sav
 
 ## Topics
 
-### Enumerating Assets
-- [func enumerateAssets(ALAssetsGroupEnumerationResultsBlock!)](alassetsgroup/enumerateassets(_:).md)
-  Invokes a given block using each of the assets in the group.
-- [func enumerateAssets(options: NSEnumerationOptions, using: ALAssetsGroupEnumerationResultsBlock!)](alassetsgroup/enumerateassets(options:using:).md)
-  Invokes a given block using each of the assets in the group.
-- [func enumerateAssets(at: IndexSet!, options: NSEnumerationOptions, using: ALAssetsGroupEnumerationResultsBlock!)](alassetsgroup/enumerateassets(at:options:using:).md)
-  Invokes a given block using each of the assets in the group at specified indexes.
-### Adding Assets
-- [func add(ALAsset!) -> Bool](alassetsgroup/add(_:).md)
-  Adds an existing asset to the receiver.
-- [var isEditable: Bool](alassetsgroup/iseditable.md)
-  Indicates whether the application can edit the group.
-### Filtering
-- [func numberOfAssets() -> Int](alassetsgroup/numberofassets.md)
-  Returns the number of assets in the group that match the current filter.
-- [func setAssetsFilter(ALAssetsFilter!)](alassetsgroup/setassetsfilter(_:).md)
-  Sets the filter for the group.
-### Accessing Properties
-- [func value(forProperty: String!) -> Any!](alassetsgroup/value(forproperty:).md)
-  Returns the group’s value for a given property.
-- [func posterImage() -> Unmanaged<CGImage>!](alassetsgroup/posterimage.md)
-  Returns the group’s poster image
 ### Constants
-- [typealias ALAssetsGroupEnumerationResultsBlock](alassetsgroupenumerationresultsblock.md)
+- [ALAssetsGroupEnumerationResultsBlock](alassetsgroupenumerationresultsblock.md)
   Signature for the block executed during enumeration of assets.
 - [Group Property Names](group-property-names.md)
-  Constants for the names of group properties, used by [`value(forProperty:)`](alassetsgroup/value(forproperty:).md).
+  Constants for the names of group properties, used by `ALAssetsGroup/value(forProperty:)`.
+### Instance Properties
+- [editable](alassetsgroup/editable.md)
+### Instance Methods
+- [- addAsset:](alassetsgroup/addasset:.md)
+- [- enumerateAssetsAtIndexes:options:usingBlock:](alassetsgroup/enumerateassetsatindexes:options:usingblock:.md)
+- [- enumerateAssetsUsingBlock:](alassetsgroup/enumerateassetsusingblock:.md)
+- [- enumerateAssetsWithOptions:usingBlock:](alassetsgroup/enumerateassetswithoptions:usingblock:.md)
+- [- numberOfAssets](alassetsgroup/numberofassets.md)
+- [- posterImage](alassetsgroup/posterimage.md)
+- [- setAssetsFilter:](alassetsgroup/setassetsfilter:.md)
+- [- valueForProperty:](alassetsgroup/valueforproperty:.md)
 
 ## Relationships
 
 ### Inherits From
 - [NSObject](../ObjectiveC/NSObject-swift.class.md)
-### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 
-- [class ALAsset](alasset.md)
+- [ALAsset](alasset.md)
   An `ALAsset` object represents a photo or a video managed by the Photo application.
-- [class ALAssetRepresentation](alassetrepresentation.md)
+- [ALAssetRepresentation](alassetrepresentation.md)
   An `ALAssetRepresentation` object encapsulates one of the representations of a given [`ALAsset`](alasset.md) object.
-- [class ALAssetsFilter](alassetsfilter.md)
+- [ALAssetsFilter](alassetsfilter.md)
   `ALAssetsFilter` encapsulates filtering criteria to be used when retrieving assets from a group.
-- [class ALAssetsLibrary](alassetslibrary.md)
+- [ALAssetsLibrary](alassetslibrary.md)
   An instance of `ALAssetsLibrary` provides access to the videos and photos that are under the control of the Photos application.
 
 

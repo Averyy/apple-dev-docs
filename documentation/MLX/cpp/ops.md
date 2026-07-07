@@ -59,8 +59,11 @@ url: https://ml-explore.github.io/mlx/build/html/cpp/ops.html
 **array linspace(double start, double stop, int num = 50, Dtype dtype = float32, StreamOrDevice s = {})**
 : A 1D array of `num` evenly spaced numbers in the range `[start, stop]`
 
-**array astype(array a, Dtype dtype, StreamOrDevice s = {})**
+**array astype(array a, Dtype dtype, [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<bool> copy, StreamOrDevice s = {})**
 : Convert an array to the given data type.
+
+**inline array astype(array a, Dtype dtype, StreamOrDevice s = {})**
+: 
 
 **array as_strided(array a, Shape shape, Strides strides, size_t offset, StreamOrDevice s = {})**
 : Create a view of an array with the given shape and strides.
@@ -177,6 +180,15 @@ array full_like(const array &a, [T](#_CPPv4I0E9full_like5arrayRK5array1T14Stream
 **array expand_dims(const array &a, int axis, StreamOrDevice s = {})**
 : Add a singleton dimension at the given axis.
 
+**array flip(const array &a, const [std](#_CPPv4StRK5arraybi14StreamOrDevice)::vector<int> &axes, StreamOrDevice s = {})**
+: Reverse the order of the elements along the given axes.
+
+**array flip(const array &a, int axis, StreamOrDevice s = {})**
+: Reverse the order of the elements along the given axis.
+
+**array flip(const array &a, StreamOrDevice s = {})**
+: Reverse the order of the elements along all axes.
+
 **array slice(const array &a, Shape start, Shape stop, Shape strides, StreamOrDevice s = {})**
 : Slice an array.
 
@@ -232,6 +244,12 @@ array full_like(const array &a, [T](#_CPPv4I0E9full_like5arrayRK5array1T14Stream
 : 
 
 **[std](#_CPPv4StRK5arraybi14StreamOrDevice)::vector<array> split(const array &a, const Shape &indices, StreamOrDevice s = {})**
+: 
+
+**[std](#_CPPv4StRK5arraybi14StreamOrDevice)::vector<array> unstack(const array &a, int axis, StreamOrDevice s = {})**
+: Split an array into a sequence of arrays along an axis, removing it.
+
+**[std](#_CPPv4StRK5arraybi14StreamOrDevice)::vector<array> unstack(const array &a, StreamOrDevice s = {})**
 : 
 
 **[std](#_CPPv4StRK5arraybi14StreamOrDevice)::vector<array> meshgrid(const [std](#_CPPv4StRK5arraybi14StreamOrDevice)::vector<array> &arrays, bool sparse = false, const [std](#_CPPv4StRK5arraybi14StreamOrDevice)::string &indexing = "xy", StreamOrDevice s = {})**
@@ -451,6 +469,15 @@ An output value is true if any of the corresponding inputs are true.
 **array sum(const array &a, int axis, bool keepdims = false, StreamOrDevice s = {})**
 : Sums the elements of an array along the given axis.
 
+**array count_nonzero(const array &a, bool keepdims = false, StreamOrDevice s = {})**
+: Count the number of non-zero elements in an array.
+
+**array count_nonzero(const array &a, int axis, bool keepdims = false, StreamOrDevice s = {})**
+: 
+
+**array count_nonzero(const array &a, const [std](#_CPPv4StRK5arraybi14StreamOrDevice)::vector<int> &axes, bool keepdims = false, StreamOrDevice s = {})**
+: 
+
 **array mean(const array &a, bool keepdims, StreamOrDevice s = {})**
 : Computes the mean of the elements of an array.
 
@@ -620,6 +647,9 @@ The sort is stable and NaN values are placed at the end.
 **array abs(const array &a, StreamOrDevice s = {})**
 : Absolute value of elements in an array.
 
+**array positive(const array &a, StreamOrDevice s = {})**
+: Unary plus — return a copy of the array unchanged.
+
 **array negative(const array &a, StreamOrDevice s = {})**
 : Negate an array.
 
@@ -643,6 +673,9 @@ The sort is stable and NaN values are placed at the end.
 
 **array operator||(const array &a, const array &b)**
 : 
+
+**array logical_xor(const array &a, const array &b, StreamOrDevice s = {})**
+: Logical exclusive or of two arrays.
 
 **array reciprocal(const array &a, StreamOrDevice s = {})**
 : The reciprocal (1/x) of the elements in an array.
@@ -733,6 +766,9 @@ array operator%(const array &a, [T](#_CPPv4I0Erm5arrayRK5array1T) b)**
 
 **array ceil(const array &a, StreamOrDevice s = {})**
 : Ceil the element of an array.
+
+**array trunc(const array &a, StreamOrDevice s = {})**
+: Truncate the elements of an array towards zero.
 
 **array square(const array &a, StreamOrDevice s = {})**
 : Square the elements of an array.
@@ -957,17 +993,29 @@ Note, `scatter` does not perform bounds checking on the indices and updates. Out
 **array power(const array &a, const array &b, StreamOrDevice s = {})**
 : Raise elements of a to the power of b element-wise.
 
-**array cumsum(const array &a, bool reverse = false, bool inclusive = true, StreamOrDevice s = {})**
+**array cumsum(const array &a, bool reverse = false, bool inclusive = true, [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<Dtype> dtype = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, StreamOrDevice s = {})**
 : Cumulative sum of an array.
 
-**array cumsum(const array &a, int axis, bool reverse = false, bool inclusive = true, StreamOrDevice s = {})**
+**inline array cumsum(const array &a, bool reverse, bool inclusive, StreamOrDevice s)**
+: 
+
+**array cumsum(const array &a, int axis, bool reverse = false, bool inclusive = true, [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<Dtype> dtype = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, StreamOrDevice s = {})**
 : Cumulative sum of an array along the given axis.
 
-**array cumprod(const array &a, bool reverse = false, bool inclusive = true, StreamOrDevice s = {})**
+**inline array cumsum(const array &a, int axis, bool reverse, bool inclusive, StreamOrDevice s)**
+: 
+
+**array cumprod(const array &a, bool reverse = false, bool inclusive = true, [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<Dtype> dtype = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, StreamOrDevice s = {})**
 : Cumulative product of an array.
 
-**array cumprod(const array &a, int axis, bool reverse = false, bool inclusive = true, StreamOrDevice s = {})**
+**inline array cumprod(const array &a, bool reverse, bool inclusive, StreamOrDevice s)**
+: 
+
+**array cumprod(const array &a, int axis, bool reverse = false, bool inclusive = true, [std](#_CPPv4StRK5arraybi14StreamOrDevice)::optional<Dtype> dtype = [std](#_CPPv4StRK5arraybi14StreamOrDevice)::nullopt, StreamOrDevice s = {})**
 : Cumulative product of an array along the given axis.
+
+**inline array cumprod(const array &a, int axis, bool reverse, bool inclusive, StreamOrDevice s)**
+: 
 
 **array cummax(const array &a, bool reverse = false, bool inclusive = true, StreamOrDevice s = {})**
 : Cumulative max of an array.
@@ -980,6 +1028,9 @@ Note, `scatter` does not perform bounds checking on the indices and updates. Out
 
 **array cummin(const array &a, int axis, bool reverse = false, bool inclusive = true, StreamOrDevice s = {})**
 : Cumulative min of an array along the given axis.
+
+**array diff(const array &a, int n = 1, int axis = -1, StreamOrDevice s = {})**
+: The n-th discrete difference along the given axis.
 
 **array conv_general(array input, array weight, [std](#_CPPv4StRK5arraybi14StreamOrDevice)::vector<int> stride = {}, [std](#_CPPv4StRK5arraybi14StreamOrDevice)::vector<int> padding_lo = {}, [std](#_CPPv4StRK5arraybi14StreamOrDevice)::vector<int> padding_hi = {}, [std](#_CPPv4StRK5arraybi14StreamOrDevice)::vector<int> kernel_dilation = {}, [std](#_CPPv4StRK5arraybi14StreamOrDevice)::vector<int> input_dilation = {}, int groups = 1, bool flip = false, StreamOrDevice s = {})**
 : General convolution with a filter.
@@ -1037,6 +1088,9 @@ Note, `scatter` does not perform bounds checking on the indices and updates. Out
 
 **array inner(const array &a, const array &b, StreamOrDevice s = {})**
 : Compute the inner product of two vectors.
+
+**array vecdot(const array &a, const array &b, int axis = -1, StreamOrDevice s = {})**
+: Compute a vector dot product along an axis.
 
 **array addmm(array c, array a, array b, const float &alpha = 1.f, const float &beta = 1.f, StreamOrDevice s = {})**
 : Compute D = beta * C + alpha * (A @ B)

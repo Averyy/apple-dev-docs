@@ -137,4 +137,4 @@ To build a macOS app, you can use [`SwiftUI`](https://developer.apple.com/docume
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/UIKit)*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit)*

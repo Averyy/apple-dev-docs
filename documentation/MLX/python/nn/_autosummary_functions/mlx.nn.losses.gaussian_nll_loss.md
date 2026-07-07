@@ -36,7 +36,7 @@ The loss is given by:
 \[\frac{1}{2}\left(\log\left(\max\left(\text{vars},
 \ \epsilon\right)\right) + \frac{\left(\text{inputs} - \text{targets} \right)^2}
 {\max\left(\text{vars}, \ \epsilon \right)}\right) + \text{const.}\]
-where `inputs` are the predicted means and `vars` are the the
+where `inputs` are the predicted means and `vars` are the
 predicted variances.
 
 Parameters:
@@ -49,7 +49,7 @@ Default: `False`.
 **eps** ([float](https://docs.python.org/3/library/functions.html#float)*, **optional*) – Small positive constant for numerical stability.
 Default: `1e-6`.
 **reduction** ([str](https://docs.python.org/3/library/stdtypes.html#str)*, **optional*) – Specifies the reduction to apply to the output:
-`'none'` | `'mean'` | `'sum'`. Default: `'none'`.
+`'none'` | `'mean'` | `'sum'`. Default: `'mean'`.
 
 Returns:
 The Gaussian NLL loss.

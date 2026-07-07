@@ -33,7 +33,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.D
 : Apply 2D channel-wise dropout during training.
 Randomly zero out entire channels independently with probability \(p\).
 This layer expects the channels to be last, i.e. the input shape should be
-`NWHC` or `WHC` where:`N` is the batch dimension,``H`` is the input
+`NHWC` or `HWC` where:`N` is the batch dimension,``H`` is the input
 image height,``W`` is the input image width, and``C`` is the number of
 input channels
 The remaining channels are scaled by \(\frac{1}{1-p}\) to

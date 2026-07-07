@@ -154,4 +154,4 @@ You can integrate SwiftUI views with objects from the [`UIKit`](https://develope
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swiftui)*

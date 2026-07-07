@@ -1,20 +1,21 @@
-# enumerateEventHandlers(_:)
+# enumerateEventHandlers:
 
 **Framework**: UIKit  
 **Kind**: method
+
+Iterate over the event handlers installed on this control at the time this method is called. For each call, either actionHandler or action will be non-nil. controlEvents is always non-zero. Setting *stop to YES will terminate the enumeration early. It is legal to manipulate the control’s event handlers within the block.
 
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 - tvOS 14.0+
-- visionOS ?+
+- visionOS 1.0+
 
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency func enumerateEventHandlers(_ iterator: (UIAction?, (Any?, Selector)?, UIControl.Event, inout Bool) -> Void)
+- (void) enumerateEventHandlers:(void (^)(UIAction *actionHandler, id target, SEL action, UIControlEvents controlEvents, BOOL *stop)) iterator;
 ```
 
 ## See Also
@@ -41,4 +42,4 @@
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uicontrol/enumerateeventhandlers(_:))*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uicontrol/enumerateeventhandlers:)*

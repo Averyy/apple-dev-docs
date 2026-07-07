@@ -98,4 +98,4 @@ The Bluetooth framework supports user-space access to Bluetooth devices, includi
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/IOBluetooth)*
+*[View on Apple Developer](https://developer.apple.com/documentation/iobluetooth)*

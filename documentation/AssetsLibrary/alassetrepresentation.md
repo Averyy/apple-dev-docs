@@ -8,7 +8,7 @@ An `ALAssetRepresentation` object encapsulates one of the representations of a g
 ## Declaration
 
 ```swift
-class ALAssetRepresentation
+@interface ALAssetRepresentation : NSObject
 ```
 
 #### Overview
@@ -19,57 +19,34 @@ A given asset in the library may have more than one representation. For example,
 
 ## Topics
 
-### Getting Image Representations
-- [func cgImage(options: [AnyHashable : Any]!) -> Unmanaged<CGImage>!](alassetrepresentation/cgimage(options:).md)
-  Returns a full resolution CGImage of the representation.
-- [func fullResolutionImage() -> Unmanaged<CGImage>!](alassetrepresentation/fullresolutionimage.md)
-  Returns a CGImage representation of the asset.
-- [func fullScreenImage() -> Unmanaged<CGImage>!](alassetrepresentation/fullscreenimage.md)
-  Returns a CGImage of the representation that is appropriate for displaying full screen.
-### Getting Image Attributes
-- [func orientation() -> ALAssetOrientation](alassetrepresentation/orientation.md)
-  Returns the representation’s orientation.
-- [func scale() -> Float](alassetrepresentation/scale.md)
-  Returns the representation’s scale.
-- [func dimensions() -> CGSize](alassetrepresentation/dimensions.md)
-  Returns the representation’s dimensions.
-- [func filename() -> String!](alassetrepresentation/filename.md)
-  Returns a string representing the filename of the representation on disk.
-### Getting Raw Data
-- [func size() -> Int64](alassetrepresentation/size.md)
-  Returns the size in bytes of the file for the representation.
-- [func getBytes(UnsafeMutablePointer<UInt8>!, fromOffset: Int64, length: Int, error: NSErrorPointer) -> Int](alassetrepresentation/getbytes(_:fromoffset:length:error:).md)
-  Copies a specified range of bytes into a given buffer.
-### Getting Metadata
-- [func uti() -> String!](alassetrepresentation/uti.md)
-  Returns the representation’s UTI.
-- [func metadata() -> [AnyHashable : Any]!](alassetrepresentation/metadata.md)
-  Returns a dictionary of dictionaries of metadata for the representation.
-### Getting an URL
-- [func url() -> URL!](alassetrepresentation/url.md)
-  Returns a persistent URL uniquely identifying the representation.
+### Instance Methods
+- [- CGImageWithOptions:](alassetrepresentation/cgimagewithoptions:.md)
+- [- UTI](alassetrepresentation/uti.md)
+- [- dimensions](alassetrepresentation/dimensions.md)
+- [- filename](alassetrepresentation/filename.md)
+- [- fullResolutionImage](alassetrepresentation/fullresolutionimage.md)
+- [- fullScreenImage](alassetrepresentation/fullscreenimage.md)
+- [- getBytes:fromOffset:length:error:](alassetrepresentation/getbytes:fromoffset:length:error:.md)
+- [- metadata](alassetrepresentation/metadata.md)
+- [- orientation](alassetrepresentation/orientation.md)
+- [- scale](alassetrepresentation/scale.md)
+- [- size](alassetrepresentation/size.md)
+- [- url](alassetrepresentation/url.md)
 
 ## Relationships
 
 ### Inherits From
 - [NSObject](../ObjectiveC/NSObject-swift.class.md)
-### Conforms To
-- [CVarArg](../Swift/CVarArg.md)
-- [CustomDebugStringConvertible](../Swift/CustomDebugStringConvertible.md)
-- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
-- [Equatable](../Swift/Equatable.md)
-- [Hashable](../Swift/Hashable.md)
-- [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 
 ## See Also
 
-- [class ALAsset](alasset.md)
+- [ALAsset](alasset.md)
   An `ALAsset` object represents a photo or a video managed by the Photo application.
-- [class ALAssetsFilter](alassetsfilter.md)
+- [ALAssetsFilter](alassetsfilter.md)
   `ALAssetsFilter` encapsulates filtering criteria to be used when retrieving assets from a group.
-- [class ALAssetsGroup](alassetsgroup.md)
+- [ALAssetsGroup](alassetsgroup.md)
   An `ALAssetsGroup` object represents an ordered set of the assets managed by the Photos application. The order of the elements is the same as the user sees in the Photos application. An asset can belong to multiple assets groups.
-- [class ALAssetsLibrary](alassetslibrary.md)
+- [ALAssetsLibrary](alassetslibrary.md)
   An instance of `ALAssetsLibrary` provides access to the videos and photos that are under the control of the Photos application.
 
 

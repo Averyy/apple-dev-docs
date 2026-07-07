@@ -1,4 +1,4 @@
 Completed scraping Foundation!
-Total pages scraped: 12951
-Pages skipped (unchanged): 2
+Total pages scraped: 0
+Pages skipped (unchanged): 12953
 Pages failed: 0

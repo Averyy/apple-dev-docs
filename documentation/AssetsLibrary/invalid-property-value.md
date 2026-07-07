@@ -2,13 +2,7 @@
 
 **Framework**: Assets Library
 
-A constant to indicate that a property accessed by [`value(forProperty:)`](alasset/value(forproperty:).md) is invalid.
-
-## Topics
-
-### Constants
-- [let ALErrorInvalidProperty: String](alerrorinvalidproperty.md)
-  Value returned by [`value(forProperty:)`](alasset/value(forproperty:).md) if the property you tried to access is invalid.
+A constant to indicate that a property accessed by `ALAsset/value(forProperty:)` is invalid.
 
 ## See Also
 

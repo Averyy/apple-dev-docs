@@ -88,4 +88,4 @@ AVFoundation combines several major technology areas that together encompass a w
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/AVFoundation)*
+*[View on Apple Developer](https://developer.apple.com/documentation/avfoundation)*

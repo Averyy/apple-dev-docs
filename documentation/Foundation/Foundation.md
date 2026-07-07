@@ -93,4 +93,4 @@ The Foundation framework provides a base layer of functionality for apps and fra
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/Foundation)*
+*[View on Apple Developer](https://developer.apple.com/documentation/foundation)*

@@ -1,29 +1,29 @@
 # ALAssetsGroupEvent
 
 **Framework**: Assets Library  
-**Kind**: var
+**Kind**: case
 
 All events, including those created during Camera Connection Kit import.
 
 ## Declaration
 
 ```swift
-var ALAssetsGroupEvent: UInt32 { get }
+ALAssetsGroupEvent
 ```
 
 ## See Also
 
-- [var ALAssetsGroupLibrary: UInt32](alassetsgrouplibrary.md)
+- [ALAssetsGroupLibrary](alassetsgrouplibrary.md)
   The Library group that includes all assets that are synced from iTunes.
-- [var ALAssetsGroupAlbum: UInt32](alassetsgroupalbum.md)
+- [ALAssetsGroupAlbum](alassetsgroupalbum.md)
   All the albums created on the device or synced from iTunes, not including Photo Stream or Shared Streams
-- [var ALAssetsGroupFaces: UInt32](alassetsgroupfaces.md)
+- [ALAssetsGroupFaces](alassetsgroupfaces.md)
   All the faces albums synced from iTunes.
-- [var ALAssetsGroupSavedPhotos: UInt32](alassetsgroupsavedphotos.md)
+- [ALAssetsGroupSavedPhotos](alassetsgroupsavedphotos.md)
   All the photos in the Camera Roll.
-- [var ALAssetsGroupPhotoStream: UInt32](alassetsgroupphotostream.md)
+- [ALAssetsGroupPhotoStream](alassetsgroupphotostream.md)
   The PhotoStream album.
-- [var ALAssetsGroupAll: UInt32](alassetsgroupall.md)
+- [ALAssetsGroupAll](alassetsgroupall.md)
   The same as ORing together all the group types except for [`ALAssetsGroupLibrary`](alassetsgrouplibrary.md).
 
 

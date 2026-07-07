@@ -67,7 +67,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.Dt
 
 See also [issubdtype()](mlx.core.issubdtype.html#mlx.core.issubdtype).
 
-__init__()
+__init__(**args*, ***kwds*)
 
 Attributes
 

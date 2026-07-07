@@ -1,4 +1,4 @@
-# defaultBackgroundConfiguration()
+# defaultBackgroundConfiguration
 
 **Framework**: UIKit  
 **Kind**: method
@@ -10,13 +10,12 @@ Retrieves a background configuration with system default values.
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
 - tvOS 16.0+
-- visionOS ?+
+- visionOS 1.0+
 
 ## Declaration
 
 ```swift
-@MainActor
-@preconcurrency func defaultBackgroundConfiguration() -> UIBackgroundConfiguration
+- (UIBackgroundConfiguration *) defaultBackgroundConfiguration;
 ```
 
 #### Return Value
@@ -25,7 +24,7 @@ A default background configuration. The system determines default values for the
 
 ## See Also
 
-- [var backgroundConfiguration: UIBackgroundConfiguration?](uicollectionviewcell/backgroundconfiguration-rgj4.md)
+- [backgroundConfiguration](uicollectionviewcell/backgroundconfiguration-39dc0.md)
   The current background configuration of the cell.
 - [var automaticallyUpdatesBackgroundConfiguration: Bool](uicollectionviewcell/automaticallyupdatesbackgroundconfiguration.md)
   A Boolean value that determines whether the cell automatically updates its background configuration when its state changes.
@@ -37,4 +36,4 @@ A default background configuration. The system determines default values for the
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uicollectionviewcell/defaultbackgroundconfiguration())*
+*[View on Apple Developer](https://developer.apple.com/documentation/uikit/uicollectionviewcell/defaultbackgroundconfiguration)*

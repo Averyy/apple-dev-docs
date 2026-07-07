@@ -43,7 +43,8 @@ Parameters:
 **axis** ([int](https://docs.python.org/3/library/functions.html#int)*, **optional*) – The distribution axis. Default: `-1`.
 **p** ([int](https://docs.python.org/3/library/functions.html#int)*, **optional*) – The norm degree for pairwise distance. Default: `2`.
 **margin** ([float](https://docs.python.org/3/library/functions.html#float)*, **optional*) – Margin for the triplet loss. Defaults to `1.0`.
-**eps** ([float](https://docs.python.org/3/library/functions.html#float)*, **optional*) – Small positive constant to prevent numerical instability. Defaults to `1e-6`.
+**eps** ([float](https://docs.python.org/3/library/functions.html#float)*, **optional*) – Small positive constant added to the p-norm sum
+before taking the `1 / p` power. Defaults to `1e-6`.
 **reduction** ([str](https://docs.python.org/3/library/stdtypes.html#str)*, **optional*) – Specifies the reduction to apply to the output:
 `'none'` | `'mean'` | `'sum'`. Default: `'none'`.
 

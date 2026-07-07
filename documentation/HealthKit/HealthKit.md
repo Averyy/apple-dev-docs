@@ -91,4 +91,4 @@ HealthKit is also designed to manage and merge data from multiple sources. For e
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/HealthKit)*
+*[View on Apple Developer](https://developer.apple.com/documentation/healthkit)*

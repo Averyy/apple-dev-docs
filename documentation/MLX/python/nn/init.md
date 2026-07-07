@@ -62,3 +62,5 @@ model.apply(init_fn)
 | glorot_uniform([dtype]) | A Glorot uniform initializer. |
 | he_normal([dtype]) | Build a He normal initializer. |
 | he_uniform([dtype]) | A He uniform (Kaiming uniform) initializer. |
+| sparse(sparsity[, mean, std, dtype]) | An initializer that returns a sparse matrix. |
+| orthogonal([gain, dtype]) | An initializer that returns an orthogonal matrix. |

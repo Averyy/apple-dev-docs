@@ -32,7 +32,7 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary_function
 **class kl_div_loss(*inputs: array*, *targets: array*, *axis: int = -1*, *reduction: Literal['none', 'mean', 'sum'] = 'none'*)**
 : Computes the Kullback-Leibler divergence loss.
 Computes the following when `reduction == 'none'`:
-mx.exp(targets) * (targets - inputs).sum(axis)
+(mx.exp(targets) * (targets - inputs)).sum(axis)
 
 Parameters:
 

@@ -56,7 +56,7 @@ of dimensions or type of any input will result in a recompilation even with
 
 Returns:
 A compiled function which has the same input arguments
-as `fun` and returns the the same output(s).
+as `fun` and returns the same output(s).
 
 Return type:
 *Callable*

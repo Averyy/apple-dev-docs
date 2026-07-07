@@ -40,7 +40,7 @@ Parameters:
 
 **input_dims** ([int](https://docs.python.org/3/library/functions.html#int)) – The dimensionality of the input features
 **output_dims** ([int](https://docs.python.org/3/library/functions.html#int)) – The dimensionality of the output features
-**bias** ([bool](https://docs.python.org/3/library/functions.html#bool)*, **optional*) – If set to `False` the the layer will not use a
+**bias** ([bool](https://docs.python.org/3/library/functions.html#bool)*, **optional*) – If set to `False` the layer will not use a
 bias. Default is `True`.
 **group** (*mx.distributed.Group**, **optional*) – The sharding will happen across
 this group. If not set then the global group is used. Default is

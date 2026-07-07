@@ -1,4 +1,3 @@
-Completed scraping Kernel!
-Total pages scraped: 0
-Pages skipped (unchanged): 39342
-Pages failed: 0
+Scraping Kernel in progress...
+Last scraped: https://developer.apple.com/documentation/kernel/1562121-vnode_rele (skipped)
+Progress: 0 scraped, 1500 skipped, 0 failed

@@ -1,28 +1,15 @@
-# allPhotos()
+# allPhotos
 
 **Framework**: Assets Library  
 **Kind**: method
 
-Returns a filter that gets all photos in the assets group.
-
 ## Declaration
 
 ```swift
-class func allPhotos() -> ALAssetsFilter!
++ (ALAssetsFilter *) allPhotos;
 ```
-
-#### Return Value
-
-A filter that gets all photos in the assets group.
-
-## See Also
-
-- [class func allAssets() -> ALAssetsFilter!](alassetsfilter/allassets.md)
-  Returns a filter that gets all assets in the assets group.
-- [class func allVideos() -> ALAssetsFilter!](alassetsfilter/allvideos.md)
-  Returns a filter that gets all videos in the assets group.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/assetslibrary/alassetsfilter/allphotos())*
+*[View on Apple Developer](https://developer.apple.com/documentation/assetslibrary/alassetsfilter/allphotos)*
