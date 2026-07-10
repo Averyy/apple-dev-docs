@@ -44,6 +44,7 @@ jobs:
         run: python scrape.py --all --yes --cleanup-orphans --auto-cleanup
 
       - name: Run Swift language docs scraper
+        timeout-minutes: 15
         run: python scripts/scrape_swift_docs.py
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

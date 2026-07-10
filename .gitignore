@@ -96,3 +96,5 @@ profile_*
 TODO_VPS_MIGRATION.md
 # codex-dobby MCP run artifacts
 .codex-dobby/
+# Claude Code agent memory
+.claude/agent-memory/
