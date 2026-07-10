@@ -232,6 +232,12 @@ The watchOS 27 SDK provides support to develop watchOS apps for Apple Watch devi
 
 - `WKExtension` and `WKExtensionDelegate`  are deprecated for apps with a minimum deployment target of watchOS 9.2 or later  (70031637)
 
+##### Workout Alerts and Workout Buddy
+
+###### Known Issues
+
+- When Siri AI is enabled on the paired iPhone and Apple Watch is operating in standalone, watch-only mode, Workout Alerts including Workout Buddy might fail to deliver audio announcements during an active workout.  (181296052) **Workaround:** On the paired iPhone, go to Settings > Siri, and select Turn Off Siri. Then select Turn On Siri and Use Previous Version to restore Workout announcements in standalone mode.
+
 ##### Workout Playback
 
 ###### Known Issues

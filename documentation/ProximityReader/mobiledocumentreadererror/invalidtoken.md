@@ -8,7 +8,6 @@ An error that indicates the provided reader token for framework’s prepare meth
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst 17.0+
 
 ## Declaration
 

@@ -16,6 +16,10 @@ This case indicates a peer client connection using a direct local wireless conne
 case localWireless
 ```
 
+## Mentions
+
+- [Adding support for Tap to Share to your app](adding-support-for-tap-to-share-to-your-app.md)
+
 
 ---
 

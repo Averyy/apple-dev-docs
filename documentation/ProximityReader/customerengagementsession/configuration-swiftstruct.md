@@ -42,6 +42,17 @@ struct Configuration
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 
+## See Also
+
+- [let configuration: CustomerEngagementSession.Configuration](customerengagementsession/configuration-swift.property.md)
+  Configuration for this session.
+- [func open(using: CustomerEngagement.Token?) async throws](customerengagementsession/open(using:).md)
+  Opens the engagement session.
+- [func close() async throws](customerengagementsession/close.md)
+  Closes the engagement session.
+- [CustomerEngagementSession.Token](customerengagementsession/token-swift.struct.md)
+  A session token.
+
 
 ---
 

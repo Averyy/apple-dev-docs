@@ -8,7 +8,6 @@ An error that indicates the framework encountered a problem which the system can
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst 17.0+
 
 ## Declaration
 

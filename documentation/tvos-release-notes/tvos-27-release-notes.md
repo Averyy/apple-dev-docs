@@ -16,9 +16,9 @@ The tvOS 27 SDK provides support to develop tvOS apps for Apple TV devices runni
 
 ##### Avkit Video Playback
 
-###### Known Issues
+###### Resolved Issues
 
-- When a video is muted or unmuted during playback, subtitles may not be automatically enabled or disabled as expected. The subtitles-on-mute logic has not yet been updated to account for the new system behavior.  (177086166) **Workaround:** Manually enable or disable subtitles using the subtitle option in the player’s playback controls menu, or adjust the system-wide setting in Settings > Accessibility > Subtitles & Captioning
+- Fixed: When a video is muted or unmuted during playback, subtitles may not be automatically enabled or disabled as expected. The subtitles-on-mute logic has not yet been updated to account for the new system behavior.  (177086166)
 
 ##### Background Assets
 
@@ -43,6 +43,7 @@ The tvOS 27 SDK provides support to develop tvOS apps for Apple TV devices runni
 ###### New Features
 
 - When Apple Intelligence in the Home app is enabled, your HomeKit Secure Video recordings are processed on-device and through Private Cloud Compute for video descriptions and search.  (178858470)
+- Apple Intelligence for Home requires an iCloud+ subscription starting at 2TB.  (181282161)
 
 ##### Metal
 
@@ -205,7 +206,7 @@ The tvOS 27 SDK provides support to develop tvOS apps for Apple TV devices runni
 
 ###### Known Issues
 
-- `Menu` labels can’t contain controls, views with gestures, or view representables with gesture recognizers.  (169091260) **Workaround:** Position your interactive views above a `Menu` in a `ZStack` or as an `overlay`.
+- `Menu` labels cannot contain controls, views with gestures, or view representables with gesture recognizers.  (169091260) **Workaround:** Position your interactive views above a `Menu` in a `ZStack` or as an `overlay`.
 - Buttons on tvOS no longer automatically use the accent color from an app’s asset catalog as a label tint color when building against the tvOS 27 SDK.  (171830912) **Workaround:** To get accent-tinted buttons, use `.tint(.accentColor)` to adopt your accent color as a button’s complete tint. `.bordered` and `.borderedProminent` use the tint in more and less subtle ways, respectively.
 
 ##### System

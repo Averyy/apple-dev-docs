@@ -58,10 +58,6 @@ Manage apps, books, and subscriptions for your students and employees.
   Add administrators for subscriptions.
 - [Remove Subscription Administrators](remove-subscription-administrators.md)
   Remove administrators from subscriptions.
-- [Get In-App Purchases](get-in-app-purchases.md)
-- [Get In-App Assignments](get-in-app-assignments.md)
-- [Associate In-App Purchases](associate-in-app-purchases.md)
-- [Disassociate In-App Purchases](disassociate-in-app-purchases.md)
 ### User management
 - [Get Users](get-users-4mwln.md)
   Get information about a set of users.

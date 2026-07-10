@@ -32,10 +32,7 @@ Updated recommended domain from `api.storekit.itunes.apple.com` to `api.storekit
 - Added the [`Send Consumption Information`](send-consumption-information.md) endpoint.
 - Added the [`revocationType`](revocationtype.md) and [`revocationPercentage`](revocationpercentage.md) fields to the [`JWSTransactionDecodedPayload`](jwstransactiondecodedpayload.md).
 - Added the [`advancedCommercePriceIncreaseInfo`](advancedcommercepriceincreaseinfo.md) object, and [`advancedCommercePriceIncreaseInfoDependentSKU`](advancedcommercepriceincreaseinfodependentsku.md), [`advancedCommercePriceIncreaseInfoStatus`](advancedcommercepriceincreaseinfostatus.md), [`advancedCommercePriceIncreaseInfoPrice`](advancedcommercepriceincreaseinfoprice.md), fields to the [`JWSRenewalInfoDecodedPayload`](jwsrenewalinfodecodedpayload.md).
-
-**Deprecations**
-
-- The [`Send Consumption Information V1`](send-consumption-information-v1.md) endpoint is deprecated. Use the new [`Send Consumption Information`](send-consumption-information.md) endpoint instead.
+- Use the new [`Send Consumption Information`](send-consumption-information.md) endpoint for App Store In-App Purchases that don’t use the Advanced Commerce API.
 
 ##### 118 20251029
 

@@ -8,7 +8,6 @@ The mobile driver’s license holder’s signature or usual mark on record with 
 **Availability**:
 - iOS 26.4+
 - iPadOS 26.4+
-- Mac Catalyst 26.4+
 
 ## Declaration
 

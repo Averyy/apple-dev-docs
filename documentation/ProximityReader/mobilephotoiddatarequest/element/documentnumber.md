@@ -8,7 +8,6 @@ The document’s number, as defined by the document’s issuing authority.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst 26.0+
 
 ## Declaration
 

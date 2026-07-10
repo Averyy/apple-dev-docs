@@ -20,6 +20,13 @@ final var customerConfiguration: CustomerEngagementSession.CustomerConfiguration
 
 The value is available after the [`CustomerEngagementSession.Event.ready`](customerengagementsession/event/ready.md) event.
 
+## See Also
+
+- [CustomerEngagementSession.CustomerConfiguration](customerengagementsession/customerconfiguration-swift.struct.md)
+  A structure that contains configuration details for the connected customer device.
+- [CustomerEngagementSession.PeerClientType](customerengagementsession/peerclienttype.md)
+  A value that indicates the type of connected peer client.
+
 
 ---
 

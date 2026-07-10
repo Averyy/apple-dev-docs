@@ -8,7 +8,6 @@ A request which retrieves elements from the holder and returns the validated doc
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst 26.0+
 
 ## Declaration
 

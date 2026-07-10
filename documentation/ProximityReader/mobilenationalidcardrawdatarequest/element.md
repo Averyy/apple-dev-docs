@@ -8,7 +8,6 @@ A type representing an element that you can request from a mobile national ID ca
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 
 ## Declaration
 

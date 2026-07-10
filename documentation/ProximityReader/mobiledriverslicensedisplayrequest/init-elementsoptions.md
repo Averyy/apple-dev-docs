@@ -8,7 +8,6 @@ Creates a new mobile driver’s license display request.
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst 17.0+
 
 ## Declaration
 

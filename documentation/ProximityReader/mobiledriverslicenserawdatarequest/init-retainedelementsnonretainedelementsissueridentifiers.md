@@ -8,7 +8,6 @@ Returns a mobile driver’s license raw data request with issuer identifiers.
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 
 ## Declaration
 

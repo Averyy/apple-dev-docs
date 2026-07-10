@@ -90,6 +90,15 @@ Behavior Tree nodes are divided into three categories — Root, Action, and Comp
 - Think of a Sequence node as a type of AND operation for all child nodes. As soon as a child fails (returns False), the Sequence exits and the Behavior Tree advances.
 - Sequence nodes also have the ability to randomize their children, like Selector nodes.
 
+## See Also
+
+- [Creating animation sequences](creating-animation-sequences.md)
+  Build and customize animation sequences to control entity movement and behavior in your scene.
+- [Working with the Animation Graph](working-with-the-animation-graph.md)
+  Define and control character animations using a visual, node-based state machine in Reality Composer Pro.
+- [Building a navmesh in Reality Composer Pro](building-a-navmesh-in-reality-composer-pro.md)
+  Configure a navigation mesh in Reality Composer Pro to define walkable areas and paths for AI-controlled entities in your scene.
+
 
 ---
 

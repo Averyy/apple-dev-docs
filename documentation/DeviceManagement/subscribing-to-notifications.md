@@ -19,7 +19,7 @@ Each notification has these common fields:
 
 | Response field | Description |
 | --- | --- |
-| `notificationId` | Each notification has a unique ID that you can use for deduping notifications that the server happens to send multiple times. |
+| `notificationId` | Each notification has a unique ID that you can use for deduping notifications that the server sends more than once. |
 | `notificationType` | The type of notification. You can use this to determine how to deserialize the notification value. |
 | `notification` | Contains the JSON object with the changed data. Each notification type has a uniquely structured notification JSON object. |
 | `uId` | The ID of the location for the notification. |
@@ -39,11 +39,11 @@ The server delivers notifications on a best-effort basis. The server attempts de
 
 There is a limit of 100 elements in the notification. Any request for more than 100 discrete tasks results in multiple notifications. For example, an assignment request for one `adamId` to 150 users results in at least two notifications.
 
-If your MDM server doesn’t receive a notification for an event within 5 minutes, check the event status using the [`Event Status`](events-status.md) endpoint with the `eventId` from the original request. While the returned `eventStatus` is `PENDING`, wait at least 30 seconds between subsequent status queries to avoid unnecessary load on the server.
+If your MDM server doesn’t receive a notification for an event within 5 minutes, check the event status using the [`Event Status`](events-status.md) endpoint with the `eventId` from the original request. While the returned `eventStatus` is `PENDING`, wait at least 30 seconds between subsequent status queries to avoid unnecessary load on the server. If the status remains `PENDING` after 10 minutes, retry the request.
 
 Notifications require an HTTPS URL and an authentication token. The authentication token is in a [`bearer token format`](https://developer.apple.comhttps://tools.ietf.org/html/rfc6750). See the [`ClientConfigRequest`](clientconfigrequest.md) for more details about these parameters.
 
-> ❗ **Important**:  The server sends a test notification of type TEST_NOTIFICATION when configuring notifications with [`Client Config`](client-config-4szk1.md). If delivery fails, the system rejects the configuration.
+> ❗ **Important**:  The server sends a test notification of type `TEST_NOTIFICATION` when you configure notifications with [`Client Config`](client-config-4szk1.md). If delivery fails, the system rejects the configuration.
 
 The test notification has the following format:
 
@@ -105,7 +105,7 @@ The notifications have the following format:
             }
         }
     },
-    "notificationId": "4a7801be-53f0-42e1-9505-81c0d1dc9da3",
+    "notificationId": "4a7801be-53f0-42e1-9505-81c0d1dc9da4",
     "notificationType": "SUBSCRIPTION_COUNT",
     "uId": "2049025000431439"
 }
@@ -144,7 +144,7 @@ The assignment notifications for associations have the following format:
         "result": "SUCCESS",
         "type": "ASSOCIATE"
     },
-    "notificationId": "ba8bbb23-44c2-44f6-a928-eff6ba5ffac3",
+    "notificationId": "ba8bbb23-44c2-44f6-a928-eff6ba5ffac5",
     "notificationType": "ASSET_MANAGEMENT",
     "uId": "2049025000431439"
 }
@@ -190,11 +190,11 @@ The assignment notifications for revoke calls have the following format:
             }
 
         ],
-        "eventId": "4bd7371e-6482-4933-8e97-c29f25b7f5f5",
+        "eventId": "7f2a9c14-3b8d-4e6a-b1c5-9d0e2f4a6b8c",
         "result": "SUCCESS",
         "type": "REVOKE"
     },
-    "notificationId": "545e1f6f-ca8b-4e6c-98fe-a7ac3ef63b28",
+    "notificationId": "6a2f1e8b-7d4c-4a9e-b3f0-1c5d8e2a4b60",
     "notificationType": "ASSET_MANAGEMENT",
     "uId": "2049025000431439"
 }
@@ -332,7 +332,7 @@ The notifications for retiring a user have the following format:
 
 ##### Track User Associations
 
-Track users upon receiving a USER_ASSOCIATED notification type that the server sends when a user accepts an invitation.
+Track users upon receiving a `USER_ASSOCIATED` notification type that the server sends when a user accepts an invitation.
 
 The notifications have the following format:
 
@@ -355,7 +355,7 @@ The notifications have the following format:
 }
 ```
 
-> ❗ **Important**: Notifications are best-effort and shouldn’t be the sole mechanism for confirming request completion. Always pair notification handling with Events Status polling using the `eventId` from the original request.
+> ❗ **Important**: Notifications are best-effort and should not be the sole mechanism for confirming request completion. Always pair notification handling with Events Status polling using the `eventId` from the original request.
 
 ## See Also
 

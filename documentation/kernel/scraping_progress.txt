@@ -1,4 +1,4 @@
 Completed scraping Kernel!
-Total pages scraped: 1
-Pages skipped (unchanged): 39341
+Total pages scraped: 0
+Pages skipped (unchanged): 39342
 Pages failed: 0

@@ -8,7 +8,6 @@ A dictionary of values that indicate whether the document holder is at least the
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst 26.0+
 
 ## Declaration
 

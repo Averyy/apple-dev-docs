@@ -63,7 +63,7 @@ To learn more about JWT, see the [`JSON Web Token (JWT) specification`](https://
 - [Adopting the Verifier API in your iPhone app](adopting-the-verifier-api-in-your-iphone-app.md)
   Configure and test ID Verifier support in your app for reading mobile documents.
 - [Checking IDs with the Verifier API](checking-ids-with-the-verifier-api.md)
-  Read and verify mobile driver’s license information without any additional hardware.
+  Read and verify mobile driver’s license, photo ID, and National ID information without any additional hardware.
 - [class MobileDocumentReader](mobiledocumentreader.md)
   An object for configuring mobile document reading on the current device.
 - [class MobileDocumentReaderSession](mobiledocumentreadersession.md)

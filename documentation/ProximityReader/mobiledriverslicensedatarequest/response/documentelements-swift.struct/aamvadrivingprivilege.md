@@ -8,7 +8,6 @@ A type that represents the mobile driver’s license holder’s AAMVA driving pr
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst 17.0+
 
 ## Declaration
 

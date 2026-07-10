@@ -8,7 +8,6 @@ A type that represents a type of supported mobile document.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst 26.0+
 
 ## Declaration
 

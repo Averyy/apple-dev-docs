@@ -275,6 +275,8 @@ The server responds with the following:
         {
             "parentAdamId": 361309726,
             "adamId": 67890,
+            "status": "ACTIVE",
+            "periodEndDate": "2027-01-15",
             "counts": {
                 "assigned": {
                     "renewing": 0,

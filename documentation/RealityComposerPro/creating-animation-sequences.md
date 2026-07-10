@@ -138,6 +138,10 @@ The Animation Graph Editor provides a range of nodes organized by category. Each
 
 - [Working with the Animation Graph](working-with-the-animation-graph.md)
   Define and control character animations using a visual, node-based state machine in Reality Composer Pro.
+- [Building a navmesh in Reality Composer Pro](building-a-navmesh-in-reality-composer-pro.md)
+  Configure a navigation mesh in Reality Composer Pro to define walkable areas and paths for AI-controlled entities in your scene.
+- [Defining a behavior with Behavior Trees](defining-a-behavior-with-behavior-trees.md)
+  Set up and connect Behavior Tree nodes to drive entity decision-making in your scene.
 
 
 ---

@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-07-07T20:45:03.377253",
+    "last_updated": "2026-07-10T14:23:12.323032",
     "total_pages": 224,
-    "session_id": "2026-07-07T20:44:41.511077"
+    "session_id": "2026-07-10T14:22:57.242696"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/DataDetection.json": {
       "hash": "9032bda46daa75705abcd1e7b5bc5e42c10b0020b57fd9e28b5e4d309c5d3930",
-      "last_checked": "2026-07-07T20:44:41.848085",
+      "last_checked": "2026-07-10T14:22:57.499084",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"ce1d888b24c728c87f6ffb3986d441ee\"",
       "file_path": "documentation/DataDetection/DataDetection.md"
     },
     "https://developer.apple.com/documentation/DataDetection": {
       "hash": "9032bda46daa75705abcd1e7b5bc5e42c10b0020b57fd9e28b5e4d309c5d3930",
-      "last_checked": "2026-07-07T20:44:41.754353",
+      "last_checked": "2026-07-10T14:22:57.377772",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"ce1d888b24c728c87f6ffb3986d441ee\"",
       "file_path": "documentation/DataDetection/DataDetection.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/ddmatch.json": {
       "hash": "38481627399c2dc29cb46e4f3f3adc910b6d05e92bdd6a151c6b987b5316b320",
-      "last_checked": "2026-07-07T20:44:42.257089",
+      "last_checked": "2026-07-10T14:22:57.722723",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"9f40c062ac53bc72bcf5cdaf113a6b0c\"",
       "file_path": "documentation/DataDetection/ddmatch.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector.json": {
       "hash": "c299825b1b956379d023ed9f1a4e5ebe767f84bd19d3f43d6e01a54a94921eb7",
-      "last_checked": "2026-07-07T20:44:42.399775",
+      "last_checked": "2026-07-10T14:22:57.857910",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"32b16312b4af0dd626871da95afe7b24\"",
       "file_path": "documentation/DataDetection/datadetector.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/ddmatchcalendarevent.json": {
       "hash": "39e3d1b5b688bb9447a230649fb622211f70c8db25e2f46ee1ed43eeac513d51",
-      "last_checked": "2026-07-07T20:44:42.714903",
+      "last_checked": "2026-07-10T14:22:58.061754",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"cc97863d894b11fab8ee3547fd68bf82\"",
       "file_path": "documentation/DataDetection/ddmatchcalendarevent.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/ddmatchemailaddress.json": {
       "hash": "c04a11c202cc886693305069a5fef08161275229c4fba3043ccbeaef40d23b43",
-      "last_checked": "2026-07-07T20:44:42.930750",
+      "last_checked": "2026-07-10T14:22:58.180974",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"cc813b379178dac937a188e8a11ad301\"",
       "file_path": "documentation/DataDetection/ddmatchemailaddress.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/ddmatchflightnumber.json": {
       "hash": "b2a527a47aa40ea1c307e47aa363b0560b6a043c968538fd8a24895e7a8a52b5",
-      "last_checked": "2026-07-07T20:44:43.280578",
+      "last_checked": "2026-07-10T14:22:58.310256",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"3545d3c1c4ff76d2fd6adecc3027a310\"",
       "file_path": "documentation/DataDetection/ddmatchflightnumber.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/ddmatchlink.json": {
       "hash": "9eadb6990823a3ca4c66d9044fd91f4bdee4812c9f18a194cf4d0e9c8c843851",
-      "last_checked": "2026-07-07T20:44:43.651376",
+      "last_checked": "2026-07-10T14:22:58.424428",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"1df8122f5f25435d689348b54d6a70dc\"",
       "file_path": "documentation/DataDetection/ddmatchlink.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/ddmatchmoneyamount.json": {
       "hash": "110930c9c2fea2c16cdecd8d6de603427f0a69faf905f9e0f3fb966489e34c3c",
-      "last_checked": "2026-07-07T20:44:43.948641",
+      "last_checked": "2026-07-10T14:22:58.563148",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"68732be867025dc5b64b5bc90d4c91d7\"",
       "file_path": "documentation/DataDetection/ddmatchmoneyamount.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/ddmatchphonenumber.json": {
       "hash": "7b2939c51eef9c9c7cfdfdfd9de8e3ad4f71bfa2cc5fb453439adb027c830bfd",
-      "last_checked": "2026-07-07T20:44:44.128085",
+      "last_checked": "2026-07-10T14:22:58.693904",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"90e2b26c490f8a3c840910d9a40993f0\"",
       "file_path": "documentation/DataDetection/ddmatchphonenumber.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/ddmatchpostaladdress.json": {
       "hash": "36bb94c1065e99611cdfef87c4af0de765ac28ce98518b7e964530073414c2ea",
-      "last_checked": "2026-07-07T20:44:44.306937",
+      "last_checked": "2026-07-10T14:22:58.835315",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"332c75f396d2f68c80d90a2c0a779443\"",
       "file_path": "documentation/DataDetection/ddmatchpostaladdress.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/ddmatchshipmenttrackingnumber.json": {
       "hash": "35515d69c899c012e5a574b0479451b2daf5a771b168881e6815694e482dcb38",
-      "last_checked": "2026-07-07T20:44:44.602727",
+      "last_checked": "2026-07-10T14:22:58.953890",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"11fb43468e485fe9cc9fc54f9be78921\"",
       "file_path": "documentation/DataDetection/ddmatchshipmenttrackingnumber.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/ddmatch/matchedstring.json": {
       "hash": "afa02a2827a78372afabd1f41e8837d637d49dba40caec5dd55364c81418b729",
-      "last_checked": "2026-07-07T20:44:44.781690",
+      "last_checked": "2026-07-10T14:22:59.068257",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"e5714c32093d84ae4fe272d228e6078f\"",
       "file_path": "documentation/DataDetection/ddmatch/matchedstring.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector/match.json": {
       "hash": "350b840c5737eb66948cb4407f5836a37e28b7b6f349404d4e43480aa5e9364f",
-      "last_checked": "2026-07-07T20:44:44.947370",
+      "last_checked": "2026-07-10T14:22:59.197826",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"0d7f05f7f70e7efdcb2fcdad71c5c478\"",
       "file_path": "documentation/DataDetection/datadetector/match.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector/matchtype.json": {
       "hash": "0ca65f4749ed8a48f824abeaf9e7aa5b3556f172e43c9ef44753d60cec9c95c3",
-      "last_checked": "2026-07-07T20:44:45.152668",
+      "last_checked": "2026-07-10T14:22:59.330608",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"7f90d5f185abeef7da04b2e2c2f1d49e\"",
       "file_path": "documentation/DataDetection/datadetector/matchtype.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector/options.json": {
       "hash": "5f3912ac9d46cbc76cec4273279ad05dd848f8f838b445fd8d46ac31900d4e3d",
-      "last_checked": "2026-07-07T20:44:45.338108",
+      "last_checked": "2026-07-10T14:22:59.462470",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"07bc3070a07eb55972122f45ccc6cc2e\"",
       "file_path": "documentation/DataDetection/datadetector/options.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector/matchtype/all.json": {
       "hash": "e44b11d63d0fab76150d23aec18734378cf6251c88ce427bec1b1cc5f8c533fa",
-      "last_checked": "2026-07-07T20:44:45.652465",
+      "last_checked": "2026-07-10T14:22:59.588168",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"f3879ae668b6c31ef936d0d3f10920ba\"",
       "file_path": "documentation/DataDetection/datadetector/matchtype/all.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector/matchtype/link.json": {
       "hash": "3eb8cc7ca8332f36933f416b88d23bc8ca13ebe1b1a699ab28b04fc33745f58e",
-      "last_checked": "2026-07-07T20:44:45.814828",
+      "last_checked": "2026-07-10T14:22:59.707431",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"3e73486abd26b33984d631759e7d6556\"",
       "file_path": "documentation/DataDetection/datadetector/matchtype/link.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector/matchtype/emailaddress.json": {
       "hash": "43c5c8c9598bef24e206c15d57a7ef31032825701b5c66da272f3103ba9604d9",
-      "last_checked": "2026-07-07T20:44:45.954903",
+      "last_checked": "2026-07-10T14:22:59.857008",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"93c8b4cbe8369ff48f9c1f24f344a73e\"",
       "file_path": "documentation/DataDetection/datadetector/matchtype/emailaddress.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector/matchtype/phonenumber.json": {
       "hash": "7be52d74c2e42bd4713d1fbcfc5b494bf7ee35799b7b948a3ab447d5d8e75ebb",
-      "last_checked": "2026-07-07T20:44:46.263778",
+      "last_checked": "2026-07-10T14:22:59.990777",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"f47db6d604e60064454798f8f0bcc9f4\"",
       "file_path": "documentation/DataDetection/datadetector/matchtype/phonenumber.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector/matchtype/postaladdress.json": {
       "hash": "1c1f86733ed6e1c802fcd5c8f1a436fd6145d275cff6c5bd27c54b1caeccf502",
-      "last_checked": "2026-07-07T20:44:46.444959",
+      "last_checked": "2026-07-10T14:23:00.116855",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"68216ce4a7663af8a4119915393f3aba\"",
       "file_path": "documentation/DataDetection/datadetector/matchtype/postaladdress.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector/matchtype/calendarevent.json": {
       "hash": "cd3df89716b360b46a30d269cd0bbd7f0069cb230ebee982899ef17bb7489808",
-      "last_checked": "2026-07-07T20:44:46.968986",
+      "last_checked": "2026-07-10T14:23:00.248394",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"3a6c26f90dae34ed0c46587fc696ed96\"",
       "file_path": "documentation/DataDetection/datadetector/matchtype/calendarevent.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector/matchtype/moneyamount.json": {
       "hash": "44404820e2e41b3a7d76cd35465116d15e5c79e1e00fabdd2d7f04a76e82ac42",
-      "last_checked": "2026-07-07T20:44:47.144615",
+      "last_checked": "2026-07-10T14:23:00.365887",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"cda749815b5df19804b81edac316fd44\"",
       "file_path": "documentation/DataDetection/datadetector/matchtype/moneyamount.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector/matchtype/measurement.json": {
       "hash": "1d3dcf779ecf28aba1c13015c8063dc46966a4adf71efeee0efa42383d13d29b",
-      "last_checked": "2026-07-07T20:44:47.333053",
+      "last_checked": "2026-07-10T14:23:00.482287",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"ee9584d88de94046f2393b3f50dbe5a3\"",
       "file_path": "documentation/DataDetection/datadetector/matchtype/measurement.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector/matchtype/flightnumber.json": {
       "hash": "d9d588ed6eb75fd143d4ac419de758e6a2749cbc4d2f594cca7bd03b9876951d",
-      "last_checked": "2026-07-07T20:44:47.524033",
+      "last_checked": "2026-07-10T14:23:00.616013",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"cf13a9a88241d4985b04def349cea6e3\"",
       "file_path": "documentation/DataDetection/datadetector/matchtype/flightnumber.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector/matchtype/shipmenttrackingnumber.json": {
       "hash": "c8dba5e602e2f6155a94104b8856c98bcd5a46338926f02236e9e01df56aa34a",
-      "last_checked": "2026-07-07T20:44:47.699070",
+      "last_checked": "2026-07-10T14:23:00.753990",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"18c60c47b7bb0fd0b7d7fdb8cde8dca7\"",
       "file_path": "documentation/DataDetection/datadetector/matchtype/shipmenttrackingnumber.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector/matchtype/paymentidentifier.json": {
       "hash": "747c0eb00c92f1e072b10e0b046d1972a0e9aa20a275b30fde26f1c0895bec6e",
-      "last_checked": "2026-07-07T20:44:47.889812",
+      "last_checked": "2026-07-10T14:23:00.875258",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"b7d0dede90f6a210e47c27dc55ee5265\"",
       "file_path": "documentation/DataDetection/datadetector/matchtype/paymentidentifier.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/ddmatchcalendarevent/isallday.json": {
       "hash": "ddf1fbbad3361a33eae09b6a16bec8937a7693c30ca1b6b5cf0d141a5d77f40c",
-      "last_checked": "2026-07-07T20:44:48.072902",
+      "last_checked": "2026-07-10T14:23:01.006247",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"d18fd2da96d450c3587dd4e023b92703\"",
       "file_path": "documentation/DataDetection/ddmatchcalendarevent/isallday.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/ddmatchcalendarevent/enddate.json": {
       "hash": "e6523d3633124b19b77c969ed3201c281e879a8624d3ac2dfd77d7795d4fdd64",
-      "last_checked": "2026-07-07T20:44:48.274227",
+      "last_checked": "2026-07-10T14:23:01.133671",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"dd8779d29e87f656d6fc080f52f407d9\"",
       "file_path": "documentation/DataDetection/ddmatchcalendarevent/enddate.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/ddmatchcalendarevent/endtimezone.json": {
       "hash": "6698d06405572291a7a65322da3dd449fe571e4dee408acc3135c38a5f7324a3",
-      "last_checked": "2026-07-07T20:44:48.479417",
+      "last_checked": "2026-07-10T14:23:01.248992",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"2f13bdb9ed1632fd58c328c165cdd376\"",
       "file_path": "documentation/DataDetection/ddmatchcalendarevent/endtimezone.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/ddmatchcalendarevent/startdate.json": {
       "hash": "bbc7d7c05a3a58e0878665711c9c0277eb2a5897d1577dac1747a0dc9be0d81c",
-      "last_checked": "2026-07-07T20:44:48.671594",
+      "last_checked": "2026-07-10T14:23:01.376971",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"12acacfc3c1055482d57f1ecf20771fe\"",
       "file_path": "documentation/DataDetection/ddmatchcalendarevent/startdate.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/ddmatchcalendarevent/starttimezone.json": {
       "hash": "981b8bf9fbb694f24252ef2c91ed1ebcfa7b70691c54194f1f06f376e0a619af",
-      "last_checked": "2026-07-07T20:44:48.855387",
+      "last_checked": "2026-07-10T14:23:01.516622",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"efe2f3a6ed4f32e407c80bb4dbdeed0c\"",
       "file_path": "documentation/DataDetection/ddmatchcalendarevent/starttimezone.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/ddmatchemailaddress/emailaddress.json": {
       "hash": "cc2019c3644d63db58e26e5674408fe3eb02590a642da5af6ebff69fd507f255",
-      "last_checked": "2026-07-07T20:44:49.029397",
+      "last_checked": "2026-07-10T14:23:01.635754",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"58e7a171fdf0cda796e16de9ec7a74c1\"",
       "file_path": "documentation/DataDetection/ddmatchemailaddress/emailaddress.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/ddmatchemailaddress/label.json": {
       "hash": "72c6ac2a2d5dac63f5af6ce44068f71d2a756d600fe5a0db0109c9dd673f852e",
-      "last_checked": "2026-07-07T20:44:49.211433",
+      "last_checked": "2026-07-10T14:23:01.769757",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"33df7e08328a7c90ebe2cff41ee82b83\"",
       "file_path": "documentation/DataDetection/ddmatchemailaddress/label.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/ddmatchflightnumber/airline.json": {
       "hash": "622488fbdf4a59c4b52c2e15e342cc7841cdc320a554654f6d23a3fc559d5b9c",
-      "last_checked": "2026-07-07T20:44:49.407526",
+      "last_checked": "2026-07-10T14:23:01.882754",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"5bc8cf52c44972f52a37fd8216fa9f2c\"",
       "file_path": "documentation/DataDetection/ddmatchflightnumber/airline.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/ddmatchflightnumber/flightnumber.json": {
       "hash": "dd4f38830fca30aabcc3817fe385187cc76b7670cca698016d30037f26b31a68",
-      "last_checked": "2026-07-07T20:44:49.587381",
+      "last_checked": "2026-07-10T14:23:02.011886",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"8b65f85d67fbb5f16a2f273b4ad47eae\"",
       "file_path": "documentation/DataDetection/ddmatchflightnumber/flightnumber.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/ddmatchlink/url.json": {
       "hash": "1c86887f6a7375c079de707154c6cf3a3b1ae7c6a911846562f3b4ad190c9443",
-      "last_checked": "2026-07-07T20:44:49.769670",
+      "last_checked": "2026-07-10T14:23:02.126702",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"448b00ab114934114e534042b196d965\"",
       "file_path": "documentation/DataDetection/ddmatchlink/url.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/ddmatchmoneyamount/amount.json": {
       "hash": "2d5776a330f9bfbe1e4298958cec4fd94b706c48b1d7f8397ebeba56671cdf75",
-      "last_checked": "2026-07-07T20:44:49.949434",
+      "last_checked": "2026-07-10T14:23:02.265068",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"719f2ad9d2019dd248b25d7ce8c12d8f\"",
       "file_path": "documentation/DataDetection/ddmatchmoneyamount/amount.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/ddmatchmoneyamount/currency.json": {
       "hash": "1a7bed43f25f28adbf9906b07587481e8ed29fa028a6ae5ae6abcdec8092e428",
-      "last_checked": "2026-07-07T20:44:50.130213",
+      "last_checked": "2026-07-10T14:23:02.392574",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"385d27a55fd554782d39484396fef436\"",
       "file_path": "documentation/DataDetection/ddmatchmoneyamount/currency.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/ddmatchphonenumber/phonenumber.json": {
       "hash": "5707fcb81e3dab000f9d55ecf72d82121dd3872e9888ddd0c69b3280495167a6",
-      "last_checked": "2026-07-07T20:44:50.309927",
+      "last_checked": "2026-07-10T14:23:02.528141",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"851420a0183c88f2a9f65f2309a7fb99\"",
       "file_path": "documentation/DataDetection/ddmatchphonenumber/phonenumber.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/ddmatchphonenumber/label.json": {
       "hash": "083e000864d9ea62dc3f745a8c4a5b5e0d46a9d2c0944677aa02499001fa884e",
-      "last_checked": "2026-07-07T20:44:50.491467",
+      "last_checked": "2026-07-10T14:23:02.648326",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"887fb48b679207d5c9b38c683f62fd4a\"",
       "file_path": "documentation/DataDetection/ddmatchphonenumber/label.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/ddmatchpostaladdress/street.json": {
       "hash": "a2e2bcc36dbd9d25ac0a2d354c12ce4f83e0e47e713848517941a357f59cf7a7",
-      "last_checked": "2026-07-07T20:44:50.618421",
+      "last_checked": "2026-07-10T14:23:02.762309",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"3431046b2482ed08de7556f56d20e2c8\"",
       "file_path": "documentation/DataDetection/ddmatchpostaladdress/street.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/ddmatchpostaladdress/city.json": {
       "hash": "4e4c4f50f9bf1861588b9335482318f0781b7c7793de4c4a37823259deadafca",
-      "last_checked": "2026-07-07T20:44:50.800696",
+      "last_checked": "2026-07-10T14:23:02.879207",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"7b9e9c4732b3667cb738565de1e4fe24\"",
       "file_path": "documentation/DataDetection/ddmatchpostaladdress/city.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/ddmatchpostaladdress/state.json": {
       "hash": "212dd2f7469469a2626a4c3b7b361f1002c00444783c6e91cb34ac932a460d23",
-      "last_checked": "2026-07-07T20:44:50.986980",
+      "last_checked": "2026-07-10T14:23:03.019459",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"d9d7a396091cdc6b155b75e278271a51\"",
       "file_path": "documentation/DataDetection/ddmatchpostaladdress/state.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/ddmatchpostaladdress/postalcode.json": {
       "hash": "ef59a0367deb22c4d6a3e33acf01dbf45588748c4fefabefefd6cc6ec4aa0558",
-      "last_checked": "2026-07-07T20:44:51.194954",
+      "last_checked": "2026-07-10T14:23:03.157169",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"4abc24df1a498d57f82de91ebfa55cb0\"",
       "file_path": "documentation/DataDetection/ddmatchpostaladdress/postalcode.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/ddmatchpostaladdress/country.json": {
       "hash": "3ecdbb3ece3b5e55fe83d59c0836bcbe3019f647bbc8c3720b35c84f51dc8f4e",
-      "last_checked": "2026-07-07T20:44:51.421193",
+      "last_checked": "2026-07-10T14:23:03.294170",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"4b08cc72e6ba58168b260a4f2bbe9a1d\"",
       "file_path": "documentation/DataDetection/ddmatchpostaladdress/country.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/ddmatchshipmenttrackingnumber/carrier.json": {
       "hash": "5b877500362aaf249bedd653c8ceab88c7fc403f0640a735d09ae57cb3d4db7e",
-      "last_checked": "2026-07-07T20:44:51.540439",
+      "last_checked": "2026-07-10T14:23:03.410280",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"07fe90a055af4e9c8715debfbb47bf50\"",
       "file_path": "documentation/DataDetection/ddmatchshipmenttrackingnumber/carrier.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/ddmatchshipmenttrackingnumber/trackingnumber.json": {
       "hash": "c1eb38ebd778b194609cc920240b0cefcff093b57770ad971380facf2ed2a989",
-      "last_checked": "2026-07-07T20:44:51.674266",
+      "last_checked": "2026-07-10T14:23:03.546485",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"d4f998d48b0c36f3c2634b02e5c84097\"",
       "file_path": "documentation/DataDetection/ddmatchshipmenttrackingnumber/trackingnumber.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector/match/details.json": {
       "hash": "1404d3daf2aced3f11f2dca5a4124043027adb6b848e5fb0748339a6adf43ad2",
-      "last_checked": "2026-07-07T20:44:51.977762",
+      "last_checked": "2026-07-10T14:23:03.662130",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"336fbd37ed83f70ff164a4721e8428e9\"",
       "file_path": "documentation/DataDetection/datadetector/match/details.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector/match/preferredhighlightstyle.json": {
       "hash": "81abd75b969a19970d435cb2ff0bc6a175e5b7be1b62a8059f8359d5eabe9409",
-      "last_checked": "2026-07-07T20:44:52.149330",
+      "last_checked": "2026-07-10T14:23:03.784965",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"9677d90d07be3a863b7c44124c4d04e3\"",
       "file_path": "documentation/DataDetection/datadetector/match/preferredhighlightstyle.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector/match/range.json": {
       "hash": "47474323479f1e36f357b1d9f385012854789082275ed44e7738a0d84aa8e7db",
-      "last_checked": "2026-07-07T20:44:52.337360",
+      "last_checked": "2026-07-10T14:23:03.896469",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"49a91b0a05b8e4ea60d8dafc11f0c455\"",
       "file_path": "documentation/DataDetection/datadetector/match/range.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector/match/highlightstyle.json": {
       "hash": "c3ab76d794dca214342a07e78fe104c435235bab6c033e1620714858258302a1",
-      "last_checked": "2026-07-07T20:44:52.521307",
+      "last_checked": "2026-07-10T14:23:04.037007",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"d14a9d22a92459d0117bbb20b745f7d7\"",
       "file_path": "documentation/DataDetection/datadetector/match/highlightstyle.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector/match/semanticdetails.json": {
       "hash": "c9eaa52fd3927e40a09c1c9f794bd6aa96ff87c0279b879825cb7f9c689e0f85",
-      "last_checked": "2026-07-07T20:44:52.715119",
+      "last_checked": "2026-07-10T14:23:04.167594",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"d11d4f99ff3de6b6de48cd1a520f8838\"",
       "file_path": "documentation/DataDetection/datadetector/match/semanticdetails.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector/options/documentdate.json": {
       "hash": "450c7c73a5d21e01b3ad23935e2e2afa837b15b54123ecbf95a805d836297e0f",
-      "last_checked": "2026-07-07T20:44:52.903209",
+      "last_checked": "2026-07-10T14:23:04.284672",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"ee8f4cfdc29e3012df4a4029db7ae140\"",
       "file_path": "documentation/DataDetection/datadetector/options/documentdate.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector/options/documentlanguagecode.json": {
       "hash": "1da5023b5f135ae9f493e6e75d9a3ff1a46538822b036bbebde5f1d603c6ceda",
-      "last_checked": "2026-07-07T20:44:53.072229",
+      "last_checked": "2026-07-10T14:23:04.422339",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"b263610a2da9109ef08528d91bdd60e8\"",
       "file_path": "documentation/DataDetection/datadetector/options/documentlanguagecode.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector/options/documentregion.json": {
       "hash": "ecdcafa3d6edc15e4f3a65214c86efc84589ef8d049b9a15a84ff24b9e54b481",
-      "last_checked": "2026-07-07T20:44:53.267046",
+      "last_checked": "2026-07-10T14:23:04.555276",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"1570a78f32e7bf9bc98051e86912ac91\"",
       "file_path": "documentation/DataDetection/datadetector/options/documentregion.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector/options/documenttimezone.json": {
       "hash": "8abb6e98c6ed1f07104cb03058284bc554aa935ddfdd6900f11d0ab85d420faa",
-      "last_checked": "2026-07-07T20:44:53.433673",
+      "last_checked": "2026-07-10T14:23:04.711541",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"a114bda06864bf840acadda47ea4a2e5\"",
       "file_path": "documentation/DataDetection/datadetector/options/documenttimezone.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector/options/init().json": {
       "hash": "2a1f361d8250917a44fbb57388a313b886dbec2d7df44d736780f08290243243",
-      "last_checked": "2026-07-07T20:44:53.549663",
+      "last_checked": "2026-07-10T14:23:04.844387",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"07b879379f1dfda70cbb9a4a511aaaa5\"",
       "file_path": "documentation/DataDetection/datadetector/options/init.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector/match/highlightstyle/hidden.json": {
       "hash": "3e5eb61d6f5c043eab1acdd13690d71ab5c9b2351a0bf7187e0ce398a3bbcaef",
-      "last_checked": "2026-07-07T20:44:53.758062",
+      "last_checked": "2026-07-10T14:23:04.974012",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"dd0837d25f5516a1d1756d1c29038ceb\"",
       "file_path": "documentation/DataDetection/datadetector/match/highlightstyle/hidden.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector/match/highlightstyle/regular.json": {
       "hash": "8803a2686c2fd1df193010bd2ae9819b77778248cd0a16fc871907dfad0f89e3",
-      "last_checked": "2026-07-07T20:44:53.932997",
+      "last_checked": "2026-07-10T14:23:05.108129",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"acf1dd08d84f5fe31f546c15061e3510\"",
       "file_path": "documentation/DataDetection/datadetector/match/highlightstyle/regular.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector/match/highlightstyle/url.json": {
       "hash": "08195a868ea7830ec1cf7c2265512ec73a8e29f3effb29a4afa0272edd1139f5",
-      "last_checked": "2026-07-07T20:44:54.093303",
+      "last_checked": "2026-07-10T14:23:05.242621",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"aaa7c3e368ef1842b0f2b18f1a02d9ce\"",
       "file_path": "documentation/DataDetection/datadetector/match/highlightstyle/url.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector/match/semanticdetails/calendarevent.json": {
       "hash": "a6639edc37c0fb7f16e5c9f366cfb781604685291c48776d7858240d133426d2",
-      "last_checked": "2026-07-07T20:44:54.495988",
+      "last_checked": "2026-07-10T14:23:05.363014",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"d03e9ca771e34951f89e127cd97ad5d5\"",
       "file_path": "documentation/DataDetection/datadetector/match/semanticdetails/calendarevent.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector/match/semanticdetails/emailaddress.json": {
       "hash": "29d0e9182d5e2a960a9a0906c6b5eb54e6692fda545a34534f30a4940855f09c",
-      "last_checked": "2026-07-07T20:44:54.635232",
+      "last_checked": "2026-07-10T14:23:05.501775",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"5f2426e1e206dd4414489dadcf6a5166\"",
       "file_path": "documentation/DataDetection/datadetector/match/semanticdetails/emailaddress.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector/match/semanticdetails/flightnumber.json": {
       "hash": "5ee9d644c26b1c798d1c3f900a9dae9dd6e9c729a398e225c7bea20c699ae896",
-      "last_checked": "2026-07-07T20:44:54.831264",
+      "last_checked": "2026-07-10T14:23:05.634315",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"b30f4d281a01f79e263d23565e0cf1b5\"",
       "file_path": "documentation/DataDetection/datadetector/match/semanticdetails/flightnumber.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector/match/semanticdetails/link.json": {
       "hash": "4a9df392b3ceb7e5a4625774d04407037e7267a7d5a9e4b9f075b8979126e517",
-      "last_checked": "2026-07-07T20:44:54.957746",
+      "last_checked": "2026-07-10T14:23:05.760620",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"a248cb52234b09d5ee327818685b7f90\"",
       "file_path": "documentation/DataDetection/datadetector/match/semanticdetails/link.md"
     },
@@ -1031,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector/match/semanticdetails/measurement.json": {
       "hash": "9c059b6a38800ac9b135b0e29a268c16d4188c70537140d03ba3995144de6671",
-      "last_checked": "2026-07-07T20:44:55.160560",
+      "last_checked": "2026-07-10T14:23:05.923422",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"b570066852de58e8af5608399632858d\"",
       "file_path": "documentation/DataDetection/datadetector/match/semanticdetails/measurement.md"
     },
@@ -1047,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector/match/semanticdetails/moneyamount.json": {
       "hash": "88367534f4c7e7e724049ac81f26dcfa4a742ce1e9f9e3c8e6829681f88fc8c8",
-      "last_checked": "2026-07-07T20:44:55.347123",
+      "last_checked": "2026-07-10T14:23:06.042978",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"287fcd8f1f4c8159ed2ed8904b6527f8\"",
       "file_path": "documentation/DataDetection/datadetector/match/semanticdetails/moneyamount.md"
     },
@@ -1063,9 +1063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector/match/semanticdetails/paymentidentifier.json": {
       "hash": "4d9888943f620ff55778214961e85cc527af4fc21a7ec83d8d3fde12c09ad8f3",
-      "last_checked": "2026-07-07T20:44:55.463847",
+      "last_checked": "2026-07-10T14:23:06.180457",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"82d975a9785c77f9620daed63a493f57\"",
       "file_path": "documentation/DataDetection/datadetector/match/semanticdetails/paymentidentifier.md"
     },
@@ -1079,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector/match/semanticdetails/phonenumber.json": {
       "hash": "9e1ba6a8ebbe90218bcfd69180ac0cc4f07026371b9e3b32a63de377fab36d02",
-      "last_checked": "2026-07-07T20:44:55.587514",
+      "last_checked": "2026-07-10T14:23:06.319517",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"0d3f10ef0fda1f31157f8efa601e5085\"",
       "file_path": "documentation/DataDetection/datadetector/match/semanticdetails/phonenumber.md"
     },
@@ -1095,9 +1095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector/match/semanticdetails/postaladdress.json": {
       "hash": "e5af90aa4f288f3656579581706f6f169a320d4ecdcc98c360efd9e412153880",
-      "last_checked": "2026-07-07T20:44:55.772834",
+      "last_checked": "2026-07-10T14:23:06.436805",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"291f83bc4f58d1d282d3155cf39b23d6\"",
       "file_path": "documentation/DataDetection/datadetector/match/semanticdetails/postaladdress.md"
     },
@@ -1111,9 +1111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector/match/semanticdetails/shipmenttrackingnumber.json": {
       "hash": "ddc2f0e26e201b0f9f86e387a5d1c3c0e57f8bad373e723ca2fd26266302bd2e",
-      "last_checked": "2026-07-07T20:44:55.892161",
+      "last_checked": "2026-07-10T14:23:06.576585",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"76e775d60fe8da87ccf7868f9f31ba94\"",
       "file_path": "documentation/DataDetection/datadetector/match/semanticdetails/shipmenttrackingnumber.md"
     },
@@ -1127,9 +1127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector/match/semanticdetails/calendarevent(_:).json": {
       "hash": "90ded8430cc631ec0314fea66210ab773f2e1a91425b4ef9c8bff081c5617ea4",
-      "last_checked": "2026-07-07T20:44:56.082779",
+      "last_checked": "2026-07-10T14:23:06.689285",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"b8a5825da977bda0c564d721dc3fc2c4\"",
       "file_path": "documentation/DataDetection/datadetector/match/semanticdetails/calendarevent.md"
     },
@@ -1143,9 +1143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector/match/semanticdetails/emailaddress(_:).json": {
       "hash": "6c909f7eeddbeabd02163c9caf1613063500fbd8398b8f69f24aa9479291feda",
-      "last_checked": "2026-07-07T20:44:56.220648",
+      "last_checked": "2026-07-10T14:23:06.830372",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"9dca3690c2ac699e0160a4a7ced8490a\"",
       "file_path": "documentation/DataDetection/datadetector/match/semanticdetails/emailaddress.md"
     },
@@ -1159,9 +1159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector/match/semanticdetails/flightnumber(_:).json": {
       "hash": "993cf6285833975cb315fc026236b08da0a42ff00ac89c8a3d0102cd3a57f3b5",
-      "last_checked": "2026-07-07T20:44:56.365157",
+      "last_checked": "2026-07-10T14:23:06.982804",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"a12f89ec3c8093c18bd163463773db16\"",
       "file_path": "documentation/DataDetection/datadetector/match/semanticdetails/flightnumber.md"
     },
@@ -1175,9 +1175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector/match/semanticdetails/link(_:).json": {
       "hash": "1058d0fb7ab4282595e0ba74600b577c42126b5d2bcbeb62f4a54c274bc3c767",
-      "last_checked": "2026-07-07T20:44:56.557374",
+      "last_checked": "2026-07-10T14:23:07.095599",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"c9508ccfaee48386395825ad046fff41\"",
       "file_path": "documentation/DataDetection/datadetector/match/semanticdetails/link.md"
     },
@@ -1191,9 +1191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector/match/semanticdetails/measurement(_:).json": {
       "hash": "85e73a65de95401bf0c75e0d69c2fe0ea0fe869162ceda6ccbc899f4901b2e88",
-      "last_checked": "2026-07-07T20:44:56.737610",
+      "last_checked": "2026-07-10T14:23:07.226831",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"e3903bdfdc161ce3efcbc4b5c0cb0232\"",
       "file_path": "documentation/DataDetection/datadetector/match/semanticdetails/measurement.md"
     },
@@ -1207,9 +1207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector/match/semanticdetails/moneyamount(_:).json": {
       "hash": "4f11924af152d4d9274754b35c9cda64fc48353fc376a8f473e6345341fdaaba",
-      "last_checked": "2026-07-07T20:44:56.910715",
+      "last_checked": "2026-07-10T14:23:07.347719",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"0e7429f737fc61a498500451f80c2a17\"",
       "file_path": "documentation/DataDetection/datadetector/match/semanticdetails/moneyamount.md"
     },
@@ -1223,9 +1223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector/match/semanticdetails/paymentidentifier(_:).json": {
       "hash": "e1e0a765df1a8141c3a8209d4648c23e6b776331ac278d20f8970371c72366a9",
-      "last_checked": "2026-07-07T20:44:57.036449",
+      "last_checked": "2026-07-10T14:23:07.502512",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"f0b6ae721a9ad4fd737f4ab5629db7ad\"",
       "file_path": "documentation/DataDetection/datadetector/match/semanticdetails/paymentidentifier.md"
     },
@@ -1239,9 +1239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector/match/semanticdetails/phonenumber(_:).json": {
       "hash": "81548a4906e103044bdb0fbe35eb4fe67097cd94d99f3c948a8de54bed6f1a6d",
-      "last_checked": "2026-07-07T20:44:57.170745",
+      "last_checked": "2026-07-10T14:23:07.628945",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"b35f705f1dc5feedd5cd8f57dfc55a9a\"",
       "file_path": "documentation/DataDetection/datadetector/match/semanticdetails/phonenumber.md"
     },
@@ -1255,9 +1255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector/match/semanticdetails/postaladdress(_:).json": {
       "hash": "22c36818fbd65f22e1e565b176e642241d85bc2616251f99a10781c130b95eff",
-      "last_checked": "2026-07-07T20:44:57.293338",
+      "last_checked": "2026-07-10T14:23:07.765104",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"3d434d95f13cebfad1e961d281d32da3\"",
       "file_path": "documentation/DataDetection/datadetector/match/semanticdetails/postaladdress.md"
     },
@@ -1271,9 +1271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector/match/semanticdetails/shipmenttrackingnumber(_:).json": {
       "hash": "2f2cc0da97fa55f5f5b0aa35e8cc4b12b5411edf45a3ac0b9df2fe562f427638",
-      "last_checked": "2026-07-07T20:44:57.426179",
+      "last_checked": "2026-07-10T14:23:07.932178",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"919533fb3d61bac5fa03d3f1364d734d\"",
       "file_path": "documentation/DataDetection/datadetector/match/semanticdetails/shipmenttrackingnumber.md"
     },
@@ -1287,9 +1287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector/match/semanticdetails/calendarevent/allday.json": {
       "hash": "1b09dc201e39b44382fdbd6a7f2fe02f1b891e769d5199458e075e71ccd802be",
-      "last_checked": "2026-07-07T20:44:57.611234",
+      "last_checked": "2026-07-10T14:23:08.067723",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"ade10232077d958f01e7e71567d55ed0\"",
       "file_path": "documentation/DataDetection/datadetector/match/semanticdetails/calendarevent/allday.md"
     },
@@ -1303,9 +1303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector/match/semanticdetails/calendarevent/startdate.json": {
       "hash": "14d89eda139e62a93ee92094156df07396397f099769b96b1875542ee404641b",
-      "last_checked": "2026-07-07T20:44:57.737698",
+      "last_checked": "2026-07-10T14:23:08.206192",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"2da014b161508bc90ea7233f724a35f3\"",
       "file_path": "documentation/DataDetection/datadetector/match/semanticdetails/calendarevent/startdate.md"
     },
@@ -1319,9 +1319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector/match/semanticdetails/calendarevent/enddate.json": {
       "hash": "bf23ac1bc4d2c81bf81bf1b600f0b1346bbebc003ce7a83379a532faf146adcc",
-      "last_checked": "2026-07-07T20:44:57.915760",
+      "last_checked": "2026-07-10T14:23:08.343971",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"efc016db53b29ca400bbe6a418e6ec42\"",
       "file_path": "documentation/DataDetection/datadetector/match/semanticdetails/calendarevent/enddate.md"
     },
@@ -1335,9 +1335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector/match/semanticdetails/calendarevent/starttimezone.json": {
       "hash": "8eec643b78b45087b8d59276af640fac95cbdbc1bcede058497cafe04cd2c262",
-      "last_checked": "2026-07-07T20:44:58.098639",
+      "last_checked": "2026-07-10T14:23:08.481840",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"5bb25c7bdddafa98ea74dcae10ebadc0\"",
       "file_path": "documentation/DataDetection/datadetector/match/semanticdetails/calendarevent/starttimezone.md"
     },
@@ -1351,9 +1351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector/match/semanticdetails/calendarevent/endtimezone.json": {
       "hash": "5ce40be8d8a2640f0135802a8b2438c11a217131d8fdb3ad70c5d96d82936281",
-      "last_checked": "2026-07-07T20:44:58.259721",
+      "last_checked": "2026-07-10T14:23:08.623826",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"f9573edeab2c017635c9e5313c9b7af8\"",
       "file_path": "documentation/DataDetection/datadetector/match/semanticdetails/calendarevent/endtimezone.md"
     },
@@ -1367,9 +1367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector/match/semanticdetails/emailaddress/emailaddress.json": {
       "hash": "a6ff7eb8bf1b5eb287d34839deda28cf0208da2fbc18d44a58cf05d14671df94",
-      "last_checked": "2026-07-07T20:44:58.425294",
+      "last_checked": "2026-07-10T14:23:08.752984",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"e5c94c1163c50169fcdb5cddd2a03998\"",
       "file_path": "documentation/DataDetection/datadetector/match/semanticdetails/emailaddress/emailaddress.md"
     },
@@ -1383,9 +1383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector/match/semanticdetails/emailaddress/label.json": {
       "hash": "ed2acf087c0806e2241254553e26c4b00e77f99fd4fe6b01f34f3d47221b5ebc",
-      "last_checked": "2026-07-07T20:44:58.616971",
+      "last_checked": "2026-07-10T14:23:08.917655",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"f99f90f9e14e05965d1f9c35c8a80f76\"",
       "file_path": "documentation/DataDetection/datadetector/match/semanticdetails/emailaddress/label.md"
     },
@@ -1399,9 +1399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector/match/semanticdetails/flightnumber/airlinecode.json": {
       "hash": "5508d2fbc506f4703461ea66ef34c2ce1d5e944d8def84367353aa33ef0c67f6",
-      "last_checked": "2026-07-07T20:44:58.797659",
+      "last_checked": "2026-07-10T14:23:09.044304",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"61098ecf98245c4220912a44f7744479\"",
       "file_path": "documentation/DataDetection/datadetector/match/semanticdetails/flightnumber/airlinecode.md"
     },
@@ -1415,9 +1415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector/match/semanticdetails/flightnumber/flightnumber.json": {
       "hash": "d72617e0f1df0c83ee0b075a728db3470674dc8a2f0d43fe2e2e704127764fb1",
-      "last_checked": "2026-07-07T20:44:59.047175",
+      "last_checked": "2026-07-10T14:23:09.160084",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"801a58c974b08efe83a66a8d6c610041\"",
       "file_path": "documentation/DataDetection/datadetector/match/semanticdetails/flightnumber/flightnumber.md"
     },
@@ -1431,9 +1431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector/match/semanticdetails/link/url.json": {
       "hash": "b0045523562f92587a668e4068c6b951577c7354c03ae9be99952231c78bff85",
-      "last_checked": "2026-07-07T20:44:59.243753",
+      "last_checked": "2026-07-10T14:23:09.279114",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"f3d2ef65d565efdb0b5d9ae520df560b\"",
       "file_path": "documentation/DataDetection/datadetector/match/semanticdetails/link/url.md"
     },
@@ -1447,9 +1447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector/match/semanticdetails/measurement/possibledimensions.json": {
       "hash": "6a398c4d281eca5015a90daab08c25722074e4a7268281dcd55fd3af18beb78d",
-      "last_checked": "2026-07-07T20:44:59.425630",
+      "last_checked": "2026-07-10T14:23:09.404640",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"45ce51eb8f45e2fcf41ee2cb58bf2c5e\"",
       "file_path": "documentation/DataDetection/datadetector/match/semanticdetails/measurement/possibledimensions.md"
     },
@@ -1463,9 +1463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector/match/semanticdetails/measurement/measurement(in:).json": {
       "hash": "ea396983085c5881f191ceaef8b0f9cb8391ef01c5505ece55c3038aec2a8b94",
-      "last_checked": "2026-07-07T20:44:59.545696",
+      "last_checked": "2026-07-10T14:23:09.520501",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"45a72bf8bad30b77785f2805b5ffea88\"",
       "file_path": "documentation/DataDetection/datadetector/match/semanticdetails/measurement/measurement-in.md"
     },
@@ -1479,9 +1479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector/match/semanticdetails/measurement/value.json": {
       "hash": "b57eeb7d8a9fc957c2e6d712bbe5bdcfc491e789933bea1f6df041fd344b3be3",
-      "last_checked": "2026-07-07T20:44:59.675612",
+      "last_checked": "2026-07-10T14:23:09.639219",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"5d63ee13c2fd4df3e2211e7419230567\"",
       "file_path": "documentation/DataDetection/datadetector/match/semanticdetails/measurement/value.md"
     },
@@ -1495,9 +1495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector/match/semanticdetails/moneyamount/amount.json": {
       "hash": "dfc813ca6feb8336ed0ff3ba89f6974d280dc7625c483c0ff18e7dfc6d430715",
-      "last_checked": "2026-07-07T20:44:59.896299",
+      "last_checked": "2026-07-10T14:23:09.838991",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"4f60900d1b40a713447ac7e0af76e2f1\"",
       "file_path": "documentation/DataDetection/datadetector/match/semanticdetails/moneyamount/amount.md"
     },
@@ -1511,9 +1511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector/match/semanticdetails/moneyamount/currency.json": {
       "hash": "4cb63626f7524db3ae1e0840a1d574320e39af1439dcd8be18524629738d37a5",
-      "last_checked": "2026-07-07T20:45:00.080289",
+      "last_checked": "2026-07-10T14:23:09.957419",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"b717831a9214db9a70390e3d44eb72f3\"",
       "file_path": "documentation/DataDetection/datadetector/match/semanticdetails/moneyamount/currency.md"
     },
@@ -1527,9 +1527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector/match/semanticdetails/paymentidentifier/identifier.json": {
       "hash": "b515e255b05871ac7d1fc1e1bee70aba3b3bd2f88cb27177f7ea7f56db60b658",
-      "last_checked": "2026-07-07T20:45:00.262583",
+      "last_checked": "2026-07-10T14:23:10.093350",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"ed1cb351ba5569fb9ea7c60391fe4923\"",
       "file_path": "documentation/DataDetection/datadetector/match/semanticdetails/paymentidentifier/identifier.md"
     },
@@ -1543,9 +1543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector/match/semanticdetails/paymentidentifier/type.json": {
       "hash": "58cdbdeab3e736816bafa277616599090b0c45fe7854818cb72241a0f7f217b2",
-      "last_checked": "2026-07-07T20:45:00.446776",
+      "last_checked": "2026-07-10T14:23:10.227993",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"5ed0e6dc519f0590d37632a3e2d7683d\"",
       "file_path": "documentation/DataDetection/datadetector/match/semanticdetails/paymentidentifier/type.md"
     },
@@ -1559,9 +1559,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector/match/semanticdetails/paymentidentifier/paymentsystem.json": {
       "hash": "d0b367e8b87ef65c0489369304f64b15d5ab608504c9b7d8741592f1e8b6b87d",
-      "last_checked": "2026-07-07T20:45:00.763000",
+      "last_checked": "2026-07-10T14:23:10.350442",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"50cff6724ff9d6a70f0354cbefa9a4fa\"",
       "file_path": "documentation/DataDetection/datadetector/match/semanticdetails/paymentidentifier/paymentsystem.md"
     },
@@ -1575,9 +1575,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector/match/semanticdetails/phonenumber/phonenumber.json": {
       "hash": "4f8c725677a8188c2cfaf45d9b6a8842a233218f7872b1f861862f21b3bd928d",
-      "last_checked": "2026-07-07T20:45:00.967004",
+      "last_checked": "2026-07-10T14:23:10.506927",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"307dc8e22e498375469589637aa02165\"",
       "file_path": "documentation/DataDetection/datadetector/match/semanticdetails/phonenumber/phonenumber.md"
     },
@@ -1591,9 +1591,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector/match/semanticdetails/phonenumber/label.json": {
       "hash": "0879c01a7e2b2d4ede03d7293b15c4631ec0c77822dd4d3dc5a91b67925cd702",
-      "last_checked": "2026-07-07T20:45:01.137555",
+      "last_checked": "2026-07-10T14:23:10.647337",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"791cb6e8432a7f82286ee10ff941a399\"",
       "file_path": "documentation/DataDetection/datadetector/match/semanticdetails/phonenumber/label.md"
     },
@@ -1607,9 +1607,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector/match/semanticdetails/postaladdress/fulladdress.json": {
       "hash": "76762af71f7660eee347da105bbc61d9730e8e07984a88b0c84a7cb93eebeefe",
-      "last_checked": "2026-07-07T20:45:01.256068",
+      "last_checked": "2026-07-10T14:23:10.785813",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"06d448283a394c251b5f3b96f52ad5d0\"",
       "file_path": "documentation/DataDetection/datadetector/match/semanticdetails/postaladdress/fulladdress.md"
     },
@@ -1623,9 +1623,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector/match/semanticdetails/postaladdress/street.json": {
       "hash": "6fce00382a6750e1e66662106fad564257a1f6a10ce1f3257a248266141dee0e",
-      "last_checked": "2026-07-07T20:45:01.403426",
+      "last_checked": "2026-07-10T14:23:10.911196",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"905ec1bc087481d8796c2d70d298c0b8\"",
       "file_path": "documentation/DataDetection/datadetector/match/semanticdetails/postaladdress/street.md"
     },
@@ -1639,9 +1639,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector/match/semanticdetails/postaladdress/city.json": {
       "hash": "6bfad8d06f23a7902ed83ee87cd1343d74350081edecaaa1ab7158f2bf1fb5b9",
-      "last_checked": "2026-07-07T20:45:01.599966",
+      "last_checked": "2026-07-10T14:23:11.053743",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"13ef7b09124e66b28dc525a36cc9980e\"",
       "file_path": "documentation/DataDetection/datadetector/match/semanticdetails/postaladdress/city.md"
     },
@@ -1655,9 +1655,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector/match/semanticdetails/postaladdress/state.json": {
       "hash": "eaba1ca920112e695760881b8a58cec5f36bf26473c695052b837ecbaa30abd8",
-      "last_checked": "2026-07-07T20:45:01.811685",
+      "last_checked": "2026-07-10T14:23:11.189837",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"3c2ee09699a8bdf748a9a9d944021bd5\"",
       "file_path": "documentation/DataDetection/datadetector/match/semanticdetails/postaladdress/state.md"
     },
@@ -1671,9 +1671,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector/match/semanticdetails/postaladdress/postalcode.json": {
       "hash": "7c4da2ad9e97bf33d63611783586bdf5175003ab70108f71157f7bd99ba59678",
-      "last_checked": "2026-07-07T20:45:02.005286",
+      "last_checked": "2026-07-10T14:23:11.333681",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"b19cd00f2ee3c05884e38d9318149717\"",
       "file_path": "documentation/DataDetection/datadetector/match/semanticdetails/postaladdress/postalcode.md"
     },
@@ -1687,9 +1687,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector/match/semanticdetails/postaladdress/region.json": {
       "hash": "7bfabb5db6b40fbd22e605eb9dfa1437323574baaf858b19c39223ec2b0a24a3",
-      "last_checked": "2026-07-07T20:45:02.223773",
+      "last_checked": "2026-07-10T14:23:11.464091",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"f38061385d96fddc02f7665e1df6dd5b\"",
       "file_path": "documentation/DataDetection/datadetector/match/semanticdetails/postaladdress/region.md"
     },
@@ -1703,9 +1703,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector/match/semanticdetails/postaladdress/regioncode.json": {
       "hash": "739225f0135ef1777ba969a556242156b2017ae52a9fd737337e8cb641fcacfb",
-      "last_checked": "2026-07-07T20:45:02.403755",
+      "last_checked": "2026-07-10T14:23:11.605072",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"556bef02d66b85b11f877ed476b40301\"",
       "file_path": "documentation/DataDetection/datadetector/match/semanticdetails/postaladdress/regioncode.md"
     },
@@ -1719,9 +1719,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector/match/semanticdetails/postaladdress/label.json": {
       "hash": "36ba100b676deedb54ac706801a36f8f30283128d1a06d67f86013548b7f94c7",
-      "last_checked": "2026-07-07T20:45:02.515136",
+      "last_checked": "2026-07-10T14:23:11.788498",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"d62fbcdf61afb43156bab6e8abb89307\"",
       "file_path": "documentation/DataDetection/datadetector/match/semanticdetails/postaladdress/label.md"
     },
@@ -1735,9 +1735,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector/match/semanticdetails/shipmenttrackingnumber/carrier.json": {
       "hash": "a8e138f4f9321b6a167666722692db2dabdc8e72ee3643a993760447ae25593d",
-      "last_checked": "2026-07-07T20:45:02.741643",
+      "last_checked": "2026-07-10T14:23:11.920404",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"75acfcf657bb743906fc7e26e8a9a54e\"",
       "file_path": "documentation/DataDetection/datadetector/match/semanticdetails/shipmenttrackingnumber/carrier.md"
     },
@@ -1751,9 +1751,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector/match/semanticdetails/shipmenttrackingnumber/trackingnumber.json": {
       "hash": "46b19a3cbff25108d2872e908aaabf305b1e9c609b87c57703ebf094a3695cd2",
-      "last_checked": "2026-07-07T20:45:02.963382",
+      "last_checked": "2026-07-10T14:23:12.050366",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"b3d62ce740134a581d2dd6fa18f817e5\"",
       "file_path": "documentation/DataDetection/datadetector/match/semanticdetails/shipmenttrackingnumber/trackingnumber.md"
     },
@@ -1767,9 +1767,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector/match/semanticdetails/shipmenttrackingnumber/trackingurl.json": {
       "hash": "c88be57611dbee8918dd4da930b263592d30b3f431b0e14e76421f3c494698df",
-      "last_checked": "2026-07-07T20:45:03.162555",
+      "last_checked": "2026-07-10T14:23:12.191187",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"c3caab63f1a5b8f4e13899c70d077dfd\"",
       "file_path": "documentation/DataDetection/datadetector/match/semanticdetails/shipmenttrackingnumber/trackingurl.md"
     },
@@ -1783,9 +1783,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/datadetection/datadetector/match/semanticdetails/paymentidentifier/paymentsystem/unifiedpaymentsinterface.json": {
       "hash": "86cd5d257fab02b4a76828e688c2b2779600db8f94f7d897bd54cc937b2443b2",
-      "last_checked": "2026-07-07T20:45:03.355919",
+      "last_checked": "2026-07-10T14:23:12.313821",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:44:41.511077",
+      "session_id": "2026-07-10T14:22:57.242696",
       "etag": "W/\"5eb5c4b9083102c61720ac77434fa3c5\"",
       "file_path": "documentation/DataDetection/datadetector/match/semanticdetails/paymentidentifier/paymentsystem/unifiedpaymentsinterface.md"
     },

@@ -33,6 +33,21 @@ final func requestSignup(for purpose: CustomerEngagementSession.Purpose = .membe
 - `smsConsent`: A consent option to allow or decline promotions and offers over SMS channel.
 - `termsAndConditions`: An optional markdown string to display during the sign-up flow.
 
+## See Also
+
+- [func requestCustomerInfo(for: CustomerEngagementSession.Purpose?, fields: [CustomerEngagementSession.Field], message: String?) async throws -> CustomerEngagement.CustomerInfo](customerengagementsession/requestcustomerinfo(for:fields:message:).md)
+  Opens a form so that the customer can share the contact information.
+- [func requestAddress(for: CustomerEngagementSession.Purpose?, fields: [CustomerEngagementSession.Field], message: String?) async throws -> CustomerEngagement.Address](customerengagementsession/requestaddress(for:fields:message:).md)
+  Opens a form so that the customer can share the postal address and additionally collect email address and phone number.
+- [func requestPayment(for: CustomerEngagement.ShoppingCartToken, using: PKPaymentRequest, delegate: any PKPaymentAuthorizationControllerDelegate) async throws -> Bool](customerengagementsession/requestpayment(for:using:delegate:).md)
+  Opens a form so a customer can select a payment option.
+- [CustomerEngagementSession.Purpose](customerengagementsession/purpose.md)
+  The purpose of a customer information request.
+- [CustomerEngagementSession.Field](customerengagementsession/field.md)
+  The contact information field in a customer request form.
+- [CustomerEngagementSession.ConsentOption](customerengagementsession/consentoption.md)
+  An option on the sign-up form to receive promotional emails and text messages.
+
 
 ---
 

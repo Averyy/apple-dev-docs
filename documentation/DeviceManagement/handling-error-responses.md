@@ -139,12 +139,13 @@ If a task for a submitted service request fails while processing in the backgrou
 | 9727 | This request contains an unsupported `Content-Type` for the requested endpoint. | 415 |
 | 9728 | The provided notification URL is unreachable. | 400 |
 | 9729 | The service is temporarily unavailable. Try again later. | 503 |
-| 9800 | The subscription association request is invalid. | 400 |
-| 9801 | The provided cursor is invalid. | 400 |
-| 9802 | The provided Adam ID is invalid. | 400 |
-| 9803 | Unable to find an associated registered user for the provided `clientUserId`. | 400 |
-| 9804 | The registered user isn’t assigned the requested `adamId`. | 400 |
-| 9805 | This request exceeds the maximum subscriptions limit. Change the request to stay within the specified limit. | 400 |
+| 9811 | The subscription association request is invalid. | 400 |
+| 9812 | The provided cursor is invalid. | 400 |
+| 9813 | The provided Adam ID is invalid. | 400 |
+| 9814 | Unable to find an associated registered user for the provided `clientUserId`. | 400 |
+| 9815 | The registered user isn’t assigned the requested `adamId`. | 400 |
+| 9816 | This request exceeds the maximum subscriptions limit. Change the request to stay within the specified limit. | 400 |
+| 9817 | The user is already assigned to this subscription through group membership. | 400 |
 
 ##### Review Asynchronous Error Codes
 

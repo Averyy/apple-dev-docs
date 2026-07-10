@@ -18,7 +18,7 @@ struct Token
 
 ## Topics
 
-### Initializers
+### Creating a token
 - [init(using: PaymentCardReader.Token)](customerengagement/token/init(using:).md)
   Creates a customer engagement token.
 

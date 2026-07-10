@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-07-07T20:43:53.629274",
+    "last_updated": "2026-07-10T14:22:23.888962",
     "total_pages": 378,
-    "session_id": "2026-07-07T20:43:20.911386"
+    "session_id": "2026-07-10T14:21:47.072215"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/MailKit.json": {
       "hash": "92b089b17c5746c2a8dd7f34a37417e72d4e56c6cc7c26fd09db2099d5b33955",
-      "last_checked": "2026-07-07T20:43:21.213902",
+      "last_checked": "2026-07-10T14:21:47.480343",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"a858590a4c177641c967eaa73b93cd37\"",
       "file_path": "documentation/MailKit/MailKit.md"
     },
     "https://developer.apple.com/documentation/MailKit": {
       "hash": "92b089b17c5746c2a8dd7f34a37417e72d4e56c6cc7c26fd09db2099d5b33955",
-      "last_checked": "2026-07-07T20:43:21.123852",
+      "last_checked": "2026-07-10T14:21:47.384999",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"a858590a4c177641c967eaa73b93cd37\"",
       "file_path": "documentation/MailKit/MailKit.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/meextension.json": {
       "hash": "11e42820a7fd982208551d68282063688a38070c720741544abea2429b8836ba",
-      "last_checked": "2026-07-07T20:43:21.424210",
+      "last_checked": "2026-07-10T14:21:47.733054",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"49a0adb031c318c69eb59fe68231719f\"",
       "file_path": "documentation/MailKit/meextension.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/build-mail-app-extensions.json": {
       "hash": "bfa61cbe6c3497fd87b9844ca0eb76cd15450b18f290a4084e09edc93de5b96d",
-      "last_checked": "2026-07-07T20:43:21.609420",
+      "last_checked": "2026-07-10T14:21:47.905877",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"aaf9f7230002b9aec6b24fe83b411b8a\"",
       "file_path": "documentation/MailKit/build-mail-app-extensions.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/mecontentblocker.json": {
       "hash": "3a5756fb7a50ed7ae60d299f5547b82ffae337aa897d18b968626ab3c8a4099e",
-      "last_checked": "2026-07-07T20:43:21.779182",
+      "last_checked": "2026-07-10T14:21:48.023664",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"21c438580cc85507d61e514491cb66d9\"",
       "file_path": "documentation/MailKit/mecontentblocker.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessageactionhandler.json": {
       "hash": "13564745776a3eaab4c9bd6fd1dee6e10e0024dd574fc65c094f9e2b762d2059",
-      "last_checked": "2026-07-07T20:43:21.961884",
+      "last_checked": "2026-07-10T14:21:48.199920",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"db774900412dbb40d885bc3d1090bf81\"",
       "file_path": "documentation/MailKit/memessageactionhandler.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/mecomposesessionhandler.json": {
       "hash": "867a795359598bd57fe9d6e6f004e8981ba625b8907ef9428087c2169cbd3df1",
-      "last_checked": "2026-07-07T20:43:22.136947",
+      "last_checked": "2026-07-10T14:21:48.357986",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"d0aeb83036fba9d3b294fdaf937f694f\"",
       "file_path": "documentation/MailKit/mecomposesessionhandler.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessagesecurityhandler.json": {
       "hash": "9533cfbc23055c29c4516a59ff49cfb1d8bb241398dbb9cfef527662b6e15b1a",
-      "last_checked": "2026-07-07T20:43:22.322946",
+      "last_checked": "2026-07-10T14:21:48.480459",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"4aca2f4f1ad70a50f51aae63abd24697\"",
       "file_path": "documentation/MailKit/memessagesecurityhandler.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessage.json": {
       "hash": "3add68beab98fd11f33ff94987e4773df2e642553e330362248dc8632af85268",
-      "last_checked": "2026-07-07T20:43:22.503463",
+      "last_checked": "2026-07-10T14:21:48.614701",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"231dbe6df278943d9be22f5cfdc712ea\"",
       "file_path": "documentation/MailKit/memessage.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessagestate.json": {
       "hash": "2bdc7098a9b07295b6514da0248ad2e0434ddf9f7ad59b4a95e67ff10e5fd2f5",
-      "last_checked": "2026-07-07T20:43:22.797058",
+      "last_checked": "2026-07-10T14:21:48.777388",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"195c18eaa1ba377c42db964f1f8c8a89\"",
       "file_path": "documentation/MailKit/memessagestate.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/meextensionviewcontroller.json": {
       "hash": "885c8167867a1f7795914e7405e07dd4f32c21a8f103a27fb8d9f73b1ae5e948",
-      "last_checked": "2026-07-07T20:43:22.974004",
+      "last_checked": "2026-07-10T14:21:48.953264",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"3bfb0bf2b3b2ff7680d06b6473b1cfd2\"",
       "file_path": "documentation/MailKit/meextensionviewcontroller.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessagesecurityerror.json": {
       "hash": "f0c90a81ec951084ae4663f66b201bf7362fe82233ba9861c37061cca22aabba",
-      "last_checked": "2026-07-07T20:43:23.173571",
+      "last_checked": "2026-07-10T14:21:49.071854",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"adf6e4ae3e0012f0c6149b12c7bff745\"",
       "file_path": "documentation/MailKit/memessagesecurityerror.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/mecomposecontext.json": {
       "hash": "185d3c8242b14e792bf4ca712158064aac59f9243ca016eeb20ff507f24702f6",
-      "last_checked": "2026-07-07T20:43:23.345990",
+      "last_checked": "2026-07-10T14:21:49.186668",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"64b3357fe5d19521ee3559fcc84ae6f5\"",
       "file_path": "documentation/MailKit/mecomposecontext.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/medecodedmessagebanner.json": {
       "hash": "467f7fe929208f9eea5b977995e5245fa1a075d253510bd899895c47181d1fcd",
-      "last_checked": "2026-07-07T20:43:23.544145",
+      "last_checked": "2026-07-10T14:21:49.351481",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"909e1dc5f81b6fadbc9f8b89151924fc\"",
       "file_path": "documentation/MailKit/medecodedmessagebanner.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/meemailaddress.json": {
       "hash": "db4d4978fe6003b3823622bdf634e3601485bd847245f3b5350b0ed11327a139",
-      "last_checked": "2026-07-07T20:43:23.741191",
+      "last_checked": "2026-07-10T14:21:49.670453",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"256e1565fcced083ac4bbcf546d84c06\"",
       "file_path": "documentation/MailKit/meemailaddress.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/meextensionmanager.json": {
       "hash": "b34e91224b964f643db4d057bccffe0cde0c8129c3e707659645c3f70bfd9e80",
-      "last_checked": "2026-07-07T20:43:23.923896",
+      "last_checked": "2026-07-10T14:21:49.864511",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"83578f1955357ca3be79881da4e34ffa\"",
       "file_path": "documentation/MailKit/meextensionmanager.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/meextension/handlerforcontentblocker().json": {
       "hash": "e095fdb7c7c5d87ea69b85fe1ac9abe68de90bfd6a8349e1f06622ce49e53973",
-      "last_checked": "2026-07-07T20:43:24.087976",
+      "last_checked": "2026-07-10T14:21:50.163108",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"eb1631fd377ae7c0ef79ba5ae6fca191\"",
       "file_path": "documentation/MailKit/meextension/handlerforcontentblocker.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/meextension/handlerformessageactions().json": {
       "hash": "0dbdfea71227c878856f220f84d218df0632fd156a39d155f1b25e8ad32f589e",
-      "last_checked": "2026-07-07T20:43:24.270389",
+      "last_checked": "2026-07-10T14:21:50.283064",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"55e3e3fec98facbae32d8b073dfd791f\"",
       "file_path": "documentation/MailKit/meextension/handlerformessageactions.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/meextension/handler(for:).json": {
       "hash": "5cc29931f94ca24185b999d5117d3ff2cfa5c24c0382400fe03bf603dfd4d322",
-      "last_checked": "2026-07-07T20:43:24.455680",
+      "last_checked": "2026-07-10T14:21:50.399662",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"77ce9d61c87cc37ed3a93ee5a1aba5ad\"",
       "file_path": "documentation/MailKit/meextension/handler-for.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/meextension/handlerformessagesecurity().json": {
       "hash": "52cfa8088a28cca295f93062303318106d88ac9a1da0b58de4378647708e3f6c",
-      "last_checked": "2026-07-07T20:43:24.641323",
+      "last_checked": "2026-07-10T14:21:50.554356",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"d6ba40ee8616108c29be95cd676059dc\"",
       "file_path": "documentation/MailKit/meextension/handlerformessagesecurity.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/mecontentblocker/contentrulesjson().json": {
       "hash": "176b8c61bebd155921f21fe568069c852f4a3078a03b92bf6735f32f2c12c780",
-      "last_checked": "2026-07-07T20:43:24.942172",
+      "last_checked": "2026-07-10T14:21:50.690940",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"4c8a464bc0259abb72b753003c59d6b8\"",
       "file_path": "documentation/MailKit/mecontentblocker/contentrulesjson.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessageactionhandler/decideaction(for:completionhandler:).json": {
       "hash": "761fbd2c3e6166dafae49a4a7b4f06ee4f7aa31b060ee230563aefc8bb30ac4e",
-      "last_checked": "2026-07-07T20:43:25.132729",
+      "last_checked": "2026-07-10T14:21:50.826340",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"b030b5b7d663d5c3cc5ed7db2a7d2366\"",
       "file_path": "documentation/MailKit/memessageactionhandler/decideaction-forcompletionhandler.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessageaction.json": {
       "hash": "4cb8314b2e2bc2f2ab93b08e6a5118308580f64a2570de1d74c25a3654799809",
-      "last_checked": "2026-07-07T20:43:25.328779",
+      "last_checked": "2026-07-10T14:21:50.999176",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"5b33482fc096759ce49ad40c1985e697\"",
       "file_path": "documentation/MailKit/memessageaction.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessageactiondecision.json": {
       "hash": "e480a9e3d82d0c72e8a0002c18a67e7423ccb7e72ceab66d25ad555dc3d3f5a5",
-      "last_checked": "2026-07-07T20:43:25.514026",
+      "last_checked": "2026-07-10T14:21:51.179682",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"797ce3fc05cf2addde1a53a1f742664f\"",
       "file_path": "documentation/MailKit/memessageactiondecision.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessageaction/messagecolor.json": {
       "hash": "d5c540d2a13ce64bbd2f2154ec288f77c131b26be18af4b726b342eab85342da",
-      "last_checked": "2026-07-07T20:43:25.693759",
+      "last_checked": "2026-07-10T14:21:51.364734",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"27d5a95dd19ba5e7f9123bc290ee889d\"",
       "file_path": "documentation/MailKit/memessageaction/messagecolor.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessageactionhandler/requiredheaders.json": {
       "hash": "e394d2537d6616dba90685085cde00af5a188c528f31a737d0817796d2bc6b8d",
-      "last_checked": "2026-07-07T20:43:25.810394",
+      "last_checked": "2026-07-10T14:21:51.526047",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"482e71e352e8a2dfd7f53eb2d78bcecf\"",
       "file_path": "documentation/MailKit/memessageactionhandler/requiredheaders.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/mecomposesession.json": {
       "hash": "0c37fb2860eb7e1ead5f9eba672e0433b78101193c882be223fb86c06882a54b",
-      "last_checked": "2026-07-07T20:43:25.993903",
+      "last_checked": "2026-07-10T14:21:51.684302",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"ac0213c0a842c30b7baacd2328810a79\"",
       "file_path": "documentation/MailKit/mecomposesession.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/mecomposesessionhandler/mailcomposesessiondidbegin(_:).json": {
       "hash": "3da340cd7e6d6488e8413b0103c650b26f3f75b9f18fa04c1e9d602c5dd4781e",
-      "last_checked": "2026-07-07T20:43:26.162967",
+      "last_checked": "2026-07-10T14:21:51.803174",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"6487d33293b60fe0a832a8c9eb308a58\"",
       "file_path": "documentation/MailKit/mecomposesessionhandler/mailcomposesessiondidbegin.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/mecomposesessionhandler/mailcomposesessiondidend(_:).json": {
       "hash": "c081abaeb3d904f8812e33c931a0940b079b82578903343cc8a26281df34bef5",
-      "last_checked": "2026-07-07T20:43:26.289015",
+      "last_checked": "2026-07-10T14:21:51.987147",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"1182e4d0a464179438ece89208d1bb38\"",
       "file_path": "documentation/MailKit/mecomposesessionhandler/mailcomposesessiondidend.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/mecomposesessionerror.json": {
       "hash": "5e459d680adaeba10588c91bee7aa0b0ebaa1434b5d65c6635bf725c17fd520b",
-      "last_checked": "2026-07-07T20:43:26.458906",
+      "last_checked": "2026-07-10T14:21:52.158877",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"5823773d6a0bf429d64d2759a4b8f5d2\"",
       "file_path": "documentation/MailKit/mecomposesessionerror.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/mecomposesessionhandler/annotateaddressesforsession(_:completion:).json": {
       "hash": "b879bc79a874c36ba79e3caa56b077a61d7b284bc23e55c58ff7d7dc8962ae0b",
-      "last_checked": "2026-07-07T20:43:26.603391",
+      "last_checked": "2026-07-10T14:21:52.343966",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"37d7530635a472f9b3da5b1a002a7c90\"",
       "file_path": "documentation/MailKit/mecomposesessionhandler/annotateaddressesforsession-completion.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/meaddressannotation.json": {
       "hash": "53c7ed8e9e62d234f9c687134de78e459fee0673a70b8fdfba78f8cd37f1b017",
-      "last_checked": "2026-07-07T20:43:26.794032",
+      "last_checked": "2026-07-10T14:21:52.514902",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"bf387d508ce1ca03178f77d0cfd8ef21\"",
       "file_path": "documentation/MailKit/meaddressannotation.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/mecomposesessionhandler/viewcontroller(for:).json": {
       "hash": "b7dda2e0cf35c0a71fd52310ff3ea17b3bcb38a5ee70da1c70bdd51eb46ffcc5",
-      "last_checked": "2026-07-07T20:43:26.927639",
+      "last_checked": "2026-07-10T14:21:52.667268",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"ffbd7222da55ff37e12d770535cc7f4d\"",
       "file_path": "documentation/MailKit/mecomposesessionhandler/viewcontroller-for.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/mecomposesessionhandler/additionalheaders(for:).json": {
       "hash": "1ea62d87c52d034ab1711cd7df7ba950ad47f487de5c714f1b8db224cd44d1f0",
-      "last_checked": "2026-07-07T20:43:27.243060",
+      "last_checked": "2026-07-10T14:21:52.837502",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"c20b5cd4cec893324f93df0425024c2c\"",
       "file_path": "documentation/MailKit/mecomposesessionhandler/additionalheaders-for.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/mecomposesessionhandler/allowmessagesendforsession(_:completion:).json": {
       "hash": "1a5c9a9f0d4f069a01610ce3d0128d077b9ce023d01af180cc4727229835cd29",
-      "last_checked": "2026-07-07T20:43:27.413362",
+      "last_checked": "2026-07-10T14:21:53.015315",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"0c67876945596c72af1778631d12c935\"",
       "file_path": "documentation/MailKit/mecomposesessionhandler/allowmessagesendforsession-completion.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessageencoder.json": {
       "hash": "2352bb9b8fad94e14b9149580cce9eeefaca1a9a7d84ac83438c50b9f7ff2c5b",
-      "last_checked": "2026-07-07T20:43:27.731883",
+      "last_checked": "2026-07-10T14:21:53.262410",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"d1d7e79e5f8f41801a42cd1e04b23908\"",
       "file_path": "documentation/MailKit/memessageencoder.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/meencodedoutgoingmessage.json": {
       "hash": "a65850494408fcd2a76e5c5370265d2de4520a9632e662fa85aca298fae4c917",
-      "last_checked": "2026-07-07T20:43:27.902887",
+      "last_checked": "2026-07-10T14:21:53.416301",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"393f3807af5b334bf92d7bb0c2d8c216\"",
       "file_path": "documentation/MailKit/meencodedoutgoingmessage.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/meoutgoingmessageencodingstatus.json": {
       "hash": "6a550ce0434d5a73fd336361060d16261c0169e540c9b292e78db3c84be9c11a",
-      "last_checked": "2026-07-07T20:43:28.094090",
+      "last_checked": "2026-07-10T14:21:53.543821",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"4a14c25a5111a176f22320f116b51386\"",
       "file_path": "documentation/MailKit/meoutgoingmessageencodingstatus.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessageencodingresult.json": {
       "hash": "99064a2d2f355c3fc6edbe63e6f6ec93f561137b48fc330a3637b9e403df875e",
-      "last_checked": "2026-07-07T20:43:28.273807",
+      "last_checked": "2026-07-10T14:21:53.670720",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"68ba97733d81963f36398e81d6e88925\"",
       "file_path": "documentation/MailKit/memessageencodingresult.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessagedecoder.json": {
       "hash": "6805edeb345510c1eb71d7f5c3abae1ad5331519c77af06253baf02aa839b6f8",
-      "last_checked": "2026-07-07T20:43:28.457884",
+      "last_checked": "2026-07-10T14:21:53.802172",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"afb33ebae05375bd43eac3e1cb47f5b0\"",
       "file_path": "documentation/MailKit/memessagedecoder.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/medecodedmessage.json": {
       "hash": "ec4c462b2ef60a2b9eb57ac761753c170e72301d1908a8a7c91c90576a9fb070",
-      "last_checked": "2026-07-07T20:43:28.646722",
+      "last_checked": "2026-07-10T14:21:53.976596",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"c193b247219d9366580743bcdeffec65\"",
       "file_path": "documentation/MailKit/medecodedmessage.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessagesigner.json": {
       "hash": "c6cb043f318a64dc3e519cd7ad02774bd236b93dcd6c1c648ff461016b33fe1c",
-      "last_checked": "2026-07-07T20:43:28.835941",
+      "last_checked": "2026-07-10T14:21:54.113031",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"d4fccc32aa259d165a29823b476d8859\"",
       "file_path": "documentation/MailKit/memessagesigner.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessagesecurityinformation.json": {
       "hash": "db2f741ef33400b7873515b5a1f0c400ec37052172de444c90ec1bf5f5f673b7",
-      "last_checked": "2026-07-07T20:43:29.022849",
+      "last_checked": "2026-07-10T14:21:54.250018",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"606b73aaad1577dfd9ff8f5d8d92e506\"",
       "file_path": "documentation/MailKit/memessagesecurityinformation.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessagesecurityhandler/extensionviewcontroller(signers:).json": {
       "hash": "518f8f44f52c95dce1d67914cf3292b0c265ed1120b8c744002fc8d0c838e340",
-      "last_checked": "2026-07-07T20:43:29.207464",
+      "last_checked": "2026-07-10T14:21:54.371778",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"521e7c7f661dbba128bf71a8eddb3eef\"",
       "file_path": "documentation/MailKit/memessagesecurityhandler/extensionviewcontroller-signers.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessagesecurityhandler/extensionviewcontroller(messagecontext:).json": {
       "hash": "f62a87132a77c7b39fd8235a9356a4eeca196be9d8f1373277a897c5f6f98950",
-      "last_checked": "2026-07-07T20:43:29.388884",
+      "last_checked": "2026-07-10T14:21:54.547618",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"e4519ea3f84d40de40e3fb4fd9a37170\"",
       "file_path": "documentation/MailKit/memessagesecurityhandler/extensionviewcontroller-messagecontext.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessagesecurityhandler/primaryactionclicked(formessagecontext:completionhandler:).json": {
       "hash": "495be2e9d4e0a150fa5a25497241740b08bd507a7359a4611eda9cc6559002c6",
-      "last_checked": "2026-07-07T20:43:29.515861",
+      "last_checked": "2026-07-10T14:21:54.707065",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"8e969a1ce05f98cc0de8cb0bc7a0c92b\"",
       "file_path": "documentation/MailKit/memessagesecurityhandler/primaryactionclicked-formessagecontextcompletionhandler.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessage/fromaddress.json": {
       "hash": "7936435649176933733e454fc9f0d5ceff562e147c318fc333867e2b2e926d0f",
-      "last_checked": "2026-07-07T20:43:29.703120",
+      "last_checked": "2026-07-10T14:21:54.875352",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"a5916084433d888b8ad1d10b33f76903\"",
       "file_path": "documentation/MailKit/memessage/fromaddress.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessage/toaddresses.json": {
       "hash": "f703c2eef0f4b39a33a83c19e8db533b39750e09355198f5c3e9b1e77ffdd8e3",
-      "last_checked": "2026-07-07T20:43:29.875509",
+      "last_checked": "2026-07-10T14:21:55.050866",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"ec1e4ed6b74aa56b8221bb7fddeca057\"",
       "file_path": "documentation/MailKit/memessage/toaddresses.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessage/ccaddresses.json": {
       "hash": "87c7a3bdd0df94f7d212491ef4fdc8a9903285e6ab0c6dd37a9d8b432dfbd2f1",
-      "last_checked": "2026-07-07T20:43:30.057713",
+      "last_checked": "2026-07-10T14:21:55.183618",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"9d2544cea9d83211832cf075984e2223\"",
       "file_path": "documentation/MailKit/memessage/ccaddresses.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessage/bccaddresses.json": {
       "hash": "f6e1b2f4a272ab69ada224472a13cc8d3990e286bf54f1923ee7da38c63afeff",
-      "last_checked": "2026-07-07T20:43:30.168578",
+      "last_checked": "2026-07-10T14:21:55.350664",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"370ef6ed57b3332f0c1378f19f69da5c\"",
       "file_path": "documentation/MailKit/memessage/bccaddresses.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessage/replytoaddresses.json": {
       "hash": "c3e1fe230c243d8fa70132ca0015f50ac809a29282d54a02f37f071c195f640d",
-      "last_checked": "2026-07-07T20:43:30.360996",
+      "last_checked": "2026-07-10T14:21:55.475791",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"5fdf41721922261447512341bbe7fc48\"",
       "file_path": "documentation/MailKit/memessage/replytoaddresses.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessage/allrecipientaddresses.json": {
       "hash": "fc3b65a0db2eb1c58a92d2d280cc35ae00e753e616942dfcd6bbb657fee8f228",
-      "last_checked": "2026-07-07T20:43:30.544340",
+      "last_checked": "2026-07-10T14:21:55.593539",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"f3664024ab8a527ee5ea2d05fa2a3b0f\"",
       "file_path": "documentation/MailKit/memessage/allrecipientaddresses.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessage/subject.json": {
       "hash": "01b35b35d70d0c0158cb668c4e7679cf2ac44d656d342fac78614c254c18aac7",
-      "last_checked": "2026-07-07T20:43:30.714041",
+      "last_checked": "2026-07-10T14:21:55.726286",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"7d9b5bf2bcc587cb68c8d0898155b175\"",
       "file_path": "documentation/MailKit/memessage/subject.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessage/headers.json": {
       "hash": "126881cdc61f3c7079e17a867e5354d1341f91bda3a4bb688012bd5390385562",
-      "last_checked": "2026-07-07T20:43:30.901614",
+      "last_checked": "2026-07-10T14:21:55.916413",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"9ec8afefe7ab8f44757c3b0a04ad862e\"",
       "file_path": "documentation/MailKit/memessage/headers.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessage/rawdata.json": {
       "hash": "19b6e1d8b189c35b20bb4192f28873fc6bebc3837ef870264a4d9cbbb2a1cc85",
-      "last_checked": "2026-07-07T20:43:31.076063",
+      "last_checked": "2026-07-10T14:21:56.078674",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"aa7a7e98c9fee179268fb3bd3fb0d6a1\"",
       "file_path": "documentation/MailKit/memessage/rawdata.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessage/state.json": {
       "hash": "52d46257710b004f48722628b2e043235e357c333be2984b9f1c1c754d539368",
-      "last_checked": "2026-07-07T20:43:31.199324",
+      "last_checked": "2026-07-10T14:21:56.195759",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"cce6229ce12710a92cea587f9f282160\"",
       "file_path": "documentation/MailKit/memessage/state.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessage/encryptionstate.json": {
       "hash": "33ec6ec391b0ca02353f218fbe5a92683dad54d2dab72362f2f75c0fcc3e986c",
-      "last_checked": "2026-07-07T20:43:31.311143",
+      "last_checked": "2026-07-10T14:21:56.335826",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"79cca35163bebf554084dc0c4bbba961\"",
       "file_path": "documentation/MailKit/memessage/encryptionstate.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessagestate/draft.json": {
       "hash": "591a6eb8e4960834d7b372ebc5f439d12b851112d482952cfe5bebb43b44184b",
-      "last_checked": "2026-07-07T20:43:31.788945",
+      "last_checked": "2026-07-10T14:21:56.677058",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"2dbea90a67709abc63e9dc58cc7545c6\"",
       "file_path": "documentation/MailKit/memessagestate/draft.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessagestate/received.json": {
       "hash": "9f00f43659a56b7fd0df970eb3ff398a9993595520be4141d8d9cd585998506e",
-      "last_checked": "2026-07-07T20:43:31.904167",
+      "last_checked": "2026-07-10T14:21:56.841083",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"f663dd4b587d1824547a9ba527cf2281\"",
       "file_path": "documentation/MailKit/memessagestate/received.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessagestate/sending.json": {
       "hash": "7c0696aa5ada0cd2aa5c0b5e41325ef0f95cac19757decd2e0f77d601fc63b14",
-      "last_checked": "2026-07-07T20:43:32.082014",
+      "last_checked": "2026-07-10T14:21:57.012918",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"788f1abc554e401e8406e406455d81fb\"",
       "file_path": "documentation/MailKit/memessagestate/sending.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessagestate/init(rawvalue:).json": {
       "hash": "d1c68b66cfd6f684de29dee9481ce262b8ed7fb45db9d46264de5ed89147a3c2",
-      "last_checked": "2026-07-07T20:43:32.225192",
+      "last_checked": "2026-07-10T14:21:57.177360",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"c2c5d502ec4ac522f9143f9114b51ba0\"",
       "file_path": "documentation/MailKit/memessagestate/init-rawvalue.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessagesecurityerror/decodingerror.json": {
       "hash": "f70bb54b235d7b9fee12fa17947094a42a1eeb37da62fe61aacca6dd1313cf5b",
-      "last_checked": "2026-07-07T20:43:32.403189",
+      "last_checked": "2026-07-10T14:21:57.347598",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"900744b164efdd29581d9704a19714c3\"",
       "file_path": "documentation/MailKit/memessagesecurityerror/decodingerror.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessagesecurityerror/encodingerror.json": {
       "hash": "3a40b31cb84f0f6b730ff4ab74d46df7d2aa40b5f996cfcdb6ea3ba100d6c119",
-      "last_checked": "2026-07-07T20:43:32.611039",
+      "last_checked": "2026-07-10T14:21:57.459892",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"d7c2245d051c646f60fdb759f7cd0ec6\"",
       "file_path": "documentation/MailKit/memessagesecurityerror/encodingerror.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessagesecurityerror/errordomain.json": {
       "hash": "b3cbfabb7869192ebf55856ff296a34dcad84acb57cddcfa540690bf913c52ee",
-      "last_checked": "2026-07-07T20:43:32.828975",
+      "last_checked": "2026-07-10T14:21:57.578217",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"183c782a4dad571fae2d3bf312ede37b\"",
       "file_path": "documentation/MailKit/memessagesecurityerror/errordomain.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessagesecurityerror/code.json": {
       "hash": "a5b0814c3a78c1dce6b118332259846756497eef8dc9807cd7cb97146505a4c7",
-      "last_checked": "2026-07-07T20:43:32.996474",
+      "last_checked": "2026-07-10T14:21:57.709851",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"f097f505d92534aabf66ac77b876d87e\"",
       "file_path": "documentation/MailKit/memessagesecurityerror/code.md"
     },
@@ -1031,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/mecomposecontext/action.json": {
       "hash": "b3f9185fa475eba6f7ba27107172af3ef1ba18540c5f77f724281fe220e82df3",
-      "last_checked": "2026-07-07T20:43:33.176796",
+      "last_checked": "2026-07-10T14:21:57.884301",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"e428c37f23d5e0e57170a98fe4930c85\"",
       "file_path": "documentation/MailKit/mecomposecontext/action.md"
     },
@@ -1047,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/mecomposecontext/contextid.json": {
       "hash": "9a439234b00fd519c3582686696d8f036d358d346e8767e13fd5b474bfa9441e",
-      "last_checked": "2026-07-07T20:43:33.364105",
+      "last_checked": "2026-07-10T14:21:58.024030",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"5ca626dd5407bd6dbd3d9ad7e1c8e045\"",
       "file_path": "documentation/MailKit/mecomposecontext/contextid.md"
     },
@@ -1063,9 +1063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/mecomposecontext/isencrypted.json": {
       "hash": "5ce9c5a9ae33db45e12ef6777fd90a0da83fab562b0f1b8c95cdc0f8da7258a0",
-      "last_checked": "2026-07-07T20:43:33.551137",
+      "last_checked": "2026-07-10T14:21:58.169469",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"7b9e5584f07ecd79d51567cde5bc90b7\"",
       "file_path": "documentation/MailKit/mecomposecontext/isencrypted.md"
     },
@@ -1079,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/mecomposecontext/issigned.json": {
       "hash": "8bd13d7058750063e1847b5bd1fd9ca2bbd9f7c571df8f80f01a8e1df283b26b",
-      "last_checked": "2026-07-07T20:43:33.731315",
+      "last_checked": "2026-07-10T14:21:58.288514",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"b2a236d8697dbab36b73979135188ef8\"",
       "file_path": "documentation/MailKit/mecomposecontext/issigned.md"
     },
@@ -1095,9 +1095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/mecomposecontext/originalmessage.json": {
       "hash": "9d9cc07a84ebd0fc3b25861dbfea4ebb995bdc4dba64449092d68d054200dd6c",
-      "last_checked": "2026-07-07T20:43:33.903764",
+      "last_checked": "2026-07-10T14:21:58.426263",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"c0de53f46b5e8f8c1af9ffbd5cb0ea5a\"",
       "file_path": "documentation/MailKit/mecomposecontext/originalmessage.md"
     },
@@ -1111,9 +1111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/mecomposecontext/shouldencrypt.json": {
       "hash": "ebf01504e0858e73896ef08606afe3d7afe94a204461f3a58649a43e55740270",
-      "last_checked": "2026-07-07T20:43:34.077287",
+      "last_checked": "2026-07-10T14:21:58.597445",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"6abbf055e2347349a3f4b9367e047027\"",
       "file_path": "documentation/MailKit/mecomposecontext/shouldencrypt.md"
     },
@@ -1127,9 +1127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/mecomposecontext/shouldsign.json": {
       "hash": "aff2cd53df18fa602e3e01cba1cd9fa050116d69006f1d818cdd442101c39f61",
-      "last_checked": "2026-07-07T20:43:34.320921",
+      "last_checked": "2026-07-10T14:21:58.720776",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"4d3e87bf24a41c1379a1cbf671c93283\"",
       "file_path": "documentation/MailKit/mecomposecontext/shouldsign.md"
     },
@@ -1143,9 +1143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/medecodedmessagebanner/init(title:primaryactiontitle:dismissable:).json": {
       "hash": "fa937ef82c490b1060b4bf3d5728724576000ced485c72c58c839794894ec810",
-      "last_checked": "2026-07-07T20:43:34.498989",
+      "last_checked": "2026-07-10T14:21:59.021436",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"040f980e2ccd5453ea7bc1f4112f3dda\"",
       "file_path": "documentation/MailKit/medecodedmessagebanner/init-titleprimaryactiontitledismissable.md"
     },
@@ -1159,9 +1159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/medecodedmessagebanner/isdismissable.json": {
       "hash": "6a944c62ed6a6ec8ad4d67bdbc275bdfa0247b355cf81d8ff7279d2600d0f06f",
-      "last_checked": "2026-07-07T20:43:34.841491",
+      "last_checked": "2026-07-10T14:21:59.329138",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"7bd005d42d0f11375bf86abf58a2b836\"",
       "file_path": "documentation/MailKit/medecodedmessagebanner/isdismissable.md"
     },
@@ -1175,9 +1175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/medecodedmessagebanner/primaryactiontitle.json": {
       "hash": "606fa5d93b55cafdefbfde56e04fde6ded9b313963d103be845d8e560287ded7",
-      "last_checked": "2026-07-07T20:43:35.017744",
+      "last_checked": "2026-07-10T14:21:59.465694",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"06c1a240d3ab801c1683bcccc47b96e7\"",
       "file_path": "documentation/MailKit/medecodedmessagebanner/primaryactiontitle.md"
     },
@@ -1191,9 +1191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/medecodedmessagebanner/title.json": {
       "hash": "6c72abeef13ae626fb6602ce61b3cc7a9129c06a12ca5fabdfbd1676c37ad967",
-      "last_checked": "2026-07-07T20:43:35.312463",
+      "last_checked": "2026-07-10T14:21:59.591175",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"1bb3b3e585109093e5e35e04888dd142\"",
       "file_path": "documentation/MailKit/medecodedmessagebanner/title.md"
     },
@@ -1207,9 +1207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/meemailaddress/init(rawstring:).json": {
       "hash": "72a0ee373369c4d2cb010b00538dcd621df540e76adf5832abd3cb878812c32b",
-      "last_checked": "2026-07-07T20:43:35.479105",
+      "last_checked": "2026-07-10T14:21:59.764383",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"e2a7420a1ef3fc739c4e18224f6db4b4\"",
       "file_path": "documentation/MailKit/meemailaddress/init-rawstring.md"
     },
@@ -1223,9 +1223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/meemailaddress/addressstring.json": {
       "hash": "3633099e53cc321a92be65dbef9ebb42839c173956363e0de9c165b861a64ea7",
-      "last_checked": "2026-07-07T20:43:35.834377",
+      "last_checked": "2026-07-10T14:22:00.086214",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"4742de296ad5bb6c5ed719b707ae5f5a\"",
       "file_path": "documentation/MailKit/meemailaddress/addressstring.md"
     },
@@ -1239,9 +1239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/meemailaddress/rawstring.json": {
       "hash": "408f765e860c62e2b4ebfa459e13b92c23a63a638e53da94c85f54663069179b",
-      "last_checked": "2026-07-07T20:43:35.996554",
+      "last_checked": "2026-07-10T14:22:00.246473",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"99d5befc9b9d01ed73d3459be36419a1\"",
       "file_path": "documentation/MailKit/meemailaddress/rawstring.md"
     },
@@ -1255,9 +1255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/meextensionmanager/reloadcontentblocker(withidentifier:completionhandler:).json": {
       "hash": "9428e6e96ad3bc1aa850a67edc1919290b6f859ba78b3e8447563395ef1ecccc",
-      "last_checked": "2026-07-07T20:43:36.178547",
+      "last_checked": "2026-07-10T14:22:00.409726",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"af67003bd5575204cce979b16bede945\"",
       "file_path": "documentation/MailKit/meextensionmanager/reloadcontentblocker-withidentifiercompletionhandler.md"
     },
@@ -1271,9 +1271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/meextensionmanager/reloadvisiblemessages(completionhandler:).json": {
       "hash": "3e004bf9ee9cda68fc149b02b04b7c92bf7653bcacbf3ade32210e2ae6bec789",
-      "last_checked": "2026-07-07T20:43:36.345574",
+      "last_checked": "2026-07-10T14:22:00.542960",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"27f8d87f6b3585f8b3003948e549d244\"",
       "file_path": "documentation/MailKit/meextensionmanager/reloadvisiblemessages-completionhandler.md"
     },
@@ -1287,9 +1287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/mecomposesessionerror/code.json": {
       "hash": "cc482bcb95893e2153e5589b7fae2fe5033bc2be870cbab48e1e9848503dc706",
-      "last_checked": "2026-07-07T20:43:51.163960",
+      "last_checked": "2026-07-10T14:22:14.289421",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"f7b2c85b8ee878395a4ae9a0223e33a0\"",
       "file_path": "documentation/MailKit/mecomposesessionerror/code.md"
     },
@@ -1303,9 +1303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/mecomposeuseraction.json": {
       "hash": "29ffbf20564e88a02e9d50b9dd1f07b84a635640a0172780688be9738981285e",
-      "last_checked": "2026-07-07T20:43:51.285358",
+      "last_checked": "2026-07-10T14:22:14.597795",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"4d3e397f8639001c1849e75e7daf0a9a\"",
       "file_path": "documentation/MailKit/mecomposeuseraction.md"
     },
@@ -1319,9 +1319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessageaction/flag.json": {
       "hash": "208ce5a163b47cdfd4785cbecace2f1b376a6415cc3062f5ea47651def11e4b4",
-      "last_checked": "2026-07-07T20:43:37.917073",
+      "last_checked": "2026-07-10T14:22:01.827448",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"fa4887fde28b30163ca43fda81b77329\"",
       "file_path": "documentation/MailKit/memessageaction/flag.md"
     },
@@ -1335,9 +1335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessageencryptionstate.json": {
       "hash": "aadb132933357e7c6e2590b6404e46f0dc82ef03a692162926e21bfc81226eb4",
-      "last_checked": "2026-07-07T20:43:51.464155",
+      "last_checked": "2026-07-10T14:22:14.729580",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"c89892e2a6dc0159621ff872802530cd\"",
       "file_path": "documentation/MailKit/memessageencryptionstate.md"
     },
@@ -1351,9 +1351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/mecomposesessionerrordomain.json": {
       "hash": "a2e55fb861ecc32ed319cf0e1f968e1ceb46599a762b9d300aec2a267f44c456",
-      "last_checked": "2026-07-07T20:43:42.132240",
+      "last_checked": "2026-07-10T14:22:05.311823",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"0e2784369b1cfd86c360c3f9a92b5def\"",
       "file_path": "documentation/MailKit/mecomposesessionerrordomain.md"
     },
@@ -1367,9 +1367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessagesecurityerrordomain.json": {
       "hash": "22f73f61732a2483881b416efe4d05d94095513e0c36ae5df81dc919da890a35",
-      "last_checked": "2026-07-07T20:43:51.648043",
+      "last_checked": "2026-07-10T14:22:22.004474",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"16142e69ae6814afb70cf516058cc5d5\"",
       "file_path": "documentation/MailKit/memessagesecurityerrordomain.md"
     },
@@ -1383,9 +1383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessageaction/markasread.json": {
       "hash": "3ce32634d8be377d8f13c7e994404797a1037eb545e2de1f19f63b1c8530f246",
-      "last_checked": "2026-07-07T20:43:36.528290",
+      "last_checked": "2026-07-10T14:22:00.713883",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"ef067a95a48bad4ef4c97f6753258fae\"",
       "file_path": "documentation/MailKit/memessageaction/markasread.md"
     },
@@ -1399,9 +1399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessageaction/markasunread.json": {
       "hash": "af8a63b0ecb9f8d25c199b66a11d2fb89255b04263e68001c36ecd8ccae7c996",
-      "last_checked": "2026-07-07T20:43:36.698585",
+      "last_checked": "2026-07-10T14:22:00.872447",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"bb8c6b2b36072251d243887eefbaf8ed\"",
       "file_path": "documentation/MailKit/memessageaction/markasunread.md"
     },
@@ -1415,9 +1415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessageaction/movetoarchive.json": {
       "hash": "949224972108e686e4f84277535c7a36b622bdf7db7fc71c823829522def3862",
-      "last_checked": "2026-07-07T20:43:36.995633",
+      "last_checked": "2026-07-10T14:22:01.042700",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"ac70641ebc52e35acebc8c109aa19a1c\"",
       "file_path": "documentation/MailKit/memessageaction/movetoarchive.md"
     },
@@ -1431,9 +1431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessageaction/movetojunk.json": {
       "hash": "30e48218e07ca14d29c78b7d6479f0a319800eb8e26ec32836a176d1d6fdebc4",
-      "last_checked": "2026-07-07T20:43:37.157557",
+      "last_checked": "2026-07-10T14:22:01.203272",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"0df5a16043b54c9de998f92440179a43\"",
       "file_path": "documentation/MailKit/memessageaction/movetojunk.md"
     },
@@ -1447,9 +1447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessageaction/movetotrash.json": {
       "hash": "d099c044fe87788acd5f3652208b0d213eda9cc9fe049b0898da725177616ca9",
-      "last_checked": "2026-07-07T20:43:37.357231",
+      "last_checked": "2026-07-10T14:22:01.370913",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"5e8dce509d55ec6a66f8f20ff359279a\"",
       "file_path": "documentation/MailKit/memessageaction/movetotrash.md"
     },
@@ -1463,9 +1463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessageaction/flag(_:).json": {
       "hash": "0c15fafe8fcbfdab8f1e1c3bab1394d090096206f6ee5acb794aba4e14514473",
-      "last_checked": "2026-07-07T20:43:37.526741",
+      "last_checked": "2026-07-10T14:22:01.495136",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"fd3950d80e902fe686479631b245e7fd\"",
       "file_path": "documentation/MailKit/memessageaction/flag.md"
     },
@@ -1479,9 +1479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessageaction/setbackgroundcolor(_:).json": {
       "hash": "289dd1e3ada65f4d6c598d25e751d2aa3acda8ad019f95a559bc9a9a72496774",
-      "last_checked": "2026-07-07T20:43:37.692204",
+      "last_checked": "2026-07-10T14:22:01.661715",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"e251b1aa4e511656e77d1265fcfa30d8\"",
       "file_path": "documentation/MailKit/memessageaction/setbackgroundcolor.md"
     },
@@ -1495,9 +1495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessageactiondecision/invokeagainwithbody.json": {
       "hash": "5cd69890cd987900d0c534eba5e49a543e6bee8d3912c9a032c1cb7af0453680",
-      "last_checked": "2026-07-07T20:43:38.266777",
+      "last_checked": "2026-07-10T14:22:02.104435",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"f5a42a57d179b3b48036997ee4b42702\"",
       "file_path": "documentation/MailKit/memessageactiondecision/invokeagainwithbody.md"
     },
@@ -1511,9 +1511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessageactiondecision/action(_:).json": {
       "hash": "58b4009fecc8054b49b6285dfa066dd7d43ade83acc6d856b5c8f0238f551418",
-      "last_checked": "2026-07-07T20:43:38.544307",
+      "last_checked": "2026-07-10T14:22:02.267509",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"3083b66028e38f22c2de068b0fbbe5c3\"",
       "file_path": "documentation/MailKit/memessageactiondecision/action.md"
     },
@@ -1527,9 +1527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessageactiondecision/actions(_:).json": {
       "hash": "11e616648a6af2b5289a70ee720339399f5a558bc09f503f25a1c1a810a91f52",
-      "last_checked": "2026-07-07T20:43:38.830233",
+      "last_checked": "2026-07-10T14:22:02.451920",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"c0141926844d77d10a3fd0504e720d15\"",
       "file_path": "documentation/MailKit/memessageactiondecision/actions.md"
     },
@@ -1543,9 +1543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessageaction/messagecolor/green.json": {
       "hash": "4a6bc41e042c9c3cc94d8bee8f4526765da6b3b5575d502a1652d08ceabd9c7e",
-      "last_checked": "2026-07-07T20:43:39.190471",
+      "last_checked": "2026-07-10T14:22:02.817452",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"d1192c1c2a314230da672bbe989add88\"",
       "file_path": "documentation/MailKit/memessageaction/messagecolor/green.md"
     },
@@ -1559,9 +1559,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessageaction/messagecolor/yellow.json": {
       "hash": "15e0c6550032e80e71633d6554058b58bdee6993aab423d4341dc527f3ac1725",
-      "last_checked": "2026-07-07T20:43:39.350587",
+      "last_checked": "2026-07-10T14:22:02.945726",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"84e67112b735cf0248de2bba871bcc70\"",
       "file_path": "documentation/MailKit/memessageaction/messagecolor/yellow.md"
     },
@@ -1575,9 +1575,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessageaction/messagecolor/orange.json": {
       "hash": "2b70d0cd7e39f395ff1154cb218c129c4d58e7f3610ad94f22c5a66baaab6ae8",
-      "last_checked": "2026-07-07T20:43:39.600815",
+      "last_checked": "2026-07-10T14:22:03.114187",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"b70b8d8d4f6db709de9bcda4472f498d\"",
       "file_path": "documentation/MailKit/memessageaction/messagecolor/orange.md"
     },
@@ -1591,9 +1591,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessageaction/messagecolor/red.json": {
       "hash": "a5cc129abe495bb8d42430a63ba35cc7fac6bc9a8ae7272b57fae6e32418b222",
-      "last_checked": "2026-07-07T20:43:39.771261",
+      "last_checked": "2026-07-10T14:22:03.225228",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"d7b363440fd7725ca09cccfccb7221e7\"",
       "file_path": "documentation/MailKit/memessageaction/messagecolor/red.md"
     },
@@ -1607,9 +1607,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessageaction/messagecolor/purple.json": {
       "hash": "de6e7f3610b94c22f0cbd7462af39bde0bd562a90caf50eb20c3dc85b42c850f",
-      "last_checked": "2026-07-07T20:43:39.930313",
+      "last_checked": "2026-07-10T14:22:03.417335",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"ed5b519a091f9c198b7334a063c8d98c\"",
       "file_path": "documentation/MailKit/memessageaction/messagecolor/purple.md"
     },
@@ -1623,9 +1623,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessageaction/messagecolor/blue.json": {
       "hash": "da8c1dd540e550d34a325a2db11a1f647f877a42411f1d84a5e775f102052008",
-      "last_checked": "2026-07-07T20:43:40.059715",
+      "last_checked": "2026-07-10T14:22:03.542692",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"1acde1c614e0bfd34d3995e7eb38f5e1\"",
       "file_path": "documentation/MailKit/memessageaction/messagecolor/blue.md"
     },
@@ -1639,9 +1639,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessageaction/messagecolor/gray.json": {
       "hash": "887d73a47d732fb924f792f0fde2cf5bdef8981c74a566f50ea5eb1ebff6fbec",
-      "last_checked": "2026-07-07T20:43:40.182763",
+      "last_checked": "2026-07-10T14:22:03.719454",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"c4ee50a05692134513288efa28c80663\"",
       "file_path": "documentation/MailKit/memessageaction/messagecolor/gray.md"
     },
@@ -1655,9 +1655,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessageaction/messagecolor/none.json": {
       "hash": "b18f1ac6d0df3d4854b23db12796f9e029b463b4666771f4a96db814e35b490c",
-      "last_checked": "2026-07-07T20:43:40.330552",
+      "last_checked": "2026-07-10T14:22:03.845120",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"20b931d10287ff8ca9318125aae9f693\"",
       "file_path": "documentation/MailKit/memessageaction/messagecolor/none.md"
     },
@@ -1671,9 +1671,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessageaction/messagecolor/init(rawvalue:).json": {
       "hash": "072eb8adc741b1a01d579c9e356a8c6d053cb865dbc37376dab0341d35ae85ff",
-      "last_checked": "2026-07-07T20:43:40.514898",
+      "last_checked": "2026-07-10T14:22:03.979612",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"cbba8580b2df6096c6a471244932e376\"",
       "file_path": "documentation/MailKit/memessageaction/messagecolor/init-rawvalue.md"
     },
@@ -1687,9 +1687,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/mecomposesession/sessionid.json": {
       "hash": "45b84adaf40d5c2109518e5d9bb125357f46cc202889282c4440dc47299a09b0",
-      "last_checked": "2026-07-07T20:43:40.811645",
+      "last_checked": "2026-07-10T14:22:04.134460",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"9fff0f320445657b6f4e7b29b114b563\"",
       "file_path": "documentation/MailKit/mecomposesession/sessionid.md"
     },
@@ -1703,9 +1703,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/mecomposesession/reload().json": {
       "hash": "c6290e9ada48ed2e51f910918fff395cc0320bbb6bfccd7c42da916f3966579d",
-      "last_checked": "2026-07-07T20:43:40.979554",
+      "last_checked": "2026-07-10T14:22:04.261041",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"ebe5ad1cb1bca85d172e110765b6b004\"",
       "file_path": "documentation/MailKit/mecomposesession/reload.md"
     },
@@ -1719,9 +1719,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/mecomposesession/mailmessage.json": {
       "hash": "33a5a9e85397a4db2460171c7c83f96b43af3b27402522f763cf0336e32bfc93",
-      "last_checked": "2026-07-07T20:43:41.140439",
+      "last_checked": "2026-07-10T14:22:04.379677",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"eafc9f45570e2c6403a7f3d8d27994ff\"",
       "file_path": "documentation/MailKit/mecomposesession/mailmessage.md"
     },
@@ -1735,9 +1735,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/mecomposesession/composecontext.json": {
       "hash": "1a2176b68f7607691ffdab24927b1f7e9c8ff58254b537f6e8d99bd2a98c6f10",
-      "last_checked": "2026-07-07T20:43:41.292768",
+      "last_checked": "2026-07-10T14:22:04.534828",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"500e8746b0933339fcaabb24e1a99730\"",
       "file_path": "documentation/MailKit/mecomposesession/composecontext.md"
     },
@@ -1751,9 +1751,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/mecomposesessionerror/invalidbody.json": {
       "hash": "f5e31c011c40b290b7fb60fcc832d88f639e2075c423b047cb15679a60bcb1e0",
-      "last_checked": "2026-07-07T20:43:41.628114",
+      "last_checked": "2026-07-10T14:22:04.871824",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"72d186c046e2fd8ce749c047f185a4e5\"",
       "file_path": "documentation/MailKit/mecomposesessionerror/invalidbody.md"
     },
@@ -1767,9 +1767,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/mecomposesessionerror/invalidheaders.json": {
       "hash": "6660084b5f76b1bf0dd5635cd71ab86f34779a57a3c394de46b9e923a8bb39a6",
-      "last_checked": "2026-07-07T20:43:41.803133",
+      "last_checked": "2026-07-10T14:22:05.033194",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"b738f14d91768f1b445e7d0ef0411ce9\"",
       "file_path": "documentation/MailKit/mecomposesessionerror/invalidheaders.md"
     },
@@ -1783,9 +1783,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/mecomposesessionerror/invalidrecipients.json": {
       "hash": "21c271a39371f255e1c814c66decd1a62f828fa56c1b9e0fb40a3364c2414d28",
-      "last_checked": "2026-07-07T20:43:41.974986",
+      "last_checked": "2026-07-10T14:22:05.146896",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"d0cdb36ff9d17edf262b583811d0a83a\"",
       "file_path": "documentation/MailKit/mecomposesessionerror/invalidrecipients.md"
     },
@@ -1799,9 +1799,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/mecomposesessionerror/errordomain.json": {
       "hash": "38db4959c50c6729467a8389c9ac3b111c4fb290d9b91536f58fb66b7a2b73d6",
-      "last_checked": "2026-07-07T20:43:42.291660",
+      "last_checked": "2026-07-10T14:22:05.475339",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"64030694b69f04a55e2081d20858be3b\"",
       "file_path": "documentation/MailKit/mecomposesessionerror/errordomain.md"
     },
@@ -1815,9 +1815,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/meaddressannotation/success(withlocalizeddescription:).json": {
       "hash": "7d8dd7176c4b5844c821cdee56d06d58fe12023fce3bf7e182c1147c9c7f119f",
-      "last_checked": "2026-07-07T20:43:42.485338",
+      "last_checked": "2026-07-10T14:22:05.592920",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"7320ab4283453012422c1b721c8349ee\"",
       "file_path": "documentation/MailKit/meaddressannotation/success-withlocalizeddescription.md"
     },
@@ -1831,9 +1831,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/meaddressannotation/warning(withlocalizeddescription:).json": {
       "hash": "b57abd1f38b310724f77e67b2303d382e1eed74b639235b697d46974704960d8",
-      "last_checked": "2026-07-07T20:43:42.673618",
+      "last_checked": "2026-07-10T14:22:05.787406",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"0f4c6e24a373ebb3a7847c6155fba02c\"",
       "file_path": "documentation/MailKit/meaddressannotation/warning-withlocalizeddescription.md"
     },
@@ -1847,9 +1847,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/meaddressannotation/error(withlocalizeddescription:).json": {
       "hash": "e548fa5492fc10e10b9c7ad0fe33e779ea64a241b65798fa52e22c208d9b9631",
-      "last_checked": "2026-07-07T20:43:42.816911",
+      "last_checked": "2026-07-10T14:22:05.959733",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"0528e1c96e8fd47235ac3e37ec969da3\"",
       "file_path": "documentation/MailKit/meaddressannotation/error-withlocalizeddescription.md"
     },
@@ -1863,9 +1863,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessageencoder/encode(_:composecontext:completionhandler:).json": {
       "hash": "23266b2446a101f9daaeb2573ac8e4809bd1b614ca96a569ae964778e335e857",
-      "last_checked": "2026-07-07T20:43:43.088308",
+      "last_checked": "2026-07-10T14:22:06.315461",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"d28b0c0446006f4ae5ebcd50c500154c\"",
       "file_path": "documentation/MailKit/memessageencoder/encode-composecontextcompletionhandler.md"
     },
@@ -1879,9 +1879,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessageencoder/getencodingstatus(for:composecontext:completionhandler:).json": {
       "hash": "2f7abf20eaffcdb6da8d5e712a6cd1851c7a4c3dd477930451a5c38623ede15a",
-      "last_checked": "2026-07-07T20:43:43.267277",
+      "last_checked": "2026-07-10T14:22:06.451008",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"f16892b58ad19f35af23b48f382f61cc\"",
       "file_path": "documentation/MailKit/memessageencoder/getencodingstatus-forcomposecontextcompletionhandler.md"
     },
@@ -1895,9 +1895,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/meencodedoutgoingmessage/init(rawdata:issigned:isencrypted:).json": {
       "hash": "cc90f520df8a33b7dc98df69a291e2eadbad7184dfa2a14fdef92748e5bf2283",
-      "last_checked": "2026-07-07T20:43:43.477102",
+      "last_checked": "2026-07-10T14:22:06.602506",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"93e511e40c29a58997936d9bdb3e67b4\"",
       "file_path": "documentation/MailKit/meencodedoutgoingmessage/init-rawdataissignedisencrypted.md"
     },
@@ -1911,9 +1911,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/meencodedoutgoingmessage/isencrypted.json": {
       "hash": "ec2c4cab0e9d5898060b191ce00102eec01ced29a0c327766c3e4954b71eb008",
-      "last_checked": "2026-07-07T20:43:43.608668",
+      "last_checked": "2026-07-10T14:22:06.767623",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"8c17edeb8cf4a1138bf2f9e657563b83\"",
       "file_path": "documentation/MailKit/meencodedoutgoingmessage/isencrypted.md"
     },
@@ -1927,9 +1927,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/meencodedoutgoingmessage/issigned.json": {
       "hash": "00ac182ba76e2dfda9de493dcfb18ddc7e7315bb14de9b8287cb2b8d5e9df96a",
-      "last_checked": "2026-07-07T20:43:43.731060",
+      "last_checked": "2026-07-10T14:22:06.942415",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"b96e8b7268505fbc7d8db9a6e4e3829a\"",
       "file_path": "documentation/MailKit/meencodedoutgoingmessage/issigned.md"
     },
@@ -1943,9 +1943,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/meencodedoutgoingmessage/rawdata.json": {
       "hash": "8e4b80dc86bc5f80517d25557b0beac0f617f1bd346a2ad02521f77a69cc4403",
-      "last_checked": "2026-07-07T20:43:43.926244",
+      "last_checked": "2026-07-10T14:22:07.071968",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"fdd1838659059e49e5c15e3c70636052\"",
       "file_path": "documentation/MailKit/meencodedoutgoingmessage/rawdata.md"
     },
@@ -1959,9 +1959,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/meoutgoingmessageencodingstatus/init(cansign:canencrypt:securityerror:addressesfailingencryption:).json": {
       "hash": "9e10b204426d9df9a43721a70657515dd9ef6a2f146d2b9a49a39843fe4a2bc0",
-      "last_checked": "2026-07-07T20:43:44.174915",
+      "last_checked": "2026-07-10T14:22:07.346591",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"c65777dfc84da1cc916a74fbac0a796b\"",
       "file_path": "documentation/MailKit/meoutgoingmessageencodingstatus/init-cansigncanencryptsecurityerroraddressesfailingencryption.md"
     },
@@ -1975,9 +1975,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/meoutgoingmessageencodingstatus/cansign.json": {
       "hash": "ab1a7f3a5682b0d0372539c612a677e668b6ec5e5d1a7d9565966e25eb5b5eac",
-      "last_checked": "2026-07-07T20:43:44.297536",
+      "last_checked": "2026-07-10T14:22:07.506591",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"35d1f33ed146de8199184e9690a0dc11\"",
       "file_path": "documentation/MailKit/meoutgoingmessageencodingstatus/cansign.md"
     },
@@ -1991,9 +1991,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/meoutgoingmessageencodingstatus/canencrypt.json": {
       "hash": "90b1f3455422e93690923ae80ff6b262c21da70b593da9e4af38bd75eb2c1aa9",
-      "last_checked": "2026-07-07T20:43:44.419483",
+      "last_checked": "2026-07-10T14:22:07.636788",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"132b1fcd853e258126780daf918734e9\"",
       "file_path": "documentation/MailKit/meoutgoingmessageencodingstatus/canencrypt.md"
     },
@@ -2007,9 +2007,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/meoutgoingmessageencodingstatus/securityerror.json": {
       "hash": "6d5aac806a329e01bf2ece874426d5f16c6c4f5d5b280d240069b0819554fc63",
-      "last_checked": "2026-07-07T20:43:44.564338",
+      "last_checked": "2026-07-10T14:22:07.765681",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"ba28d863f15f1e23507ed46046f38a96\"",
       "file_path": "documentation/MailKit/meoutgoingmessageencodingstatus/securityerror.md"
     },
@@ -2023,9 +2023,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/meoutgoingmessageencodingstatus/addressesfailingencryption.json": {
       "hash": "1e1f470399a459c6a442ec788b3cc5b1f66d03eb061bbf866eb541626365cdb8",
-      "last_checked": "2026-07-07T20:43:44.765912",
+      "last_checked": "2026-07-10T14:22:07.898821",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"1ccfa3e40ba0ac93e3c57b72667d2440\"",
       "file_path": "documentation/MailKit/meoutgoingmessageencodingstatus/addressesfailingencryption.md"
     },
@@ -2039,9 +2039,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessageencodingresult/init(encodedmessage:signingerror:encryptionerror:).json": {
       "hash": "30a1800618cbfce9c452fc02226356b166546fb0fd432a2b1f3ad2d556b65ca9",
-      "last_checked": "2026-07-07T20:43:45.042501",
+      "last_checked": "2026-07-10T14:22:08.271672",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"7373732785bbf12d4f24ef39e97f3e85\"",
       "file_path": "documentation/MailKit/memessageencodingresult/init-encodedmessagesigningerrorencryptionerror.md"
     },
@@ -2055,9 +2055,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessageencodingresult/encodedmessage.json": {
       "hash": "613adf6d8a3ca1ac62884a003dc479b2bd10154aa3c536c4ad3b6ac66753b03f",
-      "last_checked": "2026-07-07T20:43:45.238739",
+      "last_checked": "2026-07-10T14:22:08.395203",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"7aadb014f9a2f565fe84635cc93b9ee5\"",
       "file_path": "documentation/MailKit/memessageencodingresult/encodedmessage.md"
     },
@@ -2071,9 +2071,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessageencodingresult/encryptionerror.json": {
       "hash": "95d7cba640e0a4f92def2eb9183f912831dcaaba4e79fac5ac433197a9b68b91",
-      "last_checked": "2026-07-07T20:43:45.366131",
+      "last_checked": "2026-07-10T14:22:08.553722",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"16848e885170038f8b97931f3ad5ba69\"",
       "file_path": "documentation/MailKit/memessageencodingresult/encryptionerror.md"
     },
@@ -2087,9 +2087,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessageencodingresult/signingerror.json": {
       "hash": "ff43b0a92bde93088b587768c27fa6dabf4f350942eb645e9cf82ba9809b9b2c",
-      "last_checked": "2026-07-07T20:43:45.491827",
+      "last_checked": "2026-07-10T14:22:08.683291",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"51ddfc6689eebe0f9343d983e1a74dda\"",
       "file_path": "documentation/MailKit/memessageencodingresult/signingerror.md"
     },
@@ -2103,9 +2103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessagedecoder/decodedmessage(formessagedata:).json": {
       "hash": "122536cbc3a0b2bbc8fe8a0daf3eca354a7f4ae9f36d4bfd18b678774e29ec0f",
-      "last_checked": "2026-07-07T20:43:45.775206",
+      "last_checked": "2026-07-10T14:22:08.981477",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"c24286727b87bfd84c659e80b6bea43d\"",
       "file_path": "documentation/MailKit/memessagedecoder/decodedmessage-formessagedata.md"
     },
@@ -2119,9 +2119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/medecodedmessage/rawdata.json": {
       "hash": "38900ab5e9e991399a0a0c51b332c0a8e408963995a0c84f0c9748d71cdc1e9e",
-      "last_checked": "2026-07-07T20:43:45.897227",
+      "last_checked": "2026-07-10T14:22:09.144290",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"977d44463795d21131687d35d677567f\"",
       "file_path": "documentation/MailKit/medecodedmessage/rawdata.md"
     },
@@ -2135,9 +2135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/medecodedmessage/securityinformation.json": {
       "hash": "6f992c10c27202d984b4cf5ba53a2cbf983579ba33e06652ef8edd4fb3d28aee",
-      "last_checked": "2026-07-07T20:43:46.016852",
+      "last_checked": "2026-07-10T14:22:09.337958",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"eafbc9c368974cbeb5c3fc77962a8adb\"",
       "file_path": "documentation/MailKit/medecodedmessage/securityinformation.md"
     },
@@ -2151,9 +2151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/medecodedmessage/init(data:securityinformation:context:).json": {
       "hash": "49f62c1f034e9bc2c12eb338273ed219363b67dccdc4ed8834bf518d760f78c7",
-      "last_checked": "2026-07-07T20:43:46.142641",
+      "last_checked": "2026-07-10T14:22:09.509161",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"6fd01351bd6a0f4a31a6e77c4a19199f\"",
       "file_path": "documentation/MailKit/medecodedmessage/init-datasecurityinformationcontext.md"
     },
@@ -2167,9 +2167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/medecodedmessage/init(data:securityinformation:context:banner:).json": {
       "hash": "7d4f31b3eb2ef9238754ebd67ff827f7d20dc94150a07a4de317e66ebdbdc200",
-      "last_checked": "2026-07-07T20:43:46.341615",
+      "last_checked": "2026-07-10T14:22:09.624065",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"046f99b2774a7692660cfe767bee8ff5\"",
       "file_path": "documentation/MailKit/medecodedmessage/init-datasecurityinformationcontextbanner.md"
     },
@@ -2183,9 +2183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/medecodedmessage/banner.json": {
       "hash": "548a05c558e48cdc4204afe023cd38eae3bdcf9df9af8b5fd23e3a16b51fca9b",
-      "last_checked": "2026-07-07T20:43:46.641700",
+      "last_checked": "2026-07-10T14:22:09.917026",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"0cecdf49f076dee2c53033f585151530\"",
       "file_path": "documentation/MailKit/medecodedmessage/banner.md"
     },
@@ -2199,9 +2199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/medecodedmessage/context.json": {
       "hash": "6570cdf970f7a0ad9c0ab25075d5cfac5bddac37530cc3f981183b286876e0cf",
-      "last_checked": "2026-07-07T20:43:46.768662",
+      "last_checked": "2026-07-10T14:22:10.051078",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"d0364caa5ce754ed6a34eef3616d3541\"",
       "file_path": "documentation/MailKit/medecodedmessage/context.md"
     },
@@ -2215,9 +2215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessagesigner/init(emailaddresses:signaturelabel:context:).json": {
       "hash": "b5042353e8065817a7ebf6a7ac89f7caa40330c000bfe880e48384bbbb88e746",
-      "last_checked": "2026-07-07T20:43:46.967929",
+      "last_checked": "2026-07-10T14:22:10.181316",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"dc9f8863a6634396ce260fa2ba10cf8f\"",
       "file_path": "documentation/MailKit/memessagesigner/init-emailaddressessignaturelabelcontext.md"
     },
@@ -2231,9 +2231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessagesigner/emailaddresses.json": {
       "hash": "79f5e971c7e50b3d83d3d117c00af1c147011827140c86bfae5eca0930eabd4e",
-      "last_checked": "2026-07-07T20:43:47.100987",
+      "last_checked": "2026-07-10T14:22:10.302210",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"bbf0aa66cb7769d55270f2376c14668f\"",
       "file_path": "documentation/MailKit/memessagesigner/emailaddresses.md"
     },
@@ -2247,9 +2247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessagesigner/label.json": {
       "hash": "436c32cf2d5599f452dc6de0173fbe23254685f3d988c7d1bcb838d51105ba12",
-      "last_checked": "2026-07-07T20:43:47.225846",
+      "last_checked": "2026-07-10T14:22:10.617756",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"af23933ce7c8751fe2422a1d55ad01dd\"",
       "file_path": "documentation/MailKit/memessagesigner/label.md"
     },
@@ -2263,9 +2263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessagesigner/context.json": {
       "hash": "ca2d6617974aac2db9dfa89bf667b4392fc23e7d09677302f5ae04de00f390e2",
-      "last_checked": "2026-07-07T20:43:47.418061",
+      "last_checked": "2026-07-10T14:22:10.736133",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"55bc2993ec8453ae21a900e9c3f5293f\"",
       "file_path": "documentation/MailKit/memessagesigner/context.md"
     },
@@ -2279,9 +2279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessagesecurityinformation/init(signers:isencrypted:signingerror:encryptionerror:).json": {
       "hash": "b2a574e22c505606a831fff0b327c1128d47959fcc5093093b9d4795315d6ad0",
-      "last_checked": "2026-07-07T20:43:47.701364",
+      "last_checked": "2026-07-10T14:22:11.037957",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"6bfbea6ab8c67b1bae05d0f9a242e41d\"",
       "file_path": "documentation/MailKit/memessagesecurityinformation/init-signersisencryptedsigningerrorencryptionerror.md"
     },
@@ -2295,9 +2295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessagesecurityinformation/isencrypted.json": {
       "hash": "b3a5a31f45572656bf113eed846f4bad8d0701f42d8bc675c979b5957bf231e3",
-      "last_checked": "2026-07-07T20:43:47.882388",
+      "last_checked": "2026-07-10T14:22:11.154261",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"07d453d5a6af9d77f38ed67f2ce55ff0\"",
       "file_path": "documentation/MailKit/memessagesecurityinformation/isencrypted.md"
     },
@@ -2311,9 +2311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessagesecurityinformation/encryptionerror.json": {
       "hash": "a60c8b0871a2fca7b216fd2e30e36a1c638670a9dbd65fd02f5e69ee9651da1f",
-      "last_checked": "2026-07-07T20:43:48.070976",
+      "last_checked": "2026-07-10T14:22:11.321396",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"640b31bbc1dc19ef71ab54d2927ef72f\"",
       "file_path": "documentation/MailKit/memessagesecurityinformation/encryptionerror.md"
     },
@@ -2327,9 +2327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessagesecurityinformation/signers.json": {
       "hash": "6587682511e3b96a1766400d8bf24b98a804c1fa158722868648f46649a84edb",
-      "last_checked": "2026-07-07T20:43:48.213116",
+      "last_checked": "2026-07-10T14:22:11.478296",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"df6b7b4fee748916b3a2b4c5972ef17f\"",
       "file_path": "documentation/MailKit/memessagesecurityinformation/signers.md"
     },
@@ -2343,9 +2343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessagesecurityinformation/signingerror.json": {
       "hash": "404f3fe4fcbfbc945f7ee1ca3b0d4ff70c4f783b10edb88f6bd29e336ecad70f",
-      "last_checked": "2026-07-07T20:43:48.340624",
+      "last_checked": "2026-07-10T14:22:11.689502",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"021eb3682c86a040a6852cb70cc2e4af\"",
       "file_path": "documentation/MailKit/memessagesecurityinformation/signingerror.md"
     },
@@ -2359,9 +2359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessagesecurityinformation/init(signers:isencrypted:signingerror:encryptionerror:shouldblockremotecontent:localizedremotecontentblockingreason:).json": {
       "hash": "07c0f4b7b15cf3973856164242bfc7d371bfec4080b0a1a9063693ed07d330c2",
-      "last_checked": "2026-07-07T20:43:48.562383",
+      "last_checked": "2026-07-10T14:22:11.854946",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"e0c4c62d6b4a32dc8130828add9162e9\"",
       "file_path": "documentation/MailKit/memessagesecurityinformation/init-signersisencryptedsigningerrorencryptionerrorshouldblockremotecontentlocalizedremotecontentblockingreason.md"
     },
@@ -2375,9 +2375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessagesecurityinformation/localizedremotecontentblockingreason.json": {
       "hash": "7e2cb7c7f93f1ade6e928ef41905ead3e21055dd4ad3e162257d12e941f7d057",
-      "last_checked": "2026-07-07T20:43:48.884139",
+      "last_checked": "2026-07-10T14:22:12.202580",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"a32004464d3e712a7bc83efb8c1b0cf2\"",
       "file_path": "documentation/MailKit/memessagesecurityinformation/localizedremotecontentblockingreason.md"
     },
@@ -2391,9 +2391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessagesecurityinformation/shouldblockremotecontent.json": {
       "hash": "ea497103c6cf453730a79757d092cf82e743c714fd1f024ba4e9d891ea6f2996",
-      "last_checked": "2026-07-07T20:43:49.071082",
+      "last_checked": "2026-07-10T14:22:12.316001",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"64db9a0367a77dc11611838cd0032b1f\"",
       "file_path": "documentation/MailKit/memessagesecurityinformation/shouldblockremotecontent.md"
     },
@@ -2407,9 +2407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessagesecurityerror/code/decodingerror.json": {
       "hash": "cd261109d4795dc254151be3013aadef0ff8ae9fa65d3fa8d9bb543fae8855a4",
-      "last_checked": "2026-07-07T20:43:49.193823",
+      "last_checked": "2026-07-10T14:22:12.433478",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"35dc4715d0441773e0dfe999e0388769\"",
       "file_path": "documentation/MailKit/memessagesecurityerror/code/decodingerror.md"
     },
@@ -2423,9 +2423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessagesecurityerror/code/encodingerror.json": {
       "hash": "e3e1acdfeb826ef4d83ffe64d8ab2a6c0b2e27d669e12b6e2696843d54872192",
-      "last_checked": "2026-07-07T20:43:49.306264",
+      "last_checked": "2026-07-10T14:22:12.563837",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"c5d8935dc21d7ec00ea15ecc6808c325\"",
       "file_path": "documentation/MailKit/memessagesecurityerror/code/encodingerror.md"
     },
@@ -2439,9 +2439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessagesecurityerror/code/init(rawvalue:).json": {
       "hash": "aa52cf1a033d765b9db4175de6f951b82348993c59558970f212259d4ca8ce53",
-      "last_checked": "2026-07-07T20:43:49.442852",
+      "last_checked": "2026-07-10T14:22:12.752137",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"22ebbcda7e3d4ef12e51e66106ec8ec9\"",
       "file_path": "documentation/MailKit/memessagesecurityerror/code/init-rawvalue.md"
     },
@@ -2455,9 +2455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/mecomposesessionerror/code/invalidbody.json": {
       "hash": "d2fd9c8b1b1ec7d1827e6492cead4801935bc5779a8a31fbb2417d4d4cdd34b8",
-      "last_checked": "2026-07-07T20:43:51.781990",
+      "last_checked": "2026-07-10T14:22:22.159744",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"228bc16c5f2567d9b1c887f2241f7fc5\"",
       "file_path": "documentation/MailKit/mecomposesessionerror/code/invalidbody.md"
     },
@@ -2471,9 +2471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/mecomposesessionerror/code/invalidheaders.json": {
       "hash": "e7e0b6a854edaccf73213fa09f781bb4879e13c6705747eaf9a6926bcbb17a79",
-      "last_checked": "2026-07-07T20:43:51.977650",
+      "last_checked": "2026-07-10T14:22:22.289768",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"357cc7c4c92e710144dce8eda335610e\"",
       "file_path": "documentation/MailKit/mecomposesessionerror/code/invalidheaders.md"
     },
@@ -2487,9 +2487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/mecomposesessionerror/code/invalidrecipients.json": {
       "hash": "5fe888f012527c59fc66a314943d20cd87b76f29164f23167c6b021a2c7a2f28",
-      "last_checked": "2026-07-07T20:43:52.144154",
+      "last_checked": "2026-07-10T14:22:22.425350",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"4e0ca86f475b9a876e2b61d8d1d5d1c3\"",
       "file_path": "documentation/MailKit/mecomposesessionerror/code/invalidrecipients.md"
     },
@@ -2503,9 +2503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/mecomposeuseraction/forward.json": {
       "hash": "347d41a9330676882f53d6ecafe4a675b8649309ec06b694c43dad3175dd3a92",
-      "last_checked": "2026-07-07T20:43:52.527383",
+      "last_checked": "2026-07-10T14:22:22.690602",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"8e3d50998cf761b0e96f954aa87ffd85\"",
       "file_path": "documentation/MailKit/mecomposeuseraction/forward.md"
     },
@@ -2519,9 +2519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/mecomposeuseraction/newmessage.json": {
       "hash": "5201018413f3d3ea1e51c04ba444f8c33d63f7686149d79cfb96874917eb6d21",
-      "last_checked": "2026-07-07T20:43:52.646687",
+      "last_checked": "2026-07-10T14:22:22.835502",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"bc202e2b1ad4aabeae3341337a2aff3b\"",
       "file_path": "documentation/MailKit/mecomposeuseraction/newmessage.md"
     },
@@ -2535,9 +2535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/mecomposeuseraction/reply.json": {
       "hash": "4a810ab40731705547c5c09475a78fbe08481e372004a999e2f9e2893381debb",
-      "last_checked": "2026-07-07T20:43:52.784672",
+      "last_checked": "2026-07-10T14:22:22.980852",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"f81a179640f2fe6f00ff04ee6929ec6a\"",
       "file_path": "documentation/MailKit/mecomposeuseraction/reply.md"
     },
@@ -2551,9 +2551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/mecomposeuseraction/replyall.json": {
       "hash": "472b6588f8bae0851322ec2bc15d9080489133cdeebe3c5507a871805b399d5d",
-      "last_checked": "2026-07-07T20:43:52.980520",
+      "last_checked": "2026-07-10T14:22:23.105626",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"cae1ad568f44eb4813aaf9bb03f9dd1b\"",
       "file_path": "documentation/MailKit/mecomposeuseraction/replyall.md"
     },
@@ -2567,9 +2567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessageaction/flag/blue.json": {
       "hash": "b3b513ce19b58d0f1b11ffde28947ee07877e0604a1a2603a13ca115b0085137",
-      "last_checked": "2026-07-07T20:43:49.573967",
+      "last_checked": "2026-07-10T14:22:12.923331",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"601850ca8bb9d653fcfda37dc5ff3f8e\"",
       "file_path": "documentation/MailKit/memessageaction/flag/blue.md"
     },
@@ -2583,9 +2583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessageaction/flag/defaultcolor.json": {
       "hash": "ff24919ad7a8135931851c8fc11e2f9b19a3589d9221866658fdb72a1d9ce831",
-      "last_checked": "2026-07-07T20:43:49.702067",
+      "last_checked": "2026-07-10T14:22:13.050425",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"01b6971ff0c0f39efe4c4994db11799d\"",
       "file_path": "documentation/MailKit/memessageaction/flag/defaultcolor.md"
     },
@@ -2599,9 +2599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessageaction/flag/gray.json": {
       "hash": "d7cb77645f9282d53d5793abf99bf2ed5d0119faa3365452c75225e3e1d58f1f",
-      "last_checked": "2026-07-07T20:43:49.877208",
+      "last_checked": "2026-07-10T14:22:13.165393",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"f45628d40a5447b4670900fa40409715\"",
       "file_path": "documentation/MailKit/memessageaction/flag/gray.md"
     },
@@ -2615,9 +2615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessageaction/flag/green.json": {
       "hash": "f1164328212fc12fe392a074f58a23ce343d2bfa36980ed6e5fe57b0073bffb7",
-      "last_checked": "2026-07-07T20:43:50.004488",
+      "last_checked": "2026-07-10T14:22:13.302674",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"7d465b51a00181a1fcf985eea65f0da0\"",
       "file_path": "documentation/MailKit/memessageaction/flag/green.md"
     },
@@ -2631,9 +2631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessageaction/flag/none.json": {
       "hash": "317685aea072a7c646ac32e1616adca8df1ddbb8df6c4b5163912ce3fb0b3d6c",
-      "last_checked": "2026-07-07T20:43:50.219687",
+      "last_checked": "2026-07-10T14:22:13.443469",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"4d159938bb5c2fad0538d3419629937b\"",
       "file_path": "documentation/MailKit/memessageaction/flag/none.md"
     },
@@ -2647,9 +2647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessageaction/flag/orange.json": {
       "hash": "e67299fa34b24d7a7ad36d44a9b1292cb5964a6f4a851e0e938af75de364142d",
-      "last_checked": "2026-07-07T20:43:50.350426",
+      "last_checked": "2026-07-10T14:22:13.569347",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"8eebc0adde871725939d02bedad7e964\"",
       "file_path": "documentation/MailKit/memessageaction/flag/orange.md"
     },
@@ -2663,9 +2663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessageaction/flag/purple.json": {
       "hash": "774d99054ed93b9e5c6e5482d8667ee9ceca7f11dc734055c2e0a22403e4b875",
-      "last_checked": "2026-07-07T20:43:50.530783",
+      "last_checked": "2026-07-10T14:22:13.767783",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"8ab89951638bf6c8c95a90ba2c405cbe\"",
       "file_path": "documentation/MailKit/memessageaction/flag/purple.md"
     },
@@ -2679,9 +2679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessageaction/flag/red.json": {
       "hash": "272e04dad790c1fa776c8a93ffb1788d09baf2c2d7feb8fe05907935043c723a",
-      "last_checked": "2026-07-07T20:43:50.728931",
+      "last_checked": "2026-07-10T14:22:13.892320",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"8daa643b51a0edba1e89efd7072ddac3\"",
       "file_path": "documentation/MailKit/memessageaction/flag/red.md"
     },
@@ -2695,9 +2695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessageaction/flag/yellow.json": {
       "hash": "427318c39ea11e4ba7c828b2d41035111a3754658ba88f02d8308a2fa9e1c518",
-      "last_checked": "2026-07-07T20:43:50.903489",
+      "last_checked": "2026-07-10T14:22:14.024768",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"80c475221e78c33cd6f57bab2fba1c59\"",
       "file_path": "documentation/MailKit/memessageaction/flag/yellow.md"
     },
@@ -2711,9 +2711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessageaction/flag/init(rawvalue:).json": {
       "hash": "fe647271939d488c1797b9f16ec3fe438bb18d25b7e6b84376a9f0bca1fa2317",
-      "last_checked": "2026-07-07T20:43:51.028611",
+      "last_checked": "2026-07-10T14:22:14.155029",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"009e382f6bbf83eb47b678366833d768\"",
       "file_path": "documentation/MailKit/memessageaction/flag/init-rawvalue.md"
     },
@@ -2727,9 +2727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessageencryptionstate/encrypted.json": {
       "hash": "e83ff7f47103555b0b2b8c6cffc312e6648202a183f0b8254c3378fd3ea4f15b",
-      "last_checked": "2026-07-07T20:43:53.220141",
+      "last_checked": "2026-07-10T14:22:23.394082",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"705f64eacef967552fc5f4e50ad98453\"",
       "file_path": "documentation/MailKit/memessageencryptionstate/encrypted.md"
     },
@@ -2743,9 +2743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessageencryptionstate/notencrypted.json": {
       "hash": "4cf142555373fdceb2d6cad70fd3aca3f3ff4e58364a04d62bc36558013cf05e",
-      "last_checked": "2026-07-07T20:43:53.358302",
+      "last_checked": "2026-07-10T14:22:23.566058",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"b5c3b0e3ee1bb3e17eb3369bf81e5d53\"",
       "file_path": "documentation/MailKit/memessageencryptionstate/notencrypted.md"
     },
@@ -2759,9 +2759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessageencryptionstate/unknown.json": {
       "hash": "e5e0dfd42d9f8179c2970ab493c231a06d592f735493e7ecb772c9474bc7b5b7",
-      "last_checked": "2026-07-07T20:43:53.483668",
+      "last_checked": "2026-07-10T14:22:23.723766",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"cf69ad957ecc0db5afdeb65df9d46077\"",
       "file_path": "documentation/MailKit/memessageencryptionstate/unknown.md"
     },
@@ -2775,9 +2775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessage/init(coder:).json": {
       "hash": "e6096994c1662ceb96031a98a115a78fc5d2c4ee9216dd950b0ac6f1b642cffd",
-      "last_checked": "2026-07-07T20:43:31.617121",
+      "last_checked": "2026-07-10T14:21:56.507319",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"d9ba2fe74ccddbd7fa5aee2d2a0df28c\"",
       "file_path": "documentation/MailKit/memessage/init-coder.md"
     },
@@ -2791,9 +2791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/medecodedmessagebanner/init(coder:).json": {
       "hash": "fff1f963f1ac63a05c554f3b9f82e616aeed3f3bd8e7572b1fe61464a8adbf1d",
-      "last_checked": "2026-07-07T20:43:34.662263",
+      "last_checked": "2026-07-10T14:21:59.141814",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"c1d441e9e8d7bbc87192a0f332639fcb\"",
       "file_path": "documentation/MailKit/medecodedmessagebanner/init-coder.md"
     },
@@ -2807,9 +2807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/meemailaddress/init(coder:).json": {
       "hash": "1f4fe0cb552f7cf2c1cef92167814186fce99bc549039101c1a6cc5506fd799d",
-      "last_checked": "2026-07-07T20:43:35.664692",
+      "last_checked": "2026-07-10T14:21:59.927046",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"54772b0ecb9cbd0237922f6a11d29525\"",
       "file_path": "documentation/MailKit/meemailaddress/init-coder.md"
     },
@@ -2823,9 +2823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessageaction/init(coder:).json": {
       "hash": "6c84528e8324d65abf6714cbe036c80de91b07a3b15594aecae41fa078b9d505",
-      "last_checked": "2026-07-07T20:43:38.084214",
+      "last_checked": "2026-07-10T14:22:01.944989",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"a81ce1caae58ab1f19c7e96aa4fd7dc7\"",
       "file_path": "documentation/MailKit/memessageaction/init-coder.md"
     },
@@ -2839,9 +2839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessageactiondecision/init(coder:).json": {
       "hash": "bd2c5821c951784f774fa35a754f8855497ae1241c3df24e6a51d97121199017",
-      "last_checked": "2026-07-07T20:43:39.017210",
+      "last_checked": "2026-07-10T14:22:02.621350",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"082d70ea97dff05b88f086f2285097d7\"",
       "file_path": "documentation/MailKit/memessageactiondecision/init-coder.md"
     },
@@ -2855,9 +2855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/mecomposesession/init(coder:).json": {
       "hash": "191c2259f1963be78c70419486341ed275a7ae389343a67362af18d27b00a17d",
-      "last_checked": "2026-07-07T20:43:41.466247",
+      "last_checked": "2026-07-10T14:22:04.706709",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"9aa54f245e6f998d764a12d09b5f591e\"",
       "file_path": "documentation/MailKit/mecomposesession/init-coder.md"
     },
@@ -2871,9 +2871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/meaddressannotation/init(coder:).json": {
       "hash": "1a04767ca76bccf9e033e23e20f7f94ebc445c3b27d5d675cbc4798bd385c6f3",
-      "last_checked": "2026-07-07T20:43:42.938740",
+      "last_checked": "2026-07-10T14:22:06.115000",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"cff4eaceeb5b8e60ee56bb43a0bdc726\"",
       "file_path": "documentation/MailKit/meaddressannotation/init-coder.md"
     },
@@ -2887,9 +2887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/meencodedoutgoingmessage/init(coder:).json": {
       "hash": "220ffc9b768e5577131c174738c13fba8304a57f29ff9307b472722feb27e75e",
-      "last_checked": "2026-07-07T20:43:44.048513",
+      "last_checked": "2026-07-10T14:22:07.184877",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"9776dbb806ae5f89d28cf0cbb3d47dd2\"",
       "file_path": "documentation/MailKit/meencodedoutgoingmessage/init-coder.md"
     },
@@ -2903,9 +2903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/meoutgoingmessageencodingstatus/init(coder:).json": {
       "hash": "803682729d49896b9e140689a45ec0d03c8ddbccd32a4f4701698fd98b6ccca9",
-      "last_checked": "2026-07-07T20:43:44.911001",
+      "last_checked": "2026-07-10T14:22:08.072230",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"7a8f6c2d4be9e1d8823090bcf0e2131e\"",
       "file_path": "documentation/MailKit/meoutgoingmessageencodingstatus/init-coder.md"
     },
@@ -2919,9 +2919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessageencodingresult/init(coder:).json": {
       "hash": "71c963dda8a2d953e3f8c65e847322a27a23cbf68aa13220026404782e7e0156",
-      "last_checked": "2026-07-07T20:43:45.623384",
+      "last_checked": "2026-07-10T14:22:08.797779",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"fe246c6ff178fc0a4c356cde457c9556\"",
       "file_path": "documentation/MailKit/memessageencodingresult/init-coder.md"
     },
@@ -2935,9 +2935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/medecodedmessage/init(coder:).json": {
       "hash": "6253b70c1cdc36f3f35a66cccb7d23a4a14b3304c4d8a32e908c7caa185e4254",
-      "last_checked": "2026-07-07T20:43:46.477995",
+      "last_checked": "2026-07-10T14:22:09.791173",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"59bc8e6d1e94dd990831b808143405be\"",
       "file_path": "documentation/MailKit/medecodedmessage/init-coder.md"
     },
@@ -2951,9 +2951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessagesigner/init(coder:).json": {
       "hash": "3872cf4b47d60c14807c15e526bbcf2f356cb3fc323cf6a403c69526466f1e6a",
-      "last_checked": "2026-07-07T20:43:47.551781",
+      "last_checked": "2026-07-10T14:22:10.872571",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"9ea0c15359b6acd87364f1437ea0e220\"",
       "file_path": "documentation/MailKit/memessagesigner/init-coder.md"
     },
@@ -2967,9 +2967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessagesecurityinformation/init(coder:).json": {
       "hash": "d273d19a2176a8fe68b380676d71a0c6ba7d1c89fd43779f571be5115e383650",
-      "last_checked": "2026-07-07T20:43:48.752517",
+      "last_checked": "2026-07-10T14:22:12.017543",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"d345c5f2acbc852e6348097b63df6563\"",
       "file_path": "documentation/MailKit/memessagesecurityinformation/init-coder.md"
     },
@@ -2983,9 +2983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/mecomposesessionerror/code/init(rawvalue:).json": {
       "hash": "f880e9fdd1cd3e26bcb1182a9b5e615ed0c28385321d259da53d6ea619988d68",
-      "last_checked": "2026-07-07T20:43:52.339087",
+      "last_checked": "2026-07-10T14:22:22.573158",
       "status": "new",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"17f1745cbf24cfdbd7c671b81ed385cf\"",
       "file_path": "documentation/MailKit/mecomposesessionerror/code/init-rawvalue.md"
     },
@@ -2999,9 +2999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/mecomposeuseraction/init(rawvalue:).json": {
       "hash": "af47eba516bf43ac4af8340f52f54965d6619026601898548b4bc9a91ee298e5",
-      "last_checked": "2026-07-07T20:43:53.092811",
+      "last_checked": "2026-07-10T14:22:23.230323",
       "status": "new",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"3924202301811e256522b8a365d89736\"",
       "file_path": "documentation/MailKit/mecomposeuseraction/init-rawvalue.md"
     },
@@ -3015,9 +3015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/mailkit/memessageencryptionstate/init(rawvalue:).json": {
       "hash": "4353df3247184af0964a749b6a1fd41c56ee64b1c6d1885939572ffde47ce4f0",
-      "last_checked": "2026-07-07T20:43:53.603735",
+      "last_checked": "2026-07-10T14:22:23.885330",
       "status": "new",
-      "session_id": "2026-07-07T20:43:20.911386",
+      "session_id": "2026-07-10T14:21:47.072215",
       "etag": "W/\"78a89abc9933b7c4e81e6a9e6b29cecd\"",
       "file_path": "documentation/MailKit/memessageencryptionstate/init-rawvalue.md"
     },

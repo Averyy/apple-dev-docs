@@ -66,6 +66,10 @@ The request body.
 
 - [object ConsumptionRequest](consumptionrequest.md)
   The request body that contains consumption information for an In-App Purchase.
+- [Send Consumption Information V1](send-consumption-information-v1.md)
+  Send consumption information about a consumable In-App Purchase or auto-renewable subscription to the App Store after your server receives a consumption request notification.
+- [object ConsumptionRequestV1](consumptionrequestv1.md)
+  The request body containing consumption information.
 
 
 ---

@@ -16,6 +16,15 @@ The customer’s email address or Hide My Email address if supported.
 let emailAddress: String?
 ```
 
+## See Also
+
+- [let barcodeMessage: String?](customerengagement/customerinfo/barcodemessage.md)
+  A message for the barcode.
+- [let customerVASData: Data?](customerengagement/customerinfo/customervasdata.md)
+  The encrypted VAS content of a selected Wallet pass.
+- [let phoneNumber: CNPhoneNumber?](customerengagement/customerinfo/phonenumber.md)
+  The customer’s phone number, if provided.
+
 
 ---
 

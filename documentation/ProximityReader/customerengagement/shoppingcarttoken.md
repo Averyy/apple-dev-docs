@@ -16,6 +16,10 @@ A token referencing the shopping cart.
 struct ShoppingCartToken
 ```
 
+## Mentions
+
+- [Adding support for Tap to Share to your app](adding-support-for-tap-to-share-to-your-app.md)
+
 #### Overview
 
 Use this token to make a payment request.

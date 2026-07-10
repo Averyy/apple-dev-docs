@@ -16,6 +16,15 @@ An asynchronous sequence of events that occur during the engagement session.
 final let events: any AsyncSequence<CustomerEngagementSession.Event, Never>
 ```
 
+## Mentions
+
+- [Adding support for Tap to Share to your app](adding-support-for-tap-to-share-to-your-app.md)
+
+## See Also
+
+- [CustomerEngagementSession.Event](customerengagementsession/event.md)
+  Events that occur during a customer engagement session.
+
 
 ---
 

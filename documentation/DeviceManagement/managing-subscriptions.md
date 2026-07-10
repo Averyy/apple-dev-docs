@@ -30,6 +30,7 @@ The code above results in a response like the following:
       "parentAdamId": 54321,
       "adamId": 12345,
       "status": "ACTIVE",
+      "periodEndDate": "2027-01-15",
       "counts": {
         "assigned": {
           "renewing": 80,
@@ -60,6 +61,8 @@ Each subscription includes a `status` field that reflects the current state of t
 | `ACTIVE` | The subscription is active and seats can be used and assigned. |
 | `INACTIVE` | The subscription is no longer active. |
 | `PAUSED` | The subscription is temporarily paused. |
+
+The `periodEndDate` field reports the end date of the subscription’s current billing period in ISO-8601 calendar date format (`YYYY-MM-DD`). Renewing assignments roll into a new billing period on this date; expiring assignments and seats end on this date. Use this date to surface renewal reminders or upcoming capacity changes to administrators.
 
 The `assigned` object shows how many seats currently have user assignments, broken down by the assignment’s renewal state — not the underlying license state. The `available` object shows how many seats remain unassigned. The `total` object shows the actual seat inventory your organization owns, regardless of how seats are assigned. Within each, the `renewing` count represents seats that auto-renew and the `expiring` count represents seats that don’t.
 

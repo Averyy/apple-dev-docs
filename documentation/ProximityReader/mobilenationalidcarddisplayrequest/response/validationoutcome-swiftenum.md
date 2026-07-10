@@ -8,7 +8,6 @@ A type that represents how the user validates the mobile document response.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 
 ## Declaration
 

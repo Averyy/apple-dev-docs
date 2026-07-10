@@ -81,7 +81,7 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 - Under certain configurations, `CPMapPanel` might not dismiss when you tap the close button.  (177592347)
 - The symbol button handler of `CPMapPanelButtonConfiguration` might not be called.  (177595560)
 - Your vehicle’s next and previous track steering wheel buttons might not function correctly in CarPlay.   (177832695) **Workaround:** Use the on-screen playback controls in CarPlay to advance or go back to the previous track.
-- In CarPlay, playback of Stereo music content may be silent after playback of Spatial music content.  (178189709) **Workaround:** A reconnect of the CarPlay will play stereo again, until a Spatial Audio content plays.  If possible, avoid mixed playlisting Spatial and stereo media contents for this release.  This prevents the issue from occurring.
+- In CarPlay, playback of stereo music content might be silent after playback of Spatial Audio content.  (178189709) **Workaround:** Disconnect and reconnect CarPlay to restore stereo playback until Spatial Audio content plays again. If possible, avoid creating playlists that mix Spatial Audio and stereo content.
 - Siri might respond more slowly than expected in CarPlay, particularly under higher device temperatures or poor network conditions.   (178952858) **Workaround:** Try the request again after the device has cooled down or once you are in an area with better cellular reception.
 
 ##### Clock
@@ -89,6 +89,14 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 ###### Known Issues
 
 - You might be unable to stop a ringing alarm from the lock screen without unlocking your device.   (177728602) **Workaround:** Unlock your device, or say “stop the alarm,” or say “stop music.”
+
+##### Cloudkit
+
+###### Resolved Issues
+
+- Fixed: Saving a `CKShare` in which an administrator participant has changed their own role to `CKShareParticipantRole.privateUser` (self-demotion) has no effect. ```None
+(177621316)  
+```
 
 ##### Control Center
 
@@ -105,19 +113,21 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 
 ###### Resolved Issues
 
+- Fixed: `AIModelCache` entries might not honor the cache policy you provide, causing re-specialization to occur more often than expected.  (169746264)
+- Fixed: When inference runs on the GPU, `InferenceFunction.encode` blocks until all compute is complete instead of returning as soon as encoding is done, unless the model is specialized with a preferred compute device of GPU.  (175789258)
+- Fixed: Certain weight and activation configurations may not run on the Neural Engine, such as FP8-quantized weights and activations, palettized weights with quantized (non-Float16) values, and sparse weights. Affected models may run on the CPU or GPU instead.  (176210080)
+- Fixed: When you run `InferenceFunction.run` on functions with both state arguments and outputs with dynamic shapes, the framework might be unable to infer the shape of the outputs and throw an error.  (176807213)
+- Fixed: Inference might fail or crash for models with control flow over dynamic-shape tensors (for example, linear-attention LLMs such as Qwen3.5/3.6).  (177354777)
 - Fixed: When Metal API Validation is enabled, CoreAI models might fail to execute.  (177991751)
+- Fixed: Models with custom Metal kernels will fail to load.  (178056451)
 
 ###### Known Issues
 
-- `AIModelCache` entries might not honor the cache policy you provide, causing re-specialization to occur more often than expected.  (169746264)
 - `AIModelCache` entries might not honor the cache policy you provide, causing re-specialization to occur more often than expected.  (174769929)
-- When inference runs on the GPU, `InferenceFunction.encode` blocks until all compute is complete instead of returning as soon as encoding is done, unless the model is specialized with a preferred compute device of GPU.  (175789258)
-- Certain weight and activation configurations may not run on the Neural Engine, such as FP8-quantized weights and activations, palettized weights with quantized (non-Float16) values, and sparse weights. Affected models may run on the CPU or GPU instead.  (176210080)
-- When you run `InferenceFunction.run` on functions with both state arguments and outputs with dynamic shapes, the framework might be unable to infer the shape of the outputs and throw an error.  (176807213) **Workaround:** If you know what the output shape will be, pre-allocate the output and provide it through the `outputViews` arguments on `InferenceFunction.run`.
 - On-device specialization fails when loading an `.aimodel` converted with `coreai-torch` v0.4.0.  (177008303) **Workaround:** Convert the model with `coreai-torch` v0.4.1 or greater.
-- Inference might fail or crash for models with control flow over dynamic-shape tensors (for example, linear-attention LLMs such as Qwen3.5/3.6).  (177354777)
 - Ahead-of-time (AOT) compilation might fail unexpectedly for certain models.  (177729331)
-- Models with custom Metal kernels will fail to load.  (178056451)
+- App-group support may not work as expected on certain model types  (179732320) **Workaround:** Can specialize the model under the default cache if issue occurs from within app-group cache
+- On-device specialization might fail when loading an `.aimodelc` compiled ahead of time using Xcode 27 Beta 2 or earlier.  (181264112) **Workaround:** Update to Xcode 27 Beta 3 and re-compile the `.aimodel` to a new `.aimodelc`
 
 ##### Core Bluetooth
 
@@ -145,11 +155,17 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 - Dictation might not recognize names from your contacts.  (178079519)
 - Dictation might insert extra words at the end of a dictated passage that you did not speak.  (178269104)
 
+##### Family Settings
+
+###### Known Issues
+
+- Family member’s Ask To Buy, Apple Cash, Purchases, Subscription rows cannot be accessed.  (178546389)
+
 ##### Files
 
 ###### Known Issues
 
-- Deleting Files from Recently Deleted may sometimes fail with an error or be really slow  (179787658)
+- Deleting files from Recently Deleted might fail with an error or experience significant delays.  (179787658)
 
 ##### Finder
 
@@ -185,14 +201,13 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 
 ###### Resolved Issues
 
+- Fixed: Private Cloud Compute might not work when you use simulators.   (177684296)
 - Fixed: `@Generable` on an `enum` produces a deprecation warning about `GenerationError` that cannot be silenced.  (177899620)
 - Fixed: Truncating transcript history in the `onPrompt` modifier might cause an unexpected runtime error.  (177901494)
 - Fixed: `onPrompt` might not be called when applied to a `Profile` without instructions.   (177902488)
-- Fixed: Passing an `any LanguageModel` to the `model(_:)` modifier will lead to a compiler error.  (178545978)
 
 ###### Known Issues
 
-- Private Cloud Compute might not work when you use simulators.   (177684296) **Workaround:** Use a physical device running OS 27.0.
 - When using the on-device Apple Foundation Model for both tool calling and guided generation, some prompts might cause the model to call tools excessively.  (177748926) **Workaround:** Adjust your instructions, prompts, and attachment labels.
 - `PrivateCloudComputeLanguageModel` always uses greedy decoding.  (178181782) **Workaround:** Specify `samplingMode` in `GenerationOptions` with a custom seed, e.g. `GenerationOptions(samplingMode: .randomThreshold(0.95, seed: 42))`.
 
@@ -234,6 +249,7 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 ###### New Features
 
 - When Apple Intelligence in the Home app is enabled, your HomeKit Secure Video recordings are processed on-device and through Private Cloud Compute for video descriptions and search.  (178858470)
+- Apple Intelligence for Home requires an iCloud+ subscription starting at 2TB.  (181282161)
 
 ##### Image Playground
 
@@ -243,6 +259,14 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 - When Image Wand encounters an error — such as an unsupported flow or unsafe output — you might see the misleading message “Connect to Wi-Fi to create images” even when your device is already connected to Wi-Fi.  (177710762)
 - If required models are downloading, you might see an error message instead of download progress information.  (177833994) **Workaround:** This issue occurs only on first install. Wait for the models to finish downloading, then try again.
 - In the Image Playground photo picker, the All and Suggested tabs are missing, which might limit the number of photos available for you to choose from.  (178256174)
+
+##### Iphone Mirroring
+
+###### Known Issues
+
+- In rare cases, iPhone Mirroring may not resize correctly even after pressing the home button in the mirroring app.  (180961142) **Workaround:** Restarting iPhone will resolve this issue.
+- Restarting an app while iPhone Mirroring is active can result in the screen appearing to freeze and resizing being disabled.  (181023494) **Workaround:** Click the home button in iPhone Mirroring app to return Home.
+- iPhone Mini does not resize properly during iPhone Mirroring.  (181057810)
 
 ##### Keyboard
 
@@ -342,13 +366,19 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 
 ###### Known Issues
 
-- Critical alerts will be automatically turned on for any apps that request your permission to enable notifications   (179179362) **Workaround:** If you do not want these notifications turned on, turn them off in Settings → Notifications → [App] → Critical Alerts
+- Critical alerts will be automatically turned on for any apps that request your permission to enable notifications.   (179179362) **Workaround:** If you do not want these notifications turned on, turn them off in Settings → Notifications → [App] → Critical Alerts.
 
 ##### On Demand Resources
 
 ###### Deprecations
 
 - On Demand Resources and the `NSBundleResourceRequest` API are deprecated. Use Background Assets instead.  (170066290)
+
+##### Pencilkit
+
+###### Deprecations
+
+- `__PKStrokeRenderState` has been renamed to `PKStrokeRenderStateReference`, with `PKStrokeRenderStateReference.init(…)` replacing `PKStrokeRenderState.asObjCRenderState()`.  (176410709)
 
 ##### Photos
 
@@ -436,8 +466,9 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 
 - If an app intent uses Duration or `LPLinkMetadata`, creating a shortcut with that intent and then attempting to edit it with “Describe a change” might fail.   (166068090) **Workaround:** If the model discards the action, press “Undo” to recover the unsupported intent.
 - When an app intent defines a `UnionValue` parameter with two number-related types (for example, both Int and Double), the number option appears twice in the parameter picker menu and shows as double-selected.   (168315587) **Workaround:** Define only one number-related type in the `UnionValue` parameter (for example, use only Int or only Double, not both).
+- Focus automations migrated from iOS 26 to iOS 27 do not work.  (179514725) **Workaround:** Re-create your Focus automations with iOS 27.
 - Writing Tools actions are unavailable in Shortcuts.  (179846468)
-- The Use Model action may fail to run when using the On-Device option for some output types.  (181071784) **Workaround:** Try another output type where possible or use the Cloud option.
+- The Use Model action might fail to run when using the On-Device option for some output types.  (181071784) **Workaround:** Try another output type where possible or use the Cloud option.
 
 ##### Siri
 
@@ -483,19 +514,20 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 - Siri might not respond to your voice correctly.  (178489724) **Workaround:** Force quit the Siri app and relaunch it.
 - In the Siri app, conversations might be deleted a few minutes after receiving streaming responses.  (178560562)
 - When you say “Save Parking Location,” the parking location information displays with reduced detail compared to Beta 1.  (179195692)
-- When the Camera app is open the Siri Orb waveform will not animate correctly on some older iPads and “Hey Siri” requests may fail. Affected devices are J407/J408 (iPad Air (5th gen, 2022)), J410/J411 (iPad mini (7th gen, 2024), J517/J517X/J518/J518X (iPad Pro 11” (3rd gen, 2021)), and J522/J522X/J523/J523X (iPad Pro 12.9” (5th gen, 2021))  (180751246) **Workaround:** No workaround
+- When the Camera app is open, the Siri “orb” waveform will not animate correctly on some older iPads and “Hey Siri” requests might fail. Affected devices are iPad Air (5th generation, 2022), iPad mini (7th generation, 2024), iPad Pro 11-inch (3rd generation, 2021), and iPad Pro 12.9-inch (5th generation, 2021).  (180751246)
+- Siri encounters an error when asked to compose emails if the Mail app is not open in the background.  (181041601)
+
+##### Siri Ai
+
+###### Known Issues
+
+- On macOS, Siri AI cannot search within specific folders such as Desktop or Documents. File searches might return results from unintended locations.  (180333394)
 
 ##### Siri Spotlight and Mail App Search
 
 ###### Known Issues
 
 - Mail older than 6 months might not be searchable by body content, but is still searchable by sender and subject.  (177942110)
-
-##### Siriai Cannot Search in Specific Folders on Macos
-
-###### Known Issues
-
-- On macOS, SiriAI cannot search within specific locations, such as Desktop, Documents or some specific folder. Searching for files may include results from other locations other than what was requested.  (180333394)
 
 ##### Sleep Focus
 
@@ -513,7 +545,7 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 
 ###### Known Issues
 
-- Status bar may appear blurred while apps are foregrounded   (179470940) **Workaround:** Reboot your iPhone
+- Status bar might appear blurred while apps are in the foreground.  (179470940) **Workaround:** Restart your iPhone.
 
 ##### Storekit
 
@@ -666,6 +698,7 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 ###### Known Issues
 
 - Progress reported in `DocumentReader.read(from:progress:)` and `DocumentWriter.write(snapshot:to:previous:progress:)` might not be presented.  (158441261)
+- `Menu` labels cannot contain controls, views with gestures, or view representables with gesture recognizers.  (169091260) **Workaround:** Position your interactive views above a `Menu` in a `ZStack` or as an `overlay`.
 
 ###### Deprecations
 

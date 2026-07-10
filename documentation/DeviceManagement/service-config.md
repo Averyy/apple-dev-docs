@@ -23,7 +23,7 @@ Provides the full list of web service URLs, notification types, request limits, 
 **Request**:
 
 ```None
-
+curl --location --request GET 'https://vpp.itunes.apple.com/mdm/v2/service/config'
 ```
 
 **Response**:
@@ -192,6 +192,7 @@ Provides the full list of web service URLs, notification types, request limits, 
         "maxClientUserIds": 1000,
         "maxSerialNumbers": 1000,
         "maxRevokeSerialNumbers": 100,
+        "maxRequestPerSecond": 15,
         "maxSubscriptions": 25,
         "maxSubscriptionClientUserIds": 1000,
         "maxMdmNameLength": 100,
@@ -221,6 +222,41 @@ Provides the full list of web service URLs, notification types, request limits, 
     }
 }
 ```
+
+##### Request Limits
+
+Some request-parameter limits are dynamic and can change without notice. Read their current values from the `limits` section of [`ServiceConfigResponse`](serviceconfigresponse.md).
+
+The following keys are specific to [`ManageAssetsRequest`](manageassetsrequest.md):
+
+- **`maxAssets`**: The maximum number of unique assets in a manage request.
+- **`maxClientUserIds`**: The maximum number of unique user identifiers in a manage request.
+- **`maxSerialNumbers`**: The maximum number of unique device identifiers in a manage request.
+
+The following keys are specific to [`RevokeAssetsRequest`](revokeassetsrequest.md):
+
+- **`maxRevokeClientUserIds`**: The maximum number of unique user identifiers in a revoke request.
+- **`maxRevokeSerialNumbers`**: The maximum number of unique serial numbers in a revoke request.
+
+The following keys are specific to user management requests:
+
+- **`maxUsers`**: The maximum number of unique users in a user management request.
+
+The following keys are specific to subscription management requests:
+
+- **`maxSubscriptions`**: The maximum number of unique subscriptions in a subscription management request.
+- **`maxSubscriptionClientUserIds`**: The maximum number of unique user identifiers in a subscription management request.
+
+The following keys are specific to [`Client Config`](client-config-71glv.md):
+
+- **`maxNotificationLength`**: The maximum length of the notification URL or authentication token.
+- **`maxMdmNameLength`**: The maximum length of the `name` value in `mdmInfo`.
+- **`maxMdmMetadataLength`**: The maximum length of the `metadata` value in `mdmInfo`.
+- **`maxMdmIdLength`**: The maximum length of the `id` value in `mdmInfo`.
+
+The following keys are general to all requests:
+
+- **`maxRequestPerSecond`**: The maximum number of total requests per second for a location or sToken.
 
 ## Topics
 

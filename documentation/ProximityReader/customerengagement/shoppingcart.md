@@ -16,6 +16,10 @@ A structure that describes the shopping cart content.
 struct ShoppingCart
 ```
 
+## Mentions
+
+- [Adding support for Tap to Share to your app](adding-support-for-tap-to-share-to-your-app.md)
+
 ## Topics
 
 ### Structures
@@ -37,6 +41,15 @@ struct ShoppingCart
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [CustomerEngagement.Address](customerengagement/address.md)
+  A customer’s address collected during a customer engagement session.
+- [CustomerEngagement.CustomerInfo](customerengagement/customerinfo.md)
+  A response structure that describes customer information.
+- [CustomerEngagement.SignUp](customerengagement/signup.md)
+  Contact information and marketing consent selections a customer provides during a sign-up request.
 
 
 ---

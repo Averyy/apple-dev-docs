@@ -8,13 +8,16 @@ A mobile driver’s license request that retrieves elements from the holder and 
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst 17.0+
 
 ## Declaration
 
 ```swift
 struct MobileDriversLicenseDataRequest
 ```
+
+## Mentions
+
+- [Checking IDs with the Verifier API](checking-ids-with-the-verifier-api.md)
 
 ## Topics
 

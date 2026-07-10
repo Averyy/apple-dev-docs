@@ -16,6 +16,17 @@ A screen indicating a payment is complete.
 case paymentCompleted
 ```
 
+## Mentions
+
+- [Adding support for Tap to Share to your app](adding-support-for-tap-to-share-to-your-app.md)
+
+## See Also
+
+- [CustomerEngagement.Status.paymentFailed](customerengagement/status/paymentfailed.md)
+  A screen indicating a payment failure.
+- [CustomerEngagement.Status.ready](customerengagement/status/ready.md)
+  A screen indicating the session is ready for customer interaction.
+
 
 ---
 

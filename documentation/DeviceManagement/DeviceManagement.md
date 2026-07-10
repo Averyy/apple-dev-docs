@@ -65,16 +65,10 @@ Device management works with Managed App Distribution and Managed App Configurat
 - [Apple School Manager and Apple Business APIs](../apple-school-and-business-manager-api/apple-school-and-business-manager-api.md)
   Automate device management actions and access data about devices that enroll using Automated Device Enrollment with the Apple School Manager and Apple Business APIs.
 ### Dictionaries
-- [object InApps](inapps.md)
 - [object ResponseErrorCode](responseerrorcode.md)
   An error code.
 - [object StorefrontsResponse](storefrontsresponse.md)
   The response to a storefront request.
-- [object x-hidden-GetInAppAssignmentsResponse](x-hidden-getinappassignmentsresponse.md)
-- [object x-hidden-GetInAppsResponse](x-hidden-getinappsresponse.md)
-- [object x-hidden-ManageInAppsRequest](x-hidden-manageinappsrequest.md)
-- [object x-hidden-ResponseInApp](x-hidden-responseinapp.md)
-- [object x-hidden-ResponseInAppAssignment](x-hidden-responseinappassignment.md)
 
 
 ---

@@ -8,7 +8,6 @@ The mobile driver’s license holder’s organ donor status on record with the i
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst 26.0+
 
 ## Declaration
 

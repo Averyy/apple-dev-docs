@@ -8,7 +8,6 @@ A constant that indicates the photo ID holder is female as defined in ISO/IEC 52
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst 26.0+
 
 ## Declaration
 

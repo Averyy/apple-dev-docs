@@ -13,6 +13,10 @@ Send consumption information about a consumable In-App Purchase or auto-renewabl
 - [App Store Server API changelog](app-store-server-api-changelog.md)
 - [Identifying rate limits](identifying-rate-limits.md)
 
+#### Overview
+
+> ❗ **Important**:  For App Store In-App Purchases that don’t use the Advanced Commerce API, use [`Send Consumption Information`](send-consumption-information.md) instead.
+
 #### Discussion
 
 The App Store uses a variety of factors to determine if a refund request is approved or denied. To help inform and improve the refund process, you can send information about a customer’s consumption of the In-App Purchase to the App Store when the customer requests a refund. The App Store uses the consumption information you provide to inform its refund decisions.
@@ -64,14 +68,12 @@ The request body.
 
 ## See Also
 
-- [Get Transaction History V1](get-transaction-history-v1.md)
-  Get a customer’s in-app purchase transaction history for your app, except finished consumable in-app purchases.
-- [Get Refund History V1](get-refund-history-v1.md)
-  Get a list of up to 50 of a customer’s refunded in-app purchases for your app.
+- [Send Consumption Information](send-consumption-information.md)
+  Send consumption information about an In-App Purchase to the App Store after your server receives a consumption request notification.
+- [object ConsumptionRequest](consumptionrequest.md)
+  The request body that contains consumption information for an In-App Purchase.
 - [object ConsumptionRequestV1](consumptionrequestv1.md)
   The request body containing consumption information.
-- [object RefundLookupResponse](refundlookupresponse.md)
-  A response that contains an array of signed JSON Web Signature (JWS) transactions.
 
 
 ---

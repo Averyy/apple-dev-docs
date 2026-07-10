@@ -16,6 +16,10 @@ Asks the customer to confirm adding a Pass to Wallet.
 final func addPass(_ pass: Data) async throws -> Bool
 ```
 
+## Mentions
+
+- [Adding support for Tap to Share to your app](adding-support-for-tap-to-share-to-your-app.md)
+
 #### Return Value
 
 `true` if the pass is added to Wallet successfully or the same pass already exists; `false` if the customer declines.

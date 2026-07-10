@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-07-07T20:45:54.032642",
+    "last_updated": "2026-07-10T14:24:05.246082",
     "total_pages": 102,
-    "session_id": "2026-07-07T20:45:44.324798"
+    "session_id": "2026-07-10T14:23:57.697216"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/AppLicenseDeliverySDK.json": {
       "hash": "bb5435b50a0e93302420b114576d5c2094b11416fb327c8ffcd179bdeeff2a90",
-      "last_checked": "2026-07-07T20:45:44.603451",
+      "last_checked": "2026-07-10T14:23:57.951097",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:45:44.324798",
+      "session_id": "2026-07-10T14:23:57.697216",
       "etag": "W/\"853c2b481983e32f96a43470b9b9f8bc\"",
       "file_path": "documentation/AppLicenseDeliverySDK/AppLicenseDeliverySDK.md"
     },
     "https://developer.apple.com/documentation/AppLicenseDeliverySDK": {
       "hash": "bb5435b50a0e93302420b114576d5c2094b11416fb327c8ffcd179bdeeff2a90",
-      "last_checked": "2026-07-07T20:45:44.519848",
+      "last_checked": "2026-07-10T14:23:57.835803",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:45:44.324798",
+      "session_id": "2026-07-10T14:23:57.697216",
       "etag": "W/\"853c2b481983e32f96a43470b9b9f8bc\"",
       "file_path": "documentation/AppLicenseDeliverySDK/AppLicenseDeliverySDK.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/applicensedeliverysdk/configuring-the-app-licensing-environment.json": {
       "hash": "03111f5f069db79cf8f81c6393ac0b3ded1eabc74056a8678b00980dd60ec391",
-      "last_checked": "2026-07-07T20:45:44.812627",
+      "last_checked": "2026-07-10T14:23:58.208352",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:45:44.324798",
+      "session_id": "2026-07-10T14:23:57.697216",
       "etag": "W/\"54adb9de6453450534e3805ae226f83a\"",
       "file_path": "documentation/AppLicenseDeliverySDK/configuring-the-app-licensing-environment.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applicensedeliverysdk/licensing-alternative-distribution-apps.json": {
       "hash": "db38923a22c76c5e74d093670eb067616fd95c7145c7913cf8abc3413c86e198",
-      "last_checked": "2026-07-07T20:45:45.010167",
+      "last_checked": "2026-07-10T14:23:58.331378",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:45:44.324798",
+      "session_id": "2026-07-10T14:23:57.697216",
       "etag": "W/\"cd6bfc3fd2f2e212b194a422ed7d8195\"",
       "file_path": "documentation/AppLicenseDeliverySDK/licensing-alternative-distribution-apps.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applicensedeliverysdk/renewing-and-revoking-app-licenses.json": {
       "hash": "17bbe7202487dfdb59c9567eb0caf460a49ccd08d990d88801d0ca4cffccc14d",
-      "last_checked": "2026-07-07T20:45:45.307323",
+      "last_checked": "2026-07-10T14:23:58.508677",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:45:44.324798",
+      "session_id": "2026-07-10T14:23:57.697216",
       "etag": "W/\"d6f1816051b924c5535a253cd0d7270f\"",
       "file_path": "documentation/AppLicenseDeliverySDK/renewing-and-revoking-app-licenses.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applicensedeliverysdk/aldappkey.json": {
       "hash": "aa623235205ca1c456288272c6ea3151b5d2dd3177bb12009d6a823355eda71b",
-      "last_checked": "2026-07-07T20:45:45.505741",
+      "last_checked": "2026-07-10T14:23:58.677901",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:45:44.324798",
+      "session_id": "2026-07-10T14:23:57.697216",
       "etag": "W/\"5f70e7a5a83f9be87467664ab9c03806\"",
       "file_path": "documentation/AppLicenseDeliverySDK/aldappkey.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applicensedeliverysdk/aldlicenseattribute.json": {
       "hash": "07762d6d9b3c5ab5350bbc3e81948b6ef03885e62a7161eb8b634b029c582e14",
-      "last_checked": "2026-07-07T20:45:45.662171",
+      "last_checked": "2026-07-10T14:23:58.798363",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:45:44.324798",
+      "session_id": "2026-07-10T14:23:57.697216",
       "etag": "W/\"fac3043b739fa55b01ee8f77041e5d41\"",
       "file_path": "documentation/AppLicenseDeliverySDK/aldlicenseattribute.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applicensedeliverysdk/aldprovider.json": {
       "hash": "13a9a21d28892e23806e4920ad03966e6b89d4152c2fc5ca956be147133c10bd",
-      "last_checked": "2026-07-07T20:45:45.794298",
+      "last_checked": "2026-07-10T14:23:58.926945",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:45:44.324798",
+      "session_id": "2026-07-10T14:23:57.697216",
       "etag": "W/\"3015911225ce53dd46b9df2fa9888a93\"",
       "file_path": "documentation/AppLicenseDeliverySDK/aldprovider.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applicensedeliverysdk/aldsession.json": {
       "hash": "58dad2760bd4df058d949da482e81fb7bccd6524d51b3a39e56f3e651c32fa65",
-      "last_checked": "2026-07-07T20:45:45.925997",
+      "last_checked": "2026-07-10T14:23:59.096673",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:45:44.324798",
+      "session_id": "2026-07-10T14:23:57.697216",
       "etag": "W/\"627f3f95831d4b48c40852e99a8e87fb\"",
       "file_path": "documentation/AppLicenseDeliverySDK/aldsession.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applicensedeliverysdk/aldappkey/init(appleitemid:appkeyblob:).json": {
       "hash": "156dc383b0be1e92f4548b4dd689ae24879211f8ab58648cf994d3207995ad9e",
-      "last_checked": "2026-07-07T20:45:46.112559",
+      "last_checked": "2026-07-10T14:23:59.247869",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:45:44.324798",
+      "session_id": "2026-07-10T14:23:57.697216",
       "etag": "W/\"f36056c45917deef33d8816cc3e88452\"",
       "file_path": "documentation/AppLicenseDeliverySDK/aldappkey/init-appleitemidappkeyblob.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applicensedeliverysdk/aldlicenseattribute/init(licenseid:).json": {
       "hash": "79c07d97d8756e53b926c005d9e4f3129f0e877efe65ce231868ca322eb84868",
-      "last_checked": "2026-07-07T20:45:46.288128",
+      "last_checked": "2026-07-10T14:23:59.368896",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:45:44.324798",
+      "session_id": "2026-07-10T14:23:57.697216",
       "etag": "W/\"c96272cd317d0a26c81f6630a9d08235\"",
       "file_path": "documentation/AppLicenseDeliverySDK/aldlicenseattribute/init-licenseid.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applicensedeliverysdk/aldlicenseattribute/duration.json": {
       "hash": "af814a89dc74213077f1d861ef07a5a60075c01c7e53e753e78f13653a4801c2",
-      "last_checked": "2026-07-07T20:45:46.475978",
+      "last_checked": "2026-07-10T14:23:59.503300",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:45:44.324798",
+      "session_id": "2026-07-10T14:23:57.697216",
       "etag": "W/\"4c3b577527221dc09de426ca391ca21d\"",
       "file_path": "documentation/AppLicenseDeliverySDK/aldlicenseattribute/duration.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applicensedeliverysdk/aldlicenseattribute/issuedtime.json": {
       "hash": "2779b736559237f0ed1e434a3b757faecaf6f7e6d0f8815c495c384bef3a616f",
-      "last_checked": "2026-07-07T20:45:46.780094",
+      "last_checked": "2026-07-10T14:23:59.625291",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:45:44.324798",
+      "session_id": "2026-07-10T14:23:57.697216",
       "etag": "W/\"86c872c78e178e9cc58d0bedc20e39da\"",
       "file_path": "documentation/AppLicenseDeliverySDK/aldlicenseattribute/issuedtime.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applicensedeliverysdk/aldlicenseattribute/addappkey(_:).json": {
       "hash": "f17d424c7ff239add7ddcf13f3dee5af5f9136504cdc1673c95e40eabf49cb18",
-      "last_checked": "2026-07-07T20:45:47.064412",
+      "last_checked": "2026-07-10T14:23:59.736069",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:45:44.324798",
+      "session_id": "2026-07-10T14:23:57.697216",
       "etag": "W/\"344e52c2488c67a585713737b41a55d0\"",
       "file_path": "documentation/AppLicenseDeliverySDK/aldlicenseattribute/addappkey.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applicensedeliverysdk/aldlicenseattribute/revokeappleitemid(_:).json": {
       "hash": "6f77004336ed80b2e0571e8d27ccc8f66d9446443dd4c7f8445bad3ba886f049",
-      "last_checked": "2026-07-07T20:45:47.238128",
+      "last_checked": "2026-07-10T14:23:59.910067",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:45:44.324798",
+      "session_id": "2026-07-10T14:23:57.697216",
       "etag": "W/\"4406de36f5bec692fb5352187353fbef\"",
       "file_path": "documentation/AppLicenseDeliverySDK/aldlicenseattribute/revokeappleitemid.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applicensedeliverysdk/aldprovider/init(encryptioncert:signingcert:pask:signingkey:).json": {
       "hash": "d4c43555d8421d420d1aad15f37f0bb26b7d6e281c60b75cab61994dbb1e56f9",
-      "last_checked": "2026-07-07T20:45:47.429735",
+      "last_checked": "2026-07-10T14:24:00.030090",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:45:44.324798",
+      "session_id": "2026-07-10T14:23:57.697216",
       "etag": "W/\"b755fea586adc5f1a5e3fbb8f68804fb\"",
       "file_path": "documentation/AppLicenseDeliverySDK/aldprovider/init-encryptioncertsigningcertpasksigningkey.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applicensedeliverysdk/aldprovider/createsession(clientrequest:).json": {
       "hash": "89a1f0446f73d3c42638b201cc2362b4251db47f87b465c0c0acd80bdcae942f",
-      "last_checked": "2026-07-07T20:45:47.588140",
+      "last_checked": "2026-07-10T14:24:00.163667",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:45:44.324798",
+      "session_id": "2026-07-10T14:23:57.697216",
       "etag": "W/\"6ea4572d4140f9c4018f5cbaa50787c3\"",
       "file_path": "documentation/AppLicenseDeliverySDK/aldprovider/createsession-clientrequest.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applicensedeliverysdk/aldsession/init(request:pask:encryptioncert:signingcert:signingkey:).json": {
       "hash": "a4ebae472918f07c5fcc47570a6695e101ce76a1d07ad4b5833ab4491ff87e37",
-      "last_checked": "2026-07-07T20:45:47.783389",
+      "last_checked": "2026-07-10T14:24:00.319325",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:45:44.324798",
+      "session_id": "2026-07-10T14:23:57.697216",
       "etag": "W/\"e2989fbd566d2a47fe41b32276478b9e\"",
       "file_path": "documentation/AppLicenseDeliverySDK/aldsession/init-requestpaskencryptioncertsigningcertsigningkey.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applicensedeliverysdk/aldsession/init(signingcert:signingkey:pask:).json": {
       "hash": "f807fec6c8de14e121c5dfc48bb7e7835531d871fd837ff491dcbf3ea4b62b78",
-      "last_checked": "2026-07-07T20:45:47.964667",
+      "last_checked": "2026-07-10T14:24:00.458817",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:45:44.324798",
+      "session_id": "2026-07-10T14:23:57.697216",
       "etag": "W/\"9795afd9f28a57b83e01e111b1bd8bcf\"",
       "file_path": "documentation/AppLicenseDeliverySDK/aldsession/init-signingcertsigningkeypask.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applicensedeliverysdk/aldsession/requestaction.json": {
       "hash": "170c19f6485703c96ca6dbe7830086a538c500d2ff6a7ef912f420bc79cc5134",
-      "last_checked": "2026-07-07T20:45:48.155717",
+      "last_checked": "2026-07-10T14:24:00.666379",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:45:44.324798",
+      "session_id": "2026-07-10T14:23:57.697216",
       "etag": "W/\"b84de0a1a20e261bd4281845f31ecf08\"",
       "file_path": "documentation/AppLicenseDeliverySDK/aldsession/requestaction.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applicensedeliverysdk/aldsession/requestdeviceid.json": {
       "hash": "18056872fd4db050dc71b85671ff9d1654d6dc1fac9e6ed1d6bf2abecf86a049",
-      "last_checked": "2026-07-07T20:45:48.368270",
+      "last_checked": "2026-07-10T14:24:00.798965",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:45:44.324798",
+      "session_id": "2026-07-10T14:23:57.697216",
       "etag": "W/\"feb61ab0d84352c48af8142f87a1a915\"",
       "file_path": "documentation/AppLicenseDeliverySDK/aldsession/requestdeviceid.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applicensedeliverysdk/aldsession/requestid.json": {
       "hash": "81df4363a483501e44d1dbfb08afc04db9354e12b82678045b19849a46959318",
-      "last_checked": "2026-07-07T20:45:48.549782",
+      "last_checked": "2026-07-10T14:24:00.959139",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:45:44.324798",
+      "session_id": "2026-07-10T14:23:57.697216",
       "etag": "W/\"ae70e01668b09f4a71146e538d4aa699\"",
       "file_path": "documentation/AppLicenseDeliverySDK/aldsession/requestid.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applicensedeliverysdk/aldsession/requesttime.json": {
       "hash": "39d3989e5c8a96319632a3b95340a7827ff3a923ba71445ac9ca2c78bdfadf15",
-      "last_checked": "2026-07-07T20:45:48.664839",
+      "last_checked": "2026-07-10T14:24:01.105583",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:45:44.324798",
+      "session_id": "2026-07-10T14:23:57.697216",
       "etag": "W/\"8d883378a5a3407b5b0377fb56fa2782\"",
       "file_path": "documentation/AppLicenseDeliverySDK/aldsession/requesttime.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applicensedeliverysdk/aldsession/requestversion.json": {
       "hash": "6e86ec82edbaa0cf1a7af78812a3dfae6018d09740816aac3e4d07716045fcfa",
-      "last_checked": "2026-07-07T20:45:48.863548",
+      "last_checked": "2026-07-10T14:24:01.220689",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:45:44.324798",
+      "session_id": "2026-07-10T14:23:57.697216",
       "etag": "W/\"996115a478b69236bc5ac3e1fa70cf8b\"",
       "file_path": "documentation/AppLicenseDeliverySDK/aldsession/requestversion.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applicensedeliverysdk/aldsession/requestedappleitemidlist.json": {
       "hash": "4d55fa74f5c868b042450908c01e4f27d95d4ffad1b4221f50a0a565030245ef",
-      "last_checked": "2026-07-07T20:45:49.041555",
+      "last_checked": "2026-07-10T14:24:01.338623",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:45:44.324798",
+      "session_id": "2026-07-10T14:23:57.697216",
       "etag": "W/\"9dc3f0f3b1ff2f86425a9546d576d9a9\"",
       "file_path": "documentation/AppLicenseDeliverySDK/aldsession/requestedappleitemidlist.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applicensedeliverysdk/aldsession/requestedlicenseidlist.json": {
       "hash": "12b3bc89abfce694aa008f98bd95d6af163991cfd8830d768807f20599e6b049",
-      "last_checked": "2026-07-07T20:45:49.237564",
+      "last_checked": "2026-07-10T14:24:01.478389",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:45:44.324798",
+      "session_id": "2026-07-10T14:23:57.697216",
       "etag": "W/\"33abfe4539a8cd29e141b8eec09999d6\"",
       "file_path": "documentation/AppLicenseDeliverySDK/aldsession/requestedlicenseidlist.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applicensedeliverysdk/aldsession/sessiontype.json": {
       "hash": "8d78b6458df1841fe63eda1e1b065c55dc0275bc099dbfef1e563992ba5cfff2",
-      "last_checked": "2026-07-07T20:45:49.412132",
+      "last_checked": "2026-07-10T14:24:01.633814",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:45:44.324798",
+      "session_id": "2026-07-10T14:23:57.697216",
       "etag": "W/\"275479b38950e6bbdd6b5d7bd2247d9b\"",
       "file_path": "documentation/AppLicenseDeliverySDK/aldsession/sessiontype.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applicensedeliverysdk/aldsession/finalizelicenseresponse(licenseresponse:signature:).json": {
       "hash": "42e4335a56ab4b28ecb9b42152bdc11bc6cf807715f81007f2217c0c24d2a2e8",
-      "last_checked": "2026-07-07T20:45:49.527728",
+      "last_checked": "2026-07-10T14:24:01.766754",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:45:44.324798",
+      "session_id": "2026-07-10T14:23:57.697216",
       "etag": "W/\"f08462a93068a1727f7d1eef30a4493b\"",
       "file_path": "documentation/AppLicenseDeliverySDK/aldsession/finalizelicenseresponse-licenseresponsesignature.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applicensedeliverysdk/aldsession/generatelicense(attr:).json": {
       "hash": "acc439711e116bc910c94107b02d7c854faec396aa0afd867e333053cefa2d33",
-      "last_checked": "2026-07-07T20:45:49.701726",
+      "last_checked": "2026-07-10T14:24:01.885577",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:45:44.324798",
+      "session_id": "2026-07-10T14:23:57.697216",
       "etag": "W/\"b9ed3ca3cbead0e1b9f552775ba090bb\"",
       "file_path": "documentation/AppLicenseDeliverySDK/aldsession/generatelicense-attr.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applicensedeliverysdk/aldsession/generatelicenseresponse().json": {
       "hash": "2e1337e68ec253401da1e0f50e9a643a900ee8df933ff2185d7951d6343da3ed",
-      "last_checked": "2026-07-07T20:45:49.869576",
+      "last_checked": "2026-07-10T14:24:02.050471",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:45:44.324798",
+      "session_id": "2026-07-10T14:23:57.697216",
       "etag": "W/\"d9c575fe38b8b38f325ef93b9433e21f\"",
       "file_path": "documentation/AppLicenseDeliverySDK/aldsession/generatelicenseresponse.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applicensedeliverysdk/aldsession/generatestaticlicense(licenseid:appkey:).json": {
       "hash": "8ee0f417d77d73bb0df6c75178785d33a9e247da715f54f835abb79be7156ad3",
-      "last_checked": "2026-07-07T20:45:50.174346",
+      "last_checked": "2026-07-10T14:24:02.169416",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:45:44.324798",
+      "session_id": "2026-07-10T14:23:57.697216",
       "etag": "W/\"62d1e372dd5d069cf82d68405f559532\"",
       "file_path": "documentation/AppLicenseDeliverySDK/aldsession/generatestaticlicense-licenseidappkey.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applicensedeliverysdk/aldsession/aldlicenseaction.json": {
       "hash": "776a435f5e486084f6e2ef117141114e12775c66b279b86cafbb64a8034c608c",
-      "last_checked": "2026-07-07T20:45:50.357490",
+      "last_checked": "2026-07-10T14:24:02.325880",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:45:44.324798",
+      "session_id": "2026-07-10T14:23:57.697216",
       "etag": "W/\"1ac282f9a960662605a86080183ce833\"",
       "file_path": "documentation/AppLicenseDeliverySDK/aldsession/aldlicenseaction.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applicensedeliverysdk/aldsession/aldsessiontype.json": {
       "hash": "4468ed68b83735c67b00b44df849f712eb091eb607205542260a6c2c4a524cf2",
-      "last_checked": "2026-07-07T20:45:50.564228",
+      "last_checked": "2026-07-10T14:24:02.484787",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:45:44.324798",
+      "session_id": "2026-07-10T14:23:57.697216",
       "etag": "W/\"9775f97320a2da609552df4bb11d9a5e\"",
       "file_path": "documentation/AppLicenseDeliverySDK/aldsession/aldsessiontype.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applicensedeliverysdk/aldsession/aldlicenseaction/create.json": {
       "hash": "d922253f9290e71f8303bcdba769efa129c16a9cd2ab292e1143ebc330b3f5ee",
-      "last_checked": "2026-07-07T20:45:50.742411",
+      "last_checked": "2026-07-10T14:24:02.621945",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:45:44.324798",
+      "session_id": "2026-07-10T14:23:57.697216",
       "etag": "W/\"d129af64e38f16f0f94cd78ac02072d3\"",
       "file_path": "documentation/AppLicenseDeliverySDK/aldsession/aldlicenseaction/create.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applicensedeliverysdk/aldsession/aldlicenseaction/generatestatic.json": {
       "hash": "cf6efc65cd3549616e2788a310004d5f3efa9c4b17489d3d09f10a55695867f9",
-      "last_checked": "2026-07-07T20:45:50.867116",
+      "last_checked": "2026-07-10T14:24:02.755830",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:45:44.324798",
+      "session_id": "2026-07-10T14:23:57.697216",
       "etag": "W/\"3bcca54330ca41f98ac3bb220678d01e\"",
       "file_path": "documentation/AppLicenseDeliverySDK/aldsession/aldlicenseaction/generatestatic.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applicensedeliverysdk/aldsession/aldlicenseaction/renew.json": {
       "hash": "7e048a8cd21f057bb0f67608a12fffe3c1b76e13ccff9860328c1283a70e63d9",
-      "last_checked": "2026-07-07T20:45:51.048779",
+      "last_checked": "2026-07-10T14:24:02.883774",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:45:44.324798",
+      "session_id": "2026-07-10T14:23:57.697216",
       "etag": "W/\"ea8c1c9208d7fac108d33b887152a370\"",
       "file_path": "documentation/AppLicenseDeliverySDK/aldsession/aldlicenseaction/renew.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applicensedeliverysdk/aldsession/aldlicenseaction/unknown.json": {
       "hash": "5e2405dbb7dd46228fdfbd8eab4d1b5dd19907e2367a7638a51daa7e23c8bdf0",
-      "last_checked": "2026-07-07T20:45:51.405691",
+      "last_checked": "2026-07-10T14:24:03.089361",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:45:44.324798",
+      "session_id": "2026-07-10T14:23:57.697216",
       "etag": "W/\"b86b2cfc815902398470712fc658e915\"",
       "file_path": "documentation/AppLicenseDeliverySDK/aldsession/aldlicenseaction/unknown.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applicensedeliverysdk/aldsession/aldlicenseaction/init(rawvalue:).json": {
       "hash": "12d5d161ec4e8142bcccba50871222c50bb1a1132041f0bfb7a5b02f6335767d",
-      "last_checked": "2026-07-07T20:45:51.572129",
+      "last_checked": "2026-07-10T14:24:03.249142",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:45:44.324798",
+      "session_id": "2026-07-10T14:23:57.697216",
       "etag": "W/\"2ef66ca2c90968c06b22f8f9e7570950\"",
       "file_path": "documentation/AppLicenseDeliverySDK/aldsession/aldlicenseaction/init-rawvalue.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applicensedeliverysdk/aldsession/aldlicenseaction/equatable-implementations.json": {
       "hash": "070d5a1e87fbbcf2f6f7b5f595a58e9548566c06f3967bc67a5b46252fed92e2",
-      "last_checked": "2026-07-07T20:45:51.738107",
+      "last_checked": "2026-07-10T14:24:03.373725",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:45:44.324798",
+      "session_id": "2026-07-10T14:23:57.697216",
       "etag": "W/\"f9d07a541f55d55173fc9badeacefe89\"",
       "file_path": "documentation/AppLicenseDeliverySDK/aldsession/aldlicenseaction/equatable-implementations.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applicensedeliverysdk/aldsession/aldlicenseaction/rawrepresentable-implementations.json": {
       "hash": "5907d873aed9b878b29c2abb80ee2795c3083be2b199c267ed56f1910cf6bac5",
-      "last_checked": "2026-07-07T20:45:51.921424",
+      "last_checked": "2026-07-10T14:24:03.499211",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:45:44.324798",
+      "session_id": "2026-07-10T14:23:57.697216",
       "etag": "W/\"d743e73ee6eba2ec047e43d95b256d13\"",
       "file_path": "documentation/AppLicenseDeliverySDK/aldsession/aldlicenseaction/rawrepresentable-implementations.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applicensedeliverysdk/aldsession/aldsessiontype/normalsession.json": {
       "hash": "caa16a27286e68e561d4ee0353531dfdb9f93002ec9a754a3a1f17b4e6f56664",
-      "last_checked": "2026-07-07T20:45:52.096918",
+      "last_checked": "2026-07-10T14:24:03.672507",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:45:44.324798",
+      "session_id": "2026-07-10T14:23:57.697216",
       "etag": "W/\"4285cdb5485ac56bd01ed15eb2758581\"",
       "file_path": "documentation/AppLicenseDeliverySDK/aldsession/aldsessiontype/normalsession.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applicensedeliverysdk/aldsession/aldsessiontype/staticsession.json": {
       "hash": "f4732c6ed6e3cab0753c4a891545e825fa9649321c840008cd04bfefcc3e5bcd",
-      "last_checked": "2026-07-07T20:45:52.260667",
+      "last_checked": "2026-07-10T14:24:03.821141",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:45:44.324798",
+      "session_id": "2026-07-10T14:23:57.697216",
       "etag": "W/\"07da368d968f55b86c02fc5900a37463\"",
       "file_path": "documentation/AppLicenseDeliverySDK/aldsession/aldsessiontype/staticsession.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applicensedeliverysdk/aldsession/aldsessiontype/unknown.json": {
       "hash": "2f32893a9f9851c27a416fd869f9e4f392cf1cc98b96cb9f9200983731dca7a4",
-      "last_checked": "2026-07-07T20:45:52.433603",
+      "last_checked": "2026-07-10T14:24:03.953148",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:45:44.324798",
+      "session_id": "2026-07-10T14:23:57.697216",
       "etag": "W/\"47ae5255985e1543aaa1ab67f0db4cc4\"",
       "file_path": "documentation/AppLicenseDeliverySDK/aldsession/aldsessiontype/unknown.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applicensedeliverysdk/aldsession/aldsessiontype/init(rawvalue:).json": {
       "hash": "608df6785011fedf3b5abbc641b256a530edda4d8b810bc57dedf3653bff931d",
-      "last_checked": "2026-07-07T20:45:52.625269",
+      "last_checked": "2026-07-10T14:24:04.123447",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:45:44.324798",
+      "session_id": "2026-07-10T14:23:57.697216",
       "etag": "W/\"dd8bd38bd2219247ed1a710130ce58f1\"",
       "file_path": "documentation/AppLicenseDeliverySDK/aldsession/aldsessiontype/init-rawvalue.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applicensedeliverysdk/aldsession/aldsessiontype/equatable-implementations.json": {
       "hash": "958468a7c3764ba68a620d9c271c3254bb31d51634a6ed787d81d350fecda63a",
-      "last_checked": "2026-07-07T20:45:52.805042",
+      "last_checked": "2026-07-10T14:24:04.258418",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:45:44.324798",
+      "session_id": "2026-07-10T14:23:57.697216",
       "etag": "W/\"483d389e8a666de2abed56dcec5a5786\"",
       "file_path": "documentation/AppLicenseDeliverySDK/aldsession/aldsessiontype/equatable-implementations.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applicensedeliverysdk/aldsession/aldsessiontype/rawrepresentable-implementations.json": {
       "hash": "4471dd2528013d5c9d396d8684cb2c1e9959afaed18c60032e7eb64263ba71f4",
-      "last_checked": "2026-07-07T20:45:52.920810",
+      "last_checked": "2026-07-10T14:24:04.383469",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:45:44.324798",
+      "session_id": "2026-07-10T14:23:57.697216",
       "etag": "W/\"48b8c303e6e82bf56de979d6d0631432\"",
       "file_path": "documentation/AppLicenseDeliverySDK/aldsession/aldsessiontype/rawrepresentable-implementations.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applicensedeliverysdk/aldsession/aldlicenseaction/!=(_:_:).json": {
       "hash": "8374ef26aaaa17cc959e03de53966d313dffaf1ffa4f152a95e11eb83afcb447",
-      "last_checked": "2026-07-07T20:45:53.114040",
+      "last_checked": "2026-07-10T14:24:04.515319",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:45:44.324798",
+      "session_id": "2026-07-10T14:23:57.697216",
       "etag": "W/\"385dcff0ca285c06f6424ed87c18a4a2\"",
       "file_path": "documentation/AppLicenseDeliverySDK/aldsession/aldlicenseaction/notequal.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applicensedeliverysdk/aldsession/aldlicenseaction/hashvalue.json": {
       "hash": "241096b98a1193510ccaeb01bcc2af0628daebee66bfa1e5b74dcdf8b63eeb71",
-      "last_checked": "2026-07-07T20:45:53.291811",
+      "last_checked": "2026-07-10T14:24:04.662587",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:45:44.324798",
+      "session_id": "2026-07-10T14:23:57.697216",
       "etag": "W/\"2eaead7303b46fbf7c238ba13347e81d\"",
       "file_path": "documentation/AppLicenseDeliverySDK/aldsession/aldlicenseaction/hashvalue.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applicensedeliverysdk/aldsession/aldlicenseaction/hash(into:).json": {
       "hash": "fd7ff7f3285f5221ecfd966e324f27b6ad058616aab32920a614eb9b14cdf184",
-      "last_checked": "2026-07-07T20:45:53.456702",
+      "last_checked": "2026-07-10T14:24:04.775106",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:45:44.324798",
+      "session_id": "2026-07-10T14:23:57.697216",
       "etag": "W/\"ba2950e60f8d1971a4860563d6f76e6f\"",
       "file_path": "documentation/AppLicenseDeliverySDK/aldsession/aldlicenseaction/hash-into.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applicensedeliverysdk/aldsession/aldsessiontype/!=(_:_:).json": {
       "hash": "4923f779c8d8702d3fe772b916acc169e504620303c6e50cd50721795691d374",
-      "last_checked": "2026-07-07T20:45:53.640399",
+      "last_checked": "2026-07-10T14:24:04.963430",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:45:44.324798",
+      "session_id": "2026-07-10T14:23:57.697216",
       "etag": "W/\"d02647b58fb6aa280b773c10df779330\"",
       "file_path": "documentation/AppLicenseDeliverySDK/aldsession/aldsessiontype/notequal.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applicensedeliverysdk/aldsession/aldsessiontype/hashvalue.json": {
       "hash": "92efdf5b5fdf72cd824d5eee4667934aa6a2cb6950b2c2f99e6d0bcd157e0327",
-      "last_checked": "2026-07-07T20:45:53.827237",
+      "last_checked": "2026-07-10T14:24:05.075407",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:45:44.324798",
+      "session_id": "2026-07-10T14:23:57.697216",
       "etag": "W/\"f38a9a7009b6954d6072ec676e120c95\"",
       "file_path": "documentation/AppLicenseDeliverySDK/aldsession/aldsessiontype/hashvalue.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/applicensedeliverysdk/aldsession/aldsessiontype/hash(into:).json": {
       "hash": "eb4be80fc934610e513378ea298310079cb1b8a67089f8eaf48c9403b5768bf4",
-      "last_checked": "2026-07-07T20:45:53.977965",
+      "last_checked": "2026-07-10T14:24:05.238736",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:45:44.324798",
+      "session_id": "2026-07-10T14:23:57.697216",
       "etag": "W/\"d766c89e4be98e7c221b6ad707bc1f77\"",
       "file_path": "documentation/AppLicenseDeliverySDK/aldsession/aldsessiontype/hash-into.md"
     },

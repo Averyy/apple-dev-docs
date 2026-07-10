@@ -36,6 +36,11 @@ enum Event
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 
+## See Also
+
+- [let events: any AsyncSequence<CustomerEngagementSession.Event, Never>](customerengagementsession/events.md)
+  An asynchronous sequence of events that occur during the engagement session.
+
 
 ---
 

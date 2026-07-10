@@ -16,6 +16,15 @@ The customer’s phone number.
 let phoneNumber: CNPhoneNumber?
 ```
 
+## See Also
+
+- [let emailAddress: String?](customerengagement/address/emailaddress.md)
+  The customer’s email address.
+- [let name: PersonNameComponents](customerengagement/address/name.md)
+  The customer’s full name.
+- [let postalAddress: CNPostalAddress](customerengagement/address/postaladdress.md)
+  The customer’s postal address.
+
 
 ---
 

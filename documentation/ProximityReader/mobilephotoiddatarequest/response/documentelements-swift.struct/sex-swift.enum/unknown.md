@@ -8,7 +8,6 @@ A constant that indicates the photo ID holder’s sex is not known as defined in
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
-- Mac Catalyst 26.0+
 
 ## Declaration
 

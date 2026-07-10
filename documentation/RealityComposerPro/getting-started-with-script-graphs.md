@@ -1,69 +1,63 @@
-# Getting started with script graphs
+# Getting started with Script Graphs
 
 **Framework**: Reality Composer Pro
 
-Build interactive, code-free 3D experiences using the visual node-based script graph editor.
+Build interactive, code-free 3D experiences using a visual, node-based editor in Reality Composer Pro.
 
 #### Overview
 
-The Script Graph Editor provides a code-free way to build many common RealityKit behaviors and interactions.
+The Script Graph Editor provides a code-free way to build many common RealityKit behaviors and interactions. A Scripting component hosts each graph either directly or as an asset, and the graph primarily operates on the owning entity.
 
-- Each graph is hosted by a Scripting Component either directly or as an asset, and primarily operates on an owning entity.
-- Script graphs use entry points (On Initialize, On Update, On Collision, On Tap, Custom Events, and more) from which the execution flow starts and then moves or diverts through a series of connectors called Flow connections.
-- The script graph Scripting component lets you declare variables that persist and update across frames.
-- As with other graphs, you can create subgraphs to group and help manage your script graph as it gains complexity.
-- Script graphs cannot create full UIs. They support only simple text-based layouts through a Text component. Use SwiftUI to build the UI for your app.
+Script Graphs use entry points — such as **On Initialize**, **On Update**, **On Collision**, **On Tap**, and **Custom Events** — as the starting point for execution flow. Execution then travels through a series of connectors called Flow connections. The Scripting component also lets you declare variables that persist and update across frames. As with other graphs, you can create subgraphs to group and manage your script graph as it gains complexity.
 
-> 💡 **Tip**: Script graphs — as with the rest of Reality Composer Pro — are designed to build for RealityKit. You don’t need Swift experience, but familiarity with the RealityKit Entity Component System helps. For more information, see [`RealityKit`](https://developer.apple.com/documentation/RealityKit).
+> **Note**: Script Graphs cannot create full user interfaces. They support only simple text-based layouts through a Text component. Use SwiftUI to build the user interface for your app.
 
-The following screenshot shows a simple script graph.
+#### Review Graph Editor Basics
 
-- The **blue connecting line** between the nodes On Update and Set Relative Transform is a Flow connection.
-- The **gray connecting lines** pass data and compute values between nodes.
+Before working with Script Graphs, review the graph editor basics in [`Working with the Graph Editor`](realitycomposerpro-essentials-grapheditoroverview.md).
 
-![A screenshot of the Script Graph showing a few nodes and simple flow.](https://docs-assets.developer.apple.com/published/eaa6868a511e01296d7a36e0ec2d8922/ScriptGraph%402x.png)
+> 💡 **Tip**: Script Graphs, like the rest of Reality Composer Pro, target RealityKit. You don’t need Swift experience, but familiarity with the RealityKit Entity Component System helps. For more information, see [`RealityKit`](https://developer.apple.com/documentation/RealityKit).
 
-##### Review Graph Editor Basics
+The following screenshot shows a simple Script Graph.
 
-See [`Working with the Graph Editor`](realitycomposerpro-essentials-grapheditoroverview.md) to learn about general navigation and common features in the Reality Composer Pro Graph Editor.
+- **Blue (Flow) connecting lines** between the nodes On Update and Set Relative Transform carry execution flow between nodes.
+- **Gray (Data) connecting lines** pass values and compute results between nodes.
 
-##### Create a Basic Script Graph
+![A screenshot of the Script Graph Editor showing the On Update node connected to the Set Relative Transform node. A blue line carries the execution flow between them; gray lines carry data values.](https://docs-assets.developer.apple.com/published/eaa6868a511e01296d7a36e0ec2d8922/ScriptGraph%402x.png)
 
-1. In the Project Browser, Control-click the folder where you want your script graph, and then click **New** > **Script Graph**.
-2. Enter a name for your script graph, and then press Enter.
-3. Double-click your script graph to open it.
-4. To add your first node, press **N** or the Space bar. You can also Control-click and then select **Add Node** to add your first node to the graph.
+#### Choose How to Attach a Script Graph to an Entity
+
+If you need to share a script across multiple entities or encapsulate it as a subgraph, create a **Prototype**. A Prototype lets you reuse the script graph in other graphs, or as a subgraph of a component-owned entity. Otherwise, attach the script directly to a **Scripting component** on the entity. For more information about Prototypes, see [`Reusing assets with prototypes and instances`](realitycomposerpro-essentials-understandingprototypes.md).
+
+#### Create a Basic Script Graph
+
+In the Project Browser, Control-click the folder where you want your Script Graph, then click **New** > **Script Graph**. Enter a name for your Script Graph, then press Enter. Double-click your Script Graph to open it.
+
+To add your first node, use the methods described in [`Working with the Graph Editor`](realitycomposerpro-essentials-grapheditoroverview.md).
 
 > 💡 **Tip**: If you know what you’re looking for, use the Search box in the Node Selector to narrow the list.
 
-Script graphs generally start with an entry point node.
+Script Graphs generally start with an entry point node. Entry point nodes (such as **On Update** or **On Initialize**) have a blue Flow output connector but no Flow input — they initiate execution rather than receiving it from another node.
 
-- Entry point nodes (such as On Update or On Initialize) are the only nodes with a blue Flow connector.
-- Entry point nodes do not have an input.
+To build a simple working graph, add an **On Update** entry point node, then add a second functional node such as **Set Relative Transform**. Drag from the blue Flow output connector on **On Update** to the blue Flow input connector on the second node. The line turns blue to confirm a valid Flow connection.
 
-##### Review Script Graph Node Types
+#### Review Script Graph Node Types
 
-The Script Graph Editor provides a wide range of nodes. The following is a broad overview of the available node types.
+The Script Graph Editor provides nodes in several categories. Entry point nodes (such as **On Update** and **On Initialize**) begin the execution flow. Control flow nodes provide logic such as IF/THEN, AND, and OR expressions, and nodes that delay execution. Array nodes let you create and manipulate collections of values.
 
-- **Control Flow nodes** — Flow nodes provide logic functions, such as IF/THEN, AND, and OR expressions, including functions for delaying execution.
-- **Array nodes** — Nodes that let you create simple or complex arrays and get, set, and enumerate elements in them.
-- **Collision nodes** — Nodes such as `OnCollisionBegin` and `OnCollisionEnded` that correspond to RealityKit events. Most events available in RealityKit have a corresponding node in the script graph.
-- **Math and operational nodes** — Nodes for performing simple or complex mathematical operations.
-- **Entity nodes** — Nodes that operate directly on entities, performing functions such as finding an entity by name in the hierarchy, getting entity properties, enabling or disabling an entity, checking for the existence of a component, and assigning a component.
-- **Animation & Audio nodes** — Nodes for starting and stopping animations, audio playback, and similar functions.
-- **Input nodes** — Nodes to handle input from keyboards, mice, gestures (tapping, dragging, and more), and ARKit.
-- **Material nodes** — Nodes for changing shader materials based on interactions in a scene. For example, a script can tell a shader graph to adjust itself in response to scene interactions.
+Once you have entities in your scene, entity nodes let you find entities by name, read and write entity properties, enable or disable entities, check for components, and assign components. Collision nodes such as On Collision Began and On Collision Ended correspond to RealityKit events — most RealityKit events have a matching node in the Script Graph.
 
-##### Add a Script Graph to an Entity
+Math and operational nodes handle simple or complex mathematical operations. Animation and audio nodes start and stop animations and audio playback. Input nodes handle input from keyboards, mice, gestures, and ARKit. Material nodes let a script tell a shader graph to adjust itself in response to scene interactions.
 
-1. Select your entity.
-2. In the Inspector, click **Add Component** > **Scripting**.
-3. In the Inspector, click Script, and then select **Graph Script Source**.
-4. Click **Edit** to open an empty script graph.
+#### Add a Script Graph to an Entity
 
-##### Preview Your Script Graph
+Select your entity, then in the Inspector click **Add Component** > **Scripting**. Click **Script** and select **Graph Script Source**. Click **Edit** to open an empty Script Graph.
 
-You can preview your script graphs in action using Reality Composer Pro’s Preview on Device feature. See [`Linking an Xcode project`](realitycomposerpro-essentials-linkingxcodeproject.md) to learn how.
+#### Preview Your Script Graph
+
+You can preview your Script Graphs in action using the Simulate feature in Reality Composer Pro. Click **Simulate** in the toolbar to run the scene — entry points such as **On Initialize** fire immediately and **On Update** runs each frame. Use the simulation to confirm your Script Graph executes as expected before deploying to a device.
+
+For more information about previewing and running simulations, see [`Previewing content and running simulations`](realitycomposerpro-essentials-previewcontentrunsimulations.md).
 
 
 ---

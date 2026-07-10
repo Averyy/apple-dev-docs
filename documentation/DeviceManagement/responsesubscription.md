@@ -22,6 +22,7 @@ object ResponseSubscription
 - `parentAdamId` (int64): The parent Adam ID for the subscription.
 - `adamId` (int64): The Adam ID for the subscription.
 - `status` (string): The current state of the subscription.
+- `periodEndDate` (string): The end date of the current billing period in ISO-8601 calendar date format (`YYYY-MM-DD`).
 - `counts` (SubscriptionCounts): The assignment counts for the subscription, broken down by renewal state.
 
 ## See Also

@@ -34,6 +34,21 @@ enum Field
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 
+## See Also
+
+- [func requestCustomerInfo(for: CustomerEngagementSession.Purpose?, fields: [CustomerEngagementSession.Field], message: String?) async throws -> CustomerEngagement.CustomerInfo](customerengagementsession/requestcustomerinfo(for:fields:message:).md)
+  Opens a form so that the customer can share the contact information.
+- [func requestSignup(for: CustomerEngagementSession.Purpose, fields: [CustomerEngagementSession.Field], message: String?, emailConsent: CustomerEngagementSession.ConsentOption, smsConsent: CustomerEngagementSession.ConsentOption, termsAndConditions: String?) async throws -> CustomerEngagement.SignUp](customerengagementsession/requestsignup(for:fields:message:emailconsent:smsconsent:termsandconditions:).md)
+  Opens a form so that the customer can share the contact information for the purpose of sign-up activity.
+- [func requestAddress(for: CustomerEngagementSession.Purpose?, fields: [CustomerEngagementSession.Field], message: String?) async throws -> CustomerEngagement.Address](customerengagementsession/requestaddress(for:fields:message:).md)
+  Opens a form so that the customer can share the postal address and additionally collect email address and phone number.
+- [func requestPayment(for: CustomerEngagement.ShoppingCartToken, using: PKPaymentRequest, delegate: any PKPaymentAuthorizationControllerDelegate) async throws -> Bool](customerengagementsession/requestpayment(for:using:delegate:).md)
+  Opens a form so a customer can select a payment option.
+- [CustomerEngagementSession.Purpose](customerengagementsession/purpose.md)
+  The purpose of a customer information request.
+- [CustomerEngagementSession.ConsentOption](customerengagementsession/consentoption.md)
+  An option on the sign-up form to receive promotional emails and text messages.
+
 
 ---
 

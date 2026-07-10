@@ -16,6 +16,10 @@ Errors that can occur during the engagement session.
 enum Error
 ```
 
+## Mentions
+
+- [Adding support for Tap to Share to your app](adding-support-for-tap-to-share-to-your-app.md)
+
 ## Topics
 
 ### Enumeration Cases

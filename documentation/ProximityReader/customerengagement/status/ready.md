@@ -16,6 +16,13 @@ A screen indicating the session is ready for customer interaction.
 case ready
 ```
 
+## See Also
+
+- [CustomerEngagement.Status.paymentCompleted](customerengagement/status/paymentcompleted.md)
+  A screen indicating a payment is complete.
+- [CustomerEngagement.Status.paymentFailed](customerengagement/status/paymentfailed.md)
+  A screen indicating a payment failure.
+
 
 ---
 

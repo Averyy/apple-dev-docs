@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-07-07T20:44:17.322564",
+    "last_updated": "2026-07-10T14:22:37.645928",
     "total_pages": 374,
-    "session_id": "2026-07-07T20:43:46.175271"
+    "session_id": "2026-07-10T14:21:57.184332"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/EnterpriseProgramAPI.json": {
       "hash": "02224d1e6e93d4b3ae7b7b1d93497c32b4c9b0d3d4e93a3e0e947cc0ec63440a",
-      "last_checked": "2026-07-07T20:43:46.460039",
+      "last_checked": "2026-07-10T14:21:57.626175",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"c4a0c23a0d9a687808816beb7aee3ba9\"",
       "file_path": "documentation/EnterpriseProgramAPI/EnterpriseProgramAPI.md"
     },
     "https://developer.apple.com/documentation/EnterpriseProgramAPI": {
       "hash": "02224d1e6e93d4b3ae7b7b1d93497c32b4c9b0d3d4e93a3e0e947cc0ec63440a",
-      "last_checked": "2026-07-07T20:43:46.335709",
+      "last_checked": "2026-07-10T14:21:57.518814",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"c4a0c23a0d9a687808816beb7aee3ba9\"",
       "file_path": "documentation/EnterpriseProgramAPI/EnterpriseProgramAPI.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/creating-api-keys-for-enterprise-program-api.json": {
       "hash": "e9c85862bda1eb895234aac84e04a45d7ff201ebec1c16d5a77c0021a5117419",
-      "last_checked": "2026-07-07T20:43:46.721399",
+      "last_checked": "2026-07-10T14:21:57.889339",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"33ea5bd56aaf19cbf90fe3a7bd0cbe06\"",
       "file_path": "documentation/EnterpriseProgramAPI/creating-api-keys-for-enterprise-program-api.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/generating-tokens-for-api-requests.json": {
       "hash": "562929e7771dca0bc7a153c7d46136bbd7ed70cc1ca9343184476e845c5b6771",
-      "last_checked": "2026-07-07T20:43:46.864188",
+      "last_checked": "2026-07-10T14:21:58.057712",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"409d303845cfc5bcd1529834cb54cfcb\"",
       "file_path": "documentation/EnterpriseProgramAPI/generating-tokens-for-api-requests.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/revoking-api-keys.json": {
       "hash": "dd4100899268bf0ca9eba3ae3c1bd2368757732722719cf302bf4f2e47329e79",
-      "last_checked": "2026-07-07T20:43:47.076436",
+      "last_checked": "2026-07-10T14:21:58.181399",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"6242624c514c90a654d1daef4ab5907e\"",
       "file_path": "documentation/EnterpriseProgramAPI/revoking-api-keys.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/identifying-rate-limits.json": {
       "hash": "3c106f1eab3b124021f487645bece9baa1fd42e8f89886ca08ac828bc89c4b18",
-      "last_checked": "2026-07-07T20:43:47.246764",
+      "last_checked": "2026-07-10T14:21:58.517437",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"ef6ac9b5eddb0c565b00651b12be2f9f\"",
       "file_path": "documentation/EnterpriseProgramAPI/identifying-rate-limits.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/enterprise-api-release-notes.json": {
       "hash": "16ef430afc927eedc13d91ef10b33f23f4778d5556a692232c95d4ef5dafd6b7",
-      "last_checked": "2026-07-07T20:43:47.540115",
+      "last_checked": "2026-07-10T14:21:58.638465",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"b1bc8c838137df62561c9c54ba50e370\"",
       "file_path": "documentation/EnterpriseProgramAPI/enterprise-api-release-notes.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/bundle-ids.json": {
       "hash": "b32fa5f27e04a07dda990d56b74f79409bca13a269c30189373d1578d7b00263",
-      "last_checked": "2026-07-07T20:43:47.712574",
+      "last_checked": "2026-07-10T14:21:58.794450",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"95bd080767c41870dc982c42149b0c40\"",
       "file_path": "documentation/EnterpriseProgramAPI/bundle-ids.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/bundle-id-capabilities.json": {
       "hash": "5366be096c49d8dbf6a1be7b264702e2420fb4f3527251666b7ee275d33dd5fb",
-      "last_checked": "2026-07-07T20:43:47.902030",
+      "last_checked": "2026-07-10T14:21:59.093395",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"b47ada66272294da2b033ae882cfb6c6\"",
       "file_path": "documentation/EnterpriseProgramAPI/bundle-id-capabilities.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/certificates.json": {
       "hash": "bc6e3cf09f8c6587d7a5738bb5bce264296ae24c2b964f81447a47bada240c84",
-      "last_checked": "2026-07-07T20:43:48.054975",
+      "last_checked": "2026-07-10T14:21:59.266273",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"ea9338459d0ec5f73f58e3a5958331c7\"",
       "file_path": "documentation/EnterpriseProgramAPI/certificates.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/devices.json": {
       "hash": "c6d4005e0d4ac657a5d409092a4a073cb523abd28dfb16c3f52b585d4f44230e",
-      "last_checked": "2026-07-07T20:43:48.185092",
+      "last_checked": "2026-07-10T14:21:59.401215",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"5c5402fdcdd3ec99c77ee6de35213092\"",
       "file_path": "documentation/EnterpriseProgramAPI/devices.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/passtypeids.json": {
       "hash": "04a71af6359363a987ac209576b2497ae670570df4117003e7267136cf9f3efc",
-      "last_checked": "2026-07-07T20:43:48.338614",
+      "last_checked": "2026-07-10T14:21:59.576575",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"4928ff7f7e8588d7f0b7497c51c4f736\"",
       "file_path": "documentation/EnterpriseProgramAPI/passtypeids.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/profiles.json": {
       "hash": "a0da2c707584b014b36809bb5f44c19e4976d43331632d07b281e4d3d13207c6",
-      "last_checked": "2026-07-07T20:43:48.534540",
+      "last_checked": "2026-07-10T14:21:59.734595",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"8cf9cd34a9ca875fa3f2e3c61b8223d6\"",
       "file_path": "documentation/EnterpriseProgramAPI/profiles.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/users.json": {
       "hash": "20e81572063f3fb9d8cfa2f6579f9365cfc2819e8edc245687d6d953b378da12",
-      "last_checked": "2026-07-07T20:43:48.835731",
+      "last_checked": "2026-07-10T14:21:59.890536",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"d562360b2172b674a87682101c2731d6\"",
       "file_path": "documentation/EnterpriseProgramAPI/users.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/user-invitations.json": {
       "hash": "45539114557ff4d012b2ecf4fdfca3054c0c5d2755c06cbf21d07630cae3f7b6",
-      "last_checked": "2026-07-07T20:43:49.009810",
+      "last_checked": "2026-07-10T14:22:00.028569",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"b214a4525652b9d0c09f2b8f8b10c60f\"",
       "file_path": "documentation/EnterpriseProgramAPI/user-invitations.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/interpreting-and-handling-errors.json": {
       "hash": "46db5adffe5f87bdaa8e7f620b99a976aec16d30a7d128c20774a19d7fb0f6bf",
-      "last_checked": "2026-07-07T20:43:49.321742",
+      "last_checked": "2026-07-10T14:22:00.310627",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"6c3335c3008ed1b3562ad3f05145a011\"",
       "file_path": "documentation/EnterpriseProgramAPI/interpreting-and-handling-errors.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/errorresponse.json": {
       "hash": "14e80930f4c411f3fd7b0b620e47d0530bc42ab2d7feae7aff8d3fa4e967047e",
-      "last_checked": "2026-07-07T20:43:49.443920",
+      "last_checked": "2026-07-10T14:22:00.603675",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"d782511e9f68f077dbbdecad6414def7\"",
       "file_path": "documentation/EnterpriseProgramAPI/errorresponse.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/large-data-sets.json": {
       "hash": "93779c9e89e56cb26bb234f2585b54f6e8ed83a52f56b1fcc246be0a5a7ce8e5",
-      "last_checked": "2026-07-07T20:43:49.579656",
+      "last_checked": "2026-07-10T14:22:00.917990",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"a80f57c9414b75f49b321bf05b422eaa\"",
       "file_path": "documentation/EnterpriseProgramAPI/large-data-sets.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/jsonpointer.json": {
       "hash": "ca5fae8f5f223937d5c79c4dedacec82cdd10ff13bd73756616a85a069dabc51",
-      "last_checked": "2026-07-07T20:43:49.773479",
+      "last_checked": "2026-07-10T14:22:01.046953",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"37b67f559b5c29c93897e98ae63e4ae8\"",
       "file_path": "documentation/EnterpriseProgramAPI/jsonpointer.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/parameter.json": {
       "hash": "4d45c782de9b7092769b56b74e8dd7a1ea555d95eba3657dd96d21df3cc50e33",
-      "last_checked": "2026-07-07T20:43:50.076917",
+      "last_checked": "2026-07-10T14:22:01.251516",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"066311787b90123d18c5771dd26779f9\"",
       "file_path": "documentation/EnterpriseProgramAPI/parameter.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/relationshiplinks.json": {
       "hash": "e8c83629fed2098097c24f05a1993d81243ec6212d27d14c07569ebff752449f",
-      "last_checked": "2026-07-07T20:43:50.250765",
+      "last_checked": "2026-07-10T14:22:01.401811",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"ccf17dbdf8d94e770bb7151d38bf1644\"",
       "file_path": "documentation/EnterpriseProgramAPI/relationshiplinks.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/enterprise-api-1-0-release-notes.json": {
       "hash": "4b922558a95af88fd7042c9d1904d017d3b2c0edbfc6048e3ae3a3492de437cf",
-      "last_checked": "2026-07-07T20:43:50.427720",
+      "last_checked": "2026-07-10T14:22:01.523703",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"3294c708307236b900777f7373f64827\"",
       "file_path": "documentation/EnterpriseProgramAPI/enterprise-api-1-0-release-notes.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/register-a-new-bundle-id.json": {
       "hash": "43bf8b81a9057efedc4cb243c648a4ba4ba743f20436962c468f86fbe3438b23",
-      "last_checked": "2026-07-07T20:43:50.615694",
+      "last_checked": "2026-07-10T14:22:01.718090",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"eaf9d5443e7142cdb358a1f14e92f4f5\"",
       "file_path": "documentation/EnterpriseProgramAPI/register-a-new-bundle-id.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/modify-a-bundleid.json": {
       "hash": "8e62b8c0bb5a05fff1216067596c1d87761dc3d22b3a199362db751ad84f6296",
-      "last_checked": "2026-07-07T20:43:50.793716",
+      "last_checked": "2026-07-10T14:22:01.850448",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"10e3f26af841b289f48c07900c8a014d\"",
       "file_path": "documentation/EnterpriseProgramAPI/modify-a-bundleid.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/delete-a-bundleid.json": {
       "hash": "8dd678d67464242786789a3a4132e0eb4856f7a509de9a517b60e1329836f5a0",
-      "last_checked": "2026-07-07T20:43:50.943681",
+      "last_checked": "2026-07-10T14:22:02.157653",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"d9efc7fc699a463de27878841c94e572\"",
       "file_path": "documentation/EnterpriseProgramAPI/delete-a-bundleid.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/list-bundle-ids.json": {
       "hash": "f54a90d05bce344beb3d7bc1831f09ad2a88379d0c61a58e7409f9a809a98f6b",
-      "last_checked": "2026-07-07T20:43:51.084421",
+      "last_checked": "2026-07-10T14:22:02.346397",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"c1323106ef521f41f0e7349dc3242c85\"",
       "file_path": "documentation/EnterpriseProgramAPI/list-bundle-ids.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/read-bundleid-information.json": {
       "hash": "8b93bc28a6804481048652e819cfa447a25d4ace5d37e5580f46a7cc2b4b1a89",
-      "last_checked": "2026-07-07T20:43:51.235241",
+      "last_checked": "2026-07-10T14:22:02.643780",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"f05e9a1a07a556df4020f75e0fcab2d9\"",
       "file_path": "documentation/EnterpriseProgramAPI/read-bundleid-information.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/list-all-profiles-for-a-bundleid.json": {
       "hash": "bfbcae26b30e4a00f8075b95ab1cc9feb5b50a2722df1aa475d68ebe1807ecc3",
-      "last_checked": "2026-07-07T20:43:51.396922",
+      "last_checked": "2026-07-10T14:22:02.819939",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"137cd5cffe17d848f2cc86b27f219c7f\"",
       "file_path": "documentation/EnterpriseProgramAPI/list-all-profiles-for-a-bundleid.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/list-all-bundle-id-capabilities-for-a-bundleid.json": {
       "hash": "57a0a3190b8a852568c18786887f26dc1c3ab568bf156036ae3bf171b1c5e577",
-      "last_checked": "2026-07-07T20:43:51.562127",
+      "last_checked": "2026-07-10T14:22:02.991817",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"ebb12b0463c16081929c1ad6676e8193\"",
       "file_path": "documentation/EnterpriseProgramAPI/list-all-bundle-id-capabilities-for-a-bundleid.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/bundleid.json": {
       "hash": "b705d67d23e76312c54db5eaa80206e60d40b057bfd8799ee2d8694e45e0c49c",
-      "last_checked": "2026-07-07T20:43:51.706555",
+      "last_checked": "2026-07-10T14:22:03.165659",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"0b248ff5a669efe7a19eb31699d54fd5\"",
       "file_path": "documentation/EnterpriseProgramAPI/bundleid.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/bundleidplatform.json": {
       "hash": "c5b07885a8e55bb3852d1617eba231e8ce30ca39d84f24c602910b30291fec2a",
-      "last_checked": "2026-07-07T20:43:51.888510",
+      "last_checked": "2026-07-10T14:22:03.480338",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"5407e50e72e699a80102f867872d40cd\"",
       "file_path": "documentation/EnterpriseProgramAPI/bundleidplatform.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/bundleidcreaterequest.json": {
       "hash": "20cd3626a6a621e36702b380b21dffc73054295610adb34637c4208085378108",
-      "last_checked": "2026-07-07T20:43:52.030419",
+      "last_checked": "2026-07-10T14:22:03.595437",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"ff2249454a19bc1c604ca09b75f84d0f\"",
       "file_path": "documentation/EnterpriseProgramAPI/bundleidcreaterequest.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/bundleidupdaterequest.json": {
       "hash": "9c9006f785fe41b542b2f0f941d57a8fbdba33ca289363945dc44e66f7ee445a",
-      "last_checked": "2026-07-07T20:43:52.140585",
+      "last_checked": "2026-07-10T14:22:03.771872",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"389bbbd0bcde461e0a883f3a4677519a\"",
       "file_path": "documentation/EnterpriseProgramAPI/bundleidupdaterequest.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/bundleidresponse.json": {
       "hash": "afe43911d9c3abdcb54c994caabc1fc29015c3c065b89ba3e412a58bff65d242",
-      "last_checked": "2026-07-07T20:43:52.280769",
+      "last_checked": "2026-07-10T14:22:04.093267",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"36a7aff4d65ce94775018a68152b5031\"",
       "file_path": "documentation/EnterpriseProgramAPI/bundleidresponse.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/bundleidwithoutincludesresponse.json": {
       "hash": "b39f54ac759c388abe0ab1e5b5ee2cc856669eea92db836088c279be55f7f769",
-      "last_checked": "2026-07-07T20:43:52.454385",
+      "last_checked": "2026-07-10T14:22:04.223152",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"5deea09e1ed7614aaabfaf1ea1e1148b\"",
       "file_path": "documentation/EnterpriseProgramAPI/bundleidwithoutincludesresponse.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/bundleidsresponse.json": {
       "hash": "c035cafee12eea21b535964ce835e3cff98eb7c0bb0307b667166eac98fcb117",
-      "last_checked": "2026-07-07T20:43:52.573061",
+      "last_checked": "2026-07-10T14:22:04.397229",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"e30f81262c85bb21767c03909ca85f65\"",
       "file_path": "documentation/EnterpriseProgramAPI/bundleidsresponse.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/create-a-bundleidcapability.json": {
       "hash": "0f5126947d069d7504850d62eeb1dc63673f5874cfd3c0f1b6ec535c0dd990a5",
-      "last_checked": "2026-07-07T20:43:52.699991",
+      "last_checked": "2026-07-10T14:22:04.524315",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"0cf01000d591ad8d5ed69dc8059b597d\"",
       "file_path": "documentation/EnterpriseProgramAPI/create-a-bundleidcapability.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/delete-a-bundleidcapability.json": {
       "hash": "e97b5542e6b7b09d87695fab20bd4f790f9d0e08b8c8cf484840681443703aeb",
-      "last_checked": "2026-07-07T20:43:52.819808",
+      "last_checked": "2026-07-10T14:22:04.691506",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"64cd7d36a7002779bcab822ecf3dd873\"",
       "file_path": "documentation/EnterpriseProgramAPI/delete-a-bundleidcapability.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/modify-a-bundleidcapability.json": {
       "hash": "af40686efa9ab24e6cfc0d9fd14d231fa49381d48852f94987db2d0c7c5eeb8a",
-      "last_checked": "2026-07-07T20:43:52.945221",
+      "last_checked": "2026-07-10T14:22:04.825857",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"4bc0e81e7bfbe7d93ad8933f6cb5bb90\"",
       "file_path": "documentation/EnterpriseProgramAPI/modify-a-bundleidcapability.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/bundleidcapability.json": {
       "hash": "ab1724bf4cba204ab97ea45afb529ef1170c66f395df3826cb10653078dc46b2",
-      "last_checked": "2026-07-07T20:43:53.082594",
+      "last_checked": "2026-07-10T14:22:04.962412",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"88543791cd55d72e0c16174f0f8d677c\"",
       "file_path": "documentation/EnterpriseProgramAPI/bundleidcapability.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/bundleidcapabilitycreaterequest.json": {
       "hash": "01d83647cbc3f49d0a21a4d7f2115b98e7e6b80c07d94991977fc53a96b520ea",
-      "last_checked": "2026-07-07T20:43:53.217814",
+      "last_checked": "2026-07-10T14:22:05.140867",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"ea2df04845283e60502fdc5f6ae4e304\"",
       "file_path": "documentation/EnterpriseProgramAPI/bundleidcapabilitycreaterequest.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/bundleidcapabilityupdaterequest.json": {
       "hash": "4181df1a5969a5743d15225ff2f430d324af584565634cc475b5685d99c6f330",
-      "last_checked": "2026-07-07T20:43:53.420983",
+      "last_checked": "2026-07-10T14:22:05.309734",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"ea08b87716a1ae71409464caf9017a0f\"",
       "file_path": "documentation/EnterpriseProgramAPI/bundleidcapabilityupdaterequest.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/bundleidcapabilityresponse.json": {
       "hash": "a94cca294764442512b479fbb6f9bb02403fc564d27bfe32458f70af66f9fdf9",
-      "last_checked": "2026-07-07T20:43:53.540258",
+      "last_checked": "2026-07-10T14:22:05.473286",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"2df1e2e001e5cda8223e042527f40414\"",
       "file_path": "documentation/EnterpriseProgramAPI/bundleidcapabilityresponse.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/bundleidcapabilitiesresponse.json": {
       "hash": "c9485a032e593eea08cf757df42c1c38ce2ea9c3f0f3ae80b78e8d7945ecc884",
-      "last_checked": "2026-07-07T20:43:53.671608",
+      "last_checked": "2026-07-10T14:22:05.610495",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"8a8e4ddb9b4d2ba4d9848a873c550d44\"",
       "file_path": "documentation/EnterpriseProgramAPI/bundleidcapabilitiesresponse.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/bundleidcapabilitieswithoutincludesresponse.json": {
       "hash": "a9ed253cd0c07c365196ffa8910361b47625f1660ea611adf1a08cb881122a78",
-      "last_checked": "2026-07-07T20:43:53.806548",
+      "last_checked": "2026-07-10T14:22:05.780425",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"8a403c57e764040ea1587380fde3e698\"",
       "file_path": "documentation/EnterpriseProgramAPI/bundleidcapabilitieswithoutincludesresponse.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/capabilityoption.json": {
       "hash": "224e3f9b5240ed5dd1e7185e5b2ebbec451e7048ca9a6189ec95d9bb71ed6a40",
-      "last_checked": "2026-07-07T20:43:53.948230",
+      "last_checked": "2026-07-10T14:22:05.891032",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"09f79ef148682bff9ce0492fb5afe401\"",
       "file_path": "documentation/EnterpriseProgramAPI/capabilityoption.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/capabilitysetting.json": {
       "hash": "739d058021e703edb23bc17aa01c47e67018515cfd93d51ded5111017d12a2b9",
-      "last_checked": "2026-07-07T20:43:54.094351",
+      "last_checked": "2026-07-10T14:22:06.042397",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"3f0b1b4e7eaf4c05534f1d68e759b1f5\"",
       "file_path": "documentation/EnterpriseProgramAPI/capabilitysetting.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/capabilitytype.json": {
       "hash": "8fab46c68d376ae7af27373d54451982f4fb51a90ec60c474ed7a1c91be58a6e",
-      "last_checked": "2026-07-07T20:43:54.226701",
+      "last_checked": "2026-07-10T14:22:06.193669",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"09666668d53fd31237d1553ebf0e192c\"",
       "file_path": "documentation/EnterpriseProgramAPI/capabilitytype.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/create-a-certificate.json": {
       "hash": "378861f129e46f5b996ef0eddd1ae2b927c2551e0e5223b3c73056819d0036c8",
-      "last_checked": "2026-07-07T20:43:54.340128",
+      "last_checked": "2026-07-10T14:22:06.379862",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"4f6f1a81d38bcbe84b95a4f82d114f18\"",
       "file_path": "documentation/EnterpriseProgramAPI/create-a-certificate.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/list-and-download-certificates.json": {
       "hash": "7d2daa13370aaf30901ae3b5c7c0d3b9c9cdce8447ffe63961845b8be8fd22e0",
-      "last_checked": "2026-07-07T20:43:54.530659",
+      "last_checked": "2026-07-10T14:22:06.559437",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"99e43d07f0e365b394b7701a0ce8f8ea\"",
       "file_path": "documentation/EnterpriseProgramAPI/list-and-download-certificates.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/read-and-download-certificate-information.json": {
       "hash": "242d47f394a10a03c266ad63b3f2dbeeb0cd579bfe9ebf662702c3a8c8624e0c",
-      "last_checked": "2026-07-07T20:43:54.665351",
+      "last_checked": "2026-07-10T14:22:06.735780",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"4ef432c4c3e507918a6b9e8dec0ded33\"",
       "file_path": "documentation/EnterpriseProgramAPI/read-and-download-certificate-information.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/revoke-a-certificate.json": {
       "hash": "57fd9e2893a83ff250b3c8c3f07383bc92fb3d2fbff22b237b4245047b44a93f",
-      "last_checked": "2026-07-07T20:43:54.821211",
+      "last_checked": "2026-07-10T14:22:06.900656",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"83bc34194d1052a51c0e39a11c94bf9f\"",
       "file_path": "documentation/EnterpriseProgramAPI/revoke-a-certificate.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/certificate.json": {
       "hash": "33cca9e0d7b77943a5fcc68c03769e1a84e4a35e44e9c01271b1393748dc5ffd",
-      "last_checked": "2026-07-07T20:43:54.945976",
+      "last_checked": "2026-07-10T14:22:07.018576",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"11433d8fadb0ad5759817b9be3412209\"",
       "file_path": "documentation/EnterpriseProgramAPI/certificate.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/certificateswithoutincludesresponse.json": {
       "hash": "e6fde57a087f084f6b99f230953cdebfa5904209af49116cc2f986d6977d0ae6",
-      "last_checked": "2026-07-07T20:43:55.095080",
+      "last_checked": "2026-07-10T14:22:07.154680",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"a4afe255b8889fa1e4bc799499702358\"",
       "file_path": "documentation/EnterpriseProgramAPI/certificateswithoutincludesresponse.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/certificatecreaterequest.json": {
       "hash": "414718ba52953990bbd03f673169c7ad57794bcd920300cfb6891e279c45a4e0",
-      "last_checked": "2026-07-07T20:43:55.218247",
+      "last_checked": "2026-07-10T14:22:07.316900",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"f17d4556559f9cd3ebbc16d75a24cc0d\"",
       "file_path": "documentation/EnterpriseProgramAPI/certificatecreaterequest.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/certificateresponse.json": {
       "hash": "0c3e031cda53ffb08dd27ae49b9026d845b2acd315ea9dd395211fac3e82d95a",
-      "last_checked": "2026-07-07T20:43:55.350200",
+      "last_checked": "2026-07-10T14:22:07.450168",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"d2b27d5a52bcebbe46a3ab93030201ed\"",
       "file_path": "documentation/EnterpriseProgramAPI/certificateresponse.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/certificatesresponse.json": {
       "hash": "bb7775ca01e41a018a3587745a053c8cf2036c40a3ca36454ec2e029c81c6dce",
-      "last_checked": "2026-07-07T20:43:55.475086",
+      "last_checked": "2026-07-10T14:22:07.623663",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"60d55a8d2f4579c4210d03da6f123f97\"",
       "file_path": "documentation/EnterpriseProgramAPI/certificatesresponse.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/certificatetype.json": {
       "hash": "f33bae753bab004c7d1aa3f05ef3fb61c36b6f2a2666123f738a2435955fd337",
-      "last_checked": "2026-07-07T20:43:55.652186",
+      "last_checked": "2026-07-10T14:22:07.749471",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"6f0d44f02a1c41d6925fb5fe89486a4c\"",
       "file_path": "documentation/EnterpriseProgramAPI/certificatetype.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/register-a-new-device.json": {
       "hash": "7afb44400e40d608317104e4c4790c9315d3e2a06d245cfd75882b842816ae4d",
-      "last_checked": "2026-07-07T20:43:55.795232",
+      "last_checked": "2026-07-10T14:22:07.904299",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"59381c10d50a3d08a327411592e6c095\"",
       "file_path": "documentation/EnterpriseProgramAPI/register-a-new-device.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/list-devices.json": {
       "hash": "5f5b787501e090c87af44a164fa5fd26cf8a0adcc004ff4b2ba7d1e03d38e725",
-      "last_checked": "2026-07-07T20:43:55.925935",
+      "last_checked": "2026-07-10T14:22:08.016694",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"3ff6a78f39c27859e1eb10e2acae71ab\"",
       "file_path": "documentation/EnterpriseProgramAPI/list-devices.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/read-device-information.json": {
       "hash": "7632956283c82ac7473b1bd5bca4029a7c78f90d24cf69cd4222f14d27438b7a",
-      "last_checked": "2026-07-07T20:43:56.124458",
+      "last_checked": "2026-07-10T14:22:08.200209",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"7c73bdce705f05e7e3e3ff9dad2413bc\"",
       "file_path": "documentation/EnterpriseProgramAPI/read-device-information.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/modify-a-registered-device.json": {
       "hash": "c2d6305ea2b69d7c910d1cfa08712fe29f751633e5a4a9c6921e77c9f0a22293",
-      "last_checked": "2026-07-07T20:43:56.242982",
+      "last_checked": "2026-07-10T14:22:08.379516",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"3f91e1d77dbbb8d40c86b04f2e45e798\"",
       "file_path": "documentation/EnterpriseProgramAPI/modify-a-registered-device.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/device.json": {
       "hash": "6704699f92fdc3865dd30804d1a73bcd80ddd599251b7a67ac631deffc3358d3",
-      "last_checked": "2026-07-07T20:43:56.472159",
+      "last_checked": "2026-07-10T14:22:08.496243",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"cc3e289211f1f65a497372419b87648e\"",
       "file_path": "documentation/EnterpriseProgramAPI/device.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/deviceswithoutincludesresponse.json": {
       "hash": "f67b27b01f94ea0d7b80f89d4e1596827d65168ff2504fd984f7c12725a0175e",
-      "last_checked": "2026-07-07T20:43:56.589851",
+      "last_checked": "2026-07-10T14:22:19.120255",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"e07552c5ce87f55cc7454557ab21715f\"",
       "file_path": "documentation/EnterpriseProgramAPI/deviceswithoutincludesresponse.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/devicecreaterequest.json": {
       "hash": "d3c198c2062d70fc2367e7caa83459acbcfed0b4f26934d630f1b8d79abbc135",
-      "last_checked": "2026-07-07T20:43:56.713639",
+      "last_checked": "2026-07-10T14:22:19.296808",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"1dcacbce0bbcbad460f48195065561b2\"",
       "file_path": "documentation/EnterpriseProgramAPI/devicecreaterequest.md"
     },
@@ -1031,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/deviceupdaterequest.json": {
       "hash": "9bc9741bb86e5c63af53772e2d29d680b7a1b49fa6bcad3963253c43530daad8",
-      "last_checked": "2026-07-07T20:43:56.842452",
+      "last_checked": "2026-07-10T14:22:19.460164",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"381de1da40347a717314ed987050893a\"",
       "file_path": "documentation/EnterpriseProgramAPI/deviceupdaterequest.md"
     },
@@ -1047,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/deviceresponse.json": {
       "hash": "090c69a836fcffe0bfa2d265cd0ad23c9c864a441c6282d85b9a8f0842786aca",
-      "last_checked": "2026-07-07T20:43:57.029147",
+      "last_checked": "2026-07-10T14:22:19.581942",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"9417b2ac9c1c90d06d32aef7223c788e\"",
       "file_path": "documentation/EnterpriseProgramAPI/deviceresponse.md"
     },
@@ -1063,9 +1063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/devicesresponse.json": {
       "hash": "8072e1ecb0ceec95a20ad9449ae216e90b3cb137a4415a87322bffaa958d755c",
-      "last_checked": "2026-07-07T20:43:57.140780",
+      "last_checked": "2026-07-10T14:22:19.754677",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"ba23c5b1398d62571e1eebcbda0e10cb\"",
       "file_path": "documentation/EnterpriseProgramAPI/devicesresponse.md"
     },
@@ -1079,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/create-a-passtypeid.json": {
       "hash": "6055a42d8a975b6448e2fcb1c0b4925acdc8867058c54afc1f4b1fb42334ff8e",
-      "last_checked": "2026-07-07T20:43:57.465199",
+      "last_checked": "2026-07-10T14:22:19.925123",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"060e8377184597e7cd5d9b6ef3d85630\"",
       "file_path": "documentation/EnterpriseProgramAPI/create-a-passtypeid.md"
     },
@@ -1095,9 +1095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/list-pass-type-ids.json": {
       "hash": "8f8d80771ad4c0d6ac8f86acdc370cdddc572050786b811a6797820764535e84",
-      "last_checked": "2026-07-07T20:43:57.581238",
+      "last_checked": "2026-07-10T14:22:20.240266",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"fd55d37b0a0d66db908f18325e0c3751\"",
       "file_path": "documentation/EnterpriseProgramAPI/list-pass-type-ids.md"
     },
@@ -1111,9 +1111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/read-passtypeid-information.json": {
       "hash": "1424f2884e675b65801de73480c1335d6cbf321e824376984bf721ec72f1cea8",
-      "last_checked": "2026-07-07T20:43:57.724574",
+      "last_checked": "2026-07-10T14:22:20.415728",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"99c53d974cc3ce038e19834b6a56a036\"",
       "file_path": "documentation/EnterpriseProgramAPI/read-passtypeid-information.md"
     },
@@ -1127,9 +1127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/list-all-certificates-for-a-passtypeid.json": {
       "hash": "57cd239e204b1b03ef8b5354bc1f28a188ebf8ce725675aee7767623a62b0edb",
-      "last_checked": "2026-07-07T20:43:57.917446",
+      "last_checked": "2026-07-10T14:22:20.554492",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"4658c1ae8ccd2554970bfe3031eb5e6c\"",
       "file_path": "documentation/EnterpriseProgramAPI/list-all-certificates-for-a-passtypeid.md"
     },
@@ -1143,9 +1143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/modify-a-passtypeid.json": {
       "hash": "c5c63b4e3c8459503bd7e8410dc301976e9a903626c9a31de4b47e07c6cdd8bb",
-      "last_checked": "2026-07-07T20:43:58.034426",
+      "last_checked": "2026-07-10T14:22:20.673202",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"3fb050f3d43dda7c4f667ba9c173f65c\"",
       "file_path": "documentation/EnterpriseProgramAPI/modify-a-passtypeid.md"
     },
@@ -1159,9 +1159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/delete-a-passtypeid.json": {
       "hash": "d2fafafd4e4127f667f19f0dcb957554fa61456b5ff9c97c5efae1162eb29043",
-      "last_checked": "2026-07-07T20:43:58.177884",
+      "last_checked": "2026-07-10T14:22:20.812140",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"47487e46c4611d63249afe06fa553a1c\"",
       "file_path": "documentation/EnterpriseProgramAPI/delete-a-passtypeid.md"
     },
@@ -1175,9 +1175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/read-the-pass-type-id-information-of-a-certificate.json": {
       "hash": "8afdf5cee0059bbabd86b66d6ac0f4676416c92afbe829e99be101cc858cc3ce",
-      "last_checked": "2026-07-07T20:43:58.312653",
+      "last_checked": "2026-07-10T14:22:20.984497",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"358bf494f790d6ce450f1e37307a6778\"",
       "file_path": "documentation/EnterpriseProgramAPI/read-the-pass-type-id-information-of-a-certificate.md"
     },
@@ -1191,9 +1191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/passtypeid.json": {
       "hash": "ec30e8e49162ba9e6f19adbed5313b39069fe2871102f8d85df5e7262a32fa77",
-      "last_checked": "2026-07-07T20:43:58.443025",
+      "last_checked": "2026-07-10T14:22:21.290111",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"3fd9298bd2963ce80c5f5a1ca9360988\"",
       "file_path": "documentation/EnterpriseProgramAPI/passtypeid.md"
     },
@@ -1207,9 +1207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/passtypeidcreaterequest.json": {
       "hash": "ff3326c0fadb67f0232e5f01249ac93228c016af92b0d865187b2e60685c5a93",
-      "last_checked": "2026-07-07T20:43:58.557286",
+      "last_checked": "2026-07-10T14:22:21.424921",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"33521786f6151bb31e44558a28a71a35\"",
       "file_path": "documentation/EnterpriseProgramAPI/passtypeidcreaterequest.md"
     },
@@ -1223,9 +1223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/passtypeidresponse.json": {
       "hash": "a65d7cd276ebf259a02182c6dda3440190ed6d29a1fe5e23606a9d210822b9ae",
-      "last_checked": "2026-07-07T20:43:58.822030",
+      "last_checked": "2026-07-10T14:22:21.588789",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"92d3a758470da0311ba08b3df1d12de2\"",
       "file_path": "documentation/EnterpriseProgramAPI/passtypeidresponse.md"
     },
@@ -1239,9 +1239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/passtypeidsresponse.json": {
       "hash": "5772b570704f5884be34aafa4af8c5bef804d39ac277ce93a61db50d8792a265",
-      "last_checked": "2026-07-07T20:43:58.999927",
+      "last_checked": "2026-07-10T14:22:21.707580",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"3036c892a96db16334f4af5dbc2dfca4\"",
       "file_path": "documentation/EnterpriseProgramAPI/passtypeidsresponse.md"
     },
@@ -1255,9 +1255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/passtypeidupdaterequest.json": {
       "hash": "503684dcec8080ed2db372501ef9de0c3efdac7b29521c378f6652a86866bb9a",
-      "last_checked": "2026-07-07T20:43:59.118207",
+      "last_checked": "2026-07-10T14:22:21.831921",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"ad1d0597e090f9b27ee31efc97265812\"",
       "file_path": "documentation/EnterpriseProgramAPI/passtypeidupdaterequest.md"
     },
@@ -1271,9 +1271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/create-a-profile.json": {
       "hash": "16681a1600e3d6ee25f9734299bf784d479bfad6380fb6a63287f257bad7c3d3",
-      "last_checked": "2026-07-07T20:43:59.300211",
+      "last_checked": "2026-07-10T14:22:21.953895",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"b68f0ea547d63147fec7f5eded2698e2\"",
       "file_path": "documentation/EnterpriseProgramAPI/create-a-profile.md"
     },
@@ -1287,9 +1287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/delete-a-profile.json": {
       "hash": "d90fd35356c1e8476ec05bf65efd0b9201673a7921b51dac87df983fcf1fa78a",
-      "last_checked": "2026-07-07T20:43:59.427364",
+      "last_checked": "2026-07-10T14:22:22.265265",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"7a46d6b45f74cb247977719216ca2988\"",
       "file_path": "documentation/EnterpriseProgramAPI/delete-a-profile.md"
     },
@@ -1303,9 +1303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/list-and-download-profiles.json": {
       "hash": "c7e1bf051580cbebd2f35ff51218009c7df4babf0fde38bec3459570011d1ac1",
-      "last_checked": "2026-07-07T20:43:59.612742",
+      "last_checked": "2026-07-10T14:22:22.391257",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"1a3ef04bda5dea96267c868b19122a49\"",
       "file_path": "documentation/EnterpriseProgramAPI/list-and-download-profiles.md"
     },
@@ -1319,9 +1319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/read-and-download-profile-information.json": {
       "hash": "3545ce88dfd78debe1ea3f341b91ef172353146117ddb89f433cbec9d52662bf",
-      "last_checked": "2026-07-07T20:43:59.813430",
+      "last_checked": "2026-07-10T14:22:22.708831",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"d892ccb674f214a0166cc1e8802891a7\"",
       "file_path": "documentation/EnterpriseProgramAPI/read-and-download-profile-information.md"
     },
@@ -1335,9 +1335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/read-the-bundle-id-in-a-profile.json": {
       "hash": "44b58f626102f264dc9761cf5c06c0b3c93f8a4441578fe959f32bfabe09db5e",
-      "last_checked": "2026-07-07T20:43:59.922430",
+      "last_checked": "2026-07-10T14:22:22.869989",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"0a8120e8ec9fdbce9786bc56fd87a4fb\"",
       "file_path": "documentation/EnterpriseProgramAPI/read-the-bundle-id-in-a-profile.md"
     },
@@ -1351,9 +1351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/list-all-certificates-in-a-profile.json": {
       "hash": "bd5c799e5c483b597beb40db5a1c8913d6277d0028f3413d597fe78ee3a0000c",
-      "last_checked": "2026-07-07T20:44:00.058353",
+      "last_checked": "2026-07-10T14:22:23.051957",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"cf12ad4b98cb27aecd1cafd10c15d977\"",
       "file_path": "documentation/EnterpriseProgramAPI/list-all-certificates-in-a-profile.md"
     },
@@ -1367,9 +1367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/list-all-devices-in-a-profile.json": {
       "hash": "d474fc255e54d387fda443d411fa75bf52a99406948f17847a2fdaae07d9eab6",
-      "last_checked": "2026-07-07T20:44:00.189647",
+      "last_checked": "2026-07-10T14:22:23.213892",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"53a87baac00af7a1762ec0ea73b279ee\"",
       "file_path": "documentation/EnterpriseProgramAPI/list-all-devices-in-a-profile.md"
     },
@@ -1383,9 +1383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/profile.json": {
       "hash": "b594c23b5ecbc492ba00f9e9bba88afd623975f0a033bbeb570ea3704c877b11",
-      "last_checked": "2026-07-07T20:44:00.390209",
+      "last_checked": "2026-07-10T14:22:23.343007",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"1a675afe3095404659df10b051be23b9\"",
       "file_path": "documentation/EnterpriseProgramAPI/profile.md"
     },
@@ -1399,9 +1399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/profilecreaterequest.json": {
       "hash": "a3d02c8bc8590f538eafc8967ead3768cb5302361513c302171d8fbbcaef12cc",
-      "last_checked": "2026-07-07T20:44:00.510482",
+      "last_checked": "2026-07-10T14:22:23.521137",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"431683955b8bc165fb466a4fd1e3353e\"",
       "file_path": "documentation/EnterpriseProgramAPI/profilecreaterequest.md"
     },
@@ -1415,9 +1415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/profileresponse.json": {
       "hash": "d3ccfd6f07f1ec9bdfbbd42530eccf07f532b9c02f828437621a50631371a04b",
-      "last_checked": "2026-07-07T20:44:00.645604",
+      "last_checked": "2026-07-10T14:22:23.649878",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"e5275ff9b82fec3d36126c5102b100ac\"",
       "file_path": "documentation/EnterpriseProgramAPI/profileresponse.md"
     },
@@ -1431,9 +1431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/profilesresponse.json": {
       "hash": "25da771005c32b6ef7c559461ad5b2450413ab5d338d01ec1acde844a7842eae",
-      "last_checked": "2026-07-07T20:44:00.768054",
+      "last_checked": "2026-07-10T14:22:23.765825",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"f0d110cb3922e347252805a06e6909c3\"",
       "file_path": "documentation/EnterpriseProgramAPI/profilesresponse.md"
     },
@@ -1447,9 +1447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/profileswithoutincludesresponse.json": {
       "hash": "14b98f04058bee28602a9df79c1e2d5be53783b1375226ac4ad0ab820b8f7452",
-      "last_checked": "2026-07-07T20:44:00.897671",
+      "last_checked": "2026-07-10T14:22:23.914894",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"a85cd9eacfb5bd54d354c29a0c9cd3a4\"",
       "file_path": "documentation/EnterpriseProgramAPI/profileswithoutincludesresponse.md"
     },
@@ -1463,9 +1463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/list-users.json": {
       "hash": "4c9cb501e3edc810dd6a21066df72c4b0933244fb85fc177a90fc5113f63bd6f",
-      "last_checked": "2026-07-07T20:44:01.092009",
+      "last_checked": "2026-07-10T14:22:24.089264",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"cc871dc3eef34919e8eb457874303fd5\"",
       "file_path": "documentation/EnterpriseProgramAPI/list-users.md"
     },
@@ -1479,9 +1479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/read-user-information.json": {
       "hash": "912a8204efc2d089b947f69c26d9ed93ac257fce53b896811cfa26b19d5a9738",
-      "last_checked": "2026-07-07T20:44:01.222001",
+      "last_checked": "2026-07-10T14:22:24.204779",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"acaa8209ce408f2e11f29b70c0a0e292\"",
       "file_path": "documentation/EnterpriseProgramAPI/read-user-information.md"
     },
@@ -1495,9 +1495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/modify-a-user-account.json": {
       "hash": "7faba0bd33ae6990ff5ec3f8bf3934c10de5e99cf3cc0bf1f902e8a4784d8873",
-      "last_checked": "2026-07-07T20:44:01.362562",
+      "last_checked": "2026-07-10T14:22:24.320206",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"dc60ed99eb6707a367a02fc9f866c846\"",
       "file_path": "documentation/EnterpriseProgramAPI/modify-a-user-account.md"
     },
@@ -1511,9 +1511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/delete-a-user-account.json": {
       "hash": "1d0dce7ea6f938daeb6b548e49fa2ea55c8b10239d5fb6e447ac829ba2c377d1",
-      "last_checked": "2026-07-07T20:44:01.480611",
+      "last_checked": "2026-07-10T14:22:24.445417",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"c8a72af4fce3d4b638e0da4b93dfb847\"",
       "file_path": "documentation/EnterpriseProgramAPI/delete-a-user-account.md"
     },
@@ -1527,9 +1527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/user.json": {
       "hash": "f9b5c01240450f9320a8a4ce5593dd6551dec78ed72f0027b630547657f12c7e",
-      "last_checked": "2026-07-07T20:44:01.614792",
+      "last_checked": "2026-07-10T14:22:24.579570",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"368f2b809d75ebe169a915ffdbfc6a42\"",
       "file_path": "documentation/EnterpriseProgramAPI/user.md"
     },
@@ -1543,9 +1543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/userupdaterequest.json": {
       "hash": "4f40179cc0b0ce7f7cf298aeed920bc4f42951884ff1528670fc8ac5ef3ab75e",
-      "last_checked": "2026-07-07T20:44:01.787976",
+      "last_checked": "2026-07-10T14:22:24.713665",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"ad1ac9fa3ebd3be5246ec5e3bee86b9a\"",
       "file_path": "documentation/EnterpriseProgramAPI/userupdaterequest.md"
     },
@@ -1559,9 +1559,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/userresponse.json": {
       "hash": "64cbbcc0baddb396cbd7a51972dbe1b1465bc70e9f50fe7c0a7d9a0a770c6770",
-      "last_checked": "2026-07-07T20:44:01.962152",
+      "last_checked": "2026-07-10T14:22:24.831047",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"62af0594b79b039415bdd7613acc3a56\"",
       "file_path": "documentation/EnterpriseProgramAPI/userresponse.md"
     },
@@ -1575,9 +1575,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/usersresponse.json": {
       "hash": "e5518763d3f7236cf65ab23bf310ae2ec3d76d6eba137e43a5c4a261d6d328a0",
-      "last_checked": "2026-07-07T20:44:02.089158",
+      "last_checked": "2026-07-10T14:22:25.021317",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"0bcede1f3b9637b47716941069c70e05\"",
       "file_path": "documentation/EnterpriseProgramAPI/usersresponse.md"
     },
@@ -1591,9 +1591,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/userrole.json": {
       "hash": "a8532a0171c7cbb70d96ba55bc31683ff19dd002e094754b91c26509361788fc",
-      "last_checked": "2026-07-07T20:44:02.228517",
+      "last_checked": "2026-07-10T14:22:25.184236",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"f1666dd75461396eb48d8038fc02563b\"",
       "file_path": "documentation/EnterpriseProgramAPI/userrole.md"
     },
@@ -1607,9 +1607,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/list-invited-users.json": {
       "hash": "e2e189f444edd81273519c2bf95a9f3e6a15989f07bdfde16b822412455ff169",
-      "last_checked": "2026-07-07T20:44:02.372612",
+      "last_checked": "2026-07-10T14:22:25.309575",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"e755f7258512d2b9b29c96843c003a28\"",
       "file_path": "documentation/EnterpriseProgramAPI/list-invited-users.md"
     },
@@ -1623,9 +1623,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/read-userinvitation-information.json": {
       "hash": "ae976b41ba9f9f65d7f80c53975f6f0c3c244ac04f0dea9386498c70e834eedd",
-      "last_checked": "2026-07-07T20:44:02.551591",
+      "last_checked": "2026-07-10T14:22:25.422201",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"c6c4028f06b24cf36d27ee65186b6c86\"",
       "file_path": "documentation/EnterpriseProgramAPI/read-userinvitation-information.md"
     },
@@ -1639,9 +1639,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/invite-a-user.json": {
       "hash": "47ad592ea385bb02ac770b1ced4773b57ff428ff0f69b65fdc7dbf67ab339964",
-      "last_checked": "2026-07-07T20:44:02.731491",
+      "last_checked": "2026-07-10T14:22:25.578516",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"9efbf5409846fcf0a5198be0d4ee8744\"",
       "file_path": "documentation/EnterpriseProgramAPI/invite-a-user.md"
     },
@@ -1655,9 +1655,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/cancel-a-user-invitation.json": {
       "hash": "c2b59f0ffff98ecc566e97c8a7f66b533f4cc57f5fcdb613d776d96537477a2e",
-      "last_checked": "2026-07-07T20:44:02.930225",
+      "last_checked": "2026-07-10T14:22:25.711542",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"9fe23402e06a6ec6df7d57e7a891711a\"",
       "file_path": "documentation/EnterpriseProgramAPI/cancel-a-user-invitation.md"
     },
@@ -1671,9 +1671,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/userinvitation.json": {
       "hash": "be634941c235244825f60e61a23b6aad6b3a5d139bf73c115735298660194545",
-      "last_checked": "2026-07-07T20:44:03.096221",
+      "last_checked": "2026-07-10T14:22:25.839466",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"90063d3f20e84c85745383b3e6907d59\"",
       "file_path": "documentation/EnterpriseProgramAPI/userinvitation.md"
     },
@@ -1687,9 +1687,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/userinvitationcreaterequest.json": {
       "hash": "62c9049f71d0bf6a509d38bd195143c506b19ef1f1db651047a17ab736f19f78",
-      "last_checked": "2026-07-07T20:44:03.278617",
+      "last_checked": "2026-07-10T14:22:25.975377",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"e0aa6becd8e5fd5ef6af31af26b3e825\"",
       "file_path": "documentation/EnterpriseProgramAPI/userinvitationcreaterequest.md"
     },
@@ -1703,9 +1703,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/userinvitationresponse.json": {
       "hash": "00ba6d2b2ea7dddcd63f92510542f81c60d5d8e787c3d3784374f9d4008f2aec",
-      "last_checked": "2026-07-07T20:44:03.461160",
+      "last_checked": "2026-07-10T14:22:26.117224",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"698bc536e1deab50836b6bd4a0006c38\"",
       "file_path": "documentation/EnterpriseProgramAPI/userinvitationresponse.md"
     },
@@ -1719,9 +1719,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/userinvitationsresponse.json": {
       "hash": "c8070ca591a4966037cba4451cc56dc2fd832a86fedda9649a20bfcf05a031d5",
-      "last_checked": "2026-07-07T20:44:03.574729",
+      "last_checked": "2026-07-10T14:22:26.239299",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"d6c3ea6e88a5757469c903584c3a21e3\"",
       "file_path": "documentation/EnterpriseProgramAPI/userinvitationsresponse.md"
     },
@@ -1735,9 +1735,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/about-the-http-status-code.json": {
       "hash": "d6b2119a19d07f984e92bacc8232433e623b4b0c0604c7263e08954bb8c303c3",
-      "last_checked": "2026-07-07T20:44:03.685338",
+      "last_checked": "2026-07-10T14:22:26.407242",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"28b190d1ca8c9c988021e50cd217bef7\"",
       "file_path": "documentation/EnterpriseProgramAPI/about-the-http-status-code.md"
     },
@@ -1751,9 +1751,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/parsing-the-error-response-code.json": {
       "hash": "424be71a6463d2471fd61acd122d593253673fc192e0b9cfa961dc25b2aa1fea",
-      "last_checked": "2026-07-07T20:44:03.830223",
+      "last_checked": "2026-07-10T14:22:26.531352",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"90283e551908ae4eb53f7f2406b6f901\"",
       "file_path": "documentation/EnterpriseProgramAPI/parsing-the-error-response-code.md"
     },
@@ -1767,9 +1767,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/pinpointing-the-location-of-errors.json": {
       "hash": "1245af38da078b8e896a637b074769f6f399be2f9449cad951154e4e3e70d919",
-      "last_checked": "2026-07-07T20:44:03.976026",
+      "last_checked": "2026-07-10T14:22:26.680604",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"be4fc661926a4bdd027860d1be427f03\"",
       "file_path": "documentation/EnterpriseProgramAPI/pinpointing-the-location-of-errors.md"
     },
@@ -1783,9 +1783,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/errorlinks.json": {
       "hash": "5f1fcdb91c70b9348abfeec58bc76d4052dfd22b246a312a98fdb05b8ddf22d5",
-      "last_checked": "2026-07-07T20:44:04.090565",
+      "last_checked": "2026-07-10T14:22:26.809758",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"889214767160ee1c230272317a2401eb\"",
       "file_path": "documentation/EnterpriseProgramAPI/errorlinks.md"
     },
@@ -1799,9 +1799,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/errorresponse/errors-data.dictionary.json": {
       "hash": "836f98c1eae3f21cc6b614bd8bf44b1c259a26142490b2071aa628607307ddbb",
-      "last_checked": "2026-07-07T20:44:04.397303",
+      "last_checked": "2026-07-10T14:22:26.927166",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"4714a3311e4e3378f1716767090421f8\"",
       "file_path": "documentation/EnterpriseProgramAPI/errorresponse/errors-datadictionary.md"
     },
@@ -1815,9 +1815,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/pageddocumentlinks.json": {
       "hash": "3eb438fc7c3cd414bb3621c00ee71a0e438a18d70503e194bb7a44862f7d27ca",
-      "last_checked": "2026-07-07T20:44:04.517705",
+      "last_checked": "2026-07-10T14:22:27.043693",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"642ed1112c08009bb280cf7b7479b6c6\"",
       "file_path": "documentation/EnterpriseProgramAPI/pageddocumentlinks.md"
     },
@@ -1831,9 +1831,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/paginginformation.json": {
       "hash": "9fce3edc054667602d169217f6ffec4e530943bb3b9faae9cf7642c052610f62",
-      "last_checked": "2026-07-07T20:44:04.636207",
+      "last_checked": "2026-07-10T14:22:27.180239",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"85136b41adf901a35cd0408378888e01\"",
       "file_path": "documentation/EnterpriseProgramAPI/paginginformation.md"
     },
@@ -1847,9 +1847,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/resourcelinks.json": {
       "hash": "93b0f4b2fdbdd1bfc80dc6bad8918780980791f5980296383cafeced23978b58",
-      "last_checked": "2026-07-07T20:44:04.824422",
+      "last_checked": "2026-07-10T14:22:27.325430",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"083c3c038c9ec10cf87e815b5f321572\"",
       "file_path": "documentation/EnterpriseProgramAPI/resourcelinks.md"
     },
@@ -1863,9 +1863,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/documentlinks.json": {
       "hash": "05ba230826a67e39fb1b7e2563de4ce86439dbb7f26167e33678d6359d8cb261",
-      "last_checked": "2026-07-07T20:44:04.942791",
+      "last_checked": "2026-07-10T14:22:27.490034",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"cf5b39d90338016250551f3d5e10a6df\"",
       "file_path": "documentation/EnterpriseProgramAPI/documentlinks.md"
     },
@@ -1879,9 +1879,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/errorresponse/errors-data.dictionary/meta-data.dictionary.json": {
       "hash": "1cea936192a22d5bbb970c9518d45d14fe954ef8d26d5d43007f0a74f608a832",
-      "last_checked": "2026-07-07T20:44:05.117901",
+      "last_checked": "2026-07-10T14:22:27.610903",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"d4e7e296fbdc6414b790b2c5b761c33e\"",
       "file_path": "documentation/EnterpriseProgramAPI/errorresponse/errors-data.dictionary/meta-datadictionary.md"
     },
@@ -1895,9 +1895,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/profile/relationships-data.dictionary/devices-data.dictionary/data-data.dictionary.json": {
       "hash": "87bf1f7e3d98b8aec0d836ff2b75dde5ee6d953050e21e016d5d4aa1f21155ed",
-      "last_checked": "2026-07-07T20:44:05.314942",
+      "last_checked": "2026-07-10T14:22:27.731804",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"5931de7eb89d9c4d4e55cc04df8afa5a\"",
       "file_path": "documentation/EnterpriseProgramAPI/profile/relationships-data.dictionary/devices-data.dictionary/data-datadictionary.md"
     },
@@ -1911,9 +1911,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/bundleid/attributes-data.dictionary.json": {
       "hash": "704a108067446e8d54248ee6019b5916d08b7adf73af076321a60867beb80b49",
-      "last_checked": "2026-07-07T20:44:05.439162",
+      "last_checked": "2026-07-10T14:22:27.897416",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"7c816b9132ad12255ad31fd18917cc6b\"",
       "file_path": "documentation/EnterpriseProgramAPI/bundleid/attributes-datadictionary.md"
     },
@@ -1927,9 +1927,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/bundleid/relationships-data.dictionary.json": {
       "hash": "8fdda8a4b71d949aff1771195b7cd5115f2ba6d44bc11b035ac8e3465f299b30",
-      "last_checked": "2026-07-07T20:44:05.612806",
+      "last_checked": "2026-07-10T14:22:28.054624",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"c82fff63d18fb21d81334bd88a4f5535\"",
       "file_path": "documentation/EnterpriseProgramAPI/bundleid/relationships-datadictionary.md"
     },
@@ -1943,9 +1943,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/bundleidcreaterequest/data-data.dictionary.json": {
       "hash": "92c45c0b6f763404663b7b179259f36fcd280e55457c1f6e16490749be32b2e4",
-      "last_checked": "2026-07-07T20:44:05.735479",
+      "last_checked": "2026-07-10T14:22:28.168125",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"69a9c6ccb8bff2aa308f6618b65c135a\"",
       "file_path": "documentation/EnterpriseProgramAPI/bundleidcreaterequest/data-datadictionary.md"
     },
@@ -1959,9 +1959,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/bundleidupdaterequest/data-data.dictionary.json": {
       "hash": "04248ce7d8be7e3676850dc0fe53a965a7a15c2479937c2006f95344fff155cf",
-      "last_checked": "2026-07-07T20:44:06.037623",
+      "last_checked": "2026-07-10T14:22:28.324400",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"494421998b53ac7697395786e2e23e57\"",
       "file_path": "documentation/EnterpriseProgramAPI/bundleidupdaterequest/data-datadictionary.md"
     },
@@ -1975,9 +1975,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/bundleidcapability/attributes-data.dictionary.json": {
       "hash": "674b5f8736cc476723fc6a3fb95a5b56e5e0adc3b1541f37c9fe7a9bdd7ca3cd",
-      "last_checked": "2026-07-07T20:44:06.220696",
+      "last_checked": "2026-07-10T14:22:28.486769",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"71ec2cd7cf6475bcee8bf8b08adcec14\"",
       "file_path": "documentation/EnterpriseProgramAPI/bundleidcapability/attributes-datadictionary.md"
     },
@@ -1991,9 +1991,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/bundleidcapabilitycreaterequest/data-data.dictionary.json": {
       "hash": "a7109e39dffb7d3ea74a64732ba57bbdbeaa3bdcf557fb413dd059da5afd9ae0",
-      "last_checked": "2026-07-07T20:44:06.395415",
+      "last_checked": "2026-07-10T14:22:28.615064",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"5979571adceadb5c471e911b11e774c8\"",
       "file_path": "documentation/EnterpriseProgramAPI/bundleidcapabilitycreaterequest/data-datadictionary.md"
     },
@@ -2007,9 +2007,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/bundleidcapabilityupdaterequest/data-data.dictionary.json": {
       "hash": "a0b50bc3991c97e3b01ee3b00b755a32be08ae0c31b79034ce58f6eb85cde208",
-      "last_checked": "2026-07-07T20:44:06.729465",
+      "last_checked": "2026-07-10T14:22:28.742039",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"33905283b30fe616e53e1e5a3864f624\"",
       "file_path": "documentation/EnterpriseProgramAPI/bundleidcapabilityupdaterequest/data-datadictionary.md"
     },
@@ -2023,9 +2023,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/certificate/attributes-data.dictionary.json": {
       "hash": "965c8f5090bfde06741aae5be048ea59f18256c1b0d16d6fc0950ea0fb37cd5a",
-      "last_checked": "2026-07-07T20:44:06.911043",
+      "last_checked": "2026-07-10T14:22:28.879179",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"a5409d84a792b146da15c60f530e0715\"",
       "file_path": "documentation/EnterpriseProgramAPI/certificate/attributes-datadictionary.md"
     },
@@ -2039,9 +2039,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/certificate/relationships-data.dictionary.json": {
       "hash": "4eec2b48b23c4b3e4b2aaafa398e0a6a63e89379df5ac75904a41dd92939e20d",
-      "last_checked": "2026-07-07T20:44:07.110015",
+      "last_checked": "2026-07-10T14:22:29.014682",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"a8944f09c37e9ba4d2a185ac46ed7730\"",
       "file_path": "documentation/EnterpriseProgramAPI/certificate/relationships-datadictionary.md"
     },
@@ -2055,9 +2055,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/certificatecreaterequest/data-data.dictionary.json": {
       "hash": "bd0a6404a75f2eca3ed894bae9b7b321ce414e22b3c3289f9d6d37ecb332ce13",
-      "last_checked": "2026-07-07T20:44:07.293180",
+      "last_checked": "2026-07-10T14:22:29.157120",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"a2cce3fc93da5adf60c815e1897d4fab\"",
       "file_path": "documentation/EnterpriseProgramAPI/certificatecreaterequest/data-datadictionary.md"
     },
@@ -2071,9 +2071,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/device/attributes-data.dictionary.json": {
       "hash": "7afa3dfe4fc2fd1ed10ce8aaf583cddd0e5d4b326f1a7cda3306ca521d800e59",
-      "last_checked": "2026-07-07T20:44:07.482471",
+      "last_checked": "2026-07-10T14:22:29.269612",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"9861699f307a99b3e04cad819977c9ad\"",
       "file_path": "documentation/EnterpriseProgramAPI/device/attributes-datadictionary.md"
     },
@@ -2087,9 +2087,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/devicecreaterequest/data-data.dictionary.json": {
       "hash": "fd430d76f2f6a5da346c5f76e69536d31b738e3a4c8ea7e7fbf000309b7584e3",
-      "last_checked": "2026-07-07T20:44:07.683029",
+      "last_checked": "2026-07-10T14:22:29.399916",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"f424140d83f69b20b92d6f04cfa5fa8b\"",
       "file_path": "documentation/EnterpriseProgramAPI/devicecreaterequest/data-datadictionary.md"
     },
@@ -2103,9 +2103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/deviceupdaterequest/data-data.dictionary.json": {
       "hash": "5003641f0873e8b10eac4f082a3f40935da705fbd3af9c2a323218fdb1a76dac",
-      "last_checked": "2026-07-07T20:44:07.969995",
+      "last_checked": "2026-07-10T14:22:29.566185",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"07baaa1208e9325a21c4cc97feaf6214\"",
       "file_path": "documentation/EnterpriseProgramAPI/deviceupdaterequest/data-datadictionary.md"
     },
@@ -2119,9 +2119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/passtypeid/attributes-data.dictionary.json": {
       "hash": "0a618594ad2e7a7b70f8580735c8e7a84f00256ddd582d69c58e2e477beb4aeb",
-      "last_checked": "2026-07-07T20:44:08.106134",
+      "last_checked": "2026-07-10T14:22:29.739051",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"da7d44777473487d4a8a552fa2ab8f10\"",
       "file_path": "documentation/EnterpriseProgramAPI/passtypeid/attributes-datadictionary.md"
     },
@@ -2135,9 +2135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/passtypeid/relationships-data.dictionary.json": {
       "hash": "ea3fabedccc6ec02a8a961daee20c59cbc8398190be8716d7e6544275d466eeb",
-      "last_checked": "2026-07-07T20:44:08.281782",
+      "last_checked": "2026-07-10T14:22:29.865053",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"6aa9cc7bafd86f6f6cd298dc24835aef\"",
       "file_path": "documentation/EnterpriseProgramAPI/passtypeid/relationships-datadictionary.md"
     },
@@ -2151,9 +2151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/passtypeidcreaterequest/data-data.dictionary.json": {
       "hash": "267726a0cf6d658521e9d7e90595c3a02c592a079f8a97269a80d165aa2c4557",
-      "last_checked": "2026-07-07T20:44:08.398392",
+      "last_checked": "2026-07-10T14:22:30.030268",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"5d9b89aaf6f770c5b24542eb1586c57d\"",
       "file_path": "documentation/EnterpriseProgramAPI/passtypeidcreaterequest/data-datadictionary.md"
     },
@@ -2167,9 +2167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/passtypeidupdaterequest/data-data.dictionary.json": {
       "hash": "7e8df71d2b06f239bda015a23c8a887353e34c663790eb56eeefe4f140aaec62",
-      "last_checked": "2026-07-07T20:44:08.579389",
+      "last_checked": "2026-07-10T14:22:30.325403",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"af1974e4ff3c3c9dadf3b365674a3c50\"",
       "file_path": "documentation/EnterpriseProgramAPI/passtypeidupdaterequest/data-datadictionary.md"
     },
@@ -2183,9 +2183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/profile/attributes-data.dictionary.json": {
       "hash": "6f0a5362f915830838658974bac6f54327d8a96e4b4157b7f8eeffae89b3e27d",
-      "last_checked": "2026-07-07T20:44:08.775442",
+      "last_checked": "2026-07-10T14:22:30.441841",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"fe3026bbed1136e1612f55982f5fa9db\"",
       "file_path": "documentation/EnterpriseProgramAPI/profile/attributes-datadictionary.md"
     },
@@ -2199,9 +2199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/profile/relationships-data.dictionary.json": {
       "hash": "e6c1a60a7655bfe2d634399c4a472bcb2607a4ee7436e17f00eb5d0219360c99",
-      "last_checked": "2026-07-07T20:44:08.906381",
+      "last_checked": "2026-07-10T14:22:30.568436",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"a4d6a3467402c2004df6f28c977e099b\"",
       "file_path": "documentation/EnterpriseProgramAPI/profile/relationships-datadictionary.md"
     },
@@ -2215,9 +2215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/profilecreaterequest/data-data.dictionary.json": {
       "hash": "c10112cee45c42948b757bda3ef2b5b5e3c96df4ec99c921fe32818a10cbcb4a",
-      "last_checked": "2026-07-07T20:44:09.091811",
+      "last_checked": "2026-07-10T14:22:30.698790",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"2ddfa087ed38cf2cc386f04defffcb0b\"",
       "file_path": "documentation/EnterpriseProgramAPI/profilecreaterequest/data-datadictionary.md"
     },
@@ -2231,9 +2231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/user/attributes-data.dictionary.json": {
       "hash": "66889beef6f966ef87872777954a5bea66b4ecd842a6d2af2257cf9d5f7a1955",
-      "last_checked": "2026-07-07T20:44:09.242639",
+      "last_checked": "2026-07-10T14:22:30.833894",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"f48db9a4cb356246686fe9e1ebf77909\"",
       "file_path": "documentation/EnterpriseProgramAPI/user/attributes-datadictionary.md"
     },
@@ -2247,9 +2247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/userupdaterequest/data-data.dictionary.json": {
       "hash": "f658cb051c49e70190e6d6dc2a8846f16fe95687f99740af15d6ac241d70ca7f",
-      "last_checked": "2026-07-07T20:44:09.429835",
+      "last_checked": "2026-07-10T14:22:30.976254",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"db7d4af99a642daf2acf518abb2947a6\"",
       "file_path": "documentation/EnterpriseProgramAPI/userupdaterequest/data-datadictionary.md"
     },
@@ -2263,9 +2263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/userinvitation/attributes-data.dictionary.json": {
       "hash": "aef9aeb2779abcb202e3cd14931652f45806cb5451ccf040f8abb675d930d908",
-      "last_checked": "2026-07-07T20:44:09.570015",
+      "last_checked": "2026-07-10T14:22:31.106222",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"320ae772999f960c8b2d7a78aaf899a8\"",
       "file_path": "documentation/EnterpriseProgramAPI/userinvitation/attributes-datadictionary.md"
     },
@@ -2279,9 +2279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/userinvitationcreaterequest/data-data.dictionary.json": {
       "hash": "0ea57c1483bd27f618b8646bab25dd820585acd924db19e7175e294511c93c07",
-      "last_checked": "2026-07-07T20:44:09.689060",
+      "last_checked": "2026-07-10T14:22:31.284079",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"38b3770cc5d57ca8271b3e932a5264cd\"",
       "file_path": "documentation/EnterpriseProgramAPI/userinvitationcreaterequest/data-datadictionary.md"
     },
@@ -2295,9 +2295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/errorlinks/associated-data.dictionary.json": {
       "hash": "5c957ba3176906ad0fee7af3dd4ab8ef652082d84b33c430c31e6609ea5db158",
-      "last_checked": "2026-07-07T20:44:09.803440",
+      "last_checked": "2026-07-10T14:22:31.397529",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"acf9bf231ab4198705e7cd3ae03a93cb\"",
       "file_path": "documentation/EnterpriseProgramAPI/errorlinks/associated-datadictionary.md"
     },
@@ -2311,9 +2311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/paginginformation/paging-data.dictionary.json": {
       "hash": "b362bd559bdf9e1c83d1aa6495217e50b5f4f13a8cf1ff8a6a49cc01e98a62c8",
-      "last_checked": "2026-07-07T20:44:10.001300",
+      "last_checked": "2026-07-10T14:22:31.578742",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"d627e565ec3643daa71a42b7c31405cd\"",
       "file_path": "documentation/EnterpriseProgramAPI/paginginformation/paging-datadictionary.md"
     },
@@ -2327,9 +2327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/errorresponse/errors-data.dictionary/meta-data.dictionary/any-key-data.dictionary.json": {
       "hash": "196896ea2b9d5481d9b83142f382bf05f49f28ad5286f68caddca804a6b9b58c",
-      "last_checked": "2026-07-07T20:44:10.173629",
+      "last_checked": "2026-07-10T14:22:31.706044",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"e6e00217772e5a79c204cd30dfaaabd5\"",
       "file_path": "documentation/EnterpriseProgramAPI/errorresponse/errors-data.dictionary/meta-data.dictionary/any-key-datadictionary.md"
     },
@@ -2343,9 +2343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/bundleid/relationships-data.dictionary/bundleidcapabilities-data.dictionary.json": {
       "hash": "361527e413890dd581d444c718e0c91e3e6fd08ac5e516fbbc33c91ded4b66c3",
-      "last_checked": "2026-07-07T20:44:10.350219",
+      "last_checked": "2026-07-10T14:22:31.845534",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"04ea8de5e4fd5b9136bb30feeff69607\"",
       "file_path": "documentation/EnterpriseProgramAPI/bundleid/relationships-data.dictionary/bundleidcapabilities-datadictionary.md"
     },
@@ -2359,9 +2359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/bundleid/relationships-data.dictionary/profiles-data.dictionary.json": {
       "hash": "91eec8842bab9f317c36ef7b8226271685e4f917a21b88d40f869cf752cb566a",
-      "last_checked": "2026-07-07T20:44:10.534421",
+      "last_checked": "2026-07-10T14:22:32.039889",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"9af7a5c88cb1e7eed6c1c64750fbfa18\"",
       "file_path": "documentation/EnterpriseProgramAPI/bundleid/relationships-data.dictionary/profiles-datadictionary.md"
     },
@@ -2375,9 +2375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/bundleidcreaterequest/data-data.dictionary/attributes-data.dictionary.json": {
       "hash": "f8aaa2641148dcf2fa809aa52e8000bb8d0fe5999a2f0a9e7e3d7a0db445161b",
-      "last_checked": "2026-07-07T20:44:10.696353",
+      "last_checked": "2026-07-10T14:22:32.150059",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"715e5fea8526024ba60559f8b08a4607\"",
       "file_path": "documentation/EnterpriseProgramAPI/bundleidcreaterequest/data-data.dictionary/attributes-datadictionary.md"
     },
@@ -2391,9 +2391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/bundleidupdaterequest/data-data.dictionary/attributes-data.dictionary.json": {
       "hash": "4f99413358b34c3b82d0300132c42e2fba99181dce1931e5112d32f445236ea2",
-      "last_checked": "2026-07-07T20:44:10.838136",
+      "last_checked": "2026-07-10T14:22:32.275111",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"a1dc8369d382fa4236f7208cc45e0b2e\"",
       "file_path": "documentation/EnterpriseProgramAPI/bundleidupdaterequest/data-data.dictionary/attributes-datadictionary.md"
     },
@@ -2407,9 +2407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/bundleidcapabilitycreaterequest/data-data.dictionary/attributes-data.dictionary.json": {
       "hash": "11bd574002dbfa6be8330d1e2cf8e44a6dfb025e883b9178c20ea6acde870fa5",
-      "last_checked": "2026-07-07T20:44:11.018425",
+      "last_checked": "2026-07-10T14:22:32.411142",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"b2d3649dfe820bba0635732919993f00\"",
       "file_path": "documentation/EnterpriseProgramAPI/bundleidcapabilitycreaterequest/data-data.dictionary/attributes-datadictionary.md"
     },
@@ -2423,9 +2423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/bundleidcapabilitycreaterequest/data-data.dictionary/relationships-data.dictionary.json": {
       "hash": "7d1994d5e80ee0dcd115c408936f2bf43573d7adede1d89424df2f80d86450b6",
-      "last_checked": "2026-07-07T20:44:11.224850",
+      "last_checked": "2026-07-10T14:22:32.594272",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"be769b9202dca38cd32f657c26a37f26\"",
       "file_path": "documentation/EnterpriseProgramAPI/bundleidcapabilitycreaterequest/data-data.dictionary/relationships-datadictionary.md"
     },
@@ -2439,9 +2439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/bundleidcapabilityupdaterequest/data-data.dictionary/attributes-data.dictionary.json": {
       "hash": "938192072507e32271df8f5f5cbc3d721a6fe7fe7be3eff78296011e4cb8c0bf",
-      "last_checked": "2026-07-07T20:44:11.345656",
+      "last_checked": "2026-07-10T14:22:32.732119",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"9a2d4ff437f1df832a0f255355f64fd8\"",
       "file_path": "documentation/EnterpriseProgramAPI/bundleidcapabilityupdaterequest/data-data.dictionary/attributes-datadictionary.md"
     },
@@ -2455,9 +2455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/certificate/relationships-data.dictionary/passtypeid-data.dictionary.json": {
       "hash": "40112b1d02220ab1b0bd68fa07782fe64988a5164aafe458277c35527f6dd3e1",
-      "last_checked": "2026-07-07T20:44:11.464486",
+      "last_checked": "2026-07-10T14:22:32.855475",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"af84269cf9dd88399bf5e8f53e17a281\"",
       "file_path": "documentation/EnterpriseProgramAPI/certificate/relationships-data.dictionary/passtypeid-datadictionary.md"
     },
@@ -2471,9 +2471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/certificatecreaterequest/data-data.dictionary/attributes-data.dictionary.json": {
       "hash": "f6938327cc50b95b7d8760e63d6cb9c68941a9616a2d8da8e78407fe68941615",
-      "last_checked": "2026-07-07T20:44:11.657000",
+      "last_checked": "2026-07-10T14:22:32.983028",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"a8a50ba8d5ddbf7b6c324565bafd2dc5\"",
       "file_path": "documentation/EnterpriseProgramAPI/certificatecreaterequest/data-data.dictionary/attributes-datadictionary.md"
     },
@@ -2487,9 +2487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/certificatecreaterequest/data-data.dictionary/relationships-data.dictionary.json": {
       "hash": "e2f48c422d467c2e7535f97d86dc390aac68ac4e27e58a011819555898876919",
-      "last_checked": "2026-07-07T20:44:11.779506",
+      "last_checked": "2026-07-10T14:22:33.160294",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"d9d9f551ead86e7818fc6429461736e5\"",
       "file_path": "documentation/EnterpriseProgramAPI/certificatecreaterequest/data-data.dictionary/relationships-datadictionary.md"
     },
@@ -2503,9 +2503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/devicecreaterequest/data-data.dictionary/attributes-data.dictionary.json": {
       "hash": "f9ca8c9a6862404130ea7aa7b53087d26855b50abf9239c71ef2089786be8699",
-      "last_checked": "2026-07-07T20:44:11.912834",
+      "last_checked": "2026-07-10T14:22:33.289949",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"a61b11339ca0d3e2bd9cdbc401d077a6\"",
       "file_path": "documentation/EnterpriseProgramAPI/devicecreaterequest/data-data.dictionary/attributes-datadictionary.md"
     },
@@ -2519,9 +2519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/deviceupdaterequest/data-data.dictionary/attributes-data.dictionary.json": {
       "hash": "f40af4a0bdc35ffbf1987a8d42b5138a646ba4e7dd6a6969719ad4772463f48f",
-      "last_checked": "2026-07-07T20:44:12.055237",
+      "last_checked": "2026-07-10T14:22:33.447855",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"600805d653d42531068e345633c0d2bf\"",
       "file_path": "documentation/EnterpriseProgramAPI/deviceupdaterequest/data-data.dictionary/attributes-datadictionary.md"
     },
@@ -2535,9 +2535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/passtypeid/relationships-data.dictionary/certificates-data.dictionary.json": {
       "hash": "1f98f2e1aee7553ac009f8e4946c42115c71da71fe669280013d6af42572acc7",
-      "last_checked": "2026-07-07T20:44:12.248337",
+      "last_checked": "2026-07-10T14:22:33.586409",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"adc3b4904c5508b9e9be4e20fe8f4ba6\"",
       "file_path": "documentation/EnterpriseProgramAPI/passtypeid/relationships-data.dictionary/certificates-datadictionary.md"
     },
@@ -2551,9 +2551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/passtypeidcreaterequest/data-data.dictionary/attributes-data.dictionary.json": {
       "hash": "9f73bfcd51abce922206461500ea8ccbef7d7b11e90b40766a597e1f69c146d5",
-      "last_checked": "2026-07-07T20:44:12.381519",
+      "last_checked": "2026-07-10T14:22:33.703178",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"0cfeb5c42766961540c20e40e31885e8\"",
       "file_path": "documentation/EnterpriseProgramAPI/passtypeidcreaterequest/data-data.dictionary/attributes-datadictionary.md"
     },
@@ -2567,9 +2567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/passtypeidupdaterequest/data-data.dictionary/attributes-data.dictionary.json": {
       "hash": "02d5f4455d50e2d2c45f719871ee293900ace48ed4bf64f4247c60937fe1c18b",
-      "last_checked": "2026-07-07T20:44:12.562647",
+      "last_checked": "2026-07-10T14:22:33.831087",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"f25106989476561540a80affb3ca2be8\"",
       "file_path": "documentation/EnterpriseProgramAPI/passtypeidupdaterequest/data-data.dictionary/attributes-datadictionary.md"
     },
@@ -2583,9 +2583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/profile/relationships-data.dictionary/bundleid-data.dictionary.json": {
       "hash": "ecde91ceebaa1ab6e267bfcf2cfba7901072cf601694867358b8395cf150ceaa",
-      "last_checked": "2026-07-07T20:44:12.856067",
+      "last_checked": "2026-07-10T14:22:33.959936",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"f815d526880ef84232e2439b9905d6f8\"",
       "file_path": "documentation/EnterpriseProgramAPI/profile/relationships-data.dictionary/bundleid-datadictionary.md"
     },
@@ -2599,9 +2599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/profile/relationships-data.dictionary/certificates-data.dictionary.json": {
       "hash": "5246fc9a9221f4fc5ce66a7afe84581f8f39a936868a35b2a3941c960d6a7374",
-      "last_checked": "2026-07-07T20:44:12.973805",
+      "last_checked": "2026-07-10T14:22:34.087639",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"afeb6823b6fae62edd1ea04bfa03df69\"",
       "file_path": "documentation/EnterpriseProgramAPI/profile/relationships-data.dictionary/certificates-datadictionary.md"
     },
@@ -2615,9 +2615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/profile/relationships-data.dictionary/devices-data.dictionary.json": {
       "hash": "020792a7fe7515f77332f53da3c7092a37b1f5ab80b189b170746d3629bf3a08",
-      "last_checked": "2026-07-07T20:44:13.146735",
+      "last_checked": "2026-07-10T14:22:34.218620",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"c374512ad745cb4cb1515ca8d0a29c47\"",
       "file_path": "documentation/EnterpriseProgramAPI/profile/relationships-data.dictionary/devices-datadictionary.md"
     },
@@ -2631,9 +2631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/profilecreaterequest/data-data.dictionary/attributes-data.dictionary.json": {
       "hash": "3fbb61e957dfe146eb88e0639b7edaaf30396e12df468425b85afdeae1d6c91b",
-      "last_checked": "2026-07-07T20:44:13.332799",
+      "last_checked": "2026-07-10T14:22:34.331382",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"2a9c0aa9f7d79aaace205a3201927585\"",
       "file_path": "documentation/EnterpriseProgramAPI/profilecreaterequest/data-data.dictionary/attributes-datadictionary.md"
     },
@@ -2647,9 +2647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/profilecreaterequest/data-data.dictionary/relationships-data.dictionary.json": {
       "hash": "c00ace4ebdfbcd3689545e3af018b1a4122412e5973c497004fda5f0134ab06e",
-      "last_checked": "2026-07-07T20:44:13.603503",
+      "last_checked": "2026-07-10T14:22:34.462834",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"3687a6e9ba5cfb4e388d5e7119915f19\"",
       "file_path": "documentation/EnterpriseProgramAPI/profilecreaterequest/data-data.dictionary/relationships-datadictionary.md"
     },
@@ -2663,9 +2663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/userupdaterequest/data-data.dictionary/attributes-data.dictionary.json": {
       "hash": "6425a65b1c899d3941ca6d3501889e8b913ff2715e24fecbc192e2f4705fa301",
-      "last_checked": "2026-07-07T20:44:13.719624",
+      "last_checked": "2026-07-10T14:22:34.631321",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"32ccd7a119627e23b1a8a53b2d8d67c3\"",
       "file_path": "documentation/EnterpriseProgramAPI/userupdaterequest/data-data.dictionary/attributes-datadictionary.md"
     },
@@ -2679,9 +2679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/userinvitationcreaterequest/data-data.dictionary/attributes-data.dictionary.json": {
       "hash": "0eb32e3940e1d9a04b4122278a05df8a9bebe0b193637fa38c0b45c44784e5aa",
-      "last_checked": "2026-07-07T20:44:13.881955",
+      "last_checked": "2026-07-10T14:22:34.804528",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"37fcaf846b932d112e9c438816ea5ed1\"",
       "file_path": "documentation/EnterpriseProgramAPI/userinvitationcreaterequest/data-data.dictionary/attributes-datadictionary.md"
     },
@@ -2695,9 +2695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/errorlinks/associated-data.dictionary/meta-data.dictionary.json": {
       "hash": "f09f52769d3469a14f3769a56e8bc9663184f558e47f33477718630a96f3bb09",
-      "last_checked": "2026-07-07T20:44:14.058004",
+      "last_checked": "2026-07-10T14:22:34.935450",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"a10b0c7410c299947ac6504cfe34461c\"",
       "file_path": "documentation/EnterpriseProgramAPI/errorlinks/associated-data.dictionary/meta-datadictionary.md"
     },
@@ -2711,9 +2711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/bundleid/relationships-data.dictionary/bundleidcapabilities-data.dictionary/data-data.dictionary.json": {
       "hash": "0a5a6eda57911d6a5e6433689c34a428deb5bcefdd701bc586b4d1d405bbe1f0",
-      "last_checked": "2026-07-07T20:44:14.250203",
+      "last_checked": "2026-07-10T14:22:35.058029",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"9e7701530b5ae31d82c64bbdfe11ce8d\"",
       "file_path": "documentation/EnterpriseProgramAPI/bundleid/relationships-data.dictionary/bundleidcapabilities-data.dictionary/data-datadictionary.md"
     },
@@ -2727,15 +2727,15 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/bundleid/relationships-data.dictionary/bundleidcapabilities-data.dictionary/links.json": {
       "hash": "",
-      "last_checked": "2026-07-07T20:44:14.425740",
+      "last_checked": "2026-07-10T14:22:35.250580",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/bundleid/relationships-data.dictionary/profiles-data.dictionary/data-data.dictionary.json": {
       "hash": "192ae9a9dc46dfd71f08018d6552bc4e7606b5eac4b14cdc15d10061e77aaa67",
-      "last_checked": "2026-07-07T20:44:14.540899",
+      "last_checked": "2026-07-10T14:22:35.316039",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"6134019d61f8880451d91b620505992f\"",
       "file_path": "documentation/EnterpriseProgramAPI/bundleid/relationships-data.dictionary/profiles-data.dictionary/data-datadictionary.md"
     },
@@ -2749,15 +2749,15 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/bundleid/relationships-data.dictionary/profiles-data.dictionary/links.json": {
       "hash": "",
-      "last_checked": "2026-07-07T20:44:14.839034",
+      "last_checked": "2026-07-10T14:22:35.511498",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/bundleidcapabilitycreaterequest/data-data.dictionary/relationships-data.dictionary/bundleid-data.dictionary.json": {
       "hash": "e60ff73549d47173b1e569e578334b82cf779c7e0acfd929cf1b23e67f4d192a",
-      "last_checked": "2026-07-07T20:44:14.909775",
+      "last_checked": "2026-07-10T14:22:35.593519",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"bfe0a1f7d26f47a9dba07a37dee760c9\"",
       "file_path": "documentation/EnterpriseProgramAPI/bundleidcapabilitycreaterequest/data-data.dictionary/relationships-data.dictionary/bundleid-datadictionary.md"
     },
@@ -2771,9 +2771,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/certificate/relationships-data.dictionary/passtypeid-data.dictionary/data-data.dictionary.json": {
       "hash": "287400ea14859ada04e243efc5c3d5a060d22836967fb750a339ac81b488f855",
-      "last_checked": "2026-07-07T20:44:15.094060",
+      "last_checked": "2026-07-10T14:22:35.713864",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"302fe7dae8cc96c4d1b7ce01ed782241\"",
       "file_path": "documentation/EnterpriseProgramAPI/certificate/relationships-data.dictionary/passtypeid-data.dictionary/data-datadictionary.md"
     },
@@ -2787,9 +2787,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/certificatecreaterequest/data-data.dictionary/relationships-data.dictionary/passtypeid-data.dictionary.json": {
       "hash": "1565d9bd875c45e8a77c82566646c397b2d679c626f1163a215f35b40e5c8379",
-      "last_checked": "2026-07-07T20:44:15.222411",
+      "last_checked": "2026-07-10T14:22:35.844301",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"0a67ce9c9a8574819574f0680872d128\"",
       "file_path": "documentation/EnterpriseProgramAPI/certificatecreaterequest/data-data.dictionary/relationships-data.dictionary/passtypeid-datadictionary.md"
     },
@@ -2803,9 +2803,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/passtypeid/relationships-data.dictionary/certificates-data.dictionary/data-data.dictionary.json": {
       "hash": "f647ecd42bec8f3009a0265f078ebfa9180a2b6782372ad860c29d9611aac5ac",
-      "last_checked": "2026-07-07T20:44:15.357684",
+      "last_checked": "2026-07-10T14:22:35.973192",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"bed235c52a2c112671eb022f06a3960e\"",
       "file_path": "documentation/EnterpriseProgramAPI/passtypeid/relationships-data.dictionary/certificates-data.dictionary/data-datadictionary.md"
     },
@@ -2819,9 +2819,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/profile/relationships-data.dictionary/bundleid-data.dictionary/data-data.dictionary.json": {
       "hash": "2519feaaddea7d0cd2986b1be83a9c953315e6bbebca50ce7c0fea67656a9414",
-      "last_checked": "2026-07-07T20:44:15.499103",
+      "last_checked": "2026-07-10T14:22:36.152062",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"80ffa120e4a82ff4ce17aee56aaabd41\"",
       "file_path": "documentation/EnterpriseProgramAPI/profile/relationships-data.dictionary/bundleid-data.dictionary/data-datadictionary.md"
     },
@@ -2835,15 +2835,15 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/profile/relationships-data.dictionary/bundleid-data.dictionary/links.json": {
       "hash": "",
-      "last_checked": "2026-07-07T20:44:15.779497",
+      "last_checked": "2026-07-10T14:22:36.321692",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/profile/relationships-data.dictionary/certificates-data.dictionary/data-data.dictionary.json": {
       "hash": "f7c0c7410281311258d5f6ea08b4f5c16b81290951806df2e6e1ff0c804a4bda",
-      "last_checked": "2026-07-07T20:44:15.902964",
+      "last_checked": "2026-07-10T14:22:36.437376",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"fe9a7c44abf87e2e002e544ca9715b02\"",
       "file_path": "documentation/EnterpriseProgramAPI/profile/relationships-data.dictionary/certificates-data.dictionary/data-datadictionary.md"
     },
@@ -2857,15 +2857,15 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/profile/relationships-data.dictionary/certificates-data.dictionary/links.json": {
       "hash": "",
-      "last_checked": "2026-07-07T20:44:16.112670",
+      "last_checked": "2026-07-10T14:22:36.613927",
       "status": "error",
       "error": "HTTP 404"
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/profilecreaterequest/data-data.dictionary/relationships-data.dictionary/bundleid-data.dictionary.json": {
       "hash": "84d95d3bbc2230ed017aba4d6efc0eb6130f5a50fea9c2e6e6f14b93e9a88678",
-      "last_checked": "2026-07-07T20:44:16.190357",
+      "last_checked": "2026-07-10T14:22:36.725780",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"338596d2091a07a52a71b12db58866e1\"",
       "file_path": "documentation/EnterpriseProgramAPI/profilecreaterequest/data-data.dictionary/relationships-data.dictionary/bundleid-datadictionary.md"
     },
@@ -2879,9 +2879,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/profilecreaterequest/data-data.dictionary/relationships-data.dictionary/certificates-data.dictionary.json": {
       "hash": "9890891d71a289a503a8ce2461d1b26df1d0362614ea7d38e47a37f78115ec0f",
-      "last_checked": "2026-07-07T20:44:16.378527",
+      "last_checked": "2026-07-10T14:22:36.833775",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"74399753943f3f5e76b74e7615470269\"",
       "file_path": "documentation/EnterpriseProgramAPI/profilecreaterequest/data-data.dictionary/relationships-data.dictionary/certificates-datadictionary.md"
     },
@@ -2895,9 +2895,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/profilecreaterequest/data-data.dictionary/relationships-data.dictionary/devices-data.dictionary.json": {
       "hash": "4546002d23b1b793c79b1c40e43bd66422956f04120dfabd6fc80d1271f277b2",
-      "last_checked": "2026-07-07T20:44:16.514301",
+      "last_checked": "2026-07-10T14:22:36.970610",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"760ce2df91a9ed49600e54e2173f7c54\"",
       "file_path": "documentation/EnterpriseProgramAPI/profilecreaterequest/data-data.dictionary/relationships-data.dictionary/devices-datadictionary.md"
     },
@@ -2911,9 +2911,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/bundleidcapabilitycreaterequest/data-data.dictionary/relationships-data.dictionary/bundleid-data.dictionary/data-data.dictionary.json": {
       "hash": "7a41d1e18b148e2ad54bf83c7d33bceed4d2944db49adba40dfe277afcdd1963",
-      "last_checked": "2026-07-07T20:44:16.695855",
+      "last_checked": "2026-07-10T14:22:37.105273",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"040d93f550932648d2e52af3b2e7b16e\"",
       "file_path": "documentation/EnterpriseProgramAPI/bundleidcapabilitycreaterequest/data-data.dictionary/relationships-data.dictionary/bundleid-data.dictionary/data-datadictionary.md"
     },
@@ -2927,9 +2927,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/certificatecreaterequest/data-data.dictionary/relationships-data.dictionary/passtypeid-data.dictionary/data-data.dictionary.json": {
       "hash": "26169e7b45a4914d851a549ca38a52d421c7be01b8c60f5cd7abac44b657026f",
-      "last_checked": "2026-07-07T20:44:16.813090",
+      "last_checked": "2026-07-10T14:22:37.239507",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"8620515393700e43a553e98e9fe94604\"",
       "file_path": "documentation/EnterpriseProgramAPI/certificatecreaterequest/data-data.dictionary/relationships-data.dictionary/passtypeid-data.dictionary/data-datadictionary.md"
     },
@@ -2943,9 +2943,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/profilecreaterequest/data-data.dictionary/relationships-data.dictionary/bundleid-data.dictionary/data-data.dictionary.json": {
       "hash": "a9393c72732f2e4a7664e84d4175c47ed657b7a5c87bbe8d5dea2683a1d7f11d",
-      "last_checked": "2026-07-07T20:44:16.991030",
+      "last_checked": "2026-07-10T14:22:37.378658",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"0ba9d134d54577661f0db916003648e1\"",
       "file_path": "documentation/EnterpriseProgramAPI/profilecreaterequest/data-data.dictionary/relationships-data.dictionary/bundleid-data.dictionary/data-datadictionary.md"
     },
@@ -2959,9 +2959,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/profilecreaterequest/data-data.dictionary/relationships-data.dictionary/certificates-data.dictionary/data-data.dictionary.json": {
       "hash": "714105e147706e8760e0670b98dfe745dcc56c015a206b8472bc2b78ad7eba0a",
-      "last_checked": "2026-07-07T20:44:17.137942",
+      "last_checked": "2026-07-10T14:22:37.494051",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"99afde3920cf89807621d73ef52f4afe\"",
       "file_path": "documentation/EnterpriseProgramAPI/profilecreaterequest/data-data.dictionary/relationships-data.dictionary/certificates-data.dictionary/data-datadictionary.md"
     },
@@ -2975,9 +2975,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/enterpriseprogramapi/profilecreaterequest/data-data.dictionary/relationships-data.dictionary/devices-data.dictionary/data-data.dictionary.json": {
       "hash": "b66298a5b46631eafcefb18101e57405a0444930b4479fdce0e43375a10f4c76",
-      "last_checked": "2026-07-07T20:44:17.303831",
+      "last_checked": "2026-07-10T14:22:37.623816",
       "status": "unchanged",
-      "session_id": "2026-07-07T20:43:46.175271",
+      "session_id": "2026-07-10T14:21:57.184332",
       "etag": "W/\"b941c67496e28ef0cc9ea7b7a8370b1c\"",
       "file_path": "documentation/EnterpriseProgramAPI/profilecreaterequest/data-data.dictionary/relationships-data.dictionary/devices-data.dictionary/data-datadictionary.md"
     },

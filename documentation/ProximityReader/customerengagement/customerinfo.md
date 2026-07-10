@@ -20,9 +20,13 @@ struct CustomerInfo
 
 If none of the customer information is available, this structure can return with all the values being nil
 
+Contact information and Wallet pass data shared by a customer during an engagement session.
+
+You receive a `CustomerInfo` value when                    [`requestCustomerInfo(for:fields:message:)`](customerengagementsession/requestcustomerinfo(for:fields:message:).md) successfully completes. Each property is non`nil` only if you included the corresponding [`CustomerEngagementSession.Field`](customerengagementsession/field.md) in the request and the customer chose to share it.
+
 ## Topics
 
-### Instance Properties
+### Getting customer information details
 - [let barcodeMessage: String?](customerengagement/customerinfo/barcodemessage.md)
   A message for the barcode.
 - [let customerVASData: Data?](customerengagement/customerinfo/customervasdata.md)
@@ -37,6 +41,15 @@ If none of the customer information is available, this structure can return with
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [CustomerEngagement.Address](customerengagement/address.md)
+  A customer’s address collected during a customer engagement session.
+- [CustomerEngagement.SignUp](customerengagement/signup.md)
+  Contact information and marketing consent selections a customer provides during a sign-up request.
+- [CustomerEngagement.ShoppingCart](customerengagement/shoppingcart.md)
+  A structure that describes the shopping cart content.
 
 
 ---

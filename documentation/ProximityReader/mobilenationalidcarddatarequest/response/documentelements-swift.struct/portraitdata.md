@@ -8,7 +8,6 @@ The portrait data of the mobile national ID card holder on record with the issue
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 
 ## Declaration
 

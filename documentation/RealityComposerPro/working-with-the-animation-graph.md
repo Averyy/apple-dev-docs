@@ -128,6 +128,10 @@ To apply your animation graph to an entity:
 
 - [Creating animation sequences](creating-animation-sequences.md)
   Build and customize animation sequences to control entity movement and behavior in your scene.
+- [Building a navmesh in Reality Composer Pro](building-a-navmesh-in-reality-composer-pro.md)
+  Configure a navigation mesh in Reality Composer Pro to define walkable areas and paths for AI-controlled entities in your scene.
+- [Defining a behavior with Behavior Trees](defining-a-behavior-with-behavior-trees.md)
+  Set up and connect Behavior Tree nodes to drive entity decision-making in your scene.
 
 
 ---

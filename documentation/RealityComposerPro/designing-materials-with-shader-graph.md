@@ -44,9 +44,9 @@ If you build a node graph and connect it to the **Surface Shader** pin on the ou
 
 Nodes represent values and operations and serve the same purpose as either a variable, constant, or function in Metal.
 
-To get the sine of a value, for example, connect the value’s output pin to the input pin of a [`Sin`](https://developer.apple.com/documentation/ShaderGraph/Math/Sin) node.
+To get the sine of a value, for example, connect the value’s output pin to the input pin of a doc://com.apple.documentation/documentation/shadergraph/math/sin node.
 
-Shader Graph contains nodes that either connect to a specific output or perform an operation, such as calculation or logic. If a node’s name starts with **Geometry Modifier,** you can only connect it to the **Geometry Modifier** output pin. If a node’s name starts with **Surface,** you can only connect it to the **Custom Surface** output pin. Nodes like `Sin` or [`If Equal`](https://developer.apple.com/documentation/ShaderGraph/Logic/If-Equal) aren’t tied to specific outputs and just perform an operation.
+Shader Graph contains nodes that either connect to a specific output or perform an operation, such as calculation or logic. If a node’s name starts with **Geometry Modifier,** you can only connect it to the **Geometry Modifier** output pin. If a node’s name starts with **Surface,** you can only connect it to the **Custom Surface** output pin. Nodes like `Sin` or doc://com.apple.documentation/documentation/shadergraph/logic/if-equal aren’t tied to specific outputs and just perform an operation.
 
 > 💡 **Tip**: Node connections must be between compatible input and output types. For example, a boolean output can’t connect to a matrix input.
 
@@ -62,7 +62,7 @@ Using the Input Inspector, you can set three types of material parameters throug
 
 - **Constant** — A constant can only be adjusted when editing in the Shader Graph. This is a value which is baked into the shader. This value is opaque at runtime and immutable. Within the context of the editor constant input, it is driven from the UI and is useful for tweaking values without entering the graph editor for the material asset. All subgraph inputs are constant.
 
-> **Note**: Setting an input as constant is the same as authoring a constant node. See [`Procedural`](https://developer.apple.com/documentation/ShaderGraph/Procedural) for more detailed information.
+> **Note**: Setting an input as constant is the same as authoring a constant node. See doc://com.apple.documentation/documentation/shadergraph/procedural for more detailed information.
 
 - **Function Constant** — Use function constants to optimize shader performance. You access and set this material input at runtime, which causes the shader to fully recompile. After recompilation, the system bakes this value into the shader. In the API, these correspond to [`MTLFunctionConstantValues`](https://developer.apple.com/documentation/Metal/MTLFunctionConstantValues). For more information, see `MTLFunctionConstantValues`.
 

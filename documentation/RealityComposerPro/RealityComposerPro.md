@@ -73,20 +73,18 @@ This release of Reality Composer Pro is a complete 3D development platform. The 
 ### Particle Emitter
 - [Creating particle systems in Reality Composer Pro](creating-particle-systems-in-reality-composer-pro.md)
   Add Particle Emitters and Particles to scenes to create nearly any type of visual effect.
-### Script graph
-- [Getting started with script graphs](getting-started-with-script-graphs.md)
-  Build interactive, code-free 3D experiences using the visual node-based script graph editor.
-### Character Intelligence
-- [Defining a behavior with Behavior Trees](defining-a-behavior-with-behavior-trees.md)
-  Set up and connect Behavior Tree nodes to drive entity decision-making in your scene.
-### Navmesh
-- [Building a navmesh in Reality Composer Pro](building-a-navmesh-in-reality-composer-pro.md)
-  Configure a navigation mesh in Reality Composer Pro to define walkable areas and paths for AI-controlled entities in your scene.
+### Script Graph
+- [Getting started with Script Graphs](getting-started-with-script-graphs.md)
+  Build interactive, code-free 3D experiences using a visual, node-based editor in Reality Composer Pro.
 ### Animation
 - [Creating animation sequences](creating-animation-sequences.md)
   Build and customize animation sequences to control entity movement and behavior in your scene.
 - [Working with the Animation Graph](working-with-the-animation-graph.md)
   Define and control character animations using a visual, node-based state machine in Reality Composer Pro.
+- [Building a navmesh in Reality Composer Pro](building-a-navmesh-in-reality-composer-pro.md)
+  Configure a navigation mesh in Reality Composer Pro to define walkable areas and paths for AI-controlled entities in your scene.
+- [Defining a behavior with Behavior Trees](defining-a-behavior-with-behavior-trees.md)
+  Set up and connect Behavior Tree nodes to drive entity decision-making in your scene.
 ### Assistant
 - [Working with the Reality Composer Pro Assistant](working-with-the-reality-composer-pro-assistant.md)
   Connect an AI model to Reality Composer Pro to generate assets and get contextual help building scenes.

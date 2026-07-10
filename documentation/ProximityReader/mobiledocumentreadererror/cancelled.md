@@ -8,7 +8,6 @@ An error that indicates the mobile document request was canceled.
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst 17.0+
 
 ## Declaration
 

@@ -18,6 +18,10 @@ object ConsumptionRequestV1
 
 - [App Store Server API changelog](app-store-server-api-changelog.md)
 
+#### Overview
+
+> ❗ **Important**:  For App Store In-App Purchases that don’t use the Advanced Commerce API, use [`ConsumptionRequest`](consumptionrequest.md) with the [`Send Consumption Information`](send-consumption-information.md) endpoint instead.
+
 #### Discussion
 
 Use `ConsumptionRequestV1` to provide information about the customer’s consumable in-app purchase or auto-renewable subscription when you call the [`Send Consumption Information V1`](send-consumption-information-v1.md) endpoint.
@@ -88,14 +92,12 @@ For more information about App Store Server Notifications versions, see [`App St
 
 ## See Also
 
-- [Get Transaction History V1](get-transaction-history-v1.md)
-  Get a customer’s in-app purchase transaction history for your app, except finished consumable in-app purchases.
-- [Get Refund History V1](get-refund-history-v1.md)
-  Get a list of up to 50 of a customer’s refunded in-app purchases for your app.
+- [Send Consumption Information](send-consumption-information.md)
+  Send consumption information about an In-App Purchase to the App Store after your server receives a consumption request notification.
+- [object ConsumptionRequest](consumptionrequest.md)
+  The request body that contains consumption information for an In-App Purchase.
 - [Send Consumption Information V1](send-consumption-information-v1.md)
   Send consumption information about a consumable In-App Purchase or auto-renewable subscription to the App Store after your server receives a consumption request notification.
-- [object RefundLookupResponse](refundlookupresponse.md)
-  A response that contains an array of signed JSON Web Signature (JWS) transactions.
 
 
 ---

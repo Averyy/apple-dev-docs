@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-07-07T21:57:29.164497",
-    "total_files": 826,
+    "last_updated": "2026-07-10T15:32:52.874797",
+    "total_files": 829,
     "source": "scrape_mlx_docs.py"
   },
   "hashes": {
@@ -830,6 +830,9 @@
     "MLX:https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.TransformerEncoder.html": "0779a76839710a46b8c10617352828ef0379aa401cb5517b37c6a5f64aab60a6",
     "MLX:https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.TransformerEncoderLayer.html": "4eb80cb89727324d7628849d5349d17618d87231dcfb4fb645cf40a279f4b4d8",
     "MLX:https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.init.orthogonal.html": "27b4a0870bdf88f18644cddd21c68ac909235f71161689b912a927b76301e58b",
-    "MLX:https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.init.sparse.html": "b10b913598aaacabfa9ad57748059c10e6affcedf88ee4778a5c1668e0fa8138"
+    "MLX:https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.init.sparse.html": "b10b913598aaacabfa9ad57748059c10e6affcedf88ee4778a5c1668e0fa8138",
+    "MLX:https://ml-explore.github.io/mlx/build/html/": "faf389f3553a58234a4a9b0fb081723e4b9953ab1e6d1e1bed7842cec2572efe",
+    "MLX-Data:https://ml-explore.github.io/mlx-data/build/html/": "f7b15ec72de8291c9f1fba9d18874279db261e71c4b70d8fb16d3efb831b19fd",
+    "coremltools:https://apple.github.io/coremltools/docs-guides/": "8add59f1bd30df69414fbffe8d8017a12a1155f4edd771d658f96cf566733c36"
   }
 }

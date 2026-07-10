@@ -8,7 +8,6 @@ An object that customizes how to perform a display request.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
-- Mac Catalyst 18.0+
 
 ## Declaration
 

@@ -8,7 +8,6 @@ A button that enables the user to perform a single document request.
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
-- Mac Catalyst 17.0+
 
 ## Declaration
 
