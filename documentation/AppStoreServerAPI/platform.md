@@ -6,7 +6,7 @@
 The platform on which the customer consumed the in-app purchase.
 
 **Availability**:
-- App Store Server API ?+ - Deprecated
+- App Store Server API 1.0+
 
 ## Declaration
 

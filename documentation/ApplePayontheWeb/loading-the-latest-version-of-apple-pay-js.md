@@ -33,12 +33,12 @@ A backward-compatible new release that contains only bug fixes increases the pat
 
 ##### Use Integrity Checks
 
-If you’re using a semantic version of the SDK, adding an integrity check is a best practice when you load libraries from a third-party source. Subresource Integrity (SRI) uses the integrity and cross-origin attributes to ensure that information hosted on third-party servers isn’t tampered with. For more information on SRI, see [`srihash.org`](https://developer.apple.comhttps://www.srihash.org). The following example shows the script for loading Apple Pay JS SDK version `1.3.2`:
+If you’re using a semantic version of the SDK, adding an integrity check is a best practice when you load libraries from a third-party source. Subresource Integrity (SRI) uses the integrity and cross-origin attributes to ensure that information hosted on third-party servers isn’t tampered with. For more information on SRI, see [`srihash.org`](https://developer.apple.comhttps://www.srihash.org). The following example shows the script for loading Apple Pay JS SDK version `1.3.8`:
 
 ```javascript
 <head>
     <script crossorigin 
-        src="https://applepay.cdn-apple.com/jsapi/v1.3.2/apple-pay-sdk.js" integrity="sha384-DZRWMZLyVXr+7shJfal8pIG2v4KisLoSWFjZQMUv0+GWaCwoa82qeHsWrbBIUDPU" crossorigin="anonymous">
+        src="https://applepay.cdn-apple.com/jsapi/v1.3.8/apple-pay-sdk.js" integrity="sha384-u/9mOkmShCO0v+dqCAZFhiutJuORfzvuyM5i+676iy7mLSWS6rlllHrIt15f/mqH" crossorigin="anonymous">
     </script>
 </head>
 

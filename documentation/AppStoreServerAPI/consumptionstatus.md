@@ -6,7 +6,7 @@
 A value that indicates the extent to which the customer consumed the In-App Purchase.
 
 **Availability**:
-- App Store Server API ?+ - Deprecated
+- App Store Server API 1.0+
 
 ## Declaration
 

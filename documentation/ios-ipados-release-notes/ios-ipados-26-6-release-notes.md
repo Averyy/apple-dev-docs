@@ -1,4 +1,4 @@
-# iOS & iPadOS 26.6 Beta 4 Release Notes
+# iOS & iPadOS 26.6 Beta 5 Release Notes
 
 **Framework**: iOS & iPadOS Release Notes
 
@@ -6,7 +6,7 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The iOS & iPadOS 26.6 SDK provides support to develop apps for iPhone and iPad running iOS & iPadOS 26.6 beta 4. The SDK comes bundled with Xcode 26.6, available from the Mac App Store. For information on the compatibility requirements for Xcode 26.6, see [`Xcode 26.6 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-26_6-release-notes).
+The iOS & iPadOS 26.6 SDK provides support to develop apps for iPhone and iPad running iOS & iPadOS 26.6 beta 5. The SDK comes bundled with Xcode 26.6, available from the Mac App Store. For information on the compatibility requirements for Xcode 26.6, see [`Xcode 26.6 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-26_6-release-notes).
 
 ##### Healthkit
 
@@ -14,6 +14,12 @@ The iOS & iPadOS 26.6 SDK provides support to develop apps for iPhone and iPad r
 
 - Fixed: Authorization Screen not displaying when requesting `HKQuantityTypeIdentifierBloodPressureDiastolic` or `HKQuantityTypeIdentifierBloodPressureSystolic`.  (177652061)
 - Fixed: Temporally-weighted average statistics queries for discrete quantity types such as Resting Heart Rate may return erroneously high values when samples overlap in time.  (178157672)
+
+##### Messages
+
+###### Known Issues
+
+- HDR screenshots might appear garbled when sent in Messages.  (180859837)
 
 ##### Object Capture
 

@@ -6,7 +6,7 @@
 The status of a customer’s account within your app.
 
 **Availability**:
-- App Store Server API ?+ - Deprecated
+- App Store Server API 1.0+
 
 ## Declaration
 

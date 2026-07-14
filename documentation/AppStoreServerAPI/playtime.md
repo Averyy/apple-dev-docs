@@ -6,7 +6,7 @@
 A value that indicates the amount of time that the customer used the app.
 
 **Availability**:
-- App Store Server API ?+ - Deprecated
+- App Store Server API 1.0+
 
 ## Declaration
 

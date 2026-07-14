@@ -287,6 +287,7 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 - After dismissing Lock Screen, the Lock Screen grabber might appear in the incorrect location or orientation.  (178174745)
 - Starting a Vision Pro Guest Mode session might result in two Live Activities on screen at the same time.  (178200601) **Workaround:** Dismiss the Lock Screen and re-lock the device.
 - Siri and Search may still be available when locked even if they are disabled under “Allow Access When Locked” in Settings.  (178283603)
+- Portions of Depth Effect–enabled wallpapers might appear earlier than expected while pulling down Notification Center.  (181621150)
 
 ##### Mail
 

@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-07-10T14:22:54.794081",
+    "last_updated": "2026-07-14T07:43:28.527047",
     "total_pages": 300,
-    "session_id": "2026-07-10T14:22:32.818219"
+    "session_id": "2026-07-14T07:43:06.139636"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/ShazamKit.json": {
       "hash": "69fa3a70cbc9bb6abd21b09155c196de5d8883d583f36179ed336fa86d9c4d95",
-      "last_checked": "2026-07-10T14:22:33.125703",
+      "last_checked": "2026-07-14T07:43:06.490355",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"32c80066e05913fd1e24f19594e9c4f9\"",
       "file_path": "documentation/ShazamKit/ShazamKit.md"
     },
     "https://developer.apple.com/documentation/ShazamKit": {
       "hash": "69fa3a70cbc9bb6abd21b09155c196de5d8883d583f36179ed336fa86d9c4d95",
-      "last_checked": "2026-07-10T14:22:33.022226",
+      "last_checked": "2026-07-14T07:43:06.372954",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"32c80066e05913fd1e24f19594e9c4f9\"",
       "file_path": "documentation/ShazamKit/ShazamKit.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shsession.json": {
       "hash": "1509ab019712b31034d8cdc8092397608ca059bea5b65c2791849822d500e044",
-      "last_checked": "2026-07-10T14:22:33.439031",
+      "last_checked": "2026-07-14T07:43:06.705089",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"e93ae5229774ccaf72374ab4172233f7\"",
       "file_path": "documentation/ShazamKit/shsession.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shmanagedsession.json": {
       "hash": "bc0db454a6a84511000b136dab24475c72de134bd690a1c3110acc640fb876b0",
-      "last_checked": "2026-07-10T14:22:33.576405",
+      "last_checked": "2026-07-14T07:43:06.845482",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"15d2370eecab65dcbd91ee531b4e6d61\"",
       "file_path": "documentation/ShazamKit/shmanagedsession.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shsessiondelegate.json": {
       "hash": "1e3f720de1337714c11905dc626246b44326a3ff2202cfa26535b2f0dcba6e35",
-      "last_checked": "2026-07-10T14:22:33.750499",
+      "last_checked": "2026-07-14T07:43:07.033297",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"3a65515b279e8c0d32c321ac2ea88415\"",
       "file_path": "documentation/ShazamKit/shsessiondelegate.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shmatch.json": {
       "hash": "7462481cca36b355eccf3fdcec56f48f7dabafce736b0462d84c60424895c18e",
-      "last_checked": "2026-07-10T14:22:34.065862",
+      "last_checked": "2026-07-14T07:43:07.220157",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"3c703a3e2e2312ad6cacd912161a4a94\"",
       "file_path": "documentation/ShazamKit/shmatch.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shmatchedmediaitem.json": {
       "hash": "c200c991ec51404b49e265b0f181f8b6e08b07cec649da4b540f664f51dfb956",
-      "last_checked": "2026-07-10T14:22:34.177079",
+      "last_checked": "2026-07-14T07:43:07.362792",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"cf7ff3dc2188574fa723493a49dbc107\"",
       "file_path": "documentation/ShazamKit/shmatchedmediaitem.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shmediaitem.json": {
       "hash": "16b92a1283f06dd2389ae507df478562924f44f00d1c1492122702306ebcb1ea",
-      "last_checked": "2026-07-10T14:22:34.306254",
+      "last_checked": "2026-07-14T07:43:07.553290",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"f6846a91887f5cdd1bc3e6f2ede0300e\"",
       "file_path": "documentation/ShazamKit/shmediaitem.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shsignature.json": {
       "hash": "7782c88a9b63a0fd5916df83b4a62536379cbc62d26590e13c00c3700a05f4b4",
-      "last_checked": "2026-07-10T14:22:34.472278",
+      "last_checked": "2026-07-14T07:43:07.716413",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"36e9c59dced9e64351280c11ca1b82b4\"",
       "file_path": "documentation/ShazamKit/shsignature.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shsignaturegenerator.json": {
       "hash": "0cfd315b701628dec2315393d194fe52dcd37322ff98dfa048a81b5fc47f4dbf",
-      "last_checked": "2026-07-10T14:22:34.602097",
+      "last_checked": "2026-07-14T07:43:07.839357",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"b8d3dc222c4c281b4e5e58b049afd34d\"",
       "file_path": "documentation/ShazamKit/shsignaturegenerator.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/building-a-custom-catalog-and-matching-audio.json": {
       "hash": "9e5bc4e35671eced55462f247dea627c484e44ab475a437303d2ca6d11b87c9c",
-      "last_checked": "2026-07-10T14:22:34.781206",
+      "last_checked": "2026-07-14T07:43:08.041696",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"594006fefd423b557747982456a1caa2\"",
       "file_path": "documentation/ShazamKit/building-a-custom-catalog-and-matching-audio.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shazamkit-dance-finder-with-managed-session.json": {
       "hash": "3aba46245b64d06fb38adfd7a0a061401d6dce2be59402b8babc5e127d7e7a6a",
-      "last_checked": "2026-07-10T14:22:35.083069",
+      "last_checked": "2026-07-14T07:43:08.243628",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"337b62a76f382dacd8325a33877c3fd5\"",
       "file_path": "documentation/ShazamKit/shazamkit-dance-finder-with-managed-session.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shcustomcatalog.json": {
       "hash": "8189e2bbceaebd36f4b03cd35a4b40164972ab7860a54905634ea4cc2f83b042",
-      "last_checked": "2026-07-10T14:22:35.257384",
+      "last_checked": "2026-07-14T07:43:08.417122",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"3da77655de0a702aa2a61a7e7fb9d032\"",
       "file_path": "documentation/ShazamKit/shcustomcatalog.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shcatalog.json": {
       "hash": "3a4be999f4c45e7a77fa8a8aa929a55e8068da8950aa43f6a237b50d2a97589d",
-      "last_checked": "2026-07-10T14:22:35.425534",
+      "last_checked": "2026-07-14T07:43:08.557929",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"aed00180851aba7f005c8f552b930c24\"",
       "file_path": "documentation/ShazamKit/shcatalog.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shlibrary.json": {
       "hash": "4116de973eb5cd266f0e07b0be6694bb39c3dc1aaf1313b0e79023d101e3d3c1",
-      "last_checked": "2026-07-10T14:22:35.610319",
+      "last_checked": "2026-07-14T07:43:08.687051",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"a3f658b486364d9cda7aa29f59e0ad49\"",
       "file_path": "documentation/ShazamKit/shlibrary.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shmedialibrary.json": {
       "hash": "00e42b2251ce00c57ba5695e9545ef5cdd0a3a9820ada85b5e305310af8f19ea",
-      "last_checked": "2026-07-10T14:22:35.726107",
+      "last_checked": "2026-07-14T07:43:08.813795",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"c3c24e95ddd9b7cdf58b745c816c9ac4\"",
       "file_path": "documentation/ShazamKit/shmedialibrary.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/sherror.json": {
       "hash": "f20ff9b05a12562212779424fc680bec4b68f51a4c82e4d21667c454aca2587a",
-      "last_checked": "2026-07-10T14:22:35.847393",
+      "last_checked": "2026-07-14T07:43:09.007404",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"a620fc8bd98362b6627a873d3a52ecd3\"",
       "file_path": "documentation/ShazamKit/sherror.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shazamkit-enumerations.json": {
       "hash": "eef2c25d96769ddf92f72592245e409337ccc7a0e3bfbc1f6f444d2dfc7835f1",
-      "last_checked": "2026-07-10T14:22:36.038649",
+      "last_checked": "2026-07-14T07:43:09.163810",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"dcced1b264abb768c7c6549381201b7a\"",
       "file_path": "documentation/ShazamKit/shazamkit-enumerations.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shazamkit-constants.json": {
       "hash": "d2d5fae8a48a85f34b234688c8828db00ad854af473286786d37337c4518610e",
-      "last_checked": "2026-07-10T14:22:36.164416",
+      "last_checked": "2026-07-14T07:43:09.355170",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"5cdc257b616ee78a5de33b1bdad9bf1b\"",
       "file_path": "documentation/ShazamKit/shazamkit-constants.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shsession/init().json": {
       "hash": "ec4613d3820424db3989c4f4f80dd0b78534652a107130aa865f4825c13b0de6",
-      "last_checked": "2026-07-10T14:22:36.305760",
+      "last_checked": "2026-07-14T07:43:09.481794",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"268f5b0ffafa4f59b63af267dd982a01\"",
       "file_path": "documentation/ShazamKit/shsession/init.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shsession/init(catalog:).json": {
       "hash": "89d4b4b1d2092f78d15a4d4af19066b109958ead7ce0920f6f923b5ea770cdb5",
-      "last_checked": "2026-07-10T14:22:36.456708",
+      "last_checked": "2026-07-14T07:43:09.680967",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"be01c429ee88dcd74458f35a6258306a\"",
       "file_path": "documentation/ShazamKit/shsession/init-catalog.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shsession/match(_:).json": {
       "hash": "9b49f7833baa8856259843fc1029e12b6de221ae133d85b090df67791199673c",
-      "last_checked": "2026-07-10T14:22:36.645892",
+      "last_checked": "2026-07-14T07:43:09.875193",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"79c4af8ff89510e657ffc2ae8f170246\"",
       "file_path": "documentation/ShazamKit/shsession/match.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shsession/matchstreamingbuffer(_:at:).json": {
       "hash": "fe49469be2df5bb2393f83934c27653a87ece48be4fac8da7e5381865c74e406",
-      "last_checked": "2026-07-10T14:22:36.816768",
+      "last_checked": "2026-07-14T07:43:10.046699",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"0b88692c40378c1304266457dd08f4a2\"",
       "file_path": "documentation/ShazamKit/shsession/matchstreamingbuffer-at.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/matching-audio-using-the-built-in-microphone.json": {
       "hash": "ec96ed9b3fc3eeae0e5da8d254a72f6d2fa86df468260bf8ae8b8f13a5f97123",
-      "last_checked": "2026-07-10T14:22:36.991464",
+      "last_checked": "2026-07-14T07:43:10.174118",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"44657795c5f32d6a11a027f5425cd48d\"",
       "file_path": "documentation/ShazamKit/matching-audio-using-the-built-in-microphone.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shsession/delegate.json": {
       "hash": "d5d2e28c10ab34a142fd59dc6495c3123ce22ae030bfc97d62213c11640f72f3",
-      "last_checked": "2026-07-10T14:22:37.154309",
+      "last_checked": "2026-07-14T07:43:10.354394",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"c808a8caf01521eb67ba8c88ddcdb62e\"",
       "file_path": "documentation/ShazamKit/shsession/delegate.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shsession/catalog.json": {
       "hash": "b9859bf25c4f981e95828ea38ff1d826d20ad3b17f034cf362d45847e3d615f1",
-      "last_checked": "2026-07-10T14:22:37.326378",
+      "last_checked": "2026-07-14T07:43:10.541137",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"6c68c4c686edd055f25549d0d7b94f64\"",
       "file_path": "documentation/ShazamKit/shsession/catalog.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shsession/results-swift.property.json": {
       "hash": "07898df6a701f7616b598bf9368a1e4b42913d604add15e40ef6796ecb95478d",
-      "last_checked": "2026-07-10T14:22:37.458232",
+      "last_checked": "2026-07-14T07:43:10.678261",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"c13c392069fbed043523565376f92643\"",
       "file_path": "documentation/ShazamKit/shsession/results-swiftproperty.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shsession/results-swift.struct.json": {
       "hash": "be35b6fb9b9a94985abc74852a78480b2837e9e1493cc5f17ab23b35d4fcc0dd",
-      "last_checked": "2026-07-10T14:22:37.595880",
+      "last_checked": "2026-07-14T07:43:10.818533",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"d21f48ad09fa7b8251478f4eba1519dd\"",
       "file_path": "documentation/ShazamKit/shsession/results-swiftstruct.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shsession/result(from:).json": {
       "hash": "3f94c69ad67d7518aeca47637b8cf162b8cf57260f463f1d3ea003068d980c4a",
-      "last_checked": "2026-07-10T14:22:37.780207",
+      "last_checked": "2026-07-14T07:43:10.956478",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"37b91518f8664f2f1906a8d42db312f0\"",
       "file_path": "documentation/ShazamKit/shsession/result-from.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shsession/result.json": {
       "hash": "fe4322bac8263f811ed2450825261d71d94b629d9716256858fb7cd92f3fe532",
-      "last_checked": "2026-07-10T14:22:37.910075",
+      "last_checked": "2026-07-14T07:43:11.165980",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"7118eeb8fe864380fb005578a70b4ac5\"",
       "file_path": "documentation/ShazamKit/shsession/result.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shmanagedsession/init().json": {
       "hash": "fadfa5cc607b270e18c436b2c7e8b1831297019afad49512a6e032fddd5d3f14",
-      "last_checked": "2026-07-10T14:22:38.053605",
+      "last_checked": "2026-07-14T07:43:11.303494",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"896e5a7f6f8c2e0a613beab9259f76d7\"",
       "file_path": "documentation/ShazamKit/shmanagedsession/init.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shmanagedsession/init(catalog:).json": {
       "hash": "787de8cc04ef08d4b48756e51349c2bfbc63b6cacc3116377057116267d63949",
-      "last_checked": "2026-07-10T14:22:38.183362",
+      "last_checked": "2026-07-14T07:43:11.448255",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"e1bc430a48ee36274fd88557dd0cecf4\"",
       "file_path": "documentation/ShazamKit/shmanagedsession/init-catalog.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shmanagedsession/state-swift.property.json": {
       "hash": "cdc858f7018dd4e227e6015d9f9932331cc315c464d21aebdee2a1388a6985ad",
-      "last_checked": "2026-07-10T14:22:38.329006",
+      "last_checked": "2026-07-14T07:43:11.577754",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"bc85a501564c9d9fbcb426d900d7daf8\"",
       "file_path": "documentation/ShazamKit/shmanagedsession/state-swiftproperty.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shmanagedsession/state-swift.enum.json": {
       "hash": "43a75f5f3f0be722ca479ddffbce61b1c22e396a156790aa62feac5dba9c066b",
-      "last_checked": "2026-07-10T14:22:38.497678",
+      "last_checked": "2026-07-14T07:43:11.706183",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"d4d37843f4e1944c3ab62c9f14ca70f6\"",
       "file_path": "documentation/ShazamKit/shmanagedsession/state-swiftenum.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shmanagedsession/result().json": {
       "hash": "3771065781f4beabeff0beb6c3c360d0192269cee22281a0129c2507f71f113c",
-      "last_checked": "2026-07-10T14:22:38.627621",
+      "last_checked": "2026-07-14T07:43:11.848661",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"d4e6cb827f7212f44b38d371dd931525\"",
       "file_path": "documentation/ShazamKit/shmanagedsession/result.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shmanagedsession/results.json": {
       "hash": "daae2c0e2f46cb46607afec4cef01e50eb4a82233fb7b045c5b63750c5b29898",
-      "last_checked": "2026-07-10T14:22:38.813139",
+      "last_checked": "2026-07-14T07:43:12.023667",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"9fb3e3e90b53a66f475e3c96b031d15b\"",
       "file_path": "documentation/ShazamKit/shmanagedsession/results.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shmanagedsession/cancel().json": {
       "hash": "95765e9a17028a9dc062f285da73d1a21daab017567d69488112fc1d838130ce",
-      "last_checked": "2026-07-10T14:22:38.984353",
+      "last_checked": "2026-07-14T07:43:12.163899",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"a6657646e5703692c23e22c4c7d35a6d\"",
       "file_path": "documentation/ShazamKit/shmanagedsession/cancel.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shmanagedsession/prepare().json": {
       "hash": "cb9c3b885cf20da8b2b01a7d9ccafa91d054ca780d8e203f123eb7e5e7442c10",
-      "last_checked": "2026-07-10T14:22:39.106374",
+      "last_checked": "2026-07-14T07:43:12.301547",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"edfa8751ebdab07a8d62dd52be1800de\"",
       "file_path": "documentation/ShazamKit/shmanagedsession/prepare.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shsessiondelegate/session(_:didfind:).json": {
       "hash": "4b1cd2204ee2a7533fe2d0c1d7f3f1dfd18c837f40fc2e8614e30a52608939ab",
-      "last_checked": "2026-07-10T14:22:39.263532",
+      "last_checked": "2026-07-14T07:43:12.446729",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"ed4d96f74316bd34fd2d8a830ee36858\"",
       "file_path": "documentation/ShazamKit/shsessiondelegate/session-didfind.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shsessiondelegate/session(_:didnotfindmatchfor:error:).json": {
       "hash": "781b59290a217801570001c2e4604fc172ce441f6e59fd0e1dd7fcf663639efe",
-      "last_checked": "2026-07-10T14:22:39.456707",
+      "last_checked": "2026-07-14T07:43:12.571945",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"75aebc0b65be2cfa16a2ccd72e2bc221\"",
       "file_path": "documentation/ShazamKit/shsessiondelegate/session-didnotfindmatchforerror.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shmatch/mediaitems.json": {
       "hash": "04ef77c79eb83c17c7112137dd54dc38fe92077bba35651ce93ecf2ba25d056f",
-      "last_checked": "2026-07-10T14:22:39.606437",
+      "last_checked": "2026-07-14T07:43:12.717601",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"59fcd60d51546d8b13b7ebde05a1dfd5\"",
       "file_path": "documentation/ShazamKit/shmatch/mediaitems.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shmatch/querysignature.json": {
       "hash": "60ecf4e0e707db9befc8a8c6fb3532e719533e2c36d49ffafed9279cb7de77a5",
-      "last_checked": "2026-07-10T14:22:39.736659",
+      "last_checked": "2026-07-14T07:43:12.867172",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"f504348dc8452cffabf354d48217194f\"",
       "file_path": "documentation/ShazamKit/shmatch/querysignature.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shmatchedmediaitem/matchoffset.json": {
       "hash": "70c71b50018a37ad10818c338597a06a94c2f2b09c76c1efe6000a407c92d773",
-      "last_checked": "2026-07-10T14:22:40.022701",
+      "last_checked": "2026-07-14T07:43:13.170345",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"419fe4fdcd33ac63cb32c99dbf53cb63\"",
       "file_path": "documentation/ShazamKit/shmatchedmediaitem/matchoffset.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shmatchedmediaitem/predictedcurrentmatchoffset.json": {
       "hash": "22c038fb9bab46e6453cff4607aad0b577f0fa17c44423b9c2844ae3e790345f",
-      "last_checked": "2026-07-10T14:22:40.175528",
+      "last_checked": "2026-07-14T07:43:13.301899",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"781345ac668f2db2b48370b0facd89b5\"",
       "file_path": "documentation/ShazamKit/shmatchedmediaitem/predictedcurrentmatchoffset.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shmatchedmediaitem/frequencyskew.json": {
       "hash": "c1ad10d766fc1f842ae318fe46354a80d7b3d2847872f561d6a23a8650bba78a",
-      "last_checked": "2026-07-10T14:22:40.292754",
+      "last_checked": "2026-07-14T07:43:13.443354",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"c7d26b78cd1a3b74af0308d31c5a228a\"",
       "file_path": "documentation/ShazamKit/shmatchedmediaitem/frequencyskew.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shmatchedmediaitem/confidence.json": {
       "hash": "d8cfdb1faac3ff48603a42942578f9149260328bc8101d7811565deb99d56a32",
-      "last_checked": "2026-07-10T14:22:40.430068",
+      "last_checked": "2026-07-14T07:43:13.588519",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"b452ba2714efb31038c786613623e92e\"",
       "file_path": "documentation/ShazamKit/shmatchedmediaitem/confidence.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shmediaitem/init(properties:).json": {
       "hash": "522aeffd408ef71cac21f3cf82bf41ff70e1473acc38c421210cbd51d70980b0",
-      "last_checked": "2026-07-10T14:22:40.569285",
+      "last_checked": "2026-07-14T07:43:13.768386",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"7b8be615d57a63f08785e808f8d40553\"",
       "file_path": "documentation/ShazamKit/shmediaitem/init-properties.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shmediaitem/subscript(_:).json": {
       "hash": "ba306b6495362d7e8907a79cbf9599371a411c7d11aa2ceecbe527dfe98231ca",
-      "last_checked": "2026-07-10T14:22:40.697522",
+      "last_checked": "2026-07-14T07:43:13.911008",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"1aa03b0ac9b8960c01b9e139e4e03c52\"",
       "file_path": "documentation/ShazamKit/shmediaitem/subscript.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shmediaitemproperty.json": {
       "hash": "91d9bdd0683f1eefae806767801670c0c7040f8ea4cd914d3b60df959a701d9f",
-      "last_checked": "2026-07-10T14:22:40.871463",
+      "last_checked": "2026-07-14T07:43:14.061248",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"17a91130393adb2d9a035122d46596ac\"",
       "file_path": "documentation/ShazamKit/shmediaitemproperty.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shmediaitem/timeranges-8msna.json": {
       "hash": "5d8d822cb4b4c92d0e82a6b1e208a8539cd592472c3841543fca6b944d238042",
-      "last_checked": "2026-07-10T14:22:41.006388",
+      "last_checked": "2026-07-14T07:43:14.214264",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"dde27b2e53b0a8794be5f72a4b48bd5e\"",
       "file_path": "documentation/ShazamKit/shmediaitem/timeranges-8msna.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shmediaitem/frequencyskewranges-1j7d3.json": {
       "hash": "59c1c82b1cf9a227a743b63279003ecf89d6f410aa2f4036931b24ecdd0979cd",
-      "last_checked": "2026-07-10T14:22:41.169917",
+      "last_checked": "2026-07-14T07:43:14.341693",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"28495a8bbd1083626b850bda6af820d8\"",
       "file_path": "documentation/ShazamKit/shmediaitem/frequencyskewranges-1j7d3.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shmediaitem/title.json": {
       "hash": "fdd08fe25aefc032147a268759d54f11f61cc0a5331a498a7f3fe961d6692669",
-      "last_checked": "2026-07-10T14:22:41.296936",
+      "last_checked": "2026-07-14T07:43:14.488565",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"b55150a1a7aa44170c06dbba447718f4\"",
       "file_path": "documentation/ShazamKit/shmediaitem/title.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shmediaitem/subtitle.json": {
       "hash": "4349acb30c56ea40d3142c25be5df5fcf81e186a24614464eaabae4f69ef2621",
-      "last_checked": "2026-07-10T14:22:41.423887",
+      "last_checked": "2026-07-14T07:43:14.624662",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"132bd8d12269275a43c5f1b0b321b77d\"",
       "file_path": "documentation/ShazamKit/shmediaitem/subtitle.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shmediaitem/artist.json": {
       "hash": "a04698eee55b0451f574af8b7f17e15a02f0a6f85255f991a5ac19f4d9448e9e",
-      "last_checked": "2026-07-10T14:22:41.556960",
+      "last_checked": "2026-07-14T07:43:14.746503",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"1afd24332763b7f8bfbfabcf7773a6c2\"",
       "file_path": "documentation/ShazamKit/shmediaitem/artist.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shmediaitem/artworkurl.json": {
       "hash": "3ea27b67fbae8029e4ab4363030d7b0848cd27deb27d84c1622666d09d10639a",
-      "last_checked": "2026-07-10T14:22:41.693535",
+      "last_checked": "2026-07-14T07:43:14.886010",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"7417425a52f254528538bc847861990e\"",
       "file_path": "documentation/ShazamKit/shmediaitem/artworkurl.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shmediaitem/videourl.json": {
       "hash": "30e50df25253fedcd1d730feaeabb7ac4e3d233a72423699cc300ad01161a3a5",
-      "last_checked": "2026-07-10T14:22:41.823275",
+      "last_checked": "2026-07-14T07:43:15.022988",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"dcebff337214af28e6afe0d2aa1c5a3d\"",
       "file_path": "documentation/ShazamKit/shmediaitem/videourl.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shmediaitem/genres.json": {
       "hash": "55d68146427bf110d2f50cc4a5539cb41236e1d137a4708570f3bbd695decd3b",
-      "last_checked": "2026-07-10T14:22:41.961454",
+      "last_checked": "2026-07-14T07:43:15.149027",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"7535dbd27baea9cac5982cef9787f4b5\"",
       "file_path": "documentation/ShazamKit/shmediaitem/genres.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shmediaitem/explicitcontent.json": {
       "hash": "ee93680b1570740a2532ed6ffb3fc666f44958d40964d11bb6215beebcad224b",
-      "last_checked": "2026-07-10T14:22:42.144141",
+      "last_checked": "2026-07-14T07:43:15.284661",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"8bce57eeea230b1196a5bdbf0adae602\"",
       "file_path": "documentation/ShazamKit/shmediaitem/explicitcontent.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shmediaitem/creationdate.json": {
       "hash": "9cabaa15f68e1d3deb3388466ea119b06db911dbd2600a700a92d8cdbac394cb",
-      "last_checked": "2026-07-10T14:22:42.270111",
+      "last_checked": "2026-07-14T07:43:15.441521",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"3a11601750ce7f822f0046605ea89984\"",
       "file_path": "documentation/ShazamKit/shmediaitem/creationdate.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shmediaitem/isrc.json": {
       "hash": "e5c873ebcd6b1ce5b3684ff9cacd8a8eb5b25c64433580d7667d5e3291f6287c",
-      "last_checked": "2026-07-10T14:22:42.394544",
+      "last_checked": "2026-07-14T07:43:15.580285",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"01fc08aacb65dba4d29e939799545a37\"",
       "file_path": "documentation/ShazamKit/shmediaitem/isrc.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shmediaitem/id.json": {
       "hash": "2ed23a754445205fbd4f172a9c4f9b6b16e16a159cb2666bae56fb5eabbcdd3f",
-      "last_checked": "2026-07-10T14:22:42.518281",
+      "last_checked": "2026-07-14T07:43:15.772279",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"e10d7c4a8f0432eb7a7c3ccdf0ce5232\"",
       "file_path": "documentation/ShazamKit/shmediaitem/id.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shmediaitem/songs.json": {
       "hash": "383855295fa17e551fb68055eeaef0b4ae6e0fde452379655a64e230b08ecd34",
-      "last_checked": "2026-07-10T14:22:42.645291",
+      "last_checked": "2026-07-14T07:43:15.908613",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"faa9fc783308a9609234b0629890b89e\"",
       "file_path": "documentation/ShazamKit/shmediaitem/songs.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shmediaitem/applemusicurl.json": {
       "hash": "1023dad5822d7da673fcea4dd044ccca8a91f41bbb16220e82b840e16de25664",
-      "last_checked": "2026-07-10T14:22:42.788082",
+      "last_checked": "2026-07-14T07:43:16.028440",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"0c0b5dc497645daf2f4384c386902678\"",
       "file_path": "documentation/ShazamKit/shmediaitem/applemusicurl.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shmediaitem/applemusicid.json": {
       "hash": "67a35a1a5cc4109b973d9b7ece4ea57a651db431b62e15e11dc31c228ff935ed",
-      "last_checked": "2026-07-10T14:22:42.918050",
+      "last_checked": "2026-07-14T07:43:16.175142",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"ddfbb8ca57d73e28434fae672a592478\"",
       "file_path": "documentation/ShazamKit/shmediaitem/applemusicid.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shmediaitem/weburl.json": {
       "hash": "2ad2d8111b225b577a8d4c116ba8d4eabafb4c54543ba00b2d99a3ffe4c66661",
-      "last_checked": "2026-07-10T14:22:43.047199",
+      "last_checked": "2026-07-14T07:43:16.324266",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"b1bc70f5ca0cfd67b3fd698d0316f3ec\"",
       "file_path": "documentation/ShazamKit/shmediaitem/weburl.md"
     },
@@ -1031,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shmediaitem/shazamid.json": {
       "hash": "f450000b3bdd58f869303df3b9dc60c4364fce07e55357bf6dd54de63258e4c4",
-      "last_checked": "2026-07-10T14:22:43.180842",
+      "last_checked": "2026-07-14T07:43:16.495216",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"72524c374a1fd45088a5df6f1e835c9e\"",
       "file_path": "documentation/ShazamKit/shmediaitem/shazamid.md"
     },
@@ -1047,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shmediaitem/fetch(shazamid:completionhandler:).json": {
       "hash": "52c0b54e31db6d4cf3595ecb448b02b58e7acd8ef854ddf02df5d67ff56e0b8a",
-      "last_checked": "2026-07-10T14:22:43.328643",
+      "last_checked": "2026-07-14T07:43:16.650129",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"15bfdaac632976976d0772c625170f7c\"",
       "file_path": "documentation/ShazamKit/shmediaitem/fetch-shazamidcompletionhandler.md"
     },
@@ -1063,9 +1063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shmediaitem/identifiable-implementations.json": {
       "hash": "4264642f21c4542e249f6f1eb5253106f86f75a2bc77e9d3bdcbf138374ec6ab",
-      "last_checked": "2026-07-10T14:22:43.723881",
+      "last_checked": "2026-07-14T07:43:17.053403",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"68ba1b232c5f85b19c9dcc966bbf6122\"",
       "file_path": "documentation/ShazamKit/shmediaitem/identifiable-implementations.md"
     },
@@ -1079,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shsignature/init(datarepresentation:).json": {
       "hash": "a82dc31ca257b0931b21b79bceae272c0a049ff93a98b1d83d19708cfbd88236",
-      "last_checked": "2026-07-10T14:22:43.883958",
+      "last_checked": "2026-07-14T07:43:17.184980",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"d14cbf2b42c5f147d473c10064b88c8e\"",
       "file_path": "documentation/ShazamKit/shsignature/init-datarepresentation.md"
     },
@@ -1095,9 +1095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shsignature/datarepresentation.json": {
       "hash": "bcb6b8de6f251bbfbe501e225c36262d3116cbdcdd13d73eb689f62cb7d338d9",
-      "last_checked": "2026-07-10T14:22:43.997530",
+      "last_checked": "2026-07-14T07:43:17.322920",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"8a7280af38d2a4ae12273f88f4ee694e\"",
       "file_path": "documentation/ShazamKit/shsignature/datarepresentation.md"
     },
@@ -1111,9 +1111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shsignature/duration.json": {
       "hash": "e3e99ee6892b1492a5ce8e7de55f16039add26032237b416c399d0ed381a2192",
-      "last_checked": "2026-07-10T14:22:44.128614",
+      "last_checked": "2026-07-14T07:43:17.467592",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"e2d06d7e1f412088e3b1ad05d064a125\"",
       "file_path": "documentation/ShazamKit/shsignature/duration.md"
     },
@@ -1127,9 +1127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shsignature/slices.json": {
       "hash": "aa1f2a5c9412cb7f2ad9350743e872de1b79445c52c59ae851ab4614eb7a20c6",
-      "last_checked": "2026-07-10T14:22:44.398366",
+      "last_checked": "2026-07-14T07:43:17.730842",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"12a134e147f1ed37cc71740352c9b6ca\"",
       "file_path": "documentation/ShazamKit/shsignature/slices.md"
     },
@@ -1143,9 +1143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shsignature/slices(from:duration:stride:).json": {
       "hash": "48aeb2975582d9c39b7ede5763f8d34be8905338eb19f7451a1bc035144a990a",
-      "last_checked": "2026-07-10T14:22:44.266940",
+      "last_checked": "2026-07-14T07:43:17.595799",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"06f8c4aa25627913ad3a7a1b94feb582\"",
       "file_path": "documentation/ShazamKit/shsignature/slices-fromdurationstride.md"
     },
@@ -1159,9 +1159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shsignaturegenerator/append(_:at:).json": {
       "hash": "5411f0f4229ac97038deb978d7fee1428e5e3f35fe82484b02d01b539296e3a1",
-      "last_checked": "2026-07-10T14:22:44.692541",
+      "last_checked": "2026-07-14T07:43:18.059653",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"d42bca5008ba4e7946b73dbbc3f1a8c2\"",
       "file_path": "documentation/ShazamKit/shsignaturegenerator/append-at.md"
     },
@@ -1175,9 +1175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shsignaturegenerator/signature().json": {
       "hash": "0a4a048ce89b49672e29519c2e6d41ed038cdaad219a0946b181c2fe4dea1864",
-      "last_checked": "2026-07-10T14:22:44.821372",
+      "last_checked": "2026-07-14T07:43:18.237280",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"dde7c99a8283631e9f9b06f6a24439ba\"",
       "file_path": "documentation/ShazamKit/shsignaturegenerator/signature.md"
     },
@@ -1191,9 +1191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/generating-a-signature-from-an-audio-buffer.json": {
       "hash": "2660cfdd8059c1f0685ea3cf34aa927799c4d07d16ee68c6b653af4e0f497dac",
-      "last_checked": "2026-07-10T14:22:44.971416",
+      "last_checked": "2026-07-14T07:43:18.382686",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"eb1bd714c906d37c7e735ba10ba6874b\"",
       "file_path": "documentation/ShazamKit/generating-a-signature-from-an-audio-buffer.md"
     },
@@ -1207,9 +1207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shsignaturegenerator/generatesignature(from:completionhandler:).json": {
       "hash": "9d9d9ead9442888b9045cd20c8c7fe3401163ceae8c237dae0102bc63ef4bd20",
-      "last_checked": "2026-07-10T14:22:45.100624",
+      "last_checked": "2026-07-14T07:43:18.532861",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"44d12e6f9ddaff0e711ce3a241ff6d8d\"",
       "file_path": "documentation/ShazamKit/shsignaturegenerator/generatesignature-fromcompletionhandler.md"
     },
@@ -1223,9 +1223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shcustomcatalog/init().json": {
       "hash": "a6e3ff1863aa1a16515cfbb390abc83d1f10c5a29e78da21fdda4a178595b084",
-      "last_checked": "2026-07-10T14:22:45.245066",
+      "last_checked": "2026-07-14T07:43:18.662089",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"b500c42f3f6412be93a6a7347c16760e\"",
       "file_path": "documentation/ShazamKit/shcustomcatalog/init.md"
     },
@@ -1239,9 +1239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shcustomcatalog/addreferencesignature(_:representing:).json": {
       "hash": "ac3cc5dc8d814d846f423319fafea1f3a94875fc31092e4aa625d83702100979",
-      "last_checked": "2026-07-10T14:22:45.403662",
+      "last_checked": "2026-07-14T07:43:18.799098",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"f0935c9791f8c410f6f8a5a9e00536d0\"",
       "file_path": "documentation/ShazamKit/shcustomcatalog/addreferencesignature-representing.md"
     },
@@ -1255,9 +1255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shcustomcatalog/add(from:).json": {
       "hash": "93bebc5a03408fc17ae9f6db7b8656771d233be29dcec4c107cec302805c2740",
-      "last_checked": "2026-07-10T14:22:45.543114",
+      "last_checked": "2026-07-14T07:43:18.950191",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"72dd322cc28112db55189e33eecb82cb\"",
       "file_path": "documentation/ShazamKit/shcustomcatalog/add-from.md"
     },
@@ -1271,9 +1271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shcustomcatalog/write(to:).json": {
       "hash": "e809ff78b267e22b3b20b4ebff8bc951db374688ee5bceef6021cfd637d73867",
-      "last_checked": "2026-07-10T14:22:45.683363",
+      "last_checked": "2026-07-14T07:43:19.130171",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"16386181852b50a325e259442c733958\"",
       "file_path": "documentation/ShazamKit/shcustomcatalog/write-to.md"
     },
@@ -1287,9 +1287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shcustomcatalog/init(datarepresentation:).json": {
       "hash": "a86f54fd3e8e5a54860c97a86a8591c3ddb46ef702ba04a3ea4c8f10f5fbd006",
-      "last_checked": "2026-07-10T14:22:45.797803",
+      "last_checked": "2026-07-14T07:43:19.277812",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"eeb4df87c1e2bd11535ea1eacad786f7\"",
       "file_path": "documentation/ShazamKit/shcustomcatalog/init-datarepresentation.md"
     },
@@ -1303,9 +1303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shcustomcatalog/datarepresentation.json": {
       "hash": "160a881d2e6d1a6d30ade6476099a221441718545072eba5078ccd40d3aff89b",
-      "last_checked": "2026-07-10T14:22:45.923706",
+      "last_checked": "2026-07-14T07:43:19.415090",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"6447c4b29bf03d19dfc538b80e4110e5\"",
       "file_path": "documentation/ShazamKit/shcustomcatalog/datarepresentation.md"
     },
@@ -1319,9 +1319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shcatalog/maximumquerysignatureduration.json": {
       "hash": "036ac2a39c64c2a321d18c7f6e4bf14a01cdb1aa7c73f9e34e6e0c004de3710e",
-      "last_checked": "2026-07-10T14:22:46.053345",
+      "last_checked": "2026-07-14T07:43:19.548751",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"fd53db20dcc7a987f04115f3f6f6a621\"",
       "file_path": "documentation/ShazamKit/shcatalog/maximumquerysignatureduration.md"
     },
@@ -1335,9 +1335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shcatalog/minimumquerysignatureduration.json": {
       "hash": "9f6ce04c0899af044da053bf241c6b8ee234e3358abffb7c3a12368caad51d58",
-      "last_checked": "2026-07-10T14:22:46.188964",
+      "last_checked": "2026-07-14T07:43:19.687324",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"eb68f41f0e7f18149bd5754542861970\"",
       "file_path": "documentation/ShazamKit/shcatalog/minimumquerysignatureduration.md"
     },
@@ -1351,9 +1351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shlibrary/default.json": {
       "hash": "1b694eec38a215b65aa31da8e004b835576de6c27174b7799a87c4f722561f2a",
-      "last_checked": "2026-07-10T14:22:46.364989",
+      "last_checked": "2026-07-14T07:43:19.836736",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"b2163d6e871deedffd497e13136f8c64\"",
       "file_path": "documentation/ShazamKit/shlibrary/default.md"
     },
@@ -1367,9 +1367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shlibrary/additems(_:).json": {
       "hash": "cb1d0b505f2d9e3699069e8a657301d0e8e27a4bf03b154c7d172d4c0d1f0489",
-      "last_checked": "2026-07-10T14:22:46.486378",
+      "last_checked": "2026-07-14T07:43:20.171855",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"e81be8631f710a8e9e2d439801209b37\"",
       "file_path": "documentation/ShazamKit/shlibrary/additems.md"
     },
@@ -1383,9 +1383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shlibrary/removeitems(_:).json": {
       "hash": "8b29a9989f7c34fde04182d7b391b3b595f0038ae33f7e6c21e98ed5d28db189",
-      "last_checked": "2026-07-10T14:22:46.599880",
+      "last_checked": "2026-07-14T07:43:20.297882",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"b44942384459519aaa80313b66b9f1ad\"",
       "file_path": "documentation/ShazamKit/shlibrary/removeitems.md"
     },
@@ -1399,9 +1399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shlibrary/items.json": {
       "hash": "8c2d3cab2dbe54494b8d982c1522638948606d97d8ec6256881386898ec61977",
-      "last_checked": "2026-07-10T14:22:46.722939",
+      "last_checked": "2026-07-14T07:43:20.423925",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"27d107483b1a1d6061342ffe0c23cae1\"",
       "file_path": "documentation/ShazamKit/shlibrary/items.md"
     },
@@ -1415,9 +1415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shmedialibrary/default.json": {
       "hash": "a02a59686f618877e7394840ac68675543149bd0780bb7fab47e6ab1232d7405",
-      "last_checked": "2026-07-10T14:22:46.862355",
+      "last_checked": "2026-07-14T07:43:20.560206",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"6970f94d2c1d318c96231e361c6814d6\"",
       "file_path": "documentation/ShazamKit/shmedialibrary/default.md"
     },
@@ -1431,9 +1431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shmedialibrary/add(_:completionhandler:).json": {
       "hash": "373015650c8f93c63c481a2c377b4d8b5f589d2801c97bb0b3b0d1d4a2258d6b",
-      "last_checked": "2026-07-10T14:22:47.067059",
+      "last_checked": "2026-07-14T07:43:20.691612",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"6cafc425540fa0469adb1443390f25ba\"",
       "file_path": "documentation/ShazamKit/shmedialibrary/add-completionhandler.md"
     },
@@ -1447,9 +1447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/sherror/code.json": {
       "hash": "4a19e1570c0a4e9a78e2ed77931c9cb2a6fd8a6849c428ec02ef0028e8859105",
-      "last_checked": "2026-07-10T14:22:47.206715",
+      "last_checked": "2026-07-14T07:43:20.853200",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"c73dca266c58b52483f24084143d96dd\"",
       "file_path": "documentation/ShazamKit/sherror/code.md"
     },
@@ -1463,9 +1463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/error-constants.json": {
       "hash": "4c97e8cddb40644c11bba99a87ecba8c5f944695be19b9da45eaf2ade71fae60",
-      "last_checked": "2026-07-10T14:22:47.332081",
+      "last_checked": "2026-07-14T07:43:20.993542",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"e91861a5a5bfa9b4d5ab52e1affb54cc\"",
       "file_path": "documentation/ShazamKit/error-constants.md"
     },
@@ -1479,9 +1479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/sherror/errordomain.json": {
       "hash": "8d4a02ae1eddf68ae0ad254ad40987a4d1bbb3c80aafab3a42a60252d7798ba9",
-      "last_checked": "2026-07-10T14:22:47.456676",
+      "last_checked": "2026-07-14T07:43:21.129455",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"15166c706a2853cef9f8eb5353f856f0\"",
       "file_path": "documentation/ShazamKit/sherror/errordomain.md"
     },
@@ -1495,9 +1495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/sherrordomain.json": {
       "hash": "9611e6ea306591795322b66defd2809304fccb9026b70e80b6f00f8d7771ed17",
-      "last_checked": "2026-07-10T14:22:47.596790",
+      "last_checked": "2026-07-14T07:43:21.260781",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"bd1e3ac2f465259c8aa872160c0524fb\"",
       "file_path": "documentation/ShazamKit/sherrordomain.md"
     },
@@ -1511,9 +1511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shsession/results-swift.struct/makeasynciterator().json": {
       "hash": "4f41fbcddbe24f8ce2d7233097a5b2aff6049bdc22938fef18623ccf2dab5a7c",
-      "last_checked": "2026-07-10T14:22:47.702510",
+      "last_checked": "2026-07-14T07:43:21.421911",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"bedafa1b38727c501a1497f7d4f92137\"",
       "file_path": "documentation/ShazamKit/shsession/results-swift.struct/makeasynciterator.md"
     },
@@ -1527,9 +1527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shsession/results-swift.struct/iterator.json": {
       "hash": "862cfb2ec7b8ac7564b5091a54f447e52b649af3846be3840ce2864fdd15b705",
-      "last_checked": "2026-07-10T14:22:47.885307",
+      "last_checked": "2026-07-14T07:43:21.561213",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"5be18e0823d29ddde52d1579cb3ce302\"",
       "file_path": "documentation/ShazamKit/shsession/results-swift.struct/iterator.md"
     },
@@ -1543,9 +1543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shsession/results-swift.struct/element.json": {
       "hash": "d14e94a9daa680ae7f5c84e4167bed59bbff859c12649a5aedd2e00625f29824",
-      "last_checked": "2026-07-10T14:22:48.008939",
+      "last_checked": "2026-07-14T07:43:21.712037",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"b45c810a22e91ae52bc90232d1a34ebc\"",
       "file_path": "documentation/ShazamKit/shsession/results-swift.struct/element.md"
     },
@@ -1559,9 +1559,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shsession/result/match(_:).json": {
       "hash": "73ff528df8a8071e919dc677d3a6bc2e8144b355a4758351a1b12082e7e98111",
-      "last_checked": "2026-07-10T14:22:48.128675",
+      "last_checked": "2026-07-14T07:43:21.852178",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"b893816d447383de2a6c71d7b6b24d31\"",
       "file_path": "documentation/ShazamKit/shsession/result/match.md"
     },
@@ -1575,9 +1575,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shsession/result/nomatch(_:).json": {
       "hash": "7839882dd710c4ad52b7d585cdb3f0a3e7516acd89905bbabab3fb5365e15ac5",
-      "last_checked": "2026-07-10T14:22:48.245808",
+      "last_checked": "2026-07-14T07:43:22.008654",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"12578d47f9767c84d46fc64235c2c209\"",
       "file_path": "documentation/ShazamKit/shsession/result/nomatch.md"
     },
@@ -1591,9 +1591,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shsession/result/error(_:_:).json": {
       "hash": "1bcf330652cec1184c7d81ec0dece955844f9b1148070386d96acabd74c339da",
-      "last_checked": "2026-07-10T14:22:48.366271",
+      "last_checked": "2026-07-14T07:43:22.150528",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"d820dd4c8c2054ba0db88610cd4693e3\"",
       "file_path": "documentation/ShazamKit/shsession/result/error.md"
     },
@@ -1607,9 +1607,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shmanagedsession/state-swift.enum/idle.json": {
       "hash": "0c8ee90ea14a5dd2d12a05f7e2edb1fd3a75e0d41772e8bf2da771715afeb584",
-      "last_checked": "2026-07-10T14:22:48.488132",
+      "last_checked": "2026-07-14T07:43:22.299333",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"5004fa83dbd63c1bffc2e95d967e0d49\"",
       "file_path": "documentation/ShazamKit/shmanagedsession/state-swift.enum/idle.md"
     },
@@ -1623,9 +1623,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shmanagedsession/state-swift.enum/matching.json": {
       "hash": "44eb69b46aaef62f012e6f287aaa305894f44044f350eda4e399b7ca17ec78c9",
-      "last_checked": "2026-07-10T14:22:48.634700",
+      "last_checked": "2026-07-14T07:43:22.434665",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"c4bbe6229524cd4715d98f9137f34c19\"",
       "file_path": "documentation/ShazamKit/shmanagedsession/state-swift.enum/matching.md"
     },
@@ -1639,9 +1639,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shmanagedsession/state-swift.enum/prerecording.json": {
       "hash": "743fdb20f5f638ec68bfbb3df2c424001d9cda1181d04cebe6ab5b0e7f4abb08",
-      "last_checked": "2026-07-10T14:22:48.771215",
+      "last_checked": "2026-07-14T07:43:22.610035",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"9ebecbcf8820746142db1e8f449580ce\"",
       "file_path": "documentation/ShazamKit/shmanagedsession/state-swift.enum/prerecording.md"
     },
@@ -1655,9 +1655,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shmediaitemproperty/init(_:).json": {
       "hash": "33a6070beb22cb2cc621fac363c1432d88d49e7a4ce24e5db091212aa42f7532",
-      "last_checked": "2026-07-10T14:22:48.881684",
+      "last_checked": "2026-07-14T07:43:22.739942",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"ac82fac48c49400632c3a7d0f248e6c7\"",
       "file_path": "documentation/ShazamKit/shmediaitemproperty/init.md"
     },
@@ -1671,9 +1671,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shmediaitemproperty/init(rawvalue:).json": {
       "hash": "a881af5be24a6f714dd329143d6237b00bfa200c9b7ccee3913efb6fc1593b97",
-      "last_checked": "2026-07-10T14:22:49.010054",
+      "last_checked": "2026-07-14T07:43:22.876772",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"5e5b32e8a508a4ce06e90911ecd50783\"",
       "file_path": "documentation/ShazamKit/shmediaitemproperty/init-rawvalue.md"
     },
@@ -1687,9 +1687,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shmediaitemproperty/title.json": {
       "hash": "3fa15160e4a3b9455d85378370cc8f1016e39c6e835bf3963b58fe05dbc57489",
-      "last_checked": "2026-07-10T14:22:49.166119",
+      "last_checked": "2026-07-14T07:43:23.021198",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"6c75f9f192e74663e6adfd5899122918\"",
       "file_path": "documentation/ShazamKit/shmediaitemproperty/title.md"
     },
@@ -1703,9 +1703,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shmediaitemproperty/subtitle.json": {
       "hash": "ac7ee6f22ddf4a4c3e6191693d44970737a675f7fb2c1e716aa41a9f1949208e",
-      "last_checked": "2026-07-10T14:22:49.293371",
+      "last_checked": "2026-07-14T07:43:23.148015",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"f0c6b1595666eaac0dbffa37714717bc\"",
       "file_path": "documentation/ShazamKit/shmediaitemproperty/subtitle.md"
     },
@@ -1719,9 +1719,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shmediaitemproperty/artist.json": {
       "hash": "2b7c717fe13575bb1adf1a44e1f7ec2f81cc7405dc25d467c1d521124322d816",
-      "last_checked": "2026-07-10T14:22:49.441731",
+      "last_checked": "2026-07-14T07:43:23.295098",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"d2f15b90a851b401b2114abde9b202ac\"",
       "file_path": "documentation/ShazamKit/shmediaitemproperty/artist.md"
     },
@@ -1735,9 +1735,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shmediaitemproperty/artworkurl.json": {
       "hash": "1c56a5aaf4ddc5d9ac4fdb9fbf8ee5c50b81cdedc17c32d3ff0a7f8b00889611",
-      "last_checked": "2026-07-10T14:22:49.573620",
+      "last_checked": "2026-07-14T07:43:23.427768",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"b805ebc3671a3bb974f093a0c3928428\"",
       "file_path": "documentation/ShazamKit/shmediaitemproperty/artworkurl.md"
     },
@@ -1751,9 +1751,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shmediaitemproperty/videourl.json": {
       "hash": "65dc9099794ac6cd24aac6558bc94484cacdf69d59ebb470b4635e6d1091158a",
-      "last_checked": "2026-07-10T14:22:49.699377",
+      "last_checked": "2026-07-14T07:43:23.555952",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"24098366cb91330cf30dbeaa1c10de7f\"",
       "file_path": "documentation/ShazamKit/shmediaitemproperty/videourl.md"
     },
@@ -1767,9 +1767,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shmediaitemproperty/genres.json": {
       "hash": "126ba27697ff3182eb58a2614730c023d00244de9d3093e8ede7812a64fcee2c",
-      "last_checked": "2026-07-10T14:22:49.841036",
+      "last_checked": "2026-07-14T07:43:23.700438",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"f5966a40714714099527323871e87e0c\"",
       "file_path": "documentation/ShazamKit/shmediaitemproperty/genres.md"
     },
@@ -1783,9 +1783,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shmediaitemproperty/explicitcontent.json": {
       "hash": "8a308aba676614beec03eba9cfa18f0eff864162f0c33ca68b8b2c0dd1d6cbce",
-      "last_checked": "2026-07-10T14:22:50.024922",
+      "last_checked": "2026-07-14T07:43:23.825101",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"8b3751a84431b9b8ac2ae65884bf7c96\"",
       "file_path": "documentation/ShazamKit/shmediaitemproperty/explicitcontent.md"
     },
@@ -1799,9 +1799,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shmediaitemproperty/isrc.json": {
       "hash": "b0973e47268c374b9f799140de8a0e63c1417f8d91c17a70346ab000fa246030",
-      "last_checked": "2026-07-10T14:22:50.213287",
+      "last_checked": "2026-07-14T07:43:23.956971",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"8cc4915c60477737d3f9d9c83c7ffa98\"",
       "file_path": "documentation/ShazamKit/shmediaitemproperty/isrc.md"
     },
@@ -1815,9 +1815,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shmediaitemproperty/frequencyskewranges.json": {
       "hash": "a7209f849173b427e70845f27100cf958336bf1dadeb0c0c415ad944e7be795a",
-      "last_checked": "2026-07-10T14:22:50.353204",
+      "last_checked": "2026-07-14T07:43:24.096651",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"07db094bccac196c7746a451c137476f\"",
       "file_path": "documentation/ShazamKit/shmediaitemproperty/frequencyskewranges.md"
     },
@@ -1831,9 +1831,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shmediaitemproperty/creationdate.json": {
       "hash": "ade4b300258d9d9d0b1e59978394acdd105ec7bc38f6ef5e8ca8e477691bb977",
-      "last_checked": "2026-07-10T14:22:50.488677",
+      "last_checked": "2026-07-14T07:43:24.252740",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"95fc12e5b77c1bd7beb19283834c874c\"",
       "file_path": "documentation/ShazamKit/shmediaitemproperty/creationdate.md"
     },
@@ -1847,9 +1847,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shmediaitemproperty/timeranges.json": {
       "hash": "77f339c53fd89a490b2b649f92269c434d7abbf729da46d168b0695e719a2089",
-      "last_checked": "2026-07-10T14:22:50.614401",
+      "last_checked": "2026-07-14T07:43:24.384567",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"834f8da379c62019b4edc774935d967b\"",
       "file_path": "documentation/ShazamKit/shmediaitemproperty/timeranges.md"
     },
@@ -1863,9 +1863,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shmediaitemproperty/applemusicurl.json": {
       "hash": "97f8a3e097247f69a79f12e5586ba5e75d80e6696705c04130b1443066691538",
-      "last_checked": "2026-07-10T14:22:50.754076",
+      "last_checked": "2026-07-14T07:43:24.514252",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"61392f045d54fbb91036b4e8dd9f456a\"",
       "file_path": "documentation/ShazamKit/shmediaitemproperty/applemusicurl.md"
     },
@@ -1879,9 +1879,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shmediaitemproperty/applemusicid.json": {
       "hash": "ce149d1b60be884d1fc2a8178e7fc25eb08ab640cd8dca22d37430cb80fb51ea",
-      "last_checked": "2026-07-10T14:22:50.899325",
+      "last_checked": "2026-07-14T07:43:24.639747",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"da191647093270cbaf0cef8ea5bce2a0\"",
       "file_path": "documentation/ShazamKit/shmediaitemproperty/applemusicid.md"
     },
@@ -1895,9 +1895,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shmediaitemproperty/weburl.json": {
       "hash": "d4563b740376926eafd5cb16e86c62615ea6e33ec7ab335c642973db184a282a",
-      "last_checked": "2026-07-10T14:22:51.049868",
+      "last_checked": "2026-07-14T07:43:24.767443",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"666d2781f7d007f0d60ccf271a7a8b1f\"",
       "file_path": "documentation/ShazamKit/shmediaitemproperty/weburl.md"
     },
@@ -1911,9 +1911,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shmediaitemproperty/shazamid.json": {
       "hash": "e6fa110fe969cb39a3cba4943b9abebeb5d3e6e2d8554b9c43df349811c9ebe9",
-      "last_checked": "2026-07-10T14:22:51.174805",
+      "last_checked": "2026-07-14T07:43:24.913992",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"cfd3fece7d178fa8829b57292ee09526\"",
       "file_path": "documentation/ShazamKit/shmediaitemproperty/shazamid.md"
     },
@@ -1927,9 +1927,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shmediaitemproperty/matchoffset.json": {
       "hash": "83a5ab698cb518c5275e73ba6a65f4cd835b1b1e1a45a821c9e0aca42899fdfa",
-      "last_checked": "2026-07-10T14:22:51.322542",
+      "last_checked": "2026-07-14T07:43:25.046306",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"e2738fc80371d428d197157c52480742\"",
       "file_path": "documentation/ShazamKit/shmediaitemproperty/matchoffset.md"
     },
@@ -1943,9 +1943,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shmediaitemproperty/frequencyskew.json": {
       "hash": "eae256a143b93a06759a378fd6069d1bc7fbc61a7dc54eaf496010fb7c97a7a4",
-      "last_checked": "2026-07-10T14:22:51.454334",
+      "last_checked": "2026-07-14T07:43:25.174549",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"8a4038fb27a59eebece5625cbef61ae2\"",
       "file_path": "documentation/ShazamKit/shmediaitemproperty/frequencyskew.md"
     },
@@ -1959,9 +1959,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shmediaitemproperty/confidence.json": {
       "hash": "a10ca76265a357b74e7a35b9e72c3a1abf502b877f0b46f80f66d8e63f440a80",
-      "last_checked": "2026-07-10T14:22:51.579727",
+      "last_checked": "2026-07-14T07:43:25.319019",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"c280e02d5fdc3d0d230cf7e159ca5779\"",
       "file_path": "documentation/ShazamKit/shmediaitemproperty/confidence.md"
     },
@@ -1975,9 +1975,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shsignature/slices/iterator.json": {
       "hash": "4709ca6747fea11ca2485e45f8945fc3372e8859ec5046ac16ad14a44e599bf5",
-      "last_checked": "2026-07-10T14:22:51.734627",
+      "last_checked": "2026-07-14T07:43:25.455822",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"aa7d1338229dfb24b6d7855c83b6f854\"",
       "file_path": "documentation/ShazamKit/shsignature/slices/iterator.md"
     },
@@ -1991,9 +1991,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/sherror/code/matchattemptfailed.json": {
       "hash": "97b0df311d6cc4553d78062888a8505bb51ae8dcfd1210422b87efb70f2463b3",
-      "last_checked": "2026-07-10T14:22:51.938979",
+      "last_checked": "2026-07-14T07:43:25.600277",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"5464d8035f4697c8d4aeed0d4fa3e269\"",
       "file_path": "documentation/ShazamKit/sherror/code/matchattemptfailed.md"
     },
@@ -2007,9 +2007,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/sherror/code/signatureinvalid.json": {
       "hash": "0380959a2ebb06febbb050c7356a8b2b67b839fe1e93b54c791b320acbaaf5fa",
-      "last_checked": "2026-07-10T14:22:52.065327",
+      "last_checked": "2026-07-14T07:43:25.723887",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"fd5aeff7de64e59804fed618039fd6b3\"",
       "file_path": "documentation/ShazamKit/sherror/code/signatureinvalid.md"
     },
@@ -2023,9 +2023,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/sherror/code/signaturedurationinvalid.json": {
       "hash": "b7325a9e3c0e3795a158e7a63398eb3235e250aa4104f30318337a86a1a59d0e",
-      "last_checked": "2026-07-10T14:22:52.188224",
+      "last_checked": "2026-07-14T07:43:25.871172",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"619bf2ac39ef59d8e5f20e49e055a654\"",
       "file_path": "documentation/ShazamKit/sherror/code/signaturedurationinvalid.md"
     },
@@ -2039,9 +2039,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/sherror/code/invalidaudioformat.json": {
       "hash": "44b0040060a997bfb6fb2b70ff74e434a8e0b387df753ddc3f9b069a7c585868",
-      "last_checked": "2026-07-10T14:22:52.332168",
+      "last_checked": "2026-07-14T07:43:26.038392",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"e8dab08ff47e7c8b3f73309e46a83a9f\"",
       "file_path": "documentation/ShazamKit/sherror/code/invalidaudioformat.md"
     },
@@ -2055,9 +2055,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/sherror/code/audiodiscontinuity.json": {
       "hash": "062c8d8d64f3f47681fdb027140b5792190cbb21665379330a128266967487f5",
-      "last_checked": "2026-07-10T14:22:52.437949",
+      "last_checked": "2026-07-14T07:43:26.161867",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"ea77d08cda536708d14c8c7e80b70988\"",
       "file_path": "documentation/ShazamKit/sherror/code/audiodiscontinuity.md"
     },
@@ -2071,9 +2071,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/sherror/code/customcataloginvalidurl.json": {
       "hash": "7024ce5edbc3fb2a729331026a14f034d9a96e766fbf07b5a72588841300541a",
-      "last_checked": "2026-07-10T14:22:52.587862",
+      "last_checked": "2026-07-14T07:43:26.288924",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"e74030678a500fa878b9835fc8b1c4ab\"",
       "file_path": "documentation/ShazamKit/sherror/code/customcataloginvalidurl.md"
     },
@@ -2087,9 +2087,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/sherror/code/customcataloginvalid.json": {
       "hash": "9b0b0050a6a7c3bea02e15b7eaf1deb8a3a2401879667bbb063cca958979378b",
-      "last_checked": "2026-07-10T14:22:52.715470",
+      "last_checked": "2026-07-14T07:43:26.427695",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"3ce385d82e2b4d4a8ccaab22589ff865\"",
       "file_path": "documentation/ShazamKit/sherror/code/customcataloginvalid.md"
     },
@@ -2103,9 +2103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/sherror/code/mediaitemfetchfailed.json": {
       "hash": "9e195548240f232661ec4784f489b96ffa5839fd2ec220a469baf13eee2cd363",
-      "last_checked": "2026-07-10T14:22:52.838960",
+      "last_checked": "2026-07-14T07:43:26.565303",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"e5709580cb077ab2401ed7309d843a24\"",
       "file_path": "documentation/ShazamKit/sherror/code/mediaitemfetchfailed.md"
     },
@@ -2119,9 +2119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/sherror/code/medialibrarysyncfailed.json": {
       "hash": "3909e9cd3a2cb8a27aa2b24e090d72e00ee567c3b0a8a73e2aa7001dac38077f",
-      "last_checked": "2026-07-10T14:22:52.976808",
+      "last_checked": "2026-07-14T07:43:26.714702",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"4fc27ffcda81f17cdaeda4079200834b\"",
       "file_path": "documentation/ShazamKit/sherror/code/medialibrarysyncfailed.md"
     },
@@ -2135,9 +2135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/sherror/code/internalerror.json": {
       "hash": "fa2c8077306089ae1110e3232d8e4e683813ce42f623f38620a61bf040fa20be",
-      "last_checked": "2026-07-10T14:22:53.137450",
+      "last_checked": "2026-07-14T07:43:26.854785",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"c32fa1d9a213024b036d9ed3feca85c8\"",
       "file_path": "documentation/ShazamKit/sherror/code/internalerror.md"
     },
@@ -2151,9 +2151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/sherror/code/init(rawvalue:).json": {
       "hash": "4b61b4c522f580b4de05f3b9a6c60bb4e3e56dbbdd5e4c568927aac428e7d0a6",
-      "last_checked": "2026-07-10T14:22:53.276569",
+      "last_checked": "2026-07-14T07:43:26.996857",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"e52b9540ef8381b2d5663dc0100101ce\"",
       "file_path": "documentation/ShazamKit/sherror/code/init-rawvalue.md"
     },
@@ -2167,9 +2167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/sherror/matchattemptfailed.json": {
       "hash": "756a04051eac8e0b3d5e2b8600f8954524395cfac164622bb6da0ecff2110c00",
-      "last_checked": "2026-07-10T14:22:53.421155",
+      "last_checked": "2026-07-14T07:43:27.127545",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"034b2ce8c947a3089127eb56cfe7179e\"",
       "file_path": "documentation/ShazamKit/sherror/matchattemptfailed.md"
     },
@@ -2183,9 +2183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/sherror/signatureinvalid.json": {
       "hash": "5da1c0c681a3fab79e0e4f00e8e1ebb9a75b9a786d304f20728c6caebd80d88c",
-      "last_checked": "2026-07-10T14:22:53.565503",
+      "last_checked": "2026-07-14T07:43:27.264851",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"8cc6a06c5bcb9725825bfafdbd0b4a5a\"",
       "file_path": "documentation/ShazamKit/sherror/signatureinvalid.md"
     },
@@ -2199,9 +2199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/sherror/signaturedurationinvalid.json": {
       "hash": "9aa1ec22685ea1bea3a2424e7e39d2348ea80af8b9a5684440a530a8b5a9fbbd",
-      "last_checked": "2026-07-10T14:22:53.712355",
+      "last_checked": "2026-07-14T07:43:27.394322",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"270147ff16026350c813b4659283cdd8\"",
       "file_path": "documentation/ShazamKit/sherror/signaturedurationinvalid.md"
     },
@@ -2215,9 +2215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/sherror/invalidaudioformat.json": {
       "hash": "57e31123259cd1840afe885abda7de71f4bcf6c1dc1ebdaa789a6ef49b77783a",
-      "last_checked": "2026-07-10T14:22:53.839292",
+      "last_checked": "2026-07-14T07:43:27.530717",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"b527fb2f75a78f3f0757511a7593cdd4\"",
       "file_path": "documentation/ShazamKit/sherror/invalidaudioformat.md"
     },
@@ -2231,9 +2231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/sherror/internalerror.json": {
       "hash": "5d86a8ce04f54b284c003e168c782b9f3269d4762b47ab918af8893d8eca9208",
-      "last_checked": "2026-07-10T14:22:53.956131",
+      "last_checked": "2026-07-14T07:43:27.684118",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"bf0c7da411907bfb66d659e830601b60\"",
       "file_path": "documentation/ShazamKit/sherror/internalerror.md"
     },
@@ -2247,9 +2247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/sherror/audiodiscontinuity.json": {
       "hash": "cd2e860ae4a0fb7f444975f2a6e85dff969fea4434743745eaf5648ba75d57f7",
-      "last_checked": "2026-07-10T14:22:54.092698",
+      "last_checked": "2026-07-14T07:43:27.821984",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"e47b41a3401ba659e68b6f58dac2a4fc\"",
       "file_path": "documentation/ShazamKit/sherror/audiodiscontinuity.md"
     },
@@ -2263,9 +2263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/sherror/customcataloginvalidurl.json": {
       "hash": "a3b073ff318d4704c70f907270a9083481ff1da3c6b5aaee1890f49523623c4c",
-      "last_checked": "2026-07-10T14:22:54.233377",
+      "last_checked": "2026-07-14T07:43:27.947522",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"d3e78f5d99023c2823eb65d9d75679ac\"",
       "file_path": "documentation/ShazamKit/sherror/customcataloginvalidurl.md"
     },
@@ -2279,9 +2279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/sherror/customcataloginvalid.json": {
       "hash": "0df8ad3cda2d315923708fb815582d088dee597f99bac47dccaf08695c3ab265",
-      "last_checked": "2026-07-10T14:22:54.385945",
+      "last_checked": "2026-07-14T07:43:28.109056",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"8100f5ef5eeb276df81b210172592eed\"",
       "file_path": "documentation/ShazamKit/sherror/customcataloginvalid.md"
     },
@@ -2295,9 +2295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/sherror/mediaitemfetchfailed.json": {
       "hash": "c1e2977632a54f044e51a7fce3638b63dcf6fcaea03256c9a0b2d6be86f6c81f",
-      "last_checked": "2026-07-10T14:22:54.523808",
+      "last_checked": "2026-07-14T07:43:28.241090",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"ebae1fce2a3dab8076b005509cfdfd8c\"",
       "file_path": "documentation/ShazamKit/sherror/mediaitemfetchfailed.md"
     },
@@ -2311,9 +2311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/sherror/medialibrarysyncfailed.json": {
       "hash": "ef51171b5865888d3f5b52ef8f5720c906d091799a0426adbcafd73184ec7900",
-      "last_checked": "2026-07-10T14:22:54.657015",
+      "last_checked": "2026-07-14T07:43:28.364268",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"02caf08b3089a0b4276642598d25b978\"",
       "file_path": "documentation/ShazamKit/sherror/medialibrarysyncfailed.md"
     },
@@ -2327,9 +2327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shsession/results-swift.struct/iterator/next().json": {
       "hash": "4ffde1c0a545fb2d61080841da96df1022eef8f0e9e9938eaebc311605a0f5f0",
-      "last_checked": "2026-07-10T14:22:54.790185",
+      "last_checked": "2026-07-14T07:43:28.508292",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"5e184d07fa98f739244a1b61f096ca99\"",
       "file_path": "documentation/ShazamKit/shsession/results-swift.struct/iterator/next.md"
     },
@@ -2343,9 +2343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shmatch/init(coder:).json": {
       "hash": "cc0f80b18004deab9e9ca1102815873597ff4df4faea65e78401617e7412839b",
-      "last_checked": "2026-07-10T14:22:39.911605",
+      "last_checked": "2026-07-14T07:43:12.991853",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"2e94686472c25e0c7b944c3c647e93cd\"",
       "file_path": "documentation/ShazamKit/shmatch/init-coder.md"
     },
@@ -2359,9 +2359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shmediaitem/init(coder:).json": {
       "hash": "b8afbc1f5e1c4333f77506dc5badc2f409e5e19c3f72fb01358244b5c5138514",
-      "last_checked": "2026-07-10T14:22:43.455360",
+      "last_checked": "2026-07-14T07:43:16.773766",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"c38b5d5da6152f6c6c467f52cf0ca165\"",
       "file_path": "documentation/ShazamKit/shmediaitem/init-coder.md"
     },
@@ -2375,9 +2375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shsignature/init(coder:).json": {
       "hash": "12d250cdcf156c1c2d168e2dd03e957e35c6e7cd2bcfc463e74b60a8f43ecf7c",
-      "last_checked": "2026-07-10T14:22:44.533910",
+      "last_checked": "2026-07-14T07:43:17.872028",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"68c48a4d6980e88e2ece483adb366aff\"",
       "file_path": "documentation/ShazamKit/shsignature/init-coder.md"
     },
@@ -2391,9 +2391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/shazamkit/shmediaitem/songs().json": {
       "hash": "1c8e8cbbe9e8f3296ed1968f4fa269c5da3d5b1915adc877104aaa7d5d3fa6dc",
-      "last_checked": "2026-07-10T14:22:43.586686",
+      "last_checked": "2026-07-14T07:43:16.916504",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:22:32.818219",
+      "session_id": "2026-07-14T07:43:06.139636",
       "etag": "W/\"ca28aeec98dbce33eaec0067180e999d\"",
       "file_path": "documentation/ShazamKit/shmediaitem/songs.md"
     },

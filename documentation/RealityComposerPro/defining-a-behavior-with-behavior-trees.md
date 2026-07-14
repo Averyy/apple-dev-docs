@@ -93,9 +93,9 @@ Behavior Tree nodes are divided into three categories — Root, Action, and Comp
 ## See Also
 
 - [Creating animation sequences](creating-animation-sequences.md)
-  Build and customize animation sequences to control entity movement and behavior in your scene.
+  Build animation sequences that drive entity behavior across multiple tracks in Reality Composer Pro.
 - [Working with the Animation Graph](working-with-the-animation-graph.md)
-  Define and control character animations using a visual, node-based state machine in Reality Composer Pro.
+  Build character animation state machines visually using the Animation Graph in Reality Composer Pro.
 - [Building a navmesh in Reality Composer Pro](building-a-navmesh-in-reality-composer-pro.md)
   Configure a navigation mesh in Reality Composer Pro to define walkable areas and paths for AI-controlled entities in your scene.
 

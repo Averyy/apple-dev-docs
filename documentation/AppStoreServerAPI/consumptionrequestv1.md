@@ -6,7 +6,7 @@
 The request body containing consumption information.
 
 **Availability**:
-- App Store Server API 1.0+ - Deprecated
+- App Store Server API 1.0+
 
 ## Declaration
 

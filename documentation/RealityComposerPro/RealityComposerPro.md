@@ -65,9 +65,9 @@ This release of Reality Composer Pro is a complete 3D development platform. The 
   Test and iterate on your scenes directly in Reality Composer Pro, with or without a linked Xcode project.
 ### Materials
 - [Building materials in Reality Composer Pro](building-materials-in-reality-composer-pro.md)
-  Apply surface properties such as color, roughness, and transparency to 3D entities in your scene.
+  Apply surface properties to 3D entities to control how they look in your scene.
 - [Applying materials to an asset](applying-materials-to-an-asset.md)
-  Work with materials in Reality Composer Pro to enhance the appearance of your model.
+  Assign and configure surface materials on 3D model assets in Reality Composer Pro.
 - [Designing materials with Shader Graph](designing-materials-with-shader-graph.md)
   Create realistic materials with Reality Composer Pro’s Shader Graph.
 ### Particle Emitter
@@ -76,11 +76,14 @@ This release of Reality Composer Pro is a complete 3D development platform. The 
 ### Script Graph
 - [Getting started with Script Graphs](getting-started-with-script-graphs.md)
   Build interactive, code-free 3D experiences using a visual, node-based editor in Reality Composer Pro.
+### Compute Graph
+- [Introducing Compute Graph](introducing-compute-graph.md)
+  Use Reality Composer Pro Compute Graph to build custom particle simulations with a node-based graph.
 ### Animation
 - [Creating animation sequences](creating-animation-sequences.md)
-  Build and customize animation sequences to control entity movement and behavior in your scene.
+  Build animation sequences that drive entity behavior across multiple tracks in Reality Composer Pro.
 - [Working with the Animation Graph](working-with-the-animation-graph.md)
-  Define and control character animations using a visual, node-based state machine in Reality Composer Pro.
+  Build character animation state machines visually using the Animation Graph in Reality Composer Pro.
 - [Building a navmesh in Reality Composer Pro](building-a-navmesh-in-reality-composer-pro.md)
   Configure a navigation mesh in Reality Composer Pro to define walkable areas and paths for AI-controlled entities in your scene.
 - [Defining a behavior with Behavior Trees](defining-a-behavior-with-behavior-trees.md)
@@ -88,6 +91,9 @@ This release of Reality Composer Pro is a complete 3D development platform. The 
 ### Assistant
 - [Working with the Reality Composer Pro Assistant](working-with-the-reality-composer-pro-assistant.md)
   Connect an AI model to Reality Composer Pro to generate assets and get contextual help building scenes.
+### Audio
+- [Adding audio components in Reality Composer Pro](introduction-to-reality-composer-pro-audio.md)
+  Configure audio components in a Reality Composer Pro scene.
 ### Release notes
 - [Reality Composer Pro Release Notes](reality-composer-pro-release-notes.md)
   Review known issues and changes in Reality Composer Pro 3.

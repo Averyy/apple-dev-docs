@@ -105,9 +105,9 @@ You can have as many tags as you want in a region.
 ## See Also
 
 - [Creating animation sequences](creating-animation-sequences.md)
-  Build and customize animation sequences to control entity movement and behavior in your scene.
+  Build animation sequences that drive entity behavior across multiple tracks in Reality Composer Pro.
 - [Working with the Animation Graph](working-with-the-animation-graph.md)
-  Define and control character animations using a visual, node-based state machine in Reality Composer Pro.
+  Build character animation state machines visually using the Animation Graph in Reality Composer Pro.
 - [Defining a behavior with Behavior Trees](defining-a-behavior-with-behavior-trees.md)
   Set up and connect Behavior Tree nodes to drive entity decision-making in your scene.
 

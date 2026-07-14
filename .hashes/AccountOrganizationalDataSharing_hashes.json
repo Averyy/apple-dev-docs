@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-07-10T14:24:24.373766",
+    "last_updated": "2026-07-14T07:45:00.409924",
     "total_pages": 20,
-    "session_id": "2026-07-10T14:24:22.761240"
+    "session_id": "2026-07-14T07:44:58.578140"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/AccountOrganizationalDataSharing.json": {
       "hash": "0e6c0e2a31dd763dc56bb3e2586610d2680efcf203db6bee27494e0ece7e1b79",
-      "last_checked": "2026-07-10T14:24:23.008524",
+      "last_checked": "2026-07-14T07:44:58.897215",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:24:22.761240",
+      "session_id": "2026-07-14T07:44:58.578140",
       "etag": "W/\"87f1167906d9ba510246c493870ff83d\"",
       "file_path": "documentation/AccountOrganizationalDataSharing/AccountOrganizationalDataSharing.md"
     },
     "https://developer.apple.com/documentation/AccountOrganizationalDataSharing": {
       "hash": "0e6c0e2a31dd763dc56bb3e2586610d2680efcf203db6bee27494e0ece7e1b79",
-      "last_checked": "2026-07-10T14:24:22.903737",
+      "last_checked": "2026-07-14T07:44:58.786696",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:24:22.761240",
+      "session_id": "2026-07-14T07:44:58.578140",
       "etag": "W/\"87f1167906d9ba510246c493870ff83d\"",
       "file_path": "documentation/AccountOrganizationalDataSharing/AccountOrganizationalDataSharing.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/accountorganizationaldatasharing/creating-a-client-secret.json": {
       "hash": "58ff08fd576c084d8102844ed7958be4e6f41861b8470da18f679e7330398570",
-      "last_checked": "2026-07-10T14:24:23.302726",
+      "last_checked": "2026-07-14T07:44:59.138249",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:24:22.761240",
+      "session_id": "2026-07-14T07:44:58.578140",
       "etag": "W/\"5e05835d188aa51bc8bd330176500fcd\"",
       "file_path": "documentation/AccountOrganizationalDataSharing/creating-a-client-secret.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accountorganizationaldatasharing/fetch-apple's-public-key-for-verifying-token-signature.json": {
       "hash": "2c788c354d5c2bc5a01bfa45b67c1051c38eb019079328038ee0185f9e69ca92",
-      "last_checked": "2026-07-10T14:24:23.448197",
+      "last_checked": "2026-07-14T07:44:59.291750",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:24:22.761240",
+      "session_id": "2026-07-14T07:44:58.578140",
       "etag": "W/\"11520db43bff239a68af8ff2c2d67982\"",
       "file_path": "documentation/AccountOrganizationalDataSharing/fetch-apples-public-key-for-verifying-token-signature.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accountorganizationaldatasharing/generate-and-validate-tokens.json": {
       "hash": "7777c3e0acaaaa19748c462e1430e4f9afe663b73813bbf70e288059763644a0",
-      "last_checked": "2026-07-10T14:24:23.585098",
+      "last_checked": "2026-07-14T07:44:59.439565",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:24:22.761240",
+      "session_id": "2026-07-14T07:44:58.578140",
       "etag": "W/\"ae3fc18bde33761e00c3622e2a61d7e9\"",
       "file_path": "documentation/AccountOrganizationalDataSharing/generate-and-validate-tokens.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accountorganizationaldatasharing/request-an-authorization.json": {
       "hash": "fda8caccd76d1b5257690d261775fa5b062e1a9c2e2786b1d3e8e02364206677",
-      "last_checked": "2026-07-10T14:24:23.697792",
+      "last_checked": "2026-07-14T07:44:59.593293",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:24:22.761240",
+      "session_id": "2026-07-14T07:44:58.578140",
       "etag": "W/\"62357abb97deb9a96a99b05ce024e8f2\"",
       "file_path": "documentation/AccountOrganizationalDataSharing/request-an-authorization.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accountorganizationaldatasharing/revoke-tokens.json": {
       "hash": "27de67280c48461a0081515937f9e172c202607ddb4386c16db709a270e38129",
-      "last_checked": "2026-07-10T14:24:23.853107",
+      "last_checked": "2026-07-14T07:44:59.753435",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:24:22.761240",
+      "session_id": "2026-07-14T07:44:58.578140",
       "etag": "W/\"a1b6ac1cd19f0995559b270e8a037505\"",
       "file_path": "documentation/AccountOrganizationalDataSharing/revoke-tokens.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accountorganizationaldatasharing/jwkset.json": {
       "hash": "76d177599328fe8dffa220f278069b7209d57a3eea40c51ec21d3d0f0facb6c6",
-      "last_checked": "2026-07-10T14:24:23.986997",
+      "last_checked": "2026-07-14T07:44:59.904512",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:24:22.761240",
+      "session_id": "2026-07-14T07:44:58.578140",
       "etag": "W/\"0a7b3ecc98f7f2dca1803a704e62aca2\"",
       "file_path": "documentation/AccountOrganizationalDataSharing/jwkset.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accountorganizationaldatasharing/tokenresponse.json": {
       "hash": "9a49781fff40cfe661f709b21b641c40d0924b14580f19f316154eb48a26c3c1",
-      "last_checked": "2026-07-10T14:24:24.114064",
+      "last_checked": "2026-07-14T07:45:00.070295",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:24:22.761240",
+      "session_id": "2026-07-14T07:44:58.578140",
       "etag": "W/\"bbb778ca884ea69d04c8d367126567d3\"",
       "file_path": "documentation/AccountOrganizationalDataSharing/tokenresponse.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accountorganizationaldatasharing/errorresponse.json": {
       "hash": "c4ec168a16bb18ae6192e2cbefe7dc02b99feb364441039086f60cef35fc7a03",
-      "last_checked": "2026-07-10T14:24:24.231503",
+      "last_checked": "2026-07-14T07:45:00.209794",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:24:22.761240",
+      "session_id": "2026-07-14T07:44:58.578140",
       "etag": "W/\"ad909035d28fa7942c149ae6e23dd553\"",
       "file_path": "documentation/AccountOrganizationalDataSharing/errorresponse.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/accountorganizationaldatasharing/jwkset/jwkset.keys.json": {
       "hash": "fe0fed1ec65a273f02f056adb6125a90029a63ddc6b7b098e86840bdd853e6e8",
-      "last_checked": "2026-07-10T14:24:24.368128",
+      "last_checked": "2026-07-14T07:45:00.383921",
       "status": "unchanged",
-      "session_id": "2026-07-10T14:24:22.761240",
+      "session_id": "2026-07-14T07:44:58.578140",
       "etag": "W/\"a60057dbd9ad3f091ebbd58822bfdce0\"",
       "file_path": "documentation/AccountOrganizationalDataSharing/jwkset/jwksetkeys.md"
     },

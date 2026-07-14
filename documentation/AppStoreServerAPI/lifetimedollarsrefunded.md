@@ -6,7 +6,7 @@
 A value that indicates the dollar amount of refunds the customer has received in your app, since purchasing the app, across all platforms.
 
 **Availability**:
-- App Store Server API ?+ - Deprecated
+- App Store Server API 1.0+
 
 ## Declaration
 

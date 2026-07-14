@@ -6,7 +6,7 @@
 The age of the customer’s account.
 
 **Availability**:
-- App Store Server API ?+ - Deprecated
+- App Store Server API 1.0+
 
 ## Declaration
 

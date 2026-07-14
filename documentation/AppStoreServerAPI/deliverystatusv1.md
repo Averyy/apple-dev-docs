@@ -6,7 +6,7 @@
 A value that indicates whether the app successfully delivered an In-App Purchase that works properly.
 
 **Availability**:
-- App Store Server API 1.0+ - Deprecated
+- App Store Server API 1.0+
 
 ## Declaration
 
