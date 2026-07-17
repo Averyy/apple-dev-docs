@@ -4,6 +4,13 @@
 
 Create review submissions for auto-renewable subscriptions and subscription groups.
 
+**Availability**:
+- App Store Connect API 2.0+
+
+#### Overview
+
+> ❗ **Important**:  This is deprecated. Use [`Review submissions`](review-submissions.md) instead.
+
 ## Topics
 
 ### Endpoints
@@ -28,7 +35,7 @@ Create review submissions for auto-renewable subscriptions and subscription grou
 ## See Also
 
 - [Submitting subscriptions and subscription groups for App Review](submitting-subscriptions-and-subscription-groups-for-app-review.md)
-  Learn how to prepare and submit your subscriptions, subscription groups, and subscription screenshots for the App Review process with the App Store Connect API.
+  Attach localizations and screenshots to a subscription version, then submit subscriptions and subscription groups for App Review.
 
 
 ---

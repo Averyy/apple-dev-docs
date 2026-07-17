@@ -28,7 +28,8 @@ Get details about a specific one-time use offer code for an auto-renewable subsc
   Get details about a one-time use code for a specific subscription offer for an auto-renewable subscription.
 - [List one-time use offer code values](get-v1-subscriptionoffercodeonetimeusecodes-_id_-values.md)
   Get a list of one-time use offer codes for an auto-renewable subscription in CSV format.
-- [List one-time-use code IDs for a subscription offer code](get-v1-subscriptionoffercodes-_id_-relationships-onetimeusecodes.md)
+- [List one-time use code IDs for a subscription offer code](get-v1-subscriptionoffercodes-_id_-relationships-onetimeusecodes.md)
+  Get a list of one-time use code resource IDs for a specific subscription offer code.
 
 
 ---

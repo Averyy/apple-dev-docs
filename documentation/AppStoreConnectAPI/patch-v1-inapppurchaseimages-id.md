@@ -1,4 +1,4 @@
-# Commit an image for an in-app purchase
+# Commit an image for an in-app purchase (v1)
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -6,7 +6,7 @@
 Commit an uploaded image asset for an in-app purchase.
 
 **Availability**:
-- App Store Connect API 3.6+
+- App Store Connect API 2.0+
 
 ## Endpoint
 
@@ -14,17 +14,17 @@ Commit an uploaded image asset for an in-app purchase.
 
 ## Parameters
 
-- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the `inAppPurchaseImages` resource ID from the [`List In-App Purchase Images`](get-v2-inapppurchases-_id_-images.md) response.
+- `id` (string) *(required)*: An opaque resource ID that uniquely identifies the resource. Obtain the `inAppPurchaseImages` resource ID from the [`List in-app purchase images`](get-v2-inapppurchases-_id_-images.md) response.
 
 ## See Also
 
-- [Create an Image for an In-App Purchase](post-v1-inapppurchaseimages.md)
+- [Create an image for an in-app purchase (v1)](post-v1-inapppurchaseimages.md)
   Reserve an image asset to appear in the App Store, representing an in-app purchase.
-- [Read In-App Purchase Image Information](get-v1-inapppurchaseimages-_id_.md)
+- [Read in-app purchase image information (v1)](get-v1-inapppurchaseimages-_id_.md)
   Read details about a specific in-app purchase image.
-- [List In-App Purchase Images](get-v2-inapppurchases-_id_-images.md)
-  The data structure that represents a get-v2-in-app purchases-{id}-images resource.
-- [Delete an In-App Purchase Image](delete-v1-inapppurchaseimages-_id_.md)
+- [List in-app purchase images](get-v2-inapppurchases-_id_-images.md)
+  List all images for a specific in-app purchase.
+- [Delete an in-app purchase image (v1)](delete-v1-inapppurchaseimages-_id_.md)
   Delete the image asset that appears on the App Store listing that represents an in-app purchase.
 
 

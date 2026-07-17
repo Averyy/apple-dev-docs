@@ -3,8 +3,10 @@
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
 
+Get a list of price resource IDs for a specific subscription offer code.
+
 **Availability**:
-- App Store Connect API 4.0+
+- App Store Connect API 4.4+
 
 ## Endpoint
 

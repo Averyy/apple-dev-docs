@@ -3,8 +3,10 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+The relationships you include in the request and those on which you can operate.
+
 **Availability**:
-- App Store Connect API 3.6+
+- App Store Connect API 2.0+
 
 ## Declaration
 
@@ -25,18 +27,20 @@ object InAppPurchaseV2.Relationships
   The data and links that describe the offer codes of the in-app purchase.
 - [object InAppPurchaseV2.Relationships.PricePoints](inapppurchasev2/relationships-data.dictionary/pricepoints-data.dictionary.md)
 - [object InAppPurchaseV2.Relationships.PromotedPurchase](inapppurchasev2/relationships-data.dictionary/promotedpurchase-data.dictionary.md)
+- [object InAppPurchaseV2.Relationships.Versions](inapppurchasev2/relationships-data.dictionary/versions-data.dictionary.md)
 
 ## Properties
 
-- `appStoreReviewScreenshot` (InAppPurchaseV2.Relationships.AppStoreReviewScreenshot)
-- `content` (InAppPurchaseV2.Relationships.Content)
-- `iapPriceSchedule` (InAppPurchaseV2.Relationships.IapPriceSchedule)
-- `images` (InAppPurchaseV2.Relationships.Images)
-- `inAppPurchaseAvailability` (InAppPurchaseV2.Relationships.InAppPurchaseAvailability)
 - `inAppPurchaseLocalizations` (InAppPurchaseV2.Relationships.InAppPurchaseLocalizations)
-- `offerCodes` (InAppPurchaseV2.Relationships.OfferCodes)
 - `pricePoints` (InAppPurchaseV2.Relationships.PricePoints)
+- `content` (InAppPurchaseV2.Relationships.Content)
+- `appStoreReviewScreenshot` (InAppPurchaseV2.Relationships.AppStoreReviewScreenshot)
 - `promotedPurchase` (InAppPurchaseV2.Relationships.PromotedPurchase)
+- `iapPriceSchedule` (InAppPurchaseV2.Relationships.IapPriceSchedule)
+- `inAppPurchaseAvailability` (InAppPurchaseV2.Relationships.InAppPurchaseAvailability)
+- `images` (InAppPurchaseV2.Relationships.Images)
+- `offerCodes` (InAppPurchaseV2.Relationships.OfferCodes)
+- `versions` (InAppPurchaseV2.Relationships.Versions)
 
 ## See Also
 

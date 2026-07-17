@@ -20,6 +20,8 @@ Get the details of a specific subscription group.
 - `include` ([string])
 - `limit[subscriptionGroupLocalizations]` (integer)
 - `limit[subscriptions]` (integer)
+- `fields[subscriptionGroupVersions]` ([string])
+- `limit[versions]` (integer)
 
 ## See Also
 

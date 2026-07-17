@@ -13,6 +13,7 @@ Get a list of the in-app purchases for a specific app.
 - [App Store Connect API 2.0 release notes](app-store-connect-api-2-0-release-notes.md)
 - [App Store Connect API 2.2 release notes](app-store-connect-api-2-2-release-notes.md)
 - [App Store Connect API 2.4 release notes](app-store-connect-api-2-4-release-notes.md)
+- [Managing in-app purchases](managing-in-app-purchases.md)
 
 ## Endpoint
 
@@ -37,13 +38,14 @@ Get a list of the in-app purchases for a specific app.
 - `fields[inAppPurchaseAvailabilities]` ([string]): Additional fields to include for each in-app purchase availability resource returned by the response.
 - `fields[inAppPurchaseImages]` ([string])
 - `fields[inAppPurchaseOfferCodes]` ([string])
+- `fields[inAppPurchaseVersions]` ([string])
 - `limit[images]` (integer)
 - `limit[offerCodes]` (integer)
+- `limit[versions]` (integer)
 
 ## See Also
 
-- [List in-app purchases ids for an app](get-v1-apps-_id_-relationships-inapppurchasesv2.md)
-  Get a list of all in-app purchases IDs for a specific app.
+- [GET /v1/apps/{id}/relationships/inAppPurchasesV2](get-v1-apps-_id_-relationships-inapppurchasesv2.md)
 - [List all in-app purchases for an app v1](get-v1-apps-_id_-inapppurchases.md)
   List the in-app purchases that are available for your app.
 - [List in-app purchases ids for an app v1](get-v1-apps-_id_-relationships-inapppurchases.md)

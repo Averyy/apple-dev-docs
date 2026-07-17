@@ -18,13 +18,16 @@ object SubscriptionPricePoint.Relationships
 
 ### Objects
 - [object SubscriptionPricePoint.Relationships.Territory](subscriptionpricepoint/relationships-data.dictionary/territory-data.dictionary.md)
-### Dictionaries
 - [object SubscriptionPricePoint.Relationships.Equalizations](subscriptionpricepoint/relationships-data.dictionary/equalizations-data.dictionary.md)
+  The links to the subscription price point’s territory equalizations relationship.
+- [object SubscriptionPricePoint.Relationships.AdjustedEqualizations](subscriptionpricepoint/relationships-data.dictionary/adjustedequalizations-data.dictionary.md)
+  The links to the subscription price point’s adjusted territory equalizations relationship.
 
 ## Properties
 
-- `equalizations` (SubscriptionPricePoint.Relationships.Equalizations)
 - `territory` (SubscriptionPricePoint.Relationships.Territory)
+- `equalizations` (SubscriptionPricePoint.Relationships.Equalizations)
+- `adjustedEqualizations` (SubscriptionPricePoint.Relationships.AdjustedEqualizations)
 
 ## See Also
 

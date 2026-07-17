@@ -1,10 +1,12 @@
-# List one-time-use code IDs for a subscription offer code
+# List one-time use code IDs for a subscription offer code
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
 
+Get a list of one-time use code resource IDs for a specific subscription offer code.
+
 **Availability**:
-- App Store Connect API 4.0+
+- App Store Connect API 4.4+
 
 ## Endpoint
 

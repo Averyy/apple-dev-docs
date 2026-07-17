@@ -10,6 +10,7 @@ The data structure that represents an app store connect api resource.
 
 ## Mentions
 
+- [Configuring subscription prices across territories](configuring-subscription-prices-across-territories.md)
 - [Creating auto-renewable subscription groups](creating-auto-renewable-subscription-groups.md)
 
 #### Overview
@@ -109,4 +110,4 @@ The App Store Connect API returns responses from resources that are consistent J
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appstoreconnectapi)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppStoreConnectAPI)*

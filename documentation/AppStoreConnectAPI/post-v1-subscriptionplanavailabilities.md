@@ -8,6 +8,10 @@ Create the plan availability configuration for an auto-renewable subscription.
 **Availability**:
 - App Store Connect API 4.4+
 
+## Mentions
+
+- [Configuring subscription prices across territories](configuring-subscription-prices-across-territories.md)
+
 ## Endpoint
 
 `POST https://api.appstoreconnect.apple.com/v1/subscriptionPlanAvailabilities`

@@ -129,6 +129,21 @@ When you successfully upload your archive, you use [`Commit an Uploaded Asset Pa
 
 When the asset pack version is successfully processed by the App Store, you see an Internal Beta Release resource created with the “Ready for testing” state in App Store Connect. This means the new version is ready for use in your app builds in internal TestFlight.
 
+After successful upload and internal testing, to test your asset pack version with a wider audience via external TestFlight, submit it to beta-asset pack review using [`Submit an app for beta review`](post-v1-betaappreviewsubmissions.md) or in App Store Connect.
+
+#### Submit Your Asset Pack
+
+When you are ready to publish the asset pack version to the App Store, you can submit it to review using [`Create a Review Submission`](post-v1-reviewsubmissions.md). You can submit the asset pack version by itself, with other asset packs, and as an app build with all files.
+
+In this example, when the review submission state is `APPROVED`, version `1` of the asset pack is available to any version of your app live on the App Store.
+
+#### Update and Version Your Asset Packs
+
+Once you have live app versions and asset packs for TestFlight and the App Store, you can also  update either the app binary or the asset pack content.
+
+- **Update app binary**: To update the app binary without changing any asset pack content, the new app binary needs to continue to work with the existing available asset packs. When you upload the new app build and it becomes ready for internal testing, it can download the internal testing versions of the existing asset pack. Similarly, when you submit the build for external TestFlight or the App Store, it continues to work with the asset pack versions that are live for external TestFlight and the App Store, respectively.
+- **Update asset pack**: To switch out some contents in the Tutorial asset pack, you can upload a new version for the same asset pack. The system assigns a higher version number; in this case it is version 2. When the system processes version 2, it replaces version 1 for internal testing, but version 1 is still live for external TestFlight and the App Store. If you are satisfied with version 2, you can submit to review to replace version 1 in external TestFlight and the App Store. As a result, the devices downloads version 2 instead of version 1 when someone requests the tutorial asset pack and when the system updates the asset pack in the background.
+
 
 ---
 

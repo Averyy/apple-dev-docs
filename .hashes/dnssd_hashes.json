@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-07-14T07:42:21.049102",
+    "last_updated": "2026-07-17T07:42:07.516812",
     "total_pages": 488,
-    "session_id": "2026-07-14T07:41:40.191664"
+    "session_id": "2026-07-17T07:41:22.715643"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/dnssd.json": {
       "hash": "52d7f50b01431db9104a916e4e649e83f8291f4b980c77bb4962432d68a6e3f8",
-      "last_checked": "2026-07-14T07:41:40.571890",
+      "last_checked": "2026-07-17T07:41:23.153337",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"62bb066a970571a738218e5cf3830193\"",
       "file_path": "documentation/dnssd/dnssd.md"
     },
     "https://developer.apple.com/documentation/dnssd": {
       "hash": "52d7f50b01431db9104a916e4e649e83f8291f4b980c77bb4962432d68a6e3f8",
-      "last_checked": "2026-07-14T07:41:40.477209",
+      "last_checked": "2026-07-17T07:41:23.055451",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"62bb066a970571a738218e5cf3830193\"",
       "file_path": "documentation/dnssd/dnssd.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/dns-service-discovery-c.json": {
       "hash": "d6955992498cd3a511fbe1a788b165e43e38514f9e8caf83e1eb88936ac61b07",
-      "last_checked": "2026-07-14T07:41:40.879166",
+      "last_checked": "2026-07-17T07:41:23.564889",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"095c77a9d6133644bd49c2df9c64d288\"",
       "file_path": "documentation/dnssd/dns-service-discovery-c.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/dnssd-enumerations.json": {
       "hash": "35c657ed2316351e831ae15f7bdc18b0efa4ffb02f1eef3622f1de2bb44616d5",
-      "last_checked": "2026-07-14T07:41:41.034478",
+      "last_checked": "2026-07-17T07:41:23.865395",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"8fee1a373347e198bc5bdb8e4a3bbb43\"",
       "file_path": "documentation/dnssd/dnssd-enumerations.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/dnssd-functions.json": {
       "hash": "07d2f0738abe1f225ece16cdaece4b786d786acc5123e144285a5eaf055b2e5b",
-      "last_checked": "2026-07-14T07:41:41.195637",
+      "last_checked": "2026-07-17T07:41:24.164720",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"b97215bcc7aa71abd36f50558ee27c6b\"",
       "file_path": "documentation/dnssd/dnssd-functions.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/dnssd-data-types.json": {
       "hash": "df1dc3a020dc2db8dcb9f2a09af9a55ebcf8930016ef89b5f2758624acaa0392",
-      "last_checked": "2026-07-14T07:41:41.342533",
+      "last_checked": "2026-07-17T07:41:24.458970",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"74951aa2bb87d4a23597489cb561e749\"",
       "file_path": "documentation/dnssd/dnssd-data-types.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/dnssd-constants.json": {
       "hash": "dc1dd62c281b10c4ea9b7464d394a0af027bfda474c210ed6fadce09c2f94276",
-      "last_checked": "2026-07-14T07:41:41.564267",
+      "last_checked": "2026-07-17T07:41:24.761391",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"2cabf12fbd3a4c5bf733fb31fe402878\"",
       "file_path": "documentation/dnssd/dnssd-constants.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceaaaapolicyfallback.json": {
       "hash": "5a1bca7726f044b3da967dd91531062e699ea6f46768178160a0edba9c8067a7",
-      "last_checked": "2026-07-14T07:41:41.733858",
+      "last_checked": "2026-07-17T07:41:25.092594",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"d12f52efbd1005443d12227d8c5319ef\"",
       "file_path": "documentation/dnssd/kdnsserviceaaaapolicyfallback.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceaaaapolicynone.json": {
       "hash": "dbfb80447e7e5e92c658ab33aad38d0a0c3fe4e6a5870fab45108ee0ef3289f5",
-      "last_checked": "2026-07-14T07:41:41.879751",
+      "last_checked": "2026-07-17T07:41:25.268377",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"94f0503f222dd9168e85c0a756eef68d\"",
       "file_path": "documentation/dnssd/kdnsserviceaaaapolicynone.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceclass_in.json": {
       "hash": "255341f7f85469a76a99bc74dc34c30b3dd76450d65a7cd8d1b5526db7b02076",
-      "last_checked": "2026-07-14T07:41:42.049986",
+      "last_checked": "2026-07-17T07:41:25.586652",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"d2e2fa2c08bf84f450913ccb16388c63\"",
       "file_path": "documentation/dnssd/kdnsserviceclass-in.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceerr_alreadyregistered.json": {
       "hash": "d3a8e38ab6fa895652d258d03b69782b36f0261cde1796431cebd54175c3c0d7",
-      "last_checked": "2026-07-14T07:41:42.376567",
+      "last_checked": "2026-07-17T07:41:26.193798",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"357471e4c043ee0e45c1dc33c322d8db\"",
       "file_path": "documentation/dnssd/kdnsserviceerr-alreadyregistered.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceerr_badflags.json": {
       "hash": "6847f67b1d5480f63047f1f4d1d03ae6886729d95f2edcdde9326437d6f1e612",
-      "last_checked": "2026-07-14T07:41:42.593966",
+      "last_checked": "2026-07-17T07:41:26.354656",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"1fe08f285b18d394a990f69d6cd0d7e1\"",
       "file_path": "documentation/dnssd/kdnsserviceerr-badflags.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceerr_badinterfaceindex.json": {
       "hash": "fb33cef4546da2cd1d18516d3754a3a371909075e5f17b1fa380391fb9e416d1",
-      "last_checked": "2026-07-14T07:41:42.821121",
+      "last_checked": "2026-07-17T07:41:26.639341",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"959d2fc5692d8ffbd5154370eab52672\"",
       "file_path": "documentation/dnssd/kdnsserviceerr-badinterfaceindex.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceerr_badkey.json": {
       "hash": "6a60049a1c5e237cc2a525607c6cde658446c12caeef7a677b23bf992d55b22e",
-      "last_checked": "2026-07-14T07:41:43.023177",
+      "last_checked": "2026-07-17T07:41:26.803608",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"a1635e39a7a2db6c3b451324aa5ac10b\"",
       "file_path": "documentation/dnssd/kdnsserviceerr-badkey.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceerr_badparam.json": {
       "hash": "6ce640ed894b9536c3b5357f7178044b8a066d719d7165b34758fab856a9b42f",
-      "last_checked": "2026-07-14T07:41:43.219313",
+      "last_checked": "2026-07-17T07:41:26.974485",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"59864ae24a70dea87556dba622f24dbe\"",
       "file_path": "documentation/dnssd/kdnsserviceerr-badparam.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceerr_badreference.json": {
       "hash": "e6d9eefdab627ff4c7d7844a913daa58f59a108cc4bae475e220b53a14754a69",
-      "last_checked": "2026-07-14T07:41:43.356127",
+      "last_checked": "2026-07-17T07:41:27.280936",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"fe94366f2b53bedae521e6b12356df00\"",
       "file_path": "documentation/dnssd/kdnsserviceerr-badreference.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceerr_badsig.json": {
       "hash": "d166af17d44058e6e924bb829a0752a24ff79aa8ccdff04c99783b1def362d1b",
-      "last_checked": "2026-07-14T07:41:43.522726",
+      "last_checked": "2026-07-17T07:41:27.455014",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"3046000447e9dc60f7ec6ac31bb59b02\"",
       "file_path": "documentation/dnssd/kdnsserviceerr-badsig.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceerr_badstate.json": {
       "hash": "f877ad27e9228ebc0f9ff67526d9e8d6d5e5f2dabbb32232bfa5541340d5572f",
-      "last_checked": "2026-07-14T07:41:43.748228",
+      "last_checked": "2026-07-17T07:41:27.635257",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"eab320ef7ffecd5fa1c588bc9f5bf840\"",
       "file_path": "documentation/dnssd/kdnsserviceerr-badstate.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceerr_badtime.json": {
       "hash": "5505ecb1314ac3fcf90280e44e74c34a02d2c2812a128af9de4c2413a2079299",
-      "last_checked": "2026-07-14T07:41:43.945873",
+      "last_checked": "2026-07-17T07:41:27.916004",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"719304111fa233e2a837f12a5cbb3887\"",
       "file_path": "documentation/dnssd/kdnsserviceerr-badtime.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceerr_defunctconnection.json": {
       "hash": "f292c2799c12a474d572dca20564c50942835d7ea6d7b6eab1b9e3a40168ffd4",
-      "last_checked": "2026-07-14T07:41:44.102477",
+      "last_checked": "2026-07-17T07:41:28.090307",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"03d15d2347c348a45d4113c16bd2876a\"",
       "file_path": "documentation/dnssd/kdnsserviceerr-defunctconnection.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceerr_doublenat.json": {
       "hash": "986954f34feaa124480dff242ac2f649d4b69a8aeaa7e0ab86a200f1ae2bce6d",
-      "last_checked": "2026-07-14T07:41:44.308006",
+      "last_checked": "2026-07-17T07:41:28.261014",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"7b2d0d5fd0b83e7c70f0ddb6213ec167\"",
       "file_path": "documentation/dnssd/kdnsserviceerr-doublenat.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceerr_firewall.json": {
       "hash": "7a3db5ca9efbcd34912e8aa01650b059fad71dd99a2f9667c9305ac1f7eb0ae2",
-      "last_checked": "2026-07-14T07:41:44.453272",
+      "last_checked": "2026-07-17T07:41:28.429174",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"853c7b9b47d1f76c92806555ed905de3\"",
       "file_path": "documentation/dnssd/kdnsserviceerr-firewall.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceerr_incompatible.json": {
       "hash": "2f0c736be4b92323671cd2258f08b5016fa9e43771849315f83d2812063c307c",
-      "last_checked": "2026-07-14T07:41:44.619640",
+      "last_checked": "2026-07-17T07:41:28.594949",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"a7fbf6eb02045089c7fabf796df14ef6\"",
       "file_path": "documentation/dnssd/kdnsserviceerr-incompatible.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceerr_invalid.json": {
       "hash": "a966a916f7c4d61d232a5fa3207a0b0118aa7e2d2483868b03f9c8cd1704eaa0",
-      "last_checked": "2026-07-14T07:41:44.776680",
+      "last_checked": "2026-07-17T07:41:28.754909",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"3e179af980638437ab18a067a9f7d414\"",
       "file_path": "documentation/dnssd/kdnsserviceerr-invalid.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceerr_natportmappingdisabled.json": {
       "hash": "9aa1dff6947145e69f7e46c4270255b191d9f61c269660dbe3c8ec55aaabe72a",
-      "last_checked": "2026-07-14T07:41:44.934621",
+      "last_checked": "2026-07-17T07:41:28.966024",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"9e2db8ef9d405c4f1b05f62fe2a6569b\"",
       "file_path": "documentation/dnssd/kdnsserviceerr-natportmappingdisabled.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceerr_natportmappingunsupported.json": {
       "hash": "83270c59b5638ebc73bb87594ca134e91fee0f3de88df98c26120512d8263cbd",
-      "last_checked": "2026-07-14T07:41:45.083860",
+      "last_checked": "2026-07-17T07:41:29.254735",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"ea8dfe866eb1fe8cd49a4b088135fa0e\"",
       "file_path": "documentation/dnssd/kdnsserviceerr-natportmappingunsupported.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceerr_nattraversal.json": {
       "hash": "9825f36c22d0d3f172bcd6341f58f9ef9fca8b95fc98aa5815836b9f6998d121",
-      "last_checked": "2026-07-14T07:41:45.250620",
+      "last_checked": "2026-07-17T07:41:29.443785",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"9da95aad834951738f2b5bb909bfffc3\"",
       "file_path": "documentation/dnssd/kdnsserviceerr-nattraversal.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceerr_nameconflict.json": {
       "hash": "9b40744734f756155eedb501e745752836dec5b1885eea47c139b224610480d2",
-      "last_checked": "2026-07-14T07:41:45.408128",
+      "last_checked": "2026-07-17T07:41:29.604602",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"bf6347059483f74fd52b44b8b5f86ba7\"",
       "file_path": "documentation/dnssd/kdnsserviceerr-nameconflict.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceerr_noauth.json": {
       "hash": "91dbd4db0e496f46d4f6c52198c9d0553ef1b8f743168af900d25d4693be7d3e",
-      "last_checked": "2026-07-14T07:41:45.550330",
+      "last_checked": "2026-07-17T07:41:29.761292",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"cbb8fa80afd375599b1938be1e610af9\"",
       "file_path": "documentation/dnssd/kdnsserviceerr-noauth.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceerr_noerror.json": {
       "hash": "4ca886ccd44d18e27a2981b3807318b5922c621340be38274b2fd7cbeb753294",
-      "last_checked": "2026-07-14T07:41:45.759391",
+      "last_checked": "2026-07-17T07:41:29.926245",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"a75755ea07ecd50ccc3cd95aadf77c75\"",
       "file_path": "documentation/dnssd/kdnsserviceerr-noerror.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceerr_nomemory.json": {
       "hash": "b188ed2889fd92fa37861eecca3654506d2252253d867de00a56361d059246e1",
-      "last_checked": "2026-07-14T07:41:45.921854",
+      "last_checked": "2026-07-17T07:41:30.099011",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"43a131647b25f3d835f56606bd4a8439\"",
       "file_path": "documentation/dnssd/kdnsserviceerr-nomemory.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceerr_norouter.json": {
       "hash": "f110a9539ded27db5e4e9484177c7a57637479afbcc0c2ccbbc7ba14e3fcc202",
-      "last_checked": "2026-07-14T07:41:46.130574",
+      "last_checked": "2026-07-17T07:41:30.316148",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"d831de69c435dc5af294a168f6244460\"",
       "file_path": "documentation/dnssd/kdnsserviceerr-norouter.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceerr_nosuchkey.json": {
       "hash": "18728910ec24908e3984ab7b19a24b4f7be2e9fe4971520e71df55a5323cda72",
-      "last_checked": "2026-07-14T07:41:46.273179",
+      "last_checked": "2026-07-17T07:41:30.478736",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"1c97078ef592abeaeb431055924acabf\"",
       "file_path": "documentation/dnssd/kdnsserviceerr-nosuchkey.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceerr_nosuchname.json": {
       "hash": "9b89f6b2328fe69c1bc4c33278985256d34bd69ea3176dfe9db845329fa30b05",
-      "last_checked": "2026-07-14T07:41:46.436530",
+      "last_checked": "2026-07-17T07:41:30.635116",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"8cbd476e712aeee16a2155926cfb8ddb\"",
       "file_path": "documentation/dnssd/kdnsserviceerr-nosuchname.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceerr_nosuchrecord.json": {
       "hash": "8062dd40e924abb077da78ee4188fe3302685381c42bac1f08f5db29d02c14ca",
-      "last_checked": "2026-07-14T07:41:46.599834",
+      "last_checked": "2026-07-17T07:41:30.805380",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"c1acdee10d09211585f4405b7fd84284\"",
       "file_path": "documentation/dnssd/kdnsserviceerr-nosuchrecord.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceerr_notinitialized.json": {
       "hash": "01c90302189aaa929583c8f2e19f9dc0591cac8f5962f5d771fc96a0a6cff3b1",
-      "last_checked": "2026-07-14T07:41:46.824945",
+      "last_checked": "2026-07-17T07:41:30.965473",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"5dbe1657875bea33f7c48ee850394a0f\"",
       "file_path": "documentation/dnssd/kdnsserviceerr-notinitialized.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceerr_notpermitted.json": {
       "hash": "9f1bc282c3c503180bdef977fcff4487765ec79255b7b6eb063c4c28d3f954b9",
-      "last_checked": "2026-07-14T07:41:46.983186",
+      "last_checked": "2026-07-17T07:41:31.140262",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"9bcc56be39a7c453e68021090e419794\"",
       "file_path": "documentation/dnssd/kdnsserviceerr-notpermitted.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceerr_policydenied.json": {
       "hash": "79d89f0b134ea27dc9bf141ae101c9a47ff30ffbebd383e55f64e0156882eba9",
-      "last_checked": "2026-07-14T07:41:47.193389",
+      "last_checked": "2026-07-17T07:41:31.323257",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"859dc0445f8088dd9d8457b73b12b030\"",
       "file_path": "documentation/dnssd/kdnsserviceerr-policydenied.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceerr_pollingmode.json": {
       "hash": "0c1c1304fd49bff51016de0e487086faae31552ab5777cfc096e020dc564cfcd",
-      "last_checked": "2026-07-14T07:41:47.330167",
+      "last_checked": "2026-07-17T07:41:31.482400",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"ff6641d475dad3b1a663a964e4d9a9a3\"",
       "file_path": "documentation/dnssd/kdnsserviceerr-pollingmode.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceerr_refused.json": {
       "hash": "9ccd51526490c0a630f7f454c2a3ed8f970b5a78fa59f9420cb754edb80b4ca1",
-      "last_checked": "2026-07-14T07:41:47.527584",
+      "last_checked": "2026-07-17T07:41:31.646456",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"533e16e428e73df56960886ec2a90fc5\"",
       "file_path": "documentation/dnssd/kdnsserviceerr-refused.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceerr_servicenotrunning.json": {
       "hash": "a394fdae27620beb6abe17ade32837444ea010a3e9dbf394f1146094ede15b57",
-      "last_checked": "2026-07-14T07:41:47.677047",
+      "last_checked": "2026-07-17T07:41:31.823056",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"d30bb8db4f2a3da1b5c7e0b764c32d4b\"",
       "file_path": "documentation/dnssd/kdnsserviceerr-servicenotrunning.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceerr_staledata.json": {
       "hash": "7a781893afd86832f56d36b0c0fda5c5bd495880bc9287bb1de82e3eeb5f8bb9",
-      "last_checked": "2026-07-14T07:41:47.846072",
+      "last_checked": "2026-07-17T07:41:31.982238",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"b258cedbd8a5b2926ddd0bdc4c012881\"",
       "file_path": "documentation/dnssd/kdnsserviceerr-staledata.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceerr_timeout.json": {
       "hash": "dc0b61b9ea2e8d9fd7fcb3e4b16f3d1d2e4c55e8190595e7b15aede056ded606",
-      "last_checked": "2026-07-14T07:41:48.008135",
+      "last_checked": "2026-07-17T07:41:32.179279",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"8546840d25fc8975e4d9103eaea01a7b\"",
       "file_path": "documentation/dnssd/kdnsserviceerr-timeout.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceerr_transient.json": {
       "hash": "b97319b325163ae2c4c8c38d2d6ea228459c50cc6f1d47917f7c491518b0e425",
-      "last_checked": "2026-07-14T07:41:48.177430",
+      "last_checked": "2026-07-17T07:41:32.336685",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"3d12eaa0a79476dffed5d27c1d7fd3ea\"",
       "file_path": "documentation/dnssd/kdnsserviceerr-transient.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceerr_unknown.json": {
       "hash": "2ec73f4bed6955489ccddae461ae1aa0f6df9c91a8c731ee856ac15d74b3579b",
-      "last_checked": "2026-07-14T07:41:48.357096",
+      "last_checked": "2026-07-17T07:41:32.545183",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"10cd36bdc770fc0ef5fcdb758b81c537\"",
       "file_path": "documentation/dnssd/kdnsserviceerr-unknown.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceerr_unsupported.json": {
       "hash": "e3041a6f1af0da0df55d4ab0bd3b1361e47d5fd5e5e5776095ef855cb9c7e1be",
-      "last_checked": "2026-07-14T07:41:48.520662",
+      "last_checked": "2026-07-17T07:41:32.722050",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"51f85ae9c6244684100b9e1ea102f5ec\"",
       "file_path": "documentation/dnssd/kdnsserviceerr-unsupported.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceflagansweredfromcache.json": {
       "hash": "9375f9af379d36002a8f405e5d3cbfd3847a543aae11cd1ca94715c711d67d6d",
-      "last_checked": "2026-07-14T07:41:48.711100",
+      "last_checked": "2026-07-17T07:41:33.022403",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"ff05fcfc74e30386fe6c884bff4dddfb\"",
       "file_path": "documentation/dnssd/kdnsserviceflagansweredfromcache.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceflagsadd.json": {
       "hash": "200ed01b42a111630f106abaa57cf9ebb7af8c8dc5ff94972030b8ebcb3e4c27",
-      "last_checked": "2026-07-14T07:41:48.850320",
+      "last_checked": "2026-07-17T07:41:33.200866",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"321cbc68d547d3c086bb585abf6e9ada\"",
       "file_path": "documentation/dnssd/kdnsserviceflagsadd.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceflagsallowexpiredanswers.json": {
       "hash": "e7326b3c64d9001e6cf342c828a83c3ad491ba31e5bcebd81ade42d22046e7ab",
-      "last_checked": "2026-07-14T07:41:49.006004",
+      "last_checked": "2026-07-17T07:41:33.380499",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"6190110ba713c1c4caa49f5f068c815c\"",
       "file_path": "documentation/dnssd/kdnsserviceflagsallowexpiredanswers.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceflagsallowremotequery.json": {
       "hash": "2e6a6ae70dba37a29413149a3c79230f9aa26d1e41d7a0d6dc8e01e96d23853f",
-      "last_checked": "2026-07-14T07:41:49.158617",
+      "last_checked": "2026-07-17T07:41:33.534685",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"48866d94a171f4e2892b135c7ac97b53\"",
       "file_path": "documentation/dnssd/kdnsserviceflagsallowremotequery.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceflagsautotrigger.json": {
       "hash": "67a5fded7538dda1b2f51b54b2c0a38bc7f2575052af0122b50e8ff224bd121a",
-      "last_checked": "2026-07-14T07:41:49.315064",
+      "last_checked": "2026-07-17T07:41:33.868797",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"19904830f9dbb92fc4e6ae3d1b829a8b\"",
       "file_path": "documentation/dnssd/kdnsserviceflagsautotrigger.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceflagsbackgroundtrafficclass.json": {
       "hash": "954fcc1ccace62fc702568d7bc6cc6b576317a963d924294a4edbeff502290bc",
-      "last_checked": "2026-07-14T07:41:49.494240",
+      "last_checked": "2026-07-17T07:41:34.029153",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"2d03b5d0498bb17a58afe82632d05e1b\"",
       "file_path": "documentation/dnssd/kdnsserviceflagsbackgroundtrafficclass.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceflagsbogus.json": {
       "hash": "537707a2d4e6d563a5dc2b06fc38d681285a987127fc9298965e13b9990923e7",
-      "last_checked": "2026-07-14T07:41:49.641725",
+      "last_checked": "2026-07-17T07:41:34.203517",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"872b49e81dddd4b0654f7b2eb49d1c10\"",
       "file_path": "documentation/dnssd/kdnsserviceflagsbogus.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceflagsbrowsedomains.json": {
       "hash": "c54da88406dea3ce7ec493634af3a462c160372db47f2113b11db1d9caf09cb7",
-      "last_checked": "2026-07-14T07:41:49.798139",
+      "last_checked": "2026-07-17T07:41:34.369129",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"8bc46a69a417a69aae61506b6c4aea24\"",
       "file_path": "documentation/dnssd/kdnsserviceflagsbrowsedomains.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceflagsdefault.json": {
       "hash": "92565b02cd544f71005ffe27de5ed81a4969e6da9055958ec5414d104717dd56",
-      "last_checked": "2026-07-14T07:41:49.959496",
+      "last_checked": "2026-07-17T07:41:34.541759",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"559d2b4070c3c9bd2fdd98eb15597d05\"",
       "file_path": "documentation/dnssd/kdnsserviceflagsdefault.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceflagsenablednssec.json": {
       "hash": "276ead639c53df1853b8ebd377843387e12e372d650c76b67ef98057bc725799",
-      "last_checked": "2026-07-14T07:41:50.124462",
+      "last_checked": "2026-07-17T07:41:34.707555",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"c1b3d7c92f1115c89eaa8885ac8c4185\"",
       "file_path": "documentation/dnssd/kdnsserviceflagsenablednssec.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceflagsexpiredanswer.json": {
       "hash": "d5b6c562648718363296ef51f0742dc5f1050aef99372a1652c8776137c805c1",
-      "last_checked": "2026-07-14T07:41:50.286604",
+      "last_checked": "2026-07-17T07:41:34.878828",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"654bec7a9b9aaae7711ddf4b80b416e0\"",
       "file_path": "documentation/dnssd/kdnsserviceflagsexpiredanswer.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceflagsforce.json": {
       "hash": "4acb8c8fe45a616a5523696aa7c7f07f341ec7ebf448f72dfb864da5544d432e",
-      "last_checked": "2026-07-14T07:41:50.464191",
+      "last_checked": "2026-07-17T07:41:35.066873",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"cd6fdb8d997c9ff95e448c0089dbf4f0\"",
       "file_path": "documentation/dnssd/kdnsserviceflagsforce.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceflagsforcemulticast.json": {
       "hash": "063177bcc6e5dfb7e512b7574f076523ccc0f27e1897e4558a0537be7834cc9c",
-      "last_checked": "2026-07-14T07:41:50.649643",
+      "last_checked": "2026-07-17T07:41:35.230759",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"1e0743dd656613fe90e23b75bb364c0a\"",
       "file_path": "documentation/dnssd/kdnsserviceflagsforcemulticast.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceflagsincludeawdl.json": {
       "hash": "1665b3d79ddfd752ce3dfba0e463966af575925a0ff221c6ad5c285c4e0fef99",
-      "last_checked": "2026-07-14T07:41:50.805445",
+      "last_checked": "2026-07-17T07:41:35.406003",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"466c41538ee6b6f8124c5951b0452711\"",
       "file_path": "documentation/dnssd/kdnsserviceflagsincludeawdl.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceflagsincludep2p.json": {
       "hash": "bf405776c6498cb606ea826e54c4540e4f46727ec89b9d85f6692446b13550b5",
-      "last_checked": "2026-07-14T07:41:50.979208",
+      "last_checked": "2026-07-17T07:41:35.600153",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"b7335219a01fa6481af3aa4e33a27356\"",
       "file_path": "documentation/dnssd/kdnsserviceflagsincludep2p.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceflagsindeterminate.json": {
       "hash": "2f6c1c484e4304cf8e2ffcf52ce85e1d895b148e80fafa445e59599e8720149e",
-      "last_checked": "2026-07-14T07:41:51.162117",
+      "last_checked": "2026-07-17T07:41:35.758739",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"63ef679ae23a832ce7c3fdb0d5de053b\"",
       "file_path": "documentation/dnssd/kdnsserviceflagsindeterminate.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceflagsinsecure.json": {
       "hash": "30c944a4452d97e7d9f933ba1bd0d22db8467bcf2bff6d31e7080a6b6d595a66",
-      "last_checked": "2026-07-14T07:41:51.319044",
+      "last_checked": "2026-07-17T07:41:35.916854",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"cfea25770cac3b9776ed8ff99b29073f\"",
       "file_path": "documentation/dnssd/kdnsserviceflagsinsecure.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceflagsknownunique.json": {
       "hash": "66a5ad8782d2a825ae498cc9f3227442e77b9fc6b7d9cff3f56a9d5fc90e0767",
-      "last_checked": "2026-07-14T07:41:51.463659",
+      "last_checked": "2026-07-17T07:41:36.085376",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"f9501aac4c5ac7dcaf87ee2e4977c7b6\"",
       "file_path": "documentation/dnssd/kdnsserviceflagsknownunique.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceflagslonglivedquery.json": {
       "hash": "e6e981bd8400d90baefd8c0b82eaa8bf0b3086bb2d5ec19519e080318c4d9e13",
-      "last_checked": "2026-07-14T07:41:51.602782",
+      "last_checked": "2026-07-17T07:41:36.259417",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"7bda44bc948d4ddcd9ba1077c4e9fd60\"",
       "file_path": "documentation/dnssd/kdnsserviceflagslonglivedquery.md"
     },
@@ -1031,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceflagsmorecoming.json": {
       "hash": "32bb9d360c1af944dd296471a25a785d759cbe6643ae9b7650161cb9579f839e",
-      "last_checked": "2026-07-14T07:41:51.747782",
+      "last_checked": "2026-07-17T07:41:36.453260",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"48fa4e9861d88ec4e89270b3618546d2\"",
       "file_path": "documentation/dnssd/kdnsserviceflagsmorecoming.md"
     },
@@ -1047,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceflagsnoautorename.json": {
       "hash": "d04cc18f46c2040b20c91e5130b5424b4a215b74a6876f8ef6609ffeada236a8",
-      "last_checked": "2026-07-14T07:41:51.904477",
+      "last_checked": "2026-07-17T07:41:36.615189",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"e5ae69a8de83e94c3fb0663efcc13aba\"",
       "file_path": "documentation/dnssd/kdnsserviceflagsnoautorename.md"
     },
@@ -1063,9 +1063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceflagsprivatefive.json": {
       "hash": "39b964673d0e91cac092660b11c65f1bb631e0f6e948eed42df8f403f171c2b8",
-      "last_checked": "2026-07-14T07:41:52.045726",
+      "last_checked": "2026-07-17T07:41:36.911003",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"984705a9b8c86377c36fb025a3e79a81\"",
       "file_path": "documentation/dnssd/kdnsserviceflagsprivatefive.md"
     },
@@ -1079,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceflagsprivatefour.json": {
       "hash": "1b71bc71945f45d38bc6bb004d20607ae7549408a582bce600d0b106d65427d5",
-      "last_checked": "2026-07-14T07:41:52.194315",
+      "last_checked": "2026-07-17T07:41:37.066225",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"1d0a9061351d3f54cafad0402b60a08a\"",
       "file_path": "documentation/dnssd/kdnsserviceflagsprivatefour.md"
     },
@@ -1095,9 +1095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceflagsprivateone.json": {
       "hash": "84dd01494c411fc22ce4ff86fa22bb769947bd018cc7c42120b8848b35876e23",
-      "last_checked": "2026-07-14T07:41:52.421854",
+      "last_checked": "2026-07-17T07:41:37.263029",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"7a1c9495491b479150ccf5a85f675036\"",
       "file_path": "documentation/dnssd/kdnsserviceflagsprivateone.md"
     },
@@ -1111,9 +1111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceflagsprivatethree.json": {
       "hash": "85d292ace7bc7d5abc4d525c8ff519bc47ea4191c8bb5f782889cdcf3da2cc6b",
-      "last_checked": "2026-07-14T07:41:52.576755",
+      "last_checked": "2026-07-17T07:41:37.427208",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"e2bc0b592eb268970d4dc484f0e6f0a3\"",
       "file_path": "documentation/dnssd/kdnsserviceflagsprivatethree.md"
     },
@@ -1127,9 +1127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceflagsprivatetwo.json": {
       "hash": "1d342e5a0c461183f772992fb68e6002b682077e304aaf5371c67303dd198a99",
-      "last_checked": "2026-07-14T07:41:52.734597",
+      "last_checked": "2026-07-17T07:41:37.599923",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"393e26e362d3558b87333c1cf0074931\"",
       "file_path": "documentation/dnssd/kdnsserviceflagsprivatetwo.md"
     },
@@ -1143,9 +1143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceflagsqueuerequest.json": {
       "hash": "fde8d5436389a3f5e66228dc8e64f0eff36e1c4b065104112484396d7cf1f526",
-      "last_checked": "2026-07-14T07:41:52.876436",
+      "last_checked": "2026-07-17T07:41:37.824951",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"c4962fe887c23e5ecd5ec99bb03efa88\"",
       "file_path": "documentation/dnssd/kdnsserviceflagsqueuerequest.md"
     },
@@ -1159,9 +1159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceflagsregistrationdomains.json": {
       "hash": "de94291d288d5506fb036ae3564740654ca82c9798bf9b1bce492ac8720beb61",
-      "last_checked": "2026-07-14T07:41:53.092287",
+      "last_checked": "2026-07-17T07:41:38.002107",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"e3673145f6fd04e211158ae4c16f7eea\"",
       "file_path": "documentation/dnssd/kdnsserviceflagsregistrationdomains.md"
     },
@@ -1175,9 +1175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceflagsreturnintermediates.json": {
       "hash": "0e2d4094186b390d84d2922cb80e634e9a2ce039b8212ff34f3e0004458dddb9",
-      "last_checked": "2026-07-14T07:41:53.237001",
+      "last_checked": "2026-07-17T07:41:38.177157",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"476929b28ddde55824ab5c6265e79680\"",
       "file_path": "documentation/dnssd/kdnsserviceflagsreturnintermediates.md"
     },
@@ -1191,9 +1191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceflagssecure.json": {
       "hash": "9ce267597736d771c959325b9d05c446768c5c5411e1793e250c9aa40157ae62",
-      "last_checked": "2026-07-14T07:41:53.408337",
+      "last_checked": "2026-07-17T07:41:38.347865",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"bebfab2cb23171c6559ebefa141b8448\"",
       "file_path": "documentation/dnssd/kdnsserviceflagssecure.md"
     },
@@ -1207,9 +1207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceflagsshareconnection.json": {
       "hash": "c890b5f51b5ef554d37c3e5607dd6bfea3682c3b2696e7823981a46a8a57ee3c",
-      "last_checked": "2026-07-14T07:41:53.561042",
+      "last_checked": "2026-07-17T07:41:38.537386",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"e914ed2bd407f2d7ae1e7485dedd026c\"",
       "file_path": "documentation/dnssd/kdnsserviceflagsshareconnection.md"
     },
@@ -1223,9 +1223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceflagsshared.json": {
       "hash": "55e7b9a0229eec14898140b3e4afa8ff70e9b1cfcc0a100d77183766843fe196",
-      "last_checked": "2026-07-14T07:41:53.719685",
+      "last_checked": "2026-07-17T07:41:38.692389",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"72a623b0476cf0313c2825a21dedc4f6\"",
       "file_path": "documentation/dnssd/kdnsserviceflagsshared.md"
     },
@@ -1239,9 +1239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceflagssuppressunusable.json": {
       "hash": "8f7b61ef862818d45dde24d59b20ce475eea946674fe2b960ba2ceaec8c20bdd",
-      "last_checked": "2026-07-14T07:41:53.883887",
+      "last_checked": "2026-07-17T07:41:38.870547",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"c628917764b6dc818de0679f857f1e30\"",
       "file_path": "documentation/dnssd/kdnsserviceflagssuppressunusable.md"
     },
@@ -1255,9 +1255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceflagsthresholdfinder.json": {
       "hash": "007bc31d141e24f747352f65c1ac1932b5223b50583496dd41d0ab8d606d27d7",
-      "last_checked": "2026-07-14T07:41:54.026644",
+      "last_checked": "2026-07-17T07:41:39.149491",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"67186213cf0db4d16223f490b9d16109\"",
       "file_path": "documentation/dnssd/kdnsserviceflagsthresholdfinder.md"
     },
@@ -1271,9 +1271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceflagsthresholdone.json": {
       "hash": "e0c246f153d35b2a3c94207523ca5e3d53e304db5f4e9844d43826eaeeb0fb32",
-      "last_checked": "2026-07-14T07:41:54.192837",
+      "last_checked": "2026-07-17T07:41:39.333142",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"0a0a9b9fa8c5447d8112f34577dd2dc8\"",
       "file_path": "documentation/dnssd/kdnsserviceflagsthresholdone.md"
     },
@@ -1287,9 +1287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceflagsthresholdreached.json": {
       "hash": "f30661ddd59e5722ae5ce51a9f3709bd72cbc4523d69f8d9c48b096fc7b053ec",
-      "last_checked": "2026-07-14T07:41:54.337747",
+      "last_checked": "2026-07-17T07:41:39.489430",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"cf7820e4ad91cd4c7bfd69098a6c0b9f\"",
       "file_path": "documentation/dnssd/kdnsserviceflagsthresholdreached.md"
     },
@@ -1303,9 +1303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceflagstimeout.json": {
       "hash": "63d58b6bc2c5f0658590bc07c1b6fc7b6e9e0d9a402c05782c1f34d9bdde8079",
-      "last_checked": "2026-07-14T07:41:54.490848",
+      "last_checked": "2026-07-17T07:41:39.669170",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"7c5e4cdfd12341c3c2cd8471f4cd7cd4\"",
       "file_path": "documentation/dnssd/kdnsserviceflagstimeout.md"
     },
@@ -1319,9 +1319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceflagsunicastresponse.json": {
       "hash": "8e92aa55748d66f18340f954040ef21efa23fdf0a307c91b18e1e41332e42ae7",
-      "last_checked": "2026-07-14T07:41:54.647347",
+      "last_checked": "2026-07-17T07:41:39.828497",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"03d1f890ef2cf7084710a010a150d25c\"",
       "file_path": "documentation/dnssd/kdnsserviceflagsunicastresponse.md"
     },
@@ -1335,9 +1335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceflagsunique.json": {
       "hash": "5de8ff0a8d08608faeeeb61eb938e4ac86480550348d111c4b3b38b2701180b6",
-      "last_checked": "2026-07-14T07:41:54.813600",
+      "last_checked": "2026-07-17T07:41:39.994917",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"cd199679eb693f13658c5110ff1e4f17\"",
       "file_path": "documentation/dnssd/kdnsserviceflagsunique.md"
     },
@@ -1351,9 +1351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceflagsvalidate.json": {
       "hash": "eda5c3ef5047051036c23adc726c8695276b39bea49609abab2001128db1cedd",
-      "last_checked": "2026-07-14T07:41:54.971325",
+      "last_checked": "2026-07-17T07:41:40.173088",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"b7877c0da0263139b16413e2ad879e47\"",
       "file_path": "documentation/dnssd/kdnsserviceflagsvalidate.md"
     },
@@ -1367,9 +1367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceflagsvalidateoptional.json": {
       "hash": "8bc34c1382022f9400a7335ef4f06bcf29a7af43a28d7abb5380049ba4f3c572",
-      "last_checked": "2026-07-14T07:41:55.142509",
+      "last_checked": "2026-07-17T07:41:40.347101",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"6b591f2da1f0b4982257fb0916d917cd\"",
       "file_path": "documentation/dnssd/kdnsserviceflagsvalidateoptional.md"
     },
@@ -1383,9 +1383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceflagswakeonresolve.json": {
       "hash": "00db733decc5ace51e81930ee2a07cbdb8fdc6404db808e41208a82adf6fee10",
-      "last_checked": "2026-07-14T07:41:55.305115",
+      "last_checked": "2026-07-17T07:41:40.507538",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"09ad49e8178a7bdd1586fa0ea56ab9aa\"",
       "file_path": "documentation/dnssd/kdnsserviceflagswakeonresolve.md"
     },
@@ -1399,9 +1399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceflagswakeonlyservice.json": {
       "hash": "7630231015a90d21d436371c0cde794baa5ef546d21a5498d6fd40d52339e93e",
-      "last_checked": "2026-07-14T07:41:55.457421",
+      "last_checked": "2026-07-17T07:41:40.681945",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"db5ccdf007518a3a8ec1d84cb74eda07\"",
       "file_path": "documentation/dnssd/kdnsserviceflagswakeonlyservice.md"
     },
@@ -1415,9 +1415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceprotocol_ipv4.json": {
       "hash": "79e89067c350b41c5f59414c381167ff1b495135aef7c26af373eb6ae49b7e2e",
-      "last_checked": "2026-07-14T07:41:55.658821",
+      "last_checked": "2026-07-17T07:41:40.866437",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"a5a94031965e73393059b69dbd2f8baf\"",
       "file_path": "documentation/dnssd/kdnsserviceprotocol-ipv4.md"
     },
@@ -1431,9 +1431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceprotocol_ipv6.json": {
       "hash": "116d0d8418f6c3396e2cb6e8d6cd93b672adb13d6f27900a499c0cbfd582fc8c",
-      "last_checked": "2026-07-14T07:41:55.856331",
+      "last_checked": "2026-07-17T07:41:41.035135",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"f05561c25d0f65d1e91330bab07c59c0\"",
       "file_path": "documentation/dnssd/kdnsserviceprotocol-ipv6.md"
     },
@@ -1447,9 +1447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceprotocol_tcp.json": {
       "hash": "5d56872655ae60a939a97c4d24801a9a9efa1ef385fa664eebe8da1a88d19a0f",
-      "last_checked": "2026-07-14T07:41:56.022045",
+      "last_checked": "2026-07-17T07:41:41.220228",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"5bd974ee724265b2bbe553426ad25884\"",
       "file_path": "documentation/dnssd/kdnsserviceprotocol-tcp.md"
     },
@@ -1463,9 +1463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceprotocol_udp.json": {
       "hash": "7b64a6f62029ef9c453f238541050edc1f97af5349a7e00c82ad465559fc790b",
-      "last_checked": "2026-07-14T07:41:56.212945",
+      "last_checked": "2026-07-17T07:41:41.455883",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"b1d0b8671e6c43a4a90b051db7a4a4b1\"",
       "file_path": "documentation/dnssd/kdnsserviceprotocol-udp.md"
     },
@@ -1479,9 +1479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsservicetype_a.json": {
       "hash": "d09a9e2403109ace21342ce2878bbee5bb8ac5d27b854516a03246bb0f002967",
-      "last_checked": "2026-07-14T07:41:56.393717",
+      "last_checked": "2026-07-17T07:41:41.629729",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"c53cead79146656a18cbd60f02f5c867\"",
       "file_path": "documentation/dnssd/kdnsservicetype-a.md"
     },
@@ -1495,9 +1495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsservicetype_a6.json": {
       "hash": "32b4ba94903d9fab065d43d60b5f0eb3b40c09eee881472eac1e51976c71e50d",
-      "last_checked": "2026-07-14T07:41:56.556954",
+      "last_checked": "2026-07-17T07:41:41.791391",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"a14f61000d57876177a2eefaa0565cf5\"",
       "file_path": "documentation/dnssd/kdnsservicetype-a6.md"
     },
@@ -1511,9 +1511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsservicetype_aaaa.json": {
       "hash": "09721c7c242709a2d1d1cb202e764b481a00756d17bf913b1b63923f7cc06275",
-      "last_checked": "2026-07-14T07:41:56.701789",
+      "last_checked": "2026-07-17T07:41:41.957562",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"32673f3e2a6d087fdda1336ba00fe181\"",
       "file_path": "documentation/dnssd/kdnsservicetype-aaaa.md"
     },
@@ -1527,9 +1527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsservicetype_afsdb.json": {
       "hash": "0f76f1976053031f81227219150f9a8138b3a5201375d5e5aa6a92af370e2a35",
-      "last_checked": "2026-07-14T07:41:56.860856",
+      "last_checked": "2026-07-17T07:41:42.154381",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"b9a270cbffebf6405a4e2af2db81b2f1\"",
       "file_path": "documentation/dnssd/kdnsservicetype-afsdb.md"
     },
@@ -1543,9 +1543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsservicetype_any.json": {
       "hash": "ad4acc3eb8eb2d2ef2dbbc0ba7e0306912db75a11d9aff5b2639bda4ee3425bf",
-      "last_checked": "2026-07-14T07:41:57.054042",
+      "last_checked": "2026-07-17T07:41:42.303651",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"025a5d1fd711a43ab72cf0fe57f13b5e\"",
       "file_path": "documentation/dnssd/kdnsservicetype-any.md"
     },
@@ -1559,9 +1559,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsservicetype_apl.json": {
       "hash": "6302486ee2155892f14ad4a0ef3c976f79fc8a71c88ba2b2ce57f913efc46e30",
-      "last_checked": "2026-07-14T07:41:57.220903",
+      "last_checked": "2026-07-17T07:41:42.479400",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"ce246b7bd53f08d484a07677b0d0d4f7\"",
       "file_path": "documentation/dnssd/kdnsservicetype-apl.md"
     },
@@ -1575,9 +1575,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsservicetype_atma.json": {
       "hash": "d95eeae9a8ac15a59703c3a6f36acccb294db86adddfe98ad396a327ff5dba73",
-      "last_checked": "2026-07-14T07:41:57.407242",
+      "last_checked": "2026-07-17T07:41:42.691179",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"eef4ab6d40b42d60a2e4182ac15a9c99\"",
       "file_path": "documentation/dnssd/kdnsservicetype-atma.md"
     },
@@ -1591,9 +1591,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsservicetype_axfr.json": {
       "hash": "b3df4ec56324236e9d6299ddc51e95daa4305cf1bb927fd1b88aaee6ed311dfe",
-      "last_checked": "2026-07-14T07:41:57.559433",
+      "last_checked": "2026-07-17T07:41:42.869046",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"4273a977e1b0e29a1513a204436221f7\"",
       "file_path": "documentation/dnssd/kdnsservicetype-axfr.md"
     },
@@ -1607,9 +1607,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsservicetype_cert.json": {
       "hash": "4bc6fa35cc2815e5765d5b75a5a9fdc0a6054d02d840074d178a9ed0d3d61c07",
-      "last_checked": "2026-07-14T07:41:57.713718",
+      "last_checked": "2026-07-17T07:41:43.050604",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"3e8e59ca8ca70ead003e16518658806b\"",
       "file_path": "documentation/dnssd/kdnsservicetype-cert.md"
     },
@@ -1623,9 +1623,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsservicetype_cname.json": {
       "hash": "2384e91a97b371b076027acdb083b49860a0d79bea9352c5bab0c9053630da80",
-      "last_checked": "2026-07-14T07:41:57.904005",
+      "last_checked": "2026-07-17T07:41:43.222353",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"6d7dc3ae6710e30364d28b658e2379e8\"",
       "file_path": "documentation/dnssd/kdnsservicetype-cname.md"
     },
@@ -1639,9 +1639,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsservicetype_dhcid.json": {
       "hash": "114b98051d246803b39b5b1c3745c7ab240cfa8a54f0dcea98c4c6c4b4d02cda",
-      "last_checked": "2026-07-14T07:41:58.067526",
+      "last_checked": "2026-07-17T07:41:43.398081",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"ec8e29a933fce1e75c3600e8f35a4920\"",
       "file_path": "documentation/dnssd/kdnsservicetype-dhcid.md"
     },
@@ -1655,9 +1655,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsservicetype_dname.json": {
       "hash": "f34ad4185e51f9d4057836aef1f4ff38ef6a706f8ce4f270a133e7227619a9cb",
-      "last_checked": "2026-07-14T07:41:58.220636",
+      "last_checked": "2026-07-17T07:41:43.566595",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"1339eb3d4d4d9ea580c1717a3eae84be\"",
       "file_path": "documentation/dnssd/kdnsservicetype-dname.md"
     },
@@ -1671,9 +1671,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsservicetype_dnskey.json": {
       "hash": "8476b10aa0e6fb11cf41b4e3090a288304c2bc47528b069d71434870b7826177",
-      "last_checked": "2026-07-14T07:41:58.386522",
+      "last_checked": "2026-07-17T07:41:43.738471",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"7e95bbd57a78b9585b344a99461a1b0b\"",
       "file_path": "documentation/dnssd/kdnsservicetype-dnskey.md"
     },
@@ -1687,9 +1687,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsservicetype_ds.json": {
       "hash": "45cda02513db0c4654eff2a0680cdec538b00d2eb18b9d7b8dbf1150e2b48454",
-      "last_checked": "2026-07-14T07:41:58.561823",
+      "last_checked": "2026-07-17T07:41:43.964428",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"1394490cf040127501840eeb80e976f8\"",
       "file_path": "documentation/dnssd/kdnsservicetype-ds.md"
     },
@@ -1703,9 +1703,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsservicetype_eid.json": {
       "hash": "86a620da96e272f27935fb27932cc0622596ed7e9a96bc6e94068b80b93edc27",
-      "last_checked": "2026-07-14T07:41:58.736472",
+      "last_checked": "2026-07-17T07:41:44.118506",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"df5e0efcbeeba35631b5b0e4ccb48dbe\"",
       "file_path": "documentation/dnssd/kdnsservicetype-eid.md"
     },
@@ -1719,9 +1719,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsservicetype_gid.json": {
       "hash": "dac9d944e2b0bc8e75d9dfaf3c7bd2ea3cd6a71fefaf4fdd5b7dcc598370b76c",
-      "last_checked": "2026-07-14T07:41:58.869445",
+      "last_checked": "2026-07-17T07:41:44.280133",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"4b9b4945d49849033e242d5b8e0b4db9\"",
       "file_path": "documentation/dnssd/kdnsservicetype-gid.md"
     },
@@ -1735,9 +1735,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsservicetype_gpos.json": {
       "hash": "f9147d918a4d4c0bd0d1d7c6bffae55e96390fe6cbe48df404df62b6dbc52127",
-      "last_checked": "2026-07-14T07:41:59.057640",
+      "last_checked": "2026-07-17T07:41:44.442015",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"d8e16182fd19a013fd2bf4414293d0b0\"",
       "file_path": "documentation/dnssd/kdnsservicetype-gpos.md"
     },
@@ -1751,9 +1751,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsservicetype_hinfo.json": {
       "hash": "c89c32b08b939dd569909124e9e6c1ecb1c88522b1d19aa046d65dc5fc1ddf69",
-      "last_checked": "2026-07-14T07:41:59.233029",
+      "last_checked": "2026-07-17T07:41:44.599998",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"c8206081ef131759d4c9b259495c8a8c\"",
       "file_path": "documentation/dnssd/kdnsservicetype-hinfo.md"
     },
@@ -1767,9 +1767,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsservicetype_hip.json": {
       "hash": "273ef68b59d3d04560b1703b72b1c633ad898f4656d206f3b3a9092a8a365218",
-      "last_checked": "2026-07-14T07:41:59.375439",
+      "last_checked": "2026-07-17T07:41:44.763690",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"7c43e8d93b4f37f49025bbce73830faa\"",
       "file_path": "documentation/dnssd/kdnsservicetype-hip.md"
     },
@@ -1783,9 +1783,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsservicetype_https.json": {
       "hash": "0acd76d71adb8197a3ecc82af3905d45348c258d3bb2c2c9abc1807cbf342a81",
-      "last_checked": "2026-07-14T07:41:59.525036",
+      "last_checked": "2026-07-17T07:41:44.931048",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"ba822d9158fbb23b2ff24b0a80aba119\"",
       "file_path": "documentation/dnssd/kdnsservicetype-https.md"
     },
@@ -1799,9 +1799,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsservicetype_ipseckey.json": {
       "hash": "780b4aa5ee0bb642171cace002d06a815443a0411f40e6402611f092e87b1484",
-      "last_checked": "2026-07-14T07:41:59.704917",
+      "last_checked": "2026-07-17T07:41:45.096478",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"f716f1d4ec650d2b63a0e1d5638491f4\"",
       "file_path": "documentation/dnssd/kdnsservicetype-ipseckey.md"
     },
@@ -1815,9 +1815,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsservicetype_isdn.json": {
       "hash": "17a357cbebc1656ebeab60c331fc6f1b550e58f4a4978e463514e2312e7810bc",
-      "last_checked": "2026-07-14T07:41:59.849158",
+      "last_checked": "2026-07-17T07:41:45.269358",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"66cde8a79ecb7f46ed18146124310a71\"",
       "file_path": "documentation/dnssd/kdnsservicetype-isdn.md"
     },
@@ -1831,9 +1831,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsservicetype_ixfr.json": {
       "hash": "9d43348e76a5c44c39a0150f6948473917dbfa122738d9e1fda66a9392100fb0",
-      "last_checked": "2026-07-14T07:42:00.058517",
+      "last_checked": "2026-07-17T07:41:45.434484",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"6f6018286d1cb14c2428f0ed58bf05d2\"",
       "file_path": "documentation/dnssd/kdnsservicetype-ixfr.md"
     },
@@ -1847,9 +1847,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsservicetype_key.json": {
       "hash": "949c773363fc04ab940fbb8320119444145d022411054bf615a09303c2716b82",
-      "last_checked": "2026-07-14T07:42:00.224361",
+      "last_checked": "2026-07-17T07:41:45.611303",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"b837b2d3ded3c22614cae4995247bcce\"",
       "file_path": "documentation/dnssd/kdnsservicetype-key.md"
     },
@@ -1863,9 +1863,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsservicetype_kx.json": {
       "hash": "348962a773ad7b157dcbd0cc1d2140a69f7551913fe7b1b41ad9182e0758701c",
-      "last_checked": "2026-07-14T07:42:00.381649",
+      "last_checked": "2026-07-17T07:41:45.780968",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"6cd5e434d35ebdf36d633f87fe7bf045\"",
       "file_path": "documentation/dnssd/kdnsservicetype-kx.md"
     },
@@ -1879,9 +1879,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsservicetype_loc.json": {
       "hash": "57e643fa8668672fd60204f02b166bd1c0f3b386f676b2d7ba7d0770abaf450c",
-      "last_checked": "2026-07-14T07:42:00.518226",
+      "last_checked": "2026-07-17T07:41:45.949425",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"76762d137040e458f02fe267dc1d087e\"",
       "file_path": "documentation/dnssd/kdnsservicetype-loc.md"
     },
@@ -1895,9 +1895,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsservicetype_maila.json": {
       "hash": "0a6fdd044443407e69db4aef945a50b85f145bf1abe9e3491d2efd012cdab392",
-      "last_checked": "2026-07-14T07:42:00.668421",
+      "last_checked": "2026-07-17T07:41:46.116972",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"c38f978349d26db12fb8cdfdcc9d9b61\"",
       "file_path": "documentation/dnssd/kdnsservicetype-maila.md"
     },
@@ -1911,9 +1911,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsservicetype_mailb.json": {
       "hash": "b9da39c429b19d8cb3d2d44da59df3d8fc95951830895b1ea7d6cdcf42225f36",
-      "last_checked": "2026-07-14T07:42:00.814556",
+      "last_checked": "2026-07-17T07:41:46.291552",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"730c39f143d6df3a0ece8b3d440fa84e\"",
       "file_path": "documentation/dnssd/kdnsservicetype-mailb.md"
     },
@@ -1927,9 +1927,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsservicetype_mb.json": {
       "hash": "9ac9120a14036e92f9fdc6493e78e6edf3a48cf34a3342e3422935cd1c1a8463",
-      "last_checked": "2026-07-14T07:42:00.982109",
+      "last_checked": "2026-07-17T07:41:46.460473",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"58925430d9becf596e098a44f9edf57c\"",
       "file_path": "documentation/dnssd/kdnsservicetype-mb.md"
     },
@@ -1943,9 +1943,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsservicetype_md.json": {
       "hash": "ac32f95836dd09d831276b597bfde0502b1be70a804fa421f0b417a16734732b",
-      "last_checked": "2026-07-14T07:42:01.142565",
+      "last_checked": "2026-07-17T07:41:46.636408",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"d60ab02383487f72f456461afeb110ce\"",
       "file_path": "documentation/dnssd/kdnsservicetype-md.md"
     },
@@ -1959,9 +1959,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsservicetype_mf.json": {
       "hash": "815c9bedaaa098fca768f0f403d5cd6ad6eb4eeaa27867ae3774f68c24a26523",
-      "last_checked": "2026-07-14T07:42:01.289896",
+      "last_checked": "2026-07-17T07:41:46.810224",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"4e2628216fbe0843f3809e5d742d5e80\"",
       "file_path": "documentation/dnssd/kdnsservicetype-mf.md"
     },
@@ -1975,9 +1975,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsservicetype_mg.json": {
       "hash": "ef7043a1c5b8c32f35f20911958cdf81547ee2b6326c190f52f6b140664bd7b1",
-      "last_checked": "2026-07-14T07:42:01.446722",
+      "last_checked": "2026-07-17T07:41:46.969601",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"f73cbfd42e9d08abbd2a253836b46656\"",
       "file_path": "documentation/dnssd/kdnsservicetype-mg.md"
     },
@@ -1991,9 +1991,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsservicetype_minfo.json": {
       "hash": "e0b8aa9a9748b0e218098db57377791db9913e0d5fbd7cc6baea6b0b425ee6bc",
-      "last_checked": "2026-07-14T07:42:01.591645",
+      "last_checked": "2026-07-17T07:41:47.136544",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"5066fb3843d5cd6eccf50955521d2821\"",
       "file_path": "documentation/dnssd/kdnsservicetype-minfo.md"
     },
@@ -2007,9 +2007,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsservicetype_mr.json": {
       "hash": "ac542114dd176235982a3897126209113d34dd7c9078702cdcf0df24d379a958",
-      "last_checked": "2026-07-14T07:42:01.753694",
+      "last_checked": "2026-07-17T07:41:47.313377",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"b0a306efad9a8ed5d4d987ccdb5e33a5\"",
       "file_path": "documentation/dnssd/kdnsservicetype-mr.md"
     },
@@ -2023,9 +2023,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsservicetype_mx.json": {
       "hash": "0aea14cc6f84455ae368deab863bbea435606300e175f71048081c89b171a1c5",
-      "last_checked": "2026-07-14T07:42:01.918282",
+      "last_checked": "2026-07-17T07:41:47.491371",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"5fb677624ebdd2968fd937fdf8014d4d\"",
       "file_path": "documentation/dnssd/kdnsservicetype-mx.md"
     },
@@ -2039,9 +2039,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsservicetype_naptr.json": {
       "hash": "d24fd3d13b1c7a90dfdef063b14cd838f443bf8028b7277fd49c936e4873163f",
-      "last_checked": "2026-07-14T07:42:02.059694",
+      "last_checked": "2026-07-17T07:41:47.654985",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"ac5302682fc02c5a4b28ecaebced96b2\"",
       "file_path": "documentation/dnssd/kdnsservicetype-naptr.md"
     },
@@ -2055,9 +2055,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsservicetype_nimloc.json": {
       "hash": "150f96803c8cf6973c0283dcc70d5b1d0add4c9104097c2cf715851c82b7f406",
-      "last_checked": "2026-07-14T07:42:02.203040",
+      "last_checked": "2026-07-17T07:41:47.841792",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"bf02fb4e3e1e8af5ff9123bc96c54250\"",
       "file_path": "documentation/dnssd/kdnsservicetype-nimloc.md"
     },
@@ -2071,9 +2071,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsservicetype_ns.json": {
       "hash": "6646018cd13cc2db512e02a91d11e0ffbacc84da1b9e647709082507b7ed540f",
-      "last_checked": "2026-07-14T07:42:02.353751",
+      "last_checked": "2026-07-17T07:41:47.998538",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"90b705c3c5780acf4da8a531147fa2c9\"",
       "file_path": "documentation/dnssd/kdnsservicetype-ns.md"
     },
@@ -2087,9 +2087,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsservicetype_nsap.json": {
       "hash": "e5e03689732b611b322f1da8b06076cc1af7b6d81f8271362df2c351b8b476d0",
-      "last_checked": "2026-07-14T07:42:02.502505",
+      "last_checked": "2026-07-17T07:41:48.163493",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"bac5db5f62ae247adaf1d9339ac9fa37\"",
       "file_path": "documentation/dnssd/kdnsservicetype-nsap.md"
     },
@@ -2103,9 +2103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsservicetype_nsap_ptr.json": {
       "hash": "7fad9e4e912cd03cccc72da946ad888d028ce91eac76d22c00dbb7491d96f952",
-      "last_checked": "2026-07-14T07:42:02.643699",
+      "last_checked": "2026-07-17T07:41:48.334028",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"203d1ed1b9f410045344c1b8d7ca1f08\"",
       "file_path": "documentation/dnssd/kdnsservicetype-nsap-ptr.md"
     },
@@ -2119,9 +2119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsservicetype_nsec.json": {
       "hash": "73f4c82da1819f3231917302dc5c0b34acfcde7a8150eaea61f273bc3d08d80f",
-      "last_checked": "2026-07-14T07:42:02.791962",
+      "last_checked": "2026-07-17T07:41:48.498975",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"a93fbfd13e735a3318db5ec24f7cb68b\"",
       "file_path": "documentation/dnssd/kdnsservicetype-nsec.md"
     },
@@ -2135,9 +2135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsservicetype_nsec3.json": {
       "hash": "a80f2c8550d91ac60dd551685423d9a5d45164ece5d9706f6d7cbfcaf47b09c8",
-      "last_checked": "2026-07-14T07:42:02.953689",
+      "last_checked": "2026-07-17T07:41:48.677110",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"2b2e9464653c9755410f960b2d07a190\"",
       "file_path": "documentation/dnssd/kdnsservicetype-nsec3.md"
     },
@@ -2151,9 +2151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsservicetype_nsec3param.json": {
       "hash": "0bd3b1303132b0c8c7949eeb99fa38962df30dbf8a334f0da652715321365427",
-      "last_checked": "2026-07-14T07:42:03.099054",
+      "last_checked": "2026-07-17T07:41:48.854971",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"37333dfdc457158cb0c6d932706a195b\"",
       "file_path": "documentation/dnssd/kdnsservicetype-nsec3param.md"
     },
@@ -2167,9 +2167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsservicetype_null.json": {
       "hash": "58b6be50d0b26a9249d528bf988389678fc4a53d0931c6d13a017fd7fd90fd1d",
-      "last_checked": "2026-07-14T07:42:03.250078",
+      "last_checked": "2026-07-17T07:41:49.028255",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"4c98a2841d10349551022abfeedeabb0\"",
       "file_path": "documentation/dnssd/kdnsservicetype-null.md"
     },
@@ -2183,9 +2183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsservicetype_nxt.json": {
       "hash": "231951c9ada7c49a1ddbcc429d0f5c4d4e07533ddda6d7ca734ced6b34194273",
-      "last_checked": "2026-07-14T07:42:03.420488",
+      "last_checked": "2026-07-17T07:41:49.209438",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"7190ebeb6e39146987709bc49a7f5398\"",
       "file_path": "documentation/dnssd/kdnsservicetype-nxt.md"
     },
@@ -2199,9 +2199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsservicetype_opt.json": {
       "hash": "4ee496f56c694bd269b480bef231ee33fbe362671f28c493b36c7028f8b3a9c9",
-      "last_checked": "2026-07-14T07:42:03.593983",
+      "last_checked": "2026-07-17T07:41:49.374597",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"28362fe1c6a883e6b903819807a487eb\"",
       "file_path": "documentation/dnssd/kdnsservicetype-opt.md"
     },
@@ -2215,9 +2215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsservicetype_ptr.json": {
       "hash": "291e379bd489cee72121523b678d16ba52d0b92d1af880769776ddeae8b4ff95",
-      "last_checked": "2026-07-14T07:42:03.746790",
+      "last_checked": "2026-07-17T07:41:49.550902",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"13354fc04c5d4d7f8cf306fd86bd6229\"",
       "file_path": "documentation/dnssd/kdnsservicetype-ptr.md"
     },
@@ -2231,9 +2231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsservicetype_px.json": {
       "hash": "f12d76e49bbf98e44ad7eb856ed37d5dd0ef3898f5240a7d69d40b968d3421d6",
-      "last_checked": "2026-07-14T07:42:03.920477",
+      "last_checked": "2026-07-17T07:41:49.713410",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"c4c7f9f0f39d8f7dd9254d8117d1ffc1\"",
       "file_path": "documentation/dnssd/kdnsservicetype-px.md"
     },
@@ -2247,9 +2247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsservicetype_rp.json": {
       "hash": "97a9630fb436a40e308f4319e91a6477cce97c023534c8f815da3b9f8c178f96",
-      "last_checked": "2026-07-14T07:42:04.080975",
+      "last_checked": "2026-07-17T07:41:49.899692",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"4d0b6c829472a266e52b67b3ff95d236\"",
       "file_path": "documentation/dnssd/kdnsservicetype-rp.md"
     },
@@ -2263,9 +2263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsservicetype_rrsig.json": {
       "hash": "087d78092f9f38286db3539266d2649496cae7d00a3881d5f20e2c51365b1982",
-      "last_checked": "2026-07-14T07:42:04.224417",
+      "last_checked": "2026-07-17T07:41:50.079893",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"bef3a58a7c7e70fe8355a03d497bc728\"",
       "file_path": "documentation/dnssd/kdnsservicetype-rrsig.md"
     },
@@ -2279,9 +2279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsservicetype_rt.json": {
       "hash": "416feab972551a57bc40e7d48187b02518665beebf6827bdb2e9050fc9e42b51",
-      "last_checked": "2026-07-14T07:42:04.373690",
+      "last_checked": "2026-07-17T07:41:50.260402",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"74229a8577b1cbbb43a01a1612b76597\"",
       "file_path": "documentation/dnssd/kdnsservicetype-rt.md"
     },
@@ -2295,9 +2295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsservicetype_sig.json": {
       "hash": "ec3b323658ca90e8a8bb30736f288ef2e9c92db8d62018abca7ddefa6868b5db",
-      "last_checked": "2026-07-14T07:42:04.548039",
+      "last_checked": "2026-07-17T07:41:50.428659",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"f90a82f1457f8f6c66967b728d1ce21a\"",
       "file_path": "documentation/dnssd/kdnsservicetype-sig.md"
     },
@@ -2311,9 +2311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsservicetype_sink.json": {
       "hash": "fef557ccdea434868d29f7b2df0c7e7f2f0c928242009dcda02678c7aeb07d93",
-      "last_checked": "2026-07-14T07:42:04.694923",
+      "last_checked": "2026-07-17T07:41:50.595436",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"a28f6aa4873c965f86a15b5fae85baaa\"",
       "file_path": "documentation/dnssd/kdnsservicetype-sink.md"
     },
@@ -2327,9 +2327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsservicetype_soa.json": {
       "hash": "44c69456cd7cb32d6fae5f3f08ebe594d2db431716364b32650853c7d6dd9423",
-      "last_checked": "2026-07-14T07:42:04.845214",
+      "last_checked": "2026-07-17T07:41:50.769805",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"138354fa52117edd31ea70ba8ceb1418\"",
       "file_path": "documentation/dnssd/kdnsservicetype-soa.md"
     },
@@ -2343,9 +2343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsservicetype_spf.json": {
       "hash": "c3bf41117739f5b03823b84a7fcaffa89b1896e7e6f2698fbb43d3d95fbab571",
-      "last_checked": "2026-07-14T07:42:05.037535",
+      "last_checked": "2026-07-17T07:41:50.929976",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"5e42a0627227b5092ea165e80e5dd3ba\"",
       "file_path": "documentation/dnssd/kdnsservicetype-spf.md"
     },
@@ -2359,9 +2359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsservicetype_srv.json": {
       "hash": "d8dbcc2ccc41f17917bdc90f1f80f17f0b2b7e05703ea3f3f671c8d4905b1c1c",
-      "last_checked": "2026-07-14T07:42:05.186791",
+      "last_checked": "2026-07-17T07:41:51.089167",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"086fd3b6975158ebdc27ea5c716d8c73\"",
       "file_path": "documentation/dnssd/kdnsservicetype-srv.md"
     },
@@ -2375,9 +2375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsservicetype_sshfp.json": {
       "hash": "da38e056a24cc73adc1b490f9cc22b328a652740a4bd00c1b8718a0453a55ed2",
-      "last_checked": "2026-07-14T07:42:05.338623",
+      "last_checked": "2026-07-17T07:41:51.258938",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"49149f2ddb3ca00ae3c16ac10654126b\"",
       "file_path": "documentation/dnssd/kdnsservicetype-sshfp.md"
     },
@@ -2391,9 +2391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsservicetype_svcb.json": {
       "hash": "e40db486d47295e108c09bf8d256d9cdc85ecd4b3d58d55342cc6cb47474751f",
-      "last_checked": "2026-07-14T07:42:05.491589",
+      "last_checked": "2026-07-17T07:41:51.414656",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"cb34d1f4263dbcf63aa726d4f166c03b\"",
       "file_path": "documentation/dnssd/kdnsservicetype-svcb.md"
     },
@@ -2407,9 +2407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsservicetype_tkey.json": {
       "hash": "f174f4e4259995c2bd68de283cbd1ec1fe87dc7250e27ce1388d5936de0d028f",
-      "last_checked": "2026-07-14T07:42:05.644072",
+      "last_checked": "2026-07-17T07:41:51.584479",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"4513794c8c5c375136ff118ae728ac54\"",
       "file_path": "documentation/dnssd/kdnsservicetype-tkey.md"
     },
@@ -2423,9 +2423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsservicetype_tsig.json": {
       "hash": "9700c7db284cc5f0a237307c51c866a27f866fe557f555bfb01dfb82c4861741",
-      "last_checked": "2026-07-14T07:42:05.805162",
+      "last_checked": "2026-07-17T07:41:51.747012",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"57d308a0d580eb4c0c84cfa49cf9f531\"",
       "file_path": "documentation/dnssd/kdnsservicetype-tsig.md"
     },
@@ -2439,9 +2439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsservicetype_txt.json": {
       "hash": "e4263992442cd17dc85a11687b378318dea4262315f92c96b894036d62192eed",
-      "last_checked": "2026-07-14T07:42:05.956845",
+      "last_checked": "2026-07-17T07:41:51.917428",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"420cddb9ddcc8a193dc67cc4676db1f5\"",
       "file_path": "documentation/dnssd/kdnsservicetype-txt.md"
     },
@@ -2455,9 +2455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsservicetype_uid.json": {
       "hash": "1f61bfd90a344822d410444c3ee4aa0f5d3df7d0d80155d7360dc8f088ae556d",
-      "last_checked": "2026-07-14T07:42:06.126115",
+      "last_checked": "2026-07-17T07:41:52.084637",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"8359400f5b51caf7c7398aeb50752e2f\"",
       "file_path": "documentation/dnssd/kdnsservicetype-uid.md"
     },
@@ -2471,9 +2471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsservicetype_uinfo.json": {
       "hash": "671b6714168bc2fe48b9683c8677139e1604e7452c0af00d5a885e7e192fb59b",
-      "last_checked": "2026-07-14T07:42:06.415258",
+      "last_checked": "2026-07-17T07:41:52.297154",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"8a1fc5a9dbc65e14e90521c0453ca687\"",
       "file_path": "documentation/dnssd/kdnsservicetype-uinfo.md"
     },
@@ -2487,9 +2487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsservicetype_unspec.json": {
       "hash": "35c961e6b28e5e9ff4b63acfd51a1bbe833c919289c3f9c092dbf87d45a15680",
-      "last_checked": "2026-07-14T07:42:06.571723",
+      "last_checked": "2026-07-17T07:41:52.470381",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"6ee0059e339f395731f2f39b2216441a\"",
       "file_path": "documentation/dnssd/kdnsservicetype-unspec.md"
     },
@@ -2503,9 +2503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsservicetype_wks.json": {
       "hash": "dade8ef9b15214dcc5f2d1963dcef98d35cf2735f2f79805c09d0a273a4c0e77",
-      "last_checked": "2026-07-14T07:42:06.722130",
+      "last_checked": "2026-07-17T07:41:52.655175",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"36fa5fb154462447855caf3c5dcc51ea\"",
       "file_path": "documentation/dnssd/kdnsservicetype-wks.md"
     },
@@ -2519,9 +2519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsservicetype_x25.json": {
       "hash": "04f50db1bde177f6ad43586493cec78f145df7f3b0c4d98446fdecd845cb4d57",
-      "last_checked": "2026-07-14T07:42:06.905750",
+      "last_checked": "2026-07-17T07:41:52.824966",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"c27b1f535ddee9f591819132f5f55577\"",
       "file_path": "documentation/dnssd/kdnsservicetype-x25.md"
     },
@@ -2535,9 +2535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/dnsservicegetproperty(_:_:_:).json": {
       "hash": "bd786534872fe814d791a5125a0d691db6ad28f13a1defd507eca630df45d6be",
-      "last_checked": "2026-07-14T07:42:07.103550",
+      "last_checked": "2026-07-17T07:41:52.992864",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"1635a7c1f10a874a0a4e5ee4d1f13db5\"",
       "file_path": "documentation/dnssd/dnsservicegetproperty.md"
     },
@@ -2551,9 +2551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/dnsserviceprocessresult(_:).json": {
       "hash": "03ca5318cb409c3b6cc915405706564cdf0854efc13bc4393d709b177589d15b",
-      "last_checked": "2026-07-14T07:42:07.248419",
+      "last_checked": "2026-07-17T07:41:53.164999",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"23f337ed8ec4ba07bdd0bb1b50de4401\"",
       "file_path": "documentation/dnssd/dnsserviceprocessresult.md"
     },
@@ -2567,9 +2567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/dnsservicerefdeallocate(_:).json": {
       "hash": "9a0fe96bb3b0423440e3444d9149c9b8fd481f398d4933ab3eb7407297ee5b90",
-      "last_checked": "2026-07-14T07:42:07.397602",
+      "last_checked": "2026-07-17T07:41:53.339348",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"e10be1ae18df2d8d85eb598cce1a9cf1\"",
       "file_path": "documentation/dnssd/dnsservicerefdeallocate.md"
     },
@@ -2583,9 +2583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/dnsservicerefsockfd(_:).json": {
       "hash": "8b65f5aa484d0533ba0fc03a3a1bc7d47287700280f6fd24859fd9f73498b132",
-      "last_checked": "2026-07-14T07:42:07.620957",
+      "last_checked": "2026-07-17T07:41:53.505796",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"0353bbd462409a392dbf07ed8550ddd0\"",
       "file_path": "documentation/dnssd/dnsservicerefsockfd.md"
     },
@@ -2599,9 +2599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/dnsservicegetaddrinfo(_:_:_:_:_:_:_:).json": {
       "hash": "a2599fb0223f7c2f981602273882dcb083ad4b4a953963ebb5aea0dd828f3571",
-      "last_checked": "2026-07-14T07:42:07.768011",
+      "last_checked": "2026-07-17T07:41:53.680087",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"997980e1d692ee84efbecc714f18adbb\"",
       "file_path": "documentation/dnssd/dnsservicegetaddrinfo.md"
     },
@@ -2615,9 +2615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/dnsservicecreatedelegateconnection.json": {
       "hash": "7c4a8c54cc49af0cd8276a2bf665395713dea5d425827b463dad5b5eb58d650b",
-      "last_checked": "2026-07-14T07:42:07.922815",
+      "last_checked": "2026-07-17T07:41:53.853313",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"898fdc35ca15d0a4f7cac138d97e0365\"",
       "file_path": "documentation/dnssd/dnsservicecreatedelegateconnection.md"
     },
@@ -2631,9 +2631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/dnsservicesetdispatchqueue(_:_:).json": {
       "hash": "93fe98c4e0fbf7757bb9791f6c3318f938de1d0e302a192c963b663ad3e06e40",
-      "last_checked": "2026-07-14T07:42:08.076623",
+      "last_checked": "2026-07-17T07:41:54.025693",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"067ef30dfcaa510784bc7ad1ada2be92\"",
       "file_path": "documentation/dnssd/dnsservicesetdispatchqueue.md"
     },
@@ -2647,9 +2647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/txtrecordcontainskey(_:_:_:).json": {
       "hash": "ca7d838a4cba21931ad152bdb5fa51548cef3e91fcb0bdb8b98a90770bd8240a",
-      "last_checked": "2026-07-14T07:42:08.228662",
+      "last_checked": "2026-07-17T07:41:54.213654",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"16ff6b6bf3425f0a81ff108fc7ad90c2\"",
       "file_path": "documentation/dnssd/txtrecordcontainskey.md"
     },
@@ -2663,9 +2663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/txtrecordgetcount(_:_:).json": {
       "hash": "2574ca64f8a58daa5ffc454e6ff7a1d013079dde6d54354e5ecfe67ee8cdfc02",
-      "last_checked": "2026-07-14T07:42:08.378562",
+      "last_checked": "2026-07-17T07:41:54.388053",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"00d0b9eb7fa9df48f9bda4a3c3d57c5b\"",
       "file_path": "documentation/dnssd/txtrecordgetcount.md"
     },
@@ -2679,9 +2679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/txtrecordgetitematindex(_:_:_:_:_:_:_:).json": {
       "hash": "121c794d2efb334dd9d879939a0c74ec0e55ce1cc51364b35195526abda6f68d",
-      "last_checked": "2026-07-14T07:42:08.542582",
+      "last_checked": "2026-07-17T07:41:54.578515",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"8cdfdf29ff3d6c00da248645a2fce147\"",
       "file_path": "documentation/dnssd/txtrecordgetitematindex.md"
     },
@@ -2695,9 +2695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/txtrecordgetvalueptr(_:_:_:_:).json": {
       "hash": "8f094f9dbd90b2e159c5d6100ba949e9bed4d48b54095504fec00c37d3058512",
-      "last_checked": "2026-07-14T07:42:08.926731",
+      "last_checked": "2026-07-17T07:41:54.754310",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"13a8e596d763f1975c412fdae2b24f7b\"",
       "file_path": "documentation/dnssd/txtrecordgetvalueptr.md"
     },
@@ -2711,9 +2711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/txtrecordcreate(_:_:_:).json": {
       "hash": "dc8555e9a75b7cd6f50791b586f877c51220e7e220b1864e32258940cb6cf4f7",
-      "last_checked": "2026-07-14T07:42:09.100307",
+      "last_checked": "2026-07-17T07:41:54.938369",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"bc2629762aeacdfdf6d1853d0dc50f69\"",
       "file_path": "documentation/dnssd/txtrecordcreate.md"
     },
@@ -2727,9 +2727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/txtrecorddeallocate(_:).json": {
       "hash": "146a45aba39012e2e98bdf7e6665ae98d2c3aed176204e8c24da31d018edeae1",
-      "last_checked": "2026-07-14T07:42:09.273600",
+      "last_checked": "2026-07-17T07:41:55.075886",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"4c29fedbf7eac43c017944d6094841e2\"",
       "file_path": "documentation/dnssd/txtrecorddeallocate.md"
     },
@@ -2743,9 +2743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/txtrecordgetbytesptr(_:).json": {
       "hash": "72701a47bb841bfdcae4aeb1cee968a934228573e9ed5138e7cd56edfba1d52b",
-      "last_checked": "2026-07-14T07:42:09.412210",
+      "last_checked": "2026-07-17T07:41:55.254136",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"3e236875a461fcd21fa6c6a3691dc3ea\"",
       "file_path": "documentation/dnssd/txtrecordgetbytesptr.md"
     },
@@ -2759,9 +2759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/txtrecordgetlength(_:).json": {
       "hash": "c829781741ee80ce2c683a0685efc2fbc709814f414faae73e1cd169076011d5",
-      "last_checked": "2026-07-14T07:42:09.575107",
+      "last_checked": "2026-07-17T07:41:55.425273",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"7b6bcf1905fdc605137dc3d9435d3a21\"",
       "file_path": "documentation/dnssd/txtrecordgetlength.md"
     },
@@ -2775,9 +2775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/txtrecordremovevalue(_:_:).json": {
       "hash": "e7b19a28a3ed148ddbfa6bc1a97b942832acab0b41253591637fb1ed8ac460be",
-      "last_checked": "2026-07-14T07:42:09.720344",
+      "last_checked": "2026-07-17T07:41:55.613798",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"dad813e9c2683ef1bc0bbfeac2c6881b\"",
       "file_path": "documentation/dnssd/txtrecordremovevalue.md"
     },
@@ -2791,9 +2791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/txtrecordsetvalue(_:_:_:_:).json": {
       "hash": "17c71de5608e0e8d75cefb19e3b7bce21d4c58852cad171dad3944d693c153b6",
-      "last_checked": "2026-07-14T07:42:09.854224",
+      "last_checked": "2026-07-17T07:41:55.797196",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"402559b8c1752d0e60011ebc3ba387ba\"",
       "file_path": "documentation/dnssd/txtrecordsetvalue.md"
     },
@@ -2807,9 +2807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/dnsservicecreateconnection(_:).json": {
       "hash": "9624f7e8104551b2dcfb5d3e39fd02a6120d7b54f0653b4b482d93328f0a1d78",
-      "last_checked": "2026-07-14T07:42:10.008215",
+      "last_checked": "2026-07-17T07:41:55.959988",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"c1c5bb936cf7b2cdba6c247b05a5ab96\"",
       "file_path": "documentation/dnssd/dnsservicecreateconnection.md"
     },
@@ -2823,9 +2823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/dnsservicereconfirmrecord(_:_:_:_:_:_:_:).json": {
       "hash": "3c9d5e5ab7e29787fcac7142f75e15713741b2b30dc1a33b4af940f180aae190",
-      "last_checked": "2026-07-14T07:42:10.173536",
+      "last_checked": "2026-07-17T07:41:56.082586",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"2a346a6a39e7df49997fba8a775837da\"",
       "file_path": "documentation/dnssd/dnsservicereconfirmrecord.md"
     },
@@ -2839,9 +2839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/dnsserviceregisterrecord(_:_:_:_:_:_:_:_:_:_:_:_:).json": {
       "hash": "132b9a1ce701e1731c6e062ed6f3f8bf53cf1645bf0125e7f452abea583cc7ea",
-      "last_checked": "2026-07-14T07:42:10.332130",
+      "last_checked": "2026-07-17T07:41:56.251589",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"fc38c5a8bd2af01ceda32902ec6455a7\"",
       "file_path": "documentation/dnssd/dnsserviceregisterrecord.md"
     },
@@ -2855,9 +2855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/peerconnectionrelease(_:_:_:_:).json": {
       "hash": "8722f67da7943633961d48486a293d17c557ec40521e550a833ff7aca42d58fe",
-      "last_checked": "2026-07-14T07:42:10.501334",
+      "last_checked": "2026-07-17T07:41:56.425080",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"0cb04d9fc2548450c0b0c3b58b8cbf38\"",
       "file_path": "documentation/dnssd/peerconnectionrelease.md"
     },
@@ -2871,9 +2871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/dnsserviceaddrecord(_:_:_:_:_:_:_:).json": {
       "hash": "c973db19472e6ef4b964f1307967d2734e2616dc580f31636c11aaf0a137ea09",
-      "last_checked": "2026-07-14T07:42:10.674071",
+      "last_checked": "2026-07-17T07:41:56.641583",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"194303cbda63d47618269cf5f28013ea\"",
       "file_path": "documentation/dnssd/dnsserviceaddrecord.md"
     },
@@ -2887,9 +2887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/dnsserviceregister(_:_:_:_:_:_:_:_:_:_:_:_:).json": {
       "hash": "71e189d4d7f4925a32258fff1e3672e90b935d44a19bc83026e471a67a04308f",
-      "last_checked": "2026-07-14T07:42:10.823861",
+      "last_checked": "2026-07-17T07:41:56.813248",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"dfe2a2199870675eaf751a7274081ca3\"",
       "file_path": "documentation/dnssd/dnsserviceregister.md"
     },
@@ -2903,9 +2903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/dnsserviceremoverecord(_:_:_:).json": {
       "hash": "ed7495f3bf241a70ecb5cce9371ba1c533d908d97c7ca0186fef898ae9aeac96",
-      "last_checked": "2026-07-14T07:42:10.976731",
+      "last_checked": "2026-07-17T07:41:56.976395",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"a16e428c6c46f21c3ecb16905ae89bcd\"",
       "file_path": "documentation/dnssd/dnsserviceremoverecord.md"
     },
@@ -2919,9 +2919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/dnsserviceupdaterecord(_:_:_:_:_:_:).json": {
       "hash": "53301bb119318b72e7f2474f6f427ae94a672f67e3853581904fd6d8af9322f1",
-      "last_checked": "2026-07-14T07:42:11.126713",
+      "last_checked": "2026-07-17T07:41:57.136654",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"eccbf2e6be1cb5ca7eafbef292047da9\"",
       "file_path": "documentation/dnssd/dnsserviceupdaterecord.md"
     },
@@ -2935,9 +2935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/dnsservicebrowse(_:_:_:_:_:_:_:).json": {
       "hash": "00db05f47b96fa41a695a1b7eb6b83c68b06658810db0c8e18a771cda347ad94",
-      "last_checked": "2026-07-14T07:42:11.298117",
+      "last_checked": "2026-07-17T07:41:57.311229",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"723a67655ba7f2fdb30af0cfffdb02d0\"",
       "file_path": "documentation/dnssd/dnsservicebrowse.md"
     },
@@ -2951,9 +2951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/dnsserviceresolve(_:_:_:_:_:_:_:_:).json": {
       "hash": "78bb9e7034e476f09596b3705208a556fa1c75181a520ef42481bd6fff780032",
-      "last_checked": "2026-07-14T07:42:11.456155",
+      "last_checked": "2026-07-17T07:41:57.465260",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"41bd778e0d7a9cebc130b6524053bfb7\"",
       "file_path": "documentation/dnssd/dnsserviceresolve.md"
     },
@@ -2967,9 +2967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/dnsservicequeryrecord(_:_:_:_:_:_:_:_:).json": {
       "hash": "f4bbca93af08f4d1550fb40c4a139f1e20befd906151af9c8af49fa83ec41295",
-      "last_checked": "2026-07-14T07:42:11.608886",
+      "last_checked": "2026-07-17T07:41:57.592748",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"ac4038f341d508ed64949b37067d10c1\"",
       "file_path": "documentation/dnssd/dnsservicequeryrecord.md"
     },
@@ -2983,9 +2983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/dnsservicenatportmappingcreate(_:_:_:_:_:_:_:_:_:).json": {
       "hash": "2b727245d8893130f98fae03dce1aba6abeeda3f1904d37ea6b397857abf0686",
-      "last_checked": "2026-07-14T07:42:11.746418",
+      "last_checked": "2026-07-17T07:41:57.778266",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"039442cc0ea30a39ab3e5481b8a7d390\"",
       "file_path": "documentation/dnssd/dnsservicenatportmappingcreate.md"
     },
@@ -2999,9 +2999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/dnsserviceconstructfullname(_:_:_:_:).json": {
       "hash": "57d785b7284e05171fa41de71e5d599b4fb49bf010b895b291491d8e3c45a6cb",
-      "last_checked": "2026-07-14T07:42:11.890639",
+      "last_checked": "2026-07-17T07:41:57.998033",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"f2286c27790b403ce2da5e17ebf015d4\"",
       "file_path": "documentation/dnssd/dnsserviceconstructfullname.md"
     },
@@ -3015,9 +3015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/dnsserviceenumeratedomains(_:_:_:_:_:).json": {
       "hash": "bda1a2f78b7a0d968d590362eb5644550c0fda8b0c0b09f88516d4a2f6832b3c",
-      "last_checked": "2026-07-14T07:42:12.041132",
+      "last_checked": "2026-07-17T07:41:58.175236",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"9d2b0667d6fe683cd169acea8e7e1e7a\"",
       "file_path": "documentation/dnssd/dnsserviceenumeratedomains.md"
     },
@@ -3031,9 +3031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/dnsservicegetaddrinforeply.json": {
       "hash": "2fb9fdde8b1dfbd6fdd8c276323df79cb5cb2c12a7c07c0934862e3ff7356d26",
-      "last_checked": "2026-07-14T07:42:12.200900",
+      "last_checked": "2026-07-17T07:41:58.293545",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"8e82e662aa1d4b223b8f1e70e5c832dc\"",
       "file_path": "documentation/dnssd/dnsservicegetaddrinforeply.md"
     },
@@ -3047,9 +3047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/dnsserviceregisterrecordreply.json": {
       "hash": "acd96519e26a3238ee85c17c7abe23bcbd8e5393369ee7a3a20ef57a0c624eed",
-      "last_checked": "2026-07-14T07:42:12.360188",
+      "last_checked": "2026-07-17T07:41:58.480572",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"a3ba181ae7a0f57222fe08be23d9adfd\"",
       "file_path": "documentation/dnssd/dnsserviceregisterrecordreply.md"
     },
@@ -3063,9 +3063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/dnsserviceregisterreply.json": {
       "hash": "9e53dc69cffbb50f8a043473e6e08d391f01876703ae4b48c5f63c42c88d935f",
-      "last_checked": "2026-07-14T07:42:12.511352",
+      "last_checked": "2026-07-17T07:41:58.653953",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"edb485b7baaf3c4b812b0eca15f610ab\"",
       "file_path": "documentation/dnssd/dnsserviceregisterreply.md"
     },
@@ -3079,9 +3079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/dnsservicebrowsereply.json": {
       "hash": "eb86016a1d46289d8a335e3b02ecadb3d3244ee25a33df789d85f1dae1789532",
-      "last_checked": "2026-07-14T07:42:12.676835",
+      "last_checked": "2026-07-17T07:41:58.821301",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"272a4ca814d3aaceda51eac431dfc3a9\"",
       "file_path": "documentation/dnssd/dnsservicebrowsereply.md"
     },
@@ -3095,9 +3095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/dnsserviceresolvereply.json": {
       "hash": "2536ba36efafe261b571ec68e76b7f8466cfb4fdcc4e3a3a1804c5a88bc3f1ac",
-      "last_checked": "2026-07-14T07:42:12.879072",
+      "last_checked": "2026-07-17T07:41:58.989976",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"687226178fc2e3a0c4a7d26770b629a1\"",
       "file_path": "documentation/dnssd/dnsserviceresolvereply.md"
     },
@@ -3111,9 +3111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/dnsservicequeryrecordreply.json": {
       "hash": "66db7bfa9bba112d1efe10e4951a711cabb1490f4c21625c3eddb744cf51d8a4",
-      "last_checked": "2026-07-14T07:42:13.041347",
+      "last_checked": "2026-07-17T07:41:59.175288",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"464494bcd5a06380436bf53711a195c0\"",
       "file_path": "documentation/dnssd/dnsservicequeryrecordreply.md"
     },
@@ -3127,9 +3127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/dnsservicenatportmappingreply.json": {
       "hash": "3f1fb8333d943e2d0c7cd3d6a0f38acac3d194374bb97fccf995a50d006580a4",
-      "last_checked": "2026-07-14T07:42:13.198857",
+      "last_checked": "2026-07-17T07:41:59.372254",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"a410f56ea1cfdced0c41e6e064c22d87\"",
       "file_path": "documentation/dnssd/dnsservicenatportmappingreply.md"
     },
@@ -3143,9 +3143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/dnsservicedomainenumreply.json": {
       "hash": "3d2a591f8777ecc706bcd888313dd046a62912d49572856379df2d1a434075fd",
-      "last_checked": "2026-07-14T07:42:13.343629",
+      "last_checked": "2026-07-17T07:41:59.547354",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"907a097b4a9fc71cc8869b5f376f5974\"",
       "file_path": "documentation/dnssd/dnsservicedomainenumreply.md"
     },
@@ -3159,9 +3159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/dnsserviceerrortype.json": {
       "hash": "8d98b782aad0a51a840619daa423dc9257c4a3fedc6d8f18c0912f0fb13139f7",
-      "last_checked": "2026-07-14T07:42:13.519013",
+      "last_checked": "2026-07-17T07:41:59.721897",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"10f7ea01e1648b50bd1c53d75f0f1f08\"",
       "file_path": "documentation/dnssd/dnsserviceerrortype.md"
     },
@@ -3175,9 +3175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/dnsserviceflags.json": {
       "hash": "b7733b8bff8d2aa5a8c62fdebee7a710cdae81749a7ab71446bee68644980995",
-      "last_checked": "2026-07-14T07:42:13.691531",
+      "last_checked": "2026-07-17T07:41:59.897738",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"77cc29f43f0684490544b77c94e16805\"",
       "file_path": "documentation/dnssd/dnsserviceflags.md"
     },
@@ -3191,9 +3191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/dnsserviceprotocol.json": {
       "hash": "93b7dc596fb738a1d597420fe5495dbdbb50242de972e79beae9222550d8a3a6",
-      "last_checked": "2026-07-14T07:42:13.849678",
+      "last_checked": "2026-07-17T07:42:00.010967",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"92a3f031951ef10807ca1bfc95d549f9\"",
       "file_path": "documentation/dnssd/dnsserviceprotocol.md"
     },
@@ -3207,9 +3207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/txtrecordref.json": {
       "hash": "863f0a68372682fe94ef22f002bab3f87663f1c50328cbee52bcee4da6283ea7",
-      "last_checked": "2026-07-14T07:42:14.000293",
+      "last_checked": "2026-07-17T07:42:00.205211",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"4f2c989470dd67e2d5cf8280133ecd6c\"",
       "file_path": "documentation/dnssd/txtrecordref.md"
     },
@@ -3223,9 +3223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/constants-for-specifying-an-interface-index.json": {
       "hash": "cfd09a73fdd6342f5ccd4ab757a21c670479b8a3599272a8e9cb748547f5eb39",
-      "last_checked": "2026-07-14T07:42:14.151558",
+      "last_checked": "2026-07-17T07:42:00.378276",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"88ae338b29dd9a3474ac6a74e81345c7\"",
       "file_path": "documentation/dnssd/constants-for-specifying-an-interface-index.md"
     },
@@ -3239,9 +3239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/miscellaneous-defines.json": {
       "hash": "e817d9ea570166580d80a5164d25a4c514e0b1cc90e4c43d72ea98b54b4a959c",
-      "last_checked": "2026-07-14T07:42:14.359019",
+      "last_checked": "2026-07-17T07:42:00.556039",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"cef6832ffb1de709863f87d706c7dc6c\"",
       "file_path": "documentation/dnssd/miscellaneous-defines.md"
     },
@@ -3255,9 +3255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/dnsserviceaaaapolicy.json": {
       "hash": "4d62432eef9b4f0ce7bfd47424195236a7b9b351670a77f0c20f2e3e2c0baa57",
-      "last_checked": "2026-07-14T07:42:14.511095",
+      "last_checked": "2026-07-17T07:42:00.714976",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"504d4dcc5c6ffccb20634f46b6071d9b\"",
       "file_path": "documentation/dnssd/dnsserviceaaaapolicy.md"
     },
@@ -3271,9 +3271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/dnsservicesleepkeepalive(_:_:_:_:_:_:).json": {
       "hash": "76d39a7d25c90602be0d6436162d7f5336f81ccefd9e0210d81ae150e0a9629f",
-      "last_checked": "2026-07-14T07:42:14.664790",
+      "last_checked": "2026-07-17T07:42:00.883544",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"e92a922c3cc79ae51f0a04d9dc7ab2c7\"",
       "file_path": "documentation/dnssd/dnsservicesleepkeepalive.md"
     },
@@ -3287,9 +3287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/dnsserviceattributecreate().json": {
       "hash": "a6bcbcf1b1f470901bdd141f06ca2619728df1892dd55c53df01cf8251052865",
-      "last_checked": "2026-07-14T07:42:14.803011",
+      "last_checked": "2026-07-17T07:42:01.046733",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"6f6677e030a9a47d9117792403763010\"",
       "file_path": "documentation/dnssd/dnsserviceattributecreate.md"
     },
@@ -3303,9 +3303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/dnsserviceattributedeallocate(_:).json": {
       "hash": "4f7571745927d067d9c864e5abec18fafe3c7f6f7639a1952412a68446f1a3e7",
-      "last_checked": "2026-07-14T07:42:14.969153",
+      "last_checked": "2026-07-17T07:42:01.214362",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"b2ed302ee3705042c7f97612bea7257b\"",
       "file_path": "documentation/dnssd/dnsserviceattributedeallocate.md"
     },
@@ -3319,9 +3319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/dnsserviceattributesetaaaapolicy(_:_:).json": {
       "hash": "734f01358f47721048cb0e618cdb9cbad3dff6edd97e21db7fdecf9acedd9cf3",
-      "last_checked": "2026-07-14T07:42:15.115440",
+      "last_checked": "2026-07-17T07:42:01.398450",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"b29f2d32822fb5642b501ba425127827\"",
       "file_path": "documentation/dnssd/dnsserviceattributesetaaaapolicy.md"
     },
@@ -3335,9 +3335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/dnsserviceattributesethostkeyhash(_:_:).json": {
       "hash": "db0c83c1d14436f1bcaab842ea0820ea90503e7bebc6bf55ba8a804ce05674b5",
-      "last_checked": "2026-07-14T07:42:15.301237",
+      "last_checked": "2026-07-17T07:42:01.580296",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"d96280a4299b30374ea29144a7de5d5f\"",
       "file_path": "documentation/dnssd/dnsserviceattributesethostkeyhash.md"
     },
@@ -3351,9 +3351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/dnsserviceattributesettimestamp(_:_:).json": {
       "hash": "2d5206e65a2eb7b1089e586c37a182af396863dee273997b61770bdd8e8b3e0c",
-      "last_checked": "2026-07-14T07:42:15.448956",
+      "last_checked": "2026-07-17T07:42:01.754331",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"d7fbbef5c89ea7c17c7b9c31949a64d4\"",
       "file_path": "documentation/dnssd/dnsserviceattributesettimestamp.md"
     },
@@ -3367,9 +3367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/dnsservicequeryrecordwithattribute(_:_:_:_:_:_:_:_:_:).json": {
       "hash": "bb96ae4bac67055b32b7ffeb166e50dedfd1251012b0ccbf3a28b64d5628efda",
-      "last_checked": "2026-07-14T07:42:15.618944",
+      "last_checked": "2026-07-17T07:42:01.921831",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"daab8213a83721a985846170f4ce953a\"",
       "file_path": "documentation/dnssd/dnsservicequeryrecordwithattribute.md"
     },
@@ -3383,9 +3383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/dnsserviceregisterrecordwithattribute(_:_:_:_:_:_:_:_:_:_:_:_:_:).json": {
       "hash": "06df51fc208e89af18bb638bfe2ecf179b438c3af96e50cf1dce298b69707620",
-      "last_checked": "2026-07-14T07:42:15.794478",
+      "last_checked": "2026-07-17T07:42:02.098618",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"1a167209ca58be9ae8fbc28ad85e1303\"",
       "file_path": "documentation/dnssd/dnsserviceregisterrecordwithattribute.md"
     },
@@ -3399,9 +3399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/dnsserviceregisterwithattribute(_:_:_:_:_:_:_:_:_:_:_:_:_:).json": {
       "hash": "8ab70c7ca79f5a153753587fd33f88c8caf0fabd0e5df9ca56e2d2598c77d28b",
-      "last_checked": "2026-07-14T07:42:15.935854",
+      "last_checked": "2026-07-17T07:42:02.279377",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"b2a5ee95e0c2fd1fff63469ac6709187\"",
       "file_path": "documentation/dnssd/dnsserviceregisterwithattribute.md"
     },
@@ -3415,9 +3415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/dnsservicesendqueuedrequests(_:).json": {
       "hash": "043b780e4dc9cfff4b60fdb70c3abf2b79c6db112723ff0e27a4f983e032c5ca",
-      "last_checked": "2026-07-14T07:42:16.088013",
+      "last_checked": "2026-07-17T07:42:02.402805",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"5c0528b6fa18419e4a6cca4c089cadec\"",
       "file_path": "documentation/dnssd/dnsservicesendqueuedrequests.md"
     },
@@ -3431,9 +3431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/dnsserviceupdaterecordwithattribute(_:_:_:_:_:_:_:).json": {
       "hash": "ee96fbebd5f44705d8c4764d692a6a383b72fc4c0facf4670f61961b4a49e4f8",
-      "last_checked": "2026-07-14T07:42:16.275704",
+      "last_checked": "2026-07-17T07:42:02.575684",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"bf95976130312a5af6df2de69a2471b5\"",
       "file_path": "documentation/dnssd/dnsserviceupdaterecordwithattribute.md"
     },
@@ -3447,9 +3447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/compiletimeassertionchecks_dns_sd.json": {
       "hash": "9191cb3af63318072930c38b02b88488944b5481f1060db1628ad1240c3e759a",
-      "last_checked": "2026-07-14T07:42:16.436101",
+      "last_checked": "2026-07-17T07:42:02.753131",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"24b5cd40be275624e14248780dfac1ff\"",
       "file_path": "documentation/dnssd/compiletimeassertionchecks-dns-sd.md"
     },
@@ -3463,9 +3463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/dnsrecordref.json": {
       "hash": "f2c0cc2011275e92ecfda9772353f769b6d3eddb1bc5578225194c15396de08e",
-      "last_checked": "2026-07-14T07:42:16.576422",
+      "last_checked": "2026-07-17T07:42:02.925006",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"986a4e1c57b850510840073fb794a811\"",
       "file_path": "documentation/dnssd/dnsrecordref.md"
     },
@@ -3479,9 +3479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/dnsserviceref.json": {
       "hash": "3e0c75939adbac8253c25a270ec251fd5e54e0b9a77539373f1278d302799294",
-      "last_checked": "2026-07-14T07:42:16.732980",
+      "last_checked": "2026-07-17T07:42:03.099183",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"348bb445c51aac296ca2570e4e267213\"",
       "file_path": "documentation/dnssd/dnsserviceref.md"
     },
@@ -3495,9 +3495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/dnsservicesleepkeepalivereply.json": {
       "hash": "d89abc1b9d8f81b3645b79d2640d594127ad16fdbd54753db1fce452e29028a7",
-      "last_checked": "2026-07-14T07:42:16.918608",
+      "last_checked": "2026-07-17T07:42:03.273849",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"60d85888956eccc69a646b3bc14fc9d8\"",
       "file_path": "documentation/dnssd/dnsservicesleepkeepalivereply.md"
     },
@@ -3511,9 +3511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/dnssd_sock_t.json": {
       "hash": "5c21276c9adba90a6d3960a2d170418ea609e87eb65dd34fe207ef6a1596aee1",
-      "last_checked": "2026-07-14T07:42:17.079581",
+      "last_checked": "2026-07-17T07:42:03.441818",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"66f085ab7518b66167b6a2df0b9b5f73\"",
       "file_path": "documentation/dnssd/dnssd-sock-t.md"
     },
@@ -3527,9 +3527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/dnsserviceattributeref.json": {
       "hash": "f87947bffce9389702cb8248655d8972440807927f5d01bf6a799a1265c950e8",
-      "last_checked": "2026-07-14T07:42:17.247238",
+      "last_checked": "2026-07-17T07:42:03.610312",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"9df3bcad99e4a2c481482411feb76653\"",
       "file_path": "documentation/dnssd/dnsserviceattributeref.md"
     },
@@ -3543,9 +3543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/dns_sd_original_encoding_version_number_max.json": {
       "hash": "029bf3888c356ce6e8780843a80b852611b38742104ad7a5fdf1d913d025d9d0",
-      "last_checked": "2026-07-14T07:42:17.417931",
+      "last_checked": "2026-07-17T07:42:03.787623",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"7d6fa6a34d185561a6173c9707c13193\"",
       "file_path": "documentation/dnssd/dns-sd-original-encoding-version-number-max.md"
     },
@@ -3559,9 +3559,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceattributeaaaafallback.json": {
       "hash": "df00b352405077773f9c62d8eb75bd7c9982b12dfd014df88327c22ce9dbec82",
-      "last_checked": "2026-07-14T07:42:17.579699",
+      "last_checked": "2026-07-17T07:42:03.967569",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"6f8995bcc06830aa352d7145cceb215d\"",
       "file_path": "documentation/dnssd/kdnsserviceattributeaaaafallback.md"
     },
@@ -3575,9 +3575,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceinterfaceindexany.json": {
       "hash": "25dc77a5a65c33e9d31b344fc04bddd69aa69e6e858d2db329e5c898b3dada2f",
-      "last_checked": "2026-07-14T07:42:17.801106",
+      "last_checked": "2026-07-17T07:42:04.169804",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"208f3b6bdf56bac073bfe729d2711658\"",
       "file_path": "documentation/dnssd/kdnsserviceinterfaceindexany.md"
     },
@@ -3591,9 +3591,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceinterfaceindexble.json": {
       "hash": "ac4a12eb4e3d23bd8f79951786c4e688d1a0c9f8ca95231f9b6aee90f4d0144c",
-      "last_checked": "2026-07-14T07:42:17.967887",
+      "last_checked": "2026-07-17T07:42:04.342826",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"d1925c98a82c9bfa003e615a2aedbdce\"",
       "file_path": "documentation/dnssd/kdnsserviceinterfaceindexble.md"
     },
@@ -3607,9 +3607,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceinterfaceindexinfra.json": {
       "hash": "8c99a79ed83956628d07f695b5d326d6ae1b4f45dc9b2bf296dc2c60e0d80310",
-      "last_checked": "2026-07-14T07:42:18.121573",
+      "last_checked": "2026-07-17T07:42:04.514809",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"c8d8c75831b0118268c4927b78799531\"",
       "file_path": "documentation/dnssd/kdnsserviceinterfaceindexinfra.md"
     },
@@ -3623,9 +3623,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceinterfaceindexlocalonly.json": {
       "hash": "b625e2bd0f2544520d6efb6aa265fdd46b1e7712a42f7970b6c894e7deec4f7b",
-      "last_checked": "2026-07-14T07:42:18.292286",
+      "last_checked": "2026-07-17T07:42:04.700608",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"316c071182ef825da534988b6a9d786d\"",
       "file_path": "documentation/dnssd/kdnsserviceinterfaceindexlocalonly.md"
     },
@@ -3639,9 +3639,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceinterfaceindexp2p.json": {
       "hash": "655efb24f25936356f5264e43949794b286b9c3f85613a5217fbe0e194865abc",
-      "last_checked": "2026-07-14T07:42:18.450529",
+      "last_checked": "2026-07-17T07:42:04.878031",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"67dc0bad9fb1fa2cd0b817a63692c8ea\"",
       "file_path": "documentation/dnssd/kdnsserviceinterfaceindexp2p.md"
     },
@@ -3655,9 +3655,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceinterfaceindexunicast.json": {
       "hash": "5b8af5891577afac3ed362feb5c61f267f1f9fb092425be4d7ebbd690df51f0a",
-      "last_checked": "2026-07-14T07:42:18.592802",
+      "last_checked": "2026-07-17T07:42:05.038844",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"9c047ec188b514ac1ba53c0ecf5b3810\"",
       "file_path": "documentation/dnssd/kdnsserviceinterfaceindexunicast.md"
     },
@@ -3671,9 +3671,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsservicemaxdomainname.json": {
       "hash": "cd60871c8af1fb12f0df378683d415dc17cd4d89305e606e4ac07e7e89955fda",
-      "last_checked": "2026-07-14T07:42:18.755750",
+      "last_checked": "2026-07-17T07:42:05.251336",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"1bb7e9ae6149bfeaaf00602449a1892d\"",
       "file_path": "documentation/dnssd/kdnsservicemaxdomainname.md"
     },
@@ -3687,9 +3687,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsservicemaxservicename.json": {
       "hash": "85361ba9dd92a360dcfbff832a1ed5dadb88908576fd029ec1e905bc31a3db78",
-      "last_checked": "2026-07-14T07:42:18.914443",
+      "last_checked": "2026-07-17T07:42:05.469759",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"f257d79c010bb5b4fd502f28d3b43092\"",
       "file_path": "documentation/dnssd/kdnsservicemaxservicename.md"
     },
@@ -3703,9 +3703,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceproperty_daemonversion.json": {
       "hash": "b5bfb34677c287d23e43204cc08981ccdaa994ebd2a1ac30ea3ff7c5f568c661",
-      "last_checked": "2026-07-14T07:42:19.083772",
+      "last_checked": "2026-07-17T07:42:05.649080",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"aba86a11bff56277351275cdab95db68\"",
       "file_path": "documentation/dnssd/kdnsserviceproperty-daemonversion.md"
     },
@@ -3719,9 +3719,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/force-natural-alignment.json": {
       "hash": "d199f9453e03eb806ab9d08ca03f36b4589b396029db448b8d741dab0c289986",
-      "last_checked": "2026-07-14T07:42:19.291785",
+      "last_checked": "2026-07-17T07:42:05.835129",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"e8ae715f4f142263762e98a5c1a498fa\"",
       "file_path": "documentation/dnssd/force-natural-alignment.md"
     },
@@ -3735,9 +3735,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/private-data.json": {
       "hash": "343f2745a82136f2f42edc5fe8869a90e1a3a66bd06828c1ae544734dd8772b6",
-      "last_checked": "2026-07-14T07:42:19.449342",
+      "last_checked": "2026-07-17T07:42:06.007741",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"826b0ed772b23aaaa157d6cdd5aa868f\"",
       "file_path": "documentation/dnssd/private-data.md"
     },
@@ -3751,9 +3751,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/dns_sd_h.json": {
       "hash": "006d62df15025e241e28e87f3b0d218fd3e74d42b1d2d4ebecf45f2f43606690",
-      "last_checked": "2026-07-14T07:42:19.920347",
+      "last_checked": "2026-07-17T07:42:06.548721",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"5441ee7fd29da406f906747e7c8e6205\"",
       "file_path": "documentation/dnssd/dns-sd-h.md"
     },
@@ -3767,9 +3767,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/dnsserviceaaaapolicy/init(_:).json": {
       "hash": "c570540a727e10ed3d0a18325bd3d8e6bb9798e10e49085a55f07131874bda49",
-      "last_checked": "2026-07-14T07:42:20.105095",
+      "last_checked": "2026-07-17T07:42:06.657266",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"ef2174ae5f4829e7a1ef5d02ac67d9bd\"",
       "file_path": "documentation/dnssd/dnsserviceaaaapolicy/init.md"
     },
@@ -3783,9 +3783,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/dnsserviceaaaapolicy/init(rawvalue:).json": {
       "hash": "99bb46933375d3770657b842ed4cf78f085d77a3bbe6e3ce53aeb7a5fd2c0d69",
-      "last_checked": "2026-07-14T07:42:20.302561",
+      "last_checked": "2026-07-17T07:42:06.813492",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"f4a1f9183d9c0614b5cfae61f61e93f6\"",
       "file_path": "documentation/dnssd/dnsserviceaaaapolicy/init-rawvalue.md"
     },
@@ -3799,9 +3799,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/dnsserviceaaaapolicy/rawvalue.json": {
       "hash": "1d613d24eb8b58c24f3becf5a7c2aa23231c6196353b6f35fb5f1ea748d5d0e0",
-      "last_checked": "2026-07-14T07:42:20.516485",
+      "last_checked": "2026-07-17T07:42:07.025526",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"3e513281fdafa2581d081c30ff732d0a\"",
       "file_path": "documentation/dnssd/dnsserviceaaaapolicy/rawvalue.md"
     },
@@ -3815,9 +3815,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/compiletimeassertionchecks_dns_sd/assert0.json": {
       "hash": "7eaf7a5e55a7ca02dd7b2e6e00d8a6fa0e209b8ce33fe343451d30e01a5d8ee3",
-      "last_checked": "2026-07-14T07:42:20.670904",
+      "last_checked": "2026-07-17T07:42:07.201330",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"0aff6657c8c67ccbfd7ccbc948617836\"",
       "file_path": "documentation/dnssd/compiletimeassertionchecks_dns_sd/assert0.md"
     },
@@ -3831,9 +3831,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/compiletimeassertionchecks_dns_sd/init().json": {
       "hash": "2853666e3e4f464a07d416f53598443a5abe4a8851573b9802a6082e96725102",
-      "last_checked": "2026-07-14T07:42:20.846664",
+      "last_checked": "2026-07-17T07:42:07.324922",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"510ca3fc9ed7e9f6f801d20e126dc55c\"",
       "file_path": "documentation/dnssd/compiletimeassertionchecks_dns_sd/init.md"
     },
@@ -3847,9 +3847,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/compiletimeassertionchecks_dns_sd/init(assert0:).json": {
       "hash": "1d8cd6ad9510d1c4b3d26771e28766a123993999c48e210924f3c6769f70d88e",
-      "last_checked": "2026-07-14T07:42:21.016325",
+      "last_checked": "2026-07-17T07:42:07.507638",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"47a955243f5623dc6be044fe19a969f6\"",
       "file_path": "documentation/dnssd/compiletimeassertionchecks_dns_sd/init-assert0.md"
     },
@@ -3863,9 +3863,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/txtrecordref/forcenaturalalignment.json": {
       "hash": "78e122bb4f0d0100b715ecdedd8dadf75fed0ded1fb1954ddcf8125e53cd909b",
-      "last_checked": "2026-07-14T07:42:19.613077",
+      "last_checked": "2026-07-17T07:42:06.173319",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"6a5d59d26cb3030bd6bc025107fc519f\"",
       "file_path": "documentation/dnssd/txtrecordref/forcenaturalalignment.md"
     },
@@ -3879,9 +3879,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/txtrecordref/privatedata.json": {
       "hash": "b262e908ca071ea88205b83bd0e7f4ec5cceea77f77b55a263bc0f8640bb1858",
-      "last_checked": "2026-07-14T07:42:19.756618",
+      "last_checked": "2026-07-17T07:42:06.336635",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"1335ce2eca2a6dda0311853093ce9eff\"",
       "file_path": "documentation/dnssd/txtrecordref/privatedata.md"
     },
@@ -3895,9 +3895,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/dnssd/kdnsserviceerr_awdltimeout.json": {
       "hash": "2a0c01041117f018789e4a87ae4076de03ebdf311b81df705994460cd35d04e3",
-      "last_checked": "2026-07-14T07:41:42.189673",
+      "last_checked": "2026-07-17T07:41:25.895853",
       "status": "unchanged",
-      "session_id": "2026-07-14T07:41:40.191664",
+      "session_id": "2026-07-17T07:41:22.715643",
       "etag": "W/\"9340d715c2a1da9cbf98458a5a169ff9\"",
       "file_path": "documentation/dnssd/kdnsserviceerr-awdltimeout.md"
     },

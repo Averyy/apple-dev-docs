@@ -6,7 +6,7 @@
 Attributes that describe a subscription image resource.
 
 **Availability**:
-- App Store Connect API 3.6+
+- App Store Connect API 2.0+
 
 ## Declaration
 

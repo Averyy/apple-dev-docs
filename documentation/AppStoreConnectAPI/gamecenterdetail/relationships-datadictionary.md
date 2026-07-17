@@ -6,7 +6,7 @@
 The relationships you include in the request and those on which you can operate.
 
 **Availability**:
-- App Store Connect API 3.0+
+- App Store Connect API 3.6+
 
 ## Declaration
 
@@ -61,11 +61,11 @@ object GameCenterDetail.Relationships
 - `activityReleases` (GameCenterDetail.Relationships.ActivityReleases)
 - `challengeReleases` (GameCenterDetail.Relationships.ChallengeReleases)
 - `challengesMinimumPlatformVersions` (GameCenterDetail.Relationships.ChallengesMinimumPlatformVersions)
+- `gameCenterActivities` (GameCenterDetail.Relationships.GameCenterActivities)
+- `gameCenterChallenges` (GameCenterDetail.Relationships.GameCenterChallenges)
 - `defaultGroupLeaderboardV2` (GameCenterDetail.Relationships.DefaultGroupLeaderboardV2)
 - `defaultLeaderboardV2` (GameCenterDetail.Relationships.DefaultLeaderboardV2)
 - `gameCenterAchievementsV2` (GameCenterDetail.Relationships.GameCenterAchievementsV2)
-- `gameCenterActivities` (GameCenterDetail.Relationships.GameCenterActivities)
-- `gameCenterChallenges` (GameCenterDetail.Relationships.GameCenterChallenges)
 - `gameCenterLeaderboardSetsV2` (GameCenterDetail.Relationships.GameCenterLeaderboardSetsV2)
 - `gameCenterLeaderboardsV2` (GameCenterDetail.Relationships.GameCenterLeaderboardsV2)
 

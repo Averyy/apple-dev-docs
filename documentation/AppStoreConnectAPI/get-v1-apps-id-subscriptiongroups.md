@@ -24,6 +24,8 @@ Get a list of subscription groups for a specific app.
 - `limit[subscriptionGroupLocalizations]` (integer): The maximum number of related subscription group localizations resources to return.
 - `limit[subscriptions]` (integer): The maximum number of related subscriptions resources to return.
 - `sort` ([string]): Attributes by which to sort.
+- `fields[subscriptionGroupVersions]` ([string])
+- `limit[versions]` (integer)
 
 ## See Also
 

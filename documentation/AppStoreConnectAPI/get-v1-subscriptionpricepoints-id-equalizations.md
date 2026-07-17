@@ -11,6 +11,7 @@ Get a list of subscription price points and their equivalent in a specified curr
 ## Mentions
 
 - [Managing auto-renewable subscriptions](managing-auto-renewable-subscriptions.md)
+- [Querying adjusted subscription price equalizations](querying-adjusted-subscription-price-equalizations.md)
 
 ## Endpoint
 
@@ -18,18 +19,22 @@ Get a list of subscription price points and their equivalent in a specified curr
 
 ## Parameters
 
-- `fields[subscriptionPricePoints]` ([string])
-- `fields[territories]` ([string])
-- `filter[subscription]` ([string])
-- `filter[territory]` ([string])
-- `include` ([string])
-- `limit` (integer)
+- `filter[territory]` ([string]): Filter the returned subscription price points by territory.
+- `filter[subscription]` ([string]): Filter the returned subscription price points by subscription.
+- `filter[upfrontPricePointId]` ([string]): Filter the returned subscription price points by upfront price point ID.
+- `filter[planType]` ([string]): Filter the returned subscription price points by plan type.
+- `fields[subscriptionPricePoints]` ([string]): Additional fields to include for each subscription price point resource returned by the response.
+- `fields[territories]` ([string]): Additional fields to include for each territory resource returned by the response.
+- `limit` (integer): The maximum number of subscription price point resources to return.
+- `include` ([string]): The relationship data to include in the response.
 
 ## See Also
 
 - [Read subscription price point information](get-v1-subscriptionpricepoints-_id_.md)
   Get details about a specific subscription price point.
 - [List equalization IDs for a subscription price point](get-v1-subscriptionpricepoints-_id_-relationships-equalizations.md)
+- [List adjusted equalizations for a subscription price point](get-v1-subscriptionpricepoints-_id_-adjustedequalizations.md)
+  List the adjusted territory equalizations for a subscription price point.
 - [Create a subscription price change](post-v1-subscriptionprices.md)
   Schedule a subscription price change for a specific territory.
 - [Delete subscription prices](delete-v1-subscriptionprices-_id_.md)

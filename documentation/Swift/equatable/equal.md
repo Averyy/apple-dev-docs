@@ -1,7 +1,10 @@
 # ==(_:_:)
 
 **Framework**: Swift  
-**Kind**: op
+**Kind**: op  
+**Required**: Yes
+
+Returns a Boolean value indicating whether two values are equal.
 
 **Availability**:
 - iOS 8.0+
@@ -15,10 +18,24 @@
 ## Declaration
 
 ```swift
-static func == <RHS>(lhs: Self, rhs: RHS) -> Bool where RHS : StringProtocol
+static func == (lhs: borrowing Self, rhs: borrowing Self) -> Bool
 ```
+
+#### Discussion
+
+Equality is the inverse of inequality. For any values `a` and `b`, `a == b` implies that `a != b` is `false`.
+
+## Parameters
+
+- `lhs`: A value to compare.
+- `rhs`: Another value to compare.
+
+## See Also
+
+- [static func != (borrowing Self, borrowing Self) -> Bool](equatable/!=(_:_:).md)
+  Returns a Boolean value indicating whether two values are not equal.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swift/equatable/==(_:_:)-7k1nz)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/equatable/==(_:_:))*

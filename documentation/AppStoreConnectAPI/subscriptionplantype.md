@@ -14,6 +14,10 @@ A string that indicates the billing plan type for an auto-renewable subscription
 string SubscriptionPlanType
 ```
 
+## Mentions
+
+- [Configuring subscription prices across territories](configuring-subscription-prices-across-territories.md)
+
 ## See Also
 
 - [object SubscriptionPlanAvailability](subscriptionplanavailability.md)

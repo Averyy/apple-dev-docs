@@ -19,11 +19,14 @@ object SubscriptionGroup.Relationships
 ### Objects
 - [object SubscriptionGroup.Relationships.SubscriptionGroupLocalizations](subscriptiongroup/relationships-data.dictionary/subscriptiongrouplocalizations-data.dictionary.md)
 - [object SubscriptionGroup.Relationships.Subscriptions](subscriptiongroup/relationships-data.dictionary/subscriptions-data.dictionary.md)
+### Dictionaries
+- [object SubscriptionGroup.Relationships.Versions](subscriptiongroup/relationships-data.dictionary/versions-data.dictionary.md)
 
 ## Properties
 
 - `subscriptionGroupLocalizations` (SubscriptionGroup.Relationships.SubscriptionGroupLocalizations)
 - `subscriptions` (SubscriptionGroup.Relationships.Subscriptions)
+- `versions` (SubscriptionGroup.Relationships.Versions)
 
 ## See Also
 

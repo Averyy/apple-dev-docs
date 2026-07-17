@@ -8,10 +8,6 @@ Get information about an in-app purchase.
 **Availability**:
 - App Store Connect API 1.2+
 
-## Mentions
-
-- [Managing in-app purchases](managing-in-app-purchases.md)
-
 #### Discussion
 
 ##### Example Request and Response

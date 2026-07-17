@@ -6,7 +6,7 @@
 A response containing a list of images for an in-app purchase.
 
 **Availability**:
-- App Store Connect API 3.6+
+- App Store Connect API 2.0+
 
 ## Declaration
 

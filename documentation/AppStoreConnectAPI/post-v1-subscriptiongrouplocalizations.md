@@ -1,4 +1,4 @@
-# Create a subscription group localization
+# Create a subscription group localization (v1)
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
@@ -7,10 +7,6 @@ Create a localized display name and optional custom app name for a subscription 
 
 **Availability**:
 - App Store Connect API 2.0+
-
-## Mentions
-
-- [Creating auto-renewable subscription groups](creating-auto-renewable-subscription-groups.md)
 
 #### Discussion
 
@@ -22,11 +18,11 @@ Create a localized display name and optional custom app name for a subscription 
 
 ## See Also
 
-- [Read subscription group localization information](get-v1-subscriptiongrouplocalizations-_id_.md)
+- [Read subscription group localization information (v1)](get-v1-subscriptiongrouplocalizations-_id_.md)
   Get the specific localized subscription group display name and optional custom app name for a subscription group.
-- [Modify a subscription group localization](patch-v1-subscriptiongrouplocalizations-_id_.md)
+- [Modify a subscription group localization (v1)](patch-v1-subscriptiongrouplocalizations-_id_.md)
   Update a specific localized display name and optional custom app name for a subscription group.
-- [Delete a subscription group localization](delete-v1-subscriptiongrouplocalizations-_id_.md)
+- [Delete a subscription group localization (v1)](delete-v1-subscriptiongrouplocalizations-_id_.md)
   Delete localized metadata that you configured for a subscription group.
 
 

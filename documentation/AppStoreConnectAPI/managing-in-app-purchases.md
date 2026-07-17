@@ -2,7 +2,7 @@
 
 **Framework**: App Store Connect API
 
-Learn how to create and manage in-app purchases with the App Store Connect API.
+Create in-app purchases, configure their metadata and pricing, submit them for review, and promote them with the App Store Connect API.
 
 #### Overview
 
@@ -22,11 +22,11 @@ For the full list of App Store Connect user roles, see [`UserRole`](userrole.md)
 
 ##### Create Your in App Purchase
 
-To create an in-app purchase, use `POST /v2/inAppPurchases` ([`Create an in-app purchase`](post-v2-inapppurchases.md)) with a payload that contains the required information, including an internal name, a product ID, the in-app purchase type, a review note, and territory availability. Additionally, supply the Apple ID of the app that contains this in-app purchase.
+To create an in-app purchase, use `POST /v2/inAppPurchases` ([`Create an in-app purchase`](post-v2-inapppurchases.md)) with a payload that contains the required information, including an internal name, a product ID, the in-app purchase type, and a review note. Additionally, supply the Apple ID of the app that contains this in-app purchase.
 
 Here’s an example payload:
 
-```other
+```json
 {
   "data": {
     "type": "inAppPurchases",
@@ -34,8 +34,7 @@ Here’s an example payload:
       "name": "Seattle Neighborhood Coffee Map",
       "productId": "MAPNEIGHBORHOODS",
       "inAppPurchaseType": "CONSUMABLE",
-      "reviewNote": "This is a neighborhood map for helping to find awesome coffee shops.",
-      "availableInAllTerritories": true
+      "reviewNote": "This is a neighborhood map for helping to find awesome coffee shops."
     },
     "relationships": {
       "app": {
@@ -51,55 +50,46 @@ Here’s an example payload:
 
 Here’s an example response, truncated for clarity:
 
-```other
+```json
 {
     "data": {
         "type": "inAppPurchases",
         "id": "6446452615",
         "attributes": {
-            "name": "Neighborhood Coffee Map",
+            "name": "Seattle Neighborhood Coffee Map",
             "productId": "MAPNEIGHBORHOODS",
             "inAppPurchaseType": "CONSUMABLE",
             "state": "MISSING_METADATA",
-            "isAppStoreReviewInProgress": false,
-            "submitWithNextAppStoreVersion": false,
             "reviewNote": "This is a neighborhood map for helping to find awesome coffee shops.",
             "familySharable": false,
-            "contentHosting": null,
-            "clearedForSaleForAllTerritories": true,
-            "availableInAllTerritories": true
+            "contentHosting": null
         }   
 ```
 
 Make note of the `id` in the response because you use this ID to look up or edit the in-app purchase in the future.
 
-```other
+```json
 "id": "6446452615"
 ```
 
-To look up a specific in-app purchase, use the `id` with `GET /v2/inAppPurchases/{id}` ([`Read in-app purchase information`](get-v1-inapppurchases-_id_.md)). You can also look up all in-app purchases for an app using `GET /v1/apps/{id}/inAppPurchasesV2` ([`List all in-app purchases for an app v1`](get-v1-apps-_id_-inapppurchases.md)). Note that this is a `v1` endpoint.
+To look up a specific in-app purchase, use the `id` with `GET /v2/inAppPurchases/{id}` ([`Read in-app purchase information`](get-v2-inapppurchases-_id_.md)). You can also look up all in-app purchases for an app using `GET /v1/apps/{id}/inAppPurchasesV2` ([`List all in-app purchases for an app`](get-v1-apps-_id_-inapppurchasesv2.md)). Note that this is a `v1` endpoint.
 
-Editing an in-app purchase is similar, but you use `PATCH /v2/inAppPurchases/{id}` ([`Modify an in-app purchase`](patch-v2-inapppurchases-_id_.md)). The editable fields are `name`, `availableInAllTerritories`, and `reviewNote`.
+Editing an in-app purchase is similar, but you use `PATCH /v2/inAppPurchases/{id}` ([`Modify an in-app purchase`](patch-v2-inapppurchases-_id_.md)). The editable fields are `name`, `reviewNote`, and `familySharable`. To control territory availability, use the in-app purchase availability resource — see [`In-app purchase availability`](in-app-purchase-availability.md).
 
 > **Note**:  The `familySharable` field is editable only for auto-renewable subscriptions and non-consumable in-app purchases.
 
 ##### Localize Metadata for Your in App Purchase
 
-To make your in-app purchase ready for consumption, add localized display names and descriptions. Use `POST /v1/inAppPurchaseLocalizations` ([`List all localizations for an in-app purchase`](get-v2-inapppurchases-_id_-inapppurchaselocalizations.md)) with a payload that describes the locale, the localized display name, and the localized description for the in-app purchase.
+Localized display names and descriptions live on an *in-app purchase version* — a draft container for the metadata and review images that go through App Review together. Create a version first, then attach localizations to it. The pre-4.4.1 workflow that posts localizations directly to the in-app purchase (`POST /v1/inAppPurchaseLocalizations`) is deprecated as of 4.4.1 but remains available for existing integrations. For guidance on moving to the version-based workflow, see [`Migrating in-app purchase metadata to v2`](migrating-in-app-purchase-metadata-to-v2.md).
 
-Here’s an example payload:
+Create a draft version with `POST /v1/inAppPurchaseVersions` ([`Create an in-app purchase version`](post-v1-inapppurchaseversions.md)), relating it to the in-app purchase you created above:
 
-```other
+```json
 {
   "data": {
-    "type": "inAppPurchaseLocalizations",
-    "attributes": {
-      "locale": "en-US",
-      "name": "Seattle Neighborhood Coffee Map",
-      "description": "This is a neighborhood map for helping to find awesome coffee shops."
-    },
+    "type": "inAppPurchaseVersions",
     "relationships": {
-      "inAppPurchaseV2": {
+      "inAppPurchase": {
         "data": {
           "type": "inAppPurchases",
           "id": "6446452615"
@@ -110,21 +100,45 @@ Here’s an example payload:
 }
 ```
 
-Here’s an example response, truncated for clarity:
+The response returns the version’s `id` and a `state` of `PREPARE_FOR_SUBMISSION`. Note the `id` — you use it in the next step:
 
-```other
+```json
+{
+  "data": {
+    "type": "inAppPurchaseVersions",
+    "id": "abc123-4567-89ab-cdef-000000000001",
+    "attributes": {
+      "version": 1,
+      "state": "PREPARE_FOR_SUBMISSION"
+    }
+  }
+}
+```
+
+Add a localization by calling `POST /v2/inAppPurchaseLocalizations` ([`Create an in-app purchase localization`](post-v2-inapppurchaselocalizations.md)). The payload specifies the locale, the display name, and the description, and relates the localization to the *version* — not the parent in-app purchase:
+
+```json
 {
   "data": {
     "type": "inAppPurchaseLocalizations",
-    "id": "d7195d00-386d-4389-bef6-bdf196f30e3a",
     "attributes": {
-      "name": "Seattle Neighborhood Coffee Map",
       "locale": "en-US",
-      "description": "This is a neighborhood map for helping to find awesome coffee shops.",
-      "state": "PROPOSED",
-      "submitted": false
+      "name": "Seattle Neighborhood Coffee Map",
+      "description": "This is a neighborhood map for helping to find awesome coffee shops."
     },
+    "relationships": {
+      "version": {
+        "data": {
+          "type": "inAppPurchaseVersions",
+          "id": "abc123-4567-89ab-cdef-000000000001"
+        }
+      }
+    }
+  }
+}
 ```
+
+To read all localizations attached to a version, use `GET /v1/inAppPurchaseVersions/{id}/localizations` ([`List localizations for an in-app purchase version`](get-v1-inapppurchaseversions-_id_-localizations.md)). To list every version on the parent in-app purchase, use `GET /v2/inAppPurchases/{id}/versions` ([`List the versions of an in-app purchase`](get-v2-inapppurchases-_id_-versions.md)). For the full version lifecycle, see [`Working with in-app purchase versions`](working-with-in-app-purchase-versions.md).
 
 ##### Manage Pricing for Your in App Purchase
 
@@ -136,11 +150,11 @@ To look up the price point ID, use the [`List all price points for an in-app pur
 GET /v2/inAppPurchases/{id}/pricePoints?filter[territory]=USA&include=territory&limit=200
 ```
 
-> 💡 **Tip**:  Filter the API endpoint to reduce the amount of data you need to review.
+Filter the endpoint to reduce the amount of data you need to review.
 
 Here’s an example response, truncated for clarity:
 
-```other
+```json
     "type" : "inAppPurchasePricePoints",
     "id" : "NjQ0NjQ1MjYxNV91c180",
     "attributes" : {
@@ -197,7 +211,7 @@ To add a price point to an in-app purchase, use `POST /v1/inAppPurchasePriceSche
 
 Here’s an example payload:
 
-```other
+```json
 {
   "data": {
     "type": "inAppPurchases",
@@ -242,7 +256,7 @@ Here’s an example payload:
 
 ##### Submit Your in App Purchase
 
-After you configure an in-app purchase, you need to submit it to App Review for approval before it can be available to users. The first step in getting an in-app purchase ready for review is to upload a screenshot to App Review to show what the in-app puchase looks like to users.
+After you configure an in-app purchase and populate its version with localizations, submit it for App Review. The first step is to upload a screenshot to show what the in-app purchase looks like to people.
 
 You accomplish this task by using the `/v1/inAppPurchaseAppStoreReviewScreenshots` endpoint. This workflow is similar to the existing image workflows for App Clip images and app screenshots.
 
@@ -255,21 +269,24 @@ In the case of the in-app purchase screenshot, you submit a single image using t
 
 For more information, see [`Uploading Assets to App Store Connect`](uploading-assets-to-app-store-connect.md).
 
-After you upload your screenshot for App Review, the next step is submission.
+> ❗ **Important**:  Submit your first in-app purchase together with an app binary submission through [`appstoreconnect.apple.com`](https://developer.apple.comhttps://appstoreconnect.apple.com). The review-submission API calls below don’t apply to that first submission. For subsequent in-app purchases, submit using the API endpoints below without an associated app binary submission.
 
-> ❗ **Important**:  You need to submit your first in-app purchase with an app binary submission. This must be done through [`appstoreconnect.apple.com`](https://developer.apple.comhttps://appstoreconnect.apple.com). For subsequent in-app purchases, you can submit using the following API endpoint without an associated app binary submission.
+Submit a subsequent in-app purchase version using the review submissions workflow. This is the current, non-deprecated path.
 
-If this isn’t your first in-app purchase, use `POST /v1/inAppPurchaseSubmissions` ([`Create a review submission for an in-app purchase`](post-v1-inapppurchasesubmissions.md)) with a payload like this:
+First, create a review submission for the app with `POST /v1/reviewSubmissions` ([`Create a Review Submission`](post-v1-reviewsubmissions.md)):
 
-```other
+```json
 {
   "data": {
-    "type": "inAppPurchaseSubmissions",
+    "type": "reviewSubmissions",
+    "attributes": {
+      "platform": "IOS"
+    },
     "relationships": {
-      "inAppPurchaseV2": {
+      "app": {
         "data": {
-          "type": "inAppPurchases",
-          "id": "6446452615"
+          "type": "apps",
+          "id": "6446148572"
         }
       }
     }
@@ -277,13 +294,55 @@ If this isn’t your first in-app purchase, use `POST /v1/inAppPurchaseSubmissio
 }
 ```
 
+Next, add the in-app purchase version as an item on that review submission with `POST /v1/reviewSubmissionItems` ([`Create a Review Submission Item`](post-v1-reviewsubmissionitems.md)):
+
+```json
+{
+  "data": {
+    "type": "reviewSubmissionItems",
+    "relationships": {
+      "reviewSubmission": {
+        "data": {
+          "type": "reviewSubmissions",
+          "id": "${reviewSubmissionId}"
+        }
+      },
+      "inAppPurchaseVersion": {
+        "data": {
+          "type": "inAppPurchaseVersions",
+          "id": "abc123-4567-89ab-cdef-000000000001"
+        }
+      }
+    }
+  }
+}
+```
+
+Finally, submit the review submission by patching its `submitted` attribute to `true` with `PATCH /v1/reviewSubmissions/{id}` ([`Modify a Review Submission`](patch-v1-reviewsubmissions-_id_.md)):
+
+```json
+{
+  "data": {
+    "type": "reviewSubmissions",
+    "id": "${reviewSubmissionId}",
+    "attributes": {
+      "submitted": true
+    }
+  }
+}
+```
+
+The version’s state transitions from `PREPARE_FOR_SUBMISSION` to `READY_FOR_REVIEW` when you add it to a review submission, then to `WAITING_FOR_REVIEW` after you mark the submission `submitted`, then `IN_REVIEW`, and finally to `APPROVED` or `REJECTED`. Poll `GET /v1/inAppPurchaseVersions/{id}` ([`Read in-app purchase version information`](get-v1-inapppurchaseversions-_id_.md)) to check the current state.
+
+The `POST /v1/inAppPurchaseSubmissions` ([`Create a review submission for an in-app purchase`](post-v1-inapppurchasesubmissions.md)) endpoint is deprecated as of 4.4.1. Existing integrations that submit an in-app purchase directly by its `id` continue to work, but new integrations use the review submissions workflow described above. For guidance on moving to the version-based workflow, see [`Migrating in-app purchase metadata to v2`](migrating-in-app-purchase-metadata-to-v2.md).
+
 ##### Promote Your in App Purchase
 
-After your in-app purchase gets approved, you can to promote it to users who visit your app listing in the App Store. To accomplish this task, use `POST /v1/promotedPurchases` ([`Promote a purchase`](post-v1-promotedpurchases.md)) with a payload that includes your Apple ID and the ID for your in-app purchase. The response confirms the state is `"Waiting for Review"`. You can also look up the state of a specific promoted purchase by using `GET /v1/promotedPurchases` ([`Read promoted purchase information for an in-app purchase`](get-v2-inapppurchases-_id_-promotedpurchase.md)), or look up the status of all your promoted purchases by using `GET /v1/apps/{id}/promotedPurchases` ([`List all promoted purchases for an app`](get-v1-apps-_id_-promotedpurchases.md)).
+After your in-app purchase gets approved, you can promote it to people who visit your app listing in the App Store. To accomplish this task, use `POST /v1/promotedPurchases` ([`Promote a purchase`](post-v1-promotedpurchases.md)) with a payload that includes your Apple ID and the ID for your in-app purchase. The response confirms the state is `"Waiting for Review"`. You can also look up the state of a specific promoted purchase by using `GET /v2/inAppPurchases/{id}/promotedPurchase` ([`Read promoted purchase information for an in-app purchase`](get-v2-inapppurchases-_id_-promotedpurchase.md)), or look up the status of all your promoted purchases by using `GET /v1/apps/{id}/promotedPurchases` ([`List all promoted purchases for an app`](get-v1-apps-_id_-promotedpurchases.md)).
 
 Here’s an example payload:
 
-```other
+```json
 {
   "data": {
     "type": "promotedPurchases",
@@ -318,19 +377,19 @@ At some point, you might want to change the price of your in-app purchase. Use o
 - Make an immediate change of price.
 - Schedule a price change for a future time.
 
-To perform either type of price change, you use a process similar to setting the initial price. First, look up your current price point using `GET /v1/inAppPurchasePriceSchedules/{id}/manualPrices` ([`Read In-App Purchase Price Schedule Information`](get-v1-inapppurchasepriceschedules-_id_.md)) — where `id` is the in-app purchase ID — to determine the desired price point. The following screenshot shows what the current pricing looks like in App Store Connect for the in-app purchase.
+To perform either type of price change, you use a process similar to setting the initial price. First, look up your current price point using `GET /v1/inAppPurchasePriceSchedules/{id}/manualPrices` ([`Read Price Information for an In-App Purchase Price Schedule`](get-v1-inapppurchasepriceschedules-_id_-manualprices.md)) — where `id` is the in-app purchase ID — to determine the desired price point. The following screenshot shows what the current pricing looks like in App Store Connect for the in-app purchase.
 
 ![Screenshot of a price schedule from appstoreconnect.apple.com.](https://docs-assets.developer.apple.com/published/b6a27ee1110af1eae7eba4fbc79faf6b/media-4054484%402x.png)
 
 The following example request includes several additional fields and filters:
 
 ```other
-GET /v1/inAppPurchasePriceSchedules/6446148560/manualPrices?fields%5BinAppPurchasePricePoints%5D=priceTier&filter%5Bterritory%5D=USA&include=inAppPurchasePricePoint 
+GET /v1/inAppPurchasePriceSchedules/6446148560/manualPrices?fields%5BinAppPurchasePricePoints%5D=priceTier&filter%5Bterritory%5D=USA&include=inAppPurchasePricePoint
 ```
 
 Here’s an example response that includes the information from the request above:
 
-```other
+```json
 {
   "data" : [ {
     "type" : "inAppPurchasePrices",
@@ -400,7 +459,7 @@ Here’s an example response that includes the information from the request abov
 
 This first portion of the response is shown below. This portion shows an `inAppPurchasePrices` with `id`, but the `startDate` attribute is `null`, which means this is the current price. You can look up the customer price for a particular territory by looking up the `inAppPurchasePricePoints` by `id` using `GET /v2/inAppPurchases/{id}/pricePoints` ([`List all price points for an in-app purchase`](get-v2-inapppurchases-_id_-pricepoints.md)) and searching the response for the ID.
 
-```other
+```json
 {
   "data" : [ {
     "type" : "inAppPurchasePrices",
@@ -418,9 +477,9 @@ This first portion of the response is shown below. This portion shows an `inAppP
     },
 ```
 
-The second portion of the response is shown below. This portion shows another `inAppPurchasePrices` with `id`, but the `startDate` attribute is an ISO 8601 formatted date that shows the date the price of the in-app purchase will change. This portion of the response also has a different `inAppPurchasePricePoints` `id`, showing a change of price.
+The second portion of the response is shown below. This portion shows another `inAppPurchasePrices` with `id`, but the `startDate` attribute is an ISO 8601 formatted date that shows the date the price of the in-app purchase changes. This portion of the response also has a different `inAppPurchasePricePoints` `id`, showing a change of price.
 
-```other
+```json
 "included" : [ {
     "type" : "inAppPurchasePricePoints",
     "id" : "NjQ0NjE0ODU2MF91c18y",
@@ -450,7 +509,7 @@ GET /v2/inAppPurchases/{id}/pricePoints?fields%5BinAppPurchasePricePoints%5D=pri
 
 Now that you know about the current price and the scheduled price change, you might want to schedule another price change, like reverting back to the original price. To accomplish this task, use `POST /v1/inAppPurchasePriceSchedules` ([`Add a Scheduled Price Change to an In-App Purchase`](post-v1-inapppurchasepriceschedules.md)) with a payload like this:
 
-```other
+```json
 {
   "data": {
     "type": "inAppPurchasePriceSchedules",
@@ -525,7 +584,7 @@ Now that you know about the current price and the scheduled price change, you mi
 
 This payload has two sections. The first section contains references to two `manualPrices`, which are the current price and the scheduled future price.
 
-```other
+```json
 "manualPrices": {
         "data": [
           {
@@ -544,7 +603,7 @@ This payload has two sections. The first section contains references to two `man
 
 The `included` portion of the payload states the price points and change date for the current price and scheduled price.
 
-```other
+```json
  "included": [
     {
       "type": "inAppPurchasePrices",
@@ -598,15 +657,25 @@ For more information on creating and editing in-app purchases, see [`Overview fo
 
 ## See Also
 
+- [Working with in-app purchase versions](working-with-in-app-purchase-versions.md)
+  Manage draft versions of an in-app purchase’s localized metadata and review images before submitting for App Review.
+- [Migrating in-app purchase metadata to v2](migrating-in-app-purchase-metadata-to-v2.md)
+  Update an existing integration from the pre-4.4.1 metadata workflow to the version-based v2 workflow.
+- [In-App Purchase Versions](in-app-purchase-versions.md)
+  Create and read draft versions of an in-app purchase, with their localized metadata and review images.
 - [In-App Purchases](in-app-purchases.md)
   Create, modify, and delete in-app purchases for your app.
 - [In-App Purchase Localizations](in-app-purchase-localizations.md)
+  Create, modify, and delete localized metadata for in-app purchase versions.
+- [In-app purchase localizations (v1)](in-app-purchase-localizations-v1.md)
   Create, modify, and delete localized metadata for in-app purchases.
 - [In-App purchase price schedules](in-app-purchase-price-schedules.md)
   Create a scheduled price change for an in-app purchase, and get information about scheduled price changes.
 - [In-app purchase availability](in-app-purchase-availability.md)
   Read and modify territory availability for an in-app purchase.
 - [In-app purchase images](in-app-purchase-images.md)
+  Create, modify, and delete promotion images for in-app purchases.
+- [In-app purchase images (v1)](in-app-purchase-images-v1.md)
   Create, modify, and delete promotion images for your in-app purchases.
 
 

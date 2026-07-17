@@ -30,6 +30,9 @@ object ReviewSubmissionItemCreateRequest.Data.Relationships
 - [object ReviewSubmissionItemCreateRequest.Data.Relationships.GameCenterChallengeVersion](reviewsubmissionitemcreaterequest/data-data.dictionary/relationships-data.dictionary/gamecenterchallengeversion-data.dictionary.md)
 - [object ReviewSubmissionItemCreateRequest.Data.Relationships.GameCenterLeaderboardSetVersion](reviewsubmissionitemcreaterequest/data-data.dictionary/relationships-data.dictionary/gamecenterleaderboardsetversion-data.dictionary.md)
 - [object ReviewSubmissionItemCreateRequest.Data.Relationships.GameCenterLeaderboardVersion](reviewsubmissionitemcreaterequest/data-data.dictionary/relationships-data.dictionary/gamecenterleaderboardversion-data.dictionary.md)
+- [object ReviewSubmissionItemCreateRequest.Data.Relationships.InAppPurchaseVersion](reviewsubmissionitemcreaterequest/data-data.dictionary/relationships-data.dictionary/inapppurchaseversion-data.dictionary.md)
+- [object ReviewSubmissionItemCreateRequest.Data.Relationships.SubscriptionGroupVersion](reviewsubmissionitemcreaterequest/data-data.dictionary/relationships-data.dictionary/subscriptiongroupversion-data.dictionary.md)
+- [object ReviewSubmissionItemCreateRequest.Data.Relationships.SubscriptionVersion](reviewsubmissionitemcreaterequest/data-data.dictionary/relationships-data.dictionary/subscriptionversion-data.dictionary.md)
 
 ## Properties
 
@@ -38,13 +41,16 @@ object ReviewSubmissionItemCreateRequest.Data.Relationships
 - `appStoreVersion` (ReviewSubmissionItemCreateRequest.Data.Relationships.AppStoreVersion)
 - `appStoreVersionExperiment` (ReviewSubmissionItemCreateRequest.Data.Relationships.AppStoreVersionExperiment)
 - `appStoreVersionExperimentV2` (ReviewSubmissionItemCreateRequest.Data.Relationships.AppStoreVersionExperimentV2)
+- `reviewSubmission` (ReviewSubmissionItemCreateRequest.Data.Relationships.ReviewSubmission) *(required)*
+- `inAppPurchaseVersion` (ReviewSubmissionItemCreateRequest.Data.Relationships.InAppPurchaseVersion)
+- `subscriptionGroupVersion` (ReviewSubmissionItemCreateRequest.Data.Relationships.SubscriptionGroupVersion)
+- `subscriptionVersion` (ReviewSubmissionItemCreateRequest.Data.Relationships.SubscriptionVersion)
 - `backgroundAssetVersion` (ReviewSubmissionItemCreateRequest.Data.Relationships.BackgroundAssetVersion)
 - `gameCenterAchievementVersion` (ReviewSubmissionItemCreateRequest.Data.Relationships.GameCenterAchievementVersion)
 - `gameCenterActivityVersion` (ReviewSubmissionItemCreateRequest.Data.Relationships.GameCenterActivityVersion)
 - `gameCenterChallengeVersion` (ReviewSubmissionItemCreateRequest.Data.Relationships.GameCenterChallengeVersion)
 - `gameCenterLeaderboardSetVersion` (ReviewSubmissionItemCreateRequest.Data.Relationships.GameCenterLeaderboardSetVersion)
 - `gameCenterLeaderboardVersion` (ReviewSubmissionItemCreateRequest.Data.Relationships.GameCenterLeaderboardVersion)
-- `reviewSubmission` (ReviewSubmissionItemCreateRequest.Data.Relationships.ReviewSubmission) *(required)*
 
 
 ---

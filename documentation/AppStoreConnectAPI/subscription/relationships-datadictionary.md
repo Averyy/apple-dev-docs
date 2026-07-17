@@ -3,8 +3,10 @@
 **Framework**: App Store Connect API  
 **Kind**: dictionary
 
+The relationships you include in the request and those on which you can operate.
+
 **Availability**:
-- App Store Connect API 3.6+
+- App Store Connect API 2.0+
 
 ## Declaration
 
@@ -27,23 +29,25 @@ object Subscription.Relationships
 - [object Subscription.Relationships.PromotionalOffers](subscription/relationships-data.dictionary/promotionaloffers-data.dictionary.md)
 - [object Subscription.Relationships.SubscriptionAvailability](subscription/relationships-data.dictionary/subscriptionavailability-data.dictionary.md)
 - [object Subscription.Relationships.SubscriptionLocalizations](subscription/relationships-data.dictionary/subscriptionlocalizations-data.dictionary.md)
+- [object Subscription.Relationships.Versions](subscription/relationships-data.dictionary/versions-data.dictionary.md)
 - [object Subscription.Relationships.WinBackOffers](subscription/relationships-data.dictionary/winbackoffers-data.dictionary.md)
 
 ## Properties
 
+- `subscriptionLocalizations` (Subscription.Relationships.SubscriptionLocalizations)
 - `appStoreReviewScreenshot` (Subscription.Relationships.AppStoreReviewScreenshot)
 - `group` (Subscription.Relationships.Group)
-- `images` (Subscription.Relationships.Images)
 - `introductoryOffers` (Subscription.Relationships.IntroductoryOffers)
-- `offerCodes` (Subscription.Relationships.OfferCodes)
-- `planAvailabilities` (Subscription.Relationships.PlanAvailabilities)
-- `pricePoints` (Subscription.Relationships.PricePoints)
-- `prices` (Subscription.Relationships.Prices)
-- `promotedPurchase` (Subscription.Relationships.PromotedPurchase)
 - `promotionalOffers` (Subscription.Relationships.PromotionalOffers)
+- `offerCodes` (Subscription.Relationships.OfferCodes)
+- `prices` (Subscription.Relationships.Prices)
+- `pricePoints` (Subscription.Relationships.PricePoints)
+- `promotedPurchase` (Subscription.Relationships.PromotedPurchase)
 - `subscriptionAvailability` (Subscription.Relationships.SubscriptionAvailability)
-- `subscriptionLocalizations` (Subscription.Relationships.SubscriptionLocalizations)
 - `winBackOffers` (Subscription.Relationships.WinBackOffers)
+- `images` (Subscription.Relationships.Images)
+- `planAvailabilities` (Subscription.Relationships.PlanAvailabilities)
+- `versions` (Subscription.Relationships.Versions)
 
 ## See Also
 

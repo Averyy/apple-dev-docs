@@ -11,6 +11,7 @@ Get information about a specific in-app purchase.
 ## Mentions
 
 - [App Store Connect API 2.4 release notes](app-store-connect-api-2-4-release-notes.md)
+- [Managing in-app purchases](managing-in-app-purchases.md)
 
 ## Endpoint
 
@@ -27,12 +28,14 @@ Get information about a specific in-app purchase.
 - `fields[inAppPurchaseOfferCodes]` ([string])
 - `fields[inAppPurchasePricePoints]` ([string])
 - `fields[inAppPurchasePriceSchedules]` ([string])
+- `fields[inAppPurchaseVersions]` ([string])
 - `fields[inAppPurchases]` ([string])
 - `fields[promotedPurchases]` ([string])
 - `limit[images]` (integer)
 - `limit[inAppPurchaseLocalizations]` (integer)
 - `limit[offerCodes]` (integer)
 - `limit[pricePoints]` (integer)
+- `limit[versions]` (integer)
 
 ## See Also
 

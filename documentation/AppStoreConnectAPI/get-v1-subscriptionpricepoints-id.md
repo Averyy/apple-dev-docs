@@ -23,6 +23,8 @@ Get details about a specific subscription price point.
 - [List all subscription price point equalizations](get-v1-subscriptionpricepoints-_id_-equalizations.md)
   Get a list of subscription price points and their equivalent in a specified currency.
 - [List equalization IDs for a subscription price point](get-v1-subscriptionpricepoints-_id_-relationships-equalizations.md)
+- [List adjusted equalizations for a subscription price point](get-v1-subscriptionpricepoints-_id_-adjustedequalizations.md)
+  List the adjusted territory equalizations for a subscription price point.
 - [Create a subscription price change](post-v1-subscriptionprices.md)
   Schedule a subscription price change for a specific territory.
 - [Delete subscription prices](delete-v1-subscriptionprices-_id_.md)

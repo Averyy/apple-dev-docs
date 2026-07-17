@@ -6,7 +6,10 @@ Create, modify, and delete auto-renewable subscriptions for your app.
 
 ## Topics
 
-### Endpoints
+### Configuring Subscription Prices
+- [Configuring subscription prices across territories](configuring-subscription-prices-across-territories.md)
+  Set plan types and equalized prices for an auto-renewable subscription with the App Store Connect API.
+### Creating and managing subscriptions
 - [Create an auto-renewable subscription](post-v1-subscriptions.md)
   Create an auto-renewable subscription for your app.
 - [Read subscription information](get-v1-subscriptions-_id_.md)
@@ -15,24 +18,34 @@ Create, modify, and delete auto-renewable subscriptions for your app.
   Update a specific auto-renewable subscription.
 - [Delete a subscription](delete-v1-subscriptions-_id_.md)
   Delete a specific auto-renewable subscription that you configured for an app.
+### Getting subscription localizations
 - [List all localizations for an auto-renewable subscription](get-v1-subscriptions-_id_-subscriptionlocalizations.md)
   Get a list of the subscription localizations for a specific auto-renewable subscription.
 - [List localization IDs for an auto-renewable subscription](get-v1-subscriptions-_id_-relationships-subscriptionlocalizations.md)
+### Getting introductory offers
 - [List all introductory offers for a subscription](get-v1-subscriptions-_id_-introductoryoffers.md)
   Get a list of introductory offers for a specific auto-renewable subscription.
 - [List all introductory offer resource ids for an auto-renewable subscription](get-v1-subscriptions-_id_-relationships-introductoryoffers.md)
   Get a list of resource IDs representing introductory offers for an auto-renewable subscription.
 - [Delete an introductory offer from a subscription](delete-v1-subscriptions-_id_-relationships-introductoryoffers.md)
   Delete a specific introductory offer for an auto-renewable subscription.
-- [Read promoted purchase information for a subscription](get-v1-subscriptions-_id_-promotedpurchase.md)
-  Get details about the promoted purchase of an auto-renewable subscription.
-- [Get the promoted purchase ID for an auto-renewable subscription](get-v1-subscriptions-_id_-relationships-promotedpurchase.md)
-- [List all offer codes for a subscription](get-v1-subscriptions-_id_-offercodes.md)
-  Get a list of subscription offer codes for a specific auto-renewable subscription.
-- [List offer code IDs for an auto-renewable subscription](get-v1-subscriptions-_id_-relationships-offercodes.md)
+### Getting promotional offers
 - [List all promotional offer resource ids for an auto-renewable subscription](get-v1-subscriptions-_id_-promotionaloffers.md)
   Get a list of promotional offers for a specific auto-renewable subscription.
 - [List promotional offer IDs for an auto-renewable subscription](get-v1-subscriptions-_id_-relationships-promotionaloffers.md)
+### Getting offer codes
+- [List all offer codes for a subscription](get-v1-subscriptions-_id_-offercodes.md)
+  Get a list of subscription offer codes for a specific auto-renewable subscription.
+- [List offer code IDs for an auto-renewable subscription](get-v1-subscriptions-_id_-relationships-offercodes.md)
+### Getting win-back offers
+- [List Win-Back Offers](get-v1-subscriptions-_id_-winbackoffers.md)
+  The data structure that represents a get-v1-subscriptions-{id}-win back offers resource.
+- [List win-back offer IDs for an auto-renewable subscription](get-v1-subscriptions-_id_-relationships-winbackoffers.md)
+### Getting the promoted purchase
+- [Read promoted purchase information for a subscription](get-v1-subscriptions-_id_-promotedpurchase.md)
+  Get details about the promoted purchase of an auto-renewable subscription.
+- [Get the promoted purchase ID for an auto-renewable subscription](get-v1-subscriptions-_id_-relationships-promotedpurchase.md)
+### Getting price points and prices
 - [List all price points for a subscription](get-v1-subscriptions-_id_-pricepoints.md)
   Get a list of price points for an auto-renewable subscription by territory.
 - [List price point IDs for an auto-renewable subscription](get-v1-subscriptions-_id_-relationships-pricepoints.md)
@@ -42,20 +55,19 @@ Create, modify, and delete auto-renewable subscriptions for your app.
   Get a list of resource IDs representing subscription prices for an auto-renewable subscription.
 - [Delete prices from a subscription](delete-v1-subscriptions-_id_-relationships-prices.md)
   Delete a scheduled subscription price change for an auto-renewable subscription.
-- [Read review screenshot information for a subscription](get-v1-subscriptions-_id_-appstorereviewscreenshot.md)
-  Get information about review screenshot for a specific auto-renewable subscription.
-- [Get the App Store review screenshot ID for an auto-renewable subscription](get-v1-subscriptions-_id_-relationships-appstorereviewscreenshot.md)
+### Getting subscription availability
 - [Read information about the availability of a subscription](get-v1-subscriptions-_id_-subscriptionavailability.md)
   Get information about the territory availability for a subscription.
 - [Get the subscription availability ID for an auto-renewable subscription](get-v1-subscriptions-_id_-relationships-subscriptionavailability.md)
-- [List Win-Back Offers](get-v1-subscriptions-_id_-winbackoffers.md)
-  The data structure that represents a get-v1-subscriptions-{id}-win back offers resource.
-- [List win-back offer IDs for an auto-renewable subscription](get-v1-subscriptions-_id_-relationships-winbackoffers.md)
 - [List plan availabilities for a subscription](get-v1-subscriptions-_id_-planavailabilities.md)
-  List the subscription plan availabilities related to a subscription.
+  List all plan availabilities for a specific auto-renewable subscription.
 - [List plan availability IDs for a subscription](get-v1-subscriptions-_id_-relationships-planavailabilities.md)
-  List the resource IDs of related subscription plan availabilities for a subscription.
-### Objects
+  Get a list of plan availability resource IDs for a specific auto-renewable subscription.
+### Getting the App Store review screenshot
+- [Read review screenshot information for a subscription](get-v1-subscriptions-_id_-appstorereviewscreenshot.md)
+  Get information about review screenshot for a specific auto-renewable subscription.
+- [Get the App Store review screenshot ID for an auto-renewable subscription](get-v1-subscriptions-_id_-relationships-appstorereviewscreenshot.md)
+### Objects and data types
 - [object SubscriptionCreateRequest](subscriptioncreaterequest.md)
   The request body you use to create a subscription.
 - [object SubscriptionUpdateRequest](subscriptionupdaterequest.md)
@@ -109,18 +121,29 @@ Create, modify, and delete auto-renewable subscriptions for your app.
 - [object SubscriptionPromotionalOffersLinkagesResponse](subscriptionpromotionalofferslinkagesresponse.md)
 - [object SubscriptionSubscriptionAvailabilityLinkageResponse](subscriptionsubscriptionavailabilitylinkageresponse.md)
 - [object SubscriptionSubscriptionLocalizationsLinkagesResponse](subscriptionsubscriptionlocalizationslinkagesresponse.md)
-- [object SubscriptionWinBackOffersLinkagesResponse](subscriptionwinbackofferslinkagesresponse.md)
 
 ## See Also
 
 - [Managing auto-renewable subscriptions](managing-auto-renewable-subscriptions.md)
   Create and manage subscriptions with the App Store Connect API.
+- [Working with subscription versions](working-with-subscription-versions.md)
+  Manage draft versions of an auto-renewable subscription’s localized metadata and review images before submitting for App Review.
+- [Configuring subscription prices across territories](configuring-subscription-prices-across-territories.md)
+  Set plan types and equalized prices for an auto-renewable subscription with the App Store Connect API.
+- [Querying adjusted subscription price equalizations](querying-adjusted-subscription-price-equalizations.md)
+  Compare a subscription price point against the equalized price points that Apple recommends across territories, adjusted for local pricing rules.
+- [Subscription Versions](subscription-versions.md)
+  Create and read draft versions of an auto-renewable subscription, with their localized metadata and review images.
 - [Subscription Localizations](subscription-localizations.md)
   Create, modify, and delete localized metadata for auto-renewable subscriptions.
-- [Subscription Price Points and Subscription Prices](subscription-price-points-and-subscription-prices.md)
+- [Subscription localizations (v1)](subscription-localizations-v1.md)
+  Create, modify, and delete localized metadata for auto-renewable subscriptions.
+- [Subscription price points and subscription prices](subscription-price-points-and-subscription-prices.md)
   Manage scheduled price changes for auto-renewable subscriptions and get price point information.
 - [Subscription images](subscription-images.md)
-  Create, modify, and delete promotion images for your auto-renewalable subscription.
+  Create, modify, and delete promotion images for auto-renewable subscriptions.
+- [Subscription images (v1)](subscription-images-v1.md)
+  Create, modify, and delete promotion images for your auto-renewable subscription.
 - [Subscription availability](subscription-availability.md)
   Read and modify territory availability for an auto-renewable subscription.
 - [Subscription plan availability](subscription-plan-availability.md)

@@ -6,7 +6,7 @@
 A screenshot or image associated with an in-app purchase or subscription, displayed on the App Store product page.
 
 **Availability**:
-- App Store Connect API 3.6+
+- App Store Connect API 2.0+
 
 ## Declaration
 

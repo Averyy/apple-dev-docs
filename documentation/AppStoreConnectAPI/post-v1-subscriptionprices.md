@@ -11,6 +11,7 @@ Schedule a subscription price change for a specific territory.
 ## Mentions
 
 - [Managing auto-renewable subscriptions](managing-auto-renewable-subscriptions.md)
+- [Configuring subscription prices across territories](configuring-subscription-prices-across-territories.md)
 
 #### Discussion
 
@@ -27,6 +28,8 @@ Schedule a subscription price change for a specific territory.
 - [List all subscription price point equalizations](get-v1-subscriptionpricepoints-_id_-equalizations.md)
   Get a list of subscription price points and their equivalent in a specified currency.
 - [List equalization IDs for a subscription price point](get-v1-subscriptionpricepoints-_id_-relationships-equalizations.md)
+- [List adjusted equalizations for a subscription price point](get-v1-subscriptionpricepoints-_id_-adjustedequalizations.md)
+  List the adjusted territory equalizations for a subscription price point.
 - [Delete subscription prices](delete-v1-subscriptionprices-_id_.md)
   Delete a scheduled price change for an auto-renewable subscription.
 

@@ -11,6 +11,8 @@ Edit the details or contents of a review submission.
 ## Mentions
 
 - [App Store Connect API 4.1 release notes](app-store-connect-api-4-1-release-notes.md)
+- [Managing in-app purchases](managing-in-app-purchases.md)
+- [Submitting subscriptions and subscription groups for App Review](submitting-subscriptions-and-subscription-groups-for-app-review.md)
 
 #### Overview
 

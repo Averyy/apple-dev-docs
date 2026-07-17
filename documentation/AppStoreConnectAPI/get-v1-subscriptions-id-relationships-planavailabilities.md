@@ -3,10 +3,10 @@
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
 
-List the resource IDs of related subscription plan availabilities for a subscription.
+Get a list of plan availability resource IDs for a specific auto-renewable subscription.
 
 **Availability**:
-- App Store Connect API 3.6+
+- App Store Connect API 4.4+
 
 ## Endpoint
 
@@ -14,12 +14,12 @@ List the resource IDs of related subscription plan availabilities for a subscrip
 
 ## Parameters
 
-- `limit` (integer): The maximum number of subscriptionPlanAvailabilities resource identifiers to return.
+- `limit` (integer): The maximum number of subscription plan availability resource identifiers to return.
 
 ## See Also
 
 - [List plan availabilities for a subscription](get-v1-subscriptions-_id_-planavailabilities.md)
-  List the subscription plan availabilities related to a subscription.
+  List all plan availabilities for a specific auto-renewable subscription.
 
 
 ---

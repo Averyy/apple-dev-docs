@@ -14,16 +14,22 @@ This sample demonstrates how to encode commands that run a machine learning mode
 
 You encode a machine learning pass into a command buffer with the [`MTL4MachineLearningCommandEncoder`](mtl4machinelearningcommandencoder.md) protocol. When the Metal device finishes running the pass, other passes can immediately work with the inference results.
 
-The app multiplies two matrices on both the CPU and the Metal device, then reports whether the results are the same. It does the matrix multiplication on the Metal device by running a machine learning pass with a model that does matrix multiplication. Metal apps can apply Core ML models in the form of a Metal package file. Metal packages provide an entry point to the model within it that a Metal device can run.
+The app multiplies two matrices on both the CPU and the Metal device, then reports whether the results are the same. It does the matrix multiplication on the Metal device by running a machine learning pass with a model that does matrix multiplication.
 
-> **Note**: The sample’s model is a relatively simple network that multiplies two matrices, a task which most apps can run more efficiently with the CPU or GPU shader code.
+Metal apps can apply model files from [`Core ML`](https://developer.apple.com/documentation/CoreML) by converting each into a Metal package:
 
-For an example of multiplying matrices directly in a GPU kernel function with inline tensor operations, see [`Running inline ML operations in a shader with Metal 4`](running-inline-ml-operations-in-a-shader-with-metal-4.md).
+```shell
+    
+% xcrun metal-package-builder -ml ./path/to/model.mlpackage -o ./output/path/to/ml-model.mtlpackage
+
+```
+
+Metal packages provide an entry point to the model within it that a Metal device can run. The Metal package file in this sample’s app is a relatively simple network that multiplies two matrices, a task which most apps can run more efficiently with the CPU or GPU shader code. For an example of multiplying matrices directly in a GPU kernel function with inline tensor operations, see [`Running inline ML operations in a shader with Metal 4`](running-inline-ml-operations-in-a-shader-with-metal-4.md).
 
 When you run the app, it:
 
 1. Creates Metal resources, most of which are reusable
-2. Compiles a machine learning-pipeline state from the model in the Metal package
+2. Compiles a machine learning pipeline state from the model in the Metal package
 3. Extracts tensor bindings from pipeline reflection
 4. Creates tensors that match the binding requirements
 5. Fills the input tensors with matrix data
@@ -34,10 +40,6 @@ When you run the app, it:
 
 The app reports whether the results match and exits.
 
-> **Note**: The app creates reusable resources once, such as the Metal device, compiler, command queue, and command buffer.
-
-Long-running apps can follow the same pattern to avoid repeating setup costs.
-
 #### Create a Compiler
 
 The app creates an [`MTL4Compiler`](mtl4compiler.md) along with other reusable resources like the device, command queue, and command buffer.
@@ -47,13 +49,13 @@ compiler = [device newCompilerWithDescriptor:[MTL4CompilerDescriptor new]
                                        error:nil];
 ```
 
+The app creates these resources one time so long-running apps avoid repeating setup costs.
+
 The app’s compiler builds the machine learning model into a pipeline state that runs on the GPU.
 
 #### Compile the Pipeline State
 
-The app compiles the model into a pipeline state with specific input dimensions in the `createPipelineStateWithCompiler:fromLibrary:forMatrices:` method.
-
-The method starts by retrieving the function reflection for the ML network’s `main` function:
+The app creates a pipeline state based on the model by passing the compiler instance and a library that represents the model to the app’s `createPipelineStateWithCompiler:fromLibrary:forMatrices:` method. The method starts by retrieving the reflection information for the library’s `main` function:
 
 ```objective-c
 - (nullable id<MTL4MachineLearningPipelineState>)

@@ -70,6 +70,7 @@ The watchOS 27 SDK provides support to develop watchOS apps for Apple Watch devi
 ###### Known Issues
 
 - Siri might not resolve some entity types when your app has provided only an `EntityStringQuery` for the entity type.  (177464215) **Workaround:** Index the entity in Spotlight, or provide an `IntentValueQuery` if applicable.
+- Siri AI might be unable to complete certain actions on Apple Watch for English users in locales outside the United States.  (180303086)
 
 ##### Sleep Focus
 

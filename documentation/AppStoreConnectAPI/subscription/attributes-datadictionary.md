@@ -27,6 +27,7 @@ object Subscription.Attributes
 ## See Also
 
 - [object Subscription.Relationships](subscription/relationships-data.dictionary.md)
+  The relationships you include in the request and those on which you can operate.
 
 
 ---

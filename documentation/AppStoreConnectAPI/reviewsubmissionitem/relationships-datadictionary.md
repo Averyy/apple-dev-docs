@@ -34,6 +34,9 @@ object ReviewSubmissionItem.Relationships
   The data that describes the Game Center leaderboard set version of the review submission item.
 - [object ReviewSubmissionItem.Relationships.GameCenterLeaderboardVersion](reviewsubmissionitem/relationships-data.dictionary/gamecenterleaderboardversion-data.dictionary.md)
   The data that describes the Game Center leaderboard version of the review submission item.
+- [object ReviewSubmissionItem.Relationships.InAppPurchaseVersion](reviewsubmissionitem/relationships-data.dictionary/inapppurchaseversion-data.dictionary.md)
+- [object ReviewSubmissionItem.Relationships.SubscriptionGroupVersion](reviewsubmissionitem/relationships-data.dictionary/subscriptiongroupversion-data.dictionary.md)
+- [object ReviewSubmissionItem.Relationships.SubscriptionVersion](reviewsubmissionitem/relationships-data.dictionary/subscriptionversion-data.dictionary.md)
 
 ## Properties
 
@@ -48,6 +51,9 @@ object ReviewSubmissionItem.Relationships
 - `gameCenterChallengeVersion` (ReviewSubmissionItem.Relationships.GameCenterChallengeVersion)
 - `gameCenterLeaderboardSetVersion` (ReviewSubmissionItem.Relationships.GameCenterLeaderboardSetVersion)
 - `gameCenterLeaderboardVersion` (ReviewSubmissionItem.Relationships.GameCenterLeaderboardVersion)
+- `inAppPurchaseVersion` (ReviewSubmissionItem.Relationships.InAppPurchaseVersion)
+- `subscriptionGroupVersion` (ReviewSubmissionItem.Relationships.SubscriptionGroupVersion)
+- `subscriptionVersion` (ReviewSubmissionItem.Relationships.SubscriptionVersion)
 
 ## See Also
 

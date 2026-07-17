@@ -51,7 +51,13 @@ Create, modify, and delete subscription groups for your app.
 
 - [Creating auto-renewable subscription groups](creating-auto-renewable-subscription-groups.md)
   Configure subscription groups with the App Store Connect API.
+- [Working with subscription group versions](working-with-subscription-group-versions.md)
+  Manage draft versions of a subscription group’s localized metadata before submitting for App Review.
+- [Subscription Group Versions](subscription-group-versions.md)
+  Create and read draft versions of a subscription group with their localized metadata.
 - [Subscription Group Localizations](subscription-group-localizations.md)
+  Create, modify, and delete localized metadata for subscription groups.
+- [Subscription group localizations (v1)](subscription-group-localizations-v1.md)
   Create, modify, and delete localized metadata for subscription groups.
 
 

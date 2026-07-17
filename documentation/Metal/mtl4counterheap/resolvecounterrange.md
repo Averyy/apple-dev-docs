@@ -1,4 +1,4 @@
-# resolveCounterRange:
+# resolveCounterRange(_:)
 
 **Framework**: Metal  
 **Kind**: method
@@ -16,12 +16,12 @@ Resolves heap data on the CPU timeline.
 ## Declaration
 
 ```swift
-- (NSData *) resolveCounterRange:(NSRange) range;
+func resolveCounterRange(_ range: Range<Int>) throws -> Data?
 ```
 
 #### Discussion
 
-This method resolves heap data in the CPU timeline. Your app needs to ensure the GPU work has completed in order to retrieve the data correctly. You can alternatively resolve the heap data in the GPU timeline by calling [`resolveCounterHeap:withRange:intoBuffer:waitFence:updateFence:`](mtl4commandbuffer/resolvecounterheap:withrange:intobuffer:waitfence:updatefence:.md).
+This method resolves heap data in the CPU timeline. Your app needs to ensure the GPU work has completed in order to retrieve the data correctly. You can alternatively resolve the heap data in the GPU timeline by calling `MTL4CommandBuffer/resolveCounterHeap:withRange:intoBuffer:atOffset:waitFence:updateFence:`.
 
 - Returns a newly allocated autoreleased NSData containing tightly packed resolved heap counter values.
 
@@ -34,4 +34,4 @@ This method resolves heap data in the CPU timeline. Your app needs to ensure the
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metal/mtl4counterheap/resolvecounterrange:)*
+*[View on Apple Developer](https://developer.apple.com/documentation/metal/mtl4counterheap/resolvecounterrange(_:))*

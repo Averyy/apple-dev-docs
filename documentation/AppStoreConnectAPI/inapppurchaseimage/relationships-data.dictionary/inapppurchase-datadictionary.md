@@ -6,7 +6,7 @@
 The data and links that describe the relationship between the resources.
 
 **Availability**:
-- App Store Connect API 3.6+
+- App Store Connect API 2.0+
 
 ## Declaration
 

@@ -6,7 +6,7 @@
 The resource linkage identifying the in-app purchase associated with an in-app purchase image.
 
 **Availability**:
-- App Store Connect API 3.6+
+- App Store Connect API 2.0+
 
 ## Declaration
 

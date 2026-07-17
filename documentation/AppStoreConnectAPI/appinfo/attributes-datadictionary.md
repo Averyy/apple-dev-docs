@@ -33,6 +33,7 @@ object AppInfo.Attributes
 - `brazilAgeRating` (BrazilAgeRating): This attribute is deprecated. Use `brazilAgeRatingV2` instead.
 - `brazilAgeRatingV2` (string): The app’s age rating as it appears on the App Store in Brazil for all platforms.
 - `franceAgeRating` (string)
+- `kidsAgeBand` (KidsAgeBand): This attribute is deprecated. Use ‘ageRatingDeclarations#kidsAgeBand’ instead.
 - `koreaAgeRating` (string)
 - `state` (string)
 

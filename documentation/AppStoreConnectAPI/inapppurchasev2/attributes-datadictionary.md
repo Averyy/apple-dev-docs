@@ -31,6 +31,7 @@ object InAppPurchaseV2.Attributes
 - [type InAppPurchaseState](inapppurchasestate.md)
   A string that represents the review state of an In-App Purchase.
 - [object InAppPurchaseV2.Relationships](inapppurchasev2/relationships-data.dictionary.md)
+  The relationships you include in the request and those on which you can operate.
 
 
 ---

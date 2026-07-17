@@ -23,7 +23,7 @@ For the full list of App Store Connect user roles, see [`UserRole`](userrole.md)
 
 ##### Prepare Your App for Win Back Offers
 
-Your app and subscriptions need to be approved before you can create a win-back offer. If you are using App Store promotion, you need an approved promoted-purchase image. To learn more, see [`Create an Image for a Subscription`](post-v1-subscriptionimages.md).
+Your app and subscriptions need to be approved before you can create a win-back offer. If you are using App Store promotion, you need an approved promoted-purchase image. To learn more, see [`Create an image for a subscription (v1)`](post-v1-subscriptionimages.md).
 
 > **Note**:  The `familySharable` field is editable only for auto-renewable subscriptions and non-consumable in-app purchases before the subscription or in-app purchase is approved by App Review.
 

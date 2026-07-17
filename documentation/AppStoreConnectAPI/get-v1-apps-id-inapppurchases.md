@@ -12,7 +12,6 @@ List the in-app purchases that are available for your app.
 
 - [App Store Connect API 2.0 release notes](app-store-connect-api-2-0-release-notes.md)
 - [App Store Connect API 2.2 release notes](app-store-connect-api-2-2-release-notes.md)
-- [Managing in-app purchases](managing-in-app-purchases.md)
 
 #### Discussion
 

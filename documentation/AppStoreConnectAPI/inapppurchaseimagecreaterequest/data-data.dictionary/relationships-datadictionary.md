@@ -6,7 +6,7 @@
 The relationships you include in the request and those on which you can operate.
 
 **Availability**:
-- App Store Connect API 3.6+
+- App Store Connect API 2.0+
 
 ## Declaration
 

@@ -6,7 +6,7 @@
 The request body you use to update an in-app purchase image.
 
 **Availability**:
-- App Store Connect API 3.6+
+- App Store Connect API 2.0+
 
 ## Declaration
 

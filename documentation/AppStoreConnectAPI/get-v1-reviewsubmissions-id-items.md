@@ -27,6 +27,9 @@ List all the items in a specific review submission.
 - `fields[gameCenterChallengeVersions]` ([string])
 - `fields[gameCenterLeaderboardSetVersions]` ([string])
 - `fields[gameCenterLeaderboardVersions]` ([string])
+- `fields[inAppPurchaseVersions]` ([string])
+- `fields[subscriptionGroupVersions]` ([string])
+- `fields[subscriptionVersions]` ([string])
 
 ## See Also
 

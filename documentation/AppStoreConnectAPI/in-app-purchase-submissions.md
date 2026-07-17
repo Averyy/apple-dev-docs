@@ -4,6 +4,13 @@
 
 Create a review submission for an in-app purchase.
 
+**Availability**:
+- App Store Connect API 2.0+
+
+#### Overview
+
+> ❗ **Important**:  This is deprecated. Use [`Review submissions`](review-submissions.md) instead.
+
 ## Topics
 
 ### Endpoints

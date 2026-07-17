@@ -76,9 +76,6 @@ This release of Reality Composer Pro is a complete 3D development platform. The 
 ### Script Graph
 - [Getting started with Script Graphs](getting-started-with-script-graphs.md)
   Build interactive, code-free 3D experiences using a visual, node-based editor in Reality Composer Pro.
-### Compute Graph
-- [Introducing Compute Graph](introducing-compute-graph.md)
-  Use Reality Composer Pro Compute Graph to build custom particle simulations with a node-based graph.
 ### Animation
 - [Creating animation sequences](creating-animation-sequences.md)
   Build animation sequences that drive entity behavior across multiple tracks in Reality Composer Pro.

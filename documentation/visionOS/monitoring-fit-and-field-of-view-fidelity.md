@@ -1,8 +1,8 @@
-# Monitoring fit and field of view coverage
+# Monitoring fit and field of view fidelity
 
 **Framework**: visionOS
 
-Respond to changes in fit and field of view coverage on Apple Vision Pro by using the Visual Fidelity API.
+Respond to changes in fit and field of view fidelity on Apple Vision Pro by using the Visual Fidelity API.
 
 **Availability**:
 - visionOS 27.0+ (Beta)
@@ -10,9 +10,7 @@ Respond to changes in fit and field of view coverage on Apple Vision Pro by usin
 
 #### Overview
 
-Some enterprise apps on Apple Vision Pro have a higher bar for fit accuracy and field of view coverage.
-
-To maintain that level of accuracy and precision, use the Visual Fidelity API in ARKit to report how well the device fits the wearer and whether they see the required field of view. When fit accuracy or field of view coverage drifts out of range, the app can respond by coaching the wearer to adjust the fit or by making features that require accurate fit and field of view coverage unavailable.
+Some enterprise apps may need to verify an Apple Vision Pro wearer’s fit and field of view, often due to regulatory requirements. Use the Visual Fidelity API in ARKit to monitor how well Apple Vision Pro fits the wearer and whether they experience the required field of view. When fit accuracy or field of view coverage drifts out of range, the app can respond by coaching the wearer to adjust the fit or by making features that require accurate fit and field of view coverage unavailable.
 
 The sample shows how to monitor visual fidelity and visualize the required field of view for use in your own app:
 
@@ -130,4 +128,4 @@ Use the visualization to compare presets and confirm which one covers the region
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/visionos/monitoring-fit-and-field-of-view-coverage)*
+*[View on Apple Developer](https://developer.apple.com/documentation/visionos/monitoring-fit-and-field-of-view-fidelity)*

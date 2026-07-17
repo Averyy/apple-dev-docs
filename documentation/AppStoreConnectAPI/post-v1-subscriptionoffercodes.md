@@ -21,6 +21,7 @@ Create a subscription offer that provides offer codes for an auto-renewable subs
 - [List all subscription offer code prices](get-v1-subscriptionoffercodes-_id_-prices.md)
   Get a list of price tiers for a subscription offer code.
 - [List price IDs for a subscription offer code](get-v1-subscriptionoffercodes-_id_-relationships-prices.md)
+  Get a list of price resource IDs for a specific subscription offer code.
 
 
 ---

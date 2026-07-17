@@ -16,6 +16,7 @@ Create and manage subscription offers for auto-renewable subscriptions, includin
 - [List all subscription offer code prices](get-v1-subscriptionoffercodes-_id_-prices.md)
   Get a list of price tiers for a subscription offer code.
 - [List price IDs for a subscription offer code](get-v1-subscriptionoffercodes-_id_-relationships-prices.md)
+  Get a list of price resource IDs for a specific subscription offer code.
 ### Managing One-Time Use Offer Codes
 - [Create one-time use offer codes](post-v1-subscriptionoffercodeonetimeusecodes.md)
   Create one-time use codes for an auto-renewable subscription offer.
@@ -27,7 +28,8 @@ Create and manage subscription offers for auto-renewable subscriptions, includin
   Get details about a one-time use code for a specific subscription offer for an auto-renewable subscription.
 - [List one-time use offer code values](get-v1-subscriptionoffercodeonetimeusecodes-_id_-values.md)
   Get a list of one-time use offer codes for an auto-renewable subscription in CSV format.
-- [List one-time-use code IDs for a subscription offer code](get-v1-subscriptionoffercodes-_id_-relationships-onetimeusecodes.md)
+- [List one-time use code IDs for a subscription offer code](get-v1-subscriptionoffercodes-_id_-relationships-onetimeusecodes.md)
+  Get a list of one-time use code resource IDs for a specific subscription offer code.
 ### Managing Custom Offer Codes
 - [Create custom offer codes](post-v1-subscriptionoffercodecustomcodes.md)
   Create custom offer codes for an auto-renewable subscription offer.

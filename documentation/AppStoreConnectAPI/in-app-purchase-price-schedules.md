@@ -36,14 +36,24 @@ Create a scheduled price change for an in-app purchase, and get information abou
 ## See Also
 
 - [Managing in-app purchases](managing-in-app-purchases.md)
-  Learn how to create and manage in-app purchases with the App Store Connect API.
+  Create in-app purchases, configure their metadata and pricing, submit them for review, and promote them with the App Store Connect API.
+- [Working with in-app purchase versions](working-with-in-app-purchase-versions.md)
+  Manage draft versions of an in-app purchase’s localized metadata and review images before submitting for App Review.
+- [Migrating in-app purchase metadata to v2](migrating-in-app-purchase-metadata-to-v2.md)
+  Update an existing integration from the pre-4.4.1 metadata workflow to the version-based v2 workflow.
+- [In-App Purchase Versions](in-app-purchase-versions.md)
+  Create and read draft versions of an in-app purchase, with their localized metadata and review images.
 - [In-App Purchases](in-app-purchases.md)
   Create, modify, and delete in-app purchases for your app.
 - [In-App Purchase Localizations](in-app-purchase-localizations.md)
+  Create, modify, and delete localized metadata for in-app purchase versions.
+- [In-app purchase localizations (v1)](in-app-purchase-localizations-v1.md)
   Create, modify, and delete localized metadata for in-app purchases.
 - [In-app purchase availability](in-app-purchase-availability.md)
   Read and modify territory availability for an in-app purchase.
 - [In-app purchase images](in-app-purchase-images.md)
+  Create, modify, and delete promotion images for in-app purchases.
+- [In-app purchase images (v1)](in-app-purchase-images-v1.md)
   Create, modify, and delete promotion images for your in-app purchases.
 
 

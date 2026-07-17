@@ -37,9 +37,11 @@ Get a list of all auto-renewable subscriptions in a subscription group.
 - `fields[subscriptionAvailabilities]` ([string])
 - `fields[subscriptionImages]` ([string])
 - `fields[subscriptionPlanAvailabilities]` ([string])
+- `fields[subscriptionVersions]` ([string])
 - `fields[winBackOffers]` ([string])
 - `limit[images]` (integer)
 - `limit[planAvailabilities]` (integer)
+- `limit[versions]` (integer)
 - `limit[winBackOffers]` (integer)
 
 ## See Also

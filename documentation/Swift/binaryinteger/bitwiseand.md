@@ -1,7 +1,8 @@
 # &(_:_:)
 
 **Framework**: Swift  
-**Kind**: op
+**Kind**: op  
+**Required**: Yes
 
 Returns the result of performing a bitwise AND operation on the two given values.
 
@@ -36,7 +37,14 @@ let z = x & y             // 0b00000100
 - `lhs`: An integer value.
 - `rhs`: Another integer value.
 
+## See Also
+
+- [static func &= (inout Self, Self)](binaryinteger/&=(_:_:).md)
+  Stores the result of performing a bitwise AND operation on the two given values in the left-hand-side variable.
+- [static func ~ (Self) -> Self](binaryinteger/~(_:).md)
+  Returns the inverse of the bits set in the argument.
+
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swift/binaryinteger/&(_:_:)-685zl)*
+*[View on Apple Developer](https://developer.apple.com/documentation/swift/binaryinteger/&(_:_:))*

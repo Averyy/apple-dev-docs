@@ -30,6 +30,7 @@ Get a list of price tiers for a subscription offer code.
 - [Deactivate a subscription offer with offer codes](patch-v1-subscriptionoffercodes-_id_.md)
   Deactivate a subscription offer that has offer codes for an auto-renewable subscription.
 - [List price IDs for a subscription offer code](get-v1-subscriptionoffercodes-_id_-relationships-prices.md)
+  Get a list of price resource IDs for a specific subscription offer code.
 
 
 ---

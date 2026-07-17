@@ -1,12 +1,10 @@
-# List in-app purchases ids for an app
+# GET /v1/apps/{id}/relationships/inAppPurchasesV2
 
 **Framework**: App Store Connect API  
 **Kind**: httpRequest
 
-Get a list of all in-app purchases IDs for a specific app.
-
 **Availability**:
-- App Store Connect API 2.0+
+- App Store Connect API 3.6+
 
 ## Endpoint
 
@@ -14,7 +12,7 @@ Get a list of all in-app purchases IDs for a specific app.
 
 ## Parameters
 
-- `limit` (integer)
+- `limit` (integer): The maximum number of in-app purchase resource identifiers to return.
 
 ## See Also
 

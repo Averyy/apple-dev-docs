@@ -8,6 +8,16 @@ Learn about new features and updates in the Apple School Manager and Apple Busin
 
 Use this changelog to learn about feature updates, deprecations, and removals for the Apple School Manager and Apple Business APIs.
 
+##### 22 2026715
+
+New features for the Apple Business APIs
+
+Added support for organizational units using the following endpoints:
+
+- [`Get Organizational Units.`](https://developer.apple.comhttps://developer.apple.com/documentation/applebusinessapi/get-organizational-units)
+- [`Get Organizational Unit Information.`](https://developer.apple.comhttps://developer.apple.com/documentation/applebusinessapi/get-organizationalunit-information)
+- [`Get User IDs for an Organizational Unit.`](https://developer.apple.comhttps://developer.apple.com/documentation/applebusinessapi/get-all-user-ids-for-an-organizationalunit)
+
 ##### 21 202663
 
 New features for the Apple Business APIs

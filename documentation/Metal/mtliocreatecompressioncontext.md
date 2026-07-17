@@ -1,4 +1,4 @@
-# MTLIOCreateCompressionContext
+# MTLIOCreateCompressionContext(_:_:_:)
 
 **Framework**: Metal  
 **Kind**: func
@@ -11,12 +11,12 @@ Creates a compression context that you use to compress data into a single file.
 - Mac Catalyst 16.0+
 - macOS 13.0+
 - tvOS 16.0+
-- visionOS 1.0+
+- visionOS ?+
 
 ## Declaration
 
 ```swift
-extern MTLIOCompressionContextMTLIOCreateCompressionContext(const char *path, MTLIOCompressionMethod type, size_t chunkSize);
+func MTLIOCreateCompressionContext(_ path: String, _ type: MTLIOCompressionMethod, _ chunkSize: Int) -> MTLIOCompressionContext?
 ```
 
 ## Parameters
@@ -43,4 +43,4 @@ extern MTLIOCompressionContextMTLIOCreateCompressionContext(const char *path, MT
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metal/mtliocreatecompressioncontext)*
+*[View on Apple Developer](https://developer.apple.com/documentation/metal/mtliocreatecompressioncontext(_:_:_:))*

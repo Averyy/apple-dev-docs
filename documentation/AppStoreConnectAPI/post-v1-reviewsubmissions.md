@@ -14,6 +14,9 @@ Create a review submission for a specific app.
 - [App Store Connect API 4.1 release notes](app-store-connect-api-4-1-release-notes.md)
 - [Configuring Game center activities](configuring-game-center-activities.md)
 - [Configuring Game Center challenges](configuring-game-center-challenges.md)
+- [Uploading and versioning Apple hosted background assets](managing-apple-hosted-background-assets.md)
+- [Managing in-app purchases](managing-in-app-purchases.md)
+- [Submitting subscriptions and subscription groups for App Review](submitting-subscriptions-and-subscription-groups-for-app-review.md)
 
 #### Overview
 

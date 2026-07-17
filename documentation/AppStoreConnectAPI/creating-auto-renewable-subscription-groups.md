@@ -24,7 +24,7 @@ For the full list of App Store Connect user roles, see [`UserRole`](userrole.md)
 
 Before you get started with creating your subscription, first identify which app to include this subscription in. To get the Apple ID of the app, use `GET /v1/apps` ([`List apps`](get-v1-apps.md)) and search the resulting pages for the name of the app you want to use. In the response, make note of the `id` of that app, which appears in the following format:
 
-```other
+```json
 {
 "data" : [ {
 "type" : "apps",
@@ -51,7 +51,7 @@ After you plan your subscription offerings, create a subscription group, which i
 
 Here’s an example payload:
 
-```other
+```json
 {
   "data": {
     "type": "subscriptionGroups",
@@ -70,11 +70,11 @@ Here’s an example payload:
 }
 ```
 
-> **Note**:  The `referenceName` field is internal and isn’t displayed to users. Use a descriptive string that’s useful for your own organization and recognition purposes.
+> **Note**:  The `referenceName` field is internal and isn’t displayed to people. Use a descriptive string that’s useful for your own organization and recognition purposes.
 
 Here’s an example response, truncated for clarity:
 
-```other
+```json
 {
   "data" : {
     "type" : "subscriptionGroups",
@@ -86,23 +86,16 @@ Here’s an example response, truncated for clarity:
 
 The response contains an `id` field in the primary `data` object. You need this ID for subsequent steps.
 
-##### Create Your Subscription Group Localization
+##### Create a Version for Your Subscription Group
 
-Your localized subscription group name shows up in your app when a user goes through the process of reviewing or purchasing your auto-renewable subscription. To add a localization to your subscription group, you need the `id` of the subscription group from the previous step.
+Localized names for a subscription group live on a *subscription group version* — a draft container for the metadata that goes through App Review together. Create a version first, then attach localizations to it. The pre-4.4.1 workflow that posts localizations directly to the subscription group (`POST /v1/subscriptionGroupLocalizations`) is deprecated as of 4.4.1 but remains available for existing integrations.
 
-Use `POST /v1/subscriptionGroupLocalizations` ([`Create a subscription group localization`](post-v1-subscriptiongrouplocalizations.md)) with a payload that specifies the localized name of the subscription group, the locale that you’re adding, and an optional custom app name. Depending on your app and subscriptions, you might need to add many localizations. If that’s the case, you can add many in one call to `/v1/subscriptionGroupLocalizations`.
+Create a draft version with `POST /v1/subscriptionGroupVersions` ([`Create a subscription group version`](post-v1-subscriptiongroupversions.md)), relating it to the subscription group you just created:
 
-Here’s an example payload:
-
-```other
+```json
 {
   "data": {
-    "type": "subscriptionGroupLocalizations",
-    "attributes": {
-      "name": "Ukulele Lessons",
-      "locale": "en-AU",
-      "customAppName": "The Best Ukulele Lessons"
-    },
+    "type": "subscriptionGroupVersions",
     "relationships": {
       "subscriptionGroup": {
         "data": {
@@ -115,13 +108,50 @@ Here’s an example payload:
 }
 ```
 
+Note the version `id` in the response. You use it to attach localizations in the next step.
+
+##### Create Your Subscription Group Localization
+
+Your localized subscription group name shows up in your app when someone reviews or purchases your auto-renewable subscription. To add a localization, use `POST /v2/subscriptionGroupLocalizations` ([`Create a subscription group localization`](post-v2-subscriptiongrouplocalizations.md)) with a payload that specifies the localized name of the subscription group, the locale, and an optional custom app name. The payload relates the localization to the *version* — not the parent subscription group.
+
+Here’s an example payload:
+
+```json
+{
+  "data": {
+    "type": "subscriptionGroupLocalizations",
+    "attributes": {
+      "name": "Ukulele Lessons",
+      "locale": "en-AU",
+      "customAppName": "The Best Ukulele Lessons"
+    },
+    "relationships": {
+      "version": {
+        "data": {
+          "type": "subscriptionGroupVersions",
+          "id": "${subscriptionGroupVersionId}"
+        }
+      }
+    }
+  }
+}
+```
+
+Add each locale you support with its own `POST`. To list every localization attached to a version, use `GET /v1/subscriptionGroupVersions/{id}/localizations` ([`List the localizations of a subscription group version`](get-v1-subscriptiongroupversions-_id_-localizations.md)). To list every version on the parent subscription group, use `GET /v1/subscriptionGroups/{id}/versions` ([`List the versions of a subscription group`](get-v1-subscriptiongroups-_id_-versions.md)).
+
 After you configure your subscription group, create your subscription following the steps in [`Managing auto-renewable subscriptions`](managing-auto-renewable-subscriptions.md).
 
 ## See Also
 
+- [Working with subscription group versions](working-with-subscription-group-versions.md)
+  Manage draft versions of a subscription group’s localized metadata before submitting for App Review.
+- [Subscription Group Versions](subscription-group-versions.md)
+  Create and read draft versions of a subscription group with their localized metadata.
 - [Subscription Groups](subscription-groups.md)
   Create, modify, and delete subscription groups for your app.
 - [Subscription Group Localizations](subscription-group-localizations.md)
+  Create, modify, and delete localized metadata for subscription groups.
+- [Subscription group localizations (v1)](subscription-group-localizations-v1.md)
   Create, modify, and delete localized metadata for subscription groups.
 
 

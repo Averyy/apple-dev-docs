@@ -8,6 +8,10 @@ Replace the list of available territories for a specific subscription plan avail
 **Availability**:
 - App Store Connect API 4.4+
 
+## Mentions
+
+- [Configuring subscription prices across territories](configuring-subscription-prices-across-territories.md)
+
 ## Endpoint
 
 `PATCH https://api.appstoreconnect.apple.com/v1/subscriptionPlanAvailabilities/{id}/relationships/availableTerritories`
