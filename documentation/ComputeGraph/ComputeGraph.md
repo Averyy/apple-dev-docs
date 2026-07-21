@@ -12,7 +12,7 @@ Build and run custom particle effects and compute simulations for RealityKit usi
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
-- Reality Composer Pro ?+
+- Reality Composer Pro 3.0+ (Beta)
 
 #### Overview
 

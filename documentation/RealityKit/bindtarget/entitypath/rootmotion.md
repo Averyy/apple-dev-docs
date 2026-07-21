@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: property
 
-A bind target for the entity’s blend shape weights.
+The root motion bind target for this entity.
 
 **Availability**:
 - iOS 27.0+ (Beta)

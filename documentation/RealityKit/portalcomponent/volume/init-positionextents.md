@@ -21,8 +21,8 @@ init(position: SIMD3<Float> = .zero, extents: SIMD3<Float>)
 
 ## Parameters
 
-- `position`: The center position of the volume in portal-local space. Defaults to `.zero`.
-- `extents`: The size of the volume (width, height, depth) in portal-local space.
+- `position`: The center of the volume in portal-local space, in meters. Defaults to `.zero`.
+- `extents`: The full lengths (width, height, depth) of the volume in portal-local space, in meters.
 
 
 ---

@@ -6,7 +6,7 @@ Create a service configuration entry point to your device management service to 
 
 #### Overview
 
-Add an unauthenticated HTTPS request entry point to your device management service to make it easier to access useful information about your service. Create the entry point using the endpoint `/MDMServiceConfig`; for example, `https://mdm.example.com/MDMServiceConfig`.
+Add an unauthenticated HTTPS request entry point to your device management service to make it easier to access useful information about your service. Create the entry point using the endpoint `/MDMServiceConfig`; for example, `https://devicemanagement.example.com/MDMServiceConfig`.
 
 The service should return a UTF-8 JSON-encoded hash (`Content-Type: application/json; charset=UTF8`) with the following values in the body of its response:
 
@@ -25,11 +25,11 @@ Example of an `MDMServiceConfig` request:
 
 ```None
 // Format
-GET https://mdm.example.com/MDMServiceConfig
+GET https://devicemanagement.example.com/MDMServiceConfig
 
 // Response body
-{    "dep_enrollment_url": "https://mdm.example.com/devicemanagement/mdm/dep_mdm_enroll",
-    "dep_anchor_certs_url": "https://mdm.example.com/devicemanagement/mdm/dep_anchor_certs",
+{    "dep_enrollment_url": "https://devicemanagement.example.com/devicemanagement/mdm/dep_mdm_enroll",
+    "dep_anchor_certs_url": "https://devicemanagement.example.com/devicemanagement/mdm/dep_anchor_certs",
     "trust_profile_url": "https://certs.example.com/mdm/trust_profile"
 }
 ```
@@ -38,7 +38,7 @@ Example of the `dep_anchor_certs_url` key:
 
 ```None
 // Format
-GET https://mdm.example.com/devicemanagement/mdm/dep_anchor_certs
+GET https://devicemanagement.example.com/devicemanagement/mdm/dep_anchor_certs
 
 // Response body (truncated)
 ["MIIEKDCCAxCgAwIBAgIEOjznoTALBgkqhkiG9w0BAQswfjEkMCIGA1UEAwwbU3ly \nYWggQ2VydGlmaWNhd...SVVTo9ll1Lv3OJGqBkxPl9TCC\nfYYnArwzlk4qm1tP\n"]
@@ -85,7 +85,7 @@ GET https://certs.example.com/mdm/trust_profile
 <key>PayloadDisplayName</key>
 <string>Trust Profile for Example Corp</string>
 <key>PayloadIdentifier</key>
-<string>com.apple.config.mdm.example.com.ssl</string>
+<string>com.apple.config.devicemanagement.example.com.ssl</string>
 <key>PayloadScope</key>
 <string>System</string>
 <key>PayloadType</key>

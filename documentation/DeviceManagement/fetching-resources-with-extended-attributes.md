@@ -10,7 +10,7 @@ You may want to access some attributes that the server doesn’t fetch unless sp
 
 For example, when fetching an apps resource, you can request that the server add the extended `latestVersionInfo` attribute to the other attributes it returns:
 
-```other
+```html
 GET https://api.ent.apple.com/v1/catalog/{storefront}/stoken-authenticated-apps?ids=1376597908,2001350931&platform=iphone&extend[apps]=latestVersionInfo
 ```
 

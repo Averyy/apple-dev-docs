@@ -52,9 +52,9 @@ class MTLTensorReferenceType
 - [class MTLTensorDescriptor](mtltensordescriptor.md)
   A configuration type for creating new tensor instances.
 - [class MTLTensorExtents](mtltensorextents.md)
-  An array of length matching the rank, holding the dimensions of a tensor.
+  An integer array that holds per-dimension values such as tensor sizes, strides, or block factors
 - [struct MTLTensorUsage](mtltensorusage.md)
-  The type that represents the different contexts for a tensor.
+  The contexts in which you can use a tensor.
 - [let MTLTensorDomain: String](mtltensordomain.md)
   An error domain for errors that pertain to creating a tensor.
 - [protocol MTLTensorBinding](mtltensorbinding.md)

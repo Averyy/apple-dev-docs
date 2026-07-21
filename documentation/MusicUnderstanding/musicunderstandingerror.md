@@ -31,6 +31,9 @@ enum MusicUnderstandingError
   The error that occurs when someone initializes a session with an invalid asset.
 - [MusicUnderstandingError.sessionInProgress](musicunderstandingerror/sessioninprogress.md)
   The error that occurs when someone requests analysis while a session is already in progress.
+### Enumeration Cases
+- [MusicUnderstandingError.hasProtectedContent](musicunderstandingerror/hasprotectedcontent.md)
+  The error that occurs when a session is initialized with an `AVAsset` whose content is protected by DRM and cannot be decoded for analysis.
 
 ## Relationships
 

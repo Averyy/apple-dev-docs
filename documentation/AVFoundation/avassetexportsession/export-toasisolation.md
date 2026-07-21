@@ -34,13 +34,6 @@ You can monitor the status of an export by calling the [`states(updateInterval:)
 - `fileType`: The type of file for the session to write.
 - `isolation`: The isolation context.
 
-## See Also
-
-- [func cancelExport()](avassetexportsession/cancelexport.md)
-  Cancels the execution of an export session.
-- [func exportAsynchronously(completionHandler: () -> Void)](avassetexportsession/exportasynchronously(completionhandler:).md)
-  Starts the asynchronous execution of an export session.
-
 
 ---
 

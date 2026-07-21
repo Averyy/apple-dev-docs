@@ -19,6 +19,12 @@ Learn how to use [`Query`](https://developer.apple.com/documentation/SwiftData/Q
 
 ## See Also
 
+- [Creating a document-based app](creating-a-document-based-app.md)
+  Build apps that people can use to open, edit, and save files using coordinated file access.
+- [Handling advanced document scenarios](handling-advanced-document-scenarios.md)
+  Extend your document-based app to support custom file formats, on-demand file access, and progress reporting.
+- [Updating your document-based app](updating-your-document-based-app.md)
+  Migrate an existing app to adopt URL-based document reading and writing with Swift concurrency.
 - [Building a document-based app with SwiftUI](building-a-document-based-app-with-swiftui.md)
   Create, save, and open documents in a multiplatform app.
 - [struct DocumentGroup](documentgroup.md)

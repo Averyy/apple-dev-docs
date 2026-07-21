@@ -3,7 +3,7 @@
 **Framework**: Core Spotlight  
 **Kind**: case
 
-[`CSSearchableItem`](cssearchableitem.md) results with caller-assigned scores.
+[`SearchableItem`](searchableitem.md) results with caller-assigned scores.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -21,7 +21,7 @@ case scoredItems
 ## See Also
 
 - [SearchPipelineDataType.items](searchpipelinedatatype/items.md)
-  [`CSSearchableItem`](cssearchableitem.md) results.
+  [`SearchableItem`](searchableitem.md) results.
 - [SearchPipelineDataType.groupedItems](searchpipelinedatatype/groupeditems.md)
   Items partitioned into named groups.
 - [SearchPipelineDataType.text](searchpipelinedatatype/text.md)

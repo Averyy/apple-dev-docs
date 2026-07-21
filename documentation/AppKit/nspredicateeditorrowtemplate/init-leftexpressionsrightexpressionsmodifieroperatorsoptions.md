@@ -28,7 +28,6 @@ A row template of the “pop-up-pop-up-pop-up” form, with the left and right p
 
 ## See Also
 
-- [Predicate Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Predicates/AdditionalChapters/Introduction.html#//apple_ref/doc/uid/TP40001789)
 - [class NSPredicateEditorRowTemplate](nspredicateeditorrowtemplate.md)
   A template that describes available predicates and how to display them.
 - [init(leftExpressions: [NSExpression], rightExpressionAttributeType: NSAttributeType, modifier: NSComparisonPredicate.Modifier, operators: [NSNumber], options: Int)](nspredicateeditorrowtemplate/init(leftexpressions:rightexpressionattributetype:modifier:operators:options:).md)

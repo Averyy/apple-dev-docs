@@ -59,7 +59,7 @@ struct Photo: Transferable {
 struct PhotoView: View {
     let photo: Photo
 
-    var body: View {
+    var body: some View {
         photo.image
             .toolbar {
                 ShareLink(

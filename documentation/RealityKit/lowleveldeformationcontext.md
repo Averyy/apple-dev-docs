@@ -30,7 +30,7 @@ final class LowLevelDeformationContext
   Creates a context targeting the specified Metal device.
 ### Instance Methods
 - [func makePipeline(_:)](lowleveldeformationcontext/makepipeline(_:).md)
-  Creates a compute pipeline asynchronously.
+  Creates a compute pipeline synchronously.
 
 ## See Also
 

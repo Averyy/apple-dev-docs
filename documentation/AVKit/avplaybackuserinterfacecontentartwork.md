@@ -50,6 +50,15 @@ Use a concrete subclass such as [`AVPlaybackUserInterfaceContentURLArtwork`](avp
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 
+## See Also
+
+- [protocol AVPlaybackUserInterfaceMetadataProviding](avplaybackuserinterfacemetadataproviding-814y4.md)
+  Provides metadata information about media content including title, artwork, and content type.
+- [struct AVPlaybackUserInterfaceContentMetadata](avplaybackuserinterfacecontentmetadata-swift.struct.md)
+  A Swift-friendly structure representing media metadata.
+- [class AVPlaybackUserInterfaceContentURLArtwork](avplaybackuserinterfacecontenturlartwork.md)
+  An artwork subclass that references artwork via a URL and content type.
+
 
 ---
 

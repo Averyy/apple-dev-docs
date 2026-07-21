@@ -40,11 +40,6 @@ struct AtlasReference
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 
-## See Also
-
-- [var entityCount: Int](lightmapresource/entitycount.md)
-  Total number of entities in this lightmap.
-
 
 ---
 

@@ -21,9 +21,9 @@ var layers: RenderLayer.Set
 
 #### Discussion
 
-Layers can be either named custom layers or the default layer. Common conventions include:
+A layer is either a custom layer you define in an extension to [`RenderLayer`](renderlayer.md) or [`defaultLayer`](renderlayer/defaultlayer.md). Common conventions include:
 
-- `.defaultLayer` for general entities
+- [`defaultLayer`](renderlayer/defaultlayer.md) for general entities
 - `RenderLayer("com.myapp.hero")` for main character objects
 - `RenderLayer("com.myapp.background")` for background elements
 - `RenderLayer("com.myapp.props")` for scene props
@@ -31,7 +31,7 @@ Layers can be either named custom layers or the default layer. Common convention
 ## See Also
 
 - [static let defaultLayer: RenderLayerComponent](renderlayercomponent/defaultlayer.md)
-  The default layer used when no `RenderLayerComponent` is present.
+  A render layer component that contains only [`defaultLayer`](renderlayer/defaultlayer.md).
 
 
 ---

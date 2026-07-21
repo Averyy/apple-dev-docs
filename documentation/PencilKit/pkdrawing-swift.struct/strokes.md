@@ -18,6 +18,10 @@ The array of strokes that make up the drawing.
 var strokes: [PKStroke] { get set }
 ```
 
+## Mentions
+
+- [Importing Bézier path data into PencilKit](importing-external-drawing-data-into-pencilkit.md)
+
 ## See Also
 
 - [func dataRepresentation() -> Data](pkdrawing-swift.struct/datarepresentation.md)

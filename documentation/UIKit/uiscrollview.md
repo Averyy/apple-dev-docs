@@ -255,6 +255,7 @@ If you assign a value to this view’s [`restorationIdentifier`](uiviewcontrolle
   Display data in a single column of customizable rows.
 - [class UIStackView](uistackview.md)
   A streamlined interface for laying out a collection of views in either a column or a row.
+- [class UILookToScrollInteraction](uilooktoscrollinteraction.md)
 
 
 ---

@@ -23,20 +23,6 @@ var progress: Float { get }
 
 The value of this property ranges from `0.0` to `1.0.`
 
-## See Also
-
-- [func states(updateInterval: TimeInterval) -> some Sendable & AsyncSequence<AVAssetExportSession.State, Never>
-](avassetexportsession/states(updateinterval:).md)
-  Monitors the progress state of an export operation.
-- [AVAssetExportSession.State](avassetexportsession/state.md)
-  Constants that indicate the state of an export operation.
-- [var status: AVAssetExportSession.Status](avassetexportsession/status-swift.property.md)
-  The status of the export session.
-- [AVAssetExportSession.Status](avassetexportsession/status-swift.enum.md)
-  Values that indicate the state of an export session.
-- [var error: (any Error)?](avassetexportsession/error.md)
-  An optional error object.
-
 
 ---
 

@@ -42,6 +42,9 @@ enum ComponentSize
 
 - [UIAccessibility.ExpandedStatus](uiaccessibility/expandedstatus.md)
 - [enum UIFocusItemDeferralMode](uifocusitemdeferralmode.md)
+- [enum UIBarMinimizationBehavior](uibarminimizationbehavior.md)
+- [enum UIBarMinimizationRestorationBehavior](uibarminimizationrestorationbehavior.md)
+- [enum UIBarMinimizationSafeAreaAdjustment](uibarminimizationsafeareaadjustment.md)
 
 
 ---

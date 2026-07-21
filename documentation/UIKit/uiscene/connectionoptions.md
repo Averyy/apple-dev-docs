@@ -51,6 +51,9 @@ Don’t create [`UIScene.ConnectionOptions`](uiscene/connectionoptions.md) objec
 ### Getting the source app
 - [var sourceApplication: String?](uiscene/connectionoptions/sourceapplication.md)
   The bundle ID of the app that originated the request.
+### Getting scene accessory context
+- [var sceneAccessoryUserInfo: Any?](uiscene/connectionoptions/sceneaccessoryuserinfo.md)
+  An optional user info object, provided when creating the `UISceneAccessory` for this scene accessory.
 ### Instance Properties
 - [var appIntent: (any UISceneAppIntent)?](uiscene/connectionoptions/appintent.md)
   The `AppIntent` that triggered scene creation `AppIntentSceneDelegate.scene(_:willPerform:)` will always be called after scene connection
@@ -58,8 +61,6 @@ Don’t create [`UIScene.ConnectionOptions`](uiscene/connectionoptions.md) objec
   A CredentialSession event has triggered a UIKit scene creation.
 - [var gameControllerActivationContext: GCGameControllerActivationContext?](uiscene/connectionoptions/gamecontrolleractivationcontext.md)
 - [var marketplaceDisplayOption: MarketplaceDisplayOption?](uiscene/connectionoptions/marketplacedisplayoption.md)
-- [var sceneAccessoryUserInfo: Any?](uiscene/connectionoptions/sceneaccessoryuserinfo.md)
-  An optional user info object, provided when creating the `UISceneAccessory` for this scene accessory.
 - [var shouldHandleActiveWorkoutRecovery: Bool](uiscene/connectionoptions/shouldhandleactiveworkoutrecovery.md)
 
 ## Relationships

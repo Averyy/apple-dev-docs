@@ -38,8 +38,6 @@ callStackTree.forEachFrame { frame in
 }
 ```
 
-This type replaces [`MXCallStackTree`](mxcallstacktree.md).
-
 ## Topics
 
 ### Threads and frames

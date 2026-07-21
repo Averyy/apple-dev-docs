@@ -26,11 +26,11 @@ let MTLTensorDomain: String
 - [class MTLTensorDescriptor](mtltensordescriptor.md)
   A configuration type for creating new tensor instances.
 - [class MTLTensorExtents](mtltensorextents.md)
-  An array of length matching the rank, holding the dimensions of a tensor.
+  An integer array that holds per-dimension values such as tensor sizes, strides, or block factors
 - [class MTLTensorReferenceType](mtltensorreferencetype.md)
   An object that represents a tensor in the shading language in a struct or array.
 - [struct MTLTensorUsage](mtltensorusage.md)
-  The type that represents the different contexts for a tensor.
+  The contexts in which you can use a tensor.
 - [protocol MTLTensorBinding](mtltensorbinding.md)
   An object that represents a tensor bound to a graphics or compute function or a machine learning function.
 - [struct MTLTensorError](mtltensorerror-swift.struct.md)

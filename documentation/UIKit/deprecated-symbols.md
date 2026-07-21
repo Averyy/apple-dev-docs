@@ -62,6 +62,12 @@ Review unsupported symbols and their replacements.
 ### Deprecated functions
 - [func UIApplicationMain(Int32, UnsafeMutablePointer<UnsafeMutablePointer<Int8>>!, String?, String?) -> Int32](uiapplicationmain(_:_:_:_:)-9jjn8.md)
   Creates the application object and the application delegate and sets up the event cycle.
+- [func UIGraphicsBeginImageContext(CGSize)](uigraphicsbeginimagecontext(_:).md)
+  Creates a bitmap-based graphics context and makes it the current context.
+- [func UIGraphicsGetImageFromCurrentImageContext() -> UIImage?](uigraphicsgetimagefromcurrentimagecontext().md)
+  Returns an image from the contents of the current bitmap-based graphics context.
+- [func UIGraphicsEndImageContext()](uigraphicsendimagecontext().md)
+  Removes the current bitmap-based graphics context from the top of the stack.
 ### Deprecated samples
 - [Implementing Peek and Pop](implementing-peek-and-pop.md)
   Accelerate actions in your app by providing shortcuts to preview content in detail view controllers.

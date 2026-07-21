@@ -19,11 +19,6 @@ Total number of entities in this lightmap.
 final var entityCount: Int { get }
 ```
 
-## See Also
-
-- [LightmapResource.AtlasReference](lightmapresource/atlasreference.md)
-  Specifies an area in a lightmap atlas to fetch data from.
-
 
 ---
 

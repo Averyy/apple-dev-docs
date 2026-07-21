@@ -21,17 +21,15 @@ init(_ rawValue: StaticString)
 
 #### Discussion
 
-This initializer accepts only compile-time string constants. A precondition checks the validity of the layer name. Use this for defining layer constants in extensions of RenderLayer.
-
-It is recommended to use descriptive names with namespace prefixes to avoid conflicts, such as `"com.myapp.hero-lighting"` or `"com.myapp.background"`.
-
-This can look like layer constants as extensions:
+Use this initializer to define reusable layer constants in an extension. Use descriptive names with namespace prefixes such as `"com.myapp.hero"` or `"com.myapp.background"` to avoid conflicts with other layers.
 
 ```swift
 extension RenderLayer {
     static let background = RenderLayer("com.myapp.background")
 }
 ```
+
+To create a layer from a runtime string, use [`init(rawValue:)`](renderlayer/init(rawvalue:).md) instead.
 
 > **Note**: The layer name must not be empty.
 

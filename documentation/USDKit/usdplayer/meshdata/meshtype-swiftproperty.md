@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: property
 
+Whether the mesh is rigid or driven by a deformation resource.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)

@@ -59,24 +59,24 @@ See [`PortalComponent`](portalcomponent.md) for example usage.
 
 ### Specifying the shader program
 - [var program: PortalMaterial.Program](portalmaterial/program-swift.property.md)
-  The compiled program that defines this material’s shading behavior.
+  The compiled program that drives this material’s surface and geometry shading.
 - [PortalMaterial.Program](portalmaterial/program-swift.struct.md)
   A compiled shader program that drives the appearance of a portal’s surface and geometry.
 ### Accessing shader parameters
 - [func getParameter(name: String) -> MaterialParameters.Value?](portalmaterial/getparameter(name:).md)
-  Returns the current value of a parameter by name, or `nil` if no value has been set.
+  Returns the value of a parameter by name.
 - [func getParameter(handle: MaterialParameters.Handle) -> MaterialParameters.Value?](portalmaterial/getparameter(handle:).md)
-  Returns the current value of a parameter identified by its precomputed handle, or `nil` if no value has been set.
+  Returns the value of a parameter identified by a handle.
 - [func setParameter(name: String, value: MaterialParameters.Value) throws](portalmaterial/setparameter(name:value:).md)
   Sets the value of a parameter by name.
 - [func setParameter(handle: MaterialParameters.Handle, value: MaterialParameters.Value) throws](portalmaterial/setparameter(handle:value:).md)
-  Sets the value of a parameter identified by its precomputed handle.
+  Sets the value of a parameter identified by a handle.
 - [static func parameterHandle(name: String) -> MaterialParameters.Handle](portalmaterial/parameterhandle(name:).md)
   Returns a handle for the parameter with the given name.
 ### Initializers
 - [init()](portalmaterial/init.md)
 - [init(program: PortalMaterial.Program)](portalmaterial/init(program:).md)
-  Create a PortalMaterial with an already initialized Program. Use this method when you want to preload a library of shaders and create instances of them quickly and synchronously via PortalMaterial at runtime.
+  Creates a portal material from a previously compiled program.
 ### Instance Properties
 - [var faceCulling: PortalMaterial.FaceCulling](portalmaterial/faceculling-swift.property.md)
   A process in which the system specifies polygons to remove before rendering a mesh using this material.

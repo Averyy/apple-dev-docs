@@ -10,12 +10,13 @@ Invokes the provided closure with the backing data and memory layout of this vie
 - iPadOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 
 ```swift
 @export(implementation)
-mutating func withUnsafeMutablePointer<R, E>(_ body: (UnsafeMutablePointer<Element>, Span<Int>, Span<Int>) throws(E) -> R) throws(E) -> R where E : Error
+consuming func withUnsafeMutablePointer<R, E>(_ body: (UnsafeMutablePointer<Element>, Span<Int>, Span<Int>) throws(E) -> R) throws(E) -> R where E : Error
 ```
 
 #### Return Value

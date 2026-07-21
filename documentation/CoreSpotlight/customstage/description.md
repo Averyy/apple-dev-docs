@@ -29,8 +29,6 @@ static var description: String { get }
   The stage type name as it appears in the pipeline (e.g., “sentiment”).
 - [static var inputTypes: [SearchPipelineDataType]](customstage/inputtypes.md)
   The data types this stage accepts as input.
-- [static var outputTypes: [SearchPipelineDataType]](customstage/outputtypes.md)
-  The data types this stage produces as output.
 
 
 ---

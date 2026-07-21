@@ -20,6 +20,8 @@ var elements: [PKIdentityElement] { get }
 
 ## See Also
 
+- [var issuerIdentifiers: [Data]](pkidentitydocumentdescriptor/issueridentifiers.md)
+  A list of X.509 authority key identifiers your app accepts.
 - [class PKIdentityElement](pkidentityelement.md)
   An object that represents the elements an app requests from identity documents.
 

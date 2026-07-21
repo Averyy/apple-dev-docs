@@ -24,7 +24,6 @@ enum BakeDescriptor
 ### Specifying the bake type
 - [case finalShadedColor(LightmapResource.FinalShadedColorBakeDescriptor)](lightmapresource/bakedescriptor/finalshadedcolor(_:).md)
 - [case indirectDiffuseIrradiance(LightmapResource.IndirectDiffuseIrradianceBakeDescriptor)](lightmapresource/bakedescriptor/indirectdiffuseirradiance(_:).md)
-- [case indirectDiffuseSHL1Irradiance(LightmapResource.IndirectDiffuseIrradianceSHBakeDescriptor)](lightmapresource/bakedescriptor/indirectdiffuseshl1irradiance(_:).md)
 - [case ambientOcclusion(LightmapResource.AmbientOcclusionBakeDescriptor)](lightmapresource/bakedescriptor/ambientocclusion(_:).md)
 - [var bakeType: LightmapResource.BakeType](lightmapresource/bakedescriptor/baketype.md)
 
@@ -33,13 +32,6 @@ enum BakeDescriptor
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
-
-## See Also
-
-- [LightmapResource.FinalShadedColorBakeDescriptor](lightmapresource/finalshadedcolorbakedescriptor.md)
-- [LightmapResource.AmbientOcclusionBakeDescriptor](lightmapresource/ambientocclusionbakedescriptor.md)
-- [LightmapResource.IndirectDiffuseIrradianceBakeDescriptor](lightmapresource/indirectdiffuseirradiancebakedescriptor.md)
-- [LightmapResource.IndirectDiffuseIrradianceSHBakeDescriptor](lightmapresource/indirectdiffuseirradianceshbakedescriptor.md)
 
 
 ---

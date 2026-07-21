@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: method
 
+Consumes and returns the [`USDPlayer.MeshData.Update`](usdplayer/meshdata/update.md) for the given mesh delta update.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -15,6 +17,10 @@
 ```swift
 mutating func takeMeshUpdate(id: USDPlayer.MeshID) -> USDPlayer.MeshData.Update?
 ```
+
+#### Discussion
+
+Returns `nil` if not present.
 
 
 ---

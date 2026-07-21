@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: property
 
-The center position of the volume in portal-local space.
+The center of the volume in portal-local space, in meters.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -21,7 +21,7 @@ var position: SIMD3<Float>
 
 #### Discussion
 
-Defaults to `.zero`, placing the box center at the portal entity’s origin.
+Defaults to `.zero`, which places the box center at the portal entity’s origin.
 
 
 ---

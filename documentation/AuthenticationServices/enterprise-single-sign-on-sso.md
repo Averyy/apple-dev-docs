@@ -18,8 +18,8 @@
 
 ## See Also
 
-- [Platform single sign-on (SSO)](platform-single-sign-on-sso.md)
-  Use credentials from macOS login to perform single sign-on with an identity provider.
+- [Platform Single Sign-on (SSO)](platform-single-sign-on-sso.md)
+  Provide a Platform Single Sign-on (Platform SSO) extension to integrate your identity provider with macOS.
 
 
 ---

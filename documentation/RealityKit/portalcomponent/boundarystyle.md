@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: struct
 
-Describes the clipping and crossing boundary shape for a portal.
+The shape of a portal’s clipping and crossing boundary.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -21,15 +21,20 @@ struct BoundaryStyle
 
 #### Overview
 
-The flat plane mesh rendered for the portal is always sized by `SurfaceStyle`. `BoundaryStyle` controls how `ClippingMode` and `CrossingMode` are configured.
+A portal has two related but separate concepts:
+
+- The *surface*, a flat plane mesh that RealityKit renders with [`PortalMaterial`](portalmaterial.md) and sizes from [`PortalComponent.SurfaceStyle`](portalcomponent/surfacestyle.md).
+- The *boundary*, the volume in space that clips portal world content and that crossing entities pass through. [`PortalComponent.BoundaryStyle`](portalcomponent/boundarystyle.md) describes the shape of that volume.
+
+Pair a boundary style with a [`PortalComponent.BoundaryMode`](portalcomponent/boundarymode.md) to control whether the boundary clips content, allows entities to cross, both, or neither.
 
 ## Topics
 
 ### Type Methods
 - [static func enclosingBox(depth: Float) -> PortalComponent.BoundaryStyle](portalcomponent/boundarystyle/enclosingbox(depth:).md)
-  Portal with box-bounded clipping and crossing.
+  Returns a boundary style that uses a box enclosing the portal surface.
 - [static func infinitePlane() -> PortalComponent.BoundaryStyle](portalcomponent/boundarystyle/infiniteplane.md)
-  Portal with infinite half-space clipping and crossing.
+  Returns a boundary style that uses an infinite plane.
 
 ## Relationships
 

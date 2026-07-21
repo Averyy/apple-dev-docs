@@ -20,7 +20,6 @@ When the value of this property is [`true`](https://developer.apple.com/document
 
 ## See Also
 
-- [Browser Programming Topics](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Browser/Browser.html#//apple_ref/doc/uid/10000018i)
 - [var maxVisibleColumns: Int](nsbrowser/maxvisiblecolumns.md)
   The maximum number of visible columns.
 - [var autohidesScroller: Bool](nsbrowser/autohidesscroller.md)

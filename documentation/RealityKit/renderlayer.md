@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: struct
 
-A structured representation of render layers that provides type safety and clear semantics.
+A named identifier for a group of meshes and lights.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -21,13 +21,22 @@ struct RenderLayer
 
 #### Overview
 
-`RenderLayer` allows developers to use either named layers for custom groupings or the default layer for standard rendering behavior.
+Use a [`RenderLayer`](renderlayer.md) to associate a light with the entities it should illuminate, or to mark which entities a light affects. Every entity belongs to [`defaultLayer`](renderlayer/defaultlayer.md) unless its [`RenderLayerComponent`](renderlayercomponent.md) specifies otherwise.
+
+Define your own layers as static constants in an extension so they’re easy to reuse:
+
+```swift
+extension RenderLayer {
+    static let hero = RenderLayer("com.myapp.hero")
+    static let background = RenderLayer("com.myapp.background")
+}
+```
 
 ## Topics
 
 ### Accessing default layers
 - [static var defaultLayer: RenderLayer](renderlayer/defaultlayer.md)
-  The default layer which all meshes and lights are in unless otherwise specified
+  The default layer.
 ### Grouping render layers
 - [RenderLayer.Set](renderlayer/set.md)
   An unordered collection of unique render layers.

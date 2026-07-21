@@ -54,6 +54,8 @@ class UIVisualEffect
   An object that amplifies and adjusts the color of the content layered behind a visual effect view.
 - [class UIBlurEffect](uiblureffect.md)
   An object that applies a blurring effect to the content layered behind a visual effect view.
+- [class UIColorEffect](uicoloreffect.md)
+  A visual effect that applies a solid color background.
 
 
 ---

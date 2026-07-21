@@ -25,7 +25,9 @@ Set this property with a populated [`MTLTensorAuxiliaryPlaneDescriptorMap`](mtlt
 
 Multi-plane tensors do not support [`machineLearning`](mtltensorusage/machinelearning.md). Use [`compute`](mtltensorusage/compute.md) or [`render`](mtltensorusage/render.md).
 
-Multi-plane tensors do not support data types larger than one byte as the data plane type
+Multi-plane tensors do not support data types larger than one byte as the data plane type.
+
+Multi-plane tensors do not support rank zero.
 
 The default value is `nil`.
 

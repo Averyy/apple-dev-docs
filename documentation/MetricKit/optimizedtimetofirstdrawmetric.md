@@ -23,8 +23,6 @@ This metric corresponds to the [`MetricResult.optimizedTimeToFirstDraw(_:)`](met
 
 Optimized time to first draw reflects the actual user-perceived launch time when the system applies prefetching optimizations. The system may start the app in the background before the user taps its icon, so this metric can be shorter than [`TimeToFirstDrawMetric`](timetofirstdrawmetric.md).
 
-This type replaces the `histogrammedOptimizedTimeToFirstDraw` property of [`MXAppLaunchMetric`](mxapplaunchmetric.md).
-
 ## Topics
 
 ### Measurements

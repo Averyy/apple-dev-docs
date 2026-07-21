@@ -22,9 +22,9 @@ init()
 ## See Also
 
 - [init(layers: RenderLayer.Set?)](spotlightcomponent/shadow/init(layers:).md)
-  Creates a spot light shadow with the specified layers.
+  Creates a spot light shadow that accepts shadow casters from the specified layers.
 - [var layers: RenderLayer.Set?](spotlightcomponent/shadow/layers.md)
-  The layers from which this light casts shadows. If nil, uses layers for shadow casting. Only entities whose RenderLayerComponent.layers intersect with these layers will cast shadows in this light’s shadow map. If `nil`, the light uses its `layers` for shadow casting. Set to an empty set to disable shadow casting entirely.
+  The layers of entities that cast shadows from this light.
 
 
 ---

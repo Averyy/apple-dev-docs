@@ -21,8 +21,6 @@ struct AppLaunchDiagnostic
 
 This captures a [`CallStackTree`](callstacktree.md) and a `launchDuration` measurement for app launches that exceed the diagnostic threshold.
 
-This type replaces [`MXAppLaunchDiagnostic`](mxapplaunchdiagnostic.md).
-
 ## Topics
 
 ### Call stack

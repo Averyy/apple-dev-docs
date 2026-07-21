@@ -3,6 +3,8 @@
 **Framework**: ColorSync  
 **Kind**: case
 
+Use the maximum of the red, green, and blue components.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)

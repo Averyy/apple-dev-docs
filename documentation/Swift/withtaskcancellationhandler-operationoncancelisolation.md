@@ -58,7 +58,7 @@ Cancellation handlers which acquire locks must take care to avoid deadlock. The 
 
 - `operation`: The operation to perform.
 - `handler`: A closure to execute on cancellation. If the task is canceled, this closure is called at most once; otherwise, it isn’t called.
-- `isolation`: The actor that the operation and cancellation handler are isolated to.
+- `isolation`: The actor that the operation is isolated to.
 
 ## See Also
 

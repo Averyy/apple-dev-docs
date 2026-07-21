@@ -34,25 +34,25 @@ Provide the selected identifiers list to SwiftUI using `dragContainerSelection(_
 In an example below, an app presents a view with `Fruit` values. When a user starts drag, SwiftUI uses the selection to put together the list of item identifiers to drag.
 
 ```swift
-   var fruits: [Fruit]
-   @State private var selection: [Fruit.ID]
+var fruits: [Fruit]
+@State private var selection: [Fruit.ID]
 
-   var body: some View {
-       VStack {
-           ForEach(fruits) { fruit in
-               FruitView(fruit)
-                   .draggable(containerItemID: fruit.id)
-           }
-       }
-       .dragContainer(for: Fruit.self) { ids in
-          fruits(with: ids)
-       }
-       .dragContainerSelection(selection)
-   }
+var body: some View {
+    VStack {
+        ForEach(fruits) { fruit in
+            FruitView(fruit)
+                .draggable(containerItemID: fruit.id)
+        }
+    }
+    .dragContainer(for: Fruit.self) { ids in
+       fruits(with: ids)
+    }
+    .dragContainerSelection(selection)
+}
 
-   func fruits(with ids: [UUID]) -> [Fruit] { ... }
+func fruits(with ids: [UUID]) -> [Fruit] { ... }
 
-   struct Fruit: Transferable, Identifiable { ... }
+struct Fruit: Transferable, Identifiable { ... }
 ```
 
 To enable multi-item drag, apply this modifier to a container view and mark each draggable child with [`draggable(_:)`](view/draggable(_:).md) or [`draggable(containerItemID:containerNamespace:)`](view/draggable(containeritemid:containernamespace:).md).

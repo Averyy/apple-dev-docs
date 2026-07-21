@@ -8,6 +8,7 @@ A protocol for an extension that receives iOS system notifications and curates t
 **Availability**:
 - iOS 26.5+
 - iPadOS 26.5+
+- Mac Catalyst 26.5+
 
 ## Declaration
 

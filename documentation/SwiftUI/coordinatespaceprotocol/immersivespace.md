@@ -26,7 +26,6 @@ Model3D(url: URL(string: "https://example.com/robot.usdz")!)
     } action: { transform in
         appModel.immersiveSpaceFromCuboid = transform
     }
-}
 ```
 
 Then, apply it to a corresponding Model3D in the immersive space.
@@ -35,11 +34,11 @@ Then, apply it to a corresponding Model3D in the immersive space.
 if let transform = appModel.immersiveSpaceFromRobot {
     Model3D(url: URL(string: "https://example.com/robot.usdz")!)
         // Align the origin of this Model3D to its top-leading-back
-        .visualEffect3D({ effect, proxy in
+        .visualEffect3D { effect, proxy in
             effect
                 .offset(x: proxy.size.width/2, y: proxy.size.height/2)
                 .offset(z: proxy.size.depth/2)
-        })
+        }
         // Apply the transform in SRT order
        .scaleEffect(transform.scale)
        .rotation3DEffect(transform.rotation ?? .identity)

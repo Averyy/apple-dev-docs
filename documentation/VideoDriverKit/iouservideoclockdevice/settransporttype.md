@@ -1,0 +1,37 @@
+# SetTransportType
+
+**Framework**: VideoDriverKit  
+**Kind**: method
+
+**Availability**:
+- DriverKit 27.0+ (Beta)
+
+## Declaration
+
+```swift
+kern_return_t SetTransportType(IOUserVideoTransportType in_transport_type);
+```
+
+#### Return Value
+
+Returns kern_return_t
+
+#### Discussion
+
+Set the transport type of the IOUserVideoClockDevice
+
+Drivers can change the transport type of the clock device dynamically.  A notification will be sent to the host to update the object state if successful.
+
+## Parameters
+
+- `in_transport_type`: IOUserVideoTransportType to set
+
+## See Also
+
+- [GetTransportType](iouservideoclockdevice/gettransporttype.md)
+- [IOUserVideoTransportType](videodriverkit/iouservideotransporttype.md)
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/videodriverkit/iouservideoclockdevice/settransporttype)*

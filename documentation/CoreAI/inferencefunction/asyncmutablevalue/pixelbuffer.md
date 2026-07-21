@@ -10,6 +10,7 @@ Consume this value to access the underlying pixel buffer once any pending write 
 - iPadOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 

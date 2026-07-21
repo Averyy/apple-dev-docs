@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: case
 
-Portal content is clipped and entities cross the boundary.
+The portal clips its content to the boundary, and entities with [`PortalCrossingComponent`](portalcrossingcomponent.md) cross the boundary.
 
 **Availability**:
 - iOS 27.0+ (Beta)

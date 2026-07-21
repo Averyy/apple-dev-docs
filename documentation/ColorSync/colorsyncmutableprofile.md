@@ -26,6 +26,10 @@ class ColorSyncMutableProfile
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 
+## See Also
+
+- [class ColorSyncProfile](colorsyncprofile.md)
+
 
 ---
 

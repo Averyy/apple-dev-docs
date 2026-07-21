@@ -21,7 +21,7 @@ class RetargetingConfiguration
 
 #### Overview
 
-`RetargetingConfiguration` enables the transfer of animations from one skeleton to another, automatically mapping joints and adapting poses to accommodate different skeletal structures. This is particularly useful for applying animations across different character models or creatures.
+[`RetargetingConfiguration`](retargetingconfiguration.md) enables the transfer of animations from one skeleton to another, automatically mapping joints and adapting poses to accommodate different skeletal structures. This is particularly useful for applying animations across different character models or creatures.
 
 #### Usage
 
@@ -79,7 +79,7 @@ do {
 ## See Also
 
 - [class SkeletonResource](skeletonresource.md)
-  Represents a skeleton asset with joint hierarchy and animation capabilities.
+  A self-contained skeleton asset for animating characters and articulated objects.
 
 
 ---

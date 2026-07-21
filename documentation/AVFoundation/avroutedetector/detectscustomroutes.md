@@ -21,15 +21,6 @@ var detectsCustomRoutes: Bool { get set }
 
 The default value is [`false`](https://developer.apple.com/documentation/Swift/false). Only set it to [`true`](https://developer.apple.com/documentation/Swift/true) if your app uses an instance of [`AVCustomRoutingController`](https://developer.apple.com/documentation/AVRouting/AVCustomRoutingController).
 
-## See Also
-
-- [var isRouteDetectionEnabled: Bool](avroutedetector/isroutedetectionenabled.md)
-  A Boolean value that indicates whether route detection is in an enabled state.
-- [var multipleRoutesDetected: Bool](avroutedetector/multipleroutesdetected.md)
-  A Boolean value that indicates whether the object detects more than one playback route.
-- [static let AVRouteDetectorMultipleRoutesDetectedDidChange: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/AVRouteDetectorMultipleRoutesDetectedDidChange.md)
-  A notification the system posts when changes occur to its detected routes.
-
 
 ---
 

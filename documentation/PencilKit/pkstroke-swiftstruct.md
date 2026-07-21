@@ -20,6 +20,7 @@ struct PKStroke
 
 ## Mentions
 
+- [Importing Bézier path data into PencilKit](importing-external-drawing-data-into-pencilkit.md)
 - [Supporting backward compatibility for ink types](supporting-backward-compatibility-for-ink-types.md)
 
 ## Topics
@@ -92,6 +93,8 @@ struct PKStroke
   Enable writing on a non-text-input view by adding interactions.
 - [Inspecting, Modifying, and Constructing PencilKit Drawings](inspecting-modifying-and-constructing-pencilkit-drawings.md)
   Score users’ ability to match PencilKit drawings generated from text, by accessing the strokes and points inside PencilKit drawings.
+- [Importing Bézier path data into PencilKit](importing-external-drawing-data-into-pencilkit.md)
+  Convert existing Bézier-based stroke data into PencilKit drawing strokes.
 - [Controlling stroke rendering for animation and editing](controlling-stroke-rendering-for-animation-and-editing.md)
   Slice, animate, and blend PencilKit strokes in code, while keeping grain texture and wet ink intact.
 - [class PKCanvasView](pkcanvasview.md)

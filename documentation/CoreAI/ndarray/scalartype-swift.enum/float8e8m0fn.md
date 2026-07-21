@@ -10,6 +10,7 @@ An 8-bit floating-point type with 8 exponent bits and 0 mantissa bits, without a
 - iPadOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 

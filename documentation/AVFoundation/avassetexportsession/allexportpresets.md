@@ -35,8 +35,6 @@ Not all presets are compatible with all assets.
   Determines the output file types an asset export session supports writing in its current configuration.
 - [class func determineCompatibility(ofExportPreset: String, with: AVAsset, outputFileType: AVFileType?, completionHandler: (Bool) -> Void)](avassetexportsession/determinecompatibility(ofexportpreset:with:outputfiletype:completionhandler:).md)
   Determines an export preset’s compatibility to export the asset in a container of the output file type.
-- [class func exportPresets(compatibleWith: AVAsset) -> [String]](avassetexportsession/exportpresets(compatiblewith:).md)
-  Returns compatible export presets for the asset.
 
 
 ---

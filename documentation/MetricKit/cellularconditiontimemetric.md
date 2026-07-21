@@ -21,8 +21,6 @@ This metric corresponds to the [`MetricResult.cellularConditionTime(_:)`](metric
 
 The histogram represents the fraction of the reporting interval spent at each cellular signal strength tier. If no cellular data was collected during the interval, the histogram is empty.
 
-This type replaces the `histogrammedCellularConditionTime` property of [`MXCellularConditionMetric`](mxcellularconditionmetric.md).
-
 ## Topics
 
 ### Measurements

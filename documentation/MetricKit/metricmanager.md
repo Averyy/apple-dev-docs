@@ -45,8 +45,6 @@ Task {
 
 To receive metrics segmented by app state, pass a set of [`StateReportingDomain`](statereportingdomain.md) values to [`init(enabledStateReportingDomains:)`](metricmanager/init(enabledstatereportingdomains:).md). When state reporting is enabled, [`stateEntries`](metricreport/stateentries.md) carries metrics grouped by each recorded state in addition to the standard [`intervalEntries`](metricreport/intervalentries.md).
 
-This type replaces [`MXMetricManager`](mxmetricmanager.md).
-
 ## Topics
 
 ### Initialization

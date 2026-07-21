@@ -18,12 +18,12 @@ enum UIBarMinimizationRestorationBehavior
 
 ## Topics
 
-### Enumeration Cases
+### Restoring the bar
 - [UIBarMinimizationRestorationBehavior.atScrollEdge](uibarminimizationrestorationbehavior/atscrolledge.md)
   The bar restores only when the observed scroll view’s content reaches the scroll edge.
 - [UIBarMinimizationRestorationBehavior.automatic](uibarminimizationrestorationbehavior/automatic.md)
   The system determines the restoration behavior.
-### Initializers
+### Creating a restoration behavior
 - [init?(rawValue: Int)](uibarminimizationrestorationbehavior/init(rawvalue:).md)
 
 ## Relationships
@@ -35,6 +35,15 @@ enum UIBarMinimizationRestorationBehavior
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [UIAccessibility.ExpandedStatus](uiaccessibility/expandedstatus.md)
+- [UITextFormattingViewController.ComponentSize](uitextformattingviewcontroller/componentsize.md)
+  Sizes of text formatting view controller components.
+- [enum UIFocusItemDeferralMode](uifocusitemdeferralmode.md)
+- [enum UIBarMinimizationBehavior](uibarminimizationbehavior.md)
+- [enum UIBarMinimizationSafeAreaAdjustment](uibarminimizationsafeareaadjustment.md)
 
 
 ---

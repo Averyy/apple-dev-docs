@@ -225,10 +225,17 @@ Intercepting events is only rarely required and you should avoid it if possible.
 - [UIApplication.ProtectedDataDidBecomeAvailableMessage](uiapplication/protecteddatadidbecomeavailablemessage.md)
 - [UIApplication.ProtectedDataWillBecomeUnavailableMessage](uiapplication/protecteddatawillbecomeunavailablemessage.md)
 - [UIApplication.SignificantTimeChangeMessage](uiapplication/significanttimechangemessage.md)
+- [UIApplication.SystemPrefersReducedResourceUsageDidChangeMessage](uiapplication/systemprefersreducedresourceusagedidchangemessage.md)
 - [UIApplication.UserDidTakeScreenshotMessage](uiapplication/userdidtakescreenshotmessage.md)
 - [UIApplication.WillEnterForegroundMessage](uiapplication/willenterforegroundmessage.md)
 - [UIApplication.WillResignActiveMessage](uiapplication/willresignactivemessage.md)
 - [UIApplication.WillTerminateMessage](uiapplication/willterminatemessage.md)
+### Instance Properties
+- [var systemPrefersReducedResourceUsage: Bool](uiapplication/systemprefersreducedresourceusage.md)
+  A Boolean value that indicates whether the system prefers that the app reduce its resource usage.
+### Type Properties
+- [class let systemPrefersReducedResourceUsageDidChangeNotification: NSNotification.Name](uiapplication/systemprefersreducedresourceusagedidchangenotification.md)
+  A notification that posts when [`systemPrefersReducedResourceUsage`](uiapplication/systemprefersreducedresourceusage.md) changes.
 
 ## Relationships
 

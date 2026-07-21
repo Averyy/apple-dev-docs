@@ -35,6 +35,11 @@ struct ColorSyncDataDepth
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
 
+## See Also
+
+- [struct ColorSyncAlphaInfo](colorsyncalphainfo.md)
+- [typealias ColorSyncDataLayout](colorsyncdatalayout.md)
+
 
 ---
 

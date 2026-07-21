@@ -100,6 +100,7 @@ For a custom text object to support keyboard input, it must adopt this protocol 
 ### Instance Properties
 - [var allowedWritingToolsResultOptions: UIWritingToolsResultOptions](uitextinputtraits/allowedwritingtoolsresultoptions.md)
 - [var allowsNumberPadPopover: Bool](uitextinputtraits/allowsnumberpadpopover.md)
+- [var grammarCheckingType: UITextGrammarCheckingType](uitextinputtraits/grammarcheckingtype.md)
 - [var passwordRules: UITextInputPasswordRules?](uitextinputtraits/passwordrules.md)
 
 ## Relationships

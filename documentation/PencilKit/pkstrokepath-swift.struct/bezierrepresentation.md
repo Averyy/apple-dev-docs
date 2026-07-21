@@ -18,6 +18,10 @@ A Bézier path representation of the path’s curve, computed in linear time.
 var bezierRepresentation: CGPath { get }
 ```
 
+## Mentions
+
+- [Importing Bézier path data into PencilKit](importing-external-drawing-data-into-pencilkit.md)
+
 
 ---
 

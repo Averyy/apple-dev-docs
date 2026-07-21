@@ -4,7 +4,7 @@
 **Kind**: method  
 **Required**: Yes
 
-Creates a value that reads a document from disk.
+Creates a reader to load this document from disk.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -19,20 +19,26 @@ Creates a value that reads a document from disk.
 func reader(configuration: sending Self.ReadConfiguration) -> sending Self.Reader
 ```
 
+#### Discussion
+
+SwiftUI calls this method each time it needs to read or re-read the document (on open, or when another process changes the file). Return a [`FileWrapperDocumentReader`](filewrapperdocumentreader.md) for cases that don’t require custom reading logic, or a [`DocumentReader`](documentreader.md) for direct URL access.
+
 ## Parameters
 
-- `configuration`: Additional context for reading.
+- `configuration`: The content type of the file being read.
 
 ## See Also
 
 - [static var readableContentTypes: [UTType]](readabledocument/readablecontenttypes.md)
-  The file and data types that the document reads from.
+  The content types this document can open.
 - [ReadableDocument.ReadConfiguration](readabledocument/readconfiguration.md)
   The configuration for reading document contents.
 - [associatedtype Reader : DocumentReader](readabledocument/reader.md)
-  A type that implements reading from disk logic.
+  A type that implements reading from disk.
 - [func apply(snapshot: sending Self.Reader.Snapshot, previous: sending Self.Reader.Snapshot?) async throws](readabledocument/apply(snapshot:previous:).md)
-  Applies loaded content to the document model.
+  Applies a loaded snapshot to the document model.
+- [static var writableContentTypes: [UTType]](readabledocument/writablecontenttypes.md)
+  By default, a document that supports reading also supports writing the same content types.
 
 
 ---

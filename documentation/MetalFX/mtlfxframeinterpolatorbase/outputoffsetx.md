@@ -4,7 +4,7 @@
 **Kind**: property  
 **Required**: Yes
 
-The horizontal offset, in pixels, of the region within the output texture to write results.
+The horizontal offset, in pixels, of the region within the output texture to write results. For regions outside the contents of the colorTexture are copied.
 
 **Availability**:
 - iOS 27.0+ (Beta)

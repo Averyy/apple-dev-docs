@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: property
 
+Changed joint influence indices.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -15,6 +17,10 @@
 ```swift
 let influenceJointIndices: [UInt32]?
 ```
+
+#### Discussion
+
+`nil` if unchanged.
 
 
 ---

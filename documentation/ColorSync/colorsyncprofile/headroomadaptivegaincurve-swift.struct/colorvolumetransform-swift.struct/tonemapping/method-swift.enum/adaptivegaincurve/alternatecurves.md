@@ -3,6 +3,8 @@
 **Framework**: ColorSync  
 **Kind**: property
 
+The alternate curves, each targeting a different display headroom. Limited to four entries.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)

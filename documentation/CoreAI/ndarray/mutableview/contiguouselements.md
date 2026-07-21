@@ -10,12 +10,13 @@ Returns a `MutableSpan` over the backing memory of this view if the memory is in
 - iPadOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 
 ```swift
 @export(implementation)
-var contiguousElements: MutableSpan<Element>? { mutating get }
+var contiguousElements: MutableSpan<Element>? { get }
 ```
 
 #### Discussion

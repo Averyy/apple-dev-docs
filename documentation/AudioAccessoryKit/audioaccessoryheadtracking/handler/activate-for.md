@@ -4,7 +4,7 @@
 **Kind**: method  
 **Required**: Yes
 
-Called when a notification session has been established.
+Called when a head-tracking session has been established with the host.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -18,7 +18,7 @@ func activate(for session: AudioAccessoryHeadTracking.Session)
 
 ## Parameters
 
-- `session`: A type enabling communication back to the extension host.
+- `session`: A session object identifying the active connection.
 
 
 ---

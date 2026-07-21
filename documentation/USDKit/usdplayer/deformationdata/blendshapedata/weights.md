@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: property
 
+Weight values controlling each blend shape target’s influence.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)

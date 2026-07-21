@@ -1,24 +1,24 @@
 {
   "metadata": {
-    "last_updated": "2026-07-17T07:44:24.382662",
+    "last_updated": "2026-07-21T07:31:45.016411",
     "total_pages": 2,
-    "session_id": "2026-07-17T07:44:24.033904"
+    "session_id": "2026-07-21T07:31:44.549422"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/xcselect.json": {
-      "hash": "6fb75deea518e6d8a8dbc5a37725f85a4ce1e3e42af8f3d26255de0b2c1c9773",
-      "last_checked": "2026-07-17T07:44:24.270961",
+      "hash": "db96352c0d747bbd8e5ea89f52c187a7f6085958f6def47c31d9f77c579d07dc",
+      "last_checked": "2026-07-21T07:31:44.930167",
       "status": "unchanged",
-      "session_id": "2026-07-17T07:44:24.033904",
-      "etag": "W/\"d51f805bd22e1a84633f56c834ae964e\"",
+      "session_id": "2026-07-21T07:31:44.549422",
+      "etag": "W/\"44d4bee366d7fc744783f7ebda12be6a\"",
       "file_path": "documentation/xcselect/xcselect.md"
     },
     "https://developer.apple.com/documentation/xcselect": {
-      "hash": "6fb75deea518e6d8a8dbc5a37725f85a4ce1e3e42af8f3d26255de0b2c1c9773",
-      "last_checked": "2026-07-17T07:44:24.154069",
+      "hash": "db96352c0d747bbd8e5ea89f52c187a7f6085958f6def47c31d9f77c579d07dc",
+      "last_checked": "2026-07-21T07:31:44.720697",
       "status": "unchanged",
-      "session_id": "2026-07-17T07:44:24.033904",
-      "etag": "W/\"d51f805bd22e1a84633f56c834ae964e\"",
+      "session_id": "2026-07-21T07:31:44.549422",
+      "etag": "W/\"44d4bee366d7fc744783f7ebda12be6a\"",
       "file_path": "documentation/xcselect/xcselect.md"
     }
   }

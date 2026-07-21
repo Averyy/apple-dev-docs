@@ -49,7 +49,7 @@ The enablement setting on this component will be applied recursively to descenda
 - [struct RenderLayerComponent](renderlayercomponent.md)
   A component that defines which layers an entity participates in.
 - [struct RenderLayer](renderlayer.md)
-  A structured representation of render layers that provides type safety and clear semantics.
+  A named identifier for a group of meshes and lights.
 - [struct ClippingComponent](clippingcomponent.md)
   A component that clips entities and their children to a customizable bounding box volume with feathered edges.
 

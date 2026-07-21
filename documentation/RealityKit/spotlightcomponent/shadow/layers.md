@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: property
 
-The layers from which this light casts shadows. If nil, uses layers for shadow casting. Only entities whose RenderLayerComponent.layers intersect with these layers will cast shadows in this light’s shadow map. If `nil`, the light uses its `layers` for shadow casting. Set to an empty set to disable shadow casting entirely.
+The layers of entities that cast shadows from this light.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -19,12 +19,23 @@ The layers from which this light casts shadows. If nil, uses layers for shadow c
 var layers: RenderLayer.Set? { get set }
 ```
 
+#### Discussion
+
+An entity casts a shadow into this light’s shadow map when the layers of its [`RenderLayerComponent`](renderlayercomponent.md) intersect with this set.
+
+Set this property to:
+
+- `nil` (the default) to inherit [`layers`](spotlightcomponent/layers.md), so any entity the light illuminates can also cast a shadow from it.
+- An empty set to disable shadow casting from this light entirely.
+
+Shadow casting can be restricted by layer on devices with Apple6 GPU family feature support.
+
 ## See Also
 
 - [init()](spotlightcomponent/shadow/init.md)
   Creates a new spot light shadow object.
 - [init(layers: RenderLayer.Set?)](spotlightcomponent/shadow/init(layers:).md)
-  Creates a spot light shadow with the specified layers.
+  Creates a spot light shadow that accepts shadow casters from the specified layers.
 
 
 ---

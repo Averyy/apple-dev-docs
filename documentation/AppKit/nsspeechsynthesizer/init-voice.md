@@ -24,7 +24,6 @@ Initialized speech synthesizer or `nil` when the voice identified by `voiceIdent
 
 ## See Also
 
-- [Speech Programming Topics](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Speech/Speech.html#//apple_ref/doc/uid/10000178i)
 - [class var availableVoices: [NSSpeechSynthesizer.VoiceName]](nsspeechsynthesizer/availablevoices.md)
   Provides the identifiers of the voices available on the system.
 

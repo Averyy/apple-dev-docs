@@ -77,6 +77,8 @@ iOS, iPadOS, and visionOS have different rendering behaviors than macOS, as they
   Use Web Inspector to inspect and debug your HTML, CSS, and JavaScript.
 - [Inspect Apps and Devices](inspect-apps-and-devices.md)
   Discover all inspectable web content in Safari and other apps on your Mac and on connected devices.
+- [Connecting an AI agent to Safari](connecting-an-ai-agent-to-safari.md)
+  Inspect, test, and debug your website with an AI agent connected to the Safari MCP server.
 - [WebDriver](webdriver.md)
   Use WebDriver to write robust, comprehensive tests and run them against any browser that has a WebDriver-compliant driver, including Safari.
 

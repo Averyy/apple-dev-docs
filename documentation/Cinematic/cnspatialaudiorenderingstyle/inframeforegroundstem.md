@@ -3,7 +3,7 @@
 **Framework**: Cinematic  
 **Kind**: case
 
-Isolates only voices from the camera field of view and place them in a mono stem. There is no ambience stem.
+Isolates foreground sounds within the camera field of view in a stem.
 
 **Availability**:
 - iOS 26.0+

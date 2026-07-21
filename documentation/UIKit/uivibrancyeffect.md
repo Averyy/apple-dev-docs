@@ -74,6 +74,8 @@ The vibrancy effect is color-dependent. Any subviews that you add to the [`conte
   An object that implements some complex visual effects.
 - [class UIBlurEffect](uiblureffect.md)
   An object that applies a blurring effect to the content layered behind a visual effect view.
+- [class UIColorEffect](uicoloreffect.md)
+  A visual effect that applies a solid color background.
 
 
 ---

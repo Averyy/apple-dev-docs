@@ -19,8 +19,6 @@ struct TotalBackgroundLocationTimeMetric
 
 This metric corresponds to the [`MetricResult.totalBackgroundLocationTime(_:)`](metricresult/totalbackgroundlocationtime(_:).md) case. It appears in both [`intervalEntries`](metricreport/intervalentries.md) and [`stateEntries`](metricreport/stateentries.md) when state reporting is enabled.
 
-This type replaces the `cumulativeBackgroundLocationTime` property of [`MXAppRunTimeMetric`](mxappruntimemetric.md).
-
 ## Topics
 
 ### Measurements

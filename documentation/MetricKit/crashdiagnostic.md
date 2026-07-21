@@ -41,8 +41,6 @@ if let category = diagnostic.terminationCategory {
 }
 ```
 
-This type replaces [`MXCrashDiagnostic`](mxcrashdiagnostic.md).
-
 ## Topics
 
 ### Call stack

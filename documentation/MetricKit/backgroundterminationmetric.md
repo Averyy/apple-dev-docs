@@ -25,8 +25,6 @@ Use [`terminationCategory`](crashdiagnostic/terminationcategory-swift.property.m
 
 Unexpected background terminations can affect downstream performance metrics such as launch time, because the app must fully restart instead of resuming from suspension. For information about launch times when the app resumes from suspension, see [`ApplicationResumeTimeMetric`](applicationresumetimemetric.md).
 
-This type replaces the [`backgroundExitData`](mxappexitmetric/backgroundexitdata.md) property of [`MXAppExitMetric`](mxappexitmetric.md).
-
 ## Topics
 
 ### Background termination counts

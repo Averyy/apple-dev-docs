@@ -42,6 +42,8 @@ Only one Safari browser instance can be active at any given time, and only one W
   Use Responsive Design Mode to test your `media` queries and other dynamic styles to ensure your webpages look great on any screen.
 - [Inspect Apps and Devices](inspect-apps-and-devices.md)
   Discover all inspectable web content in Safari and other apps on your Mac and on connected devices.
+- [Connecting an AI agent to Safari](connecting-an-ai-agent-to-safari.md)
+  Inspect, test, and debug your website with an AI agent connected to the Safari MCP server.
 
 
 ---

@@ -34,11 +34,11 @@ Applying the `draggable(_:preview:)` modifier adds the appropriate gestures for 
 ```swift
 var title: String
 var body: some View {
-    Color.pink
-        .frame(width: 400, height: 400)
-        .draggable(title) {
-             Text("Drop me")
-         }
+Color.pink
+    .frame(width: 400, height: 400)
+    .draggable(title) {
+         Text("Drop me")
+     }
 }
 ```
 

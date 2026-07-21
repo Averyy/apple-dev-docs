@@ -28,21 +28,19 @@ struct Descriptor
 - [var shaderGraph: ShaderGraph](portalmaterial/program-swift.struct/descriptor-swift.struct/shadergraph.md)
   The shader graph that describes the shading logic for this program.
 - [var inputValues: [String : MaterialParameters.Value]](portalmaterial/program-swift.struct/descriptor-swift.struct/inputvalues.md)
-  Initial values for the inputs declared in [`shaderGraph`](portalmaterial/program-swift.struct/descriptor-swift.struct/shadergraph.md).
+  Initial values for the inputs that the shader graph declares.
 - [var constantValues: MTLFunctionConstantValues](portalmaterial/program-swift.struct/descriptor-swift.struct/constantvalues.md)
-  Values for the function constant inputs declared in [`shaderGraph`](portalmaterial/program-swift.struct/descriptor-swift.struct/shadergraph.md).
+  Values for the function-constant inputs that the shader graph declares.
 
 ## Relationships
 
 ### Conforms To
 - [Equatable](../Swift/Equatable.md)
-- [Sendable](../Swift/Sendable.md)
-- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
 - [var descriptor: PortalMaterial.Program.Descriptor](portalmaterial/program-swift.struct/descriptor-swift.property.md)
-  The descriptor used to create this program.
+  The descriptor that produced this program.
 
 
 ---

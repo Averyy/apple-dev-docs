@@ -22,7 +22,7 @@ case scoredItems([ScoredSearchableItem])
 
 - [SearchPipelineData.Payload.items(_:)](searchpipelinedata/payload-swift.enum/items(_:).md)
   Items from a Spotlight query.
-- [case groupedItems([SearchableItemAttribute : [CSSearchableItem]])](searchpipelinedata/payload-swift.enum/groupeditems(_:).md)
+- [case groupedItems([SearchableItemAttribute : [SearchableItem]])](searchpipelinedata/payload-swift.enum/groupeditems(_:).md)
   Items partitioned by an attribute value (e.g. content type).
 - [SearchPipelineData.Payload.text(_:)](searchpipelinedata/payload-swift.enum/text(_:).md)
   LLM-generated text summary or analysis.

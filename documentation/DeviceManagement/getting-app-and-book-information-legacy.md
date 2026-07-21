@@ -27,7 +27,7 @@ The following is an example of the URL to look up an app:
 
 A typical response looks like the following:
 
-```javascript
+```json
 {
   "results": {
     "361309726": {
@@ -190,7 +190,7 @@ curl --location --request GET 'https://uclient-api.itunes.apple.com/WebObjects/M
 
 A typical response looks like the following:
 
-```javascript
+```json
 {
     "isAuthenticated": false,
     "meta": {
@@ -322,7 +322,7 @@ The `watchBundleID` key indicates that the app runs on Apple Watch. The value is
 
 When the `results` set is empty, a typical response looks like the following:
 
-```javascript
+```json
 {
     "isAuthenticated": false,
     "meta": {
@@ -358,7 +358,7 @@ By default, using `platform=enterprisestore` or `platform=volumestore` returns i
 
 The following is an example of a typical response from an app designed for iPad on a Mac with M1 or M2:
 
-```javascript
+```json
 {
     "results": {
         "640199958": {
@@ -393,7 +393,7 @@ The following is an example of a typical response from an app designed for iPad 
 
 - [Managing apps and books through web services (Legacy)](managing-apps-and-books-through-web-services-legacy.md)
   Associate volume purchases with users or devices using endpoints provided by the Volume Purchase Program (VPP).
-- [Upgrading to Apple School Manager and Apple Business Manager](upgrading-to-apple-school-manager-and-apple-business-manager.md)
+- [Upgrading to Apple School Manager and Apple Business](upgrading-to-apple-school-manager-and-apple-business.md)
   Manage devices and content across an organization’s user base with a single destination.
 
 

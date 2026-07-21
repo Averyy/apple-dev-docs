@@ -24,6 +24,13 @@ Use this method when you need to make several changes to tab properties simultan
 
 The `updates` block is called synchronously. You can safely read and write any mutable tab properties inside this block.
 
+## See Also
+
+- [var tabs: [UITab]](uitabbarcontroller/tabs.md)
+  An array of tabs that the tab bar displays.
+- [func setTabs([UITab], animated: Bool)](uitabbarcontroller/settabs(_:animated:).md)
+  Sets the root tabs of the tab bar controller, with an option to animate the change.
+
 
 ---
 

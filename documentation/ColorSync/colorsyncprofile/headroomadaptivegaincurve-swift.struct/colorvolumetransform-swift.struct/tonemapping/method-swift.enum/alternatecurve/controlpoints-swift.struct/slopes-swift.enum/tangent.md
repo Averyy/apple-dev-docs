@@ -20,6 +20,10 @@ Explicit tangent slopes expressed as tan(slope_angle), one per control point.
 case tangent([Float])
 ```
 
+## Mentions
+
+- [Authoring Headroom Adaptive Gain Curve metadata](authoring-headroom-adaptive-gain-curve-metadata.md)
+
 
 ---
 

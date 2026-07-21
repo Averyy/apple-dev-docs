@@ -40,8 +40,6 @@ You start a new dragging session by calling [`beginDraggingSession(with:event:so
 ### Dragging Item Location
 - [var draggingLeaderIndex: Int](nsdraggingsession/draggingleaderindex.md)
   The index of the dragging item under the cursor.
-### Instance Methods
-- [func updateDrag(from: NSGestureRecognizer)](nsdraggingsession/updatedrag(from:).md)
 
 ## Relationships
 

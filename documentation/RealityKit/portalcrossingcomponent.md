@@ -21,13 +21,38 @@ struct PortalCrossingComponent
 
 #### Overview
 
-You use this with [`PortalComponent.CrossingMode`](portalcomponent/crossingmode-swift.enum.md) to enable portal crossing features.
+Set this component on an entity inside the portal world to opt that entity — and its descendants — into the portal’s crossing behavior. RealityKit then renders parts of the entity inside the portal as portal content and parts outside in the host scene.
 
-When you set this on an entity, this component defines whether the entity is capable of crossing the portal boundary.
+Crossing-eligible entities cross the boundary configured by [`crossingMode`](portalcomponent/crossingmode-swift.property.md) on the portal entity:
 
-Entities without this component, entities where [`isEnabled`](entity/isenabled.md) is `false`, and entities without a containing entity that specifies inherited portal crossing, aren’t able to cross portals.
+- With [`PortalComponent.CrossingMode.plane(_:)`](portalcomponent/crossingmode-swift.enum/plane(_:).md), entities cross an infinite plane.
+- With [`PortalComponent.CrossingMode.volume(_:)`](portalcomponent/crossingmode-swift.enum/volume(_:).md), entities cross the faces of a box.
 
-See [`PortalComponent`](portalcomponent.md) for detailed usage.
+The component has no configurable state; its presence on an entity is what enables crossing.
+
+##### Inheritance
+
+[`PortalCrossingComponent`](portalcrossingcomponent.md) propagates down the entity hierarchy. Setting it on an ancestor makes every descendant crossing-eligible without setting it on each one individually:
+
+```swift
+let world = Entity()
+world.components.set(WorldComponent())
+
+let group = Entity()
+group.components.set(PortalCrossingComponent())
+
+let body = Entity()
+let head = Entity()
+group.addChild(body)
+group.addChild(head)
+
+world.addChild(group)
+// `body` and `head` both cross the portal because their ancestor `group` opts in.
+```
+
+An entity isn’t crossing-eligible if no ancestor in its chain (including itself) has [`PortalCrossingComponent`](portalcrossingcomponent.md), if [`isEnabled`](entity/isenabled.md) is `false` on any ancestor in the chain, or if it isn’t a descendant of an entity with [`WorldComponent`](worldcomponent.md).
+
+See [`PortalComponent`](portalcomponent.md) for an end-to-end portal setup.
 
 ## Topics
 

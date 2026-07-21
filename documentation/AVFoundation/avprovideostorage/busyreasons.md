@@ -22,6 +22,11 @@ var busyReasons: Set<AVProVideoStorage.BusyReason> { get }
 
 A non-empty set indicates that Pro Video Storage is currently being modified. While this is non-empty, starting a video capture will fail with an error. This property is key-value observable.
 
+## See Also
+
+- [AVProVideoStorage.BusyReason](avprovideostorage/busyreason.md)
+  A reason that Pro Video Storage may be busy.
+
 
 ---
 

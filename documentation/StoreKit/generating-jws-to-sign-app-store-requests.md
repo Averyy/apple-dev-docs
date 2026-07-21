@@ -176,7 +176,7 @@ Here’s an example of a payload for introductory offer eligibility:
 }
 ```
 
-For more information about providing the introductory offer eligibility signed value in a purchase option, see [`Product.PurchaseOption`](product/purchaseoption.md).
+For more information about providing the introductory offer eligibility signed value in a purchase option, see [`introductoryOfferEligibility(compactJWS:)`](product/purchaseoption/introductoryoffereligibility(compactjws:).md).
 
 ##### Sign the Jws
 

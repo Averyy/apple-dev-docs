@@ -51,4 +51,4 @@ For more information about WebKit, go to [`https://webkit.org`](https://develope
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/webkit)*
+*[View on Apple Developer](https://developer.apple.com/documentation/WebKit)*

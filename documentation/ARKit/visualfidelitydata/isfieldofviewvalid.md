@@ -18,7 +18,7 @@ var isFieldOfViewValid: Bool { get }
 
 Returns `true` if the expected FoV meets requirements. Returns `false` if any portion of the FoV is invalid.
 
-Note: Returns `true` if the provider was created without a field of view.
+Note: Returns `false` if the provider was created without a field of view.
 
 
 ---

@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: protocol
 
-Implements logic of writing documents to disk.
+A type that writes a document’s content to a file.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -18,15 +18,47 @@ Implements logic of writing documents to disk.
 protocol DocumentWriter<Snapshot>
 ```
 
+#### Overview
+
+SwiftUI calls your document’s [`snapshot(contentType:)`](writabledocument/snapshot(contenttype:).md) on the main actor to capture the current state, then obtains a `DocumentWriter` from [`writer(configuration:)`](writabledocument/writer(configuration:).md) and invokes `write(content:to:previous:progress:)` in the background with coordinated file access.
+
+Use [`FileWrapperDocumentWriter`](filewrapperdocumentwriter.md) for cases cases that don’t require custom file write logic. Implement a `DocumentWriter` when you need direct URL access or streaming writes:
+
+```swift
+struct ImageWriter: DocumentWriter {
+    @concurrent
+    func write(content image: sending CGImage, to destination: URL,
+        previous: sending CGImage?, progress: consuming Subprogress
+    ) async throws {
+        guard let imageDestination =
+            CGImageDestinationCreateWithURL(
+                destination as CFURL,
+                UTType.jpeg.identifier as CFString,
+                1, nil
+            ) else {
+            throw CocoaError(.fileWriteUnknown)
+        }
+        CGImageDestinationAddImage(
+            imageDestination, image, nil
+        )
+        guard CGImageDestinationFinalize(
+            imageDestination
+        ) else {
+            throw CocoaError(.fileWriteUnknown)
+        }
+    }
+}
+```
+
 ## Topics
 
 ### Writing a document
-- [associatedtype Snapshot](documentwriter/snapshot.md)
-  A type that represents the document’s stored content.
-- [associatedtype Destination = URL](documentwriter/destination.md)
-### Instance Methods
 - [func write(snapshot: sending Self.Snapshot, to: sending Self.Destination, previous: sending Self.Snapshot?, progress: consuming Subprogress) async throws](documentwriter/write(snapshot:to:previous:progress:).md)
   Writes the document content to disk.
+- [associatedtype Snapshot](documentwriter/snapshot.md)
+  The type representing the document’s content to write.
+- [associatedtype Destination = URL](documentwriter/destination.md)
+  The type of the destination location to write to.
 
 ## Relationships
 
@@ -36,19 +68,15 @@ protocol DocumentWriter<Snapshot>
 ## See Also
 
 - [struct DocumentReadConfiguration](documentreadconfiguration.md)
-  Provides the information required to read a document from disk.
+  The context SwiftUI passes to [`reader(configuration:)`](readabledocument/reader(configuration:).md).
 - [struct DocumentWriteConfiguration](documentwriteconfiguration.md)
-  Provides the information required to write a document to disk.
-- [struct FileDocumentReadConfiguration](filedocumentreadconfiguration.md)
-  The configuration for reading file contents.
-- [struct FileDocumentWriteConfiguration](filedocumentwriteconfiguration.md)
-  The configuration for serializing file contents.
+  The context SwiftUI passes to [`writer(configuration:)`](writabledocument/writer(configuration:).md).
 - [protocol DocumentReader](documentreader.md)
-  Implements logic of reading documents from disk.
+  A type that reads a document’s content from a file.
 - [struct FileWrapperDocumentReader](filewrapperdocumentreader.md)
-  A document reader that uses `FileWrapper` for reading.
+  A document reader that deserializes a `FileWrapper` into a snapshot.
 - [struct FileWrapperDocumentWriter](filewrapperdocumentwriter.md)
-  A document writer that uses `FileWrapper` for writing.
+  A document writer that serializes a snapshot into a `FileWrapper`.
 
 
 ---

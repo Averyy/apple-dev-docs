@@ -44,10 +44,10 @@ Typical work in USDKit includes generating USD documents procedurally, extractin
 - [struct USDStageComponent](usdstagecomponent.md)
   A component that renders a USD stage as RealityKit entities.
 - [class USDPlayer](usdplayer.md)
-  An object that drives timeline playback of a USD stage in RealityKit.
+  Drives timeline playback of a USD stage and produces per-frame render data.
 ### Render diagnostics
 - [struct USDRenderError](usdrendererror.md)
-  An error that occurs while rendering or converting a USD stage for RealityKit.
+  A non-fatal error produced during USD scene processing.
 ### Structures
 - [struct USDArray](usdarray.md)
 

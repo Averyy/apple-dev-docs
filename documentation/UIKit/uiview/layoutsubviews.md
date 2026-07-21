@@ -21,6 +21,7 @@ func layoutSubviews()
 ## Mentions
 
 - [Adapting your app when traits change](adapting-your-app-when-traits-change.md)
+- [Presenting content on a connected display](presenting-content-on-a-connected-display.md)
 - [Updating views automatically with observation tracking in UIKit](updating-views-automatically-with-observation-tracking-in-uikit.md)
 
 #### Discussion

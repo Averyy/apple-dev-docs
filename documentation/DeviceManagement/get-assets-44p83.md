@@ -10,7 +10,7 @@ Get the set of assets managed by your organization.
 
 ## Mentions
 
-- [Upgrading to Apple School Manager and Apple Business Manager](upgrading-to-apple-school-manager-and-apple-business-manager.md)
+- [Upgrading to Apple School Manager and Apple Business](upgrading-to-apple-school-manager-and-apple-business.md)
 - [Handling error responses](handling-error-responses.md)
 
 #### Discussion

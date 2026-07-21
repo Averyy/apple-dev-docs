@@ -3,6 +3,8 @@
 **Framework**: ColorSync  
 **Kind**: case
 
+Equal-weighted luminance(sum of 1/6 of each color channel + 1/2 of MAX(R, G, B)).
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)

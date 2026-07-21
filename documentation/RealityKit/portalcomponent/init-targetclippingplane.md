@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: init
 
-Creates a portal component with a target entity and a clipping plane.
+Creates a portal component with a target entity and an optional clipping plane.
 
 **Availability**:
 - iOS 18.0+
@@ -25,7 +25,9 @@ This initializes the [`PortalComponent`](portalcomponent.md) with the given targ
 
 To render a portal, an entity needs a [`PortalComponent`](portalcomponent.md) and a [`ModelComponent`](modelcomponent.md), using one or more [`PortalMaterial`](portalmaterial.md) instances.
 
-This initializer is equivalent to setting [`clippingMode`](portalcomponent/clippingmode-swift.property.md) with the same [`PortalComponent.Plane`](portalcomponent/plane.md).
+This initializer is equivalent to setting [`clippingMode`](portalcomponent/clippingmode-swift.property.md) with the corresponding [`PortalComponent.Plane`](portalcomponent/plane.md), leaving [`crossingMode`](portalcomponent/crossingmode-swift.property.md) at [`PortalComponent.CrossingMode.disabled`](portalcomponent/crossingmode-swift.enum/disabled.md).
+
+For new code, prefer [`init(target:clippingMode:crossingMode:)`](portalcomponent/init(target:clippingmode:crossingmode:).md), which lets you configure clipping and crossing together and supports volumetric boundaries.
 
 ## Parameters
 

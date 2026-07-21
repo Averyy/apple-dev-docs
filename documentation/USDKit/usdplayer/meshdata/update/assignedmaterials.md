@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: property
 
+Updated material bindings.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -15,6 +17,10 @@
 ```swift
 let assignedMaterials: [USDPlayer.MaterialID]?
 ```
+
+#### Discussion
+
+`nil` if unchanged.
 
 
 ---

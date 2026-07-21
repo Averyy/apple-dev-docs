@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: init
 
-Creates an `AnimationEvaluation` bundle with the given IK rigs and blend masks.
+Creates an `AnimationEvaluation` bundle with the given IK resources and blend masks.
 
 **Availability**:
 - iOS 27.0+ (Beta)

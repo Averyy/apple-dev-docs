@@ -39,6 +39,11 @@ struct BusyReason
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 
+## See Also
+
+- [var busyReasons: Set<AVProVideoStorage.BusyReason>](avprovideostorage/busyreasons.md)
+  Whether Pro Video Storage is busy and the associated reasons.
+
 
 ---
 

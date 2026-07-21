@@ -46,6 +46,15 @@ This structure provides metadata information about media content including title
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 
+## See Also
+
+- [protocol AVPlaybackUserInterfaceMetadataProviding](avplaybackuserinterfacemetadataproviding-814y4.md)
+  Provides metadata information about media content including title, artwork, and content type.
+- [class AVPlaybackUserInterfaceContentArtwork](avplaybackuserinterfacecontentartwork.md)
+  Base class representing artwork or cover art for media content.
+- [class AVPlaybackUserInterfaceContentURLArtwork](avplaybackuserinterfacecontenturlartwork.md)
+  An artwork subclass that references artwork via a URL and content type.
+
 
 ---
 

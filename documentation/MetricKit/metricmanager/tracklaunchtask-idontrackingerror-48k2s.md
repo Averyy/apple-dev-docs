@@ -42,7 +42,7 @@ await manager.trackLaunchTask(id: "initial-data-load", onTrackingError: { error 
 }
 ```
 
-This method replaces the paired `MXMetricManager.extendLaunchMeasurement(forTaskID:)` and `MXMetricManager.finishExtendedLaunchMeasurement(forTaskID:)` calls. To track synchronous launch work instead, use [`trackLaunchTask(id:onTrackingError:_:)`](metricmanager/tracklaunchtask(id:ontrackingerror:_:)-jnu1.md).
+To track synchronous launch work instead, use [`trackLaunchTask(id:onTrackingError:_:)`](metricmanager/tracklaunchtask(id:ontrackingerror:_:)-jnu1.md).
 
 ## See Also
 

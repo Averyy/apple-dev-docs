@@ -68,6 +68,8 @@ The system presents an `SWCollaborationView` that displays participants and shar
   A reference to an object that conforms to the CloudKit sharing controller delegate protocol.
 - [var cloudSharingServiceDelegate: (any NSCloudSharingServiceDelegate)?](swcollaborationview/cloudsharingservicedelegate.md)
   A reference to an object that conforms to the cloud-sharing service delegate protocol.
+### Instance Properties
+- [var pendingAccessRequestsCount: Int](swcollaborationview/pendingaccessrequestscount.md)
 
 ## Relationships
 

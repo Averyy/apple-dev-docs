@@ -3,7 +3,7 @@
 **Framework**: USDKit  
 **Kind**: struct
 
-An error that occurs while rendering or converting a USD stage for RealityKit.
+A non-fatal error produced during USD scene processing.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -18,11 +18,15 @@ An error that occurs while rendering or converting a USD stage for RealityKit.
 struct USDRenderError
 ```
 
+#### Overview
+
+An error that occurs while rendering or converting a USD stage for RealityKit.
+
 ## Topics
 
 ### Instance Properties
 - [var localizedDescription: String](usdrendererror/localizeddescription.md)
-  Retrieve the localized description for this error.
+  Human-readable description of the error.
 
 ## Relationships
 

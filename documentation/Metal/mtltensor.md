@@ -46,7 +46,7 @@ protocol MTLTensor : MTLResource
 - [func replace(sliceOrigin: MTLTensorExtents, sliceDimensions: MTLTensorExtents, plane: MTLTensorPlaneType, withBytes: UnsafeRawPointer, strides: MTLTensorExtents)](mtltensor/replace(sliceorigin:slicedimensions:plane:withbytes:strides:).md)
   Replaces a slice of a plane of this tensor with data from a pointer you provide.
 - [func replace(sliceOrigin: MTLTensorExtents, sliceDimensions: MTLTensorExtents, withBytes: UnsafeRawPointer, strides: MTLTensorExtents)](mtltensor/replace(sliceorigin:slicedimensions:withbytes:strides:).md)
-  Replaces a slice of the data plane plane of this tensor with data from a pointer you provide.
+  Replaces a slice of the data plane of this tensor with data from a pointer you provide.
 
 ## Relationships
 
@@ -60,11 +60,11 @@ protocol MTLTensor : MTLResource
 - [class MTLTensorDescriptor](mtltensordescriptor.md)
   A configuration type for creating new tensor instances.
 - [class MTLTensorExtents](mtltensorextents.md)
-  An array of length matching the rank, holding the dimensions of a tensor.
+  An integer array that holds per-dimension values such as tensor sizes, strides, or block factors
 - [class MTLTensorReferenceType](mtltensorreferencetype.md)
   An object that represents a tensor in the shading language in a struct or array.
 - [struct MTLTensorUsage](mtltensorusage.md)
-  The type that represents the different contexts for a tensor.
+  The contexts in which you can use a tensor.
 - [let MTLTensorDomain: String](mtltensordomain.md)
   An error domain for errors that pertain to creating a tensor.
 - [protocol MTLTensorBinding](mtltensorbinding.md)

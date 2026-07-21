@@ -22,7 +22,7 @@ struct CodableRepresentation
 
 #### Overview
 
-When a navigation path contains elements the conform to the [`Codable`](https://developer.apple.com/documentation/Swift/Codable) protocol, you can use the path’s `CodableRepresentation` to convert the path to an external representation and to convert an external representation back into a navigation path.
+When a navigation path contains elements that conform to the [`Codable`](https://developer.apple.com/documentation/Swift/Codable) protocol, you can use the path’s `CodableRepresentation` to convert the path to an external representation and to convert an external representation back into a navigation path.
 
 ## Relationships
 

@@ -21,13 +21,13 @@ static func extractRootMotion(jointName: String, options: SampledAnimation<Value
 
 #### Return Value
 
-A `SkeletalAnimationOperation` that, when processed, produces an `AnimationGroup` containing both the modified skeletal animation and the extracted SRT sampled animation used for root motion.
+A [`SampledAnimation.SkeletalAnimationOperation`](sampledanimation/skeletalanimationoperation.md) that, when processed, produces an [`AnimationGroup`](animationgroup.md) containing both the modified skeletal animation and the extracted transform sampled animation used for root motion.
 
 #### Discussion
 
-Removes the specified transform components from the joint and returns them as a separate `SampledAnimation<Transform>` in the resulting `AnimationGroup`. The skeletal animation will have the extracted motion removed.
+Removes the specified transform components from the joint and returns them as a separate `SampledAnimation<Transform>` in the resulting [`AnimationGroup`](animationgroup.md). The skeletal animation will have the extracted motion removed. The returned `SampledAnimation<Transform>` has [`bindTarget`](sampledanimation/bindtarget.md) set to [`BindTarget.rootMotion`](bindtarget/rootmotion.md) automatically — playing the group drives the entity’s root motion and emits [`AnimationEvents.RootMotionDidUpdate`](animationevents/rootmotiondidupdate.md) events.
 
-When you extract root motion, the function returns an `AnimationGroup` containing both the skeletal animation and the root motion animation. Playing back this group triggers root motion events in sync with the skeletal animation. The event callback receives the delta transform moved between the last frame and the current frame. If no event handler subscribes to the root motion on the target entity, the system automatically applies the delta to the entity’s transform.
+When you extract root motion, the function returns an [`AnimationGroup`](animationgroup.md) containing both the skeletal animation and the root motion animation. Playing back this group triggers root motion events in sync with the skeletal animation. The event callback receives the delta transform moved between the last frame and the current frame. If no event handler subscribes to the root motion on the target entity, the system automatically applies the delta to the entity’s transform.
 
 ## Parameters
 

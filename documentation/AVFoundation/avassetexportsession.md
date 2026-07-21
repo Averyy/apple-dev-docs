@@ -43,13 +43,7 @@ You configure this object to export an instance of [`AVAsset`](avasset.md) by se
   Returns all available export preset names.
 - [class func determineCompatibility(ofExportPreset: String, with: AVAsset, outputFileType: AVFileType?, completionHandler: (Bool) -> Void)](avassetexportsession/determinecompatibility(ofexportpreset:with:outputfiletype:completionhandler:).md)
   Determines an export preset’s compatibility to export the asset in a container of the output file type.
-- [class func exportPresets(compatibleWith: AVAsset) -> [String]](avassetexportsession/exportpresets(compatiblewith:).md)
-  Returns compatible export presets for the asset.
 ### Configuring output
-- [var outputURL: URL?](avassetexportsession/outputurl.md)
-  A URL where an asset export session writes its output.
-- [var outputFileType: AVFileType?](avassetexportsession/outputfiletype.md)
-  The file type of the output an asset export session writes.
 - [var supportedFileTypes: [AVFileType]](avassetexportsession/supportedfiletypes.md)
   An array containing the types of files the session can write.
 - [var allowsParallelizedExport: Bool](avassetexportsession/allowsparallelizedexport.md)
@@ -87,45 +81,33 @@ You configure this object to export an instance of [`AVAsset`](avasset.md) by se
 ### Exporting media
 - [func export(to: URL, as: AVFileType, isolation: isolated (any Actor)?) async throws](avassetexportsession/export(to:as:isolation:).md)
   Exports the asset to the output location in the specified file type.
-- [func cancelExport()](avassetexportsession/cancelexport.md)
-  Cancels the execution of an export session.
-- [func exportAsynchronously(completionHandler: () -> Void)](avassetexportsession/exportasynchronously(completionhandler:).md)
-  Starts the asynchronous execution of an export session.
 ### Monitoring export progress
 - [func states(updateInterval: TimeInterval) -> some Sendable & AsyncSequence<AVAssetExportSession.State, Never>
 ](avassetexportsession/states(updateinterval:).md)
   Monitors the progress state of an export operation.
 - [AVAssetExportSession.State](avassetexportsession/state.md)
   Constants that indicate the state of an export operation.
-- [var status: AVAssetExportSession.Status](avassetexportsession/status-swift.property.md)
-  The status of the export session.
 - [AVAssetExportSession.Status](avassetexportsession/status-swift.enum.md)
   Values that indicate the state of an export session.
-- [var progress: Float](avassetexportsession/progress.md)
-  A value that indicates the progress of the export.
-- [var error: (any Error)?](avassetexportsession/error.md)
-  An optional error object.
 ### Estimating file length and duration
 - [func estimateOutputFileLength(completionHandler: (Int64, (any Error)?) -> Void)](avassetexportsession/estimateoutputfilelength(completionhandler:).md)
   Starts estimating the output file length of the export while considering the asset, preset, and time range configuration of the export session.
-- [var estimatedOutputFileLength: Int64](avassetexportsession/estimatedoutputfilelength.md)
-  The estimated length of the exported file, in bytes.
 ### Estimating duration
 - [func estimateMaximumDuration(completionHandler: (CMTime, (any Error)?) -> Void)](avassetexportsession/estimatemaximumduration(completionhandler:).md)
   Starts estimating the maximum duration of the export while considering the asset, preset, and time range configuration of the export session.
-- [var maxDuration: CMTime](avassetexportsession/maxduration.md)
-  Provides an estimate of the maximum duration of the exported media.
 ### Accessing the asset
 - [var asset: AVAsset](avassetexportsession/asset.md)
   An asset that a session exports.
 ### Configuring resumable export
 - [func configureForResumableExport() async -> AVAssetExportSession.ResumptionState](avassetexportsession/configureforresumableexport.md)
   Configures the export session for resumable export.
-- [AVAssetExportSession.ResumptionFailureReason](avassetexportsession/resumptionfailurereason.md)
-  An enum that identifies various reasons why resumable export configuration has failed.
-### Enumerations
 - [AVAssetExportSession.ResumptionState](avassetexportsession/resumptionstate.md)
   Represents the resumption state of the export session.
+- [AVAssetExportSession.ResumptionFailureReason](avassetexportsession/resumptionfailurereason.md)
+  An enum that identifies various reasons why resumable export configuration has failed.
+### Deprecated
+- [Deprecated symbols](avassetexportsession-deprecated-symbols.md)
+  Review unsupported symbols and their replacements.
 
 ## Relationships
 

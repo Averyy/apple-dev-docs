@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: property
 
+Packed texture data.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -15,6 +17,10 @@
 ```swift
 let data: Data
 ```
+
+#### Discussion
+
+Use [`layout`](usdplayer/texturedata/layout.md) to locate each mip level.
 
 
 ---

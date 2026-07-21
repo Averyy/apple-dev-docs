@@ -96,8 +96,8 @@ Simple and straightforward sign-up and sign-in flows reduce the burden on the us
   A class to manage importing credentials.
 ### Single sign-on (SSO)
 - [Enterprise single sign-on (SSO)](enterprise-single-sign-on-sso.md)
-- [Platform single sign-on (SSO)](platform-single-sign-on-sso.md)
-  Use credentials from macOS login to perform single sign-on with an identity provider.
+- [Platform Single Sign-on (SSO)](platform-single-sign-on-sso.md)
+  Provide a Platform Single Sign-on (Platform SSO) extension to integrate your identity provider with macOS.
 ### Apple TV authentication
 - [var customAuthorizationMethods: [ASAuthorizationCustomMethod]](asauthorizationcontroller/customauthorizationmethods.md)
   An array of custom authorization methods for the user to choose.

@@ -33,12 +33,6 @@ If the image object’s underlying image data has been purged, calling this func
   ​ Load, display, edit, and save HDR images using SwiftUI and Core Image. ​
 - [func jpegData(compressionQuality: CGFloat) -> Data?](uiimage/jpegdata(compressionquality:).md)
   Returns a data object that contains the image in JPEG format.
-- [func UIGraphicsBeginImageContext(CGSize)](uigraphicsbeginimagecontext(_:).md)
-  Creates a bitmap-based graphics context and makes it the current context.
-- [func UIGraphicsGetImageFromCurrentImageContext() -> UIImage?](uigraphicsgetimagefromcurrentimagecontext().md)
-  Returns an image from the contents of the current bitmap-based graphics context.
-- [func UIGraphicsEndImageContext()](uigraphicsendimagecontext().md)
-  Removes the current bitmap-based graphics context from the top of the stack.
 
 
 ---

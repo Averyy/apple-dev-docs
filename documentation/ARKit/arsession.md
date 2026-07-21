@@ -105,6 +105,11 @@ Running a session requires a configuration. Subclasses of [`ARConfiguration`](ar
 ### Providing a session
 - [protocol ARSessionProviding](arsessionproviding.md)
   An object that provides a session.
+### Instance Properties
+- [var viewLayer: CALayer?](arsession/viewlayer.md)
+  The layer that displays the `ARFrame`, required before `viewRotationAngle` becomes available.
+- [var viewRotationAngle: CGFloat?](arsession/viewrotationangle-8847g.md)
+  The angle, in degrees, to rotate a view by so the `ARFrame` it displays stays level with the horizon as the device rotates.
 ### Instance Methods
 - [func captureHighResolutionFrame(using: AVCapturePhotoSettings?, completion: (ARFrame?, (any Error)?) -> Void)](arsession/capturehighresolutionframe(using:completion:).md)
   Requests a single, high resolution frame to be captured.

@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: property
 
+Asset-relative path to the source texture file.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)

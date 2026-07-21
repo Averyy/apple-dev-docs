@@ -14,7 +14,7 @@ To compose a request, first specify the root path — `https://api.ent.apple.com
 
 Follow this part of the path with `/catalog/`, the storefront, and then any parameters that are specific to the endpoint. All requests must include the storefront in the path.
 
-For example, to request information about a specific app, construct the URL with the app’s ID in the path:
+For example, to request information about a specific app, construct a URL with the app’s ID in the path:
 
 ```other
 GET https://api.ent.apple.com/v1/catalog/{storefront}/stoken-authenticated-apps?ids={id}&platform=iphone

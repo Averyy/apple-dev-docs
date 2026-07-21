@@ -4,7 +4,7 @@
 **Kind**: method  
 **Required**: Yes
 
-Replaces a slice of the data plane plane of this tensor with data from a pointer you provide.
+Replaces a slice of the data plane of this tensor with data from a pointer you provide.
 
 **Availability**:
 - iOS 26.0+
@@ -22,9 +22,11 @@ func replace(sliceOrigin: MTLTensorExtents, sliceDimensions: MTLTensorExtents, w
 
 #### Discussion
 
-Create the tensor with [`storageModeShared`](mtlresourceoptions/storagemodeshared.md) for CPU access via this method. Strides must be monotonically non-decreasing: for any `i > 0`, `strides[i] >= strides[i-1] * dimensions[i-1]`.
+Create the tensor with [`storageModeShared`](mtlresourceoptions/storagemodeshared.md) for CPU access via this method.
 
-The first dimension of `sliceOrigin` and `sliceDimensions` must be byte aligned.
+Strides need to be monotonically non-decreasing: for any `i > 0`, `strides[i] >= strides[i-1] * dimensions[i-1]`.
+
+The first dimension of `sliceOrigin` and `sliceDimensions` needs to be byte aligned.
 
 ## Parameters
 

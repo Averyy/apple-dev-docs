@@ -14,7 +14,7 @@ The following table maps example phrases that apply to each schema:
 | --- | --- |
 | [`startNavigation`](appschema/mapsintent/startnavigation.md) | “Navigate to work.” or “Take me home.” |
 | [`stopNavigation`](appschema/mapsintent/stopnavigation.md) | “Stop navigation.” or “Cancel directions.” |
-| [`addNavigationWaypoints`](appschema/mapsintent/addnavigationwaypoints.md) | “Add a stop.” or “Add coffee kiosk as a waypoint.” |
+| `AppSchema/MapsIntent/addNavigationWaypoints` | “Add a stop.” or “Add coffee kiosk as a waypoint.” |
 | [`shareETA`](appschema/mapsintent/shareeta.md) | “Share my ETA.” or “Send my ETA to Anne.” |
 | [`stopShareETA`](appschema/mapsintent/stopshareeta.md) | “Stop sharing my ETA.” |
 | [`reportIncident`](appschema/mapsintent/reportincident.md) | “Report an accident.” or “There’s a crash ahead.” |
@@ -26,8 +26,6 @@ For more information about making your app’s actions available to Apple Intell
 ## Topics
 
 ### Actions
-- [var addNavigationWaypoints: some AppSchemaIntent](appschema/mapsintent/addnavigationwaypoints.md)
-  An intent schema that adds waypoints to a navigation session.
 - [var reportIncident: some AppSchemaIntent](appschema/mapsintent/reportincident.md)
   An intent schema that reports a traffic incident on the route.
 - [var shareETA: some AppSchemaIntent](appschema/mapsintent/shareeta.md)

@@ -88,6 +88,16 @@ final class PDFDocument: ReferenceFileDocument {
 
 ## See Also
 
+- [protocol FileDocument](filedocument.md)
+  A type that you use to serialize documents to and from file.
+- [struct FileDocumentConfiguration](filedocumentconfiguration.md)
+  The properties of an open file document.
+- [struct FileDocumentReadConfiguration](filedocumentreadconfiguration.md)
+  The configuration for reading file contents.
+- [struct FileDocumentWriteConfiguration](filedocumentwriteconfiguration.md)
+  The configuration for serializing file contents.
+- [struct NewDocumentAction](newdocumentaction.md)
+  An action that presents a new document.
 - [struct ReferenceFileDocumentConfiguration](referencefiledocumentconfiguration.md)
   The properties of an open reference file document.
 

@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: method
 
-Sets components on an existing portal surface entity and its world entity, replacing any previously set `WorldComponent`, `ModelComponent`, or `PortalComponent`.
+Configures an existing pair of entities as a portal and its target world.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -21,20 +21,28 @@ static func configure(world: Entity, portalEntity: Entity, surfaceStyle: PortalC
 
 #### Discussion
 
-This method configures both entities in place:
+This method writes a coordinated set of components onto the two entities you provide. Use it when you already own both entities — for example, when the portal entity holds gestures or other components, or when the world entity is a child of an existing scene.
 
-- Sets `WorldComponent` on `world`
-- Sets `ModelComponent` with a flat plane mesh sized by `surfaceStyle`
-- Applies `PortalMaterial` to the portal surface
-- Configures `PortalComponent` with clipping and crossing modes from `boundaryStyle` and `boundaryMode`
+On the world entity, this method sets:
+
+- [`WorldComponent`](worldcomponent.md)
+
+On the portal entity, this method sets:
+
+- [`ModelComponent`](modelcomponent.md) with a flat plane mesh sized by `surfaceStyle`, applied with [`PortalMaterial`](portalmaterial.md)
+- [`PortalComponent`](portalcomponent.md) with [`clippingMode`](portalcomponent/clippingmode-swift.property.md) and [`crossingMode`](portalcomponent/crossingmode-swift.property.md) configured from `boundaryStyle` and `boundaryMode`
+
+This method replaces any existing [`WorldComponent`](worldcomponent.md), [`ModelComponent`](modelcomponent.md), or [`PortalComponent`](portalcomponent.md) on the entities. Other components on either entity are preserved.
+
+To create both entities at once, use [`makePortal(surfaceStyle:boundaryStyle:boundaryMode:)`](portalcomponent/makeportal(surfacestyle:boundarystyle:boundarymode:).md) instead.
 
 ## Parameters
 
-- `world`: The entity that will contain portal content (`WorldComponent` set automatically)
-- `portalEntity`: The entity that will act as the portal surface
-- `surfaceStyle`: The size of the portal mesh
-- `boundaryStyle`: The clipping and crossing boundary shape (default: `.infinitePlane()`)
-- `boundaryMode`: Whether to enable clipping, crossing, both, or neither (default: `.disabled`)
+- `world`: The entity that contains the portal’s content. Place portal world descendants under this entity.
+- `portalEntity`: The entity that displays the portal surface in the host scene.
+- `surfaceStyle`: The size of the portal surface mesh.
+- `boundaryStyle`: The shape of the clipping and crossing boundary. Defaults to [`infinitePlane()`](portalcomponent/boundarystyle/infiniteplane().md).
+- `boundaryMode`: The combination of clipping and crossing behaviors to enable. Defaults to [`PortalComponent.BoundaryMode.disabled`](portalcomponent/boundarymode/disabled.md).
 
 
 ---

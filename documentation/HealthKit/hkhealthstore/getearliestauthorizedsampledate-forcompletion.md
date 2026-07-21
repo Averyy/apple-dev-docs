@@ -16,7 +16,7 @@ Returns the earliest date that the person permits your app to read samples for t
 ## Declaration
 
 ```swift
-func earliestAuthorizedSampleDate(for types: Set<HKObjectType>) async throws -> [HKObjectType : Date]
+func getEarliestAuthorizedSampleDate(for types: Set<HKObjectType>, completion: @escaping @Sendable ([HKObjectType : Date]?, (any Error)?) -> Void)
 ```
 
 ## Mentions

@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: method
 
+Consumes and returns the [`USDPlayer.TextureData`](usdplayer/texturedata.md) for the given texture addition.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -15,6 +17,10 @@
 ```swift
 mutating func takeTextureAddition(id: USDPlayer.TextureID) -> USDPlayer.TextureData?
 ```
+
+#### Discussion
+
+Returns `nil` if not present.
 
 
 ---

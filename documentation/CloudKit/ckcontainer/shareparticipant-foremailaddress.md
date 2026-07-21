@@ -20,9 +20,11 @@ Fetches the share participant with the specified email address.
 func shareParticipant(forEmailAddress email: String) async throws -> CKShare.Participant
 ```
 
-#### Discussion
+#### Return Value
 
-- Returns The share participant for the email address.
+The share participant for the email address.
+
+#### Discussion
 
 CloudKit can translate any valid email address into a share participant. If the email address doesn’t correspond to a known iCloud account, then at share-accept-time, CloudKit offers the accepting participant a vetting process. The accepting participant uses this vetting process to link the email address to an iCloud account.
 

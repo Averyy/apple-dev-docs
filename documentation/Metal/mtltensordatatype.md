@@ -23,7 +23,7 @@ enum MTLTensorDataType
 
 ### Enumeration Cases
 - [MTLTensorDataType.bfloat16](mtltensordatatype/bfloat16.md)
-  A 16-bit floating point data type with 8 exponent bits, 7 mantissa bits and 1 sign bit.
+  A 16-bit floating point data type with 8 exponent bits, 7 mantissa bits, and 1 sign bit.
 - [MTLTensorDataType.float16](mtltensordatatype/float16.md)
   A half-precision floating point data type.
 - [MTLTensorDataType.float32](mtltensordatatype/float32.md)
@@ -31,31 +31,31 @@ enum MTLTensorDataType
 - [MTLTensorDataType.int16](mtltensordatatype/int16.md)
   A 16-bit signed integer data type.
 - [MTLTensorDataType.int2](mtltensordatatype/int2.md)
-  A 2-bit signed integer format data type.
+  A 2-bit signed integer data type.
 - [MTLTensorDataType.int32](mtltensordatatype/int32.md)
-  A 32-bit integer data type.
+  A 32-bit signed integer data type.
 - [MTLTensorDataType.int4](mtltensordatatype/int4.md)
-  A 4-bit signed integer format data type.
+  A 4-bit signed integer data type.
 - [MTLTensorDataType.int8](mtltensordatatype/int8.md)
   An 8-bit signed integer data type.
 - [MTLTensorDataType.metalFloat4e2m1](mtltensordatatype/metalfloat4e2m1.md)
-  A 4-bit floating point format data type with 2 exponent bits, 1 mantissa bit and 1 sign bit.
+  A 4-bit floating point data type with 2 exponent bits, 1 mantissa bit, and 1 sign bit.
 - [MTLTensorDataType.metalFloat8e4m3](mtltensordatatype/metalfloat8e4m3.md)
-  An 8-bit floating point format data type with 4 exponent bits, 3 mantissa bits and 1 sign bit.
+  An 8-bit floating point data type with 4 exponent bits, 3 mantissa bits, and 1 sign bit.
 - [MTLTensorDataType.metalFloat8e5m2](mtltensordatatype/metalfloat8e5m2.md)
-  An 8-bit floating point format data type with 5 exponent bits, 2 mantissa bits and 1 sign bit.
+  An 8-bit floating point data type with 5 exponent bits, 2 mantissa bits, and 1 sign bit.
 - [MTLTensorDataType.metalFloat8ue8m0](mtltensordatatype/metalfloat8ue8m0.md)
-  An 8-bit floating point format data type with 8 exponent bits.
+  An 8-bit floating point data type with 8 exponent bits, 0 mantissa bits, and no sign bit.
 - [MTLTensorDataType.none](mtltensordatatype/none.md)
   An invalid data type.
 - [MTLTensorDataType.uint16](mtltensordatatype/uint16.md)
   A 16-bit unsigned integer data type.
 - [MTLTensorDataType.uint2](mtltensordatatype/uint2.md)
-  A 2-bit unsigned integer format data type.
+  A 2-bit unsigned integer data type.
 - [MTLTensorDataType.uint32](mtltensordatatype/uint32.md)
   A 32-bit unsigned integer data type.
 - [MTLTensorDataType.uint4](mtltensordatatype/uint4.md)
-  A 4-bit unsigned integer format data type.
+  A 4-bit unsigned integer data type.
 - [MTLTensorDataType.uint8](mtltensordatatype/uint8.md)
   An 8-bit unsigned integer data type.
 ### Initializers
@@ -78,11 +78,11 @@ enum MTLTensorDataType
 - [class MTLTensorDescriptor](mtltensordescriptor.md)
   A configuration type for creating new tensor instances.
 - [class MTLTensorExtents](mtltensorextents.md)
-  An array of length matching the rank, holding the dimensions of a tensor.
+  An integer array that holds per-dimension values such as tensor sizes, strides, or block factors
 - [class MTLTensorReferenceType](mtltensorreferencetype.md)
   An object that represents a tensor in the shading language in a struct or array.
 - [struct MTLTensorUsage](mtltensorusage.md)
-  The type that represents the different contexts for a tensor.
+  The contexts in which you can use a tensor.
 - [let MTLTensorDomain: String](mtltensordomain.md)
   An error domain for errors that pertain to creating a tensor.
 - [protocol MTLTensorBinding](mtltensorbinding.md)

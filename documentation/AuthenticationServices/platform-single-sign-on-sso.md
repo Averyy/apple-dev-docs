@@ -1,49 +1,48 @@
-# Platform single sign-on (SSO)
+# Platform Single Sign-on (SSO)
 
 **Framework**: Authentication Services
 
-Use credentials from macOS login to perform single sign-on with an identity provider.
+Provide a Platform Single Sign-on (Platform SSO) extension to integrate your identity provider with macOS.
 
 #### Overview
 
-Platform single sign-on (SSO) is a replacement for binding to directory services. It builds on enterprise SSO capabilities so SSO extensions can also perform single sign-on for apps and websites. It integrates with macOS and doesn’t use JavaScript or render webpages for authentication.
+Platform SSO is a replacement for binding a Mac to directory services. It builds on enterprise SSO extensions to perform single sign-on for apps and websites.
 
-Platform SSO supports the following authentication methods with an identity provider (IdP):
+Platform SSO supports the following authentication methods with an identity provider:
 
-- **Password and encrypted password**: The IdP uses the local account password and keeps it in sync, including password updates from the login window and screensaver unlock.
-- **Password with WS-Trust**: A federated IdP, meaning an IdP that facilitates federated authentication across multiple security domains, can use the local account password for authentication.
-- **User secure enclave key**: A secure enclave-backed key can authenticate with the IdP without a password and without changing the local account password.
-- **SmartCard**: High-security customers can use a SmartCard to authenticate with the IdP.
+- Password: With this method, a user authenticates with the identity provider using a password. This method also supports WS-Trust, allowing the user to authenticate even when using a federated identity provider.
+- Secure Enclave–backed key: With this method, a user who logs in to their Mac with a local account password can use a Secure Enclave–backed key to authenticate with the identity provider without a password. The identity provider sets up the Secure Enclave key during the user registration process.
+- Web-based: With this method, a user authenticates on a web form that the identity provider presents. This web-based authentication method can also offer multistep authentication flows, and allows camera access for users to sign in by scanning a QR code.
+- Smart card: With this method, a user authenticates with the identity provider using a smart card. Register the smart card with the identity provider and configure smart card attribute-mapping on the Mac.
+- Access key: With this method, a user uses a pass stored in Apple Wallet to authenticate with the identity provider. As with a smart card, register the access key with the identity provider.
 
-Platform SSO can create new local user accounts on demand at the login window using IdP credentials, and also integrate IdP group membership with macOS. You can use network accounts for authorization, and groups can also authorize network accounts.
+Platform SSO can create new local user accounts on demand at the login window using identity provider credentials. It can also integrate identity provider group membership into macOS. You can use network accounts for authorization, and groups can also authorize network accounts.
 
-##### Platform Sso 20
+#### Implement Platform Sso 20
 
-Platform SSO 2.0 revises the system by adding a new Key service for SSO extensions and IdPs. When you use it, you need to implement an alternative registration flow and additional login configuration. Given this, the SSO extension must indicate that it supports the Key service before Platform SSO uses it.
+Platform SSO 2.0 revises the system by adding a new key service for SSO extensions and identity providers. Implement an alternative registration flow and additional login configuration to use it. Because Platform SSO 2.0 adds a new registration flow, the SSO extension must indicate that it supports the key service before Platform SSO can use the service.
 
-The Key service registers encryption keys that can unlock the Mac at the login window and screensaver unlock. Two kinds of requests exist: create a key and perform Diffie-Hellman key exchange. Platform SSO sends the request to create the key after the user registration call to the SSO extension completes successfully. The system then binds the key to the user’s account and performs multiple key exchange requests during this time. You can use the key service only with shared device keys because it must function before a user unlocks their key bag. See more detail on the key service below.
+The key service registers encryption keys that can unlock the Mac at the login window and screensaver unlock. The key service handles two request types: key creation and Diffie-Hellman key exchange. Platform SSO sends the request to create the key after the user registration call to the SSO extension completes successfully. The system then binds the key to the user’s account and performs multiple key exchange requests during this time. You can use the key service only with shared device keys because it must function before a user unlocks their key bag.
 
-##### Sso Tokens
+#### Migrate From User Keys to Shared Keys
 
-Regardless of authentication method, the system stores SSO tokens in the keychain using the keychain data protection attribute `kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly` and shares them with only the SSO extension. The SSO extension then uses the SSO tokens to authenticate the user to their on-premises apps and on websites as needed. If the SSO tokens are missing, expired, or more than 4 hours old, Platform SSO refreshes or retrieves new tokens from the IdP. The system can also retrieve Kerberos TGTs, import them to a credential cache, and (optionally) share them with the Kerberos SSO extension. For more information, see [`kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly`](https://developer.apple.comhttps://developer.apple.com/documentation/security/ksecattraccessibleafterfirstunlockthisdeviceonly).
+To migrate from user keys to shared keys, create new Secure Enclave–backed keys and register them with the server. The system calls device registration on the SSO extension with the [`registrationDeviceKeyMigration`](asauthorizationproviderextensionrequestoptions/registrationdevicekeymigration.md) option set. During this call only, both the user keys and the new shared keys become available. You can access them using the `loginManager.key(for:)` method. The SSO extension registers the new shared keys with the server and can use the existing user keys to provide a chain of trust.
 
-##### Device Management
+After device registration completes successfully, the system calls user registration with the [`registrationDeviceKeyMigration`](asauthorizationproviderextensionrequestoptions/registrationdevicekeymigration.md) option set. At this time, you should also migrate any user-specific login configuration to the [`ASAuthorizationProviderExtensionUserLoginConfiguration`](asauthorizationproviderextensionuserloginconfiguration.md). When user registration completes successfully, the system destroys the user keys and previous login configuration. For subsequent users, you repeat the same user registration flow, and the system destroys the user keys after a successful response.
 
-Use [`Device Management`](https://developer.apple.com/documentation/DeviceManagement) to securely configure platform SSO, including device and user registration, configuring groups, and managing account permissions.
+For more information, see [`Registering devices and users`](registering-devices-and-users.md).
 
-You can enable Platform SSO through the `com.apple.extensiblesso` device management payload, which applies only to redirect extensions. The PlatformSSO dictionary in the payload contains the Platform SSO options. `AuthenticationMethod` is the only required key, but you should strongly consider using shared device keys with `UseSharedDeviceKeys`. `AuthenticationMethod` specifies the authentication method for all users on the device. The possible values are `UserSecureEnclaveKey`, `Password`, or `SmartCard`. The SSO extension needs to also support the requested method to start registration. You can also switch methods—for example, you can create a new user account during login with a user name and password, then switch to Secure Enclave Backed key or SmartCard after the user reaches the desktop. The SSO extension can use the RegistrationToken for silent device registration.
+#### Use Sso Tokens
 
-You need to set the device management profile as a System profile when using shared device keys, because the configuration applies to all users. You can also configure user-specific extension data and registration tokens for individual users. If you have a User scoped `com.apple.extensiblesso` device management payload for the same extension without the PlatformSSO dictionary, the system uses the extension data and registration token for that user.
+Regardless of authentication method, the system stores SSO tokens in the keychain using the keychain data protection attribute [`kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly`](https://developer.apple.com/documentation/Security/kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly) and shares them only with the SSO extension.
 
-##### Group Membership
+The SSO extension then uses the SSO tokens to authenticate the user to their on-premises apps and on websites as needed. If the SSO tokens are missing, expired, or more than four hours old, Platform SSO refreshes or retrieves new tokens from the identity provider. The system can also retrieve Kerberos TGTs, import them to a credential cache, and (optionally) share them with the Kerberos SSO extension.
 
-Platform SSO requests group membership from the IdP using the device management configuration. During device registration, if the device management profile specifies `AdministratorGroups`, Platform SSO creates the local groups with the same name and adds them as subgroups of the admin group. If the device management profile specifies `AdditionalGroups`, Platform SSO also creates a local group for them. You need to handle use of the additional groups for other services such as `sudo` separately. If the device management profile specifies `AuthorizationGroups`, Platform SSO creates a local group and updates the associated authorization right to use the group.
+#### Configure Platform Sso Using Device Management
 
-During authentication, Platform SSO requests the super set of the groups from the IdP, and the login response contains the group membership for the user. Platform SSO adds the user to the groups returned and removes the user from the rest of the groups. You can trust the group membership for security decisions because the IdP signed them during the login request rather than retrieving them separately. Platform SSO updates the group membership only after authentication for a user.
+Use [`Device Management`](https://developer.apple.com/documentation/DeviceManagement) to securely configure Platform SSO, including registering devices and users, configuring groups, and managing account permissions.
 
-The groups are normal local groups on the Mac, and other processes could modify the membership. Administrators need to ensure sufficient controls and auditing are in place to prevent unauthorized changes.
-
-[!NOTE] You have an overall limit of 100 groups for performance and proper use. IdPs may also have lower limits. Use the groups for macOS, not for every group and every application in the organization. When using modern authentication, each application should independently request the groups necessary for itself.
+For more information, see [`Configuring Platform Single Sign-on`](https://developer.apple.com/documentation/DeviceManagement/configuring-platform-single-sign-on).
 
 ## Topics
 
@@ -67,6 +66,8 @@ The groups are normal local groups on the Mac, and other processes could modify 
   An interface for configuring platform single sign-on.
 - [class ASAuthorizationProviderExtensionLoginManager](asauthorizationproviderextensionloginmanager.md)
   An interface to maintain platform single sign-on (SSO) during authentication and registration.
+- [Configuring Platform Single Sign-on](../DeviceManagement/configuring-platform-single-sign-on.md)
+  Provide a seamless login and authentication experience when integrating with your identity provider.
 ### Authentication
 - [Authentication process](authentication-process.md)
   Use a system-supported method to authenticate with an identity provider.

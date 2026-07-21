@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: struct
 
-The quality for the shadows. Low uses shadows that don’t change with light size and the distance between light-blocker-receiver Medium and high allow soft shadows with varying sample counts
+Constants that select the shadow-filtering algorithm a spotlight uses.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -18,6 +18,12 @@ The quality for the shadows. Low uses shadows that don’t change with light siz
 ```swift
 struct QualityMode
 ```
+
+#### Overview
+
+[`low`](spotlightcomponent/shadow/qualitymode/low.md) produces a hard-edged shadow with a uniform width. The shadow ignores [`lightSize`](spotlightcomponent/shadow/lightsize.md) and the distance between the light, the shadow-casting geometry, and the receiving surface.
+
+[`medium`](spotlightcomponent/shadow/qualitymode/medium.md) and [`high`](spotlightcomponent/shadow/qualitymode/high.md) produce *soft* shadows whose penumbra widens as the receiving surface moves farther from the caster, approximating the appearance of an area light. [`high`](spotlightcomponent/shadow/qualitymode/high.md) takes more samples per pixel than [`medium`](spotlightcomponent/shadow/qualitymode/medium.md), producing a smoother penumbra at greater GPU cost.
 
 ## Topics
 
@@ -42,9 +48,9 @@ struct QualityMode
 ## See Also
 
 - [var quality: SpotLightComponent.Shadow.QualityMode](spotlightcomponent/shadow/quality.md)
-  The quality of the soft shadows this light casts.
+  The shadow-filtering algorithm this light uses.
 - [var lightSize: Float](spotlightcomponent/shadow/lightsize.md)
-  The light size that determines the softness of the shadows Larger size would mean a larger penumbra and a larger transition range from fully shadowed to lit. It is the radius of the light in world space units. It is also modulated by the attenaution radius, i.e., lights with larger attenuation radius need larger light size.
+  The radius of the spotlight’s emitting surface, in meters.
 
 
 ---

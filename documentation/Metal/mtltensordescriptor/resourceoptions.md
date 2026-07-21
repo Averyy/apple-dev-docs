@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: property
 
-A packed set of the `storageMode`, `cpuCacheMode` and `hazardTrackingMode` properties.
+A packed set of the [`storageMode`](mtltensordescriptor/storagemode.md), [`cpuCacheMode`](mtltensordescriptor/cpucachemode.md), and [`hazardTrackingMode`](mtltensordescriptor/hazardtrackingmode.md) properties.
 
 **Availability**:
 - iOS 26.0+

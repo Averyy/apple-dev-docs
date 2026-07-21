@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: case
 
-A path component to animate joint transforms.
+Identifies a sampled transform animation as root motion for its target entity.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -18,12 +18,6 @@ A path component to animate joint transforms.
 ```swift
 case rootMotion
 ```
-
-#### Discussion
-
-This path component terminates an array of components, and at the same time specifies the entity’s joint transforms that animate.
-
-This BindTarget references a root motion target  type
 
 
 ---

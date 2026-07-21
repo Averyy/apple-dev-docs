@@ -93,6 +93,7 @@ Collection views are a collaboration between many different objects, including:
   A streamlined interface for laying out a collection of views in either a column or a row.
 - [class UIScrollView](uiscrollview.md)
   A view that allows the scrolling and zooming of its contained views.
+- [class UILookToScrollInteraction](uilooktoscrollinteraction.md)
 
 
 ---

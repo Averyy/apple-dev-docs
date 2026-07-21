@@ -12,8 +12,6 @@ When you create a custom [`View`](view.md) with SwiftUI, Xcode can display a pre
 
 Different preview macros enable different kinds of configuration. For example, you can add traits that affect the preview’s appearance using the [`Preview(_:traits:_:body:)`](preview(_:traits:_:body:).md) macro or add custom viewpoints for the preview using the [`Preview(_:traits:body:cameras:)`](preview(_:traits:body:cameras:).md) macro. You can also check how your view behaves inside a specific scene type. For example, in visionOS you can use the [`Preview(_:immersionStyle:traits:body:)`](preview(_:immersionstyle:traits:body:).md) macro to preview your view inside an [`ImmersiveSpace`](immersivespace.md).
 
-You typically rely on preview macros to create previews in your code. However, if you can’t get the behavior you need using a preview macro, you can use the [`PreviewProvider`](previewprovider.md) protocol and its associated supporting types to define and configure a preview.
-
 ## Topics
 
 ### Essentials
@@ -28,6 +26,13 @@ You typically rely on preview macros to create previews in your code. However, i
   Creates a preview of a SwiftUI view using the specified traits and custom viewpoints.
 - [macro Preview<T>(String?, traits: PreviewTrait<Preview.ViewTraits>..., arguments: [T], body: (T) -> any View)](preview(_:traits:arguments:body:).md)
   Creates a group of previews of a parameterized SwiftUI view, varying its inputs over the provided arguments.
+### Customizing a preview
+- [macro Previewable()](previewable().md)
+  Tag allowing a dynamic property to appear inline in a preview.
+- [protocol PreviewModifier](previewmodifier.md)
+  A type that defines an environment in which previews can appear.
+- [struct PreviewModifierContent](previewmodifiercontent.md)
+  The type-erased content of a preview.
 ### Creating a preview in the context of a scene
 - [macro Preview<Style>(String?, immersionStyle: Style, traits: PreviewTrait<Preview.ViewTraits>..., body: () -> any View)](preview(_:immersionstyle:traits:body:).md)
   Creates a preview of a SwiftUI view in an immersive space.
@@ -37,40 +42,12 @@ You typically rely on preview macros to create previews in your code. However, i
   Creates a preview of a SwiftUI view in a window.
 - [macro Preview<Style>(String?, windowStyle: Style, traits: PreviewTrait<Preview.ViewTraits>..., body: () -> any View, cameras: () -> [PreviewCamera])](preview(_:windowstyle:traits:body:cameras:).md)
   Creates a preview of a SwiftUI view in a window with custom viewpoints.
-### Defining a preview
-- [macro Previewable()](previewable().md)
-  Tag allowing a dynamic property to appear inline in a preview.
-- [protocol PreviewProvider](previewprovider.md)
-  A type that produces view previews in Xcode.
-- [enum PreviewPlatform](previewplatform.md)
-  Platforms that can run the preview.
-- [func previewDisplayName(String?) -> some View](view/previewdisplayname(_:).md)
-  Sets a user visible name to show in the canvas for a preview.
-- [protocol PreviewModifier](previewmodifier.md)
-  A type that defines an environment in which previews can appear.
-- [struct PreviewModifierContent](previewmodifiercontent.md)
-  The type-erased content of a preview.
-### Customizing a preview
-- [func previewDevice(PreviewDevice?) -> some View](view/previewdevice(_:).md)
-  Overrides the device for a preview.
-- [struct PreviewDevice](previewdevice.md)
-  A simulator device that runs a preview.
-- [func previewLayout(PreviewLayout) -> some View](view/previewlayout(_:).md)
-  Overrides the size of the container for the preview.
-- [func previewInterfaceOrientation(InterfaceOrientation) -> some View](view/previewinterfaceorientation(_:).md)
-  Overrides the orientation of the preview.
-- [struct InterfaceOrientation](interfaceorientation.md)
-  The orientation of the interface from the user’s perspective.
-### Setting a context
-- [func previewContext<C>(C) -> some View](view/previewcontext(_:).md)
-  Declares a context for the preview.
-- [protocol PreviewContext](previewcontext.md)
-  A context type for use with a preview.
-- [protocol PreviewContextKey](previewcontextkey.md)
-  A key type for a preview context.
 ### Building in debug mode
 - [struct DebugReplaceableView](debugreplaceableview.md)
   Erases view opaque result types in debug builds.
+### Deprecated
+- [Deprecated](previews-deprecated.md)
+  Review deprecated preview symbols and their replacements.
 
 ## See Also
 

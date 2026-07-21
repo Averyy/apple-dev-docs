@@ -3,7 +3,7 @@
 **Framework**: ColorSync  
 **Kind**: property
 
-Whether Color Volume Transform is applied.
+The color volume transform to apply, if any.
 
 **Availability**:
 - iOS 27.0+ (Beta)

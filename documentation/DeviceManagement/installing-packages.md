@@ -95,7 +95,7 @@ In addition to the `.pkg` file, create a [`ManifestURL`](package/manifesturl.md)
           <key>kind</key>
           <string>software-package</string>
           <key>url</key>
-          <string>https://mdm.example.com/packages/MyPackage.pkg</string>
+          <string>https://devicemanagement.example.com/packages/MyPackage.pkg</string>
           <key>sha256</key>
           <string>49f6554726ae98521b02d89a86f2a7eea5611295fa2f67bf8bc44f679c121a2d</string>
         </dict>

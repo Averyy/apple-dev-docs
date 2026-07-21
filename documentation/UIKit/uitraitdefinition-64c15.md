@@ -88,6 +88,7 @@ Traits defined in Swift aren’t automatically bridged to Objective-C. If you ne
 - [UITraitResolvesNaturalAlignmentWithBaseWritingDirection](uitraitresolvesnaturalalignmentwithbasewritingdirection-swift.struct.md)
 - [UITraitSceneCaptureState](uitraitscenecapturestate-swift.struct.md)
 - [UITraitSplitViewControllerLayoutEnvironment](uitraitsplitviewcontrollerlayoutenvironment-swift.struct.md)
+- [UITraitSystemPrefersReducedResourceUsage](uitraitsystemprefersreducedresourceusage-swift.struct.md)
 - [UITraitTabAccessoryEnvironment](uitraittabaccessoryenvironment-swift.struct.md)
 - [UITraitToolbarItemPresentationSize](uitraittoolbaritempresentationsize-swift.struct.md)
 - [UITraitTypesettingLanguage](uitraittypesettinglanguage-swift.struct.md)

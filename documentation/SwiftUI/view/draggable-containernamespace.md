@@ -28,45 +28,45 @@ A view that activates this view as the source of a drag and drop operation, begi
 Applying the `draggable(_:containerNamespace_:)` modifier adds the appropriate gestures for drag and drop to this view.
 
 ```swift
-   var fruits: [Fruit]
+var fruits: [Fruit]
 
-   var body: some View {
-       ScrollView {
-           VStack {
-               ForEach(fruits) { fruit in
-                   FruitView(fruit)
-                       .draggable(fruit)
-               }
-           }
-       }
-   }
+var body: some View {
+    ScrollView {
+        VStack {
+            ForEach(fruits) { fruit in
+                FruitView(fruit)
+                    .draggable(fruit)
+            }
+        }
+    }
+}
 
-   struct Fruit: Identifiable, Transferable { ... }
+struct Fruit: Identifiable, Transferable { ... }
 ```
 
 If the draggable view is enclosed in a container, it participates in container drag-and-drop sessions:
 
 ```swift
-   var fruits: [Fruit]
-   var selectedFruits: [Fruit.ID]
+var fruits: [Fruit]
+var selectedFruits: [Fruit.ID]
 
-   var body: some View {
-       ScrollView {
-           VStack {
-               ForEach(fruits) { fruit in
-                   FruitView(fruit)
-                       .draggable(fruit)
-               }
-           }
-       }
-       .dragContainer(for: Fruit.self) { identifiers in
-           fruits(with: identifiers)
-       }
-       .dragContainerSelection(selectedFruits)
-   }
+var body: some View {
+    ScrollView {
+        VStack {
+            ForEach(fruits) { fruit in
+                FruitView(fruit)
+                    .draggable(fruit)
+            }
+        }
+    }
+    .dragContainer(for: Fruit.self) { identifiers in
+        fruits(with: identifiers)
+    }
+    .dragContainerSelection(selectedFruits)
+}
 
-   func fruits(with: [Fruit.ID]) -> [Fruit] { ... }
-   struct Fruit: Identifiable, Transferable { ... }
+func fruits(with: [Fruit.ID]) -> [Fruit] { ... }
+struct Fruit: Identifiable, Transferable { ... }
 ```
 
 When a drag operation begins, a rendering of this view is generated and used as the preview image.

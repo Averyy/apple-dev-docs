@@ -21,8 +21,6 @@ This metric corresponds to the [`MetricResult.totalFileCount(_:)`](metricresult/
 
 This value is a daily snapshot, not a cumulative sum over the reporting interval.
 
-This type replaces the `totalBinaryFileCount` and `totalDataFileCount` properties of [`MXDiskSpaceUsageMetric`](mxdiskspaceusagemetric.md).
-
 ## Topics
 
 ### Measurements

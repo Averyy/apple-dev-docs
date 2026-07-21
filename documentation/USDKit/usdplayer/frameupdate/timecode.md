@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: property
 
+The USD time code this update corresponds to.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)

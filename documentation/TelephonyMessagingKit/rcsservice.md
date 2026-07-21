@@ -215,6 +215,13 @@ Task {
 ### Structures
 - [RCSService.GroupChatSubjectInvalidatedEvent](rcsservice/groupchatsubjectinvalidatedevent.md)
   Event triggered when a group’s encryption state changes, which causes the group subject to be cleared on the server.
+### Instance Methods
+- [func sendMessage(RCSMessage.Reply, to: RCSHandle, using: CellularServiceID, messageID: RCSMessageID) async throws](rcsservice/sendmessage(_:to:using:messageid:)-61imq.md)
+  Sends a reply message to a specified destination.
+- [func sendMessage(RCSMessage.Reaction, to: RCSHandle, using: CellularServiceID, messageID: RCSMessageID) async throws](rcsservice/sendmessage(_:to:using:messageid:)-6kuet.md)
+  Sends a reaction message to a specified destination.
+- [func sendMessage(RCSMessage.CustomReaction, to: RCSHandle, using: CellularServiceID, messageID: RCSMessageID) async throws](rcsservice/sendmessage(_:to:using:messageid:)-8213t.md)
+  Sends a custom reaction message to a specified destination.
 
 ## Relationships
 

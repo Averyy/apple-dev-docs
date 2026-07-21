@@ -6,10 +6,10 @@
 Returns a Boolean value that indicates whether the connection supports a rotation angle.
 
 **Availability**:
-- iOS 4.0+
-- iPadOS 4.0+
-- Mac Catalyst 14.0+
-- macOS 10.7+
+- iOS 17.0+
+- iPadOS 17.0+
+- Mac Catalyst 17.0+
+- macOS 14.0+
 - tvOS 17.0+
 
 ## Declaration

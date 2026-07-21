@@ -3,6 +3,8 @@
 **Framework**: RealityKit  
 **Kind**: struct
 
+Parameters for the ambient occlusion bake type.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -27,14 +29,6 @@ struct AmbientOcclusionBakeDescriptor
 ### Conforms To
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
-
-## See Also
-
-- [LightmapResource.BakeDescriptor](lightmapresource/bakedescriptor.md)
-  Specifies parameters necessary to fetch a particular type of light map data for a given instance of a given mesh part.
-- [LightmapResource.FinalShadedColorBakeDescriptor](lightmapresource/finalshadedcolorbakedescriptor.md)
-- [LightmapResource.IndirectDiffuseIrradianceBakeDescriptor](lightmapresource/indirectdiffuseirradiancebakedescriptor.md)
-- [LightmapResource.IndirectDiffuseIrradianceSHBakeDescriptor](lightmapresource/indirectdiffuseirradianceshbakedescriptor.md)
 
 
 ---

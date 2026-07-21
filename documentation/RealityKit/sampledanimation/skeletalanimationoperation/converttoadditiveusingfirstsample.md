@@ -21,7 +21,7 @@ static func convertToAdditiveUsingFirstSample() -> SampledAnimation<Value>.Skele
 
 #### Return Value
 
-A `SkeletalAnimationOperation` that, when processed, produces a `SampledAnimation<JointTransforms>` in additive format.
+A [`SampledAnimation.SkeletalAnimationOperation`](sampledanimation/skeletalanimationoperation.md) that, when processed, produces a `SampledAnimation<JointTransforms>` in additive format.
 
 #### Discussion
 

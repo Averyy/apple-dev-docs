@@ -19,10 +19,6 @@ A dictionary mapping the descendants of the LightmapComponent-holding entity to 
 var entityIndexInLightmapResource: [Entity : LightmapComponent.EntityIndex]
 ```
 
-## See Also
-
-- [LightmapComponent.EntityIndex](lightmapcomponent/entityindex.md)
-
 
 ---
 

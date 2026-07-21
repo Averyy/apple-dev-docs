@@ -43,6 +43,8 @@ If validation succeeds, the system saves the response tokens to the keychain usi
 
 For a group membership request, the system adds the user to the groups that the IdP supplies in the `id_token`, and it removes the user from the groups not returned. The system ignores groups that you didn’t specify in the Device Management profile.
 
+For more information, see [`Configuring Platform Single Sign-on`](https://developer.apple.com/documentation/DeviceManagement/configuring-platform-single-sign-on).
+
 ## See Also
 
 - [Creating a JSON Web Encryption (JWE) login response](creating-a-json-web-encryption-jwe-login-response.md)

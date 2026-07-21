@@ -3,6 +3,8 @@
 **Framework**: App Intents  
 **Kind**: protocol
 
+An interface for defining the criteria to use when searching your app’s content.
+
 **Availability**:
 - iOS 17.2+
 - iPadOS 17.2+
@@ -17,6 +19,10 @@
 ```swift
 protocol SearchCriteria : _IntentValue, Hashable, Sendable
 ```
+
+#### Overview
+
+The system uses this protocol to define the search criteria it supports. Use only the system-defined types that adopt this protocol, and don’t adopt this protocol in your own types.
 
 ## Topics
 
@@ -36,8 +42,9 @@ protocol SearchCriteria : _IntentValue, Hashable, Sendable
 ## See Also
 
 - [var criteria: Self.Criteria](showinappsearchresultsintent/criteria-swift.property.md)
+  The information to use when performing the search.
 - [struct StringSearchCriteria](stringsearchcriteria.md)
-  A structure that represents a string-based search request.
+  A type that tells your app to match its items against a provided string.
 - [associatedtype Criteria : SearchCriteria](showinappsearchresultsintent/criteria-swift.associatedtype.md)
 
 

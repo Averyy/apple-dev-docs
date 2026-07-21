@@ -21,7 +21,7 @@ static func removeAnimation(for jointName: String) -> SampledAnimation<Value>.Sk
 
 #### Return Value
 
-A `SkeletalAnimationOperation` that, when processed, produces a `SampledAnimation<JointTransforms>` with animation removed.
+A [`SampledAnimation.SkeletalAnimationOperation`](sampledanimation/skeletalanimationoperation.md) that, when processed, produces a `SampledAnimation<JointTransforms>` with animation removed.
 
 ## Parameters
 

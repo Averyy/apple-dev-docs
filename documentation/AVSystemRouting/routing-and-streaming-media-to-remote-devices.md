@@ -88,7 +88,7 @@ When the person deactivates a device or the system tears down the route, the sys
 
 ##### Start and Control a Session
 
-When an app on the device starts a session to a route your extension manages, the system calls [`startSession(_:identifier:url:)`](https://developer.apple.com/documentation/MediaDevice/MediaDeviceExtension/startSession(_:identifier:url:)). At this point, create a `PlaybackControl` object that conforms to [`AVInterfaceControllable`](https://developer.apple.com/documentation/AVKit/AVInterfaceControllable-3xs3i) and assign it locally:
+When an app on the device starts a session to a route your extension manages, the system calls [`startSession(_:identifier:url:)`](https://developer.apple.com/documentation/MediaDevice/MediaDeviceExtension/startSession(_:identifier:url:)). At this point, create a `PlaybackControl` object that conforms to doc://com.apple.documentation/documentation/AVKit/AVInterfaceControllable-3xs3i and assign it locally:
 
 ```swift
 func startSession(
@@ -109,7 +109,7 @@ Pass the control object to the routing manager to hand it to the system:
 }
 ```
 
-`AVInterfaceControllable` is a composite protocol that combines playback state, time, volume, media selection, and metadata interfaces. Implement the subprotocols in your `PlaybackControl` class. The system reads and writes properties such as [`isPlaying`](https://developer.apple.com/documentation/AVKit/AVInterfacePlaybackControllable-44aba/isPlaying) and [`currentPlaybackPosition`](https://developer.apple.com/documentation/AVKit/AVInterfaceTimeControllable-63tkp/currentPlaybackPosition) to command the remote device. When the property setter activates, translate the new value into a command you send to the remote device over your transport layer:
+`AVInterfaceControllable` is a composite protocol that combines playback state, time, volume, media selection, and metadata interfaces. Implement the subprotocols in your `PlaybackControl` class. The system reads and writes properties such as doc://com.apple.documentation/documentation/avkit/avinterfaceplaybackcontrollable-44aba/isplaying and doc://com.apple.documentation/documentation/avkit/avinterfacetimecontrollable-63tkp/currentplaybackposition to command the remote device. When the property setter activates, translate the new value into a command you send to the remote device over your transport layer:
 
 ```swift
 var isPlaying: Bool {
@@ -133,7 +133,7 @@ var currentPlaybackPosition: CMTime {
 }
 ```
 
-Implement the remaining [`AVInterfaceControllable`](https://developer.apple.com/documentation/AVKit/AVInterfaceControllable-3xs3i) properties as stored properties that reflect the remote device’s current state. Update them whenever you receive status updates from the device. To ensure smooth UI updates across the system and media-playing apps, provide updates on a regular cadence and for changes in playback state.
+Implement the remaining doc://com.apple.documentation/documentation/AVKit/AVInterfaceControllable-3xs3i properties as stored properties that reflect the remote device’s current state. Update them whenever you receive status updates from the device. To ensure smooth UI updates across the system and media-playing apps, provide updates on a regular cadence and for changes in playback state.
 
 When the session ends, the system calls [`stopSession(_:)`](https://developer.apple.com/documentation/MediaDevice/MediaDeviceExtension/stopSession(_:)). Stop remote playback, release resources associated with generating streaming data, and set your stored `PlaybackControl` reference to `nil`.
 
@@ -203,7 +203,7 @@ do {
 }
 ```
 
-[`playbackControl`](avsystemroutemediasession-98ioq/playbackcontrol.md) provides an object conforming to [`AVInterfaceControllable`](https://developer.apple.com/documentation/AVKit/AVInterfaceControllable-3xs3i), the same interface the extension implemented. Use it to read playback state and issue commands. When someone stops playback, call [`stop()`](avsystemroutesession-gp78/stop().md) and then [`removeSession(_:)`](avsystemroute-5s2um/removesession(_:).md) to clean up.
+[`playbackControl`](avsystemroutemediasession-98ioq/playbackcontrol.md) provides an object conforming to doc://com.apple.documentation/documentation/AVKit/AVInterfaceControllable-3xs3i, the same interface the extension implemented. Use it to read playback state and issue commands. When someone stops playback, call [`stop()`](avsystemroutesession-gp78/stop().md) and then [`removeSession(_:)`](avsystemroute-5s2um/removesession(_:).md) to clean up.
 
 ##### Communicate Between App and Extension
 

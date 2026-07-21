@@ -32,6 +32,11 @@ The encoderSpecification parameter here is the same encoder specification the cl
 - `codecType`: The output video codec type for the video track.
 - `encoderSpecification`: A dictionary of kVTVideoEncoderSpecification_* keys describing the video encoder. This is the same specification the client uses to compress the video track.
 
+## See Also
+
+- [class func segmentBoundaryRecommendations(forVideoTrack: AVAssetTrack, minimumSegmentDuration: CMTime, minimumSegmentFrameCount: Int) -> [AVPlannedVideoSegmentConfiguration]](avassetwritingplanner/segmentboundaryrecommendations(forvideotrack:minimumsegmentduration:minimumsegmentframecount:).md)
+  Returns segment boundary recommendations for a given source video asset track.
+
 
 ---
 

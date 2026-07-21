@@ -9,7 +9,6 @@ Creates a command with the specified title, image, action, property list, altern
 - iOS 13.0+
 - iPadOS 13.0+
 - Mac Catalyst 13.0+
-- tvOS 14.0+
 - visionOS ?+
 
 ## Declaration

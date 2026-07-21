@@ -20,6 +20,7 @@ func updateProperties()
 
 ## Mentions
 
+- [Presenting content on a connected display](presenting-content-on-a-connected-display.md)
 - [Updating views automatically with observation tracking in UIKit](updating-views-automatically-with-observation-tracking-in-uikit.md)
 
 #### Overview

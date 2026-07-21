@@ -32,28 +32,28 @@ Applying the `draggable(containerItemID:containerNamespace:)` modifier to a view
 Below, each `FruitView` is assigned an identifier: a code of a fruit it represents. When dragging begins, the `dragContainer` closure is called with the codes of the selected fruit, or, if a user drags a view that is not selected, the closure receives the identifier of that view as a parameter.
 
 ```swift
-   var fruits: [Fruit]
-   var selectedFruitCodes: [UUID]
+var fruits: [Fruit]
+var selectedFruitCodes: [UUID]
 
-   var body: some View {
-       VStack {
-           ForEach(fruits) { fruit in
-               FruitView(fruit)
-                   .draggable(containerItemID: fruit.code)
-           }
-       }
-       .dragContainer { codes in
-           fruits(with: codes)
-       }
-       .dragContainerSelection(selectedFruitCodes)
-   }
+var body: some View {
+    VStack {
+        ForEach(fruits) { fruit in
+            FruitView(fruit)
+                .draggable(containerItemID: fruit.code)
+        }
+    }
+    .dragContainer { codes in
+        fruits(with: codes)
+    }
+    .dragContainerSelection(selectedFruitCodes)
+}
 
-   func fruits(with codes: [UUID]) -> [Fruit] { ... }
+func fruits(with codes: [UUID]) -> [Fruit] { ... }
 
-   struct Fruit: Transferable {
-       var code: UUID
-       ...
-   }
+struct Fruit: Transferable {
+    var code: UUID
+    ...
+}
 ```
 
 ## Parameters

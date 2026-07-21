@@ -16,7 +16,8 @@ var tokenStyle: NSTokenField.TokenStyle { get set }
 
 ## See Also
 
-- [Token Field Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/TokenField_Guide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40006555)
+- [var tokenStyle: NSTokenField.TokenStyle](nstokenfieldcell/tokenstyle.md)
+  The token style of the receiver.
 
 
 ---

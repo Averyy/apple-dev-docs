@@ -10,6 +10,7 @@ A collection of mutable references to async states, used as the states argument 
 - iPadOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 

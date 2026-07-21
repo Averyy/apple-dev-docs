@@ -10,6 +10,7 @@ A type-erased mutable view over the memory owned by a tensor.
 - iPadOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -52,6 +53,9 @@ struct MutableRawView
   Returns a sub-view with the same rank as this view by slicing the dimensions at the provided ranges.
 - [func mutatingSlice(at: [any NDArray.RangeExpression]) -> NDArray.MutableRawView](ndarray/mutablerawview/mutatingslice(at:)-5ts4w.md)
   Returns a sub-view with the same rank as this view by slicing the dimensions at the provided ranges.
+### Instance Methods
+- [func withUnsafeMutableBytes<R, E>((UnsafeMutableRawPointer, Span<Int>, Span<Int>) throws(E) -> R) throws(E) -> R](ndarray/mutablerawview/withunsafemutablebytes(_:).md)
+  Invokes the provided closure with the backing data and memory layout of this view.
 
 ## See Also
 

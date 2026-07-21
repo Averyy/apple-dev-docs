@@ -217,13 +217,14 @@ RealityKit includes a few material types to help you get started, including [`Si
 - [struct RenderLayerComponent](renderlayercomponent.md)
   A component that defines which layers an entity participates in.
 - [struct RenderLayer](renderlayer.md)
-  A structured representation of render layers that provides type safety and clear semantics.
+  A named identifier for a group of meshes and lights.
 - [struct ClippingComponent](clippingcomponent.md)
   A component that clips entities and their children to a customizable bounding box volume with feathered edges.
 - [struct OcclusionCullingComponent](occlusioncullingcomponent.md)
   A component that controls whether the system performs occlusion culling on the owning Entity and its descendants.
 ### Decals
 - [struct PhysicallyBasedDecalComponent](physicallybaseddecalcomponent.md)
+  A component that specifies a decal to be applied on the scene. A decal is essentially a projective texture applied to any mesh on the scene. The transform of the decal is inherited from the entity’s transform. The decal is projected along the local space negative z onto the meshes within its volume. All decal textures expect 2D texture resources. Decal textures do not support custom sampler, UV index, or swizzle options from [`PhysicallyBasedMaterial`](physicallybasedmaterial.md) parameter types. All textures are sampled using bilinear filtering, projected UVs from the decal volume, and fixed channel mapping. Decals are available on devices with Apple6 GPU family feature support.
 
 ## See Also
 

@@ -24,7 +24,7 @@ case text(String)
   Items from a Spotlight query.
 - [SearchPipelineData.Payload.scoredItems(_:)](searchpipelinedata/payload-swift.enum/scoreditems(_:).md)
   Items annotated with caller-assigned relevance scores.
-- [case groupedItems([SearchableItemAttribute : [CSSearchableItem]])](searchpipelinedata/payload-swift.enum/groupeditems(_:).md)
+- [case groupedItems([SearchableItemAttribute : [SearchableItem]])](searchpipelinedata/payload-swift.enum/groupeditems(_:).md)
   Items partitioned by an attribute value (e.g. content type).
 - [SearchPipelineData.Payload.count(_:)](searchpipelinedata/payload-swift.enum/count(_:).md)
   A scalar count derived from items (e.g., 47).

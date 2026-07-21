@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: struct
 
+Delta update carrying only the deformation fields that changed since the last frame.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -20,12 +22,13 @@ struct Update
 
 ### Instance Properties
 - [let blendShapes: USDPlayer.DeformationData.BlendShapeData.Update?](usdplayer/deformationdata/update/blendshapes.md)
-  Changed blend shape data; nil if unchanged
+  Changed blend shape data.
 - [let id: USDPlayer.DeformationID](usdplayer/deformationdata/update/id.md)
+  Unique identifier for the deformation resource being updated.
 - [let renormalization: USDPlayer.DeformationData.RenormalizationData.Update?](usdplayer/deformationdata/update/renormalization.md)
-  Changed renormalization data; nil if unchanged
+  Changed renormalization data.
 - [let skinning: USDPlayer.DeformationData.SkinningData.Update?](usdplayer/deformationdata/update/skinning.md)
-  Changed skinning data; nil if unchanged
+  Changed skinning data.
 
 ## Relationships
 

@@ -19,10 +19,6 @@ The LightmapResource backing this component.
 var lightmap: LightmapResource { get set }
 ```
 
-## See Also
-
-- [init(resource: LightmapResource)](lightmapcomponent/init(resource:).md)
-
 
 ---
 

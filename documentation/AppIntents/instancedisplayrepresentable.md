@@ -28,9 +28,6 @@ protocol InstanceDisplayRepresentable : CustomLocalizedStringResourceConvertible
 ### Providing a localized description
 - [var localizedStringResource: LocalizedStringResource](instancedisplayrepresentable/localizedstringresource.md)
   A resource that helps provide a description of this instance.
-### Instance Methods
-- [func displayRepresentation(with: DisplayRepresentation.Components) async -> DisplayRepresentation](instancedisplayrepresentable/displayrepresentation(with:).md)
-  Asynchronous method to retrieve the DisplayRepresentation with the requested components.
 ### Default Implementations
 - [CustomLocalizedStringResourceConvertible Implementations](instancedisplayrepresentable/customlocalizedstringresourceconvertible-implementations.md)
 

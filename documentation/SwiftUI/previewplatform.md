@@ -58,16 +58,10 @@ struct CircleImage_Previews: PreviewProvider {
 
 ## See Also
 
-- [macro Previewable()](previewable().md)
-  Tag allowing a dynamic property to appear inline in a preview.
 - [protocol PreviewProvider](previewprovider.md)
   A type that produces view previews in Xcode.
 - [func previewDisplayName(String?) -> some View](view/previewdisplayname(_:).md)
   Sets a user visible name to show in the canvas for a preview.
-- [protocol PreviewModifier](previewmodifier.md)
-  A type that defines an environment in which previews can appear.
-- [struct PreviewModifierContent](previewmodifiercontent.md)
-  The type-erased content of a preview.
 
 
 ---

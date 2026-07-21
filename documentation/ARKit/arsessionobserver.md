@@ -49,6 +49,9 @@ This protocol defines optional methods common to the [`ARSessionDelegate`](arses
 ### Managing Collaboration
 - [func session(ARSession, didOutputCollaborationData: ARSession.CollaborationData)](arsessionobserver/session(_:didoutputcollaborationdata:).md)
   Provides information for nearby users about your perspective in the environment.
+### Instance Methods
+- [func session(ARSession, didChangeViewRotationAngle: CGFloat)](arsessionobserver/session(_:didchangeviewrotationangle:).md)
+  This is called when the view rotation angle changes.
 
 ## Relationships
 

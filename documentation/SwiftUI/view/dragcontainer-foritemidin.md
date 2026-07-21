@@ -28,27 +28,27 @@ A view that can be activated as the source of a drag and drop operation, beginni
 In an example below, an app presents a view with `Fruit` values. `Fruit` does not conform to `Identifiable` but uses its name as its identifier.
 
 ```swift
-   @State private var fruits: [Fruit]
-   @State private var selection: [String]
+@State private var fruits: [Fruit]
+@State private var selection: [String]
 
-   var body: some View {
-       VStack {
-           ForEach(fruits) { fruit in
-               FruitView(fruit)
-                   .draggable(containerItemID: fruit.name)
-           }
-       }
-       .dragContainer(itemID: \Fruit.name) { ids in
-          fruits(with: ids)
-       }
-   }
+var body: some View {
+    VStack {
+        ForEach(fruits) { fruit in
+            FruitView(fruit)
+                .draggable(containerItemID: fruit.name)
+        }
+    }
+    .dragContainer(itemID: \Fruit.name) { ids in
+       fruits(with: ids)
+    }
+}
 
-   func fruits(with ids: [String]) -> [Fruit] { ... }
+func fruits(with ids: [String]) -> [Fruit] { ... }
 
-   struct Fruit: Transferable {
-       var name: String
-       ...
-   }
+struct Fruit: Transferable {
+    var name: String
+    ...
+}
 ```
 
 To enable multi-item drag, apply this modifier to a container view and mark each draggable child with [`draggable(_:)`](view/draggable(_:).md) or [`draggable(containerItemID:containerNamespace:)`](view/draggable(containeritemid:containernamespace:).md).

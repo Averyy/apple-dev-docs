@@ -17,6 +17,11 @@ Frame of the title view within the interface.
 var titleViewFrame: CGRect
 ```
 
+## See Also
+
+- [var frame: CGRect](documentlaunchgeometryproxy/frame.md)
+  Frame of the document launch interface.
+
 
 ---
 

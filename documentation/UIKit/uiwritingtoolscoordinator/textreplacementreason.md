@@ -28,6 +28,13 @@ During an operation, Writing Tools delivers replacement text to the delegate of 
   An option to animate the replacement of text in your view.
 - [UIWritingToolsCoordinator.TextReplacementReason.noninteractive](uiwritingtoolscoordinator/textreplacementreason/noninteractive.md)
   An option to replace the text in your view without animating the change.
+### Enumeration Cases
+- [UIWritingToolsCoordinator.TextReplacementReason.accepted](uiwritingtoolscoordinator/textreplacementreason/accepted.md)
+  An option to replace the text in your view when a grammar suggestion is accepted.
+- [UIWritingToolsCoordinator.TextReplacementReason.rejected](uiwritingtoolscoordinator/textreplacementreason/rejected.md)
+  An option to replace the text in your view when a grammar suggestion is rejected.
+- [UIWritingToolsCoordinator.TextReplacementReason.temporary](uiwritingtoolscoordinator/textreplacementreason/temporary.md)
+  An option to replace the text in your view when a grammar suggestion is temporarily shown to preview the proposed change in the text.
 ### Initializers
 - [init?(rawValue: Int)](uiwritingtoolscoordinator/textreplacementreason/init(rawvalue:).md)
 

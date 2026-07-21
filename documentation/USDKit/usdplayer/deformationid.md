@@ -3,7 +3,7 @@
 **Framework**: USDKit  
 **Kind**: struct
 
-Deformation resource identifier
+Deformation resource identifier.
 
 **Availability**:
 - iOS 27.0+ (Beta)

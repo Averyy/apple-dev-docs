@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: struct
 
-A configured portal surface and its associated world entity.
+A pair of related entities that make up a configured portal.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -19,13 +19,17 @@ A configured portal surface and its associated world entity.
 struct Portal
 ```
 
+#### Overview
+
+[`makePortal(surfaceStyle:boundaryStyle:boundaryMode:)`](portalcomponent/makeportal(surfacestyle:boundarystyle:boundarymode:).md) returns this value. You’re responsible for adding both entities to your scene.
+
 ## Topics
 
 ### Instance Properties
 - [let portalEntity: Entity](portalcomponent/portal/portalentity.md)
-  The portal entity with `ModelComponent` and `PortalComponent`.
+  The entity that has the portal surface mesh, [`PortalMaterial`](portalmaterial.md), and [`PortalComponent`](portalcomponent.md).
 - [let worldEntity: Entity](portalcomponent/portal/worldentity.md)
-  The world entity with `WorldComponent` for portal content.
+  The entity that has [`WorldComponent`](worldcomponent.md). Add portal world content as descendants of this entity.
 
 
 ---

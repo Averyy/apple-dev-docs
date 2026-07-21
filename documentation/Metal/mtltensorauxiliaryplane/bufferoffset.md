@@ -4,7 +4,7 @@
 **Kind**: property  
 **Required**: Yes
 
-Byte offset into `buffer` where this plane’s data begins, or 0 if no buffer was provided at initialization.
+The byte offset into [`buffer`](mtltensorauxiliaryplane/buffer.md) where this plane’s data begins, or `0` if no buffer was provided at initialization.
 
 **Availability**:
 - iOS 27.0+ (Beta)

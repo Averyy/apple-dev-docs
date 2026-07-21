@@ -4,7 +4,7 @@
 **Kind**: property  
 **Required**: Yes
 
-Describes how many data plane elements correspond to one element in this plane.
+The number of data plane elements that correspond to one element in this auxiliary plane.
 
 **Availability**:
 - iOS 27.0+ (Beta)

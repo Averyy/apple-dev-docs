@@ -4,7 +4,7 @@
 **Kind**: property  
 **Required**: Yes
 
-A list of X.509 authority key identifiers which are accepted by the relying party.
+A list of X.509 authority key identifiers your app accepts.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -22,7 +22,14 @@ var issuerIdentifiers: [Data] { get set }
 
 An empty list means any document signer certificate is acceptable.
 
-> ⚠️ **Warning**: The number of issuer identifiers must not exceed 1,000 and the size of each identifier must not exceed 64 bytes. Your app will terminate if these conditions are not met.
+> ⚠️ **Warning**: You can’t have more than 1,000 issuer identifiers, and the size of each identifier can’t exceed 64 bytes. If you don’t meet these conditions, your app terminates.
+
+## See Also
+
+- [var elements: [PKIdentityElement]](pkidentitydocumentdescriptor/elements.md)
+  A list of identity elements to request.
+- [class PKIdentityElement](pkidentityelement.md)
+  An object that represents the elements an app requests from identity documents.
 
 
 ---

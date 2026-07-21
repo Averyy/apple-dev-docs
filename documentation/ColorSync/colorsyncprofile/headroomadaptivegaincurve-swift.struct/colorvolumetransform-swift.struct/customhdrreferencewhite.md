@@ -3,7 +3,7 @@
 **Framework**: ColorSync  
 **Kind**: property
 
-Whether Custom Reference White is used
+A custom HDR reference white value, if specified.
 
 **Availability**:
 - iOS 27.0+ (Beta)

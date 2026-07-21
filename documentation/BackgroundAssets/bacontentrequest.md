@@ -3,7 +3,7 @@
 **Framework**: Background Assets  
 **Kind**: enum
 
-The content request type used in the downloader extension.
+A type that indicates the purpose of a content download request.
 
 **Availability**:
 - iOS 16.1+

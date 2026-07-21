@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: property
 
+USD prim path this material corresponds to.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)

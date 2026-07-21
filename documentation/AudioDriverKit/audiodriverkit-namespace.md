@@ -1,6 +1,6 @@
 # AudioDriverKit
 
-**Framework**: Audiodriverkit  
+**Framework**: AudioDriverKit  
 **Kind**: namespace
 
 **Availability**:

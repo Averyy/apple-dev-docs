@@ -25,7 +25,7 @@ func invalidatableContent(_ invalidatable: Bool = true) -> some View
 
 Use this modifier to annotate views that display values that are derived from the current state of your data and might be invalidated in response of, for example, user interaction.
 
-The view will change its appearance when `RedactionReasons.invalidated` is present in the environment.
+The view will change its appearance when [`invalidated`](redactionreasons/invalidated.md) is present in the environment.
 
 In an interactive widget a view is invalidated from the moment the user interacts with a control on the widget to the moment when a new timeline update has been presented.
 

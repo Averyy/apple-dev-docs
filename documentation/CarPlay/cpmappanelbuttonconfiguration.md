@@ -22,7 +22,7 @@ class CPMapPanelButtonConfiguration
 ### Instance Properties
 - [var secondaryButton: CPButton?](cpmappanelbuttonconfiguration/secondarybutton.md)
   An optional secondary button shown with this configuration. Note: only the image property of this button is used.
-- [var travelEstimates: CPTravelEstimates](cpmappanelbuttonconfiguration/travelestimates.md)
+- [var travelEstimates: CPTravelEstimates?](cpmappanelbuttonconfiguration/travelestimates.md)
   Optional travel estimates displayed alongside the primary action.
 
 ## Relationships

@@ -23,7 +23,7 @@ struct TabView<SelectionValue, Content> where SelectionValue : Hashable, Content
 
 #### Overview
 
-To create a user interface with tabs, place [`Tab`](tab.md)s  in a `TabView`. On iOS, you can also use one of the badge modifiers, like [`badge(_:)`](tabcontent/badge(_:).md), to assign a badge to each of the tabs.
+To create a user interface with tabs, place instances of [`Tab`](tab.md)  in a `TabView`. On iOS, you can also use one of the badge modifiers, like [`badge(_:)`](tabcontent/badge(_:).md), to assign a badge to each of the tabs.
 
 The following example creates a tab view with three tabs, each presenting a custom child view. The first tab has a numeric badge and the third has a string badge.
 

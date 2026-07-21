@@ -39,7 +39,7 @@ struct MyTool: Tool {
   }
 
   public func call(arguments: Arguments) async throws -> Output {
-    guard let imageAttachment = arguments.image.resolve(in: history) else {
+    guard let imageAttachment = arguments.image.resolved(in: history) else {
       throw ImageToolError.imageNotFound(arguments.image.attachmentLabel)
     }
     let image = imageAttachment.cgImage
@@ -55,6 +55,9 @@ struct MyTool: Tool {
   The label of the referenced image.
 ### Accessing the referenced image
 - [func resolve(in: Transcript) -> Transcript.ImageAttachment?](imagereference/resolve(in:).md)
+  Returns the referenced image from the transcript.
+### Instance Methods
+- [func resolved(in: some Sequence<Transcript.Entry>) -> Transcript.ImageAttachment?](imagereference/resolved(in:).md)
   Returns the referenced image from the transcript.
 
 ## Relationships

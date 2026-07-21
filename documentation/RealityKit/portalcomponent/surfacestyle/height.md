@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: property
 
-Portal mesh height in meters.
+The height of the portal mesh, in meters, along the entity’s local Y axis.
 
 **Availability**:
 - iOS 27.0+ (Beta)

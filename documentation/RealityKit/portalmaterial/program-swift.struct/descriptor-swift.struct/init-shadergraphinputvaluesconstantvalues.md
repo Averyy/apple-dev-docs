@@ -21,9 +21,9 @@ init(shaderGraph: ShaderGraph, inputValues: [String : MaterialParameters.Value] 
 
 ## Parameters
 
-- `shaderGraph`: The shader graph describing the shading logic for this program.
-- `inputValues`: Initial values for the inputs declared in the shader graph.
-- `constantValues`: Values for function constant inputs to be baked into the compiled shader.
+- `shaderGraph`: The shader graph that describes the program’s surface and, optionally, geometry-modifier shading.
+- `inputValues`: Initial values for the inputs the shader graph declares. Defaults to an empty dictionary, leaving each input at its declared default.
+- `constantValues`: Values for the function-constant inputs the shader graph declares. Defaults to an empty `MTLFunctionConstantValues`, leaving each function constant at its declared default.
 
 
 ---

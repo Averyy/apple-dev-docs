@@ -20,7 +20,8 @@ The valid values are described in [`NSTokenField.TokenStyle`](nstokenfield/token
 
 ## See Also
 
-- [Token Field Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/TokenField_Guide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40006555)
+- [var tokenStyle: NSTokenField.TokenStyle](nstokenfield/tokenstyle-swift.property.md)
+  The token style of the receiver.
 
 
 ---

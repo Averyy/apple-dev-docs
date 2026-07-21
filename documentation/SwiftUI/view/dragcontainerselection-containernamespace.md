@@ -26,34 +26,34 @@ A drag container finds the nearest enclosing `dragContainerSelection(_:container
 If the dragged view is associated with a selected identifier, the payload should contain all the selected items. If the dragged view is not selected, the payload should not contain the whole selection, just the dragged item. With `dragContainerSelection(_:containerNamespace:)`, you get fine-grained control over what items are included in the drag payload.
 
 ```swift
-    struct FruitContainer: View {
-         @State private var fruits: [Fruit]
-         @State private var selection: [Fruit.ID]
+ struct FruitContainer: View {
+      @State private var fruits: [Fruit]
+      @State private var selection: [Fruit.ID]
 
-         var body: some View {
-             VStack {
-                 ForEach(fruits) { fruit in
-                     FruitView(fruit)
-                         .draggable(containerItemID: fruit.id)
-                  }
-              }
-             .dragContainer(for: Fruit.self) { ids in
-                 fruits(with: ids)
-             }
-             .dragContainerSelection(selection)
-         }
+      var body: some View {
+          VStack {
+              ForEach(fruits) { fruit in
+                  FruitView(fruit)
+                      .draggable(containerItemID: fruit.id)
+               }
+           }
+          .dragContainer(for: Fruit.self) { ids in
+              fruits(with: ids)
+          }
+          .dragContainerSelection(selection)
+      }
 
-       func fruits(with ids: [Fruit.ID]) -> [Fruit] { ... }
+    func fruits(with ids: [Fruit.ID]) -> [Fruit] { ... }
 
-       struct Fruit: Transferable, Identifiable {
-           let id: String
-           ...
-       }
+    struct Fruit: Transferable, Identifiable {
+        let id: String
+        ...
+    }
 
-       struct FruitView: View {
-           init(_ fruit: Fruit) { ... }
-       }
-   }
+    struct FruitView: View {
+        init(_ fruit: Fruit) { ... }
+    }
+}
 ```
 
 ## Parameters

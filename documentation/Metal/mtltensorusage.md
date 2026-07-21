@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: struct
 
-The type that represents the different contexts for a tensor.
+The contexts in which you can use a tensor.
 
 **Availability**:
 - iOS 26.0+
@@ -50,7 +50,7 @@ struct MTLTensorUsage
 - [class MTLTensorDescriptor](mtltensordescriptor.md)
   A configuration type for creating new tensor instances.
 - [class MTLTensorExtents](mtltensorextents.md)
-  An array of length matching the rank, holding the dimensions of a tensor.
+  An integer array that holds per-dimension values such as tensor sizes, strides, or block factors
 - [class MTLTensorReferenceType](mtltensorreferencetype.md)
   An object that represents a tensor in the shading language in a struct or array.
 - [let MTLTensorDomain: String](mtltensordomain.md)

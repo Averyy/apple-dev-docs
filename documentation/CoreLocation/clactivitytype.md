@@ -33,6 +33,8 @@ enum CLActivityType
   The value that indicates positioning for activities that don’t or may not adhere to roads such as cycling, scooters, trains, boats and off-road vehicles.
 - [CLActivityType.airborne](clactivitytype/airborne.md)
   The value that indicates activities in the air.
+### Enumeration Cases
+- [CLActivityType.maritime](clactivitytype/maritime.md)
 ### Initializers
 - [init?(rawValue: Int)](clactivitytype/init(rawvalue:).md)
 

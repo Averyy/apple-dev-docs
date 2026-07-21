@@ -405,6 +405,8 @@ Clients of your value then access the value in the usual way, reading it with th
   The property specifying how symbol images fill their layers, or nil to use the default fill style.
 - [var symbolVariableValueMode: SymbolVariableValueMode?](environmentvalues/symbolvariablevaluemode.md)
   The current symbol variable value mode, or `nil` denoting that the mode is picked automatically.
+- [var systemPrefersReducedResourceUsage: Bool](environmentvalues/systemprefersreducedresourceusage.md)
+  A boolean value indicating whether the system would prefer the app to reduce its overall resource usage.
 - [var tabBarPlacement: TabBarPlacement?](environmentvalues/tabbarplacement.md)
   The current placement of the tab bar.
 - [var tabViewBottomAccessoryPlacement: TabViewBottomAccessoryPlacement?](environmentvalues/tabviewbottomaccessoryplacement.md)

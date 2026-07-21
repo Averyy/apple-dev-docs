@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: property
 
-The format of the file to write.
+The content type of the file being written.
 
 **Availability**:
 - iOS 27.0+ (Beta)

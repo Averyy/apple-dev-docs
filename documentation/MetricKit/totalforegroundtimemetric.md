@@ -19,8 +19,6 @@ struct TotalForegroundTimeMetric
 
 This metric corresponds to the [`MetricResult.totalForegroundTime(_:)`](metricresult/totalforegroundtime(_:).md) case. It appears in both [`intervalEntries`](metricreport/intervalentries.md) and [`stateEntries`](metricreport/stateentries.md) when state reporting is enabled.
 
-This type replaces the `cumulativeForegroundTime` property of [`MXAppRunTimeMetric`](mxappruntimemetric.md).
-
 ## Topics
 
 ### Measurements

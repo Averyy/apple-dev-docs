@@ -20,8 +20,8 @@ optional func scene(_ scene: UIScene, willConnectTo session: UISceneSession, opt
 
 ## Mentions
 
-- [About the app launch sequence](about-the-app-launch-sequence.md)
 - [Presenting content on a connected display](presenting-content-on-a-connected-display.md)
+- [About the app launch sequence](about-the-app-launch-sequence.md)
 - [Transitioning to the UIKit scene-based life cycle](transitioning-to-the-uikit-scene-based-life-cycle.md)
 
 #### Discussion

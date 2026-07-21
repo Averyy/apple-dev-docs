@@ -40,7 +40,6 @@ A struct describing the state of the legible options menu.
 ## See Also
 
 - [class AVLegibleMediaOptionsMenuController](avlegiblemediaoptionsmenucontroller.md)
-- [enum AVLegibleMediaOptionsMenuType](avlegiblemediaoptionsmenutype.md)
 
 
 ---

@@ -27,10 +27,6 @@ init(@ContentBuilder viewer: @escaping (Document) -> Content, makeReadableDocume
 
 - [init(allowCreating: Bool, editor: (Document) -> Content, makeDocument: (URLDocumentConfiguration, DocumentCreationContext) async throws -> Document)](documentgroup/init(allowcreating:editor:makedocument:).md)
   Creates a document group capable of creating, viewing, and editing documents.
-- [init(newDocument:editor:)](documentgroup/init(newdocument:editor:).md)
-  Creates a document group for creating and editing file documents.
-- [init(viewing:viewer:)](documentgroup/init(viewing:viewer:).md)
-  Creates a document group capable of viewing file documents.
 
 
 ---

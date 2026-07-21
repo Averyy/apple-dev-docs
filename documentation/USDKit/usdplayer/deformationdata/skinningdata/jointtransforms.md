@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: property
 
+Current transformation matrices for each joint in the skeleton hierarchy, in joint order.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)

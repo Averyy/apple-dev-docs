@@ -25,9 +25,9 @@ struct ScoredSearchableItem
 ## Topics
 
 ### Creating the item
-- [init(item: CSSearchableItem, score: Double)](scoredsearchableitem/init(item:score:).md)
+- [init(item: SearchableItem, score: Double)](scoredsearchableitem/init(item:score:).md)
 ### Getting the item details
-- [let item: CSSearchableItem](scoredsearchableitem/item.md)
+- [let item: SearchableItem](scoredsearchableitem/item.md)
   The underlying searchable item.
 - [let score: Double](scoredsearchableitem/score.md)
   A relevance score assigned by the pipeline stage; higher values indicate greater relevance. The scale is stage-defined.

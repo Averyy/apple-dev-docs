@@ -3,7 +3,7 @@
 **Framework**: Cinematic  
 **Kind**: case
 
-Isolates the ambience and foreground that is out of frame and place it in a spatial stem. There is no voice stem.
+Isolates background plus foreground sounds outside the camera field of view in a stem.
 
 **Availability**:
 - iOS 26.0+

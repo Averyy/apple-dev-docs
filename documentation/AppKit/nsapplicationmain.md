@@ -1,4 +1,4 @@
-# NSApplicationMain
+# NSApplicationMain(_:_:)
 
 **Framework**: AppKit  
 **Kind**: func
@@ -6,12 +6,12 @@
 Called by the main function to create and run the application.
 
 **Availability**:
-- macOS ?+
+- macOS 10.9+
 
 ## Declaration
 
 ```swift
-extern int NSApplicationMain(int argc, const char * argv[]);
+func NSApplicationMain(_ argc: Int32, _ argv: UnsafeMutablePointer<UnsafeMutablePointer<CChar>?>) -> Int32
 ```
 
 #### Return Value
@@ -45,4 +45,4 @@ Creates the application, loads the main nib file from the application’s main b
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsapplicationmain)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsapplicationmain(_:_:))*

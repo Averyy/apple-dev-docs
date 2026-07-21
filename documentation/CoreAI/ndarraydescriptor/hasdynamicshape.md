@@ -10,6 +10,7 @@ A Boolean value that indicates whether the shape has any dynamic dimensions.
 - iPadOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 

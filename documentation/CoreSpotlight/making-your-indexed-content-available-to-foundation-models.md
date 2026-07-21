@@ -6,15 +6,15 @@ Make the content you index for Spotlight available to Foundation models to help 
 
 #### Overview
 
-The Foundation Models framework provides access to language models, which you can use to implement intelligent features in your apps. Language models answer questions on a wide variety of subjects, but they don’t necessarily know how to answer specific questions about your app’s content. To make your data available to the model, add the Spotlight search tool to the configuration of your Foundation Model sessions.
+The Foundation Models framework provides access to language models that you can use to implement intelligent features in your apps. Language models answer questions on a wide variety of subjects, but they can’t automatically answer questions related to your app’s content. However, you can give those models the ability to answer questions about your content using the Spotlight search tool.
 
-The Spotlight search tool gives models a way to search your app’s content and use the results to answer prompts. When a model requires your app’s data, it uses the search tool to run queries against your app’s Spotlight index or indexed files. The model uses the results as additional context when answering prompts that involve your content.
+The Spotlight search tool gives models a way to search your app’s content and use the results to answer prompts. When a model requires your app’s data, it uses the search tool to run queries against your app’s Spotlight index or indexed files. The model uses the results as additional context to answer prompts that involve your content.
 
 > **Note**: To use the Spotlight search tool, you first need to index your app’s content. For information about the indexing process and how to perform it on your app’s content, see [`Adding your app’s content to Spotlight indexes`](adding-your-app-s-content-to-spotlight-indexes.md).
 
 ##### Configure a Model to Use the Spotlight Search Tool
 
-The Foundation Models framework supports the inclusion of tools in a session to handle specific tasks. The [`SpotlightSearchTool`](spotlightsearchtool.md) type implements the framework’s protocols for tools and gives models the ability to query your app’s content. When initializing a Foundation Models session, include the Spotlight search tool and configure it with app-specific search options. The following example creates a default instance of the tool, uses it to initialize a session, and generates a response to a prompt:
+When configuring a Foundation Models session, you can specify additional tools to handle specific tasks. The [`SpotlightSearchTool`](spotlightsearchtool.md) type implements the framework’s protocols for tools and gives models the ability to query your app’s content. The following example creates a default instance of the tool, uses it to initialize a session, and generates a response to a prompt:
 
 ```swift
 import CoreSpotlight
@@ -26,12 +26,12 @@ let session = LanguageModelSession(tools: [tool])
 let response = try await session.respond(to: "Find my notes about the project deadline.")
 ```
 
-The default configuration of [`SpotlightSearchTool`](spotlightsearchtool.md) performs queries against your app’s Spotlight index using all available search techniques. When creating the tool, you can provide custom guidance on how to search your content to improve the efficiency of queries. You can customize the tool’s configuration in the following ways:
+The default configuration of [`SpotlightSearchTool`](spotlightsearchtool.md) performs queries against your app’s Spotlight index using all available search techniques. The tool supports a variety of techniques, some of which might not be relevant to your content. When configuring the tool, provide guidance on which search techniques to use along with other configuration details:
 
 - **Specify where to find your app’s content.** You can tell the tool to search your app’s Spotlight index or search directories containing your app’s files. You can also search multiple sources and combine the results.
-- **Tell the tool to fetch specific attributes of each search result and provide them to the model.** The default tool configuration returns minimal information for each item. Fetching attributes during a search provides the model with additional information it can use to answer prompts.
-- **Optimize data retrieval operations.** You can tell the tool to retrieve attributes related to someone’s communications, documents, media, or other types of data. The tool packages this information in a compact format suitable for on-device models or models with smaller context windows.
-- **Offer guidance on how to search your content.** The Spotlight search tool has many ways to perform searches, but some of those techniques might not apply to your content. For example, if you only search for textual items, you don’t need to consider searches involving dates or numerical values. Eliminate search options you don’t need to reduce the amount of content the tool sends to the model.
+- **Tell the tool to fetch specific attributes for each item.** The default tool configuration returns minimal information for each item. Include a list of attributes your items support to make the associated data available to the model.
+- **Optimize data retrieval operations.** Focus data retrieval on specific types of content, such as someone’s messages and communications, documents, media, or other data. The tool packages this information in a more compact format suitable for on-device models or models with smaller context windows.
+- **Offer guidance on how to search your content.** The Spotlight search tool has many ways to perform searches, but some techniques might not apply to your content. For example, if you only search for textual items, you don’t need to consider searches involving dates or numerical values. Eliminate search options you don’t need to reduce the amount of content the tool sends to the model.
 
 ##### Specify Where to Find Your Apps Content
 
@@ -40,13 +40,13 @@ At configuration time, you need to tell the Spotlight search tool where to look 
 - The [`CoreSpotlightSource`](corespotlightsource.md) type searches your app’s Spotlight index.
 - The [`FileSource`](filesource.md) type searches a set of directories for indexed files.
 
-In addition to telling your app where to search, a search source provides details about how to perform searches of that source. You can configure each source with the maximum number of results to return during a query. You can also specify which attributes you want to retrieve for search results. For the [`CoreSpotlightSource`](corespotlightsource.md) type, you can also specify a delegate object to recreate attributes that the tool can’t retrieve from the index. Configuring these values helps the tool deliver better information for each query.
+In addition to telling your app where to search, a search source provides details about how to perform searches of that source. You can specify options such as the maximum number of results to return during a query or which attributes you want to retrieve for each result. For the [`CoreSpotlightSource`](corespotlightsource.md) type, you can also specify a delegate object to generate data for attributes that aren’t in the index. For example, you might use the delegate to supply text content that the indexer transmuted during the indexing process. Configuring these values helps the tool deliver better information for each query.
 
 You can configure the Spotlight search tool with multiple sources, and search your app’s Spotlight index, multiple directories, or both. During a query, the tool searches each source separately and then combines the results before delivering them to the model.
 
 ##### Make Searches More Efficient By Optimizing Data Retrieval
 
-At configuration time, you can provide guidance to help the model optimize the query it performs using the Spotlight search tool. The search tool supports a variety of search techniques and content types, and you use guidance to limit the options available to the model. Eliminating options that aren’t relevant for your content reduces the amount of information the search tool sends back to the model, freeing up context space for other types of content.
+At configuration time, provide guidance to help the model optimize the queries it performs using the Spotlight search tool. The search tool supports a variety of search techniques and content types, and your guidance specifies which options you support. Eliminating options that aren’t relevant for your content reduces the amount of information the search tool sends back to the model, freeing up context space for other content.
 
 To specify your guidance options, create the [`SpotlightSearchTool.Configuration`](spotlightsearchtool/configuration-swift.struct.md) structure and add your guidance to the [`guide`](spotlightsearchtool/configuration-swift.struct/guide.md) property. When configuring guidance, you can choose from the following options:
 
@@ -71,24 +71,24 @@ let response = try await session.respond(to: "Show me the documents I shared las
 ```
 
 To implement a contact resolver, create a type that adopts the [`ContactResolver`](contactresolver.md) protocol.
-Use your custom type to return a [`ResolvedContact`](resolvedcontact.md) structure with information about the person who owns your app’s data. Fill in the properties of the structure with relevant information about the person who uses your app. For example, a communications app might include the person’s name and the phone number or email associated with their account. The search tool passes this information along to the model to help it reason about references to the person.
+Your custom type returns a [`ResolvedContact`](resolvedcontact.md) structure with information about the person who owns your app’s data. Fill in the properties of the structure with relevant information about the person who uses your app. For example, a communications app might include the person’s name and the phone number or email associated with their account. The search tool passes this information along to the model to help it reason about references to the person.
 
 ##### Customize How the Tool Determines Search Results
 
-When processing complex prompts, a model might run multiple queries to get the results it needs. For each query, the model builds a pipeline of work, where each *stage* of the pipeline is a specific task to run on the data. For example, one stage might retrieve items, another one might count the items, and a third one might assign relevance scores to each item. The Spotlight search tool defines pipeline stages for many common tasks, but you can add custom stages to apply app-specific information to the data in the pipeline.
+When processing complex prompts, a model might run multiple queries to get the results it needs. For each query, the model builds a pipeline of work, where each *stage* of the pipeline is a specific task to run on the data. For example, one stage might retrieve items, another one might count the items, and a third one might assign relevance scores to each item. The Spotlight search tool defines pipeline stages for many common tasks, but you can add custom stages to apply app-specific transformations to the data in the pipeline.
 
-The model builds tool pipelines dynamically and can run stages in any order, so any stages you create need to run indendently of other stages. When you define a custom stage, you specify the type of input data you want to receive and the type of output data your stage generates. For example, a stage that creates relevance scores for items might take [`CSSearchableItem`](cssearchableitem.md) objects as input and generate [`ScoredSearchableItem`](scoredsearchableitem.md) objects as outputs. The inputs and outputs, plus other information in your custom stage, govern when a model might add that stage to a pipeline.
+The model builds tool pipelines dynamically and can run stages in parallel, so design your custom stages to run independently with little or no extra data. When you define a custom stage, specify the type of input data you want to receive and the type of output data your stage generates. For example, a stage that creates relevance scores for items might take [`CSSearchableItem`](cssearchableitem.md) objects as input and generate [`ScoredSearchableItem`](scoredsearchableitem.md) objects as outputs. The input and output types, plus other information in your custom stage, help the model determine when to add that stage to a pipeline.
 
-> **Note**: Try to transform input data without any additional data from your app, because custom stages run independently from each other. If you need additional information, access it in a safe manner using immutable objects, Swift actors, or other techniques.
+> **Note**: Try to transform input data without any additional data from your app, because custom stages can run on multiple threads simultaneously. If you need additional information, access it in a safe manner using immutable objects, Swift actors, or other deterministic approaches.
 
-To define a custom stage, create a structure that conforms to the [`CustomStage`](customstage.md) protocol. Use the protocol’s API to specify the inputs and outputs of your stage, and use the [`description`](customstage/description.md) property to provide the model with instructions on how to use your stage. Implement the `execute` method you support to transform the data you receive to the expected output data. The following example shows an implementation of this protocol that ranks each searchable item based on how recently the person viewed it.
+To define a custom stage, create a structure that conforms to the [`CustomStage`](customstage.md) protocol. Use the protocol’s API to specify the inputs and output of your stage, and use the [`description`](customstage/description.md) property to provide the model with instructions on how to use your stage. Implement the `execute` method for each type of input you support, and transform the data you receive to the expected output data. The following example shows an implementation of this protocol that ranks each searchable item based on how recently the person viewed it.
 
 ```swift
 struct RecencyBoostStage: CustomStage {
     static var name: String { "recency_boost" }
     static var description: String { "Boosts recently modified items in the ranking." }
     static var inputTypes: [SearchPipelineDataType] { [.items] }
-    static var outputTypes: [SearchPipelineDataType] { [.scoredItems] }
+    static var outputType: SearchPipelineDataType { .scoredItems }
 
     var recencyWeight: Double
 
@@ -165,8 +165,13 @@ Task {
     }
 }
 
-let response = try await session.respond(to: "Show me recent emails from Shelly.”)
+let response = try await session.respond(to: "Show me recent emails from Shelly.")
 ```
+
+## See Also
+
+- [Searching indexed content with natural language](searching-indexed-content-with-natural-language.md)
+  Give a language model access to your app’s Core Spotlight index to enable natural-language queries over searchable content.
 
 
 ---

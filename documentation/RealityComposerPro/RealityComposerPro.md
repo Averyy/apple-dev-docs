@@ -98,6 +98,8 @@ This release of Reality Composer Pro is a complete 3D development platform. The 
   Review known issues and changes in Reality Composer Pro 3.
 - [Reality Composer Pro Beta 3 Release Notes](reality-composer-pro-beta-3-release-notes.md)
   Review known issues and changes in Reality Composer Pro 3.
+- [Reality Composer Pro Beta 4 Release Notes](reality-composer-pro-beta-4-release-notes.md)
+  Review known issues and changes in Reality Composer Pro 3.
 
 
 ---

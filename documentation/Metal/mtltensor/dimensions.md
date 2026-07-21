@@ -20,17 +20,6 @@ An array of sizes, in elements, one for each dimension of this tensor.
 var dimensions: MTLTensorExtents { get }
 ```
 
-#### Discussion
-
-You are responsible for ensuring `dimensions` meets the following requirements:
-
-- `dimensions[i]` must be greater than 0.
-- If [`dataType`](mtltensor/datatype.md) is a format [`MTLTensorDataType`](mtltensordatatype.md), `dimensions[0]` must be a multiple of 32 elements.
-- If the tensor has auxiliary planes, each dimension must be evenly divisible by its corresponding block factor.
-- If [`dataType`](mtltensor/datatype.md) is a format [`MTLTensorDataType`](mtltensordatatype.md), or the tensor has auxiliary planes, the tensor must have rank 1 or higher.
-
-The default value of this property is a rank one extents with size one.
-
 
 ---
 

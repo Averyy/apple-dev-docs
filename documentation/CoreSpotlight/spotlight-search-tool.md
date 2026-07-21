@@ -13,6 +13,8 @@ Your app’s Spotlight search index provides fast access to your app’s content
 ### Essentials
 - [Making your indexed content available to Foundation Models](making-your-indexed-content-available-to-foundation-models.md)
   Make the content you index for Spotlight available to Foundation models to help generate responses to prompts.
+- [Searching indexed content with natural language](searching-indexed-content-with-natural-language.md)
+  Give a language model access to your app’s Core Spotlight index to enable natural-language queries over searchable content.
 ### Tool configuration
 - [struct SpotlightSearchTool](spotlightsearchtool.md)
   A tool you use to make your app’s custom data available to Foundation Models.

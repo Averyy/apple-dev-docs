@@ -18,6 +18,13 @@ The system determines the safe area adjustment.
 case automatic
 ```
 
+## See Also
+
+- [UIBarMinimizationSafeAreaAdjustment.disabled](uibarminimizationsafeareaadjustment/disabled.md)
+  The safe area remains unchanged as bars minimize.
+- [UIBarMinimizationSafeAreaAdjustment.enabled](uibarminimizationsafeareaadjustment/enabled.md)
+  The safe area adjusts as bars minimize, allowing content to reflow.
+
 
 ---
 

@@ -11,7 +11,7 @@ Manage apps and books for your students and employees.
   Use a web service to find details about apps and books to show to your users.
 - [Managing apps and books through web services (Legacy)](managing-apps-and-books-through-web-services-legacy.md)
   Associate volume purchases with users or devices using endpoints provided by the Volume Purchase Program (VPP).
-- [Upgrading to Apple School Manager and Apple Business Manager](upgrading-to-apple-school-manager-and-apple-business-manager.md)
+- [Upgrading to Apple School Manager and Apple Business](upgrading-to-apple-school-manager-and-apple-business.md)
   Manage devices and content across an organization’s user base with a single destination.
 ### Configuration management
 - [Client Configuration](client-configuration.md)

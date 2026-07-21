@@ -21,8 +21,6 @@ static var latest: FeatureSet.ContentVersion { get }
 
 - [FeatureSet.ContentVersion.version1](featureset/contentversion-swift.enum/version1.md)
   The PaperKit version that supports markup.
-- [FeatureSet.ContentVersion.version2](featureset/contentversion-swift.enum/version2.md)
-  The PaperKit version that supports markup from iOS 27.
 
 
 ---

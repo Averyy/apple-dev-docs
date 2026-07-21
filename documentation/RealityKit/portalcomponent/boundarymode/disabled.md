@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: case
 
-Content is not clipped and entities do not cross the portal boundary.
+The portal renders without clipping or crossing.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -18,6 +18,10 @@ Content is not clipped and entities do not cross the portal boundary.
 ```swift
 case disabled
 ```
+
+#### Discussion
+
+Portal world content is bounded only by the [`PortalMaterial`](portalmaterial.md) mesh. Entities with [`PortalCrossingComponent`](portalcrossingcomponent.md) don’t cross the portal.
 
 
 ---

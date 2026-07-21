@@ -6,6 +6,7 @@
 **Availability**:
 - iOS 26.5+
 - iPadOS 26.5+
+- Mac Catalyst 26.5+
 
 ## Declaration
 
@@ -16,6 +17,8 @@ protocol AccessoryFeatureSession : Sendable
 ## Topics
 
 ### Instance Properties
+- [var accessory: ASAccessory](accessoryfeaturesession/accessory.md)
+  The accessory associated with this feature session.
 - [var sessionID: UUID](accessoryfeaturesession/sessionid.md)
   The session identifier for this capability session.
 ### Instance Methods

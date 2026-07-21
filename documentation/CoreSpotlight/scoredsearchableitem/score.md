@@ -20,7 +20,7 @@ let score: Double
 
 ## See Also
 
-- [let item: CSSearchableItem](scoredsearchableitem/item.md)
+- [let item: SearchableItem](scoredsearchableitem/item.md)
   The underlying searchable item.
 
 

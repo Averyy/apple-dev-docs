@@ -21,8 +21,6 @@ This metric corresponds to the [`MetricResult.pixelLuminance(_:)`](metricresult/
 
 Average pixel luminance (APL) is expressed as a value from 0 to 100 in increments of 1. This metric is only available on devices with OLED displays. On other device types, no value is reported.
 
-This type replaces the `averagePixelLuminance` property of [`MXDisplayMetric`](mxdisplaymetric.md).
-
 ## Topics
 
 ### Measurements

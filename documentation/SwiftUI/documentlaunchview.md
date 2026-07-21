@@ -51,7 +51,7 @@ extension UTType {
 
 ## Topics
 
-### Initializers
+### Creating a launch view with a background view
 - [init(_:for:_:onDocumentOpen:)](documentlaunchview/init(_:for:_:ondocumentopen:).md)
   Creates a view to present when launching document-related user experiences using a localized title and custom actions.
 - [init(_:for:_:onDocumentOpen:background:)](documentlaunchview/init(_:for:_:ondocumentopen:background:).md)
@@ -68,6 +68,7 @@ extension UTType {
   Creates a view to present when launching document-related user experiences using a localized title, custom actions, and accessory views.
 - [init(_:for:_:onDocumentOpen:overlayAccessoryView:)](documentlaunchview/init(_:for:_:ondocumentopen:overlayaccessoryview:).md)
   Creates a view to present when launching document-related user experiences using a localized title, custom actions, and an overlay accessory view.
+### Creating a launch view with a background style
 - [init(_:for:backgroundStyle:_:onDocumentOpen:)](documentlaunchview/init(_:for:backgroundstyle:_:ondocumentopen:).md)
   Creates a view to present when launching document-related user experiences using a localized title, custom actions, and a background style.
 - [init(_:for:backgroundStyle:_:onDocumentOpen:backgroundAccessoryView:)](documentlaunchview/init(_:for:backgroundstyle:_:ondocumentopen:backgroundaccessoryview:).md)
@@ -76,7 +77,7 @@ extension UTType {
   Creates a view to present when launching document-related user experiences using a localized title, custom actions, a background style, and accessory views.
 - [init(_:for:backgroundStyle:_:onDocumentOpen:overlayAccessoryView:)](documentlaunchview/init(_:for:backgroundstyle:_:ondocumentopen:overlayaccessoryview:).md)
   Creates a view to present when launching document-related user experiences using a localized title, custom actions, a background style, and an overlay accessory view.
-### Instance Properties
+### Displaying the launch view
 - [var body: some View](documentlaunchview/body.md)
   The body of the view.
 

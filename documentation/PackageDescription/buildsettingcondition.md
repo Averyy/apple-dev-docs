@@ -30,7 +30,7 @@ The following example shows how to use build setting conditions with various API
         .define("ENABLE_SOMETHING", .when(configuration: .release)),
     ],
     linkerSettings: [
-        .linkLibrary("openssl", .when(platforms: [.linux])),
+        .linkedLibrary("openssl", .when(platforms: [.linux])),
     ]
 ),
 ```

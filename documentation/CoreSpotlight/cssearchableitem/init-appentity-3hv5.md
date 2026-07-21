@@ -6,11 +6,11 @@
 Initializes a new searchable item with the relevant fields populated from the provided app entity. Resolves deferred properties before indexing.
 
 **Availability**:
-- iOS 18.0+
-- iPadOS 18.0+
-- Mac Catalyst 18.0+
-- macOS 15.0+
-- visionOS 2.0+
+- iOS 27.0+ (Beta)
+- iPadOS 27.0+ (Beta)
+- Mac Catalyst 27.0+ (Beta)
+- macOS 27.0+ (Beta)
+- visionOS 27.0+ (Beta)
 
 ## Declaration
 

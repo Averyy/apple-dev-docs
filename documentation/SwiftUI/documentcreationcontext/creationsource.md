@@ -20,7 +20,7 @@ var creationSource: DocumentCreationSource? { get }
 
 #### Discussion
 
-On iOS, you can specify the source via [`NewDocumentButton`](newdocumentbutton.md) in [`DocumentGroupLaunchScene`](documentgrouplaunchscene.md). On macOS, this is always `nil`.
+On iOS, you can specify the source using a [`NewDocumentButton`](newdocumentbutton.md) in [`DocumentGroupLaunchScene`](documentgrouplaunchscene.md). On macOS, this is always `nil`.
 
 
 ---

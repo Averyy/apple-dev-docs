@@ -6,8 +6,8 @@
 The helper extension process may access AV hardware required for media capture and playback.
 
 **Availability**:
-- iOS 17.4+
-- iPadOS 17.4+
+- iOS 27.0+ (Beta)
+- iPadOS 27.0+ (Beta)
 
 ## Declaration
 

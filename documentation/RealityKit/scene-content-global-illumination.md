@@ -21,8 +21,9 @@ This collection gathers the tools for adding precomputed and environment-based l
   Configuration for RealityKit’s hair lighting model.
 ### Lightmaps and light probes
 - [class LightmapResource](lightmapresource.md)
-  A resource containing references to lightmap texture atlases and descriptions of how parts of the atlases map to meshes in the scene. At a high level, this resource comprises two parts:
+  A resource containing references to lightmap texture atlases and descriptions of how parts of the atlases map to meshes in the scene.
 - [struct LightmapComponent](lightmapcomponent.md)
+  Describes how a lightmap is applied to parts of the scene.
 - [class DiffuseProbeResource](diffuseproberesource.md)
   A resource containing baked diffuse lighting data organized as a tetrahedral probe mesh.
 - [struct DiffuseLightProbeGroupComponent](diffuselightprobegroupcomponent.md)

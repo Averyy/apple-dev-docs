@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: init
 
-Creates a writer that uses `FileWrapper` to write documents to disk.
+Creates a writer that converts a snapshot into a `FileWrapper`.
 
 **Availability**:
 - iOS 27.0+ (Beta)

@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: property
 
+Shader graph constructed from the material prim.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)

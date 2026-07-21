@@ -30,6 +30,15 @@ nonisolated init<B>(_ title: LocalizedStringResource, for contentTypes: [UTType]
 - `backgroundAccessoryView`: A content builder for returning the view’s background accessory view.
 - `overlayAccessoryView`: A content builder for returning the view’s overlay accessory view.
 
+## See Also
+
+- [init(_:for:backgroundStyle:_:onDocumentOpen:)](documentlaunchview/init(_:for:backgroundstyle:_:ondocumentopen:).md)
+  Creates a view to present when launching document-related user experiences using a localized title, custom actions, and a background style.
+- [init(_:for:backgroundStyle:_:onDocumentOpen:backgroundAccessoryView:)](documentlaunchview/init(_:for:backgroundstyle:_:ondocumentopen:backgroundaccessoryview:).md)
+  Creates a view to present when launching document-related user experiences using a localized title, custom actions, a background style, and a background accessory view.
+- [init(_:for:backgroundStyle:_:onDocumentOpen:overlayAccessoryView:)](documentlaunchview/init(_:for:backgroundstyle:_:ondocumentopen:overlayaccessoryview:).md)
+  Creates a view to present when launching document-related user experiences using a localized title, custom actions, a background style, and an overlay accessory view.
+
 
 ---
 

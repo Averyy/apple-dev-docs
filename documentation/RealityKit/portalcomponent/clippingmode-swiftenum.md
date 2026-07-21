@@ -23,9 +23,9 @@ enum ClippingMode
 
 This type can be passed into [`clippingMode`](portalcomponent/clippingmode-swift.property.md) to configure the portal component’s clipping feature.
 
-With [`PortalComponent.ClippingMode.disabled`](portalcomponent/clippingmode-swift.enum/disabled.md), contents in portal world are not clipped
+With [`PortalComponent.ClippingMode.disabled`](portalcomponent/clippingmode-swift.enum/disabled.md), contents in portal world are not clipped.
 
-With [`PortalComponent.ClippingMode.plane(_:)`](portalcomponent/clippingmode-swift.enum/plane(_:).md), contents within portal are clipped by the edge of the plane.
+With [`PortalComponent.ClippingMode.plane(_:)`](portalcomponent/clippingmode-swift.enum/plane(_:).md), contents within portal are clipped by a plane.
 
 With [`PortalComponent.ClippingMode.volume(_:)`](portalcomponent/clippingmode-swift.enum/volume(_:).md), contents within portal are clipped by a volumetric box.
 
@@ -33,7 +33,7 @@ With [`PortalComponent.ClippingMode.volume(_:)`](portalcomponent/clippingmode-sw
 
 ### Clipping to a volume
 - [PortalComponent.ClippingMode.volume(_:)](portalcomponent/clippingmode-swift.enum/volume(_:).md)
-  Clips the contents within the portal using a volumetric box.
+  Clips the contents within the portal to a box-shaped region.
 ### Enumeration Cases
 - [PortalComponent.ClippingMode.disabled](portalcomponent/clippingmode-swift.enum/disabled.md)
   Disables clipping of the contents within the portal.

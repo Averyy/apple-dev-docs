@@ -38,6 +38,13 @@ enum AVPlaybackUserInterfacePlaybackState
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 
+## See Also
+
+- [protocol AVPlaybackUserInterfacePlaybackControllable](avplaybackuserinterfaceplaybackcontrollable-9he54.md)
+  Provides playback control and state management for media content.
+- [struct AVPlaybackUserInterfaceSeekCapabilities](avplaybackuserinterfaceseekcapabilities.md)
+  Describes navigation capabilities of the media source.
+
 
 ---
 

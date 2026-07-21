@@ -19,6 +19,10 @@ The root joint of the skeleton hierarchy.
 final var rootJoint: SkeletonResource.Joint { get }
 ```
 
+#### Discussion
+
+> **Note**: Each access walks the resource and rebuilds the entire `Joint` tree. Bind the value to a `let` once when iterating or recursing over the hierarchy rather than re-reading the property in a loop.
+
 ## See Also
 
 - [SkeletonResource.Joint](skeletonresource/joint.md)

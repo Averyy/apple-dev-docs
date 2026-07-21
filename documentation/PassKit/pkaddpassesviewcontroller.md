@@ -38,6 +38,11 @@ To add multiple passes without presenting this view controller multiple times, u
   The view controller’s delegate.
 - [protocol PKAddPassesViewControllerDelegate](pkaddpassesviewcontrollerdelegate.md)
   Methods that an add-passes view controller’s delegate implements.
+### Initializers
+- [init?(passesArchiveAt: URL)](pkaddpassesviewcontroller/init(passesarchiveat:).md)
+- [init?(passesArchiveAtFileURL: URL)](pkaddpassesviewcontroller/init(passesarchiveatfileurl:).md)
+- [init?(passesArchiveData: Data)](pkaddpassesviewcontroller/init(passesarchivedata:).md)
+- [init?(passesData: [Data])](pkaddpassesviewcontroller/init(passesdata:).md)
 
 ## Relationships
 

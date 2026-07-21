@@ -23,13 +23,6 @@ func export() async
 
 - `handler`: A callback the system invokes when it finishes successfully, or in the event of writing failure.
 
-## See Also
-
-- [func export(to: URL, as: AVFileType, isolation: isolated (any Actor)?) async throws](avassetexportsession/export(to:as:isolation:).md)
-  Exports the asset to the output location in the specified file type.
-- [func cancelExport()](avassetexportsession/cancelexport.md)
-  Cancels the execution of an export session.
-
 
 ---
 

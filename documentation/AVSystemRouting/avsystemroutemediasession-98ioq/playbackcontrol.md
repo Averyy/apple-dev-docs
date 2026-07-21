@@ -25,6 +25,8 @@ final var playbackControl: (any AVPlaybackUserInterfaceControllable)? { get }
 
 This property is always non-nil when obtained from a successful call to [`start()`](avsystemroutesession-gp78/start().md).
 
+> ❗ **Important**: Always update media playback state information regularly in the playbackControl object to ensure the system displays accurate information about the current media play state across a person’s devices and in system UI.
+
 
 ---
 

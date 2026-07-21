@@ -66,6 +66,7 @@ Use this object to create a disbursement (payment) request from a merchant to a 
 ### Instance Properties
 - [var isDelegatedRequest: Bool](pkdisbursementrequest/isdelegatedrequest.md)
   A Boolean value that indicates whether this disbursement request is being made by a delegated entity on behalf of a merchant.
+- [var unsupportedPrimaryAccountIdentifiers: [String]](pkdisbursementrequest/unsupportedprimaryaccountidentifiers.md)
 
 ## Relationships
 

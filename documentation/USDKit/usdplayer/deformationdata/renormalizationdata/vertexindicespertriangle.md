@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: property
 
+Vertex indices for each triangle, stored as three consecutive indices per triangle.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)

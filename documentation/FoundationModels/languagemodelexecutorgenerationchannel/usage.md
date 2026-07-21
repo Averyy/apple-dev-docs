@@ -25,9 +25,6 @@ Producers report the current cumulative totals on every update and consumers rep
 
 ## Topics
 
-### Creating a usage token instance
-- [init(input: LanguageModelExecutorGenerationChannel.Usage.Input, output: LanguageModelExecutorGenerationChannel.Usage.Output)](languagemodelexecutorgenerationchannel/usage/init(input:output:).md)
-  Creates a usage update.
 ### Updating the token counts
 - [var input: LanguageModelExecutorGenerationChannel.Usage.Input](languagemodelexecutorgenerationchannel/usage/input-swift.property.md)
   The input token counts from the transcript.
@@ -37,6 +34,12 @@ Producers report the current cumulative totals on every update and consumers rep
   The output token counts from the response.
 - [LanguageModelExecutorGenerationChannel.Usage.Output](languagemodelexecutorgenerationchannel/usage/output-swift.struct.md)
   Token counts for the output produced by the model.
+### Initializers
+- [init(input: LanguageModelExecutorGenerationChannel.Usage.Input, output: LanguageModelExecutorGenerationChannel.Usage.Output, metadata: [String : any Sendable & Codable & Equatable])](languagemodelexecutorgenerationchannel/usage/init(input:output:metadata:).md)
+  Creates a usage update.
+### Instance Properties
+- [var metadata: [String : any Sendable & Codable & Equatable]](languagemodelexecutorgenerationchannel/usage/metadata.md)
+  The additional metadata with a token count.
 
 ## Relationships
 

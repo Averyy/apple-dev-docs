@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: property
 
-The portal entity with `ModelComponent` and `PortalComponent`.
+The entity that has the portal surface mesh, [`PortalMaterial`](portalmaterial.md), and [`PortalComponent`](portalcomponent.md).
 
 **Availability**:
 - iOS 27.0+ (Beta)

@@ -18,11 +18,6 @@ The estimated length of the exported file, in bytes.
 var estimatedOutputFileLength: Int64 { get }
 ```
 
-## See Also
-
-- [func estimateOutputFileLength(completionHandler: (Int64, (any Error)?) -> Void)](avassetexportsession/estimateoutputfilelength(completionhandler:).md)
-  Starts estimating the output file length of the export while considering the asset, preset, and time range configuration of the export session.
-
 
 ---
 

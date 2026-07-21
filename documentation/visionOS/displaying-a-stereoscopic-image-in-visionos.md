@@ -16,7 +16,7 @@ This sample demonstrates how to create a stereoscopic image with shader graph ma
 
 ##### Set Up the Shader Graph
 
-The sample sets up the shader graph for the stereoscopic material with two image files: `LeftTexture` and `RightTexture`. The sample applies these image files to the doc://com.apple.documentation/documentation/shadergraph/realitykit/camera-index-switch-(realitykit) node, to set up a dedicated texture for both the left and the right eye, like in the following image:
+The sample sets up the shader graph for the stereoscopic material with two image files: `LeftTexture` and `RightTexture`. The sample applies these image files to the [`Camera Index Switch (RealityKit)`](https://developer.apple.com/documentation/ShaderGraph/realitykit/Camera-Index-Switch-(RealityKit)) node, to set up a dedicated texture for both the left and the right eye, like in the following image:
 
 ![A screenshot of the shader graph in Reality Composer Pro, showcasing the stereoscopic material with the LeftTexture and RightTexture image files.](https://docs-assets.developer.apple.com/published/1b5afec6df0c85a7507c7d49d99c3e9a/sample-stereoimage-1-shader-graph-view.png)
 

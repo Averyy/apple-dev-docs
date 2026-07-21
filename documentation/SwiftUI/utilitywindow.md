@@ -46,7 +46,7 @@ struct PhotoInfoViewer: View {
     @FocusedValue(PhotoSelection.self) private var selectedPhotos
 
     var body: some View {
-        Text("\(selectedPhotos.count) photos selected")
+        Text("\(selectedPhotos?.count ?? 0) photos selected")
     }
 }
 ```

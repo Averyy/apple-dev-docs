@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: class
 
-An array of length matching the rank, holding the dimensions of a tensor.
+An integer array that holds per-dimension values such as tensor sizes, strides, or block factors
 
 **Availability**:
 - iOS 26.0+
@@ -21,7 +21,7 @@ class MTLTensorExtents
 
 #### Overview
 
-Supports rank up to [`MTL_TENSOR_MAX_RANK`](mtl_tensor_max_rank.md).
+Supports a rank between `0` and [`MTL_TENSOR_MAX_RANK`](mtl_tensor_max_rank.md).
 
 ## Topics
 
@@ -32,7 +32,7 @@ Supports rank up to [`MTL_TENSOR_MAX_RANK`](mtl_tensor_max_rank.md).
 - [var extents: [Int]](mtltensorextents/extents.md)
   Retrieves the extents for this object.
 - [var rank: Int](mtltensorextents/rank.md)
-  Obtains the rank of the tensor.
+  The number of values in the extents object.
 
 ## Relationships
 
@@ -56,7 +56,7 @@ Supports rank up to [`MTL_TENSOR_MAX_RANK`](mtl_tensor_max_rank.md).
 - [class MTLTensorReferenceType](mtltensorreferencetype.md)
   An object that represents a tensor in the shading language in a struct or array.
 - [struct MTLTensorUsage](mtltensorusage.md)
-  The type that represents the different contexts for a tensor.
+  The contexts in which you can use a tensor.
 - [let MTLTensorDomain: String](mtltensordomain.md)
   An error domain for errors that pertain to creating a tensor.
 - [protocol MTLTensorBinding](mtltensorbinding.md)

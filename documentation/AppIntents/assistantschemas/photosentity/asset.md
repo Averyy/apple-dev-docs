@@ -22,7 +22,7 @@ var asset: some AssistantSchemas.Entity { get }
 
 To integrate your app’s functionality with Siri and Apple Intelligence, you use Swift macros that generate additional properties and add protocol conformance for your app entity implementation.
 
-For general information about app intent domains, see doc:Integrating-actions-with-siri-and-apple-intelligence.
+For general information about app intent domains, see [`Making actions and content discoverable by Apple Intelligence`](making-actions-and-content-discoverable-by-apple-intelligence.md).
 
 The following example shows an app entity that conforms to the `photos.asset` schema:
 

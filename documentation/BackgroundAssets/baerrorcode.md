@@ -56,6 +56,8 @@ enum BAErrorCode
 - [enum ManagedBackgroundAssetsError](managedbackgroundassetserror.md)
   An error for a managed asset pack.
 - [let BAErrorDomain: String](baerrordomain.md)
+- [AssetPackManager.LocalAvailabilityError](assetpackmanager/localavailabilityerror.md)
+  An error that provides information about local asset pack availability, distinguishing between successes and failures.
 
 
 ---

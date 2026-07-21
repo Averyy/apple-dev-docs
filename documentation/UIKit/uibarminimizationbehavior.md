@@ -18,7 +18,7 @@ enum UIBarMinimizationBehavior
 
 ## Topics
 
-### Enumeration Cases
+### Minimizing the bar
 - [UIBarMinimizationBehavior.automatic](uibarminimizationbehavior/automatic.md)
   The system determines the minimization behavior.
 - [UIBarMinimizationBehavior.never](uibarminimizationbehavior/never.md)
@@ -27,7 +27,7 @@ enum UIBarMinimizationBehavior
   Minimize when the user scrolls down.
 - [UIBarMinimizationBehavior.onScrollUp](uibarminimizationbehavior/onscrollup.md)
   Minimize when the user scrolls up.
-### Initializers
+### Creating a minimization behavior
 - [init?(rawValue: Int)](uibarminimizationbehavior/init(rawvalue:).md)
 
 ## Relationships
@@ -39,6 +39,15 @@ enum UIBarMinimizationBehavior
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [UIAccessibility.ExpandedStatus](uiaccessibility/expandedstatus.md)
+- [UITextFormattingViewController.ComponentSize](uitextformattingviewcontroller/componentsize.md)
+  Sizes of text formatting view controller components.
+- [enum UIFocusItemDeferralMode](uifocusitemdeferralmode.md)
+- [enum UIBarMinimizationRestorationBehavior](uibarminimizationrestorationbehavior.md)
+- [enum UIBarMinimizationSafeAreaAdjustment](uibarminimizationsafeareaadjustment.md)
 
 
 ---

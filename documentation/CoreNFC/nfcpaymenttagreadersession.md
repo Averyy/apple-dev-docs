@@ -29,7 +29,7 @@ The tag must be available to the reader session, so it can read and write data t
 
 The system only supports one active [`NFCReaderSession`](nfcreadersession-swift.class.md) at a time. The system queues and processes subsequently opened sessions in first-in-first-out order.
 
-> ❗ **Important**: The system supports use of `NFCPaymentTagReaderSession` only within the European Union (EU). People using your app must have an account registered in the EU, and their device must be located within the EU. These registration and device location requirements also apply to developing and testing apps that use this API. If the device isn’t currently eligible to use `NFCPaymentTagReaderSession`, the `NFCPaymentTagReaderSession.readingAvailable` property is false.
+> ❗ **Important**: The system supports use of `NFCPaymentTagReaderSession` only within the European Union (EU). To develop and test an app that uses this feature, see [`Request the NFCTagReaderSession Development Entitlement`](https://developer.apple.comhttps://developer.apple.com/contact/request/nfc-payment-tag-reader/). People using your app must have an account registered in the EU, and their device must be located within the EU. If the device isn’t currently eligible to use `NFCPaymentTagReaderSession`, the `NFCPaymentTagReaderSession.readingAvailable` property is `false`.
 
 ## Topics
 

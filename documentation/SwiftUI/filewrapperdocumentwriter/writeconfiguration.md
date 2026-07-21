@@ -19,7 +19,7 @@ typealias WriteConfiguration = DocumentWriteConfiguration
 ## See Also
 
 - [init(sending FileWrapperDocumentWriter<Snapshot>.WriteConfiguration, makeFileWrapper: (Snapshot, FileWrapper?) async throws -> FileWrapper)](filewrapperdocumentwriter/init(_:makefilewrapper:).md)
-  Creates a writer that uses `FileWrapper` to write documents to disk.
+  Creates a writer that converts a snapshot into a `FileWrapper`.
 
 
 ---

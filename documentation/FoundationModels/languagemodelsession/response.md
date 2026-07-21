@@ -33,6 +33,12 @@ struct Response<Content> where Content : Generable
 - [let transcriptEntries: ArraySlice<Transcript.Entry>](languagemodelsession/response/transcriptentries.md)
   The list of transcript entries.
 
+## Relationships
+
+### Conforms To
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
+
 ## See Also
 
 - [var isResponding: Bool](languagemodelsession/isresponding.md)

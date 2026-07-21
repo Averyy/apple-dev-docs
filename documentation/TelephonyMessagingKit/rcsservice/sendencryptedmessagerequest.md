@@ -32,6 +32,13 @@ struct SendEncryptedMessageRequest
 ### Supporting types
 - [RCSService.SendEncryptedMessageRequest.Result](rcsservice/sendencryptedmessagerequest/result.md)
   A structure that represents the result of sending an encrypted message.
+### Initializers
+- [init(content: RCSMessage.Reply, destination: RCSHandle, cellularServiceID: CellularServiceID, messageID: RCSMessageID)](rcsservice/sendencryptedmessagerequest/init(content:destination:cellularserviceid:messageid:)-8lk8q.md)
+  Creates a new send encrypted message request with the given parameters.
+- [init(content: RCSMessage.Reaction, destination: RCSHandle, cellularServiceID: CellularServiceID, messageID: RCSMessageID)](rcsservice/sendencryptedmessagerequest/init(content:destination:cellularserviceid:messageid:)-9lffd.md)
+  Creates a new send encrypted message request with the given parameters.
+- [init(content: RCSMessage.CustomReaction, destination: RCSHandle, cellularServiceID: CellularServiceID, messageID: RCSMessageID)](rcsservice/sendencryptedmessagerequest/init(content:destination:cellularserviceid:messageid:)-9ns32.md)
+  Creates a new send encrypted message request with the given parameters.
 
 ## Relationships
 

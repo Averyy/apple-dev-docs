@@ -22,6 +22,11 @@ class var isSupported: Bool { get }
 
 `YES` if the device and OS support Pro Video Storage functionality; otherwise, `NO`.
 
+## See Also
+
+- [class var shared: AVProVideoStorage?](avprovideostorage/shared.md)
+  Returns the singleton instance for Pro Video Storage.
+
 
 ---
 

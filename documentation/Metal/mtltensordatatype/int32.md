@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: case
 
-A 32-bit integer data type.
+A 32-bit signed integer data type.
 
 **Availability**:
 - iOS 26.0+

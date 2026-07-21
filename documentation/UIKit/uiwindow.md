@@ -21,6 +21,7 @@ class UIWindow
 
 ## Mentions
 
+- [Presenting content on a connected display](presenting-content-on-a-connected-display.md)
 - [Transitioning to the UIKit scene-based life cycle](transitioning-to-the-uikit-scene-based-life-cycle.md)
 - [Using responders and the responder chain to handle events](using-responders-and-the-responder-chain-to-handle-events.md)
 

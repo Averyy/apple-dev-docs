@@ -24,11 +24,6 @@ var estimatedMaximumDuration: CMTime { get async throws }
 - `handler`: A callback the system invokes when it finishes its estimation. It passes the callback the following parameters: - **`estimatedMaximumDuration`**: The system’s estimation of the maximum duration.
 - **`error`**: An optional error object that indicates if an error occurred during processing.
 
-## See Also
-
-- [var maxDuration: CMTime](avassetexportsession/maxduration.md)
-  Provides an estimate of the maximum duration of the exported media.
-
 
 ---
 

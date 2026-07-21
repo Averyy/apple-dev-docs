@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: property
 
+Changed vertex indices per triangle.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -15,6 +17,10 @@
 ```swift
 let vertexIndicesPerTriangle: [UInt32]?
 ```
+
+#### Discussion
+
+`nil` if unchanged.
 
 
 ---

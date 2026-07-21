@@ -21,6 +21,7 @@ class UISceneConfiguration
 
 ## Mentions
 
+- [Presenting content on a connected display](presenting-content-on-a-connected-display.md)
 - [Transitioning to the UIKit scene-based life cycle](transitioning-to-the-uikit-scene-based-life-cycle.md)
 
 #### Overview
@@ -34,6 +35,10 @@ When the user requests a new instance of your app’s user interface, UIKit look
 ### Creating a configuration object
 - [init(name: String?, sessionRole: UISceneSession.Role)](uisceneconfiguration/init(name:sessionrole:).md)
   Creates a scene-configuration object with the specified role and app-specific name.
+- [convenience init(name: String?)](uisceneconfiguration/init(name:).md)
+  Creates a scene-configuration object with the specified name.
+- [convenience init()](uisceneconfiguration/init.md)
+  Creates a scene-configuration object.
 ### Specifying the scene creation details
 - [var sceneClass: AnyClass?](uisceneconfiguration/sceneclass.md)
   The class of the scene object that you want UIKit to create.
@@ -49,11 +54,7 @@ When the user requests a new instance of your app’s user interface, UIKit look
 - [UISceneSession.Role](uiscenesession/role-swift.struct.md)
   Constants that indicate the possible roles for a scene.
 ### Initializers
-- [convenience init()](uisceneconfiguration/init.md)
-  Creates a scene-configuration object.
 - [init?(coder: NSCoder)](uisceneconfiguration/init(coder:).md)
-- [convenience init(name: String?)](uisceneconfiguration/init(name:).md)
-  Creates a scene-configuration object with the specified name.
 
 ## Relationships
 

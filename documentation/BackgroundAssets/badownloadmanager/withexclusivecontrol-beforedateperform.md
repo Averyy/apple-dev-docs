@@ -14,13 +14,8 @@
 ## Declaration
 
 ```swift
-func withExclusiveControl(beforeDate date: Date, perform performHandler: @escaping @Sendable (Bool, (any Error)?) -> Void)
+func withExclusiveControl(beforeDate date: Date, perform performHandler: @escaping (Bool, (any Error)?) -> Void)
 ```
-
-## See Also
-
-- [func withExclusiveControl((Bool, (any Error)?) -> Void)](badownloadmanager/withexclusivecontrol(_:).md)
-  Attempts to acquire immediate, exclusive access to the download manager.
 
 
 ---

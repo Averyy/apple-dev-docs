@@ -73,8 +73,6 @@ Fetch the default [`WKContentRuleListStore`](wkcontentruleliststore.md) object o
 - [class WKContentWorldConfiguration](wkcontentworldconfiguration.md)
 - [class WKJSHandle](wkjshandle.md)
   A WKJSHandle object contains a reference to a JavaScript object.
-- [class WKJSScriptingBuffer](wkjsscriptingbuffer.md)
-  A WKJSScriptingBuffer object exposes an application controlled data buffer to JavaScript.
 - [class WKJSSerializedNode](wkjsserializednode.md)
   A `WKJSSerializedNode` object contains the serialized representation of a DOM node
 

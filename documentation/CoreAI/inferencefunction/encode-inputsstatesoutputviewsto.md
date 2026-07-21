@@ -10,6 +10,7 @@ Encodes the inference onto the provided compute stream, returning async values f
 - iPadOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 

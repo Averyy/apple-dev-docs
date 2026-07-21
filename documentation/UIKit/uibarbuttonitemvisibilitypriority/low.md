@@ -14,6 +14,11 @@
 static let low: UIBarButtonItemVisibilityPriority
 ```
 
+## See Also
+
+- [static let high: UIBarButtonItemVisibilityPriority](uibarbuttonitemvisibilitypriority/high.md)
+- [static let standard: UIBarButtonItemVisibilityPriority](uibarbuttonitemvisibilitypriority/standard.md)
+
 
 ---
 

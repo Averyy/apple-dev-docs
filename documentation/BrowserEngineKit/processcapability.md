@@ -48,6 +48,13 @@ When your extension no longer needs the capability, call [`invalidate()`](proces
 ### Enumeration Cases
 - [case screenCapture(environment: MediaEnvironment)](processcapability/screencapture(environment:).md)
   The helper extension process may access AV hardware required for media capture and playback.
+### Instance Methods
+- [func activate() throws](processcapability/activate.md)
+  Activates the capability.
+- [func request() throws -> ProcessCapability.Grant](processcapability/request.md)
+  Requests the capability to be granted to the current process.
+- [func suspend() throws](processcapability/suspend.md)
+  Suspends the capability.
 
 ## See Also
 

@@ -60,8 +60,6 @@ To present an existing document, your app must define a [`DocumentGroup`](docume
 
 - [var newDocument: NewDocumentAction](environmentvalues/newdocument.md)
   An action in the environment that presents a new document.
-- [struct NewDocumentAction](newdocumentaction.md)
-  An action that presents a new document.
 - [var openDocument: OpenDocumentAction](environmentvalues/opendocument.md)
   An action in the environment that presents an existing document.
 

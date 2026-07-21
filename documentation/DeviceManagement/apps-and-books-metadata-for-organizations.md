@@ -68,7 +68,7 @@ This API requires authentication that you’re a member of the Apple Developer P
 ## See Also
 
 - [Getting started with the management API](getting-started-with-the-management-api.md)
-  Configure your MDM client to handle content and user assignments.
+  Configure your device management service to handle content and user assignments.
 
 
 ---

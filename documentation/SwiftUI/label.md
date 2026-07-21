@@ -113,6 +113,11 @@ Label {
   Creates a label representing a family activity application.
 - [init(_:image:)](label/init(_:image:).md)
   Creates a label with an icon image and a title generated from a localized string.
+### Configuring a Label
+- [func labelIconToTitleSpacing(CGFloat) -> some View](view/labelicontotitlespacing(_:).md)
+  Set the spacing between the icon and title in labels.
+- [func labelReservedIconWidth(CGFloat) -> some View](view/labelreservediconwidth(_:).md)
+  Set the width reserved for icons in labels.
 
 ## Relationships
 

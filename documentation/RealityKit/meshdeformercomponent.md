@@ -32,6 +32,8 @@ struct MeshDeformerComponent
 
 ### Conforms To
 - [Component](component.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -41,12 +43,6 @@ struct MeshDeformerComponent
   A deformation that binds a 3D mesh to an underlying skeleton.
 - [struct BlendShapeDeformer](blendshapedeformer.md)
   A blend-shape deformation that interpolates between N meshes according to a weighted sum. Consumes information from the `BlendShapeWeightsComponent`
-- [struct OpenSubdivisionDeformer](opensubdivisiondeformer.md)
-  OpenSubdiv surface deformation
-- [struct RenormalizationDeformer](renormalizationdeformer.md)
-  Recalculates tangent frame based on current state of positions
-- [struct CalculateBoundingBoxDeformer](calculateboundingboxdeformer.md)
-  Calculates a bounding box based on the current state of the deformed positions.
 
 
 ---

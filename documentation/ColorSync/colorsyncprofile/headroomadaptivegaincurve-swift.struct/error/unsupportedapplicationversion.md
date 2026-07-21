@@ -3,6 +3,8 @@
 **Framework**: ColorSync  
 **Kind**: case
 
+The application version isn’t supported. Only `0` is valid.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)

@@ -34,8 +34,6 @@ print(statistics.count)             // Int — number of samples
 print(statistics.standardDeviation) // Double — negative if unavailable
 ```
 
-This type replaces [`MXAverage`](mxaverage.md).
-
 ## Topics
 
 ### Statistics

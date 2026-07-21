@@ -42,8 +42,6 @@ for result in entry.values {
 
 Use the [`metricGroup`](metricresult/metricgroup.md) property to filter or categorize results without exhaustive switching when you only need a subset of metric types.
 
-This type replaces the typed metric properties of [`MXMetricPayload`](mxmetricpayload.md), such as `cpuMetrics`, `memoryMetrics`, and `networkTransferMetrics`.
-
 ## Topics
 
 ### Metric group

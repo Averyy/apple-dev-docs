@@ -39,7 +39,7 @@ struct SentimentStage: CustomStage {
 
     var mode: String
 
-    func execute(items: [CSSearchableItem]) async throws -> SearchPipelineData {
+    func execute(items: [SearchableItem]) async throws -> SearchPipelineData {
         let scored = items.map { item in
             ScoredSearchableItem(item: item,
                                  score: SentimentAnalyzer.score(item, mode: mode))
@@ -69,16 +69,17 @@ let tool = SpotlightSearchTool(configuration: .init(
   A human-readable description of what this stage does.
 - [static var inputTypes: [SearchPipelineDataType]](customstage/inputtypes.md)
   The data types this stage accepts as input.
-- [static var outputTypes: [SearchPipelineDataType]](customstage/outputtypes.md)
-  The data types this stage produces as output.
 ### Performing the stage behavior
-- [func execute(items: [CSSearchableItem]) async throws -> SearchPipelineData](customstage/execute(items:).md)
+- [func execute(items: [SearchableItem]) async throws -> SearchPipelineData](customstage/execute(items:).md)
 - [func execute(scoredItems: [ScoredSearchableItem]) async throws -> SearchPipelineData](customstage/execute(scoreditems:).md)
 - [func execute(text: String) async throws -> SearchPipelineData](customstage/execute(text:).md)
 - [func execute(count: Int) async throws -> SearchPipelineData](customstage/execute(count:).md)
-- [func execute(groupedItems: [SearchableItemAttribute : [CSSearchableItem]]) async throws -> SearchPipelineData](customstage/execute(groupeditems:).md)
+- [func execute(groupedItems: [SearchableItemAttribute : [SearchableItem]]) async throws -> SearchPipelineData](customstage/execute(groupeditems:).md)
 - [func execute(statisticName: String, value: Double) async throws -> SearchPipelineData](customstage/execute(statisticname:value:).md)
 - [func execute(table: SearchResultsTable) async throws -> SearchPipelineData](customstage/execute(table:).md)
+### Type Properties
+- [static var outputTypes: [SearchPipelineDataType]](customstage/outputtypes.md)
+  The data types this stage produces as output.
 
 ## Relationships
 

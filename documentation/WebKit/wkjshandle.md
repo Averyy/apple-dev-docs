@@ -67,8 +67,6 @@ Whatever JavaScript object the `WKJSHandle` represents, it will be protected fro
 - [class WKUserScript](wkuserscript.md)
   A script that the web view injects into a webpage.
 - [class WKContentWorldConfiguration](wkcontentworldconfiguration.md)
-- [class WKJSScriptingBuffer](wkjsscriptingbuffer.md)
-  A WKJSScriptingBuffer object exposes an application controlled data buffer to JavaScript.
 - [class WKJSSerializedNode](wkjsserializednode.md)
   A `WKJSSerializedNode` object contains the serialized representation of a DOM node
 

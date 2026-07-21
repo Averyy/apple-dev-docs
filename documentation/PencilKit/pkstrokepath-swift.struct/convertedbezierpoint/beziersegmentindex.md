@@ -18,6 +18,10 @@ The index of the Bézier segment the point originates from, not including `move 
 let bezierSegmentIndex: Int
 ```
 
+## Mentions
+
+- [Importing Bézier path data into PencilKit](importing-external-drawing-data-into-pencilkit.md)
+
 ## See Also
 
 - [let index: Int](pkstrokepath-swift.struct/convertedbezierpoint/index.md)

@@ -32,6 +32,10 @@ The default value for this property is `nil`.
   An optional filter to display only select root-level tabs when in a compact appearance.
 - [var customizationIdentifier: String?](uitabbarcontroller/customizationidentifier.md)
   The customization identifier for the tab bar and sidebar for persistence.
+- [var prominentTabIdentifier: String?](uitabbarcontroller/prominenttabidentifier.md)
+  The identifier of the tab that should be displayed as prominent. Where supported, the specified tab receives enhanced visual emphasis in the tab bar. If this property is nil, and there is a `UISearchTab` that could become prominent (when `automaticallyActivatesSearch = true`), then the search tab will receive the prominent treatment by default.
+- [func setProminentTabIdentifier(String?, animated: Bool)](uitabbarcontroller/setprominenttabidentifier(_:animated:).md)
+  Sets the prominent tab identifier with an option to animate the change.
 
 
 ---

@@ -19,10 +19,6 @@ Optional settings for a product purchase that add account information, purchase 
 struct PurchaseOption
 ```
 
-## Mentions
-
-- [Generating JWS to sign App Store requests](generating-jws-to-sign-app-store-requests.md)
-
 #### Overview
 
 Associate purchase options with an in-app purchase when you call the methods to initiate a purchase, such as [`purchase(options:)`](product/purchase(options:).md) or [`purchase(confirmIn:options:)`](product/purchase(confirmin:options:)-6dj6y.md). Use the testing-specific options with [`StoreKit Test`](https://developer.apple.com/documentation/StoreKitTest) or in the sandbox testing environment.

@@ -19,8 +19,8 @@ static func scoredItems(_ items: [ScoredSearchableItem]) -> SearchPipelineData
 ## See Also
 
 - [init(payload: SearchPipelineData.Payload)](searchpipelinedata/init(payload:).md)
-- [static func items([CSSearchableItem]) -> SearchPipelineData](searchpipelinedata/items(_:).md)
-- [static func groupedItems([SearchableItemAttribute : [CSSearchableItem]]) -> SearchPipelineData](searchpipelinedata/groupeditems(_:).md)
+- [static func items([SearchableItem]) -> SearchPipelineData](searchpipelinedata/items(_:).md)
+- [static func groupedItems([SearchableItemAttribute : [SearchableItem]]) -> SearchPipelineData](searchpipelinedata/groupeditems(_:).md)
 - [static func text(String) -> SearchPipelineData](searchpipelinedata/text(_:).md)
 - [static func count(Int) -> SearchPipelineData](searchpipelinedata/count(_:).md)
 - [static func statistic(name: String, value: Double) -> SearchPipelineData](searchpipelinedata/statistic(name:value:).md)

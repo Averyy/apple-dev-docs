@@ -3,6 +3,8 @@
 **Framework**: MetricKit  
 **Kind**: property
 
+An object containing disk space usage metrics for this application.
+
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
@@ -15,10 +17,6 @@
 ```swift
 var diskSpaceUsageMetrics: MXDiskSpaceUsageMetric? { get }
 ```
-
-#### Discussion
-
-An object containing disk space usage metrics for this application.
 
 
 ---

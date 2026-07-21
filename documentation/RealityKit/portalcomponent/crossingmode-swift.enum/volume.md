@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: case
 
-Allows contents within the portal to cross using a volumetric box.
+Allows contents within the portal to cross a box-shaped boundary.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -21,11 +21,13 @@ case volume(PortalComponent.Volume)
 
 #### Discussion
 
-Entities with `PortalCrossingComponent` will cross the box boundary. Parts of entities inside the volume render as portal content, parts outside render normally.
+Entities inside the portal world that have a [`PortalCrossingComponent`](portalcrossingcomponent.md) cross the faces of the box. Parts of a crossing entity inside the volume render as portal content, parts outside render in the host scene.
+
+Use this case for room-sized portals and other bounded portal spaces. For portals where the box should enclose the portal surface, [`enclosingBox(depth:)`](portalcomponent/boundarystyle/enclosingbox(depth:).md) is a convenient way to configure this case alongside the matching [`PortalComponent.ClippingMode.volume(_:)`](portalcomponent/clippingmode-swift.enum/volume(_:).md).
 
 ## Parameters
 
-- `volume`: A [`PortalComponent.Volume`](portalcomponent/volume.md) describing the box position and extents
+- `volume`: A [`PortalComponent.Volume`](portalcomponent/volume.md) describing the box’s center and extents in portal-local space.
 
 
 ---

@@ -141,4 +141,4 @@ As shown in the image below, you can also use lower level cryptographic resource
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/security)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Security)*

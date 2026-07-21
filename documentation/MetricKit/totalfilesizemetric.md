@@ -21,8 +21,6 @@ This metric corresponds to the [`MetricResult.totalFileSize(_:)`](metricresult/t
 
 This value is a daily snapshot, not a cumulative sum over the reporting interval.
 
-This type replaces the `totalBinaryFileSize` and `totalDataFileSize` properties of [`MXDiskSpaceUsageMetric`](mxdiskspaceusagemetric.md).
-
 ## Topics
 
 ### Measurements

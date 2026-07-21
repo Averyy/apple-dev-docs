@@ -25,6 +25,27 @@ A RealityKit portal defines a way to look into a different, immersive world. You
 
 To create a portal, set its [`targetEntity`](portalcomponent/targetentity.md) property to an entity with a [`WorldComponent`](worldcomponent.md). Entities under that world only render within the portal.
 
+##### Quick Start
+
+On iOS 27, macOS 27, tvOS 27, visionOS 27, and later, [`makePortal(surfaceStyle:boundaryStyle:boundaryMode:)`](portalcomponent/makeportal(surfacestyle:boundarystyle:boundarymode:).md) creates a configured portal entity and its target world entity in a single call:
+
+```swift
+let portal = PortalComponent.makePortal(
+   surfaceStyle: .init(width: 0.5, height: 0.5),
+   boundaryStyle: .infinitePlane(),
+   boundaryMode: .clippingAndCrossing
+)
+
+content.add(portal.worldEntity)
+content.add(portal.portalEntity)
+```
+
+To configure existing entities, use [`configure(world:portalEntity:surfaceStyle:boundaryStyle:boundaryMode:)`](portalcomponent/configure(world:portalentity:surfacestyle:boundarystyle:boundarymode:).md).
+
+##### Manual Construction
+
+On earlier OS releases, or when you need direct control over the portal’s mesh, material, or boundary geometry, set the components yourself:
+
 ```swift
 let world = Entity()
 world.components.set(WorldComponent())
@@ -44,7 +65,7 @@ content.add(portal)
 
 ##### Clipping and Crossing
 
-You can enable clipping by configuring [`clippingMode`](portalcomponent/clippingmode-swift.property.md) to something other than [`PortalComponent.ClippingMode.disabled`](portalcomponent/clippingmode-swift.enum/disabled.md). For example, you can use [`PortalComponent.ClippingMode.plane(_:)`](portalcomponent/clippingmode-swift.enum/plane(_:).md). This ensures that the contents of the portal world don’t render beyond the portal boundary, causing depth confusion.
+You can enable clipping by configuring [`clippingMode`](portalcomponent/clippingmode-swift.property.md) to something other than [`PortalComponent.ClippingMode.disabled`](portalcomponent/clippingmode-swift.enum/disabled.md). For example, you can use [`PortalComponent.ClippingMode.plane(_:)`](portalcomponent/clippingmode-swift.enum/plane(_:).md) to clip portal content to an infinite half-space, or [`PortalComponent.ClippingMode.volume(_:)`](portalcomponent/clippingmode-swift.enum/volume(_:).md) to clip to a box-bounded region of space. Clipping prevents portal world content from rendering beyond the portal boundary and causing depth confusion.
 
 Entities inside the portal world with a [`PortalCrossingComponent`](portalcrossingcomponent.md) can freely cross in and out of the portal boundary in any of the following platforms:
 
@@ -52,7 +73,7 @@ Entities inside the portal world with a [`PortalCrossingComponent`](portalcrossi
 - macOS 15 and later
 - visionOS 2 and later
 
-You can enable the crossing feature by configuring [`crossingMode`](portalcomponent/crossingmode-swift.property.md) to something other than [`PortalComponent.CrossingMode.disabled`](portalcomponent/crossingmode-swift.enum/disabled.md). Such as [`PortalComponent.CrossingMode.plane(_:)`](portalcomponent/crossingmode-swift.enum/plane(_:).md).
+You can enable the crossing feature by configuring [`crossingMode`](portalcomponent/crossingmode-swift.property.md) to something other than [`PortalComponent.CrossingMode.disabled`](portalcomponent/crossingmode-swift.enum/disabled.md). Such as [`PortalComponent.CrossingMode.plane(_:)`](portalcomponent/crossingmode-swift.enum/plane(_:).md) for an infinite-plane crossing, or [`PortalComponent.CrossingMode.volume(_:)`](portalcomponent/crossingmode-swift.enum/volume(_:).md) for a box-bounded crossing.
 
 ```swift
 let world = Entity()
@@ -110,13 +131,13 @@ Different lighting environments light the portal crossing entities based on whic
 
 ### Defining the portal volume
 - [PortalComponent.Volume](portalcomponent/volume.md)
-  Defines the geometry of a volumetric (box) portal boundary.
+  A box-shaped region in portal-local space that defines a volumetric portal boundary.
 ### Configuring lighting blend
 - [var lightingBlendDistance: Float](portalcomponent/lightingblenddistance.md)
-  The lighting blend distance from the clipping/crossing plane.
+  The distance over which crossing-entity lighting blends between the host scene and the portal world.
 ### Structures
 - [PortalComponent.BoundaryStyle](portalcomponent/boundarystyle.md)
-  Describes the clipping and crossing boundary shape for a portal.
+  The shape of a portal’s clipping and crossing boundary.
 - [PortalComponent.ClippingPlane](portalcomponent/clippingplane-swift.struct.md)
   A representation of a portal as an infinite plane.
 - [PortalComponent.Options](portalcomponent/options.md)
@@ -124,33 +145,33 @@ Different lighting environments light the portal crossing entities based on whic
 - [PortalComponent.Plane](portalcomponent/plane.md)
   A representation of a portal as an infinite plane.
 - [PortalComponent.Portal](portalcomponent/portal.md)
-  A configured portal surface and its associated world entity.
+  A pair of related entities that make up a configured portal.
 - [PortalComponent.SurfaceStyle](portalcomponent/surfacestyle.md)
-  Describes the surface geometry of the portal mesh.
+  The size of the flat plane mesh that RealityKit generates for a portal.
 ### Initializers
 - [init(target: Entity, clippingMode: PortalComponent.ClippingMode, crossingMode: PortalComponent.CrossingMode)](portalcomponent/init(target:clippingmode:crossingmode:).md)
   Creates a portal component with a target entity, clipping mode, and crossing mode.
 - [init(target: Entity, clippingPlane: PortalComponent.ClippingPlane?)](portalcomponent/init(target:clippingplane:).md)
-  Creates a portal component with a target entity and a clipping plane.
+  Creates a portal component with a target entity and an optional clipping plane.
 - [init(target: Entity, plane: PortalComponent.Plane, options: PortalComponent.Options)](portalcomponent/init(target:plane:options:).md)
   Creates a portal component with a target entity, a single planar definition, and portal options.
 ### Instance Properties
 - [var clippingMode: PortalComponent.ClippingMode](portalcomponent/clippingmode-swift.property.md)
   The clipping behavior of the portal component.
 - [var clippingPlane: PortalComponent.ClippingPlane?](portalcomponent/clippingplane-swift.property.md)
-  The clipping plane of the portal, using the entity’s local coordinates.
+  The clipping plane of the portal, in the entity’s local coordinates.
 - [var crossingMode: PortalComponent.CrossingMode](portalcomponent/crossingmode-swift.property.md)
   The crossing behavior of the portal component.
 - [var targetEntity: Entity?](portalcomponent/targetentity.md)
   The root entity for the portal’s target world.
 ### Type Methods
 - [static func configure(world: Entity, portalEntity: Entity, surfaceStyle: PortalComponent.SurfaceStyle, boundaryStyle: PortalComponent.BoundaryStyle, boundaryMode: PortalComponent.BoundaryMode)](portalcomponent/configure(world:portalentity:surfacestyle:boundarystyle:boundarymode:).md)
-  Sets components on an existing portal surface entity and its world entity, replacing any previously set `WorldComponent`, `ModelComponent`, or `PortalComponent`.
+  Configures an existing pair of entities as a portal and its target world.
 - [static func makePortal(surfaceStyle: PortalComponent.SurfaceStyle, boundaryStyle: PortalComponent.BoundaryStyle, boundaryMode: PortalComponent.BoundaryMode) -> PortalComponent.Portal](portalcomponent/makeportal(surfacestyle:boundarystyle:boundarymode:).md)
-  Creates a complete portal with new entities.
+  Creates a portal entity and a world entity, and configures them.
 ### Enumerations
 - [PortalComponent.BoundaryMode](portalcomponent/boundarymode.md)
-  Controls whether a portal clips portal content, enables entity crossing, both, or neither.
+  A combination of clipping and crossing behaviors to apply to a portal boundary.
 - [PortalComponent.ClippingMode](portalcomponent/clippingmode-swift.enum.md)
   Specifies the mode of clipping for a portal.
 - [PortalComponent.CrossingMode](portalcomponent/crossingmode-swift.enum.md)

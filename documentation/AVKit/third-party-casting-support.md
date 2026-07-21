@@ -6,39 +6,45 @@ Provide custom playback controls for third-party casting services and other medi
 
 #### Overview
 
-Use the [`AVInterfaceControllable`](avinterfacecontrollable-3xs3i.md) protocol suite to build custom transport controls that work with third-party casting services. The [`AVInterfaceControllable`](avinterfacecontrollable-3xs3i.md) composite protocol combines playback, time, media selection, volume, and metadata capabilities into a single interface.
+Use the [`AVPlaybackUserInterfaceControllable`](avplaybackuserinterfacecontrollable-92fri.md) protocol suite to build custom transport controls that work with third-party casting services. The [`AVPlaybackUserInterfaceControllable`](avplaybackuserinterfacecontrollable-92fri.md) composite protocol combines playback, timeline, media selection, volume, and metadata capabilities into a single interface.
 
 ## Topics
 
 ### Playback
-- [protocol AVInterfacePlaybackControllable](avinterfaceplaybackcontrollable-44aba.md)
+- [protocol AVPlaybackUserInterfacePlaybackControllable](avplaybackuserinterfaceplaybackcontrollable-9he54.md)
   Provides playback control and state management for media content.
-- [enum AVInterfacePlaybackState](avinterfaceplaybackstate.md)
-  Describes possible playback states of the interface source.
-- [struct AVInterfaceSeekCapabilities](avinterfaceseekcapabilities.md)
+- [enum AVPlaybackUserInterfacePlaybackState](avplaybackuserinterfaceplaybackstate.md)
+  Describes possible transport states of the playback source.
+- [struct AVPlaybackUserInterfaceSeekCapabilities](avplaybackuserinterfaceseekcapabilities.md)
   Describes navigation capabilities of the media source.
 ### Timeline
-- [protocol AVInterfaceTimeControllable](avinterfacetimecontrollable-63tkp.md)
+- [protocol AVPlaybackUserInterfaceTimeControllable](avplaybackuserinterfacetimecontrollable-50vcy.md)
   Provides time control and navigation capabilities for media content.
-- [class AVInterfaceTimelineSegment](avinterfacetimelinesegment.md)
+- [class AVPlaybackUserInterfacePlaybackPosition](avplaybackuserinterfaceplaybackposition.md)
+  A snapshot comprising a playback position recorded at a known host time and the rate of position advancement.
+- [class AVPlaybackUserInterfaceTimelineSegment](avplaybackuserinterfacetimelinesegment.md)
   Represents a contiguous segment of timeline content with specific playback characteristics.
+- [enum AVPlaybackUserInterfaceTimelineSegmentType](avplaybackuserinterfacetimelinesegmenttype.md)
+  Describes the type of content within a timeline segment.
 ### Media selection
-- [protocol AVInterfaceMediaSelectionControllable](avinterfacemediaselectioncontrollable-6wn31.md)
+- [protocol AVPlaybackUserInterfaceMediaSelectionControllable](avplaybackuserinterfacemediaselectioncontrollable-8ee5z.md)
   Provides audio and subtitle selection capabilities for media content.
-- [class AVInterfaceMediaSelectionOptionSource](avinterfacemediaselectionoptionsource.md)
+- [class AVPlaybackUserInterfaceMediaSelectionOption](avplaybackuserinterfacemediaselectionoption.md)
   Represents a media selection option for audio tracks or subtitle tracks.
 ### Volume
-- [protocol AVInterfaceVolumeControllable](avinterfacevolumecontrollable-5sjm1.md)
+- [protocol AVPlaybackUserInterfaceVolumeControllable](avplaybackuserinterfacevolumecontrollable-4vgi1.md)
   Provides volume and audio muting control for media content.
 ### Metadata
-- [protocol AVInterfaceMetadataProviding](avinterfacemetadataproviding-666nk.md)
+- [protocol AVPlaybackUserInterfaceMetadataProviding](avplaybackuserinterfacemetadataproviding-814y4.md)
   Provides metadata information about media content including title, artwork, and content type.
-- [struct AVInterfaceMetadata](avinterfacemetadata-swift.struct.md)
+- [struct AVPlaybackUserInterfaceContentMetadata](avplaybackuserinterfacecontentmetadata-swift.struct.md)
   A Swift-friendly structure representing media metadata.
-- [class AVInterfaceAlbumArtwork](avinterfacealbumartwork.md)
-  Base class representing album artwork or cover art for media content.
+- [class AVPlaybackUserInterfaceContentArtwork](avplaybackuserinterfacecontentartwork.md)
+  Base class representing artwork or cover art for media content.
+- [class AVPlaybackUserInterfaceContentURLArtwork](avplaybackuserinterfacecontenturlartwork.md)
+  An artwork subclass that references artwork via a URL and content type.
 ### Complete interface
-- [protocol AVInterfaceControllable](avinterfacecontrollable-3xs3i.md)
+- [protocol AVPlaybackUserInterfaceControllable](avplaybackuserinterfacecontrollable-92fri.md)
   A comprehensive protocol that provides complete media control and information for playback, timeline navigation, audio/subtitle selection, volume control, and metadata access.
 
 ## See Also

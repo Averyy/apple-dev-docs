@@ -85,12 +85,12 @@ TabView {
   Configures the overflow menu of a toolbar.
 - [func toolbarRole(ToolbarRole) -> some View](view/toolbarrole(_:).md)
   Configures the semantic role for the content populating the toolbar.
+- [func toolbarMinimizationBehavior(ToolbarMinimizationBehavior, for: ToolbarPlacement...) -> some View](view/toolbarminimizationbehavior(_:for:).md)
+  Sets the minimize behavior for the specified bars.
+- [func toolbarMinimizationRestoration(ToolbarMinimizationRestoration, for: ToolbarPlacement...) -> some View](view/toolbarminimizationrestoration(_:for:).md)
+  Sets the restoration behavior for the specified bars during minimization.
 - [func toolbarMinimizationSafeAreaAdjustment(ToolbarMinimizationSafeAreaAdjustment, for: ToolbarPlacement...) -> some View](view/toolbarminimizationsafeareaadjustment(_:for:).md)
   Sets the safe area adjustment for the specified bars during minimization.
-- [func toolbarTitleMenu<C>(content: () -> C) -> some View](view/toolbartitlemenu(content:).md)
-  Configure the title menu of a toolbar.
-- [func toolbarTitleDisplayMode(ToolbarTitleDisplayMode) -> some View](view/toolbartitledisplaymode(_:).md)
-  Configures the toolbar title display mode for this view.
 
 
 ---

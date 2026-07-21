@@ -28,6 +28,8 @@ The point light is an omnidirectional light that illuminates all the virtual con
 
 A RealityKit scene can contain up to eight dynamic lights, which are entities that contain a [`SpotLightComponent`](spotlightcomponent.md), [`PointLightComponent`](pointlightcomponent.md), or a [`DirectionalLightComponent`](directionallightcomponent.md). This limit doesn’t include light from image-based lighting.
 
+Devices that support `MTLGPUFamily.apple6` or later lift this limit, so a scene can contain many more dynamic lights.
+
 ## Topics
 
 ### Creating a point light

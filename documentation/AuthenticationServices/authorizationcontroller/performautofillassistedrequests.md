@@ -30,7 +30,7 @@ TextField("Username", text: $username)
     .textContentType(.username)
 ```
 
-Then use doc://com.apple.documentation/documentation/swiftui/view/task(priority:_:) or doc://com.apple.documentation/documentation/swiftui/view/task(id:priority:_:) to perform the requests when the view appears:
+Then use [`task(name:priority:file:line:_:)`](https://developer.apple.com/documentation/SwiftUI/View/task(name:priority:file:line:_:)) or [`task(id:name:priority:file:line:_:)`](https://developer.apple.com/documentation/SwiftUI/View/task(id:name:priority:file:line:_:)) to perform the requests when the view appears:
 
 ```swift
 .task {

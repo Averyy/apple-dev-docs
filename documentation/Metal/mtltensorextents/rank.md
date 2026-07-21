@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: property
 
-Obtains the rank of the tensor.
+The number of values in the extents object.
 
 **Availability**:
 - iOS 26.0+
@@ -18,10 +18,6 @@ Obtains the rank of the tensor.
 ```swift
 var rank: Int { get }
 ```
-
-#### Discussion
-
-The rank represents the number of dimensions.
 
 
 ---

@@ -26,7 +26,8 @@ Initialization reads in the document types from the `CFBundleDocumentTypes` prop
 
 ## See Also
 
-- [Document-Based App Programming Guide for Mac](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/DocBasedAppProgrammingGuideForOSX/Introduction/Introduction.html#//apple_ref/doc/uid/TP40011179)
+- [Developing a Document-Based App](developing-a-document-based-app.md)
+  Write an app that creates, manages, edits, and saves text documents.
 
 
 ---

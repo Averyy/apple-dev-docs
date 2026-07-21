@@ -21,11 +21,6 @@ func dividerImage(forLeftSegmentState state: UIControl.State, rightSegmentState 
 
 The image used for the specified combination of left and right states.
 
-## Parameters
-
-- `state`: The state of the left side of the control.
-- `state`: The state of the right side of the control.
-
 ## See Also
 
 - [func backgroundImage(for: UIControl.State) -> UIImage?](uistepper/backgroundimage(for:).md)

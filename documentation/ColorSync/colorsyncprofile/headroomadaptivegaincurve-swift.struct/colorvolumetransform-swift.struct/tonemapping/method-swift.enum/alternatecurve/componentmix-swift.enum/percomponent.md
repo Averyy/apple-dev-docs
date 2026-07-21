@@ -3,6 +3,8 @@
 **Framework**: ColorSync  
 **Kind**: case
 
+Apply the curve independently to each channel.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)

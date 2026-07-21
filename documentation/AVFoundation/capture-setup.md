@@ -124,6 +124,9 @@ The main parts of the capture architecture are sessions, inputs, and outputs: Ca
   Connection state of an external sync device
 - [AVExternalSyncDevice.DiscoverySession](avexternalsyncdevice/discoverysession.md)
   A means of discovering and monitoring connection / disconnection of external sync devices to the host.
+### Pro video storage
+- [class AVProVideoStorage](avprovideostorage.md)
+  A class to track and manage pre-allocated storage for high data rate video capture.
 
 ## See Also
 

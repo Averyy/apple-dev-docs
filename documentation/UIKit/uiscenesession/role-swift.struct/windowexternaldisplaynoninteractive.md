@@ -20,9 +20,9 @@ static let windowExternalDisplayNonInteractive: UISceneSession.Role
 
 ## Mentions
 
-- [Transitioning to the UIKit scene-based life cycle](transitioning-to-the-uikit-scene-based-life-cycle.md)
 - [Presenting content on a connected display](presenting-content-on-a-connected-display.md)
 - [Building a desktop-class iPad app](building-a-desktop-class-ipad-app.md)
+- [Transitioning to the UIKit scene-based life cycle](transitioning-to-the-uikit-scene-based-life-cycle.md)
 
 ## See Also
 

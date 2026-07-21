@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: property
 
+IDs of newly added texture assets.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)

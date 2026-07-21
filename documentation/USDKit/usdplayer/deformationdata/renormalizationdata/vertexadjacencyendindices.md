@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: property
 
+Cumulative end indices into `vertexAdjacencies`, one per vertex.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -15,6 +17,10 @@
 ```swift
 let vertexAdjacencyEndIndices: [UInt32]
 ```
+
+#### Discussion
+
+`vertexAdjacencyEndIndices[i]` marks where vertex `i`’s adjacency data ends.
 
 
 ---

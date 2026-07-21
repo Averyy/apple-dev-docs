@@ -22,8 +22,6 @@ struct FeatureSet
 ### Creating a feature set
 - [static var version1: FeatureSet](featureset/version1.md)
   A new feature set supporting all features in version 1.
-- [static var version2: FeatureSet](featureset/version2.md)
-  A new feature set supporting all features in version 2.
 - [static var latest: FeatureSet](featureset/latest.md)
   A new feature set supporting all features.
 - [static var empty: FeatureSet](featureset/empty.md)

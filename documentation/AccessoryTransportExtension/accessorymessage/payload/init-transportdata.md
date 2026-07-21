@@ -8,6 +8,7 @@ Initializes a payload with data and a transport preference.
 **Availability**:
 - iOS 26.5+
 - iPadOS 26.5+
+- Mac Catalyst 26.5+
 
 ## Declaration
 

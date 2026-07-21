@@ -3,7 +3,7 @@
 **Framework**: USDKit  
 **Kind**: struct
 
-Mesh resource identifier
+Mesh resource identifier.
 
 **Availability**:
 - iOS 27.0+ (Beta)

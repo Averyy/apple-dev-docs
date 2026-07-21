@@ -15,7 +15,7 @@ The underlying searchable item.
 ## Declaration
 
 ```swift
-let item: CSSearchableItem
+let item: SearchableItem
 ```
 
 ## See Also

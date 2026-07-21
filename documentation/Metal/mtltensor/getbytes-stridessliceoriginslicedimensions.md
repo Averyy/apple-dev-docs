@@ -22,9 +22,11 @@ func getBytes(_ bytes: UnsafeMutableRawPointer, strides: MTLTensorExtents, slice
 
 #### Discussion
 
-Create the tensor with [`storageModeShared`](mtlresourceoptions/storagemodeshared.md) for CPU access via this method. Strides must be monotonically non-decreasing: for any `i > 0`, `strides[i] >= strides[i-1] * dimensions[i-1]`.
+Create the tensor with [`storageModeShared`](mtlresourceoptions/storagemodeshared.md) for CPU access via this method.
 
-The first dimension of `sliceOrigin` and `sliceDimensions` must be byte aligned.
+Strides need to be monotonically non-decreasing: for any `i > 0`, `strides[i] >= strides[i-1] * dimensions[i-1]`.
+
+The first dimension of `sliceOrigin` and `sliceDimensions` needs to be byte aligned.
 
 ## Parameters
 

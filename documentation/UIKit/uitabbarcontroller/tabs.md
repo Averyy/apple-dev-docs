@@ -30,6 +30,8 @@ To set the tab bar’s content, assign an array of [`UITab`](uitab.md) objects t
 
 - [func setTabs([UITab], animated: Bool)](uitabbarcontroller/settabs(_:animated:).md)
   Sets the root tabs of the tab bar controller, with an option to animate the change.
+- [func performBatchUpdates(() -> Void)](uitabbarcontroller/performbatchupdates(_:).md)
+  Animates multiple tab changes as a single update.
 
 
 ---

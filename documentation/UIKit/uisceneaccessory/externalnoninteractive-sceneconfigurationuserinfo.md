@@ -15,6 +15,10 @@ Creates a new scene accessory configuration for presenting non-interactive conte
 class func externalNonInteractive(sceneConfiguration: UISceneConfiguration, userInfo: Any) -> Self
 ```
 
+## Mentions
+
+- [Presenting content on a connected display](presenting-content-on-a-connected-display.md)
+
 #### Discussion
 
 When the display connects, the scene accessory’s content may be presented on it.

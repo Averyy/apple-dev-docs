@@ -73,6 +73,7 @@ class MXMetricPayload
 - [init?(coder: NSCoder)](mxmetricpayload/init(coder:).md)
 ### Instance Properties
 - [var diskSpaceUsageMetrics: MXDiskSpaceUsageMetric?](mxmetricpayload/diskspaceusagemetrics.md)
+  An object containing disk space usage metrics for this application.
 
 ## Relationships
 

@@ -34,7 +34,8 @@ Model3D(named: "robot")
 
 ```swift
 let rotation = Rotation3D(
-    .init(degrees: 45), axis: RotationAxis3D(x: 0, y: 1, z: 0))
+    angle: .init(degrees: 45),
+    axis: RotationAxis3D(x: 0, y: 1, z: 0))
 Model3D(named: "robot")
     .rotation3DEffect(rotation)
 ```

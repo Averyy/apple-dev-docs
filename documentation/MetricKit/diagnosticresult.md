@@ -48,8 +48,6 @@ for await report in manager.diagnosticReports {
 }
 ```
 
-This type replaces the `crashDiagnostics`, `hangDiagnostics`, `cpuExceptionDiagnostics`, `diskWriteExceptionDiagnostics`, and `appLaunchDiagnostics` properties of [`MXDiagnosticPayload`](mxdiagnosticpayload.md).
-
 ## Topics
 
 ### Call stack

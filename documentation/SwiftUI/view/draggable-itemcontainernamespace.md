@@ -30,25 +30,25 @@ Applying the `draggable(_:_:containerNamespace:)` modifier adds the appropriate 
 If the view is enclosed in a `dragContainer(for:in:_)`, the view becomes its draggable element, and the item’s identifier is used as drag payload identifier.
 
 ```swift
-   var fruits: [Fruit]
-   var selectedFruits: [Fruit.ID]
+var fruits: [Fruit]
+var selectedFruits: [Fruit.ID]
 
-   var body: some View {
-       ScrollView {
-           VStack {
-               ForEach(fruits) { fruit in
-                   FruitView(fruit)
-                       .draggable(fruit)
-               }
-           }
-       }
-       .dragContainer(for: Fruit.self) { identifiers in
-           fruits(with: identifiers)
-       }
-   }
+var body: some View {
+    ScrollView {
+        VStack {
+            ForEach(fruits) { fruit in
+                FruitView(fruit)
+                    .draggable(fruit)
+            }
+        }
+    }
+    .dragContainer(for: Fruit.self) { identifiers in
+        fruits(with: identifiers)
+    }
+}
 
-   func fruits(with: [Fruit.ID]) -> [Fruit] { ... }
-   struct Fruit: Identifiable, Transferable { ... }
+func fruits(with: [Fruit.ID]) -> [Fruit] { ... }
+struct Fruit: Identifiable, Transferable { ... }
 ```
 
 ## Parameters

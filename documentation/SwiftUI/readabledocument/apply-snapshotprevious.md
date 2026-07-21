@@ -4,7 +4,7 @@
 **Kind**: method  
 **Required**: Yes
 
-Applies loaded content to the document model.
+Applies a loaded snapshot to the document model.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -22,23 +22,25 @@ func apply(snapshot: sending Self.Reader.Snapshot, previous: sending Self.Reader
 
 #### Discussion
 
-SwiftUI calls this method on the main actor after reading completes.
+SwiftUI calls this on the main actor after the reader’s [`read(from:progress:)`](documentreader/read(from:progress:).md) completes. Update your model properties here. Keep this method lightweight — all deserialization should happen in the reader.
 
 ## Parameters
 
-- `snapshot`: The snapshot loaded from disk.
-- `previous`: The previously loaded snapshot. Compare to `snapshot` to update only what changed.
+- `snapshot`: The content loaded from disk.
+- `previous`: The previously loaded snapshot, or `nil` on the first read. Use it to apply incremental updates.
 
 ## See Also
 
 - [static var readableContentTypes: [UTType]](readabledocument/readablecontenttypes.md)
-  The file and data types that the document reads from.
+  The content types this document can open.
 - [ReadableDocument.ReadConfiguration](readabledocument/readconfiguration.md)
   The configuration for reading document contents.
 - [associatedtype Reader : DocumentReader](readabledocument/reader.md)
-  A type that implements reading from disk logic.
+  A type that implements reading from disk.
 - [func reader(configuration: sending Self.ReadConfiguration) -> sending Self.Reader](readabledocument/reader(configuration:).md)
-  Creates a value that reads a document from disk.
+  Creates a reader to load this document from disk.
+- [static var writableContentTypes: [UTType]](readabledocument/writablecontenttypes.md)
+  By default, a document that supports reading also supports writing the same content types.
 
 
 ---

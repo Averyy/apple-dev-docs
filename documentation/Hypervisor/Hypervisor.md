@@ -118,4 +118,4 @@ After all threads finish:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/hypervisor)*
+*[View on Apple Developer](https://developer.apple.com/documentation/Hypervisor)*

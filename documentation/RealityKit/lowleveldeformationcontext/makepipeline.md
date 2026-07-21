@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: method
 
-Creates a compute pipeline asynchronously.
+Creates a compute pipeline synchronously.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -14,7 +14,7 @@ Creates a compute pipeline asynchronously.
 ## Declaration
 
 ```swift
-final func makePipeline(_ descriptor: LowLevelDeformation.Pipeline.Descriptor) async throws -> LowLevelDeformation.Pipeline
+final func makePipeline(_ descriptor: LowLevelDeformation.Pipeline.Descriptor) throws -> LowLevelDeformation.Pipeline
 ```
 
 #### Discussion

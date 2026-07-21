@@ -19,6 +19,10 @@ Sets the dimension of an input tensor at a buffer index.
 func setInputDimensions(_ dimensions: MTLTensorExtents?, bufferIndex: Int)
 ```
 
+#### Discussion
+
+When the compiled model declares the input as unranked (unknown rank), any concrete `dimensions` are accepted. Otherwise `dimensions.rank` must equal the model’s input rank, and each static (non `-1`) dimension must match.
+
 ## Parameters
 
 - `dimensions`: The dimensions of the tensor.

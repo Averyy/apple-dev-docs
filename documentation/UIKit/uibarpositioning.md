@@ -53,6 +53,7 @@ The classes that implement bars have paired methods to set a background for a gi
   A specialized button for placement on a toolbar, navigation bar, or shortcuts bar.
 - [class UIBarButtonItemGroup](uibarbuttonitemgroup.md)
   A group of one or more bar button items for placement on a navigation bar or shortcuts bar.
+- [struct UIBarButtonItemVisibilityPriority](uibarbuttonitemvisibilitypriority.md)
 - [class UINavigationBar](uinavigationbar.md)
   Navigational controls that display in a bar along the top of the screen, usually in conjunction with a navigation controller.
 - [class UISearchBar](uisearchbar.md)
@@ -65,6 +66,7 @@ The classes that implement bars have paired methods to set a background for a gi
   An object that describes an item in a tab bar.
 - [protocol UIBarPositioningDelegate](uibarpositioningdelegate.md)
   A set of methods that support the positioning of a bar that conforms to the [`UIBarPositioning`](uibarpositioning.md) protocol.
+- [struct UIBarMinimization](uibarminimization-swift.struct.md)
 
 
 ---

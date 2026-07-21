@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: struct
 
+Deformation data for a single deformable mesh.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -20,17 +22,22 @@ struct DeformationData
 
 ### Structures
 - [USDPlayer.DeformationData.BlendShapeData](usdplayer/deformationdata/blendshapedata.md)
+  Blend shape targets and weights for morph-target deformation.
 - [USDPlayer.DeformationData.RenormalizationData](usdplayer/deformationdata/renormalizationdata.md)
+  Triangle adjacency data for post-deformation normal renormalization.
 - [USDPlayer.DeformationData.SkinningData](usdplayer/deformationdata/skinningdata.md)
+  Joint deformation data for a skinned mesh.
 - [USDPlayer.DeformationData.Update](usdplayer/deformationdata/update.md)
+  Delta update carrying only the deformation fields that changed since the last frame.
 ### Instance Properties
 - [let blendShapes: USDPlayer.DeformationData.BlendShapeData?](usdplayer/deformationdata/blendshapes.md)
-  Blend shape deformation data; nil when the mesh has no blend shapes
+  Blend shape deformation data.
 - [let id: USDPlayer.DeformationID](usdplayer/deformationdata/id.md)
+  Unique identifier for this deformation resource.
 - [let renormalization: USDPlayer.DeformationData.RenormalizationData?](usdplayer/deformationdata/renormalization.md)
-  Renormalization adjacency data; present whenever skinning or blend shape data is present
+  Renormalization data.
 - [let skinning: USDPlayer.DeformationData.SkinningData?](usdplayer/deformationdata/skinning.md)
-  Skinning deformation data; nil when the mesh has no skeleton
+  Skinning deformation data.
 
 ## Relationships
 

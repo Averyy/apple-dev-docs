@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: case
 
-A target that indicates root motion animation.
+A target that drives an entity’s root motion.
 
 **Availability**:
 - iOS 27.0+ (Beta)

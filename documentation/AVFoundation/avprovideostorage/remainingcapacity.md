@@ -26,6 +26,13 @@ var remainingCapacity: Int { get }
 
 The remaining capacity decreases as recordings are captured.
 
+## See Also
+
+- [var initialCapacity: Int](avprovideostorage/initialcapacity.md)
+  Initial size of Pro Video Storage in bytes.
+- [func replenishCapacity(completionHandler: ((Int, (any Error)?) -> Void)?)](avprovideostorage/replenishcapacity(completionhandler:).md)
+  Performs a best-effort attempt to restore Pro Video Storage to the initial capacity specified by the user in Settings app.
+
 
 ---
 

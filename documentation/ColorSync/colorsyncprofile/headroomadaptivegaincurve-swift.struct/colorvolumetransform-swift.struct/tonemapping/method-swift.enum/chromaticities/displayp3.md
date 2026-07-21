@@ -3,6 +3,8 @@
 **Framework**: ColorSync  
 **Kind**: case
 
+Display P3 primaries (SMPTE ST 2113:2018).
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)

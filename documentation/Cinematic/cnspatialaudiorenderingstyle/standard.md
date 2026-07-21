@@ -3,7 +3,7 @@
 **Framework**: Cinematic  
 **Kind**: case
 
-This produces a spatial stem of the original recording that is unprocessed. This is the default rendering style.
+Produces an unprocessed spatial stem of the original recording. This is the default rendering style.
 
 **Availability**:
 - iOS 26.0+

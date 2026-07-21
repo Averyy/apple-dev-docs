@@ -44,8 +44,6 @@ For more information about the App Intents framework and the experiences it supp
 
 ## See Also
 
-- [var addNavigationWaypoints: some AppSchemaIntent](appschema/mapsintent/addnavigationwaypoints.md)
-  An intent schema that adds waypoints to a navigation session.
 - [var shareETA: some AppSchemaIntent](appschema/mapsintent/shareeta.md)
   An intent schema that shares ETA to a contact while navigating.
 - [var startNavigation: some AppSchemaIntent](appschema/mapsintent/startnavigation.md)

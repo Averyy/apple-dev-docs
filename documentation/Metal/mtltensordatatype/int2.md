@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: case
 
-A 2-bit signed integer format data type.
+A 2-bit signed integer data type.
 
 **Availability**:
 - iOS 27.0+ (Beta)

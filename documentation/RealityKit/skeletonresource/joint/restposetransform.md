@@ -24,7 +24,7 @@ var restPoseTransform: Transform
 - [var id: String](skeletonresource/joint/id.md)
   The identifier of the joint, automatically derived from the joint name.
 - [let children: [SkeletonResource.Joint]](skeletonresource/joint/children.md)
-  The child joints of this joint. All children must have unique names within the same parent.
+  The child joints of this joint. All children must have unique names within the same parent. `JointBuilder` preserves the order children are declared in the closure body, so iteration over `children` is deterministic.
 
 
 ---

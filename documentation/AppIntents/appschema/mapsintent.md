@@ -21,8 +21,6 @@ protocol MapsIntent : AppSchema.Kind
 ## Topics
 
 ### Instance Properties
-- [var addNavigationWaypoints: some AppSchemaIntent](appschema/mapsintent/addnavigationwaypoints.md)
-  An intent schema that adds waypoints to a navigation session.
 - [var reportIncident: some AppSchemaIntent](appschema/mapsintent/reportincident.md)
   An intent schema that reports a traffic incident on the route.
 - [var shareETA: some AppSchemaIntent](appschema/mapsintent/shareeta.md)
@@ -33,6 +31,8 @@ protocol MapsIntent : AppSchema.Kind
   An intent schema that ends navigation.
 - [var stopShareETA: some AppSchemaIntent](appschema/mapsintent/stopshareeta.md)
   An intent schema that stops sharing ETA.
+- [var updateNavigationWaypoints: some AppSchemaIntent](appschema/mapsintent/updatenavigationwaypoints.md)
+  An intent schema that updates the list of waypoints for a navigation session.
 
 ## Relationships
 
@@ -43,8 +43,6 @@ protocol MapsIntent : AppSchema.Kind
 
 ## See Also
 
-- [var addNavigationWaypoints: some AppSchemaIntent](appschema/mapsintent/addnavigationwaypoints.md)
-  An intent schema that adds waypoints to a navigation session.
 - [var reportIncident: some AppSchemaIntent](appschema/mapsintent/reportincident.md)
   An intent schema that reports a traffic incident on the route.
 - [var shareETA: some AppSchemaIntent](appschema/mapsintent/shareeta.md)

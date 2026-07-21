@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: class
 
-A set of settings and properties of an open document.
+The configuration of an open document that stores its file URL, last modification date, and related metadata.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -19,6 +19,25 @@ A set of settings and properties of an open document.
 final class URLDocumentConfiguration
 ```
 
+#### Overview
+
+SwiftUI passes a `URLDocumentConfiguration` to the `makeDocument` closure of [`DocumentGroup`](documentgroup.md). This class is `@Observable` — views and other observers can track changes to [`fileURL`](urldocumentconfiguration/fileurl.md) and other properties.
+
+Use [`makeFileCoordinator()`](urldocumentconfiguration/makefilecoordinator().md) to perform coordinated reads or writes outside the normal [`DocumentReader`](documentreader.md)/[`DocumentWriter`](documentwriter.md) flow — for example, to read a single sub-file of a package document on demand:
+
+```swift
+let coordinator = configuration.makeFileCoordinator()
+var error: NSError?
+coordinator.coordinate(
+    readingItemAt: pageURL, options: [], error: &error
+) { url in
+    let data = try? Data(contentsOf: url)
+    // ...
+}
+```
+
+> ❗ **Important**: Inside [`read(from:progress:)`](documentreader/read(from:progress:).md) and `DocumentWriter/write(content:to:previous:progress:)`, use the `source` / `destination` URL parameter — not [`fileURL`](urldocumentconfiguration/fileurl.md). The configuration’s URL reflects current state and may differ from the operation’s URL after a Save As or rename.
+
 ## Topics
 
 ### Accessing document properties
@@ -30,7 +49,7 @@ final class URLDocumentConfiguration
   The source associated with the button that created this document.
 ### Coordinating file access
 - [func makeFileCoordinator() -> sending NSFileCoordinator](urldocumentconfiguration/makefilecoordinator.md)
-  A coordinator that can be used to coordinate additional read and write operations to prevent document corruption.
+  Creates a file coordinator for coordinated disk access outside the normal read/write flow.
 
 ## Relationships
 
@@ -47,12 +66,13 @@ final class URLDocumentConfiguration
 ## See Also
 
 - [protocol Document](document.md)
+  A document that supports both reading and writing.
 - [protocol ReadableDocument](readabledocument.md)
-  A type that you use to read documents from file.
+  A document type that supports reading from file.
 - [protocol WritableDocument](writabledocument.md)
-  A type that you use to write documents to file.
+  A document type that supports writing to file.
 - [struct DocumentCreationContext](documentcreationcontext.md)
-  Provides context about how a document was created or opened.
+  Context about how a document was created.
 - [protocol DocumentBaseBox](documentbasebox.md)
   A Box that allows setting its Document base not requiring the caller to know the exact types of the box and its base.
 

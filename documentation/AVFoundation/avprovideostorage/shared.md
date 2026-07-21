@@ -22,6 +22,11 @@ class var shared: AVProVideoStorage? { get }
 
 An instance of the Pro Video Storage class if supported; otherwise, `nil`.
 
+## See Also
+
+- [class var isSupported: Bool](avprovideostorage/issupported.md)
+  Whether Pro Video Storage is supported in its current configuration.
+
 
 ---
 

@@ -26,7 +26,8 @@ You can override this method to perform initialization that must be done both wh
 
 ## See Also
 
-- [Document-Based App Programming Guide for Mac](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/DocBasedAppProgrammingGuideForOSX/Introduction/Introduction.html#//apple_ref/doc/uid/TP40011179)
+- [Developing a Document-Based App](developing-a-document-based-app.md)
+  Write an app that creates, manages, edits, and saves text documents.
 - [convenience init(contentsOf: URL, ofType: String) throws](nsdocument/init(contentsof:oftype:).md)
   Initializes a document located by a URL of a specified type.
 - [convenience init(for: URL?, withContentsOf: URL, ofType: String) throws](nsdocument/init(for:withcontentsof:oftype:).md)

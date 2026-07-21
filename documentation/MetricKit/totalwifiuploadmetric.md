@@ -21,8 +21,6 @@ struct TotalWiFiUploadMetric
 
 This metric corresponds to the [`MetricResult.totalWiFiUpload(_:)`](metricresult/totalwifiupload(_:).md) case. It appears only in [`intervalEntries`](metricreport/intervalentries.md) and is not included in state entries.
 
-This type replaces the `cumulativeWifiUpload` property of [`MXNetworkTransferMetric`](mxnetworktransfermetric.md).
-
 ## Topics
 
 ### Measurements

@@ -41,6 +41,9 @@ let AVVideoColorPrimaries_P3_D65: String
   The color primary uses the SMPTE C color space.
 - [let AVVideoColorPropertiesKey: String](avvideocolorpropertieskey.md)
   The key for a dictionary that contains properties specifying video color.
+- [let AVVideoLogTransferFunctionKey: String](avvideologtransferfunctionkey.md)
+- [let AVVideoLogTransferFunction_AppleLog: String](avvideologtransferfunction_applelog.md)
+- [let AVVideoLogTransferFunction_AppleLog2: String](avvideologtransferfunction_applelog2.md)
 - [let AVVideoTransferFunctionKey: String](avvideotransferfunctionkey.md)
   The key to identify the transfer function in a color properties dictionary.
 - [let AVVideoTransferFunction_IEC_sRGB: String](avvideotransferfunction_iec_srgb.md)
@@ -49,12 +52,6 @@ let AVVideoColorPrimaries_P3_D65: String
   The transfer function for the ITU_R BT.2100 color space.
 - [let AVVideoTransferFunction_ITU_R_709_2: String](avvideotransferfunction_itu_r_709_2.md)
   The transfer function for the ITU_R BT.709 color space.
-- [let AVVideoTransferFunction_Linear: String](avvideotransferfunction_linear.md)
-  The transfer function for the linear color space.
-- [let AVVideoTransferFunction_SMPTE_240M_1995: String](avvideotransferfunction_smpte_240m_1995.md)
-  The transfer function for the SMPTE 240M color space.
-- [let AVVideoTransferFunction_SMPTE_ST_2084_PQ: String](avvideotransferfunction_smpte_st_2084_pq.md)
-  The transfer function for the SMPTE 2084 color space.
 
 
 ---

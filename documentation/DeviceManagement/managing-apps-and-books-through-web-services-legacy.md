@@ -12,21 +12,21 @@ Volume Purchase Program (VPP) allows an organization to manage and assign apps t
 
 All endpoints (except for [`Service Configuration`](service-configuration.md)) require an `sToken` parameter to authenticate.
 
-Content managers can download a location-based `sToken` from the Settings page in [`Upgrading to Apple School Manager and Apple Business Manager`](upgrading-to-apple-school-manager-and-apple-business-manager.md), and upload it into their device management service. This grants the device management service access to the licenses available at that location.
+Content managers can download a location-based `sToken` from the Settings page in [`Upgrading to Apple School Manager and Apple Business`](upgrading-to-apple-school-manager-and-apple-business.md), and upload it into their device management service. This grants the device management service access to the licenses available at that location.
 
-![A screenshot of the My Server Tokens section in Apple School Manager or Apple Business Manager, showing a table of locations with a Download link for each location’s server token. A help tooltip explains that you upload the downloaded tokens to your MDM server or Apple Configurator app to start assigning content to your devices.](https://docs-assets.developer.apple.com/published/64f7ab887e7d38afa4d27e12423d914d/media-3230503%402x.png)
+![A screenshot of the My Server Tokens section in Apple School Manager or Apple Business, showing a table of locations with a Download link for each location’s server token. A help tag explains that you upload the downloaded tokens to your device management service or Apple Configurator to start assigning content to your devices.](https://docs-assets.developer.apple.com/published/64f7ab887e7d38afa4d27e12423d914d/media-3230503%402x.png)
 
 The device management service should store the location-based token along with its other private, protected properties and pass this token in the `sToken` field of all VPP API requests.
 
 The `sToken` itself is a JSON object in Base64 encoding. When decoded, the resulting JSON object contains three fields: `token`, `expDate`, and `orgName`. For example, the following is an `sToken` value:
 
-```swift
+```other
 eyJ0b2tlbiI6InQxWG9VenBMRXRwZGxhK25zeENkd3JjdDBSandkaWNOaGRreW5STW05VVAyc2hSYTBMUnVGcVpQM0pLQmJUTWxDSE42ajNta1R6WVlQbVVkVXJXV2x3PT0iLCJleHBEYXRlIjoiMjAxNC0wOC0xNVQxODoxMzo1Mi0wNzAwIiwib3JnTmFtZSI6Ik9SRy4yMDA5MDcxNjAwIn0=
 ```
 
 After Base64 decoding, this is the JSON:
 
-```swift
+```json
 {
   "token": "t1XoUzpLEtpdla+nsxCdwrct0RjwdicNhdkynRMm9UP2shRa0LRuFqZP3JKBbTMlCHN6j3mkTzYYPmUdUrWWlw==",
   "expDate": "2014-08-15T18:13:52-0700",
@@ -38,7 +38,7 @@ The `expDate` field contains the expiration date of the token in ISO 8601 format
 
 If the provided token is within the expiration warning period (currently 15 days before the expiration date), the response contains an additional field, `tokenExpDate`. The value of this field is the expiration date in ISO 8601 format. For example:
 
-```swift
+```json
 "tokenExpDate":"2013-07-26T18􏰁12􏰁09-0700"
 ```
 
@@ -54,7 +54,7 @@ You can tailor different sets of privileges for individual content managers usin
 
 As a convention, fields with null values aren’t included in responses. For example, the user object has an optional `email` field. The following example doesn’t have the `email` field in the user object, so the `email` field value is null.
 
-```swift
+```json
 "user":{
   "userId": 1,
   "clientUserIdStr": "810C9B91-DF83-41DA-80A1-408AD7F081A8",
@@ -128,7 +128,7 @@ In the latter example, the delay is 2 minutes.
 
 - [Getting app and book information (Legacy)](getting-app-and-book-information-legacy.md)
   Use a web service to find details about apps and books to show to your users.
-- [Upgrading to Apple School Manager and Apple Business Manager](upgrading-to-apple-school-manager-and-apple-business-manager.md)
+- [Upgrading to Apple School Manager and Apple Business](upgrading-to-apple-school-manager-and-apple-business.md)
   Manage devices and content across an organization’s user base with a single destination.
 
 

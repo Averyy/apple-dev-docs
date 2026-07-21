@@ -34,8 +34,6 @@ class func compatibility(ofExportPreset presetName: String, with asset: AVAsset,
   Determines the output file types an asset export session supports writing in its current configuration.
 - [class func allExportPresets() -> [String]](avassetexportsession/allexportpresets.md)
   Returns all available export preset names.
-- [class func exportPresets(compatibleWith: AVAsset) -> [String]](avassetexportsession/exportpresets(compatiblewith:).md)
-  Returns compatible export presets for the asset.
 
 
 ---

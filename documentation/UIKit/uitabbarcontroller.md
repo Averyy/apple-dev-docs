@@ -83,6 +83,8 @@ Tab bar controllers serve the same purpose in tvOS as in iOS, but provide slight
   An array of tabs that the tab bar displays.
 - [func setTabs([UITab], animated: Bool)](uitabbarcontroller/settabs(_:animated:).md)
   Sets the root tabs of the tab bar controller, with an option to animate the change.
+- [func performBatchUpdates(() -> Void)](uitabbarcontroller/performbatchupdates(_:).md)
+  Animates multiple tab changes as a single update.
 ### Supporting the sidebar
 - [var mode: UITabBarController.Mode](uitabbarcontroller/mode-swift.property.md)
   The display mode for a tab bar.
@@ -119,6 +121,10 @@ Tab bar controllers serve the same purpose in tvOS as in iOS, but provide slight
   An optional filter to display only select root-level tabs when in a compact appearance.
 - [var customizationIdentifier: String?](uitabbarcontroller/customizationidentifier.md)
   The customization identifier for the tab bar and sidebar for persistence.
+- [var prominentTabIdentifier: String?](uitabbarcontroller/prominenttabidentifier.md)
+  The identifier of the tab that should be displayed as prominent. Where supported, the specified tab receives enhanced visual emphasis in the tab bar. If this property is nil, and there is a `UISearchTab` that could become prominent (when `automaticallyActivatesSearch = true`), then the search tab will receive the prominent treatment by default.
+- [func setProminentTabIdentifier(String?, animated: Bool)](uitabbarcontroller/setprominenttabidentifier(_:animated:).md)
+  Sets the prominent tab identifier with an option to animate the change.
 ### Accessing the tab bar controller properties
 - [var tabBar: UITabBar](uitabbarcontroller/tabbar.md)
   The tab bar view associated with this controller.
@@ -140,14 +146,6 @@ Tab bar controllers serve the same purpose in tvOS as in iOS, but provide slight
   The view controller associated with the currently selected tab item.
 - [var selectedIndex: Int](uitabbarcontroller/selectedindex.md)
   The index of the view controller associated with the currently selected tab item.
-### Instance Properties
-- [var prominentTabIdentifier: String?](uitabbarcontroller/prominenttabidentifier.md)
-  The identifier of the tab that should be displayed as prominent. Where supported, the specified tab receives enhanced visual emphasis in the tab bar. If this property is nil, and there is a `UISearchTab` that could become prominent (when `automaticallyActivatesSearch = true`), then the search tab will receive the prominent treatment by default.
-### Instance Methods
-- [func performBatchUpdates(() -> Void)](uitabbarcontroller/performbatchupdates(_:).md)
-  Animates multiple tab changes as a single update.
-- [func setProminentTabIdentifier(String?, animated: Bool)](uitabbarcontroller/setprominenttabidentifier(_:animated:).md)
-  Sets the prominent tab identifier with an option to animate the change.
 
 ## Relationships
 

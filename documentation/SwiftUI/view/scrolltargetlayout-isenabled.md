@@ -39,9 +39,7 @@ ScrollView(.horizontal) {
 .scrollTargetBehavior(.viewAligned)
 ```
 
-Scroll target layouts act as a convenience for applying a `View/scrollTarget(isEnabled:)` modifier to each views in the layout.
-
-A scroll target layout will ensure that any target layout nested within the primary one will not also become a scroll target layout.
+A scroll target layout ensures that any target layout nested within the primary one will not also become a scroll target layout.
 
 ```swift
 LazyHStack { // a scroll target layout

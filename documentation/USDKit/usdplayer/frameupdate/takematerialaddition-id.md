@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: method
 
+Consumes and returns the [`USDPlayer.MaterialData`](usdplayer/materialdata.md) for the given material addition.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -15,6 +17,10 @@
 ```swift
 mutating func takeMaterialAddition(id: USDPlayer.MaterialID) -> USDPlayer.MaterialData?
 ```
+
+#### Discussion
+
+Returns `nil` if not present.
 
 
 ---

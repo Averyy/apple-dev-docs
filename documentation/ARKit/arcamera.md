@@ -52,6 +52,15 @@ You get camera information from the [`camera`](arframe/camera.md) property of ea
 ### Applying Post-Processed Lighting
 - [var exposureOffset: Float](arcamera/exposureoffset.md)
   A value you supply to your custom renderer to light your scene.
+### Instance Methods
+- [func projectPoint(simd_float3, viewRotationAngle: CGFloat, viewportSize: CGSize) -> CGPoint](arcamera/projectpoint(_:viewrotationangle:viewportsize:).md)
+  Project a 3D point in world coordinate system into 2D viewport space.
+- [func projectionMatrix(viewRotationAngle: CGFloat, viewportSize: CGSize, zNear: CGFloat, zFar: CGFloat) -> simd_float4x4](arcamera/projectionmatrix(viewrotationangle:viewportsize:znear:zfar:).md)
+  Creates a projection matrix for the camera given rendering parameters.
+- [func unprojectPoint(CGPoint, ontoPlane: simd_float4x4, viewRotationAngle: CGFloat, viewportSize: CGSize) -> simd_float3?](arcamera/unprojectpoint(_:ontoplane:viewrotationangle:viewportsize:).md)
+  Unprojects a 2D point in image space onto a 3D plane in world space.
+- [func viewMatrix(viewRotationAngle: CGFloat) -> simd_float4x4](arcamera/viewmatrix(viewrotationangle:).md)
+  Returns the view matrix for the camera with a given view angle.
 
 ## Relationships
 

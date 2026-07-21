@@ -125,7 +125,7 @@ Many high-level Apple frameworks leverage the performance of Metal, including [`
 - [class MTLTensorAuxiliaryPlaneType](mtltensorauxiliaryplanetype.md)
   An auxiliary plane that a shader’s tensor argument requires.
 - [class MTLTensorBufferAttachments](mtltensorbufferattachments.md)
-  Per-plane buffer backing storage for multi-plane tensor creation.
+  An object that associates each plane of a tensor with a buffer and byte offset for buffer-backed tensor creation.
 ### Protocols
 - [protocol MTLTensorAuxiliaryPlane](mtltensorauxiliaryplane.md)
   A type that represents the configuration and storage of an auxiliary plane in a multi-plane tensor.

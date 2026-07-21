@@ -22,7 +22,7 @@ func requestShareAccess(for urls: [URL]) async throws -> [URL : Result<Void, any
 
 #### Return Value
 
-A dictionary of acceptance results. The dictionary uses the urls you specify in `urls` as its keys. The value of each key is a [`Result`](https://developer.apple.com/documentation/Swift/Result) is `.success`, or an error that describes why CloudKit can’t request access to that share.
+A dictionary of acceptance results. The dictionary uses the urls you specify in `urls` as its keys. The value of each key is a [`Result`](https://developer.apple.com/documentation/Swift/Result): `.success(())` when CloudKit grants access to that share, or an error that describes why CloudKit can’t request access to that share.
 
 #### Discussion
 

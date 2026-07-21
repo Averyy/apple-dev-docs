@@ -19,11 +19,6 @@ All bake types used by entities in this lightmap.
 final var bakeTypes: [LightmapResource.BakeType] { get }
 ```
 
-## See Also
-
-- [LightmapResource.BakeType](lightmapresource/baketype.md)
-  Specifies the type of data contained within a lightmap.
-
 
 ---
 

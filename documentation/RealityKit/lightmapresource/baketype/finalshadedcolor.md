@@ -22,7 +22,6 @@ case finalShadedColor
 ## See Also
 
 - [LightmapResource.BakeType.indirectDiffuseIrradiance](lightmapresource/baketype/indirectdiffuseirradiance.md)
-- [LightmapResource.BakeType.indirectDiffuseSHL1Irradiance](lightmapresource/baketype/indirectdiffuseshl1irradiance.md)
 - [LightmapResource.BakeType.ambientOcclusion](lightmapresource/baketype/ambientocclusion.md)
 
 

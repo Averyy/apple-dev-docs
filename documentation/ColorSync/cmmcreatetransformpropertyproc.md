@@ -13,6 +13,13 @@
 typealias CMMCreateTransformPropertyProc = (ColorSyncTransform?, CFTypeRef?, CFDictionary?) -> Unmanaged<CFTypeRef>?
 ```
 
+## See Also
+
+- [typealias ColorSyncCMMIterateCallback](colorsynccmmiteratecallback.md)
+- [typealias CMMApplyTransformProc](cmmapplytransformproc.md)
+- [typealias CMMInitializeLinkProfileProc](cmminitializelinkprofileproc.md)
+- [typealias CMMInitializeTransformProc](cmminitializetransformproc.md)
+
 
 ---
 

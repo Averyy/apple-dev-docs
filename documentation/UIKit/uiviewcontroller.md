@@ -466,14 +466,14 @@ For more information about how the system determines which view controllers to p
 ### Logging user interaction intervals
 - [var interactionActivityTrackingBaseName: String?](uiviewcontroller/interactionactivitytrackingbasename.md)
   The base name the view controller uses for logging signposts that annotate user interactions.
-### Deprecated
-- [Deprecated symbols](uiviewcontroller-deprecated-symbols.md)
-  Symbols that view controllers no longer support.
-### Instance Methods
+### Registering scene accessories
 - [func registerSceneAccessory(UISceneAccessory) -> UISceneAccessoryRegistration](uiviewcontroller/registersceneaccessory(_:).md)
   Registers a new scene accessory configuration associated with this view controller.
 - [func unregisterSceneAccessory(UISceneAccessoryRegistration)](uiviewcontroller/unregistersceneaccessory(_:).md)
   Unregisters a scene accessory with the specified registration.
+### Deprecated
+- [Deprecated symbols](uiviewcontroller-deprecated-symbols.md)
+  Symbols that view controllers no longer support.
 
 ## Relationships
 

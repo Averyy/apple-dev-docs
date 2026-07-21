@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: property
 
-The bounds of the decal volume defined in entity local space
+The bounds of the decal volume defined in entity local space.
 
 **Availability**:
 - iOS 27.0+ (Beta)

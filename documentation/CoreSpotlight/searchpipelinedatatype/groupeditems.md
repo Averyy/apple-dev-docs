@@ -21,9 +21,9 @@ case groupedItems
 ## See Also
 
 - [SearchPipelineDataType.items](searchpipelinedatatype/items.md)
-  [`CSSearchableItem`](cssearchableitem.md) results.
+  [`SearchableItem`](searchableitem.md) results.
 - [SearchPipelineDataType.scoredItems](searchpipelinedatatype/scoreditems.md)
-  [`CSSearchableItem`](cssearchableitem.md) results with caller-assigned scores.
+  [`SearchableItem`](searchableitem.md) results with caller-assigned scores.
 - [SearchPipelineDataType.text](searchpipelinedatatype/text.md)
   LLM-generated text summary or analysis.
 - [SearchPipelineDataType.count](searchpipelinedatatype/count.md)

@@ -3,7 +3,7 @@
 **Framework**: ColorSync  
 **Kind**: property
 
-Input levels normalised to [0, 1]: 0 = reference white, 1 = peak signal.
+Input levels normalized by reference white: 1.0 = reference white.
 
 **Availability**:
 - iOS 27.0+ (Beta)

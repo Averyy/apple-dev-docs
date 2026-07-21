@@ -91,7 +91,11 @@ struct RecipesList: View {
 - [convenience init(for: any PersistentModel.Type..., configurations: any DataStoreConfiguration...) throws](modelcontainer/init(for:configurations:)-621ei.md)
 - [init(for: Schema, configurations: [any DataStoreConfiguration]) throws](modelcontainer/init(for:configurations:)-93ifi.md)
 ### Instance Methods
+- [func configurationName(forStoreIdentifier: String) -> String?](modelcontainer/configurationname(forstoreidentifier:).md)
+  Returns the configuration name associated with the given on-disk store identifier.
 - [func erase() throws](modelcontainer/erase.md)
+- [func storeIdentifier(forConfigurationNamed: String) -> String?](modelcontainer/storeidentifier(forconfigurationnamed:).md)
+  Returns the on-disk store identifier for the given configuration name.
 
 ## Relationships
 

@@ -26,7 +26,8 @@ The string to be used as a proxy for `representedObject`. If you return `nil` or
 
 ## See Also
 
-- [Token Field Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/TokenField_Guide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40006555)
+- [func tokenFieldCell(NSTokenFieldCell, displayStringForRepresentedObject: Any) -> String?](nstokenfieldcelldelegate/tokenfieldcell(_:displaystringforrepresentedobject:).md)
+  Allows the delegate to provide a string to be displayed as a proxy for the represented object.
 - [func tokenField(NSTokenField, styleForRepresentedObject: Any) -> NSTokenField.TokenStyle](nstokenfielddelegate/tokenfield(_:styleforrepresentedobject:).md)
   Allows the delegate to return the token style for editing the specified represented object.
 

@@ -29,8 +29,6 @@ The method signature and return type are identical; only the type name changes.
 let log = MetricManager.logHandle(category: "rendering")
 ```
 
-This method replaces [`makeLogHandle(category:)`](mxmetricmanager/makeloghandle(category:).md).
-
 
 ---
 

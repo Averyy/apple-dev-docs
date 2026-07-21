@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: struct
 
+Delta update carrying only the blend shape fields that changed since the last frame.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -20,7 +22,9 @@ struct Update
 
 ### Instance Properties
 - [let positionOffsets: [[SIMD3<Float>]]?](usdplayer/deformationdata/blendshapedata/update/positionoffsets.md)
+  Changed position delta offsets.
 - [let weights: [Float]?](usdplayer/deformationdata/blendshapedata/update/weights.md)
+  Changed blend shape weights.
 
 ## Relationships
 

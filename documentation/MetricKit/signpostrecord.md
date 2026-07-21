@@ -27,8 +27,6 @@ This describes a single signpost event that was active around the time of a diag
 
 Access signpost records through [`signpostData`](diagnosticreport/environment-swift.struct/signpostdata.md) on the diagnostic report’s environment.
 
-This type replaces [`MXSignpostRecord`](mxsignpostrecord.md).
-
 ## Topics
 
 ### Signpost details

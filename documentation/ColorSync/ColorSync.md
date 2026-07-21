@@ -14,62 +14,34 @@ Reproduce colors accurately across a range of input, output, and display devices
 - visionOS 1.0+
 - watchOS 9.0+
 
+#### Overview
+
+ColorSync is the color-management engine on Apple platforms. For most apps, color management happens automatically through higher-level frameworks such as [`Core Graphics`](https://developer.apple.com/documentation/CoreGraphics) and [`Core Image`](https://developer.apple.com/documentation/CoreImage). Use ColorSync directly when your app needs to manage color itself; for example, a professional photo, print, or video app that builds custom transforms, or a tool that inspects and calibrates the profiles assigned to devices and displays.
+
+> **Note**: To pass a profile to Core Graphics, create a [`CGColorSpace`](https://developer.apple.com/documentation/CoreGraphics/CGColorSpace) from a [`ColorSyncProfile`](colorsyncprofile.md) with [`CGColorSpaceCreateWithColorSyncProfile(_:_:)`](https://developer.apple.com/documentation/CoreGraphics/CGColorSpaceCreateWithColorSyncProfile(_:_:)).
+
+A [`ColorSyncProfile`](colorsyncprofile.md) describes the color behavior of a device or a working color space, and a [`ColorSyncTransform`](colorsynctransform.md) converts color from one profile to another. Use ColorSync to match color across color spaces and to read, author, and embed the International Color Consortium (ICC) profiles that describe them. You can also create Headroom Adaptive Gain Curve (HAGC) metadata, which controls how the system adapts HDR content when a display can’t show its full brightness range.
+
 ## Topics
 
-### Reference
-- [ColorSync Constants](colorsync-constants.md)
-- [ColorSync Functions](colorsync-functions.md)
-### Classes
-- [class ColorSyncCMM](colorsynccmm.md)
-- [class ColorSyncMutableProfile](colorsyncmutableprofile.md)
-- [class ColorSyncProfile](colorsyncprofile.md)
-- [class ColorSyncTransform](colorsynctransform.md)
-### Structures
-- [struct ColorSyncAlphaInfo](colorsyncalphainfo.md)
-- [struct ColorSyncDataDepth](colorsyncdatadepth.md)
-- [struct ColorSyncMD5](colorsyncmd5.md)
-### Variables
-- [var icVersion4Point4Number: Int](icversion4point4number.md)
-- [var kColorSyncAlphaNone: ColorSyncAlphaInfo](kcolorsyncalphanone.md)
-- [var kColorSyncAlternateCurveCount: Unmanaged<CFString>](kcolorsyncalternatecurvecount.md)
-- [var kColorSyncAlternateCurveHeadroomStops: Unmanaged<CFString>](kcolorsyncalternatecurveheadroomstops.md)
-- [var kColorSyncAlternateGainCurveInfo: Unmanaged<CFString>](kcolorsyncalternategaincurveinfo.md)
-- [var kColorSyncBaselineHeadroomStops: Unmanaged<CFString>](kcolorsyncbaselineheadroomstops.md)
-- [var kColorSyncCoefficientBlue: Unmanaged<CFString>](kcolorsynccoefficientblue.md)
-- [var kColorSyncCoefficientComponent: Unmanaged<CFString>](kcolorsynccoefficientcomponent.md)
-- [var kColorSyncCoefficientGreen: Unmanaged<CFString>](kcolorsynccoefficientgreen.md)
-- [var kColorSyncCoefficientMaxRGB: Unmanaged<CFString>](kcolorsynccoefficientmaxrgb.md)
-- [var kColorSyncCoefficientMinRGB: Unmanaged<CFString>](kcolorsynccoefficientminrgb.md)
-- [var kColorSyncCoefficientRed: Unmanaged<CFString>](kcolorsynccoefficientred.md)
-- [var kColorSyncCommonComponentMixing: Unmanaged<CFString>](kcolorsynccommoncomponentmixing.md)
-- [var kColorSyncCommonCurveParameters: Unmanaged<CFString>](kcolorsynccommoncurveparameters.md)
-- [var kColorSyncComponentCoefficients: Unmanaged<CFString>](kcolorsynccomponentcoefficients.md)
-- [var kColorSyncComponentMix: Unmanaged<CFString>](kcolorsynccomponentmix.md)
-- [var kColorSyncControlPointSlopes: Unmanaged<CFString>](kcolorsynccontrolpointslopes.md)
-- [var kColorSyncControlPointsX: Unmanaged<CFString>](kcolorsynccontrolpointsx.md)
-- [var kColorSyncControlPointsY: Unmanaged<CFString>](kcolorsynccontrolpointsy.md)
-- [var kColorSyncCustomHDRReferenceWhite: Unmanaged<CFString>](kcolorsynccustomhdrreferencewhite.md)
-- [var kColorSyncDoNotSubstituteProfiles: Unmanaged<CFString>!](kcolorsyncdonotsubstituteprofiles.md)
-- [var kColorSyncGainCurveChromaticities: Unmanaged<CFString>](kcolorsyncgaincurvechromaticities.md)
-- [var kColorSyncHeadroomAdaptiveGainCurveApplicationVersion: Unmanaged<CFString>](kcolorsyncheadroomadaptivegaincurveapplicationversion.md)
-- [var kColorSyncHeadroomAdaptiveGainCurveColorVolumeTransform: Unmanaged<CFString>](kcolorsyncheadroomadaptivegaincurvecolorvolumetransform.md)
-- [var kColorSyncHeadroomAdaptiveGainCurveInfo: Unmanaged<CFString>](kcolorsyncheadroomadaptivegaincurveinfo.md)
-- [var kColorSyncHeadroomAdaptiveToneMappingInfo: Unmanaged<CFString>](kcolorsyncheadroomadaptivetonemappinginfo.md)
-- [var kColorSyncInterpolateSlopes: Unmanaged<CFString>](kcolorsyncinterpolateslopes.md)
-- [var kColorSyncMaxControlPointIndex: Unmanaged<CFString>](kcolorsyncmaxcontrolpointindex.md)
-- [var kColorSyncTransformUseITU709OETF: Unmanaged<CFString>!](kcolorsynctransformuseitu709oetf.md)
-### Functions
-- [func ColorSyncProfileContainsHeadroomAdaptiveGainCurve(ColorSyncProfile) -> Bool](colorsyncprofilecontainsheadroomadaptivegaincurve(_:).md)
-- [func ColorSyncProfileCreateWithURLAndOptions(CFURL!, CFDictionary?, UnsafeMutablePointer<Unmanaged<CFError>?>?) -> Unmanaged<ColorSyncProfile>?](colorsyncprofilecreatewithurlandoptions(_:_:_:).md)
-### Type Aliases
-- [typealias CMMApplyTransformProc](cmmapplytransformproc.md)
-- [typealias CMMCreateTransformPropertyProc](cmmcreatetransformpropertyproc.md)
-- [typealias CMMInitializeLinkProfileProc](cmminitializelinkprofileproc.md)
-- [typealias CMMInitializeTransformProc](cmminitializetransformproc.md)
-- [typealias ColorSyncCMMIterateCallback](colorsynccmmiteratecallback.md)
-- [typealias ColorSyncDataLayout](colorsyncdatalayout.md)
-- [typealias ColorSyncDeviceProfileIterateCallback](colorsyncdeviceprofileiteratecallback.md)
-- [typealias ColorSyncProfileIterateCallback](colorsyncprofileiteratecallback.md)
+### Color conversion
+- [Color transforms](color-transforms.md)
+  Convert color from one profile’s color space to another.
+- [Pixel format and data layout](pixel-format.md)
+  Describe the memory layout of the pixel buffers a color transform reads and writes.
+### Profile and HDR metadata
+- [Color profiles](color-profiles.md)
+  Work with the ICC profiles that describe device and working color spaces.
+- [Headroom Adaptive Gain Curve](headroom-adaptive-gain-curve.md)
+  Work with SMPTE ST 2094-50 tone-mapping metadata shared between HDR stills and video.
+### System color management
+- [Color devices](color-devices.md)
+  Manage the color profiles assigned to displays, printers, scanners, and cameras.
+- [Color management modules](color-management-modules.md)
+  Work with the Color Management Modules that perform color conversions.
+### Supporting types and conventions
+- [Supporting types and conventions](supporting-types-and-conventions.md)
+  Reference the signatures and conventions that support the color-management APIs.
 
 
 ---

@@ -9,6 +9,7 @@
 - Mac Catalyst ?+
 - macOS ?+
 - tvOS ?+
+- visionOS ?+
 - Reality Composer Pro ?+
 
 ## Declaration

@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: struct
 
+Delta update carrying only the material fields that changed since the last frame.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -20,7 +22,9 @@ struct Update
 
 ### Instance Properties
 - [let assignedTextures: [String : USDPlayer.TextureID]?](usdplayer/materialdata/update/assignedtextures.md)
+  Updated texture bindings.
 - [let id: USDPlayer.MaterialID](usdplayer/materialdata/update/id.md)
+  Unique identifier for the material being updated.
 
 ## Relationships
 

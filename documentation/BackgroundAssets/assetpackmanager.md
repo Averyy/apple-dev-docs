@@ -94,7 +94,7 @@ The first time that your code refers to the shared manager, Background Assets co
   Reconciles the set of locally available asset packs with the current preferred languages.
 ### Handling errors
 - [AssetPackManager.LocalAvailabilityError](assetpackmanager/localavailabilityerror.md)
-  An error that provides information about asset packs the local availability of which the system successfully ensured and other asset packs the local availability of which the system failed to ensure.
+  An error that provides information about local asset pack availability, distinguishing between successes and failures.
 
 ## Relationships
 

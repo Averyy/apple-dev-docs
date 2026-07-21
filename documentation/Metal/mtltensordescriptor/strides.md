@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: property
 
-An array of strides, in elements, one for each dimension in the tensors you create with this descriptor, if applicable.
+An array of strides, in elements, one for each dimension of this tensor, if applicable.
 
 **Availability**:
 - iOS 26.0+
@@ -22,11 +22,14 @@ var strides: MTLTensorExtents? { get set }
 
 #### Discussion
 
-You are responsible for ensuring `strides` meets the following requirements:
+The stride value of the array’s first element needs to be exactly `1`, because it is the innermost dimension. The strides for the subsequent dimensions can have different requirements based on the value of other properties. When the [`usage`](mtltensordescriptor/usage.md) property includes the [`machineLearning`](mtltensorusage/machinelearning.md) option:
 
-- The first element of `strides` is one.
-- If [`usage`](mtltensordescriptor/usage.md) contains [`machineLearning`](mtltensorusage/machinelearning.md), the second element of `strides` is aligned to 64 bytes, and for any `i` larger than one, `strides[i]` is equal to `strides[i-1] * dimensions[i-1]`.
-- If [`dataType`](mtltensordescriptor/datatype.md) is a format [`MTLTensorDataType`](mtltensordatatype.md), for any `i` greater than or equal to 1, `strides[i]` is aligned to 128 bytes. This is not a requirement for non-format data types, but following this convention improves performance.
+- The second element of the array needs to be a multiple of 64 bytes.
+- The rest of the elements in the array need to equal the product of the previous stride multiplied with the size of the previous dimension. For example: `strides[i] = strides[i - 1] * dimensions[i - 1]`.
+
+When [`dataType`](mtltensordescriptor/datatype.md) is [`MTLTensorDataType.int2`](mtltensordatatype/int2.md), [`MTLTensorDataType.uint2`](mtltensordatatype/uint2.md), [`MTLTensorDataType.int4`](mtltensordatatype/int4.md), [`MTLTensorDataType.uint4`](mtltensordatatype/uint4.md), [`MTLTensorDataType.metalFloat4e2m1`](mtltensordatatype/metalfloat4e2m1.md), [`MTLTensorDataType.metalFloat8e4m3`](mtltensordatatype/metalfloat8e4m3.md), [`MTLTensorDataType.metalFloat8e5m2`](mtltensordatatype/metalfloat8e5m2.md), or [`MTLTensorDataType.metalFloat8ue8m0`](mtltensordatatype/metalfloat8ue8m0.md), all elements of the array, except for the first element, need to be a multiple of 128 bytes.
+
+> 💡 **Tip**: You can improve runtime performance by using strides that are multiples of 128, even when it’s not a requirement.
 
 Only set this property when creating tensors from a buffer.
 

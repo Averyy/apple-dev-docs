@@ -25,7 +25,7 @@ This `View` populates [`DocumentGroupLaunchScene`](documentgrouplaunchscene.md) 
 
 ## Topics
 
-### Initializers
+### Creating the default launch actions
 - [init()](defaultdocumentgrouplaunchactions/init.md)
 
 ## Relationships

@@ -56,12 +56,16 @@ Attach a `USDStageComponent` to an entity to render USD content as child entitie
 
 ### Conforms To
 - [Component](../RealityKit/Component.md)
+- [Copyable](../Swift/Copyable.md)
+- [Decodable](../Swift/Decodable.md)
+- [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 
 ## See Also
 
 - [class USDPlayer](usdplayer.md)
-  An object that drives timeline playback of a USD stage in RealityKit.
+  Drives timeline playback of a USD stage and produces per-frame render data.
 
 
 ---

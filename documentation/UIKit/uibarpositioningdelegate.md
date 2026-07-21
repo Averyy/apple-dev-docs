@@ -46,6 +46,7 @@ Navigation bars, toolbars, and search bars all have delegates that support the [
   A specialized button for placement on a toolbar, navigation bar, or shortcuts bar.
 - [class UIBarButtonItemGroup](uibarbuttonitemgroup.md)
   A group of one or more bar button items for placement on a navigation bar or shortcuts bar.
+- [struct UIBarButtonItemVisibilityPriority](uibarbuttonitemvisibilitypriority.md)
 - [class UINavigationBar](uinavigationbar.md)
   Navigational controls that display in a bar along the top of the screen, usually in conjunction with a navigation controller.
 - [class UISearchBar](uisearchbar.md)
@@ -58,6 +59,7 @@ Navigation bars, toolbars, and search bars all have delegates that support the [
   An object that describes an item in a tab bar.
 - [protocol UIBarPositioning](uibarpositioning.md)
   A set of methods for defining the positioning of bars in iOS apps.
+- [struct UIBarMinimization](uibarminimization-swift.struct.md)
 
 
 ---

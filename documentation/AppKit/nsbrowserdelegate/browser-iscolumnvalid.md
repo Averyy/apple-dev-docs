@@ -30,7 +30,6 @@ This method is invoked in response to the [`validateVisibleColumns()`](nsbrowser
 
 ## See Also
 
-- [Browser Programming Topics](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Browser/Browser.html#//apple_ref/doc/uid/10000018i)
 - [func browser(NSBrowser, numberOfRowsInColumn: Int) -> Int](nsbrowserdelegate/browser(_:numberofrowsincolumn:).md)
   Returns the number of rows of data in the specified column.
 - [func browser(NSBrowser, numberOfChildrenOfItem: Any?) -> Int](nsbrowserdelegate/browser(_:numberofchildrenofitem:).md)

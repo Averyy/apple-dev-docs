@@ -18,6 +18,7 @@ final class Session
 ## Relationships
 
 ### Conforms To
+- [AccessoryFeatureSession](../AccessoryTransportExtension/AccessoryFeatureSession.md)
 - [NotificationsForwarding.AccessoryNotificationsSession](notificationsforwarding/accessorynotificationssession.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)

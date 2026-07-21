@@ -38,8 +38,8 @@ struct UpdateBookLineSpacingIntent: AppIntent {
     }
 }
 For more information about the `.books` app intent domain,
-see <doc:Making-ebook-actions-available-to-siri-and-apple-intelligence>.
-For general information about app intent domains, see <doc:Integrating-actions-with-siri-and-apple-intelligence>.
+see <doc:app-schema-domain-books>.
+For general information about app intent domains, see <doc:making-actions-and-content-discoverable-by-apple-intelligence>.
 ```
 
 

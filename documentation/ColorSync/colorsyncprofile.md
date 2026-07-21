@@ -18,17 +18,27 @@
 class ColorSyncProfile
 ```
 
+## Mentions
+
+- [Authoring Headroom Adaptive Gain Curve metadata](authoring-headroom-adaptive-gain-curve-metadata.md)
+
 ## Topics
 
 ### Structures
 - [ColorSyncProfile.HeadroomAdaptiveGainCurve](colorsyncprofile/headroomadaptivegaincurve-swift.struct.md)
+  Headroom Adaptive Gain Curve metadata that describes how to tone map a profile’s HDR content to the dynamic range available on the display.
 - [ColorSyncProfile.HeadroomAdaptiveGainCurveOptions](colorsyncprofile/headroomadaptivegaincurveoptions.md)
+  Options that configure how a Headroom Adaptive Gain Curve is read from or embedded in a profile.
 ### Instance Properties
 - [var headroomAdaptiveGainCurve: ColorSyncProfile.HeadroomAdaptiveGainCurve?](colorsyncprofile/headroomadaptivegaincurve-swift.property.md)
+  The Headroom Adaptive Gain Curve embedded in this profile, or `nil` if it carries no HAGC tag.
 - [var headroomAdaptiveGainCurveMetadata: Data?](colorsyncprofile/headroomadaptivegaincurvemetadata.md)
+  The raw Headroom Adaptive Gain Curve data embedded in this profile, or `nil` if it carries no HAGC tag.
 ### Instance Methods
 - [func adding(headroomAdaptiveGainCurve: ColorSyncProfile.HeadroomAdaptiveGainCurve) -> ColorSyncProfile?](colorsyncprofile/adding(headroomadaptivegaincurve:).md)
+  Returns a copy of this profile with raw Headroom Adaptive Gain Curve data embedded as an HAGC tag.
 - [func adding(headroomAdaptiveGainCurveMetadata: Data, options: ColorSyncProfile.HeadroomAdaptiveGainCurveOptions) -> ColorSyncProfile?](colorsyncprofile/adding(headroomadaptivegaincurvemetadata:options:).md)
+  Returns a copy of this profile with raw Headroom Adaptive Gain Curve data embedded as an HAGC tag.
 
 ## Relationships
 
@@ -37,6 +47,10 @@ class ColorSyncProfile
 ### Conforms To
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
+
+## See Also
+
+- [class ColorSyncMutableProfile](colorsyncmutableprofile.md)
 
 
 ---

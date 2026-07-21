@@ -21,8 +21,6 @@ This metric corresponds to the [`MetricResult.totalDiskSpaceCapacity(_:)`](metri
 
 This value is a daily snapshot, not a cumulative sum over the reporting interval.
 
-This type replaces the `totalDiskSpaceCapacity` and `totalDiskSpaceUsedSize` properties of [`MXDiskSpaceUsageMetric`](mxdiskspaceusagemetric.md).
-
 ## Topics
 
 ### Measurements

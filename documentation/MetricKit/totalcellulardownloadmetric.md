@@ -21,8 +21,6 @@ This metric corresponds to the [`MetricResult.totalCellularDownload(_:)`](metric
 
 This value covers all cellular data regardless of whether the connection used LTE, 5G, or another technology.
 
-This type replaces the `cumulativeCellularDownload` property of [`MXNetworkTransferMetric`](mxnetworktransfermetric.md).
-
 ## Topics
 
 ### Measurements

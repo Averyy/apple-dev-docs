@@ -22,6 +22,13 @@ convenience init()
 
 Scene sessions created from this configuration will have their role automatically set by the system.
 
+## See Also
+
+- [init(name: String?, sessionRole: UISceneSession.Role)](uisceneconfiguration/init(name:sessionrole:).md)
+  Creates a scene-configuration object with the specified role and app-specific name.
+- [convenience init(name: String?)](uisceneconfiguration/init(name:).md)
+  Creates a scene-configuration object with the specified name.
+
 
 ---
 

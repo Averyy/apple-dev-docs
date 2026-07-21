@@ -38,8 +38,6 @@ The above example assumes that you define a `TextDocument` that conforms to the 
 
 ## See Also
 
-- [struct NewDocumentAction](newdocumentaction.md)
-  An action that presents a new document.
 - [var openDocument: OpenDocumentAction](environmentvalues/opendocument.md)
   An action in the environment that presents an existing document.
 - [struct OpenDocumentAction](opendocumentaction.md)

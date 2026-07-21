@@ -18,6 +18,15 @@ The system determines the minimization behavior.
 case automatic
 ```
 
+## See Also
+
+- [UIBarMinimizationBehavior.never](uibarminimizationbehavior/never.md)
+  Bar minimization is disabled.
+- [UIBarMinimizationBehavior.onScrollDown](uibarminimizationbehavior/onscrolldown.md)
+  Minimize when the user scrolls down.
+- [UIBarMinimizationBehavior.onScrollUp](uibarminimizationbehavior/onscrollup.md)
+  Minimize when the user scrolls up.
+
 
 ---
 

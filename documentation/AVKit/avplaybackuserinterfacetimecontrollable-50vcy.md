@@ -41,6 +41,15 @@ protocol AVPlaybackUserInterfaceTimeControllable : AnyObject, Observable
 ### Inherited By
 - [AVPlaybackUserInterfaceControllable](avplaybackuserinterfacecontrollable-92fri.md)
 
+## See Also
+
+- [class AVPlaybackUserInterfacePlaybackPosition](avplaybackuserinterfaceplaybackposition.md)
+  A snapshot comprising a playback position recorded at a known host time and the rate of position advancement.
+- [class AVPlaybackUserInterfaceTimelineSegment](avplaybackuserinterfacetimelinesegment.md)
+  Represents a contiguous segment of timeline content with specific playback characteristics.
+- [enum AVPlaybackUserInterfaceTimelineSegmentType](avplaybackuserinterfacetimelinesegmenttype.md)
+  Describes the type of content within a timeline segment.
+
 
 ---
 

@@ -260,4 +260,4 @@ The Metal Performance Shaders framework supports the following functionality:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/metalperformanceshaders)*
+*[View on Apple Developer](https://developer.apple.com/documentation/MetalPerformanceShaders)*

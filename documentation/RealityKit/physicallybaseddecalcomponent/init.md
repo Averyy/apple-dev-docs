@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: init
 
-Creates a new instance without a base color
+Creates a new instance without a base color.
 
 **Availability**:
 - iOS 27.0+ (Beta)

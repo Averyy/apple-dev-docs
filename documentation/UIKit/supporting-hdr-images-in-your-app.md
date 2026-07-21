@@ -80,12 +80,6 @@ guard let outputURL = try? output.renderedContentURL(for: .heic) else {
   Returns a data object that contains the image in JPEG format.
 - [func pngData() -> Data?](uiimage/pngdata.md)
   Returns a data object that contains the specified image in PNG format.
-- [func UIGraphicsBeginImageContext(CGSize)](uigraphicsbeginimagecontext(_:).md)
-  Creates a bitmap-based graphics context and makes it the current context.
-- [func UIGraphicsGetImageFromCurrentImageContext() -> UIImage?](uigraphicsgetimagefromcurrentimagecontext().md)
-  Returns an image from the contents of the current bitmap-based graphics context.
-- [func UIGraphicsEndImageContext()](uigraphicsendimagecontext().md)
-  Removes the current bitmap-based graphics context from the top of the stack.
 
 
 ---

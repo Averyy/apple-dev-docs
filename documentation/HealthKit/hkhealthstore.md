@@ -138,6 +138,7 @@ For more information, see [`Setting up HealthKit`](setting-up-healthkit.md).
 ### Structures
 - [HKHealthStore.HKUserPreferencesDidChangeMessage](hkhealthstore/hkuserpreferencesdidchangemessage.md)
 ### Instance Methods
+- [func earliestAuthorizedSampleDate(for: Set<HKObjectType>) async throws -> [HKObjectType : Date]](hkhealthstore/earliestauthorizedsampledate(for:).md)
 - [func relateWorkoutEffortSample(HKSample, with: HKWorkout, activity: HKWorkoutActivity?, completion: (Bool, (any Error)?) -> Void)](hkhealthstore/relateworkouteffortsample(_:with:activity:completion:).md)
 - [func unrelateWorkoutEffortSample(HKSample, from: HKWorkout, activity: HKWorkoutActivity?, completion: (Bool, (any Error)?) -> Void)](hkhealthstore/unrelateworkouteffortsample(_:from:activity:completion:).md)
 

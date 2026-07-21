@@ -116,6 +116,8 @@ To access values in an information property list programmatically, you use an in
   Allows this credential provider to show up in the system AutoFill context menu, so that it can fill text in any text field.
 - [SupportsConditionalPasskeyRegistration](information-property-list/supportsconditionalpasskeyregistration.md)
   Indicates that the credential provider supports automatic passkey upgrades.
+- [WKSupportsLiveActivityLaunchAttributeTypes](information-property-list/wksupportsliveactivitylaunchattributetypes.md)
+  The attribute type names that let a person launch your watchOS app by tapping a Live Activity.
 
 ## See Also
 

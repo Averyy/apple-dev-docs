@@ -19,7 +19,7 @@ typealias ReadConfiguration = DocumentReadConfiguration
 ## See Also
 
 - [init(sending FileWrapperDocumentReader<Snapshot>.ReadConfiguration, makeSnapshot: (FileWrapper) async throws -> sending Snapshot)](filewrapperdocumentreader/init(_:makesnapshot:).md)
-  Creates a reader that uses `FileWrapper` to read documents from disk.
+  Creates a reader that converts a `FileWrapper` into a snapshot.
 
 
 ---

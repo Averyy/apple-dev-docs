@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: method
 
-Portal with infinite half-space clipping and crossing.
+Returns a boundary style that uses an infinite plane.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -21,9 +21,9 @@ static func infinitePlane() -> PortalComponent.BoundaryStyle
 
 #### Discussion
 
-Content inside the portal world is visible through the flat plane mesh and clipped by an infinite plane boundary.
+The boundary is the entity’s local XY plane. RealityKit clips portal world content behind the surface and lets crossing entities pass through it freely.
 
-Corresponds to `ClippingMode.plane(_:)` and `CrossingMode.plane(_:)`.
+This boundary corresponds to [`PortalComponent.ClippingMode.plane(_:)`](portalcomponent/clippingmode-swift.enum/plane(_:).md) and [`PortalComponent.CrossingMode.plane(_:)`](portalcomponent/crossingmode-swift.enum/plane(_:).md) configured with [`positiveZ`](portalcomponent/plane/positivez.md).
 
 
 ---

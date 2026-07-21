@@ -86,6 +86,8 @@ view.traitOverrides.theme = .monochrome
   The style associated with the user interface.
 - [var verticalSizeClass: UIUserInterfaceSizeClass](uimutabletraits-13ja5/verticalsizeclass.md)
   The vertical size class of the trait collection.
+### Instance Properties
+- [var systemPrefersReducedResourceUsage: Bool](uimutabletraits-13ja5/systemprefersreducedresourceusage.md)
 ### Subscripts
 - [subscript<T>(T.Type) -> T.Value](uimutabletraits-13ja5/subscript(_:)-19j2e.md)
 - [subscript<T>(T.Type) -> T.Value](uimutabletraits-13ja5/subscript(_:)-1b2k9.md)

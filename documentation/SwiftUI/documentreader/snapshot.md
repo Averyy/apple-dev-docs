@@ -4,7 +4,7 @@
 **Kind**: associatedtype  
 **Required**: Yes
 
-A type that represents the document’s stored content.
+The type representing the document’s content after reading.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -19,11 +19,16 @@ A type that represents the document’s stored content.
 associatedtype Snapshot
 ```
 
+#### Discussion
+
+This can be any type: a `String`, a custom struct, or even the document type itself. SwiftUI delivers it to [`apply(snapshot:previous:)`](readabledocument/apply(snapshot:previous:).md) on the main actor after reading completes.
+
 ## See Also
 
 - [func read(from: sending Self.Source, progress: consuming Subprogress) async throws -> sending Self.Snapshot](documentreader/read(from:progress:).md)
-  Reads the document from disk.
+  Reads the document’s content from disk.
 - [associatedtype Source = URL](documentreader/source.md)
+  The type of the source location to read from.
 
 
 ---

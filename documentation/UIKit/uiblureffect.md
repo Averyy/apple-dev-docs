@@ -57,6 +57,8 @@ Views that you add to the [`contentView`](uivisualeffectview/contentview.md) of 
   An object that implements some complex visual effects.
 - [class UIVibrancyEffect](uivibrancyeffect.md)
   An object that amplifies and adjusts the color of the content layered behind a visual effect view.
+- [class UIColorEffect](uicoloreffect.md)
+  A visual effect that applies a solid color background.
 
 
 ---

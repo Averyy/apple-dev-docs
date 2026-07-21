@@ -1,4 +1,4 @@
-# tvOS 27 Beta 3 Release Notes
+# tvOS 27 Beta 4 Release Notes
 
 **Framework**: tvOS Release Notes
 
@@ -6,13 +6,13 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The tvOS 27 SDK provides support to develop tvOS apps for Apple TV devices running tvOS 27 beta 3. The SDK comes bundled with Xcode 27, available from the Mac App Store. For information on the compatibility requirements for Xcode 27, see [`Xcode 27 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-27-release-notes).
+The tvOS 27 SDK provides support to develop tvOS apps for Apple TV devices running tvOS 27 beta 4. The SDK comes bundled with Xcode 27, available from the Mac App Store. For information on the compatibility requirements for Xcode 27, see [`Xcode 27 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-27-release-notes).
 
 ##### Apple Tv
 
-###### Known Issues
+###### Resolved Issues
 
-- When launching the Apple TV app, the sidebar focus highlight might briefly appear flat on the right side.  (177389941)
+- Fixed: When launching the Apple TV app, the sidebar focus highlight might briefly appear flat on the right side.  (177389941)
 
 ##### Avkit Video Playback
 
@@ -36,7 +36,7 @@ The tvOS 27 SDK provides support to develop tvOS apps for Apple TV devices runni
 
 ###### Resolved Issues
 
-- Fixed: When you trigger the Access Point, it’s completion handler is never invoked.  (172683368)
+- Fixed: When you trigger the Access Point, its completion handler is never invoked.  (172683368)
 
 ##### Homekit
 
@@ -50,16 +50,13 @@ The tvOS 27 SDK provides support to develop tvOS apps for Apple TV devices runni
 ###### Resolved Issues
 
 - Fixed: When you use a sampler to read from a texture with clamp-to-edge addressing mode, the result might be clamped to zero.  (172520325)
-
-###### Known Issues
-
-- On devices in the Apple 10 GPU family, using a sampler to read from a texture with clamp-to-edge addressing mode might produce results that are clamped to zero.  (177318505)
+- Fixed: On devices in the Apple 10 GPU family, using a sampler to read from a texture with clamp-to-edge addressing mode might produce results that are clamped to zero.  (177318505)
 
 ##### Network Security
 
 ###### New Features
 
-- Starting in 27.0 operating systems, select system processes now enforce stricter network security (TLS) requirements. These new requirements might cause connections to fail if the server does not meet them. The affected processes are those involved in MDM, DDM, Automated Device Enrollment, configuration profile installation, app installation, and software updates. Servers must support TLS 1.2 at minimum, using cipher suites and certificates that meet App Transport Security (ATS) requirements. For additional details on affected processes, requirements, and how to audit and diagnose failures in managed environments please reference [`Prepare your network environment for stricter security requirements`](https://developer.apple.comhttps://support.apple.com/en-us/126655). For additional details on ATS and the new requirements please reference [`Preventing Insecure Network Connections`](https://developer.apple.comhttps://developer.apple.com/documentation/Security/preventing-insecure-network-connections) and [`NSRequiresNIAPTLSPackageVersion`](https://developer.apple.comhttps://developer.apple.com/documentation/BundleResources/Information-Property-List/NSRequiresNIAPTLSPackageVersion).  (176055825)
+- Starting in 27.0 operating systems, select system processes now enforce stricter network security (TLS) requirements. These new requirements might cause connections to fail if the server does not meet them. The affected processes are those involved in MDM, DDM, Automated Device Enrollment, configuration profile installation, app installation, and software updates. Servers must support TLS 1.2 at minimum, using cipher suites and certificates that meet App Transport Security (ATS) requirements. For additional details on affected processes, requirements, and how to audit and diagnose failures in managed environments, please reference [`Prepare your network environment for stricter security requirements`](https://developer.apple.comhttps://support.apple.com/en-us/126655). For additional details on ATS and the new requirements, please reference [`Preventing Insecure Network Connections`](https://developer.apple.comhttps://developer.apple.com/documentation/Security/preventing-insecure-network-connections) and [`NSRequiresNIAPTLSPackageVersion`](https://developer.apple.comhttps://developer.apple.com/documentation/BundleResources/Information-Property-List/NSRequiresNIAPTLSPackageVersion).  (176055825)
 
 ##### On Demand Resources
 
@@ -71,24 +68,24 @@ The tvOS 27 SDK provides support to develop tvOS apps for Apple TV devices runni
 
 ###### Resolved Issues
 
+- Fixed: `ComputeGraphComponents` stored in a Reality file do not render when loaded.  (177674901)
 - Fixed: When `OpacityComponent` is applied to an entity with opaque materials, `RealityRenderer` renders the opaque materials with transparency, revealing interior surfaces. Only the frontmost surface should appear with partial transparency.  (177976245)
 
 ###### Known Issues
 
 - Some MaterialX 1.39 nodes are not supported.  (172875414)
-- `ComputeGraphComponents` stored in a Reality file do not render when loaded.  (177674901)
 
 ##### Shadergraph
 
-###### Known Issues
+###### Resolved Issues
 
-- The `realitykit_hair_surfaceshader` node does not support `DiffuseLightProbeGroupComponent`. Materials built with this node might not respond to diffuse light probe group lighting.  (177976666)
+- Fixed: The `realitykit_hair_surfaceshader` node does not support `DiffuseLightProbeGroupComponent`. Materials built with this node might not respond to diffuse light probe group lighting.  (177976666)
 
 ##### Siri
 
-###### Known Issues
+###### Resolved Issues
 
-- Siri might not resolve some entity types when your app has provided only an `EntityStringQuery` for the entity type.  (177464215) **Workaround:** Index the entity in Spotlight, or provide an `IntentValueQuery` if applicable.
+- Fixed: Siri might not resolve some entity types when your app has provided only an `EntityStringQuery` for the entity type.  (177464215)
 
 ##### Storekit
 
@@ -97,6 +94,10 @@ The tvOS 27 SDK provides support to develop tvOS apps for Apple TV devices runni
 - StoreKit now includes the `Transaction.OwnershipType.assigned` and `Transaction.RevocationType.assignmentRevoked` enum values to support volume purchases. `Transaction` query methods now additionally return transactions assigned to the Managed Apple Account.  (156749517)
 - New `Product.ProductType` APIs represent subscription Bundles and subscription Suites. New APIs in `Product.SubscriptionInfo.BundledSubscription` let you fetch merchandising data about subscriptions contained in a Bundle. Transaction and RenewalInfo contain new fields that provide information about purchases and customer status regarding Bundles and Suites.  (160501742)
 - `partnerName` and `partnerId` properties for Advanced Commerce API are available in [`Transaction.AdvancedCommerceInfo`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/transaction/advancedcommerceinfo-swift.struct) and [`RenewalInfo.AdvancedCommerceInfo`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/product/subscriptioninfo/renewalinfo/advancedcommerceinfo-swift.struct).  (167808780)
+
+###### Known Issues
+
+- Purchases of non-subscription In-App Purchases made using the SKTestSession.buyProduct() method might fail with an invalid product error. The billingPlanType(_:) PurchaseOption isn’t respected for subscription purchases.  (181842500)
 
 ##### Storekit Testing in Xcode
 
@@ -112,41 +113,16 @@ The tvOS 27 SDK provides support to develop tvOS apps for Apple TV devices runni
 
 ##### Swift Charts
 
-###### Known Issues
+###### Resolved Issues
 
-- When your project has a minimum deployment target lower than 27.0, using conditionals inside a `Chart` closure produces the warning “Conformance of ‘_ConditionalContent<TrueContent, FalseContent>’ to ‘ChartContent’ is only available in  27.0 or newer,” and the app might crash at runtime when that content is loaded.  (174168981) **Workaround:** Extract the conditional chart content into a separate function or computed property annotated with `@ChartContentBuilder`. For example, replace: ```None
- Chart(dataPoints, id: \.index) { dataPoint in
-   if selectedMetric == "Rate" {
-       LineMark(x: .value("X", dataPoint.index), y: .value("Y", dataPoint.rate))
-           .foregroundStyle(.blue)
-   } else {
-       LineMark(x: .value("X", dataPoint.index), y: .value("Y", dataPoint.signal))
-           .foregroundStyle(.green)
-   }
- }
-``` with: ```None
- Chart(dataPoints, id: \.index) { dataPoint in
-   marks(for: dataPoint)
- }
- 
- @ChartContentBuilder 
- private func marks(for dataPoint: DataPoint) -> some ChartContent {
-   if selectedMetric == "Rate" {
-       LineMark(x: .value("X", dataPoint.index), y: .value("Y", dataPoint.rate))
-           .foregroundStyle(.blue)
-   } else {
-       LineMark(x: .value("X", dataPoint.index), y: .value("Y", dataPoint.signal))
-           .foregroundStyle(.green)
-   }
- }
-```
+- Fixed: When your project has a minimum deployment target lower than 27.0, using conditionals inside a `Chart` closure produces the warning “Conformance of `_ConditionalContent<TrueContent, FalseContent>` to `ChartContent` is only available in ‘’ 27.0 or newer,” and the app might crash at runtime when that content is loaded.  (174168981)
 
 ##### Swiftui
 
 ###### New Features
 
-- `AsyncImage` now automatically caches downloaded images using HTTP caching protocols, allowing servers to control caching behavior via standard headers. You can customize caching for specific images using the new`AsyncImage` initializers that accept `URLRequest` with custom `cachePolicy` settings. Additionally, you can set a custom `URLSession` using the new `View.asyncImageURLSession(_:)` API to control how all child `AsyncImage` views perform data tasks.  (78212597)
-- A `@State` declared with an expression as its initial value used to evaluate the expression each time the view struct re-instantiates. In the case of `@State private var model = Model()`, this means `Model.init()` gets called many times throughout the view’s life time. Xcode 27 introduces a new `@State` implementation that avoids this repeated evaluation. This new behavior back-deploys to iOS 17 aligned OSes. The new `@State` is implemented with a Swift macro. It is largely source compatible with the property wrapper version, with a few exceptions. If you provide an initial value at `@State` declaration, and also try to assign a value to it in an initializer, the initializer value is discarded. This behavior has not changed because of the macro, but some such cases no longer compiles: ```None
+- `AsyncImage` now automatically caches downloaded images using HTTP caching protocols, allowing servers to control caching behavior via standard headers. You can customize caching for specific images using the new `AsyncImage` initializers that accept `URLRequest` with custom `cachePolicy` settings. Additionally, you can set a custom `URLSession` using the new `View.asyncImageURLSession(_:)` API to control how all child `AsyncImage` views perform data tasks.  (78212597)
+- A `@State` declared with an expression as its initial value used to evaluate the expression each time the view struct re-instantiates. In the case of `@State private var model = Model()`, this means `Model.init()` gets called many times throughout the view’s lifetime. Xcode 27 introduces a new `@State` implementation that avoids this repeated evaluation. This new behavior back-deploys to iOS 17 aligned OSes. The new `@State` is implemented with a Swift macro. It is largely source compatible with the property wrapper version, with a few exceptions. If you provide an initial value at `@State` declaration, and also try to assign a value to it in an initializer, the initializer value is discarded. This behavior has not changed because of the macro, but some such cases no longer compile: ```None
  struct StickerPageView: View {
      @State private var page = StickerPage()
      let title: String
@@ -168,7 +144,7 @@ The tvOS 27 SDK provides support to develop tvOS apps for Apple TV devices runni
          self.title = title
      }
  }
-``` When all stored member of a struct is private, the compiler synthesizes a private init that can be used in extension of the same type: ```None
+``` When all stored members of a struct are private, the compiler synthesizes a private init that can be used in an extension of the same type: ```None
  struct StickerPageView: View {
      @State private var page: StickerPage
      private let title: String
@@ -177,7 +153,7 @@ The tvOS 27 SDK provides support to develop tvOS apps for Apple TV devices runni
  
  extension StickerPageView {
      init(title: String, _ page: StickerPage) {
-         self.init(page: page, title: title) // using the sythesized init
+         self.init(page: page, title: title) // using the synthesized init
      }
  }
 ``` The state macro disables this synthesized initializer. So the code above no longer compiles. To mitigate, assign value to members explicitly: ```None
@@ -187,27 +163,24 @@ The tvOS 27 SDK provides support to develop tvOS apps for Apple TV devices runni
          self.page = page
      }
  }
-``` In rare situations, the automatic inference of generic argument of `@State` is less flexible with the macro implementation. Write the type with more specificity. Composing `@State` with other property wrappers or macros is not supported.  (105893279)
+``` In rare situations, the automatic inference of generic arguments of `@State` is less flexible with the macro implementation. Write the type with more specificity. Composing `@State` with other property wrappers or macros is not supported.  (105893279)
 - The `TabsPickerStyle` style is now available for pickers that represent tab-based navigation and content selection. This style is similar to the `.segmented` style, but VoiceOver reads it as “tabs,” and on macOS it has a distinct visual appearance that distinguishes it from pickers that represent value selection — for example, a text alignment picker in an inspector.  (173211711)
 - You can now use the `TextInputBorderShape` type to customize the border shape of text input controls like `TextField` with the `textInputBorderShape(_:)` view modifier. The `.squareBorder` and `.roundedBorder` text field styles are soft deprecated — use the new `.bordered` text field style instead.  (173362083)
 - In apps built with the 27.0 SDKs, a `LabeledContent` view used inside a `Menu` maps its value to the platform menu item’s subtitle.  (175594929)
 - The @Entry macro now warns of potential issues if you store default class instances or closures in the environment. The SwiftUI Specialist skill in Xcode provides guidance for resolving these issues.  (175902616)
 - You can now access `concentricCornerRadii` and `concentricCornerRadii(in:)` on `GeometryProxy`. These APIs return the corner radii that are concentric with the view’s container shape as a `RectangleCornerRadii?`. You can use these values to drive custom drawing or layout that responds to the container’s corners without rendering a `ConcentricRectangle` directly.  (177185166)
 - `@ContentBuilder` type checking performance is further improved for valid code compared to Beta 1.  (177526032)
-- The new data item or error object based `alert` and `confirmationDialog` modifiers can now be used by projects targetting iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, and visionOS 1.0.  (179388848)
+- The new data item or error object based `alert` and `confirmationDialog` modifiers can now be used by projects targeting iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, and visionOS 1.0.  (179388848)
 
 ###### Resolved Issues
 
 - Fixed: When you apply both `.fileExporter(_:...)` and `.fileMover(_:...)` modifiers to a view, some dialogs might not present correctly.  (154080867)
 - Fixed: In apps built with the 27.0 SDKs, `containerRelativeFrame(_:alignment:)` incorrectly accounts for safe-area insets on a `ScrollView`’s non-scrollable axis, causing the calculated scrollable content size to be too small. For example, a view using `containerRelativeFrame(.vertical)` inside a horizontal `ScrollView` extends into vertical safe-area regions, such as the navigation bar and home indicator, because only the scrollable axis insets are applied.  (165913417)
 - Fixed: Certain control-related view modifiers unexpectedly affect sheet and popover content. In apps built with the 27.0 SDKs, the `controlSize`, `buttonSizing`, `buttonRepeatBehavior`, `menuIndicatorVisibility`, and `ButtonBorderShape` environment values are now reset to their default values in sheets and popovers.  (167448274)
+- Fixed: `Menu` labels cannot contain controls, views with gestures, or view representables with gesture recognizers.  (169091260)
+- Fixed: Buttons on tvOS no longer automatically use the accent color from an app’s asset catalog as a label tint color when building against the tvOS 27 SDK.  (171830912)
 - Fixed: A Button containing both an icon and a title placed inside a `List` `Section` header or footer has incorrect spacing between its icon and title.  (175681345)
 - Fixed: `@State` variable named using a raw identifier fails to compile.  (179149051) (FB23015259)
-
-###### Known Issues
-
-- `Menu` labels cannot contain controls, views with gestures, or view representables with gesture recognizers.  (169091260) **Workaround:** Position your interactive views above a `Menu` in a `ZStack` or as an `overlay`.
-- Buttons on tvOS no longer automatically use the accent color from an app’s asset catalog as a label tint color when building against the tvOS 27 SDK.  (171830912) **Workaround:** To get accent-tinted buttons, use `.tint(.accentColor)` to adopt your accent color as a button’s complete tint. `.bordered` and `.borderedProminent` use the tint in more and less subtle ways, respectively.
 
 ##### System
 
@@ -237,10 +210,10 @@ The tvOS 27 SDK provides support to develop tvOS apps for Apple TV devices runni
 
 ##### Usdkit
 
-###### Known Issues
+###### Resolved Issues
 
-- Some types of USD attributes cannot be read or modified.  (170653056)
-- Array, vector, matrix, and quaternion types cannot be authored using USDKit.  (178071414)
+- Fixed: Some types of USD attributes cannot be read or modified.  (170653056)
+- Fixed: Array, vector, matrix, and quaternion types cannot be authored using USDKit.  (178071414)
 
 ##### Videotoolbox
 

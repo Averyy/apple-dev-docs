@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: init
 
-Creates a surface style with explicit width and height.
+Creates a surface style with the given width and height in meters.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -18,6 +18,11 @@ Creates a surface style with explicit width and height.
 ```swift
 init(width: Float, height: Float)
 ```
+
+## Parameters
+
+- `width`: The width of the portal mesh, in meters.
+- `height`: The height of the portal mesh, in meters.
 
 
 ---

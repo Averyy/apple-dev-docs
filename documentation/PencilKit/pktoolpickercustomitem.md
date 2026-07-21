@@ -67,9 +67,6 @@ For a more complete example of creating a custom tool item, see [`Configuring th
 ### Reloading the custom item image
 - [func reloadImage()](pktoolpickercustomitem/reloadimage.md)
   Requests a new image for the custom tool item from the image provider.
-### Structures
-- [PKToolPickerCustomItem.ControlOptions](pktoolpickercustomitem/controloptions.md)
-  Options for which controls to present.
 ### Instance Properties
 - [var allowsColorSelection: Bool](pktoolpickercustomitem/allowscolorselection.md)
   Present color selection UI to the user. Defaults to the value set in `configuration`.

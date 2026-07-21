@@ -21,7 +21,7 @@ class BADownloadManager
 
 #### Overview
 
-Use [`BADownloadManager`](badownloadmanager.md) to schedule and cancel asset downloads, monitor their progress, and access the queue of pending downloads. You don’t create instances of this class directly; instead, use the [`shared`](badownloadmanager/shared.md) property to access the framework’s singleton that it shares between your app and the app’s extension. Because the download manager is a shared resource, prevent race conditions by using the [`withExclusiveControl(_:)`](badownloadmanager/withexclusivecontrol(_:).md) and [`withExclusiveControl(beforeDate:perform:)`](badownloadmanager/withexclusivecontrol(beforedate:perform:).md) methods to assume absolute control of the manager before you schedule asset downloads or manipulate those already in the manager’s queue. To respond to asset download events and process concluded downloads, create a type that conforms to the [`BADownloadManagerDelegate`](badownloadmanagerdelegate.md) protocol and assign an instance of it to the download manager’s [`delegate`](badownloadmanager/delegate.md) property.
+Use [`BADownloadManager`](badownloadmanager.md) to schedule and cancel asset downloads, monitor their progress, and access the queue of pending downloads. You don’t create instances of this class directly; instead, use the [`shared`](badownloadmanager/shared.md) property to access the framework’s singleton that it shares between your app and the app’s extension. Because the download manager is a shared resource, prevent race conditions by using the `withExclusiveControl(_:)` and [`withExclusiveControl(beforeDate:perform:)`](badownloadmanager/withexclusivecontrol(beforedate:perform:).md) methods to assume absolute control of the manager before you schedule asset downloads or manipulate those already in the manager’s queue. To respond to asset download events and process concluded downloads, create a type that conforms to the [`BADownloadManagerDelegate`](badownloadmanagerdelegate.md) protocol and assign an instance of it to the download manager’s [`delegate`](badownloadmanager/delegate.md) property.
 
 The following example shows how to create an asset download, acquire exclusive control of the shared download manager, and then use the manager to schedule the download:
 
@@ -83,9 +83,13 @@ do {
 - [func fetchCurrentDownloads(completionHandler: ([BADownload], (any Error)?) -> Void)](badownloadmanager/fetchcurrentdownloads(completionhandler:).md)
   Fetches the contents of the manager’s download queue.
 ### Synchronizing manager access
-- [func withExclusiveControl((Bool, (any Error)?) -> Void)](badownloadmanager/withexclusivecontrol(_:).md)
-  Attempts to acquire immediate, exclusive access to the download manager.
 - [func withExclusiveControl(beforeDate: Date, perform: (Bool, (any Error)?) -> Void)](badownloadmanager/withexclusivecontrol(beforedate:perform:).md)
+### Instance Methods
+- [func withExclusiveControl<ReturnType>(() throws -> sending ReturnType) async throws -> sending ReturnType](badownloadmanager/withexclusivecontrol(_:)-1rf9w.md)
+  Attempts to acquire immediate, exclusive control over the download manager.
+- [func withExclusiveControl((Bool, (any Error)?) -> Void)](badownloadmanager/withexclusivecontrol(_:)-2ang9.md)
+- [func withExclusiveControl<ReturnType>(before: Date, () throws -> sending ReturnType) async throws -> sending ReturnType](badownloadmanager/withexclusivecontrol(before:_:).md)
+  Attempts to acquire immediate, exclusive control over the download manager before the specified date.
 
 ## Relationships
 

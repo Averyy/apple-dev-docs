@@ -3,7 +3,7 @@
 **Framework**: USDKit  
 **Kind**: method
 
-Import a custom IBL texture with CPU import processing. Throws `USDRenderError` on failure.
+Imports a custom IBL texture.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -17,6 +17,10 @@ Import a custom IBL texture with CPU import processing. Throws `USDRenderError` 
 ```swift
 final func importCustomIBLTexture(data: Data) throws -> USDPlayer.TextureData
 ```
+
+#### Discussion
+
+Expects input data from an HDR image.
 
 
 ---

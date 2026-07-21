@@ -316,7 +316,7 @@ A few scopes fall outside the session-type mapping:
 
 Optionally, you can sync the password the user enters during web-based authentication to the local user account. Use this option when the device management configuration sets the `AllowWebLoginPasswordSync` key to `true`. This requires the identity provider to embed a JavaScript snippet (like the following conceptual example) in the authorization endpoint login page:
 
-```html
+```javascript
 <script>
     function syncPasswordWithPlatformSSO() {
         // 1. Check for the Platform SSO API.
@@ -346,7 +346,7 @@ QR code scanning is a supplementary feature that the authorization endpoint’s 
 
 To add QR code scanning to your login page, use a JavaScript snippet like the following conceptual example:
 
-```html
+```javascript
 <script>
     async function authenticateWithQR() {
         // 1. Check for the Platform SSO API.

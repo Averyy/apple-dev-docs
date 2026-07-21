@@ -3,7 +3,7 @@
 **Framework**: USDKit  
 **Kind**: property
 
-Retrieve the localized description for this error.
+Human-readable description of the error.
 
 **Availability**:
 - iOS 27.0+ (Beta)

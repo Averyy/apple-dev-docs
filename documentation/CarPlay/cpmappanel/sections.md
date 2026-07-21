@@ -13,7 +13,7 @@ The sections contained in this page.
 ## Declaration
 
 ```swift
-var sections: [CPMapPanelSection] { get }
+var sections: [CPMapPanelSection] { get set }
 ```
 
 

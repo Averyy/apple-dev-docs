@@ -82,6 +82,16 @@ When defining the delegate, choose an object from your app that has access to yo
   The types of animations that Writing Tools performs during an interactive update of your view.
 ### Instance Properties
 - [var includesTextListMarkers: Bool](uiwritingtoolscoordinator/includestextlistmarkers.md)
+### Instance Methods
+- [func cancelTextAnimations(identifiers: [UUID])](uiwritingtoolscoordinator/canceltextanimations(identifiers:).md)
+  Used to support the presentation of grammar issues in text. If it is necessary to cancel the animation of one or more issues, call this to cancel theanimations.
+- [func showGrammarPresentation(for: NSRange, in: UIWritingToolsCoordinator.Context) -> Bool](uiwritingtoolscoordinator/showgrammarpresentation(for:in:).md)
+  Used to support the presentation of grammar issues in text. When the user interacts with an issue, call this to bring up the relevant UI.
+- [func startTextAnimation(UIWritingToolsCoordinator.TextAnimation, for: NSRange, in: UIWritingToolsCoordinator.Context, writingDirection: NSWritingDirection) -> UUID?](uiwritingtoolscoordinator/starttextanimation(_:for:in:writingdirection:).md)
+  Used to support the presentation of grammar issues in text. When an issue is first identified and indicated, call this to have it animated.
+### Enumerations
+- [UIWritingToolsCoordinator.TextDecoration](uiwritingtoolscoordinator/textdecoration.md)
+  Use the `UIWritingToolsCoordinator.TextDecoration` constants to determine the type of decoration to be applied to a preview for grammar animation. The grammar animation needs previews of the text of the issue in two forms, without and with the grammar indication underline applied. If you use grammar animation, you must implement the delegate method [`writingToolsCoordinator(_:requestsPreviewFor:of:in:textDecoration:completion:)`](uiwritingtoolscoordinator/delegate-swift.protocol/writingtoolscoordinator(_:requestspreviewfor:of:in:textdecoration:completion:).md) to provide both forms of previews, based on the specified decoration.
 
 ## Relationships
 

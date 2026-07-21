@@ -4,6 +4,8 @@
 **Kind**: associatedtype  
 **Required**: Yes
 
+The type of the destination location to write to.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -17,10 +19,16 @@
 associatedtype Destination = URL
 ```
 
+#### Discussion
+
+SwiftUI provides the document’s file URL as the destination.
+
 ## See Also
 
+- [func write(snapshot: sending Self.Snapshot, to: sending Self.Destination, previous: sending Self.Snapshot?, progress: consuming Subprogress) async throws](documentwriter/write(snapshot:to:previous:progress:).md)
+  Writes the document content to disk.
 - [associatedtype Snapshot](documentwriter/snapshot.md)
-  A type that represents the document’s stored content.
+  The type representing the document’s content to write.
 
 
 ---

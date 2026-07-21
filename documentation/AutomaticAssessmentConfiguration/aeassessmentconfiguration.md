@@ -105,6 +105,8 @@ While you provide a configuration instance when creating a session on iOS, iPadO
   A Boolean value that indicates whether to allow alternative input methods for accessibility features during an assessment.
 - [var allowsAccessibilityBackgroundSounds: Bool](aeassessmentconfiguration/allowsaccessibilitybackgroundsounds.md)
   A Boolean value that indicates whether to allow Background Sounds during an assessment.
+- [var allowsAccessibilityFullKeyboardAccess: Bool](aeassessmentconfiguration/allowsaccessibilityfullkeyboardaccess.md)
+  A Boolean value that indicates whether to allow Full Keyboard Access during an assessment.
 - [var allowsAccessibilityHoverText: Bool](aeassessmentconfiguration/allowsaccessibilityhovertext.md)
   A Boolean value that indicates whether to allow Hover Text during an assessment.
 - [var allowsAccessibilityKeyboard: Bool](aeassessmentconfiguration/allowsaccessibilitykeyboard.md)

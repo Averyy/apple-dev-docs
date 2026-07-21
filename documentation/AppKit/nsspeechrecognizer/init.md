@@ -18,10 +18,6 @@ init?()
 
 Returns `nil` if initialization did not succeed.
 
-## See Also
-
-- [Speech Programming Topics](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Speech/Speech.html#//apple_ref/doc/uid/10000178i)
-
 
 ---
 

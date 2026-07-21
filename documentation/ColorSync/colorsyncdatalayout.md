@@ -18,6 +18,11 @@
 typealias ColorSyncDataLayout = UInt32
 ```
 
+## See Also
+
+- [struct ColorSyncAlphaInfo](colorsyncalphainfo.md)
+- [struct ColorSyncDataDepth](colorsyncdatadepth.md)
+
 
 ---
 

@@ -31,7 +31,6 @@ One use of this method might be to visually highlight the word being spoken.
 
 - [func startSpeaking(String) -> Bool](nsspeechsynthesizer/startspeaking(_:).md)
   Begins speaking synthesized text through the system’s default sound output device.
-- [Speech Programming Topics](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Speech/Speech.html#//apple_ref/doc/uid/10000178i)
 - [func speechSynthesizer(NSSpeechSynthesizer, willSpeakPhoneme: Int16)](nsspeechsynthesizerdelegate/speechsynthesizer(_:willspeakphoneme:).md)
   Sent just before a synthesized phoneme is spoken through the sound output device.
 - [func speechSynthesizer(NSSpeechSynthesizer, didEncounterErrorAt: Int, of: String, message: String)](nsspeechsynthesizerdelegate/speechsynthesizer(_:didencountererrorat:of:message:).md)

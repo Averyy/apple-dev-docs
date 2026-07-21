@@ -31,6 +31,8 @@ The `Unlit Surface` node produces a custom surface based on its input parameters
 
 - [PBR Surface (RealityKit)](realitykit/pbr-surface-(realitykit).md)
   A surface shader that defines properties for a RealityKit Physically Based Rendering material.
+- [Hair Surface (RealityKit)](realitykit/hair-surface-(realitykit).md)
+  A surface shader that defines properties for a RealityKit Hair material.
 - [Occlusion Surface (RealityKit)](realitykit/occlusion-surface-(realitykit).md)
   A surface shader that defines properties for a RealityKit Occlusion material that does not receive dynamic lighting.
 - [Shadow Receiving Occlusion Surface (RealityKit)](realitykit/shadow-receiving-occlusion-surface-(realitykit).md)
@@ -57,8 +59,6 @@ The `Unlit Surface` node produces a custom surface based on its input parameters
   The model-to-world transformation Matrix4x4 (Float).
 - [Surface Model To View (RealityKit)](realitykit/surface-model-to-view-(realitykit).md)
   The model-to-view transformation Matrix4x4 (Float).
-- [Surface World To View (RealityKit)](realitykit/surface-world-to-view-(realitykit).md)
-  The world-to-view transformation Matrix4x4 (Float).
 
 
 ---

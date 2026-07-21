@@ -26,6 +26,13 @@ var initialCapacity: Int { get }
 
 The initial capacity is defined by the user via the Settings app.
 
+## See Also
+
+- [var remainingCapacity: Int](avprovideostorage/remainingcapacity.md)
+  Current size of Pro Video Storage in bytes.
+- [func replenishCapacity(completionHandler: ((Int, (any Error)?) -> Void)?)](avprovideostorage/replenishcapacity(completionhandler:).md)
+  Performs a best-effort attempt to restore Pro Video Storage to the initial capacity specified by the user in Settings app.
+
 
 ---
 

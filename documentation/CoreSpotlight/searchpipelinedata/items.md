@@ -13,14 +13,14 @@
 ## Declaration
 
 ```swift
-static func items(_ items: [CSSearchableItem]) -> SearchPipelineData
+static func items(_ items: [SearchableItem]) -> SearchPipelineData
 ```
 
 ## See Also
 
 - [init(payload: SearchPipelineData.Payload)](searchpipelinedata/init(payload:).md)
 - [static func scoredItems([ScoredSearchableItem]) -> SearchPipelineData](searchpipelinedata/scoreditems(_:).md)
-- [static func groupedItems([SearchableItemAttribute : [CSSearchableItem]]) -> SearchPipelineData](searchpipelinedata/groupeditems(_:).md)
+- [static func groupedItems([SearchableItemAttribute : [SearchableItem]]) -> SearchPipelineData](searchpipelinedata/groupeditems(_:).md)
 - [static func text(String) -> SearchPipelineData](searchpipelinedata/text(_:).md)
 - [static func count(Int) -> SearchPipelineData](searchpipelinedata/count(_:).md)
 - [static func statistic(name: String, value: Double) -> SearchPipelineData](searchpipelinedata/statistic(name:value:).md)

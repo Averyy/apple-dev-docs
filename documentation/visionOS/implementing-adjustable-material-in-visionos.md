@@ -27,7 +27,7 @@ The shader graph for the dragon model includes two modifiable parameters: `rough
 
 These parameters connect through various nodes, ultimately feeding into a `RealitykitEnvironmentRadiance` node. This setup allows dynamic adjustment of the dragon’s appearance.
 
-> **Note**: The parameter `eta` represents `η`, which symbolizes the index of refraction. For more information, see doc://com.apple.documentation/documentation/shadergraph/geometric/refract-%28realitykit%29.
+> **Note**: The parameter `eta` represents `η`, which symbolizes the index of refraction. For more information, see [`Refract (RealityKit)`](https://developer.apple.com/documentation/ShaderGraph/Geometric/Refract-(RealityKit)).
 
 ##### Update the Component Material
 

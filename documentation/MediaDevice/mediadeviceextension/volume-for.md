@@ -24,7 +24,7 @@ func volume(for device: MediaOutputDevice) -> Float
 
 #### Return Value
 
-The current volume level, typically in the range 0.0 to 1.0.
+The current volume level in the range 0.0 to 1.0.
 
 #### Discussion
 

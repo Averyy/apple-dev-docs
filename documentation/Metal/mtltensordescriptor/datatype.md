@@ -23,6 +23,8 @@ var dataType: MTLTensorDataType { get set }
 
 The default value of this property is [`MTLTensorDataType.float32`](mtltensordatatype/float32.md).
 
+[`MTLTensorDataType.metalFloat8ue8m0`](mtltensordatatype/metalfloat8ue8m0.md) is not a valid data type for this property.
+
 
 ---
 

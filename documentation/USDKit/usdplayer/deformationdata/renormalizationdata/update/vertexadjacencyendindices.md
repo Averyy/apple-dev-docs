@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: property
 
+Changed vertex adjacency end indices.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -15,6 +17,10 @@
 ```swift
 let vertexAdjacencyEndIndices: [UInt32]?
 ```
+
+#### Discussion
+
+`nil` if unchanged.
 
 
 ---

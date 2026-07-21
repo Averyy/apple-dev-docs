@@ -23,8 +23,6 @@ This metric corresponds to the [`MetricResult.hangTime(_:)`](metricresult/hangti
 
 Hang durations that exceed 9 seconds of wall clock time are reported in the histogram’s final bucket.
 
-This type replaces the `histogrammedApplicationHangTime` property of [`MXAppResponsivenessMetric`](mxappresponsivenessmetric.md).
-
 ## Topics
 
 ### Measurements

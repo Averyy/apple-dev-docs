@@ -16,7 +16,7 @@ class NSRuleEditor
 
 #### Overview
 
-A rule editor lets the user visually create and configure a list of options that are expressed as a predicate (as described in [`Predicate Programming Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Predicates/AdditionalChapters/Introduction.html#//apple_ref/doc/uid/TP40001789)). Each row displayed by the rule editor represents a particular path down a tree of choices. The rule editor’s delegate provides the tree of choices to be displayed. The rule editor presents those choices to the user as a row of popup buttons, static text fields, and custom views.
+A rule editor lets the user visually create and configure a list of options that are expressed as a predicate. (For more information, see [`NSPredicate`](https://developer.apple.com/documentation/Foundation/NSPredicate).) Each row displayed by the rule editor represents a particular path down a tree of choices. The rule editor’s delegate provides the tree of choices to be displayed. The rule editor presents those choices to the user as a row of popup buttons, static text fields, and custom views.
 
 `NSRuleEditor` exposes one binding, `rows`. You can bind `rows` to an ordered collection (such as an instance of `NSMutableArray`). Each object in the collection should have the following properties:
 

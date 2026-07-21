@@ -8,6 +8,7 @@ An array of transports that the accessory supports for sending sensitive informa
 **Availability**:
 - iOS 26.5+
 - iPadOS 26.5+
+- Mac Catalyst 26.5+
 
 ## Declaration
 

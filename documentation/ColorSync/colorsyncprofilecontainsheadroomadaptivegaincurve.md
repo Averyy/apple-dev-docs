@@ -3,6 +3,8 @@
 **Framework**: ColorSync  
 **Kind**: func
 
+Returns whether a profile contains a Headroom Adaptive Gain Curve tag.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -15,8 +17,16 @@
 ## Declaration
 
 ```swift
-func ColorSyncProfileContainsHeadroomAdaptiveGainCurve(_: ColorSyncProfile) -> Bool
+func ColorSyncProfileContainsHeadroomAdaptiveGainCurve(_ profile: ColorSyncProfile) -> Bool
 ```
+
+#### Return Value
+
+`true` if the profile contains an HAGC tag; otherwise, `false`.
+
+## Parameters
+
+- `profile`: The profile to test.
 
 
 ---

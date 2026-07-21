@@ -3,6 +3,8 @@
 **Framework**: ColorSync  
 **Kind**: case
 
+The control points’ `x` and `y` arrays have different counts.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)

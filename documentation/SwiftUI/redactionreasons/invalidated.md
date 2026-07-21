@@ -22,7 +22,7 @@ static let invalidated: RedactionReasons
 
 #### Discussion
 
-Views marked with `invalidatableContent` will be automatically redacted with a standard styling indicating the content is invalidated and new content will be available soon.
+Views marked with [`invalidatableContent(_:)`](view/invalidatablecontent(_:).md) will be automatically redacted with a standard styling indicating the content is invalidated and new content will be available soon.
 
 ## See Also
 

@@ -21,7 +21,7 @@ var mirrored: UIScreen? { get }
 
 When a screen supports mirroring and mirroring is active, this property contains the screen object associated with the device’s main screen. This represents the screen the attached display mirrors from. The value of this property is `nil` when mirroring is disabled, not supported, or no screen is connected to the device.
 
-To disable mirroring and use the external display for presenting unique content, create a window and associate it with a [`windowExternalDisplayNonInteractive`](uiscenesession/role-swift.struct/windowexternaldisplaynoninteractive.md) scene.
+To disable mirroring and present unique content on the external display, register a scene accessory with [`registerSceneAccessory(_:)`](uiviewcontroller/registersceneaccessory(_:).md). For more information, see [`Presenting content on a connected display`](presenting-content-on-a-connected-display.md).
 
 ## See Also
 

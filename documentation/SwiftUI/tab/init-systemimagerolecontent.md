@@ -23,6 +23,7 @@ init(_ titleKey: LocalizedStringKey, systemImage: String, role: TabRole?, @Conte
 ## Parameters
 
 - `titleKey`: The localized string key label for the tab’s tab item.
+- `systemImage`: The image for the tab’s tab item.
 - `role`: The role defining the semantic purpose of the tab.
 - `content`: The view content of the tab.
 

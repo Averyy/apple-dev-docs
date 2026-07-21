@@ -3,7 +3,7 @@
 **Framework**: Cinematic  
 **Kind**: case
 
-Isolates the ambience when foreground is studio Audio Mix and place it in a spatial stem. There is no voice stem.
+Isolates background sounds in a stem.
 
 **Availability**:
 - iOS 26.0+

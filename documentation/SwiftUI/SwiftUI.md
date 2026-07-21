@@ -145,13 +145,8 @@ You can integrate SwiftUI views with objects from the [`UIKit`](https://develope
   Expose custom views and modifiers in the Xcode library.
 - [Performance analysis](performance-analysis.md)
   Measure and improve your app’s responsiveness.
-### Structures
-- [struct ToolbarMinimizationBehavior](toolbarminimizationbehavior.md)
-  The minimization behavior of a toolbar.
-- [struct ToolbarMinimizationRestoration](toolbarminimizationrestoration.md)
-  The restoration behavior during toolbar minimization.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/swiftui)*
+*[View on Apple Developer](https://developer.apple.com/documentation/SwiftUI)*

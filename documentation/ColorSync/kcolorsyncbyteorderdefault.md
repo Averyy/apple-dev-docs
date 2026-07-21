@@ -20,14 +20,10 @@ var kColorSyncByteOrderDefault: Int { get }
 
 ## See Also
 
-- [var kColorSync16BitFloat: ColorSyncDataDepth](kcolorsync16bitfloat.md)
-- [var kColorSync32BitFloat: ColorSyncDataDepth](kcolorsync32bitfloat.md)
-- [var kColorSync32BitNamedColorIndex: ColorSyncDataDepth](kcolorsync32bitnamedcolorindex.md)
-- [var kColorSync8BitInteger: ColorSyncDataDepth](kcolorsync8bitinteger.md)
-- [var kColorSyncAlphaInfoMask: Int](kcolorsyncalphainfomask.md)
-- [var kColorSyncAlphaNoneSkipLast: ColorSyncAlphaInfo](kcolorsyncalphanoneskiplast.md)
-- [var kColorSyncAlphaPremultipliedFirst: ColorSyncAlphaInfo](kcolorsyncalphapremultipliedfirst.md)
-- [var kColorSyncAlphaPremultipliedLast: ColorSyncAlphaInfo](kcolorsyncalphapremultipliedlast.md)
+- [var kColorSyncByteOrder16Big: Int](kcolorsyncbyteorder16big.md)
+- [var kColorSyncByteOrder16Little: Int](kcolorsyncbyteorder16little.md)
+- [var kColorSyncByteOrder32Big: Int](kcolorsyncbyteorder32big.md)
+- [var kColorSyncByteOrder32Little: Int](kcolorsyncbyteorder32little.md)
 - [var kColorSyncByteOrderMask: Int](kcolorsyncbyteordermask.md)
 
 

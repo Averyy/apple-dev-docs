@@ -21,17 +21,17 @@ func processAndCreateAnimation(for skeleton: SkeletonResource? = nil, operations
 
 #### Return Value
 
-An `AnimationDefinition` containing the processed animation. If root motion extraction is performed, returns an `AnimationGroup` containing both the skeletal animation (`SampledAnimation<JointTransforms>`) and extracted root motion (`SampledAnimation<Transform>`). Otherwise returns a `SampledAnimation<JointTransforms>`.
+An [`AnimationDefinition`](animationdefinition.md) containing the processed animation. If root motion extraction is performed, returns an [`AnimationGroup`](animationgroup.md) containing both the skeletal animation (`SampledAnimation<JointTransforms>`) and extracted root motion (`SampledAnimation<Transform>`). Otherwise returns a `SampledAnimation<JointTransforms>`.
 
 #### Discussion
 
 Applies a series of skeletal animation processing operations to create a new animation. The function executes operations in the order specified. If skeleton is nil, only additive operations are supported.
 
-> **Note**: An error if validation fails. All errors provide descriptive messages via their `localizedDescription` property. Common validation failures include: - Duplicate operation types in a single call (e.g., two `extractRootMotion` operations).
-- Both `extractRootMotion` and `removeAnimation(for:)` operations in the same call.
+> **Note**: An error if validation fails. All errors provide descriptive messages via their `localizedDescription` property. Common validation failures include: - Duplicate operation types in a single call (e.g., two [`extractRootMotion(jointName:options:lockPosition:)`](sampledanimation/skeletalanimationoperation/extractrootmotion(jointname:options:lockposition:).md) operations).
+- Both [`extractRootMotion(jointName:options:lockPosition:)`](sampledanimation/skeletalanimationoperation/extractrootmotion(jointname:options:lockposition:).md) and [`removeAnimation(for:)`](sampledanimation/skeletalanimationoperation/removeanimation(for:).md) operations in the same call.
 - Operations requiring a skeleton when skeleton parameter is nil.
 - Joint name does not exist in the skeleton for root motion extraction or removal.
-- Base animation has a different sample rate than the source animation for `convertToAdditive`.
+- Base animation has a different sample rate than the source animation for [`convertToAdditive(baseAnimation:)`](sampledanimation/skeletalanimationoperation/converttoadditive(baseanimation:).md).
 
 ## Parameters
 

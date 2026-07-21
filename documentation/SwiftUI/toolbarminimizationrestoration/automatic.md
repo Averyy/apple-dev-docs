@@ -24,6 +24,11 @@ static let automatic: ToolbarMinimizationRestoration
 
 By default, the toolbar restores when the user reverses scroll direction.
 
+## See Also
+
+- [static let atScrollEdge: ToolbarMinimizationRestoration](toolbarminimizationrestoration/atscrolledge.md)
+  The toolbar restores only when the scroll view’s content reaches the scroll edge.
+
 
 ---
 

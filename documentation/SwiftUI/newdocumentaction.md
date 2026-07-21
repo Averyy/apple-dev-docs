@@ -55,12 +55,18 @@ The above example assumes that you define a `TextDocument` that conforms to the 
 
 ## See Also
 
-- [var newDocument: NewDocumentAction](environmentvalues/newdocument.md)
-  An action in the environment that presents a new document.
-- [var openDocument: OpenDocumentAction](environmentvalues/opendocument.md)
-  An action in the environment that presents an existing document.
-- [struct OpenDocumentAction](opendocumentaction.md)
-  An action that presents an existing document.
+- [protocol FileDocument](filedocument.md)
+  A type that you use to serialize documents to and from file.
+- [struct FileDocumentConfiguration](filedocumentconfiguration.md)
+  The properties of an open file document.
+- [struct FileDocumentReadConfiguration](filedocumentreadconfiguration.md)
+  The configuration for reading file contents.
+- [struct FileDocumentWriteConfiguration](filedocumentwriteconfiguration.md)
+  The configuration for serializing file contents.
+- [protocol ReferenceFileDocument](referencefiledocument.md)
+  A type that you use to serialize reference type documents to and from file.
+- [struct ReferenceFileDocumentConfiguration](referencefiledocumentconfiguration.md)
+  The properties of an open reference file document.
 
 
 ---

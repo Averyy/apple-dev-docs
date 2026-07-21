@@ -55,6 +55,13 @@ The types that are associated values in this enumeration’s cases contain prope
   A content type for business card carousel content.
 - [RCSService.Business.CardCarousel](rcsservice/business/cardcarousel.md)
   Structure representing a card carousel.
+### Enumeration Cases
+- [case customReaction(RCSMessage.CustomReaction)](rcsmessage/content-swift.enum/customreaction(_:).md)
+  A content type for custom reaction content.
+- [case reaction(RCSMessage.Reaction)](rcsmessage/content-swift.enum/reaction(_:).md)
+  A content type for reaction content.
+- [RCSMessage.Content.reply(_:)](rcsmessage/content-swift.enum/reply(_:).md)
+  A content type for reply content.
 
 ## Relationships
 

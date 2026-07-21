@@ -28,51 +28,51 @@ A view that activates this view as the source of a drag and drop operation, begi
 Applying the `draggable(_:id:containerNamespace:_:)` modifier adds the appropriate gestures for drag and drop to this view. When a drag operation begins, a rendering of this view is generated and used as the preview image.
 
 ```swift
-   var fruits: [Fruit]
+var fruits: [Fruit]
 
-   var body: some View {
-       ScrollView {
-           VStack {
-               ForEach(fruits) { fruit in
-                   FruitView(fruit)
-                       .draggable(Fruit.self, id: \.dragID) {
-                           fruit.supportsDrag ? fruit : nil
-                       }
-               }
-           }
-       }
-   }
+var body: some View {
+    ScrollView {
+        VStack {
+            ForEach(fruits) { fruit in
+                FruitView(fruit)
+                    .draggable(Fruit.self, id: \.dragID) {
+                        fruit.supportsDrag ? fruit : nil
+                    }
+            }
+        }
+    }
+}
 
-   struct Fruit: Transferable {
-       var supportsDrag: Bool
-       var dragID: UUID
-   }
+struct Fruit: Transferable {
+    var supportsDrag: Bool
+    var dragID: UUID
+}
 ```
 
 If the draggable view is enclosed in a container, it participates in container drag-and-drop sessions:
 
 ```swift
-   var fruits: [Fruit]
-   var selectedFruits: [UUID]
+var fruits: [Fruit]
+var selectedFruits: [UUID]
 
-   var body: some View {
-       ScrollView {
-           VStack {
-               ForEach(fruits) { fruit in
-                   FruitView(fruit)
-                       .draggable(Fruit.self, id: \.dragID) {
-                           fruit.supportsDrag ? fruit : nil
-                       }
-               }
-           }
-       }
-       .dragContainer(for: Fruit.self) { identifiers in
-           fruits(with: identifiers)
-       }
-       .dragContainerSelection(selectedFruits)
-   }
+var body: some View {
+    ScrollView {
+        VStack {
+            ForEach(fruits) { fruit in
+                FruitView(fruit)
+                    .draggable(Fruit.self, id: \.dragID) {
+                        fruit.supportsDrag ? fruit : nil
+                    }
+            }
+        }
+    }
+    .dragContainer(for: Fruit.self) { identifiers in
+        fruits(with: identifiers)
+    }
+    .dragContainerSelection(selectedFruits)
+}
 
-   func fruits(with: [UUID]) -> [Fruit] { ... }
+func fruits(with: [UUID]) -> [Fruit] { ... }
 ```
 
 ## Parameters

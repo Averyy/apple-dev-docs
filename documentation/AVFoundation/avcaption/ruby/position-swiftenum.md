@@ -21,7 +21,9 @@ enum Position
 
 ### Ruby positions
 - [AVCaption.Ruby.Position.before](avcaption/ruby/position-swift.enum/before.md)
+  Display ruby text above horizontal text, or to the right of vertical text in a right-to-left block progression.
 - [AVCaption.Ruby.Position.after](avcaption/ruby/position-swift.enum/after.md)
+  Display ruby text below horizontal text, or to the left of vertical text in a right-to-left block progression.
 ### Initializers
 - [init?(rawValue: Int)](avcaption/ruby/position-swift.enum/init(rawvalue:).md)
 

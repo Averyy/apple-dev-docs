@@ -3,6 +3,8 @@
 **Framework**: ColorSync  
 **Kind**: init
 
+Creates an empty set of options.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)

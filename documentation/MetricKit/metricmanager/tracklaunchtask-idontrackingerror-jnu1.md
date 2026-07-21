@@ -38,7 +38,7 @@ manager.trackLaunchTask(id: "register-services", onTrackingError: { error in
 }
 ```
 
-This method replaces the paired `MXMetricManager.extendLaunchMeasurement(forTaskID:)` and `MXMetricManager.finishExtendedLaunchMeasurement(forTaskID:)` calls. To track asynchronous launch work instead, use [`trackLaunchTask(id:onTrackingError:_:)`](metricmanager/tracklaunchtask(id:ontrackingerror:_:)-48k2s.md).
+To track asynchronous launch work instead, use [`trackLaunchTask(id:onTrackingError:_:)`](metricmanager/tracklaunchtask(id:ontrackingerror:_:)-48k2s.md).
 
 ## See Also
 

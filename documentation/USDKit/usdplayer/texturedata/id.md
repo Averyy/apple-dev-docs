@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: property
 
+Unique identifier for this texture resource.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)

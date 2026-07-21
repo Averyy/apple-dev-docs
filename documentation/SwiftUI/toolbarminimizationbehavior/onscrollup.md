@@ -16,6 +16,15 @@ Minimize when scrolling up.
 static let onScrollUp: ToolbarMinimizationBehavior
 ```
 
+## See Also
+
+- [static var automatic: ToolbarMinimizationBehavior](toolbarminimizationbehavior/automatic.md)
+  The system determines the minimize behavior. By default, navigation bars on iOS will minimize when the view has a searchable using the [`toolbarPrincipal`](searchfieldplacement/toolbarprincipal.md) placement.
+- [static let never: ToolbarMinimizationBehavior](toolbarminimizationbehavior/never.md)
+  The toolbar cannot be minimized.
+- [static let onScrollDown: ToolbarMinimizationBehavior](toolbarminimizationbehavior/onscrolldown.md)
+  Minimize when scrolling down.
+
 
 ---
 

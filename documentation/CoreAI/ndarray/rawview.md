@@ -10,6 +10,7 @@ A type-erased immutable view over the memory owned by a tensor.
 - iPadOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 
@@ -44,6 +45,9 @@ struct RawView
   Returns a sub-view with the same rank as this view by slicing the dimensions at the provided ranges.
 - [func slice(at: [any NDArray.RangeExpression]) -> NDArray.RawView](ndarray/rawview/slice(at:)-kd5b.md)
   Returns a sub-view with the same rank as this view by slicing the dimensions at the provided ranges.
+### Instance Methods
+- [func withUnsafeBytes<R, E>((UnsafeRawPointer, Span<Int>, Span<Int>) throws(E) -> R) throws(E) -> R](ndarray/rawview/withunsafebytes(_:).md)
+  Invokes the provided closure with the backing data and memory layout of this view.
 
 ## See Also
 

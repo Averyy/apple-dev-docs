@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: property
 
+IDs of materials with delta changes this frame.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)

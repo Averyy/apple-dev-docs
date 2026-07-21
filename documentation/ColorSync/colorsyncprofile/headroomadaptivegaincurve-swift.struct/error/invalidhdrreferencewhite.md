@@ -3,6 +3,8 @@
 **Framework**: ColorSync  
 **Kind**: case
 
+The custom HDR reference white luminance isn’t greater than `0`.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)

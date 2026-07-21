@@ -51,6 +51,14 @@ The directional light illuminates entities evenly in the direction it derives fr
 
 > **Note**: The green arrows in the above illustration are only a visual representation of the light’s direction.
 
+#### Dynamic Light Capacity
+
+On older hardware, only a limited number of dynamic lights can affect each object. Devices that support `MTLGPUFamily.apple6` or later lift this limit.
+
+Excessive use of dynamic lights may contribute to user-noticeable frame drops and can cause the device to heat up in graphically demanding situations. Monitor the thermal state and reduce the number of lights as a mitigation, if necessary.
+
+Because this behavior varies by device, verify your scene’s lighting on the oldest hardware you support. You can check for this support at runtime with `MTLDevice.supportsFamily(.apple6)`.
+
 ## Topics
 
 ### Creating a directional light
@@ -75,7 +83,7 @@ The directional light illuminates entities evenly in the direction it derives fr
   A platform-specific type used to define color for a directional light.
 ### Assigning render layers
 - [var layers: RenderLayer.Set](directionallightcomponent/layers.md)
-  The layers this light illuminates. Only entities whose RenderLayerComponent.layers intersect with these layers will be illuminated. Lights can be restricted by layer on devices with Apple6 GPU family feature support.
+  The layers this light illuminates.
 ### Structures
 - [DirectionalLightComponent.Shadow](directionallightcomponent/shadow.md)
   A directional light component that adds shadows to entities that it illuminates

@@ -64,6 +64,17 @@ With this property set, upon user initiated close, the system will present the c
 - [NSSecureCoding](../Foundation/NSSecureCoding.md)
 - [Sendable](../Swift/Sendable.md)
 
+## See Also
+
+- [class UISceneActivationConditions](uisceneactivationconditions.md)
+  The set of conditions that define when UIKit activates the current scene.
+- [UIScene.ActivationRequestOptions](uiscene/activationrequestoptions.md)
+  An object that contains information you want the system to use when activating the session associated with a scene.
+- [class UIWindowSceneDestructionRequestOptions](uiwindowscenedestructionrequestoptions.md)
+  An object that contains information to use when removing a window scene from your app.
+- [class UISceneDestructionRequestOptions](uiscenedestructionrequestoptions.md)
+  An object you pass to UIKit to permanently remove a scene and its associated session from your app.
+
 
 ---
 

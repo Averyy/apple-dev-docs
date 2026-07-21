@@ -23,11 +23,11 @@ protocol MTLTensorAuxiliaryPlane : NSObjectProtocol
 
 ### Instance Properties
 - [var blockFactors: MTLTensorExtents](mtltensorauxiliaryplane/blockfactors.md)
-  Describes how many data plane elements correspond to one element in this plane.
+  The number of data plane elements that correspond to one element in this auxiliary plane.
 - [var buffer: (any MTLBuffer)?](mtltensorauxiliaryplane/buffer.md)
   The buffer that provides the underlying storage for this plane, or `nil` if no buffer was provided at initialization.
 - [var bufferOffset: Int](mtltensorauxiliaryplane/bufferoffset.md)
-  Byte offset into `buffer` where this plane’s data begins, or 0 if no buffer was provided at initialization.
+  The byte offset into [`buffer`](mtltensorauxiliaryplane/buffer.md) where this plane’s data begins, or `0` if no buffer was provided at initialization.
 - [var dataType: MTLTensorDataType](mtltensorauxiliaryplane/datatype.md)
   The data format of all elements in the plane.
 - [var planeType: MTLTensorPlaneType](mtltensorauxiliaryplane/planetype.md)

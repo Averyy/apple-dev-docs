@@ -29,6 +29,8 @@ enum DeviceFitStatus
   User’s eyes are positioned to the left of the optimal device fit range.
 - [DeviceFitStatus.eyesRight](devicefitstatus/eyesright.md)
   User’s eyes are positioned to the right of the optimal device fit range.
+- [DeviceFitStatus.unknown](devicefitstatus/unknown.md)
+  Device fit status is unknown.
 - [DeviceFitStatus.valid](devicefitstatus/valid.md)
   User’s eyes are properly positioned within the optimal device fit range.
 ### Instance Properties

@@ -24,25 +24,25 @@ Standard rendering styles for Audio Mix type effects
 
 ### Enumeration Cases
 - [CNSpatialAudioRenderingStyle.cinematic](cnspatialaudiorenderingstyle/cinematic.md)
-  Isolates the ambience and place it in a spatial stem. Isolates all voices and place them in a mono stem.
+  Isolates background and foreground sounds and places them in separate stems.
 - [CNSpatialAudioRenderingStyle.cinematicBackgroundStem](cnspatialaudiorenderingstyle/cinematicbackgroundstem.md)
-  Isolates the ambience when foreground is cinematic Audio Mix and place it in a spatial stem. There is no voice stem.
+  Isolates background sounds in a stem.
 - [CNSpatialAudioRenderingStyle.cinematicForegroundStem](cnspatialaudiorenderingstyle/cinematicforegroundstem.md)
-  Isolates all voices and places them in a mono stem. There is no ambience stem.
+  Isolates foreground sounds in a stem.
 - [CNSpatialAudioRenderingStyle.inFrame](cnspatialaudiorenderingstyle/inframe.md)
-  Isolates the ambience and place it in a spatial stem. Isolates only voices from the camera field of view and place them in a mono stem.
+  Isolates background from foreground sounds in the camera field of view and places them in separate stems.
 - [CNSpatialAudioRenderingStyle.inFrameBackgroundStem](cnspatialaudiorenderingstyle/inframebackgroundstem.md)
-  Isolates the ambience and foreground that is out of frame and place it in a spatial stem. There is no voice stem.
+  Isolates background plus foreground sounds outside the camera field of view in a stem.
 - [CNSpatialAudioRenderingStyle.inFrameForegroundStem](cnspatialaudiorenderingstyle/inframeforegroundstem.md)
-  Isolates only voices from the camera field of view and place them in a mono stem. There is no ambience stem.
+  Isolates foreground sounds within the camera field of view in a stem.
 - [CNSpatialAudioRenderingStyle.standard](cnspatialaudiorenderingstyle/standard.md)
-  This produces a spatial stem of the original recording that is unprocessed. This is the default rendering style.
+  Produces an unprocessed spatial stem of the original recording. This is the default rendering style.
 - [CNSpatialAudioRenderingStyle.studio](cnspatialaudiorenderingstyle/studio.md)
-  Isolates the ambience and place it in a spatial stem. Isolates all voices, add a studio/proximity effect in the voice track and place them in a mono stem.
+  Isolates background and foreground in separate stems. Adds a proximity effect to foreground sounds.
 - [CNSpatialAudioRenderingStyle.studioBackgroundStem](cnspatialaudiorenderingstyle/studiobackgroundstem.md)
-  Isolates the ambience when foreground is studio Audio Mix and place it in a spatial stem. There is no voice stem.
+  Isolates background sounds in a stem.
 - [CNSpatialAudioRenderingStyle.studioForegroundStem](cnspatialaudiorenderingstyle/studioforegroundstem.md)
-  Isolates all voices, add a studio/proximity effect in the voice track and place them in a mono stem. There is no ambience stem.
+  Isolates foreground sounds in a stem, and adds a proximity effect.
 ### Initializers
 - [init?(rawValue: Int)](cnspatialaudiorenderingstyle/init(rawvalue:).md)
 

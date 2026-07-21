@@ -21,8 +21,9 @@ Animations performed using this method can be smoothly retargeted while preservi
 ```None
 // Grow the window with a smooth spring animation
 NSAnimationContext.animate(.smooth) {
-    var scaledFrame = myWindowContentView.frame.applying(CGAffineTransform(scaleX: 1.5, y: 1.5)
-    myWindowContentView.setFrameSize(myScaledFrame)
+    let scaledFrame = myWindowContentView.frame.applying(
+        CGAffineTransform(scaleX: 1.5, y: 1.5))
+    myWindowContentView.setFrameSize(scaledFrame.size)
 }
 ```
 

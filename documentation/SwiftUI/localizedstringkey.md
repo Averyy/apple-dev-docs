@@ -48,8 +48,8 @@ List {
 
 If the app is localized into Japanese with the following translation of its `Localizable.strings` file:
 
-```other
-"Today" = "今日";
+```swift
+ "Today" = "今日";
 ```
 
 When run in Japanese, the example produces a list like the following, localizing “Today” for the section header, but not the list items.

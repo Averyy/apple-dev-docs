@@ -65,7 +65,7 @@ for component in entity.components {
   Gets or sets the component of the specified type, without considering implicit animations.
 ### Setting components by name
 - [func set(qualifiedComponentName: String, representation: some Encodable) throws](entity/componentset/set(qualifiedcomponentname:representation:).md)
-  Adds component data to an entity which will be written to a Reality file, but have no other effect.
+  Adds component data to an entity that is written to a Reality file but has no other effect at author time.
 ### Instance Properties
 - [var count: Int](entity/componentset/count.md)
   The number of components in the collection.

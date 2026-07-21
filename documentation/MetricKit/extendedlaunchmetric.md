@@ -23,8 +23,6 @@ This metric corresponds to the [`MetricResult.extendedLaunch(_:)`](metricresult/
 
 The end point of an extended launch is the later of the first rendered frame and the completion of all tasks you track with [`trackLaunchTask(id:onTrackingError:_:)`](metricmanager/tracklaunchtask(id:ontrackingerror:_:)-48k2s.md) or [`trackLaunchTask(id:onTrackingError:_:)`](metricmanager/tracklaunchtask(id:ontrackingerror:_:)-jnu1.md).
 
-This type replaces the `histogrammedExtendedLaunch` property of [`MXAppLaunchMetric`](mxapplaunchmetric.md).
-
 ## Topics
 
 ### Measurements

@@ -27,7 +27,7 @@ func ensureLocalAvailability(of assetPacks: Set<AssetPack>, requireLatestVersion
 
 This method checks whether the asset packs are currently downloaded. If any aren’t, then the system schedules them to be downloaded and waits for all of the downloads to finish. The framework guarantees that the requested asset packs are available locally after this method returns without throwing. If the method throws, then the asset packs *aren’t* all guaranteed to be available locally, though some might be; inspect the thrown error for more details. You can optionally monitor download progress by awaiting status updates from [`statusUpdates`](assetpackmanager/statusupdates.md) or [`statusUpdates(forAssetPackWithID:)`](assetpackmanager/statusupdates(forassetpackwithid:).md) in a separate task.
 
-> **Note**:  When the system can’t ensure one or more asset packs’ local availability. When the thrown error is an instance of [`AssetPackManager.LocalAvailabilityError`](assetpackmanager/localavailabilityerror.md), it provides information about asset packs for which the system successfully ensured local availability and those for which the system couldn’t ensure local availability, with an underlying error for each failure.
+> **Note**: When the system can’t ensure one or more asset packs’ local availability. When the thrown error is an instance of [`AssetPackManager.LocalAvailabilityError`](assetpackmanager/localavailabilityerror.md), it provides information about asset packs for which the system successfully ensured local availability and those for which the system couldn’t ensure local availability, with an underlying error for each failure.
 
 ## Parameters
 

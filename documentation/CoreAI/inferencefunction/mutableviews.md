@@ -10,6 +10,7 @@ A collection of `InferenceValue.MutableView`s which can be updated in-place by a
 - iPadOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 

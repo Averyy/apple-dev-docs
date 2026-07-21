@@ -23,6 +23,8 @@ init(target: Entity, plane: PortalComponent.Plane, options: PortalComponent.Opti
 
 Use this initializer to toggle [`clippingMode`](portalcomponent/clippingmode-swift.property.md) and [`crossingMode`](portalcomponent/crossingmode-swift.property.md) with the same [`PortalComponent.Plane`](portalcomponent/plane.md).
 
+For new code, prefer [`init(target:clippingMode:crossingMode:)`](portalcomponent/init(target:clippingmode:crossingmode:).md), which lets you configure clipping and crossing independently and supports [`PortalComponent.ClippingMode.volume(_:)`](portalcomponent/clippingmode-swift.enum/volume(_:).md) and [`PortalComponent.CrossingMode.volume(_:)`](portalcomponent/crossingmode-swift.enum/volume(_:).md) for box-shaped boundaries.
+
 ## Parameters
 
 - `target`: A target world entity the portal is looking into.

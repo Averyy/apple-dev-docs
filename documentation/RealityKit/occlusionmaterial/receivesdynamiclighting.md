@@ -11,6 +11,7 @@ A Boolean that indicates whether the occlusion material receives dynamic lightin
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 26.0+
+- visionOS 2.0+
 
 ## Declaration
 

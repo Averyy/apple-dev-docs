@@ -20,20 +20,8 @@ var kColorSyncTransformCodeFragmentMD5: Unmanaged<CFString>!
 
 ## See Also
 
-- [var COLORSYNC_API_VERSION: Int](colorsync_api_version.md)
-- [var icVersion4Number: Int](icversion4number.md)
-- [var kColorSyncExtendedRange: Unmanaged<CFString>!](kcolorsyncextendedrange.md)
-- [var kColorSyncHDRDerivative: Unmanaged<CFString>!](kcolorsynchdrderivative.md)
-- [var kColorSyncHLGDerivative: Unmanaged<CFString>!](kcolorsynchlgderivative.md)
-- [var kColorSyncPQDerivative: Unmanaged<CFString>!](kcolorsyncpqderivative.md)
-- [var kColorSyncProfileCacheSeed: Unmanaged<CFString>!](kcolorsyncprofilecacheseed.md)
-- [var kColorSyncProfileIsValid: Unmanaged<CFString>!](kcolorsyncprofileisvalid.md)
-- [var kColorSyncProfileRepositoryChangeNotification: Unmanaged<CFString>!](kcolorsyncprofilerepositorychangenotification.md)
-- [var kColorSyncRegistrationUpdateWindowServer: Unmanaged<CFString>!](kcolorsyncregistrationupdatewindowserver.md)
-- [var kColorSyncTransformInfo: Unmanaged<CFString>!](kcolorsynctransforminfo.md)
-- [var kColorSyncTransformProfileSequnce: Unmanaged<CFString>!](kcolorsynctransformprofilesequnce.md)
-- [var kColorSyncWaitForCacheReply: Unmanaged<CFString>!](kcolorsyncwaitforcachereply.md)
-- [var kColorSyncWebSafeColorsProfile: Unmanaged<CFString>!](kcolorsyncwebsafecolorsprofile.md)
+- [func ColorSyncCreateCodeFragment(CFArray!, CFDictionary!) -> Unmanaged<CFTypeRef>!](colorsynccreatecodefragment(_:_:).md)
+- [var kColorSyncTransformCodeFragmentType: Unmanaged<CFString>!](kcolorsynctransformcodefragmenttype.md)
 
 
 ---

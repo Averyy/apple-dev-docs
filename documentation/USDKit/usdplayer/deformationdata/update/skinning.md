@@ -3,7 +3,7 @@
 **Framework**: USDKit  
 **Kind**: property
 
-Changed skinning data; nil if unchanged
+Changed skinning data.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -17,6 +17,10 @@ Changed skinning data; nil if unchanged
 ```swift
 let skinning: USDPlayer.DeformationData.SkinningData.Update?
 ```
+
+#### Discussion
+
+`nil` if unchanged.
 
 
 ---

@@ -21,7 +21,7 @@ var storageMode: MTLStorageMode { get set }
 
 #### Discussion
 
-The default value of this property defaults to [`MTLStorageMode.shared`](mtlstoragemode/shared.md).
+The default value of this property is [`MTLStorageMode.shared`](mtlstoragemode/shared.md).
 
 
 ---

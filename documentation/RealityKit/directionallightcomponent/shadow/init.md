@@ -26,7 +26,7 @@ init()
 - [init(maximumDistance: Float, depthBias: Float)](directionallightcomponent/shadow/init(maximumdistance:depthbias:).md)
   Creates a directional light shadow with a maximum distance and depth bias.
 - [init(layers: RenderLayer.Set?)](directionallightcomponent/shadow/init(layers:).md)
-  Creates a directional light shadow with the specified layers.
+  Creates a directional light shadow that accepts shadow casters from the specified layers.
 
 
 ---

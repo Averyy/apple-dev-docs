@@ -33,6 +33,8 @@ enum LiveConfiguration
   The value that configures positioning for dedicated fitness sessions.
 - [CLLocationUpdate.LiveConfiguration.otherNavigation](cllocationupdate/liveconfiguration/othernavigation.md)
   The value that configures positioning for transportation that doesn’t, or may not, adhere to roads, such as cycling, scooters, trains, boats, and off-road vehicles.
+### Enumeration Cases
+- [CLLocationUpdate.LiveConfiguration.maritime](cllocationupdate/liveconfiguration/maritime.md)
 
 ## Relationships
 

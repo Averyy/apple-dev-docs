@@ -21,8 +21,6 @@ struct LogicalDiskWritesMetric
 
 This metric corresponds to the [`MetricResult.logicalDiskWrites(_:)`](metricresult/logicaldiskwrites(_:).md) case. It appears only in [`intervalEntries`](metricreport/intervalentries.md) and is not included in state entries.
 
-This type replaces the `cumulativeLogicalWrites` property of [`MXDiskIOMetric`](mxdiskiometric.md).
-
 ## Topics
 
 ### Measurements

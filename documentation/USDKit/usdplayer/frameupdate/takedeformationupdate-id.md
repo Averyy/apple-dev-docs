@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: method
 
+Consumes and returns the [`USDPlayer.DeformationData.Update`](usdplayer/deformationdata/update.md) for the given deformation delta update.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -15,6 +17,10 @@
 ```swift
 mutating func takeDeformationUpdate(id: USDPlayer.DeformationID) -> USDPlayer.DeformationData.Update?
 ```
+
+#### Discussion
+
+Returns `nil` if not present.
 
 
 ---

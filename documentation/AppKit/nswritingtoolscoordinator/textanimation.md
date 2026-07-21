@@ -31,6 +31,9 @@ Use the `NSWritingToolsCoordinatorTextAnimation` constants to determine the type
   The animation effect that Writing Tools performs when the view is waiting for results, but the system isn’t actively evaluating the text.
 - [NSWritingToolsCoordinator.TextAnimation.translate](nswritingtoolscoordinator/textanimation/translate.md)
   The animation effect that Writing Tools performs on text situated after the insertion point.
+### Enumeration Cases
+- [NSWritingToolsCoordinator.TextAnimation.indicateGrammar](nswritingtoolscoordinator/textanimation/indicategrammar.md)
+  The animation effect that Writing Tools performs on grammar issues when they are first indicated.
 ### Initializers
 - [init?(rawValue: Int)](nswritingtoolscoordinator/textanimation/init(rawvalue:).md)
 

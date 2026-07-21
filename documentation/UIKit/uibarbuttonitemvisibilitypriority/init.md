@@ -16,6 +16,12 @@
 init(_ rawValue: Int)
 ```
 
+## See Also
+
+- [init(higherThan: UIBarButtonItemVisibilityPriority)](uibarbuttonitemvisibilitypriority/init(higherthan:).md)
+- [init(lowerThan: UIBarButtonItemVisibilityPriority)](uibarbuttonitemvisibilitypriority/init(lowerthan:).md)
+- [init(rawValue: Int)](uibarbuttonitemvisibilitypriority/init(rawvalue:).md)
+
 
 ---
 

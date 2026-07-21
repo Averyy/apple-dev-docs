@@ -1,4 +1,4 @@
 Completed scraping Apple Pay Web Merchant Registration API!
-Total pages scraped: 0
-Pages skipped (unchanged): 10
+Total pages scraped: 9
+Pages skipped (unchanged): 1
 Pages failed: 0

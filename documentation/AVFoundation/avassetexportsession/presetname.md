@@ -33,8 +33,6 @@ This property is key-value observable.
   Returns all available export preset names.
 - [class func determineCompatibility(ofExportPreset: String, with: AVAsset, outputFileType: AVFileType?, completionHandler: (Bool) -> Void)](avassetexportsession/determinecompatibility(ofexportpreset:with:outputfiletype:completionhandler:).md)
   Determines an export preset’s compatibility to export the asset in a container of the output file type.
-- [class func exportPresets(compatibleWith: AVAsset) -> [String]](avassetexportsession/exportpresets(compatiblewith:).md)
-  Returns compatible export presets for the asset.
 
 
 ---

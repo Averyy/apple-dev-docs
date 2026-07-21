@@ -15,7 +15,7 @@ Ssearch result items (emails, files, etc.) — display as a list.
 ## Declaration
 
 ```swift
-case items([CSSearchableItem])
+case items([SearchableItem])
 ```
 
 

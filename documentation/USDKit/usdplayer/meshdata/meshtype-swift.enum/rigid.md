@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: case
 
+A mesh with no skeleton or blend shapes.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)

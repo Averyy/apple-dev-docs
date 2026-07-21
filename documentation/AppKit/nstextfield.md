@@ -120,6 +120,8 @@ In macOS 12 and later, if you explicitly call the `layoutManager` property on yo
   A Boolean value that controls whether the Touch Bar displays the character picker item for rich text fields.
 - [var allowsWritingTools: Bool](nstextfield/allowswritingtools.md)
 - [var allowsWritingToolsAffordance: Bool](nstextfield/allowswritingtoolsaffordance.md)
+- [var borderShape: NSControl.BorderShape](nstextfield/bordershape.md)
+  Set border shape `NSControlBorderShapeAutomatic` sets text field or subclass to default system shape. `NSControlBorderShapeCircle` sets text field or subclass to `NSControlBorderShapeAutomatic`.
 - [var placeholderAttributedStrings: [NSAttributedString]](nstextfield/placeholderattributedstrings.md)
 - [var placeholderStrings: [String]](nstextfield/placeholderstrings.md)
 - [var resolvesNaturalAlignmentWithBaseWritingDirection: Bool](nstextfield/resolvesnaturalalignmentwithbasewritingdirection.md)

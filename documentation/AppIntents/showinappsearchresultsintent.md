@@ -33,14 +33,16 @@ Provide a [`SearchCriteria`](searchcriteria.md) to specify a search term for thi
 
 ### Scoping the search
 - [static var searchScopes: Self.Criteria.SearchScopes](showinappsearchresultsintent/searchscopes.md)
-  Values that help the system understand the scope of an app intent that shows the results of a string-based search.
+  The scope of the search in your app’s content.
 - [enum StringSearchScope](stringsearchscope.md)
   Constants that help the system understand the in-app search functionality and its searchable content.
 ### Defining the search criteria
 - [var criteria: Self.Criteria](showinappsearchresultsintent/criteria-swift.property.md)
+  The information to use when performing the search.
 - [protocol SearchCriteria](searchcriteria.md)
+  An interface for defining the criteria to use when searching your app’s content.
 - [struct StringSearchCriteria](stringsearchcriteria.md)
-  A structure that represents a string-based search request.
+  A type that tells your app to match its items against a provided string.
 - [associatedtype Criteria : SearchCriteria](showinappsearchresultsintent/criteria-swift.associatedtype.md)
 
 ## Relationships

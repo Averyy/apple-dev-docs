@@ -20,7 +20,7 @@ var semanticContentSearch: some AssistantSchemas.Intent { get }
 
 To integrate your app’s functionality with Visual Intelligence you use Swift macros that generate additional properties and add protocol conformance for your app intent implementation.
 
-For more information about the `.visualIntelligence` app intent domain, see doc:Making-in-app-search-actions-available-to-siri-and-apple-intelligence. For general information about app intent domains, see doc:Integrating-actions-with-siri-and-apple-intelligence.
+For more information about the `.visualIntelligence` app intent domain, see [`System and in-app search`](app-schema-domain-system-and-in-app-search.md). For general information about app intent domains, see [`Making actions and content discoverable by Apple Intelligence`](making-actions-and-content-discoverable-by-apple-intelligence.md).
 
 The following example shows an app intent that conforms to the `.visualIntelligence.semanticContentSearch` schema:
 

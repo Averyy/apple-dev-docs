@@ -560,7 +560,7 @@ Explore samples that highlight new APIs featured at this year’s conference.
 - [Synchronizing group gameplay with TabletopKit](../TabletopKit/synchronizing-group-gameplay-with-tabletopkit.md)
   Maintain game state across multiple players in a race to capture all the coins.
 ### Graphics
-- [Building Widgets Using WidgetKit and SwiftUI](../widgetkit/building_widgets_using_widgetkit_and_swiftui.md)
+- [Building Widgets Using WidgetKit and SwiftUI](../WidgetKit/building-widgets-using-widgetkit-and-swiftui.md)
   Create widgets to show your app’s content on the Home screen, with custom intents for user-customizable settings.
 - [Create a 3D model of an interior room by guiding the user through an AR experience](../RoomPlan/create-a-3d-model-of-an-interior-room-by-guiding-the-user-through-an-ar-experience.md)
   Highlight physical structures and display text that guides a user to scan the shape of their physical environment using a framework-provided view.
@@ -1310,8 +1310,8 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Create engaging, hands-free experiences based on barcodes in a person’s surroundings.
 - [Manipulating entities with solid collisions](../visionOS/manipulating-entities-with-solid-collisions.md)
   Extend the capabilities of your app by using entities, components, and systems to maintain solid collisions when manipulating entities.
-- [Monitoring fit and field of view coverage](../visionOS/monitoring-fit-and-field-of-view-coverage.md)
-  Respond to changes in fit and field of view coverage on Apple Vision Pro by using the Visual Fidelity API.
+- [Monitoring fit and field of view fidelity](../visionOS/monitoring-fit-and-field-of-view-fidelity.md)
+  Respond to changes in fit and field of view fidelity on Apple Vision Pro by using the Visual Fidelity API.
 - [Object tracking with Reality Composer Pro experiences](../visionOS/object-tracking-with-reality-composer-pro-experiences.md)
   Use object tracking in visionOS to attach digital content to real objects to create engaging experiences.
 - [Obscuring virtual items in a scene behind real-world items](../visionOS/obscuring-virtual-items-in-a-scene-behind-real-world-items.md)

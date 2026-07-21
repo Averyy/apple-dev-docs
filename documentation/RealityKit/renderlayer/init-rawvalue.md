@@ -21,13 +21,13 @@ init?(rawValue: String)
 
 #### Return Value
 
-A new `RenderLayer` instance, or `nil` if the name is invalid.
+A new render layer, or `nil` if `rawValue` is empty.
 
 #### Discussion
 
-This failable initializer allows creating layers from runtime string values, such as user input or data loaded from files. Returns `nil` if the layer name is invalid (empty).
+Use this failable initializer when the layer name comes from a runtime string, such as user input or data loaded from a file. To define a layer constant from a string literal, use [`init(_:)`](renderlayer/init(_:).md) instead.
 
-Use descriptive names with namespace prefixes to avoid conflicts, such as `"com.myapp.hero-lighting"` or `"com.myapp.background"`.
+Use descriptive names with namespace prefixes such as `"com.myapp.hero"` or `"com.myapp.background"` to avoid conflicts with other layers.
 
 ## Parameters
 

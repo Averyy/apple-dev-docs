@@ -22,8 +22,6 @@ struct DiskWriteExceptionDiagnostic
 
 Disk write exceptions occur when your app writes data to disk at an excessive rate. The diagnostic includes a [`CallStackTree`](callstacktree.md) to identify the responsible code path, and `totalBytesWritten` to quantify the I/O.
 
-This type replaces [`MXDiskWriteExceptionDiagnostic`](mxdiskwriteexceptiondiagnostic.md).
-
 ## Topics
 
 ### Call stack

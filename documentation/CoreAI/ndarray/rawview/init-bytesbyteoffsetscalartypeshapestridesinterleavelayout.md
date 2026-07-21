@@ -10,6 +10,7 @@ Initialize a raw view from existing raw memory, interpreted as the specified sca
 - iPadOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 

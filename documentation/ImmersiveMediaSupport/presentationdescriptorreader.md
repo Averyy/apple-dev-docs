@@ -49,10 +49,10 @@ Immersive commands are packed as an array of [`PresentationCommand`](presentatio
 - [var isShotFlipped: Bool](presentationdescriptorreader/isshotflipped.md)
   A Boolean value that indicates whether to vertically flip the video frame for the PTS specified in the last call to the update method.
 ### Instance Methods
-- [func metadataItem(for: CMTime, segmentDuration: CMTime?) throws -> AVMetadataItem?](presentationdescriptorreader/metadataitem(for:segmentduration:).md)
-  Retrieves the metadata item that starts at the specified presentation timestamp. Should run on the same thread with PresentationDescriptorReader.
-- [func metadataTrack(segmentDuration: CMTime?, end: CMTime?) throws -> [AVMetadataItem]](presentationdescriptorreader/metadatatrack(segmentduration:end:).md)
-  Retrieves all metadata items, optionally segmented and filtered by end time. Should run on the same thread with PresentationDescriptorReader.
+- [func metadataItem(frameTimeRange: CMTimeRange) throws -> AVMetadataItem?](presentationdescriptorreader/metadataitem(frametimerange:).md)
+  Builds a metadata item containing the presentation commands active at the start of the specified frame’s time range.
+- [func metadataTrack(timeRange: CMTimeRange?) throws -> [AVMetadataItem]](presentationdescriptorreader/metadatatrack(timerange:).md)
+  Retrieves all metadata items to write to an output metadata track, optionally clipped to a segment time range. Pass a `timeRange` to produce one item per segment (e.g. per IDR group or per fixed-length interval).
 - [func outputPresentationCommands(for: CMTime) -> [PresentationCommand]?](presentationdescriptorreader/outputpresentationcommands(for:).md)
   This function returns all presentation commands to be muxed into an MOV during an `AVAssetWriter` session. Don’t use this function for playback rendering.
 - [func processPresentationCommands(for: CMTime)](presentationdescriptorreader/processpresentationcommands(for:).md)

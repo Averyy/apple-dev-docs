@@ -3,6 +3,8 @@
 **Framework**: ColorSync  
 **Kind**: case
 
+Custom primaries, given as xy chromaticity pairs for the red, green, and blue channels and the white point.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)

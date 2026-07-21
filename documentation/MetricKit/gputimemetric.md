@@ -21,8 +21,6 @@ struct GPUTimeMetric
 
 This metric corresponds to the [`MetricResult.gpuTime(_:)`](metricresult/gputime(_:).md) case. It appears only in [`intervalEntries`](metricreport/intervalentries.md) and is not included in state entries.
 
-This type replaces the `cumulativeGPUTime` property of [`MXGPUMetric`](mxgpumetric.md).
-
 ## Topics
 
 ### Measurements

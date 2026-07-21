@@ -30,14 +30,15 @@ protocol DocumentBaseBox<Document> : AnyObject
 ## See Also
 
 - [protocol Document](document.md)
+  A document that supports both reading and writing.
 - [protocol ReadableDocument](readabledocument.md)
-  A type that you use to read documents from file.
+  A document type that supports reading from file.
 - [protocol WritableDocument](writabledocument.md)
-  A type that you use to write documents to file.
+  A document type that supports writing to file.
 - [class URLDocumentConfiguration](urldocumentconfiguration.md)
-  A set of settings and properties of an open document.
+  The configuration of an open document that stores its file URL, last modification date, and related metadata.
 - [struct DocumentCreationContext](documentcreationcontext.md)
-  Provides context about how a document was created or opened.
+  Context about how a document was created.
 
 
 ---

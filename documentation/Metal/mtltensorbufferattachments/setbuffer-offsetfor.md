@@ -21,7 +21,7 @@ func setBuffer(_ buffer: any MTLBuffer, offset: Int, for plane: MTLTensorPlaneTy
 
 #### Discussion
 
-The buffer must not be `nil`. The offset must be aligned to 128 bytes if the plane uses a format [`MTLTensorDataType`](mtltensordatatype.md), otherwise it must be aligned to the size of the plane’s data type in bytes.
+The offset needs to be aligned to 128 bytes if the plane uses [`MTLTensorDataType.int2`](mtltensordatatype/int2.md), [`MTLTensorDataType.uint2`](mtltensordatatype/uint2.md), [`MTLTensorDataType.int4`](mtltensordatatype/int4.md), [`MTLTensorDataType.uint4`](mtltensordatatype/uint4.md), [`MTLTensorDataType.metalFloat4e2m1`](mtltensordatatype/metalfloat4e2m1.md), [`MTLTensorDataType.metalFloat8e4m3`](mtltensordatatype/metalfloat8e4m3.md), [`MTLTensorDataType.metalFloat8e5m2`](mtltensordatatype/metalfloat8e5m2.md), or [`MTLTensorDataType.metalFloat8ue8m0`](mtltensordatatype/metalfloat8ue8m0.md), otherwise it needs to be aligned to the size of the plane’s data type in bytes.
 
 ## Parameters
 

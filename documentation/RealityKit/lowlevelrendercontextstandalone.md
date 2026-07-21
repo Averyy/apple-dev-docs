@@ -47,6 +47,7 @@ final class LowLevelRenderContextStandalone
 - [Escapable](../Swift/Escapable.md)
 - [LowLevelRenderContext](lowlevelrendercontext.md)
 - [LowLevelRenderContextLighting](lowlevelrendercontextlighting.md)
+- [LowLevelRenderContextShaderGraph](lowlevelrendercontextshadergraph.md)
 
 ## See Also
 

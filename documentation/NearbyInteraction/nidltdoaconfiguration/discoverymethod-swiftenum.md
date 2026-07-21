@@ -17,7 +17,7 @@ enum DiscoveryMethod
 
 #### Overview
 
-When you create a DL-TDOA configuration (`NIDLTDOAConfigration`), specify the method that the session uses to discover nearby anchors, among Wi-Fi or Bluetooth Low Energy, by calling [`init(networkIdentifier:discoveryMethod:)`](nidltdoaconfiguration/init(networkidentifier:discoverymethod:).md). The framework needs to know the anchor discovery technology upfront, to match your deployment environment.
+When you create a DL-TDOA configuration ([`NIDLTDOAConfiguration`](nidltdoaconfiguration.md)), specify the method that the session uses to discover nearby anchors, among Wi-Fi or Bluetooth Low Energy, by calling [`init(networkIdentifier:discoveryMethod:)`](nidltdoaconfiguration/init(networkidentifier:discoverymethod:).md). The framework needs to know the anchor discovery technology upfront, to match your deployment environment.
 
 The default value is [`NIDLTDOAConfiguration.DiscoveryMethod.bluetoothLowEnergy`](nidltdoaconfiguration/discoverymethod-swift.enum/bluetoothlowenergy.md).
 

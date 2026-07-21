@@ -156,102 +156,35 @@ After migrating, test your app in Full Screen Apps, Windowed Apps, and Stage Man
 
 #### Support Noninteractive External Display Scenes
 
-If your app doesn’t present noninteractive custom content on an external display, you don’t need to configure this scene role. To present noninteractive custom content on an external display, configure your app to handle the scene role that UIKit offers.
+If your app doesn’t present custom content on an external display, you don’t need to configure anything for this scene role. When an external display connects, the system mirrors your app’s primary display, or, on compatible iPad models with extended display enabled, presents your app’s interactive windows on the external display.
 
-When an external display is connected, the system may offer your app a scene with the [`windowExternalDisplayNonInteractive`](uiscenesession/role-swift.struct/windowexternaldisplaynoninteractive.md) role. On compatible iPad models with extended display enabled, the system presents your app in windows on the external display. On devices that don’t support extended displays, it mirrors your app’s primary display.
+In iOS 26 and earlier, the system connected a [`windowExternalDisplayNonInteractive`](uiscenesession/role-swift.struct/windowexternaldisplaynoninteractive.md) scene automatically, and your app opted out by declining to provide content for it. Beginning in iOS 27, your app receives this scene only after it registers a *scene accessory*. A scene accessory declares supplementary content that the system presents on your app’s behalf when associated functionality becomes available, such as an external display connected by cable or AirPlay. Your app declares what content to provide, and the system decides when and where to present it. Because the content appears only when a display is available, design your app to remain fully functional without the external display.
 
-To suppress mirroring by presenting custom content, handle the [`windowExternalDisplayNonInteractive`](uiscenesession/role-swift.struct/windowexternaldisplaynoninteractive.md) role in your scene delegate:
+If your app previously provided content for this scene by checking the connecting scene’s role in [`application(_:configurationForConnecting:options:)`](uiapplicationdelegate/application(_:configurationforconnecting:options:).md) or your scene delegate, remove that role-specific logic and register a scene accessory instead. You can reuse your existing scene delegate as the accessory’s delegate class, or create a new one dedicated to the external-display scene.
+
+Register the accessory on a view controller in your app’s main interface. Choose the view controller whose content the external display supplements:
 
 ```swift
-func scene(
-    _ scene: UIScene,
-    willConnectTo session: UISceneSession,
-    options connectionOptions: UIScene.ConnectionOptions
-) {
-    guard let windowScene = scene as? UIWindowScene else { return }
+class PlayerViewController: UIViewController {
+    var displayRegistration: UISceneAccessoryRegistration?
 
-    switch session.role {
-    case .windowApplication:
-        window = UIWindow(windowScene: windowScene)
-        window?.rootViewController = YourRootViewController()
-        window?.makeKeyAndVisible()
-    case .windowExternalDisplayNonInteractive:
-        // Provide a window to present noninteractive content on the external display.
-        // Otherwise, ignore this role to preserve default behavior.
-        break
-    default:
-        break
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // Describe the scene to present, including the delegate that attaches its window.
+        let configuration = UISceneConfiguration()
+        configuration.delegateClass = ExternalDisplaySceneDelegate.self
+
+        // Register the accessory so the system can present this content on an external display.
+        let accessory = UISceneAccessory.externalNonInteractive(sceneConfiguration: configuration)
+        displayRegistration = registerSceneAccessory(accessory)
     }
 }
 ```
 
-Alternatively, return an empty `UISceneConfiguration()` for the [`windowExternalDisplayNonInteractive`](uiscenesession/role-swift.struct/windowexternaldisplaynoninteractive.md) role from your app delegate. This suppresses custom content and preserves default behavior, and also prevents UIKit from instantiating a scene delegate for this role:
+While your app presents the view controller and an external display is available, the system connects the scene and calls [`scene(_:willConnectTo:options:)`](uiscenedelegate/scene(_:willconnectto:options:).md) on your delegate. Content for this scene spans the full screen.
 
-```swift
-func application(
-    _ application: UIApplication,
-    configurationForConnecting connectingSceneSession: UISceneSession,
-    options: UIScene.ConnectionOptions
-) -> UISceneConfiguration {
-    if connectingSceneSession.role == .windowExternalDisplayNonInteractive {
-        return UISceneConfiguration()
-    }
-
-    let configurationName: String
-
-    switch options.userActivities.first?.activityType {
-    case UserActivity.GalleryOpenInspectorActivityType:
-        configurationName = "Inspector Configuration"
-    default:
-        configurationName = "Default Configuration"
-    }
-
-    return UISceneConfiguration(
-        name: configurationName,
-        sessionRole: connectingSceneSession.role
-    )
-}
-```
-
-To present custom content on the external display, provide a scene configuration for the [`windowExternalDisplayNonInteractive`](uiscenesession/role-swift.struct/windowexternaldisplaynoninteractive.md) role and attach a [`UIWindow`](uiwindow.md) to the scene. Content for this role spans the full screen, and attaching a window to the external display scene turns off mirroring if enabled. To restore the default behavior, set the [`windowScene`](uiwindow/windowscene.md) property of the external [`UIWindow`](uiwindow.md) to `nil`:
-
-```swift
-class SceneDelegate: UIResponder, UIWindowSceneDelegate {
-    var window: UIWindow?
-    var externalWindow: UIWindow?
-
-    func scene(
-        _ scene: UIScene,
-        willConnectTo session: UISceneSession,
-        options connectionOptions: UIScene.ConnectionOptions
-    ) {
-        guard let windowScene = scene as? UIWindowScene else { return }
-
-        switch session.role {
-        case .windowApplication:
-            window = UIWindow(windowScene: windowScene)
-            window?.rootViewController = YourRootViewController()
-            window?.makeKeyAndVisible()
-        case .windowExternalDisplayNonInteractive:
-            externalWindow = UIWindow(windowScene: windowScene)
-            externalWindow?.rootViewController = YourExternalDisplayViewController()
-            externalWindow?.makeKeyAndVisible()
-        default:
-            break
-        }
-    }
-
-    // Stop presenting on the external display and restore the default behavior.
-    func exitPhotoInspector() {
-        externalWindow?.windowScene = nil
-        externalWindow = nil
-    }
-}
-```
-
-To provide the scene configuration, either add a [`windowExternalDisplayNonInteractive`](uiscenesession/role-swift.struct/windowexternaldisplaynoninteractive.md) entry to [`UISceneConfiguration`](uisceneconfiguration.md) in your information property list, or return a [`UISceneConfiguration`](uisceneconfiguration.md) for this role from [`application(_:configurationForConnecting:options:)`](uiapplicationdelegate/application(_:configurationforconnecting:options:).md).
-
-For more information about presenting content on connected displays, see [`Presenting content on a connected display`](presenting-content-on-a-connected-display.md).
+For more information about presenting content on connected displays, including how to control when your content appears, respond to display availability, and stop presenting content, see [`Presenting content on a connected display`](presenting-content-on-a-connected-display.md).
 
 ## See Also
 

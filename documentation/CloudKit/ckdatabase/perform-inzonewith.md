@@ -20,9 +20,11 @@ Searches for records matching a predicate in the specified record zone.
 func perform(_ query: CKQuery, inZoneWith zoneID: CKRecordZone.ID?) async throws -> [CKRecord]
 ```
 
-#### Discussion
+#### Return Value
 
-- Returns The records that match the specified query.
+The records that match the specified query.
+
+#### Discussion
 
 For information on a more convenient way to search a database, see [`records(matching:inZoneWith:desiredKeys:resultsLimit:)`](ckdatabase/records(matching:inzonewith:desiredkeys:resultslimit:).md).
 

@@ -196,6 +196,7 @@ enum Code
 - [AVError.Code.externalSyncDeviceFrequencyHigherThanSpecified](averror-swift.struct/code/externalsyncdevicefrequencyhigherthanspecified.md)
 - [AVError.Code.externalSyncDeviceFrequencyLowerThanSpecified](averror-swift.struct/code/externalsyncdevicefrequencylowerthanspecified.md)
 - [AVError.Code.followExternalSyncFailed](averror-swift.struct/code/followexternalsyncfailed.md)
+- [AVError.Code.notEnoughSpaceForProVideoStorageReplenishment](averror-swift.struct/code/notenoughspaceforprovideostoragereplenishment.md)
 ### Initializers
 - [init?(rawValue: Int)](averror-swift.struct/code/init(rawvalue:).md)
 

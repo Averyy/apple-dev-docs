@@ -24,11 +24,6 @@ var estimatedOutputFileLengthInBytes: Int64 { get async throws }
 - `handler`: A callback the system invokes when it finishes its estimation. It passes the callback the following parameters: - **`estimatedOutputFileLength`**: The system’s estimation of the output file length.
 - **`error`**: An error object if the request fails; otherwise, `nil`.
 
-## See Also
-
-- [var estimatedOutputFileLength: Int64](avassetexportsession/estimatedoutputfilelength.md)
-  The estimated length of the exported file, in bytes.
-
 
 ---
 

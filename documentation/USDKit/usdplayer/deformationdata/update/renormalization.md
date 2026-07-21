@@ -3,7 +3,7 @@
 **Framework**: USDKit  
 **Kind**: property
 
-Changed renormalization data; nil if unchanged
+Changed renormalization data.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -17,6 +17,10 @@ Changed renormalization data; nil if unchanged
 ```swift
 let renormalization: USDPlayer.DeformationData.RenormalizationData.Update?
 ```
+
+#### Discussion
+
+`nil` if unchanged.
 
 
 ---

@@ -47,8 +47,9 @@ Each probe stores first-order (L0 + L1) spherical harmonics: 4 coefficients per 
 - [struct DiffuseLightProbeReceiverComponent](diffuselightprobereceivercomponent.md)
   A component that receives diffuse lighting from a referenced probe group.
 - [class LightmapResource](lightmapresource.md)
-  A resource containing references to lightmap texture atlases and descriptions of how parts of the atlases map to meshes in the scene. At a high level, this resource comprises two parts:
+  A resource containing references to lightmap texture atlases and descriptions of how parts of the atlases map to meshes in the scene.
 - [struct LightmapComponent](lightmapcomponent.md)
+  Describes how a lightmap is applied to parts of the scene.
 - [struct DiffuseLightProbeGroupComponent](diffuselightprobegroupcomponent.md)
   A component that stores diffuse probe data for a spatial region.
 - [struct DiffuseLightProbeReceiverComponent](diffuselightprobereceivercomponent.md)

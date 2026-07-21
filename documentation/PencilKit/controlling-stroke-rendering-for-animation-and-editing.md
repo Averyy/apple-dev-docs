@@ -137,6 +137,8 @@ Because [`substroke(range:)`](pkstroke-swift.struct/substroke(range:).md) preser
   Enable writing on a non-text-input view by adding interactions.
 - [Inspecting, Modifying, and Constructing PencilKit Drawings](inspecting-modifying-and-constructing-pencilkit-drawings.md)
   Score users’ ability to match PencilKit drawings generated from text, by accessing the strokes and points inside PencilKit drawings.
+- [Importing Bézier path data into PencilKit](importing-external-drawing-data-into-pencilkit.md)
+  Convert existing Bézier-based stroke data into PencilKit drawing strokes.
 - [class PKCanvasView](pkcanvasview.md)
   A view that captures Apple Pencil input and displays the rendered results in an iOS app.
 - [struct PKDrawing](pkdrawing-swift.struct.md)

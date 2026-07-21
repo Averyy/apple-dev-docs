@@ -24,33 +24,33 @@ func onDragSessionUpdated(_ onUpdate: @escaping (DragSession) -> Void) -> some V
 Below is an example of a view that displays a book and supports dragging to copy, move, and delete. If the session ends with moving or deleting the item, in the `onUpdate` closure, the view lets the model layer know that the book should be deleted from the source.
 
 ```swift
-   struct DraggableBookView: View {
-       var id: UUID
+struct DraggableBookView: View {
+    var id: UUID
 
-       var body: some View {
-           BookView()
-               .draggable(Book(id: id))
-               .dragConfiguration(
-                   DragConfiguration(
-                       operationsWithinApp: .init(allowMove: true, allowDelete: true),
-                       operationsOutsideApp: .init(allowMove: true, allowDelete: true)
-                   ))
-               .onDragSessionUpdated { session in
-                   switch session.phase {
-                   case .ended(at: _, with: let operation):
-                       if operation == .move || operation == .delete {
-                           if let id = session.draggedItemIDs(type: UUID.self).first {
-                               removeBook(id: id)
-                           }
-                       }
-                   default:
-                       break
-                   }
-               }
-       }
-   }
+    var body: some View {
+        BookView()
+            .draggable(Book(id: id))
+            .dragConfiguration(
+                DragConfiguration(
+                    operationsWithinApp: .init(allowMove: true, allowDelete: true),
+                    operationsOutsideApp: .init(allowMove: true, allowDelete: true)
+                ))
+            .onDragSessionUpdated { session in
+                switch session.phase {
+                case .ended(at: _, with: let operation):
+                    if operation == .move || operation == .delete {
+                        if let id = session.draggedItemIDs(type: UUID.self).first {
+                            removeBook(id: id)
+                        }
+                    }
+                default:
+                    break
+                }
+            }
+    }
+}
 
-   func removeBook(id: UUID) { }
+func removeBook(id: UUID) { }
 ```
 
 The `onUpdate` closure is called when the closest drag session in the child view hierarchy becomes active.

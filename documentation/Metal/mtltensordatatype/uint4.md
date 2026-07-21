@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: case
 
-A 4-bit unsigned integer format data type.
+A 4-bit unsigned integer data type.
 
 **Availability**:
 - iOS 26.4+

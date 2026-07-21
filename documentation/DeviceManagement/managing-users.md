@@ -8,7 +8,7 @@ Register and manage users for your organization’s managed location.
 
 Deployment of an organization’s owned assets to user-owned devices requires registering those users for the location you’re managing. The provided API allows for asynchronous management of these users in the organization.
 
-##### Retrieve Users
+#### Retrieve Users
 
 Before managing the users in the organization, the device management service needs to determine what users are currently active. Making a request to [`Get Users`](get-users-4mwln.md) allows you to retrieve all users in the organization, and you can include an optional query parameter to return only active users. You can identify an active user by their unique `clientUserId`.
 
@@ -23,7 +23,7 @@ curl --location --request GET 'https://vpp.itunes.apple.com/mdm/v2/users' \
 
 The code above results in a response like the following:
 
-```javascript
+```json
 {
     "currentPageIndex": 0,
     "size": 3,
@@ -71,7 +71,7 @@ curl --location --request GET 'https://vpp.itunes.apple.com/mdm/v2/users?clientU
 
 For pagination response fields and versioned queries using `sinceVersionId`, see [`Using paginated endpoints`](using-paginated-endpoints.md).
 
-##### Invite Users
+#### Invite Users
 
 You invite users by sending them an email with an invitation link. Accepting the invitation associates the user’s `appleId` with the managed location.
 
@@ -95,7 +95,7 @@ The code above results in a response like the following:
 }
 ```
 
-##### Interpret User States
+#### Interpret User States
 
 A user has an `email` key and either an `idHash` or an `inviteCode` key, depending on the status. A registered user has an `inviteCode` because the system has created the user, but that user doesn’t have an associated Apple Account yet. An associated user has an `idHash` that uniquely identifies the user’s associated Apple Account. A retired user may have an `idHash` if the user had an associated `appleId` previously.
 
@@ -106,7 +106,7 @@ A user has an `email` key and either an `idHash` or an `inviteCode` key, dependi
 | Retired | Indicates that the server has retired the user. |
 | Deleted | A legacy state that indicates that the server has retired the user and has associated that user’s Apple Account with a new user that shares the same `clientUserId`. |
 
-##### Check Request Size Limits
+#### Check Request Size Limits
 
 The size limits for a [`ManageUsersRequest`](manageusersrequest.md) are dynamic and can change without notice, so you should sync these every 5 minutes. These limits are in [`ServiceConfigResponse.Limits`](serviceconfigresponse/limits-data.dictionary.md).
 
@@ -141,9 +141,9 @@ The code above results in a response like the following:
 }
 ```
 
-##### Manage Users
+#### Manage Users
 
-Use [`ManageUsersRequest`](manageusersrequest.md) to asynchronously create, update, or retire users. Ensure that your use of `clientUserIds` complies with your organization’s privacy policy and applicable agreements governing user data in MDM deployments.
+Use [`ManageUsersRequest`](manageusersrequest.md) to asynchronously create, update, or retire users. Ensure that your use of `clientUserIds` complies with your organization’s privacy policy and applicable agreements governing user data in your deployment.
 
 The following code shows an example of creating users to associate in the organization:
 
@@ -167,7 +167,7 @@ curl --location --request POST 'https://vpp.itunes.apple.com/mdm/v2/users/create
 
 The code above results in a response like the following:
 
-```javascript
+```json
 {
     "eventId": "1039246b-97f5-4bdc-b3b6-78362dbf7652",
     "tokenExpirationDate": "2030-11-08T22:33:22+0000",
@@ -193,7 +193,7 @@ curl --location --request POST 'https://vpp.itunes.apple.com/mdm/v2/users/update
 
 The code above results in a response like the following:
 
-```javascript
+```json
 {
     "eventId": "79b658bc-f36c-4988-a6fe-a07fae196519",
     "tokenExpirationDate": "2030-11-08T22:33:22+0000",
@@ -210,7 +210,7 @@ curl --location --request GET 'https://vpp.itunes.apple.com/mdm/v2/status?eventI
 
 The code above results in a response like the following:
 
-```javascript
+```json
 {
     "eventStatus": "PENDING",
     "eventType": "CREATE",
@@ -230,7 +230,7 @@ curl --location --request GET 'https://vpp.itunes.apple.com/mdm/v2/status?eventI
 
 The code above results in a response like the following:
 
-```javascript
+```json
 {
     "eventStatus": "COMPLETE",
     "eventType": "CREATE",
@@ -243,7 +243,7 @@ The code above results in a response like the following:
 
 The [`StatusResponse`](statusresponse.md) returns as `PENDING`, `COMPLETE`, or `FAILED,` which represents the overall status of the asynchronous request.
 
-##### Handle Notifications
+#### Handle Notifications
 
 For device management services that subscribe to `USER_MANAGEMENT` notifications in [`Client Config`](client-config-4szk1.md), the server sends incremental notifications as it manages users. For more information, see [`Subscribing to notifications`](subscribing-to-notifications.md).
 
@@ -253,8 +253,8 @@ For device management services that subscribe to `USER_MANAGEMENT` notifications
   Assign and revoke app and book licenses across your organization.
 - [Managing subscriptions](managing-subscriptions.md)
   Administer auto-renewable subscription seats for your organization.
-- [Setting up and assigning content with your MDM](setting-up-and-assigning-content-with-your-mdm.md)
-  Distribute purchased licenses to managed users through your MDM server.
+- [Setting up and assigning content](setting-up-and-assigning-content.md)
+  Distribute purchased licenses to managed users through your device management service.
 
 
 ---

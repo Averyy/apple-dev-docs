@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: case
 
-Clips the contents within the portal using a volumetric box.
+Clips the contents within the portal to a box-shaped region.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -21,11 +21,13 @@ case volume(PortalComponent.Volume)
 
 #### Discussion
 
-The volume is defined by a box with position and extents in portal-local space. This is useful for room portals and bounded portal spaces.
+Use this case for room-sized portals and other bounded portal spaces where content shouldn’t extend infinitely behind the portal surface. RealityKit hides any portal world content outside the volume.
+
+For portals where the box should enclose the portal surface, [`enclosingBox(depth:)`](portalcomponent/boundarystyle/enclosingbox(depth:).md) is a convenient way to configure this case alongside the matching [`PortalComponent.CrossingMode.volume(_:)`](portalcomponent/crossingmode-swift.enum/volume(_:).md).
 
 ## Parameters
 
-- `volume`: A [`PortalComponent.Volume`](portalcomponent/volume.md) describing the box position and extents
+- `volume`: A [`PortalComponent.Volume`](portalcomponent/volume.md) describing the box’s center and extents in portal-local space.
 
 
 ---

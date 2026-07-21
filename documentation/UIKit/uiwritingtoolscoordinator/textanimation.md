@@ -30,6 +30,9 @@ Use the `UIWritingToolsCoordinator/TextAnimation` constants to determine the typ
   The animation that Writing Tools performs when inserting text into your view.
 - [UIWritingToolsCoordinator.TextAnimation.remove](uiwritingtoolscoordinator/textanimation/remove.md)
   The animation that Writing Tools performs when removing text from your view.
+### Enumeration Cases
+- [UIWritingToolsCoordinator.TextAnimation.indicateGrammar](uiwritingtoolscoordinator/textanimation/indicategrammar.md)
+  The animation effect that Writing Tools performs on grammar issues when they are first indicated.
 ### Initializers
 - [init?(rawValue: Int)](uiwritingtoolscoordinator/textanimation/init(rawvalue:).md)
 

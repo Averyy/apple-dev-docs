@@ -10,6 +10,7 @@ Waits for all previous work encoded to this stream to be complete.
 - iPadOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 

@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: property
 
+Changed blend shape weights.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -15,6 +17,10 @@
 ```swift
 let weights: [Float]?
 ```
+
+#### Discussion
+
+`nil` if unchanged.
 
 
 ---

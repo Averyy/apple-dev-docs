@@ -23,7 +23,7 @@ When you execute a query, Core Spotlight evaluates each item in the index agains
 - `attributeName operator value[modifiers]`
 - `InRange(attributeName, minValue, maxValue)`
 
-In both formats, `attributeName` is a property name from the [`CSSearchableItemAttributeSet`](cssearchableitemattributeset.md) class. For example, to evaluate the [`title`](cssearchableitemattributeset/title.md) property of the item, use “title” as the attribute name. The `InRange` predicate determines whether a property with a numeric value is between the specified minimum and maxium values. Other predicates compare the attribute to the value you specify using one of the following operators:
+In both formats, `attributeName` is a property name from the [`CSSearchableItemAttributeSet`](cssearchableitemattributeset.md) class. For example, to evaluate the [`title`](cssearchableitemattributeset/title.md) property of the item, use “title” as the attribute name. The `InRange` predicate determines whether a property with a numeric value is between the specified minimum and maximum values. Other predicates compare the attribute to the value you specify using one of the following operators:
 
 | Operator | Definition |
 | --- | --- |
@@ -39,11 +39,11 @@ When comparing text values, use modifiers to change the matching behavior the qu
 | Modifier | Behavior |
 | --- | --- |
 | c | Performs a case-insensitive search. |
-| d | Performs a search that ignores diacritical marks. |
+| d | Ignores diacritical marks on characters. |
 | w | Matches on word boundaries. This modifier treats transitions from lowercase to uppercase as word boundaries. |
 | t | Performs a search on a tokenized value. For example, a search field can contain tokenized values. |
 | * | Performs a wildcard search. Match a substring at the beginning, end, or middle. |
-| \ | Don’t interpret the character that follows. Use this to include special characters. Examples include `\’` and `\”`. |
+| \ | Don’t interpret the character that follows. Use this to include special characters. Examples include `\'` and `\"`. |
 
 Combine two predicates using either an AND or OR operation, listed in the table below. Use parentheses to prioritize the evaluation of predicates.
 
@@ -56,18 +56,25 @@ The following examples show how operators, modifiers, and parentheses work for q
 
 | Query string | Example matches |
 | --- | --- |
-| `title == “Paris”` | Matches “Paris” but not “paris” or “I love Paris”. |
-| `title == “Paris”c` | Matches “Paris” and “paris”, but not “I love Paris”. |
-| `title == “Paris”wc` | Matches “Paris”, “paris”, “I love Paris”, and “paris-france.jpg”, but not “Comparison”. |
-| `title == “Window”w` | Matches “MyWindowClass” and “Broken Window”, but not “NSWindow”. |
-| `authorNames == “Frédéric”` | Matches “Frédéric”, but not “Frederic”. |
-| `authorNames == “Frédéric”cd` | Matches “Frédéric” and “Frederic”, regardless of case. |
-| `title == “paris*”` | Matches words that begin with “paris” like “paris” and “parisol” but not “comparison”. |
-| `title == “*paris”` | Matches words that end with “paris”. |
-| `title == “*paris*”` | Matches words that contain “paris” anywhere in the string, including “paris”, “parisol”, and “comparison”. |
-| `title == ‘paris’` | Matches a value that is exactly equal to “paris”. |
-| `authorNames == “Steve”wc && contentType == “audio”wc’` | Matches audio items that Steve authored. |
+| `title == "Paris"` | Matches “Paris” but not “paris” or “I love Paris”. |
+| `title == "Paris"c` | Matches “Paris” and “paris”, but not “I love Paris”. |
+| `title == "Paris"wc` | Matches “Paris”, “paris”, “I love Paris”, and “paris-france.jpg”, but not “Comparison”. |
+| `title == "Window"w` | Matches “MyWindowClass” and “Broken Window”, but not “NSWindow”. |
+| `authorNames == "Frédéric"` | Matches “Frédéric”, but not “Frederic”. |
+| `authorNames == "Frédéric"cd` | Matches “Frédéric” and “Frederic”, regardless of case. |
+| `title == "paris*"` | Matches words that begin with “paris” like “paris” and “parisol” but not “comparison”. |
+| `title == "*paris"` | Matches words that end with “paris”. |
+| `title == "*paris*"` | Matches words that contain “paris” anywhere in the string, including “paris”, “parisol”, and “comparison”. |
+| `title == 'paris'` | Matches a value that is exactly equal to “paris”. |
+| `authorNames == "Steve"wc && contentType == "audio"wc` | Matches audio items that Steve authored. |
 | `authorNames == "Steve"wc && (contentType == "audio"wc || contentType == "video"wc)` | Matches any audio or video items that Steve authored. |
+
+To detect the presence or absence of a particular attribute in an item, compare the attribute to the wildcard modifier.
+
+| Query string | Behavior |
+| --- | --- |
+| `completionDate == "*"` | Matches an item when the `completionDate` attribute is present and has a value. |
+| `completionDate != "*"` | Matches an item when the `completionDate` attribute is absent. |
 
 ##### Match Dates and Times in a Query String
 
@@ -97,7 +104,7 @@ When an attribute contains a date or time value, there are two ways you can spec
 The following example shows a query string that includes different types of predicates and modifiers and uses the `$time` variable. The predicate matches an item if author is either Tim or Steve and the item’s completion date occurred within the past 10 days. For the completion date check, adding a negative number to the `$time.today` variable creates a date in the past.
 
 ```swift
-(authorNames == “Tim”wc || authorNames == “Steve”wc) &&
+(authorNames == "Tim"wc || authorNames == "Steve"wc) &&
  InRange(completionDate,$time.today(-10),$time.today)
 ```
 

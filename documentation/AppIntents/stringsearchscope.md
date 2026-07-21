@@ -56,7 +56,7 @@ enum StringSearchScope
 ## See Also
 
 - [static var searchScopes: Self.Criteria.SearchScopes](showinappsearchresultsintent/searchscopes.md)
-  Values that help the system understand the scope of an app intent that shows the results of a string-based search.
+  The scope of the search in your app’s content.
 
 
 ---

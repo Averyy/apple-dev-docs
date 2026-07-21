@@ -21,9 +21,9 @@ struct Set
 
 #### Overview
 
-`RenderLayer.Set` is used wherever a group of layers is specified—for example, on light components and `RenderLayerComponent`.
+[`RenderLayer.Set`](renderlayer/set.md) represents a group of layers - for example, the layers a light illuminates ([`layers`](directionallightcomponent/layers.md), [`layers`](pointlightcomponent/layers.md), [`layers`](spotlightcomponent/layers.md)) or the layers an entity participates in ([`layers`](renderlayercomponent/layers.md)).
 
-You can create a `RenderLayer.Set` using an array literal:
+Create a [`RenderLayer.Set`](renderlayer/set.md) using an array literal:
 
 ```swift
 let layers: RenderLayer.Set = [.defaultLayer, RenderLayer("com.myapp.hero")]

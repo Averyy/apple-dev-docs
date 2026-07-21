@@ -25,6 +25,8 @@ Before you start testing In-App Purchases in the sandbox environment, make sure 
 4. You create Sandbox Apple Accounts in App Store Connect. For more information, see [`Create a Sandbox Apple Account`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/test-in-app-purchases/create-sandbox-apple-ids).
 5. You grant permission for locally installed apps to run on the device if you test a development-signed build on iOS, watchOS, or visionOS devices. For more information, see [`Enabling Developer Mode on a device`](https://developer.apple.com/documentation/Xcode/enabling-developer-mode-on-a-device).
 
+> ❗ **Important**: A Sandbox Apple Account only works for testing In-App Purchases in apps that belong to the same Apple Developer Program account you used to create it. Don’t use a Sandbox Apple Account to test In-App Purchases in another developer’s app.
+
 For more information on the workflow from signing agreements to testing, see [`App Store Connect workflow`](https://developer.apple.comhttps://developer.apple.com/help/app-store-connect/get-started/app-store-connect-workflow).
 
 Next, prepare your app to test:

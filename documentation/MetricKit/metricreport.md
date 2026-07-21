@@ -45,8 +45,6 @@ if let entry = report.intervalEntries.fullDayEntry {
 
 When state reporting is enabled via [`init(enabledStateReportingDomains:)`](metricmanager/init(enabledstatereportingdomains:).md), the report also populates [`stateEntries`](metricreport/stateentries.md) with [`MetricResult`](metricresult.md) values scoped to each recorded app state. Only a subset of metric types appear in state entries, including hang time, hitch time, scroll hitch time, app termination counts, signpost intervals, and app runtime metrics. Metrics such as CPU time, memory, network, disk I/O, GPU, app launch, and disk space appear only in [`intervalEntries`](metricreport/intervalentries.md).
 
-This type replaces [`MXMetricPayload`](mxmetricpayload.md).
-
 ## Topics
 
 ### Report details

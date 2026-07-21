@@ -30,6 +30,8 @@ Process muting APIs are not available and return ES_RETURN_ERROR. Path muting an
 
 > **Note**: Does NOT require TCC approval.
 
+> **Note**: Events will be delivered when a descendant submits the event or instigates it
+
 ## Parameters
 
 - `client`: Out param. On success, set to the newly created es_client_t.

@@ -3,7 +3,7 @@
 **Framework**: ColorSync  
 **Kind**: case
 
-Headroom-Adaptive Gain Curve Tone Mapping
+Maps content above reference white using a headroom-adaptive gain curve.
 
 **Availability**:
 - iOS 27.0+ (Beta)

@@ -23,12 +23,12 @@ struct Program
 
 ### Configuring the program
 - [var descriptor: PortalMaterial.Program.Descriptor](portalmaterial/program-swift.struct/descriptor-swift.property.md)
-  The descriptor used to create this program.
+  The descriptor that produced this program.
 - [PortalMaterial.Program.Descriptor](portalmaterial/program-swift.struct/descriptor-swift.struct.md)
   Configuration used to compile a [`PortalMaterial.Program`](portalmaterial/program-swift.struct.md).
 ### Initializers
 - [init(descriptor: PortalMaterial.Program.Descriptor) async throws](portalmaterial/program-swift.struct/init(descriptor:).md)
-  Creates a program by compiling the shader node graph in the given descriptor.
+  Compiles a program from the given descriptor.
 
 ## Relationships
 
@@ -41,7 +41,7 @@ struct Program
 ## See Also
 
 - [var program: PortalMaterial.Program](portalmaterial/program-swift.property.md)
-  The compiled program that defines this material’s shading behavior.
+  The compiled program that drives this material’s surface and geometry shading.
 
 
 ---

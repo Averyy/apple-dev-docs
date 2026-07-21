@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: init
 
+Creates a Metal-enabled player for the given USD stage.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -19,6 +21,7 @@ convenience init(stage: USDStage)
 ## See Also
 
 - [convenience init(stage: USDStage, gpuFamily: MTLGPUFamily)](usdplayer/init(stage:gpufamily:).md)
+  Creates a Metal-less player for the given USD stage.
 
 
 ---

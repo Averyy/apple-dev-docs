@@ -8,6 +8,7 @@ A structure that represents a message to send to an accessory.
 **Availability**:
 - iOS 26.5+
 - iPadOS 26.5+
+- Mac Catalyst 26.5+
 
 ## Declaration
 

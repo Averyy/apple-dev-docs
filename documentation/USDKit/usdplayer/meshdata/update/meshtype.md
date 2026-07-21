@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: property
 
+Updated mesh type.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -15,6 +17,10 @@
 ```swift
 let meshType: USDPlayer.MeshData.MeshType?
 ```
+
+#### Discussion
+
+`nil` if unchanged.
 
 
 ---

@@ -41,6 +41,9 @@ Configure video processing settings using standard key and value constants.
   The color primary uses the SMPTE C color space.
 - [let AVVideoColorPropertiesKey: String](avvideocolorpropertieskey.md)
   The key for a dictionary that contains properties specifying video color.
+- [let AVVideoLogTransferFunctionKey: String](avvideologtransferfunctionkey.md)
+- [let AVVideoLogTransferFunction_AppleLog: String](avvideologtransferfunction_applelog.md)
+- [let AVVideoLogTransferFunction_AppleLog2: String](avvideologtransferfunction_applelog2.md)
 - [let AVVideoTransferFunctionKey: String](avvideotransferfunctionkey.md)
   The key to identify the transfer function in a color properties dictionary.
 - [let AVVideoTransferFunction_IEC_sRGB: String](avvideotransferfunction_iec_srgb.md)

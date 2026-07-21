@@ -20,10 +20,15 @@ case meshChunk
 
 #### Discussion
 
-When `SpotLightComponent.SurroundingsLight` or `PointLightComponent.SurroundingsLight`is enabled:
+When `SpotLightComponent.SurroundingsLight` or `PointLightComponent.SurroundingsLight` is enabled:
 
-- On visionOS, RealityKit automatically selects the opaque meshes that intersects the bounding box of the entity’s mesh and illuminates them with surroundings light.
+- On visionOS, RealityKit automatically selects the opaque meshes that intersect the bounding box of the entity’s mesh and illuminates them with surroundings light in a progressive immersive space.
 - On macOS, surroundings light illuminates the entity’s mesh.
+
+When [`GroundingShadowComponent`](groundingshadowcomponent.md) is enabled:
+
+- On visionOS, the entity’s mesh receives grounding shadows in a progressive immersive space.
+- On macOS, the entity’s mesh receives grounding shadows.
 
 ## See Also
 

@@ -20,6 +20,11 @@ case atScrollEdge
 
 Currently this is only honored alongside `UIBarMinimizationBehaviorOnScrollDown`. With other minimization behaviors, the system falls back to [`UIBarMinimizationRestorationBehavior.automatic`](uibarminimizationrestorationbehavior/automatic.md).
 
+## See Also
+
+- [UIBarMinimizationRestorationBehavior.automatic](uibarminimizationrestorationbehavior/automatic.md)
+  The system determines the restoration behavior.
+
 
 ---
 

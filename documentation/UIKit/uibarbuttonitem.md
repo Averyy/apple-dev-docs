@@ -202,6 +202,7 @@ In general, specify a value for the normal state so that other states without a 
   An abstract superclass for items that you can add to a bar that appears at the bottom of the screen.
 - [class UIBarButtonItemGroup](uibarbuttonitemgroup.md)
   A group of one or more bar button items for placement on a navigation bar or shortcuts bar.
+- [struct UIBarButtonItemVisibilityPriority](uibarbuttonitemvisibilitypriority.md)
 - [class UINavigationBar](uinavigationbar.md)
   Navigational controls that display in a bar along the top of the screen, usually in conjunction with a navigation controller.
 - [class UISearchBar](uisearchbar.md)
@@ -216,6 +217,7 @@ In general, specify a value for the normal state so that other states without a 
   A set of methods for defining the positioning of bars in iOS apps.
 - [protocol UIBarPositioningDelegate](uibarpositioningdelegate.md)
   A set of methods that support the positioning of a bar that conforms to the [`UIBarPositioning`](uibarpositioning.md) protocol.
+- [struct UIBarMinimization](uibarminimization-swift.struct.md)
 
 
 ---

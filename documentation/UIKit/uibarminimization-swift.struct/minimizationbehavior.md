@@ -16,6 +16,11 @@
 var minimizationBehavior: UIBarMinimizationBehavior
 ```
 
+## See Also
+
+- [var restorationBehavior: UIBarMinimizationRestorationBehavior](uibarminimization-swift.struct/restorationbehavior.md)
+- [var safeAreaAdjustment: UIBarMinimizationSafeAreaAdjustment](uibarminimization-swift.struct/safeareaadjustment.md)
+
 
 ---
 

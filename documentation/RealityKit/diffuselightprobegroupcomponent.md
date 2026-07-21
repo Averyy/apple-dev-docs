@@ -52,8 +52,9 @@ probeGroup.components[DiffuseLightProbeGroupComponent.self] =
 - [struct DiffuseLightProbeReceiverComponent](diffuselightprobereceivercomponent.md)
   A component that receives diffuse lighting from a referenced probe group.
 - [class LightmapResource](lightmapresource.md)
-  A resource containing references to lightmap texture atlases and descriptions of how parts of the atlases map to meshes in the scene. At a high level, this resource comprises two parts:
+  A resource containing references to lightmap texture atlases and descriptions of how parts of the atlases map to meshes in the scene.
 - [struct LightmapComponent](lightmapcomponent.md)
+  Describes how a lightmap is applied to parts of the scene.
 - [class DiffuseProbeResource](diffuseproberesource.md)
   A resource containing baked diffuse lighting data organized as a tetrahedral probe mesh.
 - [struct DiffuseLightProbeReceiverComponent](diffuselightprobereceivercomponent.md)

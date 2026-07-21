@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: enum
 
+Distinguishes static and deformable mesh geometries.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -20,7 +22,9 @@ enum MeshType
 
 ### Enumeration Cases
 - [USDPlayer.MeshData.MeshType.deformable(_:)](usdplayer/meshdata/meshtype-swift.enum/deformable(_:).md)
+  A mesh driven by the given deformation resource.
 - [USDPlayer.MeshData.MeshType.rigid](usdplayer/meshdata/meshtype-swift.enum/rigid.md)
+  A mesh with no skeleton or blend shapes.
 
 ## Relationships
 

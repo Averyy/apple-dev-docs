@@ -20,8 +20,6 @@ final class AveragePixelLuminance
 
 This is used as the `Dimension` type in [`value`](pixelluminancemetric/value.md), which has type `AverageStatistics<AveragePixelLuminance>`. The base unit symbol is `"apl"` (average pixel luminance).
 
-This type replaces [`MXUnitAveragePixelLuminance`](mxunitaveragepixelluminance.md).
-
 ## Topics
 
 ### Type Methods

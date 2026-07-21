@@ -1,9 +1,9 @@
-# accessibilityFrameInParentSpace
+# accessibilityFrameInParentSpace()
 
 **Framework**: AppKit  
-**Kind**: property
+**Kind**: method
 
-The accessibility element’s frame in its parent’s coordinate system.
+Returns the accessibility element’s frame in its parent’s coordinate system.
 
 **Availability**:
 - macOS 10.10+
@@ -11,12 +11,8 @@ The accessibility element’s frame in its parent’s coordinate system.
 ## Declaration
 
 ```swift
-@property NSRect accessibilityFrameInParentSpace;
+func accessibilityFrameInParentSpace() -> NSRect
 ```
-
-#### Discussion
-
-Setting this property ensures that the accessibility client receives the correct frame (in screen coordinates) as the element’s parent moves.
 
 ## See Also
 
@@ -24,8 +20,10 @@ Setting this property ensures that the accessibility client receives the correct
   Instantiates and configures a new accessibility element.
 - [func accessibilityAddChildElement(NSAccessibilityElement)](nsaccessibilityelement-swift.class/accessibilityaddchildelement(_:).md)
   Adds a child to the accessibility element in the accessibility hierarchy.
+- [func setAccessibilityFrameInParentSpace(NSRect)](nsaccessibilityelement-swift.class/setaccessibilityframeinparentspace(_:).md)
+  Sets the accessibility element’s frame in its parent’s coordinate system.
 
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsaccessibilityelement-swift.class/accessibilityframeinparentspace)*
+*[View on Apple Developer](https://developer.apple.com/documentation/appkit/nsaccessibilityelement-swift.class/accessibilityframeinparentspace())*

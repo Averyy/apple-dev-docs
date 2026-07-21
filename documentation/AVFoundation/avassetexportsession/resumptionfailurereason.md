@@ -44,6 +44,8 @@ struct ResumptionFailureReason
 
 - [func configureForResumableExport() async -> AVAssetExportSession.ResumptionState](avassetexportsession/configureforresumableexport.md)
   Configures the export session for resumable export.
+- [AVAssetExportSession.ResumptionState](avassetexportsession/resumptionstate.md)
+  Represents the resumption state of the export session.
 
 
 ---

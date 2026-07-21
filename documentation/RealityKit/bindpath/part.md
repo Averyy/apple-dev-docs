@@ -46,7 +46,7 @@ let target3: BindTarget = .entity("entityA").entity("entityB").parameter("myInt"
   A path component to animate a transform.
 ### Accessing path parts
 - [BindPath.Part.rootMotion](bindpath/part/rootmotion.md)
-  A path component to animate joint transforms.
+  Identifies a sampled transform animation as root motion for its target entity.
 ### Operators
 - [static func == (BindPath.Part, BindPath.Part) -> Bool](bindpath/part/==(_:_:).md)
   Returns a Boolean value that indicates whether two components of a bind path are equal.

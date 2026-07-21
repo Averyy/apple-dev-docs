@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: property
 
-The layers from which this light accepts shadow casters. If nil, uses layers for shadow casting. Only entities whose RenderLayerComponent.layers intersect with these layers will cast shadows in this light’s shadow map. If `nil`, the light uses its `layers` for shadow casting. Set to an empty set to disable shadow casting entirely.
+The layers of entities that cast shadows from this light.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -18,6 +18,17 @@ The layers from which this light accepts shadow casters. If nil, uses layers for
 ```swift
 var layers: RenderLayer.Set? { get set }
 ```
+
+#### Discussion
+
+An entity casts a shadow into this light’s shadow map when the layers of its [`RenderLayerComponent`](renderlayercomponent.md) intersect with this set.
+
+Set this property to:
+
+- `nil` (the default) to inherit [`layers`](directionallightcomponent/layers.md), so any entity the light illuminates can also cast a shadow from it.
+- An empty set to disable shadow casting from this light entirely.
+
+Shadow casting can be restricted by layer on devices with Apple6 GPU family feature support.
 
 
 ---

@@ -127,6 +127,13 @@ Use these constants with the [`textContentType`](uitextinputtraits/textcontentty
 ### Creating a text content type
 - [init(rawValue: String)](uitextcontenttype/init(rawvalue:).md)
   Creates a text content type with the specified raw value.
+### Type Properties
+- [static let cellularIMEI1: UITextContentType](uitextcontenttype/cellularimei1.md)
+  A property that defines the content in a text input area to contain an international mobile equipment identity number 1 for an eSIM. This content type requires clients to have Carrier eSIM entitlements.
+- [static let cellularIMEI2: UITextContentType](uitextcontenttype/cellularimei2.md)
+  A property that defines the content in a text input area to contain an international mobile equipment identity number 2 for an eSIM. This content type requires clients to have Carrier eSIM entitlements.
+- [static let cellularNAL: UITextContentType](uitextcontenttype/cellularnal.md)
+  A property that defines the content in a text input area to contain a network access license for an eSIM. This content type requires clients to have Carrier eSIM entitlements.
 
 ## Relationships
 

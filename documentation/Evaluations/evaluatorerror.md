@@ -26,17 +26,13 @@ Recorded in the detailed DataFrame’s EvaluatorErrors column (as an array, sinc
 ## Topics
 
 ### Enumeration Cases
-- [case failed(evaluatorType: String, reason: String)](evaluatorerror/failed(evaluatortype:reason:).md)
-  The evaluator threw. `evaluatorType` is the failing evaluator’s concrete type name; `reason` is the thrown error’s `localizedDescription`.
+- [case failed(evaluator: (any EvaluatorProtocol)?, evaluatorType: String, reason: String)](evaluatorerror/failed(evaluator:evaluatortype:reason:).md)
+  The evaluator threw.
 
 ## Relationships
 
 ### Conforms To
-- [Decodable](../Swift/Decodable.md)
-- [Encodable](../Swift/Encodable.md)
-- [Equatable](../Swift/Equatable.md)
 - [Error](../Swift/Error.md)
-- [Hashable](../Swift/Hashable.md)
 - [LocalizedError](../Foundation/LocalizedError.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)

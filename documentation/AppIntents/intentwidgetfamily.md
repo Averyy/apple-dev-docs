@@ -30,6 +30,8 @@ enum IntentWidgetFamily
   A rectangular widget.
 - [IntentWidgetFamily.systemExtraLarge](intentwidgetfamily/systemextralarge.md)
   An extra large widget.
+- [IntentWidgetFamily.systemExtraLargePortrait](intentwidgetfamily/systemextralargeportrait.md)
+  An extra large portrait widget.
 - [IntentWidgetFamily.systemLarge](intentwidgetfamily/systemlarge.md)
   A large widget.
 - [IntentWidgetFamily.systemMedium](intentwidgetfamily/systemmedium.md)

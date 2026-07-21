@@ -41,6 +41,9 @@ enum ExpandedStatus
 - [UITextFormattingViewController.ComponentSize](uitextformattingviewcontroller/componentsize.md)
   Sizes of text formatting view controller components.
 - [enum UIFocusItemDeferralMode](uifocusitemdeferralmode.md)
+- [enum UIBarMinimizationBehavior](uibarminimizationbehavior.md)
+- [enum UIBarMinimizationRestorationBehavior](uibarminimizationrestorationbehavior.md)
+- [enum UIBarMinimizationSafeAreaAdjustment](uibarminimizationsafeareaadjustment.md)
 
 
 ---

@@ -26,8 +26,6 @@ final class SignalBars
 
 This is used as the dimension type in [`histogram`](cellularconditiontimemetric/histogram.md), which has type `Histogram<SignalBars>`. The base unit symbol is `"bars"`.
 
-This type replaces [`MXUnitSignalBars`](mxunitsignalbars.md).
-
 ## Topics
 
 ### Type Methods

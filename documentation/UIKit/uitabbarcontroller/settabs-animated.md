@@ -22,6 +22,8 @@ func setTabs(_ tabs: [UITab], animated: Bool)
 
 - [var tabs: [UITab]](uitabbarcontroller/tabs.md)
   An array of tabs that the tab bar displays.
+- [func performBatchUpdates(() -> Void)](uitabbarcontroller/performbatchupdates(_:).md)
+  Animates multiple tab changes as a single update.
 
 
 ---

@@ -57,6 +57,13 @@ When handling received messages, use the [`content`](rcsmessage/content-swift.pr
 ### Supporting types
 - [RCSMessage.SecureSendReceipt](rcsmessage/securesendreceipt.md)
   A structure that contains the security context of an end-to-end encrypted message.
+### Structures
+- [RCSMessage.CustomReaction](rcsmessage/customreaction.md)
+  A structure that represents a custom reaction to an RCS message.
+- [RCSMessage.Reaction](rcsmessage/reaction.md)
+  A structure that represents a reaction to an RCS message.
+- [RCSMessage.Reply](rcsmessage/reply.md)
+  A structure that represents a reply to an RCS message.
 
 ## Relationships
 

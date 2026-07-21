@@ -20,7 +20,7 @@ static func location(category: MKPointOfInterestCategory) -> RelevantContext?
 
 #### Return Value
 
-A contextual clue that the system uses to determine the relevance of a widget in the Smart Stack on Apple Watch.
+A contextual clue that the system uses to determine the relevance of a widget in the Smart Stack on Apple Watch, or `nil` if the category is not supported.
 
 #### Discussion
 

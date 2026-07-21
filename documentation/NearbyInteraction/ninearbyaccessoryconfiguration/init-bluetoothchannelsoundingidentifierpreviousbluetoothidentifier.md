@@ -44,6 +44,7 @@ session.run(reconnectConfig)
 
 ## Parameters
 
+- `bluetoothIdentifier`: An identifier that the session uses to establish the Bluetooth connection with the accessory. This identifier originates from the Bluetooth Channel Sounding protocol.
 - `previousBluetoothIdentifier`: An optional previous Bluetooth identifier for reconnection scenarios.
 
 

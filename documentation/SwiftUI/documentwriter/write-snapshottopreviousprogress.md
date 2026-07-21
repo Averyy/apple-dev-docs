@@ -20,12 +20,49 @@ Writes the document content to disk.
 func write(snapshot: sending Self.Snapshot, to destination: sending Self.Destination, previous: sending Self.Snapshot?, progress: consuming Subprogress) async throws
 ```
 
+#### Discussion
+
+SwiftUI calls this method in the background after obtaining a snapshot via [`snapshot(contentType:)`](writabledocument/snapshot(contenttype:).md). Perform all serialization and disk access here.
+
+For most documents, use [`FileWrapperDocumentWriter`](filewrapperdocumentwriter.md) instead of implementing a custom writer. Only implement `write` yourself when you need capabilities `FileWrapperDocumentWriter` doesn’t provide — such as direct URL access for Core Graphics, AVFoundation, or other frameworks that operate on file paths:
+
+```swift
+@concurrent
+func write(content image: sending CGImage, to destination: URL,
+    previous: sending CGImage?, progress: consuming Subprogress
+) async throws {
+    guard let imageDestination =
+        CGImageDestinationCreateWithURL(
+            destination as CFURL,
+            UTType.jpeg.identifier as CFString,
+            1, nil
+        ) else {
+        throw CocoaError(.fileWriteUnknown)
+    }
+    CGImageDestinationAddImage(
+        imageDestination, image, nil
+    )
+    guard CGImageDestinationFinalize(
+        imageDestination
+    ) else {
+        throw CocoaError(.fileWriteUnknown)
+    }
+}
+```
+
 ## Parameters
 
 - `snapshot`: The snapshot to write to disk.
-- `destination`: The destination to write to.
-- `previous`: The previously written snapshot. Use it to skip writing unchanged data.
-- `progress`: The subprogress to report writing progress to SwiftUI.
+- `destination`: The file URL to write to.
+- `previous`: The last successfully written snapshot, or `nil` on the first save. Compare to `content` to write only what changed in package documents.
+- `progress`: A `Subprogress` value to report writing progress. Consume it once with `reporter(totalCount:)` and call `complete(count:)` as units finish.
+
+## See Also
+
+- [associatedtype Snapshot](documentwriter/snapshot.md)
+  The type representing the document’s content to write.
+- [associatedtype Destination = URL](documentwriter/destination.md)
+  The type of the destination location to write to.
 
 
 ---

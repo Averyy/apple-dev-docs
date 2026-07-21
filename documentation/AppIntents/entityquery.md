@@ -57,8 +57,8 @@ struct MyPhotoQuery: EntityQuery {
 ### Associated Types
 - [associatedtype Result = [Self.Entity]](entityquery/result.md)
 ### Instance Methods
-- [func displayRepresentations(for: [Self.Entity.ID], requestedComponents: DisplayRepresentation.Components) async throws -> [Self.Entity.ID : DisplayRepresentation]](entityquery/displayrepresentations(for:requestedcomponents:).md)
-  Returns a list of display representation values by identifier based on the requested components.
+- [func displayRepresentations(for: [Self.Entity.ID]) async throws -> [Self.Entity.ID : DisplayRepresentation]](entityquery/displayrepresentations(for:).md)
+  Returns display representations by identifier.
 ### Type Aliases
 - [EntityQuery.ExecutionTargets](entityquery/executiontargets.md)
 ### Type Properties

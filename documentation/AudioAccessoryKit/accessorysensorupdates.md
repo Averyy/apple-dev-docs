@@ -28,14 +28,8 @@ guard AccessorySensorUpdates.isSupported else { return }
 let updates = AccessorySensorUpdates(for: accessoryIdentifier)
 sensorTask = Task { [weak self] in
     do {
-        for try await update in updates {
-            switch update {
-            case .packet(let data):
-                self?.processSensorData(data)
-            case .malformedPacket:
-                // Non-terminal; stream continues with subsequent packets
-                break
-            }
+        for try await data in updates {
+            self?.processSensorData(data)
         }
     } catch AccessorySensorUpdates.StreamError.connectionLost {
         // Terminal; stream is over
@@ -53,8 +47,6 @@ sensorTask = Task { [weak self] in
   Returns `true` when the running OS version supports `AccessorySensorUpdates`.
 ### Enumerations
 - [AccessorySensorUpdates.StreamError](accessorysensorupdates/streamerror.md)
-- [AccessorySensorUpdates.Update](accessorysensorupdates/update.md)
-  A single update emitted by the stream.
 
 ## Relationships
 

@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: struct
 
+Delta update carrying only the adjacency fields that changed since the last frame.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -20,8 +22,11 @@ struct Update
 
 ### Instance Properties
 - [let vertexAdjacencies: [UInt32]?](usdplayer/deformationdata/renormalizationdata/update/vertexadjacencies.md)
+  Changed vertex adjacency data.
 - [let vertexAdjacencyEndIndices: [UInt32]?](usdplayer/deformationdata/renormalizationdata/update/vertexadjacencyendindices.md)
+  Changed vertex adjacency end indices.
 - [let vertexIndicesPerTriangle: [UInt32]?](usdplayer/deformationdata/renormalizationdata/update/vertexindicespertriangle.md)
+  Changed vertex indices per triangle.
 
 ## Relationships
 

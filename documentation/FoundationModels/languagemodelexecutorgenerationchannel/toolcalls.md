@@ -21,7 +21,7 @@ struct ToolCalls
 
 #### Overview
 
-Events for a specific tool call route through `Action/toolCall(_:)`. Use [`removeToolCall(_:)`](languagemodelexecutorgenerationchannel/toolcalls/action-swift.struct/removetoolcall(_:).md) to drop a tool call the model retracted.
+Events for a specific tool call route through `Action/toolCall(_:)`. Use [`removeToolCall(id:)`](languagemodelexecutorgenerationchannel/toolcalls/action-swift.struct/removetoolcall(id:).md) to drop a tool call the model retracted.
 
 ## Topics
 

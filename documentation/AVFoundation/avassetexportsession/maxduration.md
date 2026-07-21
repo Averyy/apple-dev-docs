@@ -18,11 +18,6 @@ Provides an estimate of the maximum duration of the exported media.
 var maxDuration: CMTime { get }
 ```
 
-## See Also
-
-- [func estimateMaximumDuration(completionHandler: (CMTime, (any Error)?) -> Void)](avassetexportsession/estimatemaximumduration(completionhandler:).md)
-  Starts estimating the maximum duration of the export while considering the asset, preset, and time range configuration of the export session.
-
 
 ---
 

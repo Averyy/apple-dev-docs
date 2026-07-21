@@ -30,7 +30,7 @@ In the *claims* payload of the token, include:
 
 A decoded developer token has the following format:
 
-```other
+```json
 {
      "alg": "ES256",
      "kid": "ABC123DEFG"
@@ -50,7 +50,7 @@ After you create the token, sign it with your private key using the ES256 algori
 
 If you manage request authorization directly, in all requests, pass the `Authorization: Bearer` header set to the developer token.
 
-```other
+```javascript
 curl -v -H 'Authorization: Bearer [developer token]' "https://api.ent.apple.com/v1/test"
 ```
 

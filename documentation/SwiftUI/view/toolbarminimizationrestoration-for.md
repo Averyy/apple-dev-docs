@@ -44,6 +44,19 @@ Currently, only [`navigationBar`](toolbarplacement/navigationbar.md) supports cu
 - `restoration`: The restoration behavior.
 - `bars`: The bars to apply the restoration behavior to.
 
+## See Also
+
+- [func toolbarMinimizationBehavior(ToolbarMinimizationBehavior, for: ToolbarPlacement...) -> some View](view/toolbarminimizationbehavior(_:for:).md)
+  Sets the minimize behavior for the specified bars.
+- [struct ToolbarMinimizationBehavior](toolbarminimizationbehavior.md)
+  The minimization behavior of a toolbar.
+- [struct ToolbarMinimizationRestoration](toolbarminimizationrestoration.md)
+  The restoration behavior during toolbar minimization.
+- [func toolbarMinimizationSafeAreaAdjustment(ToolbarMinimizationSafeAreaAdjustment, for: ToolbarPlacement...) -> some View](view/toolbarminimizationsafeareaadjustment(_:for:).md)
+  Sets the safe area adjustment for the specified bars during minimization.
+- [struct ToolbarMinimizationSafeAreaAdjustment](toolbarminimizationsafeareaadjustment.md)
+  The safe area adjustment during toolbar minimization.
+
 
 ---
 

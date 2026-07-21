@@ -39,9 +39,9 @@ This table shows the functionality available for each platform:
 | Large system widgets | Home Screen and Today View | Home Screen and Today View | No | Yes | Yes |
 | Extra large system widgets | No | Home Screen and Today View | No | Yes | Yes |
 | Extra large system widgets (portrait) | No | No | No | No | Yes |
-| Circular accessory widgets | Lock Screen | Lock Screen | Watch complications and Smart Stack | No | No |
+| Circular accessory widgets | Lock Screen | Lock Screen | Watch complications and Smart Stack | No | Yes |
 | Corner accessory widgets | No | No | Watch complications | No | No |
-| Rectangular accessory widgets | Lock Screen | Lock Screen | Watch complications and Smart Stack | No | No |
+| Rectangular accessory widgets | Lock Screen | Lock Screen | Watch complications and Smart Stack | No | Yes |
 | Inline accessory widgets | Lock Screen | Lock Screen | Watch complications | No | No |
 | Live Activities | Yes | Yes | From a paired iPhone | From a paired iPhone | No |
 | Controls | Yes | Yes | Yes | Yes | No |
@@ -70,6 +70,7 @@ Similarly, the [`WidgetFamily.accessoryRectangular`](widgetfamily/accessoryrecta
 
 - On the Lock Screen of iPhone and iPad, it takes on the [`vibrant`](widgetrenderingmode/vibrant.md) appearance.
 - On Apple Watch, it appears as a watch complication without a background and the [`accented`](widgetrenderingmode/accented.md) appearance and in a [`fullColor`](widgetrenderingmode/fullcolor.md) appearance in the Smart Stack.
+- On Apple Vision Pro, it takes on the [`fullColor`](widgetrenderingmode/fullcolor.md) appearance and the [`accented`](widgetrenderingmode/accented.md) appearance without a background when people apply a tint.
 
 With each feature you add to your app, make sure your widget, watch complication, or Live Activity supports all applicable contexts and appearances well. For more information, refer to [`Preparing widgets for additional platforms, contexts, and appearances`](preparing-widgets-for-additional-contexts-and-appearances.md). For design guidance, refer to [`Human Interface Guidelines > Widgets`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/components/system-experiences/widgets).
 
@@ -130,6 +131,8 @@ For additional information, refer to [`Accessing location information in widgets
   Learn about important changes in WidgetKit.
 - [Creating a widget extension](creating-a-widget-extension.md)
   Display your app’s content in a convenient, informative widget on various devices.
+- [Building Widgets Using WidgetKit and SwiftUI](building-widgets-using-widgetkit-and-swiftui.md)
+  Create widgets to show your app’s content on the Home screen, with custom intents for user-customizable settings.
 - [Emoji Rangers: Supporting Live Activities, interactivity, and animations](emoji-rangers-supporting-live-activities-interactivity-and-animations.md)
   Offer Live Activities, controls, animate data updates, and add interactivity to widgets.
 - [protocol WidgetBundle](../SwiftUI/WidgetBundle.md)

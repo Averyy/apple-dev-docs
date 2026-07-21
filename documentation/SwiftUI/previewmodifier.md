@@ -67,12 +67,6 @@ Use the `.modifier` preview trait to attach modifiers to a preview.
 
 - [macro Previewable()](previewable().md)
   Tag allowing a dynamic property to appear inline in a preview.
-- [protocol PreviewProvider](previewprovider.md)
-  A type that produces view previews in Xcode.
-- [enum PreviewPlatform](previewplatform.md)
-  Platforms that can run the preview.
-- [func previewDisplayName(String?) -> some View](view/previewdisplayname(_:).md)
-  Sets a user visible name to show in the canvas for a preview.
 - [struct PreviewModifierContent](previewmodifiercontent.md)
   The type-erased content of a preview.
 

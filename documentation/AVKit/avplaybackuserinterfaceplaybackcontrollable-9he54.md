@@ -46,6 +46,13 @@ protocol AVPlaybackUserInterfacePlaybackControllable : AnyObject, Observable
 ### Inherited By
 - [AVPlaybackUserInterfaceControllable](avplaybackuserinterfacecontrollable-92fri.md)
 
+## See Also
+
+- [enum AVPlaybackUserInterfacePlaybackState](avplaybackuserinterfaceplaybackstate.md)
+  Describes possible transport states of the playback source.
+- [struct AVPlaybackUserInterfaceSeekCapabilities](avplaybackuserinterfaceseekcapabilities.md)
+  Describes navigation capabilities of the media source.
+
 
 ---
 

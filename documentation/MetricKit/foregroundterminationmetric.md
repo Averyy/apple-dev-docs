@@ -25,8 +25,6 @@ Foreground exits are user-visible terminations; when unexpected, they directly i
 
 Use [`terminationCategory`](crashdiagnostic/terminationcategory-swift.property.md) to correlate individual crash diagnostics with these aggregate counts.
 
-This type replaces the `foregroundExitData` property of [`MXAppExitMetric`](mxappexitmetric.md).
-
 ## Topics
 
 ### Foreground termination counts

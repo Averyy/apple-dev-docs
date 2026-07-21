@@ -15,9 +15,18 @@ Unregisters a scene accessory with the specified registration.
 func unregisterSceneAccessory(_ registration: UISceneAccessoryRegistration)
 ```
 
+## Mentions
+
+- [Presenting content on a connected display](presenting-content-on-a-connected-display.md)
+
 #### Discussion
 
 If the scene accessory associated to this registration is currently being presented, it will be dismissed.
+
+## See Also
+
+- [func registerSceneAccessory(UISceneAccessory) -> UISceneAccessoryRegistration](uiviewcontroller/registersceneaccessory(_:).md)
+  Registers a new scene accessory configuration associated with this view controller.
 
 
 ---

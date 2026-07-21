@@ -39,7 +39,7 @@ Create a [`WKWebpagePreferences`](wkwebpagepreferences.md) object when you want 
 ### Instance Properties
 - [var allowsJSHandleCreationInPageWorld: Bool](wkwebpagepreferences/allowsjshandlecreationinpageworld.md)
 - [var alternateRequest: URLRequest?](wkwebpagepreferences/alternaterequest.md)
-- [var globalPrivacyControlEnabled: Bool](wkwebpagepreferences/globalprivacycontrolenabled.md)
+- [var globalPrivacyControlStatus: Bool](wkwebpagepreferences/globalprivacycontrolstatus.md)
 - [var overrideReferrer: String?](wkwebpagepreferences/overridereferrer.md)
 - [var preferredHTTPSNavigationPolicy: WKWebpagePreferences.UpgradeToHTTPSPolicy](wkwebpagepreferences/preferredhttpsnavigationpolicy.md)
 - [var securityRestrictionMode: WKSecurityRestrictionMode](wkwebpagepreferences/securityrestrictionmode.md)

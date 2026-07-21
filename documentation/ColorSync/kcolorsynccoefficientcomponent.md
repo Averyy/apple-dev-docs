@@ -3,6 +3,8 @@
 **Framework**: ColorSync  
 **Kind**: var
 
+Weight for the ‘component’ term in the free-style component mixing sum.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -17,6 +19,21 @@
 ```swift
 var kColorSyncCoefficientComponent: Unmanaged<CFString>
 ```
+
+## See Also
+
+- [var kColorSyncCoefficientBlue: Unmanaged<CFString>](kcolorsynccoefficientblue.md)
+  Weight for the blue channel in the free-style component mixing sum.
+- [var kColorSyncCoefficientGreen: Unmanaged<CFString>](kcolorsynccoefficientgreen.md)
+  Weight for the green channel in the free-style component mixing sum.
+- [var kColorSyncCoefficientMaxRGB: Unmanaged<CFString>](kcolorsynccoefficientmaxrgb.md)
+  Weight for the MAX(R,G,B) term in the free-style component mixing sum.
+- [var kColorSyncCoefficientMinRGB: Unmanaged<CFString>](kcolorsynccoefficientminrgb.md)
+  Weight for the MIN(R,G,B) term in the free-style component mixing sum.
+- [var kColorSyncCoefficientRed: Unmanaged<CFString>](kcolorsynccoefficientred.md)
+  Weight for the red channel in the free-style component mixing sum.
+- [var kColorSyncComponentCoefficients: Unmanaged<CFString>](kcolorsynccomponentcoefficients.md)
+  Sub-dictionary of custom linear-combination coefficients for free-style component mixing (component mixing type == 3).
 
 
 ---

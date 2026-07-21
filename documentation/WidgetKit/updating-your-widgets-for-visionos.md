@@ -51,6 +51,8 @@ struct WeatherWidget: Widget {
 
 By default, widgets in visionOS appear under a glass texture. For widgets that your visionOS app offers, choose between the default glass texture or an alternative paper texture that gives the widget a poster-like look. To specify your widget’s texture, use the [`widgetTexture(_:)`](https://developer.apple.com/documentation/SwiftUI/WidgetConfiguration/widgetTexture(_:)) view modifier and choose between [`glass`](widgettexture/glass.md) and [`paper`](widgettexture/paper.md).
 
+> **Note**: With the glass texture, blend modes on your widget’s views don’t interact with the container background. If your widget relies on this, use the paper texture instead.
+
 Especially if your widgets uses a poster-like look, consider offering a [`WidgetFamily.systemExtraLargePortrait`](widgetfamily/systemextralargeportrait.md) or [`WidgetFamily.systemExtraLarge`](widgetfamily/systemextralarge.md) widget by including it in the array of [`supportedFamilies(_:)`](https://developer.apple.com/documentation/SwiftUI/WidgetConfiguration/supportedFamilies(_:)) as shown in the following example:
 
 ```swift

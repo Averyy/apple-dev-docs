@@ -18,6 +18,11 @@
 var kColorSyncDoNotSubstituteProfiles: Unmanaged<CFString>!
 ```
 
+## See Also
+
+- [var kColorSyncCustomProfiles: Unmanaged<CFString>!](kcolorsynccustomprofiles.md)
+- [var kColorSyncFactoryProfiles: Unmanaged<CFString>!](kcolorsyncfactoryprofiles.md)
+
 
 ---
 

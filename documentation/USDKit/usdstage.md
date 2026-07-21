@@ -101,6 +101,9 @@ struct USDStage
   Exports the stage as a flattened USD file.
 - [USDStage.ExportOptions](usdstage/exportoptions.md)
   Options for packaging a stage into a USDZ file.
+### Instance Methods
+- [func exportPackage(options: USDStage.ExportOptions) throws -> Data](usdstage/exportpackage(options:).md)
+  Packages the stage into a USDZ archive and returns it as in-memory data.
 
 ## Relationships
 

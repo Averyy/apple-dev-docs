@@ -39,6 +39,13 @@ NewDocumentButton(
 - `source`: A source for the document creation flow. When a document is created, you can retrieve its source from [`FileDocumentConfiguration`](filedocumentconfiguration.md) or [`URLDocumentConfiguration`](urldocumentconfiguration.md).
 - `prepareDocumentURL`: Called when the user taps the button. Present a template picker or other UI, then return the URL of the prepared document, `nil` to request an empty document, or throw on cancellation.
 
+## See Also
+
+- [init(_:contentType:source:)](newdocumentbutton/init(_:contenttype:source:).md)
+  Creates and opens new documents, tagging them with a creation source.
+- [init(_:contentType:source:prepareDocumentURL:)](newdocumentbutton/init(_:contenttype:source:preparedocumenturl:).md)
+  Creates and opens new URL-based documents from a template picker.
+
 
 ---
 

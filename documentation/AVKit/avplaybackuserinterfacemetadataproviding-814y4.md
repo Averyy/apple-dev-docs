@@ -30,6 +30,15 @@ protocol AVPlaybackUserInterfaceMetadataProviding : AnyObject, Observable
 ### Inherited By
 - [AVPlaybackUserInterfaceControllable](avplaybackuserinterfacecontrollable-92fri.md)
 
+## See Also
+
+- [struct AVPlaybackUserInterfaceContentMetadata](avplaybackuserinterfacecontentmetadata-swift.struct.md)
+  A Swift-friendly structure representing media metadata.
+- [class AVPlaybackUserInterfaceContentArtwork](avplaybackuserinterfacecontentartwork.md)
+  Base class representing artwork or cover art for media content.
+- [class AVPlaybackUserInterfaceContentURLArtwork](avplaybackuserinterfacecontenturlartwork.md)
+  An artwork subclass that references artwork via a URL and content type.
+
 
 ---
 

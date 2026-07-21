@@ -36,8 +36,6 @@ for bucket in histogram.buckets {
 }
 ```
 
-This type replaces [`MXHistogram`](mxhistogram.md).
-
 ## Topics
 
 ### Buckets

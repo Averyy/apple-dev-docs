@@ -19,8 +19,6 @@ struct TotalBackgroundAudioTimeMetric
 
 This metric corresponds to the [`MetricResult.totalBackgroundAudioTime(_:)`](metricresult/totalbackgroundaudiotime(_:).md) case. It appears in both [`intervalEntries`](metricreport/intervalentries.md) and [`stateEntries`](metricreport/stateentries.md) when state reporting is enabled.
 
-This type replaces the `cumulativeBackgroundAudioTime` property of [`MXAppRunTimeMetric`](mxappruntimemetric.md).
-
 ## Topics
 
 ### Measurements

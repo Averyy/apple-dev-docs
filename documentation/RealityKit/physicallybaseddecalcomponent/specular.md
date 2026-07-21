@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: property
 
-An optional specular  texture for the decal
+An optional specular texture for the decal.
 
 **Availability**:
 - iOS 27.0+ (Beta)

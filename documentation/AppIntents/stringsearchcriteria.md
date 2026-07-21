@@ -3,7 +3,7 @@
 **Framework**: App Intents  
 **Kind**: struct
 
-A structure that represents a string-based search request.
+A type that tells your app to match its items against a provided string.
 
 **Availability**:
 - iOS 17.2+
@@ -20,13 +20,18 @@ A structure that represents a string-based search request.
 struct StringSearchCriteria
 ```
 
+#### Overview
+
+Use this type in app intents that match your app’s content against a string-based value. When you define an app intent using the [`search`](appschema/systemintent/search.md) schema or the [`ShowInAppSearchResultsIntent`](showinappsearchresultsintent.md) protocol, apply this type to the [`criteria`](showinappsearchresultsintent/criteria-swift.property.md) property. When your app intent runs, the system sets that property to an instance of this structure and fills it with the search term. When you use this type in your app intent, use the accompanying [`StringSearchScope`](stringsearchscope.md) type for the [`searchScopes`](showinappsearchresultsintent/searchscopes.md) property.
+
 ## Topics
 
 ### Initializers
 - [init(term: String)](stringsearchcriteria/init(term:).md)
+  Initializes the type with the specified search term.
 ### Instance Properties
 - [var term: String](stringsearchcriteria/term.md)
-  The full search term given by the user.
+  The string to use when matching items in your app.
 ### Type Aliases
 - [StringSearchCriteria.Specification](stringsearchcriteria/specification.md)
 - [StringSearchCriteria.UnwrappedType](stringsearchcriteria/unwrappedtype.md)
@@ -50,7 +55,9 @@ struct StringSearchCriteria
 ## See Also
 
 - [var criteria: Self.Criteria](showinappsearchresultsintent/criteria-swift.property.md)
+  The information to use when performing the search.
 - [protocol SearchCriteria](searchcriteria.md)
+  An interface for defining the criteria to use when searching your app’s content.
 - [associatedtype Criteria : SearchCriteria](showinappsearchresultsintent/criteria-swift.associatedtype.md)
 
 

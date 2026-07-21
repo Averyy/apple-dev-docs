@@ -23,6 +23,7 @@ enum SFSafariServicesVersion
 - [SFSafariServicesVersion.version12_0](sfsafariservicesversion/version12_0.md)
 - [SFSafariServicesVersion.version12_1](sfsafariservicesversion/version12_1.md)
 - [SFSafariServicesVersion.version13_0](sfsafariservicesversion/version13_0.md)
+- [SFSafariServicesVersion.version27_0](sfsafariservicesversion/version27_0.md)
 ### Initializers
 - [init?(rawValue: Int)](sfsafariservicesversion/init(rawvalue:).md)
 

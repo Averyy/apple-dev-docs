@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: property
 
+Material IDs bound to each mesh part, in order.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)

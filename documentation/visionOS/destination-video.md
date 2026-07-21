@@ -244,8 +244,8 @@ In visionOS, Destination Video provides a custom environment, called Studio.
 To optimize the viewing experience in the Studio environment, this sample implements the following:
 
 - **[`DockingRegionComponent`](https://developer.apple.com/documentation/RealityKit/DockingRegionComponent)**: Customizes the docking location for the video player in a custom environment.
-- **doc**: //com.apple.documentation/documentation/ShaderGraph/RealityKit/Reflection-Specular-(RealityKit): Enhances the reflections of the video content on glossy surfaces in the surrounding environment.
-- **doc**: //com.apple.documentation/documentation/ShaderGraph/RealityKit/Reflection-Diffuse-(RealityKit): Enhances the reflections of the video content on organic surfaces in the surrounding environment.
+- **[`Reflection Specular (RealityKit)`](https://developer.apple.com/documentation/ShaderGraph/realitykit/Reflection-Specular-(RealityKit))**: Enhances the reflections of the video content on glossy surfaces in the surrounding environment.
+- **[`Reflection Diffuse (RealityKit)`](https://developer.apple.com/documentation/ShaderGraph/realitykit/Reflection-Diffuse-(RealityKit))**: Enhances the reflections of the video content on organic surfaces in the surrounding environment.
 - **[`VirtualEnvironmentProbeComponent`](https://developer.apple.com/documentation/RealityKit/VirtualEnvironmentProbeComponent)**: Configures the virtual scene lighting.
 - **[`ReverbComponent`](https://developer.apple.com/documentation/RealityKit/ReverbComponent)**: Applies reverb for enhanced audio immersion.
 

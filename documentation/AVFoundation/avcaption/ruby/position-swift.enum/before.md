@@ -3,6 +3,8 @@
 **Framework**: AVFoundation  
 **Kind**: case
 
+Display ruby text above horizontal text, or to the right of vertical text in a right-to-left block progression.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -18,6 +20,7 @@ case before
 ## See Also
 
 - [AVCaption.Ruby.Position.after](avcaption/ruby/position-swift.enum/after.md)
+  Display ruby text below horizontal text, or to the left of vertical text in a right-to-left block progression.
 
 
 ---

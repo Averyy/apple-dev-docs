@@ -15,7 +15,7 @@ Items partitioned by an attribute value (e.g. content type).
 ## Declaration
 
 ```swift
-case groupedItems([SearchableItemAttribute : [CSSearchableItem]])
+case groupedItems([SearchableItemAttribute : [SearchableItem]])
 ```
 
 

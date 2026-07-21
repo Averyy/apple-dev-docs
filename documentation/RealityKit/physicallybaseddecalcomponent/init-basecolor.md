@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: init
 
-Creates a new instance with PhysicallBasedMaterial.BaseColor The tint color is multiplied with the baseColor If base color is not specified, the tint color is applied as a solid color
+Creates a new instance with [`PhysicallyBasedMaterial.BaseColor`](physicallybasedmaterial/basecolor-swift.struct.md). The tint color is multiplied with the baseColor. If base color texture is not specified, the tint color is applied as a solid color.
 
 **Availability**:
 - iOS 27.0+ (Beta)

@@ -43,6 +43,11 @@ This method throws NSInvalidArgumentException if minimumSegmentDuration is not n
 - `minimumSegmentDuration`: The client selected minimum duration for the segments.
 - `minimumSegmentFrameCount`: The minimum number of source frames in a segment.
 
+## See Also
+
+- [static func segmentBoundaryGuidelinesForVideo(codecType: AVVideoCodecType, encoderSpecification: [String : any Sendable]) -> AVAssetWritingPlanner.SegmentBoundaryGuidelines](avassetwritingplanner/segmentboundaryguidelinesforvideo(codectype:encoderspecification:).md)
+  Returns segment boundary guidelines that help clients determine how to segment compression video tracks with best results.
+
 
 ---
 

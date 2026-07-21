@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: init
 
-Creates a directional light shadow with the specified layers.
+Creates a directional light shadow that accepts shadow casters from the specified layers.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -21,7 +21,7 @@ init(layers: RenderLayer.Set? = nil)
 
 ## Parameters
 
-- `layers`: The layers from which this light accepts shadow casters. If nil, uses layers for shadow casting.
+- `layers`: The layers of entities that cast shadows from this light. Pass `nil` (the default) to inherit [`layers`](directionallightcomponent/layers.md), or an empty set to disable shadow casting entirely.
 
 ## See Also
 

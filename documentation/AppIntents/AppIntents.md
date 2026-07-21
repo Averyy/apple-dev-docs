@@ -92,4 +92,4 @@ For design guidance on how to implement features that involve [`Widgets`](https:
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appintents)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppIntents)*

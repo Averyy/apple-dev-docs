@@ -20,7 +20,7 @@ func openFile(_ fullPath: String, withApplication appName: String?, andDeactivat
 
 #### Discussion
 
-The  `appName` parameter need not be specified with a full path and, in the case of an app wrapper, may be specified with or without the `.app` extension, as described in [`Use of .app Extension`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Workspace/Articles/AppExtensions.html#//apple_ref/doc/uid/20001003). If `appName` is `nil`, the default app for the file’s type is used.
+The `appName` parameter need not be specified with a full path and, in the case of an app wrapper, may be specified with or without the `.app` extension. If `appName` is `nil`, the default app for the file’s type is used.
 
 It is safe to call this method from any thread in your app in macOS 10.6 and later.
 

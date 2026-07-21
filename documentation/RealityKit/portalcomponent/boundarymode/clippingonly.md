@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: case
 
-Portal content is clipped to the boundary. Entities do not cross.
+The portal clips its content to the boundary.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -18,6 +18,10 @@ Portal content is clipped to the boundary. Entities do not cross.
 ```swift
 case clippingOnly
 ```
+
+#### Discussion
+
+Entities with [`PortalCrossingComponent`](portalcrossingcomponent.md) don’t cross the portal.
 
 
 ---

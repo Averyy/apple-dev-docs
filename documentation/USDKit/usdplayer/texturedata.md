@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: struct
 
+Texture data from a texture asset referenced by a material prim.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -20,10 +22,15 @@ struct TextureData
 
 ### Instance Properties
 - [let assetPath: String](usdplayer/texturedata/assetpath.md)
+  Asset-relative path to the source texture file.
 - [let data: Data](usdplayer/texturedata/data.md)
+  Packed texture data.
 - [let descriptor: LowLevelTexture.Descriptor](usdplayer/texturedata/descriptor.md)
+  Texture dimensions, pixel format, and type.
 - [let id: USDPlayer.TextureID](usdplayer/texturedata/id.md)
+  Unique identifier for this texture resource.
 - [let layout: [USDPlayer.TextureLevelInfo]](usdplayer/texturedata/layout.md)
+  Per-mip-level byte-layout descriptors.
 
 ## Relationships
 

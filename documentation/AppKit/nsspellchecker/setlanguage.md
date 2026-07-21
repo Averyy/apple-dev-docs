@@ -40,7 +40,7 @@ NSSpellChecker* spell_checker = [NSSpellChecker sharedSpellChecker];
 [spell_checker setLanguage:@"German"];
 ```
 
-To learn about the strings you can use to specify a language in `language`, see Language and Locale Designations in [`Internationalization and Localization Guide`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPInternational/Introduction/Introduction.html#//apple_ref/doc/uid/10000171i).
+For information about the strings you can use to specify a language, see [`NSLocale`](https://developer.apple.com/documentation/Foundation/NSLocale).
 
 ## Parameters
 

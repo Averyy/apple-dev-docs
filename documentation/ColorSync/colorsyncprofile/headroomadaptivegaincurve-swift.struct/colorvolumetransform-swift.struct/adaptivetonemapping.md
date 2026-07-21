@@ -3,7 +3,7 @@
 **Framework**: ColorSync  
 **Kind**: property
 
-Whether Adaptive Tone Mapping is used
+The adaptive tone mapping to apply, if any.
 
 **Availability**:
 - iOS 27.0+ (Beta)

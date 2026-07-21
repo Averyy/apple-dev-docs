@@ -90,9 +90,9 @@ protocol MTLFXFrameInterpolatorBase : NSObjectProtocol
 - [var outputHeight: Int](mtlfxframeinterpolatorbase/outputheight.md)
   The height, in pixels, of the output color texture for the frame interpolator.
 - [var outputOffsetX: Int](mtlfxframeinterpolatorbase/outputoffsetx.md)
-  The horizontal offset, in pixels, of the region within the output texture to write results.
+  The horizontal offset, in pixels, of the region within the output texture to write results. For regions outside the contents of the colorTexture are copied.
 - [var outputOffsetY: Int](mtlfxframeinterpolatorbase/outputoffsety.md)
-  The vertical offset, in pixels, of the region within the output texture to write results.
+  The vertical offset, in pixels, of the region within the output texture to write results. . For regions outside the contents of the colorTexture are copied.
 - [var outputTexture: (any MTLTexture)?](mtlfxframeinterpolatorbase/outputtexture.md)
   The output texture into which this frame interpolator writes its output.
 - [var outputTextureFormat: MTLPixelFormat](mtlfxframeinterpolatorbase/outputtextureformat.md)

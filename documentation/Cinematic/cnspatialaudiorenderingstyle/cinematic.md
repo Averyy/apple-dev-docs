@@ -3,7 +3,7 @@
 **Framework**: Cinematic  
 **Kind**: case
 
-Isolates the ambience and place it in a spatial stem. Isolates all voices and place them in a mono stem.
+Isolates background and foreground sounds and places them in separate stems.
 
 **Availability**:
 - iOS 26.0+

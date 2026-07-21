@@ -21,10 +21,6 @@ var supportedFileTypes: [AVFileType] { get }
 
 ## See Also
 
-- [var outputURL: URL?](avassetexportsession/outputurl.md)
-  A URL where an asset export session writes its output.
-- [var outputFileType: AVFileType?](avassetexportsession/outputfiletype.md)
-  The file type of the output an asset export session writes.
 - [var allowsParallelizedExport: Bool](avassetexportsession/allowsparallelizedexport.md)
   A Boolean value that indicates whether the session can parallelize its export operation.
 - [var shouldOptimizeForNetworkUse: Bool](avassetexportsession/shouldoptimizefornetworkuse.md)

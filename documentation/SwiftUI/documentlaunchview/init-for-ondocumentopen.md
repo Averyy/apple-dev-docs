@@ -27,6 +27,23 @@ nonisolated init(_ title: LocalizedStringResource, for contentTypes: [UTType], @
 - `actions`: A content builder returning the view’s actions
 - `onDocumentOpen`: A closure that handles an open file.
 
+## See Also
+
+- [init(_:for:_:onDocumentOpen:background:)](documentlaunchview/init(_:for:_:ondocumentopen:background:).md)
+  Creates a view to present when launching document-related user experiences using a localized title, custom actions, and a background view.
+- [init(_:for:_:onDocumentOpen:background:backgroundAccessoryView:)](documentlaunchview/init(_:for:_:ondocumentopen:background:backgroundaccessoryview:).md)
+  Creates a view to present when launching document-related user experiences using a localized title, custom actions, a background view, and a background accessory view.
+- [init(_:for:_:onDocumentOpen:background:backgroundAccessoryView:overlayAccessoryView:)](documentlaunchview/init(_:for:_:ondocumentopen:background:backgroundaccessoryview:overlayaccessoryview:).md)
+  Creates a view to present when launching document-related user experiences using a localized title, custom actions, a background view, and accessory views.
+- [init(_:for:_:onDocumentOpen:background:overlayAccessoryView:)](documentlaunchview/init(_:for:_:ondocumentopen:background:overlayaccessoryview:).md)
+  Creates a view to present when launching document-related user experiences using a localized title, custom actions, a background view, and an overlay accessory view.
+- [init(_:for:_:onDocumentOpen:backgroundAccessoryView:)](documentlaunchview/init(_:for:_:ondocumentopen:backgroundaccessoryview:).md)
+  Creates a view to present when launching document-related user experiences using a localized title, custom actions, and a background accessory view.
+- [init(_:for:_:onDocumentOpen:backgroundAccessoryView:overlayAccessoryView:)](documentlaunchview/init(_:for:_:ondocumentopen:backgroundaccessoryview:overlayaccessoryview:).md)
+  Creates a view to present when launching document-related user experiences using a localized title, custom actions, and accessory views.
+- [init(_:for:_:onDocumentOpen:overlayAccessoryView:)](documentlaunchview/init(_:for:_:ondocumentopen:overlayaccessoryview:).md)
+  Creates a view to present when launching document-related user experiences using a localized title, custom actions, and an overlay accessory view.
+
 
 ---
 

@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: method
 
-Creates a complete portal with new entities.
+Creates a portal entity and a world entity, and configures them.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -21,17 +21,30 @@ static func makePortal(surfaceStyle: PortalComponent.SurfaceStyle, boundaryStyle
 
 #### Return Value
 
-A [`PortalComponent.Portal`](portalcomponent/portal.md) containing both configured entities
+A [`PortalComponent.Portal`](portalcomponent/portal.md) containing the new portal entity and world entity.
 
 #### Discussion
 
-Creates both a portal entity and a world entity, then configures them. Use this when you don’t have pre-existing entities to configure.
+This is the simplest way to set up a portal. The returned [`PortalComponent.Portal`](portalcomponent/portal.md) value contains a fresh portal entity and a fresh world entity that you add to your scene. To add portal world content, parent it under the returned `worldEntity`.
+
+```swift
+let portal = PortalComponent.makePortal(
+    surfaceStyle: .init(width: 0.5, height: 0.5),
+    boundaryStyle: .infinitePlane(),
+    boundaryMode: .clippingAndCrossing
+)
+
+content.add(portal.worldEntity)
+content.add(portal.portalEntity)
+```
+
+To configure entities you already own — for example, a portal entity that has gesture components, or a world entity that’s already in your scene hierarchy — use [`configure(world:portalEntity:surfaceStyle:boundaryStyle:boundaryMode:)`](portalcomponent/configure(world:portalentity:surfacestyle:boundarystyle:boundarymode:).md) instead.
 
 ## Parameters
 
-- `surfaceStyle`: The size of the portal mesh
-- `boundaryStyle`: The clipping and crossing boundary shape (default: `.infinitePlane()`)
-- `boundaryMode`: Whether to enable clipping, crossing, both, or neither (default: `.disabled`)
+- `surfaceStyle`: The size of the portal surface mesh.
+- `boundaryStyle`: The shape of the clipping and crossing boundary. Defaults to [`infinitePlane()`](portalcomponent/boundarystyle/infiniteplane().md).
+- `boundaryMode`: The combination of clipping and crossing behaviors to enable. Defaults to [`PortalComponent.BoundaryMode.disabled`](portalcomponent/boundarymode/disabled.md).
 
 
 ---

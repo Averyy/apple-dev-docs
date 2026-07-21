@@ -16,7 +16,7 @@ Language models that provide other kinds of usage statistics may encode them in 
 ## Declaration
 
 ```swift
-var metadata: [String : any Sendable & Codable & Equatable]
+var metadata: [String : any Sendable]
 ```
 
 ## See Also

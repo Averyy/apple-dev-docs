@@ -3,7 +3,7 @@
 **Framework**: ColorSync  
 **Kind**: case
 
-Reference White -Based Tone Mapping.
+Maps content above reference white using the Reference-White-Based Tone Mapping method.
 
 **Availability**:
 - iOS 27.0+ (Beta)

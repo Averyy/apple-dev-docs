@@ -14,6 +14,10 @@ An error code.
 object ResponseErrorCode
 ```
 
+## Mentions
+
+- [Handling error responses](handling-error-responses.md)
+
 ## Properties
 
 - `errorMessage` (string): The human-readable explanation of an error.

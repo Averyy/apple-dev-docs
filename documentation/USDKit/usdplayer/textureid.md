@@ -3,7 +3,7 @@
 **Framework**: USDKit  
 **Kind**: struct
 
-Texture resource identifier
+Texture resource identifier.
 
 **Availability**:
 - iOS 27.0+ (Beta)

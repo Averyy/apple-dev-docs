@@ -10,7 +10,7 @@ Apple services operate in many countries, regions, and languages. Content varies
 
 Each storefront has a default language and may support one or more additional languages. For example, the United States storefront includes American English as the default language, but also includes Mexican Spanish as an additional supported language. Apple services automatically localize responses using the storefront’s default language, but you can localize to a different language using the `l query` parameter. The value of that parameter needs to be one of the values in the `supportedLanguageTags` attribute of the storefront object. For example, the following request asks the U.S. storefront to return an album in the Mexican Spanish (`es-MX`) localization:
 
-```other
+```html
 GET https://api.ent.apple.com/v1/catalog/us/stoken-authenticated-apps?ids=2001350931&platform=iphone&l=es-MX
 ```
 

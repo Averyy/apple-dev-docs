@@ -12,6 +12,10 @@ Read images from video, export to alternative formats, and perform sample-level 
 - [class AVAssetExportSession](avassetexportsession.md)
   An object that exports assets in a format that you specify using an export preset.
 ### Planned export
+- [class AVAssetWritingPlanner](avassetwritingplanner.md)
+  AVAssetWritingPlanner orchestrates incremental writing of media files.
+- [class AVAssetWritingPlannerProgress](avassetwritingplannerprogress.md)
+  AVAssetWritingPlannerProgress tracks the progress of incremental writing for each track in an AVAssetWritingPlanner session.
 - [class AVAssetTrackPlan](avassettrackplan.md)
   AVAssetTrackPlan holds information about a track and how it should be segmented and executed in an incremental writing session.
 - [class AVAssetVideoTrackPlan](avassetvideotrackplan.md)

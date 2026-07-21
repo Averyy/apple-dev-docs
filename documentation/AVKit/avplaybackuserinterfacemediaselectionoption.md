@@ -53,6 +53,11 @@ This class represents individual media options (such as audio tracks or subtitle
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 
+## See Also
+
+- [protocol AVPlaybackUserInterfaceMediaSelectionControllable](avplaybackuserinterfacemediaselectioncontrollable-8ee5z.md)
+  Provides audio and subtitle selection capabilities for media content.
+
 
 ---
 

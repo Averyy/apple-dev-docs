@@ -3,6 +3,8 @@
 **Framework**: ColorSync  
 **Kind**: case
 
+The number of alternate curves exceeds the limit.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)

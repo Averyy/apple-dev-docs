@@ -31,14 +31,8 @@ An asynchronous sequence of states.
 
 - [AVAssetExportSession.State](avassetexportsession/state.md)
   Constants that indicate the state of an export operation.
-- [var status: AVAssetExportSession.Status](avassetexportsession/status-swift.property.md)
-  The status of the export session.
 - [AVAssetExportSession.Status](avassetexportsession/status-swift.enum.md)
   Values that indicate the state of an export session.
-- [var progress: Float](avassetexportsession/progress.md)
-  A value that indicates the progress of the export.
-- [var error: (any Error)?](avassetexportsession/error.md)
-  An optional error object.
 
 
 ---

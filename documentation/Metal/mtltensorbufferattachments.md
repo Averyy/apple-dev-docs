@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: class
 
-Per-plane buffer backing storage for multi-plane tensor creation.
+An object that associates each plane of a tensor with a buffer and byte offset for buffer-backed tensor creation.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -18,10 +18,6 @@ Per-plane buffer backing storage for multi-plane tensor creation.
 ```swift
 class MTLTensorBufferAttachments
 ```
-
-#### Overview
-
-Use this type to associate each plane of a tensor with a [`MTLBuffer`](mtlbuffer.md) and byte offset, then pass it to the tensor creation API on [`MTLDevice`](mtldevice.md).
 
 ## Topics
 

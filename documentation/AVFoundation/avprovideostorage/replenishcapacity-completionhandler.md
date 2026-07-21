@@ -28,6 +28,13 @@ Pro Video Storage is busy when the replenish operation starts and is no longer b
 
 - `completionHandler`:  The completion handler is called on an arbitrary dispatch queue when the replenish operation finishes. The `remainingCapacity` parameter reflects the new size in bytes, which may be less than [`initialCapacity`](avprovideostorage/initialcapacity.md). If the operation fails, the `error` parameter is set and `remainingCapacity` is unchanged or -1 if there was a failure retrieving the value.
 
+## See Also
+
+- [var initialCapacity: Int](avprovideostorage/initialcapacity.md)
+  Initial size of Pro Video Storage in bytes.
+- [var remainingCapacity: Int](avprovideostorage/remainingcapacity.md)
+  Current size of Pro Video Storage in bytes.
+
 
 ---
 

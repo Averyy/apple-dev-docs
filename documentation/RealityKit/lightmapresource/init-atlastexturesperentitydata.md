@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: init
 
-Initializes the resource with the given atlases and entity descriptors. The resources within `atlasTextures` must be 2D texture arrays. Textures containing data for ambient occlusion should be single-channel textures. Textures containing data for beauty bakes should contain RGBA color. Textures for diffuse irradiance should contain RGBA data. There should be 3 slices per atlas page. Each of the 3 slices contains data red, green and blue channels of irradiance respectively. Each texel within a slice contains coefficients for spherical harmonic functions of 0th and 1st degree, with the R channel providing the coefficient for 0th degree spherical harmonic, and G, B and A channels providing coefficients for the 1st degree spherical harmonics (with orders -1, 0 and 1 respectively).
+Initializes the resource with the given atlases and entity descriptors. The resources within `atlasTextures` must be 2D texture arrays. Textures containing data for ambient occlusion should be single-channel textures. Textures containing data for beauty bakes should contain RGBA color. Textures for diffuse irradiance should contain RGBA data. There should be 3 slices per atlas page. Assuming a = sqrt(2), b = sqrt(3), c = sqrt(6), and N0 = (1/c, 1/a, 1/b), N1=(-1/c, -1/a, 1/b), N2 = (a/b, 0, 1/b), the first, second and third slices should contain lighting as if the surface normal was respectively N0, N1 and N2 in tangent space.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -18,14 +18,6 @@ Initializes the resource with the given atlases and entity descriptors. The reso
 ```swift
 convenience init(atlasTextures: [TextureResource], perEntityData: [LightmapResource.EntityLightmapDescriptor]) throws
 ```
-
-## See Also
-
-- [convenience init(perEntityData: [LightmapResource.EntityLightmapDescriptor]) throws](lightmapresource/init(perentitydata:).md)
-- [LightmapResource.EntityLightmapDescriptor](lightmapresource/entitylightmapdescriptor.md)
-  Specifies a MeshPartLightmapDescriptor for each part of the entity’s model.
-- [LightmapResource.MeshPartLightmapDescriptor](lightmapresource/meshpartlightmapdescriptor.md)
-  Specifies bake descriptors for each instance of the given mesh part.
 
 
 ---

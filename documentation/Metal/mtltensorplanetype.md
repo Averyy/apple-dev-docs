@@ -23,9 +23,9 @@ enum MTLTensorPlaneType
 
 ### Enumeration Cases
 - [MTLTensorPlaneType.data](mtltensorplanetype/data.md)
-  The data plane. This is the main plane of a tensor. Tensors always have a data plane.
+  The main data plane, which every tensor has
 - [MTLTensorPlaneType.scales](mtltensorplanetype/scales.md)
-  The scale auxiliary plane. Contains scale factors for elements in the data plane.
+  The auxiliary plane that stores scale factors for elements in the data plane.
 ### Initializers
 - [init?(rawValue: Int)](mtltensorplanetype/init(rawvalue:).md)
 

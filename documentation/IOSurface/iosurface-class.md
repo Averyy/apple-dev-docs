@@ -1,6 +1,6 @@
 # IOSurface
 
-**Framework**: Iosurface  
+**Framework**: IOSurface  
 **Kind**: class
 
 Data type representing an IOSurface opaque object.

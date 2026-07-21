@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: property
 
-The light size that determines the softness of the shadows Larger size would mean a larger penumbra and a larger transition range from fully shadowed to lit. It is the radius of the light in world space units. It is also modulated by the attenaution radius, i.e., lights with larger attenuation radius need larger light size.
+The radius of the spotlight’s emitting surface, in meters.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -19,12 +19,18 @@ The light size that determines the softness of the shadows Larger size would mea
 var lightSize: Float { get set }
 ```
 
+#### Discussion
+
+Larger values widen the penumbra and lengthen the transition between fully-shadowed and fully-lit regions, approximating the way an area light of that radius would shade a scene. The default value is `0.1`.
+
+This property has no effect when [`quality`](spotlightcomponent/shadow/quality.md) is [`low`](spotlightcomponent/shadow/qualitymode/low.md), which always produces a hard-edged shadow.
+
 ## See Also
 
 - [var quality: SpotLightComponent.Shadow.QualityMode](spotlightcomponent/shadow/quality.md)
-  The quality of the soft shadows this light casts.
+  The shadow-filtering algorithm this light uses.
 - [SpotLightComponent.Shadow.QualityMode](spotlightcomponent/shadow/qualitymode.md)
-  The quality for the shadows. Low uses shadows that don’t change with light size and the distance between light-blocker-receiver Medium and high allow soft shadows with varying sample counts
+  Constants that select the shadow-filtering algorithm a spotlight uses.
 
 
 ---

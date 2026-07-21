@@ -29,11 +29,6 @@ struct FinalShadedColorBakeMaterial
 ### Conforms To
 - [Material](material.md)
 
-## See Also
-
-- [LightmapComponent.SurfaceExtractor](lightmapcomponent/surfaceextractor.md)
-  This is a helper for extracting certain surface properties from entities within a lightmapped scene and rendering them out into the atlas defined by the light map.
-
 
 ---
 

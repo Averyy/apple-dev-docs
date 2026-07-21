@@ -38,6 +38,8 @@ struct DisplayRepresentation
   Components of the `DisplayRepresentation`.
 ### Initializers
 - [init(title: LocalizedStringResource, subtitle: LocalizedStringResource?, image: DisplayRepresentation.Image?, synonyms: [LocalizedStringResource])](displayrepresentation/init(title:subtitle:image:synonyms:).md)
+- [init(title: LocalizedStringResource, subtitle: LocalizedStringResource?, synonyms: [LocalizedStringResource], image: () async throws -> DisplayRepresentation.Image?)](displayrepresentation/init(title:subtitle:synonyms:image:).md)
+  Creates a display representation whose image is produced lazily by the given closure.
 ### Instance Properties
 - [var synonyms: [LocalizedStringResource]](displayrepresentation/synonyms.md)
   A list of localized phrases that are synonyms of this particular display representation

@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: case
 
-The data plane. This is the main plane of a tensor. Tensors always have a data plane.
+The main data plane, which every tensor has
 
 **Availability**:
 - iOS 27.0+ (Beta)

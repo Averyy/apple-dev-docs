@@ -211,7 +211,7 @@ For more details about adding links from your widgets to your app, refer to [`Li
 
 ##### Preview Widgets in Xcode
 
-Xcode allows you to look at previews of your widgets without running your app in Simulator or on a test device. The following example shows the preview code from the Emoji Rangers widget of the [`Building Widgets Using WidgetKit and SwiftUI`](building_widgets_using_widgetkit_and_swiftui.md) sample code project.
+Xcode allows you to look at previews of your widgets without running your app in Simulator or on a test device. The following example shows the preview code from the Emoji Rangers widget of the [`Building Widgets Using WidgetKit and SwiftUI`](building-widgets-using-widgetkit-and-swiftui.md) sample code project.
 
 ```swift
 #Preview(as: .systemMedium, widget: {
@@ -231,7 +231,7 @@ To give people flexible access to your app’s content, you can support addition
 
 To explore WidgetKit code for the first time, refer to the following sample code projects:
 
-- [`Building Widgets Using WidgetKit and SwiftUI`](building_widgets_using_widgetkit_and_swiftui.md) is the sample code project associated with the WWDC20 code-alongs [`Widgets Code-along, part 1: The adventure begins`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020/10034/), [`Widgets Code-along, part 2: Alternate timelines`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020/10035/), and [`Widgets Code-along, part 3: Advancing timelines`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020/10036/), where you learn how to build your first widget.
+- [`Building Widgets Using WidgetKit and SwiftUI`](building-widgets-using-widgetkit-and-swiftui.md) is the sample code project associated with the WWDC20 code-alongs [`Widgets Code-along, part 1: The adventure begins`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020/10034/), [`Widgets Code-along, part 2: Alternate timelines`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020/10035/), and [`Widgets Code-along, part 3: Advancing timelines`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020/10036/), where you learn how to build your first widget.
 - [`Emoji Rangers: Supporting Live Activities, interactivity, and animations`](emoji-rangers-supporting-live-activities-interactivity-and-animations.md) expands the Emoji Rangers sample code project to include Lock Screen widgets, Live Activities, interactivity, and animations.
 - [`Fruta: Building a feature-rich app with SwiftUI`](https://developer.apple.com/documentation/AppClip/fruta-building-a-feature-rich-app-with-swiftui) and [`Backyard Birds: Building an app with SwiftData and widgets`](https://developer.apple.com/documentation/SwiftUI/Backyard-birds-sample) are sample code projects that support widgets in addition to other technologies like [`App Clips`](https://developer.apple.com/documentation/AppClip) and [`SwiftData`](https://developer.apple.com/documentation/SwiftData).
 
@@ -245,6 +245,8 @@ You can include multiple widget types in your widget extension, although your ap
   Explore features, tasks, related frameworks, and constraints as you make a plan to implement widgets, controls, watch complications, and Live Activities.
 - [WidgetKit updates](../Updates/WidgetKit.md)
   Learn about important changes in WidgetKit.
+- [Building Widgets Using WidgetKit and SwiftUI](building-widgets-using-widgetkit-and-swiftui.md)
+  Create widgets to show your app’s content on the Home screen, with custom intents for user-customizable settings.
 - [Emoji Rangers: Supporting Live Activities, interactivity, and animations](emoji-rangers-supporting-live-activities-interactivity-and-animations.md)
   Offer Live Activities, controls, animate data updates, and add interactivity to widgets.
 - [protocol WidgetBundle](../SwiftUI/WidgetBundle.md)

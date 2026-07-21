@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: property
 
-The default layer which all meshes and lights are in unless otherwise specified
+The default layer.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -18,6 +18,10 @@ The default layer which all meshes and lights are in unless otherwise specified
 ```swift
 static var defaultLayer: RenderLayer { get }
 ```
+
+#### Discussion
+
+Entities without a [`RenderLayerComponent`](renderlayercomponent.md) belong to this layer. Lights illuminate only this layer unless their `layers` set is changed.
 
 
 ---

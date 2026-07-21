@@ -221,4 +221,4 @@ In macOS, use the [`System Extensions`](https://developer.apple.com/documentatio
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/driverkit)*
+*[View on Apple Developer](https://developer.apple.com/documentation/DriverKit)*

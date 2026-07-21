@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: property
 
-The default layer used when no `RenderLayerComponent` is present.
+A render layer component that contains only [`defaultLayer`](renderlayer/defaultlayer.md).
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -18,6 +18,10 @@ The default layer used when no `RenderLayerComponent` is present.
 ```swift
 static let defaultLayer: RenderLayerComponent
 ```
+
+#### Discussion
+
+RealityKit treats entities without an explicit [`RenderLayerComponent`](renderlayercomponent.md) as if they had this component.
 
 ## See Also
 

@@ -33,8 +33,8 @@ Activate device buttons by clicking on parts of the device bezel:
 | --- | --- |
 | Click the Home button | Click the Home button below the device bezel or choose Controls > Home. |
 | Click the Sleep/Wake button | Click the Sleep/Wake button on the device bezel or choose Controls > Lock. |
-| Click or hold Volume up | Click or hold the Volume Up button on the device bezel or choose Device > Sound > Increase Volume. |
-| Click or hold Volume down | Click or hold the Volume Down button on the device bezel or choose Device > Sound > Decrease Volume. |
+| Click or hold Volume Up | Click or hold the Volume Up button on the device bezel or choose Device > Sound > Increase Volume. |
+| Click or hold Volume Down | Click or hold the Volume Down button on the device bezel or choose Device > Sound > Decrease Volume. |
 | Click the Action button | Click the Action button on the device bezel. |
 
 #### Interact with Your Watchos App in the Canvas
@@ -44,8 +44,8 @@ Use the pointer, trackpad or Magic Mouse, keyboard, and menu items to make gestu
 | Gesture | To simulate |
 | --- | --- |
 | Tap | Click. |
-| Double-tap | Double-click |
-| Touch and hold | Click and hold |
+| Double-tap | Double-click. |
+| Touch and hold | Click and hold. |
 | Activate Siri | Hold the Sleep/Wake button on the device bezel or choose Controls > Siri. |
 
 Activate device buttons using menu items or by clicking on parts of the device bezel:
@@ -69,6 +69,16 @@ Use the pointer, keyboard, and menu items to make gestures on a simulated tvOS d
 | Move the focus down | Press the Down Arrow key. |
 | Trigger the action for the current focus | Press the Return key. |
 | Move up one level in the navigation hierarchy | Press the Escape key. |
+
+#### Handle Camera and Microphone Access Conflicts on Physical Devices
+
+You can’t access the camera or microphone while interacting with a physical device in Device Hub.
+
+Before you can start interacting with a physical device in Device Hub, quit any apps on the device that access the camera or microphone. Then select the device in the sidebar and click View Screen in the canvas to interact with the device.
+
+While you interact with the device, lower-priority apps that access the camera or microphone, such as Camera and Voice Memos, don’t have access to those sensors and may record silence and empty video.
+
+If you launch higher-priority apps on the device that access the camera or microphone, such as Phone or FaceTime, Device Hub stops the interaction. To continue interacting with the device, quit the apps that use the camera or microphone on the device and click View Screen in Device Hub again.
 
 ## See Also
 

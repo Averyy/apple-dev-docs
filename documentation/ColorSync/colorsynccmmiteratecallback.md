@@ -13,6 +13,13 @@
 typealias ColorSyncCMMIterateCallback = (ColorSyncCMM?, UnsafeMutableRawPointer?) -> Bool
 ```
 
+## See Also
+
+- [typealias CMMApplyTransformProc](cmmapplytransformproc.md)
+- [typealias CMMCreateTransformPropertyProc](cmmcreatetransformpropertyproc.md)
+- [typealias CMMInitializeLinkProfileProc](cmminitializelinkprofileproc.md)
+- [typealias CMMInitializeTransformProc](cmminitializetransformproc.md)
+
 
 ---
 

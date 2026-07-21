@@ -51,6 +51,15 @@ All three fields must be captured atomically by the conformer.
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 
+## See Also
+
+- [protocol AVPlaybackUserInterfaceTimeControllable](avplaybackuserinterfacetimecontrollable-50vcy.md)
+  Provides time control and navigation capabilities for media content.
+- [class AVPlaybackUserInterfaceTimelineSegment](avplaybackuserinterfacetimelinesegment.md)
+  Represents a contiguous segment of timeline content with specific playback characteristics.
+- [enum AVPlaybackUserInterfaceTimelineSegmentType](avplaybackuserinterfacetimelinesegmenttype.md)
+  Describes the type of content within a timeline segment.
+
 
 ---
 

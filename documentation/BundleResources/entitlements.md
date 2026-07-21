@@ -95,6 +95,8 @@ You typically let Xcode manage the entitlements file for you. For information on
 ### Background tasks
 - [Background GPU Access](entitlements/com.apple.developer.background-tasks.continued-processing.gpu.md)
   The entitlement the system requires for a continuous background task to use the GPU.
+- [Background Inference](entitlements/com.apple.developer.background-tasks.continued-processing.inference.md)
+  An entitlement that lets a background task run inference on the Neural Engine.
 ### CallKit
 - [Default Calling App](entitlements/com.apple.developer.calling-app.md)
   A Boolean value that indicates whether an app can be the default calling app on someone’s device.

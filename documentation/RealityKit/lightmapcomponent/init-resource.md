@@ -3,6 +3,8 @@
 **Framework**: RealityKit  
 **Kind**: init
 
+Creates a new LightmapComponent backed by the given LightmapResource.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -16,11 +18,6 @@
 ```swift
 init(resource: LightmapResource)
 ```
-
-## See Also
-
-- [var lightmap: LightmapResource](lightmapcomponent/lightmap.md)
-  The LightmapResource backing this component.
 
 
 ---

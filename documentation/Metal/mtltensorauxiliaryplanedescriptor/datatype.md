@@ -21,7 +21,7 @@ var dataType: MTLTensorDataType { get set }
 
 #### Discussion
 
-The default value of this property is `MTLTensorDataType/MTLTensorDataTypeFloat8UE8M0`.
+The default value of this property is [`MTLTensorDataType.metalFloat8ue8m0`](mtltensordatatype/metalfloat8ue8m0.md).
 
 
 ---

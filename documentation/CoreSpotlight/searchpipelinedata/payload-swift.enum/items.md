@@ -15,14 +15,14 @@ Items from a Spotlight query.
 ## Declaration
 
 ```swift
-case items([CSSearchableItem])
+case items([SearchableItem])
 ```
 
 ## See Also
 
 - [SearchPipelineData.Payload.scoredItems(_:)](searchpipelinedata/payload-swift.enum/scoreditems(_:).md)
   Items annotated with caller-assigned relevance scores.
-- [case groupedItems([SearchableItemAttribute : [CSSearchableItem]])](searchpipelinedata/payload-swift.enum/groupeditems(_:).md)
+- [case groupedItems([SearchableItemAttribute : [SearchableItem]])](searchpipelinedata/payload-swift.enum/groupeditems(_:).md)
   Items partitioned by an attribute value (e.g. content type).
 - [SearchPipelineData.Payload.text(_:)](searchpipelinedata/payload-swift.enum/text(_:).md)
   LLM-generated text summary or analysis.

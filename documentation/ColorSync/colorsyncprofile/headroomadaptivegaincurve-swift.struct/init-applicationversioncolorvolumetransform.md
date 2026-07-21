@@ -3,6 +3,8 @@
 **Framework**: ColorSync  
 **Kind**: init
 
+Creates Headroom Adaptive Gain Curve metadata.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -17,6 +19,15 @@
 ```swift
 init(applicationVersion: UInt8 = 0, colorVolumeTransform: ColorSyncProfile.HeadroomAdaptiveGainCurve.ColorVolumeTransform? = nil) throws
 ```
+
+#### Discussion
+
+> **Note**: [`ColorSyncProfile.HeadroomAdaptiveGainCurve.Error.unsupportedApplicationVersion(_:)`](colorsyncprofile/headroomadaptivegaincurve-swift.struct/error/unsupportedapplicationversion(_:).md) if `applicationVersion` is not `0`.
+
+## Parameters
+
+- `applicationVersion`: The ST 2094-50 application version. Must be `0`.
+- `colorVolumeTransform`: The color volume transform to apply, or `nil` for none.
 
 
 ---

@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: property
 
-Portal mesh width in meters.
+The width of the portal mesh, in meters, along the entity’s local X axis.
 
 **Availability**:
 - iOS 27.0+ (Beta)

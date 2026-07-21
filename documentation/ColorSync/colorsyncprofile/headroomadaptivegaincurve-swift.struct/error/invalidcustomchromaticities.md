@@ -3,6 +3,8 @@
 **Framework**: ColorSync  
 **Kind**: case
 
+The custom chromaticities fall outside the valid range.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)

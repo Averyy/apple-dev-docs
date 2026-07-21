@@ -42,6 +42,7 @@ For additional information about how to use views and controls, see [`Human Inte
   A streamlined interface for laying out a collection of views in either a column or a row.
 - [class UIScrollView](uiscrollview.md)
   A view that allows the scrolling and zooming of its contained views.
+- [class UILookToScrollInteraction](uilooktoscrollinteraction.md)
 ### Content views
 - [class UIActivityIndicatorView](uiactivityindicatorview.md)
   A view that shows that a task is in progress.
@@ -101,6 +102,8 @@ For additional information about how to use views and controls, see [`Human Inte
   An object that amplifies and adjusts the color of the content layered behind a visual effect view.
 - [class UIBlurEffect](uiblureffect.md)
   An object that applies a blurring effect to the content layered behind a visual effect view.
+- [class UIColorEffect](uicoloreffect.md)
+  A visual effect that applies a solid color background.
 ### Bars
 - [class UIBarItem](uibaritem.md)
   An abstract superclass for items that you can add to a bar that appears at the bottom of the screen.
@@ -108,6 +111,7 @@ For additional information about how to use views and controls, see [`Human Inte
   A specialized button for placement on a toolbar, navigation bar, or shortcuts bar.
 - [class UIBarButtonItemGroup](uibarbuttonitemgroup.md)
   A group of one or more bar button items for placement on a navigation bar or shortcuts bar.
+- [struct UIBarButtonItemVisibilityPriority](uibarbuttonitemvisibilitypriority.md)
 - [class UINavigationBar](uinavigationbar.md)
   Navigational controls that display in a bar along the top of the screen, usually in conjunction with a navigation controller.
 - [class UISearchBar](uisearchbar.md)
@@ -122,6 +126,7 @@ For additional information about how to use views and controls, see [`Human Inte
   A set of methods for defining the positioning of bars in iOS apps.
 - [protocol UIBarPositioningDelegate](uibarpositioningdelegate.md)
   A set of methods that support the positioning of a bar that conforms to the [`UIBarPositioning`](uibarpositioning.md) protocol.
+- [struct UIBarMinimization](uibarminimization-swift.struct.md)
 ### Content viewer
 - [class UILargeContentViewerInteraction](uilargecontentviewerinteraction.md)
   An interaction that enables a gesture to present the large content viewer for cases when supporting the largest dynamic type sizes isn’t appropriate.

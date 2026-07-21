@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: property
 
-The size of the volume along the X, Y, and Z axes of portal-local space.
+The full lengths of the volume along the X, Y, and Z axes of portal-local space, in meters.
 
 **Availability**:
 - iOS 27.0+ (Beta)

@@ -203,6 +203,8 @@ The app retrieves the audio stream basic description that it uses to create an [
   Learn about important changes to ScreenCaptureKit.
 - [Persistent Content Capture](../BundleResources/Entitlements/com.apple.developer.persistent-content-capture.md)
   A Boolean value that indicates whether a Virtual Network Computing (VNC) app needs persistent access to screen capture.
+- [Capturing screen content on iOS](capturing-screen-content-on-ios.md)
+  Record and share screen captures on iOS by presenting the system content-sharing picker.
 
 
 ---

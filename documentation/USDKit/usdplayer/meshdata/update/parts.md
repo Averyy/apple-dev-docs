@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: property
 
+Updated mesh parts.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -15,6 +17,10 @@
 ```swift
 let parts: [LowLevelMesh.Part]?
 ```
+
+#### Discussion
+
+`nil` if unchanged.
 
 
 ---

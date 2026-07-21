@@ -3,6 +3,8 @@
 **Framework**: Metal  
 **Kind**: case
 
+An internal Metal error occurred.
+
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+

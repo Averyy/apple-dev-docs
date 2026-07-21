@@ -45,7 +45,6 @@ enum Code
 - [UNError.Code.contentProvidingObjectNotAllowed](unerror/code/contentprovidingobjectnotallowed.md)
 ### Enumeration Cases
 - [UNError.Code.badgeInputInvalid](unerror/code/badgeinputinvalid.md)
-- [UNError.Code.attachmentUnsupportedType](unerror/code/attachmentunsupportedtype.md)
 ### Initializers
 - [init?(rawValue: Int)](unerror/code/init(rawvalue:).md)
 

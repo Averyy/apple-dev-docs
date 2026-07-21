@@ -19,7 +19,7 @@ struct DocumentLaunchGeometryProxy
 
 ## Topics
 
-### Instance Properties
+### Getting the geometry
 - [var frame: CGRect](documentlaunchgeometryproxy/frame.md)
   Frame of the document launch interface.
 - [var titleViewFrame: CGRect](documentlaunchgeometryproxy/titleviewframe.md)

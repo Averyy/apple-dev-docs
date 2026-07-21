@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: property
 
+Number of joint influences per vertex.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -15,6 +17,10 @@
 ```swift
 let influencePerVertexCount: UInt8
 ```
+
+#### Discussion
+
+Uniform across all vertices.
 
 
 ---

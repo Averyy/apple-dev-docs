@@ -3,6 +3,8 @@
 **Framework**: ColorSync  
 **Kind**: property
 
+The application version of the metadata, as defined by ST 2094-50.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -17,6 +19,10 @@
 ```swift
 var applicationVersion: UInt8
 ```
+
+#### Discussion
+
+This 3-bit field is currently always `0`. Initializing the metadata with any other value throws [`ColorSyncProfile.HeadroomAdaptiveGainCurve.Error.unsupportedApplicationVersion(_:)`](colorsyncprofile/headroomadaptivegaincurve-swift.struct/error/unsupportedapplicationversion(_:).md).
 
 
 ---

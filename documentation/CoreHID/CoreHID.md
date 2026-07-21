@@ -63,4 +63,4 @@ To learn more about HID devices, see the [`USB standards website`](https://devel
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/corehid)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CoreHID)*

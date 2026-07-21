@@ -44,7 +44,7 @@ struct Output
   Token counts for the transcript submitted to the model.
 - [var output: LanguageModelSession.Usage.Output](languagemodelsession/usage-swift.struct/output-swift.property.md)
   The output token counts from the response.
-- [var metadata: [String : any Sendable & Codable & Equatable]](languagemodelsession/usage-swift.struct/metadata.md)
+- [var metadata: [String : any Sendable]](languagemodelsession/usage-swift.struct/metadata.md)
   Language models that provide other kinds of usage statistics may encode them in metadata.
 - [var totalTokenCount: Int](languagemodelsession/usage-swift.struct/totaltokencount.md)
   The total number of tokens involved in this generation, equal to `input.totalTokenCount + output.totalTokenCount`.

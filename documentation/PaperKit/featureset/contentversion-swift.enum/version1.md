@@ -19,8 +19,6 @@ case version1
 
 ## See Also
 
-- [FeatureSet.ContentVersion.version2](featureset/contentversion-swift.enum/version2.md)
-  The PaperKit version that supports markup from iOS 27.
 - [static var latest: FeatureSet.ContentVersion](featureset/contentversion-swift.enum/latest.md)
   The latest version of PaperKit, which supports all currently available features.
 

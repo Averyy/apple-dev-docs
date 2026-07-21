@@ -3,7 +3,7 @@
 **Framework**: USDKit  
 **Kind**: property
 
-Blend shape deformation data; nil when the mesh has no blend shapes
+Blend shape deformation data.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -17,6 +17,10 @@ Blend shape deformation data; nil when the mesh has no blend shapes
 ```swift
 let blendShapes: USDPlayer.DeformationData.BlendShapeData?
 ```
+
+#### Discussion
+
+`nil` when the mesh has no blend shapes.
 
 
 ---

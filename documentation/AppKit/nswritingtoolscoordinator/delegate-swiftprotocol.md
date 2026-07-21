@@ -58,6 +58,13 @@ Writing Tools expects you to call the provided handler blocks at the end of your
   Asks the delegate to divide the specified range of text into the separate containers that render that text.
 - [func writingToolsCoordinator(NSWritingToolsCoordinator, requestsDecorationContainerViewFor: NSRange, in: NSWritingToolsCoordinator.Context, completion: (NSView) -> Void)](nswritingtoolscoordinator/delegate-swift.protocol/writingtoolscoordinator(_:requestsdecorationcontainerviewfor:in:completion:).md)
   Asks the delegate to provide a decoration view for the specified range of text.
+### Instance Methods
+- [func writingToolsCoordinator(NSWritingToolsCoordinator, requestsGrammarResultsFor: NSWritingToolsCoordinator.Context, completion: ([NSTextCheckingResult]) -> Void)](nswritingtoolscoordinator/delegate-swift.protocol/writingtoolscoordinator(_:requestsgrammarresultsfor:completion:).md)
+  Asks the delegate for information about grammar issues in the specified context.
+- [func writingToolsCoordinator(NSWritingToolsCoordinator, requestsPreviewFor: NSWritingToolsCoordinator.TextAnimation, of: NSRange, in: NSWritingToolsCoordinator.Context, textDecoration: NSWritingToolsCoordinator.TextDecoration, completion: ([NSTextPreview]?) -> Void)](nswritingtoolscoordinator/delegate-swift.protocol/writingtoolscoordinator(_:requestspreviewfor:of:in:textdecoration:completion:).md)
+  Asks the delegate for preview images for the specified text.
+- [func writingToolsCoordinator(NSWritingToolsCoordinator, setGrammarCheckingEnabled: Bool)](nswritingtoolscoordinator/delegate-swift.protocol/writingtoolscoordinator(_:setgrammarcheckingenabled:).md)
+  Notifies the delegate when the user chooses to disable grammar checking.
 
 ## Relationships
 

@@ -26,9 +26,9 @@ Use these values to describe the expected input and output shapes of a [`CustomS
 
 ### Getting the pipeline data type
 - [SearchPipelineDataType.items](searchpipelinedatatype/items.md)
-  [`CSSearchableItem`](cssearchableitem.md) results.
+  [`SearchableItem`](searchableitem.md) results.
 - [SearchPipelineDataType.scoredItems](searchpipelinedatatype/scoreditems.md)
-  [`CSSearchableItem`](cssearchableitem.md) results with caller-assigned scores.
+  [`SearchableItem`](searchableitem.md) results with caller-assigned scores.
 - [SearchPipelineDataType.groupedItems](searchpipelinedatatype/groupeditems.md)
   Items partitioned into named groups.
 - [SearchPipelineDataType.text](searchpipelinedatatype/text.md)

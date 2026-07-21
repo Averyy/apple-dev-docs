@@ -21,8 +21,6 @@ struct ApplicationResumeTimeMetric
 
 This metric corresponds to the [`MetricResult.applicationResumeTime(_:)`](metricresult/applicationresumetime(_:).md) case. It appears only in [`intervalEntries`](metricreport/intervalentries.md) and is not included in state entries.
 
-This type replaces the `histogrammedApplicationResumeTime` property of [`MXAppLaunchMetric`](mxapplaunchmetric.md).
-
 ## Topics
 
 ### Measurements

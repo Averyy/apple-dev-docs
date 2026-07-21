@@ -10,6 +10,7 @@ Returns a sub-view with the same rank as this view by slicing the dimensions at 
 - iPadOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 

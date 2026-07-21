@@ -18,6 +18,12 @@
 var icVersion4Point4Number: Int { get }
 ```
 
+## See Also
+
+- [var COLORSYNC_API_VERSION: Int](colorsync_api_version.md)
+- [func ColorSyncAPIVersion() -> UInt32](colorsyncapiversion().md)
+- [var icVersion4Number: Int](icversion4number.md)
+
 
 ---
 

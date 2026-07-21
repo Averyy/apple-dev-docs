@@ -33,7 +33,7 @@ The [`NSDocument`](nsdocument.md) class is designed to be subclassed. That is, t
 
 The [`NSDocument`](nsdocument.md) class itself knows how to handle document data as undifferentiated lumps; although it understands that these lumps are typed, it knows nothing about particular types. In their overrides of the data-based reading and writing methods, subclasses must add the knowledge of particular types and how data of the document’s native type is structured internally. Subclasses are also responsible for the creation of the window controllers that manage document windows and for the implementation of undo and redo. The `NSDocument` class takes care of much of the rest, including generally managing the state of the document.
 
-See [`Document-Based App Programming Guide for Mac`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/DocBasedAppProgrammingGuideForOSX/Introduction/Introduction.html#//apple_ref/doc/uid/TP40011179) for more information about creating subclasses of [`NSDocument`](nsdocument.md), particularly the list of primitive methods that subclasses must override and those that you can optionally override.
+For more information about creating subclasses, including the primitive methods that subclasses must override and those that you can optionally override, see [`Developing a Document-Based App`](developing-a-document-based-app.md).
 
 ##### Document Saving Behavior
 

@@ -3,7 +3,7 @@
 **Framework**: USDKit  
 **Kind**: property
 
-Changed blend shape data; nil if unchanged
+Changed blend shape data.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -17,6 +17,10 @@ Changed blend shape data; nil if unchanged
 ```swift
 let blendShapes: USDPlayer.DeformationData.BlendShapeData.Update?
 ```
+
+#### Discussion
+
+`nil` if unchanged.
 
 
 ---

@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: property
 
-The lighting blend distance from the clipping/crossing plane.
+The distance over which crossing-entity lighting blends between the host scene and the portal world.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -21,16 +21,14 @@ var lightingBlendDistance: Float { get set }
 
 #### Discussion
 
-This property controls the smooth blending between outside world environment probe lighting and portal world environment probe lighting for crossing entities. The blend is calculated based on fragment distance to the portal surface as defined by the crossing modes.
+As an entity with [`PortalCrossingComponent`](portalcrossingcomponent.md) crosses the portal boundary, RealityKit transitions its lighting from the host scene’s environment to the portal world’s environment. This property controls the width, in meters, of that transition:
 
-**Behavior:**
+- A value of `0` produces a sharp lighting boundary, with the entity fully lit by the portal world on the inside and the host scene on the outside.
+- A positive value produces a smooth gradient that spans the given distance into the portal world, portal crossing entities are unaffected by this value.
 
-- **Value 0**: Sharp lighting transition at portal boundary
-- **Positive values**: Smooth gradient over the specified distance in meters
-- **Distance calculation**: Uses the SDF (Signed Distance Field) from crossing geometry - Plane mode: Distance to plane or cylindrical surface
-- Volume mode: Distance to box boundary
+The boundary used for the distance calculation is the geometry you configure with [`crossingMode`](portalcomponent/crossingmode-swift.property.md): a plane for [`PortalComponent.CrossingMode.plane(_:)`](portalcomponent/crossingmode-swift.enum/plane(_:).md), or a box for [`PortalComponent.CrossingMode.volume(_:)`](portalcomponent/crossingmode-swift.enum/volume(_:).md).
 
-> **Note**: Only functional when crossing mode is enabled and target world uses blend lighting mode.
+> **Note**: This property only affects rendering when [`crossingMode`](portalcomponent/crossingmode-swift.property.md) is enabled.
 
 
 ---

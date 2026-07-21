@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: case
 
-A 4-bit floating point format data type with 2 exponent bits, 1 mantissa bit and 1 sign bit.
+A 4-bit floating point data type with 2 exponent bits, 1 mantissa bit, and 1 sign bit.
 
 **Availability**:
 - iOS 27.0+ (Beta)

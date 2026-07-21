@@ -3,7 +3,7 @@
 **Framework**: USDKit  
 **Kind**: struct
 
-Material resource identifier
+Material resource identifier.
 
 **Availability**:
 - iOS 27.0+ (Beta)

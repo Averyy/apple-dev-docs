@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: property
 
+Low-level mesh descriptor.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)

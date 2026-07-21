@@ -15,7 +15,7 @@ Download the latest version of Xcode from the Mac App Store, or from the [`devel
 
 #### Get Started with the Swift Programming Language
 
-[`Swift`](https://developer.apple.comhttps://www.swift.org/) is the best language for developing software on Apple platforms. It’s [`easy to get started`](https://developer.apple.comhttps://developer.apple.com/tutorials/develop-in-swift/), and modern features like built-in concurrency support, safe type handling, and automatic memory management deliver the safety and performance that production apps demand. If you’re starting a new project, Swift is a great choice for writing your code. Swift is also interoperable with C, C++, Objective-C, and [`Explore Swift and Java interoperability`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2025/307), making it easy to integrate Swift code into your existing codebase. The following type declaration shows the simplicity of Swift syntax.
+[`Swift`](https://developer.apple.comhttps://www.swift.org/) is the best language for developing software on Apple platforms. It’s [`easy to get started`](https://developer.apple.comhttps://developer.apple.com/tutorials/develop-in-swift/), and modern features like built-in concurrency support, safe type handling, and automatic memory management deliver the safety and performance that production apps demand. If you’re starting a new project, Swift is a great choice for writing your code. Swift is also interoperable with [`Safely mix C, C++, and Swift`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2025/311), and [`Explore Swift and Java interoperability`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2025/307), making it easy to integrate Swift code into your existing codebase. The following type declaration shows the simplicity of Swift syntax.
 
 ```swift
 // Type declaration and implementation.
@@ -71,7 +71,7 @@ Xcode’s integrated [`Build system`](https://developer.apple.com/documentation/
 
 During development, run your iOS, iPadOS, watchOS, tvOS, or visionOS app in [`Running your app on simulated or physical devices`](https://developer.apple.com/documentation/Xcode/running-your-app-on-simulated-or-physical-devices) to quickly test your app’s behavior. Simulator runs on Mac, but simulates the runtime environment of iPhone, iPad, Apple TV, Apple Vision Pro, Apple Watch, and CarPlay. Use your Mac’s keyboard and mouse to simulate input like touch events, gestures, head movements, and other input. You can also simulate scenarios like location changes, memory warnings, network throttling, and more to verify your code behaves as expected.
 
-To test your app’s CarPlay behavior more extensively, install your app on an iPhone, connect the iPhone to your Mac, and run the CarPlay Simulator app. This app simulates a variety of vehicle display configurations your app might encounter. The CarPlay Simulator app is part of the additional tools for Xcode that you [`download separately`](https://developer.apple.comhttps://developer.apple.com/download/all/?q=Xcode) from the Apple developer website.
+To test your app’s CarPlay behavior, install your app on an iPhone, connect the iPhone to your Mac, and run the CarPlay Simulator app. This app simulates a variety of vehicle display configurations your app might encounter. The CarPlay Simulator app is part of the additional tools for Xcode that you [`download separately`](https://developer.apple.comhttps://developer.apple.com/download/all/?q=Xcode) from the Apple developer website.
 
 #### Adopt Best Practices During Development
 
@@ -99,7 +99,7 @@ And many more.
 
 When you want the latest news and information about Apple development, look for it in the [`Developer`](https://developer.apple.comhttps://apps.apple.com/us/app/apple-developer/id640199958) app. Browse news, features, and developer stories originating in the wider community. You can watch Apple engineers explain how to use their technologies each year at Apple’s [`world-wide developer conference`](https://developer.apple.comhttps://developer.apple.com/wwdc) (WWDC), and catch up on videos from past conferences.
 
-In addition to the Developer app, explore the [`Human Interface Guidelines`](https://developer.apple.com/design/human-interface-guidelines) and [`Apple Developer Documentation`](https://developer.apple.com/documentation). The Human Interface Guidelines offer best practices and guidance for how to create a great experience. The developer documentation teaches you how to use the system frameworks, RESTful APIs, and other technologies through practical and useful sample code, articles, and API reference.
+In addition to the Developer app, explore the [`Human Interface Guidelines`](https://developer.apple.com/design/human-interface-guidelines) and [`Apple developer documentation`](https://developer.apple.comhttps://developer.apple.com/documentation). The Human Interface Guidelines offer best practices and guidance for how to create a great experience. The developer documentation teaches you how to use the system frameworks, RESTful APIs, and other technologies through practical and useful sample code, articles, and API reference.
 
 
 ---

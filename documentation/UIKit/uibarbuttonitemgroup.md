@@ -81,6 +81,7 @@ After configuring a group, assign it to the [`UITextInputAssistantItem`](uitexti
   An abstract superclass for items that you can add to a bar that appears at the bottom of the screen.
 - [class UIBarButtonItem](uibarbuttonitem.md)
   A specialized button for placement on a toolbar, navigation bar, or shortcuts bar.
+- [struct UIBarButtonItemVisibilityPriority](uibarbuttonitemvisibilitypriority.md)
 - [class UINavigationBar](uinavigationbar.md)
   Navigational controls that display in a bar along the top of the screen, usually in conjunction with a navigation controller.
 - [class UISearchBar](uisearchbar.md)
@@ -95,6 +96,7 @@ After configuring a group, assign it to the [`UITextInputAssistantItem`](uitexti
   A set of methods for defining the positioning of bars in iOS apps.
 - [protocol UIBarPositioningDelegate](uibarpositioningdelegate.md)
   A set of methods that support the positioning of a bar that conforms to the [`UIBarPositioning`](uibarpositioning.md) protocol.
+- [struct UIBarMinimization](uibarminimization-swift.struct.md)
 
 
 ---

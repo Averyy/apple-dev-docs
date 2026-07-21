@@ -18,7 +18,7 @@ var activate: some AssistantSchemas.Intent { get }
 
 To integrate your app’s functionality with Siri and Apple Intelligence, you use Swift macros that generate additional properties and add protocol conformance for your app intent implementation.
 
-For general information about app intent domains, see doc:Integrating-actions-with-siri-and-apple-intelligence.
+For general information about app intent domains, see [`Making actions and content discoverable by Apple Intelligence`](making-actions-and-content-discoverable-by-apple-intelligence.md).
 
 The following example shows an app intent that conforms to the `assistant.activate` schema:
 

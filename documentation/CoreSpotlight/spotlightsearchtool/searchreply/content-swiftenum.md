@@ -23,7 +23,7 @@ enum Content
 ### Enumeration Cases
 - [SpotlightSearchTool.SearchReply.Content.count(_:)](spotlightsearchtool/searchreply/content-swift.enum/count(_:).md)
   A scalar count answer (e.g., “How many emails from John?” → 47).
-- [case groupedItems([SearchableItemAttribute : [CSSearchableItem]])](spotlightsearchtool/searchreply/content-swift.enum/groupeditems(_:).md)
+- [case groupedItems([SearchableItemAttribute : [SearchableItem]])](spotlightsearchtool/searchreply/content-swift.enum/groupeditems(_:).md)
   Items partitioned by an attribute value (e.g. content type).
 - [SpotlightSearchTool.SearchReply.Content.items(_:)](spotlightsearchtool/searchreply/content-swift.enum/items(_:).md)
   Ssearch result items (emails, files, etc.) — display as a list.

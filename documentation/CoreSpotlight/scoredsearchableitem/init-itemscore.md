@@ -13,7 +13,7 @@
 ## Declaration
 
 ```swift
-init(item: CSSearchableItem, score: Double)
+init(item: SearchableItem, score: Double)
 ```
 
 

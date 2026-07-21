@@ -23,8 +23,11 @@ enum Code
 
 ### Enumeration Cases
 - [MTLTensorError.Code.internalError](mtltensorerror-swift.struct/code/internalerror.md)
+  An internal Metal error occurred.
 - [MTLTensorError.Code.invalidDescriptor](mtltensorerror-swift.struct/code/invaliddescriptor.md)
+  The tensor descriptor is invalid.
 - [MTLTensorError.Code.none](mtltensorerror-swift.struct/code/none.md)
+  No error occurred.
 ### Initializers
 - [init?(rawValue: Int)](mtltensorerror-swift.struct/code/init(rawvalue:).md)
 

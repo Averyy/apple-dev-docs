@@ -3,6 +3,8 @@
 **Framework**: ColorSync  
 **Kind**: property
 
+How the scalar driving signal is derived from each RGB pixel.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)

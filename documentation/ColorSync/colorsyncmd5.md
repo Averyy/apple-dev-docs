@@ -32,6 +32,12 @@ struct ColorSyncMD5
 - [BitwiseCopyable](../Swift/BitwiseCopyable.md)
 - [Sendable](../Swift/Sendable.md)
 
+## See Also
+
+- [func ColorSyncProfileGetMD5(ColorSyncProfile!) -> ColorSyncMD5](colorsyncprofilegetmd5(_:).md)
+- [var COLORSYNC_MD5_LENGTH: Int32](colorsync_md5_length.md)
+- [var kColorSyncProfileMD5Digest: Unmanaged<CFString>!](kcolorsyncprofilemd5digest.md)
+
 
 ---
 

@@ -46,8 +46,12 @@ Use route information to differentiate between routing options and provide trans
   Creates additional route information for fuel mass.
 - [convenience init(hov: String)](cproutedetail/init(hov:)-6ivii.md)
   Creates additional route information for High-Occupancy Vehicle (HOV) lane access.
+- [convenience init(info: String)](cproutedetail/init(info:).md)
+  Creates additional route information with a freeform informational string.
 - [convenience init(kilowattHours: Measurement<UnitEnergy>)](cproutedetail/init(kilowatthours:).md)
   Creates additional route information for battery energy in kilowatt-hours.
+- [convenience init(parking: String)](cproutedetail/init(parking:).md)
+  Creates additional route information describing parking at the destination.
 - [convenience init(rating: Double)](cproutedetail/init(rating:).md)
   Creates additional route information for a route rating.
 - [convenience init(symbolName: String, value: String)](cproutedetail/init(symbolname:value:).md)
@@ -59,8 +63,6 @@ Use route information to differentiate between routing options and provide trans
 - [convenience init(warning: String)](cproutedetail/init(warning:).md)
   Creates additional route information for route warnings.
 ### Instance Properties
-- [var labelTintColor: UIColor?](cproutedetail/labeltintcolor.md)
-  The labelTintColor to apply to the label.
 - [var symbolTintColor: UIColor?](cproutedetail/symboltintcolor.md)
   The symbolTintColor to apply to the label.
 

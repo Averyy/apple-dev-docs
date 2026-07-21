@@ -27,7 +27,7 @@ Use this descriptor to configure an auxiliary plane’s data type and block fact
 
 ### Instance Properties
 - [var blockFactors: MTLTensorExtents](mtltensorauxiliaryplanedescriptor/blockfactors.md)
-  A [`MTLTensorExtents`](mtltensorextents.md) instance that describes how many data plane elements correspond to one element in this plane.
+  An extents instance that represents the number of data plane elements which correspond to one element in a plane you create with this descriptor.
 - [var dataType: MTLTensorDataType](mtltensorauxiliaryplanedescriptor/datatype.md)
   The data format of all elements in the plane.
 

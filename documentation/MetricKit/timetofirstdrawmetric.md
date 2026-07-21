@@ -23,8 +23,6 @@ This metric corresponds to the [`MetricResult.timeToFirstDraw(_:)`](metricresult
 
 The measurement ends at the first Core Animation commit, which corresponds to the moment the first rendered frame is submitted to the display pipeline.
 
-This type replaces the `histogrammedTimeToFirstDraw` property of [`MXAppLaunchMetric`](mxapplaunchmetric.md).
-
 ## Topics
 
 ### Measurements

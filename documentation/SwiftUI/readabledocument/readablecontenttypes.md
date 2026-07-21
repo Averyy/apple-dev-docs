@@ -4,7 +4,7 @@
 **Kind**: property  
 **Required**: Yes
 
-The file and data types that the document reads from.
+The content types this document can open.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -19,16 +19,22 @@ The file and data types that the document reads from.
 static var readableContentTypes: [UTType] { get }
 ```
 
+#### Discussion
+
+The document browser and open panel use this list to filter which files the person can select.
+
 ## See Also
 
 - [ReadableDocument.ReadConfiguration](readabledocument/readconfiguration.md)
   The configuration for reading document contents.
 - [associatedtype Reader : DocumentReader](readabledocument/reader.md)
-  A type that implements reading from disk logic.
+  A type that implements reading from disk.
 - [func reader(configuration: sending Self.ReadConfiguration) -> sending Self.Reader](readabledocument/reader(configuration:).md)
-  Creates a value that reads a document from disk.
+  Creates a reader to load this document from disk.
 - [func apply(snapshot: sending Self.Reader.Snapshot, previous: sending Self.Reader.Snapshot?) async throws](readabledocument/apply(snapshot:previous:).md)
-  Applies loaded content to the document model.
+  Applies a loaded snapshot to the document model.
+- [static var writableContentTypes: [UTType]](readabledocument/writablecontenttypes.md)
+  By default, a document that supports reading also supports writing the same content types.
 
 
 ---

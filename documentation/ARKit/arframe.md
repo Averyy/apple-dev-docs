@@ -89,6 +89,9 @@ Each frame can contain additional data, for example, EXIF ([`exifData`](arframe/
 ### Instance Properties
 - [var metadataObjects: [AVMetadataObject]](arframe/metadataobjects.md)
   Metadata objects associated with the current frame.
+### Instance Methods
+- [func displayTransform(viewRotationAngle: CGFloat, viewportSize: CGSize) -> CGAffineTransform](arframe/displaytransform(viewrotationangle:viewportsize:).md)
+  Returns a display transform for the provided viewport size and view angle.
 
 ## Relationships
 

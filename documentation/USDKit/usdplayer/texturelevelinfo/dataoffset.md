@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: property
 
+Byte offset into [`data`](usdplayer/texturedata/data.md) where this mip level begins.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)

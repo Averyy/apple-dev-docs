@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: property
 
-A [`MTLTensorExtents`](mtltensorextents.md) instance that describes how many data plane elements correspond to one element in this plane.
+An extents instance that represents the number of data plane elements which correspond to one element in a plane you create with this descriptor.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -22,11 +22,11 @@ var blockFactors: MTLTensorExtents { get set }
 
 #### Discussion
 
-The rank of the block factors must match the rank of the tensor’s dimensions.
+The number of dimensions in the extents needs to match the number of the tensor’s dimensions.
 
-The first element of the block factors must be 32. All remaining elements must be 1.
+The first element of the block factors needs to be `32`. All remaining elements need to be `1`.
 
-The default value is a 1D block size of width 32.
+The default value is a 1D block size of width `32`.
 
 
 ---

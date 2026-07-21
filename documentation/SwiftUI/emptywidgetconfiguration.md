@@ -36,7 +36,7 @@ nonisolated struct EmptyWidgetConfiguration
 
 ## See Also
 
-- [Building Widgets Using WidgetKit and SwiftUI](../widgetkit/building_widgets_using_widgetkit_and_swiftui.md)
+- [Building Widgets Using WidgetKit and SwiftUI](../WidgetKit/building-widgets-using-widgetkit-and-swiftui.md)
   Create widgets to show your app’s content on the Home screen, with custom intents for user-customizable settings.
 - [Creating a widget extension](../WidgetKit/Creating-a-Widget-Extension.md)
   Display your app’s content in a convenient, informative widget on various devices.

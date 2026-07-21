@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: property
 
+Unique identifier for the deformation resource being updated.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)

@@ -41,6 +41,15 @@ class AVPlaybackUserInterfaceContentURLArtwork
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 
+## See Also
+
+- [protocol AVPlaybackUserInterfaceMetadataProviding](avplaybackuserinterfacemetadataproviding-814y4.md)
+  Provides metadata information about media content including title, artwork, and content type.
+- [struct AVPlaybackUserInterfaceContentMetadata](avplaybackuserinterfacecontentmetadata-swift.struct.md)
+  A Swift-friendly structure representing media metadata.
+- [class AVPlaybackUserInterfaceContentArtwork](avplaybackuserinterfacecontentartwork.md)
+  Base class representing artwork or cover art for media content.
+
 
 ---
 

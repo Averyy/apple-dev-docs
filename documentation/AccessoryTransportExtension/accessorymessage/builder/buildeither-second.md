@@ -8,6 +8,7 @@ Builds an accessory message from the second branch of a conditional.
 **Availability**:
 - iOS 26.5+
 - iPadOS 26.5+
+- Mac Catalyst 26.5+
 
 ## Declaration
 

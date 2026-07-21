@@ -34,7 +34,7 @@ For a group of devices, all devices in the group must support [`MediaOutputDevic
 
 ## Parameters
 
-- `volume`: The volume level to set, typically in the range 0.0 to 1.0.
+- `volume`: The volume level to set in the range 0.0 to 1.0.
 - `device`: The device for which to set the volume.
 
 

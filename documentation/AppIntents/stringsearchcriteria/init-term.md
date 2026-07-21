@@ -3,6 +3,8 @@
 **Framework**: App Intents  
 **Kind**: init
 
+Initializes the type with the specified search term.
+
 **Availability**:
 - iOS 17.2+
 - iPadOS 17.2+
@@ -17,6 +19,10 @@
 ```swift
 init(term: String)
 ```
+
+## Parameters
+
+- `term`: The search term to use when matching items.
 
 
 ---

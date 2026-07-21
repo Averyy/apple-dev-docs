@@ -48,6 +48,15 @@ enum AVPlaybackUserInterfaceTimelineSegmentType
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 
+## See Also
+
+- [protocol AVPlaybackUserInterfaceTimeControllable](avplaybackuserinterfacetimecontrollable-50vcy.md)
+  Provides time control and navigation capabilities for media content.
+- [class AVPlaybackUserInterfacePlaybackPosition](avplaybackuserinterfaceplaybackposition.md)
+  A snapshot comprising a playback position recorded at a known host time and the rate of position advancement.
+- [class AVPlaybackUserInterfaceTimelineSegment](avplaybackuserinterfacetimelinesegment.md)
+  Represents a contiguous segment of timeline content with specific playback characteristics.
+
 
 ---
 

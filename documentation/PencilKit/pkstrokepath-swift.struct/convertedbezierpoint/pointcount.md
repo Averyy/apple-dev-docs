@@ -18,6 +18,10 @@ The total number of B-Spline control points in the path.
 let pointCount: Int
 ```
 
+## Mentions
+
+- [Importing Bézier path data into PencilKit](importing-external-drawing-data-into-pencilkit.md)
+
 ## See Also
 
 - [let index: Int](pkstrokepath-swift.struct/convertedbezierpoint/index.md)

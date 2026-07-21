@@ -3,7 +3,7 @@
 **Framework**: Cinematic  
 **Kind**: case
 
-Isolates the ambience and place it in a spatial stem. Isolates all voices, add a studio/proximity effect in the voice track and place them in a mono stem.
+Isolates background and foreground in separate stems. Adds a proximity effect to foreground sounds.
 
 **Availability**:
 - iOS 26.0+

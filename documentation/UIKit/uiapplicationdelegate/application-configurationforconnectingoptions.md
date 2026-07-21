@@ -21,6 +21,7 @@ optional func application(_ application: UIApplication, configurationForConnecti
 ## Mentions
 
 - [Transitioning to the UIKit scene-based life cycle](transitioning-to-the-uikit-scene-based-life-cycle.md)
+- [Presenting content on a connected display](presenting-content-on-a-connected-display.md)
 - [Specifying the scenes your app supports](specifying-the-scenes-your-app-supports.md)
 
 #### Return Value

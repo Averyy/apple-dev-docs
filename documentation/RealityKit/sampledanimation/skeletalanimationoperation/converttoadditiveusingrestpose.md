@@ -21,11 +21,11 @@ static func convertToAdditiveUsingRestPose() -> SampledAnimation<Value>.Skeletal
 
 #### Return Value
 
-A `SkeletalAnimationOperation` that, when processed, produces a `SampledAnimation<JointTransforms>` in additive format.
+A [`SampledAnimation.SkeletalAnimationOperation`](sampledanimation/skeletalanimationoperation.md) that, when processed, produces a `SampledAnimation<JointTransforms>` in additive format.
 
 #### Discussion
 
-Creates a delta animation that represents the difference between this animation and the skeleton’s rest pose. Requires a skeleton to be provided to `processAndCreateAnimation`.
+Creates a delta animation that represents the difference between this animation and the skeleton’s rest pose. Requires a skeleton to be provided to [`processAndCreateAnimation(for:operations:name:)`](sampledanimation/processandcreateanimation(for:operations:name:).md).
 
 ## See Also
 

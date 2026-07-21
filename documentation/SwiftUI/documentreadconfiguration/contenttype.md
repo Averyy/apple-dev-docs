@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: property
 
-The format of the file to read.
+The content type of the file being read.
 
 **Availability**:
 - iOS 27.0+ (Beta)

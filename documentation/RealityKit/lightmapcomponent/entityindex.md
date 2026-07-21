@@ -17,11 +17,6 @@
 typealias EntityIndex = Int
 ```
 
-## See Also
-
-- [var entityIndexInLightmapResource: [Entity : LightmapComponent.EntityIndex]](lightmapcomponent/entityindexinlightmapresource.md)
-  A dictionary mapping the descendants of the LightmapComponent-holding entity to their corresponding slot in the Lightmap resource.
-
 
 ---
 

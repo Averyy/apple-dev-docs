@@ -74,4 +74,4 @@ Core Text provides a low-level programming interface for laying out text and han
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/coretext)*
+*[View on Apple Developer](https://developer.apple.com/documentation/CoreText)*

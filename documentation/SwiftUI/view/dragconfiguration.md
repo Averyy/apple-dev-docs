@@ -28,44 +28,44 @@ Below is a simplified example of a view that supports copy, move and delete oper
 If a view wants to support drag-to-delete into the trash bin or another location that has similar semantics, it should specify the support for this operation in a drag configuration:
 
 ```swift
-        @State private var photos: [Photo] = []
-        @State private var selectedPhotos: [Photo.ID] = []
+    @State private var photos: [Photo] = []
+    @State private var selectedPhotos: [Photo.ID] = []
 
-        var body: some View {
-            ScrollView {
-                LazyVGrid(columns: gridColumns) {
-                    ForEach(photos) { photo in
-                        PhotoView(photo: photo)
-                            .draggable(containerItemID: photo.id)
-                    }
+    var body: some View {
+        ScrollView {
+            LazyVGrid(columns: gridColumns) {
+                ForEach(photos) { photo in
+                    PhotoView(photo: photo)
+                        .draggable(containerItemID: photo.id)
                 }
             }
-            .dragContainer(for: Photo.self) { draggedIDs in
-                photos(ids: draggedIDs)
-            }
-            .dragContainerSelection(selectedPhotos)
-            .dragConfiguration(DragConfiguration(allowMove: false, allowDelete: true))
-            .onDragSessionUpdated { session in
-                if session.phase == .ended(.delete) {
-                    let ids = session.draggedItemIDs(for: Photo.ID.self)
-                    removeAndTrash(ids)
-                }
-            }
-            .dragPreviewsFormation(.stack)
         }
+        .dragContainer(for: Photo.self) { draggedIDs in
+            photos(ids: draggedIDs)
+        }
+        .dragContainerSelection(selectedPhotos)
+        .dragConfiguration(DragConfiguration(allowMove: false, allowDelete: true))
+        .onDragSessionUpdated { session in
+            if session.phase == .ended(.delete) {
+                let ids = session.draggedItemIDs(for: Photo.ID.self)
+                removeAndTrash(ids)
+            }
+        }
+        .dragPreviewsFormation(.stack)
+    }
 
-        func removeAndTrash(_ ids: [Photo.ID]) {
-            ids.forEach { id
-                if let idx = photos.firstIndex(where: { $0.id == id }) {
-                    let photo = photos[idx]
-                    photos.remove(at: idx)
-                    try? FileManager.default.trashItem(
-                        at: photo.fileURL, resultingItemURL: nil
-                    )
-                }
+    func removeAndTrash(_ ids: [Photo.ID]) {
+        ids.forEach { id
+            if let idx = photos.firstIndex(where: { $0.id == id }) {
+                let photo = photos[idx]
+                photos.remove(at: idx)
+                try? FileManager.default.trashItem(
+                    at: photo.fileURL, resultingItemURL: nil
+                )
             }
         }
     }
+}
 ```
 
 Note, that any drag supports copy operation by default. In the snippet above, the view supports both copy and delete operations.

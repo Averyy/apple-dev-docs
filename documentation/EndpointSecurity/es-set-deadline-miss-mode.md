@@ -24,6 +24,8 @@ This determines how the system responds when the client fails to respond to an a
 
 > **Note**: This allows clients to defer deadline management to the kernel instead of implementing their own timeout mechanisms.
 
+> **Note**: When `ES_DEADLINE_MISS_MODE_FAIL_CLOSED` is used, if an `AUTH` message is dropped because the message queue was full, it will be `DENY`ed instead of the usual `ALLOW` behaviour.
+
 ## Parameters
 
 - `client`: The client to configure

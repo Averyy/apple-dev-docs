@@ -53,6 +53,8 @@ Create a [`UIWindowSceneDestructionRequestOptions`](uiwindowscenedestructionrequ
   An object that contains information you want the system to use when activating the session associated with a scene.
 - [class UISceneDestructionRequestOptions](uiscenedestructionrequestoptions.md)
   An object you pass to UIKit to permanently remove a scene and its associated session from your app.
+- [class UISceneClosureConfirmation](uisceneclosureconfirmation.md)
+  A configuration specifying a confirmation dialog that will be shown before a user action will result in destruction of the scene session and the disconnection of the scene.
 
 
 ---

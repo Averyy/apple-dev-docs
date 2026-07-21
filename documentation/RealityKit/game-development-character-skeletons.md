@@ -60,7 +60,7 @@ To further animate models in the scene, you may need to define a [`SkeletalPose`
   Ordered dictionary-like container.
 ### Skeletons and retargeting
 - [class SkeletonResource](skeletonresource.md)
-  Represents a skeleton asset with joint hierarchy and animation capabilities.
+  A self-contained skeleton asset for animating characters and articulated objects.
 - [class RetargetingConfiguration](retargetingconfiguration.md)
   A configuration for retargeting skeletal animations between different skeletons.
 

@@ -19,8 +19,6 @@ struct LocationActivityTimeMetric
 
 This metric corresponds to the [`MetricResult.locationActivityTime(_:)`](metricresult/locationactivitytime(_:).md) case. It appears in both [`intervalEntries`](metricreport/intervalentries.md) and [`stateEntries`](metricreport/stateentries.md) when state reporting is enabled.
 
-This type replaces [`MXLocationActivityMetric`](mxlocationactivitymetric.md).
-
 ## Topics
 
 ### Accuracy levels

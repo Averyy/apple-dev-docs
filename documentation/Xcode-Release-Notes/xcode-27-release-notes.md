@@ -1,4 +1,4 @@
-# Xcode 27 Beta 3 Release Notes
+# Xcode 27 Beta 4 Release Notes
 
 **Framework**: Xcode Release Notes
 
@@ -6,7 +6,7 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-Xcode 27 beta 3 includes Swift 6.4 and SDKs for iOS 27, iPadOS 27, tvOS 27, watchOS 27, macOS 27, and visionOS 27. Xcode 27 beta 3 supports on-device debugging in iOS 17 and later, tvOS 17 and later, watchOS 10 and later, and visionOS. Xcode 27 beta 3 requires a Mac running macOS Tahoe 26.4 or later.
+Xcode 27 beta 4 includes Swift 6.4 and SDKs for iOS 27, iPadOS 27, tvOS 27, watchOS 27, macOS 27, and visionOS 27. Xcode 27 beta 4 supports on-device debugging in iOS 17 and later, tvOS 17 and later, watchOS 10 and later, and visionOS. Xcode 27 beta 4 requires a Mac running macOS Tahoe 26.4 or later.
 
 See [`Xcode Support`](https://developer.apple.comhttps://developer.apple.com/support/xcode/) to learn more about compatible platforms and deployment targets.
 
@@ -22,27 +22,17 @@ See [`Xcode Support`](https://developer.apple.comhttps://developer.apple.com/sup
 
 - Address Sanitizer might fail to launch on iOS 27.0, tvOS 27.0, watchOS 27.0, and visionOS 27.0 when building with Xcode 26.4 or older.  (178072780) **Workaround:** Use Xcode 26.5 or later when testing applications with Address Sanitizer.
 
-##### Background Assets
-
-###### Resolved Issues
-
-- Fixed: The packaging tool, ba-package, may generate an invalid asset-pack archive when you specify an on-demand download policy.  (179168553) (FB23020247)
-
-##### Carplay Simulator
-
-###### Resolved Issues
-
-- Fixed: Cannot start a CarPlay connection with CarPlay Simulator when accessed via Device Hub.  (179523697)
-
 ##### Coding Intelligence
-
-###### New Features
-
-- Xcode build and test MCP tools now send dynamic activity status instead of static text to external MCP clients.  (181078347)
 
 ###### Known Issues
 
 - If the plan-mode confirmation bar (“Implement the plan?” with Yes/No buttons) appears while the agent is still streaming a response, clicking either button may trigger a new agent turn on top of the in-flight one, leaving the conversation in an inconsistent state. As a workaround, wait for the agent to finish responding before confirming or dismissing the plan.  (178673449)
+
+##### Console
+
+###### Known Issues
+
+- Console area fails to accept stdin.  (181024563) **Workaround:** Launch application from Terminal.app.
 
 ##### Core Ai
 
@@ -50,16 +40,13 @@ See [`Xcode Support`](https://developer.apple.comhttps://developer.apple.com/sup
 
 - The option to extract inputs from prediction events in the Core AI gauge in Xcode may not work reliably.  (172502576)
 
+##### Debugging
+
+###### New Features
+
+- LLDB can now inspect data types with ~Copyable fields in the standard library and other system frameworks.  (176282041)
+
 ##### Device Hub
-
-###### Resolved Issues
-
-- Fixed: The ‘VoiceOver’ toggle in the appearance settings inspector does not enable voiceover on the device.  (173507341)
-- Fixed: The “Text Size” in the appearance inspector disappears if one of larger text sizes from Accessibility is being used.  (175365925)
-- Fixed: In some circumstances, when using “Simulate Mouse or Trackpad” with an iPad, physical or simulated, the mouse pointer can appear at a different place on the screen than the Mac pointer.  (178575823)
-- Fixed: The ‘Color Filter’ option in the appearance settings inspector works for simulators.  (178854926)
-- Fixed: Device Hub allows you to enter resize mode with an app linked against an iOS 26 or earlier SDK, which is unsupported and may result in Device Hub showing a black screen for the device.  (179416769)
-- Fixed: If you exit Device Hub’s resize mode through means other than the toolbar button or menu item (e.g. if your resized app crashes or is backgrounded) the device’s screen content will be incorrectly sized until it is rebooted.  (179991750)
 
 ###### Known Issues
 
@@ -68,6 +55,11 @@ See [`Xcode Support`](https://developer.apple.comhttps://developer.apple.com/sup
 - Device Hub doesn’t currently support sending a two-finger touch to a device or simulator.  (169537162)
 - The Controls->Shake menu item does not work.  (171282777)
 - Sound Output and Input for simulators cannot be set to None.  (175714711)
+- Device Hub.app downloads app data containers to a folder named with the bundle identifier of the app.  (176313137) **Workaround:** Add `.xcappdata` to the folder created by Device Hub when downloading app data containers. Inside that folder make a new folder named AppData. Move the other content in that folder into AppData. For example, ```None
+ com.example.MyApp/{Documents,Library,tmp}
+``` becomes: ```None
+ com.example.MyApp.xcappdata/AppData/{Documents,Library,tmp}
+```
 - When the tab bar is visible, controls at the very top of the inspector might not respond to clicks.  (176507876)
 - When running parallel testing in simulators, devices may not be visible in Device Hub but are still actively running tests.  (176809181) **Workaround:** Disable parallelized test runs if you want to watch UI tests executing in simulators.
 - When a color filter is set on a physical device, the filter is not visible in Device Hub.  (178121876)
@@ -76,109 +68,92 @@ See [`Xcode Support`](https://developer.apple.comhttps://developer.apple.com/sup
 - After switching to Device Hub’s compact view, a visionOS simulator may show a black screen until Device Hub is relaunched.  (178567811)
 - With Apple Watch - simulator or physical - scrolling with the mouse pointer over the watch face does not emulate rotating the digital crown.  (179079031) (FB22992052) **Workaround:** Move the pointer over the crown in the device bezel.
 - visionOS simulator takes longer to boot than expected and may stall when deploying an app.  (180078336) **Workaround:** Please reboot your machine.
+- When an iPad connects to Device Hub without viewing the screen while the software keyboard is on screen, it can disappear.  (181166904) **Workaround:** In Device Hub, toggle the Device > Keyboard > Simulate Hardware Keyboard menu item. This can be done without viewing the device screen.
 
-##### Devicectl
+###### Deprecations
 
-###### Resolved Issues
-
-- Fixed: The –show flag has been removed from the ‘devicectl device info details’ command. Instead we will always provide the full set of device properties in the textual output and JSON (under the ‘properties’ dictionary).  (179880477)
+- Input interactions such as keyboard or pointer are only supported on the following OS versions and newer: macOS 15.0, iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0.  (160482487)
 
 ##### Instruments
 
 ###### New Features
 
-- Runs and Comparisons can now be bulk-deleted by using multi-selection and the `Delete` menu item or context menu.  (179565486) (FB23120864)
-- `xctrace export` allows for specifying files like .atrc and .logarchive as input, removing the need for two-step process of running `xctrace import` followed by `xctrace export`.  (179742657)
+- Errors preventing recording now appear next to the Record button.  (112283690)
+- `xctrace export` allows for specifying files like .atrc and .logarchive as input, removing the need for a two-step process of running `xctrace import` followed by `xctrace export`.  (179742657)
 
-###### Resolved Issues
+###### Known Issues
 
-- Fixed: Resolved a bug where swift concurrency backtraces often included completeTaskAndRelease (or similar concurrency mechanics) at the end of the backtrace.  (142883863)
-- Fixed an issue where the resize cursor would sometimes not appear when resizing the sidebar or inspector.  (172306622)
+- Detail switcher button in Instrument is not responding to touches when running Instruments on macOS Golden Gate Beta 4.  (182718545) **Workaround:** Use View -> Detail View menus for switching detail views.
 
 ##### Interface Builder
 
 ###### Resolved Issues
 
-- Fixed: A `TVCardView` loaded from a storyboard or xib may render incorrectly at runtime.  (179781291) (FB23188951)
-- Fixed: Compiled documents with text input views containing a non-nil “Password Rule” value fail to load at runtime.  (180420035) (FB23351677)
 - Fixed: `ibtool` fails to compile documents with non-adaptive “Popover” or “Replace” segues.  (180632487) (FB23399800)
 
 ##### Localization
 
 ###### New Features
 
-- You can now annotate translations in String Catalog artifacts when using agents to translate strings.  (176407208)
-- Strings newly added to String Catalogs now appear as artifacts when agents use the “Prepare Project for Localization” tool.  (176497701)
+- When agents use the “Prepare Project for Localization” tool, String Catalog artifacts now show any keys that were removed due to no longer being found in source code.  (179755385)
 
 ###### Resolved Issues
 
-- Fixed an issue where strings inside availability-constrained `#Preview` macros would not be excluded from String Catalogs.  (176188980) (FB22696182)
-- Fixed: Resolved an issue where Xcode may not have been able to reference the usage location for newly-extracted strings during agentic translation.  (179729079)
+- Fixed: Resolved an issue where Xcode could use too much memory when generating comments or translating strings.  (179800456) (FB23193029)
 
 ##### Previews
 
+###### New Features
+
+- The RenderPreview MCP tool now supports rendering Previews using the new group feature.  (174692209)
+- You can now preview your UI in a different localization.  (181040291)
+
 ###### Resolved Issues
 
-- Fixed an issue where the crash screen for a watchOS preview appeared with a light background instead of the expected dark appearance.  (146868878)
-
-###### Deprecations in Xcode 27 Beta 3
-
-- PreviewProvider and its family of preview modifiers  (144168701)
+- Fixed an issue where the canvas size could reset to its initial size when editing code in Resizable Canvas mode.  (178765518)
+- Fixed an issue where the RenderPreview MCP tool wasn’t working correctly for a macOS preview group preview.  (180460302)
+- Fixed an issue that could prevent previews from working when a Mac Catalyst run destination was selected.  (180547070)
+- Fixed: Improved error when an appropriate preview device can’t be found.  (180669830)
 
 ##### Previews Playgrounds
 
 ###### Resolved Issues
 
-- Fixed: A clearer error message is now shown when building a preview times out.  (178756436)
-- Fixed: Reduced number of canvas errors that would be flagged as potentially caused by a crash.  (179124669)
-- Fixed: Errors encountered when using RenderPreview and ExecuteSnippet MCP tools now include full diagnostic details from the underlying failure.  (179318912)
-- Fixed a rare display setup-related issue where the first update to a preview could fail immediately after the preview launched.  (179411046)
+- Fixed a hang that could occur when a large number of edits were applied to a file at once, such as during an AI-assisted edit.  (163125754)
+- Fixed an issue where a preview could stop updating due to an error.  (181559530)
 
 ###### Known Issues
 
 - Standalone Swift files opened by double-clicking in Finder may fail to run #Playground or #Preview blocks.  (177587795) **Workaround:** Open Swift files using File>Open… or drag them directly onto the Dock icon.
 
-##### Security
-
-###### New Features
-
-- The new “adopt-c-bounds-safety” Code Intelligence skill can help you adopt the bounds safety extension for C (-fbounds-safety) with a file-by-file adoption workflow. For more information about the C bounds safety extension, see https://developer.apple.com/documentation/xcode/enabling-enhanced-security-for-your-app#Adopt-bounds-checking-in-C.  (177739344)
-- The new “audit-xcode-security-settings” Code Intelligence skill can help you audit your app to suggest enabling additional security-oriented build settings and entitlements. For more information on these settings, see https://developer.apple.com/documentation/xcode/enabling-enhanced-security-for-your-app  (181104536)
-
 ##### Simulator
-
-###### New Features
-
-- The simulator runtimes now contain a pre-built dyld cache. This will make first launch of a simulator much faster.  (179846743)
-
-###### Resolved Issues
-
-- Fixed: Accessibility Inspector cannot inspect elements in simulators.    (179033881) (FB22976268)
 
 ###### Known Issues
 
 - An extra control for keyboard capture mode appears in the Device Hub toolbar under the view for the visionOS simulator.  (177082480)
 - An extra control for Simulate Trackpad or Mouse mode appears in the Device Hub toolbar under the view for the visionOS simulator.  (177086926)
-- The simulator sometimes does not get cleared after deletion.   (178661525) **Workaround:** Restart the machine and re-attempt to remove it.
+- The simulator sometimes does not get cleared after deletion.  (178661525) **Workaround:** Restart the machine and re-attempt to remove it.
 
-##### Storekit Testing in Xcode
-
-###### Resolved Issues
-
-- Fixed: Inspecting transaction details for a subscription suite purchase in the Transaction Manager displays incorrect product information.  (179413970)
-
-##### System
+##### Source Editor
 
 ###### Resolved Issues
 
-- Fixed: Custom `FilePath` or `FileDescriptor` extensions that make unqualified calls to `stat()` or `stat(_)` (without the `Darwin.` qualification) might conflict with the new Swift `stat()` instance methods introduced in [`SYS-0006`](https://developer.apple.comhttps://github.com/apple/swift-system/blob/main/Proposals/0006-system-stat.md), causing build errors. See [`SYS-0008`](https://developer.apple.comhttps://github.com/apple/swift-system/blob/main/Proposals/0008-backdeploy-cinterop-stat.md) for more details.  (177911316)
+- Fixed: Use Selection for Find (Cmd-E) did not function for text selections in the “old” side of an inline diff display.  (52361137)
 
-##### Testing
+##### Swift Compiler
 
-###### Resolved Issues
+###### Known Issues
 
-- Fixed: Test issues with warning severity now appear in the console.  (161919593)
-- Fixed: An expected Swift Testing exit test process termination may cause a test failure to be recorded incorrectly during a UI test.  (174032826)
+- A computed property with both an `init` accessor and an array/dictionary literal initial value will no longer compile if the getter is declared before the `init` accessor. ```None
+ struct S {
+   var _strings: [String]
+   var strings: [String] = ["hello"] {
+     get { _strings }
+     @storageRestrictions(initializes: _strings)
+     init { _strings = newValue }
+   }
+ }
+``` This is a known source break from SE-0508.  (180969028) **Workaround:** Swap the `init` accessor and the getter such that the `init` accessor is declared first.
 
 ##### Themes
 
@@ -188,13 +163,135 @@ See [`Xcode Support`](https://developer.apple.comhttps://developer.apple.com/sup
 
 ##### Xcode
 
-###### Known Issues
+###### Resolved Issues
 
-- If you installed Xcode 27 beta on macOS Tahoe 26.5.1 and earlier, macOS virtual machine installation will fail due to a known bug. To restore virtual machine installation functionality follow the [`How to reinstall macOS guide.`](https://developer.apple.comhttps://support.apple.com/en-us/102655)  (179068335)
+- Fixed: If you installed Xcode 27 beta on macOS Tahoe 26.5.1 and earlier, macOS virtual machine installation will fail due to a known bug. To restore virtual machine installation functionality, follow the [`How to reinstall macOS guide.`](https://developer.apple.comhttps://support.apple.com/en-us/102655)  (179068335)
+
+#### Updates in Xcode 27 Beta 3
+
+##### Background Assets
+
+###### Resolved Issues in Xcode 27 Beta 3
+
+- Fixed: The packaging tool, ba-package, may generate an invalid asset-pack archive when you specify an on-demand download policy.  (179168553) (FB23020247)
+
+##### Carplay Simulator
+
+###### Resolved Issues in Xcode 27 Beta 3
+
+- Fixed: Cannot start a CarPlay connection with CarPlay Simulator when accessed via Device Hub.  (179523697)
+
+##### Coding Intelligence
+
+###### New Features in Xcode 27 Beta 3
+
+- Xcode build and test MCP tools now send dynamic activity status instead of static text to external MCP clients.  (181078347)
+
+##### Device Hub
+
+###### Resolved Issues in Xcode 27 Beta 3
+
+- Fixed: The ‘VoiceOver’ toggle in the appearance settings inspector does not enable voiceover on the device.  (173507341)
+- Fixed: The “Text Size” in the appearance inspector disappears if one of larger text sizes from Accessibility is being used.  (175365925)
+- Fixed: In some circumstances, when using “Simulate Mouse or Trackpad” with an iPad, physical or simulated, the mouse pointer can appear at a different place on the screen than the Mac pointer.  (178575823)
+- Fixed: The ‘Color Filter’ option in the appearance settings inspector works for simulators.  (178854926)
+- Fixed: Device Hub allows you to enter resize mode with an app linked against an iOS 26 or earlier SDK, which is unsupported and may result in Device Hub showing a black screen for the device.  (179416769)
+- Fixed: If you exit Device Hub’s resize mode through means other than the toolbar button or menu item (e.g. if your resized app crashes or is backgrounded) the device’s screen content will be incorrectly sized until it is rebooted.  (179991750)
+
+##### Devicectl
+
+###### Resolved Issues in Xcode 27 Beta 3
+
+- Fixed: The `--show` flag has been removed from the `devicectl device info details` command. Instead, the command provides the full set of device properties in the textual output and JSON (under the ‘properties’ dictionary).  (179880477)
+
+##### Instruments
+
+###### New Features in Xcode 27 Beta 3
+
+- Runs and Comparisons can now be bulk-deleted by using multi-selection and the `Delete` menu item or context menu.  (179565486) (FB23120864)
+
+###### Resolved Issues in Xcode 27 Beta 3
+
+- Fixed: Resolved a bug where swift concurrency backtraces often included completeTaskAndRelease (or similar concurrency mechanics) at the end of the backtrace.  (142883863)
+- Fixed an issue where the resize cursor would sometimes not appear when resizing the sidebar or inspector.  (172306622)
+
+##### Interface Builder
+
+###### Resolved Issues in Xcode 27 Beta 3
+
+- Fixed: A `TVCardView` loaded from a storyboard or xib may render incorrectly at runtime.  (179781291) (FB23188951)
+- Fixed: Compiled documents with text input views containing a non-nil “Password Rule” value fail to load at runtime.  (180420035) (FB23351677)
+
+##### Localization
+
+###### New Features in Xcode 27 Beta 3
+
+- You can now annotate translations in String Catalog artifacts when using agents to translate strings.  (176407208)
+- Strings newly added to String Catalogs now appear as artifacts when agents use the “Prepare Project for Localization” tool.  (176497701)
+
+###### Resolved Issues in Xcode 27 Beta 3
+
+- Fixed an issue where strings inside availability-constrained `#Preview` macros would not be excluded from String Catalogs.  (176188980) (FB22696182)
+- Fixed: Resolved an issue where Xcode may not have been able to reference the usage location for newly-extracted strings during agentic translation.  (179729079)
+
+##### Previews
+
+###### Resolved Issues in Xcode 27 Beta 3
+
+- Fixed an issue where the crash screen for a watchOS preview appeared with a light background instead of the expected dark appearance.  (146868878)
+
+###### Deprecations in Xcode 27 Beta 3
+
+- PreviewProvider and its family of preview modifiers  (144168701)
+
+##### Previews Playgrounds
+
+###### Resolved Issues in Xcode 27 Beta 3
+
+- Fixed: A clearer error message is now shown when building a preview times out.  (178756436)
+- Fixed: Reduced number of canvas errors that would be flagged as potentially caused by a crash.  (179124669)
+- Fixed: Errors encountered when using RenderPreview and ExecuteSnippet MCP tools now include full diagnostic details from the underlying failure.  (179318912)
+- Fixed a rare display setup-related issue where the first update to a preview could fail immediately after the preview launched.  (179411046)
+
+##### Security
+
+###### New Features in Xcode 27 Beta 3
+
+- The new “adopt-c-bounds-safety” Code Intelligence skill can help you adopt the bounds safety extension for C (-fbounds-safety) with a file-by-file adoption workflow. For more information about the C bounds safety extension, see https://developer.apple.com/documentation/xcode/enabling-enhanced-security-for-your-app#Adopt-bounds-checking-in-C.  (177739344)
+- The new “audit-xcode-security-settings” Code Intelligence skill can help you audit your app to suggest enabling additional security-oriented build settings and entitlements. For more information on these settings, see https://developer.apple.com/documentation/xcode/enabling-enhanced-security-for-your-app  (181104536)
+
+##### Simulator
+
+###### New Features in Xcode 27 Beta 3
+
+- The simulator runtimes now contain a pre-built dyld cache. This will make first launch of a simulator much faster.  (179846743)
+
+###### Resolved Issues in Xcode 27 Beta 3
+
+- Fixed: Accessibility Inspector cannot inspect elements in simulators.  (179033881) (FB22976268)
+
+##### Storekit Testing in Xcode
+
+###### Resolved Issues in Xcode 27 Beta 3
+
+- Fixed: Inspecting transaction details for a subscription suite purchase in the Transaction Manager displays incorrect product information.  (179413970)
+
+##### System
+
+###### Resolved Issues in Xcode 27 Beta 3
+
+- Fixed: Custom `FilePath` or `FileDescriptor` extensions that make unqualified calls to `stat()` or `stat(_)` (without the `Darwin.` qualification) might conflict with the new Swift `stat()` instance methods introduced in [`SYS-0006`](https://developer.apple.comhttps://github.com/apple/swift-system/blob/main/Proposals/0006-system-stat.md), causing build errors. See [`SYS-0008`](https://developer.apple.comhttps://github.com/apple/swift-system/blob/main/Proposals/0008-backdeploy-cinterop-stat.md) for more details.  (177911316)
+
+##### Testing
+
+###### Resolved Issues in Xcode 27 Beta 3
+
+- Fixed: Test issues with warning severity now appear in the console.  (161919593)
+- Fixed: An expected Swift Testing exit test process termination may cause a test failure to be recorded incorrectly during a UI test.  (174032826)
 
 ##### Xctest
 
-###### New Features
+###### New Features in Xcode 27 Beta 3
 
 - XCTest now includes XCUIVoiceOverService, a new UI testing API for verifying VoiceOver behavior in your app. Use it to drive VoiceOver from UI tests and validate focus, spoken output, and navigation across supported platforms.  (175858549)
 
@@ -248,20 +345,21 @@ See [`Xcode Support`](https://developer.apple.comhttps://developer.apple.com/sup
 ###### New Features in Xcode 27 Beta 2
 
 - Common Mac mouse and trackpad gestures such as scrolling, pinching, and rotating now work with standard UIKit components on iOS devices, either physical or simulated. When scrolling with a pointing device, `UIEvent.EventType.scroll` is emitted. When pinching or rotating with a trackpad, `UIEvent.EventType.transform` is emitted. As a result of these pointer-based events being emitted, you may see `UIPointerInteraction` effects applied based on where the pointer is located in your app. Additionally, clicking with a mouse or trackpad produces a simulated finger touch of type `UITouch.TouchType.direct` rather than `UITouch.TouchType.indirectPointer`. This hybrid behavior has been added for ease of use for Device Hub, and does not reflect functionality available on physical devices. To validate your app’s full pointer behavior, select “Simulate Trackpad or Mouse” from the Device menu, test on a physical iPad with a paired pointing device, or use iPhone Mirroring.  (48372360) (FB5341466)
-- Device Hub adds a new way to pair iPhone, iPad and Apple Watch running iOS 27/iPadOS 27/watchOS 27 and later over a network. This allows you to pair iPhones and iPads without requiring a cable, and provides a more reliable experience for pairing watches. To get started, click the + button in Device Hub’s sidebar then select “Pair Nearby Device…”, or refer to the documentation at https://developer.apple.com/documentation/xcode/managing-your-simulated-and-physical-devices-in-device-hub  (179418483)
+- Device Hub adds a new way to pair iPhone, iPad and Apple Watch running iOS 27/iPadOS 27/watchOS 27 and later over a network. This allows you to pair iPhones and iPads without requiring a cable, and provides a more reliable experience for pairing watches. To get started, click the + button in Device Hub’s sidebar then select “Pair Nearby Device…”, or refer to the documentation at [`Managing your simulated and physical devices in Device Hub`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/managing-your-simulated-and-physical-devices-in-device-hub).  (179418483)
 
 ###### Resolved Issues in Xcode 27 Beta 2
 
 - Fixed: Renaming a device in Device Hub may cut off the renaming prematurely.  (178477422)
 - Fixed: Renaming a device now works properly if the sidebar is not visible  (178538834)
-- Fixed: Added a preference to control whether key combos are sent to Device Hub or to the remote device: ```None
+- Fixed: Added a preference to control whether key combos are sent to Device Hub or to the remote device. ```None
  defaults -container com.apple.dt.Devices write com.apple.dt.Devices hostKeybindingPolicy -int <value>
-``` - 0 - Device Hub uses rich key combos shortcuts - 1 - Minimized when interacting with device
+``` Use these values to define a specific behavior: - 0 - Device Hub uses rich key combos shortcuts
+- 1 - Minimized when interacting with device
 - 2 - Device Hub uses minimal key combo shortcuts  (178920247)
 - Fixed: When pasteboard data takes longer than 5s to transfer (eg: misbehaving apps serving data, data taking a long time to process, or large data taking a long time to transfer), resolution will now only block apps attempting to paste for up to 5s.  After the 5s timeout, the paste will fail but data will continue to be transferred in the background such that the paste can be retried and will succeed after the data has been transferred.  (179132581)
 - Fixed: Improved reliability of pasteboard synchronization  (179200521)
 - Fixed: Device Hub synchronization no longer attempts to synchronize pasteboard data provided by Universal Clipboard  (179287395)
-- Fixed: If the user specified a location to save screenshots from Simulator, Device Hub will honor that location before falling back to the global default screenshot location. Preference order: com.apple.dt.devices screenCaptureLocation com.apple.iphonesimulator ScreenShotSaveLocation com.apple.screencapture location  (179402694)
+- Fixed: If the user specified a location to save screenshots from Simulator, Device Hub will honor that location before falling back to the global default screenshot location. Preference order: `com.apple.dt.devices` screenCaptureLocation `com.apple.iphonesimulator` ScreenShotSaveLocation `com.apple.screencapture` location  (179402694)
 
 ##### Devicectl
 
@@ -372,7 +470,10 @@ See [`Xcode Support`](https://developer.apple.comhttps://developer.apple.com/sup
    Methods:
    - Name: operator+
      Availability: none
-``` (148534260)
+ ```  (148534260)  
+
+
+```
 
 ##### Background Assets
 
@@ -381,10 +482,7 @@ See [`Xcode Support`](https://developer.apple.comhttps://developer.apple.com/sup
 - Asset-pack manifests now support path wildcards, file exclusion, hard-coded source roots, and custom destination subpaths.  (163943159)
 - You can reduce your app’s storage usage with localized asset packs. The system delivers the appropriately localized asset packs based on the user’s preferred languages.  (163944365)
 - Use the new Steam Asset Converter to convert your Steam “depots” into asset packs.  (163953178)
-
-###### Resolved Issues in Xcode 27 Beta
-
-- Fixed: Xcode can now serve asset packs to your app while debugging on devices by setting a Background Asset Packs folder in the Run scheme action’s Options tab.  (165230494)
+- Xcode can now serve asset packs to your app while debugging on devices by setting a Background Asset Packs folder in the Run scheme action’s Options tab.  (165230494)
 
 ##### C++ Standard Library
 
@@ -465,7 +563,9 @@ See [`Xcode Support`](https://developer.apple.comhttps://developer.apple.com/sup
      }
    }
  }
-``` (178470032)
+ ```  (178470032)  
+
+```
 
 ###### Resolved Issues in Xcode 27 Beta
 
@@ -476,7 +576,7 @@ See [`Xcode Support`](https://developer.apple.comhttps://developer.apple.com/sup
 
 ###### New Features in Xcode 27 Beta
 
-- In projects using bridging headers, LLDB can now directly import explicitly built Swift modules and PCH from DerivedData. This can dramatically speed up the first expression or `po` in a debug session involving a bridging header. (168272248)
+- In projects using bridging headers, LLDB can now directly import explicitly built Swift modules and PCH from DerivedData. This can dramatically speed up the first expression or `po` in a debug session involving a bridging header.  (168272248)
 - LLDB now provides a `language swift task tree` command, which prints a tree of all the Swift Tasks the debugger knows about. For more information, see the output of `help language swift task tree`.  (169471480)
 
 ##### File Template for Launch Tests
@@ -690,7 +790,9 @@ See [`Xcode Support`](https://developer.apple.comhttps://developer.apple.com/sup
 ``` ```None
  // Swift
  processNumbers([1, 2, 3], .init { print($0) })
-``` (133777029)
+ ```  (133777029)  
+
+```
 - You can now annotate constructors of foreign reference types as SWIFT_RETURNS_RETAINED or SWIFT_RETURNS_UNRETAINED.  (135368369)
 - Mapping `__counted_by` and `std::span` parameters annotated with `__noescape` to Swift Span no longer requires the SafeInteropWrappers experimental feature flag. Mapping return values to Span using `__lifetimebound` is still guarded by the experimental feature flag. For more information, see https://www.swift.org/documentation/cxx-interop/safe-interop/#safe-overloads-for-annotated-spans-and-pointers  (148994016)
 - Raw pointers to intrusively reference counted types (annotated with `SWIFT_SHARED_REFERENCE`) are imported as Swift classes. Starting with this release you can now annotate smart pointer types pointing to such reference counted types with `SWIFT_REFCOUNTED_PTR` macro to bridge their instances to Swift classes. For example: ```None
@@ -707,7 +809,9 @@ See [`Xcode Support`](https://developer.apple.comhttps://developer.apple.com/sup
  void takesSmartPtr(ObjPtr p);
 ``` The function `takesSmartPtr` is imported to Swift as: ```None
  func takesSmartPtr(_ p: SharedObj?)
-``` (156521316)
+ ```  (156521316)  
+
+```
 - Previously, safe wrappers could not be generated for functions where the signature contained template instantiations. Any template instantiation would have to be referred to using a typedef instead. Safe wrappers can now be generated for functions without wrapping `std::span` parameter types in typedefs, if they are annotated with `__noescape`. Any other template instantiation in the signature still prevents generating a safe wrapper, unless hidden behind a typedef. Example: ```c++
  // Already supported:
  using IntSpan = std::span<int>;
@@ -718,7 +822,10 @@ See [`Xcode Support`](https://developer.apple.comhttps://developer.apple.com/sup
  
  // The return type template instantiation here still prevents generating a safe wrapper:
  std::span<int> baz(std::span<int> z __noescape);
-``` (167712240)
+ ```  (167712240)  
+
+
+```
 
 ##### System
 

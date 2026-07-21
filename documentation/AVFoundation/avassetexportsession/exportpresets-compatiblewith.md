@@ -32,17 +32,6 @@ Not all export presets are compatible with all assets. For example, video-only a
 
 - `asset`: An asset to export.
 
-## See Also
-
-- [var presetName: String](avassetexportsession/presetname.md)
-  The name of the preset that the asset export session uses.
-- [func determineCompatibleFileTypes(completionHandler: ([AVFileType]) -> Void)](avassetexportsession/determinecompatiblefiletypes(completionhandler:).md)
-  Determines the output file types an asset export session supports writing in its current configuration.
-- [class func allExportPresets() -> [String]](avassetexportsession/allexportpresets.md)
-  Returns all available export preset names.
-- [class func determineCompatibility(ofExportPreset: String, with: AVAsset, outputFileType: AVFileType?, completionHandler: (Bool) -> Void)](avassetexportsession/determinecompatibility(ofexportpreset:with:outputfiletype:completionhandler:).md)
-  Determines an export preset’s compatibility to export the asset in a container of the output file type.
-
 
 ---
 

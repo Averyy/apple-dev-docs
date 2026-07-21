@@ -44,6 +44,13 @@ This option set defines timeline navigation operations. Different content types 
 - [SendableMetatype](../Swift/SendableMetatype.md)
 - [SetAlgebra](../Swift/SetAlgebra.md)
 
+## See Also
+
+- [protocol AVPlaybackUserInterfacePlaybackControllable](avplaybackuserinterfaceplaybackcontrollable-9he54.md)
+  Provides playback control and state management for media content.
+- [enum AVPlaybackUserInterfacePlaybackState](avplaybackuserinterfaceplaybackstate.md)
+  Describes possible transport states of the playback source.
+
 
 ---
 

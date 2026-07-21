@@ -86,6 +86,9 @@ The `PKPassLibrary` isn’t thread-safe. Use instances of this class only on a s
 - [Deprecated Symbols](deprecated-symbols.md)
   Review unsupported symbols and their replacements.
 ### Instance Methods
+- [func addPasses(data: [Data], completion: (PKPassLibraryAddPassesStatus) -> Void)](pkpasslibrary/addpasses(data:completion:).md)
+- [func addPasses(fromArchiveAt: URL, completion: (PKPassLibraryAddPassesStatus) -> Void)](pkpasslibrary/addpasses(fromarchiveat:completion:).md)
+- [func addPasses(fromArchiveData: Data, completion: (PKPassLibraryAddPassesStatus) -> Void)](pkpasslibrary/addpasses(fromarchivedata:completion:).md)
 - [func authorizationStatus(for: PKPassLibrary.Capability) -> PKPassLibrary.AuthorizationStatus](pkpasslibrary/authorizationstatus(for:).md)
 - [func encryptedServiceProviderData(for: PKSecureElementPass, completion: ([AnyHashable : Any]?, (any Error)?) -> Void)](pkpasslibrary/encryptedserviceproviderdata(for:completion:).md)
 - [func openPaymentSetup(merchantIdentifier: String)](pkpasslibrary/openpaymentsetup(merchantidentifier:).md)

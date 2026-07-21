@@ -31,6 +31,11 @@ The progress is calculated as the ratio of completed duration to total duration 
 
 - `assemblyTrackID`: The track ID to query progress for.
 
+## See Also
+
+- [var overallProgress: Float](avassetwritingplannerprogress/overallprogress.md)
+  The overall progress across all tracks.
+
 
 ---
 

@@ -21,7 +21,8 @@ If a managed object context for the document does not exist, one is created auto
 ## See Also
 
 - [Core Data Programming Guide](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreData/index.html#//apple_ref/doc/uid/TP40001075)
-- [Document-Based App Programming Guide for Mac](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/DocBasedAppProgrammingGuideForOSX/Introduction/Introduction.html#//apple_ref/doc/uid/TP40011179)
+- [class NSPersistentDocument](nspersistentdocument.md)
+  A document object that can integrate with Core Data.
 - [var managedObjectModel: NSManagedObjectModel?](nspersistentdocument/managedobjectmodel.md)
   The managed object model of the document.
 - [func configurePersistentStoreCoordinator(for: URL, ofType: String, modelConfiguration: String?, storeOptions: [String : Any]?) throws](nspersistentdocument/configurepersistentstorecoordinator(for:oftype:modelconfiguration:storeoptions:).md)

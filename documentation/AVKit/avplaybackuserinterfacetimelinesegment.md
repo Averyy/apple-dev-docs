@@ -55,6 +55,15 @@ Timeline segments divide media content into distinct regions, each with its own 
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 
+## See Also
+
+- [protocol AVPlaybackUserInterfaceTimeControllable](avplaybackuserinterfacetimecontrollable-50vcy.md)
+  Provides time control and navigation capabilities for media content.
+- [class AVPlaybackUserInterfacePlaybackPosition](avplaybackuserinterfaceplaybackposition.md)
+  A snapshot comprising a playback position recorded at a known host time and the rate of position advancement.
+- [enum AVPlaybackUserInterfaceTimelineSegmentType](avplaybackuserinterfacetimelinesegmenttype.md)
+  Describes the type of content within a timeline segment.
+
 
 ---
 

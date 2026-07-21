@@ -16,13 +16,17 @@ A type which represents the registration for a given scene accessory.
 class UISceneAccessoryRegistration
 ```
 
+## Mentions
+
+- [Presenting content on a connected display](presenting-content-on-a-connected-display.md)
+
 #### Overview
 
 Instances of this type allow for observing availability of a given scene accessory, as well as controlling whether the contents should be displayed when the system determines the scene is available.
 
 ## Topics
 
-### Instance Properties
+### Observing availability and controlling display
 - [var isAvailable: Bool](uisceneaccessoryregistration/isavailable.md)
   Whether the associated scene accessory is available for display by the system or not.
 - [var isEnabled: Bool](uisceneaccessoryregistration/isenabled.md)
@@ -40,6 +44,11 @@ Instances of this type allow for observing availability of a given scene accesso
 - [Hashable](../Swift/Hashable.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 - [Sendable](../Swift/Sendable.md)
+
+## See Also
+
+- [class UISceneAccessory](uisceneaccessory.md)
+  A type which can be used to register for a specific type of scene accessory presentation.
 
 
 ---

@@ -22,8 +22,6 @@ struct CPUExceptionDiagnostic
 
 CPU exceptions occur when your app consumes an excessive amount of CPU time in a short period. The diagnostic includes a [`CallStackTree`](callstacktree.md) to identify the responsible code path, along with `totalCPUTime` and `totalSampledTime` measurements.
 
-This type replaces [`MXCPUExceptionDiagnostic`](mxcpuexceptiondiagnostic.md).
-
 ## Topics
 
 ### Call stack

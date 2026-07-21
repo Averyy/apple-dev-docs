@@ -86,17 +86,19 @@ If you don’t provide a custom label, the system provides a button with the def
 
 ## Topics
 
-### Initializers
+### Creating and opening a document
 - [init(_:contentType:)](newdocumentbutton/init(_:contenttype:).md)
   Creates and opens new documents.
 - [init(_:contentType:prepareDocumentURL:)](newdocumentbutton/init(_:contenttype:preparedocumenturl:).md)
   Creates and opens new documents.
+### Creating and opening a document with a creation source
 - [init(_:contentType:source:)](newdocumentbutton/init(_:contenttype:source:).md)
   Creates and opens new documents, tagging them with a creation source.
 - [init(Text?, contentType: UTType, source: DocumentCreationSource, () async throws -> URL?)](newdocumentbutton/init(_:contenttype:source:_:).md)
   Creates and opens new URL-based documents from a template picker.
 - [init(_:contentType:source:prepareDocumentURL:)](newdocumentbutton/init(_:contenttype:source:preparedocumenturl:).md)
   Creates and opens new URL-based documents from a template picker.
+### Deprecated
 - [init(_:for:contentType:prepareDocument:)](newdocumentbutton/init(_:for:contenttype:preparedocument:).md)
 
 ## Relationships

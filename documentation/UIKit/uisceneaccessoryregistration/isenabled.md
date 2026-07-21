@@ -15,9 +15,18 @@ Whether the content defined by this scene accessory should be displayed or not.
 var isEnabled: Bool { get set }
 ```
 
+## Mentions
+
+- [Presenting content on a connected display](presenting-content-on-a-connected-display.md)
+
 #### Discussion
 
 This value does not reflect the availability of the scene accessory, which is determined by the system.
+
+## See Also
+
+- [var isAvailable: Bool](uisceneaccessoryregistration/isavailable.md)
+  Whether the associated scene accessory is available for display by the system or not.
 
 
 ---

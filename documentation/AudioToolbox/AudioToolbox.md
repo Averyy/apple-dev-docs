@@ -134,6 +134,7 @@ The AudioToolbox framework provides interfaces for recording, playback, and stre
 - [var kAudioConverterPropertyPerformDownmix: AudioConverterPropertyID](kaudioconverterpropertyperformdownmix.md)
 - [var kAudioUnitErr_MultipleVoiceProcessors: OSStatus](kaudiouniterr_multiplevoiceprocessors.md)
 - [var kAudioUnitSubType_AUAudioMix: UInt32](kaudiounitsubtype_auaudiomix.md)
+- [var kReverb2Param_LegacyMode: AudioUnitParameterID](kreverb2param_legacymode.md)
 ### Functions
 - [func AudioConverterFillComplexBufferRealtimeSafe(AudioConverterRef, AudioConverterComplexInputDataProcRealtimeSafe, UnsafeMutableRawPointer?, UnsafeMutablePointer<UInt32>, UnsafeMutablePointer<AudioBufferList>, UnsafeMutablePointer<AudioStreamPacketDescription>?) -> OSStatus](audioconverterfillcomplexbufferrealtimesafe(_:_:_:_:_:_:).md)
 - [func AudioConverterFillComplexBufferWithPacketDependencies(AudioConverterRef, AudioConverterComplexInputDataProc, UnsafeMutableRawPointer?, UnsafeMutablePointer<UInt32>, UnsafeMutablePointer<AudioBufferList>, UnsafeMutablePointer<AudioStreamPacketDescription>?, UnsafeMutablePointer<AudioStreamPacketDependencyDescription>) -> OSStatus](audioconverterfillcomplexbufferwithpacketdependencies(_:_:_:_:_:_:_:).md)
@@ -151,4 +152,4 @@ The AudioToolbox framework provides interfaces for recording, playback, and stre
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/audiotoolbox)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AudioToolbox)*

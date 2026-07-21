@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: property
 
+Texture dimensions, pixel format, and type.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)

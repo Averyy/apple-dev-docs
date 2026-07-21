@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: property
 
+Transform from world space into bind space of the skinned mesh.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)

@@ -379,7 +379,7 @@ Use input and event modifiers to configure and provide handlers for a wide varie
   Sets an `OpenURLAction` that prefers opening URL with an in-app browser. The `handler` closure takes a URL as input, and returns a `OpenURLAction.Result` that indicates the outcome of the action.
 - [func widgetURL(URL?) -> some View](view/widgeturl(_:).md)
   Sets the URL to open in the containing app when the user clicks the widget.
-### Asyncronous image loading
+### Asynchronous image loading
 - [func asyncImageURLSession(URLSession) -> some View](view/asyncimageurlsession(_:).md)
   A modifier that adds a URL session for asynchronous images contained in the view to use when fetching image data.
 ### Publisher events

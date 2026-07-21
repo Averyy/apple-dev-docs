@@ -13,6 +13,13 @@
 typealias CMMInitializeLinkProfileProc = (ColorSyncMutableProfile?, CFArray?, CFDictionary?) -> Bool
 ```
 
+## See Also
+
+- [typealias ColorSyncCMMIterateCallback](colorsynccmmiteratecallback.md)
+- [typealias CMMApplyTransformProc](cmmapplytransformproc.md)
+- [typealias CMMCreateTransformPropertyProc](cmmcreatetransformpropertyproc.md)
+- [typealias CMMInitializeTransformProc](cmminitializetransformproc.md)
+
 
 ---
 

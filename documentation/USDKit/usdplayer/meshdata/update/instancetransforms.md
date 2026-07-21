@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: property
 
+Updated world-space instance transforms.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -15,6 +17,10 @@
 ```swift
 let instanceTransforms: [float4x4]?
 ```
+
+#### Discussion
+
+`nil` if unchanged.
 
 
 ---

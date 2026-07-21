@@ -22,7 +22,7 @@ static let privacy: RedactionReasons
 
 #### Discussion
 
-Views marked with `privacySensitive` will be automatically redacted using a standard styling. To apply a custom treatment the redaction reason can be read out of the environment.
+Views marked with [`privacySensitive(_:)`](view/privacysensitive(_:).md) will be automatically redacted using a standard styling. To apply a custom treatment the redaction reason can be read out of the environment.
 
 ```swift
 struct BankingContentView: View {

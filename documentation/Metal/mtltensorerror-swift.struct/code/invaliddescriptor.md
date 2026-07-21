@@ -3,6 +3,8 @@
 **Framework**: Metal  
 **Kind**: case
 
+The tensor descriptor is invalid.
+
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+

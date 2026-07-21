@@ -65,6 +65,8 @@ The system displays the primary and secondary actions as buttons on the alert. A
   The array of actions associated with this navigation alert.
 - [var alertImage: UIImage?](cpnavigationalert/alertimage.md)
 - [var avatarImage: UIImage?](cpnavigationalert/avatarimage.md)
+- [var showsCloseButton: Bool](cpnavigationalert/showsclosebutton.md)
+  A Boolean value indicating whether the close button is allowed to appear.
 ### Instance Methods
 - [func updateTitleVariants([String], subtitleVariants: [String], avatarImage: UIImage?, alert: UIImage?, actions: [CPAlertAction], duration: TimeInterval)](cpnavigationalert/updatetitlevariants(_:subtitlevariants:avatarimage:alert:actions:duration:).md)
   Update the navigation alert with new title variants, subtitle variants, image, actions, and duration.

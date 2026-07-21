@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: property
 
+Joint indices for each vertex-influence slot, with `influencePerVertexCount` consecutive entries per vertex.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)

@@ -21,8 +21,6 @@ struct ScrollHitchTimeMetric
 
 This metric corresponds to the [`MetricResult.scrollHitchTime(_:)`](metricresult/scrollhitchtime(_:).md) case. It appears in both [`intervalEntries`](metricreport/intervalentries.md) and [`stateEntries`](metricreport/stateentries.md) when state reporting is enabled.
 
-This type replaces the `scrollHitchTimeRatio` property of [`MXAnimationMetric`](mxanimationmetric.md).
-
 ## Topics
 
 ### Measurements

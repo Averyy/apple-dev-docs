@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: property
 
-The child joints of this joint. All children must have unique names within the same parent.
+The child joints of this joint. All children must have unique names within the same parent. `JointBuilder` preserves the order children are declared in the closure body, so iteration over `children` is deterministic.
 
 **Availability**:
 - iOS 27.0+ (Beta)

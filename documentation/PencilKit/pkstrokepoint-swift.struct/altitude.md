@@ -18,6 +18,10 @@ The altitude of this point in radians.
 var altitude: CGFloat { get }
 ```
 
+## Mentions
+
+- [Importing Bézier path data into PencilKit](importing-external-drawing-data-into-pencilkit.md)
+
 ## See Also
 
 - [var azimuth: CGFloat](pkstrokepoint-swift.struct/azimuth.md)

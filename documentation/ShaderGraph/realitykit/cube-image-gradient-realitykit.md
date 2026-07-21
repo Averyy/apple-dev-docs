@@ -68,6 +68,8 @@ For an example of how to use this node, see [`Cube Image (RealityKit)`](realityk
   A surface shader that defines properties for a RealityKit Unlit material.
 - [PBR Surface (RealityKit)](realitykit/pbr-surface-(realitykit).md)
   A surface shader that defines properties for a RealityKit Physically Based Rendering material.
+- [Hair Surface (RealityKit)](realitykit/hair-surface-(realitykit).md)
+  A surface shader that defines properties for a RealityKit Hair material.
 - [Occlusion Surface (RealityKit)](realitykit/occlusion-surface-(realitykit).md)
   A surface shader that defines properties for a RealityKit Occlusion material that does not receive dynamic lighting.
 - [Shadow Receiving Occlusion Surface (RealityKit)](realitykit/shadow-receiving-occlusion-surface-(realitykit).md)
@@ -92,8 +94,6 @@ For an example of how to use this node, see [`Cube Image (RealityKit)`](realityk
   The integer index of the vertex.
 - [Surface Model To World (RealityKit)](realitykit/surface-model-to-world-(realitykit).md)
   The model-to-world transformation Matrix4x4 (Float).
-- [Surface Model To View (RealityKit)](realitykit/surface-model-to-view-(realitykit).md)
-  The model-to-view transformation Matrix4x4 (Float).
 
 
 ---

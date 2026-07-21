@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: method
 
+Updates the stage to `timeCode` and returns a [`USDPlayer.FrameUpdate`](usdplayer/frameupdate.md) describing all scene changes.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -16,9 +18,14 @@
 final func update(timeCode: USDStage.TimeCode) -> sending USDPlayer.FrameUpdate?
 ```
 
+#### Discussion
+
+Returns `nil` if nothing changed.
+
 ## See Also
 
 - [USDPlayer.FrameUpdate](usdplayer/frameupdate.md)
+  A snapshot of all mesh, material, texture, and deformation changes from the last update.
 
 
 ---

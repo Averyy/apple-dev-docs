@@ -4,7 +4,7 @@
 **Kind**: property  
 **Required**: Yes
 
-Values that help the system understand the scope of an app intent that shows the results of a string-based search.
+The scope of the search in your app’s content.
 
 **Availability**:
 - iOS 17.2+
@@ -20,6 +20,10 @@ Values that help the system understand the scope of an app intent that shows the
 ```swift
 static var searchScopes: Self.Criteria.SearchScopes { get }
 ```
+
+#### Discussion
+
+Use this property to indicate the portions of your content the type searches. The type of this property depends on the search criteria you use. For example, if your app intent supports [`StringSearchCriteria`](stringsearchcriteria.md), the value of this type is an array of [`StringSearchScope`](stringsearchscope.md) values.
 
 ## See Also
 

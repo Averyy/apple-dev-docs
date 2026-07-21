@@ -88,6 +88,9 @@ In addition to indexing content, iOS provides additional strategies for making y
 ### Version
 - [var CoreSpotlightAPIVersion: Int32](corespotlightapiversion.md)
   The API version number for Core Spotlight.
+### Structures
+- [struct SearchableItem](searchableitem.md)
+  A Swift value type representing a Spotlight search result.
 
 
 ---

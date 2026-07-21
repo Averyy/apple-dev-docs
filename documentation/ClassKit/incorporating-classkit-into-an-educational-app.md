@@ -14,7 +14,7 @@ Walk through the process of setting up assignments and recording student progres
 
 You adopt ClassKit in an existing educational app to enable teachers to create assignments and monitor students’ progress through those assignments. This sample code project demonstrates ClassKit adoption in an app that lets users read plays.
 
-Before starting, be sure to read [`Enabling ClassKit in your app`](enabling-classkit-in-your-app.md) to learn how to configure your environment to work with ClassKit, and Testing Your App During Development to prepare to debug your ClassKit adoption.
+Before starting, be sure to read [`Enabling ClassKit in your app`](enabling-classkit-in-your-app.md) to learn how to configure your environment to work with ClassKit, and [`Testing your ClassKit app during development`](testing-your-classkit-app-during-development.md) to prepare to debug your ClassKit adoption.
 
 ##### Start with an Existing Educational App
 

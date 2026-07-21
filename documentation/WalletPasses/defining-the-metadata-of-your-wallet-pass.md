@@ -30,7 +30,7 @@ Airline boarding passes in iOS 26 and later use semantic tags to display the mos
 - Security: Indicates whether the passenger is a member of TSA PreCheck, Global Entry, CLEAR, or other similar programs.
 - Seats: Indicates the type of seat that a passenger booked and includes seat number, row number, level, section, seat type, and description of the seat.
 
-![An illustration of a boarding pass with the various field highlighted.](https://docs-assets.developer.apple.com/published/32687ac26da2d61cd838654322120195/pass-fields-layout-airline-boarding-pass-semantic%402x.png)
+![An illustration of a boarding pass with the various field highlighted.](https://docs-assets.developer.apple.com/published/76d88e5390205af2733c370fefad8cb9/pass-fields-layout-airline-boarding-pass-semantic%402x.png)
 
 For a more detailed guide on boarding passes, see [`Creating an airline boarding pass using semantic tags`](creating-an-airline-boarding-pass-using-semantic-tags.md).
 

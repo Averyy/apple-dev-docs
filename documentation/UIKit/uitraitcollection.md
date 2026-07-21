@@ -217,7 +217,10 @@ For information on creating custom traits, see [`Providing data to the view hier
 - [convenience init<T>(T.Type, value: T.Value)](uitraitcollection/init(_:value:)-836bk.md)
 - [convenience init<T>(T.Type, value: T.Value)](uitraitcollection/init(_:value:)-8k1t1.md)
 - [convenience init<T>(T.Type, value: T.Value)](uitraitcollection/init(_:value:)-vvgw.md)
+- [convenience init(systemPrefersReducedResourceUsage: Bool)](uitraitcollection/init(systemprefersreducedresourceusage:).md)
 - [init(traitsFromCollections: [UITraitCollection])](uitraitcollection/init(traitsfromcollections:).md)
+### Instance Properties
+- [var systemPrefersReducedResourceUsage: Bool](uitraitcollection/systemprefersreducedresourceusage-1yl57.md)
 ### Instance Methods
 - [func replacing<T>(T.Type, value: T.Value) -> UITraitCollection](uitraitcollection/replacing(_:value:)-162et.md)
 - [func replacing<T>(T.Type, value: T.Value) -> UITraitCollection](uitraitcollection/replacing(_:value:)-1n0uk.md)

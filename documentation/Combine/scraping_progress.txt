@@ -1,4 +1,4 @@
 Completed scraping Combine!
-Total pages scraped: 0
-Pages skipped (unchanged): 1061
+Total pages scraped: 1060
+Pages skipped (unchanged): 1
 Pages failed: 0

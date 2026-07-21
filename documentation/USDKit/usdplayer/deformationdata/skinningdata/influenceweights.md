@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: property
 
+Influence weights (0.0–1.0) corresponding 1:1 with `influenceJointIndices`.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -15,6 +17,10 @@
 ```swift
 let influenceWeights: [Float]
 ```
+
+#### Discussion
+
+Weights for each vertex sum to 1.0.
 
 
 ---

@@ -19,10 +19,6 @@ optional func speechRecognizer(_ sender: NSSpeechRecognizer, didRecognizeCommand
 
 `command` is one of the strings from the array passed to [`commands`](nsspeechrecognizer/commands.md). The delegate typically evaluates which command was recognized and performs the related action.
 
-## See Also
-
-- [Speech Programming Topics](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Speech/Speech.html#//apple_ref/doc/uid/10000178i)
-
 
 ---
 

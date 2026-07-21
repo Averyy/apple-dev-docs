@@ -23,6 +23,7 @@ init(_ titleKey: LocalizedStringKey, systemImage: String, @ContentBuilder conten
 ## Parameters
 
 - `titleKey`: The localized string key label for the tab’s tab item.
+- `systemImage`: The image for the tab’s tab item.
 - `content`: The view content of the tab.
 
 ## See Also

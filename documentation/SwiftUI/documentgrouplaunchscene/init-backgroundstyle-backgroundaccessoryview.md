@@ -29,6 +29,15 @@ Use a `DocumentGroupLaunchScene` alongside any [`DocumentGroup`](documentgroup.m
 - `actions`: A content builder for returning the view’s actions.
 - `backgroundAccessoryView`: A content builder for returning the view’s background accessory view.
 
+## See Also
+
+- [init(_:backgroundStyle:_:)](documentgrouplaunchscene/init(_:backgroundstyle:_:).md)
+  Creates a launch scene for document-based applications with a title, a background style, and a set of actions.
+- [init(_:backgroundStyle:_:backgroundAccessoryView:overlayAccessoryView:)](documentgrouplaunchscene/init(_:backgroundstyle:_:backgroundaccessoryview:overlayaccessoryview:).md)
+  Creates a launch scene for document-based applications with a title, a background style, a set of actions, and background and overlay accessory views.
+- [init(_:backgroundStyle:_:overlayAccessoryView:)](documentgrouplaunchscene/init(_:backgroundstyle:_:overlayaccessoryview:).md)
+  Creates a launch scene for document-based applications with a title, a background style, a set of actions, and an overlay accessory view.
+
 
 ---
 

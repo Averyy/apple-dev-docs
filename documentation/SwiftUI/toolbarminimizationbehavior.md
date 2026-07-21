@@ -38,7 +38,7 @@ NavigationStack {
 
 ## Topics
 
-### Type Properties
+### Getting behaviors
 - [static var automatic: ToolbarMinimizationBehavior](toolbarminimizationbehavior/automatic.md)
   The system determines the minimize behavior. By default, navigation bars on iOS will minimize when the view has a searchable using the [`toolbarPrincipal`](searchfieldplacement/toolbarprincipal.md) placement.
 - [static let never: ToolbarMinimizationBehavior](toolbarminimizationbehavior/never.md)
@@ -55,6 +55,19 @@ NavigationStack {
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [func toolbarMinimizationBehavior(ToolbarMinimizationBehavior, for: ToolbarPlacement...) -> some View](view/toolbarminimizationbehavior(_:for:).md)
+  Sets the minimize behavior for the specified bars.
+- [func toolbarMinimizationRestoration(ToolbarMinimizationRestoration, for: ToolbarPlacement...) -> some View](view/toolbarminimizationrestoration(_:for:).md)
+  Sets the restoration behavior for the specified bars during minimization.
+- [struct ToolbarMinimizationRestoration](toolbarminimizationrestoration.md)
+  The restoration behavior during toolbar minimization.
+- [func toolbarMinimizationSafeAreaAdjustment(ToolbarMinimizationSafeAreaAdjustment, for: ToolbarPlacement...) -> some View](view/toolbarminimizationsafeareaadjustment(_:for:).md)
+  Sets the safe area adjustment for the specified bars during minimization.
+- [struct ToolbarMinimizationSafeAreaAdjustment](toolbarminimizationsafeareaadjustment.md)
+  The safe area adjustment during toolbar minimization.
 
 
 ---

@@ -26,8 +26,6 @@ struct HangDiagnostic
 
 This carries a [`CallStackTree`](callstacktree.md) captured at the time of the hang, and a `hangDuration` measurement that reports how long the main thread was blocked.
 
-This type replaces [`MXHangDiagnostic`](mxhangdiagnostic.md).
-
 ## Topics
 
 ### Call stack

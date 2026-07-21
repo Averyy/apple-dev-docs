@@ -25,20 +25,6 @@ For possible values, see [`AVAssetExportSession.Status`](avassetexportsession/st
 
 This value is key-value observable.
 
-## See Also
-
-- [func states(updateInterval: TimeInterval) -> some Sendable & AsyncSequence<AVAssetExportSession.State, Never>
-](avassetexportsession/states(updateinterval:).md)
-  Monitors the progress state of an export operation.
-- [AVAssetExportSession.State](avassetexportsession/state.md)
-  Constants that indicate the state of an export operation.
-- [AVAssetExportSession.Status](avassetexportsession/status-swift.enum.md)
-  Values that indicate the state of an export session.
-- [var progress: Float](avassetexportsession/progress.md)
-  A value that indicates the progress of the export.
-- [var error: (any Error)?](avassetexportsession/error.md)
-  An optional error object.
-
 
 ---
 

@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: method
 
+Consumes and returns the [`USDPlayer.MeshData`](usdplayer/meshdata.md) for the given mesh addition.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -15,6 +17,10 @@
 ```swift
 mutating func takeMeshAddition(id: USDPlayer.MeshID) -> USDPlayer.MeshData?
 ```
+
+#### Discussion
+
+Returns `nil` if not present.
 
 
 ---

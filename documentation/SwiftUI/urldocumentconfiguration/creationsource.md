@@ -20,7 +20,7 @@ final var creationSource: DocumentCreationSource? { get }
 
 #### Discussion
 
-On iOS, you can specify the source via a [`NewDocumentButton`](newdocumentbutton.md) in [`DocumentGroupLaunchScene`](documentgrouplaunchscene.md):
+On iOS, you can specify the source using a [`NewDocumentButton`](newdocumentbutton.md) in [`DocumentGroupLaunchScene`](documentgrouplaunchscene.md):
 
 ```swift
 extension DocumentCreationSource {

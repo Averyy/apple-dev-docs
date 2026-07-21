@@ -1,72 +1,72 @@
 {
   "metadata": {
-    "last_updated": "2026-07-17T07:44:23.833462",
+    "last_updated": "2026-07-21T07:31:44.777545",
     "total_pages": 8,
-    "session_id": "2026-07-17T07:44:23.049844"
+    "session_id": "2026-07-21T07:31:43.890407"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/ApplePencil.json": {
-      "hash": "b3023f1e611b64f9c3055ef4ddeda9a3f103e0a90b8b38e7ba3e78abe819a4d6",
-      "last_checked": "2026-07-17T07:44:23.287833",
+      "hash": "55332d356bdb1a0a4346759285ed6bd461b8d6e947d7e5dd95f88608f5694dde",
+      "last_checked": "2026-07-21T07:31:44.206978",
       "status": "unchanged",
-      "session_id": "2026-07-17T07:44:23.049844",
-      "etag": "W/\"1a042a75d837c3a590efedcf3c40b485\"",
+      "session_id": "2026-07-21T07:31:43.890407",
+      "etag": "W/\"a1ab50e4c3097ca68b208d4a3bf95b70\"",
       "file_path": "documentation/ApplePencil/ApplePencil.md"
     },
     "https://developer.apple.com/documentation/ApplePencil": {
-      "hash": "b3023f1e611b64f9c3055ef4ddeda9a3f103e0a90b8b38e7ba3e78abe819a4d6",
-      "last_checked": "2026-07-17T07:44:23.207318",
+      "hash": "55332d356bdb1a0a4346759285ed6bd461b8d6e947d7e5dd95f88608f5694dde",
+      "last_checked": "2026-07-21T07:31:44.120380",
       "status": "unchanged",
-      "session_id": "2026-07-17T07:44:23.049844",
-      "etag": "W/\"1a042a75d837c3a590efedcf3c40b485\"",
+      "session_id": "2026-07-21T07:31:43.890407",
+      "etag": "W/\"a1ab50e4c3097ca68b208d4a3bf95b70\"",
       "file_path": "documentation/ApplePencil/ApplePencil.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/applepencil/handling-squeezes-from-apple-pencil.json": {
-      "hash": "92fa6dba1b709ac5c10d71ae4b54875ecbb3cadd391a8bdba8ac431b95a8b9e0",
-      "last_checked": "2026-07-17T07:44:23.557453",
+      "hash": "f8ca0b2c8005ab3a35d5b59eba1ca4238eb78cc4e3da058c5c54fa0f7bf8ab61",
+      "last_checked": "2026-07-21T07:31:44.478006",
       "status": "unchanged",
-      "session_id": "2026-07-17T07:44:23.049844",
-      "etag": "W/\"2285224ffe4477faf77a6bfcc9327514\"",
+      "session_id": "2026-07-21T07:31:43.890407",
+      "etag": "W/\"3ba26505db4e78cfb6674c6d51dc58b4\"",
       "file_path": "documentation/ApplePencil/handling-squeezes-from-apple-pencil.md"
     },
     "https://developer.apple.com/documentation/applepencil/handling-squeezes-from-apple-pencil": {
-      "hash": "92fa6dba1b709ac5c10d71ae4b54875ecbb3cadd391a8bdba8ac431b95a8b9e0",
-      "last_checked": "2026-07-07T07:32:22.255050",
+      "hash": "f8ca0b2c8005ab3a35d5b59eba1ca4238eb78cc4e3da058c5c54fa0f7bf8ab61",
+      "last_checked": "2026-07-21T07:31:44.478093",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:32:21.451116",
-      "etag": "W/\"2285224ffe4477faf77a6bfcc9327514\"",
+      "session_id": "2026-07-21T07:31:43.890407",
+      "etag": "W/\"3ba26505db4e78cfb6674c6d51dc58b4\"",
       "file_path": "documentation/ApplePencil/handling-squeezes-from-apple-pencil.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/applepencil/handling-double-taps-from-apple-pencil.json": {
-      "hash": "7e4f78572132576fd8a7da376ca569d0f948410cbf5d22c3c847b2c9b30240c0",
-      "last_checked": "2026-07-17T07:44:23.682598",
+      "hash": "482719f02c38c50eba94298dee2220c2e8411b1e0cd4d198aa970935f37b3b0b",
+      "last_checked": "2026-07-21T07:31:44.628962",
       "status": "unchanged",
-      "session_id": "2026-07-17T07:44:23.049844",
-      "etag": "W/\"d08403c867be9eef25466fc1dcb40bd8\"",
+      "session_id": "2026-07-21T07:31:43.890407",
+      "etag": "W/\"30977392703aacb7055aa9740900f207\"",
       "file_path": "documentation/ApplePencil/handling-double-taps-from-apple-pencil.md"
     },
     "https://developer.apple.com/documentation/applepencil/handling-double-taps-from-apple-pencil": {
-      "hash": "7e4f78572132576fd8a7da376ca569d0f948410cbf5d22c3c847b2c9b30240c0",
-      "last_checked": "2026-07-07T07:32:22.493929",
+      "hash": "482719f02c38c50eba94298dee2220c2e8411b1e0cd4d198aa970935f37b3b0b",
+      "last_checked": "2026-07-21T07:31:44.629014",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:32:21.451116",
-      "etag": "W/\"d08403c867be9eef25466fc1dcb40bd8\"",
+      "session_id": "2026-07-21T07:31:43.890407",
+      "etag": "W/\"30977392703aacb7055aa9740900f207\"",
       "file_path": "documentation/ApplePencil/handling-double-taps-from-apple-pencil.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/applepencil/playing-haptic-feedback-in-your-app.json": {
-      "hash": "3296708eb79ff59c2f1aff82a8956baffb2c578751aada26ee03276d8e8c9f96",
-      "last_checked": "2026-07-17T07:44:23.803583",
+      "hash": "e0f9e9d222e1f9b017347ca3005a56edc1f56be8815785e8dd184481e26b8dcf",
+      "last_checked": "2026-07-21T07:31:44.774858",
       "status": "unchanged",
-      "session_id": "2026-07-17T07:44:23.049844",
-      "etag": "W/\"13361f054be3763954009883002e6783\"",
+      "session_id": "2026-07-21T07:31:43.890407",
+      "etag": "W/\"cf0ba94059f19245405205cd957dcb6f\"",
       "file_path": "documentation/ApplePencil/playing-haptic-feedback-in-your-app.md"
     },
     "https://developer.apple.com/documentation/applepencil/playing-haptic-feedback-in-your-app": {
-      "hash": "3296708eb79ff59c2f1aff82a8956baffb2c578751aada26ee03276d8e8c9f96",
-      "last_checked": "2026-07-07T07:32:22.567505",
+      "hash": "e0f9e9d222e1f9b017347ca3005a56edc1f56be8815785e8dd184481e26b8dcf",
+      "last_checked": "2026-07-21T07:31:44.774931",
       "status": "unchanged",
-      "session_id": "2026-07-07T07:32:21.451116",
-      "etag": "W/\"13361f054be3763954009883002e6783\"",
+      "session_id": "2026-07-21T07:31:43.890407",
+      "etag": "W/\"cf0ba94059f19245405205cd957dcb6f\"",
       "file_path": "documentation/ApplePencil/playing-haptic-feedback-in-your-app.md"
     }
   }

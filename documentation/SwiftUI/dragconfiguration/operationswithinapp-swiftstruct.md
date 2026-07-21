@@ -27,20 +27,20 @@ On iOS, the default behavior is to allow drag-to-copy within the application. On
 In addition to `copy`, add `move` operation support by specifying that in the initializer:
 
 ```swift
-   struct DraggableBookView: View {
-       var id: UUID
+struct DraggableBookView: View {
+    var id: UUID
 
-       var body: some View {
-           BookView()
-               .draggable(Book(id: id))
-               .dragConfiguration(makeConfiguration())
-       }
+    var body: some View {
+        BookView()
+            .draggable(Book(id: id))
+            .dragConfiguration(makeConfiguration())
+    }
 
-       func makeConfiguration() -> DragConfiguration {
-           let operations = OperationsWithinApp(allowMove: true)
-           return DragConfiguration(operationsWithinApp: operations)
-       }
-   }
+    func makeConfiguration() -> DragConfiguration {
+        let operations = OperationsWithinApp(allowMove: true)
+        return DragConfiguration(operationsWithinApp: operations)
+    }
+}
 ```
 
 In the example above, an application provides operations that will be suggested to destinations within the app. Drags to other apps will use the default behavior: suggest operation `copy` to drag destinations on macOS, and forbid drags on iOS.

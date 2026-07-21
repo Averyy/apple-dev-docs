@@ -34,7 +34,7 @@ struct StopCaptureIntent: AppIntent {
 }
 ```
 
-For more information about the `.camera` app intent domain, see doc:Making-camera-actions-available-to-siri-and-apple-intelligence. For general information about app intent domains, see doc:Integrating-actions-with-siri-and-apple-intelligence.
+For more information about the `.camera` app intent domain, see [`Camera`](app-schema-domain-camera.md). For general information about app intent domains, see [`Making actions and content discoverable by Apple Intelligence`](making-actions-and-content-discoverable-by-apple-intelligence.md).
 
 
 ---

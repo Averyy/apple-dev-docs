@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: property
 
+Inverse bind-pose transformation matrix for each joint.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)

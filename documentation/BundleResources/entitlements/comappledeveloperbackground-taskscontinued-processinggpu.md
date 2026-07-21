@@ -23,6 +23,11 @@ To enable GPU use in the task, add this entitlement to your app by adding the Ba
 
 For more information about continuous background tasks, see [`Performing long-running tasks on iOS and iPadOS`](https://developer.apple.com/documentation/BackgroundTasks/performing-long-running-tasks-on-ios-and-ipados).
 
+## See Also
+
+- [Background Inference](entitlements/com.apple.developer.background-tasks.continued-processing.inference.md)
+  An entitlement that lets a background task run inference on the Neural Engine.
+
 
 ---
 

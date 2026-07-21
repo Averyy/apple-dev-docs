@@ -22,9 +22,9 @@ var shaderGraph: ShaderGraph
 ## See Also
 
 - [var inputValues: [String : MaterialParameters.Value]](portalmaterial/program-swift.struct/descriptor-swift.struct/inputvalues.md)
-  Initial values for the inputs declared in [`shaderGraph`](portalmaterial/program-swift.struct/descriptor-swift.struct/shadergraph.md).
+  Initial values for the inputs that the shader graph declares.
 - [var constantValues: MTLFunctionConstantValues](portalmaterial/program-swift.struct/descriptor-swift.struct/constantvalues.md)
-  Values for the function constant inputs declared in [`shaderGraph`](portalmaterial/program-swift.struct/descriptor-swift.struct/shadergraph.md).
+  Values for the function-constant inputs that the shader graph declares.
 
 
 ---

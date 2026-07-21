@@ -29,7 +29,7 @@ This method checks whether the asset pack is currently downloaded. If it isn’t
 
 To download multiple asset packs at the same time, use [`ensureLocalAvailability(of:requireLatestVersions:)`](assetpackmanager/ensurelocalavailability(of:requirelatestversions:).md).
 
-> **Note**:  When the system can’t ensure the asset pack’s local availability.
+> **Note**: When the system can’t ensure the asset pack’s local availability.
 
 ## Parameters
 

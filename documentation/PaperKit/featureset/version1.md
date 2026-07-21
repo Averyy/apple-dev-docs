@@ -23,8 +23,6 @@ To automatically get the latest features that PaperKit adds in new releases use 
 
 ## See Also
 
-- [static var version2: FeatureSet](featureset/version2.md)
-  A new feature set supporting all features in version 2.
 - [static var latest: FeatureSet](featureset/latest.md)
   A new feature set supporting all features.
 - [static var empty: FeatureSet](featureset/empty.md)

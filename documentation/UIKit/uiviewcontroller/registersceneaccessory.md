@@ -27,6 +27,11 @@ The delegate type that the configuration defines will be called for all lifecycl
 
 - `accessory`: A configuration which defines system functionality necessary to present the scene accessory.
 
+## See Also
+
+- [func unregisterSceneAccessory(UISceneAccessoryRegistration)](uiviewcontroller/unregistersceneaccessory(_:).md)
+  Unregisters a scene accessory with the specified registration.
+
 
 ---
 

@@ -32,7 +32,7 @@ Create a `NavigationPreferences` value when you want to change the default rende
   Indicates whether JavaScript from web content is allowed to run.
 - [var alternateRequest: URLRequest?](webpage/navigationpreferences/alternaterequest.md)
   Used to make changes to the network request that will be used for this navigation’s main resource load.
-- [var isGlobalPrivacyControlEnabled: Bool](webpage/navigationpreferences/isglobalprivacycontrolenabled.md)
+- [var globalPrivacyControlStatus: Bool](webpage/navigationpreferences/globalprivacycontrolstatus.md)
   Whether the Global Privacy Control (GPC) signal is enabled for the navigation.
 - [var isLockdownModeEnabled: Bool](webpage/navigationpreferences/islockdownmodeenabled.md)
   A Boolean value that indicates whether to use Lockdown Mode in the web page.

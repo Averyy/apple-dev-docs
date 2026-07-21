@@ -42,6 +42,14 @@ The following table shows some real-world scenarios, to better explain how you c
 | Film/TV Production Spotlight | 5,000-10,000 lumens | 50-100 meters | Provides focused, high-intensity lighting for sets |
 | Large-Scale Event Spotlight | 50,000-100,000 lumens | 200-500 meters | Lights large outdoor events or concerts |
 
+#### Dynamic Light Capacity
+
+On older hardware, only a limited number of dynamic lights can affect each object. Devices that support `MTLGPUFamily.apple6` or later lift this limit.
+
+Excessive use of dynamic lights may contribute to user-noticeable frame drops and can cause the device to heat up in graphically demanding situations. Both the number of lights and each light’s coverage affect performance, so use properties like [`attenuationRadius`](spotlightcomponent/attenuationradius.md) to keep a light’s influence no larger than your scene needs. Monitor the thermal state and reduce usage as a mitigation, if necessary.
+
+Because this behavior varies by device, verify your scene’s lighting on the oldest hardware you support. You can check for this support at runtime with `MTLDevice.supportsFamily(.apple6)`.
+
 ## Topics
 
 ### Configuring the spotlight
@@ -60,7 +68,7 @@ The following table shows some real-world scenarios, to better explain how you c
   A platform-specific type used to define color for a spotlight.
 ### Specifying the render layers
 - [var layers: RenderLayer.Set](spotlightcomponent/layers.md)
-  The layers this light illuminates. Only entities whose RenderLayerComponent.layers intersect with these layers will be illuminated. Lights can be restricted by layer on devices with Apple6 GPU family feature support.
+  The layers this light illuminates.
 ### Defining the light contribution
 - [SpotLightComponent.SurroundingsLight](spotlightcomponent/surroundingslight.md)
   A component that specifies that the spot light illuminates the physical and immersive environment.

@@ -48,6 +48,8 @@ If the service worker you want to inspect automatically is already running, you 
   Use Web Inspector to inspect and debug your HTML, CSS, and JavaScript.
 - [Responsive Design Mode](responsive-design-mode.md)
   Use Responsive Design Mode to test your `media` queries and other dynamic styles to ensure your webpages look great on any screen.
+- [Connecting an AI agent to Safari](connecting-an-ai-agent-to-safari.md)
+  Inspect, test, and debug your website with an AI agent connected to the Safari MCP server.
 - [WebDriver](webdriver.md)
   Use WebDriver to write robust, comprehensive tests and run them against any browser that has a WebDriver-compliant driver, including Safari.
 

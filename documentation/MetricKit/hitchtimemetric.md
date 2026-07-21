@@ -23,8 +23,6 @@ This metric corresponds to the [`MetricResult.hitchTime(_:)`](metricresult/hitch
 
 The ratio is normalized against total animation duration and incorporates perceptual adjustments, making it the most accurate representation of the hitches users actually experience.
 
-This type replaces the `hitchTimeRatio` property of [`MXAnimationMetric`](mxanimationmetric.md).
-
 ## Topics
 
 ### Measurements

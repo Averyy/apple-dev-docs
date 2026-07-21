@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: property
 
+Updated index buffer data.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -15,6 +17,10 @@
 ```swift
 let indexData: Data?
 ```
+
+#### Discussion
+
+`nil` if unchanged.
 
 
 ---

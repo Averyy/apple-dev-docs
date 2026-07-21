@@ -158,6 +158,8 @@ Use RealityKit’s rich functionality to create compelling augmented reality (AR
 - [class MaterialXTarget](materialxtarget.md)
 - [class ShaderGraph](shadergraph.md)
 ### Structures
+- [struct BoundingBoxCalculator](boundingboxcalculator.md)
+  Calculates a bounding box based on the current state of the deformed positions.
 - [struct ComputeGraphComponent](computegraphcomponent.md)
   A component that drives a compute graph–based particle simulation on an entity.
 - [struct ComputeGraphOutputComponent](computegraphoutputcomponent.md)
@@ -170,6 +172,10 @@ Use RealityKit’s rich functionality to create compelling augmented reality (AR
   A component that renders 3D Gaussian splat data.
 - [struct MaterialDecodingConfiguration](materialdecodingconfiguration.md)
 - [struct MaterialXVersion](materialxversion.md)
+- [struct RenormalizingDeformer](renormalizingdeformer.md)
+  Recalculates tangent frame based on current state of positions
+- [struct SubdivisionSurfaceDeformer](subdivisionsurfacedeformer.md)
+  OpenSubdiv surface deformation
 ### Enumerations
 - [enum GaussianSplatEvents](gaussiansplatevents.md)
   A namespace for events about Gaussian splat rendering.
@@ -181,4 +187,4 @@ Use RealityKit’s rich functionality to create compelling augmented reality (AR
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/realitykit)*
+*[View on Apple Developer](https://developer.apple.com/documentation/RealityKit)*

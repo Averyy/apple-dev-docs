@@ -16,6 +16,8 @@ Incorporate RealityKit-specific content into your graph and modify that content 
   A surface shader that defines properties for a RealityKit Unlit material.
 - [PBR Surface (RealityKit)](realitykit/pbr-surface-(realitykit).md)
   A surface shader that defines properties for a RealityKit Physically Based Rendering material.
+- [Hair Surface (RealityKit)](realitykit/hair-surface-(realitykit).md)
+  A surface shader that defines properties for a RealityKit Hair material.
 - [Occlusion Surface (RealityKit)](realitykit/occlusion-surface-(realitykit).md)
   A surface shader that defines properties for a RealityKit Occlusion material that does not receive dynamic lighting.
 - [Shadow Receiving Occlusion Surface (RealityKit)](realitykit/shadow-receiving-occlusion-surface-(realitykit).md)

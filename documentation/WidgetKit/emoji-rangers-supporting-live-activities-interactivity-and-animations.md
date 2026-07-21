@@ -23,6 +23,8 @@ Offer Live Activities, controls, animate data updates, and add interactivity to 
   Learn about important changes in WidgetKit.
 - [Creating a widget extension](creating-a-widget-extension.md)
   Display your app’s content in a convenient, informative widget on various devices.
+- [Building Widgets Using WidgetKit and SwiftUI](building-widgets-using-widgetkit-and-swiftui.md)
+  Create widgets to show your app’s content on the Home screen, with custom intents for user-customizable settings.
 - [protocol WidgetBundle](../SwiftUI/WidgetBundle.md)
   A container used to expose multiple widgets from a single widget extension.
 

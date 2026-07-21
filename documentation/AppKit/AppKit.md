@@ -13,7 +13,7 @@ Construct and manage a graphical, event-driven user interface for your macOS app
 
 AppKit contains the objects you need to build the user interface for a macOS app. In addition to drawing windows, buttons, panels, and text fields, it handles all the event management and interaction between your app, people, and macOS.
 
-![An image of the Landmarks sample app on Mac showing the Mount Fuji landmark.](https://docs-assets.developer.apple.com/published/2ba3100f3acde10ba4fbbbdb32b4cbda/landmarks-app-article-hero%402x.png)
+![An image of the Landmarks sample app on Mac showing the Mount Fuji landmark.](https://docs-assets.developer.apple.com/published/2c10ab3eda6d0a6287de306b0c8678c2/landmarks-app-article-hero%402x.png)
 
 Aside from drawing and managing interactions, AppKit handles printing, animating, as well as creating documents with large amounts of data efficiently. The framework also contains built-in support for localization and accessibility to ensure that your app reaches as many people as possible.
 
@@ -107,4 +107,4 @@ AppKit also works with [`SwiftUI`](https://developer.apple.com/documentation/Swi
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/appkit)*
+*[View on Apple Developer](https://developer.apple.com/documentation/AppKit)*

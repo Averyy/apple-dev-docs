@@ -15,7 +15,7 @@ Empower users to interact with their devices through voice, intelligent suggesti
 
 #### Overview
 
-> **Note**: SiriKit and the Intents and IntentsUI frameworks offer legacy support for Siri interactions, Shortcuts actions, and widget configuration. To implement modern support for these features, including support for Apple Intelligence, use the [`App Intents`](https://developer.apple.com/documentation/AppIntents) framework instead.
+> **Note**: SiriKit, Intents, and IntentsUI frameworks continue to provide legacy support for Shortcuts actions, widget configuration, and most existing Siri interactions. To implement modern support for these features and integrate your app with Apple Intelligence and Siri AI, use the [`App Intents`](https://developer.apple.com/documentation/AppIntents) framework.
 
 For SiriKit, use the standard intents that the system provides to empower actions users already ask Siri to do, such as playing music or sending a text message. You can also offer your app’s unique capabilities throughout the system by designing custom intents. For more details about defining custom intents, see [`Adding User Interactivity with Siri Shortcuts and the Shortcuts App`](adding-user-interactivity-with-siri-shortcuts-and-the-shortcuts-app.md).
 
@@ -23,7 +23,7 @@ For SiriKit, use the standard intents that the system provides to empower action
 
 You can process intents directly in your app, or in an Intents app extension. For guidance on setting up an app extension and sharing information between your app and extension, see [`Structuring Your Code to Support App Extensions`](structuring-your-code-to-support-app-extensions.md).
 
-To display branding or other customized content in Siri and Maps after you fulfill a user request, create a custom view controller in an IntentsUI app extension. See [`Creating an Intents UI Extension`](creating-an-intents-ui-extension.md) for more details.
+To display branding or other customized content in Siri and Maps after you fulfill a person’s request, create a custom view controller in an IntentsUI app extension. See [`Creating an Intents UI Extension`](creating-an-intents-ui-extension.md) for more details.
 
 > ❗ **Important**:  With a person’s permission, an installed health research app that uses [`SensorKit`](https://developer.apple.com/documentation/SensorKit) entitlements may collect Face Metrics data while your SiriKit app is in use. To prevent SensorKit from collecting Face Metrics data while your app is in use, you can set the [`SRResearchDataGeneration`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/SRResearchDataGeneration) information property list key to `NO`.
 

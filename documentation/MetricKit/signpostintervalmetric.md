@@ -39,8 +39,6 @@ func loadProfile() async {
 
 Signpost intervals measure the duration and frequency of specific code operations, such as network requests, database queries, or image processing. State reporting complements this by segmenting MetricKit metrics by user-visible app state.
 
-This type replaces [`MXSignpostMetric`](mxsignpostmetric.md) and its nested `MXSignpostIntervalData` object.
-
 ## Topics
 
 ### Signpost details

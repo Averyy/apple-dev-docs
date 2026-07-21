@@ -30,8 +30,6 @@ struct HeightData
   The triangle indices of the detailed height data mesh.
 - [var polygonTriangleIndices: [Int]](navigationmeshresource/heightdata-swift.struct/polygontriangleindices.md)
   The groups of triangles that make up a polygon in the detailed height data mesh, used to get the corresponding triangles for a given polygon in the generated Navigation Mesh.
-### Initializers
-- [init()](navigationmeshresource/heightdata-swift.struct/init.md)
 
 ## See Also
 

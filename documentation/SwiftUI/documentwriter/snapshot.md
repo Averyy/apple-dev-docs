@@ -4,7 +4,7 @@
 **Kind**: associatedtype  
 **Required**: Yes
 
-A type that represents the document’s stored content.
+The type representing the document’s content to write.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -19,9 +19,16 @@ A type that represents the document’s stored content.
 associatedtype Snapshot
 ```
 
+#### Discussion
+
+This is the same type returned by [`snapshot(contentType:)`](writabledocument/snapshot(contenttype:).md). It crosses an actor boundary (from main actor to background), so use `sending` annotations or make it `Sendable`.
+
 ## See Also
 
+- [func write(snapshot: sending Self.Snapshot, to: sending Self.Destination, previous: sending Self.Snapshot?, progress: consuming Subprogress) async throws](documentwriter/write(snapshot:to:previous:progress:).md)
+  Writes the document content to disk.
 - [associatedtype Destination = URL](documentwriter/destination.md)
+  The type of the destination location to write to.
 
 
 ---

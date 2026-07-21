@@ -3,7 +3,7 @@
 **Framework**: Metal  
 **Kind**: case
 
-The scale auxiliary plane. Contains scale factors for elements in the data plane.
+The auxiliary plane that stores scale factors for elements in the data plane.
 
 **Availability**:
 - iOS 27.0+ (Beta)

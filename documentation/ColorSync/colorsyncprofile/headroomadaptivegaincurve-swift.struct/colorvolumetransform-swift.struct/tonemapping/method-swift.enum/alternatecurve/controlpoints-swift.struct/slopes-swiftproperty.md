@@ -3,6 +3,8 @@
 **Framework**: ColorSync  
 **Kind**: property
 
+How the slope at each control point is determined.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)

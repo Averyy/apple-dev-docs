@@ -3,7 +3,7 @@
 **Framework**: Cinematic  
 **Kind**: case
 
-Isolates all voices and places them in a mono stem. There is no ambience stem.
+Isolates foreground sounds in a stem.
 
 **Availability**:
 - iOS 26.0+

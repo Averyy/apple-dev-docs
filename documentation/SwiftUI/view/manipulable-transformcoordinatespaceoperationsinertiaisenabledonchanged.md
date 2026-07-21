@@ -46,7 +46,6 @@ struct FadeOutOnReleaseView: View {
                 }
             }
             .opacity(opacity)
-        }
     }
 }
 ```

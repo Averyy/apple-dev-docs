@@ -1,6 +1,6 @@
 # MIDIDriverKit
 
-**Framework**: Mididriverkit  
+**Framework**: MIDIDriverKit  
 **Kind**: namespace
 
 **Availability**:

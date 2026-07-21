@@ -48,6 +48,14 @@ NavigationStack {
 
 ## See Also
 
+- [func toolbarMinimizationBehavior(ToolbarMinimizationBehavior, for: ToolbarPlacement...) -> some View](view/toolbarminimizationbehavior(_:for:).md)
+  Sets the minimize behavior for the specified bars.
+- [struct ToolbarMinimizationBehavior](toolbarminimizationbehavior.md)
+  The minimization behavior of a toolbar.
+- [func toolbarMinimizationRestoration(ToolbarMinimizationRestoration, for: ToolbarPlacement...) -> some View](view/toolbarminimizationrestoration(_:for:).md)
+  Sets the restoration behavior for the specified bars during minimization.
+- [struct ToolbarMinimizationRestoration](toolbarminimizationrestoration.md)
+  The restoration behavior during toolbar minimization.
 - [struct ToolbarMinimizationSafeAreaAdjustment](toolbarminimizationsafeareaadjustment.md)
   The safe area adjustment during toolbar minimization.
 

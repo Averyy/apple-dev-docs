@@ -15,7 +15,7 @@
 
 ```swift
 nonisolated
-(nonsending) func execute(items: [CSSearchableItem]) async throws -> SearchPipelineData
+(nonsending) func execute(items: [SearchableItem]) async throws -> SearchPipelineData
 ```
 
 ## See Also
@@ -23,7 +23,7 @@ nonisolated
 - [func execute(scoredItems: [ScoredSearchableItem]) async throws -> SearchPipelineData](customstage/execute(scoreditems:).md)
 - [func execute(text: String) async throws -> SearchPipelineData](customstage/execute(text:).md)
 - [func execute(count: Int) async throws -> SearchPipelineData](customstage/execute(count:).md)
-- [func execute(groupedItems: [SearchableItemAttribute : [CSSearchableItem]]) async throws -> SearchPipelineData](customstage/execute(groupeditems:).md)
+- [func execute(groupedItems: [SearchableItemAttribute : [SearchableItem]]) async throws -> SearchPipelineData](customstage/execute(groupeditems:).md)
 - [func execute(statisticName: String, value: Double) async throws -> SearchPipelineData](customstage/execute(statisticname:value:).md)
 - [func execute(table: SearchResultsTable) async throws -> SearchPipelineData](customstage/execute(table:).md)
 

@@ -36,6 +36,15 @@ Despite the declared return type, this function never returns.
 - `principalClassName`: The name of the [`UIApplication`](uiapplication.md) class or subclass. If you specify `nil`, [`UIApplication`](uiapplication.md) is assumed.
 - `delegateClassName`: The name of the class from which the application delegate is instantiated. If `principalClassName` designates a subclass of [`UIApplication`](uiapplication.md), you may designate the subclass as the delegate; the subclass instance receives the application-delegate messages. Specify `nil` if you load the delegate object from your application’s main nib file.
 
+## See Also
+
+- [func UIGraphicsBeginImageContext(CGSize)](uigraphicsbeginimagecontext(_:).md)
+  Creates a bitmap-based graphics context and makes it the current context.
+- [func UIGraphicsGetImageFromCurrentImageContext() -> UIImage?](uigraphicsgetimagefromcurrentimagecontext().md)
+  Returns an image from the contents of the current bitmap-based graphics context.
+- [func UIGraphicsEndImageContext()](uigraphicsendimagecontext().md)
+  Removes the current bitmap-based graphics context from the top of the stack.
+
 
 ---
 

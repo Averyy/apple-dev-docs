@@ -93,6 +93,10 @@ You can:
 ### Deprecated
 - [Deprecated symbols](deprecated-symbols.md)
   Review unsupported symbols and their replacements.
+### Variables
+- [let SFSafariSettingsErrorDomain: String](sfsafarisettingserrordomain.md)
+### Enumerations
+- [enum SFSafariSettingsError](sfsafarisettingserror.md)
 
 
 ---

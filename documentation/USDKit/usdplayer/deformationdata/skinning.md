@@ -3,7 +3,7 @@
 **Framework**: USDKit  
 **Kind**: property
 
-Skinning deformation data; nil when the mesh has no skeleton
+Skinning deformation data.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -17,6 +17,10 @@ Skinning deformation data; nil when the mesh has no skeleton
 ```swift
 let skinning: USDPlayer.DeformationData.SkinningData?
 ```
+
+#### Discussion
+
+`nil` when the mesh has no skeleton.
 
 
 ---

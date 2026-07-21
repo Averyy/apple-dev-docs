@@ -53,7 +53,6 @@ Supports both media track selection and caption appearance customization. When i
 ## See Also
 
 - [struct AVLegibleMediaOptionsMenuState](avlegiblemediaoptionsmenustate.md)
-- [enum AVLegibleMediaOptionsMenuType](avlegiblemediaoptionsmenutype.md)
 
 
 ---

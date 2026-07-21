@@ -52,6 +52,10 @@ struct Attribute
   The stage that owns this attribute.
 - [var typeName: USDPrim.Attribute.ValueType](usdprim/attribute/typename.md)
 - [var variability: USDPrim.Property.Variability](usdprim/attribute/variability.md)
+### Instance Methods
+- [func clear() -> Bool](usdprim/attribute/clear.md)
+- [func setValue<T>(T, at: USDStage.TimeCode) -> Bool](usdprim/attribute/setvalue(_:at:).md)
+- [func value<T>(at: USDStage.TimeCode) -> T?](usdprim/attribute/value(at:).md)
 ### Default Implementations
 - [CustomStringConvertible Implementations](usdprim/attribute/customstringconvertible-implementations.md)
 

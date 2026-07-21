@@ -3,7 +3,7 @@
 **Framework**: App Intents  
 **Kind**: property
 
-The full search term given by the user.
+The string to use when matching items in your app.
 
 **Availability**:
 - iOS 17.2+
@@ -19,6 +19,10 @@ The full search term given by the user.
 ```swift
 var term: String
 ```
+
+#### Discussion
+
+Pass the value of this property to the code you use to search for items in your app. The system provides this value when it creates the app intent.
 
 
 ---

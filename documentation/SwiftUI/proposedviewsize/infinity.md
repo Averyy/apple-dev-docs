@@ -22,7 +22,7 @@ static let infinity: ProposedViewSize
 
 #### Discussion
 
-Both dimensions contain doc://com.apple.documentation/documentation/CoreFoundation/CGFloat/1454161-infinity in this size proposal. Subviews of a custom layout return their maximum size when you propose this value using the [`dimensions(in:)`](layoutsubview/dimensions(in:).md) method. A custom layout should also return its maximum size from the [`sizeThatFits(proposal:subviews:cache:)`](layout/sizethatfits(proposal:subviews:cache:).md) method for this value.
+Both dimensions contain doc://com.apple.documentation/documentation/CoreFoundation/swift/floatingpoint/infinity in this size proposal. Subviews of a custom layout return their maximum size when you propose this value using the [`dimensions(in:)`](layoutsubview/dimensions(in:).md) method. A custom layout should also return its maximum size from the [`sizeThatFits(proposal:subviews:cache:)`](layout/sizethatfits(proposal:subviews:cache:).md) method for this value.
 
 ## See Also
 

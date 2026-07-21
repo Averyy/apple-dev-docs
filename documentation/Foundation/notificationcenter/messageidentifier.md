@@ -373,6 +373,7 @@ let token = center.addObserver(of: exampleSubject, for: .eventDidOccur) { ... }
 - [static var storesDidChange: NotificationCenter.BaseMessageIdentifier<NSPersistentStoreCoordinator.StoresDidChangeMessage>](notificationcenter/messageidentifier/storesdidchange.md)
 - [static var storesDidChangeAsync: NotificationCenter.BaseMessageIdentifier<NSPersistentStoreCoordinator.StoresDidChangeAsyncMessage>](notificationcenter/messageidentifier/storesdidchangeasync.md)
 - [static var systemColorsDidChange: NotificationCenter.BaseMessageIdentifier<NSColor.SystemColorsDidChangeMessage>](notificationcenter/messageidentifier/systemcolorsdidchange.md)
+- [static var systemPrefersReducedResourceUsageDidChange: NotificationCenter.BaseMessageIdentifier<UIApplication.SystemPrefersReducedResourceUsageDidChangeMessage>](notificationcenter/messageidentifier/systemprefersreducedresourceusagedidchange.md)
 - [static var tagsDidChange: NotificationCenter.BaseMessageIdentifier<AVAudioUnitComponent.TagsDidChangeMessage>](notificationcenter/messageidentifier/tagsdidchange.md)
 - [static var textDidBeginEditing: NotificationCenter.BaseMessageIdentifier<NSControl.TextDidBeginEditingMessage>](notificationcenter/messageidentifier/textdidbeginediting-45vc.md)
 - [static var textDidChange: NotificationCenter.BaseMessageIdentifier<NSControl.TextDidChangeMessage>](notificationcenter/messageidentifier/textdidchange-5j4s4.md)

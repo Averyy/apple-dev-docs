@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: method
 
-Adds component data to an entity which will be written to a Reality file, but have no other effect.
+Adds component data to an entity that is written to a Reality file but has no other effect at author time.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -22,15 +22,24 @@ Adds component data to an entity which will be written to a Reality file, but ha
 
 #### Discussion
 
-This function allows you to set component properties which have no available definition, such as properties that are only available on some platforms, or properties which don’t have an accessible runtime Swift type.
+Use this function from an authoring tool to serialize a component whose Swift type isn’t available on the authoring platform. `representation` is encoded into any Reality file this entity is written to, and is decoded back into a [`Component`](component.md) of the type named by `qualifiedComponentName` when that file is loaded, so it must encode to the layout that component expects. For runtime use on a platform where the component’s Swift type is available, set the component directly with `set(_:)` instead.
 
-The following built-in components support setting properties using this function:
+```swift
+// Serialize a custom component by its fully qualified name.
+struct MyCustomComponent: Component, Codable {
+    var intensity: Float
+}
+try entity.components.set(
+    qualifiedComponentName: "MyModule.MyCustomComponent",
+    representation: MyCustomComponent(intensity: 0.5))
+```
 
-- `AnchoringComponent`
-- `DockingRegionComponent`
-- `EnvironmentBlendingComponent`
-- `ManipulationComponent`
-- `SceneUnderstandingComponent`
+> **Note**: An error if `representation` can’t be encoded, or if `qualifiedComponentName` uses a reserved prefix.
+
+## Parameters
+
+- `qualifiedComponentName`: The component’s fully qualified, module-qualified name.
+- `representation`: A value that encodes to the component’s expected layout.
 
 
 ---

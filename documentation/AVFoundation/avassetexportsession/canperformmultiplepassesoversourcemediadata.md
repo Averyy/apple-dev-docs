@@ -29,10 +29,6 @@ You can’t set this property after the export starts.
 
 ## See Also
 
-- [var outputURL: URL?](avassetexportsession/outputurl.md)
-  A URL where an asset export session writes its output.
-- [var outputFileType: AVFileType?](avassetexportsession/outputfiletype.md)
-  The file type of the output an asset export session writes.
 - [var supportedFileTypes: [AVFileType]](avassetexportsession/supportedfiletypes.md)
   An array containing the types of files the session can write.
 - [var allowsParallelizedExport: Bool](avassetexportsession/allowsparallelizedexport.md)

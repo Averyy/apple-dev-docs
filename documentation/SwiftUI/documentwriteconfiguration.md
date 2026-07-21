@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: struct
 
-Provides the information required to write a document to disk.
+The context SwiftUI passes to [`writer(configuration:)`](writabledocument/writer(configuration:).md).
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -18,11 +18,17 @@ Provides the information required to write a document to disk.
 struct DocumentWriteConfiguration
 ```
 
+#### Overview
+
+Contains the [`contentType`](documentwriteconfiguration/contenttype.md) of the file being written (one of the document’s [`writableContentTypes`](writabledocument/writablecontenttypes.md)). Use it to choose the correct serialization strategy when a document supports exporting to multiple formats.
+
+Access this type through the [`WritableDocument.WriteConfiguration`](writabledocument/writeconfiguration.md) typealias.
+
 ## Topics
 
 ### Accessing write properties
 - [var contentType: UTType](documentwriteconfiguration/contenttype.md)
-  The format of the file to write.
+  The content type of the file being written.
 
 ## Relationships
 
@@ -34,19 +40,15 @@ struct DocumentWriteConfiguration
 ## See Also
 
 - [struct DocumentReadConfiguration](documentreadconfiguration.md)
-  Provides the information required to read a document from disk.
-- [struct FileDocumentReadConfiguration](filedocumentreadconfiguration.md)
-  The configuration for reading file contents.
-- [struct FileDocumentWriteConfiguration](filedocumentwriteconfiguration.md)
-  The configuration for serializing file contents.
+  The context SwiftUI passes to [`reader(configuration:)`](readabledocument/reader(configuration:).md).
 - [protocol DocumentReader](documentreader.md)
-  Implements logic of reading documents from disk.
+  A type that reads a document’s content from a file.
 - [protocol DocumentWriter](documentwriter.md)
-  Implements logic of writing documents to disk.
+  A type that writes a document’s content to a file.
 - [struct FileWrapperDocumentReader](filewrapperdocumentreader.md)
-  A document reader that uses `FileWrapper` for reading.
+  A document reader that deserializes a `FileWrapper` into a snapshot.
 - [struct FileWrapperDocumentWriter](filewrapperdocumentwriter.md)
-  A document writer that uses `FileWrapper` for writing.
+  A document writer that serializes a snapshot into a `FileWrapper`.
 
 
 ---

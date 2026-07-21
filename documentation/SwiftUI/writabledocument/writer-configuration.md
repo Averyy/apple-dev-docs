@@ -4,7 +4,7 @@
 **Kind**: method  
 **Required**: Yes
 
-Creates a value that writes a document to disk.
+Creates a writer to save this document to disk.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -19,20 +19,24 @@ Creates a value that writes a document to disk.
 func writer(configuration: sending Self.WriteConfiguration) -> sending Self.Writer
 ```
 
+#### Discussion
+
+Return a [`FileWrapperDocumentWriter`](filewrapperdocumentwriter.md) for cases that don’t require custom writing logic, or a [`DocumentWriter`](documentwriter.md) for direct URL access or streaming writes.
+
 ## Parameters
 
-- `configuration`: Additional context for writing.
+- `configuration`: The content type of the file being written.
 
 ## See Also
 
 - [static var writableContentTypes: [UTType]](writabledocument/writablecontenttypes.md)
-  The file types that the document supports saving or exporting to.
+  The content types this document can save or export to.
 - [WritableDocument.WriteConfiguration](writabledocument/writeconfiguration.md)
   The configuration for writing document contents.
 - [associatedtype Writer : DocumentWriter](writabledocument/writer.md)
-  A type that implements writing to disk logic.
+  A type that implements writing to disk.
 - [func snapshot(contentType: UTType) async throws -> sending Self.Writer.Snapshot](writabledocument/snapshot(contenttype:).md)
-  Creates a snapshot of the document’s current state to be saved.
+  Captures the document’s current state for saving.
 
 
 ---

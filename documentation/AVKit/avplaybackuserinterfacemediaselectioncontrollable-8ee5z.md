@@ -40,6 +40,11 @@ protocol AVPlaybackUserInterfaceMediaSelectionControllable : AnyObject, Observab
 ### Inherited By
 - [AVPlaybackUserInterfaceControllable](avplaybackuserinterfacecontrollable-92fri.md)
 
+## See Also
+
+- [class AVPlaybackUserInterfaceMediaSelectionOption](avplaybackuserinterfacemediaselectionoption.md)
+  Represents a media selection option for audio tracks or subtitle tracks.
+
 
 ---
 

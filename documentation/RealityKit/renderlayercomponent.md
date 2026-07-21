@@ -21,7 +21,9 @@ struct RenderLayerComponent
 
 #### Overview
 
-When attached to an entity with `ModelComponent`, it defines which layers that entity belongs to. Light components use their `layers` and shadow components use their `layers` properties to determine which entities they affect.
+Add a [`RenderLayerComponent`](renderlayercomponent.md) to an entity to control which lights illuminate it and which lights it casts shadows from. A light affects this entity when the entity’s [`layers`](renderlayercomponent/layers.md) intersect with the light’s layers, for example [`layers`](directionallightcomponent/layers.md), [`layers`](pointlightcomponent/layers.md), or [`layers`](spotlightcomponent/layers.md).
+
+Entities without a [`RenderLayerComponent`](renderlayercomponent.md) are treated as members of [`defaultLayer`](renderlayer/defaultlayer.md).
 
 ## Topics
 
@@ -34,7 +36,7 @@ When attached to an entity with `ModelComponent`, it defines which layers that e
 - [var layers: RenderLayer.Set](renderlayercomponent/layers.md)
   The layers this entity participates in.
 - [static let defaultLayer: RenderLayerComponent](renderlayercomponent/defaultlayer.md)
-  The default layer used when no `RenderLayerComponent` is present.
+  A render layer component that contains only [`defaultLayer`](renderlayer/defaultlayer.md).
 ### Initializers
 - [init(RenderLayer...)](renderlayercomponent/init(_:).md)
   Creates a layer component with the specified layers.
@@ -47,7 +49,7 @@ When attached to an entity with `ModelComponent`, it defines which layers that e
 ## See Also
 
 - [struct RenderLayer](renderlayer.md)
-  A structured representation of render layers that provides type safety and clear semantics.
+  A named identifier for a group of meshes and lights.
 - [struct ClippingComponent](clippingcomponent.md)
   A component that clips entities and their children to a customizable bounding box volume with feathered edges.
 - [struct OcclusionCullingComponent](occlusioncullingcomponent.md)

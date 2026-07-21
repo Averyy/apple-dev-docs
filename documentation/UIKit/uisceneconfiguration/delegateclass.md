@@ -18,6 +18,10 @@ The class of the custom delegate object that you want UIKit to create.
 var delegateClass: AnyClass? { get set }
 ```
 
+## Mentions
+
+- [Presenting content on a connected display](presenting-content-on-a-connected-display.md)
+
 #### Discussion
 
 If you specified [`UIWindowScene`](uiwindowscene.md) in the [`sceneClass`](uisceneconfiguration/sceneclass.md) property, your delegate class must conform to the [`UIWindowSceneDelegate`](uiwindowscenedelegate.md) protocol. Otherwise, you must specify a class that conforms to the [`UISceneDelegate`](uiscenedelegate.md) protocol.

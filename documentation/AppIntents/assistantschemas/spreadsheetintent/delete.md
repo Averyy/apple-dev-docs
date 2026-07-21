@@ -34,7 +34,7 @@ struct DeleteSpreadsheetIntent: DeleteIntent {
     }
 ```
 
-For more information about the `.spreadsheet` app intent domain, see doc:Making-spreadsheet-actions-available-to-Siri-and-apple-intelligence. For general information about app intent domains, see doc:Integrating-actions-with-siri-and-apple-intelligence.
+For more information about the `.spreadsheet` app intent domain, see [`Spreadsheet`](app-schema-domain-spreadsheet.md). For general information about app intent domains, see [`Making actions and content discoverable by Apple Intelligence`](making-actions-and-content-discoverable-by-apple-intelligence.md).
 
 
 ---

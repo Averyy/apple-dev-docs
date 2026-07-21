@@ -23,7 +23,7 @@ func setDescriptor(_ descriptor: MTLTensorAuxiliaryPlaneDescriptor, for plane: M
 
 [`MTLTensorPlaneType.data`](mtltensorplanetype/data.md) is not a valid plane type for this method. The data plane is always present, and you configure it directly on [`MTLTensorDescriptor`](mtltensordescriptor.md).
 
-[`MTLTensorPlaneType.scales`](mtltensorplanetype/scales.md) auxiliary planes only support `MTLTensorDataType/MTLTensorDataTypeFloat8UE8M0` as a data type.
+[`MTLTensorPlaneType.scales`](mtltensorplanetype/scales.md) auxiliary planes only support [`MTLTensorDataType.metalFloat8ue8m0`](mtltensordatatype/metalfloat8ue8m0.md) as a data type.
 
 ## Parameters
 

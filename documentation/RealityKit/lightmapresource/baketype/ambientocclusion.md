@@ -22,7 +22,6 @@ case ambientOcclusion
 - [LightmapResource.BakeType.finalShadedColor](lightmapresource/baketype/finalshadedcolor.md)
   Lightmaps with this type contain the final shaded color. No runtime shading calculations are performed for objects using this type of lightmap.
 - [LightmapResource.BakeType.indirectDiffuseIrradiance](lightmapresource/baketype/indirectdiffuseirradiance.md)
-- [LightmapResource.BakeType.indirectDiffuseSHL1Irradiance](lightmapresource/baketype/indirectdiffuseshl1irradiance.md)
 
 
 ---

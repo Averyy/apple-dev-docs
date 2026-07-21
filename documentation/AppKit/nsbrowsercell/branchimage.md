@@ -24,7 +24,6 @@ Override this method if you want a different image. To have a branch `NSBrowserC
 
 ## See Also
 
-- [Browser Programming Topics](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Browser/Browser.html#//apple_ref/doc/uid/10000018i)
 - [var alternateImage: NSImage?](nsbrowsercell/alternateimage.md)
   The browser cell’s image for the highlighted state.
 - [class var highlightedBranchImage: NSImage?](nsbrowsercell/highlightedbranchimage.md)

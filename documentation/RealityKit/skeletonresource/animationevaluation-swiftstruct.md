@@ -27,7 +27,7 @@ Provided at construction time and immutable for the lifetime of the resource. Ba
 
 ### Creating an evaluation
 - [init(ikResources: [IKResource], blendMasks: [SkeletonResource.BlendMask])](skeletonresource/animationevaluation-swift.struct/init(ikresources:blendmasks:).md)
-  Creates an `AnimationEvaluation` bundle with the given IK rigs and blend masks.
+  Creates an `AnimationEvaluation` bundle with the given IK resources and blend masks.
 ### Configuring the evaluation
 - [let ikResources: [IKResource]](skeletonresource/animationevaluation-swift.struct/ikresources.md)
   The IK resources associated with the skeleton.

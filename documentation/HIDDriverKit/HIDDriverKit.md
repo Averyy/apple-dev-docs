@@ -104,4 +104,4 @@ Develop your driver with DriverKit and HIDDriverKit, and package it in an app th
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/hiddriverkit)*
+*[View on Apple Developer](https://developer.apple.com/documentation/HIDDriverKit)*

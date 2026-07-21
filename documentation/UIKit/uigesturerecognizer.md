@@ -19,6 +19,10 @@ The base class for concrete gesture recognizers.
 class UIGestureRecognizer
 ```
 
+## Mentions
+
+- [About app development with UIKit](about-app-development-with-uikit.md)
+
 #### Overview
 
 A *gesture recognizer* decouples the logic for recognizing a sequence of touches (or other input) and acting on that recognition. When one of these objects recognizes a common gesture or, in some cases, a change in the gesture, it sends an action message to each designated target object.

@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: property
 
+Map from shader parameter name to the bound [`USDPlayer.TextureID`](usdplayer/textureid.md).
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)

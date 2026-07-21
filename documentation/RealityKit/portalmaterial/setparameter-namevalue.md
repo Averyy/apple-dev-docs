@@ -21,7 +21,9 @@ mutating func setParameter(name: String, value newValue: MaterialParameters.Valu
 
 #### Discussion
 
-> **Note**: If the value type is incompatible with the parameter’s declared type.
+Call this method to drive a shader-graph input from Swift — for example, to animate a portal’s opacity each frame, or to swap in a different texture in response to user input.
+
+> **Note**: An error if the parameter doesn’t exist on this material’s program, or if the value’s type doesn’t match the parameter’s declared type.
 
 ## Parameters
 
@@ -30,11 +32,11 @@ mutating func setParameter(name: String, value newValue: MaterialParameters.Valu
 ## See Also
 
 - [func getParameter(name: String) -> MaterialParameters.Value?](portalmaterial/getparameter(name:).md)
-  Returns the current value of a parameter by name, or `nil` if no value has been set.
+  Returns the value of a parameter by name.
 - [func getParameter(handle: MaterialParameters.Handle) -> MaterialParameters.Value?](portalmaterial/getparameter(handle:).md)
-  Returns the current value of a parameter identified by its precomputed handle, or `nil` if no value has been set.
+  Returns the value of a parameter identified by a handle.
 - [func setParameter(handle: MaterialParameters.Handle, value: MaterialParameters.Value) throws](portalmaterial/setparameter(handle:value:).md)
-  Sets the value of a parameter identified by its precomputed handle.
+  Sets the value of a parameter identified by a handle.
 - [static func parameterHandle(name: String) -> MaterialParameters.Handle](portalmaterial/parameterhandle(name:).md)
   Returns a handle for the parameter with the given name.
 

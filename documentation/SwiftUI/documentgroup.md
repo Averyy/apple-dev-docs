@@ -156,10 +156,6 @@ The URL can be used, for example, to present the file path of the file name in t
 ### Creating a document group
 - [init(allowCreating: Bool, editor: (Document) -> Content, makeDocument: (URLDocumentConfiguration, DocumentCreationContext) async throws -> Document)](documentgroup/init(allowcreating:editor:makedocument:).md)
   Creates a document group capable of creating, viewing, and editing documents.
-- [init(newDocument:editor:)](documentgroup/init(newdocument:editor:).md)
-  Creates a document group for creating and editing file documents.
-- [init(viewing:viewer:)](documentgroup/init(viewing:viewer:).md)
-  Creates a document group capable of viewing file documents.
 - [init(viewer: (Document) -> Content, makeReadableDocument: (URLDocumentConfiguration, DocumentCreationContext) async throws -> Document)](documentgroup/init(viewer:makereadabledocument:).md)
   Creates a document group capable of opening and viewing read-only documents.
 ### Editing a document backed by a persistent store
@@ -172,6 +168,11 @@ The URL can be used, for example, to present the file path of the file name in t
   Instantiates a document group for viewing documents that store a specific model type.
 - [init(viewing: UTType, migrationPlan: any SchemaMigrationPlan.Type, viewer: () -> Content)](documentgroup/init(viewing:migrationplan:viewer:).md)
   Instantiates a document group for viewing documents described by the last `Schema` in the migration plan.
+### Deprecated
+- [init(newDocument:editor:)](documentgroup/init(newdocument:editor:).md)
+  Creates a document group for creating and editing file documents.
+- [init(viewing:viewer:)](documentgroup/init(viewing:viewer:).md)
+  Creates a document group capable of viewing file documents.
 
 ## Relationships
 
@@ -180,6 +181,12 @@ The URL can be used, for example, to present the file path of the file name in t
 
 ## See Also
 
+- [Creating a document-based app](creating-a-document-based-app.md)
+  Build apps that people can use to open, edit, and save files using coordinated file access.
+- [Handling advanced document scenarios](handling-advanced-document-scenarios.md)
+  Extend your document-based app to support custom file formats, on-demand file access, and progress reporting.
+- [Updating your document-based app](updating-your-document-based-app.md)
+  Migrate an existing app to adopt URL-based document reading and writing with Swift concurrency.
 - [Building a document-based app with SwiftUI](building-a-document-based-app-with-swiftui.md)
   Create, save, and open documents in a multiplatform app.
 - [Building a document-based app using SwiftData](building-a-document-based-app-using-swiftdata.md)

@@ -22,9 +22,11 @@ associatedtype Criteria : SearchCriteria
 ## See Also
 
 - [var criteria: Self.Criteria](showinappsearchresultsintent/criteria-swift.property.md)
+  The information to use when performing the search.
 - [protocol SearchCriteria](searchcriteria.md)
+  An interface for defining the criteria to use when searching your app’s content.
 - [struct StringSearchCriteria](stringsearchcriteria.md)
-  A structure that represents a string-based search request.
+  A type that tells your app to match its items against a provided string.
 
 
 ---

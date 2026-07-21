@@ -24,6 +24,11 @@ nonisolated init(_ title: LocalizedStringResource, contentType: UTType? = nil)
 - `title`: A title resource to use as the button title.
 - `contentType`: An optional content type of the document to create.
 
+## See Also
+
+- [init(_:contentType:prepareDocumentURL:)](newdocumentbutton/init(_:contenttype:preparedocumenturl:).md)
+  Creates and opens new documents.
+
 
 ---
 

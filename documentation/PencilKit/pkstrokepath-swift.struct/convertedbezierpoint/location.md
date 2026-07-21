@@ -18,6 +18,10 @@ The location of the cubic uniform B-Spline control point.
 let location: CGPoint
 ```
 
+## Mentions
+
+- [Importing Bézier path data into PencilKit](importing-external-drawing-data-into-pencilkit.md)
+
 ## See Also
 
 - [let index: Int](pkstrokepath-swift.struct/convertedbezierpoint/index.md)

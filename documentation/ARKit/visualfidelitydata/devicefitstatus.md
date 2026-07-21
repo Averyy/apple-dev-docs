@@ -18,7 +18,7 @@ var deviceFitStatus: DeviceFitStatus { get }
 
 Indicates whether the user’s eyes are properly positioned within the optimal device fit range, or provides directional feedback if positioned outside.
 
-Note: Returns `.valid`  if the provider was created without requesting device fit updates.
+Note: Returns `.unknown` if the provider was created without requesting device fit updates, or when the status cannot be determined.
 
 
 ---

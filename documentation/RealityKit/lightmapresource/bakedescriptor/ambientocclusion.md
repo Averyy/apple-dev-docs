@@ -21,7 +21,6 @@ case ambientOcclusion(LightmapResource.AmbientOcclusionBakeDescriptor)
 
 - [case finalShadedColor(LightmapResource.FinalShadedColorBakeDescriptor)](lightmapresource/bakedescriptor/finalshadedcolor(_:).md)
 - [case indirectDiffuseIrradiance(LightmapResource.IndirectDiffuseIrradianceBakeDescriptor)](lightmapresource/bakedescriptor/indirectdiffuseirradiance(_:).md)
-- [case indirectDiffuseSHL1Irradiance(LightmapResource.IndirectDiffuseIrradianceSHBakeDescriptor)](lightmapresource/bakedescriptor/indirectdiffuseshl1irradiance(_:).md)
 - [var bakeType: LightmapResource.BakeType](lightmapresource/bakedescriptor/baketype.md)
 
 

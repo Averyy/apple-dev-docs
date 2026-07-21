@@ -26,7 +26,7 @@ init(request: URLRequest?, scale: CGFloat = 1, transaction: Transaction = Transa
 If you set the asynchronous image’s [`URLRequest`](https://developer.apple.com/documentation/Foundation/URLRequest) to `nil`, or after you set the request to a value but before the load operation completes, the phase is [`AsyncImagePhase.empty`](asyncimagephase/empty.md). After the operation completes, the phase becomes either [`AsyncImagePhase.failure(_:)`](asyncimagephase/failure(_:).md) or [`AsyncImagePhase.success(_:)`](asyncimagephase/success(_:).md). In the first case, the phase’s [`error`](asyncimagephase/error.md) value indicates the reason for failure. In the second case, the phase’s [`image`](asyncimagephase/image.md) property contains the loaded image. Use the phase to drive the output of the `content` closure, which defines the view’s appearance:
 
 ```swift
-AsyncImage(url: URLRequest(url: imageURL)) { phase in
+AsyncImage(request: URLRequest(url: imageURL)) { phase in
     if let image = phase.image {
         image // Displays the loaded image.
     } else if phase.error != nil {

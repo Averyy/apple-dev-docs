@@ -3,7 +3,7 @@
 **Framework**: USDKit  
 **Kind**: property
 
-Renormalization adjacency data; present whenever skinning or blend shape data is present
+Renormalization data.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -17,6 +17,10 @@ Renormalization adjacency data; present whenever skinning or blend shape data is
 ```swift
 let renormalization: USDPlayer.DeformationData.RenormalizationData?
 ```
+
+#### Discussion
+
+Present whenever skinning or blend shape data is present.
 
 
 ---

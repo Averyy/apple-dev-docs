@@ -25,22 +25,15 @@ enum BakeType
 - [LightmapResource.BakeType.finalShadedColor](lightmapresource/baketype/finalshadedcolor.md)
   Lightmaps with this type contain the final shaded color. No runtime shading calculations are performed for objects using this type of lightmap.
 - [LightmapResource.BakeType.indirectDiffuseIrradiance](lightmapresource/baketype/indirectdiffuseirradiance.md)
-- [LightmapResource.BakeType.indirectDiffuseSHL1Irradiance](lightmapresource/baketype/indirectdiffuseshl1irradiance.md)
 - [LightmapResource.BakeType.ambientOcclusion](lightmapresource/baketype/ambientocclusion.md)
 
 ## Relationships
 
 ### Conforms To
-- [CaseIterable](../Swift/CaseIterable.md)
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
-
-## See Also
-
-- [var bakeTypes: [LightmapResource.BakeType]](lightmapresource/baketypes.md)
-  All bake types used by entities in this lightmap.
 
 
 ---

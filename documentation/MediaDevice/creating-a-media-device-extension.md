@@ -113,11 +113,11 @@ class MyDeviceExtension: MediaDeviceExtension {
     }
 
     func setVolume(_ volume: Float, for device: MediaOutputDevice) {
-        // Set the device's volume to the requested level.
+        // Set the device's volume to the requested level in the range 0.0 - 1.0.
     }
 
     func volume(for device: MediaOutputDevice) -> Float {
-        // Return the device's current volume level.
+        // Return the device's current volume level in the range 0.0 - 1.0.
         0
     }
 
@@ -321,7 +321,7 @@ func stopSession(_ session: MediaOutputSession) {
 }
 ```
 
-The `playbackControl` parameter conforms to [`AVInterfaceControllable`](https://developer.apple.com/documentation/AVKit/AVInterfaceControllable-1wpdy), which models the full playback state of the remote session. Update its properties to keep the system in sync as playback progresses: for example, `isPlaying`, `state`, `currentPlaybackPosition`, `playbackSpeed`, `timeRange`, and `metadata`.
+The `playbackControl` parameter conforms to doc://com.apple.documentation/documentation/avkit/avinterfacecontrollable-1wpdy, which models the full playback state of the remote session. Update its properties to keep the system in sync as playback progresses: for example, `isPlaying`, `state`, `currentPlaybackPosition`, `playbackSpeed`, `timeRange`, and `metadata`.
 
 The system observes these properties and drives the shared playback UI from them, including Now Playing, the media device picker, and any controls surfaced by media apps. The system also uses the object’s conformance to `AVInterfacePlaybackControllable` to deliver play, pause, and seek commands back to your extension.
 
@@ -363,6 +363,8 @@ Configure volume support when you create a [`MediaOutputDevice`](mediaoutputdevi
 - [`MediaOutputDevice.VolumeControl.absolute`](mediaoutputdevice/volumecontrol-swift.enum/absolute.md) — The device supports direct volume levels. The system calls [`setVolume(_:for:)`](mediadeviceextension/setvolume(_:for:).md) and [`volume(for:)`](mediadeviceextension/volume(for:).md) to set and read the volume.
 - [`MediaOutputDevice.VolumeControl.relative`](mediaoutputdevice/volumecontrol-swift.enum/relative.md) — The device supports only incremental adjustments. The system calls [`changeVolume(by:for:)`](mediadeviceextension/changevolume(by:for:).md) to raise or lower the volume.
 - [`MediaOutputDevice.VolumeControl.none`](mediaoutputdevice/volumecontrol-swift.enum/none.md) — The device doesn’t support volume control.
+
+Absolute volume levels must be represented in the range of 0.0 - 1.0.
 
 ```swift
 func setVolume(_ volume: Float, for device: MediaOutputDevice) {

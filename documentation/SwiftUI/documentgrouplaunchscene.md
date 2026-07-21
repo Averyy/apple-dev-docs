@@ -30,7 +30,7 @@ For more information, see `FileDocument.writableContentTypes` and `ReferenceFile
 
 ## Topics
 
-### Initializers
+### Creating a launch scene with a background view
 - [init(_:_:background:)](documentgrouplaunchscene/init(_:_:background:).md)
   Creates a launch scene for document-based applications with a title, a set of actions, and a background.
 - [init(_:_:background:backgroundAccessoryView:)](documentgrouplaunchscene/init(_:_:background:backgroundaccessoryview:).md)
@@ -39,6 +39,7 @@ For more information, see `FileDocument.writableContentTypes` and `ReferenceFile
   Creates a launch scene for document-based applications with a title, a set of actions, and a background.
 - [init(_:_:background:overlayAccessoryView:)](documentgrouplaunchscene/init(_:_:background:overlayaccessoryview:).md)
   Creates a launch scene for document-based applications with a title, a set of actions, a background, and an overlay accessory view.
+### Creating a launch scene with a background style
 - [init(_:backgroundStyle:_:)](documentgrouplaunchscene/init(_:backgroundstyle:_:).md)
   Creates a launch scene for document-based applications with a title, a background style, and a set of actions.
 - [init(_:backgroundStyle:_:backgroundAccessoryView:)](documentgrouplaunchscene/init(_:backgroundstyle:_:backgroundaccessoryview:).md)

@@ -70,7 +70,7 @@ var body: some View {
                 (currentTool, lastTool) = (.eraser, currentTool)
             } else if let lastTool {
                 // Switch to the last used tool by default.
-                (currentTool, lastTool) = (lastTool, currentTool)
+                (currentTool, self.lastTool) = (lastTool, currentTool)
             }
         }
 }

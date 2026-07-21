@@ -1,4 +1,4 @@
-# watchOS 27 Beta 3 Release Notes
+# watchOS 27 Beta 4 Release Notes
 
 **Framework**: watchOS Release Notes
 
@@ -6,25 +6,31 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The watchOS 27 SDK provides support to develop watchOS apps for Apple Watch devices running watchOS 27 beta 3. The SDK comes bundled with Xcode 27, available from the Mac App Store. For information on the compatibility requirements for Xcode 27, see [`Xcode 27 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-27-release-notes).
+The watchOS 27 SDK provides support to develop watchOS apps for Apple Watch devices running watchOS 27 beta 4. The SDK comes bundled with Xcode 27, available from the Mac App Store. For information on the compatibility requirements for Xcode 27, see [`Xcode 27 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-27-release-notes).
+
+##### App Intents
+
+###### Known Issues
+
+- AppEntity instances have a cumulative size limit of 10MB, including all child properties and their values. Your app might crash if an entity exceeds this limit, and the exception is logged.  (181763422)
 
 ##### Av Conference Telephony
 
-###### Known Issues
+###### Resolved Issues
 
-- Outgoing FaceTime Audio calls from Apple Watches set up for family members to iOS devices running beta releases (27.0) might fail. Incoming FaceTime calls and cellular calls work correctly, as do calls to devices running iOS 26.0 or later.  (178187431)
+- Fixed: Outgoing FaceTime Audio calls from Apple Watches set up for family members to iOS devices running beta releases (27.0) might fail. Incoming FaceTime calls and cellular calls work correctly, as do calls to devices running iOS 26.0 or later.  (178187431)
 
 ##### Cellular
 
-###### Known Issues
+###### Resolved Issues
 
-- Cellular Incoming and Outgoing calls may fail on Verizon network if the user upgrade from previous WatchOS release to Watch OS 27.0 Beta 2 or performs an erase/clean install of WatchOS 27.0 Beta 2. Text-to-911 may also fail on Verizon network.  (180062521) **Workaround:** If performing erase install, users are encouraged to install Watch OS 27.0 Beta 1 before upgrading to Beta 2.
+- Fixed: Cellular incoming and outgoing calls might fail on Verizon network if the user upgrades from previous watchOS release to watchOS 27.0 beta 2 or performs an erase/clean install of watchOS 27.0 beta 2. Text-to-911 might also fail on Verizon network.  (180062521)
 
 ##### Complications
 
-###### Known Issues
+###### Resolved Issues
 
-- Some complications might be missing in the Watch app’s Face Gallery.  (177840928)
+- Fixed: Some complications might be missing in the Watch app’s Face Gallery.  (177840928)
 
 ##### Foundation
 
@@ -36,16 +42,12 @@ The watchOS 27 SDK provides support to develop watchOS apps for Apple Watch devi
 
 ###### Resolved Issues
 
+- Fixed: Private Cloud Compute might not work when you use simulators.  (177684296)
 - Fixed: Truncating transcript history in the `onPrompt` modifier might cause an unexpected runtime error.  (177901494)
-- Fixed: `onPrompt` might not be called when applied to a `Profile` without instructions.   (177902488)
+- Fixed: `onPrompt` might not be called when applied to a `Profile` without instructions.  (177902488)
+- Fixed: `PrivateCloudComputeLanguageModel` always uses greedy decoding.  (178181782)
 - Fixed: Using `@Generable` on an `enum` fails to compile for watchOS.  (178244470)
-- Fixed: Passing an `any LanguageModel` to the `model(_:)` modifier will lead to a compiler error.  (178545978)
-
-###### Known Issues
-
-- Private Cloud Compute might not work when you use simulators.   (177684296) **Workaround:** Use a physical device running OS 27.0.
-- `PrivateCloudComputeLanguageModel` always uses greedy decoding.  (178181782) **Workaround:** Specify `samplingMode` in `GenerationOptions` with a custom seed, e.g. `GenerationOptions(samplingMode: .randomThreshold(0.95, seed: 42))`.
-- Foundation Models framework cannot be imported when building for watchOS in Xcode 27 beta 2.  (179949809)
+- Fixed: Foundation Models framework cannot be imported when building for watchOS in Xcode 27 beta 2.  (179949809)
 
 ##### Health
 
@@ -63,32 +65,36 @@ The watchOS 27 SDK provides support to develop watchOS apps for Apple Watch devi
 
 ###### New Features
 
-- Starting in 27.0 operating systems, select system processes now enforce stricter network security (TLS) requirements. These new requirements might cause connections to fail if the server does not meet them. The affected processes are those involved in MDM, DDM, Automated Device Enrollment, configuration profile installation, app installation, and software updates. Servers must support TLS 1.2 at minimum, using cipher suites and certificates that meet App Transport Security (ATS) requirements. For additional details on affected processes, requirements, and how to audit and diagnose failures in managed environments please reference [`Prepare your network environment for stricter security requirements`](https://developer.apple.comhttps://support.apple.com/en-us/126655). For additional details on ATS and the new requirements please reference [`Preventing Insecure Network Connections`](https://developer.apple.comhttps://developer.apple.com/documentation/Security/preventing-insecure-network-connections) and [`NSRequiresNIAPTLSPackageVersion`](https://developer.apple.comhttps://developer.apple.com/documentation/BundleResources/Information-Property-List/NSRequiresNIAPTLSPackageVersion).  (176055825)
+- Starting in 27.0 operating systems, select system processes now enforce stricter network security (TLS) requirements. These new requirements might cause connections to fail if the server does not meet them. The affected processes are those involved in MDM, DDM, Automated Device Enrollment, configuration profile installation, app installation, and software updates. Servers must support TLS 1.2 at minimum, using cipher suites and certificates that meet App Transport Security (ATS) requirements. For additional details on affected processes, requirements, and how to audit and diagnose failures in managed environments, please reference [`Prepare your network environment for stricter security requirements`](https://developer.apple.comhttps://support.apple.com/en-us/126655). For additional details on ATS and the new requirements, please reference [`Preventing Insecure Network Connections`](https://developer.apple.comhttps://developer.apple.com/documentation/Security/preventing-insecure-network-connections) and [`NSRequiresNIAPTLSPackageVersion`](https://developer.apple.comhttps://developer.apple.com/documentation/BundleResources/Information-Property-List/NSRequiresNIAPTLSPackageVersion).  (176055825)
 
 ##### Siri
 
+###### Resolved Issues
+
+- Fixed: Siri might not resolve some entity types when your app has provided only an `EntityStringQuery` for the entity type.  (177464215)
+- Fixed: Siri AI might be unable to complete certain actions on Apple Watch for English users in locales outside the United States.  (180303086)
+
 ###### Known Issues
 
-- Siri might not resolve some entity types when your app has provided only an `EntityStringQuery` for the entity type.  (177464215) **Workaround:** Index the entity in Spotlight, or provide an `IntentValueQuery` if applicable.
-- Siri AI might be unable to complete certain actions on Apple Watch for English users in locales outside the United States.  (180303086)
+- Siri might appear to be listening when it is not after extended periods of silence while the Siri interface remains on screen.  (180434572)
 
 ##### Sleep Focus
 
-###### Known Issues
+###### Resolved Issues
 
-- Sleep Focus may not automatically toggle on/off after a reboot or update until the user unlocks the device.  (179960164) **Workaround:** Toggle Sleep Focus manually in Control Center after unlocking the device.
+- Fixed: Sleep Focus may not automatically toggle on/off after a reboot or update until the user unlocks the device.  (179960164)
 
 ##### Smart Stack
 
-###### Known Issues
+###### Resolved Issues
 
-- Tapping the Now Playing “Suggestions” widget in Smart Stack does not start playback.  (178464737) **Workaround:** Play media from the Now Playing app instead.
+- Fixed: Tapping the Now Playing “Suggestions” widget in Smart Stack does not start playback.  (178464737)
 
 ##### Status Bar
 
-###### Known Issues
+###### Resolved Issues
 
-- When Apple Watch is in the Always On state,the time in the status bar may not update.  (178633015)
+- Fixed: When Apple Watch is in the Always On state, the time in the status bar may not update.  (178633015)
 
 ##### Storekit
 
@@ -97,6 +103,10 @@ The watchOS 27 SDK provides support to develop watchOS apps for Apple Watch devi
 - StoreKit now includes the `Transaction.OwnershipType.assigned` and `Transaction.RevocationType.assignmentRevoked` enum values to support volume purchases. `Transaction` query methods now additionally return transactions assigned to the Managed Apple Account.  (156749517)
 - New `Product.ProductType` APIs represent subscription Bundles and subscription Suites. New APIs in `Product.SubscriptionInfo.BundledSubscription` let you fetch merchandising data about subscriptions contained in a Bundle. Transaction and RenewalInfo contain new fields that provide information about purchases and customer status regarding Bundles and Suites.  (160501742)
 - `partnerName` and `partnerId` properties for Advanced Commerce API are available in [`Transaction.AdvancedCommerceInfo`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/transaction/advancedcommerceinfo-swift.struct) and [`RenewalInfo.AdvancedCommerceInfo`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/product/subscriptioninfo/renewalinfo/advancedcommerceinfo-swift.struct).  (167808780)
+
+###### Known Issues
+
+- Purchases of non-subscription In-App Purchases made using the SKTestSession.buyProduct() method might fail with an invalid product error. The billingPlanType(_:) PurchaseOption isn’t respected for subscription purchases.  (181842500)
 
 ##### Storekit Testing in Xcode
 
@@ -113,41 +123,16 @@ The watchOS 27 SDK provides support to develop watchOS apps for Apple Watch devi
 
 ##### Swift Charts
 
-###### Known Issues
+###### Resolved Issues
 
-- When your project has a minimum deployment target lower than 27.0, using conditionals inside a `Chart` closure produces the warning “Conformance of ‘_ConditionalContent<TrueContent, FalseContent>’ to ‘ChartContent’ is only available in  27.0 or newer,” and the app might crash at runtime when that content is loaded.  (174168981) **Workaround:** Extract the conditional chart content into a separate function or computed property annotated with `@ChartContentBuilder`. For example, replace: ```None
- Chart(dataPoints, id: \.index) { dataPoint in
-   if selectedMetric == "Rate" {
-       LineMark(x: .value("X", dataPoint.index), y: .value("Y", dataPoint.rate))
-           .foregroundStyle(.blue)
-   } else {
-       LineMark(x: .value("X", dataPoint.index), y: .value("Y", dataPoint.signal))
-           .foregroundStyle(.green)
-   }
- }
-``` with: ```None
- Chart(dataPoints, id: \.index) { dataPoint in
-   marks(for: dataPoint)
- }
- 
- @ChartContentBuilder 
- private func marks(for dataPoint: DataPoint) -> some ChartContent {
-   if selectedMetric == "Rate" {
-       LineMark(x: .value("X", dataPoint.index), y: .value("Y", dataPoint.rate))
-           .foregroundStyle(.blue)
-   } else {
-       LineMark(x: .value("X", dataPoint.index), y: .value("Y", dataPoint.signal))
-           .foregroundStyle(.green)
-   }
- }
-```
+- Fixed: When your project has a minimum deployment target lower than 27.0, using conditionals inside a `Chart` closure produces the warning “Conformance of `_ConditionalContent<TrueContent, FalseContent>` to `ChartContent` is only available in ‘’ 27.0 or newer,” and the app might crash at runtime when that content is loaded.  (174168981)
 
 ##### Swiftui
 
 ###### New Features
 
-- `AsyncImage` now automatically caches downloaded images using HTTP caching protocols, allowing servers to control caching behavior via standard headers. You can customize caching for specific images using the new`AsyncImage` initializers that accept `URLRequest` with custom `cachePolicy` settings. Additionally, you can set a custom `URLSession` using the new `View.asyncImageURLSession(_:)` API to control how all child `AsyncImage` views perform data tasks.  (78212597)
-- A `@State` declared with an expression as its initial value used to evaluate the expression each time the view struct re-instantiates. In the case of `@State private var model = Model()`, this means `Model.init()` gets called many times throughout the view’s life time. Xcode 27 introduces a new `@State` implementation that avoids this repeated evaluation. This new behavior back-deploys to iOS 17 aligned OSes. The new `@State` is implemented with a Swift macro. It is largely source compatible with the property wrapper version, with a few exceptions. If you provide an initial value at `@State` declaration, and also try to assign a value to it in an initializer, the initializer value is discarded. This behavior has not changed because of the macro, but some such cases no longer compiles: ```None
+- `AsyncImage` now automatically caches downloaded images using HTTP caching protocols, allowing servers to control caching behavior via standard headers. You can customize caching for specific images using the new `AsyncImage` initializers that accept `URLRequest` with custom `cachePolicy` settings. Additionally, you can set a custom `URLSession` using the new `View.asyncImageURLSession(_:)` API to control how all child `AsyncImage` views perform data tasks.  (78212597)
+- A `@State` declared with an expression as its initial value used to evaluate the expression each time the view struct re-instantiates. In the case of `@State private var model = Model()`, this means `Model.init()` gets called many times throughout the view’s lifetime. Xcode 27 introduces a new `@State` implementation that avoids this repeated evaluation. This new behavior back-deploys to iOS 17 aligned OSes. The new `@State` is implemented with a Swift macro. It is largely source compatible with the property wrapper version, with a few exceptions. If you provide an initial value at `@State` declaration, and also try to assign a value to it in an initializer, the initializer value is discarded. This behavior has not changed because of the macro, but some such cases no longer compile: ```None
  struct StickerPageView: View {
      @State private var page = StickerPage()
      let title: String
@@ -169,7 +154,7 @@ The watchOS 27 SDK provides support to develop watchOS apps for Apple Watch devi
          self.title = title
      }
  }
-``` When all stored member of a struct is private, the compiler synthesizes a private init that can be used in extension of the same type: ```None
+``` When all stored members of a struct are private, the compiler synthesizes a private init that can be used in an extension of the same type: ```None
  struct StickerPageView: View {
      @State private var page: StickerPage
      private let title: String
@@ -178,7 +163,7 @@ The watchOS 27 SDK provides support to develop watchOS apps for Apple Watch devi
  
  extension StickerPageView {
      init(title: String, _ page: StickerPage) {
-         self.init(page: page, title: title) // using the sythesized init
+         self.init(page: page, title: title) // using the synthesized init
      }
  }
 ``` The state macro disables this synthesized initializer. So the code above no longer compiles. To mitigate, assign value to members explicitly: ```None
@@ -188,13 +173,13 @@ The watchOS 27 SDK provides support to develop watchOS apps for Apple Watch devi
          self.page = page
      }
  }
-``` In rare situations, the automatic inference of generic argument of `@State` is less flexible with the macro implementation. Write the type with more specificity. Composing `@State` with other property wrappers or macros is not supported.  (105893279)
+``` In rare situations, the automatic inference of generic arguments of `@State` is less flexible with the macro implementation. Write the type with more specificity. Composing `@State` with other property wrappers or macros is not supported.  (105893279)
 - You can now use the `TextInputBorderShape` type to customize the border shape of text input controls like `TextField` with the `textInputBorderShape(_:)` view modifier. The `.squareBorder` and `.roundedBorder` text field styles are soft deprecated — use the new `.bordered` text field style instead.  (173362083)
 - In apps built with the 27.0 SDKs, a `LabeledContent` view used inside a `Menu` maps its value to the platform menu item’s subtitle.  (175594929)
 - The @Entry macro now warns of potential issues if you store default class instances or closures in the environment. The SwiftUI Specialist skill in Xcode provides guidance for resolving these issues.  (175902616)
 - You can now access `concentricCornerRadii` and `concentricCornerRadii(in:)` on `GeometryProxy`. These APIs return the corner radii that are concentric with the view’s container shape as a `RectangleCornerRadii?`. You can use these values to drive custom drawing or layout that responds to the container’s corners without rendering a `ConcentricRectangle` directly.  (177185166)
 - `@ContentBuilder` type checking performance is further improved for valid code compared to Beta 1.  (177526032)
-- The new data item or error object based `alert` and `confirmationDialog` modifiers can now be used by projects targetting iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, and visionOS 1.0.  (179388848)
+- The new data item or error object based `alert` and `confirmationDialog` modifiers can now be used by projects targeting iOS 15.0, macOS 12.0, tvOS 15.0, watchOS 8.0, and visionOS 1.0.  (179388848)
 
 ###### Resolved Issues
 
@@ -231,19 +216,19 @@ The watchOS 27 SDK provides support to develop watchOS apps for Apple Watch devi
 
 ###### Deprecations
 
-- `WKExtension` and `WKExtensionDelegate`  are deprecated for apps with a minimum deployment target of watchOS 9.2 or later  (70031637)
+- `WKExtension` and `WKExtensionDelegate` are deprecated for apps with a minimum deployment target of watchOS 9.2 or later.  (70031637)
 
 ##### Workout Alerts and Workout Buddy
 
-###### Known Issues
+###### Resolved Issues
 
-- When Siri AI is enabled on the paired iPhone and Apple Watch is operating in standalone, watch-only mode, Workout Alerts including Workout Buddy might fail to deliver audio announcements during an active workout.  (181296052) **Workaround:** On the paired iPhone, go to Settings > Siri, and select Turn Off Siri. Then select Turn On Siri and Use Previous Version to restore Workout announcements in standalone mode.
+- Fixed: When Siri AI is enabled on the paired iPhone and Apple Watch is operating in standalone, watch-only mode, Workout Alerts including Workout Buddy might fail to deliver audio announcements during an active workout.  (181296052)
 
 ##### Workout Playback
 
-###### Known Issues
+###### Resolved Issues
 
-- Mirrored Playback might not start on iPhone when started on Apple Watch.   (176497682) **Workaround:** Open Podcasts on iPhone and tap Play.
+- Fixed: Mirrored Playback might not start on iPhone when started on Apple Watch.  (176497682)
 
 
 ---

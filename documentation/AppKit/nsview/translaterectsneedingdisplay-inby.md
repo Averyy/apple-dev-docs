@@ -26,7 +26,7 @@ This method:
 4. Clips the result to the intersection of `clipRect` and the view’s bounds
 5. Marks the resultant rectangles as needing display.
 
-The developer must ensure that `clipRect` and `delta` are pixel-aligned in order to guarantee correct drawing. See [`Transforming View Coordinates To and From Base Space`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CocoaViewsGuide/WorkingWithAViewHierarchy/WorkingWithAViewHierarchy.html#//apple_ref/doc/uid/TP40002978-CH4-SW25) for a description of how to pixel-align view coordinates.
+The developer must ensure that `clipRect` and `delta` are pixel-aligned in order to guarantee correct drawing.
 
 ## Parameters
 

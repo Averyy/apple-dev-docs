@@ -36,12 +36,6 @@ It is an error to use `@Previewable` outside of a `#Preview` body closure.
 
 ## See Also
 
-- [protocol PreviewProvider](previewprovider.md)
-  A type that produces view previews in Xcode.
-- [enum PreviewPlatform](previewplatform.md)
-  Platforms that can run the preview.
-- [func previewDisplayName(String?) -> some View](view/previewdisplayname(_:).md)
-  Sets a user visible name to show in the canvas for a preview.
 - [protocol PreviewModifier](previewmodifier.md)
   A type that defines an environment in which previews can appear.
 - [struct PreviewModifierContent](previewmodifiercontent.md)

@@ -32,6 +32,8 @@ Request screen recording permission from the person before capturing content. In
   Learn about important changes to ScreenCaptureKit.
 - [Persistent Content Capture](../BundleResources/Entitlements/com.apple.developer.persistent-content-capture.md)
   A Boolean value that indicates whether a Virtual Network Computing (VNC) app needs persistent access to screen capture.
+- [Capturing screen content on iOS](capturing-screen-content-on-ios.md)
+  Record and share screen captures on iOS by presenting the system content-sharing picker.
 - [Capturing screen content in macOS](capturing-screen-content-in-macos.md)
   Stream desktop content like displays, apps, and windows by adopting screen capture in your app.
 ### Shareable content

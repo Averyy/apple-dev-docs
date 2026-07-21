@@ -96,8 +96,6 @@ When configuring your interface, call the [`setVisible(_:forFirstResponder:)`](p
   Returns the tool picker object to use for the specified window.
 - [var selectedTool: any PKTool](pktoolpicker/selectedtool-2lptq.md)
   The currently selected tool in the tool picker.
-### Protocols
-- [PKToolPicker.Delegate](pktoolpicker/delegate-swift.protocol.md)
 ### Instance Properties
 - [var colorMaximumLinearExposure: CGFloat](pktoolpicker/colormaximumlinearexposure.md)
   Maximum linear exposure for the color picker used by the tool picker. Can be used to enable picking HDR colors.

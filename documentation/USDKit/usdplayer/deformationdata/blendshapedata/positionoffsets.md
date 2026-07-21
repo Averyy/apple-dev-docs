@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: property
 
+Per-vertex position delta vectors for each blend shape target.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)

@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: property
 
-An optional opacity texture for the decal
+An optional opacity texture for the decal.
 
 **Availability**:
 - iOS 27.0+ (Beta)

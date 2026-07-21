@@ -3,6 +3,8 @@
 **Framework**: ColorSync  
 **Kind**: case
 
+The number of explicit tangent slopes doesn’t match the control point count.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)

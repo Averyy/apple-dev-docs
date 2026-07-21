@@ -33,7 +33,7 @@ Use [`PortalComponent.CrossingMode.volume(_:)`](portalcomponent/crossingmode-swi
 
 ### Setting the crossing mode
 - [PortalComponent.CrossingMode.volume(_:)](portalcomponent/crossingmode-swift.enum/volume(_:).md)
-  Allows contents within the portal to cross using a volumetric box.
+  Allows contents within the portal to cross a box-shaped boundary.
 ### Enumeration Cases
 - [PortalComponent.CrossingMode.disabled](portalcomponent/crossingmode-swift.enum/disabled.md)
   Disallows contents within the portal to cross out of the portal boundary.

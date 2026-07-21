@@ -9,7 +9,6 @@ Creates a command with the specified title, subtitle, image, action, property li
 - iOS 15.0+
 - iPadOS 15.0+
 - Mac Catalyst 15.0+
-- tvOS 15.0+
 - visionOS ?+
 
 ## Declaration

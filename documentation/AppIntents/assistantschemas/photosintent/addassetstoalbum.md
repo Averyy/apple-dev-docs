@@ -39,7 +39,7 @@ struct AddMediaAssetsToAlbumIntent: AppIntent {
 }
 ```
 
-For more information about the `.photos` app intent domain, see doc:Making-photo-and-video-actions-available-to-siri-and-apple-intelligence. For general information about app intent domains, see doc:Integrating-actions-with-siri-and-apple-intelligence.
+For more information about the `.photos` app intent domain, see [`Photos`](app-schema-domain-photos.md). For general information about app intent domains, see [`Making actions and content discoverable by Apple Intelligence`](making-actions-and-content-discoverable-by-apple-intelligence.md).
 
 
 ---

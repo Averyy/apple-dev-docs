@@ -39,7 +39,7 @@ struct UpdatePresentationSlideIntent: AppIntent {
 }
 ```
 
-For more information about the `.presentation` app intent domain, see doc:Making-presentation-actions-available-to-siri-and-apple-intelligence. For general information about app intent domains, see doc:Integrating-actions-with-siri-and-apple-intelligence.
+For more information about the `.presentation` app intent domain, see [`Presentation`](app-schema-domain-presentation.md). For general information about app intent domains, see [`Making actions and content discoverable by Apple Intelligence`](making-actions-and-content-discoverable-by-apple-intelligence.md).
 
 
 ---

@@ -3,6 +3,8 @@
 **Framework**: ColorSync  
 **Kind**: property
 
+The Headroom Adaptive Gain Curve embedded in this profile, or `nil` if it carries no HAGC tag.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -17,6 +19,15 @@
 ```swift
 var headroomAdaptiveGainCurve: ColorSyncProfile.HeadroomAdaptiveGainCurve? { get }
 ```
+
+#### Discussion
+
+This decodes the HAGC tag into its structured form. For the unparsed bytes, use [`headroomAdaptiveGainCurveMetadata`](colorsyncprofile/headroomadaptivegaincurvemetadata.md).
+
+## See Also
+
+- [var headroomAdaptiveGainCurveMetadata: Data?](colorsyncprofile/headroomadaptivegaincurvemetadata.md)
+  The raw Headroom Adaptive Gain Curve data embedded in this profile, or `nil` if it carries no HAGC tag.
 
 
 ---

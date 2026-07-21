@@ -20,21 +20,14 @@ var kColorSyncITUR2020Profile: Unmanaged<CFString>!
 
 ## See Also
 
-- [var COLORSYNC_MD5_LENGTH: Int32](colorsync_md5_length.md)
-- [var COLORSYNC_PROFILE_INSTALL_ENTITLEMENT: String](colorsync_profile_install_entitlement.md)
-- [var kCMMApplyTransformProcName: Unmanaged<CFString>!](kcmmapplytransformprocname.md)
-- [var kCMMCreateTransformPropertyProcName: Unmanaged<CFString>!](kcmmcreatetransformpropertyprocname.md)
-- [var kCMMInitializeLinkProfileProcName: Unmanaged<CFString>!](kcmminitializelinkprofileprocname.md)
-- [var kCMMInitializeTransformProcName: Unmanaged<CFString>!](kcmminitializetransformprocname.md)
-- [var kColorSync1BitGamut: ColorSyncDataDepth](kcolorsync1bitgamut.md)
-- [var kColorSync10BitInteger: ColorSyncDataDepth](kcolorsync10bitinteger.md)
-- [var kColorSync16BitFloat: ColorSyncDataDepth](kcolorsync16bitfloat.md)
-- [var kColorSync16BitInteger: ColorSyncDataDepth](kcolorsync16bitinteger.md)
-- [var kColorSync32BitFloat: ColorSyncDataDepth](kcolorsync32bitfloat.md)
-- [var kColorSync32BitInteger: ColorSyncDataDepth](kcolorsync32bitinteger.md)
-- [var kColorSync32BitNamedColorIndex: ColorSyncDataDepth](kcolorsync32bitnamedcolorindex.md)
-- [var kColorSync8BitInteger: ColorSyncDataDepth](kcolorsync8bitinteger.md)
+- [var kColorSyncSRGBProfile: Unmanaged<CFString>!](kcolorsyncsrgbprofile.md)
+- [var kColorSyncAdobeRGB1998Profile: Unmanaged<CFString>!](kcolorsyncadobergb1998profile.md)
+- [var kColorSyncDisplayP3Profile: Unmanaged<CFString>!](kcolorsyncdisplayp3profile.md)
+- [var kColorSyncDCIP3Profile: Unmanaged<CFString>!](kcolorsyncdcip3profile.md)
+- [var kColorSyncITUR709Profile: Unmanaged<CFString>!](kcolorsyncitur709profile.md)
+- [var kColorSyncROMMRGBProfile: Unmanaged<CFString>!](kcolorsyncrommrgbprofile.md)
 - [var kColorSyncACESCGLinearProfile: Unmanaged<CFString>!](kcolorsyncacescglinearprofile.md)
+- [var kColorSyncGenericRGBProfile: Unmanaged<CFString>!](kcolorsyncgenericrgbprofile.md)
 
 
 ---

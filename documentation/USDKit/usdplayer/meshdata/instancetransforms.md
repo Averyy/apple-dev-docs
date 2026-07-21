@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: property
 
+World-space transforms for each mesh instance.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)

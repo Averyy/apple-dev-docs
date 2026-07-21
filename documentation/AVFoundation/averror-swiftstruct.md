@@ -247,6 +247,7 @@ struct AVError
 - [static var externalSyncDeviceFrequencyHigherThanSpecified: AVError.Code](averror-swift.struct/externalsyncdevicefrequencyhigherthanspecified.md)
 - [static var externalSyncDeviceFrequencyLowerThanSpecified: AVError.Code](averror-swift.struct/externalsyncdevicefrequencylowerthanspecified.md)
 - [static var followExternalSyncFailed: AVError.Code](averror-swift.struct/followexternalsyncfailed.md)
+- [static var notEnoughSpaceForProVideoStorageReplenishment: AVError.Code](averror-swift.struct/notenoughspaceforprovideostoragereplenishment.md)
 
 ## Relationships
 

@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: struct
 
-Provides context about how a document was created or opened.
+Context about how a document was created.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -16,6 +16,22 @@ Provides context about how a document was created or opened.
 
 ```swift
 struct DocumentCreationContext
+```
+
+#### Overview
+
+SwiftUI passes this to the `makeDocument` closure of [`DocumentGroup`](documentgroup.md). Use [`creationSource`](documentcreationcontext/creationsource.md) to determine which [`NewDocumentButton`](newdocumentbutton.md) the person tapped and configure the document accordingly:
+
+```swift
+DocumentGroup { document in
+    EditorView(document: document)
+} makeDocument: { configuration, context in
+    let document = NotesDocument()
+    if context.creationSource == .checklist {
+        document.template = .checklist
+    }
+    return document
+}
 ```
 
 ## Topics
@@ -36,12 +52,13 @@ struct DocumentCreationContext
 ## See Also
 
 - [protocol Document](document.md)
+  A document that supports both reading and writing.
 - [protocol ReadableDocument](readabledocument.md)
-  A type that you use to read documents from file.
+  A document type that supports reading from file.
 - [protocol WritableDocument](writabledocument.md)
-  A type that you use to write documents to file.
+  A document type that supports writing to file.
 - [class URLDocumentConfiguration](urldocumentconfiguration.md)
-  A set of settings and properties of an open document.
+  The configuration of an open document that stores its file URL, last modification date, and related metadata.
 - [protocol DocumentBaseBox](documentbasebox.md)
   A Box that allows setting its Document base not requiring the caller to know the exact types of the box and its base.
 

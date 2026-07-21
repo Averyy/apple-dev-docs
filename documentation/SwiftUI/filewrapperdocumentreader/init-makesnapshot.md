@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: init
 
-Creates a reader that uses `FileWrapper` to read documents from disk.
+Creates a reader that converts a `FileWrapper` into a snapshot.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -20,8 +20,8 @@ init(_ configuration: sending FileWrapperDocumentReader<Snapshot>.ReadConfigurat
 
 ## Parameters
 
-- `configuration`: Properties required to read a document from disk.
-- `makeSnapshot`: Deserializes a `FileWrapper` into a `Snapshot`. Throw an error if the data is malformed.
+- `configuration`: The read configuration passed to [`reader(configuration:)`](readabledocument/reader(configuration:).md).
+- `makeSnapshot`: A closure that deserializes the `FileWrapper` into a snapshot. For flat files, read `regularFileContents`. For packages, navigate `fileWrappers` to find children. Throw an error if the data is malformed.
 
 ## See Also
 

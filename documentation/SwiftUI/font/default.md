@@ -22,7 +22,7 @@ static var `default`: Font { get }
 
 #### Discussion
 
-The font specified by environment, preferring first any developer spedified font, via [`font`](environmentvalues/font.md), then any framework specified font, and finally the default SwiftUI font.
+The font specified by environment, preferring first any developer specified font, via [`font`](environmentvalues/font.md), then any framework specified font, and finally the default SwiftUI font.
 
 
 ---

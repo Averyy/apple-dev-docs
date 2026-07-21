@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: property
 
-The optional base color texture for the decal Expects pre-multiplied alpha texture
+The optional base color texture for the decal. Expects pre-multiplied alpha texture.
 
 **Availability**:
 - iOS 27.0+ (Beta)

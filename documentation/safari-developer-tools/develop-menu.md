@@ -80,6 +80,8 @@ At the bottom of the **Develop** menu, there are quick links to both [`Changing 
   Use Responsive Design Mode to test your `media` queries and other dynamic styles to ensure your webpages look great on any screen.
 - [Inspect Apps and Devices](inspect-apps-and-devices.md)
   Discover all inspectable web content in Safari and other apps on your Mac and on connected devices.
+- [Connecting an AI agent to Safari](connecting-an-ai-agent-to-safari.md)
+  Inspect, test, and debug your website with an AI agent connected to the Safari MCP server.
 - [WebDriver](webdriver.md)
   Use WebDriver to write robust, comprehensive tests and run them against any browser that has a WebDriver-compliant driver, including Safari.
 

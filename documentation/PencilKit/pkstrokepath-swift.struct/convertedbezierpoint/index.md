@@ -18,6 +18,10 @@ The index of the point along the path.
 let index: Int
 ```
 
+## Mentions
+
+- [Importing Bézier path data into PencilKit](importing-external-drawing-data-into-pencilkit.md)
+
 ## See Also
 
 - [let pointCount: Int](pkstrokepath-swift.struct/convertedbezierpoint/pointcount.md)

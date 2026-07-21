@@ -59,8 +59,6 @@ Unlike `WKJSHandle` - which keeps an actual JavaScript object alive in its origi
 - [class WKContentWorldConfiguration](wkcontentworldconfiguration.md)
 - [class WKJSHandle](wkjshandle.md)
   A WKJSHandle object contains a reference to a JavaScript object.
-- [class WKJSScriptingBuffer](wkjsscriptingbuffer.md)
-  A WKJSScriptingBuffer object exposes an application controlled data buffer to JavaScript.
 
 
 ---
