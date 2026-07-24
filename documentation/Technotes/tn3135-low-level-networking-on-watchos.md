@@ -23,7 +23,7 @@ watchOS blocks low-level networking outside of these specific circumstances.  Fo
 
 The BSD sockets API doesn’t work for networking on watchOS under any circumstances.  Use Network framework instead.
 
-Foundation has various APIs for synchronously creating a value using bytes loaded from a URL.  For example,  creates a data value in this way.  Using these APIs with network URLs is not best practice on any Apple platform and is not supported by watchOS.  Instead, load network URLs with a dedicated asynchronous networking API, like [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession).
+Foundation has various APIs for synchronously creating a value using bytes loaded from a URL.  For example, [`init(contentsOf:options:)`](https://developer.apple.com/documentation/Foundation/Data/init(contentsOf:options:)) creates a data value in this way.  Using these APIs with network URLs is not best practice on any Apple platform and is not supported by watchOS.  Instead, load network URLs with a dedicated asynchronous networking API, like [`URLSession`](https://developer.apple.com/documentation/Foundation/URLSession).
 
 When writing watchOS networking code, test it on a real device; the simulator always allows low-level networking.
 
@@ -33,6 +33,7 @@ For more information about building an audio streaming app for watchOS, see WWDC
 
 #### Revision History
 
+- **2026-07-16** Fixed a broken link.
 - **2024-02-27** Fixed a typo.
 - **2022-10-18** Added a discussion of the DeviceDiscoveryUI framework.
 - **2022-09-27** Republished as TN3135.  Updated with information about watchOS 9.  Made significant editorial changes.
@@ -41,6 +42,8 @@ For more information about building an audio streaming app for watchOS, see WWDC
 
 ## See Also
 
+- [TN3213: Moving from Multipeer Connectivity to Network framework](tn3213-moving-from-multipeer-connectivity-to-network-framework.md)
+  Learn how to migrate your Multipeer Connectivity app to Network framework.
 - [TN3210: Optimizing your app for iPhone Mirroring](tn3210-optimizing-your-app-for-iphone-mirroring.md)
   Test your app and improve compatibility with iPhone Mirroring.
 - [TN3211: Resolving SwiftUI source incompatibilities for State and ContentBuilder](tn3211-resolving-swiftui-source-incompatibilities-for-state-and-contentbuilder.md)
@@ -69,8 +72,6 @@ For more information about building an audio streaming app for watchOS, see WWDC
   Learn which networking API is best for you.
 - [TN3111: iOS Wi-Fi API overview](tn3111-ios-wifi-api-overview.md)
   Explore the various Wi-Fi APIs available on iOS and their expected use cases.
-- [TN3191: IMAP extensions supported by Mail for iOS, iPadOS, and visionOS](tn3191-imap-extensions-supported-by-mail.md)
-  Learn which extensions to the RFC 3501 IMAP protocol are supported by Mail for iOS, iPadOS, and visionOS.
 
 
 ---

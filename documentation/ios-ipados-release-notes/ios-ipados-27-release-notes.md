@@ -482,6 +482,7 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 
 - If an app intent uses Duration or `LPLinkMetadata`, creating a shortcut with that intent and then attempting to edit it with “Describe a change” might fail.  (166068090) **Workaround:** If the model discards the action, press “Undo” to recover the unsupported intent.
 - When an app intent defines a `UnionValue` parameter with two number-related types (for example, both Int and Double), the number option appears twice in the parameter picker menu and shows as double-selected.  (168315587) **Workaround:** Define only one number-related type in the `UnionValue` parameter (for example, use only Int or only Double, not both).
+- Shortcuts containing the Send Message action might fail when importing or sharing.  (182745894)
 
 ##### Siri
 

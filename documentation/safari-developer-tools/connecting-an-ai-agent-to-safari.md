@@ -33,7 +33,7 @@ In Claude Code, use the command `claude mcp add` to add the Safari MCP server co
 
 ```bash
     
-claude mcp add safari-mcp -- "/Applications/Safari.app/Contents/MacOS/safaridriver" --mcp
+claude mcp add safari-mcp -- "/usr/bin/safaridriver" --mcp
 
 ```
 
@@ -41,7 +41,7 @@ In Codex, use the command `codex mcp add` to add the Safari MCP server configura
 
 ```bash
     
-codex mcp add safari-mcp -- "/Applications/Safari.app/Contents/MacOS/safaridriver" --mcp
+codex mcp add safari-mcp -- "/usr/bin/safaridriver" --mcp
 
 ```
 
@@ -52,7 +52,7 @@ If your agent uses an `mcp.json` or `config.json` file, add the Safari MCP serve
 {
   "mcpServers": {
     "safari-mcp": {
-      "command": "/Applications/Safari.app/Contents/MacOS/safaridriver",
+      "command": "/usr/bin/safaridriver",
       "args": ["--mcp"]
     }
   }

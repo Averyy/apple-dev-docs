@@ -18,6 +18,8 @@ Some common payment sheet-related issues that you may encounter during your Appl
 - “Payment Failed” errors
 - Payment sheet is unexpectedly dismissed
 
+> ❗ **Important**:  Starting October 1, 2026, cross-environment sessions are no longer be supported. If you experience payment issues after this date, see [`Possible reasons why the payment sheet dismisses after customer authentication`](tn3174-diagnosing-issues-with-the-apple-pay-payment-sheet-on-your-website#Possible-reasons-why-the-payment-sheet-dismisses-after-customer-authentication.md) for further information.
+
 #### Possible Reasons for Apple Pay Not Available for This Website Errors
 
 An “Apple Pay not available for this website” error can occur while presenting the payment sheet, most commonly for an invalid [`merchantIdentifier`](https://developer.apple.comhttps://developer.apple.com/documentation/apple_pay_on_the_web/applepayrequest/2951611-merchantidentifier). To ensure your developer account is configured correctly, please go to [`Certificates, Identifiers & Profiles`](https://developer.apple.comhttps://developer.apple.com/account/resources) and confirm the following:
@@ -138,9 +140,9 @@ You should create a new Apple Pay payment session for each transaction for your 
 
 - The merchant identity certificate — a TLS certificate associated with your merchant ID — is used to authenticate your requests.
 - The `merchantIdentifier` request parameter matches the same merchant ID value.
-- For Apple Pay on the Web, use `"web"` for the `intiative` parameter. For the `initiativeContext` parameter, provide your fully qualified domain name associated with your Merchant Identity Certificate.
+- For Apple Pay on the Web, use `"web"` for the `initiative` parameter. For the `initiativeContext` parameter, provide your fully qualified domain name associated with your Merchant Identity Certificate.
 
-In resposne to the `POST` request, your server receives an opaque Apple Pay session object. The session expires after five (5) minutes. For Apple Pay on the WEb, you pass the session object to the completion method, `completeMerchantValidation`.
+In response to the `POST` request, your server receives an opaque Apple Pay session object. The session expires after five (5) minutes. For Apple Pay on the Web, you pass the session object to the completion method, `completeMerchantValidation`.
 
 ###### Issue Failure to Complete Merchant Validation
 
@@ -149,7 +151,7 @@ If you are able to successfully generate a payment session but encounter issues 
 - **The session data is not formatted as a JSON Object.** The `completeMerchantValidation` method does not support this data in string format; the data must be parsed as a JSON object before it can be successfully passed to the completion method.
 - **The session data is incomplete or has been modified.** You should treat the payment session data you receive as *opaque* and should not modify or change any of its contents. The contents or format of this data can change periodically, so it’s better to mapping this data to a strongly-typed object while it is in transit through your server and passed to your client-side code.
 - **The `initiativeContext` for the session does not match the browser domain or is not correctly formatted.** The value provided as the `initiativeContext` in the payment session request should exactly match the domain shown in the browser’s address bar. The `initiativeContext` value should include subdomains but should not contain the URL scheme (e.g. `https://`) or any paths.
-- **You are mixing environments.** Ensure you are using the correct `merchantIdentifier` and `intiativeContext` for the environment you are requesting a payment session from (Sandbox or Production).
+- **You are mixing environments.** Ensure you are using the correct `merchantIdentifier` and `initiativeContext` for the environment you are requesting a payment session from (Sandbox or Production).
 
 #### Possible Reasons Why the Payment Sheet Dismisses After Initial Presentation
 
@@ -177,14 +179,37 @@ Use Safari Web Inspector to identify which event handler completion method is re
 
 #### Possible Reasons Why the Payment Sheet Dismisses After Customer Authentication
 
-You may experience situations where the payment sheet does not display a successful payment confirmation (the “Done” checkmark) after payment authentication, even though the transaction itself may have been successful. When this occurs, you have most likely failed to send a successful payment response back to Apple.
+The payment sheet presents and responds to user interaction successfully, but fails to display a successful payment confirmation (the “Done” checkmark) after customer authentication.
+
+###### Issue the Payment Sheet Dismisses Before the Onpaymentauthorized Event Triggers
+
+This typically indicates an issue generating the Apple Pay payment token. The most common cause is an environment mismatch, where you request an Apple Pay merchant session from one environment but complete it in a different environment.
+
+When requesting a merchant session, use the [`validationURL`](https://developer.apple.comhttps://developer.apple.com/documentation/applepayontheweb/applepayvalidatemerchantevent/validationurl) parameter in the [`ApplePayValidateMerchantEvent`](https://developer.apple.comhttps://developer.apple.com/documentation/applepayontheweb/applepayvalidatemerchantevent) object that the `onvalidatemerchant` event provides, or set the endpoint manually. If you set the endpoint manually, you must ensure it matches the user’s device configuration to avoid an environment mismatch:
+
+- **Sandbox environment:** If the user’s device is signed in with a [`Sandbox tester account`](https://developer.apple.comhttps://developer.apple.com/apple-pay/sandbox-testing/), request the session using the Sandbox merchant validation URL. Developers typically use Sandbox-configured devices only in the integration phase with non-production merchant environments.
+- **Production environment:** If the device is signed in with a standard Apple Account, request the session using the Production [`merchant validation URL`](https://developer.apple.comhttps://developer.apple.com/documentation/applepayontheweb/requesting-an-apple-pay-payment-session). Most consumer devices use this configuration.
+
+In almost all cases, your production website must use the production Apple Pay endpoint. If you manually set the endpoint and encounter payment failures after customer authentication, ensure you didn’t carry over your Apple Pay configuration from lower environments when deploying changes to your production environment.
+
+See [`Requesting an Apple Pay Payment Session`](https://developer.apple.comhttps://developer.apple.com/documentation/apple_pay_on_the_web/apple_pay_js_api/requesting_an_apple_pay_payment_session) for information on merchant validation URLs.
+
+###### Issue the Payment Sheet Dismisses After the Onpaymentauthorized Event Triggers
+
+When the sheet dismisses after the `onpaymentauthorized` event fires, the issue usually relates to the completion method. Verify the following:
+
+- **Timeout:** Ensure your code calls `completePayment` within the allotted 30-second period. If your server takes too long to process the payment, the payment sheet times out and dismisses, even though the transaction itself might eventually complete successfully.
+- **Malformed response object:** Confirm the [`ApplePayPaymentAuthorizationResult`](https://developer.apple.comhttps://developer.apple.com/documentation/applepayontheweb/applepaypaymentauthorizationresult) dictionary you provide to `completePayment` is properly formatted and contains valid data.
 
 #### Revision History
 
+- **2026-07-10** Expanded possible reasons why the payment sheet dismisses after customer authentication.
 - **2024-06-25** First published.
 
 ## See Also
 
+- [TN3213: Moving from Multipeer Connectivity to Network framework](tn3213-moving-from-multipeer-connectivity-to-network-framework.md)
+  Learn how to migrate your Multipeer Connectivity app to Network framework.
 - [TN3210: Optimizing your app for iPhone Mirroring](tn3210-optimizing-your-app-for-iphone-mirroring.md)
   Test your app and improve compatibility with iPhone Mirroring.
 - [TN3211: Resolving SwiftUI source incompatibilities for State and ContentBuilder](tn3211-resolving-swiftui-source-incompatibilities-for-state-and-contentbuilder.md)
@@ -213,8 +238,6 @@ You may experience situations where the payment sheet does not display a success
   Learn which networking API is best for you.
 - [TN3111: iOS Wi-Fi API overview](tn3111-ios-wifi-api-overview.md)
   Explore the various Wi-Fi APIs available on iOS and their expected use cases.
-- [TN3191: IMAP extensions supported by Mail for iOS, iPadOS, and visionOS](tn3191-imap-extensions-supported-by-mail.md)
-  Learn which extensions to the RFC 3501 IMAP protocol are supported by Mail for iOS, iPadOS, and visionOS.
 
 
 ---

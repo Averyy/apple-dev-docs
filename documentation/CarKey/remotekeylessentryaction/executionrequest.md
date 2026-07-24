@@ -24,7 +24,7 @@ When you perform an action, the system creates a [`RemoteKeylessEntryAction.Exec
 
 ## Topics
 
-### Getting the Vehicle’s Respose
+### Getting the Vehicle’s Response
 - [func results() async throws -> ExecutionStatus](remotekeylessentryaction/executionrequest/results.md)
   Returns the results of a preceding action request.
 - [struct ExecutionStatus](executionstatus.md)

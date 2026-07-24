@@ -520,6 +520,8 @@ To locate the section that addresses a specific build error, match the diagnosti
 
 ## See Also
 
+- [TN3213: Moving from Multipeer Connectivity to Network framework](tn3213-moving-from-multipeer-connectivity-to-network-framework.md)
+  Learn how to migrate your Multipeer Connectivity app to Network framework.
 - [TN3210: Optimizing your app for iPhone Mirroring](tn3210-optimizing-your-app-for-iphone-mirroring.md)
   Test your app and improve compatibility with iPhone Mirroring.
 - [TN3212: Adopting gesture recognizers for Sidecar touch support](tn3212-adopting-gesture-recognizers-for-sidecar-touch-support.md)
@@ -548,8 +550,6 @@ To locate the section that addresses a specific build error, match the diagnosti
   Explore the various Wi-Fi APIs available on iOS and their expected use cases.
 - [TN3191: IMAP extensions supported by Mail for iOS, iPadOS, and visionOS](tn3191-imap-extensions-supported-by-mail.md)
   Learn which extensions to the RFC 3501 IMAP protocol are supported by Mail for iOS, iPadOS, and visionOS.
-- [TN3134: Network Extension provider deployment](tn3134-network-extension-provider-deployment.md)
-  Explore the platforms, packaging, OS versions, and device configurations for Network Extension provider deployment.
 
 
 ---

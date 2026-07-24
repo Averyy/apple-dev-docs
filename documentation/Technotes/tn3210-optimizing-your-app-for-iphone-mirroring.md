@@ -101,6 +101,8 @@ Support drag and drop so people can move data between iPhone and Mac while using
 
 ## See Also
 
+- [TN3213: Moving from Multipeer Connectivity to Network framework](tn3213-moving-from-multipeer-connectivity-to-network-framework.md)
+  Learn how to migrate your Multipeer Connectivity app to Network framework.
 - [TN3211: Resolving SwiftUI source incompatibilities for State and ContentBuilder](tn3211-resolving-swiftui-source-incompatibilities-for-state-and-contentbuilder.md)
   Update existing code for two foundational changes in SwiftUI built with Xcode 27.
 - [TN3212: Adopting gesture recognizers for Sidecar touch support](tn3212-adopting-gesture-recognizers-for-sidecar-touch-support.md)
@@ -129,8 +131,6 @@ Support drag and drop so people can move data between iPhone and Mac while using
   Explore the various Wi-Fi APIs available on iOS and their expected use cases.
 - [TN3191: IMAP extensions supported by Mail for iOS, iPadOS, and visionOS](tn3191-imap-extensions-supported-by-mail.md)
   Learn which extensions to the RFC 3501 IMAP protocol are supported by Mail for iOS, iPadOS, and visionOS.
-- [TN3134: Network Extension provider deployment](tn3134-network-extension-provider-deployment.md)
-  Explore the platforms, packaging, OS versions, and device configurations for Network Extension provider deployment.
 
 
 ---

@@ -44,6 +44,12 @@ Reality Composer Pro Beta 4 is a standalone app, available for download from the
 
 - `ComputeGraphComponent` instances in a Reality file do not render when your app loads them. (177674901)
 
+##### Preview on Visionos
+
+###### Known Issues
+
+- Textures in a scene may not load, leaving objects with a flat grey appearance. (182734493) - **Workaround:** For textures to load correctly, enter immersive mode and then exit it.
+
 ## See Also
 
 - [Reality Composer Pro Release Notes](reality-composer-pro-release-notes.md)

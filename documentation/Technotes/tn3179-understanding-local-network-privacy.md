@@ -465,6 +465,8 @@ If you must work with a specific type of interface, call `getifaddrs` to get the
 
 ## See Also
 
+- [TN3213: Moving from Multipeer Connectivity to Network framework](tn3213-moving-from-multipeer-connectivity-to-network-framework.md)
+  Learn how to migrate your Multipeer Connectivity app to Network framework.
 - [TN3210: Optimizing your app for iPhone Mirroring](tn3210-optimizing-your-app-for-iphone-mirroring.md)
   Test your app and improve compatibility with iPhone Mirroring.
 - [TN3211: Resolving SwiftUI source incompatibilities for State and ContentBuilder](tn3211-resolving-swiftui-source-incompatibilities-for-state-and-contentbuilder.md)
@@ -493,8 +495,6 @@ If you must work with a specific type of interface, call `getifaddrs` to get the
   Explore the various Wi-Fi APIs available on iOS and their expected use cases.
 - [TN3191: IMAP extensions supported by Mail for iOS, iPadOS, and visionOS](tn3191-imap-extensions-supported-by-mail.md)
   Learn which extensions to the RFC 3501 IMAP protocol are supported by Mail for iOS, iPadOS, and visionOS.
-- [TN3134: Network Extension provider deployment](tn3134-network-extension-provider-deployment.md)
-  Explore the platforms, packaging, OS versions, and device configurations for Network Extension provider deployment.
 
 
 ---

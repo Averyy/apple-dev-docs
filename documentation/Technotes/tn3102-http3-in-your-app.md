@@ -131,6 +131,8 @@ If you experience issues while debugging your network transactions, take a look 
 
 ## See Also
 
+- [TN3213: Moving from Multipeer Connectivity to Network framework](tn3213-moving-from-multipeer-connectivity-to-network-framework.md)
+  Learn how to migrate your Multipeer Connectivity app to Network framework.
 - [TN3210: Optimizing your app for iPhone Mirroring](tn3210-optimizing-your-app-for-iphone-mirroring.md)
   Test your app and improve compatibility with iPhone Mirroring.
 - [TN3211: Resolving SwiftUI source incompatibilities for State and ContentBuilder](tn3211-resolving-swiftui-source-incompatibilities-for-state-and-contentbuilder.md)
@@ -159,8 +161,6 @@ If you experience issues while debugging your network transactions, take a look 
   Learn which networking API is best for you.
 - [TN3111: iOS Wi-Fi API overview](tn3111-ios-wifi-api-overview.md)
   Explore the various Wi-Fi APIs available on iOS and their expected use cases.
-- [TN3191: IMAP extensions supported by Mail for iOS, iPadOS, and visionOS](tn3191-imap-extensions-supported-by-mail.md)
-  Learn which extensions to the RFC 3501 IMAP protocol are supported by Mail for iOS, iPadOS, and visionOS.
 
 
 ---

@@ -21,7 +21,7 @@ The focus here is on APIs that allow you to *use* the networking stack.  If you 
 
 #### Recommendations By Protocol
 
-This section lists API recommendations for common network protocols.  Follow the advice for the protocol you’re using:
+The following sections offer API recommendations for common network protocols.  Follow the advice for the protocol you’re using:
 
 - **Application Layer:** [`HTTP`](tn3151-choosing-the-right-networking-api#HTTP.md), [`WebSocket`](tn3151-choosing-the-right-networking-api#WebSocket.md), [`FTP`](tn3151-choosing-the-right-networking-api#FTP.md)
 - **Transport Layer:** [`QUIC`](tn3151-choosing-the-right-networking-api#QUIC.md), [`TCP`](tn3151-choosing-the-right-networking-api#TCP.md), [`UDP`](tn3151-choosing-the-right-networking-api#UDP.md)
@@ -29,11 +29,11 @@ This section lists API recommendations for common network protocols.  Follow the
 
 ##### Http
 
-For HTTP, including HTTPS, there is one really good choice: Foundation’s [`URL Loading System`](https://developer.apple.com/documentation/Foundation/url-loading-system), commonly known as `URLSession`.  It supports all the latest features, including Swift concurrency and the HTTP/2 and HTTP/3 protocols.
+For HTTP, including HTTPS, there’s one really good choice: Foundation’s [`URL Loading System`](https://developer.apple.com/documentation/Foundation/url-loading-system), commonly known as `URLSession`.  It supports all the latest features, including Swift concurrency and the HTTP/2 and HTTP/3 protocols.
 
 For more options, see [`HTTP alternatives`](tn3151-choosing-the-right-networking-api#HTTP-alternatives.md).
 
-`URLSession` background sessions allow your app to run an HTTP transfer that continues even if the app stops running.  This is most important on iOS, tvOS, and watchOS, where the system suspends your app shortly after the user moves it to the background.  To learn more about this feature, see [`Downloading files in the background`](https://developer.apple.com/documentation/Foundation/downloading-files-in-the-background).  Alternative HTTP APIs don’t support this feature.
+`URLSession` background sessions allow your app to run an HTTP transfer that continues even if the app stops running.  This is most important on iOS, iPadOS, tvOS, watchOS, and visionOS, where the system suspends your app shortly after the user moves it to the background.  To learn more about this feature, see [`Downloading files in the background`](https://developer.apple.com/documentation/Foundation/downloading-files-in-the-background).  Alternative HTTP APIs don’t support this feature.
 
 ##### Websocket
 
@@ -83,7 +83,7 @@ For UDP you have two reasonable options:
 - [`Network`](https://developer.apple.com/documentation/Network) framework using a [`Network framework API choices`](tn3151-choosing-the-right-networking-api#Network-framework-API-choices.md)
 - BSD Sockets
 
-For UDP flows—where you have a stream of unicast datagrams flowing between two peers—Network framework is the best choice.  If you use BSD Sockets for this case, you’ll have to do a bunch of extra work.
+For UDP flows—where you have a sequence of unicast datagrams flowing between two peers—Network framework is the best choice.  If you use BSD Sockets for this case, you’ll have to do a bunch of extra work.
 
 However, not all UDP communication is that straightforward.  UDP also supports multicast, broadcast, and other asymmetric designs.  Network framework supports UDP multicast using the [`NWConnectionGroup`](https://developer.apple.com/documentation/Network/NWConnectionGroup) class, but that support has limits and, specifically, it does not support UDP broadcast.  If you need something that’s not supported by Network framework, use BSD Sockets.
 
@@ -126,7 +126,7 @@ Apple peer-to-peer Wi-Fi is directly supported by [`Network`](https://developer.
 
 > **Note**: The on-the-wire protocol used by Apple peer-to-peer Wi-Fi is not documented for third-party use, so this only works between Apple devices.
 
-To communicate between a watchOS app and its companion iOS app, use [`Watch Connectivity`](https://developer.apple.com/documentation/WatchConnectivity).  In many cases, however, it might be better to have your watchOS app operate independently, using `URLSession` to communicate directly with your server.
+To communicate between a watchOS app and its companion iOS app, use [`Watch Connectivity`](https://developer.apple.com/documentation/WatchConnectivity).  In many cases, however, it might be better to have your watchOS app operate independently, using `URLSession` to communicate directly with your server.  For more about this concept, see [`Creating independent watchOS apps`](https://developer.apple.com/documentation/watchOS-Apps/creating-independent-watchos-apps).
 
 To connect a tvOS app to a mobile device on the local network, use [`DeviceDiscoveryUI`](https://developer.apple.com/documentation/DeviceDiscoveryUI).
 
@@ -150,7 +150,7 @@ For more options, see [`DNS alternatives`](tn3151-choosing-the-right-networking-
 
 ##### Wi Fi
 
-iOS supports a number of special-purpose Wi-Fi APIs.  For a summary, see [`TN3111: iOS Wi-Fi API overview`](tn3111-ios-wifi-api-overview.md).
+iOS and iPadOS support a number of special-purpose Wi-Fi APIs.  For a summary, see [`TN3111: iOS Wi-Fi API overview`](tn3111-ios-wifi-api-overview.md).
 
 To scan for and configure Wi-Fi networks on macOS, use [`Core WLAN`](https://developer.apple.com/documentation/CoreWLAN).
 
@@ -220,12 +220,7 @@ In [`Versions`](tn3151-choosing-the-right-networking-api#Versions.md) both of th
 
 ##### Peer to Peer Alternatives
 
-[`Multipeer Connectivity`](https://developer.apple.com/documentation/MultipeerConnectivity) is a high-level API that supports Apple peer-to-peer Wi-Fi.  It includes:
-
-- A very opinionated networking model, where every participant in a session is a symmetric peer
-- User interface components for advertising and joining a session
-
-Use it when your requirements are aligned with those features.  Don’t use it if your program uses a client/server architecture; Network framework works better in that case.  For an example, see [`Building a custom peer-to-peer protocol`](https://developer.apple.com/documentation/Network/building-a-custom-peer-to-peer-protocol).
+[`Multipeer Connectivity`](https://developer.apple.com/documentation/MultipeerConnectivity) is a high-level API that supports Apple peer-to-peer Wi-Fi.  It was deprecated in [`Versions`](tn3151-choosing-the-right-networking-api#Versions.md).  Avoid using it in new code.  If you have existing Multipeer Connectivity code, think about whether it makes sense to migrate that code to Network framework.  For advice on how to do that, see [`TN3213: Moving from Multipeer Connectivity to Network framework`](tn3213-moving-from-multipeer-connectivity-to-network-framework.md).
 
 > ❗ **Important**: A common misconception is that Multipeer Connectivity is the only way to use Apple peer-to-peer Wi-Fi.  That’s not the case.  Network framework has opt-in peer-to-peer Wi-Fi support.  For the details, see [`Peer-to-peer networking`](tn3151-choosing-the-right-networking-api#Peer-to-peer-networking.md).
 
@@ -343,15 +338,19 @@ Networking is fundamental to all Apple platforms.  When Apple introduces a new n
 | 2023 | 14 | 17 | 10 | 1 |
 | 2024 | 15 | 18 | 11 | 2 |
 | 2025 | 26 | 26 | 26 | 26 |
+| 2026 | 27 | 27 | 27 | 27 |
 
 #### Revision History
 
+- **2026-07-23** Updated the discussion of Multipeer Connectivity to account for its recent deprecation.  Made other minor editorial changes.
 - **2025-09-05** Added links to [`TN3179: Understanding local network privacy`](tn3179-understanding-local-network-privacy.md).  Added links to the Network framework Swift API introduced in 2025.  Added information about Wi-Fi Aware.  Updated “BSD Sockets best practices” to discuss `NEURLFilter` and `ne_socket_set_domains`.  Updated the version list.  Made other editorial changes.
 - **2023-09-19** Added information about `CFSocket`.
 - **2023-06-06** First published.
 
 ## See Also
 
+- [TN3213: Moving from Multipeer Connectivity to Network framework](tn3213-moving-from-multipeer-connectivity-to-network-framework.md)
+  Learn how to migrate your Multipeer Connectivity app to Network framework.
 - [TN3210: Optimizing your app for iPhone Mirroring](tn3210-optimizing-your-app-for-iphone-mirroring.md)
   Test your app and improve compatibility with iPhone Mirroring.
 - [TN3211: Resolving SwiftUI source incompatibilities for State and ContentBuilder](tn3211-resolving-swiftui-source-incompatibilities-for-state-and-contentbuilder.md)
@@ -380,8 +379,6 @@ Networking is fundamental to all Apple platforms.  When Apple introduces a new n
   Explore the various Wi-Fi APIs available on iOS and their expected use cases.
 - [TN3191: IMAP extensions supported by Mail for iOS, iPadOS, and visionOS](tn3191-imap-extensions-supported-by-mail.md)
   Learn which extensions to the RFC 3501 IMAP protocol are supported by Mail for iOS, iPadOS, and visionOS.
-- [TN3134: Network Extension provider deployment](tn3134-network-extension-provider-deployment.md)
-  Explore the platforms, packaging, OS versions, and device configurations for Network Extension provider deployment.
 
 
 ---
