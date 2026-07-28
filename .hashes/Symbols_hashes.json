@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-07-24T07:32:32.564654",
+    "last_updated": "2026-07-28T07:49:55.023839",
     "total_pages": 252,
-    "session_id": "2026-07-24T07:32:16.933333"
+    "session_id": "2026-07-28T07:49:30.796646"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/Symbols.json": {
       "hash": "39c65c8860285591a90ab8e28f57a93271b3b1955109b6a40f4a9fc4c027f12f",
-      "last_checked": "2026-07-24T07:32:17.196237",
+      "last_checked": "2026-07-28T07:49:31.185747",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"3648825f9df8dde1319ae7994cc9ff9c\"",
       "file_path": "documentation/Symbols/Symbols.md"
     },
     "https://developer.apple.com/documentation/Symbols": {
       "hash": "39c65c8860285591a90ab8e28f57a93271b3b1955109b6a40f4a9fc4c027f12f",
-      "last_checked": "2026-07-24T07:32:17.164369",
+      "last_checked": "2026-07-28T07:49:31.075004",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"3648825f9df8dde1319ae7994cc9ff9c\"",
       "file_path": "documentation/Symbols/Symbols.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/symboleffect/appear.json": {
       "hash": "b77160020ae95a78bf0c37961c048b4a19a40082e7934fb928b70ecf21d5f556",
-      "last_checked": "2026-07-24T07:32:17.483921",
+      "last_checked": "2026-07-28T07:49:31.598906",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"27de110ffbd42d7dc1498179d6e7d3f3\"",
       "file_path": "documentation/Symbols/symboleffect/appear.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/symboleffect/bounce.json": {
       "hash": "2d88baf247fef816e10e934e99c7850d386ee1ce4bbee688cbd357f0bf8fbe8f",
-      "last_checked": "2026-07-24T07:32:17.736697",
+      "last_checked": "2026-07-28T07:49:31.974348",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"9453fb9c13e60d0cdff744c482651f83\"",
       "file_path": "documentation/Symbols/symboleffect/bounce.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/symboleffect/disappear.json": {
       "hash": "4674cce93225cac1567059840e2fa30a4ef421d33e2da03b1f2e95299ba9b76c",
-      "last_checked": "2026-07-24T07:32:17.849773",
+      "last_checked": "2026-07-28T07:49:32.114060",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"5194594e0404d1f237935422b98c01c1\"",
       "file_path": "documentation/Symbols/symboleffect/disappear.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/symboleffect/pulse.json": {
       "hash": "8e973a704d72768687685653d5e8b42fc16b2e200ce79369906ab0a9a0577960",
-      "last_checked": "2026-07-24T07:32:18.149639",
+      "last_checked": "2026-07-28T07:49:32.429512",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"6318d08c6f7b7ac7fe2721882d994ec5\"",
       "file_path": "documentation/Symbols/symboleffect/pulse.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/symboleffect/scale.json": {
       "hash": "0a784d74bac636bed01e3c57a7d246a1f35de6b2c53439c4bddf9bd1f07f39d6",
-      "last_checked": "2026-07-24T07:32:18.296407",
+      "last_checked": "2026-07-28T07:49:32.612018",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"213957b962e328c3259ebbfc2c042955\"",
       "file_path": "documentation/Symbols/symboleffect/scale.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/symboleffect/variablecolor.json": {
       "hash": "7b45b4cab2bdc92b9a892672e9eafdb28c1880a8fd865c8408362abb9c8dec7d",
-      "last_checked": "2026-07-24T07:32:18.425545",
+      "last_checked": "2026-07-28T07:49:32.770779",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"6fed6d89a4554324e8543148b6990af2\"",
       "file_path": "documentation/Symbols/symboleffect/variablecolor.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/symboleffect/replace.json": {
       "hash": "866301cbfce6010e0796b2527d9ba33b434cb7b60f636eccfb21ad1664e2f7aa",
-      "last_checked": "2026-07-24T07:32:18.667001",
+      "last_checked": "2026-07-28T07:49:33.128965",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"8dc32919e621e10761b05cd2dd6c9cad\"",
       "file_path": "documentation/Symbols/symboleffect/replace.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/symboleffect/automatic.json": {
       "hash": "83a2beb1c7ba0727d6706a14ae521ac04c976721cc2874b99d20e82068f3b872",
-      "last_checked": "2026-07-24T07:32:18.915133",
+      "last_checked": "2026-07-28T07:49:33.343404",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"cf6aa46b20aba707138127f6dc72c4e0\"",
       "file_path": "documentation/Symbols/symboleffect/automatic.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/appearsymboleffect.json": {
       "hash": "c8c32a2039335d5291879bc638e9ea6baa74b3a74241ace41b899c722165f95a",
-      "last_checked": "2026-07-24T07:32:19.059305",
+      "last_checked": "2026-07-28T07:49:33.497002",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"808a18516610e9b6059ff08ec5caaa9c\"",
       "file_path": "documentation/Symbols/appearsymboleffect.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/automaticsymboleffect.json": {
       "hash": "26e306e8e90ebc04299017065470095927d6f1862c261f43aacfe29d6e3906a7",
-      "last_checked": "2026-07-24T07:32:19.299423",
+      "last_checked": "2026-07-28T07:49:33.813188",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"0e88091d7623ceb36a1a756de7286f6b\"",
       "file_path": "documentation/Symbols/automaticsymboleffect.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/bouncesymboleffect.json": {
       "hash": "09a1207ef635d437c71ef2354087cbf20085f3d3e65395dab626d1c49e637a5f",
-      "last_checked": "2026-07-24T07:32:19.408374",
+      "last_checked": "2026-07-28T07:49:34.008189",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"bd8fae4aa2048ff70a6f3303fc208aa1\"",
       "file_path": "documentation/Symbols/bouncesymboleffect.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/disappearsymboleffect.json": {
       "hash": "a95fed32a93bc20a7b999412874e86f31fec24c0cd0862adfd7f3a4ddae91284",
-      "last_checked": "2026-07-24T07:32:19.515775",
+      "last_checked": "2026-07-28T07:49:34.196489",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"2ca55b9eac35d3286f446cf9e0aa766b\"",
       "file_path": "documentation/Symbols/disappearsymboleffect.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/pulsesymboleffect.json": {
       "hash": "30e9bfd0f881e88874d58a59f603b9bb8065a9b1a3f879f090a3536872353d97",
-      "last_checked": "2026-07-24T07:32:19.770883",
+      "last_checked": "2026-07-28T07:49:34.517644",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"73b8e49f6adbfcf03ca74e17570cf458\"",
       "file_path": "documentation/Symbols/pulsesymboleffect.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/replacesymboleffect.json": {
       "hash": "3c674ca486d84dbaf6c1f1661a89543c37e76322e300118e2ed9bff503bfa14d",
-      "last_checked": "2026-07-24T07:32:19.874326",
+      "last_checked": "2026-07-28T07:49:34.709874",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"10956e48cef709bf4f786d8fdd40c6df\"",
       "file_path": "documentation/Symbols/replacesymboleffect.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/scalesymboleffect.json": {
       "hash": "f91a59b637e57dd82871844dc5b5e241ac254027fffbcac1296afbd96766031a",
-      "last_checked": "2026-07-24T07:32:20.130999",
+      "last_checked": "2026-07-28T07:49:34.903200",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"53af6d23b3dc6abc6bfed73a6bc239df\"",
       "file_path": "documentation/Symbols/scalesymboleffect.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/variablecolorsymboleffect.json": {
       "hash": "d37225f1653ce245ce0a6c57feb35d57a324acced215545a0b9edb7491c97b8e",
-      "last_checked": "2026-07-24T07:32:20.380360",
+      "last_checked": "2026-07-28T07:49:35.227461",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"ddf7f7d11225edc4c20fc4042aa84f8e\"",
       "file_path": "documentation/Symbols/variablecolorsymboleffect.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/breathesymboleffect.json": {
       "hash": "00f8abf11f2a816545e106111d19b66f6273147e90d5b9a0cc5edf8ee825099d",
-      "last_checked": "2026-07-24T07:32:20.440595",
+      "last_checked": "2026-07-28T07:49:35.558727",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"1f571f277e4b8bf8c82181417279b35f\"",
       "file_path": "documentation/Symbols/breathesymboleffect.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/rotatesymboleffect.json": {
       "hash": "530a9224a1b4652c44c0fa6c6e14161d0e375a946b18ee4ea4811f3b67a7f0c6",
-      "last_checked": "2026-07-24T07:32:20.598322",
+      "last_checked": "2026-07-28T07:49:35.868060",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"71d972b49efbf0926f98cab4d454ef98\"",
       "file_path": "documentation/Symbols/rotatesymboleffect.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/wigglesymboleffect.json": {
       "hash": "577b6a806334fad70704fe4259406af725f13717c002fb668776499451b2f7d5",
-      "last_checked": "2026-07-24T07:32:20.726633",
+      "last_checked": "2026-07-28T07:49:36.239882",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"07b3cf35a412cf26c4126349d3cc45f7\"",
       "file_path": "documentation/Symbols/wigglesymboleffect.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/symboleffectoptions.json": {
       "hash": "fe20241ce6dea839c40e7d96affbc5496ea350f91770a50b11ae1ff0191c73ab",
-      "last_checked": "2026-07-24T07:32:20.850402",
+      "last_checked": "2026-07-28T07:49:36.569510",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"16d8e23821cd137e1124f717c84ed4a2\"",
       "file_path": "documentation/Symbols/symboleffectoptions.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/symboleffect.json": {
       "hash": "3b7629d187b0dc331dca31fd424f0d1057f581b5ab44d7f280ab05cb81e066a6",
-      "last_checked": "2026-07-24T07:32:20.962842",
+      "last_checked": "2026-07-28T07:49:36.903759",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"85f529960e0fb39ea25d3857679fdf6a\"",
       "file_path": "documentation/Symbols/symboleffect.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/discretesymboleffect.json": {
       "hash": "9343f7efc72a094a8fdac089db847fd576efb1536d69aba561893a522485c6c8",
-      "last_checked": "2026-07-24T07:32:21.018534",
+      "last_checked": "2026-07-28T07:49:37.099923",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"aaeb12fb1748344d033de23e25c124b4\"",
       "file_path": "documentation/Symbols/discretesymboleffect.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/indefinitesymboleffect.json": {
       "hash": "4b0688efae58b9d6b070bf898f3e436bd6cdd41ceb704f8712b49e0b65b041aa",
-      "last_checked": "2026-07-24T07:32:21.091599",
+      "last_checked": "2026-07-28T07:49:37.287365",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"4302eb341a35c9bb87af58ee003f1ee7\"",
       "file_path": "documentation/Symbols/indefinitesymboleffect.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/contenttransitionsymboleffect.json": {
       "hash": "a9972d2b9b5f5233b7baac45b897c52194188817a60aeaf9cc13b85acffbfb69",
-      "last_checked": "2026-07-24T07:32:21.386983",
+      "last_checked": "2026-07-28T07:49:37.463073",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"0ef3f00eb124d4f2dca48cb3f6269d00\"",
       "file_path": "documentation/Symbols/contenttransitionsymboleffect.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/transitionsymboleffect.json": {
       "hash": "f137cc8b5c5a6fc53a18350a80a1017e061d9115e94bad4a8832829eaa827781",
-      "last_checked": "2026-07-24T07:32:21.491903",
+      "last_checked": "2026-07-28T07:49:37.655583",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"a8a49630cb31314222149a47e8dd5db1\"",
       "file_path": "documentation/Symbols/transitionsymboleffect.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/drawoffsymboleffect.json": {
       "hash": "2cd7076434fa94ca4e0361a6b0dcf62c586071c378ca352c93043cbd96764f1c",
-      "last_checked": "2026-07-24T07:32:21.609173",
+      "last_checked": "2026-07-28T07:49:37.872378",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"016268d6d6e46687856bba7fea0f0585\"",
       "file_path": "documentation/Symbols/drawoffsymboleffect.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/drawonsymboleffect.json": {
       "hash": "1eb7347d1c4a7eac17e0f43ef5de20e318f07c8c942290238c34daf4f6068fc5",
-      "last_checked": "2026-07-24T07:32:21.676415",
+      "last_checked": "2026-07-28T07:49:38.197030",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"c7a5846b6828d22abd7675e62fd06798\"",
       "file_path": "documentation/Symbols/drawonsymboleffect.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/appearsymboleffect/down.json": {
       "hash": "a1e5196d66e7a5240dfa473485ec042c433acaa085a50a16bddc7eb5c07a8e34",
-      "last_checked": "2026-07-24T07:32:21.736863",
+      "last_checked": "2026-07-28T07:49:38.509006",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"065f1d52ff654b04798532dd79fe838c\"",
       "file_path": "documentation/Symbols/appearsymboleffect/down.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/appearsymboleffect/up.json": {
       "hash": "303263082b9871000de934fab4a2a3a32eb6c9284435fd2c029fe16018e878c4",
-      "last_checked": "2026-07-24T07:32:21.807441",
+      "last_checked": "2026-07-28T07:49:38.680552",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"a1e5093423f01ceed12ae2d83b6d546e\"",
       "file_path": "documentation/Symbols/appearsymboleffect/up.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/appearsymboleffect/bylayer.json": {
       "hash": "9dd439d46dc10f591f8832f469904d635c5f8ef5a22d73583f44de8bf2c16695",
-      "last_checked": "2026-07-24T07:32:21.863361",
+      "last_checked": "2026-07-28T07:49:38.884139",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"73c25ddc79955802a06650036393dc50\"",
       "file_path": "documentation/Symbols/appearsymboleffect/bylayer.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/appearsymboleffect/wholesymbol.json": {
       "hash": "145b4e3a961f20682a5e3a0d1935f9100cf049b1747aa5fe1540bbf3f0f184d7",
-      "last_checked": "2026-07-24T07:32:21.973498",
+      "last_checked": "2026-07-28T07:49:39.059680",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"edc70cc3fa0b7d86239a98da69fc3156\"",
       "file_path": "documentation/Symbols/appearsymboleffect/wholesymbol.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/appearsymboleffect/configuration.json": {
       "hash": "7e0d598bd363e50a31cafbce9dd74c35b8735a2369b11d50f44ec7d4e67bb6aa",
-      "last_checked": "2026-07-24T07:32:22.046862",
+      "last_checked": "2026-07-28T07:49:39.238180",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"872fb85d3475d608b8639edce6bc2689\"",
       "file_path": "documentation/Symbols/appearsymboleffect/configuration.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/automaticsymboleffect/configuration.json": {
       "hash": "c676ad7f1b977e26f8849e5389fc5a041497aee738adaaff344eaa3169597626",
-      "last_checked": "2026-07-24T07:32:22.172248",
+      "last_checked": "2026-07-28T07:49:39.419810",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"69c36c58af62f811a1fe7ef792c13b3c\"",
       "file_path": "documentation/Symbols/automaticsymboleffect/configuration.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/bouncesymboleffect/down.json": {
       "hash": "14822c590d986b861c4df9d75097b4e8071caaa1e984e025a733c9991866bf6c",
-      "last_checked": "2026-07-24T07:32:22.241687",
+      "last_checked": "2026-07-28T07:49:39.597242",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"c2f64ce85f7dfa78d9a3766748d62b1e\"",
       "file_path": "documentation/Symbols/bouncesymboleffect/down.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/bouncesymboleffect/up.json": {
       "hash": "83aac9f292d27b30132d2faf5fa8b6df15ea88c76a66492288997d4d18dcb7cf",
-      "last_checked": "2026-07-24T07:32:22.357812",
+      "last_checked": "2026-07-28T07:49:39.935772",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"895218f1d490e120aa0085171770ca82\"",
       "file_path": "documentation/Symbols/bouncesymboleffect/up.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/bouncesymboleffect/bylayer.json": {
       "hash": "92236706858919b71f98b5f3db20c2149e5a6ab6f00af1133281fb645d2e13ec",
-      "last_checked": "2026-07-24T07:32:22.468791",
+      "last_checked": "2026-07-28T07:49:40.127607",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"886d688ee1823731f9798dc3f2a579ef\"",
       "file_path": "documentation/Symbols/bouncesymboleffect/bylayer.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/bouncesymboleffect/wholesymbol.json": {
       "hash": "0f69e12cad6844c14abc88e60e3a02d2685220593e35bbb825cc59ca0d9a8b7a",
-      "last_checked": "2026-07-24T07:32:22.584304",
+      "last_checked": "2026-07-28T07:49:40.454604",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"99c27645ad15a63a0594b2788cb36a62\"",
       "file_path": "documentation/Symbols/bouncesymboleffect/wholesymbol.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/bouncesymboleffect/configuration.json": {
       "hash": "bff54dae0761d8a69613e4bf479320753451233369ea304ccf22731b5361b57c",
-      "last_checked": "2026-07-24T07:32:22.710493",
+      "last_checked": "2026-07-28T07:49:40.648077",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"c10a2eee95641aa94e3cad7d892b4803\"",
       "file_path": "documentation/Symbols/bouncesymboleffect/configuration.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/disappearsymboleffect/down.json": {
       "hash": "ff4ebdfed1ec0c73d4e22e1f3945b7119f31a8abee8acd2b162c09b7dfaef47d",
-      "last_checked": "2026-07-24T07:32:22.959540",
+      "last_checked": "2026-07-28T07:49:40.983761",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"8970f3aa50c1067d7587b8d59fdd853d\"",
       "file_path": "documentation/Symbols/disappearsymboleffect/down.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/disappearsymboleffect/up.json": {
       "hash": "a0a818d7503a335ec80c7994afec8be67953e2fe05aacf64da7b3a08cb1c991e",
-      "last_checked": "2026-07-24T07:32:23.024327",
+      "last_checked": "2026-07-28T07:49:41.169330",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"247be70318dd9495d887288269b040ea\"",
       "file_path": "documentation/Symbols/disappearsymboleffect/up.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/disappearsymboleffect/bylayer.json": {
       "hash": "1433dd8c2f1bceb7215dbd8260176e12ac913b41271bf628fb4adfd8ce7b3cbb",
-      "last_checked": "2026-07-24T07:32:23.140264",
+      "last_checked": "2026-07-28T07:49:41.389229",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"fb8877b35aa995da81ca566125564c5e\"",
       "file_path": "documentation/Symbols/disappearsymboleffect/bylayer.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/disappearsymboleffect/wholesymbol.json": {
       "hash": "cb5ed0521c85d808629f3228c784ce46cde35ea9cb7a5f2d8764315fed1b4630",
-      "last_checked": "2026-07-24T07:32:23.244733",
+      "last_checked": "2026-07-28T07:49:41.702573",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"2985dd7db44967cd241c8b8b10582c40\"",
       "file_path": "documentation/Symbols/disappearsymboleffect/wholesymbol.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/disappearsymboleffect/configuration.json": {
       "hash": "92ef94e81046e803690c74d68f94ec52b19b8e03ca8b06415a82a8f9bce23a3a",
-      "last_checked": "2026-07-24T07:32:23.353656",
+      "last_checked": "2026-07-28T07:49:41.892639",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"8d600bc25726c3ee6e51c59a89e26db2\"",
       "file_path": "documentation/Symbols/disappearsymboleffect/configuration.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/pulsesymboleffect/bylayer.json": {
       "hash": "31b4dda6e87e8308734553b7de50d3f49438071c4656619586c855cb097e1e15",
-      "last_checked": "2026-07-24T07:32:23.416573",
+      "last_checked": "2026-07-28T07:49:42.088051",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"b15f23a55619d361ccc93dc43dfd43a3\"",
       "file_path": "documentation/Symbols/pulsesymboleffect/bylayer.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/pulsesymboleffect/wholesymbol.json": {
       "hash": "3130acfacc827820ec8d7961d2338a87cffb46aacc1d089f5697b5f68a8ea1ac",
-      "last_checked": "2026-07-24T07:32:23.534622",
+      "last_checked": "2026-07-28T07:49:42.280101",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"a64400e0c39bf0a831120656764987a7\"",
       "file_path": "documentation/Symbols/pulsesymboleffect/wholesymbol.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/pulsesymboleffect/configuration.json": {
       "hash": "0946082d9c18419377f9a5eb4b6d8d16c2ef5b10b0b8f6bb16ae1309ff978f86",
-      "last_checked": "2026-07-24T07:32:23.664358",
+      "last_checked": "2026-07-28T07:49:42.474117",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"17822639930bd455dde04774e2419416\"",
       "file_path": "documentation/Symbols/pulsesymboleffect/configuration.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/replacesymboleffect/downup-swift.property.json": {
       "hash": "13972039502a1ff5c7b6fae5d18cef58adcf2e18a905a7c36ff5d9b7f52c39c6",
-      "last_checked": "2026-07-24T07:32:23.773565",
+      "last_checked": "2026-07-28T07:49:42.648516",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"5a5580bc5e267ef6647f4e97871c674a\"",
       "file_path": "documentation/Symbols/replacesymboleffect/downup-swiftproperty.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/replacesymboleffect/offup-swift.property.json": {
       "hash": "3fa429c5997351b32362a1f92732c5febf9befa3ea88bacb12360c6ca0e91f55",
-      "last_checked": "2026-07-24T07:32:23.881448",
+      "last_checked": "2026-07-28T07:49:42.845855",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"160045255ba6267eb5d6c42969756613\"",
       "file_path": "documentation/Symbols/replacesymboleffect/offup-swiftproperty.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/replacesymboleffect/upup-swift.property.json": {
       "hash": "51c612f258cbf4db601acbd5ebee880a1e5b22034c17adc2779e826fcf35fa80",
-      "last_checked": "2026-07-24T07:32:23.993294",
+      "last_checked": "2026-07-28T07:49:43.036973",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"c27c5a1594d489c4431f68646acf8e64\"",
       "file_path": "documentation/Symbols/replacesymboleffect/upup-swiftproperty.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/replacesymboleffect/bylayer.json": {
       "hash": "b5b9cd73ca1dc647da2517c09aab2353170f01ffd50ef55a1cd7ed9508d8b1f4",
-      "last_checked": "2026-07-24T07:32:24.102875",
+      "last_checked": "2026-07-28T07:49:43.224024",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"076caef63d25435b1b572173d187d120\"",
       "file_path": "documentation/Symbols/replacesymboleffect/bylayer.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/replacesymboleffect/wholesymbol.json": {
       "hash": "accd198be574005101097fb8adb1a0ef6caf91385d28955052dea06d127be80e",
-      "last_checked": "2026-07-24T07:32:24.164598",
+      "last_checked": "2026-07-28T07:49:43.352093",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"40fae2bd0f759f1c2f0d08e88a47dafc\"",
       "file_path": "documentation/Symbols/replacesymboleffect/wholesymbol.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/replacesymboleffect/configuration.json": {
       "hash": "dd18969bd3ed7256dc015a69ef9dd5b104bbccb80cee8bbdb997b5f83f1222ed",
-      "last_checked": "2026-07-24T07:32:24.278066",
+      "last_checked": "2026-07-28T07:49:43.500889",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"11e6e1e2cef82a8b5aeed291f59396ae\"",
       "file_path": "documentation/Symbols/replacesymboleffect/configuration.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/replacesymboleffect/magicreplace.json": {
       "hash": "32a772c15d4c739c94b1876ed65263feeffef59a027c9a5fa28ab99d803d8816",
-      "last_checked": "2026-07-24T07:32:24.404709",
+      "last_checked": "2026-07-28T07:49:43.691100",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"9b89af6213be1edb2f48b6a51153f3d8\"",
       "file_path": "documentation/Symbols/replacesymboleffect/magicreplace.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/replacesymboleffect/magic(fallback:).json": {
       "hash": "8322cd88a38dbefee53d0576486d8875d585ba46a620f40361625dde12e3bf60",
-      "last_checked": "2026-07-24T07:32:24.477693",
+      "last_checked": "2026-07-28T07:49:43.873697",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"1106b7fd9b77c8f25d80bfe12ac21364\"",
       "file_path": "documentation/Symbols/replacesymboleffect/magic-fallback.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/replacesymboleffect/downup-swift.type.property.json": {
       "hash": "c5c33fc77b908c76e3df4639b8f4aeaeb34f2aa904db8884c90e03dbc1978f01",
-      "last_checked": "2026-07-24T07:32:24.739805",
+      "last_checked": "2026-07-28T07:49:44.038954",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"889a1d915e9b9bf57fc2462aa7605865\"",
       "file_path": "documentation/Symbols/replacesymboleffect/downup-swifttypeproperty.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/replacesymboleffect/offup-swift.type.property.json": {
       "hash": "ec0140c466c119b72ec89c7ec87278d0fd098532b4d2716cf326b8af04c3efea",
-      "last_checked": "2026-07-24T07:32:24.850673",
+      "last_checked": "2026-07-28T07:49:44.241841",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"6a226502b64125577f44baa2550debac\"",
       "file_path": "documentation/Symbols/replacesymboleffect/offup-swifttypeproperty.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/replacesymboleffect/upup-swift.type.property.json": {
       "hash": "e90ee15987a411c4e36e98d2f7b517c7115a9697de83e43d72889252e9b23203",
-      "last_checked": "2026-07-24T07:32:24.924180",
+      "last_checked": "2026-07-28T07:49:44.391547",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"de32258088ede9d8021395c30108dd43\"",
       "file_path": "documentation/Symbols/replacesymboleffect/upup-swifttypeproperty.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/scalesymboleffect/down.json": {
       "hash": "c50eaa3dc5d6d92a1182e7ae024c8e87349396f59226d1c8ca47b8b3d9a9766d",
-      "last_checked": "2026-07-24T07:32:24.986787",
+      "last_checked": "2026-07-28T07:49:44.542511",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"82e03f937e90d13ef018eb6c1fc6f078\"",
       "file_path": "documentation/Symbols/scalesymboleffect/down.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/scalesymboleffect/up.json": {
       "hash": "fe1c59d69e3db3b14fe1aadca6e9300b3d495474deddf139038312494c0f9a42",
-      "last_checked": "2026-07-24T07:32:25.048586",
+      "last_checked": "2026-07-28T07:49:44.686067",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"58e375edd1939b48e06b789405ab81a3\"",
       "file_path": "documentation/Symbols/scalesymboleffect/up.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/scalesymboleffect/bylayer.json": {
       "hash": "be20fe72ea3fcb0d23fd1622f7f3c260b35481cda6546294455ce95b46e22301",
-      "last_checked": "2026-07-24T07:32:25.157873",
+      "last_checked": "2026-07-28T07:49:44.860823",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"69ae77ff87e74fe12cbac72816784da1\"",
       "file_path": "documentation/Symbols/scalesymboleffect/bylayer.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/scalesymboleffect/wholesymbol.json": {
       "hash": "acd00888866fa2adca4a979ef5935db7262ec68478ac54995a27309eeaf4a7e3",
-      "last_checked": "2026-07-24T07:32:25.400738",
+      "last_checked": "2026-07-28T07:49:45.039731",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"820f9198972ae9f3a95f6bd44d348a7a\"",
       "file_path": "documentation/Symbols/scalesymboleffect/wholesymbol.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/scalesymboleffect/configuration.json": {
       "hash": "09c7199c48bae5c17f4522afce4eacf1d701f2f843ca418dbc6a39abc0c4a36a",
-      "last_checked": "2026-07-24T07:32:25.468630",
+      "last_checked": "2026-07-28T07:49:45.169689",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"7f47a98c2be701022fbc8a9f28b2e78f\"",
       "file_path": "documentation/Symbols/scalesymboleffect/configuration.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/variablecolorsymboleffect/cumulative.json": {
       "hash": "3d4c1996ef30d6b68d5846ee78b9a73ab1fd9c3062a30160f62ab8b09ced3055",
-      "last_checked": "2026-07-24T07:32:25.733133",
+      "last_checked": "2026-07-28T07:49:45.311171",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"790d6fb6f86cde6beea98c4009bf9805\"",
       "file_path": "documentation/Symbols/variablecolorsymboleffect/cumulative.md"
     },
@@ -1031,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/variablecolorsymboleffect/iterative.json": {
       "hash": "465e159de781a231275ad9411d2be876ab65f2121a84b4c16e9de2ebdd518115",
-      "last_checked": "2026-07-24T07:32:25.847760",
+      "last_checked": "2026-07-28T07:49:45.458460",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"dd19af5034d2e69d74a46707cd5c08fa\"",
       "file_path": "documentation/Symbols/variablecolorsymboleffect/iterative.md"
     },
@@ -1047,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/variablecolorsymboleffect/nonreversing.json": {
       "hash": "513b9538547a54376ea06fb0ae3e15671bebec57e1ce8cf43149fae98579764d",
-      "last_checked": "2026-07-24T07:32:25.958993",
+      "last_checked": "2026-07-28T07:49:45.632746",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"3343caa4da52da43e864baaf33ff506e\"",
       "file_path": "documentation/Symbols/variablecolorsymboleffect/nonreversing.md"
     },
@@ -1063,9 +1063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/variablecolorsymboleffect/reversing.json": {
       "hash": "8a6df2c08c673deaf3db3026c283343b92e27e1c8d59476664a6e9a49600abcb",
-      "last_checked": "2026-07-24T07:32:26.077907",
+      "last_checked": "2026-07-28T07:49:45.781841",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"bc95da6fad17d2349b3a691b46df727a\"",
       "file_path": "documentation/Symbols/variablecolorsymboleffect/reversing.md"
     },
@@ -1079,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/variablecolorsymboleffect/diminactivelayers.json": {
       "hash": "e2fde7c405f080355bc6437de768e4a8834af621681a2a68d4d992089d0acd40",
-      "last_checked": "2026-07-24T07:32:26.203435",
+      "last_checked": "2026-07-28T07:49:45.903521",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"f04b2c125b9fc5a6591da13fc8b97a30\"",
       "file_path": "documentation/Symbols/variablecolorsymboleffect/diminactivelayers.md"
     },
@@ -1095,9 +1095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/variablecolorsymboleffect/hideinactivelayers.json": {
       "hash": "d17cefd1c27cab8bacd3b67e82dc563964274d2f4edd6889c003d003e5482a54",
-      "last_checked": "2026-07-24T07:32:26.342069",
+      "last_checked": "2026-07-28T07:49:46.035862",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"bdfc328f09b706da37aefa638307b020\"",
       "file_path": "documentation/Symbols/variablecolorsymboleffect/hideinactivelayers.md"
     },
@@ -1111,9 +1111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/variablecolorsymboleffect/configuration.json": {
       "hash": "2999c1c3fb7a8ce98be7721cd96fd7e2e01e2b898f7454b80d5b63a0b7e5392b",
-      "last_checked": "2026-07-24T07:32:26.443662",
+      "last_checked": "2026-07-28T07:49:46.182512",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"569412847467a56b5478c46a2578e3fb\"",
       "file_path": "documentation/Symbols/variablecolorsymboleffect/configuration.md"
     },
@@ -1127,9 +1127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/breathesymboleffect/bylayer.json": {
       "hash": "baec726441aee91609badbd31010ef51190e647f960f1200e299a6ae2f6ef202",
-      "last_checked": "2026-07-24T07:32:26.552300",
+      "last_checked": "2026-07-28T07:49:46.377188",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"7f98dcdf79a8c7f28a4a60115d7f2624\"",
       "file_path": "documentation/Symbols/breathesymboleffect/bylayer.md"
     },
@@ -1143,9 +1143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/breathesymboleffect/configuration.json": {
       "hash": "70e26a651affe40d0eeffb51266a77b5a72f305f59cd625b30f881c36527b646",
-      "last_checked": "2026-07-24T07:32:26.643463",
+      "last_checked": "2026-07-28T07:49:46.512784",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"5b72f8b1e45c770e70216f2e6f8772ef\"",
       "file_path": "documentation/Symbols/breathesymboleffect/configuration.md"
     },
@@ -1159,9 +1159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/breathesymboleffect/plain.json": {
       "hash": "f79cb87d3a21625b32bb020dd5d97fcd7733aa49268328adcf28c187ee760741",
-      "last_checked": "2026-07-24T07:32:26.761858",
+      "last_checked": "2026-07-28T07:49:46.716034",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"d07cd4bb1fbaad5c8b490e3780ad5765\"",
       "file_path": "documentation/Symbols/breathesymboleffect/plain.md"
     },
@@ -1175,9 +1175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/breathesymboleffect/pulse.json": {
       "hash": "646ad6c8735d51f3f28e1b53e8d0bb7953bab445d98e546e50f389eda1ea192f",
-      "last_checked": "2026-07-24T07:32:26.864733",
+      "last_checked": "2026-07-28T07:49:46.856296",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"b8d995a71e7d466768f574de995934f7\"",
       "file_path": "documentation/Symbols/breathesymboleffect/pulse.md"
     },
@@ -1191,9 +1191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/breathesymboleffect/wholesymbol.json": {
       "hash": "3e3f28a12deded33c6110e7e06456ac1201b54bfcc0b6613b0c69d53c307c883",
-      "last_checked": "2026-07-24T07:32:26.973275",
+      "last_checked": "2026-07-28T07:49:47.041058",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"f4d6420b6aa70534446e7932ea547273\"",
       "file_path": "documentation/Symbols/breathesymboleffect/wholesymbol.md"
     },
@@ -1207,9 +1207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/rotatesymboleffect/bylayer.json": {
       "hash": "5ed6448b00cf3e989616777e03f6d16878301c4fcb9c2c5d29faf8966f0505fd",
-      "last_checked": "2026-07-24T07:32:27.217420",
+      "last_checked": "2026-07-28T07:49:47.230635",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"4470c02297474089e5028a44c3b20336\"",
       "file_path": "documentation/Symbols/rotatesymboleffect/bylayer.md"
     },
@@ -1223,9 +1223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/rotatesymboleffect/clockwise.json": {
       "hash": "e9be8eb9d59f570e69ff5d659dc8fae4183ef210a78f592780e2f3f25754d587",
-      "last_checked": "2026-07-24T07:32:27.278518",
+      "last_checked": "2026-07-28T07:49:47.404950",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"78b89c56e93a921a463e06a00b5eaf9b\"",
       "file_path": "documentation/Symbols/rotatesymboleffect/clockwise.md"
     },
@@ -1239,9 +1239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/rotatesymboleffect/configuration.json": {
       "hash": "e59544689cab13d25758a8f4c9da281738567cf3efb20e83aca7512a98d44681",
-      "last_checked": "2026-07-24T07:32:27.332000",
+      "last_checked": "2026-07-28T07:49:47.549131",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"ee26bdfad567ae28c7253b3dd82035b2\"",
       "file_path": "documentation/Symbols/rotatesymboleffect/configuration.md"
     },
@@ -1255,9 +1255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/rotatesymboleffect/counterclockwise.json": {
       "hash": "42db93648f961a24246bbd47879020a521a7865ece42a058d3b14d56e68b0fa5",
-      "last_checked": "2026-07-24T07:32:27.433493",
+      "last_checked": "2026-07-28T07:49:47.729586",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"50590ee9d455e889cb7a48fa2a5ec9df\"",
       "file_path": "documentation/Symbols/rotatesymboleffect/counterclockwise.md"
     },
@@ -1271,9 +1271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/rotatesymboleffect/wholesymbol.json": {
       "hash": "2be4e7e0a9d1fed52a65b5b0e356462237a33e50b198291a3dd18f0f9ea66931",
-      "last_checked": "2026-07-24T07:32:27.539993",
+      "last_checked": "2026-07-28T07:49:47.856178",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"e5a59ecfbc59fcd5ae1a7bee89b70c21\"",
       "file_path": "documentation/Symbols/rotatesymboleffect/wholesymbol.md"
     },
@@ -1287,9 +1287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/wigglesymboleffect/backward.json": {
       "hash": "f2be4bf2e15f9255d7852b93f34c29981f8c962eb793ca6105af2868e9279c32",
-      "last_checked": "2026-07-24T07:32:27.647487",
+      "last_checked": "2026-07-28T07:49:48.004096",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"fb1eb6fd59ac02815e917f5a313819a2\"",
       "file_path": "documentation/Symbols/wigglesymboleffect/backward.md"
     },
@@ -1303,9 +1303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/wigglesymboleffect/bylayer.json": {
       "hash": "a621582f021ac31c772800b75707141db0c5828bd2d483ca7e3ba8eed99ebc71",
-      "last_checked": "2026-07-24T07:32:27.764491",
+      "last_checked": "2026-07-28T07:49:48.200041",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"8bf8b847132565119c6ed4ad874ba3ff\"",
       "file_path": "documentation/Symbols/wigglesymboleffect/bylayer.md"
     },
@@ -1319,9 +1319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/wigglesymboleffect/clockwise.json": {
       "hash": "c13ff50dcd5314fa90aa73107667f3379a2417b7e6c8a50969b1cfc2024fcd41",
-      "last_checked": "2026-07-24T07:32:27.873765",
+      "last_checked": "2026-07-28T07:49:48.344812",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"d920a8757783270c92834884b9cfd884\"",
       "file_path": "documentation/Symbols/wigglesymboleffect/clockwise.md"
     },
@@ -1335,9 +1335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/wigglesymboleffect/configuration.json": {
       "hash": "e492dcf34838e9d46b29be04cd2092f1b956296387b198c2f846b89a896b4dcd",
-      "last_checked": "2026-07-24T07:32:27.993863",
+      "last_checked": "2026-07-28T07:49:48.522209",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"73772874e8186d67fa7c8d33ecd19a4f\"",
       "file_path": "documentation/Symbols/wigglesymboleffect/configuration.md"
     },
@@ -1351,9 +1351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/wigglesymboleffect/counterclockwise.json": {
       "hash": "48a922e5eeabf736a71bb1722fd6b075ba3f04af84edee6c7b966d575cf2d60b",
-      "last_checked": "2026-07-24T07:32:28.108626",
+      "last_checked": "2026-07-28T07:49:48.657723",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"49d64c36357ce0d3e5cd9b1e3913cbc7\"",
       "file_path": "documentation/Symbols/wigglesymboleffect/counterclockwise.md"
     },
@@ -1367,9 +1367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/wigglesymboleffect/down.json": {
       "hash": "fa8e78dfedcd2a589c93c29137aeb6863b1c90b35dfd4bf69d7bd37ebdfe0bcb",
-      "last_checked": "2026-07-24T07:32:28.165382",
+      "last_checked": "2026-07-28T07:49:48.803000",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"53065666c1632f613c867fe8b3f7432e\"",
       "file_path": "documentation/Symbols/wigglesymboleffect/down.md"
     },
@@ -1383,9 +1383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/wigglesymboleffect/forward.json": {
       "hash": "6a576691ed148344ed15b512d3ad35d9549df7dea8f2ffd66f4beb2c031234ed",
-      "last_checked": "2026-07-24T07:32:28.300234",
+      "last_checked": "2026-07-28T07:49:48.937757",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"2d562d52d599d90b2b6e4d19f3a024c3\"",
       "file_path": "documentation/Symbols/wigglesymboleffect/forward.md"
     },
@@ -1399,9 +1399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/wigglesymboleffect/left.json": {
       "hash": "82251a788466b80575a264fc62f5652aecf6c6d9f4992b085c00dc92a10347e5",
-      "last_checked": "2026-07-24T07:32:28.416379",
+      "last_checked": "2026-07-28T07:49:49.070941",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"60921c045a1c340a270665377e8eacda\"",
       "file_path": "documentation/Symbols/wigglesymboleffect/left.md"
     },
@@ -1415,9 +1415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/wigglesymboleffect/right.json": {
       "hash": "b8775c5afbf6e185955408bcdf5668b1a6b436e1637fc6e29ac3d26bbce8ae73",
-      "last_checked": "2026-07-24T07:32:28.522618",
+      "last_checked": "2026-07-28T07:49:49.251087",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"1638ab7bc6096ad1506b8d627e2067b9\"",
       "file_path": "documentation/Symbols/wigglesymboleffect/right.md"
     },
@@ -1431,9 +1431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/wigglesymboleffect/up.json": {
       "hash": "83d98f88bafa0394611f15db3f68573368c810acb037615aa3c8072213c3263c",
-      "last_checked": "2026-07-24T07:32:28.640435",
+      "last_checked": "2026-07-28T07:49:49.437450",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"866a649daf6264072ca0129dd8404072\"",
       "file_path": "documentation/Symbols/wigglesymboleffect/up.md"
     },
@@ -1447,9 +1447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/wigglesymboleffect/wholesymbol.json": {
       "hash": "7fe7853c22a77a1285bf4f7dbe72ffe0bb5d30f0fed0406c2a2d8bdd4efc707b",
-      "last_checked": "2026-07-24T07:32:28.729413",
+      "last_checked": "2026-07-28T07:49:49.589539",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"c445d17ead49b32249d61554bc71126a\"",
       "file_path": "documentation/Symbols/wigglesymboleffect/wholesymbol.md"
     },
@@ -1463,9 +1463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/wigglesymboleffect/custom(angle:)-1f09q.json": {
       "hash": "56e6509a55b99f1a20274cf80bdf57fcecb721141d7446bb636e7014d2700645",
-      "last_checked": "2026-07-24T07:32:28.789616",
+      "last_checked": "2026-07-28T07:49:49.755378",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"5885c821bc476517e0962bad39f9ebba\"",
       "file_path": "documentation/Symbols/wigglesymboleffect/custom-angle-1f09q.md"
     },
@@ -1479,9 +1479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/wigglesymboleffect/custom(angle:)-cqpf.json": {
       "hash": "7bbfeb8a16dbbf93b9710471aafcebd264c9ac210bac42abafec4c3a14351307",
-      "last_checked": "2026-07-24T07:32:28.891605",
+      "last_checked": "2026-07-28T07:49:49.919336",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"966a5dd8805c9f2c1eb98d84c489cc9a\"",
       "file_path": "documentation/Symbols/wigglesymboleffect/custom-angle-cqpf.md"
     },
@@ -1495,9 +1495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/symboleffectoptions/default.json": {
       "hash": "05a63c3e75705ede29cc0f10225d0943fae438e10a8ff11b3e3ff245e187437b",
-      "last_checked": "2026-07-24T07:32:28.949611",
+      "last_checked": "2026-07-28T07:49:50.115049",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"43681f5ac6397f45d8367792eaf0cf0d\"",
       "file_path": "documentation/Symbols/symboleffectoptions/default.md"
     },
@@ -1511,9 +1511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/symboleffectoptions/repeating-swift.property.json": {
       "hash": "ccde87302cf134398d306cb894e63b1cf31435b9a910f17c43e43310eb311ca9",
-      "last_checked": "2026-07-24T07:32:29.078653",
+      "last_checked": "2026-07-28T07:49:50.250580",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"0ea8589be1e2167aa01391ed3925358c\"",
       "file_path": "documentation/Symbols/symboleffectoptions/repeating-swiftproperty.md"
     },
@@ -1527,9 +1527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/symboleffectoptions/repeating-swift.type.property.json": {
       "hash": "7e0230fddbf1fe6ec89a21972fda76d2f472a7608857f9e8a2c528a11a03d79b",
-      "last_checked": "2026-07-24T07:32:29.181686",
+      "last_checked": "2026-07-28T07:49:50.392142",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"e9269aacf399c18de2461f24aa116eed\"",
       "file_path": "documentation/Symbols/symboleffectoptions/repeating-swifttypeproperty.md"
     },
@@ -1543,9 +1543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/symboleffectoptions/nonrepeating-swift.property.json": {
       "hash": "82e7b7db14c186c13ad8319d63b29d16eb6c4eb76699af11a8fc5fd64410b622",
-      "last_checked": "2026-07-24T07:32:29.291966",
+      "last_checked": "2026-07-28T07:49:50.524895",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"2103738f4cbdc7ec3c823dd5af9a7aee\"",
       "file_path": "documentation/Symbols/symboleffectoptions/nonrepeating-swiftproperty.md"
     },
@@ -1559,9 +1559,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/symboleffectoptions/nonrepeating-swift.type.property.json": {
       "hash": "df49ac93928caeecc07f9c3117e82a931bd9f3cb87f2d748fa9e8b813ea4d5b9",
-      "last_checked": "2026-07-24T07:32:29.391807",
+      "last_checked": "2026-07-28T07:49:50.677399",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"32c6e038fff5bc0290b08cd89923960c\"",
       "file_path": "documentation/Symbols/symboleffectoptions/nonrepeating-swifttypeproperty.md"
     },
@@ -1575,9 +1575,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/symboleffectoptions/repeat(_:)-314sv.json": {
       "hash": "d381dbecc3ee4ed32e8f63e66bad40c41f409af0d839dbcc852ca27e4d0ef4b1",
-      "last_checked": "2026-07-24T07:32:29.502984",
+      "last_checked": "2026-07-28T07:49:50.812978",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"61d6c1119835be913e3c824535375e1e\"",
       "file_path": "documentation/Symbols/symboleffectoptions/repeat-314sv.md"
     },
@@ -1591,9 +1591,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/symboleffectoptions/repeat(_:)-33816.json": {
       "hash": "23a7acfe58a703e5a035c2137c08edefa125a0c90fe47b4213bdc558659ca665",
-      "last_checked": "2026-07-24T07:32:29.612889",
+      "last_checked": "2026-07-28T07:49:50.993318",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"da43275e311c01fda9e90bbe9cbbefea\"",
       "file_path": "documentation/Symbols/symboleffectoptions/repeat-33816.md"
     },
@@ -1607,9 +1607,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/symboleffectoptions/speed(_:)-swift.method.json": {
       "hash": "16865ab3ad37e0fa519902b6770a0f8ce434f37f97b6cac75f3241f5334310a8",
-      "last_checked": "2026-07-24T07:32:29.736372",
+      "last_checked": "2026-07-28T07:49:51.128542",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"3ff1dec9952045847305c62d4825ec67\"",
       "file_path": "documentation/Symbols/symboleffectoptions/speed-swiftmethod.md"
     },
@@ -1623,9 +1623,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/symboleffectoptions/speed(_:)-swift.type.method.json": {
       "hash": "bbd9e85e41efe75e93abde3a144411b163d038af1a4ca4f353740f6a25f6bf4a",
-      "last_checked": "2026-07-24T07:32:29.850154",
+      "last_checked": "2026-07-28T07:49:51.263686",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"af5ec4d9fa4fdacd11a64aafc460f71a\"",
       "file_path": "documentation/Symbols/symboleffectoptions/speed-swifttypemethod.md"
     },
@@ -1639,9 +1639,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/symboleffectoptions/repeatbehavior.json": {
       "hash": "bd05a565f438a797051d3836b2ef54875e8759fbffbf03899bf53fb0cdd8e996",
-      "last_checked": "2026-07-24T07:32:29.965505",
+      "last_checked": "2026-07-28T07:49:51.413049",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"4f56f16d48e05b84d9be12ba76fe33bf\"",
       "file_path": "documentation/Symbols/symboleffectoptions/repeatbehavior.md"
     },
@@ -1655,9 +1655,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/symboleffectoptions/repeat(_:)-316cr.json": {
       "hash": "c9761a24b1b11022d4f754d99f7f7f39c6e4fc4875ae6a81975b74441814a79b",
-      "last_checked": "2026-07-24T07:32:30.080207",
+      "last_checked": "2026-07-28T07:49:51.552083",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"d019562d58f5e98c8aff26e98188de83\"",
       "file_path": "documentation/Symbols/symboleffectoptions/repeat-316cr.md"
     },
@@ -1671,9 +1671,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/symboleffectoptions/repeat(_:)-3klm2.json": {
       "hash": "fb54b4295de1b2255c63537f14c3a9fa9e09e78f42942ad4f6a0546312dbad8e",
-      "last_checked": "2026-07-24T07:32:30.194759",
+      "last_checked": "2026-07-28T07:49:51.728382",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"3469928b7142ab7b66e6f2888a16af2b\"",
       "file_path": "documentation/Symbols/symboleffectoptions/repeat-3klm2.md"
     },
@@ -1687,9 +1687,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/symboleffect/breathe.json": {
       "hash": "298e97cb1761d633a1f22211015a06d5bad312a3a857ab2270c79342754cf9eb",
-      "last_checked": "2026-07-24T07:32:30.318493",
+      "last_checked": "2026-07-28T07:49:51.866833",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"129beecb2eb6a90b949c08085bee59d4\"",
       "file_path": "documentation/Symbols/symboleffect/breathe.md"
     },
@@ -1703,9 +1703,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/symboleffect/rotate.json": {
       "hash": "fc36703df0eaeedd82f39d3dcdd3949e2bace0c0c8e84939f3333b97b7606705",
-      "last_checked": "2026-07-24T07:32:30.430172",
+      "last_checked": "2026-07-28T07:49:52.060336",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"e0fe16c9aca8f61d4260dddb9e118dd3\"",
       "file_path": "documentation/Symbols/symboleffect/rotate.md"
     },
@@ -1719,9 +1719,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/symboleffect/wiggle.json": {
       "hash": "ba940a48dfbd4e1720df5b2cfd389af171da1ae62c30d69cc3b150b04bef79c5",
-      "last_checked": "2026-07-24T07:32:30.553574",
+      "last_checked": "2026-07-28T07:49:52.193739",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"dd19e5606dc58617ace338c3fedb88d1\"",
       "file_path": "documentation/Symbols/symboleffect/wiggle.md"
     },
@@ -1735,9 +1735,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/symboleffect/configuration.json": {
       "hash": "14942be94106b123a89e8645c3f5f444789a1cc0831dce5cbe55cb629edcbc19",
-      "last_checked": "2026-07-24T07:32:30.673663",
+      "last_checked": "2026-07-28T07:49:52.341544",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"cf6c4554edb6233724deda60f6fe9373\"",
       "file_path": "documentation/Symbols/symboleffect/configuration.md"
     },
@@ -1751,9 +1751,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/symboleffectconfiguration.json": {
       "hash": "4a4bccb00b24b1d03cf9fde6aca830bb376e845b0ebe6a50da9a18d38737d4eb",
-      "last_checked": "2026-07-24T07:32:30.786241",
+      "last_checked": "2026-07-28T07:49:52.473438",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"e0fc082bfff16f4708fdc18d08e17c10\"",
       "file_path": "documentation/Symbols/symboleffectconfiguration.md"
     },
@@ -1767,9 +1767,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/symboleffect/drawoff.json": {
       "hash": "301ef11c323f1624de5287b98c9574a9f1b788e5d9bc6ef71999ea9e885dedbe",
-      "last_checked": "2026-07-24T07:32:30.844865",
+      "last_checked": "2026-07-28T07:49:52.681332",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"ec6939e1f19c9278f78ac58af49101eb\"",
       "file_path": "documentation/Symbols/symboleffect/drawoff.md"
     },
@@ -1783,9 +1783,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/symboleffect/drawon.json": {
       "hash": "4bb26f36893759e446993388a05d032412daf5284cf5cbede10db8a7fe2619ee",
-      "last_checked": "2026-07-24T07:32:30.970810",
+      "last_checked": "2026-07-28T07:49:52.869108",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"aea4177d13f2cceebc6447e450fe1e37\"",
       "file_path": "documentation/Symbols/symboleffect/drawon.md"
     },
@@ -1799,9 +1799,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/drawoffsymboleffect/bylayer.json": {
       "hash": "e7cd979b664af8d4442c646c2e6b596def306b2ff1720a08281f1769f6e23c9f",
-      "last_checked": "2026-07-24T07:32:31.218980",
+      "last_checked": "2026-07-28T07:49:53.068320",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"2c51a295ae443c9eab0e2e536228fdb8\"",
       "file_path": "documentation/Symbols/drawoffsymboleffect/bylayer.md"
     },
@@ -1815,9 +1815,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/drawoffsymboleffect/configuration.json": {
       "hash": "bf14168a58dda4860a78491d85c4b0d1b91e60dd54c778649a3b9d2835cfe21a",
-      "last_checked": "2026-07-24T07:32:31.322095",
+      "last_checked": "2026-07-28T07:49:53.193352",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"24baf2f575c61a4d4c9d7976038bdf68\"",
       "file_path": "documentation/Symbols/drawoffsymboleffect/configuration.md"
     },
@@ -1831,9 +1831,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/drawoffsymboleffect/individually.json": {
       "hash": "34b75f3c15a6da568ec57091772f0aca993a1a8d820b96a067c022bca86a395b",
-      "last_checked": "2026-07-24T07:32:31.425473",
+      "last_checked": "2026-07-28T07:49:53.352077",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"8c1e9e1c68431699f7b57c8f9b5d09c8\"",
       "file_path": "documentation/Symbols/drawoffsymboleffect/individually.md"
     },
@@ -1847,9 +1847,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/drawoffsymboleffect/nonreversed.json": {
       "hash": "7942bf516f5d8234715cb9c73dfab572562f86964cd32c24c3f2488600a0302a",
-      "last_checked": "2026-07-24T07:32:31.488875",
+      "last_checked": "2026-07-28T07:49:53.482866",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"27374be5a26642dd15a75a81ae610bba\"",
       "file_path": "documentation/Symbols/drawoffsymboleffect/nonreversed.md"
     },
@@ -1863,9 +1863,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/drawoffsymboleffect/reversed.json": {
       "hash": "8d226c5efc07a68dda2b14df51198c86d5a09a638089ff7d890235fe11d50146",
-      "last_checked": "2026-07-24T07:32:31.602255",
+      "last_checked": "2026-07-28T07:49:53.622520",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"65c9c2a4d9d6cb2089a7e09fcc857586\"",
       "file_path": "documentation/Symbols/drawoffsymboleffect/reversed.md"
     },
@@ -1879,9 +1879,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/drawoffsymboleffect/wholesymbol.json": {
       "hash": "05c8f8f8a35b337f198cefd27f4b25de192808ded3c340c886169182e8a7aa75",
-      "last_checked": "2026-07-24T07:32:31.736652",
+      "last_checked": "2026-07-28T07:49:53.758311",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"246dc3419148560a6fa37ae8cf69e34b\"",
       "file_path": "documentation/Symbols/drawoffsymboleffect/wholesymbol.md"
     },
@@ -1895,9 +1895,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/drawonsymboleffect/bylayer.json": {
       "hash": "dd80f87b334829f7707c728f1d44f376ef2190d3b1e425a412dbc96476c128ee",
-      "last_checked": "2026-07-24T07:32:31.859355",
+      "last_checked": "2026-07-28T07:49:53.902346",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"ba5447698a734f80479e7bbe5df8f63c\"",
       "file_path": "documentation/Symbols/drawonsymboleffect/bylayer.md"
     },
@@ -1911,9 +1911,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/drawonsymboleffect/configuration.json": {
       "hash": "cd424531751c987e7208739926f1c2e4f6d8136327dd6b09f26433d17a273ce2",
-      "last_checked": "2026-07-24T07:32:31.970987",
+      "last_checked": "2026-07-28T07:49:54.029023",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"27c78641cdfe3c29432776d3b97e23f2\"",
       "file_path": "documentation/Symbols/drawonsymboleffect/configuration.md"
     },
@@ -1927,9 +1927,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/drawonsymboleffect/individually.json": {
       "hash": "6e1394a690fca322bf0eccea635f576ebbde34fefde685ecfc9c0785bce75895",
-      "last_checked": "2026-07-24T07:32:32.034748",
+      "last_checked": "2026-07-28T07:49:54.227198",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"d45f3814688ac5420b5b4e7c2af6dbcc\"",
       "file_path": "documentation/Symbols/drawonsymboleffect/individually.md"
     },
@@ -1943,9 +1943,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/drawonsymboleffect/wholesymbol.json": {
       "hash": "7415dd70b244850663e557f4c6662ee555d2891474cef3f4270e7ba5e14a49ce",
-      "last_checked": "2026-07-24T07:32:32.149183",
+      "last_checked": "2026-07-28T07:49:54.393236",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"943489fb419db1aadfdf0c744ed31a07\"",
       "file_path": "documentation/Symbols/drawonsymboleffect/wholesymbol.md"
     },
@@ -1959,9 +1959,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/replacesymboleffect/magicreplace/configuration.json": {
       "hash": "886fdf3d3e829bd2a030355b59219fceff883d45d6650dffbb9f44123b831d87",
-      "last_checked": "2026-07-24T07:32:32.240648",
+      "last_checked": "2026-07-28T07:49:54.520146",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"b0a0f397585968e7274105a0cc2ec5ba\"",
       "file_path": "documentation/Symbols/replacesymboleffect/magicreplace/configuration.md"
     },
@@ -1975,9 +1975,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/symboleffectoptions/repeatbehavior/continuous.json": {
       "hash": "e5d6af04f66f521d5b4fb15c8655b5b3b53a0ca25779a7d7ef01a40ed8e68d67",
-      "last_checked": "2026-07-24T07:32:32.345320",
+      "last_checked": "2026-07-28T07:49:54.660946",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"f5c922e7f96c8e1151e628288ddaa101\"",
       "file_path": "documentation/Symbols/symboleffectoptions/repeatbehavior/continuous.md"
     },
@@ -1991,9 +1991,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/symboleffectoptions/repeatbehavior/periodic.json": {
       "hash": "fe2c726c30fd58ea5b6c2484c33de105b80840f3e0ba40c83307359fa37835d2",
-      "last_checked": "2026-07-24T07:32:32.484153",
+      "last_checked": "2026-07-28T07:49:54.801954",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"9e743b88137a0d69e4bc59ce7c43407a\"",
       "file_path": "documentation/Symbols/symboleffectoptions/repeatbehavior/periodic.md"
     },
@@ -2007,9 +2007,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/symbols/symboleffectoptions/repeatbehavior/periodic(_:delay:).json": {
       "hash": "cd197e51ba2c076787349c8605392a57f6181cfdbefb2e943cd1057a2ff92620",
-      "last_checked": "2026-07-24T07:32:32.559714",
+      "last_checked": "2026-07-28T07:49:54.994119",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:16.933333",
+      "session_id": "2026-07-28T07:49:30.796646",
       "etag": "W/\"1c9a81117dba9a7c935900617fafac70\"",
       "file_path": "documentation/Symbols/symboleffectoptions/repeatbehavior/periodic-delay.md"
     },

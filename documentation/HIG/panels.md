@@ -27,7 +27,7 @@ When your app runs in other platforms, consider using a modal view to present su
 
 ## HUD-style panels
 A HUD-style panel serves the same function as a standard panel, but its appearance is darker and translucent. HUDs work well in apps that present highly visual content or that provide an immersive experience, such as media editing or a full-screen slide show. For example, QuickTime Player uses a HUD to display inspector information without obstructing too much content.
-![A screenshot of a translucent HUD panel, used to display inspector information for a movie file, including the filename, format, frames per second, data rate, and the frame size of the movie content.](https://docs-assets.developer.apple.com/published/c0f1234f37f597c3eb1436cfc31ae7b5/hud-style-panel~dark%402x.png)
+![A screenshot of a translucent HUD panel, used to display inspector information for a movie file, including the filename, format, frames per second, data rate, and the frame size of the movie content.](https://docs-assets.developer.apple.com/published/5f0dcceec65bbe08f5b80bcbd2d4f65e/hud-style-panel~dark%402x.png)
 **Prefer standard panels.** People can be distracted or confused by a HUD when there’s no logical reason for its presence. Also, a HUD might not match the current appearance setting. In general, use a HUD only:
 - In a media-oriented app that presents movies, photos, or slides
 - When a standard panel would obscure essential content

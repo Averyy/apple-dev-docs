@@ -8,94 +8,100 @@ Set up and connect Behavior Tree nodes to drive entity decision-making in your s
 
 A Behavior Tree is a construct that defines a prioritized hierarchy of behavior used by an entity in a scene. For example, use a Behavior Tree to control which path a duck takes across a pond.
 
-Similar to other graphs, a Behavior Tree is composed of different nodes specifically created for defining an in-game entity’s behavior and decision making. Each type of node either manages the entity’s overall traversal through the tree or provides it with some type of ability.
+Similar to other graphs, a Behavior Tree consists of different nodes specifically created for defining an in-game entity’s behavior and decision making. Each type of node either manages the entity’s overall traversal through the tree or provides it with some type of ability.
 
-When a Behavior Tree has completed processing, meaning that the last leaf node has been completed, the tree resets to the Root (beginning) node, although you can modify this behavior.
+When a Behavior Tree has completed processing — meaning the tree has traversed the last leaf node — it resets to the Root (beginning) node, although you can modify this behavior.
 
-![A screenshot of the Behavior Tree.](https://docs-assets.developer.apple.com/published/f887394df63c1b189c28329acdcdc8fe/BehaviorTree%402x.png)
+![A Behavior Tree in the Reality Composer Pro editor showing a Root node connected to Selector and Sequence composite nodes, with Action nodes as leaves.](https://docs-assets.developer.apple.com/published/f887394df63c1b189c28329acdcdc8fe/BehaviorTree%402x.png)
 
-##### Understand the Decision Making Layer
+#### Combine Behavior Trees with a Decision Making Layer
 
-While Behavior Trees define how an entity behaves, by themselves they do not contain complete logic for autonomous decision making. The decision-making logic for the entity typically comes from another solution, such as:
+While Behavior Trees define how an entity behaves, by themselves they do not contain complete logic for autonomous decision making. The decision-making logic for the entity typically comes from an external source:
 
 - Swift application code
 - Visual scripting (a Script Graph) in Reality Composer Pro
 - A developer-created state machine solution
-- An LLM that selects which behaviors to execute
+- An LLM that selects which behaviors to run
 
-The key is that no matter how you choose to drive decision making in your app, you communicate your wishes to the behavior tree by setting parameter values that the behavior tree nodes understand.
+No matter how you choose to drive decision making in your app, you drive the Behavior Tree by setting the parameter values its nodes understand.
 
 - The decision-making logic decides what type of behavior the entity performs.
 - The Behavior Tree defines the actual steps necessary to perform the behavior.
 
-##### Before You Begin
+#### Create a Behavior Tree
 
-For an overview of navigating and working in the Graph Editor, see [`Working with the Graph Editor`](realitycomposerpro-essentials-grapheditoroverview.md).
+Before you begin, see [`Working with the Graph Editor`](realitycomposerpro-essentials-grapheditoroverview.md) for an overview of navigating the Graph Editor.
 
-##### Create a Behavior Tree
+In the Project Browser, click **[+]** and then click **Animation** > **Behavior Tree**. You can also Control-click inside a folder and then click **New** > **Animation** > **Behavior Tree**. Double-click your behavior tree to open it in the Behavior Tree editor.
 
-**Method 1**
+#### Apply a Behavior Tree to an Entity
 
-1. From the Project Browser, click **(+)** and then click **Behavior Tree**.
-2. Double-click your behavior tree to open it in the Behavior Tree editor.
+Select an entity in the Project Browser. In the Inspector, click **Add Component** > **Behavior Tree**. Under **Behavior Tree Component**, click **[+]** to select a Behavior Tree. In the Inspector, in the Behavior Tree component:
 
-**Method 2**
+- Under **Behavior Trees**, assign one or more available behavior trees.
+- Next to **Default Tree**, select a default behavior tree for the entity.
 
-1. In the Project Browser, control-click in a folder, and then click **New** > **Behavior Tree**.
-2. Double-click your behavior tree to open it in the Behavior Tree editor.
+#### Choose the Right Node Type for Your Behavior
 
-##### Apply a Behavior Tree to an Entity
+A Behavior Tree consists of interconnected nodes that provide various types of functionality. Nodes perform behaviors and guide how the tree is traversed. Each node type, when traversed, returns a status of success (`true`), failure (`false`), or running — indicating the node is still executing and the tree should wait before advancing. Other nodes use a node’s **Return Value** to determine how tree traversal continues.
 
-1. Select an entity in the project browser.
-2. In the Inspector, click **Add Component** > **Behavior Tree**.
-3. In the Inspector, under **Behavior Tree Component**, click **[+]** to select a Behavior Tree.
-4. In the inspector, in the Behavior Tree component: 1. Under **Behavior Trees,** assign one or more available behavior trees.
-2. Next to **Default Tree**, select a default behavior tree for the entity.
+Each node has a set of specific properties you can define, which appear in the Inspector when you select the node. In addition, all node types have modifiers that let you:
 
-##### Behavior Tree Nodes
-
-A behavior tree comprises interconnected nodes, which provide various types of functionality. Nodes are used to perform behaviors as well as guide how the tree itself is traversed. Each node type, when traversed, returns a boolean value of `true` (the node’s processing was successful) or `false` (failed). Other nodes use a node’s **Return Value** to determine how tree traversal continues.
-
-Each node has a set of specific properties you can define for that node, which are displayed in the Inspector when the node is selected. In addition, all node types have modifiers that let you:
-
-- **Apply a pre-condition when entering the node**. If the precondition fails, the tree skips the node.
+- **Apply a precondition when entering the node**. If the precondition fails, the tree skips the node.
 - **Loop the node**. You can optionally loop a node a fixed number of times, or until a condition is met.
 - **Modify the status of the node when it returns**. You can opt to always set the status to success or failure. You can also opt to invert the status (that is, change success to failure or failure to success).
 
-Behavior Tree nodes are divided into three categories — Root, Action, and Composite — each described below.
+Behavior Tree nodes fall into three categories — **Root**, **Action**, and **Composite**. The **Root** node is the first default node that appears when you create a new Behavior Tree and defines the starting point for traversal. There can be only one Root node.
 
-- Root nodes - **Root** — The first default node that appears when you create a new Behavior Tree. Defines the root of the tree. There can be only one Root node.
-- Action nodes - **Action** — Sends entity action events on entering, updating, or returning. Allows you to create custom actions in Swift with different event handlers.
-- **Debug** — Allows you to add customized text that shows up in the logging displayed in the Console.
-- **Move on Navigation Mesh** — Moves the entity in a straight line to the specified position along a specified navigation mesh.
+#### Use Action Nodes to Drive Entity Behaviors
+
+Action nodes directly affect the entity or the scene — they perform the behaviors your Behavior Tree is designed to control. When an Action node executes, it returns success or failure based on whether the action completed. The available Action nodes are:
+
+- **Action** — Sends entity action events on entering, updating, or returning. You can create custom actions in Swift with different event handlers.
+- **Debug** — Adds custom text to the **Console** log output.
+- **Move on Navigation Mesh** — Moves the entity to the specified position by navigating along a specified navigation mesh, routing around obstacles in the mesh.
 - **Move To** — Moves the entity in a straight line to the specified position. You can specify the direction and the speed at which an entity travels.
 - **NoOp** — Performs no operation other than its modifier processing.
-- **Parameter Setter** — A flexible node that assigns values to given parameters, which can then be passed to other graphs, such as an Animation graph. Use this to pass values to trigger an animation or perform other actions, such as playing an audio file.
-- **Rotate to Face** — Rotates an entity on its z-axis to the desired position.
-- **Set Tree** — Exits the current behavior tree and begins processing a new tree. Allows you to create collections of Behavior Trees, where each tree controls different behaviors, that can then be interconnected for an entity.
-- **Wait** — Pauses the Behavior Tree for a specified amount of time or until a condition is met. Includes the ability to randomize wait times.
-- Composite nodes - **Parallel** - Processes all children concurrently — unlike the Selector and Sequence nodes, which process their child nodes one at a time, in sequence.
+- **Parameter Setter** — A flexible node that assigns values to given parameters, which can then be passed to other graphs, such as an Animation Graph. Use this to pass values to trigger an animation or perform other actions, such as playing an audio file.
+- **Rotate to Face** — Rotates an entity around its y-axis to face the desired position.
+- **Set Tree** — Exits the current Behavior Tree and begins processing a new tree. Use this node to create collections of Behavior Trees — each controlling different behaviors — and interconnect them for an entity.
+- **Wait** — Pauses the Behavior Tree for a specified amount of time or until a condition is met, with the option to randomize wait times.
+
+#### Control Tree Traversal with Composite Nodes
+
+Composite nodes control how the Behavior Tree traverses its children. Each composite node type uses a different strategy to determine which child to visit next and when to stop. The three composite node types are:
+
+- **Parallel** - Processes all children concurrently — unlike the Selector and Sequence nodes, which process their child nodes one at a time, in sequence.
 - Good for having an entity perform multiple, simultaneous actions, such as turning and moving in a direction at the same time.
 - All subtrees are allowed to update in the same frame.
 - Success or failure of the parallel node is determined based on user-defined options: - Node is successful after **one** child succeeds.
-- Node is successful after ***n*** children succeed (that is, success requires **n** children to succeed first).
-- Upon node success, the node interrupts and stops currently-running children immediately.
+- Node is successful after *n* children succeed (that is, success requires *n* children to succeed first).
+- There is also a Success Percentage field you can define which determines the least x% of the children that must succeed in order for the parallel node to succeed.
+- Upon node success, the node interrupts and stops currently running children immediately.
 - **Selector** - Think of the Selector as a logical OR statement for its child nodes.
-- The Selector processes children left to right. If a child fails (returns False), the Selector moves to the next child. It continues until it reaches the first child that returns True.
-- After the Selector returns True (after encountering the first child that returns True), the Selector is finished and the Behavior Tree advances.
-- A Selector only returns False if all children fail.
-- Selector nodes have the ability to randomize their children. In this case, instead of processing children left-to-right in the order that was authored, at runtime, each time the selector or sequence node is entered it will randomize its children and then visit the children left-to-right with the new ordering.
+- The Selector processes children left to right. If a child fails (returns `false`), the Selector moves to the next child. It continues until it reaches the first child that returns `true`.
+- After the Selector returns `true` (after encountering the first child that returns `true`), the Selector is finished and the Behavior Tree advances.
+- A Selector only returns `false` if all children fail.
+- Selector nodes can randomize their children. Instead of visiting children in the order you arranged them, at runtime the tree randomizes its children each time it enters the Selector node, then visits them left-to-right with the new ordering.
 - **Sequence** - Sequence nodes can have one or more children.
-- Child nodes are processed in a left-to-right order. As long as every node returns True, the Sequence continues.
-- Think of a Sequence node as a type of AND operation for all child nodes. As soon as a child fails (returns False), the Sequence exits and the Behavior Tree advances.
-- Sequence nodes also have the ability to randomize their children, like Selector nodes.
+- Child nodes are processed in a left-to-right order. As long as every node returns `true`, the Sequence continues.
+- Think of a Sequence node as a type of AND operation for all child nodes. As soon as a child fails (returns `false`), the Sequence exits and the Behavior Tree advances.
+- Sequence nodes can also randomize their children, like Selector nodes.
 
 ## See Also
 
 - [Creating animation sequences](creating-animation-sequences.md)
   Build animation sequences that drive entity behavior across multiple tracks in Reality Composer Pro.
+- [Creating animation sequences for auto-play](creating-animation-sequences-for-autoplay.md)
+  Root an animation Sequence at the right entity, then wire it to an Animation Library Component so it plays automatically at runtime.
+- [Building multi-track animation sequences](building-multi-track-animation-sequences.md)
+  Root a Sequence correctly so it shows up as a clip and plays automatically at runtime.
+- [Automating motion path creation with editor-scripting commands](automating-motion-path-creation-with-editor-scripting-commands.md)
+  Build the same multi-track Sequence and Motion Path shown in the Sequencer UI programmatically, by chaining editor-scripting commands together.
 - [Working with the Animation Graph](working-with-the-animation-graph.md)
   Build character animation state machines visually using the Animation Graph in Reality Composer Pro.
+- [Building an advanced Animation Graph](building-an-advanced-animation-graph.md)
+  Drive a character’s locomotion state machine from a Script Graph at runtime.
 - [Building a navmesh in Reality Composer Pro](building-a-navmesh-in-reality-composer-pro.md)
   Configure a navigation mesh in Reality Composer Pro to define walkable areas and paths for AI-controlled entities in your scene.
 

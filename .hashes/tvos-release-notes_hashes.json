@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-07-24T07:33:06.272597",
+    "last_updated": "2026-07-28T07:50:58.980774",
     "total_pages": 116,
-    "session_id": "2026-07-24T07:32:58.277474"
+    "session_id": "2026-07-28T07:50:46.509308"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/tvos-release-notes.json": {
       "hash": "2d7bdfe6a1ec3993dc8d39e9a40723536255de4aacda32c5db627df66cf1a8b8",
-      "last_checked": "2026-07-24T07:32:58.530467",
+      "last_checked": "2026-07-28T07:50:46.853668",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:58.277474",
+      "session_id": "2026-07-28T07:50:46.509308",
       "etag": "W/\"2a44c573116ef8805d8040e244d14f21\"",
       "file_path": "documentation/tvos-release-notes/tvos-release-notes.md"
     },
     "https://developer.apple.com/documentation/tvos-release-notes": {
       "hash": "2d7bdfe6a1ec3993dc8d39e9a40723536255de4aacda32c5db627df66cf1a8b8",
-      "last_checked": "2026-07-24T07:32:58.422219",
+      "last_checked": "2026-07-28T07:50:46.744628",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:58.277474",
+      "session_id": "2026-07-28T07:50:46.509308",
       "etag": "W/\"2a44c573116ef8805d8040e244d14f21\"",
       "file_path": "documentation/tvos-release-notes/tvos-release-notes.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/tvos-release-notes/tvos-26-release-notes.json": {
       "hash": "15bb7ad80e7601bf24ec85cd945d0f6b685941f7ca6d1f907a675b0f37af94c2",
-      "last_checked": "2026-07-24T07:33:00.079711",
+      "last_checked": "2026-07-28T07:50:48.730724",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:58.277474",
+      "session_id": "2026-07-28T07:50:46.509308",
       "etag": "W/\"180f93f7dbd983c9365f490a234e5276\"",
       "file_path": "documentation/tvos-release-notes/tvos-26-release-notes.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvos-release-notes/tvos-18_5-release-notes.json": {
       "hash": "8f368955e3500d5dd9c6175c2d032d6d1e679b4d939cbbf56f622b90c5dbfe3e",
-      "last_checked": "2026-07-24T07:33:00.390639",
+      "last_checked": "2026-07-28T07:50:49.078525",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:58.277474",
+      "session_id": "2026-07-28T07:50:46.509308",
       "etag": "W/\"ad4d3962f350894c664e6b3b478676ad\"",
       "file_path": "documentation/tvos-release-notes/tvos-18-5-release-notes.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvos-release-notes/tvos-18_4-release-notes.json": {
       "hash": "5ba13722e1fef0b6a8c781d09634e76c7d90c2799dabf69a38209b9c324d9994",
-      "last_checked": "2026-07-24T07:33:00.658960",
+      "last_checked": "2026-07-28T07:50:49.257105",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:58.277474",
+      "session_id": "2026-07-28T07:50:46.509308",
       "etag": "W/\"6a076519d060f7ab861da82dc014d20e\"",
       "file_path": "documentation/tvos-release-notes/tvos-18-4-release-notes.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvos-release-notes/tvos-18_3-release-notes.json": {
       "hash": "9f0e8abbba6a67cf0caf7bf82d9c8e902e8076ad82a241f16c9ff954be70d890",
-      "last_checked": "2026-07-24T07:33:00.714679",
+      "last_checked": "2026-07-28T07:50:49.432215",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:58.277474",
+      "session_id": "2026-07-28T07:50:46.509308",
       "etag": "W/\"fc1fc69e44f04789cfc4d55d45ff8a4e\"",
       "file_path": "documentation/tvos-release-notes/tvos-18-3-release-notes.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvos-release-notes/tvos-18_2-release-notes.json": {
       "hash": "145422b58eb27a57587fb5b417354a8b18da19854afb9c6d5456aa1491b5f0ab",
-      "last_checked": "2026-07-24T07:33:00.817515",
+      "last_checked": "2026-07-28T07:50:49.642990",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:58.277474",
+      "session_id": "2026-07-28T07:50:46.509308",
       "etag": "W/\"b9a966aa75743367850ab031315ee91b\"",
       "file_path": "documentation/tvos-release-notes/tvos-18-2-release-notes.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvos-release-notes/tvos-18_1-release-notes.json": {
       "hash": "8af4fbe2a0b91ef306fde382481c56da2202e561dfecf28cd32d1f0f739d9c14",
-      "last_checked": "2026-07-24T07:33:00.926528",
+      "last_checked": "2026-07-28T07:50:49.816967",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:58.277474",
+      "session_id": "2026-07-28T07:50:46.509308",
       "etag": "W/\"1a03bae6f3db260908e42daca9b3aa7a\"",
       "file_path": "documentation/tvos-release-notes/tvos-18-1-release-notes.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvos-release-notes/tvos-18-release-notes.json": {
       "hash": "3c7b3e3276eed6644ec38ad6e9eb2f8957f1893a9d8c7ca1ddc47a53736db328",
-      "last_checked": "2026-07-24T07:33:01.062040",
+      "last_checked": "2026-07-28T07:50:50.035009",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:58.277474",
+      "session_id": "2026-07-28T07:50:46.509308",
       "etag": "W/\"f8d96a03f4a8d3b09ff03e1317d26775\"",
       "file_path": "documentation/tvos-release-notes/tvos-18-release-notes.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvos-release-notes/tvos-17_6-release-notes.json": {
       "hash": "0357bb8a5dc0c06517ac83e1e0fb876d4794f10e331c47fbf5ae7e9a0a77cdba",
-      "last_checked": "2026-07-24T07:33:01.130468",
+      "last_checked": "2026-07-28T07:50:50.207209",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:58.277474",
+      "session_id": "2026-07-28T07:50:46.509308",
       "etag": "W/\"0868c4b4dc64b5fca73f4be793bc16f6\"",
       "file_path": "documentation/tvos-release-notes/tvos-17-6-release-notes.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvos-release-notes/tvos-17_5-release-notes.json": {
       "hash": "16b6aca15bf1e12c825023429c1d416c4b9e61286efbbd1c57ad4de44dfdef06",
-      "last_checked": "2026-07-24T07:33:01.192899",
+      "last_checked": "2026-07-28T07:50:50.345951",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:58.277474",
+      "session_id": "2026-07-28T07:50:46.509308",
       "etag": "W/\"b4c5af4560e044f7962e0646056ae6db\"",
       "file_path": "documentation/tvos-release-notes/tvos-17-5-release-notes.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvos-release-notes/tvos-17_4-release-notes.json": {
       "hash": "3ce4abe1cec1f42b8f5742f5507b8f24623fabf14f6fc4bb58afe0a49053aaa7",
-      "last_checked": "2026-07-24T07:33:01.307871",
+      "last_checked": "2026-07-28T07:50:50.503301",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:58.277474",
+      "session_id": "2026-07-28T07:50:46.509308",
       "etag": "W/\"e4c37d539ad07a99646ad25c31c841cb\"",
       "file_path": "documentation/tvos-release-notes/tvos-17-4-release-notes.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvos-release-notes/tvos-17_3-release-notes.json": {
       "hash": "b4ca7044ad0675824f23e62ede33ee7c169883d579183f5d30bd2583cca31c0d",
-      "last_checked": "2026-07-24T07:33:01.411607",
+      "last_checked": "2026-07-28T07:50:50.838738",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:58.277474",
+      "session_id": "2026-07-28T07:50:46.509308",
       "etag": "W/\"ce2a33647a82a66e9970a932379f7e0c\"",
       "file_path": "documentation/tvos-release-notes/tvos-17-3-release-notes.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvos-release-notes/tvos-17_2-release-notes.json": {
       "hash": "ca7dbbc8a06e0b55f18c933cf122ef1d13b7b1da4c80c9c0e70183a2e1167a3d",
-      "last_checked": "2026-07-24T07:33:01.521547",
+      "last_checked": "2026-07-28T07:50:51.016871",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:58.277474",
+      "session_id": "2026-07-28T07:50:46.509308",
       "etag": "W/\"1ff95ac6137b0a26230eb0b8aa4e9fdc\"",
       "file_path": "documentation/tvos-release-notes/tvos-17-2-release-notes.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvos-release-notes/tvos-17_1-release-notes.json": {
       "hash": "e20ea1df6b9cee8aaf16e3844540dcdb27e6294927fafbf2594117e1022d9df0",
-      "last_checked": "2026-07-24T07:33:01.587024",
+      "last_checked": "2026-07-28T07:50:51.340945",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:58.277474",
+      "session_id": "2026-07-28T07:50:46.509308",
       "etag": "W/\"63cadcc5d5489b355cdd24139acdfbb0\"",
       "file_path": "documentation/tvos-release-notes/tvos-17-1-release-notes.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvos-release-notes/tvos-17-release-notes.json": {
       "hash": "c8650eda076235e560acc46dbe6ab30eda91a5f3904a38256d77062492c5a56d",
-      "last_checked": "2026-07-24T07:33:01.680350",
+      "last_checked": "2026-07-28T07:50:51.477795",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:58.277474",
+      "session_id": "2026-07-28T07:50:46.509308",
       "etag": "W/\"886ba63b66182492a7cf0e1a83444837\"",
       "file_path": "documentation/tvos-release-notes/tvos-17-release-notes.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvos-release-notes/tvos-16_6-release-notes.json": {
       "hash": "1439d21fce8eec72203c8aa73bd4c24bcfe890f99ecfb4cff27308ac19d81429",
-      "last_checked": "2026-07-24T07:33:01.741377",
+      "last_checked": "2026-07-28T07:50:51.707141",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:58.277474",
+      "session_id": "2026-07-28T07:50:46.509308",
       "etag": "W/\"33fe0e4e554e10798eb3e56fd0d6d03b\"",
       "file_path": "documentation/tvos-release-notes/tvos-16-6-release-notes.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvos-release-notes/tvos-16_5-release-notes.json": {
       "hash": "190e6e0824790f0722d69e35f1a256a12a89f6b1696391d5f5837cbf99f4cb28",
-      "last_checked": "2026-07-24T07:33:01.801033",
+      "last_checked": "2026-07-28T07:50:51.905866",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:58.277474",
+      "session_id": "2026-07-28T07:50:46.509308",
       "etag": "W/\"98524e8f94400348b74ea16ebff9119a\"",
       "file_path": "documentation/tvos-release-notes/tvos-16-5-release-notes.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvos-release-notes/tvos-16_4-release-notes.json": {
       "hash": "c7063783af54eb2c94b33d246e8f3756d0a35957ad0645d1a27b5a2d29acbcf3",
-      "last_checked": "2026-07-24T07:33:01.930802",
+      "last_checked": "2026-07-28T07:50:52.113064",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:58.277474",
+      "session_id": "2026-07-28T07:50:46.509308",
       "etag": "W/\"9331650315aab8b248f976688668e869\"",
       "file_path": "documentation/tvos-release-notes/tvos-16-4-release-notes.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvos-release-notes/tvos-16_3-release-notes.json": {
       "hash": "da1ff23ba91884f2c13a36e2a824bd71ec89f126bc5c388bdc1f88627bb4a333",
-      "last_checked": "2026-07-24T07:33:02.057408",
+      "last_checked": "2026-07-28T07:50:52.428304",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:58.277474",
+      "session_id": "2026-07-28T07:50:46.509308",
       "etag": "W/\"bfa61145d78cd80b37ec9b1338e31cd9\"",
       "file_path": "documentation/tvos-release-notes/tvos-16-3-release-notes.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvos-release-notes/tvos-16_2-release-notes.json": {
       "hash": "7c7831398e839a7148b75ae83fbaecf0891a4ca6f24546e5ab7bfc6b3bb94ef3",
-      "last_checked": "2026-07-24T07:33:02.122040",
+      "last_checked": "2026-07-28T07:50:52.577063",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:58.277474",
+      "session_id": "2026-07-28T07:50:46.509308",
       "etag": "W/\"9cba6a4b07da50cc5334e22168f07896\"",
       "file_path": "documentation/tvos-release-notes/tvos-16-2-release-notes.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvos-release-notes/tvos-16_1-release-notes.json": {
       "hash": "230e88d90e20cb76c9a93d360b99a6e9af7183e0899c2aec3388d8726d1b3d91",
-      "last_checked": "2026-07-24T07:33:02.231979",
+      "last_checked": "2026-07-28T07:50:52.716129",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:58.277474",
+      "session_id": "2026-07-28T07:50:46.509308",
       "etag": "W/\"c7cb507ce45e85baaece6f45e7f438d3\"",
       "file_path": "documentation/tvos-release-notes/tvos-16-1-release-notes.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvos-release-notes/tvos-16-release-notes.json": {
       "hash": "ff6f0acbf11bbe416d7a407b771f9f3b4600b9ad23c0578ecf0932084a618acc",
-      "last_checked": "2026-07-24T07:33:02.334924",
+      "last_checked": "2026-07-28T07:50:52.862017",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:58.277474",
+      "session_id": "2026-07-28T07:50:46.509308",
       "etag": "W/\"32c401074081150ada052aea2560ea80\"",
       "file_path": "documentation/tvos-release-notes/tvos-16-release-notes.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvos-release-notes/tvos-15_6-release-notes.json": {
       "hash": "d06e081ef4217c39d685d2f89bdcf536760ba2710fc34dec50e752c54c99148a",
-      "last_checked": "2026-07-24T07:33:02.436359",
+      "last_checked": "2026-07-28T07:50:53.004631",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:58.277474",
+      "session_id": "2026-07-28T07:50:46.509308",
       "etag": "W/\"3cb82590064c23950ceca7e85ff53f65\"",
       "file_path": "documentation/tvos-release-notes/tvos-15-6-release-notes.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvos-release-notes/tvos-15_5-release-notes.json": {
       "hash": "820a1d0582252fca114ebcd2e51c7b77c8d7df3ad65e9c8d8bab111de1d52cb2",
-      "last_checked": "2026-07-24T07:33:02.539193",
+      "last_checked": "2026-07-28T07:50:53.349406",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:58.277474",
+      "session_id": "2026-07-28T07:50:46.509308",
       "etag": "W/\"1a6d38e12b6505d5180bbb2058e28859\"",
       "file_path": "documentation/tvos-release-notes/tvos-15-5-release-notes.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvos-release-notes/tvos-15_4-release-notes.json": {
       "hash": "f9b5e623851cee5e6887858b6df5febda5d712bbc6492248d42f8e37899c3720",
-      "last_checked": "2026-07-24T07:33:02.659724",
+      "last_checked": "2026-07-28T07:50:53.499941",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:58.277474",
+      "session_id": "2026-07-28T07:50:46.509308",
       "etag": "W/\"5eb083692aebf4b6773222b89259116f\"",
       "file_path": "documentation/tvos-release-notes/tvos-15-4-release-notes.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvos-release-notes/tvos-15_3-release-notes.json": {
       "hash": "58b580f72b1f66ecc58dc1654d1facce414f4fe1fd29126357636aac92597267",
-      "last_checked": "2026-07-24T07:33:02.726551",
+      "last_checked": "2026-07-28T07:50:53.688754",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:58.277474",
+      "session_id": "2026-07-28T07:50:46.509308",
       "etag": "W/\"9f77a8b2f8cabc2ce18960c84b267a6c\"",
       "file_path": "documentation/tvos-release-notes/tvos-15-3-release-notes.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvos-release-notes/tvos-15_2-release-notes.json": {
       "hash": "200ab6a5b72b198c64c4009bb4754e469a5b5ea14f9f0422b4ea3b073a955203",
-      "last_checked": "2026-07-24T07:33:02.791431",
+      "last_checked": "2026-07-28T07:50:53.829301",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:58.277474",
+      "session_id": "2026-07-28T07:50:46.509308",
       "etag": "W/\"847b4ef71cac7d19e5aaf174bb0395ce\"",
       "file_path": "documentation/tvos-release-notes/tvos-15-2-release-notes.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvos-release-notes/tvos-15_1-release-notes.json": {
       "hash": "0b28ebfe3e68998b7107a008f60474728c26d59f4226bb3f432855b4f7b92c84",
-      "last_checked": "2026-07-24T07:33:02.912494",
+      "last_checked": "2026-07-28T07:50:54.028452",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:58.277474",
+      "session_id": "2026-07-28T07:50:46.509308",
       "etag": "W/\"72860001c3b8ed5bda7c96d1be879dee\"",
       "file_path": "documentation/tvos-release-notes/tvos-15-1-release-notes.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvos-release-notes/tvos-15-release-notes.json": {
       "hash": "6d539db680efeacd99bb71190b8755e98b9265c00ce1b24c62514c23abae1d11",
-      "last_checked": "2026-07-24T07:33:02.981946",
+      "last_checked": "2026-07-28T07:50:54.235528",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:58.277474",
+      "session_id": "2026-07-28T07:50:46.509308",
       "etag": "W/\"a444a8e0a4dc11bc842a7b7854915f4a\"",
       "file_path": "documentation/tvos-release-notes/tvos-15-release-notes.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvos-release-notes/tvos-14_7-release-notes.json": {
       "hash": "712b0ae37bc54965027bf22417df6ddddc876b3613d97846f1ed9cb205fe73fe",
-      "last_checked": "2026-07-24T07:33:03.095647",
+      "last_checked": "2026-07-28T07:50:54.440008",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:58.277474",
+      "session_id": "2026-07-28T07:50:46.509308",
       "etag": "W/\"41fe49b686ef89a08b4d17d25d329b0d\"",
       "file_path": "documentation/tvos-release-notes/tvos-14-7-release-notes.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvos-release-notes/tvos-14_6-release-notes.json": {
       "hash": "cba5ecbdb181d13f03bcffe6d7f7e862ef2468ea6abf624d3148807fab29ffa9",
-      "last_checked": "2026-07-24T07:33:03.155371",
+      "last_checked": "2026-07-28T07:50:54.758288",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:58.277474",
+      "session_id": "2026-07-28T07:50:46.509308",
       "etag": "W/\"47dbb7ad18cf4df490eeb1fc87e09aa1\"",
       "file_path": "documentation/tvos-release-notes/tvos-14-6-release-notes.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvos-release-notes/tvos-14_5-release-notes.json": {
       "hash": "a438ddf3f3b3c41096ab1e905a0f18ea106e7cd0c73349e3b5b44e24ef28987c",
-      "last_checked": "2026-07-24T07:33:03.397639",
+      "last_checked": "2026-07-28T07:50:54.958408",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:58.277474",
+      "session_id": "2026-07-28T07:50:46.509308",
       "etag": "W/\"4a5244441a5f206d7f4696a50a3fd268\"",
       "file_path": "documentation/tvos-release-notes/tvos-14-5-release-notes.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvos-release-notes/tvos-14_4-release-notes.json": {
       "hash": "c793d17e65517d7ab1c0a972f82b592360890f8dcf97506b7ae713cc0a426af7",
-      "last_checked": "2026-07-24T07:33:03.609726",
+      "last_checked": "2026-07-28T07:50:55.137675",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:58.277474",
+      "session_id": "2026-07-28T07:50:46.509308",
       "etag": "W/\"a9031a97371eaa0bb30559f9d3bb1877\"",
       "file_path": "documentation/tvos-release-notes/tvos-14-4-release-notes.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvos-release-notes/tvos-14_3-release-notes.json": {
       "hash": "89dec0791d018d075de788ddb183b1e5d15f59f0bbd0fd7c1739c5479ede3ac6",
-      "last_checked": "2026-07-24T07:33:03.674422",
+      "last_checked": "2026-07-28T07:50:55.464944",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:58.277474",
+      "session_id": "2026-07-28T07:50:46.509308",
       "etag": "W/\"8afee7288772588d6b93f3d001189d0b\"",
       "file_path": "documentation/tvos-release-notes/tvos-14-3-release-notes.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvos-release-notes/tvos-14_2-release-notes.json": {
       "hash": "5e0c1153c0f8dcbdac18fab9ee46184d2a090639b5eda7801443e154e8a64e07",
-      "last_checked": "2026-07-24T07:33:03.744780",
+      "last_checked": "2026-07-28T07:50:55.608999",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:58.277474",
+      "session_id": "2026-07-28T07:50:46.509308",
       "etag": "W/\"59c93d164ab2f4b5fed29daadbfa70c6\"",
       "file_path": "documentation/tvos-release-notes/tvos-14-2-release-notes.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvos-release-notes/tvos-14-release-notes.json": {
       "hash": "b6bd654c79aa1b2b85f67f175e3f3653170a848f2bd455d7f6333411aa196327",
-      "last_checked": "2026-07-24T07:33:03.986746",
+      "last_checked": "2026-07-28T07:50:55.802581",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:58.277474",
+      "session_id": "2026-07-28T07:50:46.509308",
       "etag": "W/\"bff3de52bcc8a6010ca6e8ef8f6b5915\"",
       "file_path": "documentation/tvos-release-notes/tvos-14-release-notes.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvos-release-notes/tvos-13_4_8-release-notes.json": {
       "hash": "0c7461d1c2d60009a6c3a412c8a12bfc43a254ddebfaf9e8f165aaadef2bc585",
-      "last_checked": "2026-07-24T07:33:04.100870",
+      "last_checked": "2026-07-28T07:50:56.001604",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:58.277474",
+      "session_id": "2026-07-28T07:50:46.509308",
       "etag": "W/\"06d868ed19ddc8820eaef3f72e96fbda\"",
       "file_path": "documentation/tvos-release-notes/tvos-13-4-8-release-notes.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvos-release-notes/tvos-13_4_5-release-notes.json": {
       "hash": "b065fce69d436665a3518c5c354eeeb257ae808f248e706f4146e998ca4156c9",
-      "last_checked": "2026-07-24T07:33:04.384226",
+      "last_checked": "2026-07-28T07:50:56.175308",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:58.277474",
+      "session_id": "2026-07-28T07:50:46.509308",
       "etag": "W/\"16b76896621b9e9220cb7be01446d935\"",
       "file_path": "documentation/tvos-release-notes/tvos-13-4-5-release-notes.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvos-release-notes/tvos-13_4-release-notes.json": {
       "hash": "546ebc7f83f5ff3ebb040b61194db06cde7b7161b50c289d84ce288d13ad9936",
-      "last_checked": "2026-07-24T07:33:04.496757",
+      "last_checked": "2026-07-28T07:50:56.388840",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:58.277474",
+      "session_id": "2026-07-28T07:50:46.509308",
       "etag": "W/\"fa992f736457215d51274d2bf2b7b3b9\"",
       "file_path": "documentation/tvos-release-notes/tvos-13-4-release-notes.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvos-release-notes/tvos-13_3_1-release-notes.json": {
       "hash": "1ea94053778efc32c3e152ff8b8bd91ac7475109a5b19f360493afe85f58c790",
-      "last_checked": "2026-07-24T07:33:04.778415",
+      "last_checked": "2026-07-28T07:50:56.719724",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:58.277474",
+      "session_id": "2026-07-28T07:50:46.509308",
       "etag": "W/\"371da9262644a158670ea307a021f181\"",
       "file_path": "documentation/tvos-release-notes/tvos-13-3-1-release-notes.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvos-release-notes/tvos-13_3-release-notes.json": {
       "hash": "6d02811ce09ebdeda0b8547192bf8d9970eb2fe6bec659d96927408c55e39959",
-      "last_checked": "2026-07-24T07:33:04.888393",
+      "last_checked": "2026-07-28T07:50:56.908304",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:58.277474",
+      "session_id": "2026-07-28T07:50:46.509308",
       "etag": "W/\"e8eb975b7d4fc559cbd185a2dded4572\"",
       "file_path": "documentation/tvos-release-notes/tvos-13-3-release-notes.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvos-release-notes/tvos-13_2-release-notes.json": {
       "hash": "1724825bebca3264a26b24681c1f1a3cf2739df42551a2ede9d80e1a27c93f27",
-      "last_checked": "2026-07-24T07:33:05.006658",
+      "last_checked": "2026-07-28T07:50:57.104245",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:58.277474",
+      "session_id": "2026-07-28T07:50:46.509308",
       "etag": "W/\"002ec1e56590433fd487534d2308ab87\"",
       "file_path": "documentation/tvos-release-notes/tvos-13-2-release-notes.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvos-release-notes/tvos-13-release-notes.json": {
       "hash": "931108b77ad8499fde390e073e236182018af3144144412b6415eb6dd41a545b",
-      "last_checked": "2026-07-24T07:33:05.203927",
+      "last_checked": "2026-07-28T07:50:57.261031",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:58.277474",
+      "session_id": "2026-07-28T07:50:46.509308",
       "etag": "W/\"2606d6f7b3babc1309629208c1f2f242\"",
       "file_path": "documentation/tvos-release-notes/tvos-13-release-notes.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvos-release-notes/tvos-12_4-release-notes.json": {
       "hash": "14e7230211e16809facfeb3df625e2960727bc7b267ba18c602e2a9a22e84921",
-      "last_checked": "2026-07-24T07:33:05.450342",
+      "last_checked": "2026-07-28T07:50:57.445503",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:58.277474",
+      "session_id": "2026-07-28T07:50:46.509308",
       "etag": "W/\"dded6b0365eada1b8985bee9f9b00ec4\"",
       "file_path": "documentation/tvos-release-notes/tvos-12-4-release-notes.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvos-release-notes/tvos-12_2-release-notes.json": {
       "hash": "21951e7b1c254fa2429473cf9c92c36a64f9095ed1c666222760730a668a5fa6",
-      "last_checked": "2026-07-24T07:33:05.517559",
+      "last_checked": "2026-07-28T07:50:57.630667",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:58.277474",
+      "session_id": "2026-07-28T07:50:46.509308",
       "etag": "W/\"eca0f36e96a57a7cbfa97c167ecc9d9a\"",
       "file_path": "documentation/tvos-release-notes/tvos-12-2-release-notes.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvos-release-notes/tvos-12_1_2-release-notes.json": {
       "hash": "56c5e5727b8d0c13539eaab05536ac67825ef4ae1aefa967463917f5a8cf0b3e",
-      "last_checked": "2026-07-24T07:33:05.579043",
+      "last_checked": "2026-07-28T07:50:57.847986",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:58.277474",
+      "session_id": "2026-07-28T07:50:46.509308",
       "etag": "W/\"a59b88430c6c3e3d240997c9204b373e\"",
       "file_path": "documentation/tvos-release-notes/tvos-12-1-2-release-notes.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvos-release-notes/tvos-12_1_1-release-notes.json": {
       "hash": "90c8d0a3dd0599416c64338a829398f7672459dcf004ec190118cc927c3ffd41",
-      "last_checked": "2026-07-24T07:33:05.679699",
+      "last_checked": "2026-07-28T07:50:58.191988",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:58.277474",
+      "session_id": "2026-07-28T07:50:46.509308",
       "etag": "W/\"d2125df6f0620ca58618cde0f5496b0f\"",
       "file_path": "documentation/tvos-release-notes/tvos-12-1-1-release-notes.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvos-release-notes/tvos-12-release-notes.json": {
       "hash": "94a92ed65f068330a960af9208507b5a471c15bb8fe2707b47aaee1878620a8a",
-      "last_checked": "2026-07-24T07:33:05.926712",
+      "last_checked": "2026-07-28T07:50:58.392236",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:58.277474",
+      "session_id": "2026-07-28T07:50:46.509308",
       "etag": "W/\"1a46903ba0b99df1558fb3cee34f5b1e\"",
       "file_path": "documentation/tvos-release-notes/tvos-12-release-notes.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvos-release-notes/apple-tv-software-7_3-release-notes.json": {
       "hash": "cacfe3a8d837727fc89426a92c9be7b6bc92735de7663f096932ccc1346a225e",
-      "last_checked": "2026-07-24T07:33:06.266111",
+      "last_checked": "2026-07-28T07:50:58.954121",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:58.277474",
+      "session_id": "2026-07-28T07:50:46.509308",
       "etag": "W/\"bcd9773d19b02dc6c1bded6238595d4e\"",
       "file_path": "documentation/tvos-release-notes/apple-tv-software-7-3-release-notes.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvos-release-notes/tvos-18_6-release-notes.json": {
       "hash": "fb4390625213af3ee1de5f62714ada4e5904277888fa645789c60f6f9b85e67c",
-      "last_checked": "2026-07-24T07:33:00.141386",
+      "last_checked": "2026-07-28T07:50:48.910730",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:58.277474",
+      "session_id": "2026-07-28T07:50:46.509308",
       "etag": "W/\"43bc19030ef246ac22bcb36d78aabf7f\"",
       "file_path": "documentation/tvos-release-notes/tvos-18-6-release-notes.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvos-release-notes/tvos-26_3-release-notes.json": {
       "hash": "035fd9c9071afa70b3cff637a8deee54c8308e92ce0484aa62b1cb682cf34413",
-      "last_checked": "2026-07-24T07:32:59.815452",
+      "last_checked": "2026-07-28T07:50:48.023189",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:58.277474",
+      "session_id": "2026-07-28T07:50:46.509308",
       "etag": "W/\"93d8048b47fc04d0d7cfcad3f421cbd7\"",
       "file_path": "documentation/tvos-release-notes/tvos-26-3-release-notes.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvos-release-notes/tvos-26_2-release-notes.json": {
       "hash": "788718a94beef90c6dc61e48f51f3baefed026b9e133ab6f0fa76765e3eac1e4",
-      "last_checked": "2026-07-24T07:32:59.876555",
+      "last_checked": "2026-07-28T07:50:48.204827",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:58.277474",
+      "session_id": "2026-07-28T07:50:46.509308",
       "etag": "W/\"277560fc22d6fe7b66c667e50e150728\"",
       "file_path": "documentation/tvos-release-notes/tvos-26-2-release-notes.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvos-release-notes/tvos-26_1-release-notes.json": {
       "hash": "909c21120a0734691dc64eb34b1ba37f6a84d3ed586beb95feac091227419623",
-      "last_checked": "2026-07-24T07:32:59.966948",
+      "last_checked": "2026-07-28T07:50:48.532716",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:58.277474",
+      "session_id": "2026-07-28T07:50:46.509308",
       "etag": "W/\"10e2e946d4357888d3fa13623a57c079\"",
       "file_path": "documentation/tvos-release-notes/tvos-26-1-release-notes.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvos-release-notes/tvos-26_4-release-notes.json": {
       "hash": "a2ac849dfceabdaa846a95a7d1f6e18185975b1eb84ebc858a5e23fc8bed185b",
-      "last_checked": "2026-07-24T07:32:59.572743",
+      "last_checked": "2026-07-28T07:50:47.818863",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:58.277474",
+      "session_id": "2026-07-28T07:50:46.509308",
       "etag": "W/\"d0eab5a95454e12d5cad8f691d4f3ba8\"",
       "file_path": "documentation/tvos-release-notes/tvos-26-4-release-notes.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvos-release-notes/tvos-26_5-release-notes.json": {
       "hash": "121748cc7bf665aaad3f5f763a8517a6c38a0e6d40a9c1ce332427e173120a4f",
-      "last_checked": "2026-07-24T07:32:59.327797",
+      "last_checked": "2026-07-28T07:50:47.626938",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:58.277474",
+      "session_id": "2026-07-28T07:50:46.509308",
       "etag": "W/\"84ecd51b32b76c9bdd8a70bb4ceae48b\"",
       "file_path": "documentation/tvos-release-notes/tvos-26-5-release-notes.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvos-release-notes/tvos-26_6_beat-release-notes.json": {
       "hash": "43413b0a233b7f01cfd2ff15772539feb8eebd772aa9a1a1175f055bbbdb7a8b",
-      "last_checked": "2026-07-24T07:33:06.160026",
+      "last_checked": "2026-07-28T07:50:58.589200",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:58.277474",
+      "session_id": "2026-07-28T07:50:46.509308",
       "etag": "W/\"5cdbf7c2333c02248b2c26ec65a6d34a\"",
       "file_path": "documentation/tvos-release-notes/tvos-26-6-beat-release-notes.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvos-release-notes/tvos-27-release-notes.json": {
       "hash": "f325517cf9e012d77bc96343d8fadbed54a66e0d55b786acc05be3e1e1905eef",
-      "last_checked": "2026-07-24T07:32:58.829694",
+      "last_checked": "2026-07-28T07:50:47.112822",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:58.277474",
+      "session_id": "2026-07-28T07:50:46.509308",
       "etag": "W/\"3c2f00bd0c321f7912a73c3918786596\"",
       "file_path": "documentation/tvos-release-notes/tvos-27-release-notes.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tvos-release-notes/tvos-26_6-release-notes.json": {
       "hash": "8adfdd432c8cb1a7d8ab911247d95828c482a97a812affda31572528343cbb69",
-      "last_checked": "2026-07-24T07:32:59.080537",
+      "last_checked": "2026-07-28T07:50:47.291507",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:32:58.277474",
+      "session_id": "2026-07-28T07:50:46.509308",
       "etag": "W/\"c942207d421237d1e97b5293b2831cf2\"",
       "file_path": "documentation/tvos-release-notes/tvos-26-6-release-notes.md"
     },

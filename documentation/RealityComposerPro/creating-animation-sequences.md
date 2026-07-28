@@ -8,17 +8,17 @@ Build animation sequences that drive entity behavior across multiple tracks in R
 
 In Reality Composer Pro, a **sequence** is an asset that defines a series of animations you can apply to an entity. Reality Composer Pro includes pre-made **sequence actions** you can apply to entities to quickly add animations. In addition, you can create your own custom sequences tailored to your specific animation needs.
 
-You can build and design sequences in the Sequence Editor, where you can add and edit motion paths, animations, and actions. When you create a sequence, Reality Composer Pro prompts you to select a root entity for the sequence.
+You can build and design sequences in the Sequence Editor, where you can add and edit motion paths, animations, and movements. Apply a sequence to an entity. When you create a sequence, Reality Composer Pro prompts you to open an entity in your project.
 
-#### Create an Animation Sequence
+##### Create or Open an Animation Sequence
 
-In the Project Browser, Control-click a folder and choose **New** > **Sequence**. Type a name for the sequence and press Return. Under **Set Root Entity**, click **Choose** to select a root entity for the sequence.
+1. In the Project Browser, control-click a folder, and then click **New** > **Animation** > **Sequence**.
+2. Type a name for the sequence and then press Return.
+3. Under **Set Target Entity,** click **Choose** to locate and then select an entity for the sequence.
 
 > 💡 **Tip**: You can use the Search box to help you find the entity.
 
-#### Open an Animation Sequence
-
-In the Project Browser, browse to an animation sequence and double-click it to open it. The animation sequence and its associated entity open automatically.
+**Method 2** In the Project Browser, browse to an animation sequence and double-click it to open it. The animation sequence and its associated entity open automatically.
 
 ![A screenshot of Reality Composer Pro showing an animation sequence in the Project Browser.](https://docs-assets.developer.apple.com/published/cd52db86e9bb5084c24fb6fc8318fb9c/AnimationProjectBrowser%402x.png)
 
@@ -55,7 +55,10 @@ The following actions are available:
 
 - **Play Audio** — Plays an audio file or sound effect synchronized with the animation timeline. Add audio files to an Audio Library Component on the target entity before they appear in the Sequence Editor for selection. See [`PlayAudioAction`](https://developer.apple.com/documentation/RealityKit/PlayAudioAction).
 - **Enable/Disable Entity** — Controls the visibility and active state of a target entity and its descendants in the scene, turning them on or off at specific timeline points. See [`SetEntityEnabledAction`](https://developer.apple.com/documentation/RealityKit/SetEntityEnabledAction).
+- **Motion Path** — Defines spatial control points for path-based orbit, spin, or custom movement animation along predefined trajectories.
 - **Billboard Blend In/Out** — Animates the blend factor of the target entity’s Billboard component, controlling how strongly the entity orients itself toward the active camera over time. See [`BillboardAction`](https://developer.apple.com/documentation/RealityKit/BillboardAction).
+
+![A screenshot of Reality Composer Pro Animation Sequence Editor showing a Track with an Animation Motion Path.](https://docs-assets.developer.apple.com/published/b23265fb86b5d7b49b2e1d02a2328f53/AnimationMotionPath2%402x.png)
 
 #### Configure Sequence Properties
 
@@ -93,8 +96,16 @@ The Animation Clip Properties provide controls for configuring animation clips o
 
 ## See Also
 
+- [Creating animation sequences for auto-play](creating-animation-sequences-for-autoplay.md)
+  Root an animation Sequence at the right entity, then wire it to an Animation Library Component so it plays automatically at runtime.
+- [Building multi-track animation sequences](building-multi-track-animation-sequences.md)
+  Root a Sequence correctly so it shows up as a clip and plays automatically at runtime.
+- [Automating motion path creation with editor-scripting commands](automating-motion-path-creation-with-editor-scripting-commands.md)
+  Build the same multi-track Sequence and Motion Path shown in the Sequencer UI programmatically, by chaining editor-scripting commands together.
 - [Working with the Animation Graph](working-with-the-animation-graph.md)
   Build character animation state machines visually using the Animation Graph in Reality Composer Pro.
+- [Building an advanced Animation Graph](building-an-advanced-animation-graph.md)
+  Drive a character’s locomotion state machine from a Script Graph at runtime.
 - [Building a navmesh in Reality Composer Pro](building-a-navmesh-in-reality-composer-pro.md)
   Configure a navigation mesh in Reality Composer Pro to define walkable areas and paths for AI-controlled entities in your scene.
 - [Defining a behavior with Behavior Trees](defining-a-behavior-with-behavior-trees.md)

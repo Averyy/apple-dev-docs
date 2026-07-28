@@ -17,8 +17,8 @@ An action sheet is a modal view that presents choices related to an action peopl
 
 ## Best practices
 **Use an action sheet — not an alert — to offer choices related to an intentional action.** For example, when people cancel the message they’re editing in Mail on iPhone, an action sheet provides two choices: delete the draft, or save the draft. Although an alert can also help people confirm or cancel an action that has destructive consequences, it doesn’t provide additional choices related to the action. More importantly, an alert is usually unexpected, generally telling people about a problem or a change in the current situation that might require them to act. For guidance, see [Alerts](alerts.md).
-![A partial screenshot of a new message being composed in Mail on iPhone.](https://docs-assets.developer.apple.com/published/cfa0d84cf04367441dbe47bc0934de46/action-sheet-iphone-mail~dark%402x.png)
-![A partial screenshot of a new message being composed in Mail on iPhone, with the action sheet open after choosing to cancel the message. The action sheet presents choices to delete the draft or save the draft.](https://docs-assets.developer.apple.com/published/ba31ffab2e8cfb31594c7dc204a64f4a/action-sheet-iphone-mail-delete-action~dark%402x.png)
+![A partial screenshot of a new message being composed in Mail on iPhone.](https://docs-assets.developer.apple.com/published/20d32428c276c1f83413531a81233b73/action-sheet-iphone-mail~dark%402x.png)
+![A partial screenshot of a new message being composed in Mail on iPhone, with the action sheet open after choosing to cancel the message. The action sheet presents choices to delete the draft or save the draft.](https://docs-assets.developer.apple.com/published/427795b236a36d9b9589b44dfaa95d5c/action-sheet-iphone-mail-delete-action~dark%402x.png)
 **Use action sheets sparingly.** Action sheets give people important information and choices, but they interrupt the current task to do so. To encourage people to pay attention to action sheets, avoid using them more than necessary.
 **Aim to keep titles short enough to display on a single line.** A long title is difficult to read quickly and might get truncated or require people to scroll.
 **Provide a message only if necessary.** In general, the title — combined with the context of the current action — provides enough information to help people understand their choices.
@@ -34,7 +34,7 @@ An action sheet is a modal view that presents choices related to an action peopl
 
 ### watchOS
 The system-defined style for action sheets includes a title, an optional message, a Cancel button, and one or more additional buttons. The appearance of this interface is different depending on the device.
-![An illustration of an action sheet on Apple Watch, showing content that represents text in the top half of the watch screen and two stacked buttons in the bottom half.](https://docs-assets.developer.apple.com/published/4ec6a46689c0ec4550d6fe48d4aa27a8/action-sheet-watch-system-defined%402x.png)
+![An illustration of an action sheet on Apple Watch, showing content that represents text in the top half of the watch screen and two stacked buttons in the bottom half.](https://docs-assets.developer.apple.com/published/2e16789659cacc205c110daa36988c6e/action-sheet-watch-system-defined%402x.png)
 Each button has an associated style that conveys information about the button’s effect. There are three system-defined button styles:
 | Style | Meaning |
 | --- | --- |

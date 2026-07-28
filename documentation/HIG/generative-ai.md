@@ -68,15 +68,15 @@ Generative artificial intelligence uses [machine learning](https://developer.app
 [Loading](loading.md)
 [Acceptable Use Requirements for the Foundation Models Framework](https://developer.apple.com/apple-intelligence/acceptable-use-requirements-for-the-foundation-models-framework)
 
-#### Videos
-- [Create UI prototypes using agents in Xcode](https://developer.apple.com/videos/play/wwdc2026/227) - Learn how to prototype your app using agents in Xcode. Explore techniques for using AI to prototype interactions, iterate on layouts, and generate creative solutions to design challenges. You’ll learn how to evaluate ideas critically and refine them into polished, people-centered experiences for your app.
-- [What’s new in the Foundation Models framework](https://developer.apple.com/videos/play/wwdc2026/241) - Explore what’s new in the Foundation Models framework. Learn how to access Private Cloud Compute, integrate third-party and open source models, and work with vision capabilities. Discover context management APIs, built-in semantic search, and powerful primitives for creating agentic experiences in your apps.
-- [Explore prompt design & safety for on-device foundation models](https://developer.apple.com/videos/play/wwdc2025/248) - Design generative AI experiences that leverage the strengths of the Foundation Models framework. We’ll start by showing how to design prompts for the on-device large language model at the core of Apple Intelligence. Then, we’ll introduce key ideas around AI safety, and offer concrete strategies to make your generative AI features safe, reliable, and delightful.
-
 #### Developer documentation
 [Apple Intelligence and machine learning](../TechnologyOverviews/ai-machine-learning.md)
 [Foundation Models](../FoundationModels.md)
 [Core AI](../CoreAI.md)
+
+#### Videos
+- [Create UI prototypes using agents in Xcode](https://developer.apple.com/videos/play/wwdc2026/227) - Learn how to prototype your app using agents in Xcode. Explore techniques for using AI to prototype interactions, iterate on layouts, and generate creative solutions to design challenges. You’ll learn how to evaluate ideas critically and refine them into polished, people-centered experiences for your app.
+- [What’s new in the Foundation Models framework](https://developer.apple.com/videos/play/wwdc2026/241) - Explore what’s new in the Foundation Models framework. Learn how to access Private Cloud Compute, integrate third-party and open source models, and work with vision capabilities. Discover context management APIs, built-in semantic search, and powerful primitives for creating agentic experiences in your apps.
+- [Explore prompt design & safety for on-device foundation models](https://developer.apple.com/videos/play/wwdc2025/248) - Design generative AI experiences that leverage the strengths of the Foundation Models framework. We’ll start by showing how to design prompts for the on-device large language model at the core of Apple Intelligence. Then, we’ll introduce key ideas around AI safety, and offer concrete strategies to make your generative AI features safe, reliable, and delightful.
 
 ## Change log
 | Date | Changes |

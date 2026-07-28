@@ -13,7 +13,7 @@ framework: HIG
 
 When someone performs a task with Siri or an App Shortcut, a snippet shows the result or asks for confirmation.
 
-![A stylized representation of a snippet, showing a proposed date and time for a Calendar event along with a Done button. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/d12ea96eeb0f77aadad84df962336653/components-snippets-intro~dark%402x.png)
+![A stylized representation of a snippet, showing a proposed date and time for a Calendar event along with a Done button. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/e30421295e83ed2f26fa7a94e2c6e8db/components-snippets-intro~dark%402x.png)
 Snippets are compact views that appear in response to an action that someone takes using [Siri](siri.md), Spotlight, or the Shortcuts app.
 You can present a snippet related to one of your app’s actions by including it with an [App Intents](../AppIntents.md) that you design to meet the specific needs of a task. For example, you might design a snippet for checking the weather forecast or updating progress toward a daily goal.
 There are two snippet types: confirmation and result. A *confirmation* snippet lets people confirm or cancel an action, and may include options that affect the result. By contrast, a *result* snippet provides information — possibly as the outcome of a confirmation — that doesn’t require further action. An app intent that displays a snippet always shows a result, while the confirmation step is optional.

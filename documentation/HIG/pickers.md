@@ -51,13 +51,13 @@ Pickers are available in tvOS with SwiftUI. For developer guidance, see [Picker]
 ### watchOS
 Pickers display lists of items that people navigate using the Digital Crown, which helps people manage selections in a precise and engaging way.
 A picker can display a list of items using the wheels style. watchOS can also display date and time pickers using the wheels style. For developer guidance, see [Picker](../SwiftUI/Picker.md) and [DatePicker](../SwiftUI/DatePicker.md).
-![An illustration representing a screen containing a picker view on Apple Watch, showing three items in a list. The center item is highlighted.](https://docs-assets.developer.apple.com/published/00d1eeb88cc503430767c2318605a71d/pickers-wheel-watch%402x.png)
-![An illustration representing a screen containing a date picker on Apple Watch, with the day highlighted.](https://docs-assets.developer.apple.com/published/30053c6f5cb2c0246e5ebecbd8ad70c3/pickers-date-watch%402x.png)
-![An illustration representing a screen containing a time picker on Apple Watch, with the minutes highlighted.](https://docs-assets.developer.apple.com/published/842ba89f2c3fdb2894949dee31bf8849/pickers-time-watch%402x.png)
+![An illustration representing a screen containing a picker view on Apple Watch, showing three items in a list. The center item is highlighted.](https://docs-assets.developer.apple.com/published/3324da7e747432a1e22d847d45b4430d/pickers-wheel-watch%402x.png)
+![An illustration representing a screen containing a date picker on Apple Watch, with the day highlighted.](https://docs-assets.developer.apple.com/published/e2c5c57649b0b94a5a0319688f300cd0/pickers-date-watch%402x.png)
+![An illustration representing a screen containing a time picker on Apple Watch, with the minutes highlighted.](https://docs-assets.developer.apple.com/published/1b10bb28a6101999c45dc2aca39bba32/pickers-time-watch%402x.png)
 You can configure a picker to display an outline, caption, and scrolling indicator.
 For longer lists, the navigation link displays the picker as a button. When someone taps the button, the system shows the list of options. The person can also scrub through the options using the Digital Crown without tapping the button. For developer guidance, see [navigationLink](../SwiftUI/PickerStyle/navigationLink.md).
-![An illustration representing a screen that contains a picker button on Apple Watch. The button’s text denotes that the second item is selected.](https://docs-assets.developer.apple.com/published/657d90a59d600e7eee70effde6784e45/pickers-navigation-button-watch%402x.png)
-![An illustration representing a screen showing a list of items on Apple Watch. The second item in the list is selected.](https://docs-assets.developer.apple.com/published/1e533809fb6fc291a53fd12ff0ec41f4/pickers-navigation-list-watch%402x.png)
+![An illustration representing a screen that contains a picker button on Apple Watch. The button’s text denotes that the second item is selected.](https://docs-assets.developer.apple.com/published/21fcdd5021089b020137dd099821dc85/pickers-navigation-button-watch%402x.png)
+![An illustration representing a screen showing a list of items on Apple Watch. The second item in the list is selected.](https://docs-assets.developer.apple.com/published/f56f12978536df47dc0a7f67e3f0a686/pickers-navigation-list-watch%402x.png)
 
 ## Resources
 

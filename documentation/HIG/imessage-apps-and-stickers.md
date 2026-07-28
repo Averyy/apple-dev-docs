@@ -43,9 +43,9 @@ To ensure that your icon looks great in any context and on various devices, crea
 
 ### Sticker sizes
 Messages supports small, regular, and large stickers. Pick the size that works best for your content and prepare all of your stickers at that size; don’t mix sizes within a single sticker pack. Messages displays stickers in a grid, organized differently for different sizes.
-![An illustration showing a grid of small stickers in the bottom half of an iPhone screen. Eight stickers are visible in the area, followed by a partial row of four, arranged in three rows.](https://docs-assets.developer.apple.com/published/df38bfae6608c460690e056c6e23375e/sticker-sizes-small~dark%402x.png)
-![An illustration showing a grid of regular stickers in the bottom half of an iPhone screen. Six stickers are visible in the area, in two rows of three.](https://docs-assets.developer.apple.com/published/a7218810e2c052cebb48c8b94ecb49be/sticker-sizes-regular~dark%402x.png)
-![An illustration showing a grid of large stickers in the bottom half of an iPhone screen. Two stickers are fully visible in the area, followed by a partial row of two additional stickers.](https://docs-assets.developer.apple.com/published/3bec72038a0a978e36a6054abe170d6a/sticker-sizes-large~dark%402x.png)
+![An illustration showing a grid of small stickers in the bottom half of an iPhone screen. Eight stickers are visible in the area, followed by a partial row of four, arranged in three rows.](https://docs-assets.developer.apple.com/published/d4bd81a3cb3d0ae27d5fdd2e76f97457/sticker-sizes-small~dark%402x.png)
+![An illustration showing a grid of regular stickers in the bottom half of an iPhone screen. Six stickers are visible in the area, in two rows of three.](https://docs-assets.developer.apple.com/published/6ece4cc5bef109e850fcb0151997de78/sticker-sizes-regular~dark%402x.png)
+![An illustration showing a grid of large stickers in the bottom half of an iPhone screen. Two stickers are fully visible in the area, followed by a partial row of two additional stickers.](https://docs-assets.developer.apple.com/published/e6741929590d96dbd0a22e2e2e59b296/sticker-sizes-large~dark%402x.png)
 Create your sticker images using the following @3x dimensions for the sticker size you chose. If necessary, the system generates @2x and @1x versions by downscaling the images at runtime. For developer guidance, see [MSStickerSize](../Messages/MSStickerSize.md).
 | Sticker size | @3x dimensions (pixels) |
 | --- | --- |

@@ -3,7 +3,7 @@
 **Framework**: Spatial  
 **Kind**: op
 
-Returns the size that results from applying the transform to the size.
+Returns a size with each element mulitplied by a scalar value.
 
 **Availability**:
 - iOS 26.0+
@@ -17,7 +17,7 @@ Returns the size that results from applying the transform to the size.
 ## Declaration
 
 ```swift
-static func * (lhs: AffineTransform3DFloat, rhs: Size3DFloat) -> Size3DFloat
+static func * (lhs: Size3DFloat, rhs: Float) -> Size3DFloat
 ```
 
 ## Parameters
@@ -28,4 +28,4 @@ static func * (lhs: AffineTransform3DFloat, rhs: Size3DFloat) -> Size3DFloat
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/spatial/size3dfloat/*(_:_:)-7txph)*
+*[View on Apple Developer](https://developer.apple.com/documentation/spatial/size3dfloat/*(_:_:)-544n3)*

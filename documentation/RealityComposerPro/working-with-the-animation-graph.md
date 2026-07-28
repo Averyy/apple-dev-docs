@@ -12,9 +12,9 @@ Use animation graphs to create custom animations in a visual, node-based, code-f
 
 #### Create an Animation Graph
 
-In the Project Browser, Control-click a folder and choose **New** > **Animation Graph**. Enter a name for the animation graph, then double-click it to open it in the Animation Graph Editor.
+In the Project Browser, Control-click a folder and choose **New** > **Animation** > **Animation Graph**. Enter a name for the animation graph, then double-click it to open it in the Animation Graph Editor.
 
-In the Inspector, click **Skeleton Definition** to select the skeleton definition you want to use. For imported entities, Reality Composer Pro creates the skeleton definition when you import the entity — including all dependencies such as blend masks and inverse kinematic rigs. Then select a **Preview Entity** to control which entity appears in the preview window. Change this option to preview your animations for different entities that share the same skeleton definition.
+In the Inspector, click **Skeleton Definition** to select the skeleton definition you want to use. For imported entities, Reality Composer Pro creates the skeleton definition when you import the entity — including all dependencies such as blend masks and inverse kinematic rigs. Then select a **Preview Entity** to control which entity appears in the preview window. Change this option to preview your animations for different entities that share the same skeleton definition. Note that this will populate automatically when you add the skeleton definition, and that you need to set a definition before changing the preview.
 
 #### Add Animation Graph Inputs
 
@@ -128,6 +128,14 @@ The Animation Graph Editor provides a range of nodes organized by category. Each
 
 - [Creating animation sequences](creating-animation-sequences.md)
   Build animation sequences that drive entity behavior across multiple tracks in Reality Composer Pro.
+- [Creating animation sequences for auto-play](creating-animation-sequences-for-autoplay.md)
+  Root an animation Sequence at the right entity, then wire it to an Animation Library Component so it plays automatically at runtime.
+- [Building multi-track animation sequences](building-multi-track-animation-sequences.md)
+  Root a Sequence correctly so it shows up as a clip and plays automatically at runtime.
+- [Automating motion path creation with editor-scripting commands](automating-motion-path-creation-with-editor-scripting-commands.md)
+  Build the same multi-track Sequence and Motion Path shown in the Sequencer UI programmatically, by chaining editor-scripting commands together.
+- [Building an advanced Animation Graph](building-an-advanced-animation-graph.md)
+  Drive a character’s locomotion state machine from a Script Graph at runtime.
 - [Building a navmesh in Reality Composer Pro](building-a-navmesh-in-reality-composer-pro.md)
   Configure a navigation mesh in Reality Composer Pro to define walkable areas and paths for AI-controlled entities in your scene.
 - [Defining a behavior with Behavior Trees](defining-a-behavior-with-behavior-trees.md)

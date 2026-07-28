@@ -106,8 +106,16 @@ You can have as many tags as you want in a region.
 
 - [Creating animation sequences](creating-animation-sequences.md)
   Build animation sequences that drive entity behavior across multiple tracks in Reality Composer Pro.
+- [Creating animation sequences for auto-play](creating-animation-sequences-for-autoplay.md)
+  Root an animation Sequence at the right entity, then wire it to an Animation Library Component so it plays automatically at runtime.
+- [Building multi-track animation sequences](building-multi-track-animation-sequences.md)
+  Root a Sequence correctly so it shows up as a clip and plays automatically at runtime.
+- [Automating motion path creation with editor-scripting commands](automating-motion-path-creation-with-editor-scripting-commands.md)
+  Build the same multi-track Sequence and Motion Path shown in the Sequencer UI programmatically, by chaining editor-scripting commands together.
 - [Working with the Animation Graph](working-with-the-animation-graph.md)
   Build character animation state machines visually using the Animation Graph in Reality Composer Pro.
+- [Building an advanced Animation Graph](building-an-advanced-animation-graph.md)
+  Drive a character’s locomotion state machine from a Script Graph at runtime.
 - [Defining a behavior with Behavior Trees](defining-a-behavior-with-behavior-trees.md)
   Set up and connect Behavior Tree nodes to drive entity decision-making in your scene.
 

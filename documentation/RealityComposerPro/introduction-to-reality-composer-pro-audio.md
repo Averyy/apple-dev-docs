@@ -91,7 +91,7 @@ Add an **Audio File Group** to define a collection of audio files. When RealityK
 
 You can have as many Audio File Groups in your project as you need. For example, you might define a group for Forest Sounds and another for Musical Instrument Sounds.
 
-1. In the Project Browser, click **+**, then click **Audio File Group**.
+1. In the Project Browser, click **[+]**, then click **Audio** > Audio File Group**.
 2. Type a name for the Audio File Group and press Return.
 3. Click your Audio File Group.
 4. In the Inspector, under **Audio File Asset**, next to **Sound**, click the field and select an audio file from your project.
@@ -122,10 +122,15 @@ Use an **Audio Mix Group** to group sounds together — for example, instruments
 
 > 💡 **Tip**: Place the Audio Mix Group on a top-level entity in your Hierarchy.
 
-1. In the Project Browser, click **Add Asset** > **Add a Mix Group**.
-2. Select the Mix Group.
+1. In the Project Browser, click **[+]** > **Audio** > **Audio Mix Group**.
+2. Type a name for the Mix Group and then press Return.
 3. In the Inspector, under **Sounds**, click **Add Sound** and select a sound.
 4. Repeat the previous step to add more sounds to the Mix Group.
+
+## See Also
+
+- [Optimizing audio playback in Reality Composer Pro](optimizing-audio-playback.md)
+  Balance audio quality against CPU, memory, and power cost when configuring playback.
 
 
 ---

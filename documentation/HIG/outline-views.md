@@ -11,7 +11,7 @@ framework: HIG
 
 An outline view presents hierarchical data in a scrolling list of cells that are organized into columns and rows.
 
-![A stylized representation of a list of folders and images, displayed in an outline view containing four columns: [Name], [Date Modified], [Size], and [Kind]. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/8a05f467a0487937f0de54166a42ef36/components-outline-view-intro~dark%402x.png)
+![A stylized representation of a list of folders and images, displayed in an outline view containing four columns: [Name], [Date Modified], [Size], and [Kind]. The image is tinted red to subtly reflect the red in the original six-color Apple logo.](https://docs-assets.developer.apple.com/published/7248f6d681a34c0e0bbc545d3ae32d2f/components-outline-view-intro~dark%402x.png)
 An outline view includes at least one column that contains primary hierarchical data, such as a set of parent containers and their children. You can add columns, as needed, to display attributes that supplement the primary data; for example, sizes and modification dates. Parent containers have disclosure triangles that expand to reveal their children.
 Finder windows offer an outline view for navigating the file system.
 

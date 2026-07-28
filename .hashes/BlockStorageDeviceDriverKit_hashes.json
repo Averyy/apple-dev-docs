@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-07-24T07:33:15.432494",
+    "last_updated": "2026-07-28T07:51:07.877082",
     "total_pages": 82,
-    "session_id": "2026-07-24T07:33:09.081185"
+    "session_id": "2026-07-28T07:50:58.661161"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/BlockStorageDeviceDriverKit.json": {
       "hash": "02d1fd3d01ce581131c1ec79104e390323c19217585a23d3a28df0dfda33fa88",
-      "last_checked": "2026-07-24T07:33:09.449450",
+      "last_checked": "2026-07-28T07:50:59.161658",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:33:09.081185",
+      "session_id": "2026-07-28T07:50:58.661161",
       "etag": "W/\"2ff1ec0e21c965b61ab25e319c802017\"",
       "file_path": "documentation/BlockStorageDeviceDriverKit/BlockStorageDeviceDriverKit.md"
     },
     "https://developer.apple.com/documentation/BlockStorageDeviceDriverKit": {
       "hash": "02d1fd3d01ce581131c1ec79104e390323c19217585a23d3a28df0dfda33fa88",
-      "last_checked": "2026-07-24T07:33:09.366221",
+      "last_checked": "2026-07-28T07:50:59.037963",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:33:09.081185",
+      "session_id": "2026-07-28T07:50:58.661161",
       "etag": "W/\"2ff1ec0e21c965b61ab25e319c802017\"",
       "file_path": "documentation/BlockStorageDeviceDriverKit/BlockStorageDeviceDriverKit.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/blockstoragedevicedriverkit/iouserblockstoragedevice.json": {
       "hash": "13ed48718f28198af8a4397ae642e94f0c2ed759edfbf4d4c3b82f27f7c201f1",
-      "last_checked": "2026-07-24T07:33:09.859066",
+      "last_checked": "2026-07-28T07:50:59.607217",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:33:09.081185",
+      "session_id": "2026-07-28T07:50:58.661161",
       "etag": "W/\"4ed74be4ea9661ae484ab7aace10ee08\"",
       "file_path": "documentation/BlockStorageDeviceDriverKit/iouserblockstoragedevice.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/blockstoragedevicedriverkit/kmaxdevicestringlength.json": {
       "hash": "c6bf418145bf909f3230a1c8847bebe3f7385d9015eac19ce533911b9b3a8e75",
-      "last_checked": "2026-07-24T07:33:10.171970",
+      "last_checked": "2026-07-28T07:50:59.937966",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:33:09.081185",
+      "session_id": "2026-07-28T07:50:58.661161",
       "etag": "W/\"72c0a8c4bf12ae5bd92e124806c774dd\"",
       "file_path": "documentation/BlockStorageDeviceDriverKit/kmaxdevicestringlength.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/blockstoragedevicedriverkit/iouserblockstoragedevice/init.json": {
       "hash": "f0637d0bbf95690b4434616de7d8704bbe3380813c995bab3cd5d68d789a3e61",
-      "last_checked": "2026-07-24T07:33:10.275465",
+      "last_checked": "2026-07-28T07:51:00.116967",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:33:09.081185",
+      "session_id": "2026-07-28T07:50:58.661161",
       "etag": "W/\"cf389ec3c95e6f9b1b1ff80e96754c23\"",
       "file_path": "documentation/BlockStorageDeviceDriverKit/iouserblockstoragedevice/init.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/blockstoragedevicedriverkit/iouserblockstoragedevice/start.json": {
       "hash": "936c9d06947b457b74a458299dcee69cdcd16593792351f56ce3a7fb89a1bb7d",
-      "last_checked": "2026-07-24T07:33:10.521666",
+      "last_checked": "2026-07-28T07:51:00.461213",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:33:09.081185",
+      "session_id": "2026-07-28T07:50:58.661161",
       "etag": "W/\"7e1dedc186b15da05a61ceb84dd13a54\"",
       "file_path": "documentation/BlockStorageDeviceDriverKit/iouserblockstoragedevice/start.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/blockstoragedevicedriverkit/iouserblockstoragedevice/stop.json": {
       "hash": "4ab791d4f3da0021f10056f79ed588e93afdd9283022e0ea1a0cd1f4f9499f97",
-      "last_checked": "2026-07-24T07:33:10.626128",
+      "last_checked": "2026-07-28T07:51:00.646712",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:33:09.081185",
+      "session_id": "2026-07-28T07:50:58.661161",
       "etag": "W/\"01fb7ced82fd5e2cfc682f102ad7bfb0\"",
       "file_path": "documentation/BlockStorageDeviceDriverKit/iouserblockstoragedevice/stop.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/blockstoragedevicedriverkit/iouserblockstoragedevice/free.json": {
       "hash": "dbc2921056ca89ab318411924590e9192704a208c4e14d726b1c84e31e083aa0",
-      "last_checked": "2026-07-24T07:33:10.682809",
+      "last_checked": "2026-07-28T07:51:00.826344",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:33:09.081185",
+      "session_id": "2026-07-28T07:50:58.661161",
       "etag": "W/\"1d3019def7761cce0bd264fc7c851571\"",
       "file_path": "documentation/BlockStorageDeviceDriverKit/iouserblockstoragedevice/free.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/blockstoragedevicedriverkit/iouserblockstoragedevice/getvendorstring.json": {
       "hash": "9f24498cf11a044c0a33cfd02b89d5d4387dc92dd2bb82ff69830f569901ee6c",
-      "last_checked": "2026-07-24T07:33:10.787558",
+      "last_checked": "2026-07-28T07:51:00.971126",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:33:09.081185",
+      "session_id": "2026-07-28T07:50:58.661161",
       "etag": "W/\"2a43868d53d080047e443b755adfd558\"",
       "file_path": "documentation/BlockStorageDeviceDriverKit/iouserblockstoragedevice/getvendorstring.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/blockstoragedevicedriverkit/iouserblockstoragedevice/getproductstring.json": {
       "hash": "1c9dd3ac5c1b35b8057c239eae0c548e32a02e3e3f9e7c74c68ffff64afa2545",
-      "last_checked": "2026-07-24T07:33:11.049116",
+      "last_checked": "2026-07-28T07:51:01.171174",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:33:09.081185",
+      "session_id": "2026-07-28T07:50:58.661161",
       "etag": "W/\"5220b5cb22f3a5681e2e9f5599acf0da\"",
       "file_path": "documentation/BlockStorageDeviceDriverKit/iouserblockstoragedevice/getproductstring.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/blockstoragedevicedriverkit/iouserblockstoragedevice/getrevisionstring.json": {
       "hash": "1316a0d7b2380c99930f666586effa276f7d70ff9fa7f756846098e3c8ff029f",
-      "last_checked": "2026-07-24T07:33:11.118378",
+      "last_checked": "2026-07-28T07:51:01.372469",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:33:09.081185",
+      "session_id": "2026-07-28T07:50:58.661161",
       "etag": "W/\"abf39808402ac6e455d2eb0b0d3b286d\"",
       "file_path": "documentation/BlockStorageDeviceDriverKit/iouserblockstoragedevice/getrevisionstring.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/blockstoragedevicedriverkit/iouserblockstoragedevice/getadditionalinfostring.json": {
       "hash": "0dad309d414bc71adae261eec35ca6fd384ebd6ab79bd97bb2dba63efa43f81b",
-      "last_checked": "2026-07-24T07:33:11.222745",
+      "last_checked": "2026-07-28T07:51:01.714070",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:33:09.081185",
+      "session_id": "2026-07-28T07:50:58.661161",
       "etag": "W/\"19af089e1ea15ea20c3ae261d966527d\"",
       "file_path": "documentation/BlockStorageDeviceDriverKit/iouserblockstoragedevice/getadditionalinfostring.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/blockstoragedevicedriverkit/devicestring.json": {
       "hash": "62c04116a4d78f59d3bec62b56f55cdf64553e43ce6d804a0a39690172c1b719",
-      "last_checked": "2026-07-24T07:33:11.474755",
+      "last_checked": "2026-07-28T07:51:02.036340",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:33:09.081185",
+      "session_id": "2026-07-28T07:50:58.661161",
       "etag": "W/\"e9f88a33e7a4e8da0e2dc42475eb167b\"",
       "file_path": "documentation/BlockStorageDeviceDriverKit/devicestring.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/blockstoragedevicedriverkit/iouserblockstoragedevice/getdeviceparams.json": {
       "hash": "8184d6e160b20fae6e92ab96dcd2c75e5e57a687651a24b82d7a13394d2f2631",
-      "last_checked": "2026-07-24T07:33:11.707098",
+      "last_checked": "2026-07-28T07:51:02.236504",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:33:09.081185",
+      "session_id": "2026-07-28T07:50:58.661161",
       "etag": "W/\"da84910fd5112a3e2eb7c775b2153d54\"",
       "file_path": "documentation/BlockStorageDeviceDriverKit/iouserblockstoragedevice/getdeviceparams.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/blockstoragedevicedriverkit/deviceparams.json": {
       "hash": "02f63350ee56e566dd704722446446343f216c7e6a34d1eb9e9ebc581114b7b9",
-      "last_checked": "2026-07-24T07:33:11.818626",
+      "last_checked": "2026-07-28T07:51:02.571104",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:33:09.081185",
+      "session_id": "2026-07-28T07:50:58.661161",
       "etag": "W/\"3b3949ebbd38677953f033ad150ab303\"",
       "file_path": "documentation/BlockStorageDeviceDriverKit/deviceparams.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/blockstoragedevicedriverkit/iouserblockstoragedevice/reportejectability.json": {
       "hash": "5fb9b127a8d27d72c240763f1a7b9e27cf56b89a145479e5d9f83ffffc52d795",
-      "last_checked": "2026-07-24T07:33:11.917733",
+      "last_checked": "2026-07-28T07:51:02.779280",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:33:09.081185",
+      "session_id": "2026-07-28T07:50:58.661161",
       "etag": "W/\"72806dfd3dfd91796706585e2d412934\"",
       "file_path": "documentation/BlockStorageDeviceDriverKit/iouserblockstoragedevice/reportejectability.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/blockstoragedevicedriverkit/iouserblockstoragedevice/reportremovability.json": {
       "hash": "30c2af8679c30d09becd1a4a8ee589415266c129af5988cfc9c42947e51da457",
-      "last_checked": "2026-07-24T07:33:11.975328",
+      "last_checked": "2026-07-28T07:51:02.951547",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:33:09.081185",
+      "session_id": "2026-07-28T07:50:58.661161",
       "etag": "W/\"2cf1cc7cb0fd47daa4f4eb884dc982c5\"",
       "file_path": "documentation/BlockStorageDeviceDriverKit/iouserblockstoragedevice/reportremovability.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/blockstoragedevicedriverkit/iouserblockstoragedevice/reportwriteprotection.json": {
       "hash": "833734a5482ce86357e0f8b324fcdda5565ce1a7e811ddde1a509a71c738d126",
-      "last_checked": "2026-07-24T07:33:12.236409",
+      "last_checked": "2026-07-28T07:51:03.282579",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:33:09.081185",
+      "session_id": "2026-07-28T07:50:58.661161",
       "etag": "W/\"f8a13731e7cba2ab838c0461c43ac92e\"",
       "file_path": "documentation/BlockStorageDeviceDriverKit/iouserblockstoragedevice/reportwriteprotection.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/blockstoragedevicedriverkit/iouserblockstoragedevice/doasyncunmap.json": {
       "hash": "a9cbb971e239b3bbdb2a25d1447ab5bcb4d1aff2fffdd69b2c74dafd6552d6f4",
-      "last_checked": "2026-07-24T07:33:12.322673",
+      "last_checked": "2026-07-28T07:51:03.467203",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:33:09.081185",
+      "session_id": "2026-07-28T07:50:58.661161",
       "etag": "W/\"0d209cadef6841d2893411648cc42519\"",
       "file_path": "documentation/BlockStorageDeviceDriverKit/iouserblockstoragedevice/doasyncunmap.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/blockstoragedevicedriverkit/blockrange.json": {
       "hash": "97f36ecea9745e9c74c1c2f2a8ce95386526def995f335a7b8601af7a832d78a",
-      "last_checked": "2026-07-24T07:33:12.425061",
+      "last_checked": "2026-07-28T07:51:03.639592",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:33:09.081185",
+      "session_id": "2026-07-28T07:50:58.661161",
       "etag": "W/\"ba0ab80aa26066283b1333437ff008da\"",
       "file_path": "documentation/BlockStorageDeviceDriverKit/blockrange.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/blockstoragedevicedriverkit/iouserblockstoragedevice/doasyncsynchronize.json": {
       "hash": "9fa1dfb6cbe15402adc631902c71bde61db27ac37163cf9d4ea2354b789aaf53",
-      "last_checked": "2026-07-24T07:33:12.659547",
+      "last_checked": "2026-07-28T07:51:03.963470",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:33:09.081185",
+      "session_id": "2026-07-28T07:50:58.661161",
       "etag": "W/\"d41153706aa192c60bfca03c44d7ae26\"",
       "file_path": "documentation/BlockStorageDeviceDriverKit/iouserblockstoragedevice/doasyncsynchronize.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/blockstoragedevicedriverkit/iouserblockstoragedevice/doasyncejectmedia.json": {
       "hash": "9463d399dddd174313d0ffd0e9b69b7e2c05be9135862853d52883bf85cd1c77",
-      "last_checked": "2026-07-24T07:33:12.798962",
+      "last_checked": "2026-07-28T07:51:04.156463",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:33:09.081185",
+      "session_id": "2026-07-28T07:50:58.661161",
       "etag": "W/\"0ab67ebf92384be71fdfca7cc13b6c89\"",
       "file_path": "documentation/BlockStorageDeviceDriverKit/iouserblockstoragedevice/doasyncejectmedia.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/blockstoragedevicedriverkit/iouserblockstoragedevice/complete.json": {
       "hash": "60c3fc22d91f55a197634076f3c2ab53d18a8a297c205e43fb34279d8284d96f",
-      "last_checked": "2026-07-24T07:33:12.977786",
+      "last_checked": "2026-07-28T07:51:04.348737",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:33:09.081185",
+      "session_id": "2026-07-28T07:50:58.661161",
       "etag": "W/\"d156547ed68319d430e5f23e0d78f2a3\"",
       "file_path": "documentation/BlockStorageDeviceDriverKit/iouserblockstoragedevice/complete.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/blockstoragedevicedriverkit/iouserblockstoragedevice/doasyncreadwrite.json": {
       "hash": "b3d48e4058a94fd58c8f78059090fdb4f96d9a1daa18c09f61ce38005b7f768c",
-      "last_checked": "2026-07-24T07:33:13.232223",
+      "last_checked": "2026-07-28T07:51:04.537147",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:33:09.081185",
+      "session_id": "2026-07-28T07:50:58.661161",
       "etag": "W/\"e6eb1073ab1e39de99db6c032535fb60\"",
       "file_path": "documentation/BlockStorageDeviceDriverKit/iouserblockstoragedevice/doasyncreadwrite.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/blockstoragedevicedriverkit/iouserstorageoptions.json": {
       "hash": "7dd1bd0af7d3122a53b9226a34cd7f8afc8d9f0646264bdedcc36479cfbea30b",
-      "last_checked": "2026-07-24T07:33:13.352849",
+      "last_checked": "2026-07-28T07:51:04.734602",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:33:09.081185",
+      "session_id": "2026-07-28T07:50:58.661161",
       "etag": "W/\"ec9e53feb23584092fce7adbdbd510e1\"",
       "file_path": "documentation/BlockStorageDeviceDriverKit/iouserstorageoptions.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/blockstoragedevicedriverkit/iouserblockstoragedevice/completeio.json": {
       "hash": "d6668c6c4be229b971be7202e3eb48f6ada4c29685def48955b7f5b0dcbf3eae",
-      "last_checked": "2026-07-24T07:33:13.464932",
+      "last_checked": "2026-07-28T07:51:04.928549",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:33:09.081185",
+      "session_id": "2026-07-28T07:50:58.661161",
       "etag": "W/\"d49425b493bdceed0ff4929467f5d9c5\"",
       "file_path": "documentation/BlockStorageDeviceDriverKit/iouserblockstoragedevice/completeio.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/blockstoragedevicedriverkit/iouserblockstoragedevice/doasyncunmappriv.json": {
       "hash": "4906851acb277e509e5cbd43ae6b4ce18438f367a94b170051e3c79bf55857b3",
-      "last_checked": "2026-07-24T07:33:13.565569",
+      "last_checked": "2026-07-28T07:51:05.121615",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:33:09.081185",
+      "session_id": "2026-07-28T07:50:58.661161",
       "etag": "W/\"ff1c99d941c3256825061d94b205e275\"",
       "file_path": "documentation/BlockStorageDeviceDriverKit/iouserblockstoragedevice/doasyncunmappriv.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/blockstoragedevicedriverkit/iouserblockstoragedevice/registerdext.json": {
       "hash": "a7360b6f37200ccb49dffbb6122ea09797c76a52c96ed7e45bb27bb39182bd7a",
-      "last_checked": "2026-07-24T07:33:13.812508",
+      "last_checked": "2026-07-28T07:51:05.443495",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:33:09.081185",
+      "session_id": "2026-07-28T07:50:58.661161",
       "etag": "W/\"d60b11d1e91475f287bce04f31ee9c64\"",
       "file_path": "documentation/BlockStorageDeviceDriverKit/iouserblockstoragedevice/registerdext.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/blockstoragedevicedriverkit/devicestring/data.json": {
       "hash": "cc9292e5c001e09b96137dd8cae8e3c19740dfd1de88044dacead4bb88561b3f",
-      "last_checked": "2026-07-24T07:33:13.916970",
+      "last_checked": "2026-07-28T07:51:05.621499",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:33:09.081185",
+      "session_id": "2026-07-28T07:50:58.661161",
       "etag": "W/\"e895e8c7486067d256a212ef7b5899ff\"",
       "file_path": "documentation/BlockStorageDeviceDriverKit/devicestring/data.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/blockstoragedevicedriverkit/deviceparams/numofblocks.json": {
       "hash": "90bf7779f3c229d0749f87e5ec945894b379cc4e64d1879bc5e6b6b5ddcfd182",
-      "last_checked": "2026-07-24T07:33:14.020594",
+      "last_checked": "2026-07-28T07:51:05.765279",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:33:09.081185",
+      "session_id": "2026-07-28T07:50:58.661161",
       "etag": "W/\"62ace39d9eb441e20086eab1faf4544a\"",
       "file_path": "documentation/BlockStorageDeviceDriverKit/deviceparams/numofblocks.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/blockstoragedevicedriverkit/deviceparams/blocksize.json": {
       "hash": "951688e8ea50a8540cffec8dca319be63fb86d052903b7bb2e4ba7abfec64b38",
-      "last_checked": "2026-07-24T07:33:14.129873",
+      "last_checked": "2026-07-28T07:51:05.963607",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:33:09.081185",
+      "session_id": "2026-07-28T07:50:58.661161",
       "etag": "W/\"6d2db8c49a94298f6152028be1dfedf1\"",
       "file_path": "documentation/BlockStorageDeviceDriverKit/deviceparams/blocksize.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/blockstoragedevicedriverkit/deviceparams/maxiosize.json": {
       "hash": "b65f4836093b1c5fdb4fd19707bcdbbcd9724bfff5cdee511629ff0fe049cd3e",
-      "last_checked": "2026-07-24T07:33:14.191472",
+      "last_checked": "2026-07-28T07:51:06.107786",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:33:09.081185",
+      "session_id": "2026-07-28T07:50:58.661161",
       "etag": "W/\"3d5d2a83f32162fad0e1a764b6839b3c\"",
       "file_path": "documentation/BlockStorageDeviceDriverKit/deviceparams/maxiosize.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/blockstoragedevicedriverkit/deviceparams/numofoutstandingios.json": {
       "hash": "59b1b33c940ce4a465dc358086674b9d65b22ba3697408c19dc130c7dd9a570b",
-      "last_checked": "2026-07-24T07:33:14.451191",
+      "last_checked": "2026-07-28T07:51:06.303173",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:33:09.081185",
+      "session_id": "2026-07-28T07:50:58.661161",
       "etag": "W/\"3f2536104f196006372712272c8d2a03\"",
       "file_path": "documentation/BlockStorageDeviceDriverKit/deviceparams/numofoutstandingios.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/blockstoragedevicedriverkit/deviceparams/maxnumofunmapregions.json": {
       "hash": "8d05c414aebae8dd1ed378677241f33e6c711df18ad443712079d009cca4377e",
-      "last_checked": "2026-07-24T07:33:14.692091",
+      "last_checked": "2026-07-28T07:51:06.486068",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:33:09.081185",
+      "session_id": "2026-07-28T07:50:58.661161",
       "etag": "W/\"4babbcac8972566072f6816a2a0d2b08\"",
       "file_path": "documentation/BlockStorageDeviceDriverKit/deviceparams/maxnumofunmapregions.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/blockstoragedevicedriverkit/deviceparams/minsegmentalignment.json": {
       "hash": "43048c1ff1799841e68b0328974f797d8d8a27f2c534e9389c9e4a6b9eec200b",
-      "last_checked": "2026-07-24T07:33:14.795169",
+      "last_checked": "2026-07-28T07:51:06.632707",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:33:09.081185",
+      "session_id": "2026-07-28T07:50:58.661161",
       "etag": "W/\"ff71d11737b0471db02e7ddd30f3a6ed\"",
       "file_path": "documentation/BlockStorageDeviceDriverKit/deviceparams/minsegmentalignment.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/blockstoragedevicedriverkit/deviceparams/numofaddressbits.json": {
       "hash": "0061b0cacd0877a5349292f6576ce4d84b2cafbc22d2c99d62769cf0f933b88f",
-      "last_checked": "2026-07-24T07:33:14.900353",
+      "last_checked": "2026-07-28T07:51:06.815435",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:33:09.081185",
+      "session_id": "2026-07-28T07:50:58.661161",
       "etag": "W/\"34aa01557a9d2468937c1032fd51d22e\"",
       "file_path": "documentation/BlockStorageDeviceDriverKit/deviceparams/numofaddressbits.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/blockstoragedevicedriverkit/deviceparams/isunmapsupported.json": {
       "hash": "6003dd74054b8c149f220dfe86618759af7cd69ce974ffa371f6f5bacc04d0c6",
-      "last_checked": "2026-07-24T07:33:15.007124",
+      "last_checked": "2026-07-28T07:51:07.017095",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:33:09.081185",
+      "session_id": "2026-07-28T07:50:58.661161",
       "etag": "W/\"c33e7138c0a6a1c7ebe080d23bc84d91\"",
       "file_path": "documentation/BlockStorageDeviceDriverKit/deviceparams/isunmapsupported.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/blockstoragedevicedriverkit/deviceparams/isfuasupported.json": {
       "hash": "5eebbb206ebf60b1aed19eccb49a32917709385c51aad7671c1ee6ead9582740",
-      "last_checked": "2026-07-24T07:33:15.064449",
+      "last_checked": "2026-07-28T07:51:07.167526",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:33:09.081185",
+      "session_id": "2026-07-28T07:50:58.661161",
       "etag": "W/\"11b25a3063d5fbb4517e54d58c66edbe\"",
       "file_path": "documentation/BlockStorageDeviceDriverKit/deviceparams/isfuasupported.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/blockstoragedevicedriverkit/blockrange/startblock.json": {
       "hash": "36b1dfa46989e31a630630333aae9491cea5df2b4de76072180396896fab3e63",
-      "last_checked": "2026-07-24T07:33:15.116516",
+      "last_checked": "2026-07-28T07:51:07.298502",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:33:09.081185",
+      "session_id": "2026-07-28T07:50:58.661161",
       "etag": "W/\"115b7faa807833ced06c586a820ae92a\"",
       "file_path": "documentation/BlockStorageDeviceDriverKit/blockrange/startblock.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/blockstoragedevicedriverkit/blockrange/numofblocks.json": {
       "hash": "bb2b640ce01860177466bd341a6f3cabc3f12145ecd0db6c0c4a76722042f405",
-      "last_checked": "2026-07-24T07:33:15.221492",
+      "last_checked": "2026-07-28T07:51:07.474713",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:33:09.081185",
+      "session_id": "2026-07-28T07:50:58.661161",
       "etag": "W/\"a381cbbc9fbea68698eda851b6f819e1\"",
       "file_path": "documentation/BlockStorageDeviceDriverKit/blockrange/numofblocks.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/blockstoragedevicedriverkit/kiouserstorageoptionnone.json": {
       "hash": "4573786e69843646bc1af9c43573981b6aeab9c82022bcb5cceab93f78837edb",
-      "last_checked": "2026-07-24T07:33:15.326460",
+      "last_checked": "2026-07-28T07:51:07.607195",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:33:09.081185",
+      "session_id": "2026-07-28T07:50:58.661161",
       "etag": "W/\"9f9f174a4056e93fe8aa9ede07f8ffdd\"",
       "file_path": "documentation/BlockStorageDeviceDriverKit/kiouserstorageoptionnone.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/blockstoragedevicedriverkit/kiouserstorageoptionforceunitaccess.json": {
       "hash": "90da6861e8198af3e4c7dd1bda0022851b08195c463bdfcb04f3223bafbd70c5",
-      "last_checked": "2026-07-24T07:33:15.430669",
+      "last_checked": "2026-07-28T07:51:07.806105",
       "status": "unchanged",
-      "session_id": "2026-07-24T07:33:09.081185",
+      "session_id": "2026-07-28T07:50:58.661161",
       "etag": "W/\"11300fdbde16a3b8f276ce3615d8c9e6\"",
       "file_path": "documentation/BlockStorageDeviceDriverKit/kiouserstorageoptionforceunitaccess.md"
     },

@@ -129,9 +129,9 @@ Your app can display still images or streaming video from a connected HomeKit IP
 
 ## Using HomeKit icons
 Use the HomeKit icon in setup or instructional communications related to HomeKit technology.
-![The HomeKit icon.](https://docs-assets.developer.apple.com/published/27e3a359886324f09ec2c2e763c799bf/homekit-glyph~dark%402x.png)
+![The HomeKit icon.](https://docs-assets.developer.apple.com/published/70009bb59bba7bed18b7d7c76763ce4c/homekit-glyph~dark%402x.png)
 In addition, you can use the Apple Home app icon when referencing the Apple Home app or in a button that opens the Apple Home app [product page](https://itunes.apple.com/us/app/home/id1110145103?mt=8) in the App Store.
-![The Apple Home app icon, which includes a stylized house with a chimney on the right side of its roof, depicted in graduated shades of orange.](https://docs-assets.developer.apple.com/published/d11d1468b8d42e0f25b29dd9ecc1348a/homeapp-icon~dark%402x.png)
+![The Apple Home app icon, which includes a stylized house with a chimney on the right side of its roof, depicted in graduated shades of orange.](https://docs-assets.developer.apple.com/published/13095cecc9c6c585c05627f6506d448c/homeapp-icon~dark%402x.png)
 **Use only Apple-provided icons.** Don’t create your own HomeKit or Home app icon design or attempt to mimic the Apple-provided designs. Download HomeKit icons in [Resources](https://developer.apple.com/design/resources/).
 
 ### Styles
@@ -139,32 +139,32 @@ You have several options for displaying the HomeKit icon.
 
 #### Black HomeKit icon
 Use the HomeKit icon on white or light backgrounds when other technology icons appear in black.
-![A black outlined HomeKit icon.](https://docs-assets.developer.apple.com/published/739a8ed96d427f7a1e8eb680feab203c/homekit-black-icon-set%402x.png)
+![A black outlined HomeKit icon.](https://docs-assets.developer.apple.com/published/734a593ddf666fd5eaddc0d9abbdd403/homekit-black-icon-set%402x.png)
 
 #### White HomeKit icon
 Use the HomeKit icon on black or dark backgrounds when other technology icons appear in white.
-![A white outlined HomeKit icon.](https://docs-assets.developer.apple.com/published/86f0a2b6f128e579b0b2400f3e8c7fa7/homekit-white-icon-set%402x.png)
+![A white outlined HomeKit icon.](https://docs-assets.developer.apple.com/published/1f5d7481c18daf8e688ec7d6e4bd4b9f/homekit-white-icon-set%402x.png)
 
 #### Custom color HomeKit icon
 Use a custom color when other technology icons appear in the same color.
-![A blue outlined HomeKit icon.](https://docs-assets.developer.apple.com/published/623408724a3234aff0bcf6d4a11f1378/homekit-custom-color-icon-set~dark%402x.png)
+![A blue outlined HomeKit icon.](https://docs-assets.developer.apple.com/published/7a732c7510863b569cb59a567ad90de6/homekit-custom-color-icon-set~dark%402x.png)
 **Position the HomeKit icon consistently with other technology icons.** When other technology icons are contained within shapes, treat the HomeKit icon in the same manner.
-![An illustration of three app icons listed in a horizontal row. Text above the icons reads 'Integrate with'. The leftmost app icon is the HomeKit icon in a circle, above the text 'Apple HomeKit'. The remaining two app icons contain squares with dashed frames witihn circles, above text that reads 'Technology'.](https://docs-assets.developer.apple.com/published/0de54ea07f0d97f684472d1de42029eb/homekit-settings~dark%402x.png)
+![An illustration of three app icons listed in a horizontal row. Text above the icons reads 'Integrate with'. The leftmost app icon is the HomeKit icon in a circle, above the text 'Apple HomeKit'. The remaining two app icons contain squares with dashed frames witihn circles, above text that reads 'Technology'.](https://docs-assets.developer.apple.com/published/25bd9d4560d61258803df88dd5d5748a/homekit-settings~dark%402x.png)
 **Use the HomeKit icon noninteractively.** Don’t use the icon and the name *HomeKit* in custom interactive elements or buttons. You can use the Apple Home app icon to open the app’s product page in the App Store.
 ![An illustration of an incorrectly used HomeKit icon in a circular button styled with a chrome appearance.](https://docs-assets.developer.apple.com/published/08c6b1888cd04ea864bfe8d037eb1814/homekit-donot1%402x.png)
 ![An X in a circle to indicate incorrect usage.](https://docs-assets.developer.apple.com/published/209f6f0fc8ad99d9bf59e12d82d06584/crossout%402x.png)
-![An illustration of a button incorrectly titled 'HomeKit' with a custom gradient background.](https://docs-assets.developer.apple.com/published/0c8ae4ebd1f0d755d78391a46602eda0/homekit-donot2%402x.png)
+![An illustration of a button incorrectly titled 'HomeKit' with a custom gradient background.](https://docs-assets.developer.apple.com/published/be2601b345959282abc8eb059d1fa20b/homekit-donot2%402x.png)
 ![An X in a circle to indicate incorrect usage.](https://docs-assets.developer.apple.com/published/209f6f0fc8ad99d9bf59e12d82d06584/crossout%402x.png)
 **Don’t use the HomeKit icon within text or as a replacement for the word HomeKit.** See [Referring to HomeKit](homekit.md#Referring-to-HomeKit) to learn how to properly reference HomeKit in text.
-![The first in a series of images showing examples of the HomeKit icon when used in text. In this example, the icon correctly appears first in the line, and then the text 'Lights set with HomeKit.'](https://docs-assets.developer.apple.com/published/1538713bf74f31076e10695d04fc6eb1/homekit-lights-right~dark%402x.png)
+![The first in a series of images showing examples of the HomeKit icon when used in text. In this example, the icon correctly appears first in the line, and then the text 'Lights set with HomeKit.'](https://docs-assets.developer.apple.com/published/3d8a8157c80e4720cdc5e0ec2cac6218/homekit-lights-right~dark%402x.png)
 ![A checkmark in a circle to indicate correct usage.](https://docs-assets.developer.apple.com/published/88662da92338267bb64cd2275c84e484/checkmark%402x.png)
-![The second in a series of images showing examples of the HomeKit icon when used in text. This example depicts the icon incorrectly positioned after the word 'with' in the text 'Lights set with HomeKit.'](https://docs-assets.developer.apple.com/published/1769ee798f5e9db49af8536b7c1191df/homekit-lights-wrong1~dark%402x.png)
+![The second in a series of images showing examples of the HomeKit icon when used in text. This example depicts the icon incorrectly positioned after the word 'with' in the text 'Lights set with HomeKit.'](https://docs-assets.developer.apple.com/published/0be7c9e98f42e01b1d825834757776da/homekit-lights-wrong1~dark%402x.png)
 ![An X in a circle to indicate incorrect usage.](https://docs-assets.developer.apple.com/published/209f6f0fc8ad99d9bf59e12d82d06584/crossout%402x.png)
-![The third in a series of images showing examples of the HomeKit icon when used in text. This example depicts the icon incorrectly positioned at the end of the line of text that reads 'Lights set with'.](https://docs-assets.developer.apple.com/published/0194014764d9388a3651824e71c1422c/homekit-lights-wrong2~dark%402x.png)
+![The third in a series of images showing examples of the HomeKit icon when used in text. This example depicts the icon incorrectly positioned at the end of the line of text that reads 'Lights set with'.](https://docs-assets.developer.apple.com/published/48b2c3873a7018df8c9d1104b101c522/homekit-lights-wrong2~dark%402x.png)
 ![An X in a circle to indicate incorrect usage.](https://docs-assets.developer.apple.com/published/209f6f0fc8ad99d9bf59e12d82d06584/crossout%402x.png)
 **Pair the icon with the name *HomeKit* correctly.** You can show the name below or beside the icon if other technologies are referenced in this way. Use the same font that’s used on the rest of your layout. For related guidance, see [Referring to HomeKit](homekit.md#Referring-to-HomeKit).
-![An illustration of a view containing setup information within an app. The top of the view includes the title 'Setup' above a divider line. Three rows with icons, text, and disclosure buttons for displaying additional information appear below the divider. The first row includes the HomeKit icon followed by the word 'HomeKit'. The other  two rows display dashed squares representing other app icons, each followed by the word 'Name'.](https://docs-assets.developer.apple.com/published/27b2f7b37c63904eeb3a501062699ea7/homekit-setup~dark%402x.png)
-![An illustration of a view containing a grid of four app buttons. The top of the view includes the title 'Apps' above a divider line. Two rows of buttons and labels appear below the divider. The first button in the first row includes the Apple Home app icon, and appears above the text 'Apple Home'. The remaining buttons include dashed squares representing other app icons, and each appears above the text 'App Name'.](https://docs-assets.developer.apple.com/published/5571fd929961daf7201a831a5570578e/homekit-apps~dark%402x.png)
+![An illustration of a view containing setup information within an app. The top of the view includes the title 'Setup' above a divider line. Three rows with icons, text, and disclosure buttons for displaying additional information appear below the divider. The first row includes the HomeKit icon followed by the word 'HomeKit'. The other  two rows display dashed squares representing other app icons, each followed by the word 'Name'.](https://docs-assets.developer.apple.com/published/aa711a031965a47da5df2b0b491127b6/homekit-setup~dark%402x.png)
+![An illustration of a view containing a grid of four app buttons. The top of the view includes the title 'Apps' above a divider line. Two rows of buttons and labels appear below the divider. The first button in the first row includes the Apple Home app icon, and appears above the text 'Apple Home'. The remaining buttons include dashed squares representing other app icons, and each appears above the text 'App Name'.](https://docs-assets.developer.apple.com/published/4ce4a64adadc0e09090c5c3ea797fc48/homekit-apps~dark%402x.png)
 
 ## Referring to HomeKit
 **Emphasize your app over HomeKit.** Make references to HomeKit or Apple Home less prominent than your app name or main identity.
