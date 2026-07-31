@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-07-28T07:50:50.520391",
+    "last_updated": "2026-07-31T07:44:20.263255",
     "total_pages": 126,
-    "session_id": "2026-07-28T07:50:37.566928"
+    "session_id": "2026-07-31T07:44:09.302116"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/WalletPasses.json": {
       "hash": "7169c7343c8fcdddbd3dd5a5fba8af622ac5a85662eb8a3d6e6dd924358596ff",
-      "last_checked": "2026-07-28T07:50:37.880839",
+      "last_checked": "2026-07-31T07:44:09.693164",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:37.566928",
+      "session_id": "2026-07-31T07:44:09.302116",
       "etag": "W/\"9f76ad64de04aff00b73d0e943385083\"",
       "file_path": "documentation/WalletPasses/WalletPasses.md"
     },
     "https://developer.apple.com/documentation/WalletPasses": {
       "hash": "7169c7343c8fcdddbd3dd5a5fba8af622ac5a85662eb8a3d6e6dd924358596ff",
-      "last_checked": "2026-07-28T07:50:37.796444",
+      "last_checked": "2026-07-31T07:44:09.594061",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:37.566928",
+      "session_id": "2026-07-31T07:44:09.302116",
       "etag": "W/\"9f76ad64de04aff00b73d0e943385083\"",
       "file_path": "documentation/WalletPasses/WalletPasses.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/walletpasses/creating-the-source-for-a-pass.json": {
       "hash": "ad679963731b1fb24c90378482515926b2665aab2394d0a1501ae92713b1a6bc",
-      "last_checked": "2026-07-28T07:50:38.419281",
+      "last_checked": "2026-07-31T07:44:10.298497",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:37.566928",
+      "session_id": "2026-07-31T07:44:09.302116",
       "etag": "W/\"3648bc534aa3de8638c309fb78577032\"",
       "file_path": "documentation/WalletPasses/creating-the-source-for-a-pass.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletpasses/building-a-pass.json": {
       "hash": "320882afafd43a2f3ee86dd2796360891d6d1e31d0813bc7f733762508860f81",
-      "last_checked": "2026-07-28T07:50:38.753371",
+      "last_checked": "2026-07-31T07:44:10.397593",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:37.566928",
+      "session_id": "2026-07-31T07:44:09.302116",
       "etag": "W/\"967312bff9dbaeba3724cb43b786fbc9\"",
       "file_path": "documentation/WalletPasses/building-a-pass.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletpasses/distributing-and-updating-a-pass.json": {
       "hash": "6ecd17b0bb0fb44d2501ef285087fc353146578e4b025a80d648c6f3cd68ebef",
-      "last_checked": "2026-07-28T07:50:39.280274",
+      "last_checked": "2026-07-31T07:44:10.837694",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:37.566928",
+      "session_id": "2026-07-31T07:44:09.302116",
       "etag": "W/\"cb31b4d1d3a764e744cd58ce1dd55687\"",
       "file_path": "documentation/WalletPasses/distributing-and-updating-a-pass.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletpasses/pass.json": {
       "hash": "89088ed0ffba75fcb115589ceaf91900079f7adc884238c4f6a91fc05720dc9d",
-      "last_checked": "2026-07-28T07:50:39.486616",
+      "last_checked": "2026-07-31T07:44:11.127187",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:37.566928",
+      "session_id": "2026-07-31T07:44:09.302116",
       "etag": "W/\"4996b1837aad5a883689cec3d5fc060a\"",
       "file_path": "documentation/WalletPasses/pass.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletpasses/upcomingpassinformationentry.json": {
       "hash": "b17e1a57d7d720cd502f0f197f363575513408d2d09296400f8fcd79beb15d47",
-      "last_checked": "2026-07-28T07:50:41.375299",
+      "last_checked": "2026-07-31T07:44:12.925014",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:37.566928",
+      "session_id": "2026-07-31T07:44:09.302116",
       "etag": "W/\"ce9bd2b9fc34995ca5d57019e7d0ba8a\"",
       "file_path": "documentation/WalletPasses/upcomingpassinformationentry.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletpasses/upcomingpassinformationentrytype.json": {
       "hash": "665e5be47003786644b84fb893ebb93f9857434d6fe0d47d601f9e5ed464e19d",
-      "last_checked": "2026-07-28T07:50:41.696931",
+      "last_checked": "2026-07-31T07:44:13.059248",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:37.566928",
+      "session_id": "2026-07-31T07:44:09.302116",
       "etag": "W/\"56dbd9005bbc901f1ee02598ae22e410\"",
       "file_path": "documentation/WalletPasses/upcomingpassinformationentrytype.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletpasses/adding-a-web-service-to-update-passes.json": {
       "hash": "e6105f2ef35eeb169d3e7aade70f1502fabfbd12c8b034177863df0074f32c01",
-      "last_checked": "2026-07-28T07:50:42.965163",
+      "last_checked": "2026-07-31T07:44:13.771904",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:37.566928",
+      "session_id": "2026-07-31T07:44:09.302116",
       "etag": "W/\"ec9d3e23c0ca8a79ab6c255fa9a92211\"",
       "file_path": "documentation/WalletPasses/adding-a-web-service-to-update-passes.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletpasses/register-a-pass-for-update-notifications.json": {
       "hash": "b4a71cb5713e08708b2102f1f38f16d75c40bd6254cec2638d4f242cfe6eec1d",
-      "last_checked": "2026-07-28T07:50:43.303693",
+      "last_checked": "2026-07-31T07:44:13.942640",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:37.566928",
+      "session_id": "2026-07-31T07:44:09.302116",
       "etag": "W/\"35857652bfaa4439118a84986d81cb39\"",
       "file_path": "documentation/WalletPasses/register-a-pass-for-update-notifications.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletpasses/get-the-list-of-updatable-passes.json": {
       "hash": "4b88985b066c29d03ce504cba22f91032a59c8d1a6a705ac71bb15811295b3aa",
-      "last_checked": "2026-07-28T07:50:43.445730",
+      "last_checked": "2026-07-31T07:44:14.121038",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:37.566928",
+      "session_id": "2026-07-31T07:44:09.302116",
       "etag": "W/\"054d24931d263f8cf111ee2a602dfe4e\"",
       "file_path": "documentation/WalletPasses/get-the-list-of-updatable-passes.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletpasses/send-an-updated-pass.json": {
       "hash": "73eb412fdab9bbc43437b27cd9a7a4f02a7e2a5f3ec9dea0136597827312c263",
-      "last_checked": "2026-07-28T07:50:43.776724",
+      "last_checked": "2026-07-31T07:44:14.248331",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:37.566928",
+      "session_id": "2026-07-31T07:44:09.302116",
       "etag": "W/\"f502688705451a2f1462f42c6d1e2846\"",
       "file_path": "documentation/WalletPasses/send-an-updated-pass.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletpasses/unregister-a-pass-for-update-notifications.json": {
       "hash": "2a6e9d1c105a175b3ef361068d82a5d19098b9018d2c7967aea8f12c11f00678",
-      "last_checked": "2026-07-28T07:50:43.921460",
+      "last_checked": "2026-07-31T07:44:14.418356",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:37.566928",
+      "session_id": "2026-07-31T07:44:09.302116",
       "etag": "W/\"b038a4d7ec914d6b3ed360639baaf153\"",
       "file_path": "documentation/WalletPasses/unregister-a-pass-for-update-notifications.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletpasses/log-a-message.json": {
       "hash": "e3fc9ed4c83927cbd26635145c6b31ed4e45a20a8b287bf8c3ceb515ca3e3c34",
-      "last_checked": "2026-07-28T07:50:44.058769",
+      "last_checked": "2026-07-31T07:44:14.576958",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:37.566928",
+      "session_id": "2026-07-31T07:44:09.302116",
       "etag": "W/\"77d038310c55914b0bcf2f4993bd3320\"",
       "file_path": "documentation/WalletPasses/log-a-message.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletpasses/pushtoken.json": {
       "hash": "34b4a7bec3161fe0879d3c3c690ad03828c2830228269ebc2e50fbf427eabd3f",
-      "last_checked": "2026-07-28T07:50:44.252183",
+      "last_checked": "2026-07-31T07:44:14.747684",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:37.566928",
+      "session_id": "2026-07-31T07:44:09.302116",
       "etag": "W/\"9307db0341df92a8ad0c48b73835bf8e\"",
       "file_path": "documentation/WalletPasses/pushtoken.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletpasses/serialnumbers.json": {
       "hash": "9ef43d444235248285519e44b11b48584bd4fe4a889103e2a5f7915b52b2e593",
-      "last_checked": "2026-07-28T07:50:44.464331",
+      "last_checked": "2026-07-31T07:44:14.897606",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:37.566928",
+      "session_id": "2026-07-31T07:44:09.302116",
       "etag": "W/\"64b0e53644235300e839869d48eae345\"",
       "file_path": "documentation/WalletPasses/serialnumbers.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletpasses/logentries.json": {
       "hash": "f309895cb69fa468a8cc25417d9cb0d0cf52b908f1b4023992909a10816c6090",
-      "last_checked": "2026-07-28T07:50:44.593144",
+      "last_checked": "2026-07-31T07:44:15.068764",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:37.566928",
+      "session_id": "2026-07-31T07:44:09.302116",
       "etag": "W/\"5938ace50f307d934238524df77bc594\"",
       "file_path": "documentation/WalletPasses/logentries.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletpasses/return-a-personalized-pass.json": {
       "hash": "6677074ffdeb7488cb0ebeed9c104a804efa0f5cdf23219dc320a876d656f164",
-      "last_checked": "2026-07-28T07:50:44.926498",
+      "last_checked": "2026-07-31T07:44:15.246394",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:37.566928",
+      "session_id": "2026-07-31T07:44:09.302116",
       "etag": "W/\"0b5103b418b6824e2c7a66e35b6a876b\"",
       "file_path": "documentation/WalletPasses/return-a-personalized-pass.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletpasses/personalizationdictionary.json": {
       "hash": "03f43a7e25092139352dd14e64c0a8d0bbf480878bafe0c0b9df8a4a65066f62",
-      "last_checked": "2026-07-28T07:50:45.121866",
+      "last_checked": "2026-07-31T07:44:15.423155",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:37.566928",
+      "session_id": "2026-07-31T07:44:09.302116",
       "etag": "W/\"43a1dc6a229598ba69276f6d2df532c3\"",
       "file_path": "documentation/WalletPasses/personalizationdictionary.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletpasses/pass/boardingpass-data.dictionary.json": {
       "hash": "139217e7122ed9147845b569478e5d7cb21f5cd3fd3cc8056d9c891cf789c64e",
-      "last_checked": "2026-07-28T07:50:40.185793",
+      "last_checked": "2026-07-31T07:44:11.692638",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:37.566928",
+      "session_id": "2026-07-31T07:44:09.302116",
       "etag": "W/\"fec094847eb81ca7b9932e0fff2262fa\"",
       "file_path": "documentation/WalletPasses/pass/boardingpass-datadictionary.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletpasses/pass/coupon-data.dictionary.json": {
       "hash": "c1167d2c89df0a2febf814052a54acfdb31dcbec9b1d5f0b7717ad5eee7fef0c",
-      "last_checked": "2026-07-28T07:50:40.810991",
+      "last_checked": "2026-07-31T07:44:12.431060",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:37.566928",
+      "session_id": "2026-07-31T07:44:09.302116",
       "etag": "W/\"c10a463715457028ddfa7775abde1972\"",
       "file_path": "documentation/WalletPasses/pass/coupon-datadictionary.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletpasses/pass/eventticket-data.dictionary.json": {
       "hash": "f06f30449c1885e74031c3c83c3850bbcbe7956c2f83fb9e615f964b89af017b",
-      "last_checked": "2026-07-28T07:50:41.175468",
+      "last_checked": "2026-07-31T07:44:12.760765",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:37.566928",
+      "session_id": "2026-07-31T07:44:09.302116",
       "etag": "W/\"1e1ec3be1aef4070123981b55e9998a1\"",
       "file_path": "documentation/WalletPasses/pass/eventticket-datadictionary.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletpasses/pass/generic-data.dictionary.json": {
       "hash": "c5dfdcc85eeeb10907e69c5a8be2d6ef24ac8c349e6069cc836dd1dadc33ec46",
-      "last_checked": "2026-07-28T07:50:42.189313",
+      "last_checked": "2026-07-31T07:44:13.332693",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:37.566928",
+      "session_id": "2026-07-31T07:44:09.302116",
       "etag": "W/\"ba8d41cccc5e109d07c2ffad6771b63d\"",
       "file_path": "documentation/WalletPasses/pass/generic-datadictionary.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletpasses/passfields.json": {
       "hash": "c06b6ed3ebd16377fe311ff74b402aaa7eca5e7e025a2b1bcc5c7c12075cbabf",
-      "last_checked": "2026-07-28T07:50:39.838651",
+      "last_checked": "2026-07-31T07:44:11.432013",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:37.566928",
+      "session_id": "2026-07-31T07:44:09.302116",
       "etag": "W/\"e324f148daf67141fd8fde709b549512\"",
       "file_path": "documentation/WalletPasses/passfields.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletpasses/passfieldcontent.json": {
       "hash": "8c5ed031d14eab65b368f6e72368c5f02f8c98a14b51b023723cbd31e99c5679",
-      "last_checked": "2026-07-28T07:50:45.315910",
+      "last_checked": "2026-07-31T07:44:15.606473",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:37.566928",
+      "session_id": "2026-07-31T07:44:09.302116",
       "etag": "W/\"621bbd7d0f632109f399911afc867ef0\"",
       "file_path": "documentation/WalletPasses/passfieldcontent.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletpasses/supporting-semantic-tags-in-wallet-passes.json": {
       "hash": "f5771b2b8bec82c7524a4bda944d60fe216888e5d3be2fa90741baebd6b65700",
-      "last_checked": "2026-07-28T07:50:45.498372",
+      "last_checked": "2026-07-31T07:44:15.790206",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:37.566928",
+      "session_id": "2026-07-31T07:44:09.302116",
       "etag": "W/\"0a85f20be61c273cf5c4e849b38302e9\"",
       "file_path": "documentation/WalletPasses/supporting-semantic-tags-in-wallet-passes.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletpasses/semantictags.json": {
       "hash": "600a1c3c6e6c1f87dea24bae58d380b612df8c9ac313eba2270be832f9742672",
-      "last_checked": "2026-07-28T07:50:40.328064",
+      "last_checked": "2026-07-31T07:44:12.003167",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:37.566928",
+      "session_id": "2026-07-31T07:44:09.302116",
       "etag": "W/\"d10cc53a47a0180f757e26aef5ecaae2\"",
       "file_path": "documentation/WalletPasses/semantictags.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletpasses/semantictagtype.json": {
       "hash": "44e4d1d923a75ed23ee37da53adcdd93d8b77364a98ae47a722616bc9afe37e5",
-      "last_checked": "2026-07-28T07:50:40.471024",
+      "last_checked": "2026-07-31T07:44:12.149047",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:37.566928",
+      "session_id": "2026-07-31T07:44:09.302116",
       "etag": "W/\"6502671935d98b97f5d608425dfef7a6\"",
       "file_path": "documentation/WalletPasses/semantictagtype.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletpasses/pass/barcodes-data.dictionary.json": {
       "hash": "ab05538c8ba698a061fc26a257885bbf824eb77d6b66dc672831f9f8948cac59",
-      "last_checked": "2026-07-28T07:50:45.648348",
+      "last_checked": "2026-07-31T07:44:15.912533",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:37.566928",
+      "session_id": "2026-07-31T07:44:09.302116",
       "etag": "W/\"2d9f47c925f4bc8e04a3b0227a4dcbc3\"",
       "file_path": "documentation/WalletPasses/pass/barcodes-datadictionary.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletpasses/pass/barcode-data.dictionary.json": {
       "hash": "7aae8f97e861406b9496c79ecd36f9c6c9b8c78bf7970c80fec6d0ae7e23f785",
-      "last_checked": "2026-07-28T07:50:45.847214",
+      "last_checked": "2026-07-31T07:44:16.093931",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:37.566928",
+      "session_id": "2026-07-31T07:44:09.302116",
       "etag": "W/\"53915c30724a9a503ebdc49a082c6092\"",
       "file_path": "documentation/WalletPasses/pass/barcode-datadictionary.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletpasses/showing-a-pass-on-the-lock-screen.json": {
       "hash": "9db2035a49179dcfe6a50e2b57ba2860c95ce425b7099fbf6bc78452ea295472",
-      "last_checked": "2026-07-28T07:50:45.995645",
+      "last_checked": "2026-07-31T07:44:16.268255",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:37.566928",
+      "session_id": "2026-07-31T07:44:09.302116",
       "etag": "W/\"b5bf0bcd533760893c17d6a031888fd7\"",
       "file_path": "documentation/WalletPasses/showing-a-pass-on-the-lock-screen.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletpasses/pass/locations-data.dictionary.json": {
       "hash": "c6cb2068c2bcc445037a7599027fbac477b9ec50c86a19fd97024ff36d539a99",
-      "last_checked": "2026-07-28T07:50:46.164930",
+      "last_checked": "2026-07-31T07:44:16.434556",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:37.566928",
+      "session_id": "2026-07-31T07:44:09.302116",
       "etag": "W/\"6c68e4e21ab6f03b6a04476c53141f3a\"",
       "file_path": "documentation/WalletPasses/pass/locations-datadictionary.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletpasses/pass/beacons-data.dictionary.json": {
       "hash": "18375728b51c8371a865bf25388ee15469b35817a8717be4b8b7205601d7d88b",
-      "last_checked": "2026-07-28T07:50:46.299993",
+      "last_checked": "2026-07-31T07:44:16.611078",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:37.566928",
+      "session_id": "2026-07-31T07:44:09.302116",
       "etag": "W/\"250a6ce81c8779154ddba78d2947b1a3\"",
       "file_path": "documentation/WalletPasses/pass/beacons-datadictionary.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletpasses/pass/relevantdates-data.dictionary.json": {
       "hash": "c93313a74334547459279b84a4173405bc946b67c89f83a9dec4d2d3ac0fb6e0",
-      "last_checked": "2026-07-28T07:50:46.470470",
+      "last_checked": "2026-07-31T07:44:16.773277",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:37.566928",
+      "session_id": "2026-07-31T07:44:09.302116",
       "etag": "W/\"3d1b271723e1dcccc9295f03f0630ec2\"",
       "file_path": "documentation/WalletPasses/pass/relevantdates-datadictionary.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletpasses/pass/nfc-data.dictionary.json": {
       "hash": "01018141c879f004e25e58eae820d02a5bafbd804c329b50ce731ee560e5c56b",
-      "last_checked": "2026-07-28T07:50:46.679977",
+      "last_checked": "2026-07-31T07:44:16.888130",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:37.566928",
+      "session_id": "2026-07-31T07:44:09.302116",
       "etag": "W/\"d2462f99a23df0770c647518c2cd8ae2\"",
       "file_path": "documentation/WalletPasses/pass/nfc-datadictionary.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletpasses/pass/storecard-data.dictionary.json": {
       "hash": "5782fc2b6a784f6ae92f3781197b454d09414c97bbdb4e086dea635da011783b",
-      "last_checked": "2026-07-28T07:50:42.598316",
+      "last_checked": "2026-07-31T07:44:13.606277",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:37.566928",
+      "session_id": "2026-07-31T07:44:09.302116",
       "etag": "W/\"7c2ec6c0ffa78d564a81bd7ff9d32ee8\"",
       "file_path": "documentation/WalletPasses/pass/storecard-datadictionary.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletpasses/personalize.json": {
       "hash": "226b98604a1014ea4e1e97694d59f209acbe8e10055dc8aeeb524ebf839436fa",
-      "last_checked": "2026-07-28T07:50:46.819272",
+      "last_checked": "2026-07-31T07:44:17.049090",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:37.566928",
+      "session_id": "2026-07-31T07:44:09.302116",
       "etag": "W/\"505556be6e93559c617318749967242a\"",
       "file_path": "documentation/WalletPasses/personalize.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletpasses/upcomingpassinformationentry/additionalinfofields-data.dictionary.json": {
       "hash": "3b035aafd40bf5d2a374bbcc7e9fba1947e9f447ba73300f93d4719095a3f8ee",
-      "last_checked": "2026-07-28T07:50:49.243101",
+      "last_checked": "2026-07-31T07:44:19.215142",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:37.566928",
+      "session_id": "2026-07-31T07:44:09.302116",
       "etag": "W/\"6f2d4755cfa7250194b306cad6d1b3ec\"",
       "file_path": "documentation/WalletPasses/upcomingpassinformationentry/additionalinfofields-datadictionary.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletpasses/upcomingpassinformationentry/backfields-data.dictionary.json": {
       "hash": "dd7273ec766a8b0684d04abb4880567644c2466cce15b7c193074b3200413a39",
-      "last_checked": "2026-07-28T07:50:49.438580",
+      "last_checked": "2026-07-31T07:44:19.389676",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:37.566928",
+      "session_id": "2026-07-31T07:44:09.302116",
       "etag": "W/\"d1c7537c3d07e348ee1215a8319f7341\"",
       "file_path": "documentation/WalletPasses/upcomingpassinformationentry/backfields-datadictionary.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletpasses/upcomingpassinformationentry/dateinformation-data.dictionary.json": {
       "hash": "981a74005c0fe7759ef2e1b4085bb0f5edef234a093f51951d4f5dc275d38876",
-      "last_checked": "2026-07-28T07:50:49.580961",
+      "last_checked": "2026-07-31T07:44:19.497761",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:37.566928",
+      "session_id": "2026-07-31T07:44:09.302116",
       "etag": "W/\"654a3b48f75bae2a1194c4eb433f804b\"",
       "file_path": "documentation/WalletPasses/upcomingpassinformationentry/dateinformation-datadictionary.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletpasses/upcomingpassinformationentry/images-data.dictionary.json": {
       "hash": "498dea4a9149823a6890924f7b4d715938cd716b4d3d18fb3ea7457e7e283b69",
-      "last_checked": "2026-07-28T07:50:49.777861",
+      "last_checked": "2026-07-31T07:44:19.657279",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:37.566928",
+      "session_id": "2026-07-31T07:44:09.302116",
       "etag": "W/\"85336f22ce63b7670fc90d8a02334793\"",
       "file_path": "documentation/WalletPasses/upcomingpassinformationentry/images-datadictionary.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletpasses/upcomingpassinformationentry/urls-data.dictionary.json": {
       "hash": "e0e37ee9b866357763c569fdd188f80dc36187325529c78eaed3c607f062cf7a",
-      "last_checked": "2026-07-28T07:50:49.976974",
+      "last_checked": "2026-07-31T07:44:19.838924",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:37.566928",
+      "session_id": "2026-07-31T07:44:09.302116",
       "etag": "W/\"95eea4ff89bc120759b68cfe487b0586\"",
       "file_path": "documentation/WalletPasses/upcomingpassinformationentry/urls-datadictionary.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletpasses/upcomingpassinformationentrytype/image-data.dictionary.json": {
       "hash": "c409b02bcbc0d1ef35a3912af67ec675b07b2ec22e02064f4e91efe76b45dc3b",
-      "last_checked": "2026-07-28T07:50:50.125937",
+      "last_checked": "2026-07-31T07:44:19.987468",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:37.566928",
+      "session_id": "2026-07-31T07:44:09.302116",
       "etag": "W/\"363cced01a0eb3b20f82e5bae107ddc0\"",
       "file_path": "documentation/WalletPasses/upcomingpassinformationentrytype/image-datadictionary.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletpasses/upcomingpassinformationentrytype/imageurlentry-data.dictionary.json": {
       "hash": "123f8ff572f6165e5f7cffb99847fcf6bc8be751d7bbb6755f0631488cc7a42d",
-      "last_checked": "2026-07-28T07:50:50.320082",
+      "last_checked": "2026-07-31T07:44:20.096680",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:37.566928",
+      "session_id": "2026-07-31T07:44:09.302116",
       "etag": "W/\"6f7ba84720eee13312e4352b65e883d3\"",
       "file_path": "documentation/WalletPasses/upcomingpassinformationentrytype/imageurlentry-datadictionary.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletpasses/personalizationdictionary/requiredpersonalizationinfo-data.dictionary.json": {
       "hash": "96e567c769acddf36e6c77ffbef36e2cb7fb32c9a65d4e4804bfcd0698b58f9f",
-      "last_checked": "2026-07-28T07:50:50.493596",
+      "last_checked": "2026-07-31T07:44:20.251289",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:37.566928",
+      "session_id": "2026-07-31T07:44:09.302116",
       "etag": "W/\"a37da4fea467807c0fa53c2bfc48ea6d\"",
       "file_path": "documentation/WalletPasses/personalizationdictionary/requiredpersonalizationinfo-datadictionary.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletpasses/passfields/primaryfields-data.dictionary.json": {
       "hash": "42c49b741bf8740e6c2e9ba4fd3293bae9436ef51233ee62efeefb7c4f16a426",
-      "last_checked": "2026-07-28T07:50:47.013309",
+      "last_checked": "2026-07-31T07:44:17.152601",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:37.566928",
+      "session_id": "2026-07-31T07:44:09.302116",
       "etag": "W/\"fc3202f7e27b680ae8d7625a95739635\"",
       "file_path": "documentation/WalletPasses/passfields/primaryfields-datadictionary.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletpasses/passfields/secondaryfields-data.dictionary.json": {
       "hash": "3e9345afc09284196ab55fb31da023faa958c8f953aaa5dbb2e13a2bd17f8fe8",
-      "last_checked": "2026-07-28T07:50:47.173349",
+      "last_checked": "2026-07-31T07:44:17.306327",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:37.566928",
+      "session_id": "2026-07-31T07:44:09.302116",
       "etag": "W/\"4a94d46bc382a9cebb2d620f903a8e19\"",
       "file_path": "documentation/WalletPasses/passfields/secondaryfields-datadictionary.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletpasses/passfields/auxiliaryfields-data.dictionary.json": {
       "hash": "df5634b3f92043eaf272a0c2d3b8cec7221121f558244e7e1abd4623bbad721f",
-      "last_checked": "2026-07-28T07:50:47.363390",
+      "last_checked": "2026-07-31T07:44:17.629631",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:37.566928",
+      "session_id": "2026-07-31T07:44:09.302116",
       "etag": "W/\"20a39cf49ed76528d03b8f6b92def794\"",
       "file_path": "documentation/WalletPasses/passfields/auxiliaryfields-datadictionary.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletpasses/passfields/headerfields-data.dictionary.json": {
       "hash": "62bf486f793c26b32394773a75238c35df40773592ef306f0f9956d359a61b13",
-      "last_checked": "2026-07-28T07:50:47.558043",
+      "last_checked": "2026-07-31T07:44:17.793083",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:37.566928",
+      "session_id": "2026-07-31T07:44:09.302116",
       "etag": "W/\"0b85460d57e4865aaf896ae15e4b8260\"",
       "file_path": "documentation/WalletPasses/passfields/headerfields-datadictionary.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletpasses/passfields/backfields-data.dictionary.json": {
       "hash": "68d79007f5ce9979b1a92a2f9e5b9ec1ea29cd52e911dc94ea730a657cd3adb4",
-      "last_checked": "2026-07-28T07:50:47.772486",
+      "last_checked": "2026-07-31T07:44:17.959329",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:37.566928",
+      "session_id": "2026-07-31T07:44:09.302116",
       "etag": "W/\"f6de1405a5205f52dd90ec8894c8fc92\"",
       "file_path": "documentation/WalletPasses/passfields/backfields-datadictionary.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletpasses/passfields/additionalinfofields-data.dictionary.json": {
       "hash": "9c1ca6ecd5ee4753166221c8d0a778f8ed32f0e54af2a4910d0729863a8bf7be",
-      "last_checked": "2026-07-28T07:50:47.933848",
+      "last_checked": "2026-07-31T07:44:18.226686",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:37.566928",
+      "session_id": "2026-07-31T07:44:09.302116",
       "etag": "W/\"a245ea0b8079e095946bebc198418907\"",
       "file_path": "documentation/WalletPasses/passfields/additionalinfofields-datadictionary.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletpasses/semantictagtype/currencyamount-data.dictionary.json": {
       "hash": "cdf22bbab52ad2fdf089fe76156bb0424e203b6262664d0208a1c5246d3b9195",
-      "last_checked": "2026-07-28T07:50:48.123222",
+      "last_checked": "2026-07-31T07:44:18.338014",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:37.566928",
+      "session_id": "2026-07-31T07:44:09.302116",
       "etag": "W/\"1c315a672aaee796b5e9f3a919d6a69b\"",
       "file_path": "documentation/WalletPasses/semantictagtype/currencyamount-datadictionary.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletpasses/semantictagtype/eventdateinfo-data.dictionary.json": {
       "hash": "d9c006e32ce2d88dd778307280b552366a859898dc7f3b45878b62a9171ce792",
-      "last_checked": "2026-07-28T07:50:48.261062",
+      "last_checked": "2026-07-31T07:44:18.461020",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:37.566928",
+      "session_id": "2026-07-31T07:44:09.302116",
       "etag": "W/\"11405c4f9ec1b2ce2b2b1153f7740748\"",
       "file_path": "documentation/WalletPasses/semantictagtype/eventdateinfo-datadictionary.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletpasses/semantictagtype/location-data.dictionary.json": {
       "hash": "a7d85c3128154fce7019c2ec4b6e4a328c194ee39a2ab4dd1158b24cdfe2d63b",
-      "last_checked": "2026-07-28T07:50:48.450919",
+      "last_checked": "2026-07-31T07:44:18.589395",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:37.566928",
+      "session_id": "2026-07-31T07:44:09.302116",
       "etag": "W/\"2894a24061e708a97b7a8b5c605397f2\"",
       "file_path": "documentation/WalletPasses/semantictagtype/location-datadictionary.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletpasses/semantictagtype/personnamecomponents-data.dictionary.json": {
       "hash": "f531e1adcb790db8f4b2a375899f2836f189e22b60e8d0f1b31ff91dad3e7463",
-      "last_checked": "2026-07-28T07:50:48.649423",
+      "last_checked": "2026-07-31T07:44:18.719633",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:37.566928",
+      "session_id": "2026-07-31T07:44:09.302116",
       "etag": "W/\"7912017e7bbd82a7a82fd3cc9d72f55a\"",
       "file_path": "documentation/WalletPasses/semantictagtype/personnamecomponents-datadictionary.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletpasses/semantictagtype/seat-data.dictionary.json": {
       "hash": "4124f7bc24eda2fbb1458490d09183c92b1244cd14b63b6e5c894685ab3217c4",
-      "last_checked": "2026-07-28T07:50:48.855042",
+      "last_checked": "2026-07-31T07:44:18.901263",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:37.566928",
+      "session_id": "2026-07-31T07:44:09.302116",
       "etag": "W/\"e595b8884a1e9811f384b4d879b2aacc\"",
       "file_path": "documentation/WalletPasses/semantictagtype/seat-datadictionary.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletpasses/semantictagtype/wifinetwork-data.dictionary.json": {
       "hash": "51bd4842a57794f1ede99727f4c6e3794a11d698a9dedc5a079cf526f6dba1b3",
-      "last_checked": "2026-07-28T07:50:49.044475",
+      "last_checked": "2026-07-31T07:44:19.057230",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:37.566928",
+      "session_id": "2026-07-31T07:44:09.302116",
       "etag": "W/\"6f473d95d7be812368cfa463553d878f\"",
       "file_path": "documentation/WalletPasses/semantictagtype/wifinetwork-datadictionary.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletpasses/creating-an-airline-boarding-pass-using-semantic-tags.json": {
       "hash": "c7da026d68041ec590cc967bc50e3b78fd634c6c4b57afdc592c82be76adae62",
-      "last_checked": "2026-07-28T07:50:40.046884",
+      "last_checked": "2026-07-31T07:44:11.580154",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:37.566928",
+      "session_id": "2026-07-31T07:44:09.302116",
       "etag": "W/\"7b8134450344a2675f4b5e80e1b1df3c\"",
       "file_path": "documentation/WalletPasses/creating-an-airline-boarding-pass-using-semantic-tags.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletpasses/creating-a-coupon-pass.json": {
       "hash": "b39db8d62c246283fb9cf7aa1b5c11acf0d2de78b910ad165a0ae415ae03e00c",
-      "last_checked": "2026-07-28T07:50:40.673787",
+      "last_checked": "2026-07-31T07:44:12.257100",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:37.566928",
+      "session_id": "2026-07-31T07:44:09.302116",
       "etag": "W/\"feced825b48db315138b4566e7b41871\"",
       "file_path": "documentation/WalletPasses/creating-a-coupon-pass.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletpasses/creating-a-generic-pass.json": {
       "hash": "95f04485f7f7e6ece71eda3c612b49dddf1986cf4608032a979987ccafc5d418",
-      "last_checked": "2026-07-28T07:50:42.043075",
+      "last_checked": "2026-07-31T07:44:13.181103",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:37.566928",
+      "session_id": "2026-07-31T07:44:09.302116",
       "etag": "W/\"170d5b6498c227eca9dccafdb2f7caf9\"",
       "file_path": "documentation/WalletPasses/creating-a-generic-pass.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletpasses/creating-a-store-card-pass.json": {
       "hash": "5f049575921f36d7e45d229dd6d01c420deb881585d9fb61966465de75c2c4ab",
-      "last_checked": "2026-07-28T07:50:42.393635",
+      "last_checked": "2026-07-31T07:44:13.486507",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:37.566928",
+      "session_id": "2026-07-31T07:44:09.302116",
       "etag": "W/\"89c3538c0c64a0911dc5329e1d4b60c9\"",
       "file_path": "documentation/WalletPasses/creating-a-store-card-pass.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletpasses/creating-an-event-pass-using-semantic-tags.json": {
       "hash": "194814ecc310920537152ab30e1d7981839f8dc3979e539302419d15a820c7af",
-      "last_checked": "2026-07-28T07:50:41.001714",
+      "last_checked": "2026-07-31T07:44:12.596663",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:37.566928",
+      "session_id": "2026-07-31T07:44:09.302116",
       "etag": "W/\"4ea11820225b8c1ad83acc0e59a845e7\"",
       "file_path": "documentation/WalletPasses/creating-an-event-pass-using-semantic-tags.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletpasses/creating-a-pass-with-pass-designer.json": {
       "hash": "2dda10d3c418b6146973e0b1da2cc44c0f847484b48126569f0cab42e1b0205f",
-      "last_checked": "2026-07-28T07:50:38.083232",
+      "last_checked": "2026-07-31T07:44:09.945620",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:37.566928",
+      "session_id": "2026-07-31T07:44:09.302116",
       "etag": "W/\"1624f97b72c8c697237cc7e9308a7b16\"",
       "file_path": "documentation/WalletPasses/creating-a-pass-with-pass-designer.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/walletpasses/defining-the-metadata-of-your-wallet-pass.json": {
       "hash": "2a1d735d6faa59656ec6cd59217dd37cfc014e6ce4d3b127e4675feb3804bff6",
-      "last_checked": "2026-07-28T07:50:38.969339",
+      "last_checked": "2026-07-31T07:44:10.561857",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:37.566928",
+      "session_id": "2026-07-31T07:44:09.302116",
       "etag": "W/\"d1fc374a6aa12577e8a166e726a4a30a\"",
       "file_path": "documentation/WalletPasses/defining-the-metadata-of-your-wallet-pass.md"
     },

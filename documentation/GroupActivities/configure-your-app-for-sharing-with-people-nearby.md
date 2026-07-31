@@ -107,6 +107,8 @@ func observeWorldTracking(provider: WorldTrackingProvider) async {
 
 - [Adding spatial Persona support to an activity](adding-spatial-persona-support-to-an-activity.md)
   Update your SharePlay activities to support spatial Personas and the shared context when running in visionOS.
+- [Implementing SharePlay for immersive spaces in visionOS](../visionOS/implementing-shareplay-for-immersive-spaces-in-visionos.md)
+  Enable collaborative spatial experiences by using SharePlay to synchronize 3D content among participants.
 - [class SystemCoordinator](systemcoordinator.md)
   A type you use to coordinate your interface’s behavior when an active SharePlay session supports spatial placement of content.
 - [SystemCoordinator.ParticipantState](systemcoordinator/participantstate.md)

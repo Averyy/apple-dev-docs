@@ -1,4 +1,4 @@
 Completed scraping QuickTime File Format!
-Total pages scraped: 9
-Pages skipped (unchanged): 1144
+Total pages scraped: 6
+Pages skipped (unchanged): 1147
 Pages failed: 0

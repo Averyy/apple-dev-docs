@@ -1,4 +1,4 @@
-# macOS Tahoe 26.6 RC Release Notes
+# macOS Tahoe 26.6 Release Notes
 
 **Framework**: macOS Release Notes
 
@@ -6,7 +6,7 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The macOS 26.6 SDK provides support to develop apps for Mac computers running macOS Tahoe 26.6 RC. The SDK comes bundled with Xcode 26.6, available from the Mac App Store. For information on the compatibility requirements for Xcode 26.6, see [`Xcode 26.6 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-26_6-release-notes).
+The macOS 26.6 SDK provides support to develop apps for Mac computers running macOS Tahoe 26.6. The SDK comes bundled with Xcode 26.6, available from the Mac App Store. For information on the compatibility requirements for Xcode 26.6, see [`Xcode 26.6 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-26_6-release-notes).
 
 ##### Corestorage
 

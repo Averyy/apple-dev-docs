@@ -1,4 +1,4 @@
 Completed scraping OpenGL ES!
-Total pages scraped: 7
-Pages skipped (unchanged): 1586
+Total pages scraped: 0
+Pages skipped (unchanged): 1593
 Pages failed: 0

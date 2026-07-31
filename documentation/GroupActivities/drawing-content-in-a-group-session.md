@@ -7,6 +7,7 @@ Invite your friends to draw on a shared canvas while on a FaceTime call.
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
+- Mac Catalyst 17.0+
 - Xcode 15.0+
 
 #### Overview
@@ -17,18 +18,18 @@ Group Activities allows you to build shared experiences across devices with Shar
 
 The sample app, DrawTogether, builds on some of the concepts introduced in WWDC21 session [`10225: Coordinate media experiences with Group Activities`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2021/10225/). It allows you to draw together while on a FaceTime call. The entire screen is the canvas, and everyone draws with a random color.
 
-There are two steps to adopt a [`GroupActivity`](groupactivity.md): activity creation and session management. These are covered in detail in WWDC21 session [`10225: Coordinate media experiences with Group Activities`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2021/10225/) and in [`Supporting Coordinated Media Playback`](https://developer.apple.com/documentation/avfoundation/supporting-coordinated-media-playback).
+There are two steps to adopt a [`GroupActivity`](groupactivity.md): activity creation and session management. These are covered in detail in WWDC21 session [`10225: Coordinate media experiences with Group Activities`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2021/10225/) and in [`Supporting coordinated media playback`](https://developer.apple.com/documentation/AVFoundation/supporting-coordinated-media-playback).
 
 These steps change slightly when building a custom experience, starting with activity creation. Activity creation consists of configuring the activity, and then activating the activity. Only the configuration part is different for a custom activity compared to a media activity.
 
-##### 4264885
+##### Configure the Sample Code Project
 
 - Build the sample with Xcode 13 or later, and Swift 5.5 or later.
 - This sample runs on physical devices with iOS 15 or later.
 
 To see the custom drawing experience together, install the app on two or more devices with unique Apple IDs, and start a FaceTime call between the devices. Tap the bottom-left icon, and respond to the system prompt to start a shared DrawTogether experience. On the other device, join the group session. The app gives each user a random color to draw with. When the user draws on the screen, the app propagates the drawing to all the other devices in the group session.
 
-##### 4264886
+##### Configure a Custom Activity
 
 To make drawing a group experience, the sample defines a `DrawTogether` structure that adopts the [`GroupActivity`](groupactivity.md) protocol. This protocol defines a shareable experience in the app.  The `GroupActivity` protocol has two properties that the app implements: [`activityIdentifier`](groupactivity/activityidentifier.md) and [`metadata`](groupactivity/metadata.md). The app relies on the default implementation for `activityIdentifier`, and the `metadata` property is required. To make this activity a custom activity, the sample code sets the [`type`](groupactivitymetadata/type.md) on the `metadata` to [`generic`](groupactivitymetadata/activitytype/generic.md). This is crucial for a custom activity, and is the only difference between configuring a custom activity and a media activity.
 
@@ -43,9 +44,9 @@ struct DrawTogether: GroupActivity {
 }
 ```
 
-##### 4264887
+##### Activate an Activity
 
-After configuring the activity, the app needs to activate it at the appropriate moment. The sample provides a button for activation. First, the sample checks to make sure a [`GroupSession`](groupsession.md) doesn’t exist already. Next, it calls the [`GroupStateObserver`](groupstateobserver.md)  [`isEligibleForGroupSession`](groupstateobserver/iseligibleforgroupsession.md) method to make sure a FaceTime call is active and the system can create group sessions. Then, in the action closure, the sample calls its `canvas.startSharing()` method to activate the activity.
+After configuring the activity, the app needs to activate it at the appropriate moment. The sample provides a button for activation. First, the sample checks to make sure a [`GroupSession`](groupsession.md) doesn’t exist already. Next, it calls the [`GroupStateObserver`](groupstateobserver.md) [`isEligibleForGroupSession`](groupstateobserver/iseligibleforgroupsession.md) method to make sure a FaceTime call is active and the system can create group sessions. Then, in the action closure, the sample calls its `canvas.startSharing()` method to activate the activity.
 
 ```swift
 if canvas.groupSession == nil && groupStateObserver.isEligibleForGroupSession {
@@ -72,9 +73,9 @@ func startSharing() {
 }
 ```
 
-##### 4264888
+##### Configure the Session for Sending and Receiving Custom Data
 
-The sample uses [`GroupSessionMessenger`](groupsessionmessenger.md) to configure the session for sending and receiving its custom drawing data. The app creates a `GroupSessionMessenger` from the `GroupSession`. It also adds the `messenger` property to its `Canvas` to hold the `messenger` object.
+The sample uses [`GroupSessionMessenger`](groupsessionmessenger.md) to configure the session for sending and receiving its custom drawing data. The app creates a `GroupSessionMessenger` from the [`GroupSession`](groupsession.md). It also adds the `messenger` property to its `Canvas` to hold the `messenger` object.
 
 ```swift
 func configureGroupSession(_ groupSession: GroupSession<DrawTogether>) {
@@ -85,7 +86,7 @@ func configureGroupSession(_ groupSession: GroupSession<DrawTogether>) {
     self.messenger = messenger
 ```
 
-When using [`GroupSessionMessenger`](groupsessionmessenger.md), the sample code defines the type of data to exchange between participants. The app shares the strokes themselves. The sample defines the `UpsertStrokeMessage` structure to represent a stroke with three properties: an identifier, a color, and a coordinate point. The sample also specifies that the `UpsertStrokeMessage` structure conforms to the [`Codable`](https://developer.apple.com/documentation/swift/codable) protocol. `GroupSessionMessenger` automatically handles the serialization and deserialization of the message data if the messages are `Codable`.
+When using `GroupSessionMessenger`, the sample code defines the type of data to exchange between participants. The app shares the strokes themselves. The sample defines the `UpsertStrokeMessage` structure to represent a stroke with three properties: an identifier, a color, and a coordinate point. The sample also specifies that the `UpsertStrokeMessage` structure conforms to the [`Codable`](https://developer.apple.com/documentation/Swift/Codable) protocol. `GroupSessionMessenger` automatically handles the serialization and deserialization of the message data if the messages are `Codable`.
 
 ```swift
 struct UpsertStrokeMessage: Codable {
@@ -95,7 +96,7 @@ struct UpsertStrokeMessage: Codable {
 }
 ```
 
-The second step in configuring the session is to call the [`GroupSessionMessenger`](groupsessionmessenger.md) [`messages(of:)`](groupsessionmessenger/messages(of:)-jvoz.md) method to receive the `UpsertStrokeMessages` data. The sample specifies the `UpsertStrokeMessage` type  when calling the `messages` method. This method returns an async sequence that provides a tuple containing messages of that type and the context surrounding the message, such as which participant sends the message.
+The second step in configuring the session is to call the [`messages(of:)`](groupsessionmessenger/messages(of:)-jvoz.md) method to receive the `UpsertStrokeMessages` data. The sample specifies the `UpsertStrokeMessage` type  when calling the `messages` method. This method returns an async sequence that provides a tuple containing messages of that type and the context surrounding the message, such as which participant sends the message.
 
 ```swift
 for await (message, _) in messenger.messages(of: UpsertStrokeMessage.self) {
@@ -103,13 +104,13 @@ for await (message, _) in messenger.messages(of: UpsertStrokeMessage.self) {
 }
 ```
 
-The third step for configuring the session is to send data using the [`GroupSessionMessenger`](groupsessionmessenger.md) [`send(_:to:)`](groupsessionmessenger/send(_:to:)-2a4ku.md) method. The app sends an `UpsertStrokeMessage` to all participants within the group.
+The third step for configuring the session is to send data using the [`send(_:to:)`](groupsessionmessenger/send(_:to:)-2a4ku.md) method. The app sends an `UpsertStrokeMessage` to all participants within the group.
 
 ```swift
 try? await messenger.send(UpsertStrokeMessage(id: stroke.id, color: stroke.color, point: point))
 ```
 
-##### 4264889
+##### Receive Custom Data
 
 The sample creates a detached task to receive the `UpsertStrokeMessages` from the async sequence, then calls its `handle` method to process the message.
 
@@ -136,9 +137,9 @@ func handle(_ message: UpsertStrokeMessage) {
 }
 ```
 
-##### 4264890
+##### Send Custom Data
 
-The sample calls its `addPointToActiveStroke` method to send the messages using the [`GroupSessionMessenger`](groupsessionmessenger.md) [`send(_:to:)`](groupsessionmessenger/send(_:to:)-2a4ku.md) method.
+The sample calls its `addPointToActiveStroke` method to send the messages using the [`send(_:to:)`](groupsessionmessenger/send(_:to:)-2a4ku.md) method.
 
 ```swift
 func addPointToActiveStroke(_ point: CGPoint) {
@@ -160,11 +161,11 @@ func addPointToActiveStroke(_ point: CGPoint) {
 }
 ```
 
-##### 4264891
+##### Handle Late Joiners
 
 Late joiners are devices that join an activity session after the session starts. To ensure a proper experience, the app gives late joiners the most recent information so all the devices use the same data.
 
-When a new device calls [`join()`](groupsession/join().md) on the [`GroupSession`](groupsession.md), every other device in the `GroupSession` receives an update of the `GroupSession` [`activeParticipants`](groupsession/activeparticipants.md) property. Devices that observe the update then send their own catch-up data (in this case, the existing drawing canvas) to the newly joined device.
+When a new device calls [`join()`](groupsession/join().md) on the `GroupSession`, every other device in the `GroupSession` receives an update of the [`activeParticipants`](groupsession/activeparticipants.md) property. Devices that observe the update then send their own catch-up data (in this case, the existing drawing canvas) to the newly joined device.
 
 The app defines its catch-up data in the `CanvasMessage` structure. This structure contains all of the existing strokes and a variable `pointCount`, a heuristic that calculates which message is the most up-to-date.
 
@@ -175,7 +176,7 @@ struct CanvasMessage: Codable {
 }
 ```
 
-The sample defines a message handler in its `configureGroupSession` method to receive this message using the [`GroupSessionMessenger`](groupsessionmessenger.md) [`messages(of:)`](groupsessionmessenger/messages(of:)-jvoz.md) method. The handler calls the samples `handle()` method to process the message.
+The sample defines a message handler in its `configureGroupSession` method to receive this message using the [`messages(of:)`](groupsessionmessenger/messages(of:)-jvoz.md) method. The handler calls the samples `handle()` method to process the message.
 
 ```swift
 task = Task {
@@ -194,7 +195,7 @@ func handle(_ message: CanvasMessage) {
 }
 ```
 
-Next, the sample listens for [`activeParticipants`](groupsession/activeparticipants.md) changes to determine whether there are any new participants to communicate with. The sample’s `configureGroupSession` method handler obtains the delta between the new `activeParticipants` and the previous `activeParticipants`. This ensures that the sample only sends catch-up messages to the newly joined participants. Finally, the sample forms and sends the message.  The message contains the current `canvas` state and sends it only to the `newParticipants`.
+Next, the sample listens for `activeParticipants` changes to determine whether there are any new participants to communicate with. The sample’s `configureGroupSession` method handler obtains the delta between the new `activeParticipants` and the previous `activeParticipants`. This ensures that the sample only sends catch-up messages to the newly joined participants. Finally, the sample forms and sends the message.  The message contains the current `canvas` state and sends it only to the `newParticipants`.
 
 ```swift
 groupSession.$activeParticipants
@@ -207,7 +208,7 @@ groupSession.$activeParticipants
     }
 ```
 
-##### 4264892
+##### Change Activities
 
 The Group Activities framework provides two ways to change activities: create a [`GroupSession`](groupsession.md), or update the activity for everyone in the existing `GroupSession`.
 
@@ -221,7 +222,7 @@ Button {
 }
 ```
 
-The sample’s `reset` method removes the existing [`GroupSession`](groupsession.md), which allows for a clean transition to a new `canvas` in the new session.  The `reset` method cancels any tasks for the `GroupSession`. It also checks for an existing `GroupSession`, and if one exists, it calls the [`leave()`](groupsession/leave().md) method to leave the current activity. It then calls the [`activate()`](groupactivity/activate().md) method to start the activity immediately and create a session for the app. Thereafter, the sample waits for the system to deliver a `GroupSession` object asynchronously through the [`GroupActivity.Sessions`](groupactivity/sessions.md) method of the [`GroupActivity`](groupactivity.md).
+The sample’s `reset` method removes the existing `GroupSession`, which allows for a clean transition to a new `canvas` in the new session.  The `reset` method cancels any tasks for the `GroupSession`. It also checks for an existing `GroupSession`, and if one exists, it calls the [`leave()`](groupsession/leave().md) method to leave the current activity. It then calls the [`activate()`](groupactivity/activate().md) method to start the activity immediately and create a session for the app. Thereafter, the sample waits for the system to deliver a `GroupSession` object asynchronously through the [`sessions()`](groupactivity/sessions().md) method of the `GroupActivity`.
 
 ```swift
 func reset() {
@@ -251,9 +252,9 @@ func startSharing() {
 }
 ```
 
-##### 4264893
+##### Start Shareplay Experiences
 
-The sample’s `ControlBar` view contains a button to allow users to share the canvas with their friends. The sample dynamically displays the button only when it’s helpful to the user. The sample uses the [`GroupStateObserver`](groupstateobserver.md) [`isEligibleForGroupSession`](groupstateobserver/iseligibleforgroupsession.md) property to determine whether a FaceTime call is active and the system can create group sessions. The `ControlBar` only shows the button if the system is eligible for a group session, and not in a group session already.
+The sample’s `ControlBar` view contains a button to allow users to share the canvas with their friends. The sample dynamically displays the button only when it’s helpful to the user. The sample uses the [`isEligibleForGroupSession`](groupstateobserver/iseligibleforgroupsession.md) property to determine whether a FaceTime call is active and the system can create group sessions. The `ControlBar` only shows the button if the system is eligible for a group session, and not in a group session already.
 
 ```swift
 struct ControlBar: View {
@@ -285,7 +286,18 @@ struct ControlBar: View {
 }
 ```
 
+## See Also
+
+- [Joining and managing a shared activity](joining-and-managing-a-shared-activity.md)
+  Configure the session when a SharePlay activity starts, and handle events that occur during the lifetime of the activity.
+- [class GroupSession](groupsession.md)
+  A session for an in-progress activity that synchronizes content among participant devices.
+- [protocol CustomMessageIdentifiable](custommessageidentifiable.md)
+  A type that assigns a custom ID string to messages you send to other devices.
+- [struct Participant](participant.md)
+  An active participant in a group session.
+
 
 ---
 
-*[View on Apple Developer](https://developer.apple.com/documentation/groupactivities/drawing_content_in_a_group_session)*
+*[View on Apple Developer](https://developer.apple.com/documentation/groupactivities/drawing-content-in-a-group-session)*

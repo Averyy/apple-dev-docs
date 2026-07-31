@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-07-28T07:50:32.990773",
+    "last_updated": "2026-07-31T07:44:06.921515",
     "total_pages": 159,
-    "session_id": "2026-07-28T07:50:15.857584"
+    "session_id": "2026-07-31T07:43:53.233528"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/MessageUI.json": {
       "hash": "43e82b3694b6d68e11b43c474f6a0ee550043b00cac2b2d58b3337529c27b3ee",
-      "last_checked": "2026-07-28T07:50:16.381888",
+      "last_checked": "2026-07-31T07:43:53.522284",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"6fffcd54b5d5c62aa8c9e9a57d3eab33\"",
       "file_path": "documentation/MessageUI/MessageUI.md"
     },
     "https://developer.apple.com/documentation/MessageUI": {
       "hash": "43e82b3694b6d68e11b43c474f6a0ee550043b00cac2b2d58b3337529c27b3ee",
-      "last_checked": "2026-07-28T07:50:16.279991",
+      "last_checked": "2026-07-31T07:43:53.417441",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"6fffcd54b5d5c62aa8c9e9a57d3eab33\"",
       "file_path": "documentation/MessageUI/MessageUI.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/mfmailcomposeviewcontroller.json": {
       "hash": "72537a012000d7a77609a4a4b5e21bfda3eca583b09fd5da4e30355b7dc77771",
-      "last_checked": "2026-07-28T07:50:16.802187",
+      "last_checked": "2026-07-31T07:43:53.797222",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"14b1d4895f3febca84c845342f0c8ca3\"",
       "file_path": "documentation/MessageUI/mfmailcomposeviewcontroller.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/mfmessagecomposeviewcontroller.json": {
       "hash": "479f6ff9f74e6e57390757089d708bbfed79599907ef19e238eaf90b8fc9f4bf",
-      "last_checked": "2026-07-28T07:50:17.181176",
+      "last_checked": "2026-07-31T07:43:53.963542",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"8ea040976a6982cc310129e0343445dc\"",
       "file_path": "documentation/MessageUI/mfmessagecomposeviewcontroller.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/mfmailcomposecontrollerdeferredaction.json": {
       "hash": "7264875622af275c182371df13b51ecfa815323b4b3820d8c7d97359c77f63eb",
-      "last_checked": "2026-07-28T07:50:18.565825",
+      "last_checked": "2026-07-31T07:43:54.887975",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"f6ae04cd8ec93086c48c30c8356fd530\"",
       "file_path": "documentation/MessageUI/mfmailcomposecontrollerdeferredaction.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/mfmailcomposeviewcontroller/mailcomposedelegate.json": {
       "hash": "781fa2b41e7f5a00f32403f17fc5f4040017b054bca66497466d0f045b265a56",
-      "last_checked": "2026-07-28T07:50:18.879499",
+      "last_checked": "2026-07-31T07:43:55.195481",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"4511d8c19288f05d2105338db1283681\"",
       "file_path": "documentation/MessageUI/mfmailcomposeviewcontroller/mailcomposedelegate.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/mfmailcomposeviewcontrollerdelegate.json": {
       "hash": "ebb8af98692fabccd87635cd4bc96261d9f91b9ed427e20327663ca4b9c88b7d",
-      "last_checked": "2026-07-28T07:50:19.206190",
+      "last_checked": "2026-07-31T07:43:55.342168",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"49ac7d95fdfc0d8819903a5c872f11dd\"",
       "file_path": "documentation/MessageUI/mfmailcomposeviewcontrollerdelegate.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/mfmailcomposeviewcontroller/cansendmail().json": {
       "hash": "19847ef9878f9e700547c28d8052dfc5667a54fb2a5ece1a2e58f8d6fb42da7b",
-      "last_checked": "2026-07-28T07:50:19.341173",
+      "last_checked": "2026-07-31T07:43:55.491415",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"014ac39ccc946d6235248d9d7c28e512\"",
       "file_path": "documentation/MessageUI/mfmailcomposeviewcontroller/cansendmail.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/mfmailcomposeviewcontroller/setsubject(_:).json": {
       "hash": "1134d46611eec345e5bc586c375e42bd82ab4f59b825900e7ebef97bf061aa50",
-      "last_checked": "2026-07-28T07:50:19.666436",
+      "last_checked": "2026-07-31T07:43:55.623242",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"cd885621d2ca63827d18671fb6c5655c\"",
       "file_path": "documentation/MessageUI/mfmailcomposeviewcontroller/setsubject.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/mfmailcomposeviewcontroller/settorecipients(_:).json": {
       "hash": "1c50ac4936bb6f3b889b9ec6426a2991978a680316a1aa2e398798a83adfe5ee",
-      "last_checked": "2026-07-28T07:50:19.850456",
+      "last_checked": "2026-07-31T07:43:55.899198",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"9d0f4f3a2e6e0c81b422ff58363dc0b7\"",
       "file_path": "documentation/MessageUI/mfmailcomposeviewcontroller/settorecipients.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/mfmailcomposeviewcontroller/setccrecipients(_:).json": {
       "hash": "c8eb3967aa3685931d2d6430307c5e4648ef5448935b875eacc8372bd04eceff",
-      "last_checked": "2026-07-28T07:50:20.046123",
+      "last_checked": "2026-07-31T07:43:56.074572",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"461dbccf64f3d1baa66076d611d4c9b3\"",
       "file_path": "documentation/MessageUI/mfmailcomposeviewcontroller/setccrecipients.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/mfmailcomposeviewcontroller/setbccrecipients(_:).json": {
       "hash": "ebdfd7ec8cc196f95bcc3eedbb0ea4db7e3dcfc1dd170e3dee62c6f794a3b552",
-      "last_checked": "2026-07-28T07:50:20.232879",
+      "last_checked": "2026-07-31T07:43:56.243443",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"e5fb220988b9af8c40c908734ad3d7e0\"",
       "file_path": "documentation/MessageUI/mfmailcomposeviewcontroller/setbccrecipients.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/mfmailcomposeviewcontroller/setmessagebody(_:ishtml:).json": {
       "hash": "fca62f85d47ddcb7e471e3b04134c982a941def35fa669b70fe1f0e78f2110f5",
-      "last_checked": "2026-07-28T07:50:20.430092",
+      "last_checked": "2026-07-31T07:43:56.398767",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"eb18b65fd7128de46c3d98bf2f1daa47\"",
       "file_path": "documentation/MessageUI/mfmailcomposeviewcontroller/setmessagebody-ishtml.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/mfmailcomposeviewcontroller/addattachmentdata(_:mimetype:filename:).json": {
       "hash": "7e6115bb329c55e85188be20a96f21df5d5bff6705a4738fa9d550eb604ae50f",
-      "last_checked": "2026-07-28T07:50:20.650249",
+      "last_checked": "2026-07-31T07:43:56.528431",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"a6e8fb9382ef84ebce6d731b1a60f403\"",
       "file_path": "documentation/MessageUI/mfmailcomposeviewcontroller/addattachmentdata-mimetypefilename.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/mfmailcomposeviewcontroller/setpreferredsendingemailaddress(_:).json": {
       "hash": "31f4da24847474a2df3ea7621c3d9b39296660fefaffb903e2abfc8af9f5a860",
-      "last_checked": "2026-07-28T07:50:20.842338",
+      "last_checked": "2026-07-31T07:43:56.679643",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"5c0ec322f23e17a9e2089c22da9136e8\"",
       "file_path": "documentation/MessageUI/mfmailcomposeviewcontroller/setpreferredsendingemailaddress.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/mfmailcomposeerror.json": {
       "hash": "c692e38e66f5e12b02210f46a73a2a669ccbaa53b1dfbf9dfc7328ec06796b7f",
-      "last_checked": "2026-07-28T07:50:21.044281",
+      "last_checked": "2026-07-31T07:43:56.835679",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"f68a747100ff31b0323df3d637fec8b6\"",
       "file_path": "documentation/MessageUI/mfmailcomposeerror.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/mfmailcomposeerrordomain.json": {
       "hash": "d4ac2e94575de318d8b65a709cb2e0e1ee94f973e73c8d0d1ab9a7e091ceefc0",
-      "last_checked": "2026-07-28T07:50:21.373352",
+      "last_checked": "2026-07-31T07:43:57.002859",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"58160254c607498d5bbddcdb8c2402e8\"",
       "file_path": "documentation/MessageUI/mfmailcomposeerrordomain.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/mfmailcomposeerror/code.json": {
       "hash": "3c74c636028f06513fb5455966b7be2edf1d689c6a85633c05d41a3a3a4ad293",
-      "last_checked": "2026-07-28T07:50:21.544404",
+      "last_checked": "2026-07-31T07:43:57.291936",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"e0d463626cfea19850d92717300dd503\"",
       "file_path": "documentation/MessageUI/mfmailcomposeerror/code.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/mfmailcomposeviewcontroller/insertcollaborationitemprovider(_:completionhandler:).json": {
       "hash": "5e2b8a88e142e536cf278ec481164e2ed6d7aafb3c944d9f33613cf461447f01",
-      "last_checked": "2026-07-28T07:50:21.726315",
+      "last_checked": "2026-07-31T07:43:57.459400",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"04f5fa3326aca4803aeda757ef0e706e\"",
       "file_path": "documentation/MessageUI/mfmailcomposeviewcontroller/insertcollaborationitemprovider-completionhandler.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/mfmessagecomposeviewcontroller/messagecomposedelegate.json": {
       "hash": "7b3fd0fcc1843ece716f3845b190b55dfa7467ddf50d913d232386a58f00a4bd",
-      "last_checked": "2026-07-28T07:50:21.868843",
+      "last_checked": "2026-07-31T07:43:57.624083",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"9a9b13b8b422e7b0fdeb23c34beabcee\"",
       "file_path": "documentation/MessageUI/mfmessagecomposeviewcontroller/messagecomposedelegate.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/mfmessagecomposeviewcontrollerdelegate.json": {
       "hash": "2df368a7a936cd5beecd808c4530003d64fb67834268ef2a51cba92b3e5342fd",
-      "last_checked": "2026-07-28T07:50:22.046793",
+      "last_checked": "2026-07-31T07:43:57.792222",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"811317ad8dae18d73b649d48b22c3f39\"",
       "file_path": "documentation/MessageUI/mfmessagecomposeviewcontrollerdelegate.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/mfmessagecomposeviewcontroller/cansendtext().json": {
       "hash": "1e55a4c9b5228ac58310c5992a869caead750f220dd8bc836734f49ecf654aae",
-      "last_checked": "2026-07-28T07:50:22.240682",
+      "last_checked": "2026-07-31T07:43:57.956621",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"60263a525bd2bb5d68d5ed3adad460ce\"",
       "file_path": "documentation/MessageUI/mfmessagecomposeviewcontroller/cansendtext.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/mfmessagecomposeviewcontroller/cansendattachments().json": {
       "hash": "ef82e955d7da4f284519bc0402991429dc8acb412b6db0ea08f69f5e64d40d62",
-      "last_checked": "2026-07-28T07:50:22.576429",
+      "last_checked": "2026-07-31T07:43:58.094433",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"b04dc8107a1a55ad8e97b063779a3231\"",
       "file_path": "documentation/MessageUI/mfmessagecomposeviewcontroller/cansendattachments.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/mfmessagecomposeviewcontroller/cansendsubject().json": {
       "hash": "e360a06872088dfa774183730cda2c91598c28c4828a153c2d448b81a7918284",
-      "last_checked": "2026-07-28T07:50:22.760514",
+      "last_checked": "2026-07-31T07:43:58.272415",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"c45169cc3cb33028004338ad405cf08f\"",
       "file_path": "documentation/MessageUI/mfmessagecomposeviewcontroller/cansendsubject.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/mfmessagecomposeviewcontroller/issupportedattachmentuti(_:).json": {
       "hash": "94dbffafb85c6dff51774e3f992ca2d7bda45f923042e4b66845a76d6d6f0634",
-      "last_checked": "2026-07-28T07:50:23.088695",
+      "last_checked": "2026-07-31T07:43:58.435708",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"4f7c958f22cae26ad0cb08d8bf90a191\"",
       "file_path": "documentation/MessageUI/mfmessagecomposeviewcontroller/issupportedattachmentuti.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/mfmessagecomposeviewcontroller/recipients.json": {
       "hash": "6b56fcef8e99ec786e9da8668c41df38290a3d5acefa495f28807f3115a58033",
-      "last_checked": "2026-07-28T07:50:23.287718",
+      "last_checked": "2026-07-31T07:43:58.701435",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"95b4a3193fb7b14239215087317f3d5e\"",
       "file_path": "documentation/MessageUI/mfmessagecomposeviewcontroller/recipients.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/mfmessagecomposeviewcontroller/subject.json": {
       "hash": "4f8a56089ca8bb6bdbde3a4e6b2d112de08618913672999d60d49a65809ab42b",
-      "last_checked": "2026-07-28T07:50:23.475081",
+      "last_checked": "2026-07-31T07:43:58.861372",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"84f587c9a668fc6000220193930dddd2\"",
       "file_path": "documentation/MessageUI/mfmessagecomposeviewcontroller/subject.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/mfmessagecomposeviewcontroller/body.json": {
       "hash": "25df6a4294efdc215fc22bd4dfbc91d8da704411cdb9104f43baed97d94b4f9f",
-      "last_checked": "2026-07-28T07:50:23.674878",
+      "last_checked": "2026-07-31T07:43:59.026912",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"b84fc9e3bce6261a2df3d5c1bd63c264\"",
       "file_path": "documentation/MessageUI/mfmessagecomposeviewcontroller/body.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/mfmessagecomposeviewcontroller/message.json": {
       "hash": "5eae420a54b9e7235d19bc1c8e72c0712831a1b383acf4c4aa59b54d982e4e12",
-      "last_checked": "2026-07-28T07:50:24.025960",
+      "last_checked": "2026-07-31T07:43:59.305084",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"3438a004ef7b0be98fd64d0b5b28ed46\"",
       "file_path": "documentation/MessageUI/mfmessagecomposeviewcontroller/message.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/mfmessagecomposeviewcontroller/disableuserattachments().json": {
       "hash": "3c5f26b682e59cc4c2d021d1dbf0fc840b29ba81afa58d9028b529d098bab69e",
-      "last_checked": "2026-07-28T07:50:24.204986",
+      "last_checked": "2026-07-31T07:43:59.464141",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"30eed2b6dd0379daf39d3534b36d04ae\"",
       "file_path": "documentation/MessageUI/mfmessagecomposeviewcontroller/disableuserattachments.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/mfmessagecomposeviewcontroller/attachments.json": {
       "hash": "6dac8c5985add34228e4fb6c656e5dd937c55d3ef2cc7b766915604ef6b3a2e3",
-      "last_checked": "2026-07-28T07:50:24.420407",
+      "last_checked": "2026-07-31T07:43:59.615724",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"700408d32a5316312874d680a555bf90\"",
       "file_path": "documentation/MessageUI/mfmessagecomposeviewcontroller/attachments.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/mfmessagecomposeviewcontroller/addattachmenturl(_:withalternatefilename:).json": {
       "hash": "29a79a470eab27720529adee937ebfd0f091483254a80523939a2a4b41105a77",
-      "last_checked": "2026-07-28T07:50:24.595107",
+      "last_checked": "2026-07-31T07:43:59.788416",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"bae32611b535419f84246c924712490a\"",
       "file_path": "documentation/MessageUI/mfmessagecomposeviewcontroller/addattachmenturl-withalternatefilename.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/mfmessagecomposeviewcontroller/addattachmentdata(_:typeidentifier:filename:).json": {
       "hash": "69d3d46ec0c136f920ab1ae58c679d4190180f2f13b7a07b1164abb7b483615d",
-      "last_checked": "2026-07-28T07:50:24.748406",
+      "last_checked": "2026-07-31T07:43:59.910594",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"c22fae101733203124343cbde7dbe847\"",
       "file_path": "documentation/MessageUI/mfmessagecomposeviewcontroller/addattachmentdata-typeidentifierfilename.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/mfmessagecomposeviewcontrollerattachmenturl.json": {
       "hash": "877c182270b400169ca46fe928d06b952d75fa14257b95179b14be65e7cf10a9",
-      "last_checked": "2026-07-28T07:50:24.945234",
+      "last_checked": "2026-07-31T07:44:00.071735",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"125a878831a3cf7ec067b4d5c6983aa8\"",
       "file_path": "documentation/MessageUI/mfmessagecomposeviewcontrollerattachmenturl.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/mfmessagecomposeviewcontrollerattachmentalternatefilename.json": {
       "hash": "73b4378284cdc96e764fac970917d0f747f01ec88440d16260f752742d68bf6a",
-      "last_checked": "2026-07-28T07:50:25.146668",
+      "last_checked": "2026-07-31T07:44:00.175580",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"8657a4bfa42369ae51b9a16b111607e1\"",
       "file_path": "documentation/MessageUI/mfmessagecomposeviewcontrollerattachmentalternatefilename.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/mfmessagecomposeviewcontroller/insertcollaborationitemprovider(_:).json": {
       "hash": "13182f82c62b5b410778402c3c623bfff086a1d2acce69667457af4b360b3d50",
-      "last_checked": "2026-07-28T07:50:25.335939",
+      "last_checked": "2026-07-31T07:44:00.356592",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"f084b264076463ad8261115be0bdf97e\"",
       "file_path": "documentation/MessageUI/mfmessagecomposeviewcontroller/insertcollaborationitemprovider.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/mfmessagecomposeviewcontrollertextmessageavailabilitykey.json": {
       "hash": "1a23e38dd40616443e824a5f3b6cd85199518e7de8a3a1f52c2db20a1fe8e3d8",
-      "last_checked": "2026-07-28T07:50:25.532616",
+      "last_checked": "2026-07-31T07:44:00.523245",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"1ca0f902d465a6f61f4a40335dbb3966\"",
       "file_path": "documentation/MessageUI/mfmessagecomposeviewcontrollertextmessageavailabilitykey.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/mfmailcomposecontrollerdeferredaction/addmissingrecipients.json": {
       "hash": "a02646c05006c65a4838095267dcd8c6c0c3569f1c17b5ff0c5b0120a79eb52a",
-      "last_checked": "2026-07-28T07:50:27.758328",
+      "last_checked": "2026-07-31T07:44:02.278036",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"1b71a72703d7f9d61eed0735d84eddfc\"",
       "file_path": "documentation/MessageUI/mfmailcomposecontrollerdeferredaction/addmissingrecipients.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/mfmailcomposecontrollerdeferredaction/adjustinsertionpoint.json": {
       "hash": "c1cd91476ba2ec0830177a6eca9018bc892912db669d31b8a5e6fb6824c3dc4f",
-      "last_checked": "2026-07-28T07:50:27.976105",
+      "last_checked": "2026-07-31T07:44:02.422545",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"aadaedc74c450c0aaa43610180789da7\"",
       "file_path": "documentation/MessageUI/mfmailcomposecontrollerdeferredaction/adjustinsertionpoint.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/mfmailcomposecontrollerdeferredaction/none.json": {
       "hash": "98e02dc06772f97903b036ace86df856dc3c4356a1bef4571b2ad48e6afdca12",
-      "last_checked": "2026-07-28T07:50:28.159114",
+      "last_checked": "2026-07-31T07:44:02.589841",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"043a9b9ceaad63ecc98cb85de6033d85\"",
       "file_path": "documentation/MessageUI/mfmailcomposecontrollerdeferredaction/none.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/mfmailcomposecontrollerdeferredaction/init(rawvalue:).json": {
       "hash": "e43d8d39787de0dfb09ea51dafa99cdde746af5a847b995a2b10d1d7e1def640",
-      "last_checked": "2026-07-28T07:50:28.345015",
+      "last_checked": "2026-07-31T07:44:02.755652",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"1c863e0d7cb28e861fdb5e0442cd6147\"",
       "file_path": "documentation/MessageUI/mfmailcomposecontrollerdeferredaction/init-rawvalue.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/mfmailcomposeviewcontrollerdelegate/mailcomposecontroller(_:didfinishwith:error:).json": {
       "hash": "64c0727f828806d8c49cec65465509a4cf20a4fc1f932d244cc549a2312c7dea",
-      "last_checked": "2026-07-28T07:50:28.523728",
+      "last_checked": "2026-07-31T07:44:02.933142",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"400d346afc3b5dd548bfdd5129eb59c7\"",
       "file_path": "documentation/MessageUI/mfmailcomposeviewcontrollerdelegate/mailcomposecontroller-didfinishwitherror.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/mfmailcomposeresult.json": {
       "hash": "36b74b922382b52a38a85821211fda49588818a64930255b179ff2bb8f2b373e",
-      "last_checked": "2026-07-28T07:50:28.713084",
+      "last_checked": "2026-07-31T07:44:03.126859",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"0acea451b133bc865d063cdd409ffb93\"",
       "file_path": "documentation/MessageUI/mfmailcomposeresult.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/mfmailcomposeerror/errordomain.json": {
       "hash": "7e673e9769fa3d79963b6d4406b30e8d1a68f01c865db60fde251759b2a59bf5",
-      "last_checked": "2026-07-28T07:50:28.944923",
+      "last_checked": "2026-07-31T07:44:03.286199",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"a19d86b0ddbf7785c6a2f138a3e7c441\"",
       "file_path": "documentation/MessageUI/mfmailcomposeerror/errordomain.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/mfmailcomposeerror/savefailed.json": {
       "hash": "91a54b8db074d03499d94e9825fadb1bea727a151230c0a74db64c3a1ea5c516",
-      "last_checked": "2026-07-28T07:50:29.094806",
+      "last_checked": "2026-07-31T07:44:03.406510",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"97b2118d20cf43f0378f17e60288b435\"",
       "file_path": "documentation/MessageUI/mfmailcomposeerror/savefailed.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/mfmailcomposeerror/sendfailed.json": {
       "hash": "d8861112a5a0c870b1faabc7fe85305ada897e00b0414e2c08ad2c28ceb33a24",
-      "last_checked": "2026-07-28T07:50:29.249432",
+      "last_checked": "2026-07-31T07:44:03.528569",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"2ac50eaa315ec511f7e4e7155e83370e\"",
       "file_path": "documentation/MessageUI/mfmailcomposeerror/sendfailed.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/mfmailcomposeerror/code/savefailed.json": {
       "hash": "6cd001be4953656df101e359334e09cea5fc0ecfad368b8f487512bf3afefb2c",
-      "last_checked": "2026-07-28T07:50:29.501464",
+      "last_checked": "2026-07-31T07:44:03.721641",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"12746464d3a10978ecfefaa53ba551b1\"",
       "file_path": "documentation/MessageUI/mfmailcomposeerror/code/savefailed.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/mfmailcomposeerror/code/sendfailed.json": {
       "hash": "9f126506938290a11edc74595841923f2b3db3b7a2b357797ce9ddb0c166dcb3",
-      "last_checked": "2026-07-28T07:50:29.682225",
+      "last_checked": "2026-07-31T07:44:03.881919",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"a40415b3cd3c6cd71a7ed11630b7b87f\"",
       "file_path": "documentation/MessageUI/mfmailcomposeerror/code/sendfailed.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/mfmailcomposeerror/code/init(rawvalue:).json": {
       "hash": "379e27cabcbb7eb310dcf7aa0c1878a37c8000813e6762f9e2bc0b0bc312e354",
-      "last_checked": "2026-07-28T07:50:29.828055",
+      "last_checked": "2026-07-31T07:44:04.046610",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"418abc2fa4907b77b9f0b2574ea11d5a\"",
       "file_path": "documentation/MessageUI/mfmailcomposeerror/code/init-rawvalue.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/mfmessagecomposeviewcontrollerdelegate/messagecomposeviewcontroller(_:didfinishwith:).json": {
       "hash": "cc4e1aad3cd6bffc95d1a1ad72ffa8813de7921733296a974e67893a5f24fd90",
-      "last_checked": "2026-07-28T07:50:30.006879",
+      "last_checked": "2026-07-31T07:44:04.210422",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"2d5ab0811066d2fce5ae7bec68ad81c4\"",
       "file_path": "documentation/MessageUI/mfmessagecomposeviewcontrollerdelegate/messagecomposeviewcontroller-didfinishwith.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/messagecomposeresult.json": {
       "hash": "df08eca725fdb2f6c44176e3b8c09ccb72e5d28222c00afd82c0f2bfdb6d36a3",
-      "last_checked": "2026-07-28T07:50:30.194273",
+      "last_checked": "2026-07-31T07:44:04.364963",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"ae1fbbedca6f67686b5a5065503a549b\"",
       "file_path": "documentation/MessageUI/messagecomposeresult.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/mfmailcomposeresult/cancelled.json": {
       "hash": "b1e4c1d533a6ed76709f22c16f2dec69e90db25694de66fe465dc25b0eb42462",
-      "last_checked": "2026-07-28T07:50:31.454621",
+      "last_checked": "2026-07-31T07:44:05.399766",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"1b23d21549c19f3c52b49f6e9f412892\"",
       "file_path": "documentation/MessageUI/mfmailcomposeresult/cancelled.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/mfmailcomposeresult/saved.json": {
       "hash": "f462a9996ca50d8f5328370e1adae20593862b07e9f131411ff0a29f21f95884",
-      "last_checked": "2026-07-28T07:50:31.648298",
+      "last_checked": "2026-07-31T07:44:05.560994",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"1b6f7eb38850a62d449d544e4b10375c\"",
       "file_path": "documentation/MessageUI/mfmailcomposeresult/saved.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/mfmailcomposeresult/sent.json": {
       "hash": "fc3eb54b22b761e8401dad11f2751509ec47c31869ae16d2891330692ce1e791",
-      "last_checked": "2026-07-28T07:50:31.836493",
+      "last_checked": "2026-07-31T07:44:05.723195",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"5c16210da04020e85e88f5252825ef45\"",
       "file_path": "documentation/MessageUI/mfmailcomposeresult/sent.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/mfmailcomposeresult/failed.json": {
       "hash": "c02a004f1d31c8dfb7eedbe6621e8f1b5a5979e3d633531319fdd0504fdcd438",
-      "last_checked": "2026-07-28T07:50:32.020479",
+      "last_checked": "2026-07-31T07:44:06.124547",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"88d0b6c47ad6f2640f648be4e05ba7ec\"",
       "file_path": "documentation/MessageUI/mfmailcomposeresult/failed.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/mfmailcomposeresult/init(rawvalue:).json": {
       "hash": "dc46c92e2925423f8e97a6cc7f53127a0ab49baa5165b302fd31048e53d2efc7",
-      "last_checked": "2026-07-28T07:50:32.201246",
+      "last_checked": "2026-07-31T07:44:06.387538",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"76e081530a9527533da15d562e752758\"",
       "file_path": "documentation/MessageUI/mfmailcomposeresult/init-rawvalue.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/messagecomposeresult/cancelled.json": {
       "hash": "2009279b2435b01519d047b6c1d2b87eabd7adbbbcb87e2ff755bcfb6dd94269",
-      "last_checked": "2026-07-28T07:50:32.403238",
+      "last_checked": "2026-07-31T07:44:06.496446",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"f10d0a3f7a2763f0da11b181425ca4cf\"",
       "file_path": "documentation/MessageUI/messagecomposeresult/cancelled.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/messagecomposeresult/sent.json": {
       "hash": "fa3d5b51518e97f19d1c058d94d8fdaca33bba5db58e9e4005eb3bd7672f1246",
-      "last_checked": "2026-07-28T07:50:32.590323",
+      "last_checked": "2026-07-31T07:44:06.622517",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"a43481c97873bbccd68adb70ed9ccf3b\"",
       "file_path": "documentation/MessageUI/messagecomposeresult/sent.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/messagecomposeresult/failed.json": {
       "hash": "55936c43e7c2b75c58122e2a2305877887ff465c66054232769fdd0b4aa48e8c",
-      "last_checked": "2026-07-28T07:50:32.723332",
+      "last_checked": "2026-07-31T07:44:06.765435",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"f3d96ebeb7e5fd2e41af64a4874e7b50\"",
       "file_path": "documentation/MessageUI/messagecomposeresult/failed.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/messagecomposeresult/init(rawvalue:).json": {
       "hash": "0160659e649497ecc8ff928bfce8fa867982b966a64f29280d4ead3a2b1071cd",
-      "last_checked": "2026-07-28T07:50:32.938089",
+      "last_checked": "2026-07-31T07:44:06.902147",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"6d7605dedb13d3b8811b1a1693c80963\"",
       "file_path": "documentation/MessageUI/messagecomposeresult/init-rawvalue.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/mfmessagecomposeviewcontroller/setupiverificationcodesendcompletion(_:).json": {
       "hash": "9fc0f99f9172ce9edccb92b946bd95a959f2b0ffe0807c6793cd4bdeb3080260",
-      "last_checked": "2026-07-28T07:50:25.870655",
+      "last_checked": "2026-07-31T07:44:00.688618",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"1eca75a54ead68ad9f2ec98444c90246\"",
       "file_path": "documentation/MessageUI/mfmessagecomposeviewcontroller/setupiverificationcodesendcompletion.md"
     },
@@ -973,9 +973,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/mfcomposeassistantviewcontroller.json": {
       "hash": "1cdbb049e1a69e3d8278864929a2fad00b4b6e1c10d777ba29e733528c9c5e2d",
-      "last_checked": "2026-07-28T07:50:17.372711",
+      "last_checked": "2026-07-31T07:43:54.129248",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"52e23bc24ade3923ffcda7ae2da1d021\"",
       "file_path": "documentation/MessageUI/mfcomposeassistantviewcontroller.md"
     },
@@ -989,9 +989,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/mfmaildraft.json": {
       "hash": "db6bc285e22b8059131352c24b7736015d7a25e958b599004c733ea72849b038",
-      "last_checked": "2026-07-28T07:50:17.712308",
+      "last_checked": "2026-07-31T07:43:54.254292",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"a693e1334eb8d3282295defabc2dd18e\"",
       "file_path": "documentation/MessageUI/mfmaildraft.md"
     },
@@ -1005,9 +1005,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/writingassistant.json": {
       "hash": "ee7edacbd63e34bb3b3254d1bca55b69586885173ae2624094cb21eb5c785d29",
-      "last_checked": "2026-07-28T07:50:17.910209",
+      "last_checked": "2026-07-31T07:43:54.558534",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"f709940cf95b6ba0dc44bfa43b4a3243\"",
       "file_path": "documentation/MessageUI/writingassistant.md"
     },
@@ -1021,9 +1021,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/mfcomposeassistantviewcontrollerdelegate.json": {
       "hash": "070f2ad30c0e68141a8101bd7a78e91e79d088fb2d7ae0dbba3feafc7786383e",
-      "last_checked": "2026-07-28T07:50:18.241597",
+      "last_checked": "2026-07-31T07:43:54.715615",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"2475849b9dfa54b88cc6b78da3a9b580\"",
       "file_path": "documentation/MessageUI/mfcomposeassistantviewcontrollerdelegate.md"
     },
@@ -1037,9 +1037,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/mfmessagecomposeviewcontroller/textmessageavailabilitydidchangemessage.json": {
       "hash": "da931d8651f476d2082e48e9cf5bad14d1cf52124fcf687b3c84981de5e8021f",
-      "last_checked": "2026-07-28T07:50:26.056805",
+      "last_checked": "2026-07-31T07:44:00.855465",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"60f6a20b9eeb52b3abe1ed56d5efc690\"",
       "file_path": "documentation/MessageUI/mfmessagecomposeviewcontroller/textmessageavailabilitydidchangemessage.md"
     },
@@ -1053,9 +1053,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/mfcomposeassistantviewcontroller/init(delegate:).json": {
       "hash": "18833236747730241c2e5f9ffca1fd3fafa871af9eac9fea3c940d0dfb3f17ab",
-      "last_checked": "2026-07-28T07:50:26.193409",
+      "last_checked": "2026-07-31T07:44:00.969531",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"0a4a3320b650bd58c685ed29d6fc9fcf\"",
       "file_path": "documentation/MessageUI/mfcomposeassistantviewcontroller/init-delegate.md"
     },
@@ -1069,9 +1069,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/mfmaildraft/init(subject:body:from:to:cc:).json": {
       "hash": "b99deb109e9b8ce18bf501b8f046c4ce36fa3d95e7aacc341c178f5674423f16",
-      "last_checked": "2026-07-28T07:50:26.529076",
+      "last_checked": "2026-07-31T07:44:01.126568",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"0ded72547615524c72883e7f2863d704\"",
       "file_path": "documentation/MessageUI/mfmaildraft/init-subjectbodyfromtocc.md"
     },
@@ -1085,9 +1085,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/mfmaildraft/body.json": {
       "hash": "97cbc1caafeb5393546aa918933b46f7d0113bb57fd4920199527ddd51958460",
-      "last_checked": "2026-07-28T07:50:26.724739",
+      "last_checked": "2026-07-31T07:44:01.238060",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"7e48117ca0d1899decac8ebc9d5e66b2\"",
       "file_path": "documentation/MessageUI/mfmaildraft/body.md"
     },
@@ -1101,9 +1101,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/mfmaildraft/cc.json": {
       "hash": "cfeba19c212e232c710753dd4fe8fe7d1fa6cd5cf437857d80b041bc97250328",
-      "last_checked": "2026-07-28T07:50:26.907036",
+      "last_checked": "2026-07-31T07:44:01.381272",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"6c40bda202bfd5ad6189fbbd331ca491\"",
       "file_path": "documentation/MessageUI/mfmaildraft/cc.md"
     },
@@ -1117,9 +1117,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/mfmaildraft/from.json": {
       "hash": "e12e8f1e5b2da15af0ee171a0799fbb0642ac3e1d389799316efd8fc7d39018c",
-      "last_checked": "2026-07-28T07:50:27.041999",
+      "last_checked": "2026-07-31T07:44:01.556992",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"4f9fbb0548e7c6430d7c636f422a74bb\"",
       "file_path": "documentation/MessageUI/mfmaildraft/from.md"
     },
@@ -1133,9 +1133,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/mfmaildraft/subject.json": {
       "hash": "7a01c419a4152aae42df13a79022cc43845c962ed20c631d7d93441a0268a682",
-      "last_checked": "2026-07-28T07:50:27.216533",
+      "last_checked": "2026-07-31T07:44:01.726656",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"0e29b75d38a85a2fd3179fcad511ed7f\"",
       "file_path": "documentation/MessageUI/mfmaildraft/subject.md"
     },
@@ -1149,9 +1149,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/mfmaildraft/to.json": {
       "hash": "5b0cd4e3c4517ca319574b06bcc1ae9ced55cff788c63dfe7909d2311fdfc0d2",
-      "last_checked": "2026-07-28T07:50:27.392946",
+      "last_checked": "2026-07-31T07:44:02.015174",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"9068ddfb074db970f4e4ccbc6d99e0b2\"",
       "file_path": "documentation/MessageUI/mfmaildraft/to.md"
     },
@@ -1165,9 +1165,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/mfcomposeassistantviewcontrollerdelegate/composeassistantviewcontroller(_:didcomposedraft:).json": {
       "hash": "a742f8a6ea6784f96243ec3770f70a26224cce6f7410e28fa1bf45848741ea35",
-      "last_checked": "2026-07-28T07:50:27.574033",
+      "last_checked": "2026-07-31T07:44:02.129651",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"916218641afdb6073be696b065743db5\"",
       "file_path": "documentation/MessageUI/mfcomposeassistantviewcontrollerdelegate/composeassistantviewcontroller-didcomposedraft.md"
     },
@@ -1181,9 +1181,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/mfmessagecomposeviewcontroller/textmessageavailabilitydidchangemessage/init(cansendtext:).json": {
       "hash": "96e5a3105ce7efcce705aba1703c5ba8f97e629684fcbca2827a9a49d9a30059",
-      "last_checked": "2026-07-28T07:50:30.383754",
+      "last_checked": "2026-07-31T07:44:04.532351",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"cac66254d7a25d091a4b21881d6da024\"",
       "file_path": "documentation/MessageUI/mfmessagecomposeviewcontroller/textmessageavailabilitydidchangemessage/init-cansendtext.md"
     },
@@ -1197,9 +1197,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/mfmessagecomposeviewcontroller/textmessageavailabilitydidchangemessage/cansendtext.json": {
       "hash": "69f9bda97cdbbc6a2ed770d14cbfa8aed2d0abe522a264cee2997c7408c35adc",
-      "last_checked": "2026-07-28T07:50:30.559394",
+      "last_checked": "2026-07-31T07:44:04.678439",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"023dffa13db27c85f89b2ea7db3540e5\"",
       "file_path": "documentation/MessageUI/mfmessagecomposeviewcontroller/textmessageavailabilitydidchangemessage/cansendtext.md"
     },
@@ -1213,9 +1213,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/mfmessagecomposeviewcontroller/textmessageavailabilitydidchangemessage/subject.json": {
       "hash": "7e767e0fad914c8e27e4a14d435580d40761693ae0967befd3d5a26e0d6398cf",
-      "last_checked": "2026-07-28T07:50:30.744133",
+      "last_checked": "2026-07-31T07:44:04.799563",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"1f468f25f494279e4073417e582705dd\"",
       "file_path": "documentation/MessageUI/mfmessagecomposeviewcontroller/textmessageavailabilitydidchangemessage/subject.md"
     },
@@ -1229,9 +1229,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/mfmessagecomposeviewcontroller/textmessageavailabilitydidchangemessage/name.json": {
       "hash": "6ba21532fc11582d34f2f5970833d78bde343b883e229e22afced55e6585bd50",
-      "last_checked": "2026-07-28T07:50:30.923037",
+      "last_checked": "2026-07-31T07:44:04.940858",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"96cdef354eb95682966376eaec259155\"",
       "file_path": "documentation/MessageUI/mfmessagecomposeviewcontroller/textmessageavailabilitydidchangemessage/name.md"
     },
@@ -1245,9 +1245,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/mfmessagecomposeviewcontroller/textmessageavailabilitydidchangemessage/makemessage(_:).json": {
       "hash": "c5733dbcb68ea245ee399cefdbcaea1df6c9fcadf2bf0782367cb86f7e6817f3",
-      "last_checked": "2026-07-28T07:50:31.098001",
+      "last_checked": "2026-07-31T07:44:05.090656",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"91d469cd1ab512bdfa2192b690baea18\"",
       "file_path": "documentation/MessageUI/mfmessagecomposeviewcontroller/textmessageavailabilitydidchangemessage/makemessage.md"
     },
@@ -1261,9 +1261,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/messageui/mfmessagecomposeviewcontroller/textmessageavailabilitydidchangemessage/makenotification(_:).json": {
       "hash": "75e2260a87b65f30a97780a628707b8edcf0c0bf9c29851e4862cb037268394f",
-      "last_checked": "2026-07-28T07:50:31.277062",
+      "last_checked": "2026-07-31T07:44:05.253598",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:50:15.857584",
+      "session_id": "2026-07-31T07:43:53.233528",
       "etag": "W/\"030ed08413c4438eaa0254ff8bca8bff\"",
       "file_path": "documentation/MessageUI/mfmessagecomposeviewcontroller/textmessageavailabilitydidchangemessage/makenotification.md"
     },

@@ -18,7 +18,7 @@ For issues not mentioned in release notes, file bugs through [`Feedback Assistan
 - [visionOS 27 Beta 4 Release Notes](visionos-27-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 ### visionOS 26
-- [visionOS 26.6 RC Release Notes](visionos-26_6-release-notes.md)
+- [visionOS 26.6 Release Notes](visionos-26_6-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 - [visionOS 26.5 Release Notes](visionos-26_5-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.

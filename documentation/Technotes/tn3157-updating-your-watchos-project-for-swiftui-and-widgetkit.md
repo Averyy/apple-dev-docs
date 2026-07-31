@@ -116,39 +116,6 @@ You now have a project that has an independent watchOS app with a companion iOS 
 
 - **2023-11-07** First published.
 
-## See Also
-
-- [TN3213: Moving from Multipeer Connectivity to Network framework](tn3213-moving-from-multipeer-connectivity-to-network-framework.md)
-  Learn how to migrate your Multipeer Connectivity app to Network framework.
-- [TN3210: Optimizing your app for iPhone Mirroring](tn3210-optimizing-your-app-for-iphone-mirroring.md)
-  Test your app and improve compatibility with iPhone Mirroring.
-- [TN3211: Resolving SwiftUI source incompatibilities for State and ContentBuilder](tn3211-resolving-swiftui-source-incompatibilities-for-state-and-contentbuilder.md)
-  Update existing code for two foundational changes in SwiftUI built with Xcode 27.
-- [TN3212: Adopting gesture recognizers for Sidecar touch support](tn3212-adopting-gesture-recognizers-for-sidecar-touch-support.md)
-  Use gesture recognizers to handle Sidecar touch input and update your event-handling code for macOS 27.
-- [TN3208: Preparing your app’s launch screen to meet App Store requirements](tn3208-preparing-your-apps-launch-screen-to-meet-app-store-requirements.md)
-  Understand the launch screen requirement for App Store submission starting in iOS 27 and iPadOS 27.
-- [TN3205: Low-latency communication with RDMA over Thunderbolt](tn3205-low-latency-communication-with-rdma-over-thunderbolt.md)
-  Learn how to use RDMA over Thunderbolt to enable low-latency communication between clusters of Mac computers.
-- [TN3206: Updating Apple Pay certificates](tn3206-updating-apple-pay-certificates.md)
-  Learn how to create, manage, and rotate Apple Pay certificates to maintain uninterrupted payment processing.
-- [TN3179: Understanding local network privacy](tn3179-understanding-local-network-privacy.md)
-  Learn how local network privacy affects your software.
-- [TN3190: USB audio device design considerations](tn3190-usb-audio-device-design-considerations.md)
-  Learn the best techniques for designing devices that conform to the USB Audio Device Class specifications.
-- [TN3194: Handling account deletions and revoking tokens for Sign in with Apple](tn3194-handling-account-deletions-and-revoking-tokens-for-sign-in-with-apple.md)
-  Learn the best techniques for managing Sign in with Apple user sessions and responding to account deletion requests.
-- [TN3193: Managing the on-device foundation model’s context window](tn3193-managing-the-on-device-foundation-model-s-context-window.md)
-  Learn how to budget for the context window limit of Apple’s on-device foundation model and handle the error when reaching the limit.
-- [TN3115: Bluetooth State Restoration app relaunch rules](tn3115-bluetooth-state-restoration-app-relaunch-rules.md)
-  Learn about the conditions under which an iOS app will be relaunched by Bluetooth State Restoration.
-- [TN3192: Migrating your iPad app from the deprecated UIRequiresFullScreen key](tn3192-migrating-your-app-from-the-deprecated-uirequiresfullscreen-key.md)
-  Support iPad multitasking and dynamic resizing while updating your app to remove the deprecated full-screen compatibility mode.
-- [TN3151: Choosing the right networking API](tn3151-choosing-the-right-networking-api.md)
-  Learn which networking API is best for you.
-- [TN3111: iOS Wi-Fi API overview](tn3111-ios-wifi-api-overview.md)
-  Explore the various Wi-Fi APIs available on iOS and their expected use cases.
-
 
 ---
 

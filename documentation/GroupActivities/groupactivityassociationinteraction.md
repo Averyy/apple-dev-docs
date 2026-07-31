@@ -15,6 +15,10 @@ An interaction configures a view’s association with the current SharePlay grou
 @objc class GroupActivityAssociationInteraction
 ```
 
+## Mentions
+
+- [Adding spatial Persona support to an activity](adding-spatial-persona-support-to-an-activity.md)
+
 #### Overview
 
 When a group of people join a SharePlay activity with their spatial Personas, the system selects a common, primary scene to arrange their spatial Personas around. This association between the group activity and a scene in your app creates a shared space for the spatial Personas to interact in; enabling participants to gesture at the associated scene and understand each other. For more information about spatial Personas and SharePlay on visionOS, see [`Adding spatial Persona support to an activity`](adding-spatial-persona-support-to-an-activity.md).
@@ -79,6 +83,8 @@ func removeGroupActivityAssociation() {
   Create shared experiences for people wearing Vision Pro in the same room and those on FaceTime.
 - [Adding spatial Persona support to an activity](adding-spatial-persona-support-to-an-activity.md)
   Update your SharePlay activities to support spatial Personas and the shared context when running in visionOS.
+- [Implementing SharePlay for immersive spaces in visionOS](../visionOS/implementing-shareplay-for-immersive-spaces-in-visionos.md)
+  Enable collaborative spatial experiences by using SharePlay to synchronize 3D content among participants.
 - [class SystemCoordinator](systemcoordinator.md)
   A type you use to coordinate your interface’s behavior when an active SharePlay session supports spatial placement of content.
 - [SystemCoordinator.ParticipantState](systemcoordinator/participantstate.md)

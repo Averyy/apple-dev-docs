@@ -109,7 +109,7 @@ When you want to end the activity for everyone, call the [`end()`](groupsession/
 
 ## See Also
 
-- [Drawing content in a group session](drawing_content_in_a_group_session.md)
+- [Drawing content in a group session](drawing-content-in-a-group-session.md)
   Invite your friends to draw on a shared canvas while on a FaceTime call.
 - [class GroupSession](groupsession.md)
   A session for an in-progress activity that synchronizes content among participant devices.

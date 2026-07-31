@@ -49,7 +49,7 @@ This framework leverages the FaceTime infrastructure to synchronize your app’s
 ### Session management
 - [Joining and managing a shared activity](joining-and-managing-a-shared-activity.md)
   Configure the session when a SharePlay activity starts, and handle events that occur during the lifetime of the activity.
-- [Drawing content in a group session](drawing_content_in_a_group_session.md)
+- [Drawing content in a group session](drawing-content-in-a-group-session.md)
   Invite your friends to draw on a shared canvas while on a FaceTime call.
 - [class GroupSession](groupsession.md)
   A session for an in-progress activity that synchronizes content among participant devices.
@@ -62,6 +62,8 @@ This framework leverages the FaceTime infrastructure to synchronize your app’s
   Create shared experiences for people wearing Vision Pro in the same room and those on FaceTime.
 - [Adding spatial Persona support to an activity](adding-spatial-persona-support-to-an-activity.md)
   Update your SharePlay activities to support spatial Personas and the shared context when running in visionOS.
+- [Implementing SharePlay for immersive spaces in visionOS](../visionOS/implementing-shareplay-for-immersive-spaces-in-visionos.md)
+  Enable collaborative spatial experiences by using SharePlay to synchronize 3D content among participants.
 - [class SystemCoordinator](systemcoordinator.md)
   A type you use to coordinate your interface’s behavior when an active SharePlay session supports spatial placement of content.
 - [SystemCoordinator.ParticipantState](systemcoordinator/participantstate.md)

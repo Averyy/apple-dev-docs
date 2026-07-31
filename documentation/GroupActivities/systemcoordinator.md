@@ -68,6 +68,8 @@ You choose what information to share among participants, and you choose how to m
   Create shared experiences for people wearing Vision Pro in the same room and those on FaceTime.
 - [Adding spatial Persona support to an activity](adding-spatial-persona-support-to-an-activity.md)
   Update your SharePlay activities to support spatial Personas and the shared context when running in visionOS.
+- [Implementing SharePlay for immersive spaces in visionOS](../visionOS/implementing-shareplay-for-immersive-spaces-in-visionos.md)
+  Enable collaborative spatial experiences by using SharePlay to synchronize 3D content among participants.
 - [SystemCoordinator.ParticipantState](systemcoordinator/participantstate.md)
   A structure that tells you whether a participant supports a shared simulation space for the current activity.
 - [func groupActivityAssociation(GroupActivityAssociationKind?) -> some View

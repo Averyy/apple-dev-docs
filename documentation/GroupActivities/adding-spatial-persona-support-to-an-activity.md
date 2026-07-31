@@ -37,6 +37,37 @@ var body: some Scene {
 
 In addition to configuring your scene, you need to update your activity object’s metadata with the appropriate string. Specify the string using the [`sceneAssociationBehavior`](groupactivitymetadata/sceneassociationbehavior.md) property of your activity object’s [`GroupActivityMetadata`](groupactivitymetadata.md) structure. Assign the [`default`](sceneassociationbehavior/default.md) value to this property if you use the activity identifier as the string. For any custom strings, assign the [`content(_:)`](sceneassociationbehavior/content(_:).md) value and specify your string. To disable scene association for the activity and handle the presentation of activity-related UI yourself, specify the [`none`](sceneassociationbehavior/none.md) value.
 
+Although the activation conditions and the activity’s `SceneAssociationBehavior` determine the automatically associated scene, you can explicitly specify a different scene using the [`groupActivityAssociation(_:)`](https://developer.apple.com/documentation/SwiftUI/View/groupActivityAssociation(_:)) modifier. Use this modifier on your view to set its activity association to [`primary(_:)`](groupactivityassociationkind/primary(_:).md), and include an identifier that reflects the content of the view.
+
+The system shares the most recently opened window whose [`GroupActivityAssociationKind`](groupactivityassociationkind.md) is set to `.primary(_:)`. To stop sharing a scene, set the `GroupActivityAssociationKind` to `nil`.
+
+The following example shows how to dynamically change the shared scene depending on changes in your app:
+
+```swift
+struct GameApp: App {
+    @State var isShowingVideo: Bool = true
+
+    var body: some Scene {
+        WindowGroup {
+            VideoView()
+                .groupActivityAssociation(isShowingVideo ? .primary("how-to-video") : nil)
+        }
+
+
+        WindowGroup {
+            BoardGameView()
+                .groupActivityAssociation(isShowingVideo ? nil : .primary("play-game"))
+        }
+    }
+}
+```
+
+> **Note**: If multiple scenes have a primary group activity association, the most recently activated one is used.
+
+For a demonstration, watch the “Support multiple windows” chapter of the WWDC25 session [`Share visionOS experiences with nearby people`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2025/318).
+
+For UIKit, create a [`GroupActivityAssociationInteraction`](groupactivityassociationinteraction.md) and use [`addInteraction(_:)`](https://developer.apple.com/documentation/UIKit/UIView/addInteraction(_:)) to add the scene association interaction.
+
 ##### Configure Your Apps Support for Spatial Personas
 
 The system provides some default behaviors to make it easier for you to adopt spatial Personas in your app. For activities that take place in a window or volume, the system chooses a default arrangement of the spatial Personas around your scene. The system also adorns the scene with a Share menu, which provides a visual indication when sharing is active and contains controls to start activities. The system doesn’t display spatial Personas in a Full Space by default.
@@ -62,7 +93,7 @@ newSession.join()
 
 Spatial template preferences tell the system whether to arrange participants side by side, in a circle, or in an arrangement that supports conversation. For each template, the system uses the size of your content to determine how far away to place spatial Personas. For example, the system moves them farther away when your content is larger, and brings them closer together when your content is small. To override this distance, add the [`contentExtent(_:)`](spatialtemplatepreference/contentextent(_:).md) modifier to your template preference. That modifier tells the system to use the distance you specify, instead of the content size.
 
-If you enable support for spatial Personas in a Full Space, you must do additional work to support that experience. When an activity moves to a Full Space, the system creates a shared coordinate system for all participants and the content. In this new coordinate system, participants are no longer at the center of the coordinate system, which might require you to update the position of your content. For more information, see [`Place content relative to a participant in an immersive space`](adding-spatial-persona-support-to-an-activity#Place-content-relative-to-a-participant-in-an-immersive-space.md).
+If you enable support for spatial Personas in a Full Space, you must do additional work to support that experience. When an activity moves to a Full Space, the system creates a shared coordinate system for all participants and the content. In this new coordinate system, participants are no longer at the center of the coordinate system, which might require you to update the position of your content. For more information, see [`Place content in an immersive space`](adding-spatial-persona-support-to-an-activity#Place-content-in-an-immersive-space.md).
 
 ##### Synchronize Additional Data When Spatial Personas Are Visible
 
@@ -75,7 +106,7 @@ When defining an activity, define additional data messages to synchronize any in
 To determine when someone’s spatial Persona is visible, monitor the [`localParticipantStates`](systemcoordinator/localparticipantstates.md) of your session’s [`SystemCoordinator`](systemcoordinator.md) object. The [`AsyncSequence`](https://developer.apple.com/documentation/Swift/AsyncSequence) in this property reports participant-related state changes, including changes to the visibility of their spatial Persona. Get the [`isSpatial`](systemcoordinator/participantstate/isspatial.md) property of the returned [`SystemCoordinator.ParticipantState`](systemcoordinator/participantstate.md) structure and use it to configure your app’s behavior. The following example uses a task to update the game state to accommodate spatial Personas. When the current participant is spatial, the game sends additional messages to maintain the shared context.
 
 ```swift
-Task.detached { @MainActor in
+Task {
     for await state in coordinator.localParticipantStates {
         if state.isSpatial {
             // Synchronize additional data for the shared context.
@@ -95,7 +126,7 @@ If one participant opens an immersive space as part of an activity, the system d
 To determine when any participant transitions to an immersive space, monitor the [`groupImmersionStyle`](systemcoordinator/groupimmersionstyle.md) property of your [`SystemCoordinator`](systemcoordinator.md) object. This property contains an [`AsyncSequence`](https://developer.apple.com/documentation/Swift/AsyncSequence) that reports the most recent immersion style that a participant adopts. When a participant presents an immersive space, or when they change the immersion style of the current space, the system updates the sequence with the new value. The following example shows a task that opens the immersive space with the same style as the group immersion style.
 
 ```swift
-Task.detached {
+Task {
     for await immersionStyle in systemCoordinator.groupImmersionStyle {
         if let immersionStyle {
             // Open an immersive space with the same style.
@@ -111,33 +142,55 @@ The system reports `nil` for the immersion style when a participant dismisses th
 
 > **Note**: If a participant presses the Digital Crown while an immersive space is open, the system dismisses the space without notifying the rest of the group. Someone might use this feature to temporarily leave the activity and perform another task. After they perform that task, they can use the system-provided UI to rejoin the activity and return to the group immersive space.
 
-##### Place Content Relative to a Participant in an Immersive Space
+##### Place Content in an Immersive Space
 
 When an activity takes place in an immersive space, the system creates a shared coordinate system for the participants and content. In this new coordinate space, the origin of the coordinate space is not the same as the origin of any of the participants. If an activity-related window or volume is visible, the system places the window or volume at the new origin. If the activity doesn’t use a window or volume, the system arranges the participants in a circle and sets the origin of the coordinate space to the circle’s center. The following figure shows the origin of the shared coordinate system for a window, volume, and immersive space relative to several spatial Personas.
 
-If you place content directly into your immersive space, you must adjust the position of that content to account for the modified coordinate space. To do that, you first determine the person’s location in the new coordinate system. Read the person’s location in the scene using a [`GeometryProxy3D`](https://developer.apple.com/documentation/SwiftUI/GeometryProxy3D). The proxy for this reader contains a doc://com.apple.documentation/documentation/swiftui/geometryproxy3d/immersivespacedisplacement(in:) method, which you can use to locate the origin of the shared coordinate space. Call the method using the [`global`](https://developer.apple.com/documentation/SwiftUI/CoordinateSpaceProtocol/global) value as a parameter to get the displacement of the coordinate space’s origin, relative to the person’s location. Invert that displacement value to get the location of the participant relative in the new coordinate space. The following example shows how to use a [`GeometryProxy3D`](https://developer.apple.com/documentation/SwiftUI/GeometryProxy3D) to get the offset to the current participant and use that information to place a custom view:
+> **Note**: Open your immersive space after starting the SharePlay session to provide a smooth experience. When you open the immersive space before SharePlay starts, the space briefly shifts positions when SharePlay establishes the shared coordinate space, which can be disorienting.
+
+If the immersive space is already open before SharePlay begins, you can use the [`immersiveSpaceDisplacement`](https://developer.apple.com/documentation/SwiftUI/EnvironmentValues/immersiveSpaceDisplacement) environment value to detect when the coordinate space changes and get the current offset of the immersive space relative to its default position. When the value is [`identity`](https://developer.apple.com/documentation/Spatial/Pose3D/identity), the immersive space has no offset. When the value changes to a non-identity pose, SharePlay has established a shared coordinate space.
+
+To position content relative to a participant in the shared coordinate space, use the [`localParticipantState`](systemcoordinator/localparticipantstate.md) property of your [`SystemCoordinator`](systemcoordinator.md) to access the local participant’s [`pose`](systemcoordinator/participantstate/pose.md). This property provides the participant’s offset from the spatial template origin. The following example shows how to place an object at a consistent position in front of the local participant:
 
 ```swift
-var body: some Scene {
-    ImmersiveSpace(id:"earth") {
-        GeometryReader3D { proxy in
-            let displacement = 
-                proxy.immersiveSpaceDisplacement(in: .global).inverse
-                
-            CustomView()
-                .offset(displacement.position)
-                .rotation3DEffect(displacement.rotation)
-        }
-    }
+@Environment(\.immersiveSpaceDisplacement) var immersiveSpaceDisplacement
+
+func placeObject(systemCoordinator: SystemCoordinator) -> SIMD3<Float> {
+    // Get the local participant's position relative to the spatial template origin.
+    let localPose = systemCoordinator.localParticipantState.pose
+    
+    // Place the object in front of and slightly below the participant.
+    let offset = SIMD3<Float>(x: 0, y: -0.2, z: -0.5)
+    
+    // Add the offset to the participant's position.
+    return localPose.position + offset
 }
 ```
 
 The displacement between a person and the origin of the scene doesn’t change during the course of your activity even when the participant moves. The system sets the origin of an immersive space when you first present it, and updates it only once when changing it to a shared coordinate space.
 
+To place content in front of a specific participant, observe `remoteParticipantStates` and use the pose property of `SystemCoordinator.ParticipantState` to get each remote participant’s position in the shared space:
+
+```swift
+Task {
+    let observedRemoteParticipantStates = Observations {
+        return systemCoordinator.remoteParticipantStates
+    }
+    for await observedRemoteParticipantState in observedRemoteParticipantStates {
+        for (participant, state) in observedRemoteParticipantState {
+            // Place presented content relative to the remote participant pose.
+            placeContentNear(participant, at: participantState.pose)
+        }
+    }
+}
+```
+
 ## See Also
 
 - [Configure your visionOS app for sharing with people nearby](configure-your-app-for-sharing-with-people-nearby.md)
   Create shared experiences for people wearing Vision Pro in the same room and those on FaceTime.
+- [Implementing SharePlay for immersive spaces in visionOS](../visionOS/implementing-shareplay-for-immersive-spaces-in-visionos.md)
+  Enable collaborative spatial experiences by using SharePlay to synchronize 3D content among participants.
 - [class SystemCoordinator](systemcoordinator.md)
   A type you use to coordinate your interface’s behavior when an active SharePlay session supports spatial placement of content.
 - [SystemCoordinator.ParticipantState](systemcoordinator/participantstate.md)

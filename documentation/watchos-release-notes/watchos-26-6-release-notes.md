@@ -1,4 +1,4 @@
-# watchOS 26.6 RC Release Notes
+# watchOS 26.6 Release Notes
 
 **Framework**: watchOS Release Notes
 
@@ -6,7 +6,7 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The watchOS 26.6 SDK provides support to develop watchOS apps for Apple Watch devices running watchOS 26.6 RC. The SDK comes bundled with Xcode 26.6, available from the Mac App Store. For information on the compatibility requirements for Xcode 26.6, see [`Xcode 26.6 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-26_6-release-notes).
+The watchOS 26.6 SDK provides support to develop watchOS apps for Apple Watch devices running watchOS 26.6. The SDK comes bundled with Xcode 26.6, available from the Mac App Store. For information on the compatibility requirements for Xcode 26.6, see [`Xcode 26.6 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-26_6-release-notes).
 
 ##### Healthkit
 

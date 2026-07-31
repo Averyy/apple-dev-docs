@@ -45,7 +45,7 @@ The visionOS 26.1 SDK provides support for developing apps for Apple Vision Pro 
 
 ## See Also
 
-- [visionOS 26.6 RC Release Notes](visionos-26_6-release-notes.md)
+- [visionOS 26.6 Release Notes](visionos-26_6-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.
 - [visionOS 26.5 Release Notes](visionos-26_5-release-notes.md)
   Update your apps to use new features, and test your apps against API changes.

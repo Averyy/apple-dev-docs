@@ -55,7 +55,7 @@ You don’t create participant objects directly. The system creates a participan
 
 - [Joining and managing a shared activity](joining-and-managing-a-shared-activity.md)
   Configure the session when a SharePlay activity starts, and handle events that occur during the lifetime of the activity.
-- [Drawing content in a group session](drawing_content_in_a_group_session.md)
+- [Drawing content in a group session](drawing-content-in-a-group-session.md)
   Invite your friends to draw on a shared canvas while on a FaceTime call.
 - [class GroupSession](groupsession.md)
   A session for an in-progress activity that synchronizes content among participant devices.

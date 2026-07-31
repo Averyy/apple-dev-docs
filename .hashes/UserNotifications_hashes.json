@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-07-28T07:47:47.331111",
+    "last_updated": "2026-07-31T07:41:58.473120",
     "total_pages": 564,
-    "session_id": "2026-07-28T07:46:49.860938"
+    "session_id": "2026-07-31T07:41:13.737421"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/UserNotifications.json": {
       "hash": "57729c08fb2b9f86f8ceacb7e52e1c3b9ed563021bd2317838d367a4917f7216",
-      "last_checked": "2026-07-28T07:46:50.389278",
+      "last_checked": "2026-07-31T07:41:14.154009",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"78455367fdf6035ec0605aeec2ec0c27\"",
       "file_path": "documentation/UserNotifications/UserNotifications.md"
     },
     "https://developer.apple.com/documentation/UserNotifications": {
       "hash": "57729c08fb2b9f86f8ceacb7e52e1c3b9ed563021bd2317838d367a4917f7216",
-      "last_checked": "2026-07-28T07:46:50.282522",
+      "last_checked": "2026-07-31T07:41:14.031570",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"78455367fdf6035ec0605aeec2ec0c27\"",
       "file_path": "documentation/UserNotifications/UserNotifications.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/asking-permission-to-use-notifications.json": {
       "hash": "4a719b52e487b4a27686f2273e24b1f002dd1bacd46823054bbdbc1c882ce62d",
-      "last_checked": "2026-07-28T07:46:50.820727",
+      "last_checked": "2026-07-31T07:41:14.560200",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"206c50e8fcea9a5b9877bcd34002a8c3\"",
       "file_path": "documentation/UserNotifications/asking-permission-to-use-notifications.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unusernotificationcenter.json": {
       "hash": "b2a2c47c48025193cff3a82d86cf4ee08bfe0bb569ae6a460ec69e3931c2e94f",
-      "last_checked": "2026-07-28T07:46:51.031188",
+      "last_checked": "2026-07-31T07:41:14.856339",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"0a656ee87ee7d6989acfc58e17a8c918\"",
       "file_path": "documentation/UserNotifications/unusernotificationcenter.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unusernotificationcenterdelegate.json": {
       "hash": "45adc07a41ba8ec4ba4b212457489cbef2245d553cc372039f085647762d57dd",
-      "last_checked": "2026-07-28T07:46:51.218154",
+      "last_checked": "2026-07-31T07:41:15.132980",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"9f384dbbfd27a28b686e00ce05c37b3e\"",
       "file_path": "documentation/UserNotifications/unusernotificationcenterdelegate.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationsettings.json": {
       "hash": "4f05e601093cead79ae14d30e0de8d06471a0cffa228766812b87f4e4f422b67",
-      "last_checked": "2026-07-28T07:46:51.424812",
+      "last_checked": "2026-07-31T07:41:15.288188",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"97e3d8b0438bcddbefab1661acc98cba\"",
       "file_path": "documentation/UserNotifications/unnotificationsettings.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/setting-up-a-remote-notification-server.json": {
       "hash": "3763aa52a68911ce80c9d2b762738d4159751b012d5f9bdaefdb611286e6a851",
-      "last_checked": "2026-07-28T07:46:51.750494",
+      "last_checked": "2026-07-31T07:41:15.456417",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"527425469fa287dcd10ad4b5f1ff4f75\"",
       "file_path": "documentation/UserNotifications/setting-up-a-remote-notification-server.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/sending-push-notifications-using-command-line-tools.json": {
       "hash": "d3702c4fc69fafd7de08d1a74c2b0ff3f7c56b8806e7c8e3be6aa00e876a394a",
-      "last_checked": "2026-07-28T07:46:52.126539",
+      "last_checked": "2026-07-31T07:41:15.750672",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"68559452a9d258c90c93c5afe4312850\"",
       "file_path": "documentation/UserNotifications/sending-push-notifications-using-command-line-tools.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/testing-notifications-using-the-push-notification-console.json": {
       "hash": "eceef1f045fcdb91f04dbef8cccb44f2a93dc6760eca0f84419d58b472ce42da",
-      "last_checked": "2026-07-28T07:46:52.333857",
+      "last_checked": "2026-07-31T07:41:15.895586",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"66d575502db4257438553306fd92c0f1\"",
       "file_path": "documentation/UserNotifications/testing-notifications-using-the-push-notification-console.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/scheduling-a-notification-locally-from-your-app.json": {
       "hash": "ebe59737df66b1d1b71c035a6c98b8ccd99e786827e9b3bb02f91288249fb379",
-      "last_checked": "2026-07-28T07:46:52.655629",
+      "last_checked": "2026-07-31T07:41:16.070221",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"185a4730161948ab64dcb6378841df51\"",
       "file_path": "documentation/UserNotifications/scheduling-a-notification-locally-from-your-app.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationrequest.json": {
       "hash": "f461256f60fe5a833758a7edb37754dee6bf0a60e319785d86521a979f8e634d",
-      "last_checked": "2026-07-28T07:46:52.989217",
+      "last_checked": "2026-07-31T07:41:16.235583",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"61a9d6c2b85ec5acf587c798f804de09\"",
       "file_path": "documentation/UserNotifications/unnotificationrequest.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotification.json": {
       "hash": "95bf098fc8d644ff195ac088c778de7db15a4d37bf2fe69c7be6a8e2f1c4ca8e",
-      "last_checked": "2026-07-28T07:46:53.323046",
+      "last_checked": "2026-07-31T07:41:16.499066",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"13994ddf60d04046b628ce65a2b1d316\"",
       "file_path": "documentation/UserNotifications/unnotification.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/sending-web-push-notifications-in-web-apps-and-browsers.json": {
       "hash": "551037e2ce2d3ff6ed8374a6e219d83158cebce50a6c29f6c14b1cb38b88b238",
-      "last_checked": "2026-07-28T07:46:53.669847",
+      "last_checked": "2026-07-31T07:41:16.657907",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"68a69850c847c14edbb29c4430639cfa\"",
       "file_path": "documentation/UserNotifications/sending-web-push-notifications-in-web-apps-and-browsers.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/implementing-communication-notifications.json": {
       "hash": "e3edf96b6da78a0a0c1f1e02a32bf7554a5489d99e892b3b87e9e44e98698c65",
-      "last_checked": "2026-07-28T07:46:54.018045",
+      "last_checked": "2026-07-31T07:41:16.944658",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"8543578a9fbdc079732aa424fcda6efa\"",
       "file_path": "documentation/UserNotifications/implementing-communication-notifications.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationcontentproviding.json": {
       "hash": "c60905693680d53b8d4532d2da5d7aa3a86ef46672af20d18dfcc3198c3b89cc",
-      "last_checked": "2026-07-28T07:46:54.214524",
+      "last_checked": "2026-07-31T07:41:17.108055",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"c272ed7a82748ab524b4e515f94c57e1\"",
       "file_path": "documentation/UserNotifications/unnotificationcontentproviding.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationactionicon.json": {
       "hash": "d1cb4b40601334d9586caab692729371cb3283d9a1a00bcf4b45022f96f016d6",
-      "last_checked": "2026-07-28T07:46:54.397383",
+      "last_checked": "2026-07-31T07:41:17.302551",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"c5bd94475e4347a1d669ad4a57283e8d\"",
       "file_path": "documentation/UserNotifications/unnotificationactionicon.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unmutablenotificationcontent.json": {
       "hash": "f8b3f4194d3102b18e437c41220bbf275715ba83521fb6cbe38a7776bf88b972",
-      "last_checked": "2026-07-28T07:46:54.739236",
+      "last_checked": "2026-07-31T07:41:17.466355",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"e8b097da97a0bf2052007a57f6684a6c\"",
       "file_path": "documentation/UserNotifications/unmutablenotificationcontent.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationcontent.json": {
       "hash": "1539d1c9b41bbf95bf9b74a1ce04498512bf94512ad7a9e8ea361ac075d06bbf",
-      "last_checked": "2026-07-28T07:46:54.931320",
+      "last_checked": "2026-07-31T07:41:17.772019",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"d7f31c1a559ac254c4973d443e4aa4a3\"",
       "file_path": "documentation/UserNotifications/unnotificationcontent.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationattachment.json": {
       "hash": "4d24e3c677425c3461264e45385a4f65608bbd9ec8f0894194b0da2735441b0c",
-      "last_checked": "2026-07-28T07:46:55.279064",
+      "last_checked": "2026-07-31T07:41:17.948506",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"73860e7be0548f4a45b365b74f2f4d0a\"",
       "file_path": "documentation/UserNotifications/unnotificationattachment.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationsound.json": {
       "hash": "6e92f833e86988fd828a15b82a517d9c3f045408a8346e276cf5be4fd5364b2b",
-      "last_checked": "2026-07-28T07:46:55.614463",
+      "last_checked": "2026-07-31T07:41:18.101682",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"98d441b1059a0b36a1105c4ce5d2daab\"",
       "file_path": "documentation/UserNotifications/unnotificationsound.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationsoundname.json": {
       "hash": "06542d6f37d249bfb3ac7dd6885a177cf783dd1bc60f80e92a73039dfd823c1d",
-      "last_checked": "2026-07-28T07:46:55.934940",
+      "last_checked": "2026-07-31T07:41:18.220319",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"23a01bca99c1860e89864f73493fcbe3\"",
       "file_path": "documentation/UserNotifications/unnotificationsoundname.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/uncalendarnotificationtrigger.json": {
       "hash": "083f1053862e6eb3729bb269bca981bf2173923ee38d4b6190ed0974f5856dba",
-      "last_checked": "2026-07-28T07:46:56.253204",
+      "last_checked": "2026-07-31T07:41:18.525418",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"525980a83c9895f7160ebe9765735084\"",
       "file_path": "documentation/UserNotifications/uncalendarnotificationtrigger.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/untimeintervalnotificationtrigger.json": {
       "hash": "a60cc886d32931f4075fed15bbaa826439c188f4ce2fb97116c305cc16d4ea10",
-      "last_checked": "2026-07-28T07:46:56.580932",
+      "last_checked": "2026-07-31T07:41:18.653583",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"00be7846a0c15eac65e14d97f61846a9\"",
       "file_path": "documentation/UserNotifications/untimeintervalnotificationtrigger.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unlocationnotificationtrigger.json": {
       "hash": "31b5276174262da38e3e780b20b3cf42c82fe01ba6f4d0495f17bd4314c9e1ed",
-      "last_checked": "2026-07-28T07:46:56.900879",
+      "last_checked": "2026-07-31T07:41:18.813325",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"e737980c1c418fd2de597eac7c3a95b5\"",
       "file_path": "documentation/UserNotifications/unlocationnotificationtrigger.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unpushnotificationtrigger.json": {
       "hash": "8e8dc268c2f8ff91c3c237e11d61b7279bd2bbbb342610fe131ac7d6b3dee911",
-      "last_checked": "2026-07-28T07:46:57.082153",
+      "last_checked": "2026-07-31T07:41:18.963731",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"25e528afcaf7743c3273c48b981073c9\"",
       "file_path": "documentation/UserNotifications/unpushnotificationtrigger.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationtrigger.json": {
       "hash": "3fcd923912f1a5fa79d9f44ab0311dd632ac434df6e3f2ed6a578d039df77538",
-      "last_checked": "2026-07-28T07:46:57.282371",
+      "last_checked": "2026-07-31T07:41:19.125510",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"510e5112d1e52a7b6d0fda7e686566c3\"",
       "file_path": "documentation/UserNotifications/unnotificationtrigger.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/declaring-your-actionable-notification-types.json": {
       "hash": "ea29ddae5df0cf90d53d499d20308def8ca3474e5c35a1fbcde1a66268efcb75",
-      "last_checked": "2026-07-28T07:46:57.630768",
+      "last_checked": "2026-07-31T07:41:19.286118",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"9a8fef72f9e68d068b581ba93b891363\"",
       "file_path": "documentation/UserNotifications/declaring-your-actionable-notification-types.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationcategory.json": {
       "hash": "88cc443e968d90037ed6d42cd5d4c3bd624e1638e944b23a4762563dbe4d831a",
-      "last_checked": "2026-07-28T07:46:57.853137",
+      "last_checked": "2026-07-31T07:41:19.443710",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"fde33e219e6570b04ffc1db571fa6b07\"",
       "file_path": "documentation/UserNotifications/unnotificationcategory.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationaction.json": {
       "hash": "cb9d5d6783cea31db9200ac118aa44c199c27bffaf26992e89b4ebb376c8dc30",
-      "last_checked": "2026-07-28T07:46:58.182501",
+      "last_checked": "2026-07-31T07:41:19.746816",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"76e024518d5d5ca6accb641c55a9b779\"",
       "file_path": "documentation/UserNotifications/unnotificationaction.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/untextinputnotificationaction.json": {
       "hash": "c9cdfef86c907e7de02597cde2d0b8e15d1f9d9f4a4ff44a6d055520d72a6720",
-      "last_checked": "2026-07-28T07:46:58.373875",
+      "last_checked": "2026-07-31T07:41:19.903347",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"9c6c3c72567a0040dfc5107d2aa7cff3\"",
       "file_path": "documentation/UserNotifications/untextinputnotificationaction.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/handling-notifications-and-notification-related-actions.json": {
       "hash": "0a6c1c4386df8885c4475625fea496573a1b2df0e181c140df82d4952675edc0",
-      "last_checked": "2026-07-28T07:46:58.565188",
+      "last_checked": "2026-07-31T07:41:20.192286",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"d56b7b624dad3ad4daa219c58b0c1e58\"",
       "file_path": "documentation/UserNotifications/handling-notifications-and-notification-related-actions.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationresponse.json": {
       "hash": "6ddaec4b77d5356e5215bf97ef39999e7aae7d8415e766ba8f1e48efd381e723",
-      "last_checked": "2026-07-28T07:46:58.786407",
+      "last_checked": "2026-07-31T07:41:20.357560",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"ae957f0305d49966798ac2f77775edc5\"",
       "file_path": "documentation/UserNotifications/unnotificationresponse.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/untextinputnotificationresponse.json": {
       "hash": "4bb01dad2cf74d9533f017df7a31aa33defbf32e36f582d22996b5f090338af6",
-      "last_checked": "2026-07-28T07:46:58.977257",
+      "last_checked": "2026-07-31T07:41:20.512739",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"879c25fc583af95a33fa67ef68de5484\"",
       "file_path": "documentation/UserNotifications/untextinputnotificationresponse.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/modifying-content-in-newly-delivered-notifications.json": {
       "hash": "dc98b31fb3773cc2e75fca011e677dcab1d811c2ed9ef49721ce918680a23474",
-      "last_checked": "2026-07-28T07:46:59.117373",
+      "last_checked": "2026-07-31T07:41:20.682381",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"cf600752f0054d9c6658428c088c368a\"",
       "file_path": "documentation/UserNotifications/modifying-content-in-newly-delivered-notifications.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationserviceextension.json": {
       "hash": "54aaf8b22b5c12196ac38da770180a054be807e87945307fa9c5e472d4fa892c",
-      "last_checked": "2026-07-28T07:46:59.258115",
+      "last_checked": "2026-07-31T07:41:20.894660",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"f88323d0432fb00082fb9f35508ef1ad\"",
       "file_path": "documentation/UserNotifications/unnotificationserviceextension.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/handling-communication-notifications-and-focus-status-updates.json": {
       "hash": "306ed781d60cd44a8410fdc68a2e56313fdd5469ecebb7fe515c1f4135aa273d",
-      "last_checked": "2026-07-28T07:46:59.589674",
+      "last_checked": "2026-07-31T07:41:21.094193",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"90a3da76c0fba65eefc7e7a9ade29f90\"",
       "file_path": "documentation/UserNotifications/handling-communication-notifications-and-focus-status-updates.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/implementing-alert-push-notifications.json": {
       "hash": "0357894ae8f4e890c2f7eeb7490e0b35a95a221393f5512399b142b18688d479",
-      "last_checked": "2026-07-28T07:46:59.789210",
+      "last_checked": "2026-07-31T07:41:21.242765",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"a9e3eb2ce0343f0709099f36200e3a18\"",
       "file_path": "documentation/UserNotifications/implementing-alert-push-notifications.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/implementing-background-push-notifications.json": {
       "hash": "131eb552ddf870df9d0e4a84453aee38220a713e770c03e961f150fa9e184277",
-      "last_checked": "2026-07-28T07:46:59.997681",
+      "last_checked": "2026-07-31T07:41:21.470489",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"3345b2de334f67473f190fd0feb06e85\"",
       "file_path": "documentation/UserNotifications/implementing-background-push-notifications.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationattributedmessagecontext.json": {
       "hash": "75e2fbda9fcf72f43bc4d265f00fdb89481b647cbca7473370e753af04ea1796",
-      "last_checked": "2026-07-28T07:47:00.175192",
+      "last_checked": "2026-07-31T07:41:21.624949",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"9cfb5858116e706e790701768067c0ab\"",
       "file_path": "documentation/UserNotifications/unnotificationattributedmessagecontext.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unusernotificationcenter/current().json": {
       "hash": "46fe3424cfbe804d33302c635faf31239f39fbb3f6f4cd4585a05ad16759896b",
-      "last_checked": "2026-07-28T07:47:00.377238",
+      "last_checked": "2026-07-31T07:41:21.808663",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"27babc3abc33409bb842ca0b25d4ce13\"",
       "file_path": "documentation/UserNotifications/unusernotificationcenter/current.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unusernotificationcenter/getnotificationsettings(completionhandler:).json": {
       "hash": "bcfe213eaee45437c97a67f61d88ce174458e8ebe678697ca04702229ec07c94",
-      "last_checked": "2026-07-28T07:47:00.571227",
+      "last_checked": "2026-07-31T07:41:21.969084",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"b3d5ecbe53de71ae7dad50f9d09145d5\"",
       "file_path": "documentation/UserNotifications/unusernotificationcenter/getnotificationsettings-completionhandler.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unusernotificationcenter/setbadgecount(_:withcompletionhandler:).json": {
       "hash": "c683bd03066e797a2bdcce17ae8a03d4d06fe13a678fb021834cf27d7bd75411",
-      "last_checked": "2026-07-28T07:47:00.776116",
+      "last_checked": "2026-07-31T07:41:22.135202",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"64da8ddc1c9f1f2ecc5babe3c85e0b59\"",
       "file_path": "documentation/UserNotifications/unusernotificationcenter/setbadgecount-withcompletionhandler.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unusernotificationcenter/requestauthorization(options:completionhandler:).json": {
       "hash": "8dc3c62dfb316fe0aa387e92006cb9d50517b4c862c29425d83bbe84f21bf4fa",
-      "last_checked": "2026-07-28T07:47:00.972640",
+      "last_checked": "2026-07-31T07:41:22.306644",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"270bb9b4610c81dabc9c06fa8308fa1a\"",
       "file_path": "documentation/UserNotifications/unusernotificationcenter/requestauthorization-optionscompletionhandler.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unauthorizationoptions.json": {
       "hash": "beb9dc7f20c7eafc7e1fb95d85fd4bd8dc1b8ee7c69f32b9343657d53dce003e",
-      "last_checked": "2026-07-28T07:47:01.175520",
+      "last_checked": "2026-07-31T07:41:22.469919",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"788c12b859283e0b9a4809756a7a40ab\"",
       "file_path": "documentation/UserNotifications/unauthorizationoptions.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unusernotificationcenter/delegate.json": {
       "hash": "32e65024c17e8ae01a678236a1940f645e0d06f7ab2c1f3cdf6421f7945d1887",
-      "last_checked": "2026-07-28T07:47:01.370509",
+      "last_checked": "2026-07-31T07:41:22.632756",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"f2e5d5e6744adead03091cab7971f6f2\"",
       "file_path": "documentation/UserNotifications/unusernotificationcenter/delegate.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unusernotificationcenter/supportscontentextensions.json": {
       "hash": "b6d31cf6b277d8cb3022ca41337854019bbaa4922630012aff9798a37d8e936e",
-      "last_checked": "2026-07-28T07:47:01.560650",
+      "last_checked": "2026-07-31T07:41:22.748266",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"108dd1b63e49bfb78c4a851ecfdac407\"",
       "file_path": "documentation/UserNotifications/unusernotificationcenter/supportscontentextensions.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unusernotificationcenter/add(_:withcompletionhandler:).json": {
       "hash": "00564e5c1e8ab1afa16e7c3725648d14e2807b3ae52962b0ca3f3bcb4cb73748",
-      "last_checked": "2026-07-28T07:47:01.750711",
+      "last_checked": "2026-07-31T07:41:22.936516",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"ce5ee11155de6de0705571a8e6d858fe\"",
       "file_path": "documentation/UserNotifications/unusernotificationcenter/add-withcompletionhandler.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unusernotificationcenter/getpendingnotificationrequests(completionhandler:).json": {
       "hash": "80eaebf7eab67fa2668516a7ffa267cba4b39517d32e2e3aa906018f066636fc",
-      "last_checked": "2026-07-28T07:47:01.912384",
+      "last_checked": "2026-07-31T07:41:23.114516",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"e113cfa9176e869a48a4681ee5870a41\"",
       "file_path": "documentation/UserNotifications/unusernotificationcenter/getpendingnotificationrequests-completionhandler.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unusernotificationcenter/removependingnotificationrequests(withidentifiers:).json": {
       "hash": "be5ead814f6105861207c499422836d5b644b8be057624ee31f4ff010f0c3a9f",
-      "last_checked": "2026-07-28T07:47:02.100041",
+      "last_checked": "2026-07-31T07:41:23.273053",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"f4b9eafa843165ede17eee1c9efd7c11\"",
       "file_path": "documentation/UserNotifications/unusernotificationcenter/removependingnotificationrequests-withidentifiers.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unusernotificationcenter/removeallpendingnotificationrequests().json": {
       "hash": "fb455795b4e218f85e2a25ef7ddef57d463544be000f78225c427bde9d145f8c",
-      "last_checked": "2026-07-28T07:47:02.294595",
+      "last_checked": "2026-07-31T07:41:23.440182",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"ca0f8bfc9feda1ee55e86da6127f2407\"",
       "file_path": "documentation/UserNotifications/unusernotificationcenter/removeallpendingnotificationrequests.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unusernotificationcenter/getdeliverednotifications(completionhandler:).json": {
       "hash": "d2051dd8b98d3e3e4ae0d25456f51b49036d350e2e34fafb09095d529776122a",
-      "last_checked": "2026-07-28T07:47:02.478255",
+      "last_checked": "2026-07-31T07:41:23.615762",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"9ff394fb152c620bc687bb79d8952d72\"",
       "file_path": "documentation/UserNotifications/unusernotificationcenter/getdeliverednotifications-completionhandler.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unusernotificationcenter/removedeliverednotifications(withidentifiers:).json": {
       "hash": "819d77bbcd69e3f8b75f1fc1ec02faf3b3a08972632f94318c4ec3d066a46bac",
-      "last_checked": "2026-07-28T07:47:02.664461",
+      "last_checked": "2026-07-31T07:41:23.791036",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"7d530245ad686f81f035f8dcab7d755d\"",
       "file_path": "documentation/UserNotifications/unusernotificationcenter/removedeliverednotifications-withidentifiers.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unusernotificationcenter/removealldeliverednotifications().json": {
       "hash": "55e5f334ad57b8e792b6f4f3fe776dfd415ff372d8e15617ae5ae5eb35332151",
-      "last_checked": "2026-07-28T07:47:02.807838",
+      "last_checked": "2026-07-31T07:41:23.955394",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"fc412fe8315bd72fe60987967f313c8c\"",
       "file_path": "documentation/UserNotifications/unusernotificationcenter/removealldeliverednotifications.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unusernotificationcenter/setnotificationcategories(_:).json": {
       "hash": "72a02526d63b48359892517bbf1d1b5c7d2add50519edbe10b544f4aa2e3d162",
-      "last_checked": "2026-07-28T07:47:03.009972",
+      "last_checked": "2026-07-31T07:41:24.132278",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"c24bcb1d3f0c70ce051d6300a53e4d53\"",
       "file_path": "documentation/UserNotifications/unusernotificationcenter/setnotificationcategories.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unusernotificationcenter/getnotificationcategories(completionhandler:).json": {
       "hash": "1a9571aff3f21e6fb6bcf86571185e9cd8bde1c923cc80b36c5e868a3e7ce4b7",
-      "last_checked": "2026-07-28T07:47:03.205803",
+      "last_checked": "2026-07-31T07:41:24.306794",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"8ae745c01a18549e32626fe9aff0bc2f\"",
       "file_path": "documentation/UserNotifications/unusernotificationcenter/getnotificationcategories-completionhandler.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unerror.json": {
       "hash": "a67eba7d0a306673b014115ef0ad30a2633c40568da9f7b28b118c19734087fc",
-      "last_checked": "2026-07-28T07:47:03.390309",
+      "last_checked": "2026-07-31T07:41:24.478208",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"825b47ed66fd48cb944dcafa82774d48\"",
       "file_path": "documentation/UserNotifications/unerror.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unerror/code.json": {
       "hash": "f280fa65200ab434bcd6bb991e91e74b8acf14fdba8a13cf5efc98c86ac00b03",
-      "last_checked": "2026-07-28T07:47:03.575943",
+      "last_checked": "2026-07-31T07:41:24.644307",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"fd8cd1ae726fee1b19a694936caffced\"",
       "file_path": "documentation/UserNotifications/unerror/code.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unerrordomain.json": {
       "hash": "83d02d1b8a20342a8bf350d05138b3b5e116952aa8738919290afcb01f572586",
-      "last_checked": "2026-07-28T07:47:03.760529",
+      "last_checked": "2026-07-31T07:41:24.798353",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"c38318f045f4489e010b7a8cfe331d07\"",
       "file_path": "documentation/UserNotifications/unerrordomain.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unusernotificationcenterdelegate/usernotificationcenter(_:didreceive:withcompletionhandler:).json": {
       "hash": "171d383227aef43a9c6ddd293a3562a2a8d7ec14d2ec77047661d143e395d552",
-      "last_checked": "2026-07-28T07:47:03.937293",
+      "last_checked": "2026-07-31T07:41:24.964653",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"a118c0393bbd523346042d5010de3efa\"",
       "file_path": "documentation/UserNotifications/unusernotificationcenterdelegate/usernotificationcenter-didreceivewithcompletionhandler.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unusernotificationcenterdelegate/usernotificationcenter(_:willpresent:withcompletionhandler:).json": {
       "hash": "e9074e26954fd67d4f936aab1dbfb87c1ba191b4ba3ae1dcdb1103c9bfc49a39",
-      "last_checked": "2026-07-28T07:47:04.128464",
+      "last_checked": "2026-07-31T07:41:25.115047",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"162a73d257296036516e24216160d77d\"",
       "file_path": "documentation/UserNotifications/unusernotificationcenterdelegate/usernotificationcenter-willpresentwithcompletionhandler.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationpresentationoptions.json": {
       "hash": "24d77858f4d5c1fd50fa4bb7c646ffa3db8e88c065089221e32f79b19eaf6544",
-      "last_checked": "2026-07-28T07:47:04.274977",
+      "last_checked": "2026-07-31T07:41:25.273269",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"ebe80eecf5e75e1f32c38a856ec4b6d7\"",
       "file_path": "documentation/UserNotifications/unnotificationpresentationoptions.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unusernotificationcenterdelegate/usernotificationcenter(_:opensettingsfor:).json": {
       "hash": "508661ba10fa22c5a59a035ec8632507ae0bf0e8ed1eca107cb149e20f2922a6",
-      "last_checked": "2026-07-28T07:47:04.512323",
+      "last_checked": "2026-07-31T07:41:25.436708",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"7e39e3508462f06d4a755924daac59db\"",
       "file_path": "documentation/UserNotifications/unusernotificationcenterdelegate/usernotificationcenter-opensettingsfor.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationsettings/authorizationstatus.json": {
       "hash": "9e61dd9c08a117cbed9db2d7bac36e81577d11da83c89ceb83eb15bc99466ce2",
-      "last_checked": "2026-07-28T07:47:04.715921",
+      "last_checked": "2026-07-31T07:41:25.583212",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"e11cbf27c64b23fbf838d59b00c8cd59\"",
       "file_path": "documentation/UserNotifications/unnotificationsettings/authorizationstatus.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unauthorizationstatus.json": {
       "hash": "4f02c13a6d0cde395188904f1c6263a9185f65b95a2ec5288efe749f34409f52",
-      "last_checked": "2026-07-28T07:47:04.922019",
+      "last_checked": "2026-07-31T07:41:25.746247",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"335b91b0ca78e76fefbf6e80d01e9f7a\"",
       "file_path": "documentation/UserNotifications/unauthorizationstatus.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationsettings/notificationcentersetting.json": {
       "hash": "00af046ea3c5230e9fa3d9528f8f51ba513be59654920c2ccbd2b28b107595ce",
-      "last_checked": "2026-07-28T07:47:05.133307",
+      "last_checked": "2026-07-31T07:41:25.906726",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"a094a05405e7e6c7cf2bdb19f0247d16\"",
       "file_path": "documentation/UserNotifications/unnotificationsettings/notificationcentersetting.md"
     },
@@ -1031,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationsettings/lockscreensetting.json": {
       "hash": "27c9b1d2b66d3712711f97064e9359b9237cd3ae16d567559ac0d86e2a72482b",
-      "last_checked": "2026-07-28T07:47:05.285197",
+      "last_checked": "2026-07-31T07:41:26.064766",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"52b75a79102603bd75c9a6ed24b6b570\"",
       "file_path": "documentation/UserNotifications/unnotificationsettings/lockscreensetting.md"
     },
@@ -1047,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationsettings/carplaysetting.json": {
       "hash": "4ccda3a9bb6e457fd7ce3cd641a6ea50910eebbf272c247f039b774e3de10169",
-      "last_checked": "2026-07-28T07:47:05.366746",
+      "last_checked": "2026-07-31T07:41:26.216556",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"78bb221499456dc28e9e5140da86b278\"",
       "file_path": "documentation/UserNotifications/unnotificationsettings/carplaysetting.md"
     },
@@ -1063,9 +1063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationsettings/alertsetting.json": {
       "hash": "001f0951959c7ff4f66af320122d8b13bec5e6fa083d3032369da88205dea1ae",
-      "last_checked": "2026-07-28T07:47:05.604184",
+      "last_checked": "2026-07-31T07:41:26.391842",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"9222011f5db04d75f8d8371209f0268c\"",
       "file_path": "documentation/UserNotifications/unnotificationsettings/alertsetting.md"
     },
@@ -1079,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationsettings/badgesetting.json": {
       "hash": "d357c0731566a650f4e9b224d1210c3afe0aba43bf092210defa0b46a1196b15",
-      "last_checked": "2026-07-28T07:47:05.783065",
+      "last_checked": "2026-07-31T07:41:26.561614",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"6e0d6767d66faa0c9b04b2122fba7003\"",
       "file_path": "documentation/UserNotifications/unnotificationsettings/badgesetting.md"
     },
@@ -1095,9 +1095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationsettings/soundsetting.json": {
       "hash": "c3ed59c583ad7e272b082a7a453ac2c530b3eaef170ea220188571e37ce283b9",
-      "last_checked": "2026-07-28T07:47:05.981361",
+      "last_checked": "2026-07-31T07:41:26.728826",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"55ca89ff550014af995851ad8b6f8ded\"",
       "file_path": "documentation/UserNotifications/unnotificationsettings/soundsetting.md"
     },
@@ -1111,9 +1111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationsettings/criticalalertsetting.json": {
       "hash": "0efed50913355f055befc160b4f29df638238e9afc8808eb2733215b6697d6b3",
-      "last_checked": "2026-07-28T07:47:06.188444",
+      "last_checked": "2026-07-31T07:41:26.893361",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"054e7f9a58c15dea9220ac6a6e4ce1da\"",
       "file_path": "documentation/UserNotifications/unnotificationsettings/criticalalertsetting.md"
     },
@@ -1127,9 +1127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationsettings/announcementsetting.json": {
       "hash": "6cd594bf36bd2299c275a84deb53a4ca8c161cdcad5f592f736669a69797b9ed",
-      "last_checked": "2026-07-28T07:47:06.383171",
+      "last_checked": "2026-07-31T07:41:27.056210",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"69a1803954842894ad2c33bd75f6a643\"",
       "file_path": "documentation/UserNotifications/unnotificationsettings/announcementsetting.md"
     },
@@ -1143,9 +1143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationsettings/scheduleddeliverysetting.json": {
       "hash": "9bd01662ad8bd854489b8d593e958e126ce251bc52ab13734b47ef02a2e9a8ab",
-      "last_checked": "2026-07-28T07:47:06.574229",
+      "last_checked": "2026-07-31T07:41:27.212314",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"dcd38229f77d9d9913b54b644ecd5491\"",
       "file_path": "documentation/UserNotifications/unnotificationsettings/scheduleddeliverysetting.md"
     },
@@ -1159,9 +1159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationsettings/timesensitivesetting.json": {
       "hash": "63ccbdd39f28fa656c8bc87160dc665285f26d12e8b203d5e10d649c85198cfe",
-      "last_checked": "2026-07-28T07:47:06.752894",
+      "last_checked": "2026-07-31T07:41:27.313160",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"ab4aa4fe84fe7ca54fb696df371ebca8\"",
       "file_path": "documentation/UserNotifications/unnotificationsettings/timesensitivesetting.md"
     },
@@ -1175,9 +1175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationsetting.json": {
       "hash": "d6c6efaaf67c3083c0c151050336837b096dca73d26670173885ce34eb0a433c",
-      "last_checked": "2026-07-28T07:47:06.965984",
+      "last_checked": "2026-07-31T07:41:27.516719",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"02362f5e973abc5feec680e65c95b7eb\"",
       "file_path": "documentation/UserNotifications/unnotificationsetting.md"
     },
@@ -1191,9 +1191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationsettings/alertstyle.json": {
       "hash": "add636bcb659adef0a40e2145dd60c440d8a319d946674356dd06e884eacffaa",
-      "last_checked": "2026-07-28T07:47:07.164981",
+      "last_checked": "2026-07-31T07:41:27.693032",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"ddab0c84c44ca77efb7a8ceb1e2ba9f3\"",
       "file_path": "documentation/UserNotifications/unnotificationsettings/alertstyle.md"
     },
@@ -1207,9 +1207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unalertstyle.json": {
       "hash": "1644d16a8eb58280927236ae5e4351ce2ed020a9772e516cd1a9104ed7c42baa",
-      "last_checked": "2026-07-28T07:47:07.351818",
+      "last_checked": "2026-07-31T07:41:27.850378",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"b3e80a23f898fc288b80679e4ab4c2da\"",
       "file_path": "documentation/UserNotifications/unalertstyle.md"
     },
@@ -1223,9 +1223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationsettings/showpreviewssetting.json": {
       "hash": "513c1be7cff5d8e224ff118ecb7f361af08f7f16dcf7a07a82f3d032a1a5f682",
-      "last_checked": "2026-07-28T07:47:07.674972",
+      "last_checked": "2026-07-31T07:41:28.012999",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"b23f0b30a90ceaaabba180fef18d1d35\"",
       "file_path": "documentation/UserNotifications/unnotificationsettings/showpreviewssetting.md"
     },
@@ -1239,9 +1239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unshowpreviewssetting.json": {
       "hash": "be67110b2fd2733a57f0744037e2a1d1d9f45aba2e4bd12280d4b328b1de312e",
-      "last_checked": "2026-07-28T07:47:07.808811",
+      "last_checked": "2026-07-31T07:41:28.180675",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"e038a08e9ade5e5556b8d030fa7f0edf\"",
       "file_path": "documentation/UserNotifications/unshowpreviewssetting.md"
     },
@@ -1255,9 +1255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationsettings/providesappnotificationsettings.json": {
       "hash": "96ce0d6ef53bfd2ba12dad583e3420ee594dcea0bade3495db6295c19d4300a8",
-      "last_checked": "2026-07-28T07:47:07.998228",
+      "last_checked": "2026-07-31T07:41:28.296540",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"97a3046059c2fce33bcbf0474f4b19fb\"",
       "file_path": "documentation/UserNotifications/unnotificationsettings/providesappnotificationsettings.md"
     },
@@ -1271,9 +1271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationsettings/directmessagessetting.json": {
       "hash": "f8ff1b8eccf188887bba44bdb7b6877c38eed3c2063d637eba211e6c3415cef9",
-      "last_checked": "2026-07-28T07:47:08.131767",
+      "last_checked": "2026-07-31T07:41:28.465193",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"c8ef5a9bf407ae25758f1932fac32983\"",
       "file_path": "documentation/UserNotifications/unnotificationsettings/directmessagessetting.md"
     },
@@ -1287,9 +1287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/registering-your-app-with-apns.json": {
       "hash": "df55f450c2c3014526f58facab7ab459d2063dc5c8e01821368e5cb98043fae7",
-      "last_checked": "2026-07-28T07:47:08.479072",
+      "last_checked": "2026-07-31T07:41:28.791130",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"85e99f0bf5d1aa03e70aec74a0dcabe2\"",
       "file_path": "documentation/UserNotifications/registering-your-app-with-apns.md"
     },
@@ -1303,9 +1303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/generating-a-remote-notification.json": {
       "hash": "01354d6d0474a6e0c1714020400e1aad4c3f3ef971e7118ba7e83e0c56f0e8fa",
-      "last_checked": "2026-07-28T07:47:08.621849",
+      "last_checked": "2026-07-31T07:41:28.954083",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"f09c787e17f0efde68b1640578078332\"",
       "file_path": "documentation/UserNotifications/generating-a-remote-notification.md"
     },
@@ -1319,9 +1319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/pushing-background-updates-to-your-app.json": {
       "hash": "6cd61effd8e0c89bfaa56e1bae42e1d5b28f7b1a2ab68a61ac818ea3381cac49",
-      "last_checked": "2026-07-28T07:47:08.798494",
+      "last_checked": "2026-07-31T07:41:29.236215",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"b579fd1f12fd084ffc3fcdb2af72b632\"",
       "file_path": "documentation/UserNotifications/pushing-background-updates-to-your-app.md"
     },
@@ -1335,9 +1335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/establishing-a-connection-to-apns.json": {
       "hash": "8373606d59fbdb8bcf3316e14544fb260208f9cf9b1d0d7b6d8011ae34ce9e17",
-      "last_checked": "2026-07-28T07:47:08.991793",
+      "last_checked": "2026-07-31T07:41:29.447094",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"b90e81f3a97ba1110a3e9a960d2b5be1\"",
       "file_path": "documentation/UserNotifications/establishing-a-connection-to-apns.md"
     },
@@ -1351,9 +1351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/establishing-a-token-based-connection-to-apns.json": {
       "hash": "514cf58df5775d702c19e4a2ced7b4bc7ac38125eb72829523323816f8ba4349",
-      "last_checked": "2026-07-28T07:47:09.188505",
+      "last_checked": "2026-07-31T07:41:29.618732",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"fee3940c3db4415962f6ae08d19a694a\"",
       "file_path": "documentation/UserNotifications/establishing-a-token-based-connection-to-apns.md"
     },
@@ -1367,9 +1367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/establishing-a-certificate-based-connection-to-apns.json": {
       "hash": "e6c3528ebf1b337294ec19d2621fb054b46dcc6e32d3955effb5135ce34b63fc",
-      "last_checked": "2026-07-28T07:47:09.371757",
+      "last_checked": "2026-07-31T07:41:29.981986",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"d21851c0ba850346fd5026831778989e\"",
       "file_path": "documentation/UserNotifications/establishing-a-certificate-based-connection-to-apns.md"
     },
@@ -1383,9 +1383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/sending-notification-requests-to-apns.json": {
       "hash": "c63c7c4289b388e85f3fec9f43bb07827a6a84b1b70ca725975b3a43261a64a4",
-      "last_checked": "2026-07-28T07:47:09.554708",
+      "last_checked": "2026-07-31T07:41:30.151660",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"649dc568c9aa2b9e891c5a9c31e672b9\"",
       "file_path": "documentation/UserNotifications/sending-notification-requests-to-apns.md"
     },
@@ -1399,9 +1399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/handling-notification-responses-from-apns.json": {
       "hash": "570b39471aa2ec23f8f612beac7b7953479440d0ef703abd2623385ef3e845d6",
-      "last_checked": "2026-07-28T07:47:09.736024",
+      "last_checked": "2026-07-31T07:41:30.329589",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"306c0330cee8d07498c3a80036e218d8\"",
       "file_path": "documentation/UserNotifications/handling-notification-responses-from-apns.md"
     },
@@ -1415,9 +1415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/viewing-the-status-of-push-notifications-using-metrics-and-apns.json": {
       "hash": "e70a6a36a4f1a1887587b8558db11e094fce3098e160598b4542c98a9e1fd186",
-      "last_checked": "2026-07-28T07:47:09.927637",
+      "last_checked": "2026-07-31T07:41:30.514972",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"a715d27943ad5ccc8ffdada8a80b7f32\"",
       "file_path": "documentation/UserNotifications/viewing-the-status-of-push-notifications-using-metrics-and-apns.md"
     },
@@ -1431,9 +1431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/setting-up-broadcast-push-notifications.json": {
       "hash": "0e51dacb880dbf3e86ecf2809fa0f3847aff25119576900784cd391d0a998515",
-      "last_checked": "2026-07-28T07:47:10.125904",
+      "last_checked": "2026-07-31T07:41:30.682093",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"abfba821622bd207dbc2b324387fd395\"",
       "file_path": "documentation/UserNotifications/setting-up-broadcast-push-notifications.md"
     },
@@ -1447,9 +1447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/sending-channel-management-requests-to-apns.json": {
       "hash": "0d8970b81c8f8b1cb78f823e0ad58e471147d4b5796aaf655f9fd32137eadd38",
-      "last_checked": "2026-07-28T07:47:10.318999",
+      "last_checked": "2026-07-31T07:41:30.853440",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"ca6d6f102350d0e77cd2f62169ab50f3\"",
       "file_path": "documentation/UserNotifications/sending-channel-management-requests-to-apns.md"
     },
@@ -1463,9 +1463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/sending-broadcast-push-notification-requests-to-apns.json": {
       "hash": "2ba00f1225edbfde1cf1122fe7078722912bafff6766ba3f9f617ddc868cb484",
-      "last_checked": "2026-07-28T07:47:10.500209",
+      "last_checked": "2026-07-31T07:41:31.053708",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"303becad564c228b5b935093fed822d3\"",
       "file_path": "documentation/UserNotifications/sending-broadcast-push-notification-requests-to-apns.md"
     },
@@ -1479,9 +1479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/handling-error-responses-from-apns.json": {
       "hash": "07ea571fd5d21140854751ab75d5991c65abbf594b49016e94142467c7657382",
-      "last_checked": "2026-07-28T07:47:10.705751",
+      "last_checked": "2026-07-31T07:41:31.229920",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"139efd7a639a9465c466a95a095a5848\"",
       "file_path": "documentation/UserNotifications/handling-error-responses-from-apns.md"
     },
@@ -1495,9 +1495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/troubleshooting-push-notifications.json": {
       "hash": "94c79393b7ab944e49556a10a78837fa0a39b08013c7ea77a2429820001e6b04",
-      "last_checked": "2026-07-28T07:47:10.902366",
+      "last_checked": "2026-07-31T07:41:31.342074",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"2e9688a3baa0d212715816fe0175bfeb\"",
       "file_path": "documentation/UserNotifications/troubleshooting-push-notifications.md"
     },
@@ -1511,9 +1511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationrequest/init(identifier:content:trigger:).json": {
       "hash": "5c2509c7b66ee56c885d661236060ff388fb88253bf8dc5a5275ee4bd0dd4588",
-      "last_checked": "2026-07-28T07:47:11.085330",
+      "last_checked": "2026-07-31T07:41:31.476330",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"50a9dd979e6e017724cb344730f27c97\"",
       "file_path": "documentation/UserNotifications/unnotificationrequest/init-identifiercontenttrigger.md"
     },
@@ -1527,9 +1527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationrequest/identifier.json": {
       "hash": "9f8db4f0d1a86cda37817dc8fdfcefb55775fe100e55c25e414f23f9d9c58d30",
-      "last_checked": "2026-07-28T07:47:11.335544",
+      "last_checked": "2026-07-31T07:41:31.621899",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"b1118dd4d5c1180528f44eb91b6b1bdd\"",
       "file_path": "documentation/UserNotifications/unnotificationrequest/identifier.md"
     },
@@ -1543,9 +1543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationrequest/content.json": {
       "hash": "b6473c690b0822421baecc5ad271acea190fd0d9bab985f13b197a2b203d66b6",
-      "last_checked": "2026-07-28T07:47:11.516739",
+      "last_checked": "2026-07-31T07:41:31.765025",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"6a407f75a4ae90cb0adcec652ca2171d\"",
       "file_path": "documentation/UserNotifications/unnotificationrequest/content.md"
     },
@@ -1559,9 +1559,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationrequest/trigger.json": {
       "hash": "3ed81fdb2937950ba001e9d54239eb9ad1fddd046271a7f9ba5cd88b6494acf7",
-      "last_checked": "2026-07-28T07:47:11.716038",
+      "last_checked": "2026-07-31T07:41:31.927241",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"508ba0b90af5290ebfad6ca2cc2b8541\"",
       "file_path": "documentation/UserNotifications/unnotificationrequest/trigger.md"
     },
@@ -1575,9 +1575,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotification/request.json": {
       "hash": "abfae83d0e5433fbcafc44e85cd6617a9a248af3bc58b9fd2d5e3c5156ac233f",
-      "last_checked": "2026-07-28T07:47:12.064718",
+      "last_checked": "2026-07-31T07:41:32.245112",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"74c5cdca769d53ee3f2b5b576d999a02\"",
       "file_path": "documentation/UserNotifications/unnotification/request.md"
     },
@@ -1591,9 +1591,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotification/date.json": {
       "hash": "70d271d11da15974540048125adc769d8ad7f97098d1628a5953868275e99488",
-      "last_checked": "2026-07-28T07:47:12.244529",
+      "last_checked": "2026-07-31T07:41:32.392812",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"5442030cd989596747b382bdbfb786b6\"",
       "file_path": "documentation/UserNotifications/unnotification/date.md"
     },
@@ -1607,9 +1607,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationactionicon/init(systemimagename:).json": {
       "hash": "7f7e94bd78135643a92c29bc43c771f5a03e554ceb180cc012e79bc10570e7f6",
-      "last_checked": "2026-07-28T07:47:12.627723",
+      "last_checked": "2026-07-31T07:41:32.680036",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"e30630b1b266624fdd52f49dc2d370fd\"",
       "file_path": "documentation/UserNotifications/unnotificationactionicon/init-systemimagename.md"
     },
@@ -1623,9 +1623,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationactionicon/init(templateimagename:).json": {
       "hash": "28c3a28536ddb07bdff44a9efdb9ed76d732e7613c02111f9637aed107492b6d",
-      "last_checked": "2026-07-28T07:47:12.812574",
+      "last_checked": "2026-07-31T07:41:32.845422",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"9acacf3a4f70ec7be68d12aca027c1f4\"",
       "file_path": "documentation/UserNotifications/unnotificationactionicon/init-templateimagename.md"
     },
@@ -1639,9 +1639,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unmutablenotificationcontent/title.json": {
       "hash": "31ad4e8ae7b87ebd3c17a06a52a4e4124a339a362bfc9b6b08c2db0071304ff4",
-      "last_checked": "2026-07-28T07:47:13.210360",
+      "last_checked": "2026-07-31T07:41:33.152151",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"f1ecc524bc23fd2ca4a8b41136681f2e\"",
       "file_path": "documentation/UserNotifications/unmutablenotificationcontent/title.md"
     },
@@ -1655,9 +1655,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unmutablenotificationcontent/subtitle.json": {
       "hash": "846f2c57e9b6b373a17e4d6bd8e9692d21c694ee23cd4a1ad5d5491a385a35c6",
-      "last_checked": "2026-07-28T07:47:13.412734",
+      "last_checked": "2026-07-31T07:41:33.328316",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"adf3bb874400929a4890ecbe180d6d1c\"",
       "file_path": "documentation/UserNotifications/unmutablenotificationcontent/subtitle.md"
     },
@@ -1671,9 +1671,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unmutablenotificationcontent/body.json": {
       "hash": "f6c6da4b37a5562143d2d6613e7e407ce35de4b6e78b5bf5a7ae0af7f4b957fd",
-      "last_checked": "2026-07-28T07:47:13.595837",
+      "last_checked": "2026-07-31T07:41:33.491175",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"09d41815cc903b35eb1a093ce3b35a30\"",
       "file_path": "documentation/UserNotifications/unmutablenotificationcontent/body.md"
     },
@@ -1687,9 +1687,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unmutablenotificationcontent/attachments.json": {
       "hash": "68ddcf2af46b33a8d5cbfc6a6fe304cca8dc0f353622787206ecf5da1f8af121",
-      "last_checked": "2026-07-28T07:47:13.771336",
+      "last_checked": "2026-07-31T07:41:33.600860",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"2e8ab6e7cb1327cf45dfdeaad9aa010f\"",
       "file_path": "documentation/UserNotifications/unmutablenotificationcontent/attachments.md"
     },
@@ -1703,9 +1703,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unmutablenotificationcontent/userinfo.json": {
       "hash": "ce0dbb911dce876639ff3066c9cafbb73140901dbe39ec153a6185dbc14b2e4d",
-      "last_checked": "2026-07-28T07:47:14.096067",
+      "last_checked": "2026-07-31T07:41:33.777948",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"5b28ca650fde9c20e3e529f60c32224e\"",
       "file_path": "documentation/UserNotifications/unmutablenotificationcontent/userinfo.md"
     },
@@ -1719,9 +1719,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unmutablenotificationcontent/launchimagename.json": {
       "hash": "fcca7e6275728ae13ddc78a23562fcd8ca3ac431572da4fea291406c267ec3d9",
-      "last_checked": "2026-07-28T07:47:14.490734",
+      "last_checked": "2026-07-31T07:41:33.928025",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"be1bc5073ff8dd70a1ed6c5edf0b6e0a\"",
       "file_path": "documentation/UserNotifications/unmutablenotificationcontent/launchimagename.md"
     },
@@ -1735,9 +1735,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unmutablenotificationcontent/badge.json": {
       "hash": "ac6dc27cfaf56da839dbffe1b5e4ba9a1df7a79a1d267a823ef4c37ee6824d0d",
-      "last_checked": "2026-07-28T07:47:14.665825",
+      "last_checked": "2026-07-31T07:41:34.099737",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"13e2a1d5ec8bbe1d7d9444e170bee538\"",
       "file_path": "documentation/UserNotifications/unmutablenotificationcontent/badge.md"
     },
@@ -1751,9 +1751,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unmutablenotificationcontent/targetcontentidentifier.json": {
       "hash": "7f7cfc59908de657f4dff364c0fb811510d947c40ff6d21e8096d78d68d1c93a",
-      "last_checked": "2026-07-28T07:47:14.989461",
+      "last_checked": "2026-07-31T07:41:34.241378",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"aea3c9d3055a89fba4b7fbf7ab07222a\"",
       "file_path": "documentation/UserNotifications/unmutablenotificationcontent/targetcontentidentifier.md"
     },
@@ -1767,9 +1767,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unmutablenotificationcontent/sound.json": {
       "hash": "c3829f796d2ead15a0a8425f61c709ed955fcae3aebd3a13a000fbc6f9be58b6",
-      "last_checked": "2026-07-28T07:47:15.138503",
+      "last_checked": "2026-07-31T07:41:34.385188",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"206f49cbf30c6d6b6f59c12125e58fca\"",
       "file_path": "documentation/UserNotifications/unmutablenotificationcontent/sound.md"
     },
@@ -1783,9 +1783,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unmutablenotificationcontent/interruptionlevel.json": {
       "hash": "7672cf5312eab0927d6277acbbf24eec5bb3bf5f3df018a988f995439e14c8e2",
-      "last_checked": "2026-07-28T07:47:15.275576",
+      "last_checked": "2026-07-31T07:41:34.540058",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"cf7cbf103d4c5106ca4a476c84943961\"",
       "file_path": "documentation/UserNotifications/unmutablenotificationcontent/interruptionlevel.md"
     },
@@ -1799,9 +1799,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationinterruptionlevel.json": {
       "hash": "232e0d6c49c6d717fdcf825958fa9a9be9a6a2d5620805355297bca2b0f47983",
-      "last_checked": "2026-07-28T07:47:15.460056",
+      "last_checked": "2026-07-31T07:41:34.686287",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"1eafcc61420f27611fb94d48948a260b\"",
       "file_path": "documentation/UserNotifications/unnotificationinterruptionlevel.md"
     },
@@ -1815,9 +1815,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unmutablenotificationcontent/relevancescore.json": {
       "hash": "fb6174ce72a49850b9eec4ceb30fd5ceba60ef700ddef6159436910ded890046",
-      "last_checked": "2026-07-28T07:47:15.658095",
+      "last_checked": "2026-07-31T07:41:34.833391",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"d2b558cc91126a862f2df6e6093032e5\"",
       "file_path": "documentation/UserNotifications/unmutablenotificationcontent/relevancescore.md"
     },
@@ -1831,9 +1831,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unmutablenotificationcontent/filtercriteria.json": {
       "hash": "2810c7671e351c6152124928c3b598e6e1688d399b721ee0373cbbcd2d9d3ac6",
-      "last_checked": "2026-07-28T07:47:15.849590",
+      "last_checked": "2026-07-31T07:41:34.988823",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"1305d4a367208aeb1ab90d6bdb9f62dc\"",
       "file_path": "documentation/UserNotifications/unmutablenotificationcontent/filtercriteria.md"
     },
@@ -1847,9 +1847,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unmutablenotificationcontent/threadidentifier.json": {
       "hash": "7355a648ce4eb9a1d1ce973bb1fba060c423620b7078f7edfcb58d644c05fb92",
-      "last_checked": "2026-07-28T07:47:16.034144",
+      "last_checked": "2026-07-31T07:41:35.123217",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"97e094264caaa5e741fa648977281ef8\"",
       "file_path": "documentation/UserNotifications/unmutablenotificationcontent/threadidentifier.md"
     },
@@ -1863,9 +1863,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unmutablenotificationcontent/categoryidentifier.json": {
       "hash": "b8bb095904e2b4bdb824e40eac4812818b7aa031efd706413434ed81d0bc0893",
-      "last_checked": "2026-07-28T07:47:16.232893",
+      "last_checked": "2026-07-31T07:41:35.301125",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"5d91414266df6941c7015f06dc22f479\"",
       "file_path": "documentation/UserNotifications/unmutablenotificationcontent/categoryidentifier.md"
     },
@@ -1879,9 +1879,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unmutablenotificationcontent/summaryargument.json": {
       "hash": "5837d18293ba9150cff262242e6dd07fd290bc792f9414af793275c77020456f",
-      "last_checked": "2026-07-28T07:47:16.503393",
+      "last_checked": "2026-07-31T07:41:35.423145",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"199de74707eae2b69fef838cf2c7aad0\"",
       "file_path": "documentation/UserNotifications/unmutablenotificationcontent/summaryargument.md"
     },
@@ -1895,9 +1895,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unmutablenotificationcontent/summaryargumentcount.json": {
       "hash": "eb36b13f0a57e75d573684154e79bf98ff958adf4a29b775bca3ae470d2c42ef",
-      "last_checked": "2026-07-28T07:47:16.695326",
+      "last_checked": "2026-07-31T07:41:35.577961",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"7876db81ca61cdb20939793edf75412a\"",
       "file_path": "documentation/UserNotifications/unmutablenotificationcontent/summaryargumentcount.md"
     },
@@ -1911,9 +1911,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationcontent/title.json": {
       "hash": "690652826751921a1387ecedbc8610d44d36064a9cc1f4531d22fef6e0b23005",
-      "last_checked": "2026-07-28T07:47:17.085639",
+      "last_checked": "2026-07-31T07:41:35.866593",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"81f739324c3b7a923541046571a033ca\"",
       "file_path": "documentation/UserNotifications/unnotificationcontent/title.md"
     },
@@ -1927,9 +1927,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationcontent/subtitle.json": {
       "hash": "d37e27c655c7440a1338ac22f02531e4f76ef6eb447ba1578869be9d2ece31ed",
-      "last_checked": "2026-07-28T07:47:17.281662",
+      "last_checked": "2026-07-31T07:41:36.034058",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"d73f7745cb4efc568bfccc2a3a592e68\"",
       "file_path": "documentation/UserNotifications/unnotificationcontent/subtitle.md"
     },
@@ -1943,9 +1943,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationcontent/body.json": {
       "hash": "c8f6a4228086cc4f5a29b7842d49953b6d915fb62703d32be4229fd0f05e665d",
-      "last_checked": "2026-07-28T07:47:17.481300",
+      "last_checked": "2026-07-31T07:41:36.151905",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"1fb40096370b3badf97c9c6d98202912\"",
       "file_path": "documentation/UserNotifications/unnotificationcontent/body.md"
     },
@@ -1959,9 +1959,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationcontent/attachments.json": {
       "hash": "43a7e8d7c452feef7f78911248bdf8a21704c8659b07911d949879d98b072f1d",
-      "last_checked": "2026-07-28T07:47:17.675857",
+      "last_checked": "2026-07-31T07:41:36.319196",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"b84b7faaa5f26650320377fff1f19764\"",
       "file_path": "documentation/UserNotifications/unnotificationcontent/attachments.md"
     },
@@ -1975,9 +1975,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationcontent/userinfo.json": {
       "hash": "4e2947e3f772b4caec4dabdf60cb6f074a330bf35fb53496a2f5e1472f322d1d",
-      "last_checked": "2026-07-28T07:47:17.864706",
+      "last_checked": "2026-07-31T07:41:36.435342",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"963673e4595f8f2a8731d692d48665e4\"",
       "file_path": "documentation/UserNotifications/unnotificationcontent/userinfo.md"
     },
@@ -1991,9 +1991,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationcontent/launchimagename.json": {
       "hash": "15ff12e51043e233d8df9a55c97caf4b8436f7fc05a5ffab29321b53a0f16dfd",
-      "last_checked": "2026-07-28T07:47:18.193429",
+      "last_checked": "2026-07-31T07:41:36.539097",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"722594db7b64918ec463b996bf21eb6e\"",
       "file_path": "documentation/UserNotifications/unnotificationcontent/launchimagename.md"
     },
@@ -2007,9 +2007,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationcontent/badge.json": {
       "hash": "d150eb5835927576e9eca993b98438c2f7d2561d3875398a02ccd37f5df46027",
-      "last_checked": "2026-07-28T07:47:18.368754",
+      "last_checked": "2026-07-31T07:41:36.696520",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"f6a0ce6fd8f4918a358047183f12593a\"",
       "file_path": "documentation/UserNotifications/unnotificationcontent/badge.md"
     },
@@ -2023,9 +2023,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationcontent/targetcontentidentifier.json": {
       "hash": "697fef1aac1eb9e3318e9575cc47b7306bea7755c947cf5c59fccce87cd21a0d",
-      "last_checked": "2026-07-28T07:47:18.560678",
+      "last_checked": "2026-07-31T07:41:36.863671",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"c8896969e8e39718958d62c964d76359\"",
       "file_path": "documentation/UserNotifications/unnotificationcontent/targetcontentidentifier.md"
     },
@@ -2039,9 +2039,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationcontent/sound.json": {
       "hash": "830f88bef36297af324e103715f1549083065f2d736405f90bcd1f8adbe2d4c4",
-      "last_checked": "2026-07-28T07:47:18.754685",
+      "last_checked": "2026-07-31T07:41:36.993568",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"c31b84f509e575a7195ebc60b419ff6b\"",
       "file_path": "documentation/UserNotifications/unnotificationcontent/sound.md"
     },
@@ -2055,9 +2055,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationcontent/interruptionlevel.json": {
       "hash": "5d68845123b8d59bc981f50a91da2f1c059e52ffacfd2f42ed7f3edd07aed86c",
-      "last_checked": "2026-07-28T07:47:18.931457",
+      "last_checked": "2026-07-31T07:41:37.127188",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"a1ea24a7507d5532f58aa74039e1d7a1\"",
       "file_path": "documentation/UserNotifications/unnotificationcontent/interruptionlevel.md"
     },
@@ -2071,9 +2071,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationcontent/relevancescore.json": {
       "hash": "61db058394fc8152f0d5e047194629774c67a99f544c1de914ec71b5a19dac9d",
-      "last_checked": "2026-07-28T07:47:19.130978",
+      "last_checked": "2026-07-31T07:41:37.251026",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"56053168973fb8db250b8a1b7366704a\"",
       "file_path": "documentation/UserNotifications/unnotificationcontent/relevancescore.md"
     },
@@ -2087,9 +2087,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationcontent/filtercriteria.json": {
       "hash": "385643b719ae77a5472137a6fab95ae26dcaf021d61cfda5625ec89ac71d6dfc",
-      "last_checked": "2026-07-28T07:47:19.320669",
+      "last_checked": "2026-07-31T07:41:37.397268",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"4b2e16b71da96c2376ea04a561bb2972\"",
       "file_path": "documentation/UserNotifications/unnotificationcontent/filtercriteria.md"
     },
@@ -2103,9 +2103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationcontent/threadidentifier.json": {
       "hash": "dd69875fbafcdf236a354d4c3dd657ec2431d6463c1b269ee1bd381021bbdb6f",
-      "last_checked": "2026-07-28T07:47:19.637962",
+      "last_checked": "2026-07-31T07:41:37.575553",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"360ecb475a23d996bff044f47c6536e5\"",
       "file_path": "documentation/UserNotifications/unnotificationcontent/threadidentifier.md"
     },
@@ -2119,9 +2119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationcontent/categoryidentifier.json": {
       "hash": "bed2e13355431b4b4ec30f372ca37882d03aa16e33749d55902a3bbb420f65a5",
-      "last_checked": "2026-07-28T07:47:19.810057",
+      "last_checked": "2026-07-31T07:41:37.715309",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"fd0dc4c871794f7205e3ad57414766f5\"",
       "file_path": "documentation/UserNotifications/unnotificationcontent/categoryidentifier.md"
     },
@@ -2135,9 +2135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationcontent/summaryargument.json": {
       "hash": "446ec402e1944e21a7457bcfa8a79459f67648c44dccb9baa5bd11dcb1f8aad0",
-      "last_checked": "2026-07-28T07:47:20.051355",
+      "last_checked": "2026-07-31T07:41:37.824363",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"088ed2731cc22febb1f73271fbe9bc2e\"",
       "file_path": "documentation/UserNotifications/unnotificationcontent/summaryargument.md"
     },
@@ -2151,9 +2151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationcontent/summaryargumentcount.json": {
       "hash": "3bdeb7cc9e713ae539ec550701188aba177c246f147583e97209e3c0d7d4c646",
-      "last_checked": "2026-07-28T07:47:20.243301",
+      "last_checked": "2026-07-31T07:41:38.003848",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"00e97e75a39f727a5184f6524cc22d52\"",
       "file_path": "documentation/UserNotifications/unnotificationcontent/summaryargumentcount.md"
     },
@@ -2167,9 +2167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationcontent/updating(from:).json": {
       "hash": "0dceda6b7494701df74e76dfdbe84f92c94e096ebbc27f1a3390c12d161a0c62",
-      "last_checked": "2026-07-28T07:47:20.432543",
+      "last_checked": "2026-07-31T07:41:38.161702",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"583b9073e719b17050b7b24a3354137b\"",
       "file_path": "documentation/UserNotifications/unnotificationcontent/updating-from.md"
     },
@@ -2183,9 +2183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationattachmentoptionstypehintkey.json": {
       "hash": "b5216ef97c51b3259b1487cd6ce0f4cfa0096fca1be1c5fd1f97a242df2e2254",
-      "last_checked": "2026-07-28T07:47:21.022975",
+      "last_checked": "2026-07-31T07:41:38.609284",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"9f537ad2f4d8b494f4690d146642a6ec\"",
       "file_path": "documentation/UserNotifications/unnotificationattachmentoptionstypehintkey.md"
     },
@@ -2199,9 +2199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationattachmentoptionsthumbnailhiddenkey.json": {
       "hash": "0dd005d7440bf26f1609c01910df0d853337a3d2073635c3a064ba644bb2dfb3",
-      "last_checked": "2026-07-28T07:47:21.217711",
+      "last_checked": "2026-07-31T07:41:38.799586",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"1f2eb5ddb7a1c0fda0220b222e22e4f7\"",
       "file_path": "documentation/UserNotifications/unnotificationattachmentoptionsthumbnailhiddenkey.md"
     },
@@ -2215,9 +2215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationattachmentoptionsthumbnailclippingrectkey.json": {
       "hash": "7f965bd38696bda781bb704d334790e369fca61aac7b15746053b88bb112b38b",
-      "last_checked": "2026-07-28T07:47:21.406912",
+      "last_checked": "2026-07-31T07:41:38.922153",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"376117e0e2d92863198635cd849fbf74\"",
       "file_path": "documentation/UserNotifications/unnotificationattachmentoptionsthumbnailclippingrectkey.md"
     },
@@ -2231,9 +2231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationattachmentoptionsthumbnailtimekey.json": {
       "hash": "327eedb77aa312c63eac321a262eb69f9262623437c3519910c0bfb88fe3002b",
-      "last_checked": "2026-07-28T07:47:21.590396",
+      "last_checked": "2026-07-31T07:41:39.040008",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"e7bfad5702767f49b729f1e0e762faf9\"",
       "file_path": "documentation/UserNotifications/unnotificationattachmentoptionsthumbnailtimekey.md"
     },
@@ -2247,9 +2247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationattachment/identifier.json": {
       "hash": "04b2dfb165a867c45baf99d138dff6bb9b0cbf0d577f1a3b9a0819e2fd92d454",
-      "last_checked": "2026-07-28T07:47:21.788251",
+      "last_checked": "2026-07-31T07:41:39.206154",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"77824722e7fbd6fa788df47eded6e051\"",
       "file_path": "documentation/UserNotifications/unnotificationattachment/identifier.md"
     },
@@ -2263,9 +2263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationattachment/url.json": {
       "hash": "29995824b4d4af58d63d4d9c5200ec2bbaa21324d853305f82caab66be7443c6",
-      "last_checked": "2026-07-28T07:47:21.984610",
+      "last_checked": "2026-07-31T07:41:39.357280",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"e206bf1e5c989b153de1c850a459439b\"",
       "file_path": "documentation/UserNotifications/unnotificationattachment/url.md"
     },
@@ -2279,9 +2279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationattachment/type.json": {
       "hash": "c419bcac1ee3373fdd777d8b1f85ec32e484f044b9cd1945fc81ae4b5b25c1a0",
-      "last_checked": "2026-07-28T07:47:22.183975",
+      "last_checked": "2026-07-31T07:41:39.494675",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"7ca8e0da062e75d986f16c7652a1da5c\"",
       "file_path": "documentation/UserNotifications/unnotificationattachment/type.md"
     },
@@ -2295,9 +2295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationsound/default.json": {
       "hash": "c476cebb7fea6ddfe5a456d8f46cf7602b0a6517d232e10479e9e43c21a22e38",
-      "last_checked": "2026-07-28T07:47:22.803959",
+      "last_checked": "2026-07-31T07:41:39.894097",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"aedcf386ac433ec44cf3d471552eab92\"",
       "file_path": "documentation/UserNotifications/unnotificationsound/default.md"
     },
@@ -2311,9 +2311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationsound/init(named:).json": {
       "hash": "c55ebec92cefe5fa6866d4c4e5abca7ad2575a5a32b9c3bd489f2626759ebffc",
-      "last_checked": "2026-07-28T07:47:22.947708",
+      "last_checked": "2026-07-31T07:41:39.995725",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"b984477991237b0440253598ac8c6092\"",
       "file_path": "documentation/UserNotifications/unnotificationsound/init-named.md"
     },
@@ -2327,9 +2327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationsound/defaultcritical.json": {
       "hash": "2ea9c73863410fe57a181b4c5acafddbae7318546efcab844208737cfd8b745a",
-      "last_checked": "2026-07-28T07:47:23.127452",
+      "last_checked": "2026-07-31T07:41:40.127050",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"91455c89af53981ae248f30d416e645b\"",
       "file_path": "documentation/UserNotifications/unnotificationsound/defaultcritical.md"
     },
@@ -2343,9 +2343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationsound/defaultcriticalsound(withaudiovolume:).json": {
       "hash": "ab80f3d948356f4273ac7826b6889539042643145efb1d10761705d571e225c4",
-      "last_checked": "2026-07-28T07:47:23.332308",
+      "last_checked": "2026-07-31T07:41:40.280180",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"c8802687434a9529d0dfba7627f3f47e\"",
       "file_path": "documentation/UserNotifications/unnotificationsound/defaultcriticalsound-withaudiovolume.md"
     },
@@ -2359,9 +2359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationsound/criticalsoundnamed(_:).json": {
       "hash": "f326fb93350ba91419d540a8f82e3ef812c3c939b03a6d8709a44a993f18bba2",
-      "last_checked": "2026-07-28T07:47:23.552267",
+      "last_checked": "2026-07-31T07:41:40.405759",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"6d43752a5d50f75ea44e31d8e9693972\"",
       "file_path": "documentation/UserNotifications/unnotificationsound/criticalsoundnamed.md"
     },
@@ -2375,9 +2375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationsound/criticalsoundnamed(_:withaudiovolume:).json": {
       "hash": "a7163c9be8d5eec1817f6a727f8468d1e80ce62106453b7a9d67b31155574bf4",
-      "last_checked": "2026-07-28T07:47:23.886612",
+      "last_checked": "2026-07-31T07:41:40.511469",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"59a51c8b379b90c3e98b38e59a21001e\"",
       "file_path": "documentation/UserNotifications/unnotificationsound/criticalsoundnamed-withaudiovolume.md"
     },
@@ -2391,9 +2391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationsound/defaultringtone.json": {
       "hash": "bb132e8e198e39d199d42cafb66934bfb52bd832d8a5d7511acac176d08b3cef",
-      "last_checked": "2026-07-28T07:47:24.086831",
+      "last_checked": "2026-07-31T07:41:40.700234",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"36b3473f5196254658c4a860b6851ff0\"",
       "file_path": "documentation/UserNotifications/unnotificationsound/defaultringtone.md"
     },
@@ -2407,9 +2407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationsound/ringtonesoundnamed(_:).json": {
       "hash": "7f7d48e6c635fa26f489c59a9bbe083b0e02bc572d3851c842a5fa95b213c74e",
-      "last_checked": "2026-07-28T07:47:24.265755",
+      "last_checked": "2026-07-31T07:41:40.865894",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"2673dae5513ad9cb13af360ce01f1678\"",
       "file_path": "documentation/UserNotifications/unnotificationsound/ringtonesoundnamed.md"
     },
@@ -2423,9 +2423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationsoundname/init(_:).json": {
       "hash": "79b3fa693849c736b4a3a6235c458efe73805e5b334251f01bea9cde076a5cbc",
-      "last_checked": "2026-07-28T07:47:24.641166",
+      "last_checked": "2026-07-31T07:41:41.142226",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"2dcb3ef5b78c0cdd2b9fe59368cdd759\"",
       "file_path": "documentation/UserNotifications/unnotificationsoundname/init.md"
     },
@@ -2439,9 +2439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationsoundname/init(rawvalue:).json": {
       "hash": "e662814c3aadd65b18add153f43abae4af39cafc624893046315639fcecb3887",
-      "last_checked": "2026-07-28T07:47:24.825041",
+      "last_checked": "2026-07-31T07:41:41.242184",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"a14ebf84bceed60038836c4c58907515\"",
       "file_path": "documentation/UserNotifications/unnotificationsoundname/init-rawvalue.md"
     },
@@ -2455,9 +2455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/uncalendarnotificationtrigger/init(datematching:repeats:).json": {
       "hash": "ee4f4a22e36b117dd655d3707982946dfe7647c6ec25b1faea4d2aaa77977f22",
-      "last_checked": "2026-07-28T07:47:25.006109",
+      "last_checked": "2026-07-31T07:41:41.378081",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"0e69fc346833aa452eeb8b57cf1ee3ac\"",
       "file_path": "documentation/UserNotifications/uncalendarnotificationtrigger/init-datematchingrepeats.md"
     },
@@ -2471,9 +2471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/uncalendarnotificationtrigger/nexttriggerdate().json": {
       "hash": "dfeefbb0e1aa0b52b282079d6bec3fa3bd018d9198a8b77d40d36f51c882db1c",
-      "last_checked": "2026-07-28T07:47:25.189303",
+      "last_checked": "2026-07-31T07:41:41.538792",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"4f91fa2eb481d5d4ecdd2a43c8a0c9a9\"",
       "file_path": "documentation/UserNotifications/uncalendarnotificationtrigger/nexttriggerdate.md"
     },
@@ -2487,9 +2487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/uncalendarnotificationtrigger/datecomponents.json": {
       "hash": "872090652273268a6c6a5056d75db14e8f37c61098a32e1729da478985f79291",
-      "last_checked": "2026-07-28T07:47:25.384967",
+      "last_checked": "2026-07-31T07:41:41.643494",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"07e6c4e0c3937a34bbae822a9e89f757\"",
       "file_path": "documentation/UserNotifications/uncalendarnotificationtrigger/datecomponents.md"
     },
@@ -2503,9 +2503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/untimeintervalnotificationtrigger/init(timeinterval:repeats:).json": {
       "hash": "d9ef10a9d3eba4b1a966076f0bc0c1c8ebbe85061879fd73bbf31218196d12bb",
-      "last_checked": "2026-07-28T07:47:25.752450",
+      "last_checked": "2026-07-31T07:41:41.926644",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"650b24413cf51c4d29f224451739ea3c\"",
       "file_path": "documentation/UserNotifications/untimeintervalnotificationtrigger/init-timeintervalrepeats.md"
     },
@@ -2519,9 +2519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/untimeintervalnotificationtrigger/nexttriggerdate().json": {
       "hash": "87ff70751e8359478b35e4439791bc5bb6435673d89802921422d3a7ff69e9a1",
-      "last_checked": "2026-07-28T07:47:25.960841",
+      "last_checked": "2026-07-31T07:41:42.056919",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"4d33d5fc61eaac46dd7f1b3f88ea0da2\"",
       "file_path": "documentation/UserNotifications/untimeintervalnotificationtrigger/nexttriggerdate.md"
     },
@@ -2535,9 +2535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/untimeintervalnotificationtrigger/timeinterval.json": {
       "hash": "935868fed1f5b618a6a7cdc0983249a24868278463bb54039822ab154105194a",
-      "last_checked": "2026-07-28T07:47:26.147519",
+      "last_checked": "2026-07-31T07:41:42.237645",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"507635843192e817df9e0d76619342d0\"",
       "file_path": "documentation/UserNotifications/untimeintervalnotificationtrigger/timeinterval.md"
     },
@@ -2551,9 +2551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unlocationnotificationtrigger/init(region:repeats:).json": {
       "hash": "8024e0cb215e5e874339850ea1cb7c8827c804c7e85b65d0117628fb681642f3",
-      "last_checked": "2026-07-28T07:47:26.348893",
+      "last_checked": "2026-07-31T07:41:42.354610",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"c269d3406f1ebabf8691dbee15396249\"",
       "file_path": "documentation/UserNotifications/unlocationnotificationtrigger/init-regionrepeats.md"
     },
@@ -2567,9 +2567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unlocationnotificationtrigger/region.json": {
       "hash": "f35a3395e5e095ed26aabe16aaa62a0135c93c894b0c6c43fb10bc577141c8a6",
-      "last_checked": "2026-07-28T07:47:26.534809",
+      "last_checked": "2026-07-31T07:41:42.524478",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"85d89d065c884ef90cc5a50b73ba57b5\"",
       "file_path": "documentation/UserNotifications/unlocationnotificationtrigger/region.md"
     },
@@ -2583,9 +2583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationtrigger/repeats.json": {
       "hash": "0917e0a16efd635df378a26558e86877fa31d3aee2214369398e3a24c571cc02",
-      "last_checked": "2026-07-28T07:47:26.723548",
+      "last_checked": "2026-07-31T07:41:42.630746",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"799427428d4fa54c031b673861bdc6bc\"",
       "file_path": "documentation/UserNotifications/unnotificationtrigger/repeats.md"
     },
@@ -2599,9 +2599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationcategory/init(identifier:actions:intentidentifiers:options:).json": {
       "hash": "f7e039c0d58d32be062ed809a2dcce3daa16bb401eef1ed1945f417c9745f34d",
-      "last_checked": "2026-07-28T07:47:27.119297",
+      "last_checked": "2026-07-31T07:41:42.913270",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"907b1c587a0f9476f6dbba0bbe857431\"",
       "file_path": "documentation/UserNotifications/unnotificationcategory/init-identifieractionsintentidentifiersoptions.md"
     },
@@ -2615,9 +2615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationcategory/init(identifier:actions:intentidentifiers:hiddenpreviewsbodyplaceholder:options:).json": {
       "hash": "8c6af0f6de625364b2f71a42c9e68a76dfda5996d3ddad38c882d2f3e8ae82c3",
-      "last_checked": "2026-07-28T07:47:27.317766",
+      "last_checked": "2026-07-31T07:41:43.142341",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"b239d313854ced2f1b6281c3a907eb8e\"",
       "file_path": "documentation/UserNotifications/unnotificationcategory/init-identifieractionsintentidentifiershiddenpreviewsbodyplaceholderoptions.md"
     },
@@ -2631,9 +2631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationcategory/init(identifier:actions:intentidentifiers:hiddenpreviewsbodyplaceholder:categorysummaryformat:options:).json": {
       "hash": "80f56b86d7df94276553b76d56f9773aae7b2d333491c6a241198b1135cc534b",
-      "last_checked": "2026-07-28T07:47:27.500062",
+      "last_checked": "2026-07-31T07:41:43.265524",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"217fc65ed224003f7c377cf3fea08213\"",
       "file_path": "documentation/UserNotifications/unnotificationcategory/init-identifieractionsintentidentifiershiddenpreviewsbodyplaceholdercategorysummaryformatoptions.md"
     },
@@ -2647,9 +2647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationcategory/identifier.json": {
       "hash": "dd58fe25044c5c8432e15e6ecb59e24ac9696b696b485b0feaef874ec6631ac2",
-      "last_checked": "2026-07-28T07:47:27.690425",
+      "last_checked": "2026-07-31T07:41:43.372567",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"b7d598131bb61613709b03a7549c45d4\"",
       "file_path": "documentation/UserNotifications/unnotificationcategory/identifier.md"
     },
@@ -2663,9 +2663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationcategory/actions.json": {
       "hash": "6c6d45874b31e9330a78e692d70334273975f2c183d4dc232ea8be829a71795d",
-      "last_checked": "2026-07-28T07:47:27.887115",
+      "last_checked": "2026-07-31T07:41:43.490182",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"0c356e576fdf36bbf98e8c2b262beba5\"",
       "file_path": "documentation/UserNotifications/unnotificationcategory/actions.md"
     },
@@ -2679,9 +2679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationcategory/intentidentifiers.json": {
       "hash": "d65989d7f7980f12ee4e91b68fbbe7b4f448d08704096641a2a4666365902b9a",
-      "last_checked": "2026-07-28T07:47:28.077442",
+      "last_checked": "2026-07-31T07:41:43.648426",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"6a1b12f6c4cb0d0bcb167621436e48a9\"",
       "file_path": "documentation/UserNotifications/unnotificationcategory/intentidentifiers.md"
     },
@@ -2695,9 +2695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationcategory/hiddenpreviewsbodyplaceholder.json": {
       "hash": "5423a8d8e683a85b240e33b91ae59d61c81bc20e9077925b1ca6da4de935f39d",
-      "last_checked": "2026-07-28T07:47:28.266476",
+      "last_checked": "2026-07-31T07:41:43.770542",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"ff2bbd07a44cbb96948b6b8b0994b646\"",
       "file_path": "documentation/UserNotifications/unnotificationcategory/hiddenpreviewsbodyplaceholder.md"
     },
@@ -2711,9 +2711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationcategory/categorysummaryformat.json": {
       "hash": "b2ab2006767ff48153662380cb359baf124b3d7dee4f31c03430b537c570a80f",
-      "last_checked": "2026-07-28T07:47:28.447037",
+      "last_checked": "2026-07-31T07:41:43.898268",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"df66b979ae3ae012e004f22a7f72aeba\"",
       "file_path": "documentation/UserNotifications/unnotificationcategory/categorysummaryformat.md"
     },
@@ -2727,9 +2727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationcategory/options.json": {
       "hash": "e23cf2010c98aa166c10b9a857c9d3a49b9da1ab9d1191461da0cf6c4a8f9b43",
-      "last_checked": "2026-07-28T07:47:28.644428",
+      "last_checked": "2026-07-31T07:41:44.059922",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"f9a50525b36443478d3c84b1901c403b\"",
       "file_path": "documentation/UserNotifications/unnotificationcategory/options.md"
     },
@@ -2743,9 +2743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationcategoryoptions.json": {
       "hash": "14afcd43050029e50b80448d584b4d1facd5bcfc3a4d7477596868a7f3f9f1d0",
-      "last_checked": "2026-07-28T07:47:28.827541",
+      "last_checked": "2026-07-31T07:41:44.230614",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"b62a9c1a4863c836e8b4e419185f0741\"",
       "file_path": "documentation/UserNotifications/unnotificationcategoryoptions.md"
     },
@@ -2759,9 +2759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationaction/init(identifier:title:options:).json": {
       "hash": "5839d59987c6d1e0040587032c295cc9ee6c0bd945550a1803633f038de72019",
-      "last_checked": "2026-07-28T07:47:29.186289",
+      "last_checked": "2026-07-31T07:41:44.527549",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"aac1c243d107b879bb88b6946c5d2d68\"",
       "file_path": "documentation/UserNotifications/unnotificationaction/init-identifiertitleoptions.md"
     },
@@ -2775,9 +2775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationaction/init(identifier:title:options:icon:).json": {
       "hash": "08fae4fe03779181be8d94cb460f5ad08fbefef28459ac433f48820d143ed10e",
-      "last_checked": "2026-07-28T07:47:29.384900",
+      "last_checked": "2026-07-31T07:41:44.708695",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"bfcdf73a0f0a967b871d33d7d4c10f18\"",
       "file_path": "documentation/UserNotifications/unnotificationaction/init-identifiertitleoptionsicon.md"
     },
@@ -2791,9 +2791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationaction/identifier.json": {
       "hash": "888783f44d6a22a6c2042eefa00c689e54d221f1cddf77323eed0e2b50b95037",
-      "last_checked": "2026-07-28T07:47:29.584901",
+      "last_checked": "2026-07-31T07:41:44.873498",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"0a10a88ec0de85ad56a03fef220235b4\"",
       "file_path": "documentation/UserNotifications/unnotificationaction/identifier.md"
     },
@@ -2807,9 +2807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationaction/title.json": {
       "hash": "848d4d259f231f6439d5c6c501af598387d29c44b1e6df08d6ad041f3e9659d3",
-      "last_checked": "2026-07-28T07:47:29.763409",
+      "last_checked": "2026-07-31T07:41:44.990113",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"d0aba33e3b20499a70be3bdce2df3d4d\"",
       "file_path": "documentation/UserNotifications/unnotificationaction/title.md"
     },
@@ -2823,9 +2823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationaction/icon.json": {
       "hash": "83723e6c488bbd1752110fc652db284a00f80ee0e3adacbdfd5c5024244d765a",
-      "last_checked": "2026-07-28T07:47:30.000030",
+      "last_checked": "2026-07-31T07:41:45.127373",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"a64eb3e53d0c689cccd32bb0c6b4b604\"",
       "file_path": "documentation/UserNotifications/unnotificationaction/icon.md"
     },
@@ -2839,9 +2839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationaction/options.json": {
       "hash": "2e531c79cba7a8af9d695e22537f6097c936de95e381b5a5965f207e065d2216",
-      "last_checked": "2026-07-28T07:47:30.199027",
+      "last_checked": "2026-07-31T07:41:45.270149",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"039d43e0bf94810a388efa0f57f88a35\"",
       "file_path": "documentation/UserNotifications/unnotificationaction/options.md"
     },
@@ -2855,9 +2855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationactionoptions.json": {
       "hash": "16259d0b6c9ab1ead805bc79b403bec340f12fd8de6c5e1de7f791f0b1bcd667",
-      "last_checked": "2026-07-28T07:47:30.399535",
+      "last_checked": "2026-07-31T07:41:45.399288",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"8ec912bb384d152444c962015e3ef3fe\"",
       "file_path": "documentation/UserNotifications/unnotificationactionoptions.md"
     },
@@ -2871,9 +2871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/untextinputnotificationaction/init(identifier:title:options:textinputbuttontitle:textinputplaceholder:).json": {
       "hash": "a6d13befa7b3c6bd9cec52795682f1e25fe44c6a2e8a3afa5f10c072280feba2",
-      "last_checked": "2026-07-28T07:47:30.800289",
+      "last_checked": "2026-07-31T07:41:45.660165",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"243146c222484ab3f6a3b3e2b670d93f\"",
       "file_path": "documentation/UserNotifications/untextinputnotificationaction/init-identifiertitleoptionstextinputbuttontitletextinputplaceholder.md"
     },
@@ -2887,9 +2887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/untextinputnotificationaction/init(identifier:title:options:icon:textinputbuttontitle:textinputplaceholder:).json": {
       "hash": "e8b7af7158680b5e3c24b23537d21a229a8f02d01b26822ded826ec4393bbba8",
-      "last_checked": "2026-07-28T07:47:30.954140",
+      "last_checked": "2026-07-31T07:41:45.841734",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"97de182793619924570e1c04c925ae2b\"",
       "file_path": "documentation/UserNotifications/untextinputnotificationaction/init-identifiertitleoptionsicontextinputbuttontitletextinputplaceholder.md"
     },
@@ -2903,9 +2903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/untextinputnotificationaction/textinputbuttontitle.json": {
       "hash": "d8d8672f48049c83076a44472bef0b9699a50ae4f2bc5f81bc7804b7026ba7b6",
-      "last_checked": "2026-07-28T07:47:31.146756",
+      "last_checked": "2026-07-31T07:41:45.968580",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"35bc6f13667e4db54666b0cbef95aa00\"",
       "file_path": "documentation/UserNotifications/untextinputnotificationaction/textinputbuttontitle.md"
     },
@@ -2919,9 +2919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/untextinputnotificationaction/textinputplaceholder.json": {
       "hash": "1d366f185e1ab2a694f5e2e967058199f506bff617e18f824d515147d65a1077",
-      "last_checked": "2026-07-28T07:47:31.348031",
+      "last_checked": "2026-07-31T07:41:46.093230",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"c2f18cc99fae3fbbf0a30fe8da64b21b\"",
       "file_path": "documentation/UserNotifications/untextinputnotificationaction/textinputplaceholder.md"
     },
@@ -2935,9 +2935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationresponse/actionidentifier.json": {
       "hash": "83ed3ed6f32edd85976bfe7d2020a7f71413dc3660ab790475c079b3697b0ef8",
-      "last_checked": "2026-07-28T07:47:31.536386",
+      "last_checked": "2026-07-31T07:41:46.215631",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"f67f7ab485e614dc4849ec31f0d6b631\"",
       "file_path": "documentation/UserNotifications/unnotificationresponse/actionidentifier.md"
     },
@@ -2951,9 +2951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationresponse/notification.json": {
       "hash": "e6fa2d5e3b44a94f07907c598cba35340ad81b96c3d8738a9ac0c580725a15e8",
-      "last_checked": "2026-07-28T07:47:31.730258",
+      "last_checked": "2026-07-31T07:41:46.336278",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"5d07816082542ebc19f0a66cd7882244\"",
       "file_path": "documentation/UserNotifications/unnotificationresponse/notification.md"
     },
@@ -2967,9 +2967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationresponse/targetscene.json": {
       "hash": "d0c8517a23a125caac5bf3324392534a02b4a0db18680ec2d8bc606ac78fe62c",
-      "last_checked": "2026-07-28T07:47:31.917180",
+      "last_checked": "2026-07-31T07:41:46.470913",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"32ba3c88187289b3cd6fba0a6098956f\"",
       "file_path": "documentation/UserNotifications/unnotificationresponse/targetscene.md"
     },
@@ -2983,9 +2983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationdefaultactionidentifier.json": {
       "hash": "a32e5ab302203403608bb72f359873b0cad50445ea1219dfd4b9d8a9fc752f1b",
-      "last_checked": "2026-07-28T07:47:32.094545",
+      "last_checked": "2026-07-31T07:41:46.582739",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"bbe33d85707c18f8c1b95bec8fa57f79\"",
       "file_path": "documentation/UserNotifications/unnotificationdefaultactionidentifier.md"
     },
@@ -2999,9 +2999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationdismissactionidentifier.json": {
       "hash": "e455022439d329792bb7b6327e07bb79be408f09f834ceca3880afa862ca51b9",
-      "last_checked": "2026-07-28T07:47:32.289462",
+      "last_checked": "2026-07-31T07:41:46.707529",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"d39ed652d28b29aef666cbf1203435fa\"",
       "file_path": "documentation/UserNotifications/unnotificationdismissactionidentifier.md"
     },
@@ -3015,9 +3015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/untextinputnotificationresponse/usertext.json": {
       "hash": "9552337729f3b3bc3e1f08fd425903ce4f6be47101dce1198795580db0844925",
-      "last_checked": "2026-07-28T07:47:32.618502",
+      "last_checked": "2026-07-31T07:41:46.991937",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"15360ab345254622649f816a0e26a011\"",
       "file_path": "documentation/UserNotifications/untextinputnotificationresponse/usertext.md"
     },
@@ -3031,9 +3031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationserviceextension/didreceive(_:withcontenthandler:).json": {
       "hash": "2423f29a1f5a942a333ae54312c1c783799e9a4c286599e686e514a17877ce9b",
-      "last_checked": "2026-07-28T07:47:32.800283",
+      "last_checked": "2026-07-31T07:41:47.166734",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"7e517ff2d4b2dc73a920ca80f65d88a3\"",
       "file_path": "documentation/UserNotifications/unnotificationserviceextension/didreceive-withcontenthandler.md"
     },
@@ -3047,9 +3047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationserviceextension/serviceextensiontimewillexpire().json": {
       "hash": "1ea722a1975697cde4e79b443603134c48f5f6cf0992b9d2c2f6be4690678891",
-      "last_checked": "2026-07-28T07:47:32.996199",
+      "last_checked": "2026-07-31T07:41:47.279099",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"313052cc244c8984b6487cf208cdb30c\"",
       "file_path": "documentation/UserNotifications/unnotificationserviceextension/serviceextensiontimewillexpire.md"
     },
@@ -3063,9 +3063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationattributedmessagecontext/init(sendmessageintent:attributedcontent:).json": {
       "hash": "5176455c8b3191a6208e2742b6ca6fda3c8cd369b52050e205a30fff60efcfd9",
-      "last_checked": "2026-07-28T07:47:33.180368",
+      "last_checked": "2026-07-31T07:41:47.404244",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"23507ff607ea36c814c5b2e7ca701a77\"",
       "file_path": "documentation/UserNotifications/unnotificationattributedmessagecontext/init-sendmessageintentattributedcontent.md"
     },
@@ -3079,9 +3079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unauthorizationoptions/badge.json": {
       "hash": "25669306f122baab9bbf778d76469bea94f8235a9280c23297d8182fefd8981e",
-      "last_checked": "2026-07-28T07:47:33.369727",
+      "last_checked": "2026-07-31T07:41:47.585790",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"c01ec3675bde0f2ea1026f18d3c81010\"",
       "file_path": "documentation/UserNotifications/unauthorizationoptions/badge.md"
     },
@@ -3095,9 +3095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unauthorizationoptions/sound.json": {
       "hash": "a42ace488bd965ae4072d011c2e825fab065f969e3c46130ef5d37254cef3b3f",
-      "last_checked": "2026-07-28T07:47:33.559859",
+      "last_checked": "2026-07-31T07:41:47.752937",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"29b96761016a31d5e234d8b3c3d2f67d\"",
       "file_path": "documentation/UserNotifications/unauthorizationoptions/sound.md"
     },
@@ -3111,9 +3111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unauthorizationoptions/alert.json": {
       "hash": "ce6e1459bdcbf226e17e8678a8bf79ae0c977f4008a33bc44c2be92f700ebcfd",
-      "last_checked": "2026-07-28T07:47:33.779374",
+      "last_checked": "2026-07-31T07:41:47.898964",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"e2297a99dea10f983efb9e36ce182433\"",
       "file_path": "documentation/UserNotifications/unauthorizationoptions/alert.md"
     },
@@ -3127,9 +3127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unauthorizationoptions/carplay.json": {
       "hash": "56dc63f5048efde14572be4740a01281b9d12fcc0b4220c01bfeeaea62db7282",
-      "last_checked": "2026-07-28T07:47:33.956692",
+      "last_checked": "2026-07-31T07:41:47.998197",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"f99a7002ea2dfc425928a564deb50b9a\"",
       "file_path": "documentation/UserNotifications/unauthorizationoptions/carplay.md"
     },
@@ -3143,9 +3143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unauthorizationoptions/criticalalert.json": {
       "hash": "84689978bb1bf61130ed3be070d09a8a2e4ca7d64e1dd5cc21bde279a31442aa",
-      "last_checked": "2026-07-28T07:47:34.150824",
+      "last_checked": "2026-07-31T07:41:48.188812",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"7940140a69bee5c0f824c66777f450a9\"",
       "file_path": "documentation/UserNotifications/unauthorizationoptions/criticalalert.md"
     },
@@ -3159,9 +3159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unauthorizationoptions/providesappnotificationsettings.json": {
       "hash": "e8e382770630a13487a6605c64d1fccf34a50e0316200e8c87a7ac9f409eed9e",
-      "last_checked": "2026-07-28T07:47:34.362187",
+      "last_checked": "2026-07-31T07:41:48.290542",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"9a7fd1ec047fd55048227883a5284391\"",
       "file_path": "documentation/UserNotifications/unauthorizationoptions/providesappnotificationsettings.md"
     },
@@ -3175,9 +3175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unauthorizationoptions/provisional.json": {
       "hash": "c712958ec85e2baf8d55a181a6673d5608552f69c53dabf9829e170b1717c82c",
-      "last_checked": "2026-07-28T07:47:34.546700",
+      "last_checked": "2026-07-31T07:41:48.419632",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"6eb2c0e3deb5fa69d5dd7bfe03194a4e\"",
       "file_path": "documentation/UserNotifications/unauthorizationoptions/provisional.md"
     },
@@ -3191,9 +3191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unauthorizationoptions/init(rawvalue:).json": {
       "hash": "2ab0f1b904b83710b854ef4be62db93db7e523613f0fd31b1dc3d8476e380aa2",
-      "last_checked": "2026-07-28T07:47:34.702048",
+      "last_checked": "2026-07-31T07:41:48.583253",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"1467361cf6ac7bfe1eb549ea1faad081\"",
       "file_path": "documentation/UserNotifications/unauthorizationoptions/init-rawvalue.md"
     },
@@ -3207,9 +3207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unauthorizationoptions/announcement.json": {
       "hash": "43685b5ec893a2f34ccf4506c55bbeb321d00d094194feeb089e0e341fd7582e",
-      "last_checked": "2026-07-28T07:47:34.897427",
+      "last_checked": "2026-07-31T07:41:48.740557",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"b76b8b1839116a75e3ff60cb6ccfc1af\"",
       "file_path": "documentation/UserNotifications/unauthorizationoptions/announcement.md"
     },
@@ -3223,9 +3223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unauthorizationoptions/timesensitive.json": {
       "hash": "1db92862e649522ad9e03c209a880ac4ff6d788cfbd038b0447c7aa89e475645",
-      "last_checked": "2026-07-28T07:47:35.127360",
+      "last_checked": "2026-07-31T07:41:48.857927",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"d5e1e6c0ae3f075dc37c12e7ca90c680\"",
       "file_path": "documentation/UserNotifications/unauthorizationoptions/timesensitive.md"
     },
@@ -3239,9 +3239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unerror/notificationsnotallowed.json": {
       "hash": "75559af8d3d7d3ad4546d0f21be26c2410fe285a8fd401376456f07f0e496e00",
-      "last_checked": "2026-07-28T07:47:35.328274",
+      "last_checked": "2026-07-31T07:41:49.046901",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"eaf98b7e5aeb65aef4a6764ae31d824a\"",
       "file_path": "documentation/UserNotifications/unerror/notificationsnotallowed.md"
     },
@@ -3255,9 +3255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unerror/attachmentinvalidurl.json": {
       "hash": "326d5b94558fc88da90b5d397c3729f013b372fec98789d69ae17be57049d5b5",
-      "last_checked": "2026-07-28T07:47:35.527497",
+      "last_checked": "2026-07-31T07:41:49.191943",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"7960bf2aa39470f0a14e261bac22acb1\"",
       "file_path": "documentation/UserNotifications/unerror/attachmentinvalidurl.md"
     },
@@ -3271,9 +3271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unerror/attachmentunrecognizedtype.json": {
       "hash": "3bf1c20d0af0823d95e4b1fce7e614a0734b4db43e3f33c88612c6e47979ce25",
-      "last_checked": "2026-07-28T07:47:35.717453",
+      "last_checked": "2026-07-31T07:41:49.350823",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"ef65199dec749d12b54c4a9e06db0b1d\"",
       "file_path": "documentation/UserNotifications/unerror/attachmentunrecognizedtype.md"
     },
@@ -3287,9 +3287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unerror/attachmentinvalidfilesize.json": {
       "hash": "f3062e7dea2d4cd2bd6c2fcf7cfa325a6f1261cfb9856872a7205fa03e4d6dcb",
-      "last_checked": "2026-07-28T07:47:35.903953",
+      "last_checked": "2026-07-31T07:41:49.452974",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"06a2cca3e1407629f1428d71a9d8414d\"",
       "file_path": "documentation/UserNotifications/unerror/attachmentinvalidfilesize.md"
     },
@@ -3303,9 +3303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unerror/attachmentnotindatastore.json": {
       "hash": "719a5c0a3c7cafa613818a599afa8fbc745f0a32e9b0e1ebef589a60b2fc3dd9",
-      "last_checked": "2026-07-28T07:47:36.088236",
+      "last_checked": "2026-07-31T07:41:49.637381",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"b647bacc5d9928cb922d78ad0c9a037e\"",
       "file_path": "documentation/UserNotifications/unerror/attachmentnotindatastore.md"
     },
@@ -3319,9 +3319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unerror/attachmentmoveintodatastorefailed.json": {
       "hash": "1feb321abb231acc788dff8a13e290ce48b276252071d70c267841ffe8a43ba5",
-      "last_checked": "2026-07-28T07:47:36.273427",
+      "last_checked": "2026-07-31T07:41:49.738363",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"6e74da610cabf396e59f4547fe63db77\"",
       "file_path": "documentation/UserNotifications/unerror/attachmentmoveintodatastorefailed.md"
     },
@@ -3335,9 +3335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unerror/attachmentcorrupt.json": {
       "hash": "705e97ea608c0b8cd53c4330189e95c96c6b653dadb0fb93638c31e7dc652fb7",
-      "last_checked": "2026-07-28T07:47:36.458153",
+      "last_checked": "2026-07-31T07:41:49.857994",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"935cdf1cb0684af412dd71b5989ff4e5\"",
       "file_path": "documentation/UserNotifications/unerror/attachmentcorrupt.md"
     },
@@ -3351,9 +3351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unerror/notificationinvalidnodate.json": {
       "hash": "be67017224ad3c801e40d567e68c5e399a89830d88b1b79044ba0fc87c7e6788",
-      "last_checked": "2026-07-28T07:47:36.640369",
+      "last_checked": "2026-07-31T07:41:50.043341",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"b9ee8a41581c9898f55d5cf767069484\"",
       "file_path": "documentation/UserNotifications/unerror/notificationinvalidnodate.md"
     },
@@ -3367,9 +3367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unerror/notificationinvalidnocontent.json": {
       "hash": "c642ae45a4b8fc39a9b458c57fe04661dd8a9b17ae600785564234d411bc9247",
-      "last_checked": "2026-07-28T07:47:36.843680",
+      "last_checked": "2026-07-31T07:41:50.165321",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"20b4464e0dcfdda17eb3d38acb63f38d\"",
       "file_path": "documentation/UserNotifications/unerror/notificationinvalidnocontent.md"
     },
@@ -3383,9 +3383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unerror/contentprovidinginvalid.json": {
       "hash": "940ba2d73a6434bc8758e4904cd5da24b72d21e6d4156cd5e0ebf33c02b1a148",
-      "last_checked": "2026-07-28T07:47:37.018150",
+      "last_checked": "2026-07-31T07:41:50.289408",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"13a97c3045e4668553872d5a43ed5480\"",
       "file_path": "documentation/UserNotifications/unerror/contentprovidinginvalid.md"
     },
@@ -3399,9 +3399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unerror/contentprovidingobjectnotallowed.json": {
       "hash": "4686e17afb6e45f0ce2118669b792c674899a7f3cf0e4545f0561c04102be5ce",
-      "last_checked": "2026-07-28T07:47:37.205298",
+      "last_checked": "2026-07-31T07:41:50.435134",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"688b857718d2adafd21611aa770c2f79\"",
       "file_path": "documentation/UserNotifications/unerror/contentprovidingobjectnotallowed.md"
     },
@@ -3415,9 +3415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unerror/badgeinputinvalid.json": {
       "hash": "15c4ec1606ef942de3fc4a1f18fbbd10d6c103025353a5fd171ba087d693c3a4",
-      "last_checked": "2026-07-28T07:47:37.397051",
+      "last_checked": "2026-07-31T07:41:50.561706",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"dd7f58ff7b8bd787510ea2875d3b2a2e\"",
       "file_path": "documentation/UserNotifications/unerror/badgeinputinvalid.md"
     },
@@ -3431,9 +3431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unerror/errordomain.json": {
       "hash": "610a64801063ad98bb79bc34bfbc45a7a27910601d0ddfda0b43e5bcc65d0da7",
-      "last_checked": "2026-07-28T07:47:37.593726",
+      "last_checked": "2026-07-31T07:41:50.729430",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"2034cf10556d87ed0098d459729981de\"",
       "file_path": "documentation/UserNotifications/unerror/errordomain.md"
     },
@@ -3447,9 +3447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unerror/code/notificationsnotallowed.json": {
       "hash": "c02226a2238bf15d8f6178f19069c17c55369c87407ba5430c4581ae93ff0933",
-      "last_checked": "2026-07-28T07:47:37.773510",
+      "last_checked": "2026-07-31T07:41:50.904094",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"4a3392bd9a1efbbc255c20d07ef97ccf\"",
       "file_path": "documentation/UserNotifications/unerror/code/notificationsnotallowed.md"
     },
@@ -3463,9 +3463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unerror/code/attachmentinvalidurl.json": {
       "hash": "ce72f9cc518b9f064c8979b7ec3d9769a7dc8a89a985d2b11ceca1f42c41e770",
-      "last_checked": "2026-07-28T07:47:37.973790",
+      "last_checked": "2026-07-31T07:41:51.025274",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"7d2b31e3b04a74c8ffe1d30d89d197e0\"",
       "file_path": "documentation/UserNotifications/unerror/code/attachmentinvalidurl.md"
     },
@@ -3479,9 +3479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unerror/code/attachmentunrecognizedtype.json": {
       "hash": "eabc9075d72bf432af5c83d8d122c84463b2a818ec380526b8d968070ebbc297",
-      "last_checked": "2026-07-28T07:47:38.165004",
+      "last_checked": "2026-07-31T07:41:51.161286",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"3fec169d95a706d449e9ebcb71867873\"",
       "file_path": "documentation/UserNotifications/unerror/code/attachmentunrecognizedtype.md"
     },
@@ -3495,9 +3495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unerror/code/attachmentinvalidfilesize.json": {
       "hash": "0bbbbcaa010e894325f730de96b8d88f173ee0ff32385582c44a972dbf26582e",
-      "last_checked": "2026-07-28T07:47:38.357243",
+      "last_checked": "2026-07-31T07:41:51.349858",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"9ec6119c59db850d62328071f598e8c0\"",
       "file_path": "documentation/UserNotifications/unerror/code/attachmentinvalidfilesize.md"
     },
@@ -3511,9 +3511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unerror/code/attachmentnotindatastore.json": {
       "hash": "653d56f11d5e83d57cb7f1c405b0799538ac3e64327b85779143df3821391cb4",
-      "last_checked": "2026-07-28T07:47:38.552757",
+      "last_checked": "2026-07-31T07:41:51.471506",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"8a11b0fdf479404f92692e770e6bd77e\"",
       "file_path": "documentation/UserNotifications/unerror/code/attachmentnotindatastore.md"
     },
@@ -3527,9 +3527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unerror/code/attachmentmoveintodatastorefailed.json": {
       "hash": "151b5b3c42ca79665fc3bfd21b9cc13822b10c2602328837274dd1306e95a66a",
-      "last_checked": "2026-07-28T07:47:38.698552",
+      "last_checked": "2026-07-31T07:41:51.605293",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"96481f7c147b1000f765209f92463dde\"",
       "file_path": "documentation/UserNotifications/unerror/code/attachmentmoveintodatastorefailed.md"
     },
@@ -3543,9 +3543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unerror/code/attachmentcorrupt.json": {
       "hash": "1047d10ce86312cab35b6b7e82f413a4a4bf1b03ae0fd02375bcd72d95152eb5",
-      "last_checked": "2026-07-28T07:47:38.878277",
+      "last_checked": "2026-07-31T07:41:51.784699",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"4918689d90e640b09f7dc75972fa3a27\"",
       "file_path": "documentation/UserNotifications/unerror/code/attachmentcorrupt.md"
     },
@@ -3559,9 +3559,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unerror/code/notificationinvalidnodate.json": {
       "hash": "1587d7fcd0ec4e2976d020131fc69b7aad91106a9647aec457fd5ef8ffb49d1b",
-      "last_checked": "2026-07-28T07:47:39.067991",
+      "last_checked": "2026-07-31T07:41:51.929802",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"8e026c24a74ce5d8df9444ce43dfd962\"",
       "file_path": "documentation/UserNotifications/unerror/code/notificationinvalidnodate.md"
     },
@@ -3575,9 +3575,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unerror/code/notificationinvalidnocontent.json": {
       "hash": "11a7e4ee23ff5b728648d0ae4ac011150a6e7bc28c57da44be1813b4bfe3e642",
-      "last_checked": "2026-07-28T07:47:39.245575",
+      "last_checked": "2026-07-31T07:41:52.042919",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"821456abb6df7d047d53f03e286a3d4e\"",
       "file_path": "documentation/UserNotifications/unerror/code/notificationinvalidnocontent.md"
     },
@@ -3591,9 +3591,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unerror/code/contentprovidinginvalid.json": {
       "hash": "112404b992441868bffa4fd2c970d757d67717696b65a16ff153c7de1678857e",
-      "last_checked": "2026-07-28T07:47:39.433367",
+      "last_checked": "2026-07-31T07:41:52.168245",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"293e9631a431737253c767e4ff563a4b\"",
       "file_path": "documentation/UserNotifications/unerror/code/contentprovidinginvalid.md"
     },
@@ -3607,9 +3607,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unerror/code/contentprovidingobjectnotallowed.json": {
       "hash": "a299c1fd773c99f4c38ef5a8e6898bfc0cd72a1b2951da679339bd8b8ad32377",
-      "last_checked": "2026-07-28T07:47:39.624473",
+      "last_checked": "2026-07-31T07:41:52.311744",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"97c89859e26d8d62b388b5eba791af31\"",
       "file_path": "documentation/UserNotifications/unerror/code/contentprovidingobjectnotallowed.md"
     },
@@ -3623,9 +3623,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unerror/code/badgeinputinvalid.json": {
       "hash": "e4b7fc25b9d94cbd0aa37f91c108cd90c584c660c58bb3e46d0efee45019983c",
-      "last_checked": "2026-07-28T07:47:39.815357",
+      "last_checked": "2026-07-31T07:41:52.438406",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"0d5ea4c5381728940bf0435ab3fe39e3\"",
       "file_path": "documentation/UserNotifications/unerror/code/badgeinputinvalid.md"
     },
@@ -3639,9 +3639,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unerror/code/init(rawvalue:).json": {
       "hash": "17d88e21cfe18ac643e7ca934d4c5107ff33584d0f32893daef4ae89fb1352a1",
-      "last_checked": "2026-07-28T07:47:40.013014",
+      "last_checked": "2026-07-31T07:41:52.618843",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"51df8f69e1c17cf499a6ae28d123929f\"",
       "file_path": "documentation/UserNotifications/unerror/code/init-rawvalue.md"
     },
@@ -3655,9 +3655,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationpresentationoptions/badge.json": {
       "hash": "c542fc1a830020fc80daadd13a3934e4dc96e59f73b6ec2e4798a227bc018f70",
-      "last_checked": "2026-07-28T07:47:40.214016",
+      "last_checked": "2026-07-31T07:41:52.734675",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"546c2a67c832ed43a2e8fe3681c0b4e5\"",
       "file_path": "documentation/UserNotifications/unnotificationpresentationoptions/badge.md"
     },
@@ -3671,9 +3671,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationpresentationoptions/banner.json": {
       "hash": "0f144fe3d3211d73247fbc34a7a0e2912b4def294d41208b357bb14fb05f74b5",
-      "last_checked": "2026-07-28T07:47:40.356872",
+      "last_checked": "2026-07-31T07:41:52.869302",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"b1bbdf55c1cab034a80f7258326a91a9\"",
       "file_path": "documentation/UserNotifications/unnotificationpresentationoptions/banner.md"
     },
@@ -3687,9 +3687,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationpresentationoptions/list.json": {
       "hash": "fb188f1be385b870d1f08fff99cee1198fdf30fbce69892fce3ced65a7e56f96",
-      "last_checked": "2026-07-28T07:47:40.553304",
+      "last_checked": "2026-07-31T07:41:53.068728",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"6f9f0b81c1d15f42c0c6dd8b2c3e3b8e\"",
       "file_path": "documentation/UserNotifications/unnotificationpresentationoptions/list.md"
     },
@@ -3703,9 +3703,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationpresentationoptions/sound.json": {
       "hash": "fd78243beb84e603e5eb1cc7f59e6c91e924e94e1157af16d50d6b3e40527c31",
-      "last_checked": "2026-07-28T07:47:40.751136",
+      "last_checked": "2026-07-31T07:41:53.226412",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"5f9b4de77b24aa33f854512eeabf7f12\"",
       "file_path": "documentation/UserNotifications/unnotificationpresentationoptions/sound.md"
     },
@@ -3719,9 +3719,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationpresentationoptions/alert.json": {
       "hash": "c5b864a9856a1f58feede74f6c1ed24e587f414e75f3679cc65416babbb589a0",
-      "last_checked": "2026-07-28T07:47:40.949139",
+      "last_checked": "2026-07-31T07:41:53.352412",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"3664efbd6d241d15cdeb589bd999563b\"",
       "file_path": "documentation/UserNotifications/unnotificationpresentationoptions/alert.md"
     },
@@ -3735,9 +3735,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationpresentationoptions/init(rawvalue:).json": {
       "hash": "c45a335f3a37dd3aef64f3a402707d572b840f530b11b5102781af37cdde2437",
-      "last_checked": "2026-07-28T07:47:41.135864",
+      "last_checked": "2026-07-31T07:41:53.478475",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"c196174d89671504b87626c9423a4675\"",
       "file_path": "documentation/UserNotifications/unnotificationpresentationoptions/init-rawvalue.md"
     },
@@ -3751,9 +3751,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unauthorizationstatus/notdetermined.json": {
       "hash": "589b03c4472029b1dab2a265d13176dc58a97aec983a1c858365fa143576f5e8",
-      "last_checked": "2026-07-28T07:47:41.324417",
+      "last_checked": "2026-07-31T07:41:53.617276",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"f361a210556dba54e667cf8575b4ddc0\"",
       "file_path": "documentation/UserNotifications/unauthorizationstatus/notdetermined.md"
     },
@@ -3767,9 +3767,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unauthorizationstatus/denied.json": {
       "hash": "dcc0783c4e5867d5b655af84b17a44ab058fb0682d3888a66057c909e9552a39",
-      "last_checked": "2026-07-28T07:47:41.476574",
+      "last_checked": "2026-07-31T07:41:53.719693",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"1e68f9de1468feb764c78e852a8c2f8d\"",
       "file_path": "documentation/UserNotifications/unauthorizationstatus/denied.md"
     },
@@ -3783,9 +3783,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unauthorizationstatus/authorized.json": {
       "hash": "33d06650cbe72c776156a9b853063efb9a932194b031077b945807770fa5ea67",
-      "last_checked": "2026-07-28T07:47:41.678530",
+      "last_checked": "2026-07-31T07:41:53.899050",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"4782fca683f1b51a8a84b744e33a14a7\"",
       "file_path": "documentation/UserNotifications/unauthorizationstatus/authorized.md"
     },
@@ -3799,9 +3799,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unauthorizationstatus/provisional.json": {
       "hash": "9bf489205baecbaf563bed3ee7ad4ec4b3977e18feda7530ecc452a1488d10b9",
-      "last_checked": "2026-07-28T07:47:41.887712",
+      "last_checked": "2026-07-31T07:41:53.999374",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"4719f32078d955dccbde83ff7a773888\"",
       "file_path": "documentation/UserNotifications/unauthorizationstatus/provisional.md"
     },
@@ -3815,9 +3815,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unauthorizationstatus/ephemeral.json": {
       "hash": "40b8b48b13fc1f1a8e90eb5dc67823cd693d13c6389f6bcabc130978f0c5a575",
-      "last_checked": "2026-07-28T07:47:42.074403",
+      "last_checked": "2026-07-31T07:41:54.126566",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"f7974c39ffe901ae7ec4a228638931c3\"",
       "file_path": "documentation/UserNotifications/unauthorizationstatus/ephemeral.md"
     },
@@ -3831,9 +3831,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unauthorizationstatus/init(rawvalue:).json": {
       "hash": "baa50e05bbd9d1816753fc6bf010c2a027c880512beaceb79c5191c49fb3bfec",
-      "last_checked": "2026-07-28T07:47:42.261297",
+      "last_checked": "2026-07-31T07:41:54.300560",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"3cb8879ba24924bbb6894754ace495c1\"",
       "file_path": "documentation/UserNotifications/unauthorizationstatus/init-rawvalue.md"
     },
@@ -3847,9 +3847,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationsetting/notsupported.json": {
       "hash": "bb02382d873f993bc0fc5f23f6e5d8ea3016913c3e2ceecaa1418c39a30a331f",
-      "last_checked": "2026-07-28T07:47:42.451835",
+      "last_checked": "2026-07-31T07:41:54.418149",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"75aae13b5c9cbce429820b53ca84991f\"",
       "file_path": "documentation/UserNotifications/unnotificationsetting/notsupported.md"
     },
@@ -3863,9 +3863,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationsetting/disabled.json": {
       "hash": "39fcbc678ae0ea53a46ea2ba3e20a3399ee3ac1a2e183da6136bf20743477783",
-      "last_checked": "2026-07-28T07:47:42.584160",
+      "last_checked": "2026-07-31T07:41:54.586578",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"125bb0dc20836490f0340a4829cbba57\"",
       "file_path": "documentation/UserNotifications/unnotificationsetting/disabled.md"
     },
@@ -3879,9 +3879,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationsetting/enabled.json": {
       "hash": "dd8d0cfe6fb4f648842b80e127cc9dcd5a6af5e2ad45eab9fe85bfc8c13e1b35",
-      "last_checked": "2026-07-28T07:47:42.782027",
+      "last_checked": "2026-07-31T07:41:54.742560",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"f4981f4c8726ecf2406fb1961a8ca220\"",
       "file_path": "documentation/UserNotifications/unnotificationsetting/enabled.md"
     },
@@ -3895,9 +3895,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationsetting/init(rawvalue:).json": {
       "hash": "03275cdb48ef1d7cfc80a79ea820907ad7c3e0d8eea68a5c14f598d978989391",
-      "last_checked": "2026-07-28T07:47:42.973074",
+      "last_checked": "2026-07-31T07:41:54.853468",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"f87eaffa6c939cce793c05a706f94d34\"",
       "file_path": "documentation/UserNotifications/unnotificationsetting/init-rawvalue.md"
     },
@@ -3911,9 +3911,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unalertstyle/none.json": {
       "hash": "c09f38df2075a855bded135e49c2f0d43771a10db03f9eb246f7c8adaefcc156",
-      "last_checked": "2026-07-28T07:47:43.153940",
+      "last_checked": "2026-07-31T07:41:55.047459",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"cc3ea0f0fdc7938101d756ed22ef5b62\"",
       "file_path": "documentation/UserNotifications/unalertstyle/none.md"
     },
@@ -3927,9 +3927,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unalertstyle/banner.json": {
       "hash": "810b9ae372a3b5e0fe48a0e449ea437c2375d2ae5cf06287811fd9378a7b985b",
-      "last_checked": "2026-07-28T07:47:43.284981",
+      "last_checked": "2026-07-31T07:41:55.163559",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"847469149b75d37aaffc8ca8885805b1\"",
       "file_path": "documentation/UserNotifications/unalertstyle/banner.md"
     },
@@ -3943,9 +3943,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unalertstyle/alert.json": {
       "hash": "dce297c2cb7428ec045a6f36bd41584cfcb49f4e44629a3077bb86dc40214418",
-      "last_checked": "2026-07-28T07:47:43.476331",
+      "last_checked": "2026-07-31T07:41:55.280678",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"d5279afa88f7b595ebde6494e60677f7\"",
       "file_path": "documentation/UserNotifications/unalertstyle/alert.md"
     },
@@ -3959,9 +3959,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unalertstyle/init(rawvalue:).json": {
       "hash": "ff69a14cf735468f01c00d88a80304aca151ffd0e82f2260a05ce072eb98953d",
-      "last_checked": "2026-07-28T07:47:43.657186",
+      "last_checked": "2026-07-31T07:41:55.431930",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"562660658bb0f5ab8639217847dfedbf\"",
       "file_path": "documentation/UserNotifications/unalertstyle/init-rawvalue.md"
     },
@@ -3975,9 +3975,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unshowpreviewssetting/always.json": {
       "hash": "4ef61f42fad56ea334ceaab52b90161bbd0772533f6f07566bf931c648e254ad",
-      "last_checked": "2026-07-28T07:47:43.850453",
+      "last_checked": "2026-07-31T07:41:55.581167",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"b04dc1bcf8cbff849843ff405fd8bbd9\"",
       "file_path": "documentation/UserNotifications/unshowpreviewssetting/always.md"
     },
@@ -3991,9 +3991,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unshowpreviewssetting/whenauthenticated.json": {
       "hash": "90993114c97d83d76349460db2b284f02401f571885ff3d222463740f2e3bad5",
-      "last_checked": "2026-07-28T07:47:44.039614",
+      "last_checked": "2026-07-31T07:41:55.720358",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"9568d36d914a4c41c65723287d0b0b17\"",
       "file_path": "documentation/UserNotifications/unshowpreviewssetting/whenauthenticated.md"
     },
@@ -4007,9 +4007,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unshowpreviewssetting/never.json": {
       "hash": "6e8a46ab65550cff1479ebb08b8e4d192b1332ce76cd9bf5f6a46ad26a0b3eca",
-      "last_checked": "2026-07-28T07:47:44.232979",
+      "last_checked": "2026-07-31T07:41:55.838331",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"a1056762ac24909206444064d08357da\"",
       "file_path": "documentation/UserNotifications/unshowpreviewssetting/never.md"
     },
@@ -4023,9 +4023,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unshowpreviewssetting/init(rawvalue:).json": {
       "hash": "04fe80cb4c661d8b4f37a9815ecafef8e1140b602f908920e93db47bc38b9be8",
-      "last_checked": "2026-07-28T07:47:44.418292",
+      "last_checked": "2026-07-31T07:41:55.994904",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"2e609154a9631e8da64aba1840e51dec\"",
       "file_path": "documentation/UserNotifications/unshowpreviewssetting/init-rawvalue.md"
     },
@@ -4039,9 +4039,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationinterruptionlevel/active.json": {
       "hash": "5b976f4a932354c635004d18a3d75befd8fe2029581a754205103e6e352c0051",
-      "last_checked": "2026-07-28T07:47:44.560789",
+      "last_checked": "2026-07-31T07:41:56.124755",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"781cf8f1fd08f9f06e9e12008c7da3e6\"",
       "file_path": "documentation/UserNotifications/unnotificationinterruptionlevel/active.md"
     },
@@ -4055,9 +4055,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationinterruptionlevel/critical.json": {
       "hash": "203104982c0ccf384c905cfeb7958a450b5a3a8526e1a4134527ab80318ee1dd",
-      "last_checked": "2026-07-28T07:47:44.746772",
+      "last_checked": "2026-07-31T07:41:56.231831",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"ce5e253c9a19b8bfed670795e349d4c2\"",
       "file_path": "documentation/UserNotifications/unnotificationinterruptionlevel/critical.md"
     },
@@ -4071,9 +4071,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationinterruptionlevel/passive.json": {
       "hash": "c363a9bbc95b914d356c80e6862e31fd80898d650d5106018f49efd271cd5c83",
-      "last_checked": "2026-07-28T07:47:44.956872",
+      "last_checked": "2026-07-31T07:41:56.422520",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"7dee79f008796165815f72338da76c72\"",
       "file_path": "documentation/UserNotifications/unnotificationinterruptionlevel/passive.md"
     },
@@ -4087,9 +4087,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationinterruptionlevel/timesensitive.json": {
       "hash": "120b3d5a84ba245ff07e8a928f6a0a6c778b89cacda413e5d4e62524122e2690",
-      "last_checked": "2026-07-28T07:47:45.161392",
+      "last_checked": "2026-07-31T07:41:56.588197",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"b8292fe3e7d8eb4b2cf001e07c3dae98\"",
       "file_path": "documentation/UserNotifications/unnotificationinterruptionlevel/timesensitive.md"
     },
@@ -4103,9 +4103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationinterruptionlevel/init(rawvalue:).json": {
       "hash": "0fb1e7e90f8196f59831a220e5a80ca3b52c9efae83651f17568ab4dcaf45e6a",
-      "last_checked": "2026-07-28T07:47:45.339128",
+      "last_checked": "2026-07-31T07:41:56.725486",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"6942ad37fb40bfdaa7fee8ae806382b5\"",
       "file_path": "documentation/UserNotifications/unnotificationinterruptionlevel/init-rawvalue.md"
     },
@@ -4119,9 +4119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationcategoryoptions/init(rawvalue:).json": {
       "hash": "396805c8281ad4b19d4f17aa2df8b03076f49b3777da2d4e12cbc5b54510b1e3",
-      "last_checked": "2026-07-28T07:47:45.523368",
+      "last_checked": "2026-07-31T07:41:56.881586",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"1747bd2c85e9a6b87e8ec31a7d99cb92\"",
       "file_path": "documentation/UserNotifications/unnotificationcategoryoptions/init-rawvalue.md"
     },
@@ -4135,9 +4135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationcategoryoptions/allowincarplay.json": {
       "hash": "bc7e618e18bc81cfb5ddf5e3d5dc39b0d1960a89d52a5b4e67221d6d189e941b",
-      "last_checked": "2026-07-28T07:47:45.723991",
+      "last_checked": "2026-07-31T07:41:57.054687",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"379d9451c0585de35072d7a7e1ba61af\"",
       "file_path": "documentation/UserNotifications/unnotificationcategoryoptions/allowincarplay.md"
     },
@@ -4151,9 +4151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationcategoryoptions/allowannouncement.json": {
       "hash": "38249db5a9d2207a2f59dda9d081e9af615fe5bb33b57bbc76e868db5a7df65a",
-      "last_checked": "2026-07-28T07:47:45.917827",
+      "last_checked": "2026-07-31T07:41:57.222833",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"9aa37a24721bab4d09a736a4d14cdca9\"",
       "file_path": "documentation/UserNotifications/unnotificationcategoryoptions/allowannouncement.md"
     },
@@ -4167,9 +4167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationcategoryoptions/hiddenpreviewsshowtitle.json": {
       "hash": "b9606936635e3d29ad6bfb7e7bc6e6801eff6a71f3885a415885e515f282b5d7",
-      "last_checked": "2026-07-28T07:47:46.107107",
+      "last_checked": "2026-07-31T07:41:57.513915",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"7a800ea53ffd78ddd154d626307427c4\"",
       "file_path": "documentation/UserNotifications/unnotificationcategoryoptions/hiddenpreviewsshowtitle.md"
     },
@@ -4183,9 +4183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationcategoryoptions/hiddenpreviewsshowsubtitle.json": {
       "hash": "a73200903af0d70820ead79efb31df4c22f0f661bb19e586bc880ff31211710e",
-      "last_checked": "2026-07-28T07:47:46.301627",
+      "last_checked": "2026-07-31T07:41:57.641314",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"88a1026a6d6bb832b467834082147550\"",
       "file_path": "documentation/UserNotifications/unnotificationcategoryoptions/hiddenpreviewsshowsubtitle.md"
     },
@@ -4199,9 +4199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationcategoryoptions/customdismissaction.json": {
       "hash": "2dc565dfcd93c994e50cdb74be691582928c679af02114e1e20382ce3a3561fe",
-      "last_checked": "2026-07-28T07:47:46.495612",
+      "last_checked": "2026-07-31T07:41:57.819405",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"3fb33cf8eee8035626f379ef149ca012\"",
       "file_path": "documentation/UserNotifications/unnotificationcategoryoptions/customdismissaction.md"
     },
@@ -4215,9 +4215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationactionoptions/init(rawvalue:).json": {
       "hash": "25c877a555a460d713d18bad28969a38596d2a4f7ec7d73cc12e0ecd809f7382",
-      "last_checked": "2026-07-28T07:47:46.711347",
+      "last_checked": "2026-07-31T07:41:57.954345",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"916c4f46c516a91fa434b4cba99faad3\"",
       "file_path": "documentation/UserNotifications/unnotificationactionoptions/init-rawvalue.md"
     },
@@ -4231,9 +4231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationactionoptions/authenticationrequired.json": {
       "hash": "dd0be7877d7b9d77318c7d8011af87e7fe1056836306af1996615b635eb068b8",
-      "last_checked": "2026-07-28T07:47:46.936053",
+      "last_checked": "2026-07-31T07:41:58.105768",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"0b2d4b24c5b884b94a3e188b6b2b7b1b\"",
       "file_path": "documentation/UserNotifications/unnotificationactionoptions/authenticationrequired.md"
     },
@@ -4247,9 +4247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationactionoptions/destructive.json": {
       "hash": "f7ca253a72309c6a2b277c84c02deac98bacb8b26f3040cc65cf84f0995c649f",
-      "last_checked": "2026-07-28T07:47:47.134240",
+      "last_checked": "2026-07-31T07:41:58.281746",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"5c4854ed4420eb1a7b9da315f71306b5\"",
       "file_path": "documentation/UserNotifications/unnotificationactionoptions/destructive.md"
     },
@@ -4263,9 +4263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationactionoptions/foreground.json": {
       "hash": "801c03c8cbe8b0549825f867fa4d2e79edd1faf5dfc621dac09cb77e8a8f9fde",
-      "last_checked": "2026-07-28T07:47:47.304162",
+      "last_checked": "2026-07-31T07:41:58.463785",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"6d50bbb4b3ff85ca021a6caf3ba6698c\"",
       "file_path": "documentation/UserNotifications/unnotificationactionoptions/foreground.md"
     },
@@ -4279,9 +4279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationsettings/init(coder:).json": {
       "hash": "cc4533ca4ba671d8fdb622f232c0ffc1e219634cf850fffb28bb19826bae21e8",
-      "last_checked": "2026-07-28T07:47:08.336626",
+      "last_checked": "2026-07-31T07:41:28.635300",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"845d94b212f3fd083d15e4d55a2e5a07\"",
       "file_path": "documentation/UserNotifications/unnotificationsettings/init-coder.md"
     },
@@ -4295,9 +4295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationrequest/init(coder:).json": {
       "hash": "b9992dc0d4d7466ac9eab8d15ca2d0526dd59d15a8484c0eb55be2e42b77c18d",
-      "last_checked": "2026-07-28T07:47:11.911080",
+      "last_checked": "2026-07-31T07:41:32.096724",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"6919dbc07fe1a1ee11253f991e450a70\"",
       "file_path": "documentation/UserNotifications/unnotificationrequest/init-coder.md"
     },
@@ -4311,9 +4311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotification/init(coder:).json": {
       "hash": "176dc98e23bd6158825a411b5e65ee4adfdacc2af462e31aa77aa4360971bea0",
-      "last_checked": "2026-07-28T07:47:12.435827",
+      "last_checked": "2026-07-31T07:41:32.560879",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"3378750ea1f6fce2ac30c8159e137216\"",
       "file_path": "documentation/UserNotifications/unnotification/init-coder.md"
     },
@@ -4327,9 +4327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationactionicon/init(coder:).json": {
       "hash": "ca6d2043f7c5693c352d8971a109df9288c290edf43c093ad573ccce4951c282",
-      "last_checked": "2026-07-28T07:47:13.012361",
+      "last_checked": "2026-07-31T07:41:32.955678",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"0fa1064ac3a32e405ce4dcb47220df57\"",
       "file_path": "documentation/UserNotifications/unnotificationactionicon/init-coder.md"
     },
@@ -4343,9 +4343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationcontent/init(coder:).json": {
       "hash": "74c282e33082b50716dc6e369e4d711a046e736806cc41cd4268dce6a4f3ed72",
-      "last_checked": "2026-07-28T07:47:20.652667",
+      "last_checked": "2026-07-31T07:41:38.329411",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"ac657a1ce62485ecc76c1b7863575ee6\"",
       "file_path": "documentation/UserNotifications/unnotificationcontent/init-coder.md"
     },
@@ -4359,9 +4359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationattachment/init(identifier:url:options:)-83grx.json": {
       "hash": "95553f58c00fb4cd7f10341eb31a81d1f81af20c1a8dd967c646fa9f54047b8f",
-      "last_checked": "2026-07-28T07:47:20.838254",
+      "last_checked": "2026-07-31T07:41:38.444540",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"19f7c5970a73051482789de05a76cde9\"",
       "file_path": "documentation/UserNotifications/unnotificationattachment/init-identifierurloptions-83grx.md"
     },
@@ -4375,9 +4375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationattachment/init(coder:).json": {
       "hash": "454ea89ba340db19cdf7bf4938fd0d64f83c1cfbcf9d8c229a054d46362c6442",
-      "last_checked": "2026-07-28T07:47:22.381093",
+      "last_checked": "2026-07-31T07:41:39.595609",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"008e8b5e5b8a588d364404688855da0a\"",
       "file_path": "documentation/UserNotifications/unnotificationattachment/init-coder.md"
     },
@@ -4391,9 +4391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationattachment/init(identifier:url:options:)-7oony.json": {
       "hash": "0e17940388211a31db514dce7459dd7c79f3afb6ad926e07c8a3c432e0827598",
-      "last_checked": "2026-07-28T07:47:22.586251",
+      "last_checked": "2026-07-31T07:41:39.735524",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"a587a01826b47801f007c1236ab684a1\"",
       "file_path": "documentation/UserNotifications/unnotificationattachment/init-identifierurloptions-7oony.md"
     },
@@ -4407,9 +4407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationsound/init(coder:).json": {
       "hash": "2321ee35266dbed9266ccbb3a76ce282cae373843dc66ca944df984c93aeb634",
-      "last_checked": "2026-07-28T07:47:24.446659",
+      "last_checked": "2026-07-31T07:41:40.988555",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"0b3c957527aeb9cf0869ee47ab600e88\"",
       "file_path": "documentation/UserNotifications/unnotificationsound/init-coder.md"
     },
@@ -4423,9 +4423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/uncalendarnotificationtrigger/init(datematchingcomponents:repeats:).json": {
       "hash": "891e212efa296c3d74a7c7ac73cb51ebdda9b21e4894ba17794f02e2e27c735c",
-      "last_checked": "2026-07-28T07:47:25.563845",
+      "last_checked": "2026-07-31T07:41:41.819417",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"e61982fc9efc861d25cccd69bdcac9bc\"",
       "file_path": "documentation/UserNotifications/uncalendarnotificationtrigger/init-datematchingcomponentsrepeats.md"
     },
@@ -4439,9 +4439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationtrigger/init(coder:).json": {
       "hash": "27711b88b77cc39550462cda79b513d34c14b91d45a3dc76fea964efae72de97",
-      "last_checked": "2026-07-28T07:47:26.926864",
+      "last_checked": "2026-07-31T07:41:42.781953",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"267ffed31a3a0887fa3bfe22d30f27ba\"",
       "file_path": "documentation/UserNotifications/unnotificationtrigger/init-coder.md"
     },
@@ -4455,9 +4455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationcategory/init(coder:).json": {
       "hash": "d4c58ca417301492aa6cdd5f2ac6023aea3bba4eda93dd97f158fa9392aa87d4",
-      "last_checked": "2026-07-28T07:47:29.008165",
+      "last_checked": "2026-07-31T07:41:44.421856",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"d507de38a11204d8adc69ea7aaf3e542\"",
       "file_path": "documentation/UserNotifications/unnotificationcategory/init-coder.md"
     },
@@ -4471,9 +4471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationaction/init(coder:).json": {
       "hash": "205cd76b9d9db253fc5bbea4de63c8b63a9ebc31df69c4e1312935b3aae7f012",
-      "last_checked": "2026-07-28T07:47:30.599152",
+      "last_checked": "2026-07-31T07:41:45.514513",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"c0fc807dbc4b12533ef1ecb7adcaeba4\"",
       "file_path": "documentation/UserNotifications/unnotificationaction/init-coder.md"
     },
@@ -4487,9 +4487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unnotificationresponse/init(coder:).json": {
       "hash": "f6a92e60021755e1bf2ef3197f8d58f9855c8a0dfa299dd78408e0dc18bcd4c5",
-      "last_checked": "2026-07-28T07:47:32.472085",
+      "last_checked": "2026-07-31T07:41:46.850732",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"fccd1fc0e4f4f5509655aa11718e5740\"",
       "file_path": "documentation/UserNotifications/unnotificationresponse/init-coder.md"
     },
@@ -4503,9 +4503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/usernotifications/unmutablenotificationcontent/appentityidentifiers.json": {
       "hash": "8e9eb78b0e3933be8c20bcc6721b7d8196e95c93e245f4013f3ae74b97d814b1",
-      "last_checked": "2026-07-28T07:47:16.887313",
+      "last_checked": "2026-07-31T07:41:35.765835",
       "status": "unchanged",
-      "session_id": "2026-07-28T07:46:49.860938",
+      "session_id": "2026-07-31T07:41:13.737421",
       "etag": "W/\"cffb7c942e0453faec13d12498cc97f6\"",
       "file_path": "documentation/UserNotifications/unmutablenotificationcontent/appentityidentifiers.md"
     },

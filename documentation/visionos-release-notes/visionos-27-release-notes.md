@@ -179,17 +179,12 @@ The visionOS 27 SDK provides support to develop apps for Apple Vision Pro device
 - Fixed: Opaque ShaderGraph materials appear darker than Physically Based Materials when lit by dynamic lights.  (177974279)
 - Fixed: When `OpacityComponent` is applied to an entity with opaque materials, `RealityRenderer` renders the opaque materials with transparency, revealing interior surfaces. Only the frontmost surface should appear with partial transparency.  (177976245)
 - Fixed: Shadow rendering memory is not counted against each application’s memory limit, which might prevent apps from consistently using up to 8 shadowed directional and spot lights depending on what other apps are running.  (177984485)
+- Fixed: Specular highlights in the PBR shading model do not fade out correctly at low specular values. A visible specular effect persists even when the specular parameter is set to 0, causing materials with zero specular to appear reflective instead of non-reflective.  (178289846)
 
 ###### Known Issues
 
 - Some MaterialX 1.39 nodes are not supported.  (172875414)
 - Shaders using the new RealityKit shader node name of `ND_realitykit_pbr_surfaceshader_2_0` will fail to load in Quick Look or with USDKit.  (181616779)
-
-##### Rekit
-
-###### Resolved Issues
-
-- Fixed: Specular highlights in the PBR shading model do not fade out correctly at low specular values. A visible specular effect persists even when the specular parameter is set to 0, causing materials with zero specular to appear reflective instead of non-reflective.  (178289846)
 
 ##### Screen Recording
 
