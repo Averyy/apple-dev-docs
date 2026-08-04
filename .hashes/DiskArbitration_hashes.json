@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-07-31T07:43:16.555458",
+    "last_updated": "2026-08-04T07:44:28.917598",
     "total_pages": 284,
-    "session_id": "2026-07-31T07:42:53.634052"
+    "session_id": "2026-08-04T07:44:03.615318"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/DiskArbitration.json": {
       "hash": "9faf178746adec527ef7f6c3cfefacc4253ac8b2895acb883f432abab8f5a837",
-      "last_checked": "2026-07-31T07:42:53.909420",
+      "last_checked": "2026-08-04T07:44:03.851348",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"4c3604b1a10c1237bbdd3a2326b9c72f\"",
       "file_path": "documentation/DiskArbitration/DiskArbitration.md"
     },
     "https://developer.apple.com/documentation/DiskArbitration": {
       "hash": "9faf178746adec527ef7f6c3cfefacc4253ac8b2895acb883f432abab8f5a837",
-      "last_checked": "2026-07-31T07:42:53.794911",
+      "last_checked": "2026-08-04T07:44:03.765778",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"4c3604b1a10c1237bbdd3a2326b9c72f\"",
       "file_path": "documentation/DiskArbitration/DiskArbitration.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/dadisk-h.json": {
       "hash": "c1c32f27b76eaa653851ba77fd2f3914fb96c641b1fb2e9fc76b61396c6abb9e",
-      "last_checked": "2026-07-31T07:42:54.095405",
+      "last_checked": "2026-08-04T07:44:04.131685",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"e9abc39f1344a8eeaafa81198426abaf\"",
       "file_path": "documentation/DiskArbitration/dadisk-h.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/dadissenter-h.json": {
       "hash": "e70a7cb77978ba989d6d99b7e62834f99451260b80b74c39a445b26e034fb86c",
-      "last_checked": "2026-07-31T07:42:54.251438",
+      "last_checked": "2026-08-04T07:44:04.437274",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"7796fbb49a5b68d86283454e76370fc2\"",
       "file_path": "documentation/DiskArbitration/dadissenter-h.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/dasession-h.json": {
       "hash": "b90b49944eb047c571488a92c3ff1f994ef6da8c63a0f60a44795846310031b4",
-      "last_checked": "2026-07-31T07:42:54.396656",
+      "last_checked": "2026-08-04T07:44:04.720332",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"cda83b05912ed46600b44859f8d8d05b\"",
       "file_path": "documentation/DiskArbitration/dasession-h.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/diskarbitration-h.json": {
       "hash": "ee87fd3bfd708d0332aa9ada78e23685f3fdd95a124dc0fddb6909d16f33b3ff",
-      "last_checked": "2026-07-31T07:42:54.540758",
+      "last_checked": "2026-08-04T07:44:05.010556",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"d8d6b9618abf2fed0bfba60ec80d488a\"",
       "file_path": "documentation/DiskArbitration/diskarbitration-h.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/diskarbitration-enumerations.json": {
       "hash": "4d2618e67cb2f1bd272f6a11471002ee080a367bd67f7e3f59375cbd8a691ca2",
-      "last_checked": "2026-07-31T07:42:54.721244",
+      "last_checked": "2026-08-04T07:44:05.312158",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"5feb6492e7925819c1a0e02fff5bdbe5\"",
       "file_path": "documentation/DiskArbitration/diskarbitration-enumerations.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/diskarbitration-constants.json": {
       "hash": "89edc854ad858c38e0477a3ed2ab3120451036287b75910942280fa209b1ea98",
-      "last_checked": "2026-07-31T07:42:54.823741",
+      "last_checked": "2026-08-04T07:44:05.480171",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"f4c2261c62eb3c2726adbd1d880ca59d\"",
       "file_path": "documentation/DiskArbitration/diskarbitration-constants.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/diskarbitration-data-types.json": {
       "hash": "dfb6c5174b5702ecec02f1796aca5efbc33d6a40ee9ade1f257a58aceeb302c7",
-      "last_checked": "2026-07-31T07:42:54.940899",
+      "last_checked": "2026-08-04T07:44:05.767482",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"e5944b55a630ae93dec2d6c2606fe0aa\"",
       "file_path": "documentation/DiskArbitration/diskarbitration-data-types.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/kdadiskoptionejectuponlogout.json": {
       "hash": "6d2a07cf00e60ab376e6229c9f5a66c44a1c2ee3d58b5892c1626cfd014c3433",
-      "last_checked": "2026-07-31T07:43:13.301647",
+      "last_checked": "2026-08-04T07:44:25.395608",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"f253141e5dff6010800cc5f95e1656f9\"",
       "file_path": "documentation/DiskArbitration/kdadiskoptionejectuponlogout.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/kdadiskoptionmountautomatic.json": {
       "hash": "8c3c772462ed65874d13be5ef14c5ec2f7ba16764da43f868342a6e69fbfb597",
-      "last_checked": "2026-07-31T07:43:13.423980",
+      "last_checked": "2026-08-04T07:44:25.577803",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"293ae044ed8a5b3d37724ceceb454c05\"",
       "file_path": "documentation/DiskArbitration/kdadiskoptionmountautomatic.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/kdadiskoptionmountautomaticnodefer.json": {
       "hash": "0d408b585e9fdf605a52bb1f724ad5e2da1fb45247dd7a0639373893942dfddb",
-      "last_checked": "2026-07-31T07:43:13.552295",
+      "last_checked": "2026-08-04T07:44:25.695653",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"6b0c4b8eb3d9dddd339d2d1182300ec2\"",
       "file_path": "documentation/DiskArbitration/kdadiskoptionmountautomaticnodefer.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/kdadiskoptionprivate.json": {
       "hash": "701c013903b562b1745d351ceb1f17381916ba7456ceea9e04b9ad70411cd15e",
-      "last_checked": "2026-07-31T07:43:13.707037",
+      "last_checked": "2026-08-04T07:44:25.822500",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"21eb7a9fcf46708cf269b2958ccf33b0\"",
       "file_path": "documentation/DiskArbitration/kdadiskoptionprivate.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/kdadiskdescriptionfskitprefix.json": {
       "hash": "2f9d8fd11d97013cfc27e9cf76255cc4e4a2fdabcd2de0b1ca9ffd00dfc74d90",
-      "last_checked": "2026-07-31T07:42:55.092980",
+      "last_checked": "2026-08-04T07:44:06.063807",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"93eba1faec14d89c7cd40cecff22bd3d\"",
       "file_path": "documentation/DiskArbitration/kdadiskdescriptionfskitprefix.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/kdadiskdescriptionrepairrunningkey.json": {
       "hash": "d41350d2df523a8f2fb4e728bd3f236103be17778ef0486f0904cea79ad91b94",
-      "last_checked": "2026-07-31T07:42:55.215626",
+      "last_checked": "2026-08-04T07:44:06.368380",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"c3627dc40e6d182944c6ef7052a1c106\"",
       "file_path": "documentation/DiskArbitration/kdadiskdescriptionrepairrunningkey.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/kdadiskmountoptionnofollow.json": {
       "hash": "83339b045bb54bbde7ec7ef4a518228abecc2193b19ecbd5c3824694d6f2bb0a",
-      "last_checked": "2026-07-31T07:42:55.371258",
+      "last_checked": "2026-08-04T07:44:06.519251",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"af875538674556dcece2a5b17918b326\"",
       "file_path": "documentation/DiskArbitration/kdadiskmountoptionnofollow.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/kdareturnbadargument.json": {
       "hash": "d9aa4c2dff4c597bac3b83f33e29334303b0055298d0dbf888d3849dd330134d",
-      "last_checked": "2026-07-31T07:43:14.756114",
+      "last_checked": "2026-08-04T07:44:26.968520",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"6930fa87059c6a38eb14d3e64d07508c\"",
       "file_path": "documentation/DiskArbitration/kdareturnbadargument.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/kdareturnbusy.json": {
       "hash": "4b078f6143eaa09d04512d5cea18f2eb45129d6fa732aeb3abef81d9ba74fd77",
-      "last_checked": "2026-07-31T07:43:14.913250",
+      "last_checked": "2026-08-04T07:44:27.118955",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"7eeebb90693add639e2dc3dd4260eade\"",
       "file_path": "documentation/DiskArbitration/kdareturnbusy.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/kdareturnerror.json": {
       "hash": "a55c08f8cbc552c78b395e1bbfab2f6796804fd2a5e8a5a6e00b5c8426ce4736",
-      "last_checked": "2026-07-31T07:43:15.022124",
+      "last_checked": "2026-08-04T07:44:27.279697",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"29ff4122df48d62e4648c5d144e44723\"",
       "file_path": "documentation/DiskArbitration/kdareturnerror.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/kdareturnexclusiveaccess.json": {
       "hash": "95616539310ffe3ec19a3d12a7d8a8ff413911082722939e17128201645b3f28",
-      "last_checked": "2026-07-31T07:43:15.152479",
+      "last_checked": "2026-08-04T07:44:27.457022",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"a8d4bc077c98dcda3e6bc1632fcae8ba\"",
       "file_path": "documentation/DiskArbitration/kdareturnexclusiveaccess.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/kdareturnnoresources.json": {
       "hash": "06c1020b0f5fffd2762016c066635811f67acb20a81b95ea59cfe3789b2f5028",
-      "last_checked": "2026-07-31T07:43:15.314158",
+      "last_checked": "2026-08-04T07:44:27.593545",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"e55ea38ed9d31fcc739190add6c36dab\"",
       "file_path": "documentation/DiskArbitration/kdareturnnoresources.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/kdareturnnotfound.json": {
       "hash": "0934c6fadc8db80a1c5c731e98fdbaf10cc22ebbecf64de00a4d05449a4c7528",
-      "last_checked": "2026-07-31T07:43:15.476108",
+      "last_checked": "2026-08-04T07:44:27.792699",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"b70b92c02e986ac3fa496c8a603bed5f\"",
       "file_path": "documentation/DiskArbitration/kdareturnnotfound.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/kdareturnnotmounted.json": {
       "hash": "bd3ecbe4c8480d72414da865d9363e3da01529a32d92e37d555849fb839981de",
-      "last_checked": "2026-07-31T07:43:15.646623",
+      "last_checked": "2026-08-04T07:44:27.952010",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"66348ef8a58e01b82b0e5d9f59874491\"",
       "file_path": "documentation/DiskArbitration/kdareturnnotmounted.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/kdareturnnotpermitted.json": {
       "hash": "4f45b53583403ce5312b9e9b55e5c3ab8beef0db93d938debad979d6c8967cc3",
-      "last_checked": "2026-07-31T07:43:15.805145",
+      "last_checked": "2026-08-04T07:44:28.122733",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"27a258d1e2d8f51ec4eed6ef5b7f3ecd\"",
       "file_path": "documentation/DiskArbitration/kdareturnnotpermitted.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/kdareturnnotprivileged.json": {
       "hash": "90777c92b66cfb2c92b087e15859f0b2fdd434d82a9d624d4c7e45b889123f5f",
-      "last_checked": "2026-07-31T07:43:15.925339",
+      "last_checked": "2026-08-04T07:44:28.280618",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"43584bf565d3485dc3134d4ea7f2a0e8\"",
       "file_path": "documentation/DiskArbitration/kdareturnnotprivileged.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/kdareturnnotready.json": {
       "hash": "c4646696a9fa56100f17bebefd1df27773204dd33fe76a0b65f8ab6e4d5470bf",
-      "last_checked": "2026-07-31T07:43:16.090076",
+      "last_checked": "2026-08-04T07:44:28.443005",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"9d2cdc2396e841771608e3c4465805fb\"",
       "file_path": "documentation/DiskArbitration/kdareturnnotready.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/kdareturnnotwritable.json": {
       "hash": "84d6480c2415427e8c58bc8c47f17d8c636377bb41044dee714ab5d38f7e745f",
-      "last_checked": "2026-07-31T07:43:16.237784",
+      "last_checked": "2026-08-04T07:44:28.568946",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"b3bb777ca31f0bdf1b4fd0b4df3c9975\"",
       "file_path": "documentation/DiskArbitration/kdareturnnotwritable.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/kdareturnsuccess.json": {
       "hash": "aed4c120c491c7972a7d4712b4945debb9ccfb9c1ba0acf86261aeb2c5d465b7",
-      "last_checked": "2026-07-31T07:43:16.385625",
+      "last_checked": "2026-08-04T07:44:28.751807",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"49f7085ac4df09714d5368a3f24b9fdd\"",
       "file_path": "documentation/DiskArbitration/kdareturnsuccess.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/kdareturnunsupported.json": {
       "hash": "059d2f3aeb1960ec5945be1a0af91bcb6aa0a2febb93ef1ca443fa3c21b25ece",
-      "last_checked": "2026-07-31T07:43:16.544152",
+      "last_checked": "2026-08-04T07:44:28.914217",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"234f123e993601b6d40756428c0e9ed8\"",
       "file_path": "documentation/DiskArbitration/kdareturnunsupported.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/dadiskcopydescription(_:).json": {
       "hash": "e37e8347ac09c1d4e4a571c4793c012952db78e68b4f331bbe3aacb234e81898",
-      "last_checked": "2026-07-31T07:42:55.497986",
+      "last_checked": "2026-08-04T07:44:06.685342",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"aa0ca811f63f906e0edccb22f6861ace\"",
       "file_path": "documentation/DiskArbitration/dadiskcopydescription.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/dadiskcopyiomedia(_:).json": {
       "hash": "bde376fb9ff2249aa70a86b28be413d727c48c86db292e446d6a3d9e1b8453df",
-      "last_checked": "2026-07-31T07:42:55.647726",
+      "last_checked": "2026-08-04T07:44:06.986752",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"71d265ded7cd464c1e1d6f3f90591046\"",
       "file_path": "documentation/DiskArbitration/dadiskcopyiomedia.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/dadiskcopywholedisk(_:).json": {
       "hash": "ecc7df83c0cb4248a61ff01e3bb1c82a3e8e5d40ced2ce23c1eb203a5279b030",
-      "last_checked": "2026-07-31T07:42:55.784845",
+      "last_checked": "2026-08-04T07:44:07.283766",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"5beb41cb5076b82ba372dc9e32f31b99\"",
       "file_path": "documentation/DiskArbitration/dadiskcopywholedisk.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/dadiskcreatefrombsdname(_:_:_:).json": {
       "hash": "c72af4aa7319e671f489c56231f6d42c7cf9ff9b3d55dd1cf40140aef985c9ed",
-      "last_checked": "2026-07-31T07:42:55.904823",
+      "last_checked": "2026-08-04T07:44:07.442221",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"1622b54a3e3301e08460398e6f2d6253\"",
       "file_path": "documentation/DiskArbitration/dadiskcreatefrombsdname.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/dadiskcreatefromiomedia(_:_:_:).json": {
       "hash": "fce2818b8fdbba04bcb98d3c3ac009b664e7671e322cf2c56dc7df1b57e396c7",
-      "last_checked": "2026-07-31T07:42:56.087588",
+      "last_checked": "2026-08-04T07:44:07.598030",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"10854f2a3e9e2c675393a5f27cf6bab8\"",
       "file_path": "documentation/DiskArbitration/dadiskcreatefromiomedia.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/dadiskcreatefromvolumepath(_:_:_:).json": {
       "hash": "cfe8fc8d16ae99526f0c1af86eb4b319cb35d0b0e228a3f18e6b3ed99ef3fc4f",
-      "last_checked": "2026-07-31T07:42:56.379731",
+      "last_checked": "2026-08-04T07:44:07.772084",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"6f74a233bf2c6dbaad9742dc8c7d22bf\"",
       "file_path": "documentation/DiskArbitration/dadiskcreatefromvolumepath.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/dadiskgetbsdname(_:).json": {
       "hash": "2959eb9ac1a552d81c19a29dc2f5631f301e88ef2bfbc602304e64706727b704",
-      "last_checked": "2026-07-31T07:42:56.490928",
+      "last_checked": "2026-08-04T07:44:07.939273",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"224d8c95a0df56f2a53dd82938eddb1c\"",
       "file_path": "documentation/DiskArbitration/dadiskgetbsdname.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/dadiskgettypeid().json": {
       "hash": "3c6235f77879babbeb1aef056e22358485debd120ec51c63e85bbe6107229acc",
-      "last_checked": "2026-07-31T07:42:56.649511",
+      "last_checked": "2026-08-04T07:44:08.098827",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"c3f204d7cdf79ff4079c42f7a982f99c\"",
       "file_path": "documentation/DiskArbitration/dadiskgettypeid.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/dadisk.json": {
       "hash": "218a7d61d262a4a53a36c2ffe9dfd1756a9d5e72d1bba50ebeea53b38c175c9b",
-      "last_checked": "2026-07-31T07:42:56.948108",
+      "last_checked": "2026-08-04T07:44:08.266022",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"b03d54b4527958a1556435fb6f89db91\"",
       "file_path": "documentation/DiskArbitration/dadisk.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/dadissentercreate(_:_:_:).json": {
       "hash": "89435fd02687801e5e0de3b054ccbc9d1043d9886d1f5b52665e7775345a8929",
-      "last_checked": "2026-07-31T07:42:57.058921",
+      "last_checked": "2026-08-04T07:44:08.453959",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"00aa2364d94c3745b4f6f74a08b7815a\"",
       "file_path": "documentation/DiskArbitration/dadissentercreate.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/dadissentergetstatus(_:).json": {
       "hash": "7ff3b67f77e040a8962486a11e08051ebd2955cb2769d533a3ae49790b18844d",
-      "last_checked": "2026-07-31T07:42:57.194213",
+      "last_checked": "2026-08-04T07:44:08.620508",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"67378fb4ee76a2416430bcb97dc8b17d\"",
       "file_path": "documentation/DiskArbitration/dadissentergetstatus.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/dadissentergetstatusstring(_:).json": {
       "hash": "db3189cf207f3c862246a76d532d6bbfe6f976aaa2f42c8462b0edcf46821bce",
-      "last_checked": "2026-07-31T07:42:57.310758",
+      "last_checked": "2026-08-04T07:44:08.908507",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"ccabba766ca05fb4514b65403a90cc18\"",
       "file_path": "documentation/DiskArbitration/dadissentergetstatusstring.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/dadissenter.json": {
       "hash": "16308afece12d6c27deb94c488769c1d57bd88d6e7fa2e3bd3b463fc36490663",
-      "last_checked": "2026-07-31T07:42:57.448321",
+      "last_checked": "2026-08-04T07:44:09.072196",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"9070d47fad5b2c04f4b41667261c5884\"",
       "file_path": "documentation/DiskArbitration/dadissenter.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/dasessioncreate(_:).json": {
       "hash": "ff22fd430b0ecda50f0227e1eb0a2127ba3f89c938d86e15949a4eb5be5ab740",
-      "last_checked": "2026-07-31T07:42:57.573638",
+      "last_checked": "2026-08-04T07:44:09.248528",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"c588b3d9b6f0017dee23031fb92c22c2\"",
       "file_path": "documentation/DiskArbitration/dasessioncreate.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/dasessiongettypeid().json": {
       "hash": "ed0e92b8fde5ccc331b0bc867bc6d5236e2113408a2ee2476af27dad3cc96d91",
-      "last_checked": "2026-07-31T07:42:57.687933",
+      "last_checked": "2026-08-04T07:44:09.417674",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"f07e083028e555c65aedc45de85683ec\"",
       "file_path": "documentation/DiskArbitration/dasessiongettypeid.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/dasessionschedulewithrunloop(_:_:_:).json": {
       "hash": "1e73fa0e2a56732609f152cef6654e5be3726a6791912959b03980a670aa58a7",
-      "last_checked": "2026-07-31T07:42:57.814877",
+      "last_checked": "2026-08-04T07:44:09.581267",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"4da5d417dcefccc33a1d8d8bea5405ef\"",
       "file_path": "documentation/DiskArbitration/dasessionschedulewithrunloop.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/dasessionsetdispatchqueue(_:_:).json": {
       "hash": "213c4a7b71aedbfa1dd5d2a3475bf4a4d3a7c6447cd73ed9fa637c7160e4dc09",
-      "last_checked": "2026-07-31T07:42:57.971110",
+      "last_checked": "2026-08-04T07:44:09.860966",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"7fe6456b0141ea2fe5dccf1edaa68c06\"",
       "file_path": "documentation/DiskArbitration/dasessionsetdispatchqueue.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/dasessionunschedulefromrunloop(_:_:_:).json": {
       "hash": "6f73d14111758a061ef40b90e6655bbe8c51e056fe5b09511088326c8d61b758",
-      "last_checked": "2026-07-31T07:42:58.115720",
+      "last_checked": "2026-08-04T07:44:10.021988",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"d6bf16ab181b890fc70ee91d80044a5f\"",
       "file_path": "documentation/DiskArbitration/dasessionunschedulefromrunloop.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/dasession.json": {
       "hash": "544fb90fac420076054230fdf21d5f459d074032695dd54091e40fc5d67cf14f",
-      "last_checked": "2026-07-31T07:42:58.287523",
+      "last_checked": "2026-08-04T07:44:10.190965",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"9a6fe42e86d63bdb64000c093ef5245d\"",
       "file_path": "documentation/DiskArbitration/dasession.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/dadiskclaim(_:_:_:_:_:_:).json": {
       "hash": "c15361712fedcb16551fd11524568facfc00b80bb3519a7d5e9ce8fdc0e9aeeb",
-      "last_checked": "2026-07-31T07:42:58.573222",
+      "last_checked": "2026-08-04T07:44:10.349227",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"5042300691d609560c629c3331305ead\"",
       "file_path": "documentation/DiskArbitration/dadiskclaim.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/dadiskeject(_:_:_:_:).json": {
       "hash": "8a02810dc53828a1df4ce0abd456328f96559cfe93281827c32707fcaf888b6f",
-      "last_checked": "2026-07-31T07:42:58.846135",
+      "last_checked": "2026-08-04T07:44:10.517519",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"79a9c8d52c7422a209d535710a9387aa\"",
       "file_path": "documentation/DiskArbitration/dadiskeject.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/dadiskgetoptions(_:).json": {
       "hash": "7c02ce54b1a266c2c191f05830c46298b4f79f5c227513ab680af7abb86714e9",
-      "last_checked": "2026-07-31T07:42:59.016435",
+      "last_checked": "2026-08-04T07:44:10.687069",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"07f85f3f62bef486e4f6eb2e42350726\"",
       "file_path": "documentation/DiskArbitration/dadiskgetoptions.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/dadiskisclaimed(_:).json": {
       "hash": "e8e3d1c998af9d5c565a0412103acf37fa2a1dfae26794c96479591313a4cf5b",
-      "last_checked": "2026-07-31T07:42:59.118175",
+      "last_checked": "2026-08-04T07:44:10.872756",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"492183ff9f22e9b2433826ff03ab1709\"",
       "file_path": "documentation/DiskArbitration/dadiskisclaimed.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/dadiskmount(_:_:_:_:_:).json": {
       "hash": "f75e90dc05a268f34935d43ded3d4d9a6061e7096c1392e8b46246141713b97a",
-      "last_checked": "2026-07-31T07:42:59.320096",
+      "last_checked": "2026-08-04T07:44:10.995628",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"8d90d29dd69275e1ae80d29253f775cf\"",
       "file_path": "documentation/DiskArbitration/dadiskmount.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/dadiskmountwitharguments(_:_:_:_:_:_:).json": {
       "hash": "fcc7117cfa816bbd7b32cc99dac485205743814314c8d0367655d6ea35ca4b71",
-      "last_checked": "2026-07-31T07:42:59.594143",
+      "last_checked": "2026-08-04T07:44:11.181860",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"37a0511a044a620418ce73039163e7fd\"",
       "file_path": "documentation/DiskArbitration/dadiskmountwitharguments.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/dadiskrename(_:_:_:_:_:).json": {
       "hash": "fedc050005666c354162d8424d74002a323f1155d9a746eda139c6ebf7882c5a",
-      "last_checked": "2026-07-31T07:42:59.759254",
+      "last_checked": "2026-08-04T07:44:11.468366",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"bf36bc8ff6e5e83e0ca59ebc9a2df4af\"",
       "file_path": "documentation/DiskArbitration/dadiskrename.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/dadisksetoptions(_:_:_:).json": {
       "hash": "539b12b59e7c29166b1b7e7b49370dd702fe99d9f08ea3e9baf6d05944070ed7",
-      "last_checked": "2026-07-31T07:42:59.930806",
+      "last_checked": "2026-08-04T07:44:11.626407",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"07a1706145e081e92a0545f64c31c608\"",
       "file_path": "documentation/DiskArbitration/dadisksetoptions.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/dadiskunclaim(_:).json": {
       "hash": "fb2f907a60493e867ca5ef086e82d695a1498383e497f0504fa4a05362649c08",
-      "last_checked": "2026-07-31T07:43:00.053348",
+      "last_checked": "2026-08-04T07:44:11.783779",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"6bb1c0da29accc8ea6e1486e20c6e380\"",
       "file_path": "documentation/DiskArbitration/dadiskunclaim.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/dadiskunmount(_:_:_:_:).json": {
       "hash": "6828540b04577b75f1f7b13600405a14a532315d95e490c70ad051358062c154",
-      "last_checked": "2026-07-31T07:43:00.217893",
+      "last_checked": "2026-08-04T07:44:11.954806",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"d42b013c70707c043cc043f14d515e54\"",
       "file_path": "documentation/DiskArbitration/dadiskunmount.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/daregisterdiskappearedcallback(_:_:_:_:).json": {
       "hash": "04b010440f6383e2e2cfb4574aa82cc1ee04ef4d5ec697c82e6921c0f7d1f60e",
-      "last_checked": "2026-07-31T07:43:00.379446",
+      "last_checked": "2026-08-04T07:44:12.122634",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"89ed36b85b7df18942066e2d0fe7d97c\"",
       "file_path": "documentation/DiskArbitration/daregisterdiskappearedcallback.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/daregisterdiskdescriptionchangedcallback(_:_:_:_:_:).json": {
       "hash": "95ca4c01e265ecee2722e5efa7a3dfc1c29ba3f3177ca87043139997e51c3fc7",
-      "last_checked": "2026-07-31T07:43:00.554737",
+      "last_checked": "2026-08-04T07:44:12.283436",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"6ce2c82b8b7ab6f6f4dd0005b13472ca\"",
       "file_path": "documentation/DiskArbitration/daregisterdiskdescriptionchangedcallback.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/daregisterdiskdisappearedcallback(_:_:_:_:).json": {
       "hash": "cd30602ecf5f8153a47f50d219522c5502c3eb3da655ee2144c624bf406274ab",
-      "last_checked": "2026-07-31T07:43:00.676436",
+      "last_checked": "2026-08-04T07:44:12.406615",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"d7f88cc08ae0fff727b433de2994d34d\"",
       "file_path": "documentation/DiskArbitration/daregisterdiskdisappearedcallback.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/daregisterdiskejectapprovalcallback(_:_:_:_:).json": {
       "hash": "016fcd4cdffc3cca33b1fb59afc143d7b5ac639d3c8097cbe91c34c4efe40561",
-      "last_checked": "2026-07-31T07:43:00.793460",
+      "last_checked": "2026-08-04T07:44:12.718482",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"3e94313a45b56f21ee0b6fa3d6d3e8f7\"",
       "file_path": "documentation/DiskArbitration/daregisterdiskejectapprovalcallback.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/daregisterdiskmountapprovalcallback(_:_:_:_:).json": {
       "hash": "c996a3630ce93e04fc11fcac8b12d4fbbece0c46b4922c3574260981e02b0474",
-      "last_checked": "2026-07-31T07:43:00.978168",
+      "last_checked": "2026-08-04T07:44:13.018590",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"add8e7e2a8518a6b1c894e4d78004189\"",
       "file_path": "documentation/DiskArbitration/daregisterdiskmountapprovalcallback.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/daregisterdiskpeekcallback(_:_:_:_:_:).json": {
       "hash": "5125d7d4cc8cc37e9e1a90ecc6937039cbc3ffbd9eb6ac41bda4ec99b8b9bfcb",
-      "last_checked": "2026-07-31T07:43:01.136149",
+      "last_checked": "2026-08-04T07:44:13.145655",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"2b98dcc6f418080a6ba5054bfa89d7e0\"",
       "file_path": "documentation/DiskArbitration/daregisterdiskpeekcallback.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/daregisterdiskunmountapprovalcallback(_:_:_:_:).json": {
       "hash": "96d0f06cd5ceb6b64be77ecee1605de4f95ea549363c0a04db0bd5f1dde80f0a",
-      "last_checked": "2026-07-31T07:43:01.308013",
+      "last_checked": "2026-08-04T07:44:13.336057",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"f2eba5a7a301985e15435b7741943345\"",
       "file_path": "documentation/DiskArbitration/daregisterdiskunmountapprovalcallback.md"
     },
@@ -1031,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/daunregistercallback(_:_:_:).json": {
       "hash": "3894fc5d041c04d03672adb7f7046d608f86cacef972cf6f4b9e083a28d818e1",
-      "last_checked": "2026-07-31T07:43:01.539056",
+      "last_checked": "2026-08-04T07:44:13.492367",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"5c575f8eba5cb7a93b5098d011c22b71\"",
       "file_path": "documentation/DiskArbitration/daunregistercallback.md"
     },
@@ -1047,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/dadiskappearedcallback.json": {
       "hash": "9a29ea3771074777d97764e8fc0cc82af06666273fa00037e4830836e13fc41c",
-      "last_checked": "2026-07-31T07:43:01.722939",
+      "last_checked": "2026-08-04T07:44:13.660383",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"15f02a6f1144f2d6326896e595c16d76\"",
       "file_path": "documentation/DiskArbitration/dadiskappearedcallback.md"
     },
@@ -1063,9 +1063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/dadiskclaimcallback.json": {
       "hash": "dcb3b0ae4ecbb504da83d18c5e1155868c9544fe67f493017a99091fc067ad64",
-      "last_checked": "2026-07-31T07:43:01.888713",
+      "last_checked": "2026-08-04T07:44:13.830570",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"2c054b17b2769dcbd49aa870f3545739\"",
       "file_path": "documentation/DiskArbitration/dadiskclaimcallback.md"
     },
@@ -1079,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/dadiskclaimreleasecallback.json": {
       "hash": "8603e9c05e55251e8a586fe6d221ce96f0d97df435c900241f72198db6fa66dd",
-      "last_checked": "2026-07-31T07:43:02.058025",
+      "last_checked": "2026-08-04T07:44:13.982578",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"885f6d9c523906ac8861aedca8abf63e\"",
       "file_path": "documentation/DiskArbitration/dadiskclaimreleasecallback.md"
     },
@@ -1095,9 +1095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/dadiskdescriptionchangedcallback.json": {
       "hash": "54057b4ddc7d27f8287f410e80fb605e02adad406c2188ef1ee72e5822a7355b",
-      "last_checked": "2026-07-31T07:43:02.321801",
+      "last_checked": "2026-08-04T07:44:14.277104",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"cd703e22064b02d94b9d94d44fdac13b\"",
       "file_path": "documentation/DiskArbitration/dadiskdescriptionchangedcallback.md"
     },
@@ -1111,9 +1111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/dadiskdisappearedcallback.json": {
       "hash": "56a92e891ce06d7275c8db35aeba5e7c07cf5d1fb0360849490ea5500bb8f865",
-      "last_checked": "2026-07-31T07:43:02.474312",
+      "last_checked": "2026-08-04T07:44:14.438931",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"1dfa6134b7ea964af7bf7196c75ce5d7\"",
       "file_path": "documentation/DiskArbitration/dadiskdisappearedcallback.md"
     },
@@ -1127,9 +1127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/dadiskejectapprovalcallback.json": {
       "hash": "e98db200d88caf9df115bf0c7d932a5446c8e8aecb6d7447a5eb21703e14ce36",
-      "last_checked": "2026-07-31T07:43:02.626249",
+      "last_checked": "2026-08-04T07:44:14.590450",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"64618f265735d1a1e8d477be8aa513cf\"",
       "file_path": "documentation/DiskArbitration/dadiskejectapprovalcallback.md"
     },
@@ -1143,9 +1143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/dadiskejectcallback.json": {
       "hash": "9b8bffaa4cd865a531ae3b954ddc90de1d2be61a3ebbaf25209b432b9889a426",
-      "last_checked": "2026-07-31T07:43:02.831392",
+      "last_checked": "2026-08-04T07:44:14.874123",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"8938e47c691b49b4e2c00640208e0b17\"",
       "file_path": "documentation/DiskArbitration/dadiskejectcallback.md"
     },
@@ -1159,9 +1159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/dadiskmountapprovalcallback.json": {
       "hash": "73ccd04d749dbd4d746e2eb3ab2ed668766166f39da50917d5372d765c4ef603",
-      "last_checked": "2026-07-31T07:43:03.078815",
+      "last_checked": "2026-08-04T07:44:15.058065",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"64e7308fbb8fe6d78a1568bcbd3cb802\"",
       "file_path": "documentation/DiskArbitration/dadiskmountapprovalcallback.md"
     },
@@ -1175,9 +1175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/dadiskmountcallback.json": {
       "hash": "ba8e3af92eaa7e8f739aa89455e537202d1b351315e9d503b47b0ec9b9ca7637",
-      "last_checked": "2026-07-31T07:43:03.247955",
+      "last_checked": "2026-08-04T07:44:15.228460",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"dee5987b1af65b0af8e48ef99ab5c1f4\"",
       "file_path": "documentation/DiskArbitration/dadiskmountcallback.md"
     },
@@ -1191,9 +1191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/dadiskpeekcallback.json": {
       "hash": "a0e69744736eb17342e8fdb23241733b75cf3e04ed107c952ab5de1e151377a5",
-      "last_checked": "2026-07-31T07:43:03.361665",
+      "last_checked": "2026-08-04T07:44:15.395197",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"b860c45250e5c3b00a18f473066fe930\"",
       "file_path": "documentation/DiskArbitration/dadiskpeekcallback.md"
     },
@@ -1207,9 +1207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/dadiskrenamecallback.json": {
       "hash": "392b4a0e902f7a4be63c9be8bb73bac8ec3e9dc959744abfddc1a2f1aac24653",
-      "last_checked": "2026-07-31T07:43:03.523896",
+      "last_checked": "2026-08-04T07:44:15.545253",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"59104dfcab8e50c5ab76e61a7ef6873b\"",
       "file_path": "documentation/DiskArbitration/dadiskrenamecallback.md"
     },
@@ -1223,9 +1223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/dadiskunmountapprovalcallback.json": {
       "hash": "d0966f8469a0b3ceae51b1c48e61f670388866848d45b688f87a33b3df802631",
-      "last_checked": "2026-07-31T07:43:03.688307",
+      "last_checked": "2026-08-04T07:44:15.827181",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"cb3237791ea23cfac9b4aacb08913d2c\"",
       "file_path": "documentation/DiskArbitration/dadiskunmountapprovalcallback.md"
     },
@@ -1239,9 +1239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/dadiskunmountcallback.json": {
       "hash": "e562859deea21c811254004eb8ad0683fd7d97fdb705b1ae7ea59255b0db61d4",
-      "last_checked": "2026-07-31T07:43:03.798029",
+      "last_checked": "2026-08-04T07:44:15.989591",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"eab973f2360562e8ffdf7e10b1298a31\"",
       "file_path": "documentation/DiskArbitration/dadiskunmountcallback.md"
     },
@@ -1255,9 +1255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/global-variables.json": {
       "hash": "87e692e1ede67c7ac12b0bb428a41aa323583c1921439e74d4bd7b19425f6f3f",
-      "last_checked": "2026-07-31T07:43:03.963013",
+      "last_checked": "2026-08-04T07:44:16.153694",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"341dcc3ba37113dd98eb95559af21349\"",
       "file_path": "documentation/DiskArbitration/global-variables.md"
     },
@@ -1271,9 +1271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/dadiskclaimoptions.json": {
       "hash": "5c0cc495bb122bfc79bd89f9890a3490d0876a864f7d348b210032a830195294",
-      "last_checked": "2026-07-31T07:43:04.239878",
+      "last_checked": "2026-08-04T07:44:16.326362",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"fec4c39aa8e0e1073266059dd59bc774\"",
       "file_path": "documentation/DiskArbitration/dadiskclaimoptions.md"
     },
@@ -1287,9 +1287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/dadiskejectoptions.json": {
       "hash": "f7f761d085d6304715fa26433c14b91af15cffaf679e6157e2bd28934fb4444f",
-      "last_checked": "2026-07-31T07:43:04.398192",
+      "last_checked": "2026-08-04T07:44:16.443706",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"97a54dfa593823d4336d71a64c6b3fff\"",
       "file_path": "documentation/DiskArbitration/dadiskejectoptions.md"
     },
@@ -1303,9 +1303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/dadiskmountoptions.json": {
       "hash": "0f0234898b2380e8468334c036c143959070514a5d0f6587a8328b248f42d38a",
-      "last_checked": "2026-07-31T07:43:04.666402",
+      "last_checked": "2026-08-04T07:44:16.621227",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"4feaab7ecf1d89d2bcfb1a7769383425\"",
       "file_path": "documentation/DiskArbitration/dadiskmountoptions.md"
     },
@@ -1319,9 +1319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/dadiskrenameoptions.json": {
       "hash": "305fa269107344417fae98ffb229cc0689b4d199cc5d0faaee213aed75c8cb65",
-      "last_checked": "2026-07-31T07:43:05.036037",
+      "last_checked": "2026-08-04T07:44:16.896665",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"acecef27e17015041a29085f13237eea\"",
       "file_path": "documentation/DiskArbitration/dadiskrenameoptions.md"
     },
@@ -1335,9 +1335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/dadiskunmountoptions.json": {
       "hash": "2c69490f0570fbc289af1cce210476ed73824bc960dc82d646131ba420716578",
-      "last_checked": "2026-07-31T07:43:05.195518",
+      "last_checked": "2026-08-04T07:44:17.047647",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"9d862f9a804f4e10c9a2d408c1e04a3a\"",
       "file_path": "documentation/DiskArbitration/dadiskunmountoptions.md"
     },
@@ -1351,9 +1351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/anonymous-kdadiskunmountoptions.json": {
       "hash": "36d620d255a88b629e0c1fc7eb9c3a3d94f602182b79950ac5ffb72626f3dad3",
-      "last_checked": "2026-07-31T07:43:05.367799",
+      "last_checked": "2026-08-04T07:44:17.222111",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"26f92701624e53b3f040a81837f41c42\"",
       "file_path": "documentation/DiskArbitration/anonymous-kdadiskunmountoptions.md"
     },
@@ -1367,9 +1367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/anonymous-kdadiskmountoptions.json": {
       "hash": "3b9c3933490f11ee3274d01fe5ed1956b7dfd6c5af1957f1e9c12bda66a7994c",
-      "last_checked": "2026-07-31T07:43:05.536380",
+      "last_checked": "2026-08-04T07:44:17.377717",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"ecc9cbb3cc436459fab18641a4319929\"",
       "file_path": "documentation/DiskArbitration/anonymous-kdadiskmountoptions.md"
     },
@@ -1383,9 +1383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/anonymous-kdadiskoptions.json": {
       "hash": "52d6b23bd8bfa616598a6c223ebfacac140d84db434735a7ee25407dab88cebb",
-      "last_checked": "2026-07-31T07:43:05.696763",
+      "last_checked": "2026-08-04T07:44:17.529019",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"c756658888115d47d2e4f37ea6360de2\"",
       "file_path": "documentation/DiskArbitration/anonymous-kdadiskoptions.md"
     },
@@ -1399,9 +1399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/kdadiskdescriptionbusnamekey.json": {
       "hash": "0f5aa73f24e08d74f0584328130fff4c791dd78ec3872a28ad7c127f411e427e",
-      "last_checked": "2026-07-31T07:43:05.876168",
+      "last_checked": "2026-08-04T07:44:17.699279",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"b112eb33eb8bc917084020244170119a\"",
       "file_path": "documentation/DiskArbitration/kdadiskdescriptionbusnamekey.md"
     },
@@ -1415,9 +1415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/kdadiskdescriptionbuspathkey.json": {
       "hash": "2b077dcfb48c84e15a83a0322576ecd4c5d7d6fc8ccfa5a7759c13939cc1fb61",
-      "last_checked": "2026-07-31T07:43:05.984811",
+      "last_checked": "2026-08-04T07:44:17.820546",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"eaaf9fa25a3593cd14386357ddfff579\"",
       "file_path": "documentation/DiskArbitration/kdadiskdescriptionbuspathkey.md"
     },
@@ -1431,9 +1431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/kdadiskdescriptiondeviceguidkey.json": {
       "hash": "6ac042c466103e6f5aa7a2cbbd5ef2f8066e964d9abdd78243b065a102145223",
-      "last_checked": "2026-07-31T07:43:06.127742",
+      "last_checked": "2026-08-04T07:44:17.967725",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"279485279cb31269e891305ae3a1227c\"",
       "file_path": "documentation/DiskArbitration/kdadiskdescriptiondeviceguidkey.md"
     },
@@ -1447,9 +1447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/kdadiskdescriptiondeviceinternalkey.json": {
       "hash": "e5bf0a3b0e1a0806637030ee2d8b7786e1296323ddb7c915637beebd636c6ae4",
-      "last_checked": "2026-07-31T07:43:06.268729",
+      "last_checked": "2026-08-04T07:44:18.139751",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"f1dd8755496c360a9c259065570c848f\"",
       "file_path": "documentation/DiskArbitration/kdadiskdescriptiondeviceinternalkey.md"
     },
@@ -1463,9 +1463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/kdadiskdescriptiondevicemodelkey.json": {
       "hash": "b12d3ad482b9273a681b43b6061acbf80b53d2e52c58e288fffa71bf0fa53030",
-      "last_checked": "2026-07-31T07:43:06.442883",
+      "last_checked": "2026-08-04T07:44:18.249407",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"76fadbae2cabb09858d7c96f80cab4f1\"",
       "file_path": "documentation/DiskArbitration/kdadiskdescriptiondevicemodelkey.md"
     },
@@ -1479,9 +1479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/kdadiskdescriptiondevicepathkey.json": {
       "hash": "89cd116b62a65e69208f4bc99915641bf7fb17301cad5fb90976bc01d18f009f",
-      "last_checked": "2026-07-31T07:43:06.605616",
+      "last_checked": "2026-08-04T07:44:18.440535",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"6033547464ddc3e9cef275eca331790a\"",
       "file_path": "documentation/DiskArbitration/kdadiskdescriptiondevicepathkey.md"
     },
@@ -1495,9 +1495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/kdadiskdescriptiondeviceprotocolkey.json": {
       "hash": "add045ef388dc82ef436b4ca8aec0a897f593ddcc2efa39be84118ac99f6700b",
-      "last_checked": "2026-07-31T07:43:06.753624",
+      "last_checked": "2026-08-04T07:44:18.610082",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"2dfd20228fe7889a18c1324c0ad4fb4b\"",
       "file_path": "documentation/DiskArbitration/kdadiskdescriptiondeviceprotocolkey.md"
     },
@@ -1511,9 +1511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/kdadiskdescriptiondevicerevisionkey.json": {
       "hash": "4fd752b62f38eccbdda595c870ebd53728a6ec2ba5ebed931a7d441f5b90e65c",
-      "last_checked": "2026-07-31T07:43:06.906577",
+      "last_checked": "2026-08-04T07:44:18.763684",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"56befee61f3ac3647d1f20ffcb5dc302\"",
       "file_path": "documentation/DiskArbitration/kdadiskdescriptiondevicerevisionkey.md"
     },
@@ -1527,9 +1527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/kdadiskdescriptiondeviceunitkey.json": {
       "hash": "c3829154531193bf11f5ecc04ca19b6f10ae7931989da6b71b61ee8e495fdb8b",
-      "last_checked": "2026-07-31T07:43:07.029145",
+      "last_checked": "2026-08-04T07:44:18.954596",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"08b62a10aa46d59911a3f010a58df70b\"",
       "file_path": "documentation/DiskArbitration/kdadiskdescriptiondeviceunitkey.md"
     },
@@ -1543,9 +1543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/kdadiskdescriptiondevicevendorkey.json": {
       "hash": "163ee6fa55e0eb52da9292a543991fdcdade7a6d8a89d0ee6d0c1a1ef9a404da",
-      "last_checked": "2026-07-31T07:43:07.189566",
+      "last_checked": "2026-08-04T07:44:19.122569",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"74e511dd2f6127ec334adc2a090c0157\"",
       "file_path": "documentation/DiskArbitration/kdadiskdescriptiondevicevendorkey.md"
     },
@@ -1559,9 +1559,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/kdadiskdescriptionmediabsdmajorkey.json": {
       "hash": "5132bb80964364cba3e2172ab9e2ede21a606332212f625b4c631db16ca0e82f",
-      "last_checked": "2026-07-31T07:43:07.309995",
+      "last_checked": "2026-08-04T07:44:19.301746",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"bb3e8b7e7dcfe22eb2fd0d7e14410f64\"",
       "file_path": "documentation/DiskArbitration/kdadiskdescriptionmediabsdmajorkey.md"
     },
@@ -1575,9 +1575,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/kdadiskdescriptionmediabsdminorkey.json": {
       "hash": "703b902d86af0964900de06144e6f38a20fd98447bb53880603b7b30a03fc6dd",
-      "last_checked": "2026-07-31T07:43:07.458341",
+      "last_checked": "2026-08-04T07:44:19.437028",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"1219c4c5118d77d12d2434be29fc1197\"",
       "file_path": "documentation/DiskArbitration/kdadiskdescriptionmediabsdminorkey.md"
     },
@@ -1591,9 +1591,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/kdadiskdescriptionmediabsdnamekey.json": {
       "hash": "b0df34cff7286f9f9fe325ec270e1396c60dd8446d139842fc0793f7d1d4dd64",
-      "last_checked": "2026-07-31T07:43:07.631233",
+      "last_checked": "2026-08-04T07:44:19.605390",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"c4f1be1aaa3a50774c76fee9204d7ef2\"",
       "file_path": "documentation/DiskArbitration/kdadiskdescriptionmediabsdnamekey.md"
     },
@@ -1607,9 +1607,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/kdadiskdescriptionmediabsdunitkey.json": {
       "hash": "f91f428121745255a6dcb82126c551d5b8f35750b0fac674eab53ed7104795f1",
-      "last_checked": "2026-07-31T07:43:07.798378",
+      "last_checked": "2026-08-04T07:44:19.764390",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"fb1773a8e0619bd1edc203672e615e79\"",
       "file_path": "documentation/DiskArbitration/kdadiskdescriptionmediabsdunitkey.md"
     },
@@ -1623,9 +1623,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/kdadiskdescriptionmediablocksizekey.json": {
       "hash": "00b37ca7e4674abed6e282e6eb1f0eb715d3c01bffe56f9e762aafcb3fdb36ac",
-      "last_checked": "2026-07-31T07:43:07.956512",
+      "last_checked": "2026-08-04T07:44:19.918332",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"d99c44d79a28c2f64f9d8d2ff41727c8\"",
       "file_path": "documentation/DiskArbitration/kdadiskdescriptionmediablocksizekey.md"
     },
@@ -1639,9 +1639,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/kdadiskdescriptionmediacontentkey.json": {
       "hash": "d9ed04387bc3daab8a6a3fe77f8d21063f606986b9c8b5d78fd2f1dff45e98f5",
-      "last_checked": "2026-07-31T07:43:08.143499",
+      "last_checked": "2026-08-04T07:44:20.082781",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"d29bf2db4f010de2c55b39c6ea83b013\"",
       "file_path": "documentation/DiskArbitration/kdadiskdescriptionmediacontentkey.md"
     },
@@ -1655,9 +1655,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/kdadiskdescriptionmediaejectablekey.json": {
       "hash": "97be839204ae228a2d3b240c5e489d20b64d8b79a7ae1a6875eba2bfe1035540",
-      "last_checked": "2026-07-31T07:43:08.321911",
+      "last_checked": "2026-08-04T07:44:20.243378",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"526044d9b99ba66a07700ac470e76cdc\"",
       "file_path": "documentation/DiskArbitration/kdadiskdescriptionmediaejectablekey.md"
     },
@@ -1671,9 +1671,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/kdadiskdescriptionmediaiconkey.json": {
       "hash": "9266704a112f4ce642c8219d2f4f6b5c1b53c1b759dfde30a7c5d022ee408118",
-      "last_checked": "2026-07-31T07:43:08.479481",
+      "last_checked": "2026-08-04T07:44:20.400811",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"dbb506fb41f1eb42c65190b15ce674cc\"",
       "file_path": "documentation/DiskArbitration/kdadiskdescriptionmediaiconkey.md"
     },
@@ -1687,9 +1687,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/kdadiskdescriptionmediakindkey.json": {
       "hash": "419191397d92477be58d30cd7407d4fdbde73b458702ace793b6fb5d0ade67b0",
-      "last_checked": "2026-07-31T07:43:08.638719",
+      "last_checked": "2026-08-04T07:44:20.568533",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"8f8751fd9f3d05fdbc624d23680acc36\"",
       "file_path": "documentation/DiskArbitration/kdadiskdescriptionmediakindkey.md"
     },
@@ -1703,9 +1703,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/kdadiskdescriptionmedialeafkey.json": {
       "hash": "9a3e3f73a1e561c1ac73435fc2ab447695633f74c6a76b3b718897a441a223ce",
-      "last_checked": "2026-07-31T07:43:08.764002",
+      "last_checked": "2026-08-04T07:44:20.728936",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"500ea9a836bdf2ff0764c60dd01aceb9\"",
       "file_path": "documentation/DiskArbitration/kdadiskdescriptionmedialeafkey.md"
     },
@@ -1719,9 +1719,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/kdadiskdescriptionmedianamekey.json": {
       "hash": "2eaf356fc884272229e7fbe0099199c034f34d1c85c1a7a80ea1bcdfa0a877e5",
-      "last_checked": "2026-07-31T07:43:08.943053",
+      "last_checked": "2026-08-04T07:44:20.882760",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"e7e822aa85e53b84b379ca4daff9b9ba\"",
       "file_path": "documentation/DiskArbitration/kdadiskdescriptionmedianamekey.md"
     },
@@ -1735,9 +1735,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/kdadiskdescriptionmediapathkey.json": {
       "hash": "89fbf6b3940b932321554946d6da9fa5b89f165207c028d04dda9ece0d9673ad",
-      "last_checked": "2026-07-31T07:43:09.108793",
+      "last_checked": "2026-08-04T07:44:21.041160",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"c8d25bb9de9643a990c781b5ed1fb9e0\"",
       "file_path": "documentation/DiskArbitration/kdadiskdescriptionmediapathkey.md"
     },
@@ -1751,9 +1751,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/kdadiskdescriptionmediaremovablekey.json": {
       "hash": "042db9f5e463808c05b403c6b0f3cd10fe7e909d7515b5acd16629f3c82fd429",
-      "last_checked": "2026-07-31T07:43:09.284684",
+      "last_checked": "2026-08-04T07:44:21.202312",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"8de0a2217eeaa319195d7ad24271aca9\"",
       "file_path": "documentation/DiskArbitration/kdadiskdescriptionmediaremovablekey.md"
     },
@@ -1767,9 +1767,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/kdadiskdescriptionmediasizekey.json": {
       "hash": "290cf47ba0d6b84b97e8e4984c3d2807f9dbe985e8415604cf7bf5b69c5cdc97",
-      "last_checked": "2026-07-31T07:43:09.415969",
+      "last_checked": "2026-08-04T07:44:21.329590",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"3d6127f7a79e196fcecfa5a2b2f9e7d5\"",
       "file_path": "documentation/DiskArbitration/kdadiskdescriptionmediasizekey.md"
     },
@@ -1783,9 +1783,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/kdadiskdescriptionmediatypekey.json": {
       "hash": "0d5bd9b75a3dc599d8dc1550d686ef9ec2cc12cdc22ef57f74297f58f7ccd3a8",
-      "last_checked": "2026-07-31T07:43:09.587931",
+      "last_checked": "2026-08-04T07:44:21.498021",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"0f1f48b7f3e2100dcdd6b95b9a761000\"",
       "file_path": "documentation/DiskArbitration/kdadiskdescriptionmediatypekey.md"
     },
@@ -1799,9 +1799,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/kdadiskdescriptionmediauuidkey.json": {
       "hash": "1e2fbd94df938bb4179d4776bd54a371baa83f7f5920e5dfd9159fbc9c669783",
-      "last_checked": "2026-07-31T07:43:09.776135",
+      "last_checked": "2026-08-04T07:44:21.666674",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"f8d081192639cc0a8a7bf78854bbc67b\"",
       "file_path": "documentation/DiskArbitration/kdadiskdescriptionmediauuidkey.md"
     },
@@ -1815,9 +1815,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/kdadiskdescriptionmediawholekey.json": {
       "hash": "2a02adb2b2b86e7c250935cba36ce558a17c79a57356959f71a57562cb1861d8",
-      "last_checked": "2026-07-31T07:43:09.948925",
+      "last_checked": "2026-08-04T07:44:21.830866",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"ef5c97b067599779f504afcea6bb74e6\"",
       "file_path": "documentation/DiskArbitration/kdadiskdescriptionmediawholekey.md"
     },
@@ -1831,9 +1831,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/kdadiskdescriptionmediawritablekey.json": {
       "hash": "0f40cade406d79419eef80836f6e0234b5a1bd3e61b7c97284810f359bee4f79",
-      "last_checked": "2026-07-31T07:43:10.056259",
+      "last_checked": "2026-08-04T07:44:22.020146",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"c774cb1861ad542e1875db848aac6444\"",
       "file_path": "documentation/DiskArbitration/kdadiskdescriptionmediawritablekey.md"
     },
@@ -1847,9 +1847,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/kdadiskdescriptionvolumekindkey.json": {
       "hash": "bd5fab4dbb766f949c6cb398177c07831e610f9d5895a7c7ca8326c59e195fc1",
-      "last_checked": "2026-07-31T07:43:10.221494",
+      "last_checked": "2026-08-04T07:44:22.201401",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"c2cad4b7175b495200cc806cac5c4762\"",
       "file_path": "documentation/DiskArbitration/kdadiskdescriptionvolumekindkey.md"
     },
@@ -1863,9 +1863,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/kdadiskdescriptionvolumemountablekey.json": {
       "hash": "65b89ff7004239c8ab813592aea6de8f3f60cd52850a54ca3c591607457d5cdf",
-      "last_checked": "2026-07-31T07:43:10.400122",
+      "last_checked": "2026-08-04T07:44:22.365788",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"500b3cde31b4d6582b63b220e3a42e9e\"",
       "file_path": "documentation/DiskArbitration/kdadiskdescriptionvolumemountablekey.md"
     },
@@ -1879,9 +1879,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/kdadiskdescriptionvolumenamekey.json": {
       "hash": "72b3d0b1c3bb3ac17fd7f18bbde18df085ea43c0268fe782fe81af6d6bd0131e",
-      "last_checked": "2026-07-31T07:43:10.524426",
+      "last_checked": "2026-08-04T07:44:22.521573",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"ed20c166a8667569deada166c5798db2\"",
       "file_path": "documentation/DiskArbitration/kdadiskdescriptionvolumenamekey.md"
     },
@@ -1895,9 +1895,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/kdadiskdescriptionvolumenetworkkey.json": {
       "hash": "8d31f2e1407c2cf665328fe2a5c696c5d523fbfbd58c3c45ddeb1bf4c9775ec3",
-      "last_checked": "2026-07-31T07:43:10.633995",
+      "last_checked": "2026-08-04T07:44:22.692987",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"204d856cc3b2ca31d97168208f547764\"",
       "file_path": "documentation/DiskArbitration/kdadiskdescriptionvolumenetworkkey.md"
     },
@@ -1911,9 +1911,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/kdadiskdescriptionvolumepathkey.json": {
       "hash": "00db3132acfcf807b3f5436a5f8fe134a4b03c7df91911de804bc4eb840d9a80",
-      "last_checked": "2026-07-31T07:43:10.766631",
+      "last_checked": "2026-08-04T07:44:22.814468",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"da75defcdcfded85be01b7749b1db040\"",
       "file_path": "documentation/DiskArbitration/kdadiskdescriptionvolumepathkey.md"
     },
@@ -1927,9 +1927,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/kdadiskdescriptionvolumetypekey.json": {
       "hash": "cefcb4ff86880db9b61d5913d4ce6cb9fc04ddfe76a094bf230a3a9e6ac324a2",
-      "last_checked": "2026-07-31T07:43:10.988576",
+      "last_checked": "2026-08-04T07:44:22.984299",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"0e3718e4cd39a394a17763298a6685a9\"",
       "file_path": "documentation/DiskArbitration/kdadiskdescriptionvolumetypekey.md"
     },
@@ -1943,9 +1943,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/kdadiskdescriptionvolumeuuidkey.json": {
       "hash": "d8c37e6ef4c40448a16925ddfb8e555c0037e207c523dc4b34e10608c6e43a41",
-      "last_checked": "2026-07-31T07:43:11.149221",
+      "last_checked": "2026-08-04T07:44:23.141667",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"bcf71382400e1b644a692443150ac09d\"",
       "file_path": "documentation/DiskArbitration/kdadiskdescriptionvolumeuuidkey.md"
     },
@@ -1959,9 +1959,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/kdadiskdescriptiondevicetdmlockedkey.json": {
       "hash": "943457f2247ab9cd7ffc31121f10109e3aa663f50683551a9901b8b8899dffe2",
-      "last_checked": "2026-07-31T07:43:11.332639",
+      "last_checked": "2026-08-04T07:44:23.300827",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"4c55fae7eb60e1d623f9f90b3ed04411\"",
       "file_path": "documentation/DiskArbitration/kdadiskdescriptiondevicetdmlockedkey.md"
     },
@@ -1975,9 +1975,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/kdadiskdescriptionmediaencryptedkey.json": {
       "hash": "f82447bef0686469d7a68cd95604ab9876f9fc4fa0e3f05514e3aa0ad8bf97d9",
-      "last_checked": "2026-07-31T07:43:11.454088",
+      "last_checked": "2026-08-04T07:44:23.425977",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"18a931c1bc4f958cccc8d11f3965bc10\"",
       "file_path": "documentation/DiskArbitration/kdadiskdescriptionmediaencryptedkey.md"
     },
@@ -1991,9 +1991,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/kdadiskdescriptionmediaencryptiondetailkey.json": {
       "hash": "52a8eb3d125e641df116a2903d0ef18a9920761b62e4b068dfee296d1ba26657",
-      "last_checked": "2026-07-31T07:43:11.575104",
+      "last_checked": "2026-08-04T07:44:23.586818",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"361074eae3309652d6fd6daf14af9ebd\"",
       "file_path": "documentation/DiskArbitration/kdadiskdescriptionmediaencryptiondetailkey.md"
     },
@@ -2007,9 +2007,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/dadiskoptions.json": {
       "hash": "ac340a07990d33cc960f8ce865f53ac041889f59a19c73f101f3942d1526ecb3",
-      "last_checked": "2026-07-31T07:43:04.831156",
+      "last_checked": "2026-08-04T07:44:16.743645",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"59eb6d5fa0cb3f0ae229d4e91e2e0630\"",
       "file_path": "documentation/DiskArbitration/dadiskoptions.md"
     },
@@ -2023,9 +2023,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/dareturn.json": {
       "hash": "e7d5ba7d45c75d54643730899713d92023ab2da74fe66d62fe6b79e46718065a",
-      "last_checked": "2026-07-31T07:43:11.724809",
+      "last_checked": "2026-08-04T07:44:23.749812",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"de5adfe4b859f88459235a9ce22f20a9\"",
       "file_path": "documentation/DiskArbitration/dareturn.md"
     },
@@ -2039,9 +2039,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/kdadiskdescriptionmatchmediaunformatted.json": {
       "hash": "634f13a655980a7920f71dc56066d3708bed0c2284b9fb749c0f8857ca36347f",
-      "last_checked": "2026-07-31T07:43:11.893629",
+      "last_checked": "2026-08-04T07:44:23.914770",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"963d73d425f7ff95ac91e27bf8de4670\"",
       "file_path": "documentation/DiskArbitration/kdadiskdescriptionmatchmediaunformatted.md"
     },
@@ -2055,9 +2055,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/kdadiskdescriptionmatchmediawhole.json": {
       "hash": "9f0998c0efbd45245cf85dedad6412513db5cbba7fa794d7fae87e90abd70cd5",
-      "last_checked": "2026-07-31T07:43:12.055913",
+      "last_checked": "2026-08-04T07:44:24.086225",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"4325141f67c62ad323a33c8bb33259c0\"",
       "file_path": "documentation/DiskArbitration/kdadiskdescriptionmatchmediawhole.md"
     },
@@ -2071,9 +2071,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/kdadiskdescriptionmatchvolumemountable.json": {
       "hash": "0bbfe83713c466c05800898eaee1ae9aaf2c5eb62130fbba4093b9bda5e3b1e8",
-      "last_checked": "2026-07-31T07:43:12.225074",
+      "last_checked": "2026-08-04T07:44:24.267437",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"67b700e59c52b850ed3228f57f2aff63\"",
       "file_path": "documentation/DiskArbitration/kdadiskdescriptionmatchvolumemountable.md"
     },
@@ -2087,9 +2087,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/kdadiskdescriptionmatchvolumeunrecognized.json": {
       "hash": "4766641b11221c79a6a8621c061af30c874de67482fbd284d3b6dfde650ac39a",
-      "last_checked": "2026-07-31T07:43:12.390161",
+      "last_checked": "2026-08-04T07:44:24.426521",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"9be754560ec886ab7bce6a59f33eda30\"",
       "file_path": "documentation/DiskArbitration/kdadiskdescriptionmatchvolumeunrecognized.md"
     },
@@ -2103,9 +2103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/kdadiskdescriptionwatchvolumename.json": {
       "hash": "afdbb736833cce8e90e34ce48137b28f2f561c358f8819b3d24ddccadd94a3fc",
-      "last_checked": "2026-07-31T07:43:12.510439",
+      "last_checked": "2026-08-04T07:44:24.580843",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"33c067583fdeeae0a0a8ae575fbb229b\"",
       "file_path": "documentation/DiskArbitration/kdadiskdescriptionwatchvolumename.md"
     },
@@ -2119,9 +2119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/kdadiskdescriptionwatchvolumepath.json": {
       "hash": "62143ffea664254134bf4b2f9c1270aa2b1f1cbd9d9b0dfadd54632a6b2b7982",
-      "last_checked": "2026-07-31T07:43:12.695637",
+      "last_checked": "2026-08-04T07:44:24.749725",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"e73400be1f4714bf371c4ad7a2d275d8\"",
       "file_path": "documentation/DiskArbitration/kdadiskdescriptionwatchvolumepath.md"
     },
@@ -2135,9 +2135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/kdadiskclaimoptiondefault.json": {
       "hash": "c228055f27aff7d37a994deef7c5c310fd0f6635d17e3084231ffdf4ea2574b8",
-      "last_checked": "2026-07-31T07:43:12.847445",
+      "last_checked": "2026-08-04T07:44:24.905333",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"0fdce12819680efd494a57744b9c856d\"",
       "file_path": "documentation/DiskArbitration/kdadiskclaimoptiondefault.md"
     },
@@ -2151,9 +2151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/kdadiskmountoptionwhole.json": {
       "hash": "7646886ea49d274a4d46ada4f42459f1fe135270f9f8c8dc74a35c6c988156c8",
-      "last_checked": "2026-07-31T07:43:13.180451",
+      "last_checked": "2026-08-04T07:44:25.236620",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"c84a44d836ad3566c269f7b939e269ba\"",
       "file_path": "documentation/DiskArbitration/kdadiskmountoptionwhole.md"
     },
@@ -2167,9 +2167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/kdadiskrenameoptiondefault.json": {
       "hash": "dbc15a3f38877b970e648ee37ff4cf467bfdbc4333d5b314a01834e791da4b45",
-      "last_checked": "2026-07-31T07:43:13.859120",
+      "last_checked": "2026-08-04T07:44:26.001417",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"201de3c29ab906febdada0158d7b4f8d\"",
       "file_path": "documentation/DiskArbitration/kdadiskrenameoptiondefault.md"
     },
@@ -2183,9 +2183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/kdadiskunmountoptionforce.json": {
       "hash": "fec55717d2ce9298928c3602836993bd80103092491bf096304de6f03b6fc2c9",
-      "last_checked": "2026-07-31T07:43:14.029450",
+      "last_checked": "2026-08-04T07:44:26.175389",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"06f90b8731f4d99c2e40921afcaa460c\"",
       "file_path": "documentation/DiskArbitration/kdadiskunmountoptionforce.md"
     },
@@ -2199,9 +2199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/kdadiskunmountoptionwhole.json": {
       "hash": "08163b051b14f9069d83949f8bf77daf7eb88da4e78d83e459b20caf9bd219cb",
-      "last_checked": "2026-07-31T07:43:14.155923",
+      "last_checked": "2026-08-04T07:44:26.300398",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"1156f784eabbb457b076a7ee22e9de2c\"",
       "file_path": "documentation/DiskArbitration/kdadiskunmountoptionwhole.md"
     },
@@ -2215,9 +2215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/kdadiskunmountoptiondefault.json": {
       "hash": "ea51fef3dcad1ef2a8f751ae2471ef265737a064fab60e6cb890a925bb8ce94a",
-      "last_checked": "2026-07-31T07:43:14.334197",
+      "last_checked": "2026-08-04T07:44:26.472720",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"d237d3e83ee5e1259e5d3e6e45f238be\"",
       "file_path": "documentation/DiskArbitration/kdadiskunmountoptiondefault.md"
     },
@@ -2231,9 +2231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/kdadiskmountoptiondefault.json": {
       "hash": "ea25df63cec7fe822c085f04d13cf9410516c7f27992f91c8734675ba1a5585c",
-      "last_checked": "2026-07-31T07:43:14.441927",
+      "last_checked": "2026-08-04T07:44:26.632515",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"6db7504c414bdc198324c719a120d701\"",
       "file_path": "documentation/DiskArbitration/kdadiskmountoptiondefault.md"
     },
@@ -2247,9 +2247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/kdadiskoptiondefault.json": {
       "hash": "cb334ba1b5944ea1b4f8fe210480899b925a4112437ff8b9c048854b8f8008db",
-      "last_checked": "2026-07-31T07:43:14.638039",
+      "last_checked": "2026-08-04T07:44:26.799819",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"3a7fa6b2005906918e6e74b37c6d8caa\"",
       "file_path": "documentation/DiskArbitration/kdadiskoptiondefault.md"
     },
@@ -2263,9 +2263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/diskarbitration/kdadiskejectoptiondefault.json": {
       "hash": "7ce14b7ef04a583d4a333631e394f099ca9453a3d518142ce3e95df4756c7114",
-      "last_checked": "2026-07-31T07:43:13.017049",
+      "last_checked": "2026-08-04T07:44:25.076486",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:42:53.634052",
+      "session_id": "2026-08-04T07:44:03.615318",
       "etag": "W/\"f6418578481cddbf9f7cca88e5876140\"",
       "file_path": "documentation/DiskArbitration/kdadiskejectoptiondefault.md"
     },

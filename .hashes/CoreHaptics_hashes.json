@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-07-31T07:42:30.709809",
+    "last_updated": "2026-08-04T07:43:33.395466",
     "total_pages": 438,
-    "session_id": "2026-07-31T07:41:57.603800"
+    "session_id": "2026-08-04T07:42:57.276809"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/CoreHaptics.json": {
       "hash": "4df5b620b9661b507a1b151532e7e8d8048d611636d74223beaf728650092203",
-      "last_checked": "2026-07-31T07:41:57.850969",
+      "last_checked": "2026-08-04T07:42:57.515147",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"c0c5e9610ecb509f2f701cd4b6e20053\"",
       "file_path": "documentation/CoreHaptics/CoreHaptics.md"
     },
     "https://developer.apple.com/documentation/CoreHaptics": {
       "hash": "4df5b620b9661b507a1b151532e7e8d8048d611636d74223beaf728650092203",
-      "last_checked": "2026-07-31T07:41:57.760482",
+      "last_checked": "2026-08-04T07:42:57.429600",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"c0c5e9610ecb509f2f701cd4b6e20053\"",
       "file_path": "documentation/CoreHaptics/CoreHaptics.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/preparing-your-app-to-play-haptics.json": {
       "hash": "9723256a24da5be87e092736d674b5a40daff05147f6dedf2b4699edb01bc16f",
-      "last_checked": "2026-07-31T07:41:58.097034",
+      "last_checked": "2026-08-04T07:42:57.889934",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"07f63522fe8a3c4768fa956c37c45206\"",
       "file_path": "documentation/CoreHaptics/preparing-your-app-to-play-haptics.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/playing-a-single-tap-haptic-pattern.json": {
       "hash": "cb02bf1b19cb6d4aabc7f583ccf9a00f1b8c5b77fc77177178823a5555088aa3",
-      "last_checked": "2026-07-31T07:41:58.228660",
+      "last_checked": "2026-08-04T07:42:58.057721",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"132733ee327b516075056df88d7728ee\"",
       "file_path": "documentation/CoreHaptics/playing-a-single-tap-haptic-pattern.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticengine.json": {
       "hash": "26108141cf51879374aa5dde003855f9875b40e9c6ada9c6286ea4af1c2ea652",
-      "last_checked": "2026-07-31T07:41:58.397198",
+      "last_checked": "2026-08-04T07:42:58.355214",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"d3de3695a47f4a3b21caff1d3f6b1583\"",
       "file_path": "documentation/CoreHaptics/chhapticengine.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticpattern.json": {
       "hash": "e3802569bd5a5c6f008b751122cedadc2910637d7d666626a52ce5c33390b077",
-      "last_checked": "2026-07-31T07:41:58.519727",
+      "last_checked": "2026-08-04T07:42:58.551102",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"b47395896bfb668ca7a37b0b985feeed\"",
       "file_path": "documentation/CoreHaptics/chhapticpattern.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticpatternplayer.json": {
       "hash": "0b534422fb0d4026266cea840ce8c7f3b21adb024b0138d3d74169dd3671c37b",
-      "last_checked": "2026-07-31T07:41:58.845997",
+      "last_checked": "2026-08-04T07:42:58.848442",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"c22e00d2aaaf63422ec3e8c9c16828bf\"",
       "file_path": "documentation/CoreHaptics/chhapticpatternplayer.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticadvancedpatternplayer.json": {
       "hash": "ede4b6b95f3483f56e372893da5bf91516073ef4c8447d95a85c18499e34e78e",
-      "last_checked": "2026-07-31T07:41:59.020569",
+      "last_checked": "2026-08-04T07:42:59.027835",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"2376f1a5e8e99cb709ef231fce8acab4\"",
       "file_path": "documentation/CoreHaptics/chhapticadvancedpatternplayer.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/delivering-rich-app-experiences-with-haptics.json": {
       "hash": "334ec5b9d6f6fbd3dda6f16c61e45f8e9f6b89c7b2b847dedfc40620beeaeddd",
-      "last_checked": "2026-07-31T07:41:59.132417",
+      "last_checked": "2026-08-04T07:42:59.323721",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"11e5819e671c420159dee1404be2ff5a\"",
       "file_path": "documentation/CoreHaptics/delivering-rich-app-experiences-with-haptics.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/playing-collision-based-haptic-patterns.json": {
       "hash": "5401e9ee5ae1ce7fc6f39187d9b9d02452954c76789daa54e1ddab49c0bb1ee5",
-      "last_checked": "2026-07-31T07:41:59.320494",
+      "last_checked": "2026-08-04T07:42:59.481205",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"6e273dfb08880f8b0db671457cb37e8d\"",
       "file_path": "documentation/CoreHaptics/playing-collision-based-haptic-patterns.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/updating-continuous-and-transient-haptic-parameters-in-real-time.json": {
       "hash": "43aad1e9ff01beb582b91698ab6c32cbeac29761f523148504bb1cc42068dd23",
-      "last_checked": "2026-07-31T07:41:59.607127",
+      "last_checked": "2026-08-04T07:42:59.763489",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"eac1b2ab5e8b4e39507d9874cf6f46cc\"",
       "file_path": "documentation/CoreHaptics/updating-continuous-and-transient-haptic-parameters-in-real-time.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticevent.json": {
       "hash": "9b4e485195f60ba60ae010a284b6a096d392d3aa5860a149be285e7a9269481a",
-      "last_checked": "2026-07-31T07:41:59.803071",
+      "last_checked": "2026-08-04T07:43:00.097232",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"600c6f365c4fd9451221ddf576ae67d1\"",
       "file_path": "documentation/CoreHaptics/chhapticevent.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticeventparameter.json": {
       "hash": "aa183e8266988e4d4b9e6771610d7cece7e4ad5f6d443ee254d0a109aad066f2",
-      "last_checked": "2026-07-31T07:42:00.093097",
+      "last_checked": "2026-08-04T07:43:00.376665",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"1ef6548d8a3e3fa8e08c72d498769334\"",
       "file_path": "documentation/CoreHaptics/chhapticeventparameter.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticdynamicparameter.json": {
       "hash": "dc616f8e33c95c36853289653884f5328cf00595998408c2d0ab6c834f829e03",
-      "last_checked": "2026-07-31T07:42:00.276484",
+      "last_checked": "2026-08-04T07:43:00.667352",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"1650a6f4f4da12058b0bc020db842d3c\"",
       "file_path": "documentation/CoreHaptics/chhapticdynamicparameter.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticparametercurve.json": {
       "hash": "3a25c1b6ff522a3d7bcb8848d3986358e32a0092c6ce1ad62c85b8385112c9b2",
-      "last_checked": "2026-07-31T07:42:00.397787",
+      "last_checked": "2026-08-04T07:43:00.834579",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"e16417b8be0862fe5ae61126ce6b49a9\"",
       "file_path": "documentation/CoreHaptics/chhapticparametercurve.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/playing-a-custom-haptic-pattern-from-a-file.json": {
       "hash": "dd02e0760a38d49f67f55ab88e03c8f37ba260c96e2a5ce811f31b68c480b289",
-      "last_checked": "2026-07-31T07:42:00.583115",
+      "last_checked": "2026-08-04T07:43:01.132510",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"5df5b0683155a5e76289b77342220f5d\"",
       "file_path": "documentation/CoreHaptics/playing-a-custom-haptic-pattern-from-a-file.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/representing-haptic-patterns-in-ahap-files.json": {
       "hash": "8096d679aa6ead5e508277d58d592b5538d0bbd21df5faabfb8b077c4f18fdb8",
-      "last_checked": "2026-07-31T07:42:00.753092",
+      "last_checked": "2026-08-04T07:43:01.426305",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"988056c28aa4176b07b2c07b2931adc2\"",
       "file_path": "documentation/CoreHaptics/representing-haptic-patterns-in-ahap-files.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/playing-haptics-on-game-controllers.json": {
       "hash": "ccdedcd50445502ae6ad6e1a7dc283085b3781435b0ed497cb91cc0f1789f3bd",
-      "last_checked": "2026-07-31T07:42:00.856172",
+      "last_checked": "2026-08-04T07:43:01.588390",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"ef83cdef39d2b4df997ff5e780596dfa\"",
       "file_path": "documentation/CoreHaptics/playing-haptics-on-game-controllers.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/corehapticserrordomain.json": {
       "hash": "3da8e55605609c4b98cc85ce8310db605bbe558b6d620d96d000af2da9811ddf",
-      "last_checked": "2026-07-31T07:42:01.010856",
+      "last_checked": "2026-08-04T07:43:01.879146",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"524ef7643c8e55271c97571e2b6bbf43\"",
       "file_path": "documentation/CoreHaptics/corehapticserrordomain.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticerror.json": {
       "hash": "518dc013c6f560a05f347c21aeef91653476ea41a07598ffa80f5effb4135c86",
-      "last_checked": "2026-07-31T07:42:01.172637",
+      "last_checked": "2026-08-04T07:43:02.033455",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"a5bd748732bbd5755c119c2c90ae8241\"",
       "file_path": "documentation/CoreHaptics/chhapticerror.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticerror/code.json": {
       "hash": "a38c0eee2cfc770385b2b3bb6e015b819f7f5c726688b47bdfb3268fb89a6819",
-      "last_checked": "2026-07-31T07:42:01.343152",
+      "last_checked": "2026-08-04T07:43:02.207444",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"2fe742f43b961052cc094584b85a5497\"",
       "file_path": "documentation/CoreHaptics/chhapticerror/code.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticaudioresourcekeyloopenabled.json": {
       "hash": "2eba8b2d7b7212ec6e768f8a8fb53cc26c68a146f759ee300966f99974ddf659",
-      "last_checked": "2026-07-31T07:42:01.601710",
+      "last_checked": "2026-08-04T07:43:02.503789",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"59abdc3094c0e01000810993540b095a\"",
       "file_path": "documentation/CoreHaptics/chhapticaudioresourcekeyloopenabled.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticaudioresourcekeyusevolumeenvelope.json": {
       "hash": "d4a60a420e0d411ad0ee579fe13cc43c5ed3d42f8ac4ad5781339c1b8420f4cc",
-      "last_checked": "2026-07-31T07:42:01.829620",
+      "last_checked": "2026-08-04T07:43:02.800702",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"bc1da5d3afe434079411b86507e36ff4\"",
       "file_path": "documentation/CoreHaptics/chhapticaudioresourcekeyusevolumeenvelope.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticaudioresourcekey.json": {
       "hash": "be3af82700d409ce89d72330edc2ca6476137ca88e34f6401afc6b2554fe8026",
-      "last_checked": "2026-07-31T07:42:01.984698",
+      "last_checked": "2026-08-04T07:43:02.966052",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"856d3375489de43a63391d89bf3566ec\"",
       "file_path": "documentation/CoreHaptics/chhapticaudioresourcekey.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticengine/init().json": {
       "hash": "1109f939a778981b01ff17bf6a7363b1de956c0532bc00c8505af1c11e74b533",
-      "last_checked": "2026-07-31T07:42:02.153694",
+      "last_checked": "2026-08-04T07:43:03.139220",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"80340af046256755a433d2c949b318ca\"",
       "file_path": "documentation/CoreHaptics/chhapticengine/init.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticengine/init(audiosession:).json": {
       "hash": "af4e4d9d433e7058eed1afcfef277dc830fb2e7bc945b0b950b72f051b315652",
-      "last_checked": "2026-07-31T07:42:02.325586",
+      "last_checked": "2026-08-04T07:43:03.305563",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"3fd1cbdc1c177fa708342cb20693f63f\"",
       "file_path": "documentation/CoreHaptics/chhapticengine/init-audiosession.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticengine/start().json": {
       "hash": "2da9671b0ad9d51245325b956f5b6cd92179ea614cb252fba484797dafecc695",
-      "last_checked": "2026-07-31T07:42:02.498070",
+      "last_checked": "2026-08-04T07:43:03.471274",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"42f85bf835f4c0e329eb6810f76c9f02\"",
       "file_path": "documentation/CoreHaptics/chhapticengine/start.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticengine/start(completionhandler:).json": {
       "hash": "04ac5d7438bca8cec1aeb51cdf79d5284469e769e10ab50bce1bf92ab6ccbdac",
-      "last_checked": "2026-07-31T07:42:02.652543",
+      "last_checked": "2026-08-04T07:43:03.638626",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"af18dabb933422163986ef932bda0393\"",
       "file_path": "documentation/CoreHaptics/chhapticengine/start-completionhandler.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticengine/stop(completionhandler:).json": {
       "hash": "1f28397a6097601486e537ce8ef67c2bf004afa33199cd28c111705e7334b2e6",
-      "last_checked": "2026-07-31T07:42:02.820614",
+      "last_checked": "2026-08-04T07:43:03.944334",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"5cc327ef6d83913781c4a289bdb79797\"",
       "file_path": "documentation/CoreHaptics/chhapticengine/stop-completionhandler.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticengine/completionhandler.json": {
       "hash": "12ae800ca9001d6952379bd70dff48621ab5b6f54bbb96721c1d9b7138cb7419",
-      "last_checked": "2026-07-31T07:42:02.950074",
+      "last_checked": "2026-08-04T07:43:04.105747",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"ca2076e0775b4ea6a791e657dd35299e\"",
       "file_path": "documentation/CoreHaptics/chhapticengine/completionhandler.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticengine/makeplayer(with:).json": {
       "hash": "c79aeaa29f977ca489991c6c0d5b3eb5ce6727f9576c955d2f4a7259f8af6ee2",
-      "last_checked": "2026-07-31T07:42:03.099726",
+      "last_checked": "2026-08-04T07:43:04.296979",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"64e2fd5d6a8e440356348de42cb4d0f9\"",
       "file_path": "documentation/CoreHaptics/chhapticengine/makeplayer-with.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticengine/makeadvancedplayer(with:).json": {
       "hash": "17ce76175cfefa2ce69034fe799ca7be6daa8150e95808a2446b6f39c96a4edc",
-      "last_checked": "2026-07-31T07:42:03.230358",
+      "last_checked": "2026-08-04T07:43:04.603293",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"41b3fb36e27c16592435a29f377b639f\"",
       "file_path": "documentation/CoreHaptics/chhapticengine/makeadvancedplayer-with.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticengine/playsaudioonly.json": {
       "hash": "5c8619bda03d08070c46e8eb01ad870bf1ac0bea7047437cec08dbc30f533848",
-      "last_checked": "2026-07-31T07:42:03.407255",
+      "last_checked": "2026-08-04T07:43:04.765716",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"8435b1742b7db0d9adedfdf1709a7e16\"",
       "file_path": "documentation/CoreHaptics/chhapticengine/playsaudioonly.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticengine/playshapticsonly.json": {
       "hash": "9f1a7c2781e48948685a4c81b7baa90e3213548515b53fd2e46928108e47bb0e",
-      "last_checked": "2026-07-31T07:42:03.515083",
+      "last_checked": "2026-08-04T07:43:05.051094",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"ee76aa60c4719e94a417630a836780c6\"",
       "file_path": "documentation/CoreHaptics/chhapticengine/playshapticsonly.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticengine/ismutedforaudio.json": {
       "hash": "cde05733b623013267a03478346e25e3d29d064b71f70d5776251e6583484ad9",
-      "last_checked": "2026-07-31T07:42:03.645903",
+      "last_checked": "2026-08-04T07:43:05.224994",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"3590c97581ecb6da31574be11b6ca6ee\"",
       "file_path": "documentation/CoreHaptics/chhapticengine/ismutedforaudio.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticengine/ismutedforhaptics.json": {
       "hash": "3c5bac7d8f8dbd31c9e42fc9c0342cc3b32fc60eeff4b14a15659411b3f0e6b6",
-      "last_checked": "2026-07-31T07:42:03.839787",
+      "last_checked": "2026-08-04T07:43:05.381581",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"ddf1546ea7f12e5e13fe1e0e26c3bdd8\"",
       "file_path": "documentation/CoreHaptics/chhapticengine/ismutedforhaptics.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticengine/playpattern(from:)-6m9m5.json": {
       "hash": "6070a7ca066cdf54958e09ea19202e355ea6fab5ec7dace31ad97cc79610d9ee",
-      "last_checked": "2026-07-31T07:42:03.977666",
+      "last_checked": "2026-08-04T07:43:05.548061",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"0d7651e04d91378cca516873c258e871\"",
       "file_path": "documentation/CoreHaptics/chhapticengine/playpattern-from-6m9m5.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticengine/playpattern(from:)-7u8se.json": {
       "hash": "2d8e4e85eb296378fccfa5f8431165108489c30249b77c90cca4db6a0332f96d",
-      "last_checked": "2026-07-31T07:42:04.107541",
+      "last_checked": "2026-08-04T07:43:05.761533",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"05c6567d0b71796258975a98c6777b3a\"",
       "file_path": "documentation/CoreHaptics/chhapticengine/playpattern-from-7u8se.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticengine/registeraudioresource(_:options:).json": {
       "hash": "35d292a13c718b102bc2071a570de3a43e4db633a7513a34fae554bd172c171c",
-      "last_checked": "2026-07-31T07:42:04.293338",
+      "last_checked": "2026-08-04T07:43:05.957477",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"929acdb359aaf1d0e15e4a9a1d6052b9\"",
       "file_path": "documentation/CoreHaptics/chhapticengine/registeraudioresource-options.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticengine/unregisteraudioresource(_:).json": {
       "hash": "e80182f0b1678bbf1c2514a5436c5b5dfa84acc16a1c70d3fd9fade1ee3463bc",
-      "last_checked": "2026-07-31T07:42:04.408868",
+      "last_checked": "2026-08-04T07:43:06.264242",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"b53b2092baae74479eadadd146f38024\"",
       "file_path": "documentation/CoreHaptics/chhapticengine/unregisteraudioresource.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticaudioresourceid.json": {
       "hash": "db8ba1b577ea74d7ed9a0ba9a5545754037544a445989aaf819d0381fcadf2f8",
-      "last_checked": "2026-07-31T07:42:04.541157",
+      "last_checked": "2026-08-04T07:43:06.422679",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"707ac5fedc7d11df3f0a7dad9c6b9dfa\"",
       "file_path": "documentation/CoreHaptics/chhapticaudioresourceid.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticengine/notifywhenplayersfinished(finishedhandler:).json": {
       "hash": "daa5aa8b569db868d4686062122776a1f9920bbf214ee3452c834f0e4cf43f85",
-      "last_checked": "2026-07-31T07:42:04.706628",
+      "last_checked": "2026-08-04T07:43:06.726455",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"ac40bc520092d598e221a9ac284f43ac\"",
       "file_path": "documentation/CoreHaptics/chhapticengine/notifywhenplayersfinished-finishedhandler.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticengine/finishedhandler.json": {
       "hash": "d6a1300d4654be53cc4d6a4d7ac978c9864abf57d3a0420cc3096d6e3aff546a",
-      "last_checked": "2026-07-31T07:42:04.844783",
+      "last_checked": "2026-08-04T07:43:07.001795",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"26578bbf1bcf1bbd4085706607062fa9\"",
       "file_path": "documentation/CoreHaptics/chhapticengine/finishedhandler.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticengine/finishedaction.json": {
       "hash": "7685ef2278074beaf331284690f283c4f0a1610bd9c665e6fa90030cda77d90a",
-      "last_checked": "2026-07-31T07:42:05.025886",
+      "last_checked": "2026-08-04T07:43:07.159094",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"98d18729501d43a65fbdb167d05a9e5f\"",
       "file_path": "documentation/CoreHaptics/chhapticengine/finishedaction.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticengine/resethandler-swift.property.json": {
       "hash": "f41c9387fe62b829e75045abf7f902d4fa7243e2d7f5d6d7ce542a0358542d19",
-      "last_checked": "2026-07-31T07:42:05.319600",
+      "last_checked": "2026-08-04T07:43:07.310921",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"c25cce4fd6d922567c5a5db958cbd661\"",
       "file_path": "documentation/CoreHaptics/chhapticengine/resethandler-swiftproperty.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticengine/resethandler-swift.typealias.json": {
       "hash": "bb90538c06e9bca8cd91dff8e1f7fe260e3325311994b79ac0208a04a76aaf1f",
-      "last_checked": "2026-07-31T07:42:05.443405",
+      "last_checked": "2026-08-04T07:43:07.626178",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"38c68a1d67f6b68a8a5e6caf61eed1b1\"",
       "file_path": "documentation/CoreHaptics/chhapticengine/resethandler-swifttypealias.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticengine/stoppedhandler-swift.property.json": {
       "hash": "560d5d82de52805d4f6e6a9365a1ce8cff5504a359acb971d4ab24354427cf2b",
-      "last_checked": "2026-07-31T07:42:05.575577",
+      "last_checked": "2026-08-04T07:43:07.789185",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"a2ddf3a39d6d26fb36411bf324992fcd\"",
       "file_path": "documentation/CoreHaptics/chhapticengine/stoppedhandler-swiftproperty.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticengine/stoppedhandler-swift.typealias.json": {
       "hash": "d0471bdea31e2eb065646ed6c5753ae4a32b33d18060df49f360b5a25a149ac7",
-      "last_checked": "2026-07-31T07:42:05.749987",
+      "last_checked": "2026-08-04T07:43:07.948016",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"baad8035f0d9adadd9a6730f8c1dd6bc\"",
       "file_path": "documentation/CoreHaptics/chhapticengine/stoppedhandler-swifttypealias.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticengine/stoppedreason.json": {
       "hash": "39c5b251b3146a79cd96bb45ffdd138b999317668fa55f21b861f92fa5ba73d3",
-      "last_checked": "2026-07-31T07:42:05.870872",
+      "last_checked": "2026-08-04T07:43:08.136883",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"7d86f0d26633dee992c264e468f9eb4b\"",
       "file_path": "documentation/CoreHaptics/chhapticengine/stoppedreason.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticengine/currenttime.json": {
       "hash": "fa6b876a370f92cf484a4243ab2ac372dce3407d903b8f906e0eb92f5384d2ca",
-      "last_checked": "2026-07-31T07:42:05.992308",
+      "last_checked": "2026-08-04T07:43:08.297172",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"e6db86aa5c3cb5fc927c0643b35aa905\"",
       "file_path": "documentation/CoreHaptics/chhapticengine/currenttime.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhaptictimeimmediate.json": {
       "hash": "a86bb4d2a4594f11a08b3c20c20f68fcd98ff1032c5d097376d0c800105881f3",
-      "last_checked": "2026-07-31T07:42:06.184026",
+      "last_checked": "2026-08-04T07:43:08.455983",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"487f9be9bafcf8efd9a521d92f348447\"",
       "file_path": "documentation/CoreHaptics/chhaptictimeimmediate.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticengine/capabilitiesforhardware().json": {
       "hash": "80ae6ea4699bfba490ce8c79b09d34d17fbbf95debfecd8b7d416b5b08836ed2",
-      "last_checked": "2026-07-31T07:42:06.360527",
+      "last_checked": "2026-08-04T07:43:08.622206",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"33201585e6888154149d225bd85fbc22\"",
       "file_path": "documentation/CoreHaptics/chhapticengine/capabilitiesforhardware.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticdevicecapability.json": {
       "hash": "d872aefa39211b107297fc60ef8c9f2411e821af5239a7faaca713e9c5fdcbea",
-      "last_checked": "2026-07-31T07:42:06.519119",
+      "last_checked": "2026-08-04T07:43:08.913318",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"25a9277d89581264ddd42dcd22f8c9a9\"",
       "file_path": "documentation/CoreHaptics/chhapticdevicecapability.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticparameterattributes.json": {
       "hash": "82a024804f8f5ae756fa74979beafe90c6e1ee83f7a8365c7ac106ee6fe330d7",
-      "last_checked": "2026-07-31T07:42:06.645814",
+      "last_checked": "2026-08-04T07:43:09.079418",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"f0878960a6f0d53ddf907bcf8b266c7b\"",
       "file_path": "documentation/CoreHaptics/chhapticparameterattributes.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticdevicecapability/attributes(fordynamicparameter:).json": {
       "hash": "d80086bf2c90e04c6aa81526aaa8d76cdd1b18bce974fc65a8cc23773ec98244",
-      "last_checked": "2026-07-31T07:42:06.828068",
+      "last_checked": "2026-08-04T07:43:09.245388",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"8372501f8139aebfec2e368ae2e5b91f\"",
       "file_path": "documentation/CoreHaptics/chhapticdevicecapability/attributes-fordynamicparameter.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticengine/isautoshutdownenabled.json": {
       "hash": "5a9948a8dbeb80c781b09457602fba1e6175ccce9de7e6e30d60f0bfa37e185e",
-      "last_checked": "2026-07-31T07:42:06.948426",
+      "last_checked": "2026-08-04T07:43:09.427852",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"8970eba2a75f32acfeb3c840b5e030cb\"",
       "file_path": "documentation/CoreHaptics/chhapticengine/isautoshutdownenabled.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticengine/intendedspatialexperience-55ca0.json": {
       "hash": "f21cfa4cfe1293d4ff853548908e5a895e2ab6e70ae2a671d6754a9b7f30abc6",
-      "last_checked": "2026-07-31T07:42:07.219389",
+      "last_checked": "2026-08-04T07:43:09.749629",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"f6b56f36cd189d9910b442021e3bd12e\"",
       "file_path": "documentation/CoreHaptics/chhapticengine/intendedspatialexperience-55ca0.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticpattern/init(contentsof:).json": {
       "hash": "ec57f73646baa451fb4a18dafa725dc01b220c086cbd79b9ccad78aab9b935c7",
-      "last_checked": "2026-07-31T07:42:07.388631",
+      "last_checked": "2026-08-04T07:43:09.904254",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"1ecbb1c0822a23e313bc1c37d24e654a\"",
       "file_path": "documentation/CoreHaptics/chhapticpattern/init-contentsof.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticpattern/init(events:parametercurves:).json": {
       "hash": "66f66b0d704c1d27659e96063a2fe190253c15e7706eeebee92aa9be73c9f037",
-      "last_checked": "2026-07-31T07:42:07.549592",
+      "last_checked": "2026-08-04T07:43:10.057243",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"67d1490a3a3a1282ca4af5330be9f0d9\"",
       "file_path": "documentation/CoreHaptics/chhapticpattern/init-eventsparametercurves.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticpattern/init(events:parameters:).json": {
       "hash": "8912edb2a22e3b541ddfbe2bf21177f6c5a5028fea5f778258a4383bf2f21e39",
-      "last_checked": "2026-07-31T07:42:07.668931",
+      "last_checked": "2026-08-04T07:43:10.205125",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"6758cde840cc6a30dbae06be5342db89\"",
       "file_path": "documentation/CoreHaptics/chhapticpattern/init-eventsparameters.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticpattern/init(dictionary:).json": {
       "hash": "e465b90393912d0d2a39c09571ab6fd7e573542a5b263162b04a80b33a263d56",
-      "last_checked": "2026-07-31T07:42:07.788670",
+      "last_checked": "2026-08-04T07:43:10.373794",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"b47fa68ea35331b4fd852f1e7c9028fd\"",
       "file_path": "documentation/CoreHaptics/chhapticpattern/init-dictionary.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticpattern/key.json": {
       "hash": "e73eed5d5cb3802f5d60322edda7cacf7be0b24af3914fe59e02b296ec41ede9",
-      "last_checked": "2026-07-31T07:42:07.966252",
+      "last_checked": "2026-08-04T07:43:10.549669",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"0edf4fcea75d60cffad525bac9f37a2e\"",
       "file_path": "documentation/CoreHaptics/chhapticpattern/key.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticpattern/duration.json": {
       "hash": "987f1662355140bfe490bdbc0e808f686c978a43816e50055ef4e8e3b723b3c6",
-      "last_checked": "2026-07-31T07:42:08.113377",
+      "last_checked": "2026-08-04T07:43:10.708427",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"44fed76fc0a06c395f91c95035114a98\"",
       "file_path": "documentation/CoreHaptics/chhapticpattern/duration.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticpattern/exportdictionary().json": {
       "hash": "c4d20daad478b567c5812c348a3810de4283589993be4cd5a260bfce6cb347a9",
-      "last_checked": "2026-07-31T07:42:08.271914",
+      "last_checked": "2026-08-04T07:43:10.988828",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"5ce80169ae49e44ef901a68f605b8ceb\"",
       "file_path": "documentation/CoreHaptics/chhapticpattern/exportdictionary.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticpatternplayer/start(attime:).json": {
       "hash": "ec888a88e8c2fb8016250851696333988d7fcddaec676f910d68eac8b253b11a",
-      "last_checked": "2026-07-31T07:42:08.586225",
+      "last_checked": "2026-08-04T07:43:11.304510",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"8c3801093095b502a76e95bd1be3462e\"",
       "file_path": "documentation/CoreHaptics/chhapticpatternplayer/start-attime.md"
     },
@@ -1031,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticpatternplayer/stop(attime:).json": {
       "hash": "dff5d75c73773468be89e8d6342f574951d22c9b86f66ef8b8a1ed5ee06431a4",
-      "last_checked": "2026-07-31T07:42:08.746769",
+      "last_checked": "2026-08-04T07:43:11.435421",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"f2512b47531695f75ad9cbec55505f21\"",
       "file_path": "documentation/CoreHaptics/chhapticpatternplayer/stop-attime.md"
     },
@@ -1047,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticpatternplayer/cancel().json": {
       "hash": "3f819b7abf8f63df5f914959a26c3c758943e5ff5b8e7729c72096b40db178da",
-      "last_checked": "2026-07-31T07:42:08.917061",
+      "last_checked": "2026-08-04T07:43:11.560637",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"4c7e8f32eea3afaf8a3c87c2d1a1a484\"",
       "file_path": "documentation/CoreHaptics/chhapticpatternplayer/cancel.md"
     },
@@ -1063,9 +1063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticpatternplayer/sendparameters(_:attime:).json": {
       "hash": "40e2e6900ab78613eb8f211d9c211365cd892b1362a7c995f74851fbbeb2b918",
-      "last_checked": "2026-07-31T07:42:09.076940",
+      "last_checked": "2026-08-04T07:43:11.671672",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"9ea6479bdcb07b014bdf3916e0b38e9e\"",
       "file_path": "documentation/CoreHaptics/chhapticpatternplayer/sendparameters-attime.md"
     },
@@ -1079,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticpatternplayer/scheduleparametercurve(_:attime:).json": {
       "hash": "ba464a0afd6e2d6598b00070640c9c207197c1e548bc98fb2cd93c94c6e03389",
-      "last_checked": "2026-07-31T07:42:09.198401",
+      "last_checked": "2026-08-04T07:43:11.831299",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"c099787e9a6839dc9b794a956045cfe9\"",
       "file_path": "documentation/CoreHaptics/chhapticpatternplayer/scheduleparametercurve-attime.md"
     },
@@ -1095,9 +1095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticpatternplayer/ismuted.json": {
       "hash": "e7c608808818e6ef2e17a1c70bd3dd36644951bfc099b5506e6f2cd9b0549e51",
-      "last_checked": "2026-07-31T07:42:09.508832",
+      "last_checked": "2026-08-04T07:43:12.002845",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"a1ab476f1ab167279c704a5f1a156371\"",
       "file_path": "documentation/CoreHaptics/chhapticpatternplayer/ismuted.md"
     },
@@ -1111,9 +1111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticadvancedpatternplayer/loopenabled.json": {
       "hash": "4fdce34ad0a7d3feee045f407a05320777da4b2cc3662aeee9e36b55cb83f9b3",
-      "last_checked": "2026-07-31T07:42:09.678650",
+      "last_checked": "2026-08-04T07:43:12.155809",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"fe57674972fcd98b52d8a3e4ceb27c3b\"",
       "file_path": "documentation/CoreHaptics/chhapticadvancedpatternplayer/loopenabled.md"
     },
@@ -1127,9 +1127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticadvancedpatternplayer/loopend.json": {
       "hash": "631c27ac838ae00cda4f7d2ed979688347488e665d87ff6dfcb48c43bf0edc5d",
-      "last_checked": "2026-07-31T07:42:09.809242",
+      "last_checked": "2026-08-04T07:43:12.312826",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"54e450f9e1af66b1dd4626d2be379aab\"",
       "file_path": "documentation/CoreHaptics/chhapticadvancedpatternplayer/loopend.md"
     },
@@ -1143,9 +1143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticadvancedpatternplayer/playbackrate.json": {
       "hash": "3560e313492e3ed5ea31b8dddde0ab43a28d85f4150e4278a7c251450e2b5197",
-      "last_checked": "2026-07-31T07:42:09.967032",
+      "last_checked": "2026-08-04T07:43:12.475936",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"0fdd03ff1cb48e03b737d743da76418d\"",
       "file_path": "documentation/CoreHaptics/chhapticadvancedpatternplayer/playbackrate.md"
     },
@@ -1159,9 +1159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticadvancedpatternplayer/completionhandler.json": {
       "hash": "24c02e110880748cbcff22809bdc7aef289c151e1137e7cb087b2f2ac7764008",
-      "last_checked": "2026-07-31T07:42:10.091352",
+      "last_checked": "2026-08-04T07:43:12.588830",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"e680e5269abac47ad0a9ec94d5d8db69\"",
       "file_path": "documentation/CoreHaptics/chhapticadvancedpatternplayer/completionhandler.md"
     },
@@ -1175,9 +1175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticadvancedpatternplayercompletionhandler.json": {
       "hash": "2f768b4221b53cee91c56d28f8bce44fb809b3b8204d20386a02419e3703ee02",
-      "last_checked": "2026-07-31T07:42:10.267198",
+      "last_checked": "2026-08-04T07:43:12.751086",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"c35e778900a200f8b2f6948e98770d76\"",
       "file_path": "documentation/CoreHaptics/chhapticadvancedpatternplayercompletionhandler.md"
     },
@@ -1191,9 +1191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticadvancedpatternplayer/pause(attime:).json": {
       "hash": "92ddf548e4b8f3e57b2752621313e3dd0ff1ff41e8d2ca4ddeeddb62b469a974",
-      "last_checked": "2026-07-31T07:42:10.385384",
+      "last_checked": "2026-08-04T07:43:12.902414",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"2cbe1495ef0a60a5f9e10740a2397ac2\"",
       "file_path": "documentation/CoreHaptics/chhapticadvancedpatternplayer/pause-attime.md"
     },
@@ -1207,9 +1207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticadvancedpatternplayer/resume(attime:).json": {
       "hash": "69e04910a1c65bfeb22d535308261d75fd19526618ac59932ebff5221d5e9632",
-      "last_checked": "2026-07-31T07:42:10.514849",
+      "last_checked": "2026-08-04T07:43:13.097194",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"6b64456ea4913e3003d3f2e4309445cc\"",
       "file_path": "documentation/CoreHaptics/chhapticadvancedpatternplayer/resume-attime.md"
     },
@@ -1223,9 +1223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticadvancedpatternplayer/seek(tooffset:).json": {
       "hash": "2b7aecd59d586973c9ef6295e03e8c0b0b7a667e54841dd230f09246b34dfcbe",
-      "last_checked": "2026-07-31T07:42:10.626679",
+      "last_checked": "2026-08-04T07:43:13.276658",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"b94e0eca6871374643978df46c74aae3\"",
       "file_path": "documentation/CoreHaptics/chhapticadvancedpatternplayer/seek-tooffset.md"
     },
@@ -1239,9 +1239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticadvancedpatternplayer/ismuted.json": {
       "hash": "3d712dbb9ff1f676f1e4cfd1ad869ab70b42414fd8e38e6d43a64e003354536b",
-      "last_checked": "2026-07-31T07:42:10.801692",
+      "last_checked": "2026-08-04T07:43:13.421467",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"7bff88a417fb110c121f90d4336ed677\"",
       "file_path": "documentation/CoreHaptics/chhapticadvancedpatternplayer/ismuted.md"
     },
@@ -1255,9 +1255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticevent/type.json": {
       "hash": "c6edb92fbcbc00e6b52f09f9396ef49914260759589381f4d056fe6fea371d6f",
-      "last_checked": "2026-07-31T07:42:10.959298",
+      "last_checked": "2026-08-04T07:43:13.550030",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"c6cb3338d58f2dd5ef0c2fa45442d39e\"",
       "file_path": "documentation/CoreHaptics/chhapticevent/type.md"
     },
@@ -1271,9 +1271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticevent/eventtype.json": {
       "hash": "dbcb3b547603f134416dee4dc0aaf46a46023387c948ecd7a57bdb3594352e6b",
-      "last_checked": "2026-07-31T07:42:11.071115",
+      "last_checked": "2026-08-04T07:43:13.712544",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"8bb3fb01e1533e9b6d2baeaa2f8ab83f\"",
       "file_path": "documentation/CoreHaptics/chhapticevent/eventtype.md"
     },
@@ -1287,9 +1287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticevent/init(audioresourceid:parameters:relativetime:).json": {
       "hash": "acef99f4be88123d4daef46370b7494d512fc012d37412bd1000493674410b9e",
-      "last_checked": "2026-07-31T07:42:11.230433",
+      "last_checked": "2026-08-04T07:43:13.817855",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"1d162365ae15f7217cedb3e35290c892\"",
       "file_path": "documentation/CoreHaptics/chhapticevent/init-audioresourceidparametersrelativetime.md"
     },
@@ -1303,9 +1303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticevent/init(audioresourceid:parameters:relativetime:duration:).json": {
       "hash": "dc7a765b28adf2edfe7ebfd0db0f975bce4887f0aff7260eb8b14b98ac19d9ae",
-      "last_checked": "2026-07-31T07:42:11.349208",
+      "last_checked": "2026-08-04T07:43:13.939831",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"c6eccc2a94c4b4d2a45e6ad9904d6f51\"",
       "file_path": "documentation/CoreHaptics/chhapticevent/init-audioresourceidparametersrelativetimeduration.md"
     },
@@ -1319,9 +1319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticevent/init(eventtype:parameters:relativetime:).json": {
       "hash": "d1a52c20337f354ce8a876b998ea597c07130d5f64d62b8f77b14b5411a23086",
-      "last_checked": "2026-07-31T07:42:11.452971",
+      "last_checked": "2026-08-04T07:43:14.112490",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"8961c6f2ef80e122739d8fa1fdcd3799\"",
       "file_path": "documentation/CoreHaptics/chhapticevent/init-eventtypeparametersrelativetime.md"
     },
@@ -1335,9 +1335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticevent/init(eventtype:parameters:relativetime:duration:).json": {
       "hash": "c0d567db331bc5da73bf37244408b371902dd063e970a28ec41b0f49a3177fc0",
-      "last_checked": "2026-07-31T07:42:11.595541",
+      "last_checked": "2026-08-04T07:43:14.267239",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"eb2543948e333f524f1cce8b05e6896f\"",
       "file_path": "documentation/CoreHaptics/chhapticevent/init-eventtypeparametersrelativetimeduration.md"
     },
@@ -1351,9 +1351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticevent/eventparameters.json": {
       "hash": "0b5bff0f217fe9d264006cc10212438fe592f5855b3848f79ea033375d4b88dd",
-      "last_checked": "2026-07-31T07:42:11.738797",
+      "last_checked": "2026-08-04T07:43:14.421822",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"aea9d2340523acfd8fa9935c20a0699c\"",
       "file_path": "documentation/CoreHaptics/chhapticevent/eventparameters.md"
     },
@@ -1367,9 +1367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticevent/parameterid.json": {
       "hash": "e7ca764837a378a79caf9fa83fbfb500f0352c29e748b4f39bf763c383fd06f5",
-      "last_checked": "2026-07-31T07:42:11.852138",
+      "last_checked": "2026-08-04T07:43:14.527547",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"f10e30d1431d1966a8e812c7c67e28e4\"",
       "file_path": "documentation/CoreHaptics/chhapticevent/parameterid.md"
     },
@@ -1383,9 +1383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticevent/relativetime.json": {
       "hash": "c0c25b7043bbce5c06713f6c8797b971eddea5d580d76882e5710c0274f649d1",
-      "last_checked": "2026-07-31T07:42:11.994996",
+      "last_checked": "2026-08-04T07:43:14.707611",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"cc05dd591300d41d46218879f136c966\"",
       "file_path": "documentation/CoreHaptics/chhapticevent/relativetime.md"
     },
@@ -1399,9 +1399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticevent/duration.json": {
       "hash": "575cd52d27e7e511a379c5c7b3a99407b143bb83b041a3b696e0dcdaa064df39",
-      "last_checked": "2026-07-31T07:42:12.169667",
+      "last_checked": "2026-08-04T07:43:14.887671",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"785384358a855bd4fc04c0aeb36d73d6\"",
       "file_path": "documentation/CoreHaptics/chhapticevent/duration.md"
     },
@@ -1415,9 +1415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticeventparameter/init(parameterid:value:).json": {
       "hash": "e83c13b28e27e101a90afd081e519687394a0ab38cbd995b36df8a5e47373178",
-      "last_checked": "2026-07-31T07:42:12.292593",
+      "last_checked": "2026-08-04T07:43:15.016625",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"2b6efe3ddd75cc3a7d2bda1145dfddd4\"",
       "file_path": "documentation/CoreHaptics/chhapticeventparameter/init-parameteridvalue.md"
     },
@@ -1431,9 +1431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticeventparameter/parameterid.json": {
       "hash": "91045c59f2296107d4ea13bd2925224f99665b74d329821525a7d17a995f3324",
-      "last_checked": "2026-07-31T07:42:12.423137",
+      "last_checked": "2026-08-04T07:43:15.147245",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"727cbe7a9d65c9052853274ff6ee46ba\"",
       "file_path": "documentation/CoreHaptics/chhapticeventparameter/parameterid.md"
     },
@@ -1447,9 +1447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticeventparameter/value.json": {
       "hash": "b606d04c45a7d2aa7b467c706629c74635fc23b4b3f9c06a7bc03ca254757043",
-      "last_checked": "2026-07-31T07:42:12.612265",
+      "last_checked": "2026-08-04T07:43:15.316142",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"30584ac7a531a75e1809966075b39b88\"",
       "file_path": "documentation/CoreHaptics/chhapticeventparameter/value.md"
     },
@@ -1463,9 +1463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticdynamicparameter/init(parameterid:value:relativetime:).json": {
       "hash": "bd1f36a1b0ed5d41d0f3021a17ff7d36cfaedfb1cda16d16d379344a0c538d53",
-      "last_checked": "2026-07-31T07:42:12.746970",
+      "last_checked": "2026-08-04T07:43:15.482837",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"a7ed05d7fbdf533c62a154679bd699da\"",
       "file_path": "documentation/CoreHaptics/chhapticdynamicparameter/init-parameteridvaluerelativetime.md"
     },
@@ -1479,9 +1479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticdynamicparameter/id.json": {
       "hash": "9b13cb5473aaa9535d024d9f95456685351c75e73583eb12fa0c44425e5005e2",
-      "last_checked": "2026-07-31T07:42:12.873520",
+      "last_checked": "2026-08-04T07:43:15.593510",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"5a33ca90c864c8d5c7429b270bf6b4f5\"",
       "file_path": "documentation/CoreHaptics/chhapticdynamicparameter/id.md"
     },
@@ -1495,9 +1495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticdynamicparameter/parameterid.json": {
       "hash": "f98cf5aaf741d207418b1dc729566bf14c54ebf76f7f0429c485203217989225",
-      "last_checked": "2026-07-31T07:42:13.048754",
+      "last_checked": "2026-08-04T07:43:15.777490",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"e320480f03abb7be795d198c83f0c34a\"",
       "file_path": "documentation/CoreHaptics/chhapticdynamicparameter/parameterid.md"
     },
@@ -1511,9 +1511,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticdynamicparameter/relativetime.json": {
       "hash": "b1a8a5fdaa6f078f0e90824f28c35c4f56fca9948bb079611f62d7735277651d",
-      "last_checked": "2026-07-31T07:42:13.222102",
+      "last_checked": "2026-08-04T07:43:15.888506",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"cea72d5c551cf571d8c33a325b734199\"",
       "file_path": "documentation/CoreHaptics/chhapticdynamicparameter/relativetime.md"
     },
@@ -1527,9 +1527,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticdynamicparameter/value.json": {
       "hash": "0a1380b3227ac35a0a7e6b1ed5914c3b8098027910fba7229c8ee9392dd69ed5",
-      "last_checked": "2026-07-31T07:42:13.330173",
+      "last_checked": "2026-08-04T07:43:16.012897",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"9116a3b04535ea92a0fe94160b07fca9\"",
       "file_path": "documentation/CoreHaptics/chhapticdynamicparameter/value.md"
     },
@@ -1543,9 +1543,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticparametercurve/init(parameterid:controlpoints:relativetime:).json": {
       "hash": "a4dbed6fa651a5138ad89e772fdf0daf0a61989b9eb281c449b8dbb015462a39",
-      "last_checked": "2026-07-31T07:42:13.458287",
+      "last_checked": "2026-08-04T07:43:16.164934",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"ad9d174700997df7a92ceb88a70f1b10\"",
       "file_path": "documentation/CoreHaptics/chhapticparametercurve/init-parameteridcontrolpointsrelativetime.md"
     },
@@ -1559,9 +1559,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticparametercurve/controlpoint.json": {
       "hash": "8ca2d70c0766ac00154031a680c7d583a9cb3db0a38b3736cc86e37c8d622116",
-      "last_checked": "2026-07-31T07:42:13.610449",
+      "last_checked": "2026-08-04T07:43:16.268459",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"67ec336c18435b8dd6cefd20dd60cf4f\"",
       "file_path": "documentation/CoreHaptics/chhapticparametercurve/controlpoint.md"
     },
@@ -1575,9 +1575,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticparametercurve/controlpoints.json": {
       "hash": "36b995d24750141bfb85c476e3d35d4ef7776ee21698a082472dbd2b211cb78e",
-      "last_checked": "2026-07-31T07:42:13.718816",
+      "last_checked": "2026-08-04T07:43:16.414435",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"a81e6c0fda4fc26dd2eba12e7359a70f\"",
       "file_path": "documentation/CoreHaptics/chhapticparametercurve/controlpoints.md"
     },
@@ -1591,9 +1591,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticparametercurve/parameterid.json": {
       "hash": "afbfe95de6ff989225a6267fc3bf1a210c93914c6464c5d6c5f9f73f82047bdd",
-      "last_checked": "2026-07-31T07:42:13.845759",
+      "last_checked": "2026-08-04T07:43:16.558897",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"c6b41a7304600165ed2b36712cebbd3e\"",
       "file_path": "documentation/CoreHaptics/chhapticparametercurve/parameterid.md"
     },
@@ -1607,9 +1607,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticparametercurve/relativetime.json": {
       "hash": "19befc96e8acdb191b478d742296156e2c4c9d7f084917226e95d0702388e37a",
-      "last_checked": "2026-07-31T07:42:13.962559",
+      "last_checked": "2026-08-04T07:43:16.689651",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"281ba6596eea72c10b032274e2989659\"",
       "file_path": "documentation/CoreHaptics/chhapticparametercurve/relativetime.md"
     },
@@ -1623,9 +1623,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/error-constants.json": {
       "hash": "2c159b26feac005b36a89ef5ea5aa9321fc2914827af8f1104352cf072642d3c",
-      "last_checked": "2026-07-31T07:42:14.110511",
+      "last_checked": "2026-08-04T07:43:16.876610",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"24bb0f69731d174b70ac0077edb70768\"",
       "file_path": "documentation/CoreHaptics/error-constants.md"
     },
@@ -1639,9 +1639,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticerror/errordomain.json": {
       "hash": "778dd2ab0600b47eb037eb0fcc1985860031bb125099adbde7fc1d34f03c4b51",
-      "last_checked": "2026-07-31T07:42:14.242516",
+      "last_checked": "2026-08-04T07:43:17.034021",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"4798da900597688b9c8e558d3290c54f\"",
       "file_path": "documentation/CoreHaptics/chhapticerror/errordomain.md"
     },
@@ -1655,9 +1655,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticerror/code/badevententry.json": {
       "hash": "6b837ae9bfe21d2cf379cc9b51ae99e8f38b74604e6a43ae98d24ead9f27a49a",
-      "last_checked": "2026-07-31T07:42:14.370999",
+      "last_checked": "2026-08-04T07:43:17.141978",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"482544f2bdbfbfcf852541f804ec050a\"",
       "file_path": "documentation/CoreHaptics/chhapticerror/code/badevententry.md"
     },
@@ -1671,9 +1671,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticerror/code/badparameterentry.json": {
       "hash": "94283af251f8e2587e2c6d786a088ad7d70a25723d7e19cedd2351caa475c399",
-      "last_checked": "2026-07-31T07:42:14.500589",
+      "last_checked": "2026-08-04T07:43:17.264666",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"45544bfc62e28b56fe41915b59e78af9\"",
       "file_path": "documentation/CoreHaptics/chhapticerror/code/badparameterentry.md"
     },
@@ -1687,9 +1687,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticerror/code/enginenotrunning.json": {
       "hash": "a4f476adeff4914da88d85c2f98e3177ab4014d687073b97adbe7c73e1175d5d",
-      "last_checked": "2026-07-31T07:42:14.711310",
+      "last_checked": "2026-08-04T07:43:17.445193",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"bea320044b07d2353dac59a61d8e1856\"",
       "file_path": "documentation/CoreHaptics/chhapticerror/code/enginenotrunning.md"
     },
@@ -1703,9 +1703,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticerror/code/enginestarttimeout.json": {
       "hash": "ff2c2e4365ec9b2b4cb5b338e48b41662fbfe007a1a7c0a858c20bb02232f011",
-      "last_checked": "2026-07-31T07:42:14.839079",
+      "last_checked": "2026-08-04T07:43:17.600618",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"b0cfc9405d81d31dc20443ddcce765d6\"",
       "file_path": "documentation/CoreHaptics/chhapticerror/code/enginestarttimeout.md"
     },
@@ -1719,9 +1719,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticerror/code/filenotfound.json": {
       "hash": "e8eb688a32fe5fb064d01ebc10c4cfa2d58094560dde4112742be1f8d0450f03",
-      "last_checked": "2026-07-31T07:42:14.958009",
+      "last_checked": "2026-08-04T07:43:17.712091",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"878f81babac36a8a6d28229d01a49bd7\"",
       "file_path": "documentation/CoreHaptics/chhapticerror/code/filenotfound.md"
     },
@@ -1735,9 +1735,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticerror/code/insufficientpower.json": {
       "hash": "95c3e45c985d78f7b602b7fbef6d362480aade1350e56d221697ee40ca1d49d7",
-      "last_checked": "2026-07-31T07:42:15.085420",
+      "last_checked": "2026-08-04T07:43:17.828083",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"275a92d38a76fc78ec7c797deb212d48\"",
       "file_path": "documentation/CoreHaptics/chhapticerror/code/insufficientpower.md"
     },
@@ -1751,9 +1751,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticerror/code/invalidaudioresource.json": {
       "hash": "ac90dd4bda96b89066cb0ea4a43ce397ba29281d45afe4a2a08954a5650d6299",
-      "last_checked": "2026-07-31T07:42:15.207541",
+      "last_checked": "2026-08-04T07:43:18.010533",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"69afe65325922231f54d3ed71fdbcbb6\"",
       "file_path": "documentation/CoreHaptics/chhapticerror/code/invalidaudioresource.md"
     },
@@ -1767,9 +1767,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticerror/code/invalidaudiosession.json": {
       "hash": "a3ea9e1267199dc2cf29d7c257528d444fd83f686e485d5cf2439223eada237f",
-      "last_checked": "2026-07-31T07:42:15.348026",
+      "last_checked": "2026-08-04T07:43:18.119185",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"768296a4c86cccedf6132cee3bfea304\"",
       "file_path": "documentation/CoreHaptics/chhapticerror/code/invalidaudiosession.md"
     },
@@ -1783,9 +1783,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticerror/code/invalidengineparameter.json": {
       "hash": "befdd2a45e877ac0a3589b9d96b1d80c63f992bcaa60e7b91555428e12d91e77",
-      "last_checked": "2026-07-31T07:42:15.550556",
+      "last_checked": "2026-08-04T07:43:18.257140",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"bcb079b59077cd7c8666baa5ac2bb3d0\"",
       "file_path": "documentation/CoreHaptics/chhapticerror/code/invalidengineparameter.md"
     },
@@ -1799,9 +1799,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticerror/code/invalideventduration.json": {
       "hash": "a5df1677d5e8952cb8cd79e00e9e2dd2dff9e37a59a63ee4e195ffa985be7026",
-      "last_checked": "2026-07-31T07:42:15.679572",
+      "last_checked": "2026-08-04T07:43:18.568890",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"0dca8efc0b3f9d3f6281072fe3e55968\"",
       "file_path": "documentation/CoreHaptics/chhapticerror/code/invalideventduration.md"
     },
@@ -1815,9 +1815,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticerror/code/invalideventtime.json": {
       "hash": "1108018a20c3aa2fe9a9601e02be2202324caeddeef3612e6e44668ac16fa332",
-      "last_checked": "2026-07-31T07:42:15.847767",
+      "last_checked": "2026-08-04T07:43:18.714479",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"ac9b6699cc2877a00038ff760c13cf18\"",
       "file_path": "documentation/CoreHaptics/chhapticerror/code/invalideventtime.md"
     },
@@ -1831,9 +1831,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticerror/code/invalideventtype.json": {
       "hash": "2574c343912827e8eff73f25a4b8b522204234ba4a7acd02711f9fc6cdf180fc",
-      "last_checked": "2026-07-31T07:42:16.010484",
+      "last_checked": "2026-08-04T07:43:18.883038",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"acb452f404433cab55fce283239b310d\"",
       "file_path": "documentation/CoreHaptics/chhapticerror/code/invalideventtype.md"
     },
@@ -1847,9 +1847,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticerror/code/invalidparametertype.json": {
       "hash": "823c7dbc5b0243eb1de6e45e185e1a9d20d6b197f0a7efb94d4538c78e8c7582",
-      "last_checked": "2026-07-31T07:42:16.112644",
+      "last_checked": "2026-08-04T07:43:19.058324",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"6ffc5426a6cf4971e5a1853acbef4b3a\"",
       "file_path": "documentation/CoreHaptics/chhapticerror/code/invalidparametertype.md"
     },
@@ -1863,9 +1863,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticerror/code/invalidpatterndata.json": {
       "hash": "d6270fc99ad87243693150efb4dadfc9ec1ffd8e3e73296ff151f5c2bb170cd4",
-      "last_checked": "2026-07-31T07:42:16.271586",
+      "last_checked": "2026-08-04T07:43:19.209870",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"cf2942710b810a864ea3e2db9e64ca10\"",
       "file_path": "documentation/CoreHaptics/chhapticerror/code/invalidpatterndata.md"
     },
@@ -1879,9 +1879,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticerror/code/invalidpatterndictionary.json": {
       "hash": "dd89359cc8f42101098b7db195106e8799078d92fd0141709ed4f84a515b547c",
-      "last_checked": "2026-07-31T07:42:16.420556",
+      "last_checked": "2026-08-04T07:43:19.338145",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"1391e9223ef63a596801af898cf6d00c\"",
       "file_path": "documentation/CoreHaptics/chhapticerror/code/invalidpatterndictionary.md"
     },
@@ -1895,9 +1895,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticerror/code/invalidpatternplayer.json": {
       "hash": "d93173679b921df1ffad953e2c0ef1025d97bd420e40568d04e549be59f22bb1",
-      "last_checked": "2026-07-31T07:42:16.543757",
+      "last_checked": "2026-08-04T07:43:19.465886",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"daeb0317ae885ce22e7aa74a8af09cc1\"",
       "file_path": "documentation/CoreHaptics/chhapticerror/code/invalidpatternplayer.md"
     },
@@ -1911,9 +1911,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticerror/code/invalidtime.json": {
       "hash": "9829b71a00788401d5ed09110719761a3800f124dc281ea56bbc9c6a46e06b24",
-      "last_checked": "2026-07-31T07:42:16.674278",
+      "last_checked": "2026-08-04T07:43:19.590514",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"657ac101414e43c747ca85144ddc16d0\"",
       "file_path": "documentation/CoreHaptics/chhapticerror/code/invalidtime.md"
     },
@@ -1927,9 +1927,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticerror/code/memoryerror.json": {
       "hash": "c765cfa9a135331ace8a861977f956b5b31d6b3428fc94fd4444da4c5c8a6b10",
-      "last_checked": "2026-07-31T07:42:16.857902",
+      "last_checked": "2026-08-04T07:43:19.765248",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"6f97e26bd9ab0f98b0d37da49eca61ce\"",
       "file_path": "documentation/CoreHaptics/chhapticerror/code/memoryerror.md"
     },
@@ -1943,9 +1943,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticerror/code/notsupported.json": {
       "hash": "99bc93436acaa831ef644b9264043fe24347981df9a65d3295d62b2d09af9c85",
-      "last_checked": "2026-07-31T07:42:17.031543",
+      "last_checked": "2026-08-04T07:43:19.932507",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"ce87b0d3adbe7c81551a2962da669570\"",
       "file_path": "documentation/CoreHaptics/chhapticerror/code/notsupported.md"
     },
@@ -1959,9 +1959,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticerror/code/operationnotpermitted.json": {
       "hash": "f214a230eb3069ba8a346ed445b74ebe645439b0e385d82aa3d1ce6d111babc1",
-      "last_checked": "2026-07-31T07:42:17.211136",
+      "last_checked": "2026-08-04T07:43:20.054256",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"3fbfa9c308e6dfb1e8c000837dfeab7a\"",
       "file_path": "documentation/CoreHaptics/chhapticerror/code/operationnotpermitted.md"
     },
@@ -1975,9 +1975,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticerror/code/resourcenotavailable.json": {
       "hash": "6bb7f6a3e4999dfdaa4344a2441eefdc38e52417f245aaa2dd50a6016f6e16ba",
-      "last_checked": "2026-07-31T07:42:17.324975",
+      "last_checked": "2026-08-04T07:43:20.179200",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"05f346e5d4fe7326e23ccd4b7d89c96e\"",
       "file_path": "documentation/CoreHaptics/chhapticerror/code/resourcenotavailable.md"
     },
@@ -1991,9 +1991,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticerror/code/serverinterrupted.json": {
       "hash": "0b4d4113c54a5cfc91b7df2fea013adcda7a5a11385998425f5e3576dc43a452",
-      "last_checked": "2026-07-31T07:42:17.470071",
+      "last_checked": "2026-08-04T07:43:20.377706",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"715bb32c065861ba9a4c61a676732860\"",
       "file_path": "documentation/CoreHaptics/chhapticerror/code/serverinterrupted.md"
     },
@@ -2007,9 +2007,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticerror/code/serverinitfailed.json": {
       "hash": "3794de23273c846f0fef7622019ae70744ab11be68921eeab534f64794b63a5f",
-      "last_checked": "2026-07-31T07:42:17.603750",
+      "last_checked": "2026-08-04T07:43:20.498078",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"f8716f677fb449c8bc79835286120e39\"",
       "file_path": "documentation/CoreHaptics/chhapticerror/code/serverinitfailed.md"
     },
@@ -2023,9 +2023,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticerror/code/unknownerror.json": {
       "hash": "60689d096e6a8503b736243ab4f8f6e0d9a7f174ea63a230a9cc9fce53127bbb",
-      "last_checked": "2026-07-31T07:42:17.793246",
+      "last_checked": "2026-08-04T07:43:20.615571",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"081a20eb171f0ca0abe2a287e103ee81\"",
       "file_path": "documentation/CoreHaptics/chhapticerror/code/unknownerror.md"
     },
@@ -2039,9 +2039,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticerror/code/init(rawvalue:).json": {
       "hash": "be699bf4aa0c27ac7768ff5fb24a3a89033af999d40c91c05de3c53beca27dc9",
-      "last_checked": "2026-07-31T07:42:17.892637",
+      "last_checked": "2026-08-04T07:43:20.824856",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"1849b719a1686520cb4beb584f351d8f\"",
       "file_path": "documentation/CoreHaptics/chhapticerror/code/init-rawvalue.md"
     },
@@ -2055,9 +2055,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticengine/finishedaction/leaveenginerunning.json": {
       "hash": "22f7923e41445adfe5b616d4c2655ff1e500c136f4a8a6e47059e0363da6392c",
-      "last_checked": "2026-07-31T07:42:18.039800",
+      "last_checked": "2026-08-04T07:43:20.980248",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"172a62e25ab465d11f420f7ecc0dd470\"",
       "file_path": "documentation/CoreHaptics/chhapticengine/finishedaction/leaveenginerunning.md"
     },
@@ -2071,9 +2071,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticengine/finishedaction/stopengine.json": {
       "hash": "a435edacc13fd1862a2374fadf17c30bb00599bf49421d3533a3c18f56cd97e1",
-      "last_checked": "2026-07-31T07:42:18.151637",
+      "last_checked": "2026-08-04T07:43:21.087664",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"4031f716bb44c0d7c2d08f9003725390\"",
       "file_path": "documentation/CoreHaptics/chhapticengine/finishedaction/stopengine.md"
     },
@@ -2087,9 +2087,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticengine/finishedaction/init(rawvalue:).json": {
       "hash": "6609cb1de15f5959ec8008db50d93eee307a0cdfb24a0bd8045e9029759f8efc",
-      "last_checked": "2026-07-31T07:42:18.291416",
+      "last_checked": "2026-08-04T07:43:21.248793",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"12d253e59a4a8796cfd8ecfbde1581df\"",
       "file_path": "documentation/CoreHaptics/chhapticengine/finishedaction/init-rawvalue.md"
     },
@@ -2103,9 +2103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticengine/stoppedreason/audiosessioninterrupt.json": {
       "hash": "36b7350670a8575bb0eb99a0dc596d201cf66923f67a990452a2dc15fab47637",
-      "last_checked": "2026-07-31T07:42:18.451394",
+      "last_checked": "2026-08-04T07:43:21.413482",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"c507e188f8aab62b7b7dbc71f8607861\"",
       "file_path": "documentation/CoreHaptics/chhapticengine/stoppedreason/audiosessioninterrupt.md"
     },
@@ -2119,9 +2119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticengine/stoppedreason/applicationsuspended.json": {
       "hash": "dd17a2847f0b01785f302bff3343fbcb6968883113e53da686e7b5d511ae457b",
-      "last_checked": "2026-07-31T07:42:18.631575",
+      "last_checked": "2026-08-04T07:43:21.577116",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"5834f7b00c441828edd54a2811bc83d4\"",
       "file_path": "documentation/CoreHaptics/chhapticengine/stoppedreason/applicationsuspended.md"
     },
@@ -2135,9 +2135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticengine/stoppedreason/enginedestroyed.json": {
       "hash": "43f6d9ebe0115b9e813faf6ed6fd37f212b7e8c5fefb22717e2ccc2c6fecba21",
-      "last_checked": "2026-07-31T07:42:18.734705",
+      "last_checked": "2026-08-04T07:43:21.699070",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"14368467fdf07a950953e8e72b1ca37c\"",
       "file_path": "documentation/CoreHaptics/chhapticengine/stoppedreason/enginedestroyed.md"
     },
@@ -2151,9 +2151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticengine/stoppedreason/gamecontrollerdisconnect.json": {
       "hash": "f850ee637b2852070f9dd66410ceb930eed9938ff82e20822bcc9c9cf45097ed",
-      "last_checked": "2026-07-31T07:42:18.852160",
+      "last_checked": "2026-08-04T07:43:21.817220",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"feb5edf26483c938762e3c93edf340cd\"",
       "file_path": "documentation/CoreHaptics/chhapticengine/stoppedreason/gamecontrollerdisconnect.md"
     },
@@ -2167,9 +2167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticengine/stoppedreason/idletimeout.json": {
       "hash": "1b8cc02735074093242ec246ca12b09349a95c2e1ac1a7c95b8318ee0d309246",
-      "last_checked": "2026-07-31T07:42:19.023535",
+      "last_checked": "2026-08-04T07:43:21.993467",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"5b1de99dfac2c8463ba5a64eabc95271\"",
       "file_path": "documentation/CoreHaptics/chhapticengine/stoppedreason/idletimeout.md"
     },
@@ -2183,9 +2183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticengine/stoppedreason/notifywhenfinished.json": {
       "hash": "5c9647594bb0e576f4c33e571d4685408691e93088d86f9a69a1942ed562f7df",
-      "last_checked": "2026-07-31T07:42:19.146912",
+      "last_checked": "2026-08-04T07:43:22.166252",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"8aff527119b78a848cee642d332f8e59\"",
       "file_path": "documentation/CoreHaptics/chhapticengine/stoppedreason/notifywhenfinished.md"
     },
@@ -2199,9 +2199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticengine/stoppedreason/systemerror.json": {
       "hash": "cebdab2e745dff9916bd41a1a9cab256244424b4b910c95f338f7c0e4977a0a7",
-      "last_checked": "2026-07-31T07:42:19.259743",
+      "last_checked": "2026-08-04T07:43:22.274001",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"d6ed03bb3bca03b2377593981121d134\"",
       "file_path": "documentation/CoreHaptics/chhapticengine/stoppedreason/systemerror.md"
     },
@@ -2215,9 +2215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticengine/stoppedreason/init(rawvalue:).json": {
       "hash": "dadd78aca52e170fdb5f1ba01c14fdc408288af88b7c9eff247eb3db38377d99",
-      "last_checked": "2026-07-31T07:42:19.378465",
+      "last_checked": "2026-08-04T07:43:22.403886",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"727b15d0b68665a30bdd74e8bceb951c\"",
       "file_path": "documentation/CoreHaptics/chhapticengine/stoppedreason/init-rawvalue.md"
     },
@@ -2231,9 +2231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticdevicecapability/supportsaudio.json": {
       "hash": "7c1fa50ca90629c9ff696151a14be946f4cd8a367675ddcb03ead22465ef9b1f",
-      "last_checked": "2026-07-31T07:42:19.543941",
+      "last_checked": "2026-08-04T07:43:22.576723",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"736752b6bb871ea048ceaaa9cddcbe8e\"",
       "file_path": "documentation/CoreHaptics/chhapticdevicecapability/supportsaudio.md"
     },
@@ -2247,9 +2247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticdevicecapability/supportshaptics.json": {
       "hash": "cc252ad537672dfa1f1ed9e453248cc4e4e869f9c8bde70a597792b1aaaaed7e",
-      "last_checked": "2026-07-31T07:42:19.664740",
+      "last_checked": "2026-08-04T07:43:22.685846",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"983b4540ab94a8069fec267aea4e0141\"",
       "file_path": "documentation/CoreHaptics/chhapticdevicecapability/supportshaptics.md"
     },
@@ -2263,9 +2263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticdevicecapability/attributes(foreventparameter:eventtype:).json": {
       "hash": "8ef5d75daf9b3139f9d8b4d133a8e1c7062cba7981d2d9d99877cd5f67c51d7f",
-      "last_checked": "2026-07-31T07:42:19.797970",
+      "last_checked": "2026-08-04T07:43:22.826973",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"41505dd213298ba4e01ee10b94154df0\"",
       "file_path": "documentation/CoreHaptics/chhapticdevicecapability/attributes-foreventparametereventtype.md"
     },
@@ -2279,9 +2279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticparameterattributes/defaultvalue.json": {
       "hash": "f123387368fdc3d7002f0c029b70b27bdd761b89185ef4226195663b6e7790b5",
-      "last_checked": "2026-07-31T07:42:19.965615",
+      "last_checked": "2026-08-04T07:43:22.959752",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"b48f6e443112dc14b3cc36cb81998f9d\"",
       "file_path": "documentation/CoreHaptics/chhapticparameterattributes/defaultvalue.md"
     },
@@ -2295,9 +2295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticparameterattributes/minvalue.json": {
       "hash": "8a3060bfc1ef514e51b080fd6afc6d699e8125332bf864ec4d9f581f98f8b9fd",
-      "last_checked": "2026-07-31T07:42:20.089511",
+      "last_checked": "2026-08-04T07:43:23.117070",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"6d29dcceaa76600d12576f177f9e6b2e\"",
       "file_path": "documentation/CoreHaptics/chhapticparameterattributes/minvalue.md"
     },
@@ -2311,9 +2311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticparameterattributes/maxvalue.json": {
       "hash": "9827d791886c70774897630695ff78534ad93dbd5bce823a133f502267ea6e1b",
-      "last_checked": "2026-07-31T07:42:20.267456",
+      "last_checked": "2026-08-04T07:43:23.243155",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"2488008d93bf02f88b9403d85c5edbe9\"",
       "file_path": "documentation/CoreHaptics/chhapticparameterattributes/maxvalue.md"
     },
@@ -2327,9 +2327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticpattern/key/event.json": {
       "hash": "2055f207ba2441db470343c60b438bb2daef4f7064a0a68a079c6274a5b861c0",
-      "last_checked": "2026-07-31T07:42:20.429245",
+      "last_checked": "2026-08-04T07:43:23.351535",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"688639f6aa0fa95a9a8a881650c41dec\"",
       "file_path": "documentation/CoreHaptics/chhapticpattern/key/event.md"
     },
@@ -2343,9 +2343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticpattern/key/eventduration.json": {
       "hash": "55169adb10f3f9edffa617eddb2b1a47c239515045d5c195389505e189887f03",
-      "last_checked": "2026-07-31T07:42:20.597906",
+      "last_checked": "2026-08-04T07:43:23.465574",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"abcc6eeda02c39806a9af8ba59a2b1dc\"",
       "file_path": "documentation/CoreHaptics/chhapticpattern/key/eventduration.md"
     },
@@ -2359,9 +2359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticpattern/key/eventparameters.json": {
       "hash": "e6288bbc277ad4efe56b935dee253437ba777ae9c4aa8dcbd7875f9c0d1bb6ce",
-      "last_checked": "2026-07-31T07:42:20.726891",
+      "last_checked": "2026-08-04T07:43:23.650551",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"b5994422f01b0b7a1416f54ae23e4486\"",
       "file_path": "documentation/CoreHaptics/chhapticpattern/key/eventparameters.md"
     },
@@ -2375,9 +2375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticpattern/key/eventtype.json": {
       "hash": "a1bbfa4fadc546bcb829f4721ae0098aca8ac683fe17d9ec23d84192717b5409",
-      "last_checked": "2026-07-31T07:42:20.844614",
+      "last_checked": "2026-08-04T07:43:23.830293",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"d6ca43a6e826ba61dd152953cfb786a2\"",
       "file_path": "documentation/CoreHaptics/chhapticpattern/key/eventtype.md"
     },
@@ -2391,9 +2391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticpattern/key/eventwaveformloopenabled.json": {
       "hash": "ee64969f98f9f1bad0615502bec982c98b3c87a83218ec3365e905d1e55d6dec",
-      "last_checked": "2026-07-31T07:42:21.015359",
+      "last_checked": "2026-08-04T07:43:23.957247",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"8912202e2cbe80204e592502d950d58a\"",
       "file_path": "documentation/CoreHaptics/chhapticpattern/key/eventwaveformloopenabled.md"
     },
@@ -2407,9 +2407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticpattern/key/eventwaveformpath.json": {
       "hash": "f5059e57ba3393c2f16085bab5766bdd41eae58e46a07cb52e884f93e859d581",
-      "last_checked": "2026-07-31T07:42:21.114806",
+      "last_checked": "2026-08-04T07:43:24.092033",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"e9914a1b409707a25a3ef043c42df6a8\"",
       "file_path": "documentation/CoreHaptics/chhapticpattern/key/eventwaveformpath.md"
     },
@@ -2423,9 +2423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticpattern/key/eventwaveformusevolumeenvelope.json": {
       "hash": "531b1bae22f855229b392a7c03784afb6d5437b57883854f68cf7f9e74be3d44",
-      "last_checked": "2026-07-31T07:42:21.230281",
+      "last_checked": "2026-08-04T07:43:24.231949",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"a45f7c8d4417bc67199897ec795a7109\"",
       "file_path": "documentation/CoreHaptics/chhapticpattern/key/eventwaveformusevolumeenvelope.md"
     },
@@ -2439,9 +2439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticpattern/key/parameter.json": {
       "hash": "718fa62f98e4776ef0153c92662ebd86c792a98d963501aca41ef7b90d2e8938",
-      "last_checked": "2026-07-31T07:42:21.422574",
+      "last_checked": "2026-08-04T07:43:24.406553",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"642afc3196ed4880b497ee9baf64c703\"",
       "file_path": "documentation/CoreHaptics/chhapticpattern/key/parameter.md"
     },
@@ -2455,9 +2455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticpattern/key/parametercurve.json": {
       "hash": "10e7842dffcc23d458bbd93534dae74192a8d90f91c74da1fb6f51d440459449",
-      "last_checked": "2026-07-31T07:42:21.551322",
+      "last_checked": "2026-08-04T07:43:24.520094",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"2e2448e40ee396f7b5002efba692287c\"",
       "file_path": "documentation/CoreHaptics/chhapticpattern/key/parametercurve.md"
     },
@@ -2471,9 +2471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticpattern/key/parametercurvecontrolpoints.json": {
       "hash": "4d869a01647fe35628e0ccaafffaf8cc4fcb221c5a0154ada18bb889a6b39e88",
-      "last_checked": "2026-07-31T07:42:21.756537",
+      "last_checked": "2026-08-04T07:43:24.706318",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"a2cee6920589849d612dc5a41e50b926\"",
       "file_path": "documentation/CoreHaptics/chhapticpattern/key/parametercurvecontrolpoints.md"
     },
@@ -2487,9 +2487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticpattern/key/parameterid.json": {
       "hash": "1cf7002a21498aea77629e6b3173b8005305b2c4f4974799381cb9691dfb2ff8",
-      "last_checked": "2026-07-31T07:42:21.872219",
+      "last_checked": "2026-08-04T07:43:24.830960",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"45667c91674c896960272065733dcc5e\"",
       "file_path": "documentation/CoreHaptics/chhapticpattern/key/parameterid.md"
     },
@@ -2503,9 +2503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticpattern/key/parametervalue.json": {
       "hash": "8592317d7e30f02190d545b75b68f5687c5bad93333ff8fd81bd1a66e004d0be",
-      "last_checked": "2026-07-31T07:42:22.062576",
+      "last_checked": "2026-08-04T07:43:25.014021",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"10283e853837367864c910c3fd8a4d70\"",
       "file_path": "documentation/CoreHaptics/chhapticpattern/key/parametervalue.md"
     },
@@ -2519,9 +2519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticpattern/key/pattern.json": {
       "hash": "179bf1dc9c0a21eb04d39829185169b332e38375ff25b359838f73cbe516b3dc",
-      "last_checked": "2026-07-31T07:42:22.211658",
+      "last_checked": "2026-08-04T07:43:25.177946",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"b47d453a2c2287f8f26b164da11b4601\"",
       "file_path": "documentation/CoreHaptics/chhapticpattern/key/pattern.md"
     },
@@ -2535,9 +2535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticpattern/key/time.json": {
       "hash": "d400c1df3e236c2e02697cc78ff3224b010d9d5f6c498923630c8b4438d5a3a0",
-      "last_checked": "2026-07-31T07:42:22.383378",
+      "last_checked": "2026-08-04T07:43:25.296664",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"56fb648423669c3ffdd340d91dacbca6\"",
       "file_path": "documentation/CoreHaptics/chhapticpattern/key/time.md"
     },
@@ -2551,9 +2551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticpattern/key/version.json": {
       "hash": "d5fffc69e87bacbcf5d0f6488fd6e126882057db7067a0fdc7d93915ea787d32",
-      "last_checked": "2026-07-31T07:42:22.494905",
+      "last_checked": "2026-08-04T07:43:25.411277",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"4d84c063312b17c61e2df634153c40db\"",
       "file_path": "documentation/CoreHaptics/chhapticpattern/key/version.md"
     },
@@ -2567,9 +2567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticpattern/key/init(rawvalue:).json": {
       "hash": "41fdb8ec2c502dfe20adf4b5886fe2ad581fdeba8d6d56ca9c38e91435933394",
-      "last_checked": "2026-07-31T07:42:22.629439",
+      "last_checked": "2026-08-04T07:43:25.537704",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"94c7dc6bf6994e679c847308905226af\"",
       "file_path": "documentation/CoreHaptics/chhapticpattern/key/init-rawvalue.md"
     },
@@ -2583,9 +2583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticevent/eventtype/init(rawvalue:).json": {
       "hash": "70454dce411e6d8ce4de4b6a4fb8042c796e5528632cde0f3362578c0b35ed33",
-      "last_checked": "2026-07-31T07:42:22.760032",
+      "last_checked": "2026-08-04T07:43:25.692798",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"66ae8424e3ecfe5cfe85730fdf90bae5\"",
       "file_path": "documentation/CoreHaptics/chhapticevent/eventtype/init-rawvalue.md"
     },
@@ -2599,9 +2599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticevent/eventtype/audiocontinuous.json": {
       "hash": "ea7dcccdee18e9186ac1dd91492bc15c29eceb24aeb7f026a97caf93cb05721e",
-      "last_checked": "2026-07-31T07:42:22.876267",
+      "last_checked": "2026-08-04T07:43:25.805314",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"5c7f6f4084681386deb0d5a04e2b2155\"",
       "file_path": "documentation/CoreHaptics/chhapticevent/eventtype/audiocontinuous.md"
     },
@@ -2615,9 +2615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticevent/eventtype/audiocustom.json": {
       "hash": "9282fd2d46f9cc9537d410f7dce00ae9455440ee69973e83baeb1535d7e1803f",
-      "last_checked": "2026-07-31T07:42:23.013633",
+      "last_checked": "2026-08-04T07:43:25.961569",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"8bfe76a5d50912779f4860f297a26494\"",
       "file_path": "documentation/CoreHaptics/chhapticevent/eventtype/audiocustom.md"
     },
@@ -2631,9 +2631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticevent/eventtype/haptictransient.json": {
       "hash": "84c877df3a5c71aa8063a8d52bee920b89543d973461f0ac504fc8c2e3424487",
-      "last_checked": "2026-07-31T07:42:23.170583",
+      "last_checked": "2026-08-04T07:43:26.128977",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"04d065c20098afe53560f0ebd641780a\"",
       "file_path": "documentation/CoreHaptics/chhapticevent/eventtype/haptictransient.md"
     },
@@ -2647,9 +2647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticevent/eventtype/hapticcontinuous.json": {
       "hash": "4a3854c0e7e522cf4b5f0c1778ff6007fc9f00e5b708cc625f88c103401dbf86",
-      "last_checked": "2026-07-31T07:42:23.278286",
+      "last_checked": "2026-08-04T07:43:26.256187",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"aa3f7f34d98ea4f56de7e0245b9d718c\"",
       "file_path": "documentation/CoreHaptics/chhapticevent/eventtype/hapticcontinuous.md"
     },
@@ -2663,9 +2663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticevent/parameterid/hapticintensity.json": {
       "hash": "d30b58fe70feccefb1824fd8db8e19741b7482521d1813b859be10a496341a13",
-      "last_checked": "2026-07-31T07:42:23.460880",
+      "last_checked": "2026-08-04T07:43:26.376552",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"49297e58a118f9b9d2862b1a1133a804\"",
       "file_path": "documentation/CoreHaptics/chhapticevent/parameterid/hapticintensity.md"
     },
@@ -2679,9 +2679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticevent/parameterid/hapticsharpness.json": {
       "hash": "86e8544cdba6e75517dec559bfcce7d3fd9959b5fc78f4225eec563c305c9893",
-      "last_checked": "2026-07-31T07:42:23.562220",
+      "last_checked": "2026-08-04T07:43:26.514894",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"1d051eb280f79109a9c7009979e9a1c9\"",
       "file_path": "documentation/CoreHaptics/chhapticevent/parameterid/hapticsharpness.md"
     },
@@ -2695,9 +2695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticevent/parameterid/attacktime.json": {
       "hash": "6ca740088728c6a573c73013ffd51501a660368f3d77e8eabcd05dd7a76b4cd7",
-      "last_checked": "2026-07-31T07:42:23.694399",
+      "last_checked": "2026-08-04T07:43:26.657760",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"22a04fc2998d7cc18d1d01b1659169ac\"",
       "file_path": "documentation/CoreHaptics/chhapticevent/parameterid/attacktime.md"
     },
@@ -2711,9 +2711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticevent/parameterid/decaytime.json": {
       "hash": "daabdf485648846cf1934d681eb4391f5b4c17dd237b09bcb6e62b22f58fcce8",
-      "last_checked": "2026-07-31T07:42:23.799390",
+      "last_checked": "2026-08-04T07:43:26.791830",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"bc6652fae2beca5474b5577f265c760d\"",
       "file_path": "documentation/CoreHaptics/chhapticevent/parameterid/decaytime.md"
     },
@@ -2727,9 +2727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticevent/parameterid/releasetime.json": {
       "hash": "685ddab3aefed5ad5767db7df3eb4095133a0072c531a3ad5342956437d4e6be",
-      "last_checked": "2026-07-31T07:42:23.983800",
+      "last_checked": "2026-08-04T07:43:26.921012",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"3c2780cdf8a0cf146829b23efc3b1c7c\"",
       "file_path": "documentation/CoreHaptics/chhapticevent/parameterid/releasetime.md"
     },
@@ -2743,9 +2743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticevent/parameterid/sustained.json": {
       "hash": "bd9e8865b80f8ee90af0bbfb5c19580fe57379146a009df5668737fdb20557d1",
-      "last_checked": "2026-07-31T07:42:24.112026",
+      "last_checked": "2026-08-04T07:43:27.053689",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"33a5396205dddfcb5b8eddf45cffcc2e\"",
       "file_path": "documentation/CoreHaptics/chhapticevent/parameterid/sustained.md"
     },
@@ -2759,9 +2759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticevent/parameterid/audiovolume.json": {
       "hash": "bb21c21a740cd6c2b71b959784f00992afae3688e34d6eedef4dfbd49b2dad43",
-      "last_checked": "2026-07-31T07:42:24.226964",
+      "last_checked": "2026-08-04T07:43:27.221934",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"6cf3093d60bfa52d9407b27b5a666aa8\"",
       "file_path": "documentation/CoreHaptics/chhapticevent/parameterid/audiovolume.md"
     },
@@ -2775,9 +2775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticevent/parameterid/audiopan.json": {
       "hash": "616e64186d25b7feafc454ffa679c61de8d505e3a13876d92c2bd0befc0e4f72",
-      "last_checked": "2026-07-31T07:42:24.418690",
+      "last_checked": "2026-08-04T07:43:27.346239",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"b067a118c36e90fa4aa53ca3af047d10\"",
       "file_path": "documentation/CoreHaptics/chhapticevent/parameterid/audiopan.md"
     },
@@ -2791,9 +2791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticevent/parameterid/audiopitch.json": {
       "hash": "cd461e76f71958a6dfd4fc6a3c5069ac06fd51d65a348625855295ba6ba875e0",
-      "last_checked": "2026-07-31T07:42:24.532386",
+      "last_checked": "2026-08-04T07:43:27.527014",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"c0a02608e0da4895bacd8c5f89b2e6af\"",
       "file_path": "documentation/CoreHaptics/chhapticevent/parameterid/audiopitch.md"
     },
@@ -2807,9 +2807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticevent/parameterid/audiobrightness.json": {
       "hash": "03bf45b85fb884238ef78ed9faacf47742fe144170888085381f369ae99cbcb6",
-      "last_checked": "2026-07-31T07:42:24.678671",
+      "last_checked": "2026-08-04T07:43:27.637665",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"06692a1b4df064472db41d05c2fb6a79\"",
       "file_path": "documentation/CoreHaptics/chhapticevent/parameterid/audiobrightness.md"
     },
@@ -2823,9 +2823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticevent/parameterid/init(rawvalue:).json": {
       "hash": "0267e5f33aaa939274ba456769e6dc386451011ff7b99ff35a1b444a3031b7fe",
-      "last_checked": "2026-07-31T07:42:24.793760",
+      "last_checked": "2026-08-04T07:43:27.774893",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"8a18c3b706eea366f6808a0363a339aa\"",
       "file_path": "documentation/CoreHaptics/chhapticevent/parameterid/init-rawvalue.md"
     },
@@ -2839,9 +2839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticdynamicparameter/id/hapticintensitycontrol.json": {
       "hash": "92749fb769a86b6c97528fec6c6cd1b20180d7ab9013a87eec19cb868af3b809",
-      "last_checked": "2026-07-31T07:42:24.966355",
+      "last_checked": "2026-08-04T07:43:27.906100",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"5a1014342f9801ce73407f931a250de6\"",
       "file_path": "documentation/CoreHaptics/chhapticdynamicparameter/id/hapticintensitycontrol.md"
     },
@@ -2855,9 +2855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticdynamicparameter/id/hapticsharpnesscontrol.json": {
       "hash": "3264e2f4028ba86a12bf973c3c64753d57243896f104daeb568901786493f34a",
-      "last_checked": "2026-07-31T07:42:25.072738",
+      "last_checked": "2026-08-04T07:43:28.041573",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"e8c2060187dbb7e4cd7a8a49a7aff371\"",
       "file_path": "documentation/CoreHaptics/chhapticdynamicparameter/id/hapticsharpnesscontrol.md"
     },
@@ -2871,9 +2871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticdynamicparameter/id/hapticattacktimecontrol.json": {
       "hash": "572be59dd03d37feab0f8faa10a739180861421f729b0e1245cf3134f1aab8d2",
-      "last_checked": "2026-07-31T07:42:25.226085",
+      "last_checked": "2026-08-04T07:43:28.190638",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"de6900720c954a862025557bd4955d4e\"",
       "file_path": "documentation/CoreHaptics/chhapticdynamicparameter/id/hapticattacktimecontrol.md"
     },
@@ -2887,9 +2887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticdynamicparameter/id/hapticdecaytimecontrol.json": {
       "hash": "9f3a5c5b556f0ede44373b4a90449517828da38471bd48e4ddab887ec8b9ad5c",
-      "last_checked": "2026-07-31T07:42:25.331360",
+      "last_checked": "2026-08-04T07:43:28.325409",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"38791223cdda81b224e520df26ad446e\"",
       "file_path": "documentation/CoreHaptics/chhapticdynamicparameter/id/hapticdecaytimecontrol.md"
     },
@@ -2903,9 +2903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticdynamicparameter/id/hapticreleasetimecontrol.json": {
       "hash": "f7365a06e0bec1024aea9b379dd8a8ccd69c08a67a4ec0d07428f8f931142c3d",
-      "last_checked": "2026-07-31T07:42:25.497730",
+      "last_checked": "2026-08-04T07:43:28.466507",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"c04739c38830f3bdd3cf752624126a37\"",
       "file_path": "documentation/CoreHaptics/chhapticdynamicparameter/id/hapticreleasetimecontrol.md"
     },
@@ -2919,9 +2919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticdynamicparameter/id/audiobrightnesscontrol.json": {
       "hash": "fb5bfec2f6513c66cd708c5b0e618516bcfc15bb68207daa2b52da384c92974e",
-      "last_checked": "2026-07-31T07:42:25.604631",
+      "last_checked": "2026-08-04T07:43:28.587713",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"b244f9f0f838ff8da2e18b3e90160bcf\"",
       "file_path": "documentation/CoreHaptics/chhapticdynamicparameter/id/audiobrightnesscontrol.md"
     },
@@ -2935,9 +2935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticdynamicparameter/id/audiovolumecontrol.json": {
       "hash": "94fe9087f0393b87a04ddfed080fc3dee2b0b2ced322c98c8dbe4d1316dab409",
-      "last_checked": "2026-07-31T07:42:25.739830",
+      "last_checked": "2026-08-04T07:43:28.716658",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"8810b4dd5224c112b4a8edc994a8003c\"",
       "file_path": "documentation/CoreHaptics/chhapticdynamicparameter/id/audiovolumecontrol.md"
     },
@@ -2951,9 +2951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticdynamicparameter/id/audiopancontrol.json": {
       "hash": "d30f9912c2b33a9973e1571df3864e445c030387e375a70894f526583738ced8",
-      "last_checked": "2026-07-31T07:42:25.863635",
+      "last_checked": "2026-08-04T07:43:28.875322",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"98a1d7fdcc8f8c5f9ff5f0203a276c02\"",
       "file_path": "documentation/CoreHaptics/chhapticdynamicparameter/id/audiopancontrol.md"
     },
@@ -2967,9 +2967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticdynamicparameter/id/audiopitchcontrol.json": {
       "hash": "9e07b8b3b4a19f1a4c728f1affc57a75e25c89d7667af342b26b770ac033e8bf",
-      "last_checked": "2026-07-31T07:42:26.035750",
+      "last_checked": "2026-08-04T07:43:29.001367",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"ef0c04ec3fed39813e72129555a76aa9\"",
       "file_path": "documentation/CoreHaptics/chhapticdynamicparameter/id/audiopitchcontrol.md"
     },
@@ -2983,9 +2983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticdynamicparameter/id/audioattacktimecontrol.json": {
       "hash": "7976e8f309cad085d8e9c0bf20177e43e0ec6e2ccf222921b8c263fdd7d5591c",
-      "last_checked": "2026-07-31T07:42:26.176060",
+      "last_checked": "2026-08-04T07:43:29.174505",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"333dff8827e0847cf95a8a67b8f82907\"",
       "file_path": "documentation/CoreHaptics/chhapticdynamicparameter/id/audioattacktimecontrol.md"
     },
@@ -2999,9 +2999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticdynamicparameter/id/audiodecaytimecontrol.json": {
       "hash": "d658dbc20f6a954033b1f05a8168c2bdde1b673f039b68670da4565d05b860a9",
-      "last_checked": "2026-07-31T07:42:26.323516",
+      "last_checked": "2026-08-04T07:43:29.300209",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"efe4b8a58454cba095c5b763ada2a5af\"",
       "file_path": "documentation/CoreHaptics/chhapticdynamicparameter/id/audiodecaytimecontrol.md"
     },
@@ -3015,9 +3015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticdynamicparameter/id/audioreleasetimecontrol.json": {
       "hash": "2be2e19abf3cc38aa2b3ba90bb6ce56baa923230c876d157507baf13be139e97",
-      "last_checked": "2026-07-31T07:42:26.437684",
+      "last_checked": "2026-08-04T07:43:29.448518",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"0186760a5c98a45df1c2e4a532222b91\"",
       "file_path": "documentation/CoreHaptics/chhapticdynamicparameter/id/audioreleasetimecontrol.md"
     },
@@ -3031,9 +3031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticdynamicparameter/id/init(rawvalue:).json": {
       "hash": "7a8f5ccd340ac48aee34a04ca1e64b458a0a91d50471b962e1940c7d360c5eb1",
-      "last_checked": "2026-07-31T07:42:26.563347",
+      "last_checked": "2026-08-04T07:43:29.580149",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"8a8d40db4b000b1957dd6c1ad73cebaa\"",
       "file_path": "documentation/CoreHaptics/chhapticdynamicparameter/id/init-rawvalue.md"
     },
@@ -3047,9 +3047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticparametercurve/controlpoint/init(relativetime:value:).json": {
       "hash": "8e30be9ea5e3e38a073330d5d96675b3b453d84d67ed44efc36ea216592a3e28",
-      "last_checked": "2026-07-31T07:42:26.701158",
+      "last_checked": "2026-08-04T07:43:29.701819",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"0f99a92d5266a514b1d242e4684ccde7\"",
       "file_path": "documentation/CoreHaptics/chhapticparametercurve/controlpoint/init-relativetimevalue.md"
     },
@@ -3063,9 +3063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticparametercurve/controlpoint/relativetime.json": {
       "hash": "cb605595083f9bbbf6814e05d375ba356ed41239f2843902869b249b69305a48",
-      "last_checked": "2026-07-31T07:42:26.829286",
+      "last_checked": "2026-08-04T07:43:29.856154",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"2f6f50687bbc3d2eecb3dec8b4daa91f\"",
       "file_path": "documentation/CoreHaptics/chhapticparametercurve/controlpoint/relativetime.md"
     },
@@ -3079,9 +3079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticparametercurve/controlpoint/value.json": {
       "hash": "bc88a9b7b628082c75529de6ab117c91edf13785386dabb8ee3d96fe3e20a547",
-      "last_checked": "2026-07-31T07:42:26.958249",
+      "last_checked": "2026-08-04T07:43:30.007108",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"bbfa0fbd6d5e4bb91b8cd8a17fe175f8\"",
       "file_path": "documentation/CoreHaptics/chhapticparametercurve/controlpoint/value.md"
     },
@@ -3095,9 +3095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticerror/badevententry.json": {
       "hash": "45fcdbbd1482fdc403a8b560a5f16d6710b3856f5cac9768b521eae249dd8a66",
-      "last_checked": "2026-07-31T07:42:27.079786",
+      "last_checked": "2026-08-04T07:43:30.128662",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"7f18f8b2dc1957ad95fc82c82d136cb5\"",
       "file_path": "documentation/CoreHaptics/chhapticerror/badevententry.md"
     },
@@ -3111,9 +3111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticerror/badparameterentry.json": {
       "hash": "68c003708f691bf01f6b11f33d742542074461306c5a0ad2490244af80aad65a",
-      "last_checked": "2026-07-31T07:42:27.206005",
+      "last_checked": "2026-08-04T07:43:30.268121",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"6d92f3572a5a1f47f627dffa7af00ef6\"",
       "file_path": "documentation/CoreHaptics/chhapticerror/badparameterentry.md"
     },
@@ -3127,9 +3127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticerror/enginenotrunning.json": {
       "hash": "c4e2c13ca81b1035c0c8ac1aed4985ee418d57cf4afa94a4602156cefc92bce6",
-      "last_checked": "2026-07-31T07:42:27.331547",
+      "last_checked": "2026-08-04T07:43:30.442088",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"dd26782351b54b6b4763c1a233c14ef7\"",
       "file_path": "documentation/CoreHaptics/chhapticerror/enginenotrunning.md"
     },
@@ -3143,9 +3143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticerror/enginestarttimeout.json": {
       "hash": "4df389d242901f7f9b3ce55143bd69bf9c29334522da10a872b842e9fceba17c",
-      "last_checked": "2026-07-31T07:42:27.470712",
+      "last_checked": "2026-08-04T07:43:30.569227",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"99e2c19401d8cee8ad6e62473fe49926\"",
       "file_path": "documentation/CoreHaptics/chhapticerror/enginestarttimeout.md"
     },
@@ -3159,9 +3159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticerror/filenotfound.json": {
       "hash": "7d333949377e6df33934e440d1d57863f570b6e646e589c70d529b1c6b851eb0",
-      "last_checked": "2026-07-31T07:42:27.613934",
+      "last_checked": "2026-08-04T07:43:30.698633",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"7b0237f31be7ea2d9071dacaee11ddff\"",
       "file_path": "documentation/CoreHaptics/chhapticerror/filenotfound.md"
     },
@@ -3175,9 +3175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticerror/insufficientpower.json": {
       "hash": "e09cd213b5dc895ae037188a79568825ccea6c8814cf4ee8ff4aa6abc576b08e",
-      "last_checked": "2026-07-31T07:42:27.890748",
+      "last_checked": "2026-08-04T07:43:30.835575",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"1fdbb049353b40c3c78334d8599dc854\"",
       "file_path": "documentation/CoreHaptics/chhapticerror/insufficientpower.md"
     },
@@ -3191,9 +3191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticerror/invalidaudioresource.json": {
       "hash": "8b667c1213005426ac6e50173ace3050f5af554c66d289d37aba4e589fd99524",
-      "last_checked": "2026-07-31T07:42:28.181587",
+      "last_checked": "2026-08-04T07:43:30.967232",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"ad29b8824bd9f98bb141424e9163ece1\"",
       "file_path": "documentation/CoreHaptics/chhapticerror/invalidaudioresource.md"
     },
@@ -3207,9 +3207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticerror/invalidaudiosession.json": {
       "hash": "48524a59dea23391283cf319d6cdaeda8c9a8efb29de5ea1ba61dfe97aef847c",
-      "last_checked": "2026-07-31T07:42:28.363735",
+      "last_checked": "2026-08-04T07:43:31.076431",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"80a9a73f95ba5ce26fccd4bfa6478427\"",
       "file_path": "documentation/CoreHaptics/chhapticerror/invalidaudiosession.md"
     },
@@ -3223,9 +3223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticerror/invalidengineparameter.json": {
       "hash": "5ad6d9a3a076dd7777b5237e111a123492926edbc63ac617e71d834675572b6d",
-      "last_checked": "2026-07-31T07:42:28.555277",
+      "last_checked": "2026-08-04T07:43:31.192046",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"97bef773734527790948fda7836b242b\"",
       "file_path": "documentation/CoreHaptics/chhapticerror/invalidengineparameter.md"
     },
@@ -3239,9 +3239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticerror/invalideventduration.json": {
       "hash": "1618fdc7b4d7954e905d9a0d56011ad4b85afdeaf088b156d41f73fad252e92d",
-      "last_checked": "2026-07-31T07:42:28.671635",
+      "last_checked": "2026-08-04T07:43:31.331218",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"de9868ba7c89fa4950d5cda1bfb0162b\"",
       "file_path": "documentation/CoreHaptics/chhapticerror/invalideventduration.md"
     },
@@ -3255,9 +3255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticerror/invalideventtime.json": {
       "hash": "6ef9b90b8dd3705d4fc85df80678b9ccea2ad8d5a9ffe4cd5c3b5d14df21c046",
-      "last_checked": "2026-07-31T07:42:28.781578",
+      "last_checked": "2026-08-04T07:43:31.449832",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"d6ce865c15da17f6f4d89c0c8dd56a23\"",
       "file_path": "documentation/CoreHaptics/chhapticerror/invalideventtime.md"
     },
@@ -3271,9 +3271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticerror/invalideventtype.json": {
       "hash": "f2ac2719b5402215676b78d173571436f5302d96fae4fb6fa1b441a81d9bee02",
-      "last_checked": "2026-07-31T07:42:28.947730",
+      "last_checked": "2026-08-04T07:43:31.586419",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"5443d510fd07172f33a5ad8c5f049e49\"",
       "file_path": "documentation/CoreHaptics/chhapticerror/invalideventtype.md"
     },
@@ -3287,9 +3287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticerror/invalidparametertype.json": {
       "hash": "661a151324f69a0c3616fab90a70844dc58917654111c207abf6dde01141af05",
-      "last_checked": "2026-07-31T07:42:29.088327",
+      "last_checked": "2026-08-04T07:43:31.738875",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"79cecb96a5b867a4af818c05d59edd1c\"",
       "file_path": "documentation/CoreHaptics/chhapticerror/invalidparametertype.md"
     },
@@ -3303,9 +3303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticerror/invalidpatterndata.json": {
       "hash": "3f3ee8e54d6da0218a335f1ca46c51faf0816eddbaaefb4d41a40f51e45e7a1a",
-      "last_checked": "2026-07-31T07:42:29.205841",
+      "last_checked": "2026-08-04T07:43:31.897874",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"32a62ec199fbb4f4bb719cfc5bf10ad3\"",
       "file_path": "documentation/CoreHaptics/chhapticerror/invalidpatterndata.md"
     },
@@ -3319,9 +3319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticerror/invalidpatterndictionary.json": {
       "hash": "07c1652ea9a1e2963b095a241b47c528f8990f4521ffd3e3a3d81535c6615ed9",
-      "last_checked": "2026-07-31T07:42:29.327619",
+      "last_checked": "2026-08-04T07:43:32.025210",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"b4e7cf51041c1bad275ae2550e581b6c\"",
       "file_path": "documentation/CoreHaptics/chhapticerror/invalidpatterndictionary.md"
     },
@@ -3335,9 +3335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticerror/invalidpatternplayer.json": {
       "hash": "1701cccf0caf20cd92576b2e867b98a1c6ae6dc5e4f4588c821de631cf5f8ea5",
-      "last_checked": "2026-07-31T07:42:29.506140",
+      "last_checked": "2026-08-04T07:43:32.180400",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"d81ccab12697b6522b57c165ca9c2d5e\"",
       "file_path": "documentation/CoreHaptics/chhapticerror/invalidpatternplayer.md"
     },
@@ -3351,9 +3351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticerror/invalidtime.json": {
       "hash": "303843843b8a0d538cb78c2bee0e3e3714f8e7eb05876a13a16e3f3df46ea048",
-      "last_checked": "2026-07-31T07:42:29.641009",
+      "last_checked": "2026-08-04T07:43:32.320963",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"515e9650a6f95ea2b68f4ec820410362\"",
       "file_path": "documentation/CoreHaptics/chhapticerror/invalidtime.md"
     },
@@ -3367,9 +3367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticerror/memoryerror.json": {
       "hash": "42e4d5840daa1f441247ddfc6ead6d9dc922e1aaa69e1e8e7d27e3185e688807",
-      "last_checked": "2026-07-31T07:42:29.800840",
+      "last_checked": "2026-08-04T07:43:32.501114",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"52394ae56ae42df1efc1c39f515acbc2\"",
       "file_path": "documentation/CoreHaptics/chhapticerror/memoryerror.md"
     },
@@ -3383,9 +3383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticerror/notsupported.json": {
       "hash": "5b905c75bcab6b5855163c6cf20e12df981aa1644dc2297e5873b8ab2d3be838",
-      "last_checked": "2026-07-31T07:42:29.910212",
+      "last_checked": "2026-08-04T07:43:32.667492",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"7bae182ebe3fff8689cebc79b7f6f11c\"",
       "file_path": "documentation/CoreHaptics/chhapticerror/notsupported.md"
     },
@@ -3399,9 +3399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticerror/operationnotpermitted.json": {
       "hash": "e5ec33746601d70f4aa393c7f543ae15fe4fbe619167bd977357cbdd5f77fc8a",
-      "last_checked": "2026-07-31T07:42:30.056655",
+      "last_checked": "2026-08-04T07:43:32.803617",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"4008ddda94357061e4657ccba69daba8\"",
       "file_path": "documentation/CoreHaptics/chhapticerror/operationnotpermitted.md"
     },
@@ -3415,9 +3415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticerror/resourcenotavailable.json": {
       "hash": "498712f3aa54fbf81d46ac2973d5ea4f29ddd27d5471d723ff816dd59e919165",
-      "last_checked": "2026-07-31T07:42:30.216087",
+      "last_checked": "2026-08-04T07:43:32.922781",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"7e8a536e016dea42fea144dcd9364516\"",
       "file_path": "documentation/CoreHaptics/chhapticerror/resourcenotavailable.md"
     },
@@ -3431,9 +3431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticerror/serverinterrupted.json": {
       "hash": "6e25a05cf3d2456c66a35db315324ac07865225d322bf3038a16b324664ad8b2",
-      "last_checked": "2026-07-31T07:42:30.334661",
+      "last_checked": "2026-08-04T07:43:33.094843",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"10d7c867c4c62efc692606d291eba122\"",
       "file_path": "documentation/CoreHaptics/chhapticerror/serverinterrupted.md"
     },
@@ -3447,9 +3447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticerror/serverinitfailed.json": {
       "hash": "4356f9df4e88adf2f646ffe5d4f6d6cad223538f26e024027413cb176a37d0d5",
-      "last_checked": "2026-07-31T07:42:30.555627",
+      "last_checked": "2026-08-04T07:43:33.208277",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"0a50a501da6e8ddac972ff834676d058\"",
       "file_path": "documentation/CoreHaptics/chhapticerror/serverinitfailed.md"
     },
@@ -3463,9 +3463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticerror/unknownerror.json": {
       "hash": "2e4388b8fae6da12581be8c7047641f99f07fedfedaf1ce253539500a3c68522",
-      "last_checked": "2026-07-31T07:42:30.681574",
+      "last_checked": "2026-08-04T07:43:33.388391",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"16f65f7fb6b4319f3a23ee42ea87b895\"",
       "file_path": "documentation/CoreHaptics/chhapticerror/unknownerror.md"
     },
@@ -3479,9 +3479,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticengine/init(andreturnerror:).json": {
       "hash": "a4b1a6b73b5e2109ca91a3e32577fa4b661913fa0ec58aa44a7f64f8d918afab",
-      "last_checked": "2026-07-31T07:42:07.108667",
+      "last_checked": "2026-08-04T07:43:09.596834",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"d0f4627a724b1fadce9c36bd81c97f93\"",
       "file_path": "documentation/CoreHaptics/chhapticengine/init-andreturnerror.md"
     },
@@ -3495,9 +3495,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/corehaptics/chhapticpattern/init(contentsofurl:).json": {
       "hash": "d4ef0936b0f7755a539b0a5b6a983f9ea6abde216ee438d348d6e91750c20674",
-      "last_checked": "2026-07-31T07:42:08.434593",
+      "last_checked": "2026-08-04T07:43:11.153668",
       "status": "unchanged",
-      "session_id": "2026-07-31T07:41:57.603800",
+      "session_id": "2026-08-04T07:42:57.276809",
       "etag": "W/\"710b506773f1987d5d7fb2a27e01c305\"",
       "file_path": "documentation/CoreHaptics/chhapticpattern/init-contentsofurl.md"
     },

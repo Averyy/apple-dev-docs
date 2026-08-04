@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "last_updated": "2026-07-24T08:55:03.040427",
-    "total_files": 831,
+    "last_updated": "2026-08-04T08:51:59.954079",
+    "total_files": 828,
     "source": "scrape_mlx_docs.py"
   },
   "hashes": {
@@ -832,9 +832,6 @@
     "MLX:https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.init.orthogonal.html": "27b4a0870bdf88f18644cddd21c68ac909235f71161689b912a927b76301e58b",
     "MLX:https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.init.sparse.html": "b10b913598aaacabfa9ad57748059c10e6affcedf88ee4778a5c1668e0fa8138",
     "github:ml-explore/mlx-swift-lm:Libraries/MLXLMCommon/Documentation.docc/model-compatibility.md": "a887dd566e1b5f43e2f9590afdb79e12d13d80fb4005f0c088b040abd2fec26f",
-    "github:ml-explore/mlx-swift-lm:Libraries/MLXLMCommon/Documentation.docc/kv-cache-quantization.md": "4bc80d61c06b65e8296d7ec969fa5600d543fefb46005da69b5dc79923a84109",
-    "MLX:https://ml-explore.github.io/mlx/build/html/": "faf389f3553a58234a4a9b0fb081723e4b9953ab1e6d1e1bed7842cec2572efe",
-    "MLX-Data:https://ml-explore.github.io/mlx-data/build/html/": "f7b15ec72de8291c9f1fba9d18874279db261e71c4b70d8fb16d3efb831b19fd",
-    "coremltools:https://apple.github.io/coremltools/docs-guides/": "8add59f1bd30df69414fbffe8d8017a12a1155f4edd771d658f96cf566733c36"
+    "github:ml-explore/mlx-swift-lm:Libraries/MLXLMCommon/Documentation.docc/kv-cache-quantization.md": "4bc80d61c06b65e8296d7ec969fa5600d543fefb46005da69b5dc79923a84109"
   }
 }

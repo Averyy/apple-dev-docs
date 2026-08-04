@@ -32,7 +32,7 @@ If authorization to use app tracking data is restricted, the value is: [`ATTrack
 
 ## Topics
 
-### Cases
+### Enumeration Cases
 - [ATTrackingManager.AuthorizationStatus.authorized](attrackingmanager/authorizationstatus/authorized.md)
   The value that returns if the user authorizes access to app-related data for tracking the user or the device.
 - [ATTrackingManager.AuthorizationStatus.denied](attrackingmanager/authorizationstatus/denied.md)
@@ -53,11 +53,6 @@ If authorization to use app tracking data is restricted, the value is: [`ATTrack
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
-
-## See Also
-
-- [class var trackingAuthorizationStatus: ATTrackingManager.AuthorizationStatus](attrackingmanager/trackingauthorizationstatus.md)
-  The authorization status that is current for the calling application.
 
 
 ---
