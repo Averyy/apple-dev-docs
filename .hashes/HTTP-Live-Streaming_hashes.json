@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-08-04T07:45:59.079188",
+    "last_updated": "2026-08-07T07:48:34.852578",
     "total_pages": 44,
-    "session_id": "2026-08-04T07:45:55.704077"
+    "session_id": "2026-08-07T07:48:30.199610"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/HTTP-Live-Streaming.json": {
       "hash": "61e7b5b719072f3285b5d4c5a10dbe31347d4d6ecfa3e975b3e9b7ade19fc48e",
-      "last_checked": "2026-08-04T07:45:55.953876",
+      "last_checked": "2026-08-07T07:48:30.475838",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:45:55.704077",
+      "session_id": "2026-08-07T07:48:30.199610",
       "etag": "W/\"b28c30d0e40932d659458b57f8a53b7a\"",
       "file_path": "documentation/HTTP-Live-Streaming/HTTP-Live-Streaming.md"
     },
     "https://developer.apple.com/documentation/HTTP-Live-Streaming": {
       "hash": "61e7b5b719072f3285b5d4c5a10dbe31347d4d6ecfa3e975b3e9b7ade19fc48e",
-      "last_checked": "2026-08-04T07:45:55.853536",
+      "last_checked": "2026-08-07T07:48:30.391831",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:45:55.704077",
+      "session_id": "2026-08-07T07:48:30.199610",
       "etag": "W/\"b28c30d0e40932d659458b57f8a53b7a\"",
       "file_path": "documentation/HTTP-Live-Streaming/HTTP-Live-Streaming.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/http-live-streaming/deploying-a-basic-http-live-streaming-hls-stream.json": {
       "hash": "90b82c618f62dc8f943b15ce81711c074c76b948fa60c3643de8a72e7728bfc2",
-      "last_checked": "2026-08-04T07:45:56.275042",
+      "last_checked": "2026-08-07T07:48:30.916026",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:45:55.704077",
+      "session_id": "2026-08-07T07:48:30.199610",
       "etag": "W/\"e65eb145aa94b779562481babed0879f\"",
       "file_path": "documentation/HTTP-Live-Streaming/deploying-a-basic-http-live-streaming-hls-stream.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/http-live-streaming/preparing-audio-for-http-live-streaming.json": {
       "hash": "088da5b9dd60ec4bfb0484288f0d8bef131f92d20ae67dc7d6fa8b8fd33a53e7",
-      "last_checked": "2026-08-04T07:45:56.391213",
+      "last_checked": "2026-08-07T07:48:31.238985",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:45:55.704077",
+      "session_id": "2026-08-07T07:48:30.199610",
       "etag": "W/\"5ef02384992b455f4facf5d645e92af5\"",
       "file_path": "documentation/HTTP-Live-Streaming/preparing-audio-for-http-live-streaming.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/http-live-streaming/example-playlists-for-http-live-streaming.json": {
       "hash": "2da8648a94fdcb88b9bcf2877338c2e23029ee484560603d045d40b2aad452d2",
-      "last_checked": "2026-08-04T07:45:56.554522",
+      "last_checked": "2026-08-07T07:48:31.385063",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:45:55.704077",
+      "session_id": "2026-08-07T07:48:30.199610",
       "etag": "W/\"19dad8eea6c746ce75306879374d0869\"",
       "file_path": "documentation/HTTP-Live-Streaming/example-playlists-for-http-live-streaming.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/http-live-streaming/about-the-ext-x-version-tag.json": {
       "hash": "0a6e99c4bde2b2eb0fb7976bfa5ad913026bae9c8c1b858de9102892736aa06d",
-      "last_checked": "2026-08-04T07:45:56.772328",
+      "last_checked": "2026-08-07T07:48:31.570331",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:45:55.704077",
+      "session_id": "2026-08-07T07:48:30.199610",
       "etag": "W/\"3df4e1cfe4068aa8ad834255c3868fb5\"",
       "file_path": "documentation/HTTP-Live-Streaming/about-the-ext-x-version-tag.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/http-live-streaming/using-apple-s-http-live-streaming-hls-tools.json": {
       "hash": "63947403f7bb094abc9d3f3fe4fd3c99e997664b1afa99cf7bf51d43261930ad",
-      "last_checked": "2026-08-04T07:45:56.880433",
+      "last_checked": "2026-08-07T07:48:31.767530",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:45:55.704077",
+      "session_id": "2026-08-07T07:48:30.199610",
       "etag": "W/\"28082f733529d9bef30b3b6c3452d6ed\"",
       "file_path": "documentation/HTTP-Live-Streaming/using-apple-s-http-live-streaming-hls-tools.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/http-live-streaming/hls-authoring-specification-for-apple-devices.json": {
       "hash": "70dd8d4c86e6d9776dfe7bcf31c80c46363d951358af6e3bd86c703045e44739",
-      "last_checked": "2026-08-04T07:45:57.015292",
+      "last_checked": "2026-08-07T07:48:31.962221",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:45:55.704077",
+      "session_id": "2026-08-07T07:48:30.199610",
       "etag": "W/\"db3b7323535057fc426c83911c400793\"",
       "file_path": "documentation/HTTP-Live-Streaming/hls-authoring-specification-for-apple-devices.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/http-live-streaming/using-content-protection-systems-with-hls.json": {
       "hash": "1efa0ba222e3015eccd379e90d02f701a199f6af8f054111e778cf7e4597f012",
-      "last_checked": "2026-08-04T07:45:57.138590",
+      "last_checked": "2026-08-07T07:48:32.096243",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:45:55.704077",
+      "session_id": "2026-08-07T07:48:30.199610",
       "etag": "W/\"c024cfcb161d689d18fcecd7fafb7d7b\"",
       "file_path": "documentation/HTTP-Live-Streaming/using-content-protection-systems-with-hls.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/http-live-streaming/about-the-common-media-application-format-with-http-live-streaming-hls.json": {
       "hash": "c734de14b34a3edca18e702a69aa167f654cb3963143c405f2c9a37646c46197",
-      "last_checked": "2026-08-04T07:45:57.259096",
+      "last_checked": "2026-08-07T07:48:32.435852",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:45:55.704077",
+      "session_id": "2026-08-07T07:48:30.199610",
       "etag": "W/\"c0f937675330b87c4a311c637faa2dfb\"",
       "file_path": "documentation/HTTP-Live-Streaming/about-the-common-media-application-format-with-http-live-streaming-hls.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/http-live-streaming/enabling-low-latency-http-live-streaming-hls.json": {
       "hash": "beeea19d02f9d4b8aa7028426f2ed9eae3b652f50d5dd388c8203b4e2e8962be",
-      "last_checked": "2026-08-04T07:45:57.378672",
+      "last_checked": "2026-08-07T07:48:32.619112",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:45:55.704077",
+      "session_id": "2026-08-07T07:48:30.199610",
       "etag": "W/\"8cd87477ac1d52557309bfee33617716\"",
       "file_path": "documentation/HTTP-Live-Streaming/enabling-low-latency-http-live-streaming-hls.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/http-live-streaming/links-to-additional-specifications-and-videos.json": {
       "hash": "6d6152b7c289b0186317641e830f985ed5d3e9b5a2c95cb6da954bb084921944",
-      "last_checked": "2026-08-04T07:45:57.505116",
+      "last_checked": "2026-08-07T07:48:32.798853",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:45:55.704077",
+      "session_id": "2026-08-07T07:48:30.199610",
       "etag": "W/\"1b51e8b77e90de301937fbd984329952\"",
       "file_path": "documentation/HTTP-Live-Streaming/links-to-additional-specifications-and-videos.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/http-live-streaming/videos-about-hls.json": {
       "hash": "ca55ff1b3250a948c2de3f3bcfedd165b346846255ee45366df0d6b0551e173f",
-      "last_checked": "2026-08-04T07:45:57.624818",
+      "last_checked": "2026-08-07T07:48:32.972926",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:45:55.704077",
+      "session_id": "2026-08-07T07:48:30.199610",
       "etag": "W/\"110f31740bf463014d08af0ec1a28974\"",
       "file_path": "documentation/HTTP-Live-Streaming/videos-about-hls.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/http-live-streaming/providing-metadata-for-xhe-aac-video-soundtracks.json": {
       "hash": "e29064468534feb197a0ed5d323b9fe210a94e0b5daf7254f68bece25af629dc",
-      "last_checked": "2026-08-04T07:45:57.740793",
+      "last_checked": "2026-08-07T07:48:33.110775",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:45:55.704077",
+      "session_id": "2026-08-07T07:48:30.199610",
       "etag": "W/\"32985a59f2319f4b2300294b12456425\"",
       "file_path": "documentation/HTTP-Live-Streaming/providing-metadata-for-xhe-aac-video-soundtracks.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/http-live-streaming/adjusting-anchor-loudness.json": {
       "hash": "4ce60f1ec26fa4d6209e2f0bf3bc1067db6413fdf846a31565618c65f553bc73",
-      "last_checked": "2026-08-04T07:45:57.909804",
+      "last_checked": "2026-08-07T07:48:33.436613",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:45:55.704077",
+      "session_id": "2026-08-07T07:48:30.199610",
       "etag": "W/\"936e11252229c93f879fc8f39efb51f4\"",
       "file_path": "documentation/HTTP-Live-Streaming/adjusting-anchor-loudness.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/http-live-streaming/providing-javascript-object-notation-json-chapters.json": {
       "hash": "ffdb88404a885cc0f22d59c66e5792042d056f0762f2ae9a5125d0687498698c",
-      "last_checked": "2026-08-04T07:45:58.185412",
+      "last_checked": "2026-08-07T07:48:33.616538",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:45:55.704077",
+      "session_id": "2026-08-07T07:48:30.199610",
       "etag": "W/\"7302384f68bc455c2e416890ebb8b558\"",
       "file_path": "documentation/HTTP-Live-Streaming/providing-javascript-object-notation-json-chapters.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/http-live-streaming/video-on-demand-playlist-construction.json": {
       "hash": "25007c6aae44d9b8048eed89406efd7305c3235be79e6f489d4b244e7cfde375",
-      "last_checked": "2026-08-04T07:45:58.304926",
+      "last_checked": "2026-08-07T07:48:33.781294",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:45:55.704077",
+      "session_id": "2026-08-07T07:48:30.199610",
       "etag": "W/\"8f9815d6ff885af2376c1c29659803fe\"",
       "file_path": "documentation/HTTP-Live-Streaming/video-on-demand-playlist-construction.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/http-live-streaming/live-playlist-sliding-window-construction.json": {
       "hash": "8e21a8c6bd78c1f39bdb2cc7b36a5cbb05d5856396b85c924157985885740c10",
-      "last_checked": "2026-08-04T07:45:58.431460",
+      "last_checked": "2026-08-07T07:48:33.971695",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:45:55.704077",
+      "session_id": "2026-08-07T07:48:30.199610",
       "etag": "W/\"1caa44084d8c59dd2346f8026b50cfef\"",
       "file_path": "documentation/HTTP-Live-Streaming/live-playlist-sliding-window-construction.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/http-live-streaming/event-playlist-construction.json": {
       "hash": "fec77b761ea3bfbe0fef1c5c694daa58242899d94dfbdd59977f5ee613b062a5",
-      "last_checked": "2026-08-04T07:45:58.575840",
+      "last_checked": "2026-08-07T07:48:34.105183",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:45:55.704077",
+      "session_id": "2026-08-07T07:48:30.199610",
       "etag": "W/\"dc8a2bab72bda9071652c60f3e1da2ee\"",
       "file_path": "documentation/HTTP-Live-Streaming/event-playlist-construction.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/http-live-streaming/creating-a-multivariant-playlist.json": {
       "hash": "8e98330701d49480c4785e4fa7ae341e17d3c83d121481fa2681a77c8cf38848",
-      "last_checked": "2026-08-04T07:45:58.689555",
+      "last_checked": "2026-08-07T07:48:34.290563",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:45:55.704077",
+      "session_id": "2026-08-07T07:48:30.199610",
       "etag": "W/\"2c5dce5fffb2808f542cdc0e4de4b650\"",
       "file_path": "documentation/HTTP-Live-Streaming/creating-a-multivariant-playlist.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/http-live-streaming/incorporating-ads-into-a-playlist.json": {
       "hash": "5ae63f48746168ce4dcb561fb9ff4c9b5aca6893f89b5abbaa4aa89ccf581d8a",
-      "last_checked": "2026-08-04T07:45:58.815164",
+      "last_checked": "2026-08-07T07:48:34.434662",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:45:55.704077",
+      "session_id": "2026-08-07T07:48:30.199610",
       "etag": "W/\"396f360ed2277b29d1a35973e17ee267\"",
       "file_path": "documentation/HTTP-Live-Streaming/incorporating-ads-into-a-playlist.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/http-live-streaming/adding-alternate-media-to-a-playlist.json": {
       "hash": "2edbe835470cec61002aeaeed476ae80579134321c4e1d40411f5df3d9bec2cb",
-      "last_checked": "2026-08-04T07:45:58.933840",
+      "last_checked": "2026-08-07T07:48:34.623992",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:45:55.704077",
+      "session_id": "2026-08-07T07:48:30.199610",
       "etag": "W/\"bd3b368bba2e82395acaa1ed71fe6414\"",
       "file_path": "documentation/HTTP-Live-Streaming/adding-alternate-media-to-a-playlist.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/http-live-streaming/hls-authoring-specification-for-apple-devices-appendixes.json": {
       "hash": "1d664e579b2e0e9dfe37bbbfb404770bc75ba33985cd62c34877798382270f86",
-      "last_checked": "2026-08-04T07:45:59.072857",
+      "last_checked": "2026-08-07T07:48:34.818546",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:45:55.704077",
+      "session_id": "2026-08-07T07:48:30.199610",
       "etag": "W/\"e908a1c599a8b3e719f79bcd7e146f2f\"",
       "file_path": "documentation/HTTP-Live-Streaming/hls-authoring-specification-for-apple-devices-appendixes.md"
     },

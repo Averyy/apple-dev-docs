@@ -1,31 +1,31 @@
 {
   "metadata": {
-    "last_updated": "2026-08-04T07:45:05.405363",
+    "last_updated": "2026-08-07T07:47:38.171028",
     "total_pages": 184,
-    "session_id": "2026-08-04T07:44:49.946811"
+    "session_id": "2026-08-07T07:47:18.278628"
   },
   "hashes": {
     "https://developer.apple.com/tutorials/data/documentation/CarKey.json": {
       "hash": "26820eef4aa6adb217d69027cf35b7a2077230033d2f9171bc163aee7fae54e6",
-      "last_checked": "2026-08-04T07:44:50.194551",
+      "last_checked": "2026-08-07T07:47:18.766543",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"17e2c6c0630969004a349cfde2720a3f\"",
       "file_path": "documentation/CarKey/CarKey.md"
     },
     "https://developer.apple.com/documentation/CarKey": {
       "hash": "26820eef4aa6adb217d69027cf35b7a2077230033d2f9171bc163aee7fae54e6",
-      "last_checked": "2026-08-04T07:44:50.100788",
+      "last_checked": "2026-08-07T07:47:18.652945",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"17e2c6c0630969004a349cfde2720a3f\"",
       "file_path": "documentation/CarKey/CarKey.md"
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/carkeyremotecontrol.json": {
       "hash": "5479d82e4f2d9fee55ff4a5816796ea170296538aa8e383d1b0073bfe252bb29",
-      "last_checked": "2026-08-04T07:44:50.477248",
+      "last_checked": "2026-08-07T07:47:19.202606",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"e8fd6454d93c646f7aa726c0a0debf2f\"",
       "file_path": "documentation/CarKey/carkeyremotecontrol.md"
     },
@@ -39,9 +39,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/carkeyremotecontrolsession.json": {
       "hash": "b83bacc791cdd8afd058597ec068fae22da06167e40e2400546c4efbdea7b22e",
-      "last_checked": "2026-08-04T07:44:50.639295",
+      "last_checked": "2026-08-07T07:47:19.527286",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"f88cbecaf1012f01294fa5f2e46c48aa\"",
       "file_path": "documentation/CarKey/carkeyremotecontrolsession.md"
     },
@@ -55,9 +55,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/carkeyremotecontrolsessiondelegate.json": {
       "hash": "ee5cb85a72e239ecb106383d1effd5f126f285bd6a78c6c8921586cc62143bea",
-      "last_checked": "2026-08-04T07:44:50.951256",
+      "last_checked": "2026-08-07T07:47:19.855605",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"ce820b1ed3639852296ee6f8e1b6aab4\"",
       "file_path": "documentation/CarKey/carkeyremotecontrolsessiondelegate.md"
     },
@@ -71,9 +71,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/vehiclereport.json": {
       "hash": "bcdb23f79f48a0f4fd6f57e8f970205cab2e22499b2db57edbcf08661c7c3de2",
-      "last_checked": "2026-08-04T07:44:51.067132",
+      "last_checked": "2026-08-07T07:47:20.187025",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"df3550b1a882d07f75bb4596f26c9ffb\"",
       "file_path": "documentation/CarKey/vehiclereport.md"
     },
@@ -87,9 +87,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/remotekeylessentryaction.json": {
       "hash": "0f7f7ad39e03ac66e3e3009e2f58fde8d61ad4afbbe250d72c2ed93db99c51ca",
-      "last_checked": "2026-08-04T07:44:51.239556",
+      "last_checked": "2026-08-07T07:47:20.504310",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"45e25e72a05fef6e1ab63a69829c3903\"",
       "file_path": "documentation/CarKey/remotekeylessentryaction.md"
     },
@@ -103,9 +103,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/remotekeylessentryenduringaction.json": {
       "hash": "cbb62fba4334b9497d9aea5e6d534860c052a42bd4c8cf64d6cdefa5c4cd4007",
-      "last_checked": "2026-08-04T07:44:51.543679",
+      "last_checked": "2026-08-07T07:47:20.814371",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"8c02f7ac9f91bd0e059c51389ee8a241\"",
       "file_path": "documentation/CarKey/remotekeylessentryenduringaction.md"
     },
@@ -119,9 +119,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/functionidentifier.json": {
       "hash": "54e1800b507db0bbfd216d3be3b399e739c8628e23c1acfa406c6cb6a45dd4c5",
-      "last_checked": "2026-08-04T07:44:51.688440",
+      "last_checked": "2026-08-07T07:47:21.143680",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"36846e589c7b34b5102faf49454886c6\"",
       "file_path": "documentation/CarKey/functionidentifier.md"
     },
@@ -135,9 +135,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/actionidentifier.json": {
       "hash": "c9d3891930948d24737d6bdca8624e42f56c75c87bb430675491df04a9a73cc0",
-      "last_checked": "2026-08-04T07:44:51.863499",
+      "last_checked": "2026-08-07T07:47:21.466009",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"3da26fb36dbdbbdd102ddec12e10a028\"",
       "file_path": "documentation/CarKey/actionidentifier.md"
     },
@@ -151,9 +151,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/carkeyerrorcode.json": {
       "hash": "f49369a9bd159f3887e59f7b23452765d86aad69473efee5dd2c12a21e2a5de2",
-      "last_checked": "2026-08-04T07:44:51.980357",
+      "last_checked": "2026-08-07T07:47:21.662363",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"61fdfc93cb037e76af78b4d806d345f1\"",
       "file_path": "documentation/CarKey/carkeyerrorcode.md"
     },
@@ -167,9 +167,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/executionstatus.json": {
       "hash": "2e1a5b218655737c5dee0f7ee665ee63231d17c7ca09547f9d63c4ba68edfe52",
-      "last_checked": "2026-08-04T07:44:52.114696",
+      "last_checked": "2026-08-07T07:47:21.841199",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"508834590b921ef59ae2b84fa43e3868\"",
       "file_path": "documentation/CarKey/executionstatus.md"
     },
@@ -183,9 +183,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/remotekeylessentryconfigurableenduringaction.json": {
       "hash": "c7cfc19c49c2e18a60a55d877c149cef91477f713433e1d350e7af7b1ab64f89",
-      "last_checked": "2026-08-04T07:44:52.276618",
+      "last_checked": "2026-08-07T07:47:22.032874",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"950285db632be8e50879aa5506abec56\"",
       "file_path": "documentation/CarKey/remotekeylessentryconfigurableenduringaction.md"
     },
@@ -199,9 +199,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/carkeyremotecontrol/start(delegate:subscriptionrange:with:).json": {
       "hash": "d6caa12d71b79d6b878ac7131709dd914f2acfd5c003846c534662ea63048fd5",
-      "last_checked": "2026-08-04T07:44:52.573473",
+      "last_checked": "2026-08-07T07:47:22.209613",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"eb56ea259fb9cacb7904b26d0db999a1\"",
       "file_path": "documentation/CarKey/carkeyremotecontrol/start-delegatesubscriptionrangewith.md"
     },
@@ -215,9 +215,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/carkeyremotecontrol/registerforlaunchoncarkeyevent().json": {
       "hash": "0aeac02e7beae2baabc553e1ac2029b121f07841eadec2e9da97c8b23ea04133",
-      "last_checked": "2026-08-04T07:44:52.865568",
+      "last_checked": "2026-08-07T07:47:22.525940",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"87213ec2a6f45853a5f4f86c0e5c90d5\"",
       "file_path": "documentation/CarKey/carkeyremotecontrol/registerforlaunchoncarkeyevent.md"
     },
@@ -231,9 +231,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/carkeyremotecontrol/unregisterforlaunchoncarkeyevent().json": {
       "hash": "c5a9e4dd70794ae2e308bdb1f439f5ac0d58a198f7e2e4a9199dd7f39b887a52",
-      "last_checked": "2026-08-04T07:44:53.032787",
+      "last_checked": "2026-08-07T07:47:22.847530",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"764c7c953f402492a099310653cda9aa\"",
       "file_path": "documentation/CarKey/carkeyremotecontrol/unregisterforlaunchoncarkeyevent.md"
     },
@@ -247,9 +247,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/carkeyremotecontrolsession/perform(_:)-8ac0c.json": {
       "hash": "981651c472b787d17bcb83a29c644c7fd4ebba35382b5fbc0955a83f745c92e0",
-      "last_checked": "2026-08-04T07:44:53.225790",
+      "last_checked": "2026-08-07T07:47:23.018783",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"d7b71c49f7948e2e9b12c78ba42eecc1\"",
       "file_path": "documentation/CarKey/carkeyremotecontrolsession/perform-8ac0c.md"
     },
@@ -263,9 +263,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/carkeyremotecontrolsession/perform(_:)-7mpsy.json": {
       "hash": "16d71e4e8df1e4f57591e31ec2d26b7997ddc7d71a0a47413f0daab83cf7617f",
-      "last_checked": "2026-08-04T07:44:53.380303",
+      "last_checked": "2026-08-07T07:47:23.195961",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"57dddca955be850cf96d51f105dfdfa6\"",
       "file_path": "documentation/CarKey/carkeyremotecontrolsession/perform-7mpsy.md"
     },
@@ -279,9 +279,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/carkeyremotecontrolsession/sendpassthroughdata(_:tovehicle:).json": {
       "hash": "a2354d31f3b935d5a5d3f85e8b06c9b3c21f238f473b9e0a5be65fbd94ea5d6a",
-      "last_checked": "2026-08-04T07:44:53.507965",
+      "last_checked": "2026-08-07T07:47:23.394077",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"e3b353d4a9ef930a76a04411f636429f\"",
       "file_path": "documentation/CarKey/carkeyremotecontrolsession/sendpassthroughdata-tovehicle.md"
     },
@@ -295,9 +295,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/carkeyremotecontrolsession/end().json": {
       "hash": "ba5f11bff7f58c7ede9afa58963f44687655f9e499c3e686b2baeb4710ed7edb",
-      "last_checked": "2026-08-04T07:44:53.686973",
+      "last_checked": "2026-08-07T07:47:23.723227",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"5d965843446d694d2f1663349e138dbb\"",
       "file_path": "documentation/CarKey/carkeyremotecontrolsession/end.md"
     },
@@ -311,9 +311,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/carkeyremotecontrolsession/vehiclereports.json": {
       "hash": "b000d116862412961c19b07098f833e249e7fdac1dbaf0f679ea764138415cbd",
-      "last_checked": "2026-08-04T07:44:53.858082",
+      "last_checked": "2026-08-07T07:47:23.924483",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"babc5429937c84f2a087ec141b3577c1\"",
       "file_path": "documentation/CarKey/carkeyremotecontrolsession/vehiclereports.md"
     },
@@ -327,9 +327,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/carkeyremotecontrolsession/ispassiveentryavailable(forvehicle:).json": {
       "hash": "6b13c934a0ed5e4c738b8c0f3f09232994c08b6af32f8cfff14bed21330e2530",
-      "last_checked": "2026-08-04T07:44:54.010975",
+      "last_checked": "2026-08-07T07:47:24.252875",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"1fb876d06e87ca025110be708bd4ae7b\"",
       "file_path": "documentation/CarKey/carkeyremotecontrolsession/ispassiveentryavailable-forvehicle.md"
     },
@@ -343,9 +343,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/carkeyremotecontrolsession/attestation.json": {
       "hash": "be69656bb69e76800d419f0aebfa08a0a9994ebaa5c38877ddb9765dae807f3e",
-      "last_checked": "2026-08-04T07:44:54.132925",
+      "last_checked": "2026-08-07T07:47:24.432328",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"c6aa32c8f4d4e45d1510cd37cc980796\"",
       "file_path": "documentation/CarKey/carkeyremotecontrolsession/attestation.md"
     },
@@ -359,9 +359,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/carkeyremotecontrolsession/perform(_:continuationstrategy:).json": {
       "hash": "4387bd8d9599ab8eec7b304ce5691aa7fccd06c721f61f998be6deda8dc043db",
-      "last_checked": "2026-08-04T07:44:54.455038",
+      "last_checked": "2026-08-07T07:47:24.619317",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"b5de0f6811403079fccb1fa6e50f8b48\"",
       "file_path": "documentation/CarKey/carkeyremotecontrolsession/perform-continuationstrategy.md"
     },
@@ -375,9 +375,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/carkeyremotecontrolsession/sign(data:forvehicle:).json": {
       "hash": "0a8469835b919805b5a2137491b5e518bdffeeee55e8f4c2a9399a578391e092",
-      "last_checked": "2026-08-04T07:44:54.574451",
+      "last_checked": "2026-08-07T07:47:24.793400",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"36c41b65694404dfd2167204bfc145cc\"",
       "file_path": "documentation/CarKey/carkeyremotecontrolsession/sign-dataforvehicle.md"
     },
@@ -391,9 +391,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/carkeyremotecontrolsession/continuationstrategy.json": {
       "hash": "a585f5fb1e916ac32d6d9680fbc283f2e233e84d11b8fdef7a5754ce3d7769ba",
-      "last_checked": "2026-08-04T07:44:54.748038",
+      "last_checked": "2026-08-07T07:47:24.974252",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"87e7a0d22e7d2dfb2615ea0647c92366\"",
       "file_path": "documentation/CarKey/carkeyremotecontrolsession/continuationstrategy.md"
     },
@@ -407,9 +407,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/carkeyremotecontrolsessiondelegate/remotecontrolsession(_:vehicledidupdatereport:).json": {
       "hash": "db68a1751cdef834378c8a8a879b0ca81f3cf1d23191b41e1d2b422da432be11",
-      "last_checked": "2026-08-04T07:44:55.033752",
+      "last_checked": "2026-08-07T07:47:25.296450",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"5a1d4fa662328e705fe933c180b8c725\"",
       "file_path": "documentation/CarKey/carkeyremotecontrolsessiondelegate/remotecontrolsession-vehicledidupdatereport.md"
     },
@@ -423,9 +423,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/carkeyremotecontrolsessiondelegate/remotecontrolsession(_:didreceivepassthroughdata:fromvehicle:).json": {
       "hash": "645eab0104506072d82440d6a3d30ac6b1d401a9f906a8e4c8352456f1d9c56d",
-      "last_checked": "2026-08-04T07:44:55.191365",
+      "last_checked": "2026-08-07T07:47:25.476196",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"abedd958a83cb1631cf395ff929c6646\"",
       "file_path": "documentation/CarKey/carkeyremotecontrolsessiondelegate/remotecontrolsession-didreceivepassthroughdatafromvehicle.md"
     },
@@ -439,9 +439,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/carkeyremotecontrolsessiondelegate/remotecontrolsession(_:didinvalidatewitherror:).json": {
       "hash": "1fb81d2f57d92bfa599544341fe12d0e5efee79bb127f6bed05713d0a093165a",
-      "last_checked": "2026-08-04T07:44:55.356541",
+      "last_checked": "2026-08-07T07:47:25.807905",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"71cb3d368256d176ecfa83a3408530ad\"",
       "file_path": "documentation/CarKey/carkeyremotecontrolsessiondelegate/remotecontrolsession-didinvalidatewitherror.md"
     },
@@ -455,9 +455,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/carkeyremotecontrolsessiondelegate/remotecontrolsession(_:didcreatekey:forvehicle:).json": {
       "hash": "c32e155c5bb774585da70f15fab05bd5998f6e05a17af19974a1b3db162566fc",
-      "last_checked": "2026-08-04T07:44:55.509395",
+      "last_checked": "2026-08-07T07:47:25.999290",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"88ae6925b1b5df5df575bd221dca9f56\"",
       "file_path": "documentation/CarKey/carkeyremotecontrolsessiondelegate/remotecontrolsession-didcreatekeyforvehicle.md"
     },
@@ -471,9 +471,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/vehiclereport/identifier.json": {
       "hash": "3087cecc6746b283b0a8db80381fe5de5d401d8ce4ac7ffc2d85d4099fd57d02",
-      "last_checked": "2026-08-04T07:44:55.614761",
+      "last_checked": "2026-08-07T07:47:26.299664",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"05230980e9920d738cea118cb6278525\"",
       "file_path": "documentation/CarKey/vehiclereport/identifier.md"
     },
@@ -487,9 +487,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/vehiclereport/isconnected.json": {
       "hash": "522d73974fa9e9fe787f6d094a134de8fb0a413164d56e426bb04e0382166c2f",
-      "last_checked": "2026-08-04T07:44:55.806009",
+      "last_checked": "2026-08-07T07:47:26.616492",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"3ebc355d80059c8050375640664b9d87\"",
       "file_path": "documentation/CarKey/vehiclereport/isconnected.md"
     },
@@ -503,9 +503,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/vehiclereport/supportedfunctions.json": {
       "hash": "4025bb03694020c71ba6aa401fc91ddf887efe0cbe96222d6577157f91f6c6b4",
-      "last_checked": "2026-08-04T07:44:55.927047",
+      "last_checked": "2026-08-07T07:47:26.794522",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"fa222b6874a9b3ff2f8e30a4ef43c768\"",
       "file_path": "documentation/CarKey/vehiclereport/supportedfunctions.md"
     },
@@ -519,9 +519,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/vehiclereport/status(for:).json": {
       "hash": "29fc28b57772a830f94059ba20ae5f713a98975d9fcfa749ebae242a1134603e",
-      "last_checked": "2026-08-04T07:44:56.106056",
+      "last_checked": "2026-08-07T07:47:26.989812",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"beec37ce817cf5a61864dc1e63e765c8\"",
       "file_path": "documentation/CarKey/vehiclereport/status-for.md"
     },
@@ -535,9 +535,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/functionstatus.json": {
       "hash": "3c3ddb3228e0f0a124295955022fac16aa40c0d6fb63fa0cbe0342a20cf450e4",
-      "last_checked": "2026-08-04T07:44:56.231434",
+      "last_checked": "2026-08-07T07:47:27.172202",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"b70e26e97243b4f3d8d4f0839ace6b55\"",
       "file_path": "documentation/CarKey/functionstatus.md"
     },
@@ -551,9 +551,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/vehiclereport/proprietarydata(for:).json": {
       "hash": "78c4d141a18cb76a5b475c4b1d4b90b2093b19755918a26b102a49b68c39fc17",
-      "last_checked": "2026-08-04T07:44:56.349224",
+      "last_checked": "2026-08-07T07:47:27.357792",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"b925abfe3426f4a8e359cdf4a5f3ccca\"",
       "file_path": "documentation/CarKey/vehiclereport/proprietarydata-for.md"
     },
@@ -567,9 +567,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/remotekeylessentryaction/init(functionid:actionid:vehicleid:).json": {
       "hash": "dede8077587da671f7212e91637d7c322c8a743237e2c4b2e155db99cd4ff1fb",
-      "last_checked": "2026-08-04T07:44:56.488404",
+      "last_checked": "2026-08-07T07:47:27.542575",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"01ea3ef2c4b2e5243560a3b96d4dcdc5\"",
       "file_path": "documentation/CarKey/remotekeylessentryaction/init-functionidactionidvehicleid.md"
     },
@@ -583,9 +583,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/remotekeylessentryaction/executionrequest.json": {
       "hash": "324989186da39e2bfb7d4f1fd97ba2264dc5c36c5207f66b4cf7410a358e3fb1",
-      "last_checked": "2026-08-04T07:44:56.607752",
+      "last_checked": "2026-08-07T07:47:27.793189",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"3b85acf2f4ceaf4270efa601a8722aa7\"",
       "file_path": "documentation/CarKey/remotekeylessentryaction/executionrequest.md"
     },
@@ -599,9 +599,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/remotekeylessentryaction/functionid.json": {
       "hash": "9104ff2bc23058ce219024b4e28c847f661ba69e81e018c3aa42018bd74f2f23",
-      "last_checked": "2026-08-04T07:44:56.758471",
+      "last_checked": "2026-08-07T07:47:27.965871",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"b3f98c71e34d9091580fd94affd0ee2f\"",
       "file_path": "documentation/CarKey/remotekeylessentryaction/functionid.md"
     },
@@ -615,9 +615,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/remotekeylessentryaction/actionid.json": {
       "hash": "7e3c8819926649b7784188d31bbfe4c9740a1211eca73e3005da361b13372bfd",
-      "last_checked": "2026-08-04T07:44:56.880868",
+      "last_checked": "2026-08-07T07:47:28.195296",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"83b998a86cef7adf4901fa0f299d2755\"",
       "file_path": "documentation/CarKey/remotekeylessentryaction/actionid.md"
     },
@@ -631,9 +631,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/remotekeylessentryaction/recipientvehicleid.json": {
       "hash": "f880a64182929da38d406d85eaddcd57e48c8c9adec664bbce05d53c6069cf3d",
-      "last_checked": "2026-08-04T07:44:57.162561",
+      "last_checked": "2026-08-07T07:47:28.363635",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"6ed4057ec01b33163ba00c8f7c0577bc\"",
       "file_path": "documentation/CarKey/remotekeylessentryaction/recipientvehicleid.md"
     },
@@ -647,9 +647,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/remotekeylessentryenduringaction/init(functionid:actionid:vehicleid:).json": {
       "hash": "9a991d2aeeb524b0f3e773cf5215b99df5c8dce14fc7ca4e62a30d709d20d125",
-      "last_checked": "2026-08-04T07:44:57.312194",
+      "last_checked": "2026-08-07T07:47:28.671495",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"dc541d15c31d9bf508cda9bc4c532732\"",
       "file_path": "documentation/CarKey/remotekeylessentryenduringaction/init-functionidactionidvehicleid.md"
     },
@@ -663,9 +663,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/remotekeylessentryenduringaction/enduringexecutionrequest.json": {
       "hash": "16da9b2cc346e25213f45dd10c28a7ea6f27ce4b746dad98a97ca40e5c293fdc",
-      "last_checked": "2026-08-04T07:44:57.483798",
+      "last_checked": "2026-08-07T07:47:28.850835",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"d10ccc5e06cda93b6079811569456d1f\"",
       "file_path": "documentation/CarKey/remotekeylessentryenduringaction/enduringexecutionrequest.md"
     },
@@ -679,9 +679,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/remotekeylessentryenduringaction/functionid.json": {
       "hash": "24ecee5f26bd23c880966f0bd6b98069efa60a9937d970fbeda903f4530ae0ac",
-      "last_checked": "2026-08-04T07:44:57.588726",
+      "last_checked": "2026-08-07T07:47:29.037275",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"3415bf2b5483db52fae382cdc9842c24\"",
       "file_path": "documentation/CarKey/remotekeylessentryenduringaction/functionid.md"
     },
@@ -695,9 +695,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/remotekeylessentryenduringaction/actionid.json": {
       "hash": "1ae43ac256e2d6d03c2a7e5166c5d64912d0dbf0122711ebefbb650d95a0a18b",
-      "last_checked": "2026-08-04T07:44:57.770851",
+      "last_checked": "2026-08-07T07:47:29.214416",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"b762d16e596107d8fc6d3cdffa8de4ec\"",
       "file_path": "documentation/CarKey/remotekeylessentryenduringaction/actionid.md"
     },
@@ -711,9 +711,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/remotekeylessentryenduringaction/recipientvehicleid.json": {
       "hash": "6baf8bd1122bde03adf4b1544475518064851480363b90ff6ea25531a90bbf2a",
-      "last_checked": "2026-08-04T07:44:57.925322",
+      "last_checked": "2026-08-07T07:47:29.384564",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"fb017d27bf820c0a0d2c221c106f0a09\"",
       "file_path": "documentation/CarKey/remotekeylessentryenduringaction/recipientvehicleid.md"
     },
@@ -727,9 +727,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/functionidentifier/init(rawvalue:).json": {
       "hash": "63ddac7303d6e68f4278a999597bb50763a9611580c1591275abff88985a179e",
-      "last_checked": "2026-08-04T07:44:58.077441",
+      "last_checked": "2026-08-07T07:47:29.554762",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"0bdd0e1fa2a02aba4587586c3871c17d\"",
       "file_path": "documentation/CarKey/functionidentifier/init-rawvalue.md"
     },
@@ -743,9 +743,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/functionidentifier/init(_:).json": {
       "hash": "56d794fcda679f238263bd057a315a4a80047d31e27e195ae4f3d902f49dcc91",
-      "last_checked": "2026-08-04T07:44:58.190409",
+      "last_checked": "2026-08-07T07:47:29.734623",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"1608bf2c34b950d6d5d8e3a947ecb4c3\"",
       "file_path": "documentation/CarKey/functionidentifier/init.md"
     },
@@ -759,9 +759,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/actionidentifier/init(rawvalue:).json": {
       "hash": "12e611341d27f90c3444beeda358b714d01f62d3bbcbbfee59a19bb5fe6ef298",
-      "last_checked": "2026-08-04T07:44:58.596959",
+      "last_checked": "2026-08-07T07:47:30.108833",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"f105f9c7125086e955de605cdca59b4d\"",
       "file_path": "documentation/CarKey/actionidentifier/init-rawvalue.md"
     },
@@ -775,9 +775,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/actionidentifier/init(_:).json": {
       "hash": "1b753d7bc401f19497030cd2558f3cb45c59ea71bd45f70bede16aa8276c21b5",
-      "last_checked": "2026-08-04T07:44:58.727021",
+      "last_checked": "2026-08-07T07:47:30.296194",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"9a4ffeb0370c342f3bd90c89322a7ae0\"",
       "file_path": "documentation/CarKey/actionidentifier/init.md"
     },
@@ -791,9 +791,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/carkeyerrorcode/anotherrequestinprogress.json": {
       "hash": "f009bd6ee70159a56d6192e3c9b10fbd4c04f800f54fde6bca028c6ca03daae4",
-      "last_checked": "2026-08-04T07:44:59.041371",
+      "last_checked": "2026-08-07T07:47:30.644896",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"47e3aee34f984c7884cdf46362c63e60\"",
       "file_path": "documentation/CarKey/carkeyerrorcode/anotherrequestinprogress.md"
     },
@@ -807,9 +807,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/carkeyerrorcode/clientinbackground.json": {
       "hash": "9853e56b22f7ef1b7e8416a42c555f31f4db2455c98dbf6faccf8e664fce006e",
-      "last_checked": "2026-08-04T07:44:59.190893",
+      "last_checked": "2026-08-07T07:47:30.831906",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"bb266c3999944e71d5e17db9cdfa3812\"",
       "file_path": "documentation/CarKey/carkeyerrorcode/clientinbackground.md"
     },
@@ -823,9 +823,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/carkeyerrorcode/enduringrequestusingeventmethod.json": {
       "hash": "a7b4129382779fe5644bd80bb8a6d81921ec38a3b2cfbea58d3ffb663d49f2d2",
-      "last_checked": "2026-08-04T07:44:59.346604",
+      "last_checked": "2026-08-07T07:47:31.026956",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"e9e384140d2d548fcb7ba3235281dfb8\"",
       "file_path": "documentation/CarKey/carkeyerrorcode/enduringrequestusingeventmethod.md"
     },
@@ -839,9 +839,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/carkeyerrorcode/featurenotsupported.json": {
       "hash": "11bdc2a5cc55a6229435aaafda56b5903efbc9fec2d8f8cb32c2b3c03b0eb808",
-      "last_checked": "2026-08-04T07:44:59.502497",
+      "last_checked": "2026-08-07T07:47:31.345289",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"bc8543b8114e82cce441544250cdbc39\"",
       "file_path": "documentation/CarKey/carkeyerrorcode/featurenotsupported.md"
     },
@@ -855,9 +855,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/carkeyerrorcode/functionunknown.json": {
       "hash": "3d200d92d08005470f1ec875388cb880fbb3ef376af9804b643238f36c31fb0d",
-      "last_checked": "2026-08-04T07:44:59.666401",
+      "last_checked": "2026-08-07T07:47:31.518272",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"590f36208dae307333b180d69236d77e\"",
       "file_path": "documentation/CarKey/carkeyerrorcode/functionunknown.md"
     },
@@ -871,9 +871,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/carkeyerrorcode/internal.json": {
       "hash": "15e761bac6c68e821edc876a53f25998dc0090709e37c63deb0525710c7ce2e4",
-      "last_checked": "2026-08-04T07:44:59.832742",
+      "last_checked": "2026-08-07T07:47:31.698889",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"7b27e76761c2162d5bf67303e16f2c43\"",
       "file_path": "documentation/CarKey/carkeyerrorcode/internal.md"
     },
@@ -887,9 +887,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/carkeyerrorcode/messagetoolong.json": {
       "hash": "7adcc401c0d0f67d102505c6a7cadaf67a7688eb0e6611657af3a7388e5eea2c",
-      "last_checked": "2026-08-04T07:44:59.940834",
+      "last_checked": "2026-08-07T07:47:31.884507",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"e2a68cf3d85f1d04a389c374cd3de7aa\"",
       "file_path": "documentation/CarKey/carkeyerrorcode/messagetoolong.md"
     },
@@ -903,9 +903,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/carkeyerrorcode/requestnotinprogress.json": {
       "hash": "65a1851a8a7f5c0efec259b7c3359400e55f4dae7ed5679d28ddc3da1be72bbf",
-      "last_checked": "2026-08-04T07:45:00.082022",
+      "last_checked": "2026-08-07T07:47:32.067457",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"32e1db792ccc9cd460709e08f847d5ff\"",
       "file_path": "documentation/CarKey/carkeyerrorcode/requestnotinprogress.md"
     },
@@ -919,9 +919,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/carkeyerrorcode/requesttimedout.json": {
       "hash": "c66693c3e2ac697153cc74b3644250057764d31357bf6cc69818b9bf1cc3a495",
-      "last_checked": "2026-08-04T07:45:00.231779",
+      "last_checked": "2026-08-07T07:47:32.266401",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"be43426b94429caeef35053d478b38a4\"",
       "file_path": "documentation/CarKey/carkeyerrorcode/requesttimedout.md"
     },
@@ -935,9 +935,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/carkeyerrorcode/securityviolation.json": {
       "hash": "1151a21b5a4bd9d106c9cca027b0765e58bbc1f7f500bebe4531aa28d65a9c5a",
-      "last_checked": "2026-08-04T07:45:00.386566",
+      "last_checked": "2026-08-07T07:47:32.430214",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"0f4900492053e5184763cd3e0b00200f\"",
       "file_path": "documentation/CarKey/carkeyerrorcode/securityviolation.md"
     },
@@ -951,9 +951,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/carkeyerrorcode/sessionnotactive.json": {
       "hash": "bd684dc32163917e04f5f2a6126b491827e8f2c2a1d0d9c790af1fb00860d59a",
-      "last_checked": "2026-08-04T07:45:00.554826",
+      "last_checked": "2026-08-07T07:47:32.618446",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"d5da37204f8c654448f3ec8f49f34ffb\"",
       "file_path": "documentation/CarKey/carkeyerrorcode/sessionnotactive.md"
     },
@@ -967,9 +967,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/carkeyerrorcode/vehiclenotconnected.json": {
       "hash": "f2aa23b85725c57cfd296de63eac71301d6c1fde3b8efd9eb0658906b1d9b8b1",
-      "last_checked": "2026-08-04T07:45:00.851984",
+      "last_checked": "2026-08-07T07:47:32.943375",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"adffef86f81424f326e87a9c2ce868cd\"",
       "file_path": "documentation/CarKey/carkeyerrorcode/vehiclenotconnected.md"
     },
@@ -983,9 +983,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/carkeyerrorcode/vehiclenotfound.json": {
       "hash": "33ec761ef7dd24e8852f750e2d75c42a3e1c365b1af476af6b876e4dd57e1f21",
-      "last_checked": "2026-08-04T07:45:00.978369",
+      "last_checked": "2026-08-07T07:47:33.076843",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"f10d7fade8eb8f098116fc2361b0e0e2\"",
       "file_path": "documentation/CarKey/carkeyerrorcode/vehiclenotfound.md"
     },
@@ -999,9 +999,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/executionstatus/init(rawvalue:).json": {
       "hash": "31cd3c1532d055ed39de615cf3b145c2560f2eb9f0e6cf04c553b46e7ca23cd8",
-      "last_checked": "2026-08-04T07:45:01.195213",
+      "last_checked": "2026-08-07T07:47:33.255835",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"e7f4898019c136ef436949692b7df26a\"",
       "file_path": "documentation/CarKey/executionstatus/init-rawvalue.md"
     },
@@ -1015,9 +1015,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/executionstatus/init(_:).json": {
       "hash": "2abd8e9ede43cda256f6abca1521b923680f57e667bc7b6f357d1ca484eb7756",
-      "last_checked": "2026-08-04T07:45:01.360630",
+      "last_checked": "2026-08-07T07:47:33.457996",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"539b22427f52aee8b429864a424f131d\"",
       "file_path": "documentation/CarKey/executionstatus/init.md"
     },
@@ -1031,9 +1031,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/remotekeylessentryaction/executionrequest/results().json": {
       "hash": "d1aef318e27606c0a5928acde5dc0fc38c568fcb6d1edbb09642cd9ebd49314c",
-      "last_checked": "2026-08-04T07:45:01.646098",
+      "last_checked": "2026-08-07T07:47:33.941279",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"6d630bec2b093b045d69fc7119598c80\"",
       "file_path": "documentation/CarKey/remotekeylessentryaction/executionrequest/results.md"
     },
@@ -1047,9 +1047,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/remotekeylessentryconfigurableenduringaction/enduringexecutionrequest.json": {
       "hash": "5299e77d7efba1741e5ddd877a4b75deb945545053c9204c51de815891baca3b",
-      "last_checked": "2026-08-04T07:45:01.776144",
+      "last_checked": "2026-08-07T07:47:34.129606",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"988bdde7db24e3a5b2ef30a56f1afa2a\"",
       "file_path": "documentation/CarKey/remotekeylessentryconfigurableenduringaction/enduringexecutionrequest.md"
     },
@@ -1063,9 +1063,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/remotekeylessentryconfigurableenduringaction/init(functionid:actionid:vehicleid:).json": {
       "hash": "b9c6479ed610b1226f89d997bfbf348edcc7222dbf615b98f455eea866eb1b39",
-      "last_checked": "2026-08-04T07:45:01.903310",
+      "last_checked": "2026-08-07T07:47:34.317787",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"39b0c51828857492962c6fd94b7c2cfa\"",
       "file_path": "documentation/CarKey/remotekeylessentryconfigurableenduringaction/init-functionidactionidvehicleid.md"
     },
@@ -1079,9 +1079,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/remotekeylessentryconfigurableenduringaction/actionid.json": {
       "hash": "cb339b2f3dbfb49f8cc3247156433855c90b4c0dd0893d77bd55e4cf23c7d6ac",
-      "last_checked": "2026-08-04T07:45:02.060521",
+      "last_checked": "2026-08-07T07:47:34.495755",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"2e4a5c02c4212ffa08c891800fcfbd03\"",
       "file_path": "documentation/CarKey/remotekeylessentryconfigurableenduringaction/actionid.md"
     },
@@ -1095,9 +1095,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/remotekeylessentryconfigurableenduringaction/functionid.json": {
       "hash": "e12b726da053d4a82df53547d13a1e4e9218a4ec17fc30054357ba843ff28816",
-      "last_checked": "2026-08-04T07:45:02.225338",
+      "last_checked": "2026-08-07T07:47:34.632232",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"4d23ed08c587a001294f513599177bbb\"",
       "file_path": "documentation/CarKey/remotekeylessentryconfigurableenduringaction/functionid.md"
     },
@@ -1111,9 +1111,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/remotekeylessentryconfigurableenduringaction/recipientvehicleid.json": {
       "hash": "d9478825a7dc92f9951575b7835855f804a85220bd3df819448c8f4659b0fc39",
-      "last_checked": "2026-08-04T07:45:02.342706",
+      "last_checked": "2026-08-07T07:47:34.826105",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"4e6ce99f2cf7edb34982f26d32881897\"",
       "file_path": "documentation/CarKey/remotekeylessentryconfigurableenduringaction/recipientvehicleid.md"
     },
@@ -1127,9 +1127,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/carkeyremotecontrolsession/attestation/appbundleidentifier.json": {
       "hash": "14106ec2b77895d99f4187ad0d6bd79819e82946b03278ed9ec42e22b2607815",
-      "last_checked": "2026-08-04T07:45:02.454787",
+      "last_checked": "2026-08-07T07:47:34.961773",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"657d0811aafe2b9d34fd52ae8878c99e\"",
       "file_path": "documentation/CarKey/carkeyremotecontrolsession/attestation/appbundleidentifier.md"
     },
@@ -1143,9 +1143,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/carkeyremotecontrolsession/attestation/nonce.json": {
       "hash": "ebb704b01ba766a1ff13c1081d78412f393403b096f7b3afbb17c3f447f5ffd3",
-      "last_checked": "2026-08-04T07:45:02.569792",
+      "last_checked": "2026-08-07T07:47:35.156920",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"7b229eda8fdda596728c173df6ec188e\"",
       "file_path": "documentation/CarKey/carkeyremotecontrolsession/attestation/nonce.md"
     },
@@ -1159,9 +1159,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/carkeyremotecontrolsession/attestation/signature.json": {
       "hash": "353c30fce9ff4d2f04763e00f3713650fa35d4a69c470dd40fa2dd7ee09110dd",
-      "last_checked": "2026-08-04T07:45:02.821797",
+      "last_checked": "2026-08-07T07:47:35.283641",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"e38e6fe72d902735929c0a0f5f6a2eb7\"",
       "file_path": "documentation/CarKey/carkeyremotecontrolsession/attestation/signature.md"
     },
@@ -1175,9 +1175,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/carkeyremotecontrolsession/attestation/signeddata.json": {
       "hash": "d27f0948938c995a8d4bb59a6bb4de7a67aa8d0020da3a6d73d44388328c8fca",
-      "last_checked": "2026-08-04T07:45:02.948125",
+      "last_checked": "2026-08-07T07:47:35.458431",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"5eb7a949854d130b8dc1a4d1b214a47a\"",
       "file_path": "documentation/CarKey/carkeyremotecontrolsession/attestation/signeddata.md"
     },
@@ -1191,9 +1191,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/carkeyremotecontrolsession/continuationstrategy/automatic.json": {
       "hash": "5602d93acb7a18ab077e8f10d01d6bc764e6b5ca19743314eb2809787a3f0cf7",
-      "last_checked": "2026-08-04T07:45:03.088359",
+      "last_checked": "2026-08-07T07:47:35.644600",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"3cff348fb6f24b3355776c6fc86a7c32\"",
       "file_path": "documentation/CarKey/carkeyremotecontrolsession/continuationstrategy/automatic.md"
     },
@@ -1207,9 +1207,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/carkeyremotecontrolsession/continuationstrategy/manual.json": {
       "hash": "a5f1cb14a8383d7aa049815c25ea668d9c35501cd270786642fe626ab3a49b8f",
-      "last_checked": "2026-08-04T07:45:03.239962",
+      "last_checked": "2026-08-07T07:47:35.789412",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"7c3e4f031384ac3a3c6304ec7a13eabc\"",
       "file_path": "documentation/CarKey/carkeyremotecontrolsession/continuationstrategy/manual.md"
     },
@@ -1223,9 +1223,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/functionstatus/init(rawvalue:).json": {
       "hash": "415e7e4d851fd1665769fd80d7cfe25b17c0ae8431cf70ca4d706242146a123d",
-      "last_checked": "2026-08-04T07:45:03.348714",
+      "last_checked": "2026-08-07T07:47:35.933580",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"10088df59848393b4cfb992098733fd2\"",
       "file_path": "documentation/CarKey/functionstatus/init-rawvalue.md"
     },
@@ -1239,9 +1239,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/functionstatus/init(_:).json": {
       "hash": "8af09a06b520dd04be7af17c137140a29dd83cd9792f0c69472214e32542f04b",
-      "last_checked": "2026-08-04T07:45:03.461941",
+      "last_checked": "2026-08-07T07:47:36.111128",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"f0c91951aab8eecf3fbd11d663491bb4\"",
       "file_path": "documentation/CarKey/functionstatus/init.md"
     },
@@ -1255,9 +1255,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/remotekeylessentryenduringaction/enduringexecutionrequest/results().json": {
       "hash": "41ef7381abc0f7831610042244be6f412d7413348654a5f6092e4a1d5a9334a8",
-      "last_checked": "2026-08-04T07:45:03.814111",
+      "last_checked": "2026-08-07T07:47:36.474057",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"d7de2b3da19a26aa89f25a106724eb0a\"",
       "file_path": "documentation/CarKey/remotekeylessentryenduringaction/enduringexecutionrequest/results.md"
     },
@@ -1271,9 +1271,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/remotekeylessentryenduringaction/enduringexecutionrequest/stop().json": {
       "hash": "5aaef54bb63e555ecd17bd5a20f356e689996a92e8322faef29e31bcfbf8efce",
-      "last_checked": "2026-08-04T07:45:04.105754",
+      "last_checked": "2026-08-07T07:47:36.675011",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"f72ccd23b4acf8007eb71d3342a2c26e\"",
       "file_path": "documentation/CarKey/remotekeylessentryenduringaction/enduringexecutionrequest/stop.md"
     },
@@ -1287,9 +1287,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/remotekeylessentryconfigurableenduringaction/enduringexecutionrequest/continuationrequest.json": {
       "hash": "77e262dadf872c8f9f255e6d94442962e53969b5aed2b9173aeb7b2afb1db122",
-      "last_checked": "2026-08-04T07:45:04.268246",
+      "last_checked": "2026-08-07T07:47:36.865321",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"928b66e3bf4be26dba418bbfa4294ce8\"",
       "file_path": "documentation/CarKey/remotekeylessentryconfigurableenduringaction/enduringexecutionrequest/continuationrequest.md"
     },
@@ -1303,9 +1303,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/remotekeylessentryconfigurableenduringaction/enduringexecutionrequest/eventstream.json": {
       "hash": "21c374443cf242e9d569e0ff5a6b80046bb8812e48b1243fc5b9d87e22f3f743",
-      "last_checked": "2026-08-04T07:45:04.431247",
+      "last_checked": "2026-08-07T07:47:37.058238",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"3e8f94e5038669301c0de0e5b05e7335\"",
       "file_path": "documentation/CarKey/remotekeylessentryconfigurableenduringaction/enduringexecutionrequest/eventstream.md"
     },
@@ -1319,9 +1319,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/remotekeylessentryconfigurableenduringaction/enduringexecutionrequest/results().json": {
       "hash": "0afcdc1c7190ac9297a5aeb54fc5e031386b0389660049990842a378e395b246",
-      "last_checked": "2026-08-04T07:45:04.558156",
+      "last_checked": "2026-08-07T07:47:37.245833",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"6749eca0f1897ba6d5b4a3a1552b9a87\"",
       "file_path": "documentation/CarKey/remotekeylessentryconfigurableenduringaction/enduringexecutionrequest/results.md"
     },
@@ -1335,9 +1335,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/remotekeylessentryconfigurableenduringaction/enduringexecutionrequest/stop().json": {
       "hash": "0db81a0f8b33095fd7fd2b575c2689285028527906e21345f6f0e4818911b20f",
-      "last_checked": "2026-08-04T07:45:04.680121",
+      "last_checked": "2026-08-07T07:47:37.442505",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"f49e697657b381de2967a8c4ace8bd48\"",
       "file_path": "documentation/CarKey/remotekeylessentryconfigurableenduringaction/enduringexecutionrequest/stop.md"
     },
@@ -1351,9 +1351,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/remotekeylessentryconfigurableenduringaction/enduringexecutionrequest/event.json": {
       "hash": "0c1bf79978257feb54950438b742149af430337cd7699de364f2e44760dd604f",
-      "last_checked": "2026-08-04T07:45:04.865969",
+      "last_checked": "2026-08-07T07:47:37.629692",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"f6577aee7ce7096b74d6434e3e4dcb5e\"",
       "file_path": "documentation/CarKey/remotekeylessentryconfigurableenduringaction/enduringexecutionrequest/event.md"
     },
@@ -1367,9 +1367,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/remotekeylessentryconfigurableenduringaction/enduringexecutionrequest/continuationrequest/data.json": {
       "hash": "2e9c01099bf9edc5474385924a52a7828fee41f14bbf84df5275d6d14fb4c522",
-      "last_checked": "2026-08-04T07:45:05.016007",
+      "last_checked": "2026-08-07T07:47:37.820154",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"1f75a89e7bc55a55192b6c46cb37b329\"",
       "file_path": "documentation/CarKey/remotekeylessentryconfigurableenduringaction/enduringexecutionrequest/continuationrequest/data.md"
     },
@@ -1383,9 +1383,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/remotekeylessentryconfigurableenduringaction/enduringexecutionrequest/continuationrequest/confirm(_:).json": {
       "hash": "eaab7d7f15c3ca0a6b73c072fd7ba3acd8d5bd24d85179734138ecc5ee2c64ec",
-      "last_checked": "2026-08-04T07:45:05.209328",
+      "last_checked": "2026-08-07T07:47:37.959358",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"f122263fa434b40eb0bf4be1fecbb7fb\"",
       "file_path": "documentation/CarKey/remotekeylessentryconfigurableenduringaction/enduringexecutionrequest/continuationrequest/confirm.md"
     },
@@ -1399,9 +1399,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/remotekeylessentryconfigurableenduringaction/enduringexecutionrequest/event/receivedcontinuationrequest(_:).json": {
       "hash": "e6ac154a129b33b544855b11387a32bf3ab0fe9ffe9f608df6b55e9e3bfdd1e3",
-      "last_checked": "2026-08-04T07:45:05.400411",
+      "last_checked": "2026-08-07T07:47:38.145003",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"98bb9efa5e95630452bb1af64b246530\"",
       "file_path": "documentation/CarKey/remotekeylessentryconfigurableenduringaction/enduringexecutionrequest/event/receivedcontinuationrequest.md"
     },
@@ -1415,9 +1415,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/functionidentifier/rawvalue.json": {
       "hash": "ab1bb82423152d54dd0c48066f9c4772d8babfa96ad0251a32390b97b93e5bc6",
-      "last_checked": "2026-08-04T07:44:58.309639",
+      "last_checked": "2026-08-07T07:47:29.933307",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"bfcc878b63369e91f1b0afc152d16576\"",
       "file_path": "documentation/CarKey/functionidentifier/rawvalue.md"
     },
@@ -1431,9 +1431,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/actionidentifier/rawvalue.json": {
       "hash": "2c6783a1a613b6e1f96ae162d338214d6fec6d601ab3c29ddf2bbd89a01ff2a5",
-      "last_checked": "2026-08-04T07:44:58.853046",
+      "last_checked": "2026-08-07T07:47:30.470595",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"5e56ba0f08e952f28014d1b9b51a850a\"",
       "file_path": "documentation/CarKey/actionidentifier/rawvalue.md"
     },
@@ -1447,9 +1447,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/executionstatus/rawvalue.json": {
       "hash": "9c88e435a745e4a934e81bb6c94be9e47f41cbe4d47cdbfc9fc735a1ce2ac78d",
-      "last_checked": "2026-08-04T07:45:01.533498",
+      "last_checked": "2026-08-07T07:47:33.627613",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"3d6a4e140457ebd1e2ba16255fa67c18\"",
       "file_path": "documentation/CarKey/executionstatus/rawvalue.md"
     },
@@ -1463,9 +1463,9 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/carkey/functionstatus/rawvalue.json": {
       "hash": "e05b610e2c1555538a783202c9a5ea44bddc27a26c981fa8206484cfd9bb5208",
-      "last_checked": "2026-08-04T07:45:03.655511",
+      "last_checked": "2026-08-07T07:47:36.296655",
       "status": "unchanged",
-      "session_id": "2026-08-04T07:44:49.946811",
+      "session_id": "2026-08-07T07:47:18.278628",
       "etag": "W/\"0efab1caba7e36747d4b8e506aef40c9\"",
       "file_path": "documentation/CarKey/functionstatus/rawvalue.md"
     },

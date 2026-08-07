@@ -4,6 +4,15 @@
 
 Call BLAS and LAPACK routines from Fortran 90 source code.
 
+**Availability**:
+- iOS 27.0+ (Beta)
+- iPadOS 27.0+ (Beta)
+- Mac Catalyst 27.0+ (Beta)
+- macOS 27.0+ (Beta)
+- tvOS 27.0+ (Beta)
+- visionOS 27.0+ (Beta)
+- watchOS 27.0+ (Beta)
+
 #### Overview
 
 Accelerate ships a set of Fortran 90 interface modules that bind Fortran source to the `ACCELERATE_NEW_LAPACK` symbols in the Accelerate framework. The modules declare every BLAS and LAPACK routine with explicit Fortran interfaces, so the compiler can check argument types and shapes at the call site. You don’t link a separate library — the interface module compiles alongside your program and resolves directly to Accelerate.
