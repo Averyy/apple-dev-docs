@@ -33,12 +33,8 @@ enum Attachment
 
 ## See Also
 
-- [init(entries: some Sequence<Transcript.Entry>)](transcript/init(entries:).md)
-  Creates a transcript.
-- [Transcript.Entry](transcript/entry.md)
-  An entry in a transcript.
-- [Transcript.Segment](transcript/segment.md)
-  The types of segments that may be included in a transcript entry.
+- [Transcript.ImageAttachment](transcript/imageattachment.md)
+  An image attachment in a transcript entry.
 
 
 ---

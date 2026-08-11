@@ -35,7 +35,7 @@ init<Value>(type: Value.Type, guides: [GenerationGuide<Value>] = []) where Value
 - [init(name: String, description: String?, representNilExplicitlyInGeneratedContent: Bool, properties: [DynamicGenerationSchema.Property])](dynamicgenerationschema/init(name:description:representnilexplicitlyingeneratedcontent:properties:).md)
   Creates an object schema.
 - [init(referenceTo: String)](dynamicgenerationschema/init(referenceto:).md)
-  Creates an refrence schema.
+  Creates a reference schema.
 - [DynamicGenerationSchema.Property](dynamicgenerationschema/property.md)
   A property that belongs to a dynamic generation schema.
 

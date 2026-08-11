@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: init
 
-Creates content that contains a single value with a custom `GenerationID`.
+Creates content that contains a single value with a custom generation identifier.
 
 **Availability**:
 - iOS 26.0+
@@ -33,11 +33,11 @@ init(_ value: some ConvertibleToGeneratedContent, id: GenerationID)
 - [init(properties: KeyValuePairs<String, any ConvertibleToGeneratedContent>, id: GenerationID?)](generatedcontent/init(properties:id:).md)
   Creates generated content representing a structure with the properties you specify.
 - [init<S>(properties: S, id: GenerationID?, uniquingKeysWith: (GeneratedContent, GeneratedContent) throws -> some ConvertibleToGeneratedContent) rethrows](generatedcontent/init(properties:id:uniquingkeyswith:).md)
-  Creates new generated content from the key-value pairs in the given sequence, using a combining closure to determine the value for any duplicate keys.
+  Creates generated content from key-value pairs, resolving duplicate keys with a combining closure.
 - [init(json: String) throws](generatedcontent/init(json:).md)
   Creates equivalent content from a JSON string.
 - [init(kind: GeneratedContent.Kind, id: GenerationID?)](generatedcontent/init(kind:id:).md)
-  Creates a new `GeneratedContent` instance with the specified kind and `GenerationID`.
+  Creates content with the specified kind and generation identifier.
 - [GeneratedContent.ParsingError](generatedcontent/parsingerror.md)
   A failure that occurs when a string cannot be parsed into GeneratedContent.
 

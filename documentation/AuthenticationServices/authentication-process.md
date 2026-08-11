@@ -58,6 +58,8 @@ Because the login process can happen on any network, the system sends all HTTP r
 
 - [Implementing web-based authentication with Platform Single Sign-on](implementing-web-based-authentication.md)
   Support modern, phishing-resistant, and flexible authentication methods.
+- [Using access keys with Platform Single Sign-on](using-access-keys-with-platform-single-sign-on.md)
+  Authenticate users with access keys stored in Apple Wallet.
 - [class ASAuthorizationProviderExtensionKerberosMapping](asauthorizationproviderextensionkerberosmapping.md)
   A set of Kerberos mappings that the system login process uses.
 

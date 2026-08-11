@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: property
 
-The size of the buffer slot, in bytes.
+The minimum size, in bytes, that a buffer slice must have to be bound to this slot.
 
 **Availability**:
 - iOS 27.0+ (Beta)

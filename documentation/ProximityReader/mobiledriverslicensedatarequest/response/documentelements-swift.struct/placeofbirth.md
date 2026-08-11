@@ -8,6 +8,7 @@ The birth place of the identity document holder on record with the issuer.
 **Availability**:
 - iOS 26.4+
 - iPadOS 26.4+
+- Mac Catalyst 26.4+
 
 ## Declaration
 

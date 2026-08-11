@@ -145,6 +145,9 @@ You can integrate SwiftUI views with objects from the [`UIKit`](https://develope
   Expose custom views and modifiers in the Xcode library.
 - [Performance analysis](performance-analysis.md)
   Measure and improve your app’s responsiveness.
+### Structures
+- [struct PresentationPlacement](presentationplacement.md)
+  The placement of a presentation within the presenting view.
 
 
 ---

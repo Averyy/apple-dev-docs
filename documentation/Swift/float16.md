@@ -102,8 +102,8 @@ On macOS, `Float16` is only available when targeting Apple silicon. On other sup
 - [SignedNumeric](signednumeric.md)
 - [Strideable](strideable.md)
 - [TextOutputStreamable](textoutputstreamable.md)
-- [USDPrim.Attribute.MetadataValue](../USDKit/USDPrim/Attribute/MetadataValue.md)
 - [USDPrim.Attribute.Value](../USDKit/USDPrim/Attribute/Value.md)
+- [USDStage.Object.MetadataValue](../USDKit/USDStage/Object/MetadataValue.md)
 - [USDValueProtocol](../USDKit/USDValueProtocol.md)
 
 ## See Also

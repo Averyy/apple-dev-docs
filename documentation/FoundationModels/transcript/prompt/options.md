@@ -29,7 +29,7 @@ var options: GenerationOptions
   Ordered prompt segments.
 - [var contextOptions: ContextOptions](transcript/prompt/contextoptions.md)
   Configuration of the prompt.
-- [var metadata: [String : any Codable & Sendable & Equatable]](transcript/prompt/metadata.md)
+- [var metadata: [String : GeneratedContent]](transcript/prompt/metadata.md)
   Metadata provided as part of this prompt.
 
 

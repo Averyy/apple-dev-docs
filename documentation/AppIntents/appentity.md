@@ -81,9 +81,9 @@ extension TrailEntity: URLRepresentableEntity {
 }
 ```
 
-For additional property types, see [`EntityProperty`](entityproperty.md).
-
 It is up to you whether you want to conform to the `AppEntity` protocol directly on the data models of your app, or if you create data models specific to your app intents implementation. In many cases, it’s a good idea to create models specific to app intents that shadow your app data models to keep entities separate from the rest of your app’s logic.
+
+> ❗ **Important**: `AppEntity` instances have a total size limit of 10 MB, including all child properties and their values. If your entity exceeds this limit, the system throws an exception, and your app might crash. To reduce the size of your app entity, use the `@DeferredProperty` property wrapper. For more information, see [`Defining app entities for your custom data types`](defining-app-entities-for-your-custom-data-types.md).
 
 ## Topics
 
@@ -97,7 +97,7 @@ It is up to you whether you want to conform to the `AppEntity` protocol directly
 - [static var defaultResolverSpecification: some ResolverSpecification](appentity/defaultresolverspecification-589eq.md)
 ### URL representation
 - [struct EntityURLRepresentation](entityurlrepresentation.md)
-  The URL representation of an app entity.
+  The type that provides the URL for an app entity.
 ### Ownership and sharing
 - [struct EntityOwnership](entityownership.md)
   A type that represents the ownership and sharing characteristics of an app entity.

@@ -62,7 +62,7 @@ struct PresentationInstructions: DynamicInstructions {
 ### Building dynamic instructions
 - [struct DynamicInstructionsBuilder](dynamicinstructionsbuilder.md)
 - [struct EmptyDynamicInstructions](emptydynamicinstructions.md)
-  An empty dynamic instructions type..
+  An empty dynamic instructions type.
 - [struct ConditionalDynamicInstructions](conditionaldynamicinstructions.md)
   A dynamic instructions type that conditionally selects between two conditions.
 - [struct AnyDynamicInstructions](anydynamicinstructions.md)

@@ -26,7 +26,7 @@ Each event replaces the prior metadata wholesale; keys absent from `values` are 
 ## Topics
 
 ### Handling the metadata values
-- [var values: [String : any Sendable & Codable & Equatable]](languagemodelexecutorgenerationchannel/metadata/values.md)
+- [var values: [String : GeneratedContent]](languagemodelexecutorgenerationchannel/metadata/values.md)
 
 ## Relationships
 
@@ -41,9 +41,9 @@ Each event replaces the prior metadata wholesale; keys absent from `values` are 
 - [LanguageModelExecutorGenerationChannel.ReasoningSignature](languagemodelexecutorgenerationchannel/reasoningsignature.md)
   Payload for a reasoning entry’s signature update.
 - [LanguageModelExecutorGenerationChannel.TextFragment](languagemodelexecutorgenerationchannel/textfragment.md)
-  Append text to a streaming entry’s current text segment. Used by both `Response/Action/appendText(_:)` and `Reasoning/Action/appendText(_:)`.
+  Text appended to a streaming entry’s current text segment.
 - [LanguageModelExecutorGenerationChannel.TextSegmentReplacement](languagemodelexecutorgenerationchannel/textsegmentreplacement.md)
-  Replace a streaming entry’s current text segment with `content`.
+  A replacement for a streaming entry’s current text segment.
 - [LanguageModelExecutorGenerationChannel.Response](languagemodelexecutorgenerationchannel/response.md)
   A model-generated response event: text, segment replacements, citations, advisories, custom segments, metadata, or usage.
 - [LanguageModelExecutorGenerationChannel.ToolCalls](languagemodelexecutorgenerationchannel/toolcalls.md)

@@ -91,6 +91,7 @@ To be notified when the group finishes playing, subscribe to [`AudioEvents.Playb
 ## See Also
 
 - [class ReverbMeshResource](reverbmeshresource.md)
+  A high-level representation of a collection of vertices and edges that define a shape used for simulating reverb.
 
 
 ---

@@ -61,7 +61,6 @@ let response = try await LanguageModelSession().respond {
 ### Inherited By
 - [ConvertibleToGeneratedContent](convertibletogeneratedcontent.md)
 - [Generable](generable.md)
-- [Transcript.CustomSegment](transcript/customsegment.md)
 ### Conforming Types
 - [Attachment](attachment.md)
 - [GeneratedContent](generatedcontent.md)

@@ -112,7 +112,7 @@ If your app uses more than one GPU (see [`Multi-GPU systems`](multi-gpu-systems.
 - [func size(ofCounterHeapEntry: MTL4CounterHeapType) -> Int](mtldevice/size(ofcounterheapentry:).md)
   Returns the size, in bytes, of each entry in a counter heap of a specific counter heap type when your app resolves it into a usable format.
 - [func tensorSizeAndAlign(descriptor: MTLTensorDescriptor) -> MTLSizeAndAlign](mtldevice/tensorsizeandalign(descriptor:).md)
-  Determines the size and alignment required to hold the data of a tensor you create with a descriptor in a buffer.
+  Determines the size and alignment required to hold the data plane of a tensor you create with a descriptor in a buffer.
 
 ## Relationships
 

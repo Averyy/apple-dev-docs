@@ -106,10 +106,11 @@ Define app entities for core types and concepts that you want to make available 
   A transfer representation that enables bidirectional conversion between app entities and system intent values.
 ### Universal link navigation
 - [protocol URLRepresentableEntity](urlrepresentableentity.md)
-  An app entity with a URL representation.
+  An interface you apply to an app entity type so the system can handle it like a universal link.
 - [struct EntityURLRepresentation](entityurlrepresentation.md)
-  The URL representation of an app entity.
+  The type that provides the URL for an app entity.
 - [protocol CustomURLRepresentationParameterConvertible](customurlrepresentationparameterconvertible.md)
+  An interface that allows a type to express its contents in a URL representation.
 ### Foundational types
 - [protocol AppValue](appvalue.md)
   An interface that describes conceptual types you use in app intents.

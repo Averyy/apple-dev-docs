@@ -56,6 +56,8 @@ Use the [`reverbLevel`](spatialaudiocomponent/reverblevel.md) property to adjust
 
 In macOS and iOS, only one `ReverbComponent` can be active at a time per [`ARView`](arview.md) or [`RealityView`](realityview.md). In visionOS, a `ReverbComponent` is only active while an app has a [`progressive`](https://developer.apple.com/documentation/SwiftUI/ImmersionStyle/progressive) or [`full`](https://developer.apple.com/documentation/SwiftUI/ImmersionStyle/full) immersive space open.
 
+You can place multiple simulated reverb components in a scene — for example, one entity each for the ceiling, floor, and walls of a virtual room — and the reflections and reverb update as audio sources move through the space. However, only one preset reverb can be active at a time; if both a preset and simulated reverb are present, the preset takes priority.
+
 When the content is within a [`progressive`](https://developer.apple.com/documentation/SwiftUI/ImmersionStyle/progressive) immersive space, the Digital Crown adjusts how RealityKit blends:
 
 - The acoustics simulation of a person’s real-world environment

@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: init
 
-Create a session with a profile.
+Creates a session with a profile.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -24,15 +24,15 @@ convenience init(profile: sending some LanguageModelSession.DynamicProfile, hist
 - [Optimizing key-value caching in language model sessions](optimizing-key-value-caching-in-language-model-sessions.md)
 - [Composing dynamic sessions with instructions and profiles](composing-dynamic-sessions-with-instructions-and-profiles.md)
 
-#### Discussion
+## Parameters
 
-- Parameters - profile: The profile to use for this session.
-- history: Transcript entries without the initial instructions, since that’s defined by the profile.
+- `profile`: The profile to use for this session.
+- `history`: Transcript entries without the initial instructions, since that’s defined by the profile.
 
 ## See Also
 
 - [convenience init(model: some LanguageModel, dynamicInstructions: sending some DynamicInstructions, history: some Collection<Transcript.Entry>)](languagemodelsession/init(model:dynamicinstructions:history:).md)
-  Create a session with dynamic instructions.
+  Creates a session with dynamic instructions.
 - [LanguageModelSession.DynamicProfile](languagemodelsession/dynamicprofile.md)
   A dynamic profile that contains one or more profiles.
 - [LanguageModelSession.DynamicProfileModifier](languagemodelsession/dynamicprofilemodifier.md)

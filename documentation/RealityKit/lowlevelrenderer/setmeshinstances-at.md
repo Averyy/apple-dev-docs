@@ -29,7 +29,7 @@ final func setMeshInstances(_ meshInstances: LowLevelMeshInstanceArray?, at inde
 ## See Also
 
 - [func meshInstances(at: Int) -> LowLevelMeshInstanceArray?](lowlevelrenderer/meshinstances(at:).md)
-  Returns the mesh instance array at the given slot index, or the empty value if the slot is unoccupied.
+  Returns the mesh instance array at the given slot index, or `nil` if the slot is unoccupied.
 - [var meshInstancesArrayCount: Int](lowlevelrenderer/meshinstancesarraycount.md)
   The number of mesh instance array slots.
 

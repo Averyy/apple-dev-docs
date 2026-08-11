@@ -16,7 +16,7 @@ Creates a prompt.
 ## Declaration
 
 ```swift
-init(id: String = UUID().uuidString, metadata: [String : any Codable & Sendable & Equatable] = [:], segments: [Transcript.Segment], options: GenerationOptions = GenerationOptions(), responseFormat: Transcript.ResponseFormat? = nil, contextOptions: ContextOptions = ContextOptions())
+init(id: String = UUID().uuidString, metadata: [String : any ConvertibleToGeneratedContent] = [:], segments: [Transcript.Segment], options: GenerationOptions = GenerationOptions(), responseFormat: Transcript.ResponseFormat? = nil, contextOptions: ContextOptions = ContextOptions())
 ```
 
 ## Parameters
@@ -26,7 +26,7 @@ init(id: String = UUID().uuidString, metadata: [String : any Codable & Sendable 
 - `segments`: An array of segments that make up the prompt.
 - `options`: Options that control how tokens are sampled from the distribution the model produces.
 - `responseFormat`: A response format that describes the output structure.
-- `contextOptions`: Settings that configure how the model is prompted
+- `contextOptions`: Settings that configure how the model is prompted.
 
 ## See Also
 

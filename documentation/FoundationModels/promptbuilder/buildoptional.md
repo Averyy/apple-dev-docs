@@ -23,7 +23,7 @@ static func buildOptional(_ component: Prompt?) -> Prompt
 ## See Also
 
 - [static func buildArray([some PromptRepresentable]) -> Prompt](promptbuilder/buildarray(_:).md)
-  Creates a builder with the an array of prompts.
+  Creates a builder with an array of prompts.
 - [static func buildBlock<each P>(repeat each P) -> Prompt](promptbuilder/buildblock(_:).md)
   Creates a builder with a block.
 - [static func buildEither(first: some PromptRepresentable) -> Prompt](promptbuilder/buildeither(first:).md)

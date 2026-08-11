@@ -39,7 +39,7 @@ In both cases, priority elevation helps you prevent a low-priority task from blo
 - [static func != (TaskPriority, TaskPriority) -> Bool](taskpriority/!=(_:_:).md)
 ### Initializers
 - [init?(JobPriority)](taskpriority/init(_:).md)
-  Convert this `UnownedJob/Priority` to a [`TaskPriority`](taskpriority.md).
+  Convert this [`JobPriority`](jobpriority.md) to a [`TaskPriority`](taskpriority.md).
 - [init(rawValue: UInt8)](taskpriority/init(rawvalue:).md)
   Creates a new instance with the specified raw value.
 ### Instance Properties

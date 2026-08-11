@@ -18,6 +18,11 @@
 typealias Specification = some ResolverSpecification
 ```
 
+## See Also
+
+- [StringSearchScope.UnwrappedType](stringsearchscope/unwrappedtype.md)
+- [StringSearchScope.ValueType](stringsearchscope/valuetype.md)
+
 
 ---
 

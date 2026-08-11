@@ -3,7 +3,7 @@
 **Framework**: PencilKit  
 **Kind**: init
 
-Creates a `RenderState` from its Objective-C counterpart `PKStrokeRenderState`.
+Creates a `RenderState` from its Objective-C counterpart `PKStrokeRenderStateReference`.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -15,12 +15,12 @@ Creates a `RenderState` from its Objective-C counterpart `PKStrokeRenderState`.
 ## Declaration
 
 ```swift
-init(_ objcValue: __PKStrokeRenderState)
+init(_ objcValue: PKStrokeRenderStateReference)
 ```
 
 ## Parameters
 
-- `objcValue`: The Objective-C `PKStrokeRenderState` to convert from.
+- `objcValue`: The Objective-C `PKStrokeRenderStateReference` to convert from.
 
 
 ---

@@ -16,7 +16,7 @@ Metadata provided as part of this prompt.
 ## Declaration
 
 ```swift
-var metadata: [String : any Codable & Sendable & Equatable]
+var metadata: [String : GeneratedContent]
 ```
 
 ## See Also

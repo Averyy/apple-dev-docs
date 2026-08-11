@@ -43,6 +43,7 @@ for x in zeroes {
 ## Parameters
 
 - `element`: The element to repeat.
+- `n`: The number of times to repeat `element`.
 
 ## See Also
 

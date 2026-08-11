@@ -3,7 +3,7 @@
 **Framework**: Core Spotlight  
 **Kind**: case
 
-LLM-generated text summary or analysis.
+An text summary or analysis your stage produced.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -21,17 +21,17 @@ case text(String)
 ## See Also
 
 - [SearchPipelineData.Payload.items(_:)](searchpipelinedata/payload-swift.enum/items(_:).md)
-  Items from a Spotlight query.
+  The array of searchable items your stage produced.
 - [SearchPipelineData.Payload.scoredItems(_:)](searchpipelinedata/payload-swift.enum/scoreditems(_:).md)
-  Items annotated with caller-assigned relevance scores.
+  The scored searchable items your stage produced.
 - [case groupedItems([SearchableItemAttribute : [SearchableItem]])](searchpipelinedata/payload-swift.enum/groupeditems(_:).md)
-  Items partitioned by an attribute value (e.g. content type).
+  A dictionary that maps searchable attributes to the items that contain them.
 - [SearchPipelineData.Payload.count(_:)](searchpipelinedata/payload-swift.enum/count(_:).md)
-  A scalar count derived from items (e.g., 47).
+  A scalar count of items your stage produced.
 - [SearchPipelineData.Payload.statistic(name:value:)](searchpipelinedata/payload-swift.enum/statistic(name:value:).md)
-  A scalar statistic (sum, average, max, min, median, stddev).
+  A scalar value with a stastical calculation your stage produced.
 - [SearchPipelineData.Payload.table(_:)](searchpipelinedata/payload-swift.enum/table(_:).md)
-  Tabulated data — rows of labeled values.
+  Tabulated data your stage produced.
 
 
 ---

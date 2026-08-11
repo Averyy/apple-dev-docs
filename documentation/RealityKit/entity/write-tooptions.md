@@ -17,7 +17,7 @@ Exports an array of entities as separate scenes within a single RealityKit file.
 
 ```swift
 nonisolated
-(nonsending) static func write(_ scenes: [Entity], to url: URL, options: Entity.WriteOptions = WriteOptions()) async throws
+(nonsending) static func write(_ entities: [Entity], to url: URL, options: Entity.WriteOptions = WriteOptions()) async throws
 ```
 
 #### Discussion
@@ -27,6 +27,7 @@ This method generates a file with a `.reality` suffix, automatically setting its
 - iOS 18 or later
 - macOS 15 or later
 - visionOS 2 or later
+- tvOS 26 or later
 
 Elements of the `entities` array must have a non-empty [`name`](entity/name.md) property. Each name must be unique within the array to allow unambiguous scene loading.
 
@@ -40,6 +41,7 @@ Logs with the prefix [RealityKit File Compatibility Info] will be posted to the 
 
 ## Parameters
 
+- `entities`: An array of named entities to be written as separate scenes in the Reality file.
 - `url`: The location URL in the file system where you want to save the `.reality` file.
 - `options`: Options for writing the Reality file, such as texture compression settings.
 

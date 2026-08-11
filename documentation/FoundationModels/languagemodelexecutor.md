@@ -58,7 +58,7 @@ Use [`LanguageModelExecutorGenerationChannel`](languagemodelexecutorgenerationch
 - [associatedtype Configuration : Hashable, Sendable](languagemodelexecutor/configuration.md)
 ### Prewarming the model
 - [func prewarm(model: Self.Model, transcript: Transcript)](languagemodelexecutor/prewarm(model:transcript:).md)
-  The system invokes this method in response to prewarming the session and provides an opportunity to load assets into memory or pre-fill caches.
+  Loads assets into memory or pre-fills caches ahead of a request.
 - [associatedtype Model : LanguageModel](languagemodelexecutor/model.md)
   The model type this executor processes requests for.
 ### Handling the response
@@ -73,6 +73,8 @@ Use [`LanguageModelExecutorGenerationChannel`](languagemodelexecutorgenerationch
 
 ## See Also
 
+- [Running a Core AI model in a Foundation Models session](running-a-core-ai-model-in-a-foundation-models-session.md)
+  Send requests on device to an open source model you export with Core AI to get a consistent API experience.
 - [Optimizing key-value caching in language model sessions](optimizing-key-value-caching-in-language-model-sessions.md)
   Prevent repeated token processing by preserving the cached state across turns.
 - [protocol LanguageModel](languagemodel.md)

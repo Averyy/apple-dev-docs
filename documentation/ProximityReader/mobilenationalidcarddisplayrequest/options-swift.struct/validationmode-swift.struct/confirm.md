@@ -8,6 +8,7 @@ Confirmation buttons that enable the user to express their validation decision.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- Mac Catalyst 18.0+
 
 ## Declaration
 

@@ -8,6 +8,7 @@ Intervention guidance that suggests the app indicate the presence of sensitive c
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

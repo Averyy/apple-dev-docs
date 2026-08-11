@@ -28,7 +28,7 @@ var name: String
 - [var id: String](languagemodelexecutorgenerationchannel/toolcalls/toolcall/id.md)
   The identifier for the tool call.
 - [LanguageModelExecutorGenerationChannel.ToolCalls.ToolCall.ArgumentsFragment](languagemodelexecutorgenerationchannel/toolcalls/toolcall/argumentsfragment.md)
-  Append argument text to this tool call.
+  Argument text appended to this tool call.
 
 
 ---

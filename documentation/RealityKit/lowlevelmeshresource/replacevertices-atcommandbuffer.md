@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: method
 
-Retrieves a Metal vertex buffer for GPU replacement. The buffer’s contents are in an uninitialized state. The renderer waits for the command buffer to complete before using the buffer for rendering.
+Returns a Metal buffer you populate on the GPU with the new contents of the vertex buffer.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -21,21 +21,25 @@ final func replaceVertices(at index: Int, commandBuffer: (any MTLCommandBuffer)?
 
 A `MTLBuffer` ready for GPU write operations.
 
+#### Discussion
+
+Upon return the buffer’s contents are undefined; the caller is responsible for populating it with valid data. The renderer waits for the provided command buffer to complete before using the buffer for rendering.
+
 ## Parameters
 
 - `index`: The vertex buffer index to replace.
-- `commandBuffer`: The command buffer writing to this buffer, or `nil` to skip synchronization.
+- `commandBuffer`: The command buffer that writes to this buffer, or `nil` to skip synchronization.
 
 ## See Also
 
 - [func readVertices<R, E>(at: Int, (RawSpan) throws(E) -> R) throws(E) -> R](lowlevelmeshresource/readvertices(at:_:).md)
-  Reads a vertex buffer synchronously on the CPU. The buffer is only valid for the lifetime of the callback.
+  Reads the current contents of a vertex buffer synchronously on the CPU.
 - [func updateVertices<R, E>(at: Int, (inout MutableRawSpan) throws(E) -> R) throws(E) -> R](lowlevelmeshresource/updatevertices(at:_:).md)
-  Updates a vertex buffer synchronously on the CPU. The buffer is only valid for the lifetime of the callback.
+  Updates a vertex buffer in place synchronously on the CPU.
 - [func replaceVertices<R, E>(at: Int, (inout MutableRawSpan) throws(E) -> R) throws(E) -> R](lowlevelmeshresource/replacevertices(at:_:).md)
-  Replaces a vertex buffer synchronously on the CPU. The buffer’s contents are unspecified; you must populate the buffer with valid data.
+  Replaces the entire contents of a vertex buffer synchronously on the CPU.
 - [func readVertices(at: Int, commandBuffer: (any MTLCommandBuffer)?) -> any MTLBuffer](lowlevelmeshresource/readvertices(at:commandbuffer:).md)
-  Retrieves a Metal vertex buffer for GPU reading.
+  Returns a Metal buffer containing the current contents of the vertex buffer for GPU read operations.
 
 
 ---

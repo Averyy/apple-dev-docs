@@ -53,7 +53,7 @@ Use [`SessionPropertyEntry()`](sessionpropertyentry().md) to create custom sessi
 ## Topics
 
 ### Accessing the session history and instructions
-- [var history: ArraySlice<Transcript.Entry>](sessionpropertyvalues/history.md)
+- [var history: Transcript.HistoryView](sessionpropertyvalues/history.md)
   The history portion of the session’s transcript.
 ### Accessing the subscript
 - [subscript<K>(K.Type) -> K.Value](sessionpropertyvalues/subscript(_:).md)
@@ -74,7 +74,6 @@ Use [`SessionPropertyEntry()`](sessionpropertyentry().md) to create custom sessi
 - [protocol SessionPropertyKey](sessionpropertykey.md)
   A protocol for defining a custom session property key.
 - [macro SessionPropertyEntry()](sessionpropertyentry().md)
-  A macro for defining a custom key.
 
 
 ---

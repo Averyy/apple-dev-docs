@@ -8,6 +8,7 @@ Creates a batch-insertion request for a named managed entity, and specifies a cl
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
+- Mac Catalyst 14.0+
 - visionOS 1.0+
 
 ## Declaration

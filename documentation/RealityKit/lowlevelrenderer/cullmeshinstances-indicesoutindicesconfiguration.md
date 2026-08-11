@@ -33,11 +33,11 @@ Tests each instance’s bounds against the planes in `configuration.frustum`, us
 - [static func cullMeshInstances(LowLevelMeshInstanceArray, indices: Span<Int>, configuration: LowLevelRenderer.CullConfiguration) -> [Int]](lowlevelrenderer/cullmeshinstances(_:indices:configuration:).md)
   Culls mesh instances against a frustum and returns the surviving indices.
 - [LowLevelRenderer.CullConfiguration](lowlevelrenderer/cullconfiguration.md)
-  The parameters for a frustum culling operation.
+  The configuration for a frustum culling operation.
 - [static func sortMeshInstances(LowLevelMeshInstanceArray, indices: inout MutableSpan<Int>, configuration: LowLevelRenderer.SortConfiguration)](lowlevelrenderer/sortmeshinstances(_:indices:configuration:).md)
   Sorts the given mesh instances by sort category and, for transparent instances, by back-to-front distance from the camera.
 - [LowLevelRenderer.SortConfiguration](lowlevelrenderer/sortconfiguration.md)
-  The parameters for a mesh instance sort pass.
+  The configuration for a mesh instance sort pass.
 
 
 ---

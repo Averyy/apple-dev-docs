@@ -23,7 +23,7 @@ associatedtype Model : LanguageModel
 ## See Also
 
 - [func prewarm(model: Self.Model, transcript: Transcript)](languagemodelexecutor/prewarm(model:transcript:).md)
-  The system invokes this method in response to prewarming the session and provides an opportunity to load assets into memory or pre-fill caches.
+  Loads assets into memory or pre-fills caches ahead of a request.
 
 
 ---

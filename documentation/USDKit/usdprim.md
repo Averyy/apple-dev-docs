@@ -34,6 +34,7 @@ struct USDPrim
 - [var isValid: Bool](usdprim/isvalid.md)
   A Boolean value indicating whether this prim is valid.
 - [var specifier: USDPrim.Specifier](usdprim/specifier-swift.property.md)
+  The specifier that describes how this prim is defined, such as `def`, `over`, or `class`.
 - [var stage: USDStage](usdprim/stage.md)
   The stage that owns this prim.
 - [var parent: USDPrim?](usdprim/parent.md)
@@ -65,30 +66,44 @@ struct USDPrim
   A filter which returns true or false for prims based on their flags.
 ### Accessing properties
 - [var properties: [USDPrim.Property]](usdprim/properties.md)
+  The properties of this prim, including those provided by its schemas.
 - [var authoredProperties: [USDPrim.Property]](usdprim/authoredproperties.md)
+  The properties of this prim that have an authored opinion.
 - [var propertyNames: [USDToken]](usdprim/propertynames.md)
+  The names of this prim’s properties, including those provided by its schemas.
 - [var authoredPropertyNames: [USDToken]](usdprim/authoredpropertynames.md)
+  The names of this prim’s properties that have an authored opinion.
 - [func property(named: USDToken) -> USDPrim.Property](usdprim/property(named:).md)
+  Returns the property with a given name on this prim.
 - [func hasProperty(named: USDToken) -> Bool](usdprim/hasproperty(named:).md)
+  Returns true if an attribute or relationship with a given name exists.
 - [func object(at: USDLayer.Path) -> USDStage.Object](usdprim/object(at:).md)
   Returns the object at a given path, relative to this prim.
 - [USDPrim.Property](usdprim/property.md)
+  A named property on a prim, which is either an attribute or a relationship.
 ### Accessing attributes
 - [var attributes: [USDPrim.Attribute]](usdprim/attributes.md)
+  The attributes of this prim, including those provided by its schemas.
 - [var authoredAttributes: [USDPrim.Attribute]](usdprim/authoredattributes.md)
+  The attributes of this prim that have an authored opinion.
 - [func attribute(named: USDToken) -> USDPrim.Attribute](usdprim/attribute(named:).md)
+  Returns the attribute with a given name on this prim.
 - [func attribute(at: USDLayer.Path) -> USDPrim.Attribute](usdprim/attribute(at:).md)
+  Returns the attribute at a given path, relative to this prim.
 - [func hasAttribute(named: USDToken) -> Bool](usdprim/hasattribute(named:).md)
+  Returns true if an attribute with a given name exists on this prim.
 - [func makeAttribute(named: USDToken, as: USDPrim.Attribute.ValueType, custom: Bool, variability: USDPrim.Property.Variability) -> USDPrim.Attribute](usdprim/makeattribute(named:as:custom:variability:).md)
+  Creates an attribute with the given name on this prim, or returns the existing attribute if one already exists.
 - [USDPrim.Attribute](usdprim/attribute.md)
 ### Accessing relationships
-- [func relationship(named: USDToken) -> USDPrim.Relationship?](usdprim/relationship(named:).md)
+- [func relationship(named: USDToken) -> USDPrim.Relationship](usdprim/relationship(named:).md)
   Returns the relationship with a given name on this prim.
 - [func relationship(at: USDLayer.Path) -> USDPrim.Relationship](usdprim/relationship(at:).md)
   Returns the relationship at a given path, relative to this prim.
 - [func hasRelationship(named: USDToken) -> Bool](usdprim/hasrelationship(named:).md)
   Returns true if a relationship with a given name exists on this prim.
 - [USDPrim.Relationship](usdprim/relationship.md)
+  A property that connects a prim to one or more other objects in the stage by their paths.
 ### Composing references and payloads
 - [var references: USDPrim.ReferenceCollection](usdprim/references.md)
   The reference composition arcs on this prim.
@@ -143,8 +158,12 @@ struct USDPrim
   A Boolean value indicating whether the prim has authored specializes arcs.
 - [var inherits: USDPrim.InheritCollection](usdprim/inherits.md)
   The inherit composition arcs on this prim.
+- [var isPrototype: Bool](usdprim/isprototype.md)
+  A Boolean value indicating whether this prim is a prototype that instances share.
 - [var payloads: USDPrim.PayloadCollection](usdprim/payloads.md)
   The payload composition arcs on this prim.
+- [var prototype: USDPrim](usdprim/prototype.md)
+  The prototype that this instance shares, or an invalid prim if this prim is not an instance.
 - [var specializes: USDPrim.SpecializeCollection](usdprim/specializes.md)
   The specializes composition arcs on this prim.
 - [var transformOperations: [USDTransformOperation]](usdprim/transformoperations.md)
@@ -155,10 +174,17 @@ struct USDPrim
 - [func clearTransformOperations()](usdprim/cleartransformoperations.md)
   Removes all transform operations from the prim’s transform stack.
 - [func hasAPISchema(USDToken) -> Bool](usdprim/hasapischema(_:).md)
-  Returns true if this prim has a particular API schema applied.
+  Returns `true` if this prim has a particular API schema applied.
 - [func isSchema(USDToken) -> Bool](usdprim/isschema(_:).md)
-  Returns true if this prim has the given type or a more derived type.
+  Returns `true` if this prim has the given type or a more derived type.
 - [func makeRelationship(named: USDToken, custom: Bool) -> USDPrim.Relationship](usdprim/makerelationship(named:custom:).md)
+  Creates a relationship with the given name on this prim, or returns the existing relationship if one already exists.
+- [func property(at: USDLayer.Path) -> USDPrim.Property](usdprim/property(at:).md)
+  Returns the property at a given path, relative to this prim.
+- [func removeAPISchema(USDToken) throws](usdprim/removeapischema(_:).md)
+  Removes a single-apply API schema from this prim.
+- [func removeAPISchema(USDToken, instanceName: USDToken) throws](usdprim/removeapischema(_:instancename:).md)
+  Removes a multi-apply API schema from this prim with the given instance name.
 - [func transform(at: USDStage.TimeCode) -> USDValue.Matrix4d?](usdprim/transform(at:).md)
   Computes the prim’s composed local transform at the specified time.
 ### Subscripts
@@ -184,7 +210,7 @@ struct USDPrim
 ## See Also
 
 - [struct USDStage](usdstage.md)
-  A composed, runtime view of a USD scene assembled from one or more layers.
+  A 3D scene composed from one or more Universal Scene Description (USD) documents.
 - [struct USDLayer](usdlayer.md)
   A single USD document that stores scene description in a file or in memory.
 

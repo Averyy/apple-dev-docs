@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: enum
 
-A error that occurs when there is a problem creating a generation schema.
+An error that occurs when there is a problem creating a generation schema.
 
 **Availability**:
 - iOS 26.0+

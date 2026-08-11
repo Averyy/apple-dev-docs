@@ -22,7 +22,7 @@ struct ToneMapping
 
 #### Overview
 
-A tone mapping pairs a baseline headroom with a [`ColorSyncProfile.HeadroomAdaptiveGainCurve.ColorVolumeTransform.ToneMapping.Method`](colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum.md) that describes how content above reference white is mapped.
+A tone mapping pairs a baseline headroom with a [`ColorSyncProfile.HeadroomAdaptiveGainCurve.ColorVolumeTransform.ToneMapping.Method`](colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum.md) that describes how to map content above reference white.
 
 ## Topics
 

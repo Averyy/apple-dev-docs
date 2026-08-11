@@ -26,6 +26,7 @@ protocol Tool<Arguments, Output> : Sendable
 - [Categorizing and organizing data with content tags](categorizing-and-organizing-data-with-content-tags.md)
 - [Expanding generation with tool calling](expanding-generation-with-tool-calling.md)
 - [Optimizing key-value caching in language model sessions](optimizing-key-value-caching-in-language-model-sessions.md)
+- [Running a Core AI model in a Foundation Models session](running-a-core-ai-model-in-a-foundation-models-session.md)
 
 #### Overview
 
@@ -65,7 +66,7 @@ Prompting the model with tools contributes to the available context window size.
 
 ### Calling a tool
 - [func call(arguments: Self.Arguments) async throws -> Self.Output](tool/call(arguments:).md)
-  A language model will call this method when it wants to leverage this tool.
+  Performs the tool’s action when a language model wants to use this tool.
 - [associatedtype Arguments : ConvertibleFromGeneratedContent](tool/arguments.md)
   The arguments that this tool should accept.
 - [associatedtype Output : PromptRepresentable](tool/output.md)
@@ -78,7 +79,7 @@ Prompting the model with tools contributes to the available context window size.
 - [var parameters: GenerationSchema](tool/parameters.md)
   A schema for the parameters this tool accepts.
 - [var includesSchemaInInstructions: Bool](tool/includesschemaininstructions.md)
-  If true, the model’s name, description, and parameters schema will be injected into the instructions of sessions that leverage this tool.
+  A Boolean value that indicates whether the tool’s name, description, and parameters schema are injected into the instructions of sessions that leverage this tool.
 - [typealias SessionProperty](tool/sessionproperty.md)
 
 ## Relationships

@@ -19,8 +19,6 @@ final func setIndexRange(indexOffset: Int, indexCount: Int) throws(LowLevelRende
 
 #### Discussion
 
-Throws [`LowLevelRenderContextError`](lowlevelrendercontexterror.md) if the resulting range falls outside the mesh resource’s index buffer.
-
 > **Note**: [`LowLevelRenderContextError`](lowlevelrendercontexterror.md) if the resulting range falls outside the mesh resource’s index buffer.
 
 ## Parameters

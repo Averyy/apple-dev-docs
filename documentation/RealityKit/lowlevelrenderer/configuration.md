@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: struct
 
-The immutable configuration for a renderer, established at initialization.
+The configuration for a renderer.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -28,7 +28,7 @@ struct Configuration
 - [LowLevelRenderer.Configuration.Output](lowlevelrenderer/configuration/output-swift.struct.md)
   The pixel format configuration for a renderer’s output attachments.
 - [var renderTargetDescriptor: LowLevelRenderTarget.Descriptor](lowlevelrenderer/configuration/rendertargetdescriptor.md)
-  The render target descriptor derived from this configuration.
+  The render target descriptor derived from this configuration’s [`output`](lowlevelrenderer/configuration/output-swift.property.md).
 ### Configuring pixel formats
 - [var colorAttachmentPixelFormats: [MTLPixelFormat]](lowlevelrenderer/configuration/colorattachmentpixelformats.md)
   The pixel formats of the color attachments in the render pass the renderer encodes into.

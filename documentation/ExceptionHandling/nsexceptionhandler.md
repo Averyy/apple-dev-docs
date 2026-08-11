@@ -3,7 +3,7 @@
 **Framework**: Exception Handling  
 **Kind**: class
 
-The `NSExceptionHandler` class provides facilities for monitoring and debugging exceptional conditions in Objective-C programs. It works by installing a special uncaught exception handler via the  [`NSSetUncaughtExceptionHandler(_:)`](https://developer.apple.com/documentation/Foundation/NSSetUncaughtExceptionHandler(_:)) function. Consequently, to use the services of `NSExceptionHandler`, you must not install your own custom uncaught exception handler.
+The `NSExceptionHandler` class provides facilities for monitoring and debugging exceptional conditions in Objective-C programs. It works by installing a special uncaught exception handler function. Consequently, to use the services of `NSExceptionHandler`, you must not install your own custom uncaught exception handler.
 
 **Availability**:
 - Mac Catalyst 13.0+
@@ -28,6 +28,8 @@ The constants for configuring exception handler behavior can be categorized in s
 The way the exception handler handles an exception depends on the type of exception; the exception handler converts system exceptions and runtime errors into [`NSException`](https://developer.apple.com/documentation/Foundation/NSException) objects with a stack trace embedded in their `userInfo` dictionary; for all other uncaught exceptions, it terminates the thread on which they occur . The constants used to configure an `NSExceptionHandler` object are described in [`Logging and Handling Constants`](logging-and-handling-constants.md) and [`System Hang Constants`](system-hang-constants.md).
 
 The `defaults` command-line system also allows you to set values corresponding to the `enum` constants used to configure the exception handler; see [`Controlling a Program’s Response to Exceptions`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Exceptions/Tasks/ControllingAppResponse.html#//apple_ref/doc/uid/20000473) for details.
+
+`NSExceptionHandler` installs its uncaught exception handler using the [`NSSetUncaughtExceptionHandler(_:)`](https://developer.apple.com/documentation/Foundation/NSSetUncaughtExceptionHandler(_:)) function.
 
 ## Topics
 

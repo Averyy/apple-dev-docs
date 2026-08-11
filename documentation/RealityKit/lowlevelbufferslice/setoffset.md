@@ -19,8 +19,6 @@ mutating func setOffset(_ offset: Int) throws(LowLevelRenderContextError)
 
 #### Discussion
 
-Throws [`LowLevelRenderContextError`](lowlevelrendercontexterror.md) if the new offset falls outside the buffer’s allocated capacity.
-
 > **Note**: [`LowLevelRenderContextError`](lowlevelrendercontexterror.md) if the new offset falls outside the buffer’s allocated capacity.
 
 ## Parameters

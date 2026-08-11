@@ -41,8 +41,6 @@ If an item named `name` already exists in the directory indicated by `directory`
   Removes an existing item from a given directory.
 - [func renameItem(FSItem, inDirectory: FSItem, named: FSFileName, to: FSFileName, inDirectory: FSItem, overItem: FSItem?, replyHandler: (FSFileName?, (any Error)?) -> Void)](fsvolume/operations/renameitem(_:indirectory:named:to:indirectory:overitem:replyhandler:).md)
   Renames an item from one path in the file system to another.
-- [func reclaimItem(FSItem, replyHandler: ((any Error)?) -> Void)](fsvolume/operations/reclaimitem(_:replyhandler:).md)
-  Reclaims an item, releasing any resources allocated for the item.
 
 
 ---

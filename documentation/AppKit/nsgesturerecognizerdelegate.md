@@ -20,20 +20,20 @@ Use the methods in this protocol to establish dynamic dependencies between gestu
 
 ## Topics
 
-### Regulating Gesture Recognition
+### Regulating gesture recognition
 - [func gestureRecognizer(NSGestureRecognizer, shouldAttemptToRecognizeWith: NSEvent) -> Bool](nsgesturerecognizerdelegate/gesturerecognizer(_:shouldattempttorecognizewith:).md)
   Asks the delegate if a gesture recognizer should attempt to recognize gestures for a particular event.
 - [func gestureRecognizerShouldBegin(NSGestureRecognizer) -> Bool](nsgesturerecognizerdelegate/gesturerecognizershouldbegin(_:).md)
   Asks the delegate if a gesture recognizer should transition out of the Possible (`NSGestureRecognizerStatePossible`) state.
-### Controlling Simultaneous Gesture Recognition
+### Controlling simultaneous gesture recognition
 - [func gestureRecognizer(NSGestureRecognizer, shouldRecognizeSimultaneouslyWith: NSGestureRecognizer) -> Bool](nsgesturerecognizerdelegate/gesturerecognizer(_:shouldrecognizesimultaneouslywith:).md)
   Asks the delegate if two gesture recognizers should be allowed to recognize their gestures simultaneously.
-### Setting Up Failure Requirements
+### Setting up failure requirements
 - [func gestureRecognizer(NSGestureRecognizer, shouldRequireFailureOf: NSGestureRecognizer) -> Bool](nsgesturerecognizerdelegate/gesturerecognizer(_:shouldrequirefailureof:).md)
   Asks the delegate if the current gesture recognizer must wait to recognize its gesture until the specified gesture recognizer fails.
 - [func gestureRecognizer(NSGestureRecognizer, shouldBeRequiredToFailBy: NSGestureRecognizer) -> Bool](nsgesturerecognizerdelegate/gesturerecognizer(_:shouldberequiredtofailby:).md)
   Asks the delegate if the current gesture recognizer must fail before another gesture recognizer is allowed to recognize its gesture.
-### Instance Methods
+### Controlling touch reception
 - [func gestureRecognizer(NSGestureRecognizer, shouldReceive: NSTouch) -> Bool](nsgesturerecognizerdelegate/gesturerecognizer(_:shouldreceive:).md)
   Called, for a new touch, before the system calls the `touchesBegan:withEvent:` method on the gesture recognizer. Return `NO` to prevent the gesture recognizer from seeing this touch.
 

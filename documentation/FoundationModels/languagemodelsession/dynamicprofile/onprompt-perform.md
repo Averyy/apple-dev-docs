@@ -26,7 +26,7 @@ func onPrompt(perform action: nonisolated(nonsending) sending @escaping () async
 
 #### Discussion
 
-When the `onPrompt` closure throws an error, the caller’s `respond` or `response` will propagate that error.
+When the `onPrompt` closure throws an error, the caller’s `respond` or `response` propagates that error.
 
 Use this to observe or log prompts before generation begins:
 
@@ -49,6 +49,8 @@ struct MyDynamicProfile: LanguageModelSession.DynamicProfile {
   Runs an action when this dynamic profile becomes active.
 - [func onDeactivate(perform: sending () async -> Void) -> some LanguageModelSession.DynamicProfile](languagemodelsession/dynamicprofile/ondeactivate(perform:).md)
   Runs an action when this dynamic profile becomes inactive.
+- [func onReasoning(perform:)](languagemodelsession/dynamicprofile/onreasoning(perform:).md)
+  Runs an action whenever this dynamic profile produces reasoning.
 - [func onResponse(perform:)](languagemodelsession/dynamicprofile/onresponse(perform:).md)
   Runs an action after this dynamic profile produces a response.
 - [func onToolCall(perform:)](languagemodelsession/dynamicprofile/ontoolcall(perform:).md)

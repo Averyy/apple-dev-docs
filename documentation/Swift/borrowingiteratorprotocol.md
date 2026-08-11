@@ -17,34 +17,33 @@ A type that provides borrowed access to the values of a borrowing sequence.
 ## Declaration
 
 ```swift
-protocol BorrowingIteratorProtocol<Element> : ~Copyable, ~Escapable
+protocol BorrowingIteratorProtocol<Element, Failure> : ~Copyable, ~Escapable
 ```
 
 ## Topics
 
 ### Associated Types
 - [associatedtype Element : ~Copyable](borrowingiteratorprotocol/element.md)
+- [associatedtype Failure : Error = Never](borrowingiteratorprotocol/failure.md)
 ### Instance Methods
-- [func nextSpan() -> Span<Self.Element>](borrowingiteratorprotocol/nextspan.md)
+- [func nextSpan() throws(Self.Failure) -> Span<Self.Element>](borrowingiteratorprotocol/nextspan.md)
   Returns a span over the next group of elements that are ready to by visited, up to the specifed maximum.
-- [func nextSpan(maximumCount: Int) -> Span<Self.Element>](borrowingiteratorprotocol/nextspan(maximumcount:).md)
+- [func nextSpan(maxCount: Int) throws(Self.Failure) -> Span<Self.Element>](borrowingiteratorprotocol/nextspan(maxcount:).md)
   Returns a span over the next group of elements that are ready to by visited, up to the specifed maximum.
-- [func skip(by: Int) -> Int](borrowingiteratorprotocol/skip(by:).md)
+- [func skip(by: Int) throws(Self.Failure) -> Int](borrowingiteratorprotocol/skip(by:).md)
   Advances the position of this iterator by the specified offset, or until the end of the underlying type’s elements.
 
 ## Relationships
 
 ### Conforming Types
 - [BorrowingIteratorAdapter](borrowingiteratoradapter.md)
-- [SpanIterator](spaniterator.md)
+- [Span.BorrowingIterator](span/borrowingiterator.md)
 
 ## See Also
 
 - [protocol IteratorProtocol](iteratorprotocol.md)
   A type that supplies the values of a sequence one at a time.
 - [struct BorrowingIteratorAdapter](borrowingiteratoradapter.md)
-- [protocol BorrowingSequence](borrowingsequence.md)
-  A type that provides sequential, borrowing access to its elements.
 
 
 ---

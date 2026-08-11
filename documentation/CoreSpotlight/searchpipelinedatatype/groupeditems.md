@@ -3,7 +3,7 @@
 **Framework**: Core Spotlight  
 **Kind**: case
 
-Items partitioned into named groups.
+A dictionary that maps searchable items to the attributes they contain.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -18,20 +18,24 @@ Items partitioned into named groups.
 case groupedItems
 ```
 
+#### Discussion
+
+The keys of the dictionary are `SearchableItemAtttribute` values. The value for each key is an array of [`CSSearchableItem`](cssearchableitem.md) types that contain a value for the key.
+
 ## See Also
 
 - [SearchPipelineDataType.items](searchpipelinedatatype/items.md)
-  [`SearchableItem`](searchableitem.md) results.
+  Searchable items from the app’s index.
 - [SearchPipelineDataType.scoredItems](searchpipelinedatatype/scoreditems.md)
-  [`SearchableItem`](searchableitem.md) results with caller-assigned scores.
+  Searchable items with an assigned score.
 - [SearchPipelineDataType.text](searchpipelinedatatype/text.md)
-  LLM-generated text summary or analysis.
+  An LLM-generated text summary or analysis.
 - [SearchPipelineDataType.count](searchpipelinedatatype/count.md)
-  A scalar count (e.g., “47 emails from John”).
+  A scalar count of the number of items.
 - [SearchPipelineDataType.statistic](searchpipelinedatatype/statistic.md)
-  A scalar statistic (sum, average, max, min, median, stddev).
+  A scalar value that reflects a stastical calculation such as an average, minimum, or maximum.
 - [SearchPipelineDataType.table](searchpipelinedatatype/table.md)
-  Tabulated data suitable for a table or chart.
+  Data suitable for a table or chart.
 
 
 ---

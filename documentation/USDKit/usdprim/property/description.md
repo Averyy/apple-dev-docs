@@ -19,10 +19,6 @@ A summary description of this property.
 var description: String { get }
 ```
 
-#### Discussion
-
-`description` is safe to access on an invalid or expired property.
-
 
 ---
 

@@ -51,8 +51,6 @@ The end point of an extended launch is the later of the first rendered frame and
   A metric that measures app hang time.
 - [struct HitchTimeMetric](hitchtimemetric.md)
   A metric that measures animation hitch time.
-- [struct ScrollHitchTimeMetric](scrollhitchtimemetric.md)
-  A metric that measures scroll hitch time.
 
 
 ---

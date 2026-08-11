@@ -39,13 +39,13 @@ Generation schemas guide the output of a language model to deterministically ens
 - [init(type: any Generable.Type, description: String?, representNilExplicitlyInGeneratedContent: Bool, properties: [GenerationSchema.Property])](generationschema/init(type:description:representnilexplicitlyingeneratedcontent:properties:).md)
   Creates a schema by providing an array of properties.
 - [GenerationSchema.Property](generationschema/property.md)
-  Fields are named members of object types. Fields are strongly typed and have optional descriptions and guides.
+  A named, strongly typed member of an object type with an optional description and guides.
 ### Accessing the name
 - [var name: String](generationschema/name.md)
   The name of this generation schema.
 ### Errors
 - [GenerationSchema.SchemaError](generationschema/schemaerror.md)
-  A error that occurs when there is a problem creating a generation schema.
+  An error that occurs when there is a problem creating a generation schema.
 
 ## Relationships
 
@@ -62,6 +62,8 @@ Generation schemas guide the output of a language model to deterministically ens
 
 - [Generating Swift data structures with guided generation](generating-swift-data-structures-with-guided-generation.md)
   Create robust apps by describing output you want programmatically.
+- [macro Generable(description: String?)](generable(description:).md)
+- [macro Guide(description: String)](guide(description:).md)
 - [protocol Generable](generable.md)
   A type that the model uses when responding to prompts.
 - [struct DynamicGenerationSchema](dynamicgenerationschema.md)

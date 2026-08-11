@@ -59,6 +59,8 @@ for bucket in histogram.buckets {
   A value that encapsulates an average measurement with supporting statistical data.
 - [class SignalBars](signalbars.md)
   A unit for cellular signal strength measurements in bars.
+- [class HitchTimeRatio](hitchtimeratio.md)
+  A unit for animation hitch time ratio measurements.
 - [struct OSVersion](osversion.md)
   The version of the operating system on the device.
 

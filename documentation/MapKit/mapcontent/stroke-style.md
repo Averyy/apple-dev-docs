@@ -28,6 +28,8 @@ Applies the given shape style to drawn map overlays using the stroke style you s
 
 ## See Also
 
+- [func foregroundStyle(some ShapeStyle) -> some MapContent](mapcontent/foregroundstyle(_:).md)
+  Specifies the shape style used to fill content in drawing map overlays.
 - [func stroke(some ShapeStyle, lineWidth: CGFloat) -> some MapContent](mapcontent/stroke(_:linewidth:).md)
   Applies the given shape style to drawn map overlays using the line width you specify.
 - [func stroke(lineWidth: CGFloat) -> some MapContent](mapcontent/stroke(linewidth:).md)

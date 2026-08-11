@@ -18,10 +18,6 @@
 case accessibilityLarge
 ```
 
-## Mentions
-
-- [Applying custom fonts to text](applying-custom-fonts-to-text.md)
-
 ## See Also
 
 - [ContentSizeCategory.accessibilityExtraExtraExtraLarge](contentsizecategory/accessibilityextraextraextralarge.md)

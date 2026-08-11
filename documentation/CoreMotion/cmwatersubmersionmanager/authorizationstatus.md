@@ -8,6 +8,7 @@ A value indicating whether the app has user authorization to receive submersion 
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
+- Mac Catalyst 16.0+
 - visionOS 1.0+
 - watchOS 9.0+
 

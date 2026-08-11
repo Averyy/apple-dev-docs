@@ -3,6 +3,8 @@
 **Framework**: RealityKit  
 **Kind**: struct
 
+Defines the source of accessory anchoring target based on how it is created.
+
 **Availability**:
 - visionOS 26.0+
 

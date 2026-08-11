@@ -15,7 +15,7 @@
 ## Declaration
 
 ```swift
-static var defaultResolverSpecification: EmptyResolverSpecification<IntentFile> { get }
+static var defaultResolverSpecification: some ResolverSpecification { get }
 ```
 
 

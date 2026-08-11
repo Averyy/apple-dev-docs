@@ -30,7 +30,7 @@ func temperature(_ temperature: Double?) -> some LanguageModelSession.DynamicPro
 - [func maximumResponseTokens(Int?) -> some LanguageModelSession.DynamicProfile](languagemodelsession/dynamicprofile/maximumresponsetokens(_:).md)
   Sets the maximum response tokens.
 - [func modifier<Modifier>(Modifier) -> some LanguageModelSession.DynamicProfile](languagemodelsession/dynamicprofile/modifier(_:).md)
-  Apply a modifier to the dynamic profile.
+  Applies a modifier to the dynamic profile.
 
 
 ---

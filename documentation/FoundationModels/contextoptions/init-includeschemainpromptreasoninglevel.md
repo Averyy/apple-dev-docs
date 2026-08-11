@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: init
 
-Creates prompting options that controls how the model is prompted.
+Creates options that control how the model is prompted.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -21,8 +21,8 @@ init(includeSchemaInPrompt: Bool? = nil, reasoningLevel: ContextOptions.Reasonin
 
 ## Parameters
 
-- `includeSchemaInPrompt`: Inject the schema into the prompt to bias the model.
-- `reasoningLevel`: Controls the amount of thinking that the model is allowed to output before producing a response
+- `includeSchemaInPrompt`: If `true`, injects the schema into the prompt to bias the model.
+- `reasoningLevel`: Controls the amount of reasoning that the model is allowed to output before producing a response
 
 
 ---

@@ -81,7 +81,7 @@ The result of [`assignID(_:)`](distributedactorsystem/assignid(_:).md) is then d
 
 The actor system should assign *globally unique* identifiers to types, such that they may be properly resolved from any process in the distributed actor system. The exact shape of the [`ActorID`](distributedactorsystem/actorid.md) is left up to the library to decide. It can be as small as an integer based identifier, or as large as a series of key-value pairs identifying the actor.
 
-The actor system must retain a mapping from the [`ActorID`](distributedactorsystem/actorid.md) to the specific actor *instance* which it is given in [`actorReady(_:)`](distributedactorsystem/actorready(_:).md) in order to implement the `resolve(id:using:)` method, which is how incoming and outgoing remote calls are made possible.
+The actor system must retain a mapping from the [`ActorID`](distributedactorsystem/actorid.md) to the specific actor *instance* which it is given in [`actorReady(_:)`](distributedactorsystem/actorready(_:).md) in order to implement the [`resolve(id:as:)`](distributedactorsystem/resolve(id:as:).md) method, which is how incoming and outgoing remote calls are made possible.
 
 Users have no control over this assignment, nor are they allowed to set the `id` property explicitly. The [`id`](distributedactor/id.md) is used to implement the distributed actor’s `Hashable`, `Equatable`, and even `Codable` conformance (which is synthesized if and only if the [`ActorID`](distributedactorsystem/actorid.md) is `Codable` itself).
 
@@ -106,7 +106,7 @@ Once a `distributed actor` has been *fully initialized* during its initializer, 
 
 > **Note**: Generally due to actor initializer isolation rules, users will need to make their initializers `async` in order to write code that safely performs extra actions after it has fully initialized.
 
-The `actorReady(_)` call on the actor system is a signal to the actor system that this actor *instance* is now ready and may be resolved and interacted with via the actor system. Generally, a distributed actor system implementation will *weakly retain* the actors it has readied, because retaining them strongly would mean that they will never be deallocated (and thus never resign their ID’s).
+The [`actorReady(_:)`](distributedactorsystem/actorready(_:).md) call on the actor system is a signal to the actor system that this actor *instance* is now ready and may be resolved and interacted with via the actor system. Generally, a distributed actor system implementation will *weakly retain* the actors it has readied, because retaining them strongly would mean that they will never be deallocated (and thus never resign their ID’s).
 
 > **Note**: Generally actor systems should retain actors *weakly* in order to allow them be deinitialized when no longer in use. Sometimes though, it can be quite useful to have the system retain certain “well known” actors, for example when it is expected that other nodes in the distributed system will need to interact with them, even if end-user code no longer holds strong references to them. An example of such “retain while actor system is active” distributed actors would be any kind of actor which implements discovery or health check mechanisms between clustered nodes, sometimes called “system actors”, i.e. actors that serve the actor system directly.
 

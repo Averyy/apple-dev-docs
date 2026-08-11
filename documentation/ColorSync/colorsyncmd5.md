@@ -3,6 +3,8 @@
 **Framework**: ColorSync  
 **Kind**: struct
 
+An MD5 digest that uniquely identifies a profile, as defined by the ICC specification.
+
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
@@ -35,8 +37,10 @@ struct ColorSyncMD5
 ## See Also
 
 - [func ColorSyncProfileGetMD5(ColorSyncProfile!) -> ColorSyncMD5](colorsyncprofilegetmd5(_:).md)
+  Returns the MD5 digest for a profile.
 - [var COLORSYNC_MD5_LENGTH: Int32](colorsync_md5_length.md)
 - [var kColorSyncProfileMD5Digest: Unmanaged<CFString>!](kcolorsyncprofilemd5digest.md)
+  A key for the profile’s MD5 digest.
 
 
 ---

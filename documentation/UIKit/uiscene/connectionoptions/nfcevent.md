@@ -8,6 +8,7 @@ An event, such as a gesture or exposure to a card reader’s RF field, that crea
 **Availability**:
 - iOS 17.4+
 - iPadOS 17.4+
+- Mac Catalyst 17.4+
 
 ## Declaration
 

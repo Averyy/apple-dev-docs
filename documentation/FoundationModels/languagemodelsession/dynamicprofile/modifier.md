@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: method
 
-Apply a modifier to the dynamic profile.
+Applies a modifier to the dynamic profile.
 
 **Availability**:
 - iOS 27.0+ (Beta)

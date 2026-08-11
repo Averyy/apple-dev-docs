@@ -22,6 +22,7 @@ func touchesMoved(with event: NSEvent)
   Called when a system event, such as a low-memory warning, cancels an in-progress touch event in an [`NSTouchBar`](nstouchbar.md) object.
 - [func touchesEnded(with: NSEvent)](nsgesturerecognizer/touchesended(with:).md)
   Called when one or more fingers are removed from contact with an [`NSTouchBar`](nstouchbar.md) instance on the Touch Bar.
+- [func mouseCancelled(with: NSEvent)](nsgesturerecognizer/mousecancelled(with:).md)
 
 
 ---

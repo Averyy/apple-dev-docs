@@ -8,6 +8,7 @@ A type for image-analysis requests that focus on a specific part of an image.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+

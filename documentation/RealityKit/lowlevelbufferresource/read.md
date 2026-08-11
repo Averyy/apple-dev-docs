@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: method
 
-Reads the buffer synchronously on the CPU. The buffer is only valid for the lifetime of the callback.
+Reads the current contents of the buffer resource synchronously on the CPU.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -19,6 +19,8 @@ final func read<R, E>(_ body: (RawSpan) throws(E) -> R) throws(E) -> R where E :
 
 #### Discussion
 
+You pass a closure that receives a read-only span representing the contents of the buffer resource. This span is valid only for the duration of the closure.
+
 > **Note**: Any error thrown by `body`.
 
 ## Parameters
@@ -28,7 +30,7 @@ final func read<R, E>(_ body: (RawSpan) throws(E) -> R) throws(E) -> R where E :
 ## See Also
 
 - [func read(commandBuffer: (any MTLCommandBuffer)?) -> any MTLBuffer](lowlevelbufferresource/read(commandbuffer:).md)
-  Retrieves the Metal buffer for GPU reading.
+  Returns a Metal buffer containing the current contents of the buffer resource for GPU read operations.
 
 
 ---

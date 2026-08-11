@@ -3,7 +3,7 @@
 **Framework**: App Intents  
 **Kind**: property
 
-App entity schema conformance for types you use for spreadsheet functionality.
+The collection of entity schemas in the spreadsheet domain.
 
 **Availability**:
 - iOS 18.0+

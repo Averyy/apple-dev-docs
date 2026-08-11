@@ -166,12 +166,14 @@ Implicit growth also makes it more difficult to predict/analyze the amount of me
 ### Default Implementations
 - [Equatable Implementations](uniquearray/equatable-implementations.md)
 - [Hashable Implementations](uniquearray/hashable-implementations.md)
+- [Iterable Implementations](uniquearray/iterable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
 - [Equatable](equatable.md)
 - [Hashable](hashable.md)
+- [Iterable](iterable.md)
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)
 

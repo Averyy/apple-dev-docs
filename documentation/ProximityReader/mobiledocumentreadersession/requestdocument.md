@@ -8,6 +8,7 @@ Presents a sheet to read a mobile document and returns the relevant response.
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
+- Mac Catalyst 17.0+
 
 ## Declaration
 

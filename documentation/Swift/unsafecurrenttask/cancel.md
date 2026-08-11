@@ -28,9 +28,9 @@ The task will be immediately cancelled and cancellation will propagate towards a
 
 Note that cancellation may not be observed if a task is currently executing with an active task cancellation shield. Refer to cancellation shield documentation for detailed semantics.
 
-> **Note**: `withTaskCancellationShield(operation:)`
+> **Note**: `withTaskCancellationShield(operation:)-(()->Value)`
 
-> **Note**: `Task/hasActiveTaskCancellationShield`
+> **Note**: [`hasActiveCancellationShield`](task/hasactivecancellationshield.md)
 
 
 ---

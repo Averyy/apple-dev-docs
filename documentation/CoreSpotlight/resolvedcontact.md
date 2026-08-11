@@ -3,7 +3,7 @@
 **Framework**: Core Spotlight  
 **Kind**: struct
 
-Contact information used to match person and organization references in search queries.
+Contact information to help a search query match references to a person or organization.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -24,7 +24,7 @@ struct ResolvedContact
 
 #### Overview
 
-Provide as many identifiers as available — the search tool uses them to match references in queries against metadata fields like authors, recipients, and participants.
+Use this type to specify details about the person or business that uses your app. When a query matches references to a specific person or business, the information in this structure helps the search tool resolve references to that contact. For example, a query that looks for the author of an email uses this information to resolve a request such as “find the emails that I authored.” Fill in as many fields of this structure as possible with the information available to your app.
 
 ## Topics
 
@@ -32,16 +32,16 @@ Provide as many identifiers as available — the search tool uses them to match 
 - [init(displayName: String)](resolvedcontact/init(displayname:).md)
 ### Specifying the person’s name
 - [var displayName: String](resolvedcontact/displayname.md)
-  Display name (e.g., “John Appleseed” or “Acme Corp”).
+  The name your app displays for the contact.
 - [var nameComponents: [PersonNameComponents]](resolvedcontact/namecomponents.md)
-  Structured name components for locale-aware matching.
+  The contact’s names as a set of structured name components.
 - [var names: [String]](resolvedcontact/names.md)
-  Alternate name strings the contact may be known by.
+  Alternate names you use to refer to the contact.
 ### Specifying contact information
 - [var emailAddresses: [String]](resolvedcontact/emailaddresses.md)
-  Email addresses associated with this contact.
+  The email addresses for this contact.
 - [var phoneNumbers: [String]](resolvedcontact/phonenumbers.md)
-  Phone numbers associated with this contact.
+  The phone numbers for this contact.
 
 ## Relationships
 
@@ -52,7 +52,7 @@ Provide as many identifiers as available — the search tool uses them to match 
 ## See Also
 
 - [protocol ContactResolver](contactresolver.md)
-  Resolves the current user’s identity for search queries involving people.
+  An interface you use to help Foundation models resolve references to the person using the app.
 
 
 ---

@@ -3,7 +3,7 @@
 **Framework**: ColorSync  
 **Kind**: enum
 
-How slopes at spline control points are determined.
+How the framework determines slopes at spline control points.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -24,7 +24,7 @@ enum Slopes
 
 ### Enumeration Cases
 - [ColorSyncProfile.HeadroomAdaptiveGainCurve.ColorVolumeTransform.ToneMapping.Method.AlternateCurve.ControlPoints.Slopes.interpolate](colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve/controlpoints-swift.struct/slopes-swift.enum/interpolate.md)
-  Computed by Piecewise Cubic Hermite Interpolating Polynomial from the X/Y coordinates.
+  The framework computes slopes by Piecewise Cubic Hermite Interpolating Polynomial from the X/Y coordinates.
 - [ColorSyncProfile.HeadroomAdaptiveGainCurve.ColorVolumeTransform.ToneMapping.Method.AlternateCurve.ControlPoints.Slopes.tangent(_:)](colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve/controlpoints-swift.struct/slopes-swift.enum/tangent(_:).md)
   Explicit tangent slopes expressed as tan(slope_angle), one per control point.
 

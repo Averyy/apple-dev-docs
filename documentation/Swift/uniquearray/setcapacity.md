@@ -26,10 +26,6 @@ This operation replaces the array’s storage buffer with a newly allocated buff
 
 > **Note**: O(`count`)
 
-## Parameters
-
-- `newCapacity`: The desired new capacity. `newCapacity` must be greater than or equal to the current count.
-
 
 ---
 

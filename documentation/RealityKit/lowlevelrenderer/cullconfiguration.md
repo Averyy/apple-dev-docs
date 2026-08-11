@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: struct
 
-The parameters for a frustum culling operation.
+The configuration for a frustum culling operation.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -40,7 +40,7 @@ struct CullConfiguration
 - [static func sortMeshInstances(LowLevelMeshInstanceArray, indices: inout MutableSpan<Int>, configuration: LowLevelRenderer.SortConfiguration)](lowlevelrenderer/sortmeshinstances(_:indices:configuration:).md)
   Sorts the given mesh instances by sort category and, for transparent instances, by back-to-front distance from the camera.
 - [LowLevelRenderer.SortConfiguration](lowlevelrenderer/sortconfiguration.md)
-  The parameters for a mesh instance sort pass.
+  The configuration for a mesh instance sort pass.
 
 
 ---

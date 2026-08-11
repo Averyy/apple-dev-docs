@@ -3,7 +3,7 @@
 **Framework**: Core Spotlight  
 **Kind**: property
 
-Alternate name strings the contact may be known by.
+Alternate names you use to refer to the contact.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -18,12 +18,16 @@ Alternate name strings the contact may be known by.
 var names: [String]
 ```
 
+#### Discussion
+
+Specify each alternate name as a separate string in the array.
+
 ## See Also
 
 - [var displayName: String](resolvedcontact/displayname.md)
-  Display name (e.g., “John Appleseed” or “Acme Corp”).
+  The name your app displays for the contact.
 - [var nameComponents: [PersonNameComponents]](resolvedcontact/namecomponents.md)
-  Structured name components for locale-aware matching.
+  The contact’s names as a set of structured name components.
 
 
 ---

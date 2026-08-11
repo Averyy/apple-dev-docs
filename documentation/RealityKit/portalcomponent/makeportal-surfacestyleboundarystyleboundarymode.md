@@ -16,7 +16,7 @@ Creates a portal entity and a world entity, and configures them.
 ## Declaration
 
 ```swift
-static func makePortal(surfaceStyle: PortalComponent.SurfaceStyle, boundaryStyle: PortalComponent.BoundaryStyle = .infinitePlane(), boundaryMode: PortalComponent.BoundaryMode = .disabled) -> PortalComponent.Portal
+static func makePortal(surfaceStyle: PortalComponent.SurfaceStyle, boundaryStyle: PortalComponent.BoundaryStyle = .infinitePlane(), boundaryMode: PortalComponent.BoundaryMode = .none) -> PortalComponent.Portal
 ```
 
 #### Return Value
@@ -44,7 +44,7 @@ To configure entities you already own — for example, a portal entity that has 
 
 - `surfaceStyle`: The size of the portal surface mesh.
 - `boundaryStyle`: The shape of the clipping and crossing boundary. Defaults to [`infinitePlane()`](portalcomponent/boundarystyle/infiniteplane().md).
-- `boundaryMode`: The combination of clipping and crossing behaviors to enable. Defaults to [`PortalComponent.BoundaryMode.disabled`](portalcomponent/boundarymode/disabled.md).
+- `boundaryMode`: The combination of clipping and crossing behaviors to enable. Defaults to [`PortalComponent.BoundaryMode.none`](portalcomponent/boundarymode/none.md).
 
 
 ---

@@ -55,8 +55,6 @@ Implement renaming along the lines of this algorithm:
   Looks up an item within a directory.
 - [func removeItem(FSItem, named: FSFileName, fromDirectory: FSItem, replyHandler: ((any Error)?) -> Void)](fsvolume/operations/removeitem(_:named:fromdirectory:replyhandler:).md)
   Removes an existing item from a given directory.
-- [func reclaimItem(FSItem, replyHandler: ((any Error)?) -> Void)](fsvolume/operations/reclaimitem(_:replyhandler:).md)
-  Reclaims an item, releasing any resources allocated for the item.
 
 
 ---

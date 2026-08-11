@@ -27,13 +27,13 @@ When you execute a prompt on a model, the model produces a probability for every
 ## See Also
 
 - [var temperature: Double?](generationoptions/temperature.md)
-  Temperature influences the confidence of the models response.
+  A value that influences the confidence of the model’s response.
 - [var samplingMode: GenerationOptions.SamplingMode?](generationoptions/samplingmode-swift.property.md)
   A sampling strategy for how the model picks tokens when generating a response.
 - [GenerationOptions.SamplingMode](generationoptions/samplingmode-swift.struct.md)
   A type that defines how values are sampled from a probability distribution.
 - [var toolCallingMode: GenerationOptions.ToolCallingMode?](generationoptions/toolcallingmode-swift.property.md)
-  Configure the tool calling requirements.
+  The tool calling requirements.
 - [GenerationOptions.ToolCallingMode](generationoptions/toolcallingmode-swift.struct.md)
   A value you use to describe the model behavior when it comes to tool usage.
 - [var maximumResponseTokens: Int?](generationoptions/maximumresponsetokens.md)

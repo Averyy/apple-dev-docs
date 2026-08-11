@@ -19,6 +19,10 @@ Enables specular occlusion computations.
 var enableSpecularOcclusion: Bool { get set }
 ```
 
+## Mentions
+
+- [Rendering high-fidelity characters](rendering-high-fidelity-characters.md)
+
 #### Discussion
 
 When enabled, this property reduces specular highlights in areas that are occluded from ambient light, allowing for more realistic indirect lighting. This uses bent normal maps to modulate specular reflections based on ambient occlusion and roughness.

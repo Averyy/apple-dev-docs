@@ -22,6 +22,7 @@ protocol LanguageModel : Sendable
 ## Mentions
 
 - [Adding server-side intelligence with Private Cloud Compute](adding-server-side-intelligence-with-private-cloud-compute.md)
+- [Running a Core AI model in a Foundation Models session](running-a-core-ai-model-in-a-foundation-models-session.md)
 
 #### Overview
 
@@ -57,6 +58,8 @@ let response = try await session.respond(to: "Tell me a joke!")
 
 ## See Also
 
+- [Running a Core AI model in a Foundation Models session](running-a-core-ai-model-in-a-foundation-models-session.md)
+  Send requests on device to an open source model you export with Core AI to get a consistent API experience.
 - [Optimizing key-value caching in language model sessions](optimizing-key-value-caching-in-language-model-sessions.md)
   Prevent repeated token processing by preserving the cached state across turns.
 - [struct LanguageModelCapabilities](languagemodelcapabilities.md)

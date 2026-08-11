@@ -6,7 +6,7 @@
 
 ### Type Properties
 - [static var allCases: [HKAppleWalkingSteadinessClassification]](hkapplewalkingsteadinessclassification/allcases.md)
-  An array that contains all valid walking steadiness classifications.
+  A collection of all values for Apple Walking Steadiness classification
 
 
 ---

@@ -21,8 +21,6 @@ static var sourceOver: LowLevelRenderPipelineState.Descriptor.Blending { get }
 
 - [static var add: LowLevelRenderPipelineState.Descriptor.Blending](lowlevelrenderpipelinestate/descriptor/blending-swift.struct/add.md)
   Additive blending that combines source and destination colors.
-- [static func custom(sourceRGBBlendFactor: MTLBlendFactor, destinationRGBBlendFactor: MTLBlendFactor, sourceAlphaBlendFactor: MTLBlendFactor, destinationAlphaBlendFactor: MTLBlendFactor, alphaBlendOperation: MTLBlendOperation) -> LowLevelRenderPipelineState.Descriptor.Blending](lowlevelrenderpipelinestate/descriptor/blending-swift.struct/custom(sourcergbblendfactor:destinationrgbblendfactor:sourcealphablendfactor:destinationalphablendfactor:alphablendoperation:).md)
-  Creates a custom blending configuration with explicit Metal blend factors and operations.
 
 
 ---

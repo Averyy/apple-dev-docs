@@ -16,12 +16,12 @@ The maximum total number of pixels in the source frame for a given spatial scale
 ## Declaration
 
 ```swift
-class func maximumPixelCount(forSpatialScaleFactor spatialScaleFactor: Int) -> Int
+class func maximumPixelCount(forSpatialScaleFactor spatialScaleFactor: Int) -> Int?
 ```
 
 #### Discussion
 
-The product of `frameWidth` and `frameHeight` must be less than or equal to this value. Use in conjunction with [`maximumDimension(forSpatialScaleFactor:)`](vtlowlatencyframeinterpolationconfiguration/maximumdimension(forspatialscalefactor:).md) to determine valid frame dimensions. Pass `1` for `spatialScaleFactor` when using the processor for temporal interpolation without spatial scaling. Returns `0` if an unsupported scale factor is provided.
+The product of `frameWidth` and `frameHeight` must be less than or equal to this value. Use in conjunction with [`maximumDimensionForSpatialScaleFactor:`](vtlowlatencyframeinterpolationconfiguration/maximumdimensionforspatialscalefactor:.md) to determine valid frame dimensions. Pass `1` for `spatialScaleFactor` when using the processor for temporal interpolation without spatial scaling. Optional return value.  Returns nil for unsupported spatialScaleFactor or if processor is unsupported.
 
 
 ---

@@ -3,7 +3,7 @@
 **Framework**: USDKit  
 **Kind**: property
 
-The rate at which time codes advance per second on this stage.
+The number of time codes per second of playback for this stage.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -22,7 +22,7 @@ var timeCodesPerSecond: Double { get nonmutating set }
 ## See Also
 
 - [var timeCodeRange: ClosedRange<USDStage.TimeCode>](usdstage/timecoderange.md)
-  The animation range authored on this stage, in time codes.
+  The range of time codes over which this stage has authored animation.
 - [USDStage.TimeCode](usdstage/timecode.md)
   A unitless point in time, used with time-varying values authored in 3D scenes.
 

@@ -36,6 +36,7 @@ Changing the value of this property results in the posting of an [`boundsDidChan
   Sets the size of the view’s bounds rectangle to specified dimensions, inversely scaling its coordinate system relative to its frame rectangle.
 - [class let boundsDidChangeNotification: NSNotification.Name](nsview/boundsdidchangenotification.md)
   A notification that posts when the view’s bounds rectangle changes to a new value independently of the frame rectangle.
+- [NSView.BoundsDidChangeMessage](nsview/boundsdidchangemessage.md)
 - [var postsBoundsChangedNotifications: Bool](nsview/postsboundschangednotifications.md)
   A Boolean value indicating whether the view posts notifications when its bounds rectangle changes.
 

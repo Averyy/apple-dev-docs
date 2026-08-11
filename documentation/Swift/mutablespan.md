@@ -89,13 +89,13 @@ struct MutableSpan<Element> where Element : ~Copyable
 - [MutableSpan.Index](mutablespan/index.md)
   The type that represents an index in a `MutableSpan`.
 ### Default Implementations
-- [BorrowingSequence Implementations](mutablespan/borrowingsequence-implementations.md)
+- [Iterable Implementations](mutablespan/iterable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [BorrowingSequence](borrowingsequence.md)
 - [ContiguousBytes](../Foundation/ContiguousBytes.md)
+- [Iterable](iterable.md)
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)
 
@@ -113,7 +113,6 @@ struct MutableSpan<Element> where Element : ~Copyable
   A borrowed view into contiguous memory that contains validly-encoded UTF-8 code units.
 - [struct MutableRawSpan](mutablerawspan.md)
   `MutableRawSpan` represents a contiguous region of memory which contains initialized bytes.
-- [struct SpanIterator](spaniterator.md)
 
 
 ---

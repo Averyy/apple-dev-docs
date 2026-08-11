@@ -40,8 +40,6 @@ print("The third vertex of the 20th triangle is at X=\(vertexPosition.x)")
 
 - [var vertexCount: Int](clothmeshresource/vertexcount.md)
   The number of vertices in the mesh.
-- [var positions: Span<SIMD3<Float>>](clothmeshresource/positions.md)
-  The positions of all the vertices.
 - [func withPositions<Result>((Span<SIMD3<Float>>) -> Result) -> Result](clothmeshresource/withpositions(_:).md)
   Provides access to the positions of all the vertices within a callback.
 - [func vertexIndex(at: UInt32) -> UInt32](clothmeshresource/vertexindex(at:).md)

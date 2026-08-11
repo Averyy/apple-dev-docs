@@ -16,7 +16,7 @@ func showGrammarPresentation(for range: NSRange, in context: NSWritingToolsCoord
 
 #### Discussion
 
-Pass in context and range to identify the issue the user selected. Returns NO if the UI cannot be brought up.
+Pass in context and range to identify the issue the user selected. The context must match one of the contexts returned from [`writingToolsCoordinator(_:requestsContextsFor:completion:)`](nswritingtoolscoordinator/delegate-swift.protocol/writingtoolscoordinator(_:requestscontextsfor:completion:).md) and the range must match the range in the context of one of the grammar details returned for that context from [`writingToolsCoordinator(_:requestsGrammarResultsFor:completion:)`](nswritingtoolscoordinator/delegate-swift.protocol/writingtoolscoordinator(_:requestsgrammarresultsfor:completion:).md) Returns NO if the UI cannot be brought up.
 
 
 ---

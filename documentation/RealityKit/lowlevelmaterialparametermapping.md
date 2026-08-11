@@ -19,7 +19,7 @@ struct LowLevelMaterialParameterMapping
 
 #### Overview
 
-Use the `bufferLocation(named:)`, `constantLocation(named:)`, and `textureLocation(named:)` methods to look up the binding indices for named parameters by name, so that argument table slots can be set correctly at runtime.
+Use `bufferLocation(named:)`, `constantLocation(named:)`, and `textureLocation(named:)` to look up the binding index for a named parameter, then bind a resource to that slot with [`setBufferSlice(_:at:)`](lowlevelargumenttable/setbufferslice(_:at:).md) or [`setTexture(_:at:)`](lowlevelargumenttable/settexture(_:at:).md).
 
 ## Topics
 
@@ -59,7 +59,7 @@ Use the `bufferLocation(named:)`, `constantLocation(named:)`, and `textureLocati
 - [class LowLevelRenderTarget](lowlevelrendertarget.md)
   An object that describes the pixel format configuration for a render pass’s color and depth attachments.
 - [class LowLevelArgumentTable](lowlevelargumenttable.md)
-  A table of buffer slices and textures bound to a single shader function stage.
+  A table of buffer slices and textures bound to a single shader function.
 
 
 ---

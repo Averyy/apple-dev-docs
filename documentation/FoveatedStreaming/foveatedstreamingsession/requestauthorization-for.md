@@ -12,7 +12,7 @@ Requests authorization for the given input capabilities, prompting the user for 
 
 ```swift
 @MainActor
-final func requestAuthorization(for inputCapabilities: [FoveatedStreamingSession.InputCapability]) async -> [FoveatedStreamingSession.InputCapability : FoveatedStreamingSession.AuthorizationStatus]
+final func requestAuthorization(for inputCapabilities: Set<FoveatedStreamingSession.InputCapability>? = nil) async -> [FoveatedStreamingSession.InputCapability : FoveatedStreamingSession.AuthorizationStatus]
 ```
 
 #### Return Value
@@ -25,7 +25,7 @@ Use this method to drive authorization prompts ahead of [`connect(endpoint:)`](f
 
 ## Parameters
 
-- `inputCapabilities`: The capabilities to authorize.
+- `inputCapabilities`: The capabilities to authorize.  When `nil` (the default), the session’s [`requestedInputCapabilities`](foveatedstreamingsession/requestedinputcapabilities.md) are used.
 
 
 ---

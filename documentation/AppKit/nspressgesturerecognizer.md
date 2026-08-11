@@ -22,7 +22,7 @@ Upon creation, the gesture recognizer recognizes press gestures involving only t
 
 ## Topics
 
-### Configuring the Gesture Recognizer
+### Configuring the gesture recognizer
 - [var allowableMovement: CGFloat](nspressgesturerecognizer/allowablemovement.md)
   The maximum movement of the mouse in the view before the gesture fails.
 - [var buttonMask: Int](nspressgesturerecognizer/buttonmask.md)

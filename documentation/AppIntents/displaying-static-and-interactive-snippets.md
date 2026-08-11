@@ -19,7 +19,7 @@ For example, the [`Adopting App Intents to support system experiences`](adopting
 If your app intent doesn’t require a follow-up action, return a static snippet that enables someone to view the outcome of the app intent. To show a static snippet as a result from an app intent, return a view from your app intent’s `perform()` method:
 
 ```swift
-func perform() async throws -> some IntentResult {
+func perform() async throws -> some IntentResult & ShowsSnippetView {
     // ...
     
     return .result(view: Text("Some example text.").font(.title))
@@ -28,13 +28,13 @@ func perform() async throws -> some IntentResult {
 
 ##### Return an Interactive Snippet
 
-To display an interactive snippet as a result of an app intent, create an app intent for your action - or use an existing app intent. For example, the [`Adopting App Intents to support system experiences`](adopting-app-intents-to-support-system-experiences.md) sample app provides landmark information might already have an app intent that finds a nearby landmark and returns information about it:
+To display an interactive snippet as a result of an app intent, start by creating an app intent for your action - or use an existing app intent. The following example shows an intent that finds the closest landmark and returns it for display. The system will present the information using a default appearance:
 
 ```swift
 struct ClosestLandmarkIntent: AppIntent {
     static let title: LocalizedStringResource = "Find Closest Landmark"
 
-    func perform() async throws -> some ReturnsValue<LandmarkEntity> & ShowsSnippetIntent {
+    func perform() async throws -> some ReturnsValue<LandmarkEntity> {
         let landmark = await self.findClosestLandmark()
 
         return .result(
@@ -44,26 +44,31 @@ struct ClosestLandmarkIntent: AppIntent {
 }
 ```
 
-To display a snippet instead of just returning the app entity, change your intent’s `perform()` function to return a [`SnippetIntent`](snippetintent.md) in addition to the existing return value by adding `& ShowsSnippetIntent`. When you return a  [`ShowsSnippetIntent`](showssnippetintent.md) result from the intent, you let the system know that the action displays an interactive snippet. In the [`Adopting App Intents to support system experiences`](adopting-app-intents-to-support-system-experiences.md) example app, the previous example’s updated `perform()` method might look like this:
+To display a snippet instead of just returning the app entity, change the result of the intent’s `perform()` function to return a [`SnippetIntent`](snippetintent.md), in addition to the existing return value. When you return a  [`ShowsSnippetIntent`](showssnippetintent.md) result from the intent, you let the system know that the action displays an interactive snippet. To enable the system to speak the result of the intent on devices without a screen or when a person uses AirPods, the previous example’s updated `perform()` method also returns a `SnippetIntent` with a custom dialog:
 
 ```swift
-struct ClosestLandmarkIntent: AppIntent {
-    static let title: LocalizedStringResource = "Find Closest Landmark"
+public struct ClosestLandmarkIntent: AppIntent {
+    public static let title: LocalizedStringResource = "Find Closest Landmark"
+    public init() {}
 
     @Dependency var modelData: ModelData
 
-    func perform() async throws -> some ReturnsValue<LandmarkEntity> & ShowsSnippetIntent {
+    public func perform() async throws -> some ReturnsValue<LandmarkEntity> & ShowsSnippetIntent & ProvidesDialog {
         let landmark = await self.findClosestLandmark()
 
         return .result(
             value: landmark,
+            dialog: IntentDialog(
+                full: "The closest landmark is \(landmark.name).",
+                supporting: "\(landmark.name) is located in \(landmark.continent)."
+            ),
             snippetIntent: LandmarkSnippetIntent(landmark: landmark)
         )
     }
 }
 ```
 
-In the example, the intent returns a landmark entity by declaring `-> some ReturnsValue<LandmarkEntity>` and, additionally, returns a `LandmarkSnippetIntent`. This intent, an implementation of [`SnippetIntent`](snippetintent.md) , handles the snippet’s layout and interactive components.
+In the example, the intent returns a landmark entity by declaring `-> some ReturnsValue<LandmarkEntity>` and, additionally, a `LandmarkSnippetIntent`. This intent implements [`SnippetIntent`](snippetintent.md) and handles the snippet’s layout and interactive components.
 
 When you adopt interactive snippets, you might be able to reuse existing intents and add logic to display a snippet. Like the example above, you can return several results from an intent. By keeping an existing result type and additionally returning a snippet intent, you avoid breaking people’s custom shortcuts that use the previous version of your intent.
 
@@ -86,8 +91,10 @@ struct LandmarkSnippetIntent: SnippetIntent {
     @Parameter var landmark: LandmarkEntity
     @Dependency var modelData: ModelData
 
+    init() {}
+
     func perform() async throws -> some IntentResult & ShowsSnippetView {
-        let isFavorite = await modelData.isFavorite(landmark)
+        let isFavorite = await modelData.isFavorite(landmark: landmark)
 
         return .result(
             view: LandmarkView(landmark: landmark, isFavorite: isFavorite)

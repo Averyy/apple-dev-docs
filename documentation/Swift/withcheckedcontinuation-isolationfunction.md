@@ -25,7 +25,7 @@ func withCheckedContinuation<T>(isolation: isolated (any Actor)?, function: Stri
 
 - [func extractIsolation<each Arg, Result>((repeat each Arg) async throws -> Result) -> (any Actor)?](extractisolation(_:).md)
 - [func withCheckedThrowingContinuation<T>(isolation: isolated (any Actor)?, function: String, (CheckedContinuation<T, any Error>) -> Void) async throws -> sending T](withcheckedthrowingcontinuation(isolation:function:_:).md)
-  Source-compatibility overload; replaced by `withCheckedThrowingContinuation(function:_:)`.
+  Source-compatibility overload; replaced by [`withCheckedThrowingContinuation(function:_:)`](withcheckedthrowingcontinuation(function:_:)-2k46m.md).
 - [func withUnsafeContinuation<T>(isolation: isolated (any Actor)?, (UnsafeContinuation<T, Never>) -> Void) async -> sending T](withunsafecontinuation(isolation:_:).md)
   Source-compatibility overload; replaced by [`withUnsafeContinuation(_:)`](withunsafecontinuation(_:).md).
 - [typealias AnyActor](anyactor.md)
@@ -42,7 +42,7 @@ func withCheckedContinuation<T>(isolation: isolated (any Actor)?, function: Stri
   Invokes the passed in closure with a unsafe continuation for the current task.
 - [func withUnsafeThrowingContinuation<T>((UnsafeContinuation<T, any Error>) -> Void) async throws -> sending T](withunsafethrowingcontinuation(_:)-7zhvy.md)
 - [func withUnsafeThrowingContinuation<T>(isolation: isolated (any Actor)?, (UnsafeContinuation<T, any Error>) -> Void) async throws -> sending T](withunsafethrowingcontinuation(isolation:_:).md)
-  Source-compatibility overload; replaced by `withUnsafeThrowingContinuation(_:)`.
+  Source-compatibility overload; replaced by [`withUnsafeThrowingContinuation(_:)`](withunsafethrowingcontinuation(_:)-32nwt.md).
 
 
 ---

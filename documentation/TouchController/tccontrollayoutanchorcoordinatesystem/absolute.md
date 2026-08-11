@@ -8,6 +8,7 @@ Anchors are positioned according to the absolute edges of the sceren.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

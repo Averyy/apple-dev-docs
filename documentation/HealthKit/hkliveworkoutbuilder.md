@@ -44,6 +44,9 @@ Use a live workout builder to create an [`HKWorkout`](hkworkout.md) sample durin
 ### Accessing data
 - [var elapsedTime: TimeInterval](hkliveworkoutbuilder/elapsedtime.md)
   The elapsed time for the workout based on the builder’s current contents, including pauses.
+### Receiving zone updates
+- [class HKLiveWorkoutZoneUpdate](hkliveworkoutzoneupdate.md)
+  A structure that contains information about zone transitions during a live workout session.
 
 ## Relationships
 

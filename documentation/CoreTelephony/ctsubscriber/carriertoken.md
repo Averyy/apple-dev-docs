@@ -8,6 +8,7 @@ A data object containing authorization information about the subscriber.
 **Availability**:
 - iOS 7.0+
 - iPadOS 7.0+
+- Mac Catalyst 7.0+
 
 ## Declaration
 

@@ -6,6 +6,7 @@
 **Availability**:
 - iOS 26.1+
 - iPadOS 26.1+
+- Mac Catalyst 26.1+
 
 ## Declaration
 

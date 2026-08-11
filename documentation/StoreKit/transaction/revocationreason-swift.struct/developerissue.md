@@ -8,6 +8,7 @@ The value that indicates a customer canceled the transaction due to an actual or
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
+- Mac Catalyst 15.0+
 - macOS 12.0+
 - tvOS 15.0+
 - visionOS 1.0+

@@ -51,8 +51,8 @@ struct Vec3d
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
-- [USDPrim.Attribute.MetadataValue](usdprim/attribute/metadatavalue.md)
 - [USDPrim.Attribute.Value](usdprim/attribute/value.md)
+- [USDStage.Object.MetadataValue](usdstage/object/metadatavalue.md)
 - [USDValueProtocol](usdvalueprotocol.md)
 
 ## See Also
@@ -61,10 +61,6 @@ struct Vec3d
   The name of the wrapped type.
 - [var isEmpty: Bool](usdvalue/isempty.md)
   Whether this value is empty.
-- [var isArrayValued: Bool](usdvalue/isarrayvalued.md)
-  Whether the wrapped value is an array.
-- [var arraySize: Int](usdvalue/arraysize.md)
-  The number of elements in the wrapped array, or `0` for scalar values.
 
 
 ---

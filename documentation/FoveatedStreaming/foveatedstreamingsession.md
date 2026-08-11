@@ -87,9 +87,9 @@ struct FoveatedStreamingApp: App {
   Creates or retrieves a message channel for the given message channel ID.
 - [func pause() async throws](foveatedstreamingsession/pause.md)
   Pauses a session without ending it.
-- [func queryAuthorization(for: [FoveatedStreamingSession.InputCapability]) async -> [FoveatedStreamingSession.InputCapability : FoveatedStreamingSession.AuthorizationStatus]](foveatedstreamingsession/queryauthorization(for:).md)
+- [func queryAuthorization(for: Set<FoveatedStreamingSession.InputCapability>) async -> [FoveatedStreamingSession.InputCapability : FoveatedStreamingSession.AuthorizationStatus]](foveatedstreamingsession/queryauthorization(for:).md)
   Returns the current authorization status of the given input capabilities without presenting an authorization prompt.
-- [func requestAuthorization(for: [FoveatedStreamingSession.InputCapability]) async -> [FoveatedStreamingSession.InputCapability : FoveatedStreamingSession.AuthorizationStatus]](foveatedstreamingsession/requestauthorization(for:).md)
+- [func requestAuthorization(for: Set<FoveatedStreamingSession.InputCapability>?) async -> [FoveatedStreamingSession.InputCapability : FoveatedStreamingSession.AuthorizationStatus]](foveatedstreamingsession/requestauthorization(for:).md)
   Requests authorization for the given input capabilities, prompting the user for any capability whose status is [`FoveatedStreamingSession.AuthorizationStatus.notDetermined`](foveatedstreamingsession/authorizationstatus/notdetermined.md).
 - [func resume() async throws](foveatedstreamingsession/resume.md)
   Resumes a previously paused session.

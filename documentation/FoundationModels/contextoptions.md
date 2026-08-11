@@ -31,15 +31,15 @@ Create a [`ContextOptions`](contextoptions.md) structure when you need to bias t
 
 ### Creating context options
 - [init(includeSchemaInPrompt: Bool?, reasoningLevel: ContextOptions.ReasoningLevel?)](contextoptions/init(includeschemainprompt:reasoninglevel:).md)
-  Creates prompting options that controls how the model is prompted.
+  Creates options that control how the model is prompted.
 ### Configuring the reasoning level
 - [var reasoningLevel: ContextOptions.ReasoningLevel?](contextoptions/reasoninglevel-swift.property.md)
-  Controls the amount of thinking that the model is allowed to output before producing a response.
+  Controls the amount of reasoning that the model is allowed to output before producing a response.
 - [ContextOptions.ReasoningLevel](contextoptions/reasoninglevel-swift.enum.md)
-  Controls the amount of thinking that the model is allowed to output before producing a response.
+  Controls the amount of reasoning that the model is allowed to output before producing a response.
 ### Including the schema
 - [var includeSchemaInPrompt: Bool?](contextoptions/includeschemainprompt.md)
-  Inject the schema into the prompt to bias the model.
+  A Boolean value that indicates whether to inject the schema into the prompt to bias the model.
 
 ## Relationships
 
@@ -62,10 +62,6 @@ Create a [`ContextOptions`](contextoptions.md) structure when you need to bias t
   Details you provide that define the model’s intended behavior on prompts.
 - [struct Prompt](prompt.md)
   A prompt from a person to the model.
-- [struct Transcript](transcript.md)
-  A linear history of entries that reflect an interaction with a session.
-- [struct TranscriptErrorHandlingPolicy](transcripterrorhandlingpolicy.md)
-  Options for controlling how a language model session manages the transcript when errors occur.
 - [struct GenerationOptions](generationoptions.md)
   Options that control how the model generates its response to a prompt.
 

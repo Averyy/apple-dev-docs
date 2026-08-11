@@ -49,8 +49,6 @@ This metric corresponds to the [`MetricResult.applicationResumeTime(_:)`](metric
   A metric that measures app hang time.
 - [struct HitchTimeMetric](hitchtimemetric.md)
   A metric that measures animation hitch time.
-- [struct ScrollHitchTimeMetric](scrollhitchtimemetric.md)
-  A metric that measures scroll hitch time.
 
 
 ---

@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: class
 
-A compiled function that evaluates lighting for a surface shader stage.
+A compiled Metal function that evaluates lighting.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -17,11 +17,15 @@ A compiled function that evaluates lighting for a surface shader stage.
 final class LightingFunction
 ```
 
+#### Overview
+
+Create a `LightingFunction` through a context’s [`lighting`](lowlevelrendercontext/lighting.md) provider, using [`makeImageBasedLightingFunction()`](lowlevelrendercontextlighting/makeimagebasedlightingfunction().md) for image-based lighting or [`makeUnlitLightingFunction()`](lowlevelrendercontextlighting/makeunlitlightingfunction().md) for unlit shading.
+
 ## Topics
 
 ### Configuring shader arguments
 - [var parameterMapping: LowLevelMaterialParameterMapping?](lowlevelmaterialresource/lightingfunction/parametermapping.md)
-  The parameter name-to-slot mapping for this lighting function.
+  The parameter name-to-slot mapping for this lighting function, or `nil` if it takes no custom parameters.
 - [var argumentTableDescriptor: LowLevelArgumentTable.Descriptor?](lowlevelmaterialresource/lightingfunction/argumenttabledescriptor.md)
   The argument table descriptor for this lighting function, or `nil` if it takes no per-draw arguments.
 
@@ -37,13 +41,13 @@ final class LightingFunction
 - [var surface: LowLevelMaterialResource.SurfaceShader](lowlevelmaterialresource/surface.md)
   The compiled fragment-stage surface shader.
 - [LowLevelMaterialResource.SurfaceShader](lowlevelmaterialresource/surfaceshader.md)
-  A compiled Metal function that implements the fragment surface shader stage.
+  A compiled Metal function that implements the surface shader function.
 - [var geometry: LowLevelMaterialResource.GeometryModifier](lowlevelmaterialresource/geometry.md)
   The compiled vertex-stage geometry modifier.
 - [LowLevelMaterialResource.GeometryModifier](lowlevelmaterialresource/geometrymodifier.md)
-  A compiled Metal function that implements the vertex geometry modifier stage.
+  A compiled Metal function that implements the geometry modifier function.
 - [LowLevelMaterialResource.Function](lowlevelmaterialresource/function.md)
-  A compiled shader stage function that can receive per-draw parameters via an argument table.
+  A compiled shader function that can receive per-draw parameters via an argument table.
 
 
 ---

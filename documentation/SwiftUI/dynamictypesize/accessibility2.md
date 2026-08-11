@@ -20,6 +20,10 @@ The second accessibility size.
 case accessibility2
 ```
 
+## Mentions
+
+- [Applying custom fonts to text](applying-custom-fonts-to-text.md)
+
 ## See Also
 
 - [DynamicTypeSize.accessibility1](dynamictypesize/accessibility1.md)

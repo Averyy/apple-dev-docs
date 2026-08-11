@@ -18,6 +18,7 @@ case activate
 
 ## Mentions
 
+- [Routing and streaming media to remote devices](routing-and-streaming-media-to-remote-devices.md)
 - [Routing media to third-party devices](routing-media-to-third-party-devices.md)
 
 

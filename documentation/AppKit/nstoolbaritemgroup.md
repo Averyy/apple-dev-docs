@@ -79,10 +79,8 @@ If instead you set a view on the parent item, you get two labels with one shared
   The selection mode of the grouped toolbar item.
 - [NSToolbarItemGroup.SelectionMode](nstoolbaritemgroup/selectionmode-swift.enum.md)
   A value that indicates how a grouped toolbar item selects its subitems.
-### Instance Properties
 - [var role: NSToolbarItemGroup.Role](nstoolbaritemgroup/role-swift.property.md)
   The semantic role of the item. Defaults to `NSToolbarItemGroupRoleAutomatic`.
-### Enumerations
 - [NSToolbarItemGroup.Role](nstoolbaritemgroup/role-swift.enum.md)
 
 ## Relationships

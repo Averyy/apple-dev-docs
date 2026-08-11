@@ -69,8 +69,10 @@ Create and configure a [`WKUserContentController`](wkusercontentcontroller.md) o
 ### Initializers
 - [init?(coder: NSCoder)](wkusercontentcontroller/init(coder:).md)
 ### Instance Methods
-- [func addBuffer(Data, name: String, contentWorld: WKContentWorld)](wkusercontentcontroller/addbuffer(_:name:contentworld:).md)
-- [func removeBuffer(withName: String, contentWorld: WKContentWorld)](wkusercontentcontroller/removebuffer(withname:contentworld:).md)
+- [func addBuffer(RawSpan, name: String, to: WKContentWorld)](wkusercontentcontroller/addbuffer(_:name:to:).md)
+  Adds a data buffer that will be available to JavaScript through the `window.webkit.buffers` object.
+- [func removeBuffer(named: String, from: WKContentWorld)](wkusercontentcontroller/removebuffer(named:from:).md)
+  Removes a previously added data buffer from the given `WKContentWorld`.
 
 ## Relationships
 
@@ -99,11 +101,9 @@ Create and configure a [`WKUserContentController`](wkusercontentcontroller.md) o
   An object that identifies the origin of a particular resource.
 - [class WKUserScript](wkuserscript.md)
   A script that the web view injects into a webpage.
-- [class WKContentWorldConfiguration](wkcontentworldconfiguration.md)
+- [WKContentWorld.Configuration](wkcontentworld/configuration.md)
 - [class WKJSHandle](wkjshandle.md)
   A WKJSHandle object contains a reference to a JavaScript object.
-- [class WKJSSerializedNode](wkjsserializednode.md)
-  A `WKJSSerializedNode` object contains the serialized representation of a DOM node
 
 
 ---

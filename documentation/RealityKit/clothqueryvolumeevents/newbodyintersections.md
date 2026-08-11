@@ -23,8 +23,6 @@ This event should be treated as having a non-escapable lifetime. Some of its dat
 ## Topics
 
 ### Accessing the intersections
-- [var intersections: Span<ClothQueryVolumeEvents.NewBodyIntersections.Intersection>](clothqueryvolumeevents/newbodyintersections/intersections.md)
-  The intersections with cloth bodies that took place.
 - [func withIntersections<Result>((Span<ClothQueryVolumeEvents.NewBodyIntersections.Intersection>) -> Result) -> Result](clothqueryvolumeevents/newbodyintersections/withintersections(_:).md)
   Provides access to the intersections with cloth bodies that took place.
 - [ClothQueryVolumeEvents.NewBodyIntersections.Intersection](clothqueryvolumeevents/newbodyintersections/intersection.md)

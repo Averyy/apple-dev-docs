@@ -8,6 +8,7 @@ The object acting as the collection view’s data source for app entity identifi
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
+- Mac Catalyst 18.4+
 - tvOS 18.4+
 - visionOS 2.4+
 

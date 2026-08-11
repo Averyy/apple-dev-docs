@@ -153,7 +153,7 @@ struct USDLayer
 ## See Also
 
 - [struct USDStage](usdstage.md)
-  A composed, runtime view of a USD scene assembled from one or more layers.
+  A 3D scene composed from one or more Universal Scene Description (USD) documents.
 - [struct USDPrim](usdprim.md)
   A single node in a stage’s scene hierarchy that holds attributes, relationships, metadata, and child prims.
 

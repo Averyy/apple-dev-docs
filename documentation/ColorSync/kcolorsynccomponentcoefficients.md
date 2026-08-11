@@ -3,7 +3,7 @@
 **Framework**: ColorSync  
 **Kind**: var
 
-Sub-dictionary of custom linear-combination coefficients for free-style component mixing (component mixing type == 3).
+Sub-dictionary of custom linear-combination coefficients for free-style component mixing.
 
 **Availability**:
 - iOS 27.0+ (Beta)

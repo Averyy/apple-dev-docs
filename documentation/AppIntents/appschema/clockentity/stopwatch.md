@@ -36,6 +36,9 @@ struct StopwatchEntity {
     let id: <#Identifiable.ID#>
 
     var laps: [Duration]
+    var startTime: Date
+    var pauseTime: Date?
+    var state: <#StopwatchState#>
 
     var displayRepresentation: DisplayRepresentation {
         <#DisplayRepresentation#>

@@ -23,7 +23,7 @@ init(name: String, description: String? = nil, representNilExplicitlyInGenerated
 
 - `name`: A name this dynamic schema can be referenced by.
 - `description`: A natural language description of this schema.
-- `properties`: The properties to associated with this schema.
+- `properties`: The properties associated with this schema.
 
 ## See Also
 
@@ -34,7 +34,7 @@ init(name: String, description: String? = nil, representNilExplicitlyInGenerated
 - [init(name: String, description: String?, properties: [DynamicGenerationSchema.Property])](dynamicgenerationschema/init(name:description:properties:).md)
   Creates an object schema.
 - [init(referenceTo: String)](dynamicgenerationschema/init(referenceto:).md)
-  Creates an refrence schema.
+  Creates a reference schema.
 - [init<Value>(type: Value.Type, guides: [GenerationGuide<Value>])](dynamicgenerationschema/init(type:guides:).md)
   Creates a schema from a generable type and guides.
 - [DynamicGenerationSchema.Property](dynamicgenerationschema/property.md)

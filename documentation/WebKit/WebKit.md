@@ -47,6 +47,9 @@ For more information about WebKit, go to [`https://webkit.org`](https://develope
   Enhance testing of your web content using Safari’s enhancements to WebDriver.
 - [Testing with WebDriver in Safari](testing-with-webdriver-in-safari.md)
   Enable WebDriver and run a test.
+### Classes
+- [class WKDOMNodeSnapshot](wkdomnodesnapshot.md)
+  A `WKDOMNodeSnapshot` object contains a snapshot of a DOM node
 
 
 ---

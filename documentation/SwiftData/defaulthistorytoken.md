@@ -19,6 +19,12 @@
 struct DefaultHistoryToken
 ```
 
+## Topics
+
+### Instance Properties
+- [var storeIdentifier: String](defaulthistorytoken/storeidentifier.md)
+  The on-disk identifier of the data store this token covers (SD-0028).
+
 ## Relationships
 
 ### Conforms To

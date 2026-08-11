@@ -3,7 +3,7 @@
 **Framework**: App Intents  
 **Kind**: property
 
-App entity schema conformance for types you use for clock functionality.
+The collection of entity schemas in the clock domain.
 
 **Availability**:
 - iOS 27.0+ (Beta)

@@ -3,7 +3,7 @@
 **Framework**: SwiftData  
 **Kind**: property
 
-The unique identifier for the section, which is its [`name`](resultssection/name.md).
+The unique identifier for the section, which is its [`title`](resultssection/title.md).
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -17,13 +17,8 @@ The unique identifier for the section, which is its [`name`](resultssection/name
 ## Declaration
 
 ```swift
-var id: SectionName { get }
+var id: SectionTitle { get }
 ```
-
-## See Also
-
-- [let name: SectionName](resultssection/name.md)
-  The identifier of the section.
 
 
 ---

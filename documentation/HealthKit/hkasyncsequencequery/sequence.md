@@ -4,8 +4,6 @@
 **Kind**: associatedtype  
 **Required**: Yes
 
-The data type that the query returns.
-
 **Availability**:
 - iOS 15.4+
 - iPadOS 15.4+

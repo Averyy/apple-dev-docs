@@ -8,7 +8,6 @@ A value that indicates a person has previously denied authorization to use the f
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 
 ## Declaration
 

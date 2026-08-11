@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: init
 
-Creates a new quota limit reached instance.
+Creates a quota limit reached instance.
 
 **Availability**:
 - iOS 27.0+ (Beta)

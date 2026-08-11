@@ -23,7 +23,7 @@ final func setBufferSlice(_ bufferSlice: LowLevelBufferSlice, at index: Int) thr
 
 ## Parameters
 
-- `bufferSlice`: The buffer slice to bind to the slot.
+- `bufferSlice`: The buffer slice to bind to the slot. Its size must be no smaller than the slot’s [`size`](lowlevelargumenttable/descriptor-swift.struct/buffer/size.md).
 - `index`: The slot index within the argument table’s buffer array.
 
 ## See Also

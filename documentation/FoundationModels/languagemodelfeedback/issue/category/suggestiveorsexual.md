@@ -36,7 +36,7 @@ A suggestive or sexual issue might be where you ask the model to draft a script 
 - [LanguageModelFeedback.Issue.Category.triggeredGuardrailUnexpectedly](languagemodelfeedback/issue/category/triggeredguardrailunexpectedly.md)
   The model throws a guardrail violation when it shouldn’t.
 - [LanguageModelFeedback.Issue.Category.unhelpful](languagemodelfeedback/issue/category/unhelpful.md)
-  The response was not unhelpful.
+  The response was unhelpful.
 - [LanguageModelFeedback.Issue.Category.vulgarOrOffensive](languagemodelfeedback/issue/category/vulgaroroffensive.md)
   The model produces vulgar or offensive material.
 

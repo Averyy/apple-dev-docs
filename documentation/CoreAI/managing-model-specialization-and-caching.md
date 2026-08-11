@@ -50,6 +50,14 @@ For advanced use cases, restrict specialization to CPU only with `.cpuOnly`, or 
 
 In most scenarios, the default configuration offers the best performance, so test your app’s performance carefully before overriding it. Because not all devices have the same compute units available, check what’s available with [`availableKinds`](computeunitkind/availablekinds.md). For details on all available specialization options, see [`SpecializationOptions`](specializationoptions.md).
 
+#### Optimize for Variable Shapes
+
+By default, for models with dynamic shapes, Core AI optimizes the inference function for each new input shape it encounters. If your app calls the same function with a new shape often, such as when it runs a dynamic-shape large language model whose sequence grows one token at a time, this per-shape optimization can cost more time than it saves.
+
+In those cases, set [`expectFrequentReshapes`](specializationoptions/expectfrequentreshapes.md) to `true` to skip the per-shape optimization. Core AI runs the generic dynamic version of the function instead, which works with any eligible shape.
+
+See [`Core AI Models`](https://developer.apple.comhttps://github.com/apple/coreai-models) for examples of applying this flag to dynamic-shape models.
+
 #### Specialize a Model Before Loading It
 
 When your app downloads a model or enables a feature that uses one, you can specialize the model at a convenient moment so the person doesn’t notice a delay when they use it. Use [`specialize(contentsOf:options:cache:cachePolicy:)`](aimodel/specialize(contentsof:options:cache:cachepolicy:).md) to specialize a model without loading it for inference:

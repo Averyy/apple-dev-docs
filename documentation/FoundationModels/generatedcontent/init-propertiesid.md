@@ -28,15 +28,15 @@ The order of properties is important. For [`Generable`](generable.md) types, the
 - [init(_:)](generatedcontent/init(_:).md)
   Creates generated content from another value.
 - [init(some ConvertibleToGeneratedContent, id: GenerationID)](generatedcontent/init(_:id:).md)
-  Creates content that contains a single value with a custom `GenerationID`.
+  Creates content that contains a single value with a custom generation identifier.
 - [init<S>(elements: S, id: GenerationID?)](generatedcontent/init(elements:id:).md)
   Creates content representing an array of elements you specify.
 - [init<S>(properties: S, id: GenerationID?, uniquingKeysWith: (GeneratedContent, GeneratedContent) throws -> some ConvertibleToGeneratedContent) rethrows](generatedcontent/init(properties:id:uniquingkeyswith:).md)
-  Creates new generated content from the key-value pairs in the given sequence, using a combining closure to determine the value for any duplicate keys.
+  Creates generated content from key-value pairs, resolving duplicate keys with a combining closure.
 - [init(json: String) throws](generatedcontent/init(json:).md)
   Creates equivalent content from a JSON string.
 - [init(kind: GeneratedContent.Kind, id: GenerationID?)](generatedcontent/init(kind:id:).md)
-  Creates a new `GeneratedContent` instance with the specified kind and `GenerationID`.
+  Creates content with the specified kind and generation identifier.
 - [GeneratedContent.ParsingError](generatedcontent/parsingerror.md)
   A failure that occurs when a string cannot be parsed into GeneratedContent.
 

@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: init
 
-Create a property that contains a string type.
+Creates a property that contains a string type.
 
 **Availability**:
 - iOS 26.0+
@@ -24,7 +24,7 @@ init<RegexOutput>(name: String, description: String? = nil, type: String.Type, g
 - `name`: The property’s name.
 - `description`: A natural language description of what content should be generated for this property.
 - `type`: The type this property represents.
-- `guides`: An array of regexes to be applied to this string. If there’re multiple regexes in the array, only the last one will be applied.
+- `guides`: An array of regexes to apply to this string. If the array contains multiple regexes, only the last one applies.
 
 
 ---

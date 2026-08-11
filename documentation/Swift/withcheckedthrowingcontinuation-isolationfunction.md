@@ -3,7 +3,7 @@
 **Framework**: Swift  
 **Kind**: func
 
-Source-compatibility overload; replaced by `withCheckedThrowingContinuation(function:_:)`.
+Source-compatibility overload; replaced by [`withCheckedThrowingContinuation(function:_:)`](withcheckedthrowingcontinuation(function:_:)-2k46m.md).
 
 **Availability**:
 - iOS 13.0+
@@ -42,7 +42,7 @@ func withCheckedThrowingContinuation<T>(isolation: isolated (any Actor)?, functi
   Invokes the passed in closure with a unsafe continuation for the current task.
 - [func withUnsafeThrowingContinuation<T>((UnsafeContinuation<T, any Error>) -> Void) async throws -> sending T](withunsafethrowingcontinuation(_:)-7zhvy.md)
 - [func withUnsafeThrowingContinuation<T>(isolation: isolated (any Actor)?, (UnsafeContinuation<T, any Error>) -> Void) async throws -> sending T](withunsafethrowingcontinuation(isolation:_:).md)
-  Source-compatibility overload; replaced by `withUnsafeThrowingContinuation(_:)`.
+  Source-compatibility overload; replaced by [`withUnsafeThrowingContinuation(_:)`](withunsafethrowingcontinuation(_:)-32nwt.md).
 
 
 ---

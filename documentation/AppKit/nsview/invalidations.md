@@ -31,11 +31,6 @@ enum Invalidations
 - [NSView.Invalidations.Tuple](nsview/invalidations/tuple.md)
   A change that invalidates a combination of factors covered by the other invalidation types.
 
-## See Also
-
-- [func invalidate(view: NSView)](nsviewinvalidating/invalidate(view:).md)
-  Indicates to the system that an aspect of a view is invalid and triggers the necessary update.
-
 
 ---
 

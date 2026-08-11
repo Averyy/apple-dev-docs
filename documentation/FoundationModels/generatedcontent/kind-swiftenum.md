@@ -27,17 +27,17 @@ enum Kind
 
 ### Getting the kind of content
 - [GeneratedContent.Kind.array(_:)](generatedcontent/kind-swift.enum/array(_:).md)
-  Represents an array of `GeneratedContent` elements.
+  An array of generated content elements.
 - [GeneratedContent.Kind.bool(_:)](generatedcontent/kind-swift.enum/bool(_:).md)
-  Represents a boolean value.
+  A boolean value.
 - [GeneratedContent.Kind.null](generatedcontent/kind-swift.enum/null.md)
-  Represents a null value.
+  A null value.
 - [GeneratedContent.Kind.number(_:)](generatedcontent/kind-swift.enum/number(_:).md)
-  Represents a numeric value.
+  A numeric value.
 - [GeneratedContent.Kind.string(_:)](generatedcontent/kind-swift.enum/string(_:).md)
-  Represents a string value.
+  A string value.
 - [case structure(properties: [String : GeneratedContent], orderedKeys: [String])](generatedcontent/kind-swift.enum/structure(properties:orderedkeys:).md)
-  Represents a structured object with key-value pairs.
+  A structured object with key-value pairs.
 
 ## Relationships
 
@@ -51,15 +51,15 @@ enum Kind
 - [var kind: GeneratedContent.Kind](generatedcontent/kind-swift.property.md)
   The representation of the generated content.
 - [func value<Value>(Value.Type) throws -> Value](generatedcontent/value(_:).md)
-  Reads a top level, concrete partially `Generable` type from a named property.
+  Reads a top level, concrete partially generable type from a named property.
 - [func value(_:forProperty:)](generatedcontent/value(_:forproperty:).md)
-  Reads a concrete `Generable` type from named property.
+  Reads a concrete generable type from a named property.
 - [var isComplete: Bool](generatedcontent/iscomplete.md)
-  A Boolean that indicates whether the generated content is completed.
+  A Boolean value that indicates whether the generated content is complete.
 - [var generatedContent: GeneratedContent](generatedcontent/generatedcontent.md)
   A representation of this instance.
 - [var jsonString: String](generatedcontent/jsonstring.md)
-  Returns a JSON string representation of the generated content.
+  A JSON string representation of the generated content.
 - [var debugDescription: String](generatedcontent/debugdescription.md)
   A string representation for the debug description.
 

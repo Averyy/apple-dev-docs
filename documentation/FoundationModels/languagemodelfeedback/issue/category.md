@@ -19,6 +19,10 @@ Categories for model response issues.
 enum Category
 ```
 
+## Mentions
+
+- [Inspecting session transcripts and reporting model feedback](inspecting-session-transcripts-and-reporting-model-feedback.md)
+
 ## Topics
 
 ### Getting the issue category
@@ -35,7 +39,7 @@ enum Category
 - [LanguageModelFeedback.Issue.Category.triggeredGuardrailUnexpectedly](languagemodelfeedback/issue/category/triggeredguardrailunexpectedly.md)
   The model throws a guardrail violation when it shouldn’t.
 - [LanguageModelFeedback.Issue.Category.unhelpful](languagemodelfeedback/issue/category/unhelpful.md)
-  The response was not unhelpful.
+  The response was unhelpful.
 - [LanguageModelFeedback.Issue.Category.vulgarOrOffensive](languagemodelfeedback/issue/category/vulgaroroffensive.md)
   The model produces vulgar or offensive material.
 
@@ -51,7 +55,7 @@ enum Category
 ## See Also
 
 - [init(category: LanguageModelFeedback.Issue.Category, explanation: String?)](languagemodelfeedback/issue/init(category:explanation:).md)
-  Creates a new issue
+  Creates an issue.
 
 
 ---

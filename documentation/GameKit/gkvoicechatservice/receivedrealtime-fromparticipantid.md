@@ -8,6 +8,7 @@ Called by the client to deliver voice data received from a remote participant..
 **Availability**:
 - iOS 3.0+
 - iPadOS 3.0+
+- Mac Catalyst 3.0+
 - visionOS 1.0+
 - watchOS 3.0+
 

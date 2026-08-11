@@ -48,6 +48,8 @@ The features of a segmented control include the following:
   The visual style used to display the control.
 - [NSSegmentedControl.Style](nssegmentedcontrol/style.md)
   The following constants specify the visual style used to display the segmented control. They are used by [`segmentStyle`](nssegmentedcontrol/segmentstyle.md).
+- [var role: NSSegmentedControl.Role](nssegmentedcontrol/role-swift.property.md)
+- [NSSegmentedControl.Role](nssegmentedcontrol/role-swift.enum.md)
 ### Specifying number of segments
 - [var segmentCount: Int](nssegmentedcontrol/segmentcount.md)
   The number of segments in the control.
@@ -113,10 +115,6 @@ The features of a segmented control include the following:
 - [func setTag(Int, forSegment: Int)](nssegmentedcontrol/settag(_:forsegment:).md)
 - [func setToolTip(String?, forSegment: Int)](nssegmentedcontrol/settooltip(_:forsegment:).md)
 - [func toolTip(forSegment: Int) -> String?](nssegmentedcontrol/tooltip(forsegment:).md)
-### Instance Properties
-- [var role: NSSegmentedControl.Role](nssegmentedcontrol/role-swift.property.md)
-### Enumerations
-- [NSSegmentedControl.Role](nssegmentedcontrol/role-swift.enum.md)
 
 ## Relationships
 

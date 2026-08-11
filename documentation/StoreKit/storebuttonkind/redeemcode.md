@@ -8,6 +8,7 @@ A type of button that people use to redeem an offer code.
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
+- Mac Catalyst 17.0+
 - macOS 15.0+
 - visionOS 1.0+
 
@@ -16,6 +17,10 @@ A type of button that people use to redeem an offer code.
 ```swift
 static var redeemCode: StoreButtonKind { get }
 ```
+
+#### Discussion
+
+This button type is available for [`SubscriptionStoreView`](subscriptionstoreview.md) only.
 
 ## See Also
 

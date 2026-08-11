@@ -21,7 +21,7 @@ var name: USDToken { get }
 
 #### Discussion
 
-An attribute’s name is the last component of its [`path`](usdprim/attribute/path.md). This property is equivalent to the `SdfPath/nameToken` property of that path.
+An attribute’s name is the last component of its [`path`](usdprim/attribute/path.md). This property is equivalent to the `USDLayer.Path/name` property of that path.
 
 
 ---

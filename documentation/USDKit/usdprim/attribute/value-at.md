@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: method
 
+Returns this attribute’s value at the given time, or `nil` if unauthored.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)

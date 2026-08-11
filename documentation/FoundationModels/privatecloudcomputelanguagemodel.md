@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: class
 
-A variant of Apple Foundation Models that runs on Private Cloud Compute (PCC) to provide enhanced capabilities while maintaining privacy guarantees.
+A variant of Apple Foundation Models that runs on Private Cloud Compute to provide enhanced capabilities while maintaining privacy guarantees.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -42,10 +42,10 @@ Before using the model, verify its availability. Model availability depends on w
 
 ### Creating an instance
 - [convenience init()](privatecloudcomputelanguagemodel/init.md)
-  Creates a new Private Cloud Compute language model instance.
+  Creates a Private Cloud Compute language model instance.
 ### Inspecting the availability
 - [var isAvailable: Bool](privatecloudcomputelanguagemodel/isavailable.md)
-  A convenience getter to check if the system is entirely ready.
+  A Boolean value that indicates whether the system is entirely ready.
 - [var availability: PrivateCloudComputeLanguageModel.Availability](privatecloudcomputelanguagemodel/availability-swift.property.md)
   The availability of the language model.
 - [PrivateCloudComputeLanguageModel.Availability](privatecloudcomputelanguagemodel/availability-swift.enum.md)
@@ -57,12 +57,12 @@ Before using the model, verify its availability. Model availability depends on w
   The usage quota state for a Private Cloud Compute language model.
 ### Accessing the context size
 - [var contextSize: Int](privatecloudcomputelanguagemodel/contextsize.md)
-  Returns the maximum context size (in tokens) supported by the model.
+  The maximum context size in tokens supported by the model.
 ### Handling language and locales
 - [var supportedLanguages: Set<Locale.Language>](privatecloudcomputelanguagemodel/supportedlanguages.md)
   Languages that the model supports.
-- [func supportsLocale(Locale) -> Bool](privatecloudcomputelanguagemodel/supportslocale(_:).md)
-  Returns a Boolean indicating whether the given locale is supported by the model.
+- [func supportsLocale(Locale) async throws -> Bool](privatecloudcomputelanguagemodel/supportslocale(_:).md)
+  Returns a Boolean value that indicates whether the given locale is supported by the model.
 ### Accessing the error
 - [PrivateCloudComputeLanguageModel.Error](privatecloudcomputelanguagemodel/error.md)
   Errors that may occur when using Private Cloud Compute.

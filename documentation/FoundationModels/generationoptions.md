@@ -41,7 +41,7 @@ All input to the model contributes tokens to the context window of the [`Languag
   Creates generation options that control token sampling behavior.
 ### Configuring options
 - [var temperature: Double?](generationoptions/temperature.md)
-  Temperature influences the confidence of the models response.
+  A value that influences the confidence of the model’s response.
 - [var sampling: GenerationOptions.SamplingMode?](generationoptions/sampling.md)
   A sampling strategy for how the model picks tokens when generating a response.
 - [var samplingMode: GenerationOptions.SamplingMode?](generationoptions/samplingmode-swift.property.md)
@@ -49,7 +49,7 @@ All input to the model contributes tokens to the context window of the [`Languag
 - [GenerationOptions.SamplingMode](generationoptions/samplingmode-swift.struct.md)
   A type that defines how values are sampled from a probability distribution.
 - [var toolCallingMode: GenerationOptions.ToolCallingMode?](generationoptions/toolcallingmode-swift.property.md)
-  Configure the tool calling requirements.
+  The tool calling requirements.
 - [GenerationOptions.ToolCallingMode](generationoptions/toolcallingmode-swift.struct.md)
   A value you use to describe the model behavior when it comes to tool usage.
 - [var maximumResponseTokens: Int?](generationoptions/maximumresponsetokens.md)
@@ -76,10 +76,6 @@ All input to the model contributes tokens to the context window of the [`Languag
   Details you provide that define the model’s intended behavior on prompts.
 - [struct Prompt](prompt.md)
   A prompt from a person to the model.
-- [struct Transcript](transcript.md)
-  A linear history of entries that reflect an interaction with a session.
-- [struct TranscriptErrorHandlingPolicy](transcripterrorhandlingpolicy.md)
-  Options for controlling how a language model session manages the transcript when errors occur.
 - [struct ContextOptions](contextoptions.md)
   Options that configure details that should appear in the prompt.
 

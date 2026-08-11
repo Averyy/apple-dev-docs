@@ -174,8 +174,8 @@ The C `bool` and `Boolean` types and the Objective-C `BOOL` type are all bridged
 - [PromptRepresentable](../FoundationModels/PromptRepresentable.md)
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)
-- [USDPrim.Attribute.MetadataValue](../USDKit/USDPrim/Attribute/MetadataValue.md)
 - [USDPrim.Attribute.Value](../USDKit/USDPrim/Attribute/Value.md)
+- [USDStage.Object.MetadataValue](../USDKit/USDStage/Object/MetadataValue.md)
 - [USDValueProtocol](../USDKit/USDValueProtocol.md)
 
 

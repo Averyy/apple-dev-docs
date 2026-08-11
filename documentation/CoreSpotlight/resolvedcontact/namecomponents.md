@@ -3,7 +3,7 @@
 **Framework**: Core Spotlight  
 **Kind**: property
 
-Structured name components for locale-aware matching.
+The contact’s names as a set of structured name components.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -18,12 +18,16 @@ Structured name components for locale-aware matching.
 var nameComponents: [PersonNameComponents]
 ```
 
+#### Discussion
+
+Specify each distinct name as a separate [`PersonNameComponents`](https://developer.apple.com/documentation/Foundation/PersonNameComponents) type in the array.
+
 ## See Also
 
 - [var displayName: String](resolvedcontact/displayname.md)
-  Display name (e.g., “John Appleseed” or “Acme Corp”).
+  The name your app displays for the contact.
 - [var names: [String]](resolvedcontact/names.md)
-  Alternate name strings the contact may be known by.
+  Alternate names you use to refer to the contact.
 
 
 ---

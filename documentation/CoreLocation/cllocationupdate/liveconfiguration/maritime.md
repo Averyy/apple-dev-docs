@@ -4,13 +4,13 @@
 **Kind**: case
 
 **Availability**:
-- iOS 17.0+
-- iPadOS 17.0+
-- Mac Catalyst 17.0+
-- macOS 14.0+
-- tvOS 17.0+
+- iOS 27.0+ (Beta)
+- iPadOS 27.0+ (Beta)
+- Mac Catalyst 27.0+ (Beta)
+- macOS 27.0+ (Beta)
+- tvOS 27.0+ (Beta)
 - visionOS 1.0+
-- watchOS 10.0+
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 

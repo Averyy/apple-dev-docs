@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: method
 
-Provides partial read-write CPU access to the transform data.
+Updates the transform data in place synchronously on the CPU.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -19,11 +19,13 @@ final func update<R, E>(_ body: @_lifetime(0: copy 0) (inout MutableSpan<float4x
 
 #### Discussion
 
-Use `update` when you want to modify a subset of transforms without fully replacing the buffer contents.
+You pass a closure that receives a mutable span representing the transform data, which the closure may modify. This span is valid only for the duration of the closure.
+
+> **Note**: Any error thrown by `body`.
 
 ## Parameters
 
-- `body`: A closure that receives a `MutableSpan<float4x4>` over the current transform data. The span is valid only for the duration of the closure.
+- `body`: A closure that receives a mutable span over the transform data for in-place modification.
 
 
 ---

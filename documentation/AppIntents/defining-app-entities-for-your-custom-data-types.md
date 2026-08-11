@@ -99,6 +99,8 @@ The App Intents framework supports several different property wrappers, each of 
 
 Include parameters in a property wrapper when you want to provide a custom title for your property or add other information like a Spotlight indexing key. For some parameters, the system infers default information from the property declaration. For example, if you don’t specify a `title` parameter for the macro, the macro uses the name of the property as the title. For other parameters, the system treats a missing parameter value as a sign you don’t support the feature.
 
+> ❗ **Important**: [`AppEntity`](appentity.md) instances have a total size limit of 10 MB, including all child properties and their values. If your entity exceeds this limit, the system throws an exception, and your app might crash. To reduce the size of your app entity, use the `@DeferredProperty` property wrapper.
+
 If a property contains an array of entities, use an [`EntityCollection`](entitycollection.md) as the property’s type to improve performance in specific situations. An entity collection stores only the unique identifier of each entity in the collection initially. The collection doesn’t load the rest of the entity unless you specifically request it. If your array includes thousands of entities, this behavior can save measurable time during critical operations such as parameter resolution of an app intent. For more information about how to use entity collections, see [`EntityCollection`](entitycollection.md).
 
 For a list of property wrappers and how to use them, see [`Property declarations`](app-entities#Property-declarations.md).

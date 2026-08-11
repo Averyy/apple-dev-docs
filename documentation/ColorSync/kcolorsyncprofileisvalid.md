@@ -3,6 +3,8 @@
 **Framework**: ColorSync  
 **Kind**: var
 
+A key indicating whether the profile is valid.
+
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
@@ -21,11 +23,17 @@ var kColorSyncProfileIsValid: Unmanaged<CFString>!
 ## See Also
 
 - [var kColorSyncProfileClass: Unmanaged<CFString>!](kcolorsyncprofileclass.md)
+  A key for the profile’s class.
 - [var kColorSyncProfileColorSpace: Unmanaged<CFString>!](kcolorsyncprofilecolorspace.md)
+  A key for the profile’s color space.
 - [var kColorSyncProfileDescription: Unmanaged<CFString>!](kcolorsyncprofiledescription.md)
+  A key for the profile’s localized description.
 - [var kColorSyncProfileHeader: Unmanaged<CFString>!](kcolorsyncprofileheader.md)
+  A key for the profile’s header data.
 - [var kColorSyncProfilePCS: Unmanaged<CFString>!](kcolorsyncprofilepcs.md)
+  A key for the profile’s connection space (PCS).
 - [var kColorSyncProfileURL: Unmanaged<CFString>!](kcolorsyncprofileurl.md)
+  A key for the profile’s URL.
 
 
 ---

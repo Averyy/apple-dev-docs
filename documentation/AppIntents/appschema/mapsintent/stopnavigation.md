@@ -52,6 +52,8 @@ For more information about the App Intents framework and the experiences it supp
   An intent schema that starts navigation.
 - [var stopShareETA: some AppSchemaIntent](appschema/mapsintent/stopshareeta.md)
   An intent schema that stops sharing ETA.
+- [var updateNavigationWaypoints: some AppSchemaIntent](appschema/mapsintent/updatenavigationwaypoints.md)
+  An intent schema that updates the list of waypoints for a navigation session.
 - [AppSchema.MapsIntent](appschema/mapsintent.md)
   Identifies intent schemas in the maps domain.
 

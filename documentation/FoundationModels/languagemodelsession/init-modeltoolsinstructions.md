@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: init
 
-Start a new session in blank slate state with instructions builder.
+Creates a session in a blank slate state with an instructions builder.
 
 **Availability**:
 - iOS 26.0+
@@ -21,6 +21,7 @@ convenience init(model: SystemLanguageModel = .default, tools: [any Tool] = [], 
 ## Mentions
 
 - [Adding server-side intelligence with Private Cloud Compute](adding-server-side-intelligence-with-private-cloud-compute.md)
+- [Running a Core AI model in a Foundation Models session](running-a-core-ai-model-in-a-foundation-models-session.md)
 
 #### Discussion
 
@@ -31,7 +32,7 @@ convenience init(model: SystemLanguageModel = .default, tools: [any Tool] = [], 
 ## See Also
 
 - [convenience(model:tools:transcript:)](languagemodelsession/init(model:tools:transcript:).md)
-  Start a session by rehydrating from a transcript.
+  Creates a session by rehydrating from a transcript.
 
 
 ---

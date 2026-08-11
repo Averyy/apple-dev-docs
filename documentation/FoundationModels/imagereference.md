@@ -25,7 +25,7 @@ struct ImageReference
 
 #### Overview
 
-Use `ImageReference` to allow the model to reference images from the current `LanguageModelSession`’s transcript.
+Use `ImageReference` to allow the model to reference images from the transcript of the current `LanguageModelSession`.
 
 You can define an `ImageReference` as an argument to a `Tool`. Retrieve the referenced image from the transcript during the tool call.
 
@@ -54,9 +54,6 @@ struct MyTool: Tool {
 - [let attachmentLabel: String](imagereference/attachmentlabel.md)
   The label of the referenced image.
 ### Accessing the referenced image
-- [func resolve(in: Transcript) -> Transcript.ImageAttachment?](imagereference/resolve(in:).md)
-  Returns the referenced image from the transcript.
-### Instance Methods
 - [func resolved(in: some Sequence<Transcript.Entry>) -> Transcript.ImageAttachment?](imagereference/resolved(in:).md)
   Returns the referenced image from the transcript.
 

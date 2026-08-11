@@ -3,7 +3,7 @@
 **Framework**: App Intents  
 **Kind**: property
 
-App enum schema conformance for types you use for whiteboard functionality.
+The collection of enum schemas in the whiteboard domain.
 
 **Availability**:
 - iOS 18.0+

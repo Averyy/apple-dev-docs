@@ -311,13 +311,6 @@ Bridging from `NSDictionary` to `Dictionary` first calls the `copy(with:)` metho
   Creates a dictionary by merging the given dictionary into this dictionary, using a combining closure to determine the value for duplicate keys.
 - [func merging<S, E>(S, uniquingKeysWith: (Value, Value) throws(E) -> Value) throws(E) -> [Key : Value]](dictionary/merging(_:uniquingkeyswith:)-6cztu.md)
   Creates a dictionary by merging key-value pairs in a sequence into the dictionary, using a combining closure to determine the value for duplicate keys.
-### Subscripts
-- [subscript(String) -> USDValue?](dictionary/subscript(_:)-1uuzk.md)
-  Subscript that shadows the standard Dictionary subscript to provide path-based access. When the key contains `":"`, it is treated as a path with `":"` as the delimiter; otherwise the regular dictionary key semantics apply.
-- [subscript([String]) -> USDValue?](dictionary/subscript(_:)-7mdw0.md)
-  Accesses the value at the given key path.
-- [subscript(String, String) -> USDValue?](dictionary/subscript(_:_:).md)
-  Accesses the value at the given delimited key path.
 ### Type Aliases
 - [Dictionary.Element](dictionary/element.md)
   The element type of a dictionary: a tuple containing an individual key-value pair.

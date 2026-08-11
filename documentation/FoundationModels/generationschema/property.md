@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: struct
 
-Fields are named members of object types. Fields are strongly typed and have optional descriptions and guides.
+A named, strongly typed member of an object type with an optional description and guides.
 
 **Availability**:
 - iOS 26.0+
@@ -23,7 +23,7 @@ struct Property
 
 ### Creating a property
 - [init(name:description:type:guides:)](generationschema/property/init(name:description:type:guides:).md)
-  Create a property that contains a string type.
+  Creates a property that contains a string type.
 
 ## Relationships
 

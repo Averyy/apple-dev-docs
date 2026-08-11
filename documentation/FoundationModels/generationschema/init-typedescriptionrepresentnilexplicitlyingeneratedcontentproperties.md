@@ -34,7 +34,7 @@ init(type: any Generable.Type, description: String? = nil, representNilExplicitl
 - [init(type: any Generable.Type, description: String?, properties: [GenerationSchema.Property])](generationschema/init(type:description:properties:).md)
   Creates a schema by providing an array of properties.
 - [GenerationSchema.Property](generationschema/property.md)
-  Fields are named members of object types. Fields are strongly typed and have optional descriptions and guides.
+  A named, strongly typed member of an object type with an optional description and guides.
 
 
 ---

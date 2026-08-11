@@ -8,6 +8,7 @@ A data value used to determine when the item changes.
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
+- Mac Catalyst 11.0+
 - visionOS 1.0+
 
 ## Declaration

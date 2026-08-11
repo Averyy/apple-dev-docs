@@ -18,14 +18,9 @@ You can create tools that enable the model to:
 
 When you prompt the model with a question or make a request, the model decides whether it can provide an answer or if it needs the help of a tool. When the model determines that a tool can help, it calls the tool with additional arguments that the tool can use. After the tool completes the task, it returns control back to the model with information about what the tool did. The model can then use the output of the tool when it provides the final response.
 
-Before creating a tool, it’s helpful to understand the pattern the framework follows when using the tool you provide. The framework processes a request in six phases:
+Before creating a tool, it’s helpful to understand the pattern the framework follows when using the tool you provide. The framework processes a request in six phases that the following diagram shows:
 
-1. You present a list of available tools and their parameters to the model.
-2. You submit your prompt to the model.
-3. The model generates arguments to the tool(s) it wants to invoke.
-4. Your tool runs code on behalf of the model, using the model’s generated arguments.
-5. Your tool passes its output back to the model.
-6. The model produces a final response to the prompt, based on the tool output.
+![A flow diagram with two columns, App and Model. In the App column, a prompt](https://docs-assets.developer.apple.com/published/2a96b030693b9bb50c17a707bae25ba4/expanding-generation-with-tool-calling-sequence%402x.png)
 
 A tool conforms to [`Tool`](tool.md) and contains the arguments that the tool accepts, and a method that the model calls when it wants to use the tool. You can call [`call(arguments:)`](tool/call(arguments:).md) concurrently with itself or with other tools. The following example shows a tool that accepts a search term and a number of recipes to retrieve:
 
@@ -42,21 +37,19 @@ struct BreadDatabaseTool: Tool {
         var limit: Int
     }
 
+    @Generable
     struct Recipe {
         var name: String
         var description: String
-        var link: URL
+        var link: String
     }
     
-    func call(arguments: Arguments) async throws -> [String] {
+    func call(arguments: Arguments) async throws -> [Recipe] {
         var recipes: [Recipe] = []
         
         // Put your code here to retrieve a list of recipes from your database.
         
-        let formattedRecipes = recipes.map {
-            "Recipe for '\($0.name)': \($0.description) Link: \($0.link)"
-        }
-        return formattedRecipes
+        return recipes
     }
 }
 ```
@@ -79,7 +72,7 @@ let response = try await session.respond(
 )
 ```
 
-Tool output can be a string, or a [`GeneratedContent`](generatedcontent.md) object. The model can call a tool multiple times in parallel to satisfy the request, like when retrieving weather details for several cities:
+Tool output can be a string, a [`GeneratedContent`](generatedcontent.md) object, or any `@Generable` type. The model can call a tool multiple times in parallel to satisfy the request, like when retrieving weather details for several cities:
 
 ```swift
 struct WeatherTool: Tool {
@@ -97,15 +90,11 @@ struct WeatherTool: Tool {
       var temperature: Int
   }
 
-  func call(arguments: Arguments) async throws -> String {
+  func call(arguments: Arguments) async throws -> Forecast {
       // Get a random temperature value. Use `WeatherKit` to get 
       // a temperature for the city.
       let temperature = Int.random(in: 30...100)
-      let formattedResult = """
-          The forecast for '\(arguments.city)' is '\(temperature)' \
-          degrees Fahrenheit. 
-          """
-      return formattedResult
+      return Forecast(city: arguments.city, temperature: temperature)
   }
 }
 

@@ -1,4 +1,4 @@
-# tvOS 27 Beta 4 Release Notes
+# tvOS 27 Beta 5 Release Notes
 
 **Framework**: tvOS Release Notes
 
@@ -6,7 +6,13 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The tvOS 27 SDK provides support to develop tvOS apps for Apple TV devices running tvOS 27 beta 4. The SDK comes bundled with Xcode 27, available from the Mac App Store. For information on the compatibility requirements for Xcode 27, see [`Xcode 27 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-27-release-notes).
+The tvOS 27 SDK provides support to develop tvOS apps for Apple TV devices running tvOS 27 beta 5. The SDK comes bundled with Xcode 27, available from the Mac App Store. For information on the compatibility requirements for Xcode 27, see [`Xcode 27 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-27-release-notes).
+
+##### App Intents
+
+###### Resolved Issues
+
+- Fixed: The notes.appendText schema erroneously disappeared from the SDK.  (182532125)
 
 ##### Apple Tv
 
@@ -64,16 +70,29 @@ The tvOS 27 SDK provides support to develop tvOS apps for Apple TV devices runni
 
 - On Demand Resources and the `NSBundleResourceRequest` API are deprecated. Use Background Assets instead.  (170066290)
 
+##### Photokit
+
+###### Resolved Issues
+
+- Fixed: The `addedDate` property on `PHAsset` might return `nil` even though it’s marked as non-nullable.  (175050631)
+
+###### Deprecations
+
+- The `originalFilename` property on `PHAssetResource` is incorrectly marked as non-nullable, which misrepresents the property value; a new, nullable `filename` property is available as a replacement.  (175412725) (FB22589474)
+
 ##### Realitykit
 
 ###### Resolved Issues
 
+- Fixed: Some MaterialX 1.39 nodes are not supported.  (172875414)
 - Fixed: `ComputeGraphComponents` stored in a Reality file do not render when loaded.  (177674901)
 - Fixed: When `OpacityComponent` is applied to an entity with opaque materials, `RealityRenderer` renders the opaque materials with transparency, revealing interior surfaces. Only the frontmost surface should appear with partial transparency.  (177976245)
 
+##### Security
+
 ###### Known Issues
 
-- Some MaterialX 1.39 nodes are not supported.  (172875414)
+- Obtaining new certificates via ACME fails. New MDM enrollments using Managed Device Attestation fail.  (183456836) **Workaround:** Use SCEP if available as a temporary workaround, or ensure MDA-issued certificates are already installed before upgrading.
 
 ##### Shadergraph
 
@@ -95,9 +114,9 @@ The tvOS 27 SDK provides support to develop tvOS apps for Apple TV devices runni
 - New `Product.ProductType` APIs represent subscription Bundles and subscription Suites. New APIs in `Product.SubscriptionInfo.BundledSubscription` let you fetch merchandising data about subscriptions contained in a Bundle. Transaction and RenewalInfo contain new fields that provide information about purchases and customer status regarding Bundles and Suites.  (160501742)
 - `partnerName` and `partnerId` properties for Advanced Commerce API are available in [`Transaction.AdvancedCommerceInfo`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/transaction/advancedcommerceinfo-swift.struct) and [`RenewalInfo.AdvancedCommerceInfo`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/product/subscriptioninfo/renewalinfo/advancedcommerceinfo-swift.struct).  (167808780)
 
-###### Known Issues
+###### Resolved Issues
 
-- Purchases of non-subscription In-App Purchases made using the SKTestSession.buyProduct() method might fail with an invalid product error. The billingPlanType(_:) PurchaseOption isn’t respected for subscription purchases.  (181842500)
+- Fixed: Purchases of non-subscription In-App Purchases made using the SKTestSession.buyProduct() method might fail with an invalid product error. The billingPlanType(_:) PurchaseOption isn’t respected for subscription purchases.  (181842500)
 
 ##### Storekit Testing in Xcode
 

@@ -8,6 +8,7 @@ A hybrid placement that positions subscription controls within the main scroll v
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- Mac Catalyst 18.0+
 - macOS 15.0+
 - visionOS 2.0+
 

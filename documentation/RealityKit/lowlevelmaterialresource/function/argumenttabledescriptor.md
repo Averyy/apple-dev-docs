@@ -21,7 +21,7 @@ var argumentTableDescriptor: LowLevelArgumentTable.Descriptor? { get }
 ## See Also
 
 - [var parameterMapping: LowLevelMaterialParameterMapping?](lowlevelmaterialresource/function/parametermapping.md)
-  The parameter name-to-slot mapping for this function, used to look up binding indices by name at runtime.
+  The parameter name-to-slot mapping for this function, used to look up binding indices by name at runtime, or `nil` if the function takes no custom parameters.
 
 
 ---

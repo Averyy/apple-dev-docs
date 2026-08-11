@@ -54,7 +54,7 @@ struct Stat
   ID of device containing file
 - [var flags: FileFlags](stat/flags-swift.property.md)
   File flags
-- [var generationNumber: Int](stat/generationnumber.md)
+- [var generationNumber: UInt64](stat/generationnumber.md)
   File generation number
 - [var groupID: GroupID](stat/groupid.md)
   Group ID of owner
@@ -88,6 +88,9 @@ struct Stat
   File type for the given mode
 - [var userID: UserID](stat/userid.md)
   User ID of owner
+### Default Implementations
+- [Equatable Implementations](stat/equatable-implementations.md)
+- [Hashable Implementations](stat/hashable-implementations.md)
 
 ## Relationships
 

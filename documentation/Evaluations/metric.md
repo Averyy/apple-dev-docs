@@ -61,6 +61,11 @@ let result = metric.passing(rationale: "Exact match")
   An optional rationale describing the result.
 - [Metric.Value](metric/value-swift.enum.md)
   A metric result value.
+### Type Properties
+- [static let toolsAllPass: Metric](metric/toolsallpass.md)
+  A convenience metric for the strict pass or fail result of a [`ToolCallEvaluator`](toolcallevaluator.md).
+- [static let toolsPercentagePass: Metric](metric/toolspercentagepass.md)
+  A convenience metric for the partial score result of a [`ToolCallEvaluator`](toolcallevaluator.md).
 
 ## Relationships
 

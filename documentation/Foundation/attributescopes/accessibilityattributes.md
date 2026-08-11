@@ -27,6 +27,8 @@ struct AccessibilityAttributes
 - [let accessibilitySpeechAnnouncementsQueued: AttributeScopes.AccessibilityAttributes.QueueAnnouncementAttribute](attributescopes/accessibilityattributes/accessibilityspeechannouncementsqueued.md)
 - [let accessibilitySpeechIncludesPunctuation: AttributeScopes.AccessibilityAttributes.IncludesPunctuationAttribute](attributescopes/accessibilityattributes/accessibilityspeechincludespunctuation.md)
 - [let accessibilitySpeechPhoneticNotation: AttributeScopes.AccessibilityAttributes.IPANotationAttribute](attributescopes/accessibilityattributes/accessibilityspeechphoneticnotation.md)
+- [let accessibilitySpeechSSML: AttributeScopes.AccessibilityAttributes.SpeechSSMLAttribute](attributescopes/accessibilityattributes/accessibilityspeechssml.md)
+  An SSML fragment describing how the annotated range should be spoken.
 - [let accessibilitySpeechSpellsOutCharacters: AttributeScopes.AccessibilityAttributes.SpellOutAttribute](attributescopes/accessibilityattributes/accessibilityspeechspellsoutcharacters.md)
 - [let accessibilityTextCustom: AttributeScopes.AccessibilityAttributes.TextCustomAttribute](attributescopes/accessibilityattributes/accessibilitytextcustom.md)
 - [let accessibilityTextualContext: AttributeScopes.AccessibilityAttributes.TextualContextAttribute](attributescopes/accessibilityattributes/accessibilitytextualcontext.md)
@@ -43,6 +45,8 @@ struct AccessibilityAttributes
   An attribute to define how punctuation should be spoken.
 - [AttributeScopes.AccessibilityAttributes.QueueAnnouncementAttribute](attributescopes/accessibilityattributes/queueannouncementattribute.md)
   An attribute to define if speech announcements spoken by VoiceOver should be queued behind existing speech rather than interrupting speech in progress.
+- [AttributeScopes.AccessibilityAttributes.SpeechSSMLAttribute](attributescopes/accessibilityattributes/speechssmlattribute.md)
+  An attribute for an SSML fragment describing how the annotated range should be spoken.
 - [AttributeScopes.AccessibilityAttributes.SpellOutAttribute](attributescopes/accessibilityattributes/spelloutattribute.md)
   An attribute to define if each character should be spoken separately.
 - [AttributeScopes.AccessibilityAttributes.TextCustomAttribute](attributescopes/accessibilityattributes/textcustomattribute.md)

@@ -511,6 +511,8 @@ struct SIMD4<Scalar> where Scalar : SIMDScalar
 - [AnimatableData](../RealityKit/AnimatableData.md)
 - [BindableData](../RealityKit/BindableData.md)
 - [BitwiseCopyable](bitwisecopyable.md)
+- [ConvertibleFromBytes](convertiblefrombytes.md)
+- [ConvertibleToBytes](convertibletobytes.md)
 - [Copyable](copyable.md)
 - [CustomDebugStringConvertible](customdebugstringconvertible.md)
 - [CustomStringConvertible](customstringconvertible.md)

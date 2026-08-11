@@ -30,6 +30,7 @@ This property is equivalent to [`path`](usdprim/path.md).
 - [var isValid: Bool](usdprim/isvalid.md)
   A Boolean value indicating whether this prim is valid.
 - [var specifier: USDPrim.Specifier](usdprim/specifier-swift.property.md)
+  The specifier that describes how this prim is defined, such as `def`, `over`, or `class`.
 - [var stage: USDStage](usdprim/stage.md)
   The stage that owns this prim.
 - [var parent: USDPrim?](usdprim/parent.md)

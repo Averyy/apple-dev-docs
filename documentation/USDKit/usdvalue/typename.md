@@ -23,10 +23,6 @@ var typeName: String { get }
 
 - [var isEmpty: Bool](usdvalue/isempty.md)
   Whether this value is empty.
-- [var isArrayValued: Bool](usdvalue/isarrayvalued.md)
-  Whether the wrapped value is an array.
-- [var arraySize: Int](usdvalue/arraysize.md)
-  The number of elements in the wrapped array, or `0` for scalar values.
 - [USDValue.Vec3d](usdvalue/vec3d.md)
   A 3-component double-precision vector.
 

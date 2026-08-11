@@ -23,7 +23,7 @@ The fetched results of the fetch request.
 
 #### Discussion
 
-This property behaves like the [`wrappedValue`](fetchrequest/wrappedvalue.md) of a [`FetchRequest`](fetchrequest.md). In particular, SwiftUI returns the value associated with this property when you use [`SectionedFetchRequest`](sectionedfetchrequest.md) as a property wrapper and then access the wrapped property by name. For example, consider the following `quakes` property declaration that fetches a `Quake` type that the [`Loading and Displaying a Large Data Feed`](loading_and_displaying_a_large_data_feed.md) sample code project defines:
+This property behaves like the [`wrappedValue`](fetchrequest/wrappedvalue.md) of a [`FetchRequest`](fetchrequest.md). In particular, SwiftUI returns the value associated with this property when you use [`SectionedFetchRequest`](sectionedfetchrequest.md) as a property wrapper and then access the wrapped property by name. For example, consider the following `quakes` property declaration that fetches a `Quake` type that the [`Loading and displaying a large data feed`](loading-and-displaying-a-large-data-feed.md) sample code project defines:
 
 ```swift
 @SectionedFetchRequest<String, Quake>(

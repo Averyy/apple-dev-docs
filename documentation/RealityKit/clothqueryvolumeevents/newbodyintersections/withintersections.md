@@ -30,8 +30,6 @@ This span is only available during the subscription callback of this event. The 
 
 ## See Also
 
-- [var intersections: Span<ClothQueryVolumeEvents.NewBodyIntersections.Intersection>](clothqueryvolumeevents/newbodyintersections/intersections.md)
-  The intersections with cloth bodies that took place.
 - [ClothQueryVolumeEvents.NewBodyIntersections.Intersection](clothqueryvolumeevents/newbodyintersections/intersection.md)
   An intersection with a cloth body.
 

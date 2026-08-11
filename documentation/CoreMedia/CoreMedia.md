@@ -101,6 +101,8 @@ The Core Media framework defines the media pipeline used by AVFoundation and oth
 - [let kCMMetadataBaseDataType_ISOLatin1: CFString](kcmmetadatabasedatatype_isolatin1.md)
 - [let kCMMetadataBaseDataType_MacRoman: CFString](kcmmetadatabasedatatype_macroman.md)
 - [let kCMMetadataDataType_QuickTimeMetadataSMPTE2094_50: CFString](kcmmetadatadatatype_quicktimemetadatasmpte2094_50.md)
+- [let kCMMetadataFormatDescriptionKey_HumanReadableString: CFString](kcmmetadataformatdescriptionkey_humanreadablestring.md)
+- [let kCMMetadataFormatDescriptionMetadataSpecificationKey_HumanReadableString: CFString](kcmmetadataformatdescriptionmetadataspecificationkey_humanreadablestring.md)
 - [let kCMMetadataIdentifier_ITUT_T35MetadataSMPTE2094_50: CFString](kcmmetadataidentifier_itut_t35metadatasmpte2094_50.md)
 ### Type Aliases
 - [typealias CMAttachmentAccess](cmattachmentaccess.md)

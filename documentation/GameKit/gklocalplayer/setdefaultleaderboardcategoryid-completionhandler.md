@@ -8,6 +8,7 @@ Sets the category identifier for the local player’s default leaderboard.
 **Availability**:
 - iOS 6.0+
 - iPadOS 6.0+
+- Mac Catalyst 6.0+
 - macOS 10.8+
 - visionOS 1.0+
 - watchOS 2.0+

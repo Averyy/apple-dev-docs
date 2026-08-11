@@ -17,7 +17,8 @@ Returns a borrowing iterator over the elements of this sequence.
 ## Declaration
 
 ```swift
-func makeBorrowingIterator() -> SpanIterator<Element>
+@export(implementation)
+func makeBorrowingIterator() -> InlineArray<count, Element>.BorrowingIterator
 ```
 
 

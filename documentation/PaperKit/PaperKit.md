@@ -66,8 +66,6 @@ Configure PaperKit to match your app’s specific needs by providing a [`Feature
 ### Error handling
 - [enum MarkupError](markuperror.md)
   The error thrown for encoding / decoding data models.
-### Type Aliases
-- [typealias PKStrokeRenderStateReference](pkstrokerenderstatereference.md)
 
 
 ---

@@ -3,6 +3,8 @@
 **Framework**: ColorSync  
 **Kind**: var
 
+A key for a one-dimensional lookup table with interpolation, represented as `CFData` containing a `Float32` table.
+
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
@@ -21,11 +23,17 @@ var kColorSyncConversion1DLut: Unmanaged<CFString>!
 ## See Also
 
 - [var kColorSyncConversion3DLut: Unmanaged<CFString>!](kcolorsyncconversion3dlut.md)
+  A key for a three-dimensional lookup table with interpolation, represented as `CFData`.
 - [var kColorSyncConversionNDLut: Unmanaged<CFString>!](kcolorsyncconversionndlut.md)
+  A key for a multi-dimensional lookup table with interpolation, represented as `CFData` for N inputs and M outputs.
 - [var kColorSyncConversionGridPoints: Unmanaged<CFString>!](kcolorsyncconversiongridpoints.md)
+  A key for the number of grid points in a lookup table.
 - [var kColorSyncConversionChannelID: Unmanaged<CFString>!](kcolorsyncconversionchannelid.md)
+  A key for the identifier of the channel a conversion component applies to.
 - [var kColorSyncConversionInpChan: Unmanaged<CFString>!](kcolorsyncconversioninpchan.md)
+  A key for the number of input channels of a lookup table.
 - [var kColorSyncConversionOutChan: Unmanaged<CFString>!](kcolorsyncconversionoutchan.md)
+  A key for the number of output channels of a lookup table.
 
 
 ---

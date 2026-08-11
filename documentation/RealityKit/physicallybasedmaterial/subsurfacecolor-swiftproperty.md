@@ -17,6 +17,10 @@
 var subsurfaceColor: PhysicallyBasedMaterial.SubsurfaceColor { get set }
 ```
 
+## Mentions
+
+- [Rendering high-fidelity characters](rendering-high-fidelity-characters.md)
+
 ## See Also
 
 - [PhysicallyBasedMaterial.SubsurfaceColor](physicallybasedmaterial/subsurfacecolor-swift.struct.md)

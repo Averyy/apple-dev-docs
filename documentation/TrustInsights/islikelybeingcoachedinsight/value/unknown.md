@@ -8,7 +8,6 @@ A result that indicates a lack of evidence as to whether or not coaching is occu
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 
 ## Declaration
 

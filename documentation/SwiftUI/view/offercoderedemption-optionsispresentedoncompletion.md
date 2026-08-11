@@ -23,7 +23,7 @@ func offerCodeRedemption(options: Set<RedeemOption>, isPresented: Binding<Bool>,
 
 The [`offerCodeRedemption(options:isPresented:onCompletion:)`](view/offercoderedemption(options:ispresented:oncompletion:).md) method displays a system sheet where customers can enter and redeem offer codes. If you generate offer codes in App Store Connect, call this method to enable customers to redeem the offer. To display the sheet using UIKit, see `presentOfferCodeRedeemSheet(from:options:)`.
 
-> ❗ **Important**: Set up offer codes in App Store Connect before calling this API. Customers can only redeem these offers in your app through the redemption sheet; don’t use a custom UI. For more information, see [`Supporting offer codes in your app`](https://developer.apple.com/documentation/StoreKit/supporting-offer-codes-in-your-app).
+> ❗ **Important**: Set up offer codes in App Store Connect before calling this API. Customers can only redeem these offers in your app through the redemption sheet; don’t use a custom UI. For more information, see [`Supporting subscription offer codes in your app`](https://developer.apple.com/documentation/StoreKit/supporting-subscription-offer-codes-in-your-app).
 
 The following code example shows a view that displays the offer code redemption sheet when the customer taps a button:
 

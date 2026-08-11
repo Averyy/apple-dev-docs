@@ -24,11 +24,6 @@ A type that conforms to `UIViewInvalidating` implements this method to perform a
 
 - `view`: The view that requires invalidating.
 
-## See Also
-
-- [NSView.Invalidations](nsview/invalidations.md)
-  Changes that cause aspects of a view to be invalid and require an update.
-
 
 ---
 

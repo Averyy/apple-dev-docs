@@ -22,7 +22,7 @@ struct HeadroomAdaptiveGainCurve
 
 #### Overview
 
-This metadata is stored in a profile’s HAGC tag and applies only to profiles whose transfer function is PQ, HLG, or linear. Use [`colorVolumeTransform`](colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.property.md) to describe the tone mapping to perform, then embed the curve in a profile with `ColorSyncProfileCreateCopyWithHeadroomAdaptiveGainCurveInfoDictionary`.
+A profile stores this metadata in its HAGC tag; it applies only to profiles whose transfer function is PQ, HLG, or linear. Use [`colorVolumeTransform`](colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.property.md) to describe the tone mapping to perform, then embed the curve in a profile with `ColorSyncProfileCreateCopyWithHeadroomAdaptiveGainCurveInfoDictionary`.
 
 ## Topics
 

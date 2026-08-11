@@ -23,8 +23,6 @@ This event should be treated as having a non-escapable lifetime. Some of its dat
 ## Topics
 
 ### Accessing collision data
-- [var collisions: Span<ClothColliderEvents.NewBodyCollisions.Collision>](clothcolliderevents/newbodycollisions/collisions.md)
-  The collisions with cloth bodies that took place.
 - [func withCollisions<Result>((Span<ClothColliderEvents.NewBodyCollisions.Collision>) -> Result) -> Result](clothcolliderevents/newbodycollisions/withcollisions(_:).md)
   Provides access to the collisions with cloth bodies that took place.
 - [ClothColliderEvents.NewBodyCollisions.Collision](clothcolliderevents/newbodycollisions/collision.md)

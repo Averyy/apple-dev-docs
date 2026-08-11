@@ -128,7 +128,7 @@ The more reasoning you apply causes the model to use more of the context window 
 - [com.apple.developer.private-cloud-compute](../BundleResources/Entitlements/com.apple.developer.private-cloud-compute.md)
   A Boolean value that indicates whether the app can use Private Cloud Compute.
 - [class PrivateCloudComputeLanguageModel](privatecloudcomputelanguagemodel.md)
-  A variant of Apple Foundation Models that runs on Private Cloud Compute (PCC) to provide enhanced capabilities while maintaining privacy guarantees.
+  A variant of Apple Foundation Models that runs on Private Cloud Compute to provide enhanced capabilities while maintaining privacy guarantees.
 
 
 ---

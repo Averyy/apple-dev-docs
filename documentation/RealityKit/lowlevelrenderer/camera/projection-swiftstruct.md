@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: struct
 
-A projection transform that maps from camera space to clip space.
+A projection transform that maps from view space to clip space.
 
 **Availability**:
 - iOS 27.0+ (Beta)

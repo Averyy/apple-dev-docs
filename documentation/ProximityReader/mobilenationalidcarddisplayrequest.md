@@ -8,6 +8,7 @@ A mobile national ID card request that retrieves elements from the holder and di
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- Mac Catalyst 18.0+
 
 ## Declaration
 

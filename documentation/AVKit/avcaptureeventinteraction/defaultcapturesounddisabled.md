@@ -8,6 +8,7 @@ A Boolean value that indicates whether the default sound is in a disabled state.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

@@ -3,6 +3,8 @@
 **Framework**: ColorSync  
 **Kind**: var
 
+The default (host) byte order.
+
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
@@ -21,10 +23,15 @@ var kColorSyncByteOrderDefault: Int { get }
 ## See Also
 
 - [var kColorSyncByteOrder16Big: Int](kcolorsyncbyteorder16big.md)
+  16-bit, big-endian byte order.
 - [var kColorSyncByteOrder16Little: Int](kcolorsyncbyteorder16little.md)
+  16-bit, little-endian byte order.
 - [var kColorSyncByteOrder32Big: Int](kcolorsyncbyteorder32big.md)
+  32-bit, big-endian byte order.
 - [var kColorSyncByteOrder32Little: Int](kcolorsyncbyteorder32little.md)
+  32-bit, little-endian byte order.
 - [var kColorSyncByteOrderMask: Int](kcolorsyncbyteordermask.md)
+  The mask for extracting the byte-order value from a [`ColorSyncDataLayout`](colorsyncdatalayout.md).
 
 
 ---

@@ -38,7 +38,6 @@ struct RenameFileIntent {
 
 The schema supports the following system experiences:
 
-- Siri
 - Shortcuts
 
 For more information about the App Intents framework and the experiences it supports, see [`Getting started with the App Intents framework`](getting-started-with-the-app-intents-framework.md).

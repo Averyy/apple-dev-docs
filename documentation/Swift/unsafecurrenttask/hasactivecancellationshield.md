@@ -3,7 +3,7 @@
 **Framework**: Swift  
 **Kind**: property
 
-Checks if this task is executing in a scope with a task cancellation shield activated by the `withTaskCancellationShield(operation:)` function.
+Checks if this task is executing in a scope with a task cancellation shield activated by the `withTaskCancellationShield(operation:)-(()->Value)` function.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -22,7 +22,7 @@ var hasActiveCancellationShield: Bool { get }
 
 #### Discussion
 
-An active task cancellation shield prevents a task’s ability to observe if it was cancelled, i.e. the `Task/isCancelled` property will always return `false` when the task is executing with an active shield.
+An active task cancellation shield prevents a task’s ability to observe if it was cancelled, i.e. the [`isCancelled`](task/iscancelled-swift.type.property.md) property will always return `false` when the task is executing with an active shield.
 
 This property is primarily aimed at debugging and understanding cancellation behavior in complex call hierarchies, and should not be used in regular control flow.
 
@@ -30,7 +30,7 @@ Returns `true` when executing within a task that has an active cancellation shie
 
 Cancellation shields are not automatically inherited by child tasks; each child task must install its own shield if needed if it, independently, wanted to ignore cancellation during a specific scope.
 
-> **Note**: `withTaskCancellationShield(operation:)`
+> **Note**: `withTaskCancellationShield(operation:)-(()->Value)`
 
 > **Note**: [`hasActiveCancellationShield`](task/hasactivecancellationshield.md)
 

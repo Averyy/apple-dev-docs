@@ -36,6 +36,8 @@ struct MySubject<Value: Codable>: EvaluationSubject {
 - [associatedtype Value : Decodable, Encodable](evaluationsubject/value-swift.associatedtype.md)
   The type of the value produced by the system under test.
 ### Instance Properties
+- [var transcript: StructuredTranscript?](evaluationsubject/transcript.md)
+  The structured transcript captured while producing the value, if any.
 - [var value: Self.Value](evaluationsubject/value-swift.property.md)
   The typed value produced by the system under test.
 

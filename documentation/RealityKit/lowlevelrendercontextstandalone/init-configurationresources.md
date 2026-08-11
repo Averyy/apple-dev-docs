@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: init
 
-Creates a standalone render context using pre-compiled shader and pipeline resources.
+Creates a standalone render context using resources prepared ahead of time.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -19,23 +19,23 @@ init(configuration: LowLevelRenderContextStandalone.Configuration, resources: Lo
 
 #### Discussion
 
-Prefer this overload when sharing compiled resources across multiple render contexts. To create a single context without pre-compiling resources, use [`init(configuration:)`](lowlevelrendercontextstandalone/init(configuration:).md) instead.
+Prefer this overload when sharing the same resources across multiple render contexts. To create a single context without prepared resources, use [`init(configuration:)`](lowlevelrendercontextstandalone/init(configuration:).md) instead.
 
 > **Note**: [`LowLevelRenderContextError`](lowlevelrendercontexterror.md) if the context cannot be created.
 
 ## Parameters
 
-- `configuration`: The Metal device and optional memory owner for the new context.
-- `resources`: Pre-compiled shader and pipeline resources to share across render contexts.
+- `configuration`: The configuration for the new context.
+- `resources`: Prepared resources to use for this render context.
 
 ## See Also
 
 - [init(configuration: LowLevelRenderContextStandalone.Configuration) async throws](lowlevelrendercontextstandalone/init(configuration:).md)
-  Creates a standalone render context, asynchronously compiling all required shader and pipeline resources.
+  Creates a standalone render context, asynchronously preparing required resources.
 - [LowLevelRenderContextStandalone.Configuration](lowlevelrendercontextstandalone/configuration.md)
   Configuration for creating a standalone render context backed by a Metal device.
 - [LowLevelRenderContextStandalone.Resources](lowlevelrendercontextstandalone/resources.md)
-  Pre-compiled shader and pipeline resources shared across multiple render context instances.
+  Resources needed for a render context
 
 
 ---

@@ -34,8 +34,6 @@ This span is only available during the subscription callback of this event. The 
   The entity of the body that intersected the volume.
 - [var bodyComponent: ClothBodyComponent?](clothqueryvolumeevents/newbodyintersections/intersection/bodycomponent.md)
   The [`ClothBodyComponent`](clothbodycomponent.md) of the intersecting body, if still present on the entity.
-- [var particleIndices: Span<UInt32>](clothqueryvolumeevents/newbodyintersections/intersection/particleindices.md)
-  The indices of particles that intersected the volume.
 
 
 ---

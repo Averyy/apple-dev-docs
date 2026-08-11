@@ -17,10 +17,6 @@
 static func addAttachmentSegment(_ segment: Transcript.AttachmentSegment) -> LanguageModelExecutorGenerationChannel.Response.Action
 ```
 
-## See Also
-
-- [static func updateCustomSegment(any Transcript.CustomSegment) -> LanguageModelExecutorGenerationChannel.Response.Action](languagemodelexecutorgenerationchannel/response/action-swift.struct/updatecustomsegment(_:).md)
-
 
 ---
 

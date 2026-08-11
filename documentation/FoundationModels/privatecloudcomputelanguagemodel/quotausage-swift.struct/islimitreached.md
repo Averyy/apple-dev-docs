@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: property
 
-A Boolean indicating whether the usage limit has been reached.
+A Boolean value that indicates whether the usage limit has been reached.
 
 **Availability**:
 - iOS 27.0+ (Beta)

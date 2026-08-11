@@ -104,7 +104,7 @@ You configure this object to export an instance of [`AVAsset`](avasset.md) by se
 - [AVAssetExportSession.ResumptionState](avassetexportsession/resumptionstate.md)
   Represents the resumption state of the export session.
 - [AVAssetExportSession.ResumptionFailureReason](avassetexportsession/resumptionfailurereason.md)
-  An enum that identifies various reasons why resumable export configuration has failed.
+  The reason that configuring the export session for resumption failed.
 ### Deprecated
 - [Deprecated symbols](avassetexportsession-deprecated-symbols.md)
   Review unsupported symbols and their replacements.

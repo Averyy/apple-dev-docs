@@ -53,6 +53,8 @@ This structure combines an [`HKWorkoutZoneConfiguration`](hkworkoutzoneconfigura
   A structure that defines a complete set of zones for a quantity type.
 - [struct HKWorkoutZoneDuration](hkworkoutzoneduration.md)
   A structure that represents the time spent in a specific zone during a workout or activity.
+- [class HKLiveWorkoutZoneUpdate](hkliveworkoutzoneupdate.md)
+  A structure that contains information about zone transitions during a live workout session.
 
 
 ---

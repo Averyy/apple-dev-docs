@@ -19,12 +19,20 @@ The data types this stage accepts as input.
 static var inputTypes: [SearchPipelineDataType] { get }
 ```
 
+#### Discussion
+
+Specify at least one input type for your stage. For each input type you specify, implement the corresponding `execute` method that accepts the input type.
+
+The model considers your stage’s input types, output type, and other factors when determining whether to include the stage in a pipeline. When constructing the pipeline, the system maps the output from one stage to the input of the next.
+
 ## See Also
 
 - [static var name: String](customstage/name.md)
-  The stage type name as it appears in the pipeline (e.g., “sentiment”).
+  The name of the stage as you want it to appear in the pipeline.
 - [static var description: String](customstage/description.md)
   A human-readable description of what this stage does.
+- [static var outputType: SearchPipelineDataType](customstage/outputtype.md)
+  The data type this stage produces as output.
 
 
 ---

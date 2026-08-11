@@ -22,6 +22,8 @@ case restricted
   A status that indicates the person granted authorization to access cellular plan status information for the phone number.
 - [CTCellularPlanStatusAuthorization.notAuthorized](ctcellularplanstatusauthorization/notauthorized.md)
   A status that indicates the person didn’t grant authorization, or explicitly denied it.
+- [CTCellularPlanStatusAuthorization.notSupported](ctcellularplanstatusauthorization/notsupported.md)
+  A status that indicates the system can’t determine authorization.
 
 
 ---

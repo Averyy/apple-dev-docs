@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: property
 
-The constant values to use when creating the function. These correspond to constants defined in your metal code.
+The constant values to use when creating the function. These correspond to constants defined in your Metal code.
 
 **Availability**:
 - iOS 27.0+ (Beta)

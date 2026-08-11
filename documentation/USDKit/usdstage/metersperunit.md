@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: property
 
+The number of meters represented by one unit in this stage’s coordinate system.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -20,8 +22,11 @@ var metersPerUnit: Double { get nonmutating set }
 ## See Also
 
 - [var hasAuthoredMetersPerUnit: Bool](usdstage/hasauthoredmetersperunit.md)
+  A Boolean value that indicates whether this stage has an authored [`metersPerUnit`](usdstage/metersperunit.md) opinion.
 - [var upAxis: USDToken](usdstage/upaxis.md)
+  The axis that points upward in this stage’s coordinate system.
 - [static var fallbackUpAxis: USDToken](usdstage/fallbackupaxis.md)
+  The up axis used when a stage has no authored opinion.
 
 
 ---

@@ -38,7 +38,7 @@ For information about how Swift uses the `callAsFunction()` method to simplify c
 ## See Also
 
 - [func callAsFunction(_:)](newdocumentaction/callasfunction(_:).md)
-  Presents a new document window for the in-memory document returned by the provided closure.
+  Presents a new document window.
 - [func callAsFunction(contentType: UTType, prepareDocument: (ModelContext) -> Void)](newdocumentaction/callasfunction(contenttype:preparedocument:).md)
   Presents a new document window with preset contents.
 

@@ -30,7 +30,7 @@ func maximumResponseTokens(_ maximumResponseTokens: Int?) -> some LanguageModelS
 - [func reasoningLevel(ContextOptions.ReasoningLevel?) -> some LanguageModelSession.DynamicProfile](languagemodelsession/dynamicprofile/reasoninglevel(_:).md)
   Sets the reasoning level.
 - [func modifier<Modifier>(Modifier) -> some LanguageModelSession.DynamicProfile](languagemodelsession/dynamicprofile/modifier(_:).md)
-  Apply a modifier to the dynamic profile.
+  Applies a modifier to the dynamic profile.
 
 
 ---

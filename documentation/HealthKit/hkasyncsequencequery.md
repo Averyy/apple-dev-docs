@@ -27,7 +27,6 @@ protocol HKAsyncSequenceQuery
 
 ### Running Queries
 - [associatedtype Sequence : AsyncSequence](hkasyncsequencequery/sequence.md)
-  The data type that the query returns.
 - [func results(for: HKHealthStore) -> Self.Sequence](hkasyncsequencequery/results(for:).md)
   Initiates a query that returns its results using an asynchronous sequence.
 

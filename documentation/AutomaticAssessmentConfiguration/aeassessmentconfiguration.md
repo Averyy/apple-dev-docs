@@ -52,12 +52,8 @@ While you provide a configuration instance when creating a session on iOS, iPadO
 ## Topics
 
 ### Allowing access to other apps
-- [func setConfiguration(AEAssessmentParticipantConfiguration, for: AEAssessmentApplication)](aeassessmentconfiguration/setconfiguration(_:for:).md)
-  Adds an app to the list of apps available during an assessment.
 - [var configurationsByApplication: [AEAssessmentApplication : AEAssessmentParticipantConfiguration]](aeassessmentconfiguration/configurationsbyapplication.md)
   The collection of apps available during an assessment, along with their associated configurations.
-- [func remove(AEAssessmentApplication)](aeassessmentconfiguration/remove(_:).md)
-  Removes the availability of a previously allowed app.
 - [var mainParticipantConfiguration: AEAssessmentParticipantConfiguration](aeassessmentconfiguration/mainparticipantconfiguration.md)
   The app-specific configuration for the app that invokes the assessment.
 - [class AEAssessmentApplication](aeassessmentapplication.md)
@@ -95,6 +91,8 @@ While you provide a configuration instance when creating a session on iOS, iPadO
   A Boolean value that indicates whether only participant applications are allowed to run during an assessment.
 - [var allowPrivateRelay: Bool](aeassessmentconfiguration/allowprivaterelay.md)
   A Boolean value that indicates whether the assessment allows iCloud Private Relay to be active.
+- [var allowVirtualMachine: Bool](aeassessmentconfiguration/allowvirtualmachine.md)
+  A Boolean value that indicates whether the assessment allows running inside a virtual machine.
 - [var allowedAppleMenuItems: Set<AEAppleMenuItem>?](aeassessmentconfiguration/allowedapplemenuitems.md)
   The set of allowed Apple menu items during an assessment.
 - [var allowedDirectoriesAndFiles: Set<URL>?](aeassessmentconfiguration/alloweddirectoriesandfiles.md)
@@ -135,6 +133,8 @@ While you provide a configuration instance when creating a session on iOS, iPadO
   A Boolean value that indicates whether to allow the Dock during an assessment.
 - [var allowsEmojiKeyboard: Bool](aeassessmentconfiguration/allowsemojikeyboard.md)
   A Boolean value that indicates whether to allow the emoji keyboard during an assessment.
+- [var allowsForceQuit: Bool](aeassessmentconfiguration/allowsforcequit.md)
+  A Boolean value that indicates whether to allow force quitting apps during an assessment.
 - [var allowsMenuBar: Bool](aeassessmentconfiguration/allowsmenubar.md)
   A Boolean value that indicates whether to allow the menu bar during an assessment.
 - [var allowsScreenshots: Bool](aeassessmentconfiguration/allowsscreenshots.md)
@@ -143,6 +143,8 @@ While you provide a configuration instance when creating a session on iOS, iPadO
   A Boolean value that indicates whether to allow Chinese and Japanese structural input during an assessment.
 - [var allowsUserScriptExecution: Bool](aeassessmentconfiguration/allowsuserscriptexecution.md)
   A Boolean value that indicates whether to allow user script execution during an assessment.
+- [var configurationsByBinaryExecutable: [AEAssessmentBinaryExecutable : AEAssessmentBinaryExecutableConfiguration]](aeassessmentconfiguration/configurationsbybinaryexecutable.md)
+  The collection of executable participants available during an assessment, along with their associated configurations.
 - [var requiresManagedDevice: Bool](aeassessmentconfiguration/requiresmanageddevice.md)
   A Boolean value that indicates whether the device must be managed to start an assessment.
 - [var requiresSIP: Bool](aeassessmentconfiguration/requiressip.md)
@@ -151,6 +153,15 @@ While you provide a configuration instance when creating a session on iOS, iPadO
   A Boolean value that indicates whether only a single user account must be logged in to start an assessment.
 - [var requiresUserAccountType: AEUserAccountType](aeassessmentconfiguration/requiresuseraccounttype.md)
   Specifies the type of user account required to start an assessment.
+### Instance Methods
+- [func remove(AEAssessmentApplication)](aeassessmentconfiguration/remove(_:)-313bq.md)
+  Removes the availability of a previously allowed app.
+- [func remove(AEAssessmentBinaryExecutable)](aeassessmentconfiguration/remove(_:)-9pylg.md)
+  Removes the availability of a previously added executable participant.
+- [func setConfiguration(AEAssessmentBinaryExecutableConfiguration, for: AEAssessmentBinaryExecutable)](aeassessmentconfiguration/setconfiguration(_:for:)-16sed.md)
+  Adds an executable participant to the list of participants available during an assessment.
+- [func setConfiguration(AEAssessmentParticipantConfiguration, for: AEAssessmentApplication)](aeassessmentconfiguration/setconfiguration(_:for:)-2tjgb.md)
+  Adds an app to the list of apps available during an assessment.
 
 ## Relationships
 

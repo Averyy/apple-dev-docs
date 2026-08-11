@@ -18,6 +18,10 @@ A description of an image’s dimensions and pixel format.
 struct ImageDescriptor
 ```
 
+## Mentions
+
+- [Integrating on-device AI models in your app with Core AI](integrating-on-device-ai-models-in-your-app-with-core-ai.md)
+
 ## Topics
 
 ### Inspecting image properties

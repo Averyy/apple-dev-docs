@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: method
 
-Replaces the buffer synchronously on the CPU. The buffer’s contents are unspecified; you must populate the buffer with valid data.
+Replaces the entire contents of the buffer resource synchronously on the CPU.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -19,16 +19,18 @@ final func replace<R, E>(_ body: @_lifetime(0: copy 0) (inout MutableRawSpan) th
 
 #### Discussion
 
+You pass a closure that receives a mutable span representing the contents of the buffer resource. Upon entry the buffer resource’s contents are undefined; the closure is responsible for populating it with valid data. This span is valid only for the duration of the closure.
+
 > **Note**: Any error thrown by `body`.
 
 ## Parameters
 
-- `body`: A closure that receives a mutable span over the buffer’s bytes to fully populate.
+- `body`: A closure that receives a mutable span over the buffer’s bytes and fully populates it.
 
 ## See Also
 
 - [func replace(commandBuffer: (any MTLCommandBuffer)?) -> any MTLBuffer](lowlevelbufferresource/replace(commandbuffer:).md)
-  Retrieves a Metal buffer for GPU replacement. The buffer’s contents are in an uninitialized state. The renderer waits for the command buffer to complete before using the buffer for rendering.
+  Returns a Metal buffer you populate on the GPU with the new contents of the buffer resource.
 
 
 ---

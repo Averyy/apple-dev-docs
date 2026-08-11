@@ -1,4 +1,4 @@
-# macOS 27 Golden Gate Beta 4 Release Notes
+# macOS 27 Golden Gate Beta 5 Release Notes
 
 **Framework**: macOS Release Notes
 
@@ -6,7 +6,7 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The macOS 27 SDK provides support to develop apps for Mac computers running macOS 27 Golden Gate beta 4. The SDK comes bundled with Xcode 27, available from the Mac App Store. For information on the compatibility requirements for Xcode 27, see [`Xcode 27 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-27-release-notes).
+The macOS 27 SDK provides support to develop apps for Mac computers running macOS 27 Golden Gate beta 5. The SDK comes bundled with Xcode 27, available from the Mac App Store. For information on the compatibility requirements for Xcode 27, see [`Xcode 27 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-27-release-notes).
 
 ##### Accessory Access
 
@@ -27,6 +27,12 @@ The macOS 27 SDK provides support to develop apps for Mac computers running macO
 
 - AirPort Utility is no longer included with new clean installations of macOS. However, if you update macOS when AirPort Utility is already installed, it remains on your system but functionality is not guaranteed starting in macOS 27.  (158248382)
 
+##### Apfs
+
+###### Resolved Issues
+
+- Fixed: High-RAM Macs running macOS 27 Golden Gate Beta might erroneously report filesystem metadata corruption that doesn’t actually exist when running First Aid in Disk Utility or an equivalent operation.  (182156751)
+
 ##### App Intents
 
 ###### New Features
@@ -36,11 +42,14 @@ The macOS 27 SDK provides support to develop apps for Mac computers running macO
 ###### Resolved Issues
 
 - Fixed: Default values from schemas might not be applied for parameters that are of “Set” type.  (175534195)
+- Fixed: Requests that should result in an app’s `reminders.updateReminder`-conforming intent to be called might fail with “ cannot be used for this action right now.”  (181212609) (FB23526663)
+- Fixed: The notes.appendText schema erroneously disappeared from the SDK.  (182532125)
 
 ###### Known Issues
 
 - If you adopt the Audio App Schema domain, you might have trouble playing your content using Siri.  (177198033) **Workaround:** Adopt an IntentValueQuery that takes the AudioSearch input, or index your entities in Spotlight.
 - AppEntity instances have a cumulative size limit of 10MB, including all child properties and their values. Your app might crash if an entity exceeds this limit, and the exception is logged.  (181763422)
+- Existing entities that conformed to @AppEntity(schema: .photos.asset) in prior releases might no longer compile in the 27 SDKs because new properties were added to the schema in this release.  (181800016) (FB23652582) **Workaround:** To continue conforming to the schema, adopt the additional properties and move the code behind an availability check.
 
 ###### Deprecations
 
@@ -101,11 +110,23 @@ The macOS 27 SDK provides support to develop apps for Mac computers running macO
 
 - You can now use a more flexible and granular Automatic Assessment Configuration in macOS 27, giving you greater control over your testing environment with controls for the Dock, Menu Bar, and accessibility settings, plus built-in system pre-checks and app launch restrictions.  (158132137)
 
+##### Avfaudio
+
+###### Resolved Issues
+
+- Fixed: AudioDSP might crash when audio device properties change.  (163978549)
+
 ##### Background Assets
 
 ###### New Features
 
 - You can reduce your app’s storage usage with localized asset packs. The system delivers the appropriately localized asset packs based on the user’s preferred languages.  (163944365)
+
+##### Communication Safety
+
+###### Resolved Issues
+
+- Fixed: Sensitive QRCode detected as non-sensitive, preventing 3rd party developers from testing API functionality.  (183962032)
 
 ##### Core Ai
 
@@ -122,14 +143,23 @@ The macOS 27 SDK provides support to develop apps for Mac computers running macO
 - Fixed: When you run `InferenceFunction.run` on functions with both state arguments and outputs with dynamic shapes, the framework might be unable to infer the shape of the outputs and throw an error.  (176807213)
 - Fixed: On-device specialization fails when loading an `.aimodel` converted with `coreai-torch` v0.4.0.  (177008303)
 - Fixed: Inference might fail or crash for models with control flow over dynamic-shape tensors (for example, linear-attention LLMs such as Qwen3.5/3.6).  (177354777)
+- Fixed: Ahead-of-time (AOT) compilation might fail unexpectedly for certain models.  (177729331)
 - Fixed: When Metal API Validation is enabled, CoreAI models might fail to execute.  (177991751)
 - Fixed: Models with custom Metal kernels will fail to load.  (178056451)
 - Fixed: App-group support might not work as expected on certain model types.  (179732320)
 - Fixed: On-device specialization might fail when loading an `.aimodelc` compiled ahead of time using Xcode 27 Beta 2 or earlier.  (181264112)
 
+##### Core Spotlight
+
 ###### Known Issues
 
-- Ahead-of-time (AOT) compilation might fail unexpectedly for certain models.  (177729331)
+- Creating a SpotlightSearchTool without a configuration and using it with a LanguageModelSession backed by the on-device system language model fails with an error reporting that the number of tokens provided exceeds the maximum allowed. The tool’s default configuration is sized for models with large context windows, so the tool’s description and parameter schema alone exceed the on-device model’s context window before any prompt is added.  (183770678) **Workaround:** Configure the tool with a focused guide, which uses a compact schema sized for the on-device model: ```None
+  let configuration = SpotlightSearchTool.Configuration(
+    sources: [.coreSpotlight],
+    guide: .focused()
+  )
+  let tool = SpotlightSearchTool(configuration: configuration)
+``` To search a specific kind of content, pass a domain: `.focused(.communications)`, `.focused(.calendar)`, `.focused(.documents)`, `.focused(.visualMedia)`, or `.focused(.audio)`. A focused guide exposes a smaller set of search capabilities than the default configuration. Sessions backed by a model with a larger context window can continue to use the default configuration.
 
 ##### Corestorage
 
@@ -201,14 +231,11 @@ The macOS 27 SDK provides support to develop apps for Mac computers running macO
 
 ###### Resolved Issues
 
+- Fixed: When using the on-device Apple Foundation Model for both tool calling and guided generation, some prompts might cause the model to call tools excessively.  (177748926)
 - Fixed: `@Generable` on an `enum` produces a deprecation warning about `GenerationError` that cannot be silenced.  (177899620)
 - Fixed: Truncating transcript history in the `onPrompt` modifier might cause an unexpected runtime error.  (177901494)
 - Fixed: `onPrompt` might not be called when applied to a `Profile` without instructions.  (177902488)
 - Fixed: `PrivateCloudComputeLanguageModel` always uses greedy decoding.  (178181782)
-
-###### Known Issues
-
-- When using the on-device Apple Foundation Model for both tool calling and guided generation, some prompts might cause the model to call tools excessively.  (177748926) **Workaround:** Adjust your instructions, prompts, and attachment labels.
 
 ##### Game Center
 
@@ -233,6 +260,18 @@ The macOS 27 SDK provides support to develop apps for Mac computers running macO
 
 - A new command line tool lets you enable support for legacy Intel-based games during beta releases. To enable it, run the following command in Terminal: `sudo game-test-tool enable`. Restart your Mac computer for the change to take effect. Once enabled, games run transparently through the new underlying system behavior. Note that enabling legacy game support disables Rosetta, non-game processes might crash or behave unexpectedly, and this feature is intended only for playing legacy Intel-based games and is not available outside of macOS beta releases.  (166398727)
 
+##### Gatekeeper
+
+###### New Features
+
+- The spctl command line tool now supports a –purge command which will clean up Gatekeeper database entries for apps and executables which are no longer mounted.  (123097648) (FB13625586)
+
+##### Gaussian Splats
+
+###### Known Issues
+
+- When 3DGS content rendered by a GaussianSplatComponent is moved offscreen and then returns to the visible area, some splats might be missing or truncated. Camera or asset movement can restore rendering.  (183538823)
+
 ##### Homekit
 
 ###### New Features
@@ -246,6 +285,12 @@ The macOS 27 SDK provides support to develop apps for Mac computers running macO
 
 - Fixed: When you try to generate an image using ChatGPT in the Messages extension on macOS, the image fails to generate.  (174413381)
 - Fixed: In the Image Playground photo picker, the All and Suggested tabs are missing, which might limit the number of photos available for you to choose from.  (178256174)
+
+##### Install Macos Golden Gate
+
+###### Resolved Issues
+
+- Fixed: macOS cannot be installed to an external storage device connected to the DFU port.  (79372256)
 
 ##### Launch Daemons and Agents
 
@@ -337,17 +382,21 @@ The macOS 27 SDK provides support to develop apps for Mac computers running macO
 
 - New properties on `NSScrollView` allow you to constrain the number of touches needed to scroll. The new `scrollGestureForFailureRelationship` property allows you to set up gesture relationships against scrolling gestures.  (164924201)
 
-##### Photos Edit
-
-###### Known Issues
-
-- A thin white line might be visible in photos that have had Spatial Reframing applied.  (178183850)
-
-##### Physical Surroundings Light
+##### Photokit
 
 ###### Resolved Issues
 
-- Fixed: An App might crash if the `SurroundingsLight` component is added to more than 8 light entities.  (178092354)
+- Fixed: The `addedDate` property on `PHAsset` might return `nil` even though it’s marked as non-nullable.  (175050631)
+
+###### Deprecations
+
+- The `originalFilename` property on `PHAssetResource` is incorrectly marked as non-nullable, which misrepresents the property value; a new, nullable `filename` property is available as a replacement.  (175412725) (FB22589474)
+
+##### Photos Edit
+
+###### Resolved Issues
+
+- Fixed: A thin white line might be visible in photos that have had Spatial Reframing applied.  (178183850)
 
 ##### Previews
 
@@ -368,12 +417,10 @@ The macOS 27 SDK provides support to develop apps for Mac computers running macO
 
 ###### Resolved Issues
 
+- Fixed: Some MaterialX 1.39 nodes are not supported.  (172875414)
 - Fixed: `ComputeGraphComponents` stored in a Reality file do not render when loaded.  (177674901)
 - Fixed: When `OpacityComponent` is applied to an entity with opaque materials, `RealityRenderer` renders the opaque materials with transparency, revealing interior surfaces. Only the frontmost surface should appear with partial transparency.  (177976245)
-
-###### Known Issues
-
-- Some MaterialX 1.39 nodes are not supported.  (172875414)
+- Fixed: An App might crash if the `SurroundingsLight` component is added to more than 8 light entities.  (178092354)
 
 ##### Reminders
 
@@ -400,11 +447,21 @@ The macOS 27 SDK provides support to develop apps for Mac computers running macO
 - Fixed: Selecting “Rename” or “Edit Address…” from the context menu in the sidebar has no effect.  (177470803)
 - Fixed: Safari Intelligence features might appear as available before assets are fully downloaded. If you use the feature before assets are available, it won’t function correctly.  (178099724)
 
+###### Known Issues
+
+- When developing Safari Extensions, unsigned extensions might not appear until rebuilt when using the “Allow Unsigned Extensions” checkbox.  (183044008) **Workaround:** Ensure “Allow Unsigned Extensions” is checked and rebuild the extension project.
+
 ##### Safari Extensions
 
 ###### Resolved Issues
 
 - Fixed: Turning on or off Safari extensions created via the “Describe an Extension” feature might not take effect until Safari is relaunched.  (179293939)
+
+##### Security
+
+###### Known Issues
+
+- Obtaining new certificates via ACME fails. New MDM enrollments using Managed Device Attestation fail.  (183456836) **Workaround:** Use SCEP if available as a temporary workaround, or ensure MDA-issued certificates are already installed before upgrading.
 
 ##### Setup Assistant
 
@@ -438,6 +495,7 @@ The macOS 27 SDK provides support to develop apps for Mac computers running macO
 - Fixed: When you ask Siri to start navigation using AMap, Tencent Maps, or Baidu Maps on Mac, navigation might not start.  (174911042)
 - Fixed: Siri ignores custom values for navigation preferences, transport, and incident types in apps that use `maps.startNavigation` or `maps.reportIncident` intent schemas.  (175230813)
 - Fixed: When location data is unavailable or only coarse-accuracy location data is available, Maps searches initiated through Siri might return empty or imprecise results.  (175380461)
+- Fixed: When you turn off Siri, some photo-related questions might return web search results instead of prompting you to share the photo with ChatGPT.  (175884006)
 - Fixed: When you ask Siri to work with reminder lists, you might need to use the exact list name. Siri might not recognize similar or partial list names.  (176400964)
 - Fixed: App Intents with `@UnionValue` types that accept a `PlaceDescriptorEntity` and a `String` always receive `String` values instead of `PlaceDescriptorEntity` entities.  (176844035)
 - Fixed: Starting a call with Siri might fail with an error in apps that adopt CallKit and the `phone.startCall` AppSchema.  (177190637)
@@ -462,12 +520,12 @@ The macOS 27 SDK provides support to develop apps for Mac computers running macO
 ###### Known Issues
 
 - After Siri returns photo search results and you select photos, Siri might not detect which photos are selected on screen. Commands like “Send these” might apply to all photos returned from the search rather than only the selected ones.  (171728298) **Workaround:** Open Photos, select the photos you want to act on, then perform the action using Siri — for example, “Send these photos to Bob”.
-- When you turn off Siri, some photo-related questions might return web search results instead of prompting you to share the photo with ChatGPT.  (175884006)
 - “Ask Siri” might appear in context menus on macOS even when Siri is disabled in System Settings or the system is in a region that does not currently support Siri.  (176299524)
 - Siri doesn’t support voice commands to interact with specific photos. For example, you can’t refer to photos by number, such as “photo one” or “photo four.”  (176812955) **Workaround:** Use the photo picker to select the photo you want, or tap to select photos directly.
 - When you ask Siri for Maps information, the response snippets might appear incomplete or display formatting issues.  (177116121) **Workaround:** Ask Siri to repeat the information, or open Maps directly for complete details.
 - When you ask Siri to add photos to an album, the confirmation prompt and spoken response might report or display more photos than will actually be added.  (177376984) **Workaround:** Add photos to the album manually in the Photos app: tap Select, tap the photos you want to add, tap the Share button, tap Add to Album, then tap the album.
 - Non-SF Symbol custom images for entities might not appear in Siri results for third-party apps.  (177984074)
+- As of beta 5, SiriAI conversation history no longer syncs to devices running a prior beta. iCloud sync works between devices updated to beta 5. No existing conversations will be lost.  (182145010)
 
 ##### Software Update
 
@@ -502,10 +560,7 @@ The macOS 27 SDK provides support to develop apps for Mac computers running macO
 ###### Resolved Issues
 
 - Fixed: The transaction refund request sheet fails to display on macOS.  (180072209)
-
-###### Known Issues
-
-- Purchases of non-subscription In-App Purchases made using the SKTestSession.buyProduct() method might fail with an invalid product error. The billingPlanType(_:) PurchaseOption isn’t respected for subscription purchases.  (181842500)
+- Fixed: Purchases of non-subscription In-App Purchases made using the SKTestSession.buyProduct() method might fail with an invalid product error. The billingPlanType(_:) PurchaseOption isn’t respected for subscription purchases.  (181842500)
 
 ##### Storekit Testing in Xcode
 
@@ -675,11 +730,11 @@ The macOS 27 SDK provides support to develop apps for Mac computers running macO
 
 ###### Resolved Issues
 
+- Fixed: The `UISceneClosureConfirmation` API does not present a confirmation dialog.  (170008344)
 - Fixed: The `UIMenuLeaf` protocol is missing the subtitle property introduced in iOS 16.0.  (173271862)
 
 ###### Known Issues
 
-- The `UISceneClosureConfirmation` API does not present a confirmation dialog.  (170008344)
 - Catalyst views that have both `UIDragInteraction` and `UIContextMenuInteraction` do not allow you to activate both interactions with touch.  (175048540)
 
 ###### Deprecations
@@ -717,11 +772,11 @@ The macOS 27 SDK provides support to develop apps for Mac computers running macO
 - Fixed: A virtual machine might crash during restore if a USB mass storage device was hot-plugged before the virtual machine was saved but is not attached during the restore.  (177528319)
 - Fixed: `AAUSBAccessoryManager registerListener:withMatchingCriteria:completionHandler:` does not work with a non-empty matching criteria array.  (177662539)
 
-##### Weather Highlights
+##### Wi Fi Settings
 
 ###### Known Issues
 
-- Weather Highlights is currently only available in US English.  (164408676)
+- Apple menu > System Settings… > Wi-Fi > Details… button does nothing.  (183437912) **Workaround:** Navigate to Apple menu > System Settings… > Network > Wi-Fi > Details…
 
 ##### Window Management
 
@@ -739,7 +794,7 @@ The macOS 27 SDK provides support to develop apps for Mac computers running macO
 
 ###### Resolved Issues
 
-- Fixed: If you installed Xcode 27 beta on macOS Tahoe 26.5.1 and earlier, macOS virtual machine installation will fail due to a known bug. To restore virtual machine installation functionality, follow the [`How to reinstall macOS guide.`](https://developer.apple.comhttps://support.apple.com/en-us/102655)  (179068335)
+- Fixed: If you installed Xcode 27 beta on macOS Tahoe 26.5.1 and earlier, macOS virtual machine installation will fail due to a known bug. To restore virtual machine installation functionality, follow the [`How to reinstall macOS guide`](https://developer.apple.comhttps://support.apple.com/en-us/102655).  (179068335)
 
 ##### Xnu
 

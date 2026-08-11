@@ -19,6 +19,10 @@ The response was too verbose.
 case tooVerbose
 ```
 
+## Mentions
+
+- [Inspecting session transcripts and reporting model feedback](inspecting-session-transcripts-and-reporting-model-feedback.md)
+
 #### Discussion
 
 A verbose issue might be where you asked for a simple recipe, and the model wrote introductory and conclusion paragraphs.
@@ -36,7 +40,7 @@ A verbose issue might be where you asked for a simple recipe, and the model wrot
 - [LanguageModelFeedback.Issue.Category.triggeredGuardrailUnexpectedly](languagemodelfeedback/issue/category/triggeredguardrailunexpectedly.md)
   The model throws a guardrail violation when it shouldn’t.
 - [LanguageModelFeedback.Issue.Category.unhelpful](languagemodelfeedback/issue/category/unhelpful.md)
-  The response was not unhelpful.
+  The response was unhelpful.
 - [LanguageModelFeedback.Issue.Category.vulgarOrOffensive](languagemodelfeedback/issue/category/vulgaroroffensive.md)
   The model produces vulgar or offensive material.
 

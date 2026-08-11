@@ -79,13 +79,13 @@ The preview shows the following image without any accessibility settings turned 
 
 ![The text the quick brown fox jumps over the lazy dog in two lines with a blue border around it.](https://docs-assets.developer.apple.com/published/8b3145aa514ece67af46743e7c41c63a/Applying-Custom-Fonts-to-Text-3%402x.png)
 
-Use the [`environment(_:_:)`](view/environment(_:_:).md) modifier to set the accessibility size category on the preview to [`ContentSizeCategory.accessibilityLarge`](contentsizecategory/accessibilitylarge.md):
+Use the [`environment(_:_:)`](view/environment(_:_:).md) modifier to set the Dynamic Type size on the preview to [`DynamicTypeSize.accessibility2`](dynamictypesize/accessibility2.md):
 
 ```swift
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-            .environment(\.sizeCategory, .accessibilityLarge)
+            .environment(\.dynamicTypeSize, .accessibility2)
     }
 }
 ```

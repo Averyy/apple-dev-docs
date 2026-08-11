@@ -59,7 +59,7 @@ You create markers, annotations, and overlays using [`MapContentBuilder`](mapco
 You can also add a variety of controls to allow a person to interact with the map to change the map’s scale, display or hide the device’s current location, and so on:
 
 - [`MapCompass`](mapcompass.md)
-- `MapPitchButton`
+- [`MapPitchToggle`](mappitchtoggle.md)
 - [`MapPitchSlider`](mappitchslider.md)
 - [`MapScaleView`](mapscaleview.md)
 - [`MapUserLocationButton`](mapuserlocationbutton.md)
@@ -102,23 +102,54 @@ You can also add a variety of controls to allow a person to interact with the ma
   Creates a new map with the initial camera position, bounds, interaction modes, selected feature, scope, and content you provide.
 - [struct MapInteractionModes](mapinteractionmodes.md)
   Options that indicate the user interactions that the map responds to.
+### Managing feature selection
+- [func mapFeatureSelectionContent(content: (MapFeature) -> some MapContent) -> some View
+](../SwiftUI/View/mapFeatureSelectionContent(content:).md)
+  Specifies a custom presentation for the currently selected feature.
+- [func mapFeatureSelectionDisabled((MapFeature) -> Bool) -> some View
+](../SwiftUI/View/mapFeatureSelectionDisabled(_:).md)
+  Specifies which map features should have selection disabled.
+### Managing Look Around view presentation
+- [func lookAroundViewer(isPresented: Binding<Bool>, initialScene: MKLookAroundScene?, allowsNavigation: Bool, showsRoadLabels: Bool, pointsOfInterest: PointOfInterestCategories, onDismiss: (() -> Void)?) -> some View
+](../SwiftUI/View/lookAroundViewer(isPresented:initialScene:allowsNavigation:showsRoadLabels:pointsOfInterest:onDismiss:).md)
+- [func lookAroundViewer(isPresented: Binding<Bool>, scene: Binding<MKLookAroundScene?>, allowsNavigation: Bool, showsRoadLabels: Bool, pointsOfInterest: PointOfInterestCategories, onDismiss: (() -> Void)?) -> some View
+](../SwiftUI/View/lookAroundViewer(isPresented:scene:allowsNavigation:showsRoadLabels:pointsOfInterest:onDismiss:).md)
+### Managing map control sizing and visibility
+- [func mapControlVisibility(Visibility) -> some View
+](../SwiftUI/View/mapControlVisibility(_:).md)
+  Configures all Map controls in the environment to have the specified visibility
+- [func mapControls(() -> some View) -> some View
+](../SwiftUI/View/mapControls(_:).md)
+  Configures all `Map` views in the associated environment to have standard size and position controls
+### Managing the camera
+- [func mapCameraKeyframeAnimator(trigger: some Equatable, keyframes: (MapCamera) -> some Keyframes<MapCamera>) -> some View
+](../SwiftUI/View/mapCameraKeyframeAnimator(trigger:keyframes:).md)
+  Uses the given keyframes to animate the camera of a `Map` when the given trigger value changes.
+- [func onMapCameraChange(frequency: MapCameraUpdateFrequency, (MapCameraUpdateContext) -> Void) -> some View
+](../SwiftUI/View/onMapCameraChange(frequency:_:)-2pcga.md)
+  Performs an action when Map camera framing changes
+- [func onMapCameraChange(frequency:_:)](../SwiftUI/View/onMapCameraChange(frequency:_:).md)
+  Performs an action when Map camera framing changes
+### Setting the namespace Identifier
+- [func mapScope(Namespace.ID) -> some View
+](../SwiftUI/View/mapScope(_:).md)
+  Creates a mapScope that SwiftUI uses to connect map controls to an associated map.
+### Setting the map style
+- [func mapStyle(MapStyle) -> some View
+](../SwiftUI/View/mapStyle(_:).md)
+  Specifies the map style to be used.
 ### Deprecated
 - [Deprecated Symbols](deprecated-symbols.md)
   Map protocols and view modifiers that are no longer supported.
 ### Displaying place information
+- [func mapFeatureSelectionAccessory(MapItemDetailSelectionAccessoryStyle?) -> some View
+](../SwiftUI/View/mapFeatureSelectionAccessory(_:).md)
+  Specifies the selection accessory to display for a `MapFeature`
 - [func mapItemDetailSelectionAccessory(MapItemDetailSelectionAccessoryStyle?) -> some MapContent](mapcontent/mapitemdetailselectionaccessory(_:).md)
   Specifies the selection accessory to display for the selected map item content.
 ### Initializers
 - [init<SelectedValue, C>(bounds: MapCameraBounds?, interactionModes: MapInteractionModes, selection: Binding<SelectedValue?>, scope: Namespace.ID?, content: () -> C)](map/init(bounds:interactionmodes:selection:scope:content:)-335qt.md)
-- [init(coordinateRegion: Binding<MKCoordinateRegion>, interactionModes: MapInteractionModes, showsUserLocation: Bool, userTrackingMode: Binding<MapUserTrackingMode>?)](map/init(coordinateregion:interactionmodes:showsuserlocation:usertrackingmode:).md)
-  Creates a map that displays a coordinate region and optionally configures available interactions, user location, and tracking behavior.
-- [init<Items, Annotation>(coordinateRegion: Binding<MKCoordinateRegion>, interactionModes: MapInteractionModes, showsUserLocation: Bool, userTrackingMode: Binding<MapUserTrackingMode>?, annotationItems: Items, annotationContent: (Items.Element) -> Annotation)](map/init(coordinateregion:interactionmodes:showsuserlocation:usertrackingmode:annotationitems:annotationcontent:).md)
-  Creates a map that displays a coordinate region with annotations, and optionally configures available interactions, user location, and tracking behavior.
 - [init<SelectedValue, C>(initialPosition: MapCameraPosition, bounds: MapCameraBounds?, interactionModes: MapInteractionModes, selection: Binding<SelectedValue?>, scope: Namespace.ID?, content: () -> C)](map/init(initialposition:bounds:interactionmodes:selection:scope:content:)-2u4ry.md)
-- [init(mapRect: Binding<MKMapRect>, interactionModes: MapInteractionModes, showsUserLocation: Bool, userTrackingMode: Binding<MapUserTrackingMode>?)](map/init(maprect:interactionmodes:showsuserlocation:usertrackingmode:).md)
-  Creates a map that displays a map rectangle and optionally configures available interactions, user location, and tracking behavior.
-- [init<Items, Annotation>(mapRect: Binding<MKMapRect>, interactionModes: MapInteractionModes, showsUserLocation: Bool, userTrackingMode: Binding<MapUserTrackingMode>?, annotationItems: Items, annotationContent: (Items.Element) -> Annotation)](map/init(maprect:interactionmodes:showsuserlocation:usertrackingmode:annotationitems:annotationcontent:).md)
-  Creates a map that displays a map rectangle with annotations, and optionally configures available interactions, user location, and tracking behavior.
 - [init<SelectedValue, C>(position: Binding<MapCameraPosition>, bounds: MapCameraBounds?, interactionModes: MapInteractionModes, selection: Binding<SelectedValue?>, scope: Namespace.ID?, content: () -> C)](map/init(position:bounds:interactionmodes:selection:scope:content:)-96bhq.md)
 
 ## Relationships

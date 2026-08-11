@@ -21,7 +21,7 @@ init(named name: String, in library: any MTLLibrary, constantValues: MTLFunction
 
 - `name`: The name of the Metal function in the library.
 - `library`: The Metal library that contains the function.
-- `constantValues`: The Metal function constant values to specialize the function with.
+- `constantValues`: The Metal function constant values to specialize the function with. The function descriptor takes a snapshot of the constant values passed in.
 
 ## See Also
 

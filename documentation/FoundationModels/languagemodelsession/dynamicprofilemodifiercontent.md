@@ -25,9 +25,9 @@ struct DynamicProfileModifierContent<Modifier> where Modifier : LanguageModelSes
 ## See Also
 
 - [convenience init(profile: sending some LanguageModelSession.DynamicProfile, history: some Collection<Transcript.Entry>)](languagemodelsession/init(profile:history:).md)
-  Create a session with a profile.
+  Creates a session with a profile.
 - [convenience init(model: some LanguageModel, dynamicInstructions: sending some DynamicInstructions, history: some Collection<Transcript.Entry>)](languagemodelsession/init(model:dynamicinstructions:history:).md)
-  Create a session with dynamic instructions.
+  Creates a session with dynamic instructions.
 - [LanguageModelSession.DynamicProfile](languagemodelsession/dynamicprofile.md)
   A dynamic profile that contains one or more profiles.
 - [LanguageModelSession.DynamicProfileModifier](languagemodelsession/dynamicprofilemodifier.md)

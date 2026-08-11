@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: method
 
+Returns a Boolean value that indicates whether metadata for the given key has a value, including its fallback.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)

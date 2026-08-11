@@ -39,6 +39,7 @@ The following methods and properties can trigger a frame change notification:
   The angle of rotation, measured in degrees, applied to the view’s frame rectangle relative to its superview’s coordinate system.
 - [class let frameDidChangeNotification: NSNotification.Name](nsview/framedidchangenotification.md)
   A notification that posts when the view’s frame rectangle changes to a new value.
+- [NSView.FrameDidChangeMessage](nsview/framedidchangemessage.md)
 
 
 ---

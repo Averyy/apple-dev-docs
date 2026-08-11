@@ -20,6 +20,10 @@ Returns a `restartPerform` error with context to request a value from the user f
 final func needsValueError(_ dialog: IntentDialog? = nil) -> AppIntentError
 ```
 
+## Mentions
+
+- [Adding parameters to an app intent](adding-parameters-to-an-app-intent.md)
+
 #### Return Value
 
 An error that should be thrown within the intent `perform()` method.

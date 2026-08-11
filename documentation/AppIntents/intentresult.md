@@ -161,7 +161,7 @@ func perform() async throws -> some ReturnsValue<Int> & OpensAppIntent {
 - [protocol ResultsCollection](resultscollection.md)
   A protocol representing a collection of returned items with support for sectioning.
 - [protocol OpensIntent](opensintent.md)
-  The result of performing an action that delivers an app intent back to the initiator of the action.
+  A result type that indicates your app intent returns another app intent.
 
 
 ---

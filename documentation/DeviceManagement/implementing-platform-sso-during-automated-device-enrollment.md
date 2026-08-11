@@ -27,7 +27,7 @@ The complete set of steps for the Platform SSO during enrollment flow are:
 5. The device posts another `MACHINEINFO` request and includes the authorization token. If authorization is successful, the device management service returns the enrollment profile.
 6. The device enrolls and creates a local user account based on information from the identity provider.
 
-![A diagram showing the 6 steps to use Platform SSO during Automated Device Enrollment](https://docs-assets.developer.apple.com/published/82aacf25315f1c7ab2ab77ba1fd5848c/psso-during-ade%402x.png)
+![A diagram showing the 6 steps to use Platform SSO during Automated Device Enrollment](https://docs-assets.developer.apple.com/published/82aacf25315f1c7ab2ab77ba1fd5848c/implementing-platform-sso-during-automated-device-enrollment%402x.png)
 
 The following sections describe the details of each step.
 

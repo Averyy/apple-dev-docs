@@ -8,6 +8,7 @@ The current phase of the asynchronous loading operation of a product’s promoti
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
+- Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
 - visionOS 1.0+

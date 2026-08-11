@@ -13,7 +13,7 @@
 ## Declaration
 
 ```swift
-init(ink: PKInk, strokePath: PKStrokePath, transform: CGAffineTransform, mask: NSBezierPath?, randomSeed: UInt32, strokeID: UUID, renderGroupID: UUID?, renderState: __PKStrokeRenderState?)
+init(ink: PKInk, strokePath: PKStrokePath, transform: CGAffineTransform, mask: NSBezierPath?, randomSeed: UInt32, strokeID: UUID, renderGroupID: UUID?, renderState: PKStrokeRenderStateReference?)
 ```
 
 

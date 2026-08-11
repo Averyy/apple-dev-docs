@@ -31,7 +31,7 @@ You call this method to *assume and verify* that the currently executing synchro
 
 If that is the case, the operation is invoked with an `isolated` version of the actor, allowing synchronous access to actor local state without hopping through asynchronous boundaries.
 
-If the current context is not running on the actor’s serial executor, or if the actor is a reference to a remote actor, this method will crash with a fatal error (similar to `preconditionIsolated()`).
+If the current context is not running on the actor’s serial executor, or if the actor is a reference to a remote actor, this method will crash with a fatal error (similar to [`preconditionIsolated(_:file:line:)`](actor/preconditionisolated(_:file:line:).md)).
 
 Note that this check is performed against the passed in actor’s serial executor, meaning that if another actor uses the same serial executor–by using that actor’s [`unownedExecutor`](actor/unownedexecutor.md) as its own [`unownedExecutor`](actor/unownedexecutor.md)–this check will succeed, as from a concurrency safety perspective, the serial executor guarantees mutual exclusion of those two actors.
 

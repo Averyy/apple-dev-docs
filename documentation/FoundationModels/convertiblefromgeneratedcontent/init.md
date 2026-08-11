@@ -22,7 +22,7 @@ init(_ content: GeneratedContent) throws
 
 #### Discussion
 
-Conformance to this protocol is provided by the `@Generable` macro. A manual implementation may be used to map values onto properties using different names. To manually initialize your type from generated content, decode the values as shown below:
+Conformance to this protocol is provided by the `@Generable` macro. You can provide a manual implementation to map values onto properties using different names. To manually initialize your type from generated content, decode the values as shown below:
 
 ```swift
 struct Person: ConvertibleFromGeneratedContent {

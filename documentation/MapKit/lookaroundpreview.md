@@ -72,6 +72,11 @@ To display a Look Around viewer a person can explore, apply a `lookAroundViewer`
   Creates a Look Around preview with an initial scene, navigation, road label, points of interest, and badge position you specify.
 - [init(scene: Binding<MKLookAroundScene?>, allowsNavigation: Bool, showsRoadLabels: Bool, pointsOfInterest: PointOfInterestCategories, badgePosition: MKLookAroundBadgePosition)](lookaroundpreview/init(scene:allowsnavigation:showsroadlabels:pointsofinterest:badgeposition:).md)
   Creates a Look Around preview with a binding to a scene, navigation, road label, points of interest, and badge position you specify.
+### Creating a Look Around viewer
+- [func lookAroundViewer(isPresented: Binding<Bool>, initialScene: MKLookAroundScene?, allowsNavigation: Bool, showsRoadLabels: Bool, pointsOfInterest: PointOfInterestCategories, onDismiss: (() -> Void)?) -> some View
+](../SwiftUI/View/lookAroundViewer(isPresented:initialScene:allowsNavigation:showsRoadLabels:pointsOfInterest:onDismiss:).md)
+- [func lookAroundViewer(isPresented: Binding<Bool>, scene: Binding<MKLookAroundScene?>, allowsNavigation: Bool, showsRoadLabels: Bool, pointsOfInterest: PointOfInterestCategories, onDismiss: (() -> Void)?) -> some View
+](../SwiftUI/View/lookAroundViewer(isPresented:scene:allowsNavigation:showsRoadLabels:pointsOfInterest:onDismiss:).md)
 
 ## Relationships
 

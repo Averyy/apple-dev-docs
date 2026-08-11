@@ -3,6 +3,8 @@
 **Framework**: ColorSync  
 **Kind**: var
 
+The signature of the media black point tag.
+
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
@@ -21,6 +23,7 @@ var kColorSyncSigMediaBlackPointTag: Unmanaged<CFString>!
 ## See Also
 
 - [var kColorSyncSigMediaWhitePointTag: Unmanaged<CFString>!](kcolorsyncsigmediawhitepointtag.md)
+  The signature of the media white point tag.
 
 
 ---

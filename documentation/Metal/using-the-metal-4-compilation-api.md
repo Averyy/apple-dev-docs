@@ -82,6 +82,8 @@ Metal 4 introduces the ability to modify the way a render pass maps its pipeline
 
 ## See Also
 
+- [Writing reusable GPU functions with generic pointers](writing-reusable-gpu-functions-with-generic-pointers.md)
+  Define utility functions once for multiple address spaces, and share types with your app’s main code.
 - [Shader libraries](shader-libraries.md)
   Manage and load your app’s Metal shaders.
 - [Using function specialization to build pipeline variants](using-function-specialization-to-build-pipeline-variants.md)

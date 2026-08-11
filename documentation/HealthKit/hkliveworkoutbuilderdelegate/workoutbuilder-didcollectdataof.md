@@ -23,6 +23,11 @@ func workoutBuilder(_ workoutBuilder: HKLiveWorkoutBuilder, didCollectDataOf col
 
 - [Running workout sessions](running-workout-sessions.md)
 
+## See Also
+
+- [func workoutBuilderDidCollectEvent(HKLiveWorkoutBuilder)](hkliveworkoutbuilderdelegate/workoutbuilderdidcollectevent(_:).md)
+  Tells the delegate that a new event has been added to the builder.
+
 
 ---
 

@@ -27,6 +27,11 @@ var zoneGroupsByType: [HKQuantityType : HKWorkoutZoneGroup]? { get }
 
 This property provides zone data specific to the activity’s time range within the workout.
 
+## See Also
+
+- [func zoneGroup(for: HKQuantityType) -> HKWorkoutZoneGroup?](hkworkoutactivity/zonegroup(for:).md)
+  Returns a zone group for the specified quantity type.
+
 
 ---
 

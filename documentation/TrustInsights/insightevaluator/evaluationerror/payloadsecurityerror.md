@@ -8,7 +8,6 @@ Server returned payload contains security related error and should not be truste
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 
 ## Declaration
 

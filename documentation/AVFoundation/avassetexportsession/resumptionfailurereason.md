@@ -3,7 +3,7 @@
 **Framework**: AVFoundation  
 **Kind**: struct
 
-An enum that identifies various reasons why resumable export configuration has failed.
+The reason that configuring the export session for resumption failed.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -25,11 +25,14 @@ struct ResumptionFailureReason
 - [init(String)](avassetexportsession/resumptionfailurereason/init(_:).md)
 - [init(rawValue: String)](avassetexportsession/resumptionfailurereason/init(rawvalue:).md)
 ### Failure reasons
-- [static let incompatiblePreset: AVAssetExportSession.ResumptionFailureReason](avassetexportsession/resumptionfailurereason/incompatiblepreset.md)
 - [static let incompatibleSessionSettings: AVAssetExportSession.ResumptionFailureReason](avassetexportsession/resumptionfailurereason/incompatiblesessionsettings.md)
+  Indicates the export session settings are incompatible with resumable export.
 - [static let incompatibleTemporaryDirectoryContents: AVAssetExportSession.ResumptionFailureReason](avassetexportsession/resumptionfailurereason/incompatibletemporarydirectorycontents.md)
+  Indicates that the contents of the specified temporary files directory are inconsistent with the current resuming export.
 - [static let temporaryDirectoryDoesNotExist: AVAssetExportSession.ResumptionFailureReason](avassetexportsession/resumptionfailurereason/temporarydirectorydoesnotexist.md)
+  Indicates that the specified temporary files directory doesn’t exist.
 - [static let unsupportedForPresetOnPlatform: AVAssetExportSession.ResumptionFailureReason](avassetexportsession/resumptionfailurereason/unsupportedforpresetonplatform.md)
+  Indicates that resumption isn’t supported for this preset and platform combination.
 
 ## Relationships
 

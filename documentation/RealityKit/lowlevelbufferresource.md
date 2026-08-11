@@ -21,6 +21,8 @@ final class LowLevelBufferResource
 
 Buffer contents can be read and written synchronously on the CPU via span-based accessors, or on the GPU by writing to a `MTLBuffer` returned by `replace(commandBuffer:)`.
 
+Create a `LowLevelBufferResource` using [`makeBufferResource(descriptor:)`](lowlevelrendercontext/makebufferresource(descriptor:).md).
+
 ## Topics
 
 ### Inspecting the descriptor
@@ -30,17 +32,17 @@ Buffer contents can be read and written synchronously on the CPU via span-based 
   The capacity and alignment requirements for a buffer resource.
 ### Reading buffer contents
 - [func read(commandBuffer: (any MTLCommandBuffer)?) -> any MTLBuffer](lowlevelbufferresource/read(commandbuffer:).md)
-  Retrieves the Metal buffer for GPU reading.
+  Returns a Metal buffer containing the current contents of the buffer resource for GPU read operations.
 - [func read<R, E>((RawSpan) throws(E) -> R) throws(E) -> R](lowlevelbufferresource/read(_:).md)
-  Reads the buffer synchronously on the CPU. The buffer is only valid for the lifetime of the callback.
+  Reads the current contents of the buffer resource synchronously on the CPU.
 ### Replacing buffer contents
 - [func replace(commandBuffer: (any MTLCommandBuffer)?) -> any MTLBuffer](lowlevelbufferresource/replace(commandbuffer:).md)
-  Retrieves a Metal buffer for GPU replacement. The buffer’s contents are in an uninitialized state. The renderer waits for the command buffer to complete before using the buffer for rendering.
+  Returns a Metal buffer you populate on the GPU with the new contents of the buffer resource.
 - [func replace<R, E>((inout MutableRawSpan) throws(E) -> R) throws(E) -> R](lowlevelbufferresource/replace(_:).md)
-  Replaces the buffer synchronously on the CPU. The buffer’s contents are unspecified; you must populate the buffer with valid data.
+  Replaces the entire contents of the buffer resource synchronously on the CPU.
 ### Instance Methods
 - [func update<R, E>((inout MutableRawSpan) throws(E) -> R) throws(E) -> R](lowlevelbufferresource/update(_:).md)
-  Updates the buffer synchronously on the CPU. The buffer is only valid for the lifetime of the callback.
+  Updates the buffer resource in place synchronously on the CPU.
 
 ## See Also
 
@@ -59,7 +61,7 @@ Buffer contents can be read and written synchronously on the CPU via span-based 
 - [class LowLevelTextureResource](lowleveltextureresource.md)
   A container for texture data in a custom format.
 - [class LowLevelMaterialResource](lowlevelmaterialresource.md)
-  A compiled material composed of three independently-replaceable shader stages.
+  A compiled material composed of three independently-replaceable shader functions.
 - [class LowLevelDeviceResource](lowleveldeviceresource.md)
   Encapsulates a GPU device resource created by the application. On visionOS, resources must be allocated in shared memory that can be used by the renderer process. Once a device resource is in use by the renderer, changing its contents is unsafe and undefined.
 - [struct BoundingSphereBox](boundingspherebox.md)

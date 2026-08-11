@@ -29,6 +29,8 @@ Use this type when packing items for an enumeration in [`packEntry(name:itemType
   The item identifier for the root directory.
 ### Working with raw values
 - [init?(rawValue: UInt64)](fsitem/identifier/init(rawvalue:).md)
+### Initializers
+- [init(UInt64)](fsitem/identifier/init(_:).md)
 
 ## Relationships
 

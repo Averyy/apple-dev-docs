@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: method
 
-Creates a builder with the an array of prompts.
+Creates a builder with an array of prompts.
 
 **Availability**:
 - iOS 26.0+

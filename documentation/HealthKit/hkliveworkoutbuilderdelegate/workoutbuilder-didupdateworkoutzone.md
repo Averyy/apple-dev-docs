@@ -3,6 +3,8 @@
 **Framework**: HealthKit  
 **Kind**: method
 
+Tells the delegate that the person changed zones during the workout.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -19,6 +21,15 @@ optional func workoutBuilder(_ workoutBuilder: HKLiveWorkoutBuilder, didUpdateWo
 ## Mentions
 
 - [Accessing workout zone data](accessing-workout-zone-data.md)
+
+#### Discussion
+
+The system calls this method when the person moves between zones. Use this method to update your app’s interface to reflect the current zone or to provide feedback about zone changes.
+
+## Parameters
+
+- `workoutBuilder`: The live workout builder instance.
+- `zoneUpdate`: Details about the zone transition and current state.
 
 
 ---

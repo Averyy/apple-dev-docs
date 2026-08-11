@@ -97,6 +97,8 @@ The response you get is an instance of [`GeneratedContent`](generatedcontent.md)
 
 ## See Also
 
+- [macro Generable(description: String?)](generable(description:).md)
+- [macro Guide(description: String)](guide(description:).md)
 - [protocol Generable](generable.md)
   A type that the model uses when responding to prompts.
 - [struct GenerationSchema](generationschema.md)

@@ -25,7 +25,7 @@ Also known as top-p or nucleus sampling.
 
 With nucleus sampling, tokens are sorted by probability and added to a pool of candidates until the cumulative probability of the pool exceeds the specified threshold, and then a token is sampled from the pool.
 
-Because the number of tokens isn’t predetermined, the selection pool size will be larger when the distribution is flat and smaller when it is spikey. This variability can lead to a wider variety of options to choose from, and potentially more creative responses.
+Because the number of tokens isn’t predetermined, the selection pool size is larger when the distribution is flat and smaller when it is spikey. This variability can lead to a wider variety of options to choose from, and potentially more creative responses.
 
 > **Note**: Setting a random seed is not guaranteed to result in fully deterministic output. It is best effort.
 

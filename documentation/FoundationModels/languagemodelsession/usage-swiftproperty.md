@@ -27,9 +27,6 @@ This value increases monotonically over the lifetime of the session.
 
 - [LanguageModelSession.Usage](languagemodelsession/usage-swift.struct.md)
   Information about how many tokens were used by a response.
-- [var properties: SessionPropertyValues](languagemodelsession/properties.md)
-- [var transcriptErrorHandlingPolicy: TranscriptErrorHandlingPolicy?](languagemodelsession/transcripterrorhandlingpolicy.md)
-  The session’s policy for managing the transcript when errors occur.
 
 
 ---

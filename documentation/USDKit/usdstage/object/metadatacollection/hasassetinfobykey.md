@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: method
 
+Returns a Boolean value that indicates whether asset information exists at the given key path.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)

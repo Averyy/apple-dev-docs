@@ -20,8 +20,12 @@ You can use command-line tools to perform some actions in Terminal without runni
 - [Xcode command-line tool reference](xcode-command-line-tool-reference.md)
   Use command-line tools that require you to install Xcode and set the app as the active developer directory.
 ### Debugging
+- [Locating a missing debug symbol file](locating-a-missing-debug-symbol-file.md)
+  Find the debug symbol file (`.dSYM`) required to decode the hexadecimal address from a crash report.
 - [Resetting access to protected resources in macOS](resetting-access-to-protected-resources-in-macos.md)
   Use Terminal to remove your app’s authorization access to protected resources during testing.
+- [Acquiring operating system symbol information](acquiring-operating-system-symbol-information.md)
+  Download symbols for Apple system frameworks using Xcode or Terminal.
 
 ## See Also
 

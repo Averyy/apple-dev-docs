@@ -17,12 +17,12 @@ The sections computed from the current results, grouped by [`sectionBy`](results
 ## Declaration
 
 ```swift
-final var sections: ResultsSectionCollection<Element, SectionName>? { get set }
+final var sections: SectionedResults<Element, SectionTitle>? { get set }
 ```
 
 #### Discussion
 
-Returns `nil` if this observer was created without a `sectionBy` key path (i.e. `SectionName == Never`). When sectioning is enabled, returns a [`ResultsSectionCollection`](resultssectioncollection.md) of sections ordered by their first appearance in the sorted results.
+Returns `nil` if this observer was created without a `sectionBy` key path (i.e. `SectionTitle == Never`). When sectioning is enabled, returns a [`SectionedResults`](sectionedresults.md) of sections ordered by their first appearance in the sorted results.
 
 The `sectionBy` key path is automatically prepended as the first sort descriptor at initialization, and re-prepended if [`sortBy`](resultsobserver/sortby.md) is mutated, ensuring results are always contiguous within each section.
 
@@ -38,8 +38,6 @@ The `sectionBy` key path is automatically prepended as the first sort descriptor
   The sort descriptors used to order the results.
 - [var sectionBy: PartialKeyPath<Element>?](resultsobserver/sectionby.md)
   The key path on the element used to determine section grouping.
-- [struct ResultsSectionCollection](resultssectioncollection.md)
-  A collection of sections as returned by [`sections`](resultsobserver/sections.md) or `Query.sections`.
 
 
 ---

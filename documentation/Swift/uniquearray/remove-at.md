@@ -31,6 +31,10 @@ All the elements following the specified position are moved to close the gap.
 
 > **Note**: O(`self.count`)
 
+## Parameters
+
+- `index`: The position of the element to remove. `index` must be a valid index of the array that is not equal to the end index.
+
 
 ---
 

@@ -12,7 +12,7 @@ Returns the current authorization status of the given input capabilities without
 
 ```swift
 @MainActor
-final func queryAuthorization(for inputCapabilities: [FoveatedStreamingSession.InputCapability]) async -> [FoveatedStreamingSession.InputCapability : FoveatedStreamingSession.AuthorizationStatus]
+final func queryAuthorization(for inputCapabilities: Set<FoveatedStreamingSession.InputCapability>) async -> [FoveatedStreamingSession.InputCapability : FoveatedStreamingSession.AuthorizationStatus]
 ```
 
 #### Return Value
@@ -21,7 +21,7 @@ A dictionary mapping each queried capability to its current authorization status
 
 ## Parameters
 
-- `inputCapabilities`: The capabilities to query.  Duplicate entries are collapsed.
+- `inputCapabilities`: The capabilities to query.
 
 
 ---

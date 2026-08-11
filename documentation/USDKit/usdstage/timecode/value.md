@@ -3,7 +3,7 @@
 **Framework**: USDKit  
 **Kind**: property
 
-The numeric value of this time code, or `nil` for the default time code.
+The numeric value of this time code, or `nil` if it is the default time code.
 
 **Availability**:
 - iOS 27.0+ (Beta)

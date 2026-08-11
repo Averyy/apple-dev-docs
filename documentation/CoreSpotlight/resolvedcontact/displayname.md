@@ -3,7 +3,7 @@
 **Framework**: Core Spotlight  
 **Kind**: property
 
-Display name (e.g., “John Appleseed” or “Acme Corp”).
+The name your app displays for the contact.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -18,12 +18,16 @@ Display name (e.g., “John Appleseed” or “Acme Corp”).
 var displayName: String
 ```
 
+#### Discussion
+
+Use this property to specify the name of a person or business. For example, you might specify “John Appleseed” or “Acme Corp”.
+
 ## See Also
 
 - [var nameComponents: [PersonNameComponents]](resolvedcontact/namecomponents.md)
-  Structured name components for locale-aware matching.
+  The contact’s names as a set of structured name components.
 - [var names: [String]](resolvedcontact/names.md)
-  Alternate name strings the contact may be known by.
+  Alternate names you use to refer to the contact.
 
 
 ---

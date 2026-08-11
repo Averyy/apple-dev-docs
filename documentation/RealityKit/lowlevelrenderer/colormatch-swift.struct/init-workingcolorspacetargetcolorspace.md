@@ -19,8 +19,6 @@ init(workingColorSpace: CGColorSpace, targetColorSpace: CGColorSpace) throws(Low
 
 #### Discussion
 
-Throws [`LowLevelRendererError`](lowlevelrenderererror.md) if either color space is not a supported linear gamut.
-
 > **Note**: [`LowLevelRendererError`](lowlevelrenderererror.md) if either color space is not a supported linear gamut.
 
 ## Parameters

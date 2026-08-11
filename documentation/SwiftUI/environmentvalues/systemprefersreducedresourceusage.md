@@ -34,6 +34,8 @@ Avoid performing or scheduling expensive work in response to changes in this pro
 
 > 💡 **Tip**: For in-memory caching, consider using `NSCache` with `NSPurgeableData`, which automatically evicts entries under system memory pressure. Use `systemPrefersReducedResourceUsage` for higher-level decisions that `NSCache` cannot make on its own.
 
+When accessed outside in an `App` or `Scene` struct, this defaults to an app-wide aggregate value based on all scenes.
+
 
 ---
 

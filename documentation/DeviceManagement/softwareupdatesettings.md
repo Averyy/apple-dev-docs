@@ -21,7 +21,8 @@ object SoftwareUpdateSettings
 
 ## Mentions
 
-- [Deploy software updates using declarative management](deploy-software-updates-using-declarative-management.md)
+- [Deploying software updates using declarative management](deploying-software-updates-using-declarative-management.md)
+- [Enrolling a device in a beta program](enrolling-a-device-in-a-beta-program.md)
 
 #### Discussion
 

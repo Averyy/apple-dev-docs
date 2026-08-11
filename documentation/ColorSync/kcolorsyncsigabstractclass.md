@@ -3,6 +3,8 @@
 **Framework**: ColorSync  
 **Kind**: var
 
+The signature identifying an abstract profile class.
+
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
@@ -21,11 +23,17 @@ var kColorSyncSigAbstractClass: Unmanaged<CFString>!
 ## See Also
 
 - [var kColorSyncSigColorSpaceClass: Unmanaged<CFString>!](kcolorsyncsigcolorspaceclass.md)
+  The signature identifying a color-space conversion profile class.
 - [var kColorSyncSigDisplayClass: Unmanaged<CFString>!](kcolorsyncsigdisplayclass.md)
+  The signature identifying a display device profile class.
 - [var kColorSyncSigInputClass: Unmanaged<CFString>!](kcolorsyncsiginputclass.md)
+  The signature identifying an input (scanner or camera) device profile class.
 - [var kColorSyncSigLinkClass: Unmanaged<CFString>!](kcolorsyncsiglinkclass.md)
+  The signature identifying a device-link profile class.
 - [var kColorSyncSigNamedColorClass: Unmanaged<CFString>!](kcolorsyncsignamedcolorclass.md)
+  The signature identifying a named color profile class.
 - [var kColorSyncSigOutputClass: Unmanaged<CFString>!](kcolorsyncsigoutputclass.md)
+  The signature identifying an output (printer) device profile class.
 
 
 ---

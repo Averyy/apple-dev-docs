@@ -64,6 +64,19 @@ You can also use `MapScaleView` with the [`mapControls(_:)`](https://developer.a
   Creates a map scale view.
 - [init(alignment: HorizontalAlignment, scope: Namespace.ID?)](mapscaleview/init(alignment:scope:).md)
   Creates a scale view with the provided alignment and scope.
+### Managing map control sizing and visibility
+- [func mapControlVisibility(Visibility) -> some View
+](../SwiftUI/View/mapControlVisibility(_:).md)
+  Configures all Map controls in the environment to have the specified visibility
+- [func mapControls(() -> some View) -> some View
+](../SwiftUI/View/mapControls(_:).md)
+  Configures all `Map` views in the associated environment to have standard size and position controls
+- [func controlSize(_:)](../SwiftUI/View/controlSize(_:).md)
+  Sets the size for controls within this view.
+### Setting the namespace Identifier
+- [func mapScope(Namespace.ID) -> some View
+](../SwiftUI/View/mapScope(_:).md)
+  Creates a mapScope that SwiftUI uses to connect map controls to an associated map.
 
 ## Relationships
 

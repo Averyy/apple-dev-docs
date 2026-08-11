@@ -14,6 +14,19 @@ A menu item’s image visibility determines whether the item’s image is displa
 var preferredImageVisibility: NSMenuItem.ImageVisibility { get set }
 ```
 
+## See Also
+
+- [var image: NSImage?](nsmenuitem/image.md)
+  The menu item’s image.
+- [var onStateImage: NSImage!](nsmenuitem/onstateimage.md)
+  The image of the menu item that indicates an “on” state.
+- [var offStateImage: NSImage?](nsmenuitem/offstateimage.md)
+  The image of the menu item that indicates an “off” state.
+- [var mixedStateImage: NSImage!](nsmenuitem/mixedstateimage.md)
+  The image of the menu item that indicates a “mixed” state, that is, a state neither “on” nor “off.”
+- [NSMenuItem.ImageVisibility](nsmenuitem/imagevisibility.md)
+  Values for the `preferredImageVisibility` property of NSMenuItem. When a menu item is initialized, the default value for the item’s image visibility is Automatic.
+
 
 ---
 

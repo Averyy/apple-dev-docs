@@ -20,11 +20,6 @@ Bit 0 represents the primary button, bit 1 is the secondary button, and so on. S
 
 Changing the value of this property also sets the values of the [`delaysPrimaryMouseButtonEvents`](nsgesturerecognizer/delaysprimarymousebuttonevents.md), [`delaysSecondaryMouseButtonEvents`](nsgesturerecognizer/delayssecondarymousebuttonevents.md), and [`delaysOtherMouseButtonEvents`](nsgesturerecognizer/delaysothermousebuttonevents.md) properties to [`true`](https://developer.apple.com/documentation/Swift/true) for each of the buttons you specified.
 
-## See Also
-
-- [var numberOfTouchesRequired: Int](nspangesturerecognizer/numberoftouchesrequired.md)
-  The number of necessary touches on a Touch Bar for the gesture recognizer to match.
-
 
 ---
 

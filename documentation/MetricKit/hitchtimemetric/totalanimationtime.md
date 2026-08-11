@@ -19,7 +19,7 @@ let totalAnimationTime: Measurement<UnitDuration>
 
 ## See Also
 
-- [let ratio: Measurement<Unit>](hitchtimemetric/ratio.md)
+- [let ratio: Measurement<HitchTimeRatio>](hitchtimemetric/ratio.md)
   Ratio of time the application spent hitching during tracked animations.
 - [let totalHitchTime: Measurement<UnitDuration>](hitchtimemetric/totalhitchtime.md)
   Total time the application spent hitching during tracked animations.

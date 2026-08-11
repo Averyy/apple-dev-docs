@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: property
 
-Returns the maximum context size (in tokens) supported by the model.
+The maximum context size in tokens that the model supports.
 
 **Availability**:
 - iOS 26.0+
@@ -25,7 +25,7 @@ final var contextSize: Int { get }
 
 #### Return Value
 
-The maximum number of tokens the model can process in a single context.
+The context size, in tokens.
 
 #### Discussion
 
@@ -38,7 +38,7 @@ The context size represents the total number of tokens that can be used in a sin
 - [var supportedLanguages: Set<Locale.Language>](systemlanguagemodel/supportedlanguages.md)
   Languages that the model supports.
 - [func supportsLocale(Locale) -> Bool](systemlanguagemodel/supportslocale(_:).md)
-  Returns a Boolean indicating whether the given locale is supported by the model.
+  Returns a Boolean value that indicates whether the given locale is supported by the model.
 
 
 ---

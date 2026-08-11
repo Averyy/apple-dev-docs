@@ -28,6 +28,10 @@ Attaching a gesture recognizer to a view defines the scope of the represented ge
   The gesture recognize objects currently attached to the view.
 - [func removeGestureRecognizer(NSGestureRecognizer)](nsview/removegesturerecognizer(_:).md)
   Detaches a gesture recognizer from the view.
+- [var exclusiveGestureBehavior: NSView.ExclusiveGestureBehavior](nsview/exclusivegesturebehavior-swift.property.md)
+  Declares whether gesture recognizers should be exclusive in this view and its subviews.
+- [NSView.ExclusiveGestureBehavior](nsview/exclusivegesturebehavior-swift.enum.md)
+  Exclusive gesture behavior
 
 
 ---

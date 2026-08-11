@@ -48,6 +48,8 @@ Use this struct to specify an entity’s base color, which defines the entity’
 
 - [Applying realistic material and lighting effects to entities](applying-realistic-material-and-lighting-effects-to-entities.md)
   Enhance the appearance of objects in a RealityKit scene with Physically Based Rendering (PBR).
+- [Rendering high-fidelity characters](rendering-high-fidelity-characters.md)
+  Configure material and lighting properties to avoid flat, dull skin and static hair on your characters.
 - [Generating procedural textures](../visionOS/generating-procedural-textures-in-visionos.md)
   Display a 3D model that generates procedural textures in a reality view.
 - [struct PhysicallyBasedMaterial](physicallybasedmaterial.md)
@@ -74,8 +76,6 @@ Use this struct to specify an entity’s base color, which defines the entity’
   An object that defines the degree to which an entity reflects light to create stretched or oblong highlights.
 - [PhysicallyBasedMaterial.AnisotropyAngle](physicallybasedmaterial/anisotropyangle-swift.struct.md)
   An object used to define a material’s anisotropy angle.
-- [PhysicallyBasedMaterial.EmissiveColor](physicallybasedmaterial/emissivecolor-swift.struct.md)
-  An object that defines the color of the light an entity emits.
 
 
 ---

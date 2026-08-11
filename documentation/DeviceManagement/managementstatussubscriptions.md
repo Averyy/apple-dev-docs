@@ -22,7 +22,7 @@ object ManagementStatusSubscriptions
 
 ## Mentions
 
-- [Deploy software updates using declarative management](deploy-software-updates-using-declarative-management.md)
+- [Deploying software updates using declarative management](deploying-software-updates-using-declarative-management.md)
 - [Implementing Platform SSO for unattended device enrollment](implementing-platform-sso-for-unattended-device-enrollment.md)
 - [Leveraging the declarative management data model to scale devices](leveraging-the-declarative-management-data-model-to-scale-devices.md)
 

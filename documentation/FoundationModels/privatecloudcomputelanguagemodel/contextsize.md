@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: property
 
-Returns the maximum context size (in tokens) supported by the model.
+The maximum context size in tokens supported by the model.
 
 **Availability**:
 - iOS 27.0+ (Beta)

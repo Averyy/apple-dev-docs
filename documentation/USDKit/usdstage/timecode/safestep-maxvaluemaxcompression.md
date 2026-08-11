@@ -23,7 +23,7 @@ static func safeStep(maxValue: Double = 1e6, maxCompression: Double = 10.0) -> D
 
 Use it to author paired samples at `t` and `t + SafeStep()` that stay distinct for any `t` in [-maxValue, maxValue] under compression up to `maxCompression`.
 
-Equivalent to: `epsilon * maxValue * maxCompression * 2`..
+Equivalent to: `epsilon * maxValue * maxCompression * 2`.
 
 
 ---

@@ -16,8 +16,7 @@ A name that can be used to understand which type the content represents.
 ## Declaration
 
 ```swift
-@backDeployed(before: iOS 27.0, macOS 27.0, visionOS 27.0)
-var schemaName: String { get set }
+var schemaName: String
 ```
 
 ## See Also

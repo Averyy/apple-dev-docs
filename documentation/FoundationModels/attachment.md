@@ -50,7 +50,7 @@ Prompt {
 
 ### Creating an attachment instance
 - [init(_:orientation:)](attachment/init(_:orientation:).md)
-  Creates an attachment from a `CGImage`.
+  Creates an attachment from a Core Graphics image.
 - [init(imageURL: URL, orientation: CGImagePropertyOrientation?)](attachment/init(imageurl:orientation:).md)
   Creates an attachment from a file URL pointing to an image.
 ### Assigning a label

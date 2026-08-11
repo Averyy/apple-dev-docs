@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: property
 
-The lighting function provider for this context.
+The lighting function creation interface for this context.
 
 **Availability**:
 - iOS 27.0+ (Beta)

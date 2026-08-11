@@ -8,6 +8,7 @@ Creates a sample buffer containing a spatial audio timed metadata sample compute
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

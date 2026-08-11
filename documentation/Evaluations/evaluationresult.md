@@ -60,16 +60,17 @@ A structure that contains the summary and detailed results from an evaluation ru
 - [func jsonRepresentableDataFrame(of: EvaluationResult.DataFrameKind) throws -> DataFrame](evaluationresult/jsonrepresentabledataframe(of:).md)
   Transforms a DataFrame into one with column types compatible with JSON representation.
 ### Saving and loading results
-- [func saveJSON(to: URL, includeReportMetadata: Bool) throws -> URL](evaluationresult/savejson(to:includereportmetadata:).md)
-  Saves evaluation results to a single JSON file.
-- [func jsonData(includeReportMetadata: Bool, jsonOptions: JSONSerialization.WritingOptions) throws -> Data](evaluationresult/jsondata(includereportmetadata:jsonoptions:).md)
-  Returns the evaluation results as JSON data.
 - [static func loadJSON(from: URL) throws -> EvaluationResult](evaluationresult/loadjson(from:).md)
   Loads an evaluation result from a JSON file on disk.
 - [static func loadJSONLines(from: URL) async throws -> [EvaluationResult]](evaluationresult/loadjsonlines(from:).md)
   Loads an array of evaluation results from a JSONL file on disk.
 - [init(jsonData: Data) throws](evaluationresult/init(jsondata:).md)
   Creates an evaluation result by parsing JSON data.
+### Instance Methods
+- [func jsonData(includeReportMetadata: Bool, includeTranscripts: Bool, jsonOptions: JSONSerialization.WritingOptions) throws -> Data](evaluationresult/jsondata(includereportmetadata:includetranscripts:jsonoptions:).md)
+  Returns the evaluation results as JSON data.
+- [func saveJSON(to: URL, includeReportMetadata: Bool, includeTranscripts: Bool) throws -> URL](evaluationresult/savejson(to:includereportmetadata:includetranscripts:).md)
+  Saves evaluation results to a single JSON file.
 
 ## Relationships
 

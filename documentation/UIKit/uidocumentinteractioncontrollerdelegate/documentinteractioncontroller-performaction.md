@@ -8,6 +8,7 @@ Called when a document interaction controller wants its delegate to perform a sp
 **Availability**:
 - iOS 3.2+
 - iPadOS 3.2+
+- Mac Catalyst 3.2+
 - visionOS 1.0+
 
 ## Declaration

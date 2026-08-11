@@ -35,7 +35,7 @@ Pass `nil` for any argument table stage not required by the material.
 - `geometryArguments`: The argument table bound to the geometry modifier stage, or `nil` if none.
 - `surfaceArguments`: The argument table bound to the surface shader stage, or `nil` if none.
 - `lightingArguments`: The argument table bound to the lighting function stage, or `nil` if none.
-- `transform`: The initial model-to-world transform of this instance.
+- `transform`: The initial local-to-world transform of this instance.
 - `sortCategory`: The category (opaque or transparent) for sorting.
 
 ## See Also

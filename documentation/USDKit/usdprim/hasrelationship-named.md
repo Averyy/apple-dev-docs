@@ -21,11 +21,12 @@ func hasRelationship(named name: USDToken) -> Bool
 
 ## See Also
 
-- [func relationship(named: USDToken) -> USDPrim.Relationship?](usdprim/relationship(named:).md)
+- [func relationship(named: USDToken) -> USDPrim.Relationship](usdprim/relationship(named:).md)
   Returns the relationship with a given name on this prim.
 - [func relationship(at: USDLayer.Path) -> USDPrim.Relationship](usdprim/relationship(at:).md)
   Returns the relationship at a given path, relative to this prim.
 - [USDPrim.Relationship](usdprim/relationship.md)
+  A property that connects a prim to one or more other objects in the stage by their paths.
 
 
 ---

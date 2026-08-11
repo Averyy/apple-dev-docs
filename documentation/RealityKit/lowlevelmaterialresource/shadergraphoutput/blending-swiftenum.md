@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: enum
 
-Indicates whether the ShaderGraph material should be rendered as opaque or transparent.
+Indicates the blending mode of the ShaderGraph material.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -36,7 +36,7 @@ enum Blending
 ## See Also
 
 - [var blending: LowLevelMaterialResource.ShaderGraphOutput.Blending](lowlevelmaterialresource/shadergraphoutput/blending-swift.property.md)
-  The blending mode recommended by the ShaderGraph compiler.
+  The blending mode derived from the ShaderGraph material.
 
 
 ---

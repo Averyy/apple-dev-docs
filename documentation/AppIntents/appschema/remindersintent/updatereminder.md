@@ -30,8 +30,6 @@ struct UpdateReminderIntent {
     var target: <#ReminderEntity#>
     var title: String?
     var note: AttributedString?
-    var images: [IntentFile]?
-    var subtasks: [<#ReminderEntity#>]?
     var tags: Set<String>?
     var urls: [URL]?
     var dueDate: DateComponents?
@@ -39,7 +37,6 @@ struct UpdateReminderIntent {
     var isCompleted: Bool?
     var isFlagged: Bool?
     var list: <#ListEntity#>?
-    var section: <#SectionEntity#>?
     var locationTrigger: <#LocationTriggerEntity#>?
 
     func perform() async throws -> some ReturnsValue<<#ReminderEntity#>> {
@@ -65,12 +62,6 @@ For more information about the App Intents framework and the experiences it supp
   An intent schema that creates a new reminder list section.
 - [var deleteReminders: some AppSchemaIntent](appschema/remindersintent/deletereminders.md)
   An intent schema that deletes reminders.
-- [var updateGroup: some AppSchemaIntent](appschema/remindersintent/updategroup.md)
-  An intent schema that updates a reminder list group.
-- [var updateList: some AppSchemaIntent](appschema/remindersintent/updatelist.md)
-  An intent schema that updates a reminder list.
-- [var updateSection: some AppSchemaIntent](appschema/remindersintent/updatesection.md)
-  An intent schema that updates a reminder list section.
 
 
 ---

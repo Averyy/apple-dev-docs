@@ -3,7 +3,7 @@
 **Framework**: ColorSync  
 **Kind**: property
 
-Gain offsets in stops (non-negative): direction (expand vs. compress) is inferred from the relationship between this alternate’s headroom and the baseline headroom.
+Gain offsets in stops (non-negative): the framework infers direction (expand vs. compress) from the relationship between this alternate’s headroom and the baseline headroom.
 
 **Availability**:
 - iOS 27.0+ (Beta)

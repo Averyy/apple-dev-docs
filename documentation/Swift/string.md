@@ -891,8 +891,8 @@ For more information about the Unicode terms used in this discussion, see the [`
 - [TextOutputStream](textoutputstream.md)
 - [TextOutputStreamable](textoutputstreamable.md)
 - [Transferable](../CoreTransferable/Transferable.md)
-- [USDPrim.Attribute.MetadataValue](../USDKit/USDPrim/Attribute/MetadataValue.md)
 - [USDPrim.Attribute.Value](../USDKit/USDPrim/Attribute/Value.md)
+- [USDStage.Object.MetadataValue](../USDKit/USDStage/Object/MetadataValue.md)
 - [USDValueProtocol](../USDKit/USDValueProtocol.md)
 
 ## See Also

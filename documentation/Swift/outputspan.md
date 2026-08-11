@@ -76,11 +76,14 @@ struct OutputSpan<Element> where Element : ~Copyable
 ### Type Aliases
 - [OutputSpan.Index](outputspan/index.md)
   The type that represents an initialized index in an `OutputSpan`.
+### Default Implementations
+- [Iterable Implementations](outputspan/iterable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
 - [ContiguousBytes](../Foundation/ContiguousBytes.md)
+- [Iterable](iterable.md)
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)
 
@@ -98,7 +101,6 @@ struct OutputSpan<Element> where Element : ~Copyable
   `MutableSpan<Element>` represents a contiguous region of memory which contains initialized instances of `Element`.
 - [struct MutableRawSpan](mutablerawspan.md)
   `MutableRawSpan` represents a contiguous region of memory which contains initialized bytes.
-- [struct SpanIterator](spaniterator.md)
 
 
 ---

@@ -19,6 +19,14 @@ Applies a single-apply API schema to this prim.
 func applyAPISchema(_ schemaIdentifier: USDToken) throws
 ```
 
+#### Discussion
+
+> **Note**: An error if the schema cannot be applied.
+
+## Parameters
+
+- `schemaIdentifier`: The identifier of the API schema to apply.
+
 ## See Also
 
 - [func applyAPISchema(USDToken, instanceName: USDToken) throws](usdprim/applyapischema(_:instancename:).md)

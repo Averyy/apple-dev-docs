@@ -4,7 +4,7 @@
 **Kind**: property  
 **Required**: Yes
 
-The custom Spotlight attributes to associate with the entity.
+A custom attribute set that you include with your entity to improve search accuracy.
 
 **Availability**:
 - iOS 18.0+
@@ -25,16 +25,12 @@ var attributeSet: CSSearchableItemAttributeSet { get }
 
 #### Discussion
 
-If you don’t provide a value for this property, the default implementation returns the contents of the [`defaultAttributeSet`](indexedentity/defaultattributeset.md) property. If you assign a new value to this property, the property returns your new set instead.
-
-When you create a custom attribute set, add the contents of the [`defaultAttributeSet`](indexedentity/defaultattributeset.md) if you want to include them in your new set. The system doesn’t add the default attributes automatically.
-
-During indexing, Spotlight indexes the values in this set together with any entity properties that have an associated indexing key. For information about how to specify entity-related attributes, see [`Making app entities available in Spotlight`](making-app-entities-available-in-spotlight.md).
+Use this property to include additional metadata in the index for your app entity. This property augments the set of declared properties in your entity that have an indexing key. The default implementation of this property provides an attribute set with the title, subtitle, and image values from the entity’s display representation.
 
 ## See Also
 
 - [var defaultAttributeSet: CSSearchableItemAttributeSet](indexedentity/defaultattributeset.md)
-  The default Spotlight attributes to associate with an entity.
+  The default set of attributes to include with your app entity in the Spotlight index.
 
 
 ---

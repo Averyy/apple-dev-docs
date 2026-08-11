@@ -127,6 +127,11 @@ To display models in a SwiftUI view, use the [`Query()`](query().md) macro and s
   A type that describes a SwiftData error.
 - [enum DataStoreError](datastoreerror.md)
   A type that describes a data store error.
+### Structures
+- [struct ResultsSection](resultssection.md)
+  A section of fetched results grouped by a common section key path value.
+- [struct SectionedResults](sectionedresults.md)
+  A `RandomAccessCollection` of [`ResultsSection`](resultssection.md) instances representing sectioned query results.
 
 
 ---

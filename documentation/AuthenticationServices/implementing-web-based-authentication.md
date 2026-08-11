@@ -18,7 +18,7 @@ The SSO extension needs to support the [`tokenExchange`](asauthorizationprovider
 
 When you set [`ASAuthorizationProviderExtensionAuthenticationMethod.openID`](asauthorizationproviderextensionauthenticationmethod/openid.md), or when the options include [`ASAuthorizationProviderExtensionRequestOptionsOpenIDFallback`](asauthorizationproviderextensionrequestoptions/asauthorizationproviderextensionrequestoptionsopenidfallback.md), the SSO extension needs to provide a login configuration for web-based authentication.
 
-During web-based authentication, a web view provided by the authorization endpoint appears. The URL of the authorization endpoint can be static or dynamic. In both cases, the SSO extension needs to provide information to Platform SSO as part of the login configuration when performing the registration.
+During web-based authentication, Platform SSO displays a web view that loads content from the authorization endpoint. The URL of the authorization endpoint can be static or dynamic. In both cases, the SSO extension needs to provide information to Platform SSO as part of the login configuration when performing the registration.
 
 Regardless of how you provide the URL, Platform SSO makes the following changes in the login request:
 
@@ -26,7 +26,7 @@ Regardless of how you provide the URL, Platform SSO makes the following changes 
 | --- | --- |
 | `redirect_uri` | Removed if already present and set to `com.apple.platformsso://callback`. |
 | `login_hint` | Removed if already present and set to the identity provider username. |
-| `scope` | Removed if already present and re-added as a whitespace-deduplicated merge of the URL’s scope and the Platform SSO specific login scope. If a request object is used, Platform SSO updates the scope to the same value before signing. |
+| `scope` | Removed if already present and re-added as a whitespace-deduplicated merge of the URL’s scope and the Platform SSO specific login scope. If the login request includes a request object, Platform SSO updates the scope to the same value before signing. |
 
 ##### Use a Static Oauth Url
 
@@ -40,19 +40,19 @@ This method uses a static URL for the authorization endpoint:
 This method retrieves the authorization URL from the authorization endpoint using the federation pre-authentication request and uses it for authentication:
 
 - Set [`federationType`](asauthorizationproviderextensionloginconfiguration/federationtype-swift.property.md) or [`fallbackFederationType`](asauthorizationproviderextensionloginconfiguration/fallbackfederationtype.md) to [`ASAuthorizationProviderExtensionLoginConfiguration.FederationType.dynamicOpenID`](asauthorizationproviderextensionloginconfiguration/federationtype-swift.enum/dynamicopenid.md).
-- Set [`authorizationURLKeypath`](asauthorizationproviderextensionloginconfiguration/authorizationurlkeypath.md) to the key for the authorization in the pre-authentication response. The default key path is `authorizationURL`. Platform SSO handles this URL the same way as a static `authorizationURL`.
+- Set [`authorizationURLKeypath`](asauthorizationproviderextensionloginconfiguration/authorizationurlkeypath.md) to the key for the authorization in the pre-authentication response. Leave [`authorizationURL`](asauthorizationproviderextensionloginconfiguration/authorizationurl.md) unset.
 
-If you include an `authorizationRequest` dictionary in the federation pre-authentication response, Platform SSO creates a JWT OpenID request object from it and signs it with the device signing key. It also updates the scope value to include the current scope for the request.
+If you include an `authorizationRequest` dictionary in the federation pre-authentication response, Platform SSO creates a JWT OpenID request object from it and signs it with the device signing key. Platform SSO also updates the scope value to include the current scope for the request.
 
 #### Perform the Authentication
 
 Web-based authentication assumes that the identity provider is a nonpublic client for OAuth and uses the following flow:
 
-![Diagram of the seven-step Platform SSO web-based authentication flow between the user, Platform SSO, the identity provider and its authorization endpoint.](https://docs-assets.developer.apple.com/published/56926a9c4f6960a8f3cbac915f473f94/psso-web-based-auth%402x.png)
+![Diagram of the seven-step Platform SSO web-based authentication flow between the user, Platform SSO, and the identity provider (including its authorization endpoint).](https://docs-assets.developer.apple.com/published/56926a9c4f6960a8f3cbac915f473f94/psso-web-based-auth%402x.png)
 
 **Step 1**: The user starts the web-based authentication login flow.
 
-**Step 2**: Platform SSO either contacts the static `authorizationURL` directly, or contacts the pre-authentication URL to retrieve a dynamic `authorizationURL`. If the URL fails to load, the device assumes it’s offline and uses a fallback credential.
+**Step 2**: Platform SSO either contacts the static `authorizationURL` directly, or performs a pre-authentication HTTP GET request to [`federationUserPreauthenticationURL`](asauthorizationproviderextensionloginconfiguration/federationuserpreauthenticationurl.md) and extracts the `authorizationURL` from the key specified by the [`authorizationURLKeypath`](asauthorizationproviderextensionloginconfiguration/authorizationurlkeypath.md). If the URL fails to load, Platform SSO assumes the device is offline and uses a fallback credential.
 
 The following is an example pre-authentication request:
 
@@ -75,6 +75,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 430
 Connection: keep-alive
+
 {
     "account_type": "Federated",
     "federation_protocol": "OIDC",
@@ -119,7 +120,7 @@ request=ewogICJraWQiJCCPb0y...5o1Slk1yxQFsmYwtg
 
 The request value is:
 
-- A Base64-encoded version of a JWT OpenID request object.
+- A signed JWT OpenID request object (base64url-encoded).
 - Signed with the device signing key so the authorization endpoint can strongly identify the requesting Mac.
 
 The following is an example JWT request object:
@@ -159,7 +160,7 @@ Connection: keep-alive
 </html>
 ```
 
-When receiving the response, Platform SSO verifies that:
+When Platform SSO receives the response, it verifies that:
 
 - The state query parameter is present, non-empty, and equal to the state value Platform SSO sent in the original request.
 - The code query parameter is present and non-empty.
@@ -216,7 +217,7 @@ Cache-Control: no-cache
 platform_sso_version=1.0&grant_type=urn:ietf:params:oauth:grant-type:jwt-bearer&assertion=ewogICJraWQiI...Iewy1GSQOJw
 ```
 
-The assertion value is a Base64-encoded version of a JWT login request.
+The assertion value is a JWT login request (base64url-encoded).
 
 Platform SSO includes the validated authorization response from step 4 as the value of the `subject_token` in the login request. The login request is a normal Platform SSO login request with three differences:
 
@@ -291,7 +292,7 @@ All scope values use the prefix `urn:apple:platformsso:auth:`:
 | `password-change` | The user is in the password-change flow. |
 | `setup-assistant` | Setup Assistant drives this authentication during initial device setup, including embedded system-session authentication that isn’t an elevation prompt. |
 | `temporary-session` | Authentication for an Authenticated Guest Mode session. |
-| `unlock` | The user unlocks the Mac from the screen-locked state (already logged in). |
+| `unlock` | The user unlocks their Mac from the screen-locked state (already logged in). |
 
 > **Note**: Platform SSO adds exactly one of these scopes to your authorization URL per request. The scopes are mutually exclusive with respect to the originating user action.
 
@@ -381,12 +382,12 @@ To add QR code scanning to your login page, use a JavaScript snippet like the fo
 The `scanQR()` function resolves with:
 
 - The QR code payload as a UTF-8 encoded string.
-- The QR code content determines the format of the string (for example, URL, token, and so on).
+- The QR code content determines the format of the string (for example, a URL or token).
 
 The `scanQR()` function rejects with an Error where `error.message` is one of:
 
 - `cancelled`: The user dismissed the scanner.
-- `error`: An internal error occurred (for example, a camera session or scanner configuration failure).
+- `error`: An internal error prevents the scan (for example, a camera session or scanner configuration failure).
 - `invalid`: The scan didn’t return a valid QR code. Retry the scan.
 - `timeout`: The scan exceeded the system time limit.
 - `unavailable`: No camera is available.
@@ -395,6 +396,8 @@ The `scanQR()` function rejects with an Error where `error.message` is one of:
 
 - [Authentication process](authentication-process.md)
   Use a system-supported method to authenticate with an identity provider.
+- [Using access keys with Platform Single Sign-on](using-access-keys-with-platform-single-sign-on.md)
+  Authenticate users with access keys stored in Apple Wallet.
 - [class ASAuthorizationProviderExtensionKerberosMapping](asauthorizationproviderextensionkerberosmapping.md)
   A set of Kerberos mappings that the system login process uses.
 

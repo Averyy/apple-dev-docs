@@ -8,6 +8,7 @@ A request that recognizes animals in an image.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+
@@ -56,6 +57,11 @@ This request generates a collection of [`RecognizedObjectObservation`](recognize
   The collection of revisions the request supports.
 - [RecognizeAnimalsRequest.Revision](recognizeanimalsrequest/revision-swift.enum.md)
   A type that describes the algorithm or implementation that the request performs.
+### Instance Properties
+- [var supportedIdentifiers: [RecognizeAnimalsRequest.Identifier]](recognizeanimalsrequest/supportedidentifiers.md)
+  The collection of animal identifiers that the request can detect.
+### Enumerations
+- [RecognizeAnimalsRequest.Identifier](recognizeanimalsrequest/identifier.md)
 
 ## Relationships
 

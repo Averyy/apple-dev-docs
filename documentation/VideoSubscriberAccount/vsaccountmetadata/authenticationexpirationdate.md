@@ -8,6 +8,7 @@ The date when the user’s current authentication session expires.
 **Availability**:
 - iOS 10.0+
 - iPadOS 10.0+
+- Mac Catalyst 10.0+
 - macOS ?+
 - tvOS 10.0+
 - visionOS 1.0+

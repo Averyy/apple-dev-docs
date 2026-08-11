@@ -3,6 +3,8 @@
 **Framework**: ColorSync  
 **Kind**: struct
 
+The location of the alpha component in a pixel, and whether it’s premultiplied.
+
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
@@ -38,7 +40,9 @@ struct ColorSyncAlphaInfo
 ## See Also
 
 - [struct ColorSyncDataDepth](colorsyncdatadepth.md)
+  The bit depth and numeric type of a color component in a pixel.
 - [typealias ColorSyncDataLayout](colorsyncdatalayout.md)
+  A bit field describing the alpha information and byte order of a pixel layout.
 
 
 ---

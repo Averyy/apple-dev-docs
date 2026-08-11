@@ -51,8 +51,6 @@ let intent = orderIntent.makeIntent(
   The intent’s identifier.
 - [let bundleIdentifier: String](appintentdefinition/bundleidentifier.md)
   The bundle identifier of the app that includes this intent.
-### Instance Properties
-- [var withParameters: IntentValuePropertiesCallable<AnyAppIntent>](appintentdefinition/withparameters.md)
 
 ## Relationships
 

@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: init
 
-Creates a new issue
+Creates an issue.
 
 **Availability**:
 - iOS 26.0+

@@ -23,7 +23,7 @@ object MachineInfo
 ## Mentions
 
 - [Implementing Platform SSO during Automated Device Enrollment](implementing-platform-sso-during-automated-device-enrollment.md)
-- [Deploy software updates using declarative management](deploy-software-updates-using-declarative-management.md)
+- [Deploying software updates using declarative management](deploying-software-updates-using-declarative-management.md)
 
 #### Discussion
 

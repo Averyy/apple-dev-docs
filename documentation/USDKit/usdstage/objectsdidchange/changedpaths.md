@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: property
 
+The paths whose fields changed.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)

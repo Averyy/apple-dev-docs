@@ -19,6 +19,10 @@ A sentiment regarding the model’s response.
 enum Sentiment
 ```
 
+## Mentions
+
+- [Inspecting session transcripts and reporting model feedback](inspecting-session-transcripts-and-reporting-model-feedback.md)
+
 ## Topics
 
 ### Sentiment values

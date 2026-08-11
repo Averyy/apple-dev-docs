@@ -39,6 +39,7 @@ To observe this notification using Swift concurrency, use [`NSView.FrameDidChang
   Sets the size of the view’s frame rectangle to the specified dimensions, resizing it within its superview without affecting its coordinate system.
 - [var frameRotation: CGFloat](nsview/framerotation.md)
   The angle of rotation, measured in degrees, applied to the view’s frame rectangle relative to its superview’s coordinate system.
+- [NSView.FrameDidChangeMessage](nsview/framedidchangemessage.md)
 - [var postsFrameChangedNotifications: Bool](nsview/postsframechangednotifications.md)
   A Boolean value indicating whether the view posts notifications when its frame rectangle changes.
 

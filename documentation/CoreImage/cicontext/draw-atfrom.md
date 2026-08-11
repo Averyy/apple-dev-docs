@@ -8,6 +8,7 @@ Renders a region of an image to a point in the context destination.
 **Availability**:
 - iOS 5.0+
 - iPadOS 5.0+
+- Mac Catalyst 5.0+
 - tvOS ?+
 - visionOS 1.0+
 

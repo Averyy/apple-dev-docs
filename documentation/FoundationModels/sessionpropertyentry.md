@@ -3,8 +3,6 @@
 **Framework**: Foundation Models  
 **Kind**: macro
 
-A macro for defining a custom key.
-
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -23,24 +21,6 @@ A macro for defining a custom key.
 ## Mentions
 
 - [Composing dynamic sessions with instructions and profiles](composing-dynamic-sessions-with-instructions-and-profiles.md)
-
-#### Overview
-
-When you need session-scoped properties apply the [`SessionPropertyEntry()`](sessionpropertyentry().md) macro to a stored property in an extension on [`SessionPropertyValues`](sessionpropertyvalues.md):
-
-```swift
-extension SessionPropertyValues {
-    @SessionPropertyEntry
-    var activatedSkills: [String: Bool] = [:]
-}
-```
-
-Read the shared session state for the custom value by using [`LanguageModelSession.SessionProperty`](languagemodelsession/sessionproperty.md):
-
-```swift
-@SessionProperty(\.activatedSkills)
-var activatedSkills
-```
 
 ## See Also
 

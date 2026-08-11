@@ -30,8 +30,6 @@ The provided span is only valid for the lifetime of the callback.
 
 ## See Also
 
-- [var positions: Span<SIMD3<Float>>](clothposeresource/positions.md)
-  The positions of all the vertices.
 - [func position(at: UInt32) -> SIMD3<Float>](clothposeresource/position(at:).md)
   Returns the position of the vertex at the given index.
 - [var vertexCount: Int](clothposeresource/vertexcount.md)

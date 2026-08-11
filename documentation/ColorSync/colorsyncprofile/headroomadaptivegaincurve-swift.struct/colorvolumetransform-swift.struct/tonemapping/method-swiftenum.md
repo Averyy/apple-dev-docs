@@ -26,7 +26,7 @@ enum Method
 - [ColorSyncProfile.HeadroomAdaptiveGainCurve.ColorVolumeTransform.ToneMapping.Method.AdaptiveGainCurve](colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/adaptivegaincurve.md)
   A set of headroom-adaptive gain curves and the chromaticities used to drive them.
 - [ColorSyncProfile.HeadroomAdaptiveGainCurve.ColorVolumeTransform.ToneMapping.Method.AlternateCurve](colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve.md)
-  A set of alternate gain curves. Each curve corresponds to a specific headroom level.
+  An alternate gain curve that targets a specific display headroom level.
 ### Enumeration Cases
 - [case adaptiveGainCurveMapping(ColorSyncProfile.HeadroomAdaptiveGainCurve.ColorVolumeTransform.ToneMapping.Method.AdaptiveGainCurve)](colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/adaptivegaincurvemapping(_:).md)
   Maps content above reference white using a headroom-adaptive gain curve.

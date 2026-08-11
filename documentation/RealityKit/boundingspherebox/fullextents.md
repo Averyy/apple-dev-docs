@@ -19,7 +19,7 @@ var fullExtents: SIMD3<Float>? { get set }
 
 #### Discussion
 
-Equivalent to `halfExtents.map { $0 * 2 }`.
+The full extents are equal to twice the [`halfExtents`](boundingspherebox/halfextents.md).
 
 ## See Also
 

@@ -18,6 +18,12 @@
 typealias Specification = some ResolverSpecification
 ```
 
+## See Also
+
+- [static var defaultResolverSpecification: some ResolverSpecification](stringsearchcriteria/defaultresolverspecification.md)
+- [StringSearchCriteria.UnwrappedType](stringsearchcriteria/unwrappedtype.md)
+- [StringSearchCriteria.ValueType](stringsearchcriteria/valuetype.md)
+
 
 ---
 

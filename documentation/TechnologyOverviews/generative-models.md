@@ -82,7 +82,7 @@ To adopt the protocol, [`Creating a standalone Swift package with Xcode`](https:
 
 To start routing requests to your model, those who adopt your model package only need to change a single line of code to initialize their session — just as they do with [`Adding server-side intelligence with Private Cloud Compute`](https://developer.apple.com/documentation/FoundationModels/adding-server-side-intelligence-with-private-cloud-compute) (PCC). Keep in mind that you’re responsible for handling server authentication and managing any on-device weights your model requires.
 
-The framework also supports capabilities beyond its built-in primitives. When a new modality comes along — like audio, video, or some new type of content — update your package and provide a [`Transcript.CustomSegment`](https://developer.apple.com/documentation/FoundationModels/Transcript/CustomSegment) to send that data through your model.
+The framework also supports capabilities beyond its built-in primitives. When a new modality comes along — like audio, video, or some new type of content — update your package and provide a custom transcript segment to send that data through your model.
 
 
 ---

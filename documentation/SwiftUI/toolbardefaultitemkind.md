@@ -31,7 +31,7 @@ struct ToolbarDefaultItemKind
   The sidebar toggle toolbar item a `NavigationSplitView` adds by default.
 ### Type Properties
 - [static let search: ToolbarDefaultItemKind](toolbardefaultitemkind/search.md)
-  The search item added by a `View/searchable(text:isPresented:placement:prompt)` modifier.
+  The search item added by a [`searchable(text:isPresented:placement:prompt:)`](view/searchable(text:ispresented:placement:prompt:).md) modifier.
 - [static let title: ToolbarDefaultItemKind](toolbardefaultitemkind/title.md)
   The title and subtitle shown in title bar / navigation bar.
 

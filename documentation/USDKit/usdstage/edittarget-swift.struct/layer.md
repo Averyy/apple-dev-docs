@@ -3,7 +3,7 @@
 **Framework**: USDKit  
 **Kind**: property
 
-The layer referenced by this edit target.
+The layer that authoring operations are directed to.
 
 **Availability**:
 - iOS 27.0+ (Beta)

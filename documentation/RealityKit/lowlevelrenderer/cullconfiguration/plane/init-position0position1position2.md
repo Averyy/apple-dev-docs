@@ -21,6 +21,12 @@ init(position0 p0: SIMD3<Float>, position1 p1: SIMD3<Float>, position2 p2: SIMD3
 
 The plane’s outward normal is computed as `cross(p1 − p0, p2 − p1)`, so the three positions wind counterclockwise when viewed from the outward (culled) side of the plane.
 
+## Parameters
+
+- `p0`: The first position on the plane.
+- `p1`: The second position on the plane.
+- `p2`: The third position on the plane.
+
 ## See Also
 
 - [init(position: SIMD3<Float>, direction: SIMD3<Float>)](lowlevelrenderer/cullconfiguration/plane/init(position:direction:).md)

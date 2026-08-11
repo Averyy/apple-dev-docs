@@ -3,7 +3,7 @@
 **Framework**: Core Spotlight  
 **Kind**: property
 
-The result payload produced by a stage.
+The output data your custom stage produced.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -21,7 +21,7 @@ let payload: SearchPipelineData.Payload
 ## See Also
 
 - [SearchPipelineData.Payload](searchpipelinedata/payload-swift.enum.md)
-  The typed variants of data a pipeline stage can produce or consume.
+  The typed variants of data a pipeline stage can produce.
 
 
 ---

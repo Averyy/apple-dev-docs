@@ -37,14 +37,11 @@ The [`grainOffset`](pkstroke-swift.struct/renderstate-swift.struct/grainoffset.m
 - [var grainOffset: CGPoint?](pkstroke-swift.struct/renderstate-swift.struct/grainoffset.md)
   The pre-transform position of the grain texture for strokes with a backing grain texture such as crayon.
 ### Using reference types
-- [PKStrokeRenderState](pkstrokerenderstate.md)
+- [class PKStrokeRenderStateReference](pkstrokerenderstatereference.md)
   An object that captures the render-time state of a stroke, such as grain texture position.
 ### Initializers
-- [init(__PKStrokeRenderState)](pkstroke-swift.struct/renderstate-swift.struct/init(_:).md)
-  Creates a `RenderState` from its Objective-C counterpart `PKStrokeRenderState`.
-### Instance Methods
-- [func asObjCRenderState() -> __PKStrokeRenderState](pkstroke-swift.struct/renderstate-swift.struct/asobjcrenderstate.md)
-  Returns the Objective-C `PKStrokeRenderState` representation of this render state.
+- [init(PKStrokeRenderStateReference)](pkstroke-swift.struct/renderstate-swift.struct/init(_:).md)
+  Creates a `RenderState` from its Objective-C counterpart `PKStrokeRenderStateReference`.
 
 ## Relationships
 

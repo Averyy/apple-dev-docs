@@ -3,6 +3,8 @@
 **Framework**: ColorSync  
 **Kind**: func
 
+Returns the version of the ColorSync API.
+
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
@@ -17,6 +19,10 @@
 ```swift
 func ColorSyncAPIVersion() -> UInt32
 ```
+
+#### Return Value
+
+The API version as a binary-coded decimal `uint32_t`. From most to least significant byte, the value encodes the major OS version, minor OS version, patch version, and API version — that is, `(major << 24) | (minor << 16) | (dot << 8) | (apiVersion & 0xFF)`.
 
 ## See Also
 

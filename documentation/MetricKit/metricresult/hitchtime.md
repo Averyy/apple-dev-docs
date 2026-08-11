@@ -18,7 +18,6 @@ case hitchTime(HitchTimeMetric)
 ## See Also
 
 - [case hangTime(HangTimeMetric)](metricresult/hangtime(_:).md)
-- [case scrollHitchTime(ScrollHitchTimeMetric)](metricresult/scrollhitchtime(_:).md)
 
 
 ---

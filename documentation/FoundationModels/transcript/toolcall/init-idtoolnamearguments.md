@@ -19,7 +19,7 @@ init(id: String, toolName: String, arguments: GeneratedContent)
 
 ## See Also
 
-- [init(id: String, metadata: [String : any Codable & Sendable & Equatable], toolName: String, arguments: GeneratedContent)](transcript/toolcall/init(id:metadata:toolname:arguments:).md)
+- [init(id: String, metadata: [String : any ConvertibleToGeneratedContent], toolName: String, arguments: GeneratedContent)](transcript/toolcall/init(id:metadata:toolname:arguments:).md)
 
 
 ---

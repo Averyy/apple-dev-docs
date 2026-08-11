@@ -17,7 +17,7 @@ Observes and tracks changes to a collection of persistent models in a model cont
 ## Declaration
 
 ```swift
-final class ResultsObserver<Element, SectionName> where Element : PersistentModel, SectionName : Hashable
+final class ResultsObserver<Element, SectionTitle> where Element : PersistentModel, SectionTitle : Hashable
 ```
 
 #### Overview
@@ -32,7 +32,7 @@ The observer responds to changes from multiple sources:
 
 You can configure the observer using either a complete `FetchDescriptor` or individual filter predicates and sort descriptors. The observer is `Observable`, allowing SwiftUI views to automatically update when results change.
 
-Use `Never` as the `SectionName` type parameter when no sectioning is needed:
+Use `Never` as the `SectionTitle` type parameter when no sectioning is needed:
 
 ```swift
 let observer = try ResultsObserver<Book, Never>(
@@ -90,10 +90,8 @@ let observer = try ResultsObserver<Book, String>(
   The sort descriptors used to order the results.
 - [var sectionBy: PartialKeyPath<Element>?](resultsobserver/sectionby.md)
   The key path on the element used to determine section grouping.
-- [var sections: ResultsSectionCollection<Element, SectionName>?](resultsobserver/sections.md)
+- [var sections: SectionedResults<Element, SectionTitle>?](resultsobserver/sections.md)
   The sections computed from the current results, grouped by [`sectionBy`](resultsobserver/sectionby.md).
-- [struct ResultsSectionCollection](resultssectioncollection.md)
-  A collection of sections as returned by [`sections`](resultsobserver/sections.md) or `Query.sections`.
 ### Accessing observer results
 - [var results: FetchResultsCollection<Element>](resultsobserver/results.md)
   The current collection of fetched models matching the fetch criteria.

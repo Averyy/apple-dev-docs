@@ -16,17 +16,18 @@ Languages that the model supports.
 ## Declaration
 
 ```swift
-final var supportedLanguages: Set<Locale.Language> { get }
+nonisolated
+(nonsending) final var supportedLanguages: Set<Locale.Language> { get async throws }
 ```
 
 #### Discussion
 
-To check if a given locale is considered supported by the model, use `supportsLocale(_:)`, which will also take into consideration language fallbacks.
+To check if a given locale is considered supported by the model, use [`supportsLocale(_:)`](privatecloudcomputelanguagemodel/supportslocale(_:).md), which also takes language fallbacks into consideration.
 
 ## See Also
 
-- [func supportsLocale(Locale) -> Bool](privatecloudcomputelanguagemodel/supportslocale(_:).md)
-  Returns a Boolean indicating whether the given locale is supported by the model.
+- [func supportsLocale(Locale) async throws -> Bool](privatecloudcomputelanguagemodel/supportslocale(_:).md)
+  Returns a Boolean value that indicates whether the given locale is supported by the model.
 
 
 ---

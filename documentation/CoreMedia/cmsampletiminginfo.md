@@ -38,6 +38,8 @@ A single `CMSampleTimingInfo` struct can describe every individual sample in a `
   The duration of the sample.
 - [var presentationTimeStamp: CMTime](cmsampletiminginfo/presentationtimestamp.md)
   The time at which the sample will be presented.
+### Operators
+- [static func != (CMSampleTimingInfo, CMSampleTimingInfo) -> Bool](cmsampletiminginfo/!=(_:_:).md)
 
 ## Relationships
 

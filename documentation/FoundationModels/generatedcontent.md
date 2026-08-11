@@ -34,17 +34,17 @@ Generated content may contain a single value, an array, or key-value pairs with 
 - [init(_:)](generatedcontent/init(_:).md)
   Creates generated content from another value.
 - [init(some ConvertibleToGeneratedContent, id: GenerationID)](generatedcontent/init(_:id:).md)
-  Creates content that contains a single value with a custom `GenerationID`.
+  Creates content that contains a single value with a custom generation identifier.
 - [init<S>(elements: S, id: GenerationID?)](generatedcontent/init(elements:id:).md)
   Creates content representing an array of elements you specify.
 - [init(properties: KeyValuePairs<String, any ConvertibleToGeneratedContent>, id: GenerationID?)](generatedcontent/init(properties:id:).md)
   Creates generated content representing a structure with the properties you specify.
 - [init<S>(properties: S, id: GenerationID?, uniquingKeysWith: (GeneratedContent, GeneratedContent) throws -> some ConvertibleToGeneratedContent) rethrows](generatedcontent/init(properties:id:uniquingkeyswith:).md)
-  Creates new generated content from the key-value pairs in the given sequence, using a combining closure to determine the value for any duplicate keys.
+  Creates generated content from key-value pairs, resolving duplicate keys with a combining closure.
 - [init(json: String) throws](generatedcontent/init(json:).md)
   Creates equivalent content from a JSON string.
 - [init(kind: GeneratedContent.Kind, id: GenerationID?)](generatedcontent/init(kind:id:).md)
-  Creates a new `GeneratedContent` instance with the specified kind and `GenerationID`.
+  Creates content with the specified kind and generation identifier.
 - [GeneratedContent.ParsingError](generatedcontent/parsingerror.md)
   A failure that occurs when a string cannot be parsed into GeneratedContent.
 ### Accessing the content
@@ -53,15 +53,15 @@ Generated content may contain a single value, an array, or key-value pairs with 
 - [GeneratedContent.Kind](generatedcontent/kind-swift.enum.md)
   A representation of the different types of content that can be stored in generated content.
 - [func value<Value>(Value.Type) throws -> Value](generatedcontent/value(_:).md)
-  Reads a top level, concrete partially `Generable` type from a named property.
+  Reads a top level, concrete partially generable type from a named property.
 - [func value(_:forProperty:)](generatedcontent/value(_:forproperty:).md)
-  Reads a concrete `Generable` type from named property.
+  Reads a concrete generable type from a named property.
 - [var isComplete: Bool](generatedcontent/iscomplete.md)
-  A Boolean that indicates whether the generated content is completed.
+  A Boolean value that indicates whether the generated content is complete.
 - [var generatedContent: GeneratedContent](generatedcontent/generatedcontent.md)
   A representation of this instance.
 - [var jsonString: String](generatedcontent/jsonstring.md)
-  Returns a JSON string representation of the generated content.
+  A JSON string representation of the generated content.
 - [var debugDescription: String](generatedcontent/debugdescription.md)
   A string representation for the debug description.
 ### Identifying a generation
@@ -93,6 +93,8 @@ Generated content may contain a single value, an array, or key-value pairs with 
 
 - [Generating Swift data structures with guided generation](generating-swift-data-structures-with-guided-generation.md)
   Create robust apps by describing output you want programmatically.
+- [macro Generable(description: String?)](generable(description:).md)
+- [macro Guide(description: String)](guide(description:).md)
 - [protocol Generable](generable.md)
   A type that the model uses when responding to prompts.
 - [struct GenerationSchema](generationschema.md)

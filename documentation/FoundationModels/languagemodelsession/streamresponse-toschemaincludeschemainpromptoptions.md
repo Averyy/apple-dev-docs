@@ -33,7 +33,7 @@ Consider using the default value of `true` for `includeSchemaInPrompt`. The exce
 
 - `prompt`: A prompt for the model to respond to.
 - `schema`: A schema to guide the output with.
-- `includeSchemaInPrompt`: Inject the schema into the prompt to bias the model.
+- `includeSchemaInPrompt`: If `true`, injects the schema into the prompt to bias the model.
 - `options`: Options that control how tokens are sampled from the distribution the model produces.
 
 ## See Also

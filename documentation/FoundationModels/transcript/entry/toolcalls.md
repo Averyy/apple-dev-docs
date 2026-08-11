@@ -19,6 +19,10 @@ A tool call containing a tool name and the arguments to invoke it with.
 case toolCalls(Transcript.ToolCalls)
 ```
 
+## Mentions
+
+- [Inspecting session transcripts and reporting model feedback](inspecting-session-transcripts-and-reporting-model-feedback.md)
+
 ## See Also
 
 - [case instructions(Transcript.Instructions)](transcript/entry/instructions(_:).md)

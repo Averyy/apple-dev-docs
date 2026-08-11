@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: init
 
-Creates a new generation channel instance.
+Creates a generation channel instance.
 
 **Availability**:
 - iOS 27.0+ (Beta)

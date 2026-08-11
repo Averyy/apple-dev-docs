@@ -8,6 +8,7 @@ Represents the visual contents of a touch control.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

@@ -87,14 +87,14 @@ A `Span` instance is a non-owning, non-escaping view into memory. When a `Span` 
 - [typealias Index](span/index.md)
   The representation for an index in `Span`.
 ### Default Implementations
-- [BorrowingSequence Implementations](span/borrowingsequence-implementations.md)
+- [Iterable Implementations](span/iterable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
 - [BitwiseCopyable](bitwisecopyable.md)
-- [BorrowingSequence](borrowingsequence.md)
 - [ContiguousBytes](../Foundation/ContiguousBytes.md)
+- [Iterable](iterable.md)
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)
 
@@ -112,7 +112,6 @@ A `Span` instance is a non-owning, non-escaping view into memory. When a `Span` 
   `MutableSpan<Element>` represents a contiguous region of memory which contains initialized instances of `Element`.
 - [struct MutableRawSpan](mutablerawspan.md)
   `MutableRawSpan` represents a contiguous region of memory which contains initialized bytes.
-- [struct SpanIterator](spaniterator.md)
 
 
 ---

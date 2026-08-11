@@ -3,7 +3,7 @@
 **Framework**: USDKit  
 **Kind**: property
 
-The name of this object.
+The name of this scene graph object.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -21,7 +21,7 @@ var name: USDToken { get }
 
 #### Discussion
 
-An object’s name is the last component of its [`path`](usdstage/object/path.md). This property is equivalent to the `SdfPath/nameToken` property of that path.
+An object’s name is the last component of its [`path`](usdstage/object/path.md). This property is equivalent to the `USDLayer.Path/name` property of that path.
 
 
 ---

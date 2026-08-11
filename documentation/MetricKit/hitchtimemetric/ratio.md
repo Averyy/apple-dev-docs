@@ -14,8 +14,12 @@ Ratio of time the application spent hitching during tracked animations.
 ## Declaration
 
 ```swift
-let ratio: Measurement<Unit>
+let ratio: Measurement<HitchTimeRatio>
 ```
+
+## Mentions
+
+- [Analyzing app performance with MetricKit](analyzing-app-performance-with-metrickit.md)
 
 ## See Also
 

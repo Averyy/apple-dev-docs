@@ -8,6 +8,7 @@ The notification the framework sends when it receives an update to a model colle
 **Availability**:
 - iOS 14.0+
 - iPadOS 14.0+
+- Mac Catalyst 14.0+
 - visionOS 1.0+
 
 ## Declaration

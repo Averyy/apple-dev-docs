@@ -11,7 +11,7 @@ Stream one-time codes received by the system.
 ## Declaration
 
 ```swift
-func oneTimeCodes(preferredDuration: TimeInterval = 600, anchor: ASPresentationAnchor) async throws -> some AsyncSequence<ASVerificationCode, any Error>
+func oneTimeCodes(preferredDuration: TimeInterval, anchor: ASPresentationAnchor) async throws -> some AsyncSequence<ASVerificationCode, any Error>
 ```
 
 #### Discussion
@@ -24,7 +24,7 @@ When requested, the user may decide whether your app may receive one-time codes.
 
 ## Parameters
 
-- `preferredDuration`: How long the stream should ideally remain connected. This duration is not guaranteed and defaults to 10 minutes.
+- `preferredDuration`: How long the stream should ideally remain connected. This duration is not guaranteed.
 - `anchor`: The anchor for which any UI should be presented from.
 
 

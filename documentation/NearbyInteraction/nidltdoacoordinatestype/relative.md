@@ -8,6 +8,7 @@ A coordinate type that specifies a 3D Cartesian triplet.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

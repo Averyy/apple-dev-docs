@@ -17,7 +17,7 @@ case invalidated
 
 ## Mentions
 
-- [Bridging an application’s custom USD runtime to Spatial Preview](bridging-an-external-usd-runtime-to-spatial-preview.md)
+- [Bridging an external USD runtime to Spatial Preview](bridging-an-external-usd-runtime-to-spatial-preview.md)
 
 
 ---

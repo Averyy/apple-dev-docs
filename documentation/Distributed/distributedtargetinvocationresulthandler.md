@@ -22,7 +22,7 @@ protocol DistributedTargetInvocationResultHandler<SerializationRequirement>
 
 #### Overview
 
-An instance conforming to this type must be passed when invoking `executeDistributedTarget(on:target:invocationDecoder:handler:)` while handling an incoming distributed call.
+An instance conforming to this type must be passed when invoking [`executeDistributedTarget(on:target:invocationDecoder:handler:)`](distributedactorsystem/executedistributedtarget(on:target:invocationdecoder:handler:).md) while handling an incoming distributed call.
 
 The handler will then be invoked with the return value (or error) that the invoked target returned (or threw).
 

@@ -8,6 +8,7 @@ A visibility value for a promoted in-app purchase that uses the visibility setti
 **Availability**:
 - iOS 16.4+
 - iPadOS 16.4+
+- Mac Catalyst 16.4+
 
 ## Declaration
 

@@ -45,8 +45,8 @@ Use the methods and properties of this class to fetch the content world you need
   Returns the custom content world with the specified name.
 - [var name: String?](wkcontentworld/name.md)
   The name of a custom content world.
-### Type Methods
-- [class func world(configuration: WKContentWorldConfiguration) -> WKContentWorld](wkcontentworld/world(configuration:).md)
+### Initializers
+- [init(configuration: WKContentWorld.Configuration)](wkcontentworld/init(configuration:).md)
 
 ## Relationships
 
@@ -73,11 +73,9 @@ Use the methods and properties of this class to fetch the content world you need
   An object that identifies the origin of a particular resource.
 - [class WKUserScript](wkuserscript.md)
   A script that the web view injects into a webpage.
-- [class WKContentWorldConfiguration](wkcontentworldconfiguration.md)
+- [WKContentWorld.Configuration](wkcontentworld/configuration.md)
 - [class WKJSHandle](wkjshandle.md)
   A WKJSHandle object contains a reference to a JavaScript object.
-- [class WKJSSerializedNode](wkjsserializednode.md)
-  A `WKJSSerializedNode` object contains the serialized representation of a DOM node
 
 
 ---

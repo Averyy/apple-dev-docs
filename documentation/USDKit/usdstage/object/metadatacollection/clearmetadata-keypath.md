@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: method
 
+Removes the authored value at `keyPath` within the dictionary-valued metadata for the given key.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)

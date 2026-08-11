@@ -24,7 +24,7 @@ var requestedAudioFormat: CMFormatDescription? { get set }
 
 Must be a PCM format.
 
-The output `CMSampleBuffers'` `CMFormatDescription` may not exactly match this format description, but it will match the parts described in the `AudioStreamBasicDescription`.
+The output `CMSampleBuffers'` `CMFormatDescription` may not exactly match this format description, but it will match the parts described in the `AudioStreamBasicDescription`. The output format may differ from the requestedAudioFormat in its LPCM numeric type, channel interleaving and sample size. If any of these differs from the format in which you wish to operate, you can set up conversions between the format of audio sample buffers provided by the AVPlayerItemSampleBufferOutput and your required processing format by using AudioConverter or AVAudioEngine.
 
 Specifying a PCM format is currently required.  In the future it may be optional.
 

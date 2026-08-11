@@ -27,7 +27,7 @@ Typically output is either a `String` or a [`Generable`](generable.md) type.
 ## See Also
 
 - [func call(arguments: Self.Arguments) async throws -> Self.Output](tool/call(arguments:).md)
-  A language model will call this method when it wants to leverage this tool.
+  Performs the tool’s action when a language model wants to use this tool.
 - [associatedtype Arguments : ConvertibleFromGeneratedContent](tool/arguments.md)
   The arguments that this tool should accept.
 

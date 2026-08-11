@@ -29,7 +29,7 @@ struct DraggableCircle: View {
         case inactive
         case pressing
         case dragging(translation: CGSize)
-        
+            
         var translation: CGSize {
             switch self {
             case .inactive, .pressing:
@@ -38,7 +38,7 @@ struct DraggableCircle: View {
                 return translation
             }
         }
-        
+            
         var isActive: Bool {
             switch self {
             case .inactive:
@@ -47,7 +47,7 @@ struct DraggableCircle: View {
                 return true
             }
         }
-        
+            
         var isDragging: Bool {
             switch self {
             case .inactive, .pressing:
@@ -57,9 +57,10 @@ struct DraggableCircle: View {
             }
         }
     }
-    
+        
     @GestureState private var dragState = DragState.inactive
     @State private var viewState = CGSize.zero
+    ...
 ```
 
 ###### Create Gestures and Update the Ui State
@@ -67,7 +68,8 @@ struct DraggableCircle: View {
 When you sequence two gestures, the callbacks capture the state of both gestures. In the update callback, the new `value` uses an enumeration to represent the combination of the possible gesture states. The code below converts the underlying gesture states into the high-level `DragState` enumeration defined above.
 
 ```swift
-var body: some View {
+    ...
+    var body: some View {
         let minimumLongPressDuration = 0.5
         let longPressDrag = LongPressGesture(minimumDuration: minimumLongPressDuration)
             .sequenced(before: DragGesture())
@@ -89,23 +91,25 @@ var body: some View {
                 self.viewState.width += drag.translation.width
                 self.viewState.height += drag.translation.height
             }
+        ...
 ```
 
 When the user begins pressing the view, the drag state changes to `pressing` and a shadow animates under the shape. After the user finishes the long press and the drag state changes to `dragging`, a border appears around the shape to indicate that the user may begin moving the view.
 
 ```swift
-        return Circle()
-            .fill(Color.blue)
-            .overlay(dragState.isDragging ? Circle().stroke(Color.white, lineWidth: 2) : nil)
-            .frame(width: 100, height: 100, alignment: .center)
-            .offset(
-                x: viewState.width + dragState.translation.width,
-                y: viewState.height + dragState.translation.height
-            )
-            .animation(nil)
-            .shadow(radius: dragState.isActive ? 8 : 0)
-            .animation(.linear(duration: minimumLongPressDuration))
-            .gesture(longPressDrag)
+    ...
+    Circle()
+        .fill(Color.blue)
+        .overlay(dragState.isDragging ? Circle().stroke(Color.white, lineWidth: 2) : nil)
+        .animation(.linear(duration: minimumLongPressDuration), value: dragState.isDragging)
+        .frame(width: 100, height: 100, alignment: .center)
+        .offset(
+            x: viewState.width + dragState.translation.width,
+            y: viewState.height + dragState.translation.height
+        )
+        .shadow(radius: dragState.isActive ? 8 : 0)
+        .animation(.linear(duration: minimumLongPressDuration), value: dragState.isActive)
+        .gesture(longPressDrag)
     }
 }
 ```

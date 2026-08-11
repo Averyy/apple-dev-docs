@@ -3,7 +3,7 @@
 **Framework**: Swift  
 **Kind**: func
 
-Source-compatibility overload; replaced by `withUnsafeThrowingContinuation(_:)`.
+Source-compatibility overload; replaced by [`withUnsafeThrowingContinuation(_:)`](withunsafethrowingcontinuation(_:)-32nwt.md).
 
 **Availability**:
 - iOS 13.0+
@@ -26,7 +26,7 @@ func withUnsafeThrowingContinuation<T>(isolation: isolated (any Actor)?, _ fn: (
 - [func withCheckedContinuation<T>(isolation: isolated (any Actor)?, function: String, (CheckedContinuation<T, Never>) -> Void) async -> sending T](withcheckedcontinuation(isolation:function:_:).md)
   Source-compatibility overload; replaced by [`withCheckedContinuation(function:_:)`](withcheckedcontinuation(function:_:).md).
 - [func withCheckedThrowingContinuation<T>(isolation: isolated (any Actor)?, function: String, (CheckedContinuation<T, any Error>) -> Void) async throws -> sending T](withcheckedthrowingcontinuation(isolation:function:_:).md)
-  Source-compatibility overload; replaced by `withCheckedThrowingContinuation(function:_:)`.
+  Source-compatibility overload; replaced by [`withCheckedThrowingContinuation(function:_:)`](withcheckedthrowingcontinuation(function:_:)-2k46m.md).
 - [func withUnsafeContinuation<T>(isolation: isolated (any Actor)?, (UnsafeContinuation<T, Never>) -> Void) async -> sending T](withunsafecontinuation(isolation:_:).md)
   Source-compatibility overload; replaced by [`withUnsafeContinuation(_:)`](withunsafecontinuation(_:).md).
 - [typealias AnyActor](anyactor.md)

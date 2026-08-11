@@ -8,6 +8,7 @@ The size of each page, in points, in the direction that the pages flow.
 **Availability**:
 - iOS 7.0+
 - iPadOS 7.0+
+- Mac Catalyst 7.0+
 
 ## Declaration
 

@@ -8,6 +8,7 @@ Creates a new instance of AVInputPickerController using a default sharedInstance
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

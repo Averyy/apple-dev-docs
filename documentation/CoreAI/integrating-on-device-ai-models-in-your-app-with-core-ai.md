@@ -157,6 +157,55 @@ guard let prediction = predictionValue.ndArray else {
 processOutput(prediction.view())
 ```
 
+#### Run Inference with Image Inputs and Outputs
+
+When a function expects an image instead of an [`NDArray`](ndarray.md), the input or output uses [`CVMutablePixelBuffer`](https://developer.apple.com/documentation/CoreVideo/CVMutablePixelBuffer). The descriptor tells you the expected dimensions and pixel format, so your code can provide a matching pixel buffer to the function.
+
+Read the input descriptor and confirm the value is an image. Then read width, height, and pixel format from the [`ImageDescriptor`](imagedescriptor.md):
+
+```swift
+guard let inputDescriptor = function.descriptor.inputDescriptor(of: "image"),
+      case .image(let imageDescriptor) = inputDescriptor else {
+    // Handle a missing or unexpected input.
+}
+
+let expectedWidth = imageDescriptor.width
+let expectedHeight = imageDescriptor.height
+let expectedFormat = imageDescriptor.pixelFormatType
+```
+
+A `width` or `height` of `-1` indicates a dynamic dimension. The [`pixelFormatType`](imagedescriptor/pixelformattype.md) is an [`OSType`](https://developer.apple.com/documentation/kernel/ostype) your code can compare against the format constants in [`Core Video`](https://developer.apple.com/documentation/CoreVideo).
+
+Pass a [`CVMutablePixelBuffer`](https://developer.apple.com/documentation/CoreVideo/CVMutablePixelBuffer) that matches the expected format and dimensions as an input. Build an [`InferenceFunction.Inputs`](inferencefunction/inputs.md) collection, add the buffer with `InferenceFunction/Inputs/insert(_:for:)`, and run the function:
+
+```swift
+var pixelBuffer = try makeImageBuffer(
+    width: expectedWidth,
+    height: expectedHeight,
+    pixelFormat: expectedFormat
+)
+
+// Fill the buffer with image data.
+writeImageData(into: &pixelBuffer)
+
+// Build the inputs collection and run the function.
+var inputs = InferenceFunction.Inputs()
+inputs.insert(pixelBuffer, for: "image")
+
+var outputs = try await function.run(inputs: inputs)
+```
+
+When the function returns an image, extract the output and read its [`pixelBuffer`](inferencevalue/pixelbuffer.md):
+
+```swift
+guard let outputValue = outputs.remove("result"),
+      let resultBuffer = outputValue.pixelBuffer else {
+    // Handle a missing output, or an output that isn't an image.
+}
+
+display(resultBuffer)
+```
+
 ## See Also
 
 - [struct AIModel](aimodel.md)

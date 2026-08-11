@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: init
 
-Creates a standalone render context, asynchronously compiling all required shader and pipeline resources.
+Creates a standalone render context, asynchronously preparing required resources.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -20,22 +20,22 @@ nonisolated
 
 #### Discussion
 
-Prefer this overload when creating a single render context. If you need to share compiled resources across multiple contexts, create a [`LowLevelRenderContextStandalone.Resources`](lowlevelrendercontextstandalone/resources.md) value first and use [`init(configuration:resources:)`](lowlevelrendercontextstandalone/init(configuration:resources:).md) instead.
+Prefer this overload when creating a single render context. If you need to share prepared resources across multiple contexts, create a [`LowLevelRenderContextStandalone.Resources`](lowlevelrendercontextstandalone/resources.md) value first and use [`init(configuration:resources:)`](lowlevelrendercontextstandalone/init(configuration:resources:).md) instead.
 
-> **Note**: An error if shader compilation or context creation fails.
+> **Note**: An error if resource preparation or context creation fails.
 
 ## Parameters
 
-- `configuration`: The Metal device and optional memory owner for the new context.
+- `configuration`: The configuration for the new context.
 
 ## See Also
 
 - [init(configuration: LowLevelRenderContextStandalone.Configuration, resources: LowLevelRenderContextStandalone.Resources) throws](lowlevelrendercontextstandalone/init(configuration:resources:).md)
-  Creates a standalone render context using pre-compiled shader and pipeline resources.
+  Creates a standalone render context using resources prepared ahead of time.
 - [LowLevelRenderContextStandalone.Configuration](lowlevelrendercontextstandalone/configuration.md)
   Configuration for creating a standalone render context backed by a Metal device.
 - [LowLevelRenderContextStandalone.Resources](lowlevelrendercontextstandalone/resources.md)
-  Pre-compiled shader and pipeline resources shared across multiple render context instances.
+  Resources needed for a render context
 
 
 ---

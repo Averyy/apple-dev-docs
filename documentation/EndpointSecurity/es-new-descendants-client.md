@@ -20,9 +20,9 @@ Es_new_client_result_t indicating success or a specific error.
 
 #### Discussion
 
-The returned client receives notify events for the calling process and auth+notify events for descendant processes (forked or exec’d after creation, recursively). All other processes are invisible.
+The returned client receives notify events for the calling process and auth+notify events for its descendant processes (the entire subtree rooted at the calling process). This includes descendants that already exist at the time the client is created as well as any forked or exec’d afterward, recursively. All other processes are invisible.
 
-Process muting APIs are not available and return ES_RETURN_ERROR. Path muting and target-path muting work normally.
+Process muting works, but only for processes that are already in the descendant subtree. es_mute_process / es_mute_process_events (and their unmute counterparts) succeed for a process the client can already observe and return ES_RETURN_ERROR for any process outside the subtree; the client cannot reach a process it was never allowed to see. Path muting and target-path muting work normally.
 
 > **Note**: Requires the com.apple.developer.endpoint-security.client entitlement.
 

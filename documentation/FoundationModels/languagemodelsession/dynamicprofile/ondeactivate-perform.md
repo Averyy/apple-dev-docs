@@ -46,6 +46,8 @@ struct MyDynamicProfile: LanguageModelSession.DynamicProfile {
   Runs an action when this dynamic profile becomes active.
 - [func onPrompt(perform:)](languagemodelsession/dynamicprofile/onprompt(perform:).md)
   Runs an action before the model is invoked for this dynamic profile.
+- [func onReasoning(perform:)](languagemodelsession/dynamicprofile/onreasoning(perform:).md)
+  Runs an action whenever this dynamic profile produces reasoning.
 - [func onResponse(perform:)](languagemodelsession/dynamicprofile/onresponse(perform:).md)
   Runs an action after this dynamic profile produces a response.
 - [func onToolCall(perform:)](languagemodelsession/dynamicprofile/ontoolcall(perform:).md)

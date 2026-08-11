@@ -8,6 +8,7 @@ Displays a character array at the current text position, a point specified by th
 **Availability**:
 - iOS 2.0+
 - iPadOS 2.0+
+- Mac Catalyst 2.0+
 - tvOS ?+
 - visionOS 1.0+
 - watchOS 2.0+

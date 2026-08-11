@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: init
 
-Creates a [`SystemLanguageModel`](systemlanguagemodel.md) for a specific use case.
+Creates a system language model instance for a specific use case.
 
 **Availability**:
 - iOS 26.0+
@@ -23,7 +23,7 @@ convenience init(useCase: SystemLanguageModel.UseCase = .general, guardrails: Sy
 - [SystemLanguageModel.UseCase](systemlanguagemodel/usecase.md)
   A type that represents the use case for prompting.
 - [SystemLanguageModel.Guardrails](systemlanguagemodel/guardrails.md)
-  Guardrails flag sensitive content from model input and output.
+  A set of controls that flag sensitive content from model input and output.
 
 
 ---

@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: class
 
-A compiled material composed of three independently-replaceable shader stages.
+A compiled material composed of three independently-replaceable shader functions.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -19,7 +19,9 @@ final class LowLevelMaterialResource
 
 #### Overview
 
-A `LowLevelMaterialResource` combines a `GeometryModifier` (vertex stage), a `SurfaceShader` (fragment stage), and a `LightingFunction` (lighting evaluation). Each stage can receive per-draw parameters through its own `LowLevelArgumentTable`, described by `argumentTableDescriptor`.
+A `LowLevelMaterialResource` combines a `GeometryModifier` shader function, a `SurfaceShader` function, and a `LightingFunction` (lighting evaluation). Each function can receive per-draw parameters through its own `LowLevelArgumentTable`, described by `LowLevelArgumentTable.Descriptor`.
+
+Create a `LowLevelMaterialResource` by building a [`LowLevelMaterialResource.Descriptor`](lowlevelmaterialresource/descriptor.md) from the three shader functions and passing it to [`makeMaterialResource(descriptor:)`](lowlevelrendercontext/makematerialresource(descriptor:).md).
 
 ## Topics
 
@@ -32,18 +34,18 @@ A `LowLevelMaterialResource` combines a `GeometryModifier` (vertex stage), a `Su
 - [var surface: LowLevelMaterialResource.SurfaceShader](lowlevelmaterialresource/surface.md)
   The compiled fragment-stage surface shader.
 - [LowLevelMaterialResource.SurfaceShader](lowlevelmaterialresource/surfaceshader.md)
-  A compiled Metal function that implements the fragment surface shader stage.
+  A compiled Metal function that implements the surface shader function.
 - [var geometry: LowLevelMaterialResource.GeometryModifier](lowlevelmaterialresource/geometry.md)
   The compiled vertex-stage geometry modifier.
 - [LowLevelMaterialResource.GeometryModifier](lowlevelmaterialresource/geometrymodifier.md)
-  A compiled Metal function that implements the vertex geometry modifier stage.
+  A compiled Metal function that implements the geometry modifier function.
 - [LowLevelMaterialResource.LightingFunction](lowlevelmaterialresource/lightingfunction.md)
-  A compiled function that evaluates lighting for a surface shader stage.
+  A compiled Metal function that evaluates lighting.
 - [LowLevelMaterialResource.Function](lowlevelmaterialresource/function.md)
-  A compiled shader stage function that can receive per-draw parameters via an argument table.
+  A compiled shader function that can receive per-draw parameters via an argument table.
 ### Reading shader graph output
 - [LowLevelMaterialResource.ShaderGraphOutput](lowlevelmaterialresource/shadergraphoutput.md)
-  The compiled shader functions produced by a ShaderGraph compilation.
+  The compiled Metal shader functions derived from a ShaderGraph.
 ### Instance Properties
 - [var lighting: LowLevelMaterialResource.LightingFunction](lowlevelmaterialresource/lighting.md)
   The compiled lighting evaluation function.

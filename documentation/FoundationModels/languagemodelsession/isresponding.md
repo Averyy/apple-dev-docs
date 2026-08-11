@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: property
 
-A Boolean value that indicates a response is being generated.
+A Boolean value that indicates whether a response is being generated.
 
 **Availability**:
 - iOS 26.0+

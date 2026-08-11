@@ -99,7 +99,7 @@ private func createHighlightedString(text: String, rangeValues: [NSValue]) -> NS
 
 ##### Search for Map Items
 
-An `MKLocalSearch.Request` takes either an `MKLocalSearchCompletion` or a natural language query string, and returns an array of [`MKMapItem`](mkmapitem.md) objects. Each `MKMapItem` represents a geographic location, like a specific address, that matches the search query. The sample code asynchronously retrieves the array of `MKMapItem` objects by calling [`start(completionHandler:)`](mklocalsearch/start(completionhandler:).md) on [`MKLocalSearch`](mklocalsearch.md).
+An [`MKLocalSearch.Request`](mklocalsearch/request.md) takes either an `MKLocalSearchCompletion` or a natural language query string, and returns an array of [`MKMapItem`](mkmapitem.md) objects. Each `MKMapItem` represents a geographic location, like a specific address, that matches the search query. The sample code asynchronously retrieves the array of `MKMapItem` objects by calling [`start(completionHandler:)`](mklocalsearch/start(completionhandler:).md) on [`MKLocalSearch`](mklocalsearch.md).
 
 ```swift
 let search = MKLocalSearch(request: request)
@@ -144,7 +144,7 @@ If a person is exploring the map, they can get information for a point of intere
 .mapFeatureSelectionAccessory(.automatic)
 ```
 
-When someone taps a point of interest, the system presents the map item’s details, including information like a phone number, business hours, and buttons to start navigation to the location using Apple Maps. The system presents the information using the style that the `mapFeatureSelectionAccessory(_:)` modifier configures. The sample app uses the [`automatic`](mapitemdetailselectionaccessorystyle/automatic.md) style, but the [`MapItemDetailSelectionAccessoryStyle`](mapitemdetailselectionaccessorystyle.md) structure offers several other options.
+When someone taps a point of interest, the system presents the map item’s details, including information like a phone number, business hours, and buttons to start navigation to the location using Apple Maps. The system presents the information using the style that the [`mapFeatureSelectionAccessory(_:)`](https://developer.apple.com/documentation/SwiftUI/View/mapFeatureSelectionAccessory(_:)) modifier configures. The sample app uses the [`automatic`](mapitemdetailselectionaccessorystyle/automatic.md) style, but the [`MapItemDetailSelectionAccessoryStyle`](mapitemdetailselectionaccessorystyle.md) structure offers several other options.
 
 ##### Persist and Retrieve Map Items
 

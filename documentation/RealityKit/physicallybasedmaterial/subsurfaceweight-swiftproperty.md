@@ -17,6 +17,10 @@
 var subsurfaceWeight: PhysicallyBasedMaterial.SubsurfaceWeight { get set }
 ```
 
+## Mentions
+
+- [Rendering high-fidelity characters](rendering-high-fidelity-characters.md)
+
 ## See Also
 
 - [var subsurfaceColor: PhysicallyBasedMaterial.SubsurfaceColor](physicallybasedmaterial/subsurfacecolor-swift.property.md)

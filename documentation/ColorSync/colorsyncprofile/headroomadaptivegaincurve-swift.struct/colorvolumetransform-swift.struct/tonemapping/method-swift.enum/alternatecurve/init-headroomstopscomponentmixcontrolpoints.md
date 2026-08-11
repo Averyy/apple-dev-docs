@@ -27,7 +27,7 @@ init(headroomStops: Float = 0.0, componentMix: ColorSyncProfile.HeadroomAdaptive
 ## Parameters
 
 - `headroomStops`: The headroom this curve targets, in stops above reference white. Must be greater than or equal to `0`.
-- `componentMix`: How the driving signal is derived from each pixel.
+- `componentMix`: How the framework derives the driving signal from each pixel.
 - `controlPoints`: The spline control points defining the curve.
 
 

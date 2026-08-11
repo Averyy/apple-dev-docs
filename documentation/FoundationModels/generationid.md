@@ -66,7 +66,7 @@ struct PeopleView: View {
 
 ### Creating an identifier
 - [init()](generationid/init.md)
-  Create a new, unique `GenerationID`.
+  Creates a unique identifier.
 
 ## Relationships
 

@@ -21,6 +21,7 @@ struct TerminationReason
 ## Relationships
 
 ### Conforms To
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)

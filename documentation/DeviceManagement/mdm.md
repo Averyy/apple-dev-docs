@@ -22,7 +22,7 @@ object MDM
 
 ## Mentions
 
-- [Deploy software updates using declarative management](deploy-software-updates-using-declarative-management.md)
+- [Deploying software updates using declarative management](deploying-software-updates-using-declarative-management.md)
 - [Displaying managed apps and packages](displaying-managed-apps-and-packages.md)
 - [Implementing Platform SSO during Automated Device Enrollment](implementing-platform-sso-during-automated-device-enrollment.md)
 - [Implementing the simple authentication account-driven enrollment flow](implementing-the-simple-authentication-account-driven-enrollment-flow.md)

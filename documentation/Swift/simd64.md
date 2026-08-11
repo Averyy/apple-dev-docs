@@ -471,6 +471,8 @@ struct SIMD64<Scalar> where Scalar : SIMDScalar
 
 ### Conforms To
 - [BitwiseCopyable](bitwisecopyable.md)
+- [ConvertibleFromBytes](convertiblefrombytes.md)
+- [ConvertibleToBytes](convertibletobytes.md)
 - [Copyable](copyable.md)
 - [CustomDebugStringConvertible](customdebugstringconvertible.md)
 - [CustomStringConvertible](customstringconvertible.md)

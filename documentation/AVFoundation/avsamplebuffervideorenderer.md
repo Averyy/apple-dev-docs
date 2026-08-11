@@ -51,6 +51,20 @@ class AVSampleBufferVideoRenderer
 - [func loadVideoPerformanceMetrics(completionHandler: (AVVideoPerformanceMetrics?) -> Void)](avsamplebuffervideorenderer/loadvideoperformancemetrics(completionhandler:).md)
 ### Classes
 - [AVSampleBufferVideoRenderer.Receiver](avsamplebuffervideorenderer/receiver.md)
+### Instance Properties
+- [var hasSufficientMediaDataForReliablePlaybackStart: Bool](avsamplebuffervideorenderer/hassufficientmediadataforreliableplaybackstart.md)
+  Indicates whether the enqueued media data meets the renderer’s preroll level.
+- [var isReadyForMoreMediaData: Bool](avsamplebuffervideorenderer/isreadyformoremediadata.md)
+  Indicates the readiness of the receiver to accept more sample buffers.
+### Instance Methods
+- [func enqueue(CMSampleBuffer)](avsamplebuffervideorenderer/enqueue(_:).md)
+  Sends a sample buffer in order to render its contents.
+- [func flush()](avsamplebuffervideorenderer/flush.md)
+  Instructs the receiver to discard pending enqueued sample buffers.
+- [func requestMediaDataWhenReady(on: dispatch_queue_t, using: () -> Void)](avsamplebuffervideorenderer/requestmediadatawhenready(on:using:).md)
+  Instructs the target to invoke a client-supplied block repeatedly, at its convenience, in order to gather sample buffers for playback.
+- [func stopRequestingMediaData()](avsamplebuffervideorenderer/stoprequestingmediadata.md)
+  Cancels any current requestMediaDataWhenReadyOnQueue:usingBlock: call.
 
 ## Relationships
 

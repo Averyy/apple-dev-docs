@@ -8,6 +8,7 @@ Returns an application provider using a given display name and identifier.
 **Availability**:
 - iOS 14.2+
 - iPadOS 14.2+
+- Mac Catalyst 14.2+
 - macOS ?+
 - tvOS 14.2+
 - visionOS 1.0+

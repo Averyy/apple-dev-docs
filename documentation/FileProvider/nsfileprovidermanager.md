@@ -8,6 +8,7 @@ A manager object that you use to communicate with the file provider from either 
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
+- Mac Catalyst 11.0+
 - macOS 11.0+
 - visionOS 1.0+
 

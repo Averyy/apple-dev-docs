@@ -31,7 +31,7 @@ If a `Continuation` is destroyed without being resumed, the program traps with a
 
 To create a continuation call [`withContinuation(of:throwing:_:)`](withcontinuation(of:throwing:_:).md).
 
-To resume the task, suspended on a continuation, call `resume(returning:)`, [`resume(throwing:)`](continuation/resume(throwing:).md), [`resume(with:)`](continuation/resume(with:).md), or [`resume()`](continuation/resume().md).
+To resume the task, suspended on a continuation, call [`resume(returning:)`](continuation/resume(returning:)-5fa8w.md), [`resume(throwing:)`](continuation/resume(throwing:).md), [`resume(with:)`](continuation/resume(with:).md), or [`resume()`](continuation/resume().md).
 
 > **Note**: [`CheckedContinuation`](checkedcontinuation.md)
 

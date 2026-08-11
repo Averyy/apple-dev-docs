@@ -8,6 +8,7 @@ Whether to hide the thumbstick when it is not being pressed.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

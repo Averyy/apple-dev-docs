@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: init
 
-Initialize instructions by describing how you want the model to behave using natural language.
+Creates instructions that describe how you want the model to behave, in natural language.
 
 **Availability**:
 - iOS 26.0+

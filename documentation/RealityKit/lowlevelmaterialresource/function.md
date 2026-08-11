@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: protocol
 
-A compiled shader stage function that can receive per-draw parameters via an argument table.
+A compiled shader function that can receive per-draw parameters via an argument table.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -21,7 +21,7 @@ protocol Function : Sendable
 
 ### Configuring the function
 - [var parameterMapping: LowLevelMaterialParameterMapping?](lowlevelmaterialresource/function/parametermapping.md)
-  The parameter name-to-slot mapping for this function, used to look up binding indices by name at runtime.
+  The parameter name-to-slot mapping for this function, used to look up binding indices by name at runtime, or `nil` if the function takes no custom parameters.
 - [var argumentTableDescriptor: LowLevelArgumentTable.Descriptor?](lowlevelmaterialresource/function/argumenttabledescriptor.md)
   The argument table descriptor that describes the buffer and texture slots this function requires, or `nil` if the function takes no per-draw arguments.
 
@@ -40,13 +40,13 @@ protocol Function : Sendable
 - [var surface: LowLevelMaterialResource.SurfaceShader](lowlevelmaterialresource/surface.md)
   The compiled fragment-stage surface shader.
 - [LowLevelMaterialResource.SurfaceShader](lowlevelmaterialresource/surfaceshader.md)
-  A compiled Metal function that implements the fragment surface shader stage.
+  A compiled Metal function that implements the surface shader function.
 - [var geometry: LowLevelMaterialResource.GeometryModifier](lowlevelmaterialresource/geometry.md)
   The compiled vertex-stage geometry modifier.
 - [LowLevelMaterialResource.GeometryModifier](lowlevelmaterialresource/geometrymodifier.md)
-  A compiled Metal function that implements the vertex geometry modifier stage.
+  A compiled Metal function that implements the geometry modifier function.
 - [LowLevelMaterialResource.LightingFunction](lowlevelmaterialresource/lightingfunction.md)
-  A compiled function that evaluates lighting for a surface shader stage.
+  A compiled Metal function that evaluates lighting.
 
 
 ---

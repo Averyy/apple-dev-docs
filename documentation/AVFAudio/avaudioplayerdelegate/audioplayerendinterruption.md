@@ -8,6 +8,7 @@ Tells the delegate when the audio session interruption ends.
 **Availability**:
 - iOS 2.2+
 - iPadOS 2.2+
+- Mac Catalyst 2.2+
 - tvOS 9.0+
 - visionOS 1.0+
 - watchOS 2.0+

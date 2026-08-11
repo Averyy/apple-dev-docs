@@ -24,7 +24,7 @@ var globalConcurrentExecutor: any TaskExecutor { get }
 
 The executor’s implementation is platform dependent. By default it uses a fixed size pool of threads and should not be used for blocking operations which do not guarantee forward progress as doing so may prevent other tasks from being executed and render the system unresponsive.
 
-You may pass this executor explicitly to a [`Task`](task.md) initializer as a task executor preference, in order to ensure and document that task be executed on the global executor, instead e.g. inheriting the enclosing actor’s executor. Refer to `withTaskExecutorPreference(_:operation:)` for a detailed discussion of task executor preferences.
+You may pass this executor explicitly to a [`Task`](task.md) initializer as a task executor preference, in order to ensure and document that task be executed on the global executor, instead e.g. inheriting the enclosing actor’s executor. Refer to [`withTaskExecutorPreference(_:isolation:operation:)`](withtaskexecutorpreference(_:isolation:operation:).md) for a detailed discussion of task executor preferences.
 
 Customizing the global concurrent executor is currently not supported.
 

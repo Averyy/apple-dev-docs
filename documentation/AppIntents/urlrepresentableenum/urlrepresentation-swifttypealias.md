@@ -3,6 +3,8 @@
 **Framework**: App Intents  
 **Kind**: typealias
 
+The type that provides the URL for the app enum.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+

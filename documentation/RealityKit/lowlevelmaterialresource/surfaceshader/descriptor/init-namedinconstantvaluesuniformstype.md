@@ -25,7 +25,7 @@ Equivalent to calling [`init(named:in:constantValues:uniformsSize:)`](lowlevelma
 
 - `name`: The name of the Metal function in the library.
 - `library`: The Metal library that contains the function.
-- `constantValues`: The Metal function constant values to specialize the function with.
+- `constantValues`: The Metal function constant values to specialize the function with. The function descriptor takes a snapshot of the constant values passed in.
 - `uniformsType`: The Swift type that mirrors your Metal uniforms struct.
 
 ## See Also

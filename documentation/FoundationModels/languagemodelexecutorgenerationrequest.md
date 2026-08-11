@@ -26,12 +26,12 @@ A generation request is the input payload that [`respond(to:model:streamingInto:
 ## Topics
 
 ### Creating a generation request
-- [init(id: UUID, transcript: Transcript, enabledTools: [Transcript.ToolDefinition], schema: GenerationSchema?, generationOptions: GenerationOptions, contextOptions: ContextOptions, metadata: [String : any Sendable & Codable & Equatable])](languagemodelexecutorgenerationrequest/init(id:transcript:enabledtools:schema:generationoptions:contextoptions:metadata:).md)
-  Creates a new generation request.
+- [init(id: UUID, transcript: Transcript, enabledTools: [Transcript.ToolDefinition], schema: GenerationSchema?, generationOptions: GenerationOptions, contextOptions: ContextOptions, metadata: [String : any ConvertibleToGeneratedContent])](languagemodelexecutorgenerationrequest/init(id:transcript:enabledtools:schema:generationoptions:contextoptions:metadata:).md)
+  Creates a generation request.
 ### Configuring a generation request
 - [var id: UUID](languagemodelexecutorgenerationrequest/id.md)
   A request id for logging and tracing purposes
-- [var metadata: [String : any Sendable & Codable & Equatable]](languagemodelexecutorgenerationrequest/metadata.md)
+- [var metadata: [String : GeneratedContent]](languagemodelexecutorgenerationrequest/metadata.md)
   Metadata to attach to the request
 - [var contextOptions: ContextOptions](languagemodelexecutorgenerationrequest/contextoptions.md)
   Settings that configure how the model is prompted
@@ -52,6 +52,8 @@ A generation request is the input payload that [`respond(to:model:streamingInto:
 
 ## See Also
 
+- [Running a Core AI model in a Foundation Models session](running-a-core-ai-model-in-a-foundation-models-session.md)
+  Send requests on device to an open source model you export with Core AI to get a consistent API experience.
 - [Optimizing key-value caching in language model sessions](optimizing-key-value-caching-in-language-model-sessions.md)
   Prevent repeated token processing by preserving the cached state across turns.
 - [protocol LanguageModel](languagemodel.md)

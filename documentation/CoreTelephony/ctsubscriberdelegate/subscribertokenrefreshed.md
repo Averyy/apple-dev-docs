@@ -9,6 +9,7 @@ Tells the delegate the subscriber’s token refreshed.
 **Availability**:
 - iOS 12.1+
 - iPadOS 12.1+
+- Mac Catalyst 12.1+
 
 ## Declaration
 

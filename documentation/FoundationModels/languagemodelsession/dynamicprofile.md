@@ -72,7 +72,7 @@ Profile {
 - [LanguageModelSession.DynamicProfile.SessionProperty](languagemodelsession/dynamicprofile/sessionproperty.md)
 ### Transforming the history
 - [func historyTransform(([Transcript.Entry]) -> [Transcript.Entry]) -> some LanguageModelSession.DynamicProfile](languagemodelsession/dynamicprofile/historytransform(_:).md)
-  Apply a transformation to the history prior to invoking the model.
+  Applies a transformation to the history prior to invoking the model.
 ### Observing life cycle modifiers
 - [func onActivate(perform: sending () async -> Void) -> some LanguageModelSession.DynamicProfile](languagemodelsession/dynamicprofile/onactivate(perform:).md)
   Runs an action when this dynamic profile becomes active.
@@ -80,6 +80,8 @@ Profile {
   Runs an action when this dynamic profile becomes inactive.
 - [func onPrompt(perform:)](languagemodelsession/dynamicprofile/onprompt(perform:).md)
   Runs an action before the model is invoked for this dynamic profile.
+- [func onReasoning(perform:)](languagemodelsession/dynamicprofile/onreasoning(perform:).md)
+  Runs an action whenever this dynamic profile produces reasoning.
 - [func onResponse(perform:)](languagemodelsession/dynamicprofile/onresponse(perform:).md)
   Runs an action after this dynamic profile produces a response.
 - [func onToolCall(perform:)](languagemodelsession/dynamicprofile/ontoolcall(perform:).md)
@@ -100,13 +102,10 @@ Profile {
 - [func maximumResponseTokens(Int?) -> some LanguageModelSession.DynamicProfile](languagemodelsession/dynamicprofile/maximumresponsetokens(_:).md)
   Sets the maximum response tokens.
 - [func modifier<Modifier>(Modifier) -> some LanguageModelSession.DynamicProfile](languagemodelsession/dynamicprofile/modifier(_:).md)
-  Apply a modifier to the dynamic profile.
+  Applies a modifier to the dynamic profile.
 ### Handling the error policy
 - [func transcriptErrorHandlingPolicy(TranscriptErrorHandlingPolicy?) -> some LanguageModelSession.DynamicProfile](languagemodelsession/dynamicprofile/transcripterrorhandlingpolicy(_:).md)
-  The session’s policy for managing the transcript when errors occur.
-### Instance Methods
-- [func onReasoning(perform:)](languagemodelsession/dynamicprofile/onreasoning(perform:).md)
-  Runs an action whenever this dynamic profile produces reasoning.
+  Sets the policy for managing the transcript when errors occur.
 
 ## Relationships
 

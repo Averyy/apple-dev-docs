@@ -8,6 +8,7 @@ Presents a view for allowing the user to customize a specified shared album.
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
+- Mac Catalyst 27.0+ (Beta)
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 
@@ -15,7 +16,7 @@ Presents a view for allowing the user to customize a specified shared album.
 
 ```swift
 nonisolated
-func photosSharedAlbumCustomizationSheet(isPresented: Binding<Bool>, albumIdentifier: String?, photoLibrary: PHPhotoLibrary, onCompletion: (() -> Void)? = nil) -> some View
+func photosSharedAlbumCustomizationSheet(isPresented: Binding<Bool>, albumIdentifier: String?, photoLibrary: PHPhotoLibrary, onCompletion: (((any Error)?) -> Void)? = nil) -> some View
 ```
 
 #### Discussion
@@ -27,7 +28,7 @@ func photosSharedAlbumCustomizationSheet(isPresented: Binding<Bool>, albumIdenti
 - `isPresented`: The binding for whether the shared album customization sheet should be shown.
 - `albumIdentifier`: The identifier of the shared album to be customized. Must be non-nil by the time `isPresented` is set to `true`.
 - `photoLibrary`: The photo library in which the specified shared album exists.
-- `onCompletion`: The callback that will be invoked when the customization has succeeded or failed.
+- `onCompletion`: The callback that will be invoked when the customization has succeeded or failed. On failure, the error will be non-nil.
 
 ## See Also
 

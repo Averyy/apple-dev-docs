@@ -21,7 +21,7 @@ struct StateEntry
 
 `StateEntry` is only present when state reporting is enabled via [`init(enabledStateReportingDomains:)`](metricmanager/init(enabledstatereportingdomains:).md). Access state entries through [`stateEntries`](metricreport/stateentries.md).
 
-Each entry corresponds to one [`MetricManager.ReportedState`](metricmanager/reportedstate.md) and contains the metric values aggregated while the app was in that state. Only a subset of metrics appear in state entries, including hang time, hitch time, scroll hitch time, app termination counts, signpost intervals, location activity time, and app runtime metrics.
+Each entry corresponds to one [`MetricManager.ReportedState`](metricmanager/reportedstate.md) and contains the metric values aggregated while the app was in that state. Only a subset of metrics appear in state entries, including hang time, hitch time, app termination counts, signpost intervals, location activity time, and app runtime metrics.
 
 ## Topics
 

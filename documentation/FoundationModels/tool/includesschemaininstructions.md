@@ -4,7 +4,7 @@
 **Kind**: property  
 **Required**: Yes
 
-If true, the model’s name, description, and parameters schema will be injected into the instructions of sessions that leverage this tool.
+A Boolean value that indicates whether the tool’s name, description, and parameters schema are injected into the instructions of sessions that leverage this tool.
 
 **Availability**:
 - iOS 26.0+

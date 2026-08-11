@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: case
 
-The session’s transcript was mutated while a request was in progress.
+A request mutated the session’s transcript while it was in progress.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -26,7 +26,7 @@ Do not modify the transcript while a request is being processed.
 ## See Also
 
 - [LanguageModelSession.Error.concurrentRequests](languagemodelsession/error/concurrentrequests.md)
-  Multiple requests were made to the session concurrently.
+  The session received multiple concurrent requests.
 
 
 ---

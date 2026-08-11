@@ -3,6 +3,8 @@
 **Framework**: App Intents  
 **Kind**: init
 
+Configures the app intent using an app enum with a URL representation.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -17,6 +19,10 @@
 ```swift
 init(urlRepresentable: some URLRepresentableEnum) throws
 ```
+
+## Parameters
+
+- `urlRepresentable`: An app enum with a URL representation.
 
 
 ---

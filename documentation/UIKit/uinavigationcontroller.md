@@ -159,7 +159,7 @@ For more information about how state preservation and restoration works, see [`P
 - [func popToViewController(UIViewController, animated: Bool) -> [UIViewController]?](uinavigationcontroller/poptoviewcontroller(_:animated:).md)
   Pops view controllers until the specified view controller is at the top of the navigation stack.
 - [var interactivePopGestureRecognizer: UIGestureRecognizer?](uinavigationcontroller/interactivepopgesturerecognizer.md)
-  The gesture recognizer responsible for popping the top view controller off the navigation stack when a person swipes from the leading screen edge.
+  The gesture recognizer that handles interactively popping the top view controller off the navigation stack when a person swipes from the leading screen edge.
 - [var interactiveContentPopGestureRecognizer: UIGestureRecognizer?](uinavigationcontroller/interactivecontentpopgesturerecognizer.md)
   The gesture recognizer that handles interactively popping the top view controller off the navigation stack when a person pans horizontally in the view.
 ### Configuring navigation bars

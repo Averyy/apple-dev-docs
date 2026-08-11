@@ -23,7 +23,7 @@ struct ThrowingDiscardingTaskGroup<Failure> where Failure : Error
 
 #### Overview
 
-To create a discarding task group, call the `withDiscardingTaskGroup(returning:body:)` method.
+To create a discarding task group, call the [`withDiscardingTaskGroup(returning:isolation:body:)`](withdiscardingtaskgroup(returning:isolation:body:).md) method.
 
 Don’t use a task group from outside the task where you created it. In most cases, the Swift type system prevents a task group from escaping like that because adding a child task to a task group is a mutating operation, and mutation operations can’t be performed from a concurrent execution context like a child task.
 
@@ -49,7 +49,7 @@ The group becoming canceled automatically, and cancelling all of its child tasks
 
 Since a `ThrowingDiscardingTaskGroup` is a structured concurrency primitive, cancellation is automatically propagated through all of its child-tasks (and their child tasks).
 
-A canceled task group can still keep adding tasks, however they will start being immediately canceled, and may act accordingly to this. To avoid adding new tasks to an already canceled task group, use `addTaskUnlessCancelled(priority:body:)` rather than the plain `addTask(priority:body:)` which adds tasks unconditionally.
+A canceled task group can still keep adding tasks, however they will start being immediately canceled, and may act accordingly to this. To avoid adding new tasks to an already canceled task group, use [`addTaskUnlessCancelled(priority:operation:)`](throwingdiscardingtaskgroup/addtaskunlesscancelled(priority:operation:).md) rather than the plain [`addTask(priority:operation:)`](throwingdiscardingtaskgroup/addtask(priority:operation:).md) which adds tasks unconditionally.
 
 For information about the language-level concurrency model that `DiscardingTaskGroup` is part of, see [`Concurrency`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/Concurrency.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/).
 

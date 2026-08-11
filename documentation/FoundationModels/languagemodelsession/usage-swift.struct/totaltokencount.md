@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: property
 
-The total number of tokens involved in this generation, equal to `input.totalTokenCount + output.totalTokenCount`.
+The total number of tokens involved in this generation, combining input and output counts.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -29,7 +29,7 @@ var totalTokenCount: Int { get }
   The output token counts from the response.
 - [LanguageModelSession.Usage.Output](languagemodelsession/usage-swift.struct/output-swift.struct.md)
   Token counts for the output produced by the model.
-- [var metadata: [String : any Sendable]](languagemodelsession/usage-swift.struct/metadata.md)
+- [var metadata: [String : GeneratedContent]](languagemodelsession/usage-swift.struct/metadata.md)
   Language models that provide other kinds of usage statistics may encode them in metadata.
 
 

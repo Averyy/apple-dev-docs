@@ -8,7 +8,6 @@ A result that indicates there’s a medium chance that a third party is coaching
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 
 ## Declaration
 

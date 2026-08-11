@@ -1,0 +1,25 @@
+# toolsPercentagePass
+
+**Framework**: Evaluations  
+**Kind**: property
+
+A convenience metric for the partial score result of a [`ToolCallEvaluator`](toolcallevaluator.md).
+
+**Availability**:
+- iOS 27.0+ (Beta)
+- iPadOS 27.0+ (Beta)
+- Mac Catalyst 27.0+ (Beta)
+- macOS 27.0+ (Beta)
+- visionOS 27.0+ (Beta)
+- watchOS 27.0+ (Beta)
+
+## Declaration
+
+```swift
+static let toolsPercentagePass: Metric
+```
+
+
+---
+
+*[View on Apple Developer](https://developer.apple.com/documentation/evaluations/metric/toolspercentagepass)*

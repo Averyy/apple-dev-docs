@@ -27,6 +27,7 @@ Use a `LowLevelRenderContext` to construct meshes, textures, buffers, argument t
 - [var device: any MTLDevice](lowlevelrendercontext/device.md)
   The Metal device that backs this render context.
 - [var shaderGraph: any LowLevelRenderContextShaderGraph](lowlevelrendercontext/shadergraph.md)
+  The ShaderGraph function creation interface for this render context.
 ### Creating resources
 - [func makeBufferResource(descriptor: LowLevelBufferResource.Descriptor) throws -> LowLevelBufferResource](lowlevelrendercontext/makebufferresource(descriptor:).md)
   Creates a GPU-managed buffer resource from the given descriptor.
@@ -75,7 +76,7 @@ Use a `LowLevelRenderContext` to construct meshes, textures, buffers, argument t
   Adds a command buffer that the renderer should wait on before using resources for rendering.
 ### Instance Properties
 - [var lighting: any LowLevelRenderContextLighting](lowlevelrendercontext/lighting.md)
-  The lighting function provider for this context.
+  The lighting function creation interface for this context.
 ### Instance Methods
 - [func makeGeometryModifier(descriptor:)](lowlevelrendercontext/makegeometrymodifier(descriptor:).md)
   Synchronous variant of [`makeGeometryModifier(descriptor:)`](lowlevelrendercontext/makegeometrymodifier(descriptor:).md). Blocks the current thread until compilation completes.
@@ -98,14 +99,15 @@ Use a `LowLevelRenderContext` to construct meshes, textures, buffers, argument t
 - [class LowLevelRenderer](lowlevelrenderer.md)
   A renderer that encodes draw calls for a collection of mesh instances into a Metal command buffer.
 - [protocol LowLevelRenderContextLighting](lowlevelrendercontextlighting.md)
-  An entry point for creating lighting functions for use in materials.
+  The interface for creating lighting functions for use in materials.
 - [protocol LowLevelRenderContextShaderGraph](lowlevelrendercontextshadergraph.md)
+  The interface for creating Metal shader functions from a ShaderGraph.
 - [class LowLevelRenderContextStandalone](lowlevelrendercontextstandalone.md)
   A standalone Metal-backed render context for creating low-level rendering resources.
 - [struct LowLevelRenderContextError](lowlevelrendercontexterror.md)
-  An error thrown by render context factory methods when resource creation fails.
+  An error thrown when binding or updating a low-level rendering resource fails.
 - [struct LowLevelRendererError](lowlevelrenderererror.md)
-  An error thrown by the renderer during initialization or rendering.
+  An error thrown when creating or configuring a renderer.
 
 
 ---

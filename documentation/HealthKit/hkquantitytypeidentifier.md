@@ -164,6 +164,7 @@ To create an [`HKQuantityType`](hkquantitytype.md) instance, pass an [`HKQuantit
 ### Mindfulness and Sleep
 - [static let appleSleepingWristTemperature: HKQuantityTypeIdentifier](hkquantitytypeidentifier/applesleepingwristtemperature.md)
   A quantity sample type that records the wrist temperature during sleep.
+- [static let appleSleepingBreathingDisturbances: HKQuantityTypeIdentifier](hkquantitytypeidentifier/applesleepingbreathingdisturbances.md)
 ### Nutrition
 - [static let dietaryBiotin: HKQuantityTypeIdentifier](hkquantitytypeidentifier/dietarybiotin.md)
   A quantity sample type that measures the amount of biotin (vitamin B7) consumed.
@@ -278,8 +279,6 @@ To create an [`HKQuantityType`](hkquantitytype.md) instance, pass an [`HKQuantit
 ### Initializers
 - [init(rawValue: String)](hkquantitytypeidentifier/init(rawvalue:).md)
   Returns a newly initialized quantity type identifier using the provided string.
-### Type Properties
-- [static let appleSleepingBreathingDisturbances: HKQuantityTypeIdentifier](hkquantitytypeidentifier/applesleepingbreathingdisturbances.md)
 
 ## Relationships
 

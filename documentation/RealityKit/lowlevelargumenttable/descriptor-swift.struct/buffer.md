@@ -23,7 +23,7 @@ struct Buffer
 - [init(size: Int)](lowlevelargumenttable/descriptor-swift.struct/buffer/init(size:).md)
   Creates a buffer slot descriptor with the given size.
 - [var size: Int](lowlevelargumenttable/descriptor-swift.struct/buffer/size.md)
-  The size of the buffer slot, in bytes.
+  The minimum size, in bytes, that a buffer slice must have to be bound to this slot.
 
 ## Relationships
 

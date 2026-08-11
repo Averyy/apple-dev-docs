@@ -54,6 +54,8 @@ You can also ask the Assistant to generate a new image itself, then use that AI-
 - “Create an image of a moose.”
 - “Create an image of a moose, and then create a model based on the image.”
 
+> ❗ **Important**: 3D model generation with the assistant performs best on systems with at least 32 GB of unified memory. Systems with less memory may experience significantly longer generation times.
+
 
 ---
 

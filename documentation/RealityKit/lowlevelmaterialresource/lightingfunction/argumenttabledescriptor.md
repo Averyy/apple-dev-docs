@@ -20,7 +20,7 @@ final var argumentTableDescriptor: LowLevelArgumentTable.Descriptor? { get }
 ## See Also
 
 - [var parameterMapping: LowLevelMaterialParameterMapping?](lowlevelmaterialresource/lightingfunction/parametermapping.md)
-  The parameter name-to-slot mapping for this lighting function.
+  The parameter name-to-slot mapping for this lighting function, or `nil` if it takes no custom parameters.
 
 
 ---

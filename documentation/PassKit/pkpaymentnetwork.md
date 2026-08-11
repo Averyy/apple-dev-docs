@@ -93,11 +93,14 @@ struct PKPaymentNetwork
 ### Type Properties
 - [static let conecs: PKPaymentNetwork](pkpaymentnetwork/conecs.md)
 - [static let elCorteIngles: PKPaymentNetwork](pkpaymentnetwork/elcorteingles.md)
+- [static let elcard: PKPaymentNetwork](pkpaymentnetwork/elcard.md)
 - [static let himyan: PKPaymentNetwork](pkpaymentnetwork/himyan.md)
 - [static let humo: PKPaymentNetwork](pkpaymentnetwork/humo.md)
 - [static let jaywan: PKPaymentNetwork](pkpaymentnetwork/jaywan.md)
   A Jaywan payment card.
+- [static let maal: PKPaymentNetwork](pkpaymentnetwork/maal.md)
 - [static let myDebit: PKPaymentNetwork](pkpaymentnetwork/mydebit.md)
+- [static let payPak: PKPaymentNetwork](pkpaymentnetwork/paypak.md)
 - [static let ruPay: PKPaymentNetwork](pkpaymentnetwork/rupay.md)
 - [static let uzCard: PKPaymentNetwork](pkpaymentnetwork/uzcard.md)
 - [static let verve: PKPaymentNetwork](pkpaymentnetwork/verve.md)

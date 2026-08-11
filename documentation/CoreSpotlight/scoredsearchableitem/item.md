@@ -3,7 +3,7 @@
 **Framework**: Core Spotlight  
 **Kind**: property
 
-The underlying searchable item.
+The searchable item from the app’s index.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -21,7 +21,7 @@ let item: SearchableItem
 ## See Also
 
 - [let score: Double](scoredsearchableitem/score.md)
-  A relevance score assigned by the pipeline stage; higher values indicate greater relevance. The scale is stage-defined.
+  The relevance score for the item.
 
 
 ---

@@ -20,8 +20,6 @@ var vertexCount: Int { get }
 
 - [func withElements<Result>((Span<ElementType>) -> Result) -> Result](perclothvertexdata/withelements(_:).md)
   Provides read-only access to the per-vertex data within a callback.
-- [var mutableElements: MutableSpan<ElementType>](perclothvertexdata/mutableelements.md)
-  A mutable view of the per-vertex data.
 - [func withMutableElements<Result>((inout MutableSpan<ElementType>) -> Result) -> Result](perclothvertexdata/withmutableelements(_:).md)
   Provides mutable access to the per-vertex data within a callback.
 

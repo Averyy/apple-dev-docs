@@ -31,10 +31,6 @@ struct USDValue
 - [init<T>(T)](usdvalue/init(_:).md)
   Creates a value wrapping `value`.
 ### Accessing the value
-- [func get<T>() -> T?](usdvalue/get.md)
-  Returns the wrapped value if it is of type `T`, otherwise `nil`.
-- [func uncheckedGet<T>() -> T](usdvalue/uncheckedget.md)
-  Returns the wrapped value as `T` without checking the dynamic type.
 - [func isHolding<T>(T.Type) -> Bool](usdvalue/isholding(_:).md)
   Returns whether this value holds a value of type `T`.
 ### Inspecting the value
@@ -42,10 +38,6 @@ struct USDValue
   The name of the wrapped type.
 - [var isEmpty: Bool](usdvalue/isempty.md)
   Whether this value is empty.
-- [var isArrayValued: Bool](usdvalue/isarrayvalued.md)
-  Whether the wrapped value is an array.
-- [var arraySize: Int](usdvalue/arraysize.md)
-  The number of elements in the wrapped array, or `0` for scalar values.
 - [USDValue.Vec3d](usdvalue/vec3d.md)
   A 3-component double-precision vector.
 ### Structures
@@ -87,6 +79,16 @@ struct USDValue
   A 4-component half-precision vector.
 - [USDValue.Vec4i](usdvalue/vec4i.md)
   A 4-component 32-bit integer vector.
+### Instance Properties
+- [var arrayCount: Int?](usdvalue/arraycount.md)
+  The number of elements if this value holds an array. Returns `nil` otherwise.
+- [var isArray: Bool](usdvalue/isarray.md)
+  Whether the wrapped value is an array.
+### Instance Methods
+- [func unsafeValue<T>(assumingType: T.Type) -> T](usdvalue/unsafevalue(assumingtype:).md)
+  Returns the wrapped value as `T` without checking the dynamic type.
+- [func value<T>(as: T.Type) -> T?](usdvalue/value(as:).md)
+  Returns the wrapped value if it is of type `T`, otherwise `nil`.
 
 ## Relationships
 

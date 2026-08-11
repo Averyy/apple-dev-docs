@@ -21,7 +21,7 @@ struct ToolCalls
 
 #### Overview
 
-Events for a specific tool call route through `Action/toolCall(_:)`. Use [`removeToolCall(id:)`](languagemodelexecutorgenerationchannel/toolcalls/action-swift.struct/removetoolcall(id:).md) to drop a tool call the model retracted.
+Events for a specific tool call route through [`toolCall(id:name:action:)`](languagemodelexecutorgenerationchannel/toolcalls/action-swift.struct/toolcall(id:name:action:).md). Use [`removeToolCall(id:)`](languagemodelexecutorgenerationchannel/toolcalls/action-swift.struct/removetoolcall(id:).md) to drop a tool call the model retracted.
 
 ## Topics
 
@@ -50,9 +50,9 @@ Events for a specific tool call route through `Action/toolCall(_:)`. Use [`remov
 - [LanguageModelExecutorGenerationChannel.ReasoningSignature](languagemodelexecutorgenerationchannel/reasoningsignature.md)
   Payload for a reasoning entry’s signature update.
 - [LanguageModelExecutorGenerationChannel.TextFragment](languagemodelexecutorgenerationchannel/textfragment.md)
-  Append text to a streaming entry’s current text segment. Used by both `Response/Action/appendText(_:)` and `Reasoning/Action/appendText(_:)`.
+  Text appended to a streaming entry’s current text segment.
 - [LanguageModelExecutorGenerationChannel.TextSegmentReplacement](languagemodelexecutorgenerationchannel/textsegmentreplacement.md)
-  Replace a streaming entry’s current text segment with `content`.
+  A replacement for a streaming entry’s current text segment.
 - [LanguageModelExecutorGenerationChannel.Response](languagemodelexecutorgenerationchannel/response.md)
   A model-generated response event: text, segment replacements, citations, advisories, custom segments, metadata, or usage.
 - [LanguageModelExecutorGenerationChannel.Usage](languagemodelexecutorgenerationchannel/usage.md)

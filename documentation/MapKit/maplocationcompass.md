@@ -35,7 +35,7 @@ Use `MapLocationCompass` in conjunction with [`Map`](map.md) as a standalone vie
     }
 ```
 
-You can also use `MapLocationCompass` in conjunction with the `mapControls(_:)` modifier. For example:
+You can also use `MapLocationCompass` in conjunction with the [`mapControls(_:)`](https://developer.apple.com/documentation/SwiftUI/View/mapControls(_:)) modifier. For example:
 
 ```swift
     Map()
@@ -49,6 +49,17 @@ You can also use `MapLocationCompass` in conjunction with the `mapControls(_:)` 
 ### Creating a map loction compass
 - [init(scope: Namespace.ID?)](maplocationcompass/init(scope:).md)
   Creates a new map location compass with the provided scope.
+### Managing map control sizing and visibility
+- [func mapControlVisibility(Visibility) -> some View
+](../SwiftUI/View/mapControlVisibility(_:).md)
+  Configures all Map controls in the environment to have the specified visibility
+- [func mapControls(() -> some View) -> some View
+](../SwiftUI/View/mapControls(_:).md)
+  Configures all `Map` views in the associated environment to have standard size and position controls
+### Setting the namespace Identifier
+- [func mapScope(Namespace.ID) -> some View
+](../SwiftUI/View/mapScope(_:).md)
+  Creates a mapScope that SwiftUI uses to connect map controls to an associated map.
 
 ## Relationships
 

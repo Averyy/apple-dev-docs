@@ -11,7 +11,7 @@ Methods that all volumes implement to provide required capabilities.
 ## Declaration
 
 ```swift
-protocol Handler : FSVolume.PathConfOperations
+protocol Handler : FSVolume.CommonOperations, FSVolume.PathConfOperations
 ```
 
 #### Overview
@@ -25,21 +25,15 @@ Conform to this protocol in your subclass of [`FSVolume`](fsvolume.md). To provi
 ## Topics
 
 ### Handling activation and deactivation
-- [func activate(options: FSTaskOptions, replyHandler: (FSActivateResult?, (any Error)?) -> Void)](fsvolume/handler/activate(options:replyhandler:).md)
-  Activates the volume using the specified options.
 - [class FSItem](fsitem.md)
   A distinct object in a file hierarchy, such as a file, directory, symlink, socket, and more.
 - [class FSActivateResult](fsactivateresult.md)
   The result of an activate call.
-- [func deactivate(options: FSDeactivateOptions, replyHandler: ((any Error)?) -> Void)](fsvolume/handler/deactivate(options:replyhandler:).md)
-  Tears down a previously initialized volume instance.
 - [struct FSDeactivateOptions](fsdeactivateoptions.md)
   Options that affect the behavior of deactivate methods.
 ### Mounting and unmounting
 - [func mount(options: FSTaskOptions, replyHandler: ((any Error)?) -> Void)](fsvolume/handler/mount(options:replyhandler:).md)
-  Mounts this volume, using the specified options.
 - [func unmount(replyHandler: () -> Void)](fsvolume/handler/unmount(replyhandler:).md)
-  Unmounts this volume.
 ### Working with items
 - [func createItem(named: FSFileName, type: FSItem.ItemType, in: FSItem, attributes: FSItem.SetAttributesRequest, context: FSContext, replyHandler: (FSCreateItemResult?, (any Error)?) -> Void)](fsvolume/handler/createitem(named:type:in:attributes:context:replyhandler:).md)
   Creates a new file or directory item.
@@ -64,7 +58,6 @@ Conform to this protocol in your subclass of [`FSVolume`](fsvolume.md). To provi
 - [class FSRenameItemResult](fsrenameitemresult.md)
   The result of a rename-item call.
 - [func reclaimItem(FSItem, replyHandler: ((any Error)?) -> Void)](fsvolume/handler/reclaimitem(_:replyhandler:).md)
-  Reclaims an item, releasing any resources allocated for the item.
 ### Working with links
 - [func createLink(to: FSItem, named: FSFileName, in: FSItem, context: FSContext, replyHandler: (FSCreateLinkResult?, (any Error)?) -> Void)](fsvolume/handler/createlink(to:named:in:context:replyhandler:).md)
   Creates a new hard link.
@@ -108,7 +101,6 @@ Conform to this protocol in your subclass of [`FSVolume`](fsvolume.md). To provi
   The result of an enumerate-directory call.
 ### Performing synchronization
 - [func synchronize(flags: FSSyncFlags, replyHandler: ((any Error)?) -> Void)](fsvolume/handler/synchronize(flags:replyhandler:).md)
-  Synchronizes the volume with its underlying resource.
 - [enum FSSyncFlags](fssyncflags.md)
   Behavior flags for use with synchronization calls.
 ### Inspecting required volume properties
@@ -120,19 +112,21 @@ Conform to this protocol in your subclass of [`FSVolume`](fsvolume.md). To provi
 - [class FSStatFSResult](fsstatfsresult.md)
   A type used to report a volume’s statistics.
 ### Inspecting optional volume properties
-- [var requestedMountOptions: FSVolume.MountOptions](fsvolume/handler/requestedmountoptions.md)
-  A property that allows the file system to request for specific mount options from FSKit.
 - [FSVolume.MountOptions](fsvolume/mountoptions.md)
   Mount options to be requested from FSKit using the `requestedMountOptions` property.
-- [var enableOpenUnlinkEmulation: Bool](fsvolume/handler/enableopenunlinkemulation.md)
-  A property that allows the file system to use open-unlink emulation.
 ### Supporting types
 - [class FSContext](fscontext.md)
   A context object that provides information about the initiator of a file system operation.
+### Instance Methods
+- [func activateVolume(options: FSTaskOptions, replyHandler: (FSActivateResult?, (any Error)?) -> Void)](fsvolume/handler/activatevolume(options:replyhandler:).md)
+  Activates the volume using the specified options.
+- [func deactivateVolume(options: FSDeactivateOptions, replyHandler: ((any Error)?) -> Void)](fsvolume/handler/deactivatevolume(options:replyhandler:).md)
+  Tears down a previously initialized volume instance.
 
 ## Relationships
 
 ### Inherits From
+- [FSVolume.CommonOperations](fsvolume/commonoperations.md)
 - [FSVolume.PathConfOperations](fsvolume/pathconfoperations.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 

@@ -28,7 +28,7 @@ init(id: String = UUID().uuidString, segments: [Transcript.Segment], options: Ge
 
 ## See Also
 
-- [init(id: String, metadata: [String : any Codable & Sendable & Equatable], segments: [Transcript.Segment], options: GenerationOptions, responseFormat: Transcript.ResponseFormat?, contextOptions: ContextOptions)](transcript/prompt/init(id:metadata:segments:options:responseformat:contextoptions:).md)
+- [init(id: String, metadata: [String : any ConvertibleToGeneratedContent], segments: [Transcript.Segment], options: GenerationOptions, responseFormat: Transcript.ResponseFormat?, contextOptions: ContextOptions)](transcript/prompt/init(id:metadata:segments:options:responseformat:contextoptions:).md)
   Creates a prompt.
 
 

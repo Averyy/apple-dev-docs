@@ -35,6 +35,7 @@ if 0..<10 ~= chosenNumber {
 ## Parameters
 
 - `pattern`: A range.
+- `value`: A value to match against `pattern`.
 
 
 ---

@@ -3,7 +3,7 @@
 **Framework**: App Intents  
 **Kind**: property
 
-App entity schema conformance for types you use for mail functionality.
+The collection of entity schemas in the mail domain.
 
 **Availability**:
 - iOS 18.0+

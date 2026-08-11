@@ -8,6 +8,7 @@ Returns a dictionary containing as keys the property names in `keys`, with corre
 **Availability**:
 - iOS 2.0+
 - iPadOS 2.0+
+- Mac Catalyst 2.0+
 - tvOS 9.0+
 - visionOS 1.0+
 - watchOS 2.0+

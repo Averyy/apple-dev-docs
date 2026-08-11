@@ -23,9 +23,9 @@ enum Error
 
 ### Getting the session errors
 - [LanguageModelSession.Error.concurrentRequests](languagemodelsession/error/concurrentrequests.md)
-  Multiple requests were made to the session concurrently.
+  The session received multiple concurrent requests.
 - [LanguageModelSession.Error.transcriptMutationWhileResponding](languagemodelsession/error/transcriptmutationwhileresponding.md)
-  The session’s transcript was mutated while a request was in progress.
+  A request mutated the session’s transcript while it was in progress.
 
 ## Relationships
 

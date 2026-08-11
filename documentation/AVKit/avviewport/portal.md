@@ -23,7 +23,7 @@ Set this property to customize how content appears within a portal frame. When n
 ## See Also
 
 - [class AVPortalViewport](avportalviewport.md)
-  A viewport configuration used when displaying content in portals.
+  Defines the visual parameters for content displayed within a portal frame. Use this configuration to create cinematic viewing experiences with custom framing.
 
 
 ---

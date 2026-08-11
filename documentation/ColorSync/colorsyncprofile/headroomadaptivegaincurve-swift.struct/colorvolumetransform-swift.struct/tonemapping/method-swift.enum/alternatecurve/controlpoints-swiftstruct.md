@@ -27,14 +27,14 @@ struct ControlPoints
   Creates a set of spline control points.
 ### Instance Properties
 - [var slopes: ColorSyncProfile.HeadroomAdaptiveGainCurve.ColorVolumeTransform.ToneMapping.Method.AlternateCurve.ControlPoints.Slopes](colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve/controlpoints-swift.struct/slopes-swift.property.md)
-  How the slope at each control point is determined.
+  How the framework determines the slope at each control point.
 - [var x: [Float]](colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve/controlpoints-swift.struct/x.md)
   Input levels normalized by reference white: 1.0 = reference white.
 - [var y: [Float]](colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve/controlpoints-swift.struct/y.md)
-  Gain offsets in stops (non-negative): direction (expand vs. compress) is inferred from the relationship between this alternate’s headroom and the baseline headroom.
+  Gain offsets in stops (non-negative): the framework infers direction (expand vs. compress) from the relationship between this alternate’s headroom and the baseline headroom.
 ### Enumerations
 - [ColorSyncProfile.HeadroomAdaptiveGainCurve.ColorVolumeTransform.ToneMapping.Method.AlternateCurve.ControlPoints.Slopes](colorsyncprofile/headroomadaptivegaincurve-swift.struct/colorvolumetransform-swift.struct/tonemapping/method-swift.enum/alternatecurve/controlpoints-swift.struct/slopes-swift.enum.md)
-  How slopes at spline control points are determined.
+  How the framework determines slopes at spline control points.
 
 
 ---

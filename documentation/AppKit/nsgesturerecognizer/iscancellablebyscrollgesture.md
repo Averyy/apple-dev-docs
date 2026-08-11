@@ -18,6 +18,12 @@ var isCancellableByScrollGesture: Bool { get set }
 
 Defaults to `false`.
 
+## See Also
+
+- [var allowedTouchTypes: NSTouch.TouchTypeMask](nsgesturerecognizer/allowedtouchtypes.md)
+- [var modifierFlags: NSEvent.ModifierFlags](nsgesturerecognizer/modifierflags.md)
+- [var name: String?](nsgesturerecognizer/name.md)
+
 
 ---
 

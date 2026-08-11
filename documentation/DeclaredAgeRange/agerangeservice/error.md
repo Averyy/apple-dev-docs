@@ -24,6 +24,13 @@ enum Error
   Indicates the system was unable to share the person’s age range.
 - [AgeRangeService.Error.invalidRequest](agerangeservice/error/invalidrequest.md)
   Indicates your request contains invalid parameters or configuration.
+### Enumeration Cases
+- [AgeRangeService.Error.declinedOnboarding](agerangeservice/error/declinedonboarding.md)
+  Indicates the person declined the age range onboarding flow.
+- [AgeRangeService.Error.invalidAccount](agerangeservice/error/invalidaccount.md)
+  Indicates the current Apple Account isn’t eligible for age range sharing.
+- [AgeRangeService.Error.network](agerangeservice/error/network.md)
+  Indicates a network or server issue prevented completing the age range request.
 
 ## Relationships
 

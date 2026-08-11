@@ -63,12 +63,12 @@ func respond(
 
 ### Creating a channel instance
 - [init()](languagemodelexecutorgenerationchannel/init.md)
-  Creates a new generation channel instance.
+  Creates a generation channel instance.
 ### Sending an event
 - [func send(LanguageModelExecutorGenerationChannel.Event) async](languagemodelexecutorgenerationchannel/send(_:).md)
   Sends a generation event on the channel.
 - [LanguageModelExecutorGenerationChannel.Event](languagemodelexecutorgenerationchannel/event.md)
-  A generation event sent on a [`LanguageModelExecutorGenerationChannel`](languagemodelexecutorgenerationchannel.md).
+  A generation event sent on a generation channel.
 ### Accessing the event types
 - [LanguageModelExecutorGenerationChannel.Metadata](languagemodelexecutorgenerationchannel/metadata.md)
   Snapshot of an entry’s metadata dictionary.
@@ -77,9 +77,9 @@ func respond(
 - [LanguageModelExecutorGenerationChannel.ReasoningSignature](languagemodelexecutorgenerationchannel/reasoningsignature.md)
   Payload for a reasoning entry’s signature update.
 - [LanguageModelExecutorGenerationChannel.TextFragment](languagemodelexecutorgenerationchannel/textfragment.md)
-  Append text to a streaming entry’s current text segment. Used by both `Response/Action/appendText(_:)` and `Reasoning/Action/appendText(_:)`.
+  Text appended to a streaming entry’s current text segment.
 - [LanguageModelExecutorGenerationChannel.TextSegmentReplacement](languagemodelexecutorgenerationchannel/textsegmentreplacement.md)
-  Replace a streaming entry’s current text segment with `content`.
+  A replacement for a streaming entry’s current text segment.
 - [LanguageModelExecutorGenerationChannel.Response](languagemodelexecutorgenerationchannel/response.md)
   A model-generated response event: text, segment replacements, citations, advisories, custom segments, metadata, or usage.
 - [LanguageModelExecutorGenerationChannel.ToolCalls](languagemodelexecutorgenerationchannel/toolcalls.md)
@@ -96,6 +96,8 @@ func respond(
 
 ## See Also
 
+- [Running a Core AI model in a Foundation Models session](running-a-core-ai-model-in-a-foundation-models-session.md)
+  Send requests on device to an open source model you export with Core AI to get a consistent API experience.
 - [Optimizing key-value caching in language model sessions](optimizing-key-value-caching-in-language-model-sessions.md)
   Prevent repeated token processing by preserving the cached state across turns.
 - [protocol LanguageModel](languagemodel.md)

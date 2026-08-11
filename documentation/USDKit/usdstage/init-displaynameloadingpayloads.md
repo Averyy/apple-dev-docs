@@ -21,12 +21,14 @@ init(displayName: String? = nil, loadingPayloads: USDStage.InitialLoadRule = .al
 
 #### Discussion
 
-This is analogous to creating an anonymous `SdfLayer`.
+This is analogous to creating an anonymous [`USDLayer`](usdlayer.md).
 
 ## See Also
 
 - [init(string: String, loadingPayloads: USDStage.InitialLoadRule) throws](usdstage/init(string:loadingpayloads:).md)
+  Creates a stage from a string containing a `.usda` document.
 - [init(Data, type: UTType, loadingPayloads: USDStage.InitialLoadRule) throws](usdstage/init(_:type:loadingpayloads:).md)
+  Creates a stage from in-memory data in a given format.
 
 
 ---

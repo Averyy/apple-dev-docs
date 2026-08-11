@@ -17,7 +17,7 @@ Metadata associated with generating the response.
 
 ```swift
 @backDeployed(before: iOS 27.0, macOS 27.0, visionOS 27.0)
-var metadata: [String : any Codable & Sendable & Equatable] { get }
+var metadata: [String : GeneratedContent] { get }
 ```
 
 ## See Also

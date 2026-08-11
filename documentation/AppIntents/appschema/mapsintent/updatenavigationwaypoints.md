@@ -43,6 +43,21 @@ The schema supports the following system experiences:
 
 For more information about the App Intents framework and the experiences it supports, see [`Getting started with the App Intents framework`](getting-started-with-the-app-intents-framework.md).
 
+## See Also
+
+- [var reportIncident: some AppSchemaIntent](appschema/mapsintent/reportincident.md)
+  An intent schema that reports a traffic incident on the route.
+- [var shareETA: some AppSchemaIntent](appschema/mapsintent/shareeta.md)
+  An intent schema that shares ETA to a contact while navigating.
+- [var startNavigation: some AppSchemaIntent](appschema/mapsintent/startnavigation.md)
+  An intent schema that starts navigation.
+- [var stopNavigation: some AppSchemaIntent](appschema/mapsintent/stopnavigation.md)
+  An intent schema that ends navigation.
+- [var stopShareETA: some AppSchemaIntent](appschema/mapsintent/stopshareeta.md)
+  An intent schema that stops sharing ETA.
+- [AppSchema.MapsIntent](appschema/mapsintent.md)
+  Identifies intent schemas in the maps domain.
+
 
 ---
 

@@ -72,9 +72,14 @@ let response = try await session.respond(to: "Find my notes about the project de
   A set of search results with routing metadata for host app consumption.
 ### Getting tool-specific properties
 - [var parameters: GenerationSchema](spotlightsearchtool/parameters.md)
-  Dynamic schema: use the native tool’s schema based on capabilities.
+  The schema for the parameters this tool accepts.
 - [var includesSchemaInInstructions: Bool](spotlightsearchtool/includesschemaininstructions.md)
-  On-device uses includesSchemaInInstructions: true; .dynamic uses false (schema in compact notation prose instead).
+  A Boolean value that indicates whether to inject the model’s name, description, and parameters schema into the instructions of sessions.
+### Instance Properties
+- [var description: String](spotlightsearchtool/description.md)
+  A natural language description of when and how to use the Spotlight search tool.
+- [var name: String](spotlightsearchtool/name.md)
+  The unique name for the Spotlight search tool.
 ### Type Aliases
 - [SpotlightSearchTool.Arguments](spotlightsearchtool/arguments.md)
   The overlay tool uses GeneratedContent as its Arguments type so the full native schema (FullArguments or RAGSearchArguments) passes through to NativeSpotlightSearchTool without re-encoding.

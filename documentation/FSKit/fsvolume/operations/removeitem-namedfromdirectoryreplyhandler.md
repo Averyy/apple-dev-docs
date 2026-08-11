@@ -40,8 +40,6 @@ Don’t actually remove the item object itself in your implementation; instead, 
   Looks up an item within a directory.
 - [func renameItem(FSItem, inDirectory: FSItem, named: FSFileName, to: FSFileName, inDirectory: FSItem, overItem: FSItem?, replyHandler: (FSFileName?, (any Error)?) -> Void)](fsvolume/operations/renameitem(_:indirectory:named:to:indirectory:overitem:replyhandler:).md)
   Renames an item from one path in the file system to another.
-- [func reclaimItem(FSItem, replyHandler: ((any Error)?) -> Void)](fsvolume/operations/reclaimitem(_:replyhandler:).md)
-  Reclaims an item, releasing any resources allocated for the item.
 
 
 ---

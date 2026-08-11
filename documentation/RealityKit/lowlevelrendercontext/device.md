@@ -21,6 +21,7 @@ var device: any MTLDevice { get }
 ## See Also
 
 - [var shaderGraph: any LowLevelRenderContextShaderGraph](lowlevelrendercontext/shadergraph.md)
+  The ShaderGraph function creation interface for this render context.
 
 
 ---

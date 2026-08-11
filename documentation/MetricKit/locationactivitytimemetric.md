@@ -34,6 +34,9 @@ This metric corresponds to the [`MetricResult.locationActivityTime(_:)`](metricr
   The total time spent tracking the current location to an accuracy of 1 kilometer.
 - [let threeKilometers: Measurement<UnitDuration>](locationactivitytimemetric/threekilometers.md)
   The total time spent tracking the current location to an accuracy of 3 kilometers.
+### Instance Properties
+- [let reducedAccuracy: Measurement<UnitDuration>](locationactivitytimemetric/reducedaccuracy.md)
+  The total time spent tracking the current location at reduced accuracy.
 
 ## Relationships
 

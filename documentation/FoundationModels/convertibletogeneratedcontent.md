@@ -40,6 +40,8 @@ protocol ConvertibleToGeneratedContent : InstructionsRepresentable, PromptRepres
 
 - [Generating Swift data structures with guided generation](generating-swift-data-structures-with-guided-generation.md)
   Create robust apps by describing output you want programmatically.
+- [macro Generable(description: String?)](generable(description:).md)
+- [macro Guide(description: String)](guide(description:).md)
 - [protocol Generable](generable.md)
   A type that the model uses when responding to prompts.
 - [struct GenerationSchema](generationschema.md)

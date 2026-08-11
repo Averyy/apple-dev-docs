@@ -200,7 +200,7 @@ deinit actor
   Return the task’s name, if it was set during its creation.
 ### Type Properties
 - [static var hasActiveCancellationShield: Bool](task/hasactivecancellationshield.md)
-  Checks if the current task is executing in a scope with a task cancellation shield activated by the `withTaskCancellationShield(operation:)` function.
+  Checks if the current task is executing in a scope with a task cancellation shield activated by the `withTaskCancellationShield(operation:)-(()->Value)` function.
 ### Default Implementations
 - [Equatable Implementations](task/equatable-implementations.md)
 - [Hashable Implementations](task/hashable-implementations.md)

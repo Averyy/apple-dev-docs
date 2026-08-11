@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: struct
 
+A token that keeps an observer registered for as long as it is retained.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -26,8 +28,11 @@ struct ObservationToken
 ## See Also
 
 - [func addObserver<Notice>(for: Notice.Type, using: (Notice) -> Void) -> USDStage.ObservationToken](usdstage/addobserver(for:using:).md)
+  Registers an observer that runs when a notice of the given type is sent for this stage.
 - [USDStage.Notice](usdstage/notice.md)
+  A change notification that can be observed on a stage.
 - [USDStage.ObjectsDidChange](usdstage/objectsdidchange.md)
+  A notice sent when the objects on a stage change.
 
 
 ---

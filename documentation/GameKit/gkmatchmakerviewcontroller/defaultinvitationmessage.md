@@ -8,6 +8,7 @@ The default invitation message sent to a player.
 **Availability**:
 - iOS 5.0+
 - iPadOS 5.0+
+- Mac Catalyst 5.0+
 - macOS 10.8+
 - visionOS 1.0+
 

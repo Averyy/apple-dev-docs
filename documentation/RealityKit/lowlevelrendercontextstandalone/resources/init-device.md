@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: init
 
-Asynchronously compiles the shared shader and pipeline resources for the given device.
+Asynchronously prepare resources for the given device.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -20,11 +20,11 @@ nonisolated
 
 #### Discussion
 
-> **Note**: An error if shader compilation fails.
+> **Note**: An error if resources preparation fails.
 
 ## Parameters
 
-- `device`: The Metal device to allocate and compile resources on.
+- `device`: The Metal device to prepare resources using.
 
 
 ---

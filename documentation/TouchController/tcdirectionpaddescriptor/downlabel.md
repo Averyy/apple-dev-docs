@@ -8,6 +8,7 @@ The label for the down button, if the control is not a composite direction pad.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

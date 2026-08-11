@@ -9,6 +9,7 @@ Sent to the delegate when it is the local player’s turn to act in a turn-based
 **Availability**:
 - iOS 6.0+
 - iPadOS 6.0+
+- Mac Catalyst 6.0+
 - macOS 10.9+
 - visionOS 1.0+
 - watchOS 3.0+

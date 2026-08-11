@@ -78,7 +78,7 @@ A task group becomes canceled in one of the following ways:
 
 Because a `TaskGroup` is a structured concurrency primitive, cancellation is automatically propagated through all of its child-tasks (and their child tasks).
 
-A canceled task group can still keep adding tasks, however they will start being immediately canceled, and might respond accordingly. To avoid adding new tasks to an already canceled task group, use `addTaskUnlessCancelled(name:priority:body:)` rather than the plain `addTask(name:priority:body:)` which adds tasks unconditionally.
+A canceled task group can still keep adding tasks, however they will start being immediately canceled, and might respond accordingly. To avoid adding new tasks to an already canceled task group, use [`addTaskUnlessCancelled(name:priority:operation:)`](taskgroup/addtaskunlesscancelled(name:priority:operation:).md) rather than the plain [`addTask(name:priority:operation:)`](taskgroup/addtask(name:priority:operation:).md) which adds tasks unconditionally.
 
 For information about the language-level concurrency model that `TaskGroup` is part of, see [`Concurrency`](https://developer.apple.comhttps://docs.swift.org/swift-book/LanguageGuide/Concurrency.html) in [`The Swift Programming Language`](https://developer.apple.comhttps://docs.swift.org/swift-book/).
 

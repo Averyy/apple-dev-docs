@@ -3,7 +3,7 @@
 **Framework**: HealthKit  
 **Kind**: property
 
-The new zone duration that has just been entered, or nil if no zone is active.
+A property that contains the zone duration just entered.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -17,6 +17,17 @@ The new zone duration that has just been entered, or nil if no zone is active.
 @nonobjc
 final var currentZoneDuration: HKWorkoutZoneDuration? { get }
 ```
+
+#### Discussion
+
+When this property is `nil`, no zone is currently active.
+
+## See Also
+
+- [var previousZoneDuration: HKWorkoutZoneDuration?](hkliveworkoutzoneupdate/previouszoneduration.md)
+  A property that contains the zone duration that just completed.
+- [var zoneGroup: HKWorkoutZoneGroup?](hkliveworkoutzoneupdate/zonegroup.md)
+  The zone group that contains the current duration data.
 
 
 ---

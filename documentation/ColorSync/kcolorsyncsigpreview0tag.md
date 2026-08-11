@@ -3,6 +3,8 @@
 **Framework**: ColorSync  
 **Kind**: var
 
+The signature of the preview tag for the perceptual rendering intent.
+
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
@@ -21,7 +23,9 @@ var kColorSyncSigPreview0Tag: Unmanaged<CFString>!
 ## See Also
 
 - [var kColorSyncSigPreview1Tag: Unmanaged<CFString>!](kcolorsyncsigpreview1tag.md)
+  The signature of the preview tag for the media-relative colorimetric rendering intent.
 - [var kColorSyncSigPreview2Tag: Unmanaged<CFString>!](kcolorsyncsigpreview2tag.md)
+  The signature of the preview tag for the saturation rendering intent.
 
 
 ---

@@ -26,13 +26,13 @@ final class SystemLanguageModel
 
 #### Overview
 
-The `SystemLanguageModel` refers to the on-device text foundation model that powers Apple Intelligence. Use [`default`](systemlanguagemodel/default.md) to access the base version of the model and perform general-purpose text generation tasks. To access a specialized version of the model, initialize the model with [`SystemLanguageModel.UseCase`](systemlanguagemodel/usecase.md) to perform tasks like [`contentTagging`](systemlanguagemodel/usecase/contenttagging.md). Apple periodically updates `SystemLanguageModel` in routine OS updates to improve the on-device model’s abilities and performance. Currently there are 3 model versions that align with:
+The `SystemLanguageModel` refers to the on-device text foundation model that powers Apple Intelligence. Use [`default`](systemlanguagemodel/default.md) to access the base version of the model and perform general-purpose text generation tasks. To access a specialized version of the model, initialize the model with [`SystemLanguageModel.UseCase`](systemlanguagemodel/usecase.md) to perform tasks like [`contentTagging`](systemlanguagemodel/usecase/contenttagging.md). Apple periodically updates `SystemLanguageModel` in routine OS updates to improve the on-device model’s abilities and performance. Currently, there are 3 model versions that align with:
 
-- iOS, iPadOS, macOS, and visionOS 26.0 - 26.3
-- iOS, iPadOS, macOS, and visionOS 26.4
-- iOS, iPadOS, macOS, visionOS, and watchOS 27.0
+- iOS, iPadOS, macOS, and visionOS **26.0 - 26.3**
+- iOS, iPadOS, macOS, visionOS **26.4**
+- iOS, iPadOS, macOS, and visionOS **27.0**
 
-For more infomation about how model versions affect your app, see [`Updating prompts for new model versions`](updating-prompts-for-new-model-versions.md).
+For more information about how model versions affect your app, see [`Updating prompts for new model versions`](updating-prompts-for-new-model-versions.md).
 
 Before you use the model, you need to verify its availability. Model availability depends on whether the device and region supports Apple Intelligence. For a list of supported devices, see [`Apple Intelligence`](https://developer.apple.comhttps://www.apple.com/apple-intelligence/).
 
@@ -50,7 +50,8 @@ struct GenerativeView: View {
         case .unavailable(.deviceNotEligible):
             // Show an alternative UI.
         case .unavailable(.modelNotReady):
-            // The model isn't ready because it's downloading or because of other system reasons.
+            // The model isn't ready because it's downloading or because
+            // of other system reasons.
         case .unavailable(let other):
             // The model is unavailable for an unknown reason.
         }
@@ -65,25 +66,30 @@ struct GenerativeView: View {
   The base version of the model.
 ### Creating a model for a use case
 - [convenience init(useCase: SystemLanguageModel.UseCase, guardrails: SystemLanguageModel.Guardrails)](systemlanguagemodel/init(usecase:guardrails:).md)
-  Creates a [`SystemLanguageModel`](systemlanguagemodel.md) for a specific use case.
+  Creates a system language model instance for a specific use case.
 - [SystemLanguageModel.UseCase](systemlanguagemodel/usecase.md)
   A type that represents the use case for prompting.
 - [SystemLanguageModel.Guardrails](systemlanguagemodel/guardrails.md)
-  Guardrails flag sensitive content from model input and output.
+  A set of controls that flag sensitive content from model input and output.
+### Accessing the model variant
+- [var variant: SystemLanguageModel.Variant](systemlanguagemodel/variant-swift.property.md)
+  The variant of the on-device model backing this instance.
+- [SystemLanguageModel.Variant](systemlanguagemodel/variant-swift.struct.md)
+  The variant of an on-device model.
 ### Checking model availability
 - [var isAvailable: Bool](systemlanguagemodel/isavailable.md)
-  A convenience getter to check if the system is entirely ready.
+  A Boolean value that indicates whether the system is entirely ready.
 - [var availability: SystemLanguageModel.Availability](systemlanguagemodel/availability-swift.property.md)
   The availability of the language model.
 - [SystemLanguageModel.Availability](systemlanguagemodel/availability-swift.enum.md)
   The availability status for a specific system language model.
 ### Inspecting model capabilities
 - [var contextSize: Int](systemlanguagemodel/contextsize.md)
-  Returns the maximum context size (in tokens) supported by the model.
+  The maximum context size in tokens that the model supports.
 - [var supportedLanguages: Set<Locale.Language>](systemlanguagemodel/supportedlanguages.md)
   Languages that the model supports.
 - [func supportsLocale(Locale) -> Bool](systemlanguagemodel/supportslocale(_:).md)
-  Returns a Boolean indicating whether the given locale is supported by the model.
+  Returns a Boolean value that indicates whether the given locale is supported by the model.
 ### Counting tokens
 - [func tokenCount(for:)](systemlanguagemodel/tokencount(for:).md)
   Returns the token count for the specified instructions.

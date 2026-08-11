@@ -25,7 +25,7 @@ A collection of results retrieved from a Core Data persistent store, grouped int
 
 Use a `SectionedFetchResults` instance to show or edit Core Data managed objects, grouped into sections, in your app’s user interface. If you don’t need sectioning, use [`FetchedResults`](fetchedresults.md) instead.
 
-You request a particular set of results by annotating the fetched results property declaration with a [`SectionedFetchRequest`](sectionedfetchrequest.md) property wrapper. Indicate the type of the fetched entities with a `Results` type, and the type of the identifier that distinguishes the sections with a `SectionIdentifier` type. For example, you can create a request to list all `Quake` managed objects that the [`Loading and Displaying a Large Data Feed`](loading_and_displaying_a_large_data_feed.md) sample code project defines to store earthquake data, sorted by their `time` property and grouped by a string that represents the days when earthquakes occurred:
+You request a particular set of results by annotating the fetched results property declaration with a [`SectionedFetchRequest`](sectionedfetchrequest.md) property wrapper. Indicate the type of the fetched entities with a `Results` type, and the type of the identifier that distinguishes the sections with a `SectionIdentifier` type. For example, you can create a request to list all `Quake` managed objects that the [`Loading and displaying a large data feed`](loading-and-displaying-a-large-data-feed.md) sample code project defines to store earthquake data, sorted by their `time` property and grouped by a string that represents the days when earthquakes occurred:
 
 ```swift
 @SectionedFetchRequest<String, Quake>(

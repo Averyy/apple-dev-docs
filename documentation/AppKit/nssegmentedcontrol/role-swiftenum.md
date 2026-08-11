@@ -14,7 +14,7 @@ enum Role
 
 ## Topics
 
-### Enumeration Cases
+### Getting role values
 - [NSSegmentedControl.Role.automatic](nssegmentedcontrol/role-swift.enum/automatic.md)
 - [NSSegmentedControl.Role.tabs](nssegmentedcontrol/role-swift.enum/tabs.md)
 - [NSSegmentedControl.Role.valueSelection](nssegmentedcontrol/role-swift.enum/valueselection.md)
@@ -30,6 +30,18 @@ enum Role
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [var trackingMode: NSSegmentedControl.SwitchTracking](nssegmentedcontrol/trackingmode.md)
+  The type of tracking behavior the control exhibits.
+- [NSSegmentedControl.SwitchTracking](nssegmentedcontrol/switchtracking.md)
+  Constants that specify the type of tracking behavior a segmented control exhibits.
+- [var segmentStyle: NSSegmentedControl.Style](nssegmentedcontrol/segmentstyle.md)
+  The visual style used to display the control.
+- [NSSegmentedControl.Style](nssegmentedcontrol/style.md)
+  The following constants specify the visual style used to display the segmented control. They are used by [`segmentStyle`](nssegmentedcontrol/segmentstyle.md).
+- [var role: NSSegmentedControl.Role](nssegmentedcontrol/role-swift.property.md)
 
 
 ---

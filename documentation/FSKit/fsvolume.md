@@ -94,6 +94,9 @@ Your volume can provide additional functionality by conforming to other volume h
   Methods and properties implemented by volumes that support deactivating items.
 - [protocol FSVolumeKernelOffloadedIOOperations](fsvolumekerneloffloadediooperations.md)
   Methods and properties implemented by volumes that use kernel-offloaded I/O to achieve higher file transfer performance.
+### Protocols
+- [FSVolume.CommonOperations](fsvolume/commonoperations.md)
+  Methods common to `FSVolumeHandler` and `FSVolumeOperations`
 
 ## Relationships
 

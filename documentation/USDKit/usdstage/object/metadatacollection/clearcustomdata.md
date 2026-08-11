@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: method
 
+Removes all authored custom data on this object.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)

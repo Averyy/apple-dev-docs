@@ -3,7 +3,7 @@
 **Framework**: USDKit  
 **Kind**: property
 
-True if the prim (and all its ancestors) are not a class and not an override.
+True if the prim and all its ancestors have a `def` specifier.
 
 **Availability**:
 - iOS 27.0+ (Beta)

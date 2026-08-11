@@ -26,7 +26,7 @@ A common use case is representing an image with interleaved channels: a `[C, H, 
 
 #### Stride Semantics
 
-The stride for the interleaved dimension (as reported by `NDArray.strides`) is a *block stride* — the distance in memory between adjacent blocks of `factor` elements, not between individual elements. Within a block, adjacent elements have stride 1. The element offset formula is:
+The stride for the interleaved dimension (as reported by [`strides`](ndarray/strides.md)) is a *block stride* — the distance in memory between adjacent blocks of `factor` elements, not between individual elements. Within a block, adjacent elements have stride 1. The element offset formula is:
 
 ```swift
 // Given strides and InterleaveLayout with dimension d and factor f:

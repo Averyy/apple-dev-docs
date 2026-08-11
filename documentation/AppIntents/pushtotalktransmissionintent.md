@@ -34,7 +34,7 @@ Create an app intent that confirms to this protocol to manually start or end an 
 - [protocol ProgressReportingIntent](progressreportingintent.md)
   An intent that reports progress to the system during its execution
 - [protocol ShowInAppSearchResultsIntent](showinappsearchresultsintent.md)
-  An app intent that takes a person to search results for a specified search term.
+  An app intent that displays a set of search results in the app’s interface.
 
 
 ---

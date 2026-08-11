@@ -4,7 +4,7 @@
 **Kind**: method  
 **Required**: Yes
 
-The system invokes this method in response to prewarming the session and provides an opportunity to load assets into memory or pre-fill caches.
+Loads assets into memory or pre-fills caches ahead of a request.
 
 **Availability**:
 - iOS 27.0+ (Beta)

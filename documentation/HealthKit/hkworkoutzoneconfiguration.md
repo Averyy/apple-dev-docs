@@ -38,7 +38,7 @@ This structure contains an ordered array of zones and identifies the [`source`](
   A property that identifies the origin of this zone configuration.
 - [HKWorkoutZoneConfiguration.Source](hkworkoutzoneconfiguration/source-swift.enum.md)
   An enumeration that identifies the origin of the zone configuration.
-### Comparing configurations
+### Comparing zone configurations
 - [static func == (HKWorkoutZoneConfiguration, HKWorkoutZoneConfiguration) -> Bool](hkworkoutzoneconfiguration/==(_:_:).md)
 
 ## Relationships
@@ -59,6 +59,8 @@ This structure contains an ordered array of zones and identifies the [`source`](
   A structure that represents the time spent in a specific zone during a workout or activity.
 - [struct HKWorkoutZoneGroup](hkworkoutzonegroup.md)
   A structure that contains zone configuration and time-in-zone data for a quantity type.
+- [class HKLiveWorkoutZoneUpdate](hkliveworkoutzoneupdate.md)
+  A structure that contains information about zone transitions during a live workout session.
 
 
 ---

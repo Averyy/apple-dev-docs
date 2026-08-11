@@ -30,28 +30,12 @@ To walk through this end to end: build a Sequence rooted at the entity you want 
 
 At runtime, the same entries are also reachable directly through [`AnimationLibraryComponent`](https://developer.apple.com/documentation/RealityKit/AnimationLibraryComponent) — Auto Play simply means RealityKit makes that call for you.
 
-#### Wire Auto Play with Editor Scripting Commands
-
-The Animation Library side of this workflow has its own editor-scripting commands, and they’re designed to chain directly onto the output of the Motion Path recipe in [`Automating motion path creation with editor-scripting commands`](automating-motion-path-creation-with-editor-scripting-commands.md). The relevant commands are `create_prototype_assets`, `add_animation_library_component_to_entity`, `add_entry_to_animation_library_component`, `edit_entry_in_animation_library_component`, and `edit_animation_library_component`.
-
-Picking up where the Orbit Motion Path recipe described in [`Automating motion path creation with editor-scripting commands`](automating-motion-path-creation-with-editor-scripting-commands.md) left off — a Sequence already exists, rooted at a `Generated Prototypes/<name>` prototype — wiring it for auto-play continues the same chain.
-
-If the prototype doesn’t already have an Animation Library Component, `add_animation_library_component_to_entity` adds one; it errors if the entity already has one, so check first with a scene query and skip this call if a component is already present.
-
-Next, `add_entry_to_animation_library_component`, given the prototype entity and an `entryName` of your choosing, adds an empty named entry to the component. Then `edit_entry_in_animation_library_component` binds the Sequence to that entry, taking the entity, the same `entryName`, and a `newClipName`.
-
-This is the one place the two recipes’ outputs actually meet. It’s also where the gotcha from the Root Entity rule reappears in scripted form: `newClipName` must be the Sequence’s display name — something like “Sequence (1)” — never the opaque asset id token that `add_sequence` returned back in the Motion Path recipe. Finally, `edit_animation_library_component`, given the entity, `autoPlay = true`, and `defaultAnimationName` set to your entry name, turns on Auto Play with that entry as the default.
-
-Chained together, the two recipes form one continuous programmatic path. `create_prototype_assets` turns a runtime entity into a rootable asset. `add_sequence` through `edit_path_orbit_parameters` build and shape the orbiting Motion Path on that asset. `add_animation_library_component_to_entity` through `edit_animation_library_component` wire the finished Sequence into that same asset’s Animation Library, so it plays the moment the entity becomes active, without opening the Sequencer UI at all. The same Root Entity constraint governs both halves: because the Sequence was rooted at the prototype in step two of the first recipe, the Animation Library Component in this second recipe has to live on that identical prototype for `edit_entry_in_animation_library_component` to find it as an available clip.
-
 ## See Also
 
 - [Creating animation sequences](creating-animation-sequences.md)
   Build animation sequences that drive entity behavior across multiple tracks in Reality Composer Pro.
 - [Building multi-track animation sequences](building-multi-track-animation-sequences.md)
   Root a Sequence correctly so it shows up as a clip and plays automatically at runtime.
-- [Automating motion path creation with editor-scripting commands](automating-motion-path-creation-with-editor-scripting-commands.md)
-  Build the same multi-track Sequence and Motion Path shown in the Sequencer UI programmatically, by chaining editor-scripting commands together.
 - [Working with the Animation Graph](working-with-the-animation-graph.md)
   Build character animation state machines visually using the Animation Graph in Reality Composer Pro.
 - [Building an advanced Animation Graph](building-an-advanced-animation-graph.md)

@@ -30,7 +30,7 @@ This function *starts* the created task on the calling context. The task will co
 
 As indicated by the lack of `async` on this method, this method does *not* suspend, and instead takes over the calling task’s (thread’s) execution in a synchronous manner.
 
-Other than the execution semantics discussed above, the created task is semantically equivalent to its basic version which can be created using `ThrowingDiscardingTaskGroup/addTask`.
+Other than the execution semantics discussed above, the created task is semantically equivalent to its basic version which can be created using [`addTask(priority:operation:)`](throwingdiscardingtaskgroup/addtask(priority:operation:).md).
 
 ## Parameters
 

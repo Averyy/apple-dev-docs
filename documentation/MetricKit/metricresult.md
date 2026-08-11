@@ -50,7 +50,6 @@ Use the [`metricGroup`](metricresult/metricgroup.md) property to filter or categ
 ### Responsiveness and animation
 - [case hangTime(HangTimeMetric)](metricresult/hangtime(_:).md)
 - [case hitchTime(HitchTimeMetric)](metricresult/hitchtime(_:).md)
-- [case scrollHitchTime(ScrollHitchTimeMetric)](metricresult/scrollhitchtime(_:).md)
 ### App runtime
 - [case foregroundTermination(ForegroundTerminationMetric)](metricresult/foregroundtermination(_:).md)
 - [case backgroundTermination(BackgroundTerminationMetric)](metricresult/backgroundtermination(_:).md)

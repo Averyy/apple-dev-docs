@@ -23,6 +23,11 @@ var minimum: HKQuantity { get }
 
 This property contains the maximum walking steadiness value for the classification. It contains an [`HKQuantity`](hkquantity.md) instance with a percentage value between `0.0` and `1.0`.
 
+## See Also
+
+- [var maximum: HKQuantity](hkapplewalkingsteadinessclassification/maximum.md)
+  The minimum walking steadiness percentage for the classification.
+
 
 ---
 

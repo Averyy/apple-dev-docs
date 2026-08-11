@@ -19,7 +19,7 @@ init(id: String = UUID().uuidString, assetIDs: [String], segments: [Transcript.S
 
 ## See Also
 
-- [init(id: String, metadata: [String : any Sendable & Codable & Equatable], segments: [Transcript.Segment])](transcript/response/init(id:metadata:segments:).md)
+- [init(id: String, metadata: [String : any ConvertibleToGeneratedContent], segments: [Transcript.Segment])](transcript/response/init(id:metadata:segments:).md)
 
 
 ---

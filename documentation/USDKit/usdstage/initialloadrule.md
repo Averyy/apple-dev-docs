@@ -42,6 +42,7 @@ enum InitialLoadRule
 - [static func open(FilePath, sessionLayer: USDLayer?, options: USDStage.OpenOptions) throws -> USDStage](usdstage/open(_:sessionlayer:options:).md)
   Opens a stage using a file as the root layer.
 - [static func open(URL, loadingPayloads: USDStage.InitialLoadRule) throws -> USDStage](usdstage/open(_:loadingpayloads:).md)
+  Opens a stage using the file at a URL as its root layer.
 - [USDStage.OpenOptions](usdstage/openoptions.md)
   Options that specify behavior related to opening a stage.
 

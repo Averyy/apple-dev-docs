@@ -22,6 +22,7 @@ init<S, C>(_ indices: S, within collection: C) where Bound == S.Element, S : Seq
 
 ## Parameters
 
+- `indices`: The indices to include in the range set. All members of `indices` must be valid indicies of `collection` that aren’t equal to the collection’s `endIndex`.
 - `collection`: The collection that contains `index`.
 
 

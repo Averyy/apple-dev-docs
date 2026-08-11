@@ -26,6 +26,12 @@ A map content element that doesn’t contain any content.
 ### Creating an empty map content structure
 - [init()](emptymapcontent/init.md)
   Creates an empty map content element.
+### Setting the tag
+- [func tag<V>(V) -> some MapContent](mapcontent/tag(_:).md)
+  Sets the unique tag value of this piece of map content.
+### Type aliases
+- [associatedtype Body : MapContent](mapcontent/body-swift.associatedtype.md)
+  The content and behavior of the view.
 
 ## Relationships
 

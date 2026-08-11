@@ -25,11 +25,6 @@ static var searchScopes: Self.Criteria.SearchScopes { get }
 
 Use this property to indicate the portions of your content the type searches. The type of this property depends on the search criteria you use. For example, if your app intent supports [`StringSearchCriteria`](stringsearchcriteria.md), the value of this type is an array of [`StringSearchScope`](stringsearchscope.md) values.
 
-## See Also
-
-- [enum StringSearchScope](stringsearchscope.md)
-  Constants that help the system understand the in-app search functionality and its searchable content.
-
 
 ---
 

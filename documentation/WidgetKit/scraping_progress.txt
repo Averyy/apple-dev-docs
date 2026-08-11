@@ -1,4 +1,4 @@
 Completed scraping WidgetKit!
-Total pages scraped: 0
-Pages skipped (unchanged): 321
+Total pages scraped: 320
+Pages skipped (unchanged): 1
 Pages failed: 0

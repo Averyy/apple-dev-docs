@@ -26,7 +26,7 @@ A `nil` value indicates that the model provider does not surface an upgrade path
 ## See Also
 
 - [var isLimitReached: Bool](privatecloudcomputelanguagemodel/quotausage-swift.struct/islimitreached.md)
-  A Boolean indicating whether the usage limit has been reached.
+  A Boolean value that indicates whether the usage limit has been reached.
 - [PrivateCloudComputeLanguageModel.QuotaUsage.LimitIncreaseSuggestion](privatecloudcomputelanguagemodel/quotausage-swift.struct/limitincreasesuggestion-swift.struct.md)
   An offer that a user can act on to increase their quota for a language model.
 

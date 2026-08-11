@@ -8,6 +8,7 @@ Indicates that your audio session is active and ready for use.
 **Availability**:
 - iOS 4.0+
 - iPadOS 4.0+
+- Mac Catalyst 4.0+
 - visionOS 1.0+
 
 ## Declaration

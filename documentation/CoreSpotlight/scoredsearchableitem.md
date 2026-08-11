@@ -22,15 +22,20 @@ struct ScoredSearchableItem
 
 - [Making your indexed content available to Foundation Models](making-your-indexed-content-available-to-foundation-models.md)
 
+#### Overview
+
+Use this type to associate a score with a searchable item from the app’s index. You create instances of this type from a [`CustomStage`](customstage.md) when the stage’s output type is [`SearchPipelineDataType.scoredItems`](searchpipelinedatatype/scoreditems.md).
+
 ## Topics
 
 ### Creating the item
 - [init(item: SearchableItem, score: Double)](scoredsearchableitem/init(item:score:).md)
+  Initializes the type with the specified item and score values.
 ### Getting the item details
 - [let item: SearchableItem](scoredsearchableitem/item.md)
-  The underlying searchable item.
+  The searchable item from the app’s index.
 - [let score: Double](scoredsearchableitem/score.md)
-  A relevance score assigned by the pipeline stage; higher values indicate greater relevance. The scale is stage-defined.
+  The relevance score for the item.
 
 ## Relationships
 
@@ -41,11 +46,11 @@ struct ScoredSearchableItem
 ## See Also
 
 - [protocol CustomStage](customstage.md)
-  A custom processing stage in a Spotlight search pipeline.
+  A custom processing stage the Spotlight search tool uses to identify search results.
 - [struct SearchPipelineData](searchpipelinedata.md)
-  The value that flows between pipeline stages, carrying a typed payload.
+  The type you use to store the output from a custom stage.
 - [enum SearchPipelineDataType](searchpipelinedatatype.md)
-  Declares the kind of data a pipeline stage accepts or produces.
+  Data types that a pipeline stage accepts or produces.
 
 
 ---

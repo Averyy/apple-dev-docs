@@ -23,6 +23,7 @@ init<S>(utf16Offset offset: Int, in s: S) where S : StringProtocol
 ## Parameters
 
 - `offset`: An offset in UTF-16 code units.
+- `s`: The string.
 
 
 ---

@@ -34,7 +34,7 @@ final class LowLevelRenderTarget
 - [class LowLevelRenderPipelineState](lowlevelrenderpipelinestate.md)
   A compiled Metal render pipeline state for a specific mesh descriptor, material, and render target configuration.
 - [class LowLevelArgumentTable](lowlevelargumenttable.md)
-  A table of buffer slices and textures bound to a single shader function stage.
+  A table of buffer slices and textures bound to a single shader function.
 - [struct LowLevelMaterialParameterMapping](lowlevelmaterialparametermapping.md)
   A mapping of named buffer and texture parameters to binding indices for a compiled shader function.
 

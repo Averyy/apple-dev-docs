@@ -3,7 +3,7 @@
 **Framework**: Core Spotlight  
 **Kind**: property
 
-Dynamic schema: use the native tool’s schema based on capabilities.
+The schema for the parameters this tool accepts.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -20,12 +20,12 @@ var parameters: GenerationSchema { get }
 
 #### Discussion
 
-For `.rag(profile)` we dispatch to the domain-specific schema so the model only sees fields relevant to that domain.  Returning the generic `RAGSearchArguments` for every domain inflates the prompt past on-device’s context window and ignores the developer’s explicit domain selection.
+The Spotlight search tool implements this property as part of its conformance to the [`Tool`](https://developer.apple.com/documentation/FoundationModels/Tool) protocol.
 
 ## See Also
 
 - [var includesSchemaInInstructions: Bool](spotlightsearchtool/includesschemaininstructions.md)
-  On-device uses includesSchemaInInstructions: true; .dynamic uses false (schema in compact notation prose instead).
+  A Boolean value that indicates whether to inject the model’s name, description, and parameters schema into the instructions of sessions.
 
 
 ---

@@ -27,6 +27,11 @@ var zoneGroupsByType: [HKQuantityType : HKWorkoutZoneGroup]? { get }
 
 This property provides zone data for the workout’s primary activity, covering the full workout duration. Access zone groups for individual activities using [`zoneGroupsByType`](hkworkoutactivity/zonegroupsbytype.md).
 
+## See Also
+
+- [func zoneGroup(for: HKQuantityType) -> HKWorkoutZoneGroup?](hkworkout/zonegroup(for:).md)
+  Returns the current zone group for the specified quantity type.
+
 
 ---
 

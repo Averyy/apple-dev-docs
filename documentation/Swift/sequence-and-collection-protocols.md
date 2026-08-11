@@ -27,8 +27,6 @@ Write generic code that works with any collection, or build your own collection 
 - [protocol BorrowingIteratorProtocol](borrowingiteratorprotocol.md)
   A type that provides borrowed access to the values of a borrowing sequence.
 - [struct BorrowingIteratorAdapter](borrowingiteratoradapter.md)
-- [protocol BorrowingSequence](borrowingsequence.md)
-  A type that provides sequential, borrowing access to its elements.
 ### Algebraic Sets
 - [protocol SetAlgebra](setalgebra.md)
   A type that provides mathematical set operations.

@@ -1,4 +1,4 @@
 Completed scraping Accessory Transport Extension!
-Total pages scraped: 0
-Pages skipped (unchanged): 100
+Total pages scraped: 99
+Pages skipped (unchanged): 1
 Pages failed: 0

@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: init
 
-Specify a list of supported capabilities
+Creates a capabilities instance from a list of supported capabilities.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -21,8 +21,6 @@ init(_ capabilities: [LanguageModelCapabilities.Capability])
 
 ## See Also
 
-- [init(capabilities: [LanguageModelCapabilities.Capability])](languagemodelcapabilities/init(capabilities:).md)
-  Specify a list of supported capabilities
 - [LanguageModelCapabilities.Capability](languagemodelcapabilities/capability.md)
   A capability that a given language model may or may not have.
 

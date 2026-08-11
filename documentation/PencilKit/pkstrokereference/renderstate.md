@@ -15,7 +15,7 @@ The render details of the stroke, such as particle positioning. Uses default ren
 ## Declaration
 
 ```swift
-var renderState: __PKStrokeRenderState? { get }
+var renderState: PKStrokeRenderStateReference? { get }
 ```
 
 #### Discussion

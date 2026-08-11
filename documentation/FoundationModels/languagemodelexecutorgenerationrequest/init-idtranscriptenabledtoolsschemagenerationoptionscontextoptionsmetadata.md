@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: init
 
-Creates a new generation request.
+Creates a generation request.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -16,12 +16,12 @@ Creates a new generation request.
 ## Declaration
 
 ```swift
-init(id: UUID, transcript: Transcript, enabledTools: [Transcript.ToolDefinition], schema: GenerationSchema? = nil, generationOptions: GenerationOptions, contextOptions: ContextOptions, metadata: [String : any Sendable & Codable & Equatable])
+init(id: UUID, transcript: Transcript, enabledTools: [Transcript.ToolDefinition], schema: GenerationSchema? = nil, generationOptions: GenerationOptions, contextOptions: ContextOptions, metadata: [String : any ConvertibleToGeneratedContent])
 ```
 
 ## Parameters
 
-- `id`: The request identifier..
+- `id`: The request identifier.
 - `transcript`: The transcript to generate the next entry for.
 - `enabledTools`: The subset tool definitions that the model can call.
 - `schema`: The schema dictating the required output format.

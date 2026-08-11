@@ -15,6 +15,7 @@ A WKJSHandle object contains a reference to a JavaScript object.
 ## Declaration
 
 ```swift
+@MainActor
 class WKJSHandle
 ```
 
@@ -34,10 +35,10 @@ Whatever JavaScript object the `WKJSHandle` represents, it will be protected fro
 ## Topics
 
 ### Instance Properties
-- [var frame: WKFrameInfo](wkjshandle/frame.md)
-- [var world: WKContentWorld?](wkjshandle/world.md)
+- [var contentWorld: WKContentWorld?](wkjshandle/contentworld.md)
+- [var sourceFrame: WKFrameInfo](wkjshandle/sourceframe.md)
 ### Instance Methods
-- [func windowProxyFrameInfo((WKFrameInfo?) -> Void)](wkjshandle/windowproxyframeinfo(_:).md)
+- [func getWindowProxyFrame(completionHandler: (WKFrameInfo?) -> Void)](wkjshandle/getwindowproxyframe(completionhandler:).md)
 
 ## Relationships
 
@@ -51,6 +52,8 @@ Whatever JavaScript object the `WKJSHandle` represents, it will be protected fro
 - [Hashable](../Swift/Hashable.md)
 - [NSCopying](../Foundation/NSCopying.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 ## See Also
 
@@ -66,9 +69,7 @@ Whatever JavaScript object the `WKJSHandle` represents, it will be protected fro
   An object that identifies the origin of a particular resource.
 - [class WKUserScript](wkuserscript.md)
   A script that the web view injects into a webpage.
-- [class WKContentWorldConfiguration](wkcontentworldconfiguration.md)
-- [class WKJSSerializedNode](wkjsserializednode.md)
-  A `WKJSSerializedNode` object contains the serialized representation of a DOM node
+- [WKContentWorld.Configuration](wkcontentworld/configuration.md)
 
 
 ---

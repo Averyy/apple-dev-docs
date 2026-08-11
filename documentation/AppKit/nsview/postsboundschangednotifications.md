@@ -42,6 +42,7 @@ The following methods and properties can trigger a frame change notification:
   The angle of rotation, measured in degrees, applied to the view’s bounds rectangle relative to its frame rectangle.
 - [class let boundsDidChangeNotification: NSNotification.Name](nsview/boundsdidchangenotification.md)
   A notification that posts when the view’s bounds rectangle changes to a new value independently of the frame rectangle.
+- [NSView.BoundsDidChangeMessage](nsview/boundsdidchangemessage.md)
 
 
 ---

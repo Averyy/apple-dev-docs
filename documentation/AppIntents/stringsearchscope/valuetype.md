@@ -18,6 +18,11 @@
 typealias ValueType = StringSearchScope
 ```
 
+## See Also
+
+- [StringSearchScope.Specification](stringsearchscope/specification.md)
+- [StringSearchScope.UnwrappedType](stringsearchscope/unwrappedtype.md)
+
 
 ---
 

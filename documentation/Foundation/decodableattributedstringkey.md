@@ -42,6 +42,7 @@ Implement this protocol to make an attribute decodable. Decoding an [`Attributed
 - [AttributeScopes.AccessibilityAttributes.IPANotationAttribute](attributescopes/accessibilityattributes/ipanotationattribute.md)
 - [AttributeScopes.AccessibilityAttributes.IncludesPunctuationAttribute](attributescopes/accessibilityattributes/includespunctuationattribute.md)
 - [AttributeScopes.AccessibilityAttributes.QueueAnnouncementAttribute](attributescopes/accessibilityattributes/queueannouncementattribute.md)
+- [AttributeScopes.AccessibilityAttributes.SpeechSSMLAttribute](attributescopes/accessibilityattributes/speechssmlattribute.md)
 - [AttributeScopes.AccessibilityAttributes.SpellOutAttribute](attributescopes/accessibilityattributes/spelloutattribute.md)
 - [AttributeScopes.AccessibilityAttributes.TextCustomAttribute](attributescopes/accessibilityattributes/textcustomattribute.md)
 - [AttributeScopes.AccessibilityAttributes.TextualContextAttribute](attributescopes/accessibilityattributes/textualcontextattribute.md)

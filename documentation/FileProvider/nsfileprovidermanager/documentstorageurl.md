@@ -8,6 +8,7 @@ The root URL for all shared documents.
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
+- Mac Catalyst 11.0+
 - visionOS 1.0+
 
 ## Declaration

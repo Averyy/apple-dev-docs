@@ -22,6 +22,7 @@ init<Owner>(unsafeAddress pointer: UnsafePointer<Value>, borrowing owner: borrow
 
 ## Parameters
 
+- `pointer`: The address to use to reference an instance of type `Value`.
 - `owner`: The owning instance that this `Ref` instance’s lifetime is based on.
 
 

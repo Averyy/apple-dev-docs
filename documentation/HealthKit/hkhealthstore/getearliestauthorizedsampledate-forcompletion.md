@@ -29,7 +29,7 @@ This method derives the earliest sample date from availability in the HealthKit 
 
 Call this method after requesting authorization to determine whether the person restricts your app’s read access to a time window as opposed to the full available history. Adjust your app’s workflow to work with less data. In particular, if the person limits your app’s access, ensure that any trends, baselines, or anomaly detections your app offers work from partial data.
 
-When someone grants limited access to a data type, this method returns the earliest date from which your app can read samples of that type. Treat all data before that date as unknown — not an absence of data — because a full history may exist outside the range your app is permitted to read.
+When someone grants limited access to a data type, this method returns the earliest date from which your app can read samples of that type. HealthKit evaluates the boundary against a sample’s end date, so the framework might service your query with a sample that begins before the earliest authorization date as long as the sample ends after it. Treat all data before that date as unknown — not an absence of data — because a full history may exist outside the range your app is permitted to read.
 
 If your app has full access to a type, or if the person denies access, this method returns no entry for that type in the resulting dictionary. Your app can’t distinguish between denied and full access; limited authorization is the only state your app can identify, by design. The dictionary that this method produces is empty if no type has limited access. HealthKit omits a type from the result when:
 
@@ -95,6 +95,8 @@ let predicate = HKQuery.predicateForSamples(
   Requests permission to save and read the data types specified by an extension.
 - [var authorizationViewControllerPresenter: UIViewController?](hkhealthstore/authorizationviewcontrollerpresenter.md)
   The view controller that presents HealthKit authorization sheets.
+- [func earliestAuthorizedSampleDate(for: Set<HKObjectType>) async throws -> [HKObjectType : Date]](hkhealthstore/earliestauthorizedsampledate(for:).md)
+  Returns the earliest date that the person permits your app to read samples for the given data types.
 - [func earliestPermittedSampleDate() -> Date](hkhealthstore/earliestpermittedsampledate.md)
   Returns the earliest date that the framework permits your app to save or read samples.
 

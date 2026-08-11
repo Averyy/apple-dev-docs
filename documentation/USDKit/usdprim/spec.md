@@ -39,8 +39,6 @@ struct Spec
 - [init?(parentPrimSpec: USDPrim.Spec, name: USDToken, specifier: USDPrim.Specifier, typeName: String)](usdprim/spec/init(parentprimspec:name:specifier:typename:).md)
   Creates a new child prim spec under the given parent prim spec.
 ### Instance Properties
-- [var active: Bool?](usdprim/spec/active.md)
-  Whether this prim is active in composition, or `nil` if not authored.
 - [var assetInfo: Dictionary<String, USDValue>](usdprim/spec/assetinfo.md)
   The asset info dictionary authored on this prim.
 - [var attributes: [USDPrim.Attribute.Spec]](usdprim/spec/attributes.md)
@@ -57,7 +55,9 @@ struct Spec
   The authored documentation, or `nil` if not authored.
 - [var inherits: [USDLayer.Path]?](usdprim/spec/inherits.md)
   The authored inherit paths, or `nil` if none authored.
-- [var instanceable: Bool?](usdprim/spec/instanceable.md)
+- [var isActive: Bool?](usdprim/spec/isactive.md)
+  Whether this prim is active in composition, or `nil` if not authored.
+- [var isInstanceable: Bool?](usdprim/spec/isinstanceable.md)
   Whether this prim is marked as an instance, or `nil` if not authored.
 - [var kind: USDToken?](usdprim/spec/kind.md)
   The prim’s kind, or `nil` if not authored.

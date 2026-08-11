@@ -165,8 +165,8 @@ struct UInt64
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)
 - [Strideable](strideable.md)
-- [USDPrim.Attribute.MetadataValue](../USDKit/USDPrim/Attribute/MetadataValue.md)
 - [USDPrim.Attribute.Value](../USDKit/USDPrim/Attribute/Value.md)
+- [USDStage.Object.MetadataValue](../USDKit/USDStage/Object/MetadataValue.md)
 - [USDValueProtocol](../USDKit/USDValueProtocol.md)
 - [UnsignedInteger](unsignedinteger.md)
 

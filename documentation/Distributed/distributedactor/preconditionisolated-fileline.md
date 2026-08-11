@@ -28,7 +28,7 @@ This function’s effect varies depending on the build flag used:
 - In playgrounds and `-Onone` builds (the default for Xcode’s Debug configuration), stops program execution in a debuggable state after printing `message`.
 - In `-O` builds (the default for Xcode’s Release configuration), stops program execution.
 
-> **Note**: Because this check is performed against the actor’s serial executor, if another actor uses the same serial executor–by using that actor’s serial executor as its own `Actor/unownedExecutor`–this check will succeed.  From a concurrency safety perspective, the serial executor guarantees mutual exclusion of those two actors.
+> **Note**: Because this check is performed against the actor’s serial executor, if another actor uses the same serial executor–by using that actor’s serial executor as its own `Actor.unownedExecutor`–this check will succeed.  From a concurrency safety perspective, the serial executor guarantees mutual exclusion of those two actors.
 
 ## Parameters
 

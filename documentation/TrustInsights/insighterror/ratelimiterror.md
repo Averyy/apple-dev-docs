@@ -8,7 +8,6 @@ An error that indicates that the app has reached the rate limit for the particul
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 
 ## Declaration
 

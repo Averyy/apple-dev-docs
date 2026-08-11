@@ -3,7 +3,7 @@
 **Framework**: HealthKit  
 **Kind**: method
 
-Returns someone’s preferred zone configuration for the specified quantity type.
+Returns a person’s preferred zone configuration for a quantity type.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -29,9 +29,9 @@ The preferred zone configuration, or `nil` if the person hasn’t configured zon
 
 #### Discussion
 
-The system returns the person’s manually configured zones from Health Settings, or the system-generated zones if the person hasn’t set custom values. System-generated zones update periodically as the person’s health metrics change, while zones configured by the person remain constant until modified. Apps can use this method to display zone information that aligns with the person’s preferences across all workouts.
+The system returns the person’s manually configured zones from Health Settings, or the system-generated zones if the person hasn’t set custom values. System-generated zones update periodically as the person’s health metrics change, however, the system preserves zones that the person configures. Use this method to display zone information that aligns with the person’s preferences across their workouts.
 
-> **Note**:  An error if the zone configuration can’t be retrieved.
+This method throws an error if the framework can’t retrieve the requested zone configuration.
 
 ## Parameters
 

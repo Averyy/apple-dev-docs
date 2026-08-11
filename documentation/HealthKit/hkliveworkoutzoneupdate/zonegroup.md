@@ -3,7 +3,7 @@
 **Framework**: HealthKit  
 **Kind**: property
 
-The complete zone group containing all current duration data.
+The zone group that contains the current duration data.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -17,6 +17,13 @@ The complete zone group containing all current duration data.
 @nonobjc
 final var zoneGroup: HKWorkoutZoneGroup? { get }
 ```
+
+## See Also
+
+- [var currentZoneDuration: HKWorkoutZoneDuration?](hkliveworkoutzoneupdate/currentzoneduration.md)
+  A property that contains the zone duration just entered.
+- [var previousZoneDuration: HKWorkoutZoneDuration?](hkliveworkoutzoneupdate/previouszoneduration.md)
+  A property that contains the zone duration that just completed.
 
 
 ---

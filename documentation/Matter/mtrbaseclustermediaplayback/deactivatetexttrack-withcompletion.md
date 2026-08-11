@@ -22,7 +22,7 @@ func deactivateTextTrack(with params: MTRMediaPlaybackClusterDeactivateTextTrack
 
 #### Discussion
 
-If a Text Track is active (i.e. being displayed), upon receipt of this command, the server SHALL stop displaying it.
+This command is used to deactivate a specific Text Track for the media being played.
 
 
 ---

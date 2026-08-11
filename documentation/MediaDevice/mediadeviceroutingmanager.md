@@ -32,7 +32,7 @@ final class MediaDeviceRoutingManager
   Removes a device from the system’s device lists so users can no longer select it.
 - [func receiveData(Data, fromApplication: String, session: MediaOutputSession)](mediadeviceroutingmanager/receivedata(_:fromapplication:session:).md)
   Delivers data received from a remote application to the system for processing.
-- [func reportRealtimeSampleDeliveryKPIs(session: MediaOutputSession, metKPIs: Bool)](mediadeviceroutingmanager/reportrealtimesampledeliverykpis(session:metkpis:).md)
+- [func reportQualityMetricsPassed(Bool, forSession: MediaOutputSession)](mediadeviceroutingmanager/reportqualitymetricspassed(_:forsession:).md)
   Reports whether the realtime sample delivery session has met its quality KPIs.
 - [func requestPairingCode(for: MediaOutputDevice, session: MediaOutputSession, reason: LocalizedStringResource, authorizationMethod: MediaOutputDevice.AuthorizationMethod)](mediadeviceroutingmanager/requestpairingcode(for:session:reason:authorizationmethod:).md)
   Presents a pairing user interface so the user can enter authorization credentials for a device.

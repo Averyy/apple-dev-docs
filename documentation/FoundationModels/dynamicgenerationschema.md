@@ -39,7 +39,7 @@ An individual schema may reference other schemas by name, and references are res
 - [init(name: String, description: String?, representNilExplicitlyInGeneratedContent: Bool, properties: [DynamicGenerationSchema.Property])](dynamicgenerationschema/init(name:description:representnilexplicitlyingeneratedcontent:properties:).md)
   Creates an object schema.
 - [init(referenceTo: String)](dynamicgenerationschema/init(referenceto:).md)
-  Creates an refrence schema.
+  Creates a reference schema.
 - [init<Value>(type: Value.Type, guides: [GenerationGuide<Value>])](dynamicgenerationschema/init(type:guides:).md)
   Creates a schema from a generable type and guides.
 - [DynamicGenerationSchema.Property](dynamicgenerationschema/property.md)
@@ -58,6 +58,8 @@ An individual schema may reference other schemas by name, and references are res
 
 - [Generating Swift data structures with guided generation](generating-swift-data-structures-with-guided-generation.md)
   Create robust apps by describing output you want programmatically.
+- [macro Generable(description: String?)](generable(description:).md)
+- [macro Guide(description: String)](guide(description:).md)
 - [protocol Generable](generable.md)
   A type that the model uses when responding to prompts.
 - [struct GenerationSchema](generationschema.md)

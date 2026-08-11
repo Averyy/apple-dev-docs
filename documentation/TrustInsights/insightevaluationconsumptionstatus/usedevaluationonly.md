@@ -8,7 +8,6 @@ A value that indicates the app used the insights for evaluation of their usefuln
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 
 ## Declaration
 

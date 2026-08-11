@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: property
 
+The destination for authoring operations on this stage.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -20,6 +22,7 @@ var editTarget: USDStage.EditTarget { get nonmutating set }
 ## See Also
 
 - [USDStage.EditTarget](usdstage/edittarget-swift.struct.md)
+  A destination for authoring operations on a stage.
 
 
 ---

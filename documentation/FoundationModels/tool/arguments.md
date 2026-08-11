@@ -31,7 +31,7 @@ Typically arguments are either a [`Generable`](generable.md) type or [`Generated
 ## See Also
 
 - [func call(arguments: Self.Arguments) async throws -> Self.Output](tool/call(arguments:).md)
-  A language model will call this method when it wants to leverage this tool.
+  Performs the tool’s action when a language model wants to use this tool.
 - [associatedtype Output : PromptRepresentable](tool/output.md)
   The output that this tool produces for the language model to reason about in subsequent interactions.
 

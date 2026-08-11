@@ -3,6 +3,8 @@
 **Framework**: Core Telephony  
 **Kind**: init
 
+Initializes an authorization status.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)

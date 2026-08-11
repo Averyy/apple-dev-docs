@@ -14,6 +14,13 @@ Inherit from superview
 case inherit
 ```
 
+## See Also
+
+- [NSView.ExclusiveGestureBehavior.exclusive](nsview/exclusivegesturebehavior-swift.enum/exclusive.md)
+  This view and its subviews have exclusive gestures
+- [NSView.ExclusiveGestureBehavior.notExclusive](nsview/exclusivegesturebehavior-swift.enum/notexclusive.md)
+  This view and its subviews do not have exclusive gestures
+
 
 ---
 

@@ -8,6 +8,7 @@ Inserts the user or system’s input suggestion into the document.
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
+- Mac Catalyst 18.4+
 
 ## Declaration
 

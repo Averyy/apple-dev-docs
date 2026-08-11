@@ -34,7 +34,7 @@ struct LimitIncreaseSuggestion
 ## See Also
 
 - [var isLimitReached: Bool](privatecloudcomputelanguagemodel/quotausage-swift.struct/islimitreached.md)
-  A Boolean indicating whether the usage limit has been reached.
+  A Boolean value that indicates whether the usage limit has been reached.
 - [var limitIncreaseSuggestion: PrivateCloudComputeLanguageModel.QuotaUsage.LimitIncreaseSuggestion?](privatecloudcomputelanguagemodel/quotausage-swift.struct/limitincreasesuggestion-swift.property.md)
   A suggestion the user can act on to increase their quota.
 

@@ -27,6 +27,10 @@ struct BoundsDidChangeMessage
 - [NotificationCenter.MainActorMessage](../Foundation/NotificationCenter/MainActorMessage.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 
+## See Also
+
+- [NSView.FrameDidChangeMessage](nsview/framedidchangemessage.md)
+
 
 ---
 

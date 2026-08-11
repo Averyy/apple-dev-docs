@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: init
 
-Creates an attachment from a `CGImage`.
+Creates an attachment from a Core Graphics image.
 
 **Availability**:
 - iOS 27.0+ (Beta)

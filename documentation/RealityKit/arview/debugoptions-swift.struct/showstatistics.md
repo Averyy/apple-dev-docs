@@ -18,6 +18,10 @@ Collect performance statistics and display them in the view.
 static let showStatistics: ARView.DebugOptions
 ```
 
+## Mentions
+
+- [Rendering high-fidelity characters](rendering-high-fidelity-characters.md)
+
 #### Discussion
 
 Add this debug option to a view’s [`debugOptions`](arview/debugoptions-swift.property.md) option set to display a variety of resource utilization metrics, overlaid on the view. The statistics update in real time so you can examine how your app performs and what resources it consumes under different usage conditions.

@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: method
 
-Replaces the index buffer synchronously on the CPU. The buffer’s contents are unspecified; you must populate the buffer with valid data.
+Replaces the entire contents of the index buffer synchronously on the CPU.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -19,22 +19,24 @@ final func replaceIndices<R, E>(_ body: @_lifetime(0: copy 0) (inout MutableRawS
 
 #### Discussion
 
+You pass a closure that receives a mutable span representing the contents of the index buffer. Upon entry the buffer’s contents are undefined; the closure is responsible for populating it with valid data. This span is valid only for the duration of the closure.
+
 > **Note**: Any error thrown by `body`.
 
 ## Parameters
 
-- `body`: A closure that receives a mutable span over the index buffer’s bytes to fully populate.
+- `body`: A closure that receives a mutable span over the index buffer’s bytes and fully populates it.
 
 ## See Also
 
 - [func readIndices<R, E>((RawSpan) throws(E) -> R) throws(E) -> R](lowlevelmeshresource/readindices(_:).md)
-  Reads the index buffer synchronously on the CPU. The buffer is only valid for the lifetime of the callback.
+  Reads the current contents of the index buffer synchronously on the CPU.
 - [func updateIndices<R, E>((inout MutableRawSpan) throws(E) -> R) throws(E) -> R](lowlevelmeshresource/updateindices(_:).md)
-  Updates the index buffer synchronously on the CPU. The buffer is only valid for the lifetime of the callback.
+  Updates the index buffer in place synchronously on the CPU.
 - [func readIndices(commandBuffer: (any MTLCommandBuffer)?) -> any MTLBuffer](lowlevelmeshresource/readindices(commandbuffer:).md)
-  Retrieves the Metal index buffer for GPU reading.
+  Returns a Metal buffer containing the current contents of the index buffer for GPU read operations.
 - [func replaceIndices(commandBuffer: (any MTLCommandBuffer)?) -> any MTLBuffer](lowlevelmeshresource/replaceindices(commandbuffer:).md)
-  Retrieves a Metal index buffer for GPU replacement. The buffer’s contents are in an uninitialized state. The renderer waits for the command buffer to complete before using the buffer for rendering.
+  Returns a Metal buffer you populate on the GPU with the new contents of the index buffer.
 
 
 ---

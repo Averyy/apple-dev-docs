@@ -1,7 +1,7 @@
 # Span.BorrowingIterator
 
 **Framework**: Swift  
-**Kind**: typealias
+**Kind**: struct
 
 A type that provides the sequence’s iteration interface and encapsulates its iteration state.
 
@@ -17,8 +17,28 @@ A type that provides the sequence’s iteration interface and encapsulates its i
 ## Declaration
 
 ```swift
-typealias BorrowingIterator = SpanIterator<Element>
+@frozen
+struct BorrowingIterator
 ```
+
+## Topics
+
+### Initializers
+- [init(Span<Element>)](span/borrowingiterator/init(_:).md)
+### Instance Methods
+- [func nextSpan(maxCount: Int) -> Span<Element>](span/borrowingiterator/nextspan(maxcount:).md)
+  Returns a span over the next group of elements that are ready to by visited, up to the specifed maximum.
+- [func skip(by: Int) -> Int](span/borrowingiterator/skip(by:).md)
+  Advances the position of this iterator by the specified offset, or until the end of the underlying type’s elements.
+### Type Aliases
+- [Span.BorrowingIterator.Failure](span/borrowingiterator/failure.md)
+### Default Implementations
+- [BorrowingIteratorProtocol Implementations](span/borrowingiterator/borrowingiteratorprotocol-implementations.md)
+
+## Relationships
+
+### Conforms To
+- [BorrowingIteratorProtocol](borrowingiteratorprotocol.md)
 
 
 ---

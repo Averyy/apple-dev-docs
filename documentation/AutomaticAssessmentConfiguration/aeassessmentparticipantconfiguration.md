@@ -19,7 +19,7 @@ class AEAssessmentParticipantConfiguration
 
 #### Overview
 
-Use an instance of this class to configure the properties of an app that you allow to run during an assessment. Associate the participant configuration with an app (an [`AEAssessmentApplication`](aeassessmentapplication.md) instance) when you call the [`setConfiguration(_:for:)`](aeassessmentconfiguration/setconfiguration(_:for:).md) method of a session configuration.
+Use an instance of this class to configure the properties of an app that you allow to run during an assessment. Associate the participant configuration with an app (an [`AEAssessmentApplication`](aeassessmentapplication.md) instance) when you call the `AEAssessmentConfiguration/setConfiguration(_:for:)` method of a session configuration.
 
 ## Topics
 
@@ -57,12 +57,8 @@ Use an instance of this class to configure the properties of an app that you all
 
 ## See Also
 
-- [func setConfiguration(AEAssessmentParticipantConfiguration, for: AEAssessmentApplication)](aeassessmentconfiguration/setconfiguration(_:for:).md)
-  Adds an app to the list of apps available during an assessment.
 - [var configurationsByApplication: [AEAssessmentApplication : AEAssessmentParticipantConfiguration]](aeassessmentconfiguration/configurationsbyapplication.md)
   The collection of apps available during an assessment, along with their associated configurations.
-- [func remove(AEAssessmentApplication)](aeassessmentconfiguration/remove(_:).md)
-  Removes the availability of a previously allowed app.
 - [var mainParticipantConfiguration: AEAssessmentParticipantConfiguration](aeassessmentconfiguration/mainparticipantconfiguration.md)
   The app-specific configuration for the app that invokes the assessment.
 - [class AEAssessmentApplication](aeassessmentapplication.md)

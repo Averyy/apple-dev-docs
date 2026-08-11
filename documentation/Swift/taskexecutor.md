@@ -24,7 +24,7 @@ protocol TaskExecutor : Executor
 
 By default, without setting a task executor preference, nonisolated asynchronous functions, as well as methods declared on default actors – that is actors which do not require a specific executor – execute on Swift’s default global concurrent executor. This is an executor shared by the entire runtime to execute any work which does not have strict executor requirements.
 
-By setting a task executor preference, either with a `withTaskExecutorPreference(_:operation:)`, creating a task with a preference (`Task(executorPreference:)`, or `group.addTask(executorPreference:)`), the task and all of its child tasks (unless a new preference is set) will be preferring to execute on the provided task executor.
+By setting a task executor preference, either with a [`withTaskExecutorPreference(_:isolation:operation:)`](withtaskexecutorpreference(_:isolation:operation:).md) or creating a task with a preference – using `Task(executorPreference:)` or `group.addTask(executorPreference:)` – the task and all of its child tasks (unless a new preference is set) will be preferring to execute on the provided task executor.
 
 Unstructured tasks do not inherit the task executor.
 

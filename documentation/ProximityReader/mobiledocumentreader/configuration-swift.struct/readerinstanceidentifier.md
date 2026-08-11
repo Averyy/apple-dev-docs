@@ -8,6 +8,7 @@ The unique identifier for the mobile document reader instance.
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
+- Mac Catalyst 17.0+
 
 ## Declaration
 

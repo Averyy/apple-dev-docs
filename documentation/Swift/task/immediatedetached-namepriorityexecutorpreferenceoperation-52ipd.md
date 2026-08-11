@@ -31,7 +31,7 @@ This function *starts* the created task on the calling context. The task will co
 
 As indicated by the lack of `async` on this method, this method does *not* suspend, and instead takes over the calling task’s (thread’s) execution in a synchronous manner.
 
-Other than the execution semantics discussed above, the created task is semantically equivalent to a task created using the `Task/detached` function.
+Other than the execution semantics discussed above, the created task is semantically equivalent to a task created using the `Task/detached(name:priority:operation:)` function.
 
 ## Parameters
 

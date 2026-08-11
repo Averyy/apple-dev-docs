@@ -8,6 +8,7 @@ A Boolean value indicating whether the identity document holder is an organ dono
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

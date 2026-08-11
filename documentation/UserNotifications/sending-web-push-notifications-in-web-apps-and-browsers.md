@@ -10,8 +10,6 @@ When important, time-sensitive events occur, inform your website users with push
 
 To send web push notifications, update your webpage to subscribe users and handle notifications, and update your server to send push notifications. If you’re already sending push notifications with web push for other browsers, confirm that your server fulfills Safari’s requirements so that your existing implementation works for webpages in macOS Safari and web apps. You don’t need to join the Apple Developer Program to send web push notifications.
 
-If you’re already sending push notifications to users in Safari 15 or earlier using [`Safari Push Notifications`](https://developer.apple.comhttps://developer.apple.com/notifications/safari-push-notifications/), continue sending push notifications to those users. Update your webpage with feature detection to use Push API code if it’s available, or Safari Push Notifications code if it isn’t. For more information about best practices while sending a push notification with APNs, see [`Sending notification requests to APNs`](sending-notification-requests-to-apns.md).
-
 ##### Enable Push Notifications for Your Webpage or Web App
 
 To enable push notifications, follow this general approach in your webpage or web app:

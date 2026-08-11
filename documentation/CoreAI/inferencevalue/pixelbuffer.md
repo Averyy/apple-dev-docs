@@ -18,6 +18,10 @@ Consume this value to access the underlying pixel buffer.
 var pixelBuffer: CVMutablePixelBuffer? { get }
 ```
 
+## Mentions
+
+- [Integrating on-device AI models in your app with Core AI](integrating-on-device-ai-models-in-your-app-with-core-ai.md)
+
 #### Return Value
 
 The underlying pixel buffer or `nil` if this was not an image value.

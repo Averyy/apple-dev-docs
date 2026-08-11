@@ -16,7 +16,7 @@ Configures an existing pair of entities as a portal and its target world.
 ## Declaration
 
 ```swift
-static func configure(world: Entity, portalEntity: Entity, surfaceStyle: PortalComponent.SurfaceStyle, boundaryStyle: PortalComponent.BoundaryStyle = .infinitePlane(), boundaryMode: PortalComponent.BoundaryMode = .disabled)
+static func configure(world: Entity, portalEntity: Entity, surfaceStyle: PortalComponent.SurfaceStyle, boundaryStyle: PortalComponent.BoundaryStyle = .infinitePlane(), boundaryMode: PortalComponent.BoundaryMode = .none)
 ```
 
 #### Discussion
@@ -42,7 +42,7 @@ To create both entities at once, use [`makePortal(surfaceStyle:boundaryStyle:bou
 - `portalEntity`: The entity that displays the portal surface in the host scene.
 - `surfaceStyle`: The size of the portal surface mesh.
 - `boundaryStyle`: The shape of the clipping and crossing boundary. Defaults to [`infinitePlane()`](portalcomponent/boundarystyle/infiniteplane().md).
-- `boundaryMode`: The combination of clipping and crossing behaviors to enable. Defaults to [`PortalComponent.BoundaryMode.disabled`](portalcomponent/boundarymode/disabled.md).
+- `boundaryMode`: The combination of clipping and crossing behaviors to enable. Defaults to [`PortalComponent.BoundaryMode.none`](portalcomponent/boundarymode/none.md).
 
 
 ---

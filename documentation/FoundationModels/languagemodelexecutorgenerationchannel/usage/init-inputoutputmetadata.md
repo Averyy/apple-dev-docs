@@ -16,13 +16,14 @@ Creates a usage update.
 ## Declaration
 
 ```swift
-init(input: LanguageModelExecutorGenerationChannel.Usage.Input, output: LanguageModelExecutorGenerationChannel.Usage.Output, metadata: [String : any Sendable & Codable & Equatable] = [:])
+init(input: LanguageModelExecutorGenerationChannel.Usage.Input, output: LanguageModelExecutorGenerationChannel.Usage.Output, metadata: [String : any ConvertibleToGeneratedContent] = [:])
 ```
 
 ## Parameters
 
 - `input`: Token counts for the transcript.
 - `output`: Token counts for the response.
+- `metadata`: Additional metadata to record alongside the token counts.
 
 
 ---

@@ -40,7 +40,7 @@ The use of the experience controller is mutually exclusive with a view controlle
 - [var viewport: AVViewport](avplayerviewcontroller/viewport.md)
   A configuration object that manages viewport settings for different presentation modes.
 - [class AVViewport](avviewport.md)
-  A configuration object that manages viewport settings for different presentation modes.
+  Provides configuration options for how content is displayed in different viewing contexts. Use this object to customize the visual presentation of your content.
 
 
 ---

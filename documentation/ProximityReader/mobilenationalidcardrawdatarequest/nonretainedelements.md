@@ -8,6 +8,7 @@ The document elements you’re requesting and intend to retain no longer than is
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- Mac Catalyst 18.0+
 
 ## Declaration
 

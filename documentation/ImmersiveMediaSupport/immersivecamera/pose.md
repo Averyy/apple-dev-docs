@@ -20,13 +20,21 @@ var pose: Pose3DFloat
 
 #### Discussion
 
-The rotation component of the pose is applied uniformly to both eyes of a stereo frame as an image reorientation. It does not remap eye assignment, reproject parallax, or account for the stereo baseline encoded in the source video.
+The rotation component of the pose decomposes into three axis rotations, applied intrinsically in this order:
 
-For stereo (`stereoCamera`) content, only rotations that keep the stereo baseline horizontal in viewer space produce comfortable fusion:
+1. **Roll** — rotation around the camera’s local z-axis (the optical axis; the camera looks toward −Z).
+2. **Yaw** — rotation around the camera’s (post-roll) local y-axis.
+3. **Pitch** — rotation around the camera’s (post-roll, post-yaw) local x-axis (the right / baseline axis).
 
-- **Yaw** (rotation about the viewer-up axis) — safe at any magnitude, though yaw angles approaching ±180° invert the parallax sign (depth appears reversed).
-- **Pitch** (rotation about the camera’s local right / baseline axis) — safe at any magnitude; the baseline is the rotation axis and remains invariant.
-- **Roll** (rotation about the camera-forward axis) — rotates the baseline out of horizontal, creating vertical disparity between eyes. Small roll angles cause eye strain; larger angles (≥ a few degrees) prevent fusion entirely. A 90° roll makes the baseline orthogonal to the viewer’s eye baseline and breaks fusion completely.
+This matches Spatial’s `EulerAngleOrder.xyz`, which composes intrinsically as roll, then yaw, then pitch (equivalently, extrinsically as pitch, then yaw, then roll). The composition order matters — the same angle values under a different order produce a different orientation. In particular, this does **not** match `RealityKit.Transform(pitch:yaw:roll:)`, which composes intrinsically as yaw, then pitch, then roll.
+
+##### Stereo Fusion Constraints
+
+The rotation component is applied uniformly to both eyes as an image reorientation; it does not remap eye assignment, reproject parallax, or account for the stereo baseline encoded in the source video. For stereo (`stereoCamera`) content, only rotations that keep the stereo baseline horizontal in viewer space produce comfortable fusion:
+
+- **Roll** — rotates the baseline out of horizontal, creating vertical disparity between eyes. Small roll angles cause eye strain; larger angles (≥ a few degrees) prevent fusion entirely.
+- **Yaw** — may be safe in some circumstances but increasingly likely to cause anomalous parallax perception at larger angles.
+- **Pitch** — the baseline is the rotation axis and the invariant of the rotation depends on the projection.
 - Any mixed rotation that decomposes to a non-zero roll component exhibits the same failure proportional to the roll magnitude.
 
 For mono content there are no stereo constraints and the full rotation space is valid.

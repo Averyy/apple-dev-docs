@@ -8,6 +8,7 @@ Called when a user selected a shipping address. This is required if the user is 
 **Availability**:
 - iOS 15.5+
 - iPadOS 15.5+
+- Mac Catalyst 15.5+
 - macOS 12.5+
 - watchOS 8.5+
 

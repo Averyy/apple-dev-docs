@@ -3,7 +3,7 @@
 **Framework**: App Intents  
 **Kind**: protocol
 
-An app intent with a URL representation.
+An interface you add to an app intent type so the system can handle it like a universal link.
 
 **Availability**:
 - iOS 18.0+
@@ -22,16 +22,20 @@ protocol URLRepresentableIntent : AppIntent
 
 #### Overview
 
-Add support for `URLRepresentableIntent` to your app intents to add a URL representation. This allows Apple Intelligence, Siri, and Shortcuts to treat the intent like a universal link to specific content, allowing actions to open the URL or to make it sharable.
+If your app already supports universal links for content, use this protocol to express your app intent types as URLs. When your app intent supports this protocol, the system can use the provided URL to process it. For example, if your app intent supports this protocol and the [`OpenIntent`](openintent.md) protocol, the system opens the contained item by sending the URL to your app’s URL handling code, allowing you to omit the [`perform()`](appintent/perform().md) method in your type. Having a URL representation for your app intent also makes it easier to share its contents with Siri, Shortcuts, and other system features.
 
-Note that you need to use a universal link for your URL representation, you can’t use a custom URL scheme. For more information about universal links, see [`Allowing apps and websites to link to your content`](https://developer.apple.com/documentation/Xcode/allowing-apps-and-websites-to-link-to-your-content).
+> ❗ **Important**: This protocol requires your app to support universal links. You can’t use this protocol with a custom URL scheme or other approaches. For information about how to add support for universal links, see [`Allowing apps and websites to link to your content`](https://developer.apple.com/documentation/Xcode/allowing-apps-and-websites-to-link-to-your-content).
+
+Construct URLs using static text and the content of your app intent’s properties. For information on how to create the URL representation, see [`IntentURLRepresentation`](intenturlrepresentation.md).
 
 ## Topics
 
 ### Type Aliases
 - [URLRepresentableIntent.URLRepresentation](urlrepresentableintent/urlrepresentation-swift.typealias.md)
+  The type that provides the URL for the app intent.
 ### Type Properties
 - [static var urlRepresentation: Self.URLRepresentation](urlrepresentableintent/urlrepresentation-4fzwq.md)
+  The URL representation of the app intent.
 
 ## Relationships
 
@@ -46,8 +50,9 @@ Note that you need to use a universal link for your URL representation, you can�
 ## See Also
 
 - [struct IntentURLRepresentation](intenturlrepresentation.md)
-  The URL representation of an app intent.
+  The type that provides the URL for an app intent.
 - [protocol CustomURLRepresentationParameterConvertible](customurlrepresentationparameterconvertible.md)
+  An interface that allows a type to express its contents in a URL representation.
 
 
 ---

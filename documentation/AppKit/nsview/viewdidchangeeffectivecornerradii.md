@@ -14,6 +14,15 @@ Informs the view that its effective corner radii changed. This method should be 
 func viewDidChangeEffectiveCornerRadii()
 ```
 
+## See Also
+
+- [var cornerConfiguration: NSViewCornerConfiguration?](nsview/cornerconfiguration.md)
+  Defines the corner styles (e.g., square, capsule, concentric, etc) for the view’s corners.
+- [var effectiveCornerRadii: NSViewCornerRadii?](nsview/effectivecornerradii.md)
+  The effective radius of each corner in the view, calculated based on the corner configuration (`cornerConfiguration`). This value is `nil` when the corner configuration is `nil`.
+- [func invalidateCornerConfiguration()](nsview/invalidatecornerconfiguration.md)
+  Invalidates the corner configuration, causing both the configuration and its dependencies to be recomputed.
+
 
 ---
 

@@ -37,11 +37,11 @@ struct Configuration
 ## See Also
 
 - [init(configuration: LowLevelRenderContextStandalone.Configuration, resources: LowLevelRenderContextStandalone.Resources) throws](lowlevelrendercontextstandalone/init(configuration:resources:).md)
-  Creates a standalone render context using pre-compiled shader and pipeline resources.
+  Creates a standalone render context using resources prepared ahead of time.
 - [init(configuration: LowLevelRenderContextStandalone.Configuration) async throws](lowlevelrendercontextstandalone/init(configuration:).md)
-  Creates a standalone render context, asynchronously compiling all required shader and pipeline resources.
+  Creates a standalone render context, asynchronously preparing required resources.
 - [LowLevelRenderContextStandalone.Resources](lowlevelrendercontextstandalone/resources.md)
-  Pre-compiled shader and pipeline resources shared across multiple render context instances.
+  Resources needed for a render context
 
 
 ---

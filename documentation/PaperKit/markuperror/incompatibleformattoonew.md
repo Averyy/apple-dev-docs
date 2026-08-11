@@ -8,6 +8,7 @@ The data being decoded has a newer format that cannot be decoded.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 - macOS 26.0+
 - visionOS 26.0+
 

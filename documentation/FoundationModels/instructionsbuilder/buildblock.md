@@ -23,15 +23,15 @@ static func buildBlock<each I>(_ components: repeat each I) -> Instructions wher
 ## See Also
 
 - [static func buildArray([some InstructionsRepresentable]) -> Instructions](instructionsbuilder/buildarray(_:).md)
-  Creates a builder with the an array of prompts.
+  Creates a builder with an array of instructions.
 - [static func buildEither(first: some InstructionsRepresentable) -> Instructions](instructionsbuilder/buildeither(first:).md)
   Creates a builder with the first component.
 - [static func buildEither(second: some InstructionsRepresentable) -> Instructions](instructionsbuilder/buildeither(second:).md)
   Creates a builder with the second component.
 - [static buildExpression(_:)](instructionsbuilder/buildexpression(_:).md)
-  Creates a builder with a prompt expression.
+  Creates a builder with an instructions expression.
 - [static func buildLimitedAvailability(some InstructionsRepresentable) -> Instructions](instructionsbuilder/buildlimitedavailability(_:).md)
-  Creates a builder with a limited availability prompt.
+  Creates a builder with limited availability instructions.
 - [static func buildOptional(Instructions?) -> Instructions](instructionsbuilder/buildoptional(_:).md)
   Creates a builder with an optional component.
 

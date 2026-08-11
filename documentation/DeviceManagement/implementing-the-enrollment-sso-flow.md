@@ -12,7 +12,7 @@ To support Enrollment SSO, your device management service delivers details about
 
 The diagram below illustrates the interactions the [`Implementing the simple authentication account-driven enrollment flow`](implementing-the-simple-authentication-account-driven-enrollment-flow.md) and [`Implementing the OAuth 2 authentication account-driven enrollment flow`](implementing-the-oauth2-authentication-account-driven-enrollment-flow.md) enrollment flows use when they start.
 
-![A sequence diagram showing the first five interactions between the user, client, device management service, and Apple servers for simple authentication.](https://docs-assets.developer.apple.com/published/fa5cc1380a63b8e86b14bb2b74ee9ab2/media-4091468%402x.png)
+![A sequence diagram showing the first five interactions between the user, client, device management service, and Apple servers for simple authentication.](https://docs-assets.developer.apple.com/published/fa5cc1380a63b8e86b14bb2b74ee9ab2/implementing-the-enrollment-sso-flow%402x.png)
 
 Enrollment SSO modifies the [`Implementing the simple authentication account-driven enrollment flow`](implementing-the-simple-authentication-account-driven-enrollment-flow.md) and [`Implementing the OAuth 2 authentication account-driven enrollment flow`](implementing-the-oauth2-authentication-account-driven-enrollment-flow.md) enrollment flows as follows. In step 5 of both flows, an `X-Apple-MDM-ESSO` response header returns. When the client receives that header in the `401` response from the device management service, the system inserts the following additional steps into the authentication flows before performing the actions in step 5.
 

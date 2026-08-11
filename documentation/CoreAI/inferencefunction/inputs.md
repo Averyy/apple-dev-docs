@@ -18,9 +18,13 @@ A collection of named input values for an inference function.
 struct Inputs
 ```
 
+## Mentions
+
+- [Integrating on-device AI models in your app with Core AI](integrating-on-device-ai-models-in-your-app-with-core-ai.md)
+
 #### Overview
 
-Build an `Inputs` collection by calling `insert(_:for:)` for each named input the function expects, then pass it to `InferenceFunction/run(inputs:states:outputViews:)`.
+Build an `Inputs` collection by calling [`insert(_:for:)`](inferencefunction/inputs/insert(_:for:)-2htrp.md) for each named input the function expects, then pass it to [`run(inputs:states:outputViews:)`](inferencefunction/run(inputs:states:outputviews:)-14emi.md).
 
 ## Topics
 

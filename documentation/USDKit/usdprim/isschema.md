@@ -3,7 +3,7 @@
 **Framework**: USDKit  
 **Kind**: method
 
-Returns true if this prim has the given type or a more derived type.
+Returns `true` if this prim has the given type or a more derived type.
 
 **Availability**:
 - iOS 27.0+ (Beta)

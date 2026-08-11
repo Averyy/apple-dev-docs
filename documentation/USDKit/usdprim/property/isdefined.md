@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: property
 
+A Boolean value that indicates whether this property has a defining specification on the stage.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)

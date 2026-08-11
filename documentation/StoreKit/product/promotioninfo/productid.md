@@ -8,6 +8,7 @@ The product identifier of the promoted in-app purchase.
 **Availability**:
 - iOS 16.4+
 - iPadOS 16.4+
+- Mac Catalyst 16.4+
 
 ## Declaration
 

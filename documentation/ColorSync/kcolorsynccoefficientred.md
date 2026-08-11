@@ -33,7 +33,7 @@ var kColorSyncCoefficientRed: Unmanaged<CFString>
 - [var kColorSyncCoefficientMinRGB: Unmanaged<CFString>](kcolorsynccoefficientminrgb.md)
   Weight for the MIN(R,G,B) term in the free-style component mixing sum.
 - [var kColorSyncComponentCoefficients: Unmanaged<CFString>](kcolorsynccomponentcoefficients.md)
-  Sub-dictionary of custom linear-combination coefficients for free-style component mixing (component mixing type == 3).
+  Sub-dictionary of custom linear-combination coefficients for free-style component mixing.
 
 
 ---

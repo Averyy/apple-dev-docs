@@ -3,7 +3,7 @@
 **Framework**: ColorSync  
 **Kind**: case
 
-signal = R·red + G·green + B·blue + MAX(R,G,B)·maxRGB + MIN(R,G,B)·minRGB + C·component
+signal = R·`red` + G·`green` + B·`blue` + MAX(R,G,B)·`maxRGB` + MIN(R,G,B)·`minRGB` + C·`component`
 
 **Availability**:
 - iOS 27.0+ (Beta)

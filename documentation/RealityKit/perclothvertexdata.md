@@ -23,8 +23,6 @@ struct PerClothVertexData<ElementType>
   The number of vertices this structure holds data for.
 - [func withElements<Result>((Span<ElementType>) -> Result) -> Result](perclothvertexdata/withelements(_:).md)
   Provides read-only access to the per-vertex data within a callback.
-- [var mutableElements: MutableSpan<ElementType>](perclothvertexdata/mutableelements.md)
-  A mutable view of the per-vertex data.
 - [func withMutableElements<Result>((inout MutableSpan<ElementType>) -> Result) -> Result](perclothvertexdata/withmutableelements(_:).md)
   Provides mutable access to the per-vertex data within a callback.
 ### Setting vertex values
@@ -38,9 +36,6 @@ struct PerClothVertexData<ElementType>
   Resets the per-vertex data of each vertex to a zero-force external force.
 - [func reset()](perclothvertexdata/reset-4x5xi.md)
   Resets the per-vertex data of each vertex to the default motion type.
-### Instance Properties
-- [var elements: Span<ElementType>](perclothvertexdata/elements.md)
-  A read-only view of the per-vertex data.
 ### Instance Methods
 - [func reset()](perclothvertexdata/reset.md)
   Resets the per-vertex data of each vertex to the default position constraint.

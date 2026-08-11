@@ -46,6 +46,8 @@ enum SwitchTracking
   The visual style used to display the control.
 - [NSSegmentedControl.Style](nssegmentedcontrol/style.md)
   The following constants specify the visual style used to display the segmented control. They are used by [`segmentStyle`](nssegmentedcontrol/segmentstyle.md).
+- [var role: NSSegmentedControl.Role](nssegmentedcontrol/role-swift.property.md)
+- [NSSegmentedControl.Role](nssegmentedcontrol/role-swift.enum.md)
 
 
 ---

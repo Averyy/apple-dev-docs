@@ -26,6 +26,12 @@ struct LayoutRegion
 - [Equatable](../Swift/Equatable.md)
 - [Hashable](../Swift/Hashable.md)
 
+## See Also
+
+- [func edgeInsets(for: NSView.LayoutRegion) -> NSEdgeInsets](nsview/edgeinsets(for:).md)
+- [func layoutGuide(for: NSView.LayoutRegion) -> NSLayoutGuide](nsview/layoutguide(for:).md)
+- [func rect(for: NSView.LayoutRegion) -> NSRect](nsview/rect(for:).md)
+
 
 ---
 

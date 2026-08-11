@@ -36,6 +36,7 @@ After calling this method, `NSView` creates an internal transform (or appends th
   The angle of rotation, measured in degrees, applied to the view’s bounds rectangle relative to its frame rectangle.
 - [class let boundsDidChangeNotification: NSNotification.Name](nsview/boundsdidchangenotification.md)
   A notification that posts when the view’s bounds rectangle changes to a new value independently of the frame rectangle.
+- [NSView.BoundsDidChangeMessage](nsview/boundsdidchangemessage.md)
 - [var postsBoundsChangedNotifications: Bool](nsview/postsboundschangednotifications.md)
   A Boolean value indicating whether the view posts notifications when its bounds rectangle changes.
 

@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: method
 
-Reads the index buffer synchronously on the CPU. The buffer is only valid for the lifetime of the callback.
+Reads the current contents of the index buffer synchronously on the CPU.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -19,6 +19,8 @@ final func readIndices<R, E>(_ body: (RawSpan) throws(E) -> R) throws(E) -> R wh
 
 #### Discussion
 
+You pass a closure that receives a read-only span representing the contents of the index buffer. This span is valid only for the duration of the closure.
+
 > **Note**: Any error thrown by `body`.
 
 ## Parameters
@@ -28,13 +30,13 @@ final func readIndices<R, E>(_ body: (RawSpan) throws(E) -> R) throws(E) -> R wh
 ## See Also
 
 - [func updateIndices<R, E>((inout MutableRawSpan) throws(E) -> R) throws(E) -> R](lowlevelmeshresource/updateindices(_:).md)
-  Updates the index buffer synchronously on the CPU. The buffer is only valid for the lifetime of the callback.
+  Updates the index buffer in place synchronously on the CPU.
 - [func replaceIndices<R, E>((inout MutableRawSpan) throws(E) -> R) throws(E) -> R](lowlevelmeshresource/replaceindices(_:).md)
-  Replaces the index buffer synchronously on the CPU. The buffer’s contents are unspecified; you must populate the buffer with valid data.
+  Replaces the entire contents of the index buffer synchronously on the CPU.
 - [func readIndices(commandBuffer: (any MTLCommandBuffer)?) -> any MTLBuffer](lowlevelmeshresource/readindices(commandbuffer:).md)
-  Retrieves the Metal index buffer for GPU reading.
+  Returns a Metal buffer containing the current contents of the index buffer for GPU read operations.
 - [func replaceIndices(commandBuffer: (any MTLCommandBuffer)?) -> any MTLBuffer](lowlevelmeshresource/replaceindices(commandbuffer:).md)
-  Retrieves a Metal index buffer for GPU replacement. The buffer’s contents are in an uninitialized state. The renderer waits for the command buffer to complete before using the buffer for rendering.
+  Returns a Metal buffer you populate on the GPU with the new contents of the index buffer.
 
 
 ---

@@ -19,7 +19,9 @@ final class LowLevelMeshInstance
 
 #### Overview
 
-Transform, bounds, and sort category can be updated after creation; the renderer picks up changes automatically before the next `render(using:_:)` call.
+Create a `LowLevelMeshInstance` using [`makeMeshInstance(meshPart:pipeline:geometryArguments:surfaceArguments:lightingArguments:transform:sortCategory:)`](lowlevelrendercontext/makemeshinstance(meshpart:pipeline:geometryarguments:surfacearguments:lightingarguments:transform:sortcategory:).md).
+
+Transform, bounds, sort category, and triangle fill mode can be updated after creation; the renderer picks up changes automatically before the next `render(using:_:)` call.
 
 To draw multiple copies of the mesh in a single draw call, assign a [`LowLevelInstanceTransformResource`](lowlevelinstancetransformresource.md) via [`setInstanceTransforms(_:)`](lowlevelmeshinstance/setinstancetransforms(_:).md).
 
@@ -53,6 +55,7 @@ To draw multiple copies of the mesh in a single draw call, assign a [`LowLevelIn
 - [var transform: simd_float4x4](lowlevelmeshinstance/transform.md)
   The local-to-world transform applied to this mesh instance.
 - [var triangleFillMode: MTLTriangleFillMode](lowlevelmeshinstance/trianglefillmode.md)
+  The fill mode used when rasterizing this mesh instance’s triangles.
 
 ## See Also
 
@@ -71,7 +74,7 @@ To draw multiple copies of the mesh in a single draw call, assign a [`LowLevelIn
 - [class LowLevelTextureResource](lowleveltextureresource.md)
   A container for texture data in a custom format.
 - [class LowLevelMaterialResource](lowlevelmaterialresource.md)
-  A compiled material composed of three independently-replaceable shader stages.
+  A compiled material composed of three independently-replaceable shader functions.
 - [class LowLevelDeviceResource](lowleveldeviceresource.md)
   Encapsulates a GPU device resource created by the application. On visionOS, resources must be allocated in shared memory that can be used by the renderer process. Once a device resource is in use by the renderer, changing its contents is unsafe and undefined.
 - [struct BoundingSphereBox](boundingspherebox.md)

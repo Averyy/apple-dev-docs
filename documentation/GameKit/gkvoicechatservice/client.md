@@ -8,6 +8,7 @@ An object that the voice chat service uses to communicate with remote participan
 **Availability**:
 - iOS 3.0+
 - iPadOS 3.0+
+- Mac Catalyst 3.0+
 - visionOS 1.0+
 - watchOS 3.0+
 

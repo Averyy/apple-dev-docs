@@ -58,7 +58,7 @@ Use this class to perform registration and authentication tasks, and to repair r
 - [func deviceRegistrationsNeedsRepair()](asauthorizationproviderextensionloginmanager/deviceregistrationsneedsrepair.md)
   Invokes the device registration to run again so the current user can repair it.
 - [func resetKeys()](asauthorizationproviderextensionloginmanager/resetkeys.md)
-  Creates new encryption, signing, and Secure Enclave keys for the user.
+  Creates new encryption, signing, and Secure Enclave keys.
 ### Instance Properties
 - [var extensionData: [AnyHashable : Any]](asauthorizationproviderextensionloginmanager/extensiondata.md)
 - [var userLoginConfiguration: ASAuthorizationProviderExtensionUserLoginConfiguration?](asauthorizationproviderextensionloginmanager/userloginconfiguration.md)

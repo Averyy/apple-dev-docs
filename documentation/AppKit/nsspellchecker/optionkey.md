@@ -41,7 +41,7 @@ The constants are optional keys that can be used in the options dictionary param
 - [static let selectedRange: NSSpellChecker.OptionKey](nsspellchecker/optionkey/selectedrange.md)
 ### Initializers
 - [init(rawValue: String)](nsspellchecker/optionkey/init(rawvalue:).md)
-### Type Properties
+### Getting additional option values
 - [static let generateInlinePredictionsKey: NSSpellChecker.OptionKey](nsspellchecker/optionkey/generateinlinepredictionskey.md)
 - [static let automaticCapitalizationEnabledKey: NSSpellChecker.OptionKey](nsspellchecker/optionkey/automaticcapitalizationenabledkey.md)
 - [static let waitForAllGrammarCheckingResultsKey: NSSpellChecker.OptionKey](nsspellchecker/optionkey/waitforallgrammarcheckingresultskey.md)

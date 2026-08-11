@@ -8,6 +8,7 @@ Informs the controller that a player has joined a hosted match.
 **Availability**:
 - iOS 4.1+
 - iPadOS 4.1+
+- Mac Catalyst 4.1+
 - visionOS 1.0+
 
 ## Declaration

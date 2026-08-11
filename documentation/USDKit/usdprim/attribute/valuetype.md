@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: struct
 
+A type that describes the kind of value an attribute can store, such as `float3` or `token[]`.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -91,6 +93,8 @@ struct ValueType
 ### Enumerations
 - [USDPrim.Attribute.ValueType.TupleDimensions](usdprim/attribute/valuetype/tupledimensions.md)
   The shape of a value type’s components.
+### Default Implementations
+- [CustomStringConvertible Implementations](usdprim/attribute/valuetype/customstringconvertible-implementations.md)
 
 ## Relationships
 
@@ -100,6 +104,8 @@ struct ValueType
 - [Equatable](../Swift/Equatable.md)
 - [Escapable](../Swift/Escapable.md)
 - [Hashable](../Swift/Hashable.md)
+- [Sendable](../Swift/Sendable.md)
+- [SendableMetatype](../Swift/SendableMetatype.md)
 
 
 ---

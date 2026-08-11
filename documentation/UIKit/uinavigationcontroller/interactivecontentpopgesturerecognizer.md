@@ -17,7 +17,7 @@ The gesture recognizer that handles interactively popping the top view controlle
 var interactiveContentPopGestureRecognizer: UIGestureRecognizer? { get }
 ```
 
-#### Overview
+#### Discussion
 
 The navigation controller installs this gesture recognizer on its view and uses it to interactively pop the topmost view controller off the navigation stack when a person initially pans horizontally in a leading to trailing direction in the view. It recognizes a gesture on the entire content area of the navigation controller in cases that are not covered by [`interactivePopGestureRecognizer`](uinavigationcontroller/interactivepopgesturerecognizer.md) and initiates an interactive pop.
 
@@ -34,7 +34,7 @@ Use this property to retrieve the gesture recognizer and tie it to the behavior 
 - [func popToViewController(UIViewController, animated: Bool) -> [UIViewController]?](uinavigationcontroller/poptoviewcontroller(_:animated:).md)
   Pops view controllers until the specified view controller is at the top of the navigation stack.
 - [var interactivePopGestureRecognizer: UIGestureRecognizer?](uinavigationcontroller/interactivepopgesturerecognizer.md)
-  The gesture recognizer responsible for popping the top view controller off the navigation stack when a person swipes from the leading screen edge.
+  The gesture recognizer that handles interactively popping the top view controller off the navigation stack when a person swipes from the leading screen edge.
 
 
 ---

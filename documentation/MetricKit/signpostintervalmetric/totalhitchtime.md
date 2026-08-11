@@ -29,7 +29,7 @@ let totalHitchTime: Measurement<UnitDuration>?
   The total amount of CPU time used during the logged intervals.
 - [let logicalWrites: Measurement<UnitInformationStorage>?](signpostintervalmetric/logicalwrites.md)
   The total amount of data written to disk or other long term storage during the logged intervals.
-- [let hitchTimeRatio: Measurement<Unit>?](signpostintervalmetric/hitchtimeratio.md)
+- [let hitchTimeRatio: Measurement<HitchTimeRatio>?](signpostintervalmetric/hitchtimeratio.md)
   The ratio of the total time spent hitching to the total time spent animating during the logged intervals.
 - [let totalAnimationTime: Measurement<UnitDuration>?](signpostintervalmetric/totalanimationtime.md)
   The total time spent animating during the logged intervals.

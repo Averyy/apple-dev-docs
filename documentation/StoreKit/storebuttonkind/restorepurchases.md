@@ -8,6 +8,7 @@ A type of button that people use to restore purchases.
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
+- Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
 - visionOS 1.0+
@@ -18,6 +19,10 @@ A type of button that people use to restore purchases.
 ```swift
 static var restorePurchases: StoreButtonKind { get }
 ```
+
+#### Discussion
+
+This button type is available for [`StoreView`](storeview.md) and [`SubscriptionStoreView`](subscriptionstoreview.md) only.
 
 ## See Also
 

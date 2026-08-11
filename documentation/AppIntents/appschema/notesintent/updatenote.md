@@ -28,9 +28,8 @@ The following example shows an intent that conforms to the `updateNote` schema:
 @AppIntent(schema: .notes.updateNote)
 struct UpdateNoteIntent {
     var target: <#NoteEntity#>
-    var name: String?
+    var name: AttributedString?
     var attachments: [IntentFile]?
-    var tags: [<#TagEntity#>]?
     var isPinned: Bool?
     var folder: <#FolderEntity#>?
 

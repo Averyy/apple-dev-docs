@@ -8,6 +8,7 @@ Initializes a Downlink Time-Difference-of-Arrival (DL-TDOA) configuration for a 
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

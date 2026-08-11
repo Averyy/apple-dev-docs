@@ -8,6 +8,7 @@ A mobile driver’s license request which retrieves elements from the holder and
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
+- Mac Catalyst 17.0+
 
 ## Declaration
 

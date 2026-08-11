@@ -25,8 +25,6 @@ case text(Transcript.TextSegment)
   A segment containing an attachment.
 - [case structure(Transcript.StructuredSegment)](transcript/segment/structure(_:).md)
   A segment containing structured content.
-- [case custom(any Transcript.CustomSegment)](transcript/segment/custom(_:).md)
-  A segment containing custom content.
 
 
 ---

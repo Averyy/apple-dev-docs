@@ -28,11 +28,6 @@ This span is only available during the subscription callback of this event. The 
 
 - `callback`: A closure that receives a span over the colliding particle indices.
 
-## See Also
-
-- [var particleIndices: Span<UInt32>](clothcolliderevents/newbodycollisions/collision/particleindices.md)
-  The indices of particles that collided with the collider.
-
 
 ---
 

@@ -332,6 +332,12 @@ A `CGContext` instance represents a Quartz 2D drawing destination. A graphics co
 - [func draw(CGImage, in: CGRect, by: CGToneMapping, options: CFDictionary?) -> Bool](cgcontext/draw(_:in:by:options:).md)
 - [func resetClip()](cgcontext/resetclip.md)
 - [func setEDRTargetHeadroom(Float) -> Bool](cgcontext/setedrtargetheadroom(_:).md)
+- [func addStructureTreeRootChild(CGPDFStructureElement) -> OSStatus](cgcontext/addstructuretreerootchild(_:).md)
+- [func beginMarkedContentSequence(CGPDFTagType) -> CGPDFMarkedContentItem?](cgcontext/beginmarkedcontentsequence(_:).md)
+- [func beginNonStructuralMarkedContentSequence(CGPDFTagType)](cgcontext/beginnonstructuralmarkedcontentsequence(_:).md)
+- [func beginObjectReference() -> CGPDFMarkedContentItem?](cgcontext/beginobjectreference.md)
+- [func endMarkedContentSequence()](cgcontext/endmarkedcontentsequence.md)
+- [func endObjectReference()](cgcontext/endobjectreference.md)
 - [func synchronizeAttributes()](cgcontext/synchronizeattributes.md)
 ### Structures
 - [CGContext.AuxiliaryInfo](cgcontext/auxiliaryinfo.md)

@@ -43,8 +43,6 @@ The system uses this protocol to define the search criteria it supports. Use onl
 
 - [var criteria: Self.Criteria](showinappsearchresultsintent/criteria-swift.property.md)
   The information to use when performing the search.
-- [struct StringSearchCriteria](stringsearchcriteria.md)
-  A type that tells your app to match its items against a provided string.
 - [associatedtype Criteria : SearchCriteria](showinappsearchresultsintent/criteria-swift.associatedtype.md)
 
 

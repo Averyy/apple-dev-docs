@@ -28,7 +28,7 @@ var status: PrivateCloudComputeLanguageModel.QuotaUsage.Status
 - [PrivateCloudComputeLanguageModel.QuotaUsage.Status](privatecloudcomputelanguagemodel/quotausage-swift.struct/status-swift.enum.md)
   The quota status of a language model.
 - [var resetDate: Date?](privatecloudcomputelanguagemodel/quotausage-swift.struct/resetdate.md)
-  The date at which the quota will refresh.
+  The date at which the quota refreshes.
 
 
 ---

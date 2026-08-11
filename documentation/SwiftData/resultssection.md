@@ -17,36 +17,46 @@ A section of fetched results grouped by a common section key path value.
 ## Declaration
 
 ```swift
-struct ResultsSection<Element, SectionName> where Element : PersistentModel, SectionName : Hashable
+struct ResultsSection<Element, SectionTitle> where Element : PersistentModel, SectionTitle : Hashable
 ```
 
 #### Overview
 
 Each section represents a group of elements that share the same value for the `sectionBy` key path used at creation.
 
-You access sections through [`sections`](resultsobserver/sections.md) or `Query.sections`. Each section conforms to `RandomAccessCollection` — iterate it directly to access its elements, and use [`name`](resultssection/name.md) (or [`id`](resultssection/id.md)) to access the section identifier.
+You access sections by iterating a [`SectionedResults`](sectionedresults.md) value returned by a sectioned `@Query`. Each section conforms to `RandomAccessCollection` — iterate it directly to access its elements, and use [`title`](resultssection/title.md) (or [`id`](resultssection/id.md)) to access the section grouping value.
+
+```swift
+@Query(sort: \.name, sectionBy: \.category)
+var items: SectionedResults<Item, String>
+
+ForEach(items) { section in
+    Section(section.title) {          // "Work", "Personal", …
+        ForEach(section) { item in … } // Item elements
+    }
+}
+```
 
 ## Topics
 
 ### Accessing section properties
-- [var id: SectionName](resultssection/id.md)
-  The unique identifier for the section, which is its [`name`](resultssection/name.md).
-- [let name: SectionName](resultssection/name.md)
+- [var id: SectionTitle](resultssection/id.md)
+  The unique identifier for the section, which is its [`title`](resultssection/title.md).
+### Instance Properties
+- [let title: SectionTitle](resultssection/title.md)
   The identifier of the section.
+### Default Implementations
+- [Equatable Implementations](resultssection/equatable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
 - [BidirectionalCollection](../Swift/BidirectionalCollection.md)
 - [Collection](../Swift/Collection.md)
+- [Equatable](../Swift/Equatable.md)
 - [Identifiable](../Swift/Identifiable.md)
 - [RandomAccessCollection](../Swift/RandomAccessCollection.md)
 - [Sequence](../Swift/Sequence.md)
-
-## See Also
-
-- [subscript(sectionName _: SectionName) -> ResultsSection<Element, SectionName>?](resultssectioncollection/subscript(sectionname:).md)
-  Returns the section with the given name, or `nil` if no such section exists.
 
 
 ---

@@ -24,6 +24,10 @@ init<Element>(unsafeElements span: Span<Element>)
 
 Creates a `RawSpan` over the memory represented by a `Span<Element>`
 
+## Parameters
+
+- `span`: An existing `Span<Element>`, from which this `RawSpan` will inherit its lifetime.
+
 
 ---
 

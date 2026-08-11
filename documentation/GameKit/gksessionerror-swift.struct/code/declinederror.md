@@ -8,6 +8,7 @@ The peer your application tried to connect to refused the connection.
 **Availability**:
 - iOS 3.0+
 - iPadOS 3.0+
+- Mac Catalyst 3.0+
 - tvOS 9.0+
 - visionOS 1.0+
 - watchOS 3.0+

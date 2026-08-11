@@ -21,6 +21,8 @@ protocol NotesIntent : AppSchema.Kind
 ## Topics
 
 ### Instance Properties
+- [var appendText: some AppSchemaIntent](appschema/notesintent/appendtext.md)
+  An intent schema that adds text to the end of an existing note.
 - [var createNote: some AppSchemaIntent](appschema/notesintent/createnote.md)
   An intent schema that creates a new note.
 - [var updateNote: some AppSchemaIntent](appschema/notesintent/updatenote.md)

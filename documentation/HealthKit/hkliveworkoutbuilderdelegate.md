@@ -30,6 +30,8 @@ Conform to this protocol to receive notifications about workout data collection,
 ## Topics
 
 ### Receiving data updates
+- [func workoutBuilder(HKLiveWorkoutBuilder, didCollectDataOf: Set<HKSampleType>)](hkliveworkoutbuilderdelegate/workoutbuilder(_:didcollectdataof:).md)
+  Tells the delegate that new data has been added to the builder.
 - [func workoutBuilderDidCollectEvent(HKLiveWorkoutBuilder)](hkliveworkoutbuilderdelegate/workoutbuilderdidcollectevent(_:).md)
   Tells the delegate that a new event has been added to the builder.
 ### Receiving activity updates
@@ -38,10 +40,8 @@ Conform to this protocol to receive notifications about workout data collection,
 - [func workoutBuilder(HKLiveWorkoutBuilder, didEnd: HKWorkoutActivity)](hkliveworkoutbuilderdelegate/workoutbuilder(_:didend:).md)
   Tells the delegate that the current workout activity has ended.
 ### Receiving zone updates
-- [func workoutBuilder(HKLiveWorkoutBuilder, didCollectDataOf: Set<HKSampleType>)](hkliveworkoutbuilderdelegate/workoutbuilder(_:didcollectdataof:).md)
-  Tells the delegate that new data has been added to the builder.
-### Instance Methods
 - [func workoutBuilder(HKLiveWorkoutBuilder, didUpdateWorkoutZone: HKLiveWorkoutZoneUpdate)](hkliveworkoutbuilderdelegate/workoutbuilder(_:didupdateworkoutzone:).md)
+  Tells the delegate that the person changed zones during the workout.
 
 ## Relationships
 

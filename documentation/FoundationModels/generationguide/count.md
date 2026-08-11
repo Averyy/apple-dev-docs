@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: method
 
-Enforces that the array has exactly a certain number elements.
+Enforces that the array has exactly a certain number of elements.
 
 **Availability**:
 - iOS 26.0+

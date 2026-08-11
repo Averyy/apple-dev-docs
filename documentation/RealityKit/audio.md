@@ -30,8 +30,11 @@ enum Audio
   Prepares multiple audio resources for synchronized playback without starting them.
 ### Defining acoustic properties
 - [struct Material](audio/material.md)
+  A type that describes the acoustic characteristics of a surface.
 - [struct Absorption](audio/absorption.md)
+  An object that holds a set of absorption data.
 - [struct Scattering](audio/scattering.md)
+  An object that holds a set of scattering data.
 ### Type Aliases
 - [typealias Decibel](audio/decibel.md)
   The unit for measuring intensity of sound on a logarithmic scale.

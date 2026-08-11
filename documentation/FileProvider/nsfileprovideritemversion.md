@@ -8,6 +8,7 @@ The version of the item’s content and its metadata.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
+- Mac Catalyst 16.0+
 - macOS 11.0+
 - visionOS 1.0+
 

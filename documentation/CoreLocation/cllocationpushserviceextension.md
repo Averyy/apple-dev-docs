@@ -8,6 +8,7 @@ The interface you adopt in the type that acts as the main entry point for a Loca
 **Availability**:
 - iOS 15.0+
 - iPadOS 15.0+
+- Mac Catalyst 15.0+
 
 ## Declaration
 

@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: property
 
-Inject the schema into the prompt to bias the model.
+A Boolean value that indicates whether to inject the schema into the prompt to bias the model.
 
 **Availability**:
 - iOS 27.0+ (Beta)

@@ -42,7 +42,7 @@ struct Response<Content> where Content : Generable
 ## See Also
 
 - [var isResponding: Bool](languagemodelsession/isresponding.md)
-  A Boolean value that indicates a response is being generated.
+  A Boolean value that indicates whether a response is being generated.
 - [func respond(options: GenerationOptions, prompt: () throws -> Prompt) async throws -> LanguageModelSession.Response<String>](languagemodelsession/respond(options:prompt:).md)
   Produces a response to a prompt.
 - [func respond<Content>(generating: Content.Type, includeSchemaInPrompt: Bool, options: GenerationOptions, prompt: () throws -> Prompt) async throws -> LanguageModelSession.Response<Content>](languagemodelsession/respond(generating:includeschemainprompt:options:prompt:).md)

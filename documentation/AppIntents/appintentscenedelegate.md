@@ -26,7 +26,7 @@ Use the scene delegate to respond to an app intent, as shown in the following ex
 func scene(_ scene: UIScene, willPerformAppIntent appIntent: any AppIntent) {
     switch appIntent {
       case let myIntent as MyIntent:
-         windowScene.activationConditions.prefersToActivateForTargetContentIdentifierPredicate = NSPredicate("self == %@", myIntent.targetContentIdentifier)
+         scene.activationConditions.prefersToActivateForTargetContentIdentifierPredicate = NSPredicate("self == %@", myIntent.targetContentIdentifier)
     }
 }
 ```

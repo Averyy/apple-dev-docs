@@ -23,7 +23,7 @@ static func height(in context: Self.Context) -> CGFloat?
 
 #### Return Value
 
-The height of the detent, or `nil` if the detent should be inactive based on the `contenxt` input.
+The height of the detent, or `nil` if the detent should be inactive based on the `context` input.
 
 ## Parameters
 

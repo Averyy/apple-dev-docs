@@ -26,7 +26,7 @@ struct Camera
 - [var projection: LowLevelRenderer.Camera.Projection](lowlevelrenderer/camera/projection-swift.property.md)
   The projection transform for this camera.
 - [LowLevelRenderer.Camera.Projection](lowlevelrenderer/camera/projection-swift.struct.md)
-  A projection transform that maps from camera space to clip space.
+  A projection transform that maps from view space to clip space.
 ### Specifying render targets
 - [var renderTargetArrayIndex: Int](lowlevelrenderer/camera/rendertargetarrayindex.md)
   The index into the render target texture array slice for this camera.

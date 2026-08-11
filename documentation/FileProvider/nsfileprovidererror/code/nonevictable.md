@@ -8,6 +8,7 @@ An error indicating that the File Provider extension can’t evict an item.
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
+- Mac Catalyst 16.0+
 - macOS 11.3+
 - visionOS 1.0+
 

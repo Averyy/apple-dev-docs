@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: method
 
-Updates the buffer synchronously on the CPU. The buffer is only valid for the lifetime of the callback.
+Updates the buffer resource in place synchronously on the CPU.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -18,6 +18,8 @@ final func update<R, E>(_ body: @_lifetime(0: copy 0) (inout MutableRawSpan) thr
 ```
 
 #### Discussion
+
+You pass a closure that receives a mutable span representing the contents of the buffer resource, which the closure may modify. This span is valid only for the duration of the closure.
 
 > **Note**: Any error thrown by `body`.
 

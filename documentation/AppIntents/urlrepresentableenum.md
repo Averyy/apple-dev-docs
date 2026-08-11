@@ -3,7 +3,7 @@
 **Framework**: App Intents  
 **Kind**: protocol
 
-An app enum with a URL representation.
+An interface you apply to an app enum type so the system can handle it like a universal link.
 
 **Availability**:
 - iOS 18.0+
@@ -22,16 +22,20 @@ protocol URLRepresentableEnum : AppEnum, CustomURLRepresentationParameterConvert
 
 #### Overview
 
-Add support for `URLRepresentableEnum` to your app enums to add a URL representation. This allows Apple Intelligence, Siri, and Shortcuts to treat the enum like a universal link to specific content, allowing actions to open the URL or to make it sharable.
+If your app already supports universal links for content, use this protocol to express your app enum types as URLs. When your app enum supports this protocol, the system can use the provided URL to refer to the item. Having a URL representation for your app entity also makes it easier to share the contents of that entity with Siri, Shortcuts, and other system features.
 
-Note that you need to use a universal link for your URL representation, you can’t use a custom URL scheme. For more information about universal links, see [`Allowing apps and websites to link to your content`](https://developer.apple.com/documentation/Xcode/allowing-apps-and-websites-to-link-to-your-content).
+> ❗ **Important**: This protocol requires your app to support universal links. You can’t use this protocol with a custom URL scheme or other approaches. For information about how to add support for universal links, see [`Allowing apps and websites to link to your content`](https://developer.apple.com/documentation/Xcode/allowing-apps-and-websites-to-link-to-your-content).
+
+Construct URLs using static text and the value of your app enum. For more information on how to create the URL representation, see [`EnumURLRepresentation`](enumurlrepresentation.md).
 
 ## Topics
 
 ### Type Aliases
 - [URLRepresentableEnum.URLRepresentation](urlrepresentableenum/urlrepresentation-swift.typealias.md)
+  The type that provides the URL for the app enum.
 ### Type Properties
 - [static var urlRepresentation: Self.URLRepresentation](urlrepresentableenum/urlrepresentation-swift.type.property.md)
+  The URL representation of the app enum.
 
 ## Relationships
 
@@ -54,8 +58,9 @@ Note that you need to use a universal link for your URL representation, you can�
 ## See Also
 
 - [struct EnumURLRepresentation](enumurlrepresentation.md)
-  The URL representation of an app enum.
+  The type that provides the URL for an app enum.
 - [protocol CustomURLRepresentationParameterConvertible](customurlrepresentationparameterconvertible.md)
+  An interface that allows a type to express its contents in a URL representation.
 
 
 ---

@@ -3,6 +3,8 @@
 **Framework**: RealityKit  
 **Kind**: method
 
+Creates a scattering data set with the coefficient applied uniformly for every frequency.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -16,6 +18,10 @@
 ```swift
 static func uniform(_ coefficient: Float) -> Audio.Scattering
 ```
+
+## Parameters
+
+- `coefficient`: The scattering coefficient to apply across all frequency bands.
 
 
 ---

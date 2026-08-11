@@ -22,6 +22,7 @@ final func streamResponse(to prompt: Prompt, options: GenerationOptions = Genera
 ## Mentions
 
 - [Composing dynamic sessions with instructions and profiles](composing-dynamic-sessions-with-instructions-and-profiles.md)
+- [Running a Core AI model in a Foundation Models session](running-a-core-ai-model-in-a-foundation-models-session.md)
 
 #### Return Value
 

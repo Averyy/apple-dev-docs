@@ -17,7 +17,7 @@ enum Role
 
 ## Topics
 
-### Enumeration Cases
+### Getting role values
 - [NSToolbarItemGroup.Role.automatic](nstoolbaritemgroup/role-swift.enum/automatic.md)
 - [NSToolbarItemGroup.Role.tabs](nstoolbaritemgroup/role-swift.enum/tabs.md)
 - [NSToolbarItemGroup.Role.valueSelection](nstoolbaritemgroup/role-swift.enum/valueselection.md)
@@ -33,6 +33,18 @@ enum Role
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [var controlRepresentation: NSToolbarItemGroup.ControlRepresentation](nstoolbaritemgroup/controlrepresentation-swift.property.md)
+  A value that represents how a toolbar displays a grouped toolbar item.
+- [NSToolbarItemGroup.ControlRepresentation](nstoolbaritemgroup/controlrepresentation-swift.enum.md)
+- [var selectionMode: NSToolbarItemGroup.SelectionMode](nstoolbaritemgroup/selectionmode-swift.property.md)
+  The selection mode of the grouped toolbar item.
+- [NSToolbarItemGroup.SelectionMode](nstoolbaritemgroup/selectionmode-swift.enum.md)
+  A value that indicates how a grouped toolbar item selects its subitems.
+- [var role: NSToolbarItemGroup.Role](nstoolbaritemgroup/role-swift.property.md)
+  The semantic role of the item. Defaults to `NSToolbarItemGroupRoleAutomatic`.
 
 
 ---

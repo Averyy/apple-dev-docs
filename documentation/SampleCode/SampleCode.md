@@ -315,6 +315,8 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Use the App Store Connect API to collect and parse diagnostic logs and metrics for your apps.
 - [Scheduling an alarm with AlarmKit](../AlarmKit/scheduling-an-alarm-with-alarmkit.md)
   Create prominent alerts at specified dates for your iOS app.
+- [Searching indexed content with natural language](../CoreSpotlight/searching-indexed-content-with-natural-language.md)
+  Give a language model access to your app’s Core Spotlight index to enable natural-language queries over searchable content.
 - [Sharing CloudKit Data with Other iCloud Users](../CloudKit/sharing-cloudkit-data-with-other-icloud-users.md)
   Create and share private CloudKit data with other users by implementing the sharing UI.
 - [Sharing Core Data objects between iCloud users](../CoreData/sharing-core-data-objects-between-icloud-users.md)
@@ -795,13 +797,15 @@ Explore samples that highlight new APIs featured at this year’s conference.
   Create a team-based guessing game for visionOS using Group Activities.
 - [Capturing screen content in macOS](../ScreenCaptureKit/capturing-screen-content-in-macos.md)
   Stream desktop content like displays, apps, and windows by adopting screen capture in your app.
+- [Capturing screen content on iOS](../ScreenCaptureKit/capturing-screen-content-on-ios.md)
+  Record and share screen captures on iOS by presenting the system content-sharing picker.
 - [Controlling a DockKit accessory using your camera app](../DockKit/controlling-a-dockkit-accessory-using-your-camera-app.md)
   Follow subjects in real time using an iPhone that you mount on a DockKit accessory.
 - [Creating a collaborative photo gallery with SharePlay](../GroupActivities/creating-a-collaborative-photo-gallery-with-shareplay.md)
   Build a shared photo gallery by using SharePlay to synchronize images among participants.
 - [Creating a Slideshow Project Extension for Photos](../PhotoKit/creating-a-slideshow-project-extension-for-photos.md)
   Augment the macOS Photos app with extensions that support project creation.
-- [Drawing content in a group session](../groupactivities/drawing_content_in_a_group_session.md)
+- [Drawing content in a group session](../GroupActivities/drawing-content-in-a-group-session.md)
   Invite your friends to draw on a shared canvas while on a FaceTime call.
 - [Encoding video for live streaming](../VideoToolbox/encoding-video-for-live-streaming.md)
   Configure a compression session to encode video for live streaming.

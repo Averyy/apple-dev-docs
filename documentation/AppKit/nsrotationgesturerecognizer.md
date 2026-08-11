@@ -22,7 +22,7 @@ Upon creation, the gesture recognizer sets the value of the [`delaysRotationEven
 
 ## Topics
 
-### Interpreting the Gesture
+### Interpreting the gesture
 - [var rotation: CGFloat](nsrotationgesturerecognizer/rotation.md)
   The rotation of the gesture in radians.
 - [var rotationInDegrees: CGFloat](nsrotationgesturerecognizer/rotationindegrees.md)

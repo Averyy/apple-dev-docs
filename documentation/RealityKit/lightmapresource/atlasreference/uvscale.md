@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: property
 
-A scale to apply to lightmap UV attribute before sampling from the slice of the atlas.
+A scale to apply to lightmap UV attribute before sampling from the slice of the atlas. Note that lightmap textures use the Metal convention: UV (0,0) corresponds to the top-left corner of the image, while UV (1,1) corresponds to the bottom-right.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -22,7 +22,7 @@ var uvScale: SIMD2<Float>
 ## See Also
 
 - [var uvOffset: SIMD2<Float>](lightmapresource/atlasreference/uvoffset.md)
-  An offset to apply to lightmap UV attribute before sampling from the slice of the atlas.
+  An offset to apply to lightmap UV attribute before sampling from the slice of the atlas. Note that lightmap textures use the Metal convention: UV (0,0) corresponds to the top-left corner of the image, while UV (1,1) corresponds to the bottom-right.
 
 
 ---

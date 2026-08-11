@@ -84,12 +84,11 @@ For watchOS, use an [`HKWorkoutSession`](hkworkoutsession.md) and an [`HKLiveWor
   A dictionary that contains all the statistics for the workout builder.
 ### Configuring zone data
 - [func setCustomZoneConfiguration(HKWorkoutZoneConfiguration?, for: HKQuantityType) async throws](hkworkoutbuilder/setcustomzoneconfiguration(_:for:).md)
-  Sets the zone configuration for the specified quantity type for this workout. In order to provide a custom workout zone configuration, this must be called before beginning collection on the builder. If a custom configuration is not provided, the user’s preferred workout zone configuration will be used for zone calculations.
+  Overrides the preferred zone configuration with a custom zone for the current workout.
 - [func zoneConfiguration(for: HKQuantityType) async throws -> HKWorkoutZoneConfiguration?](hkworkoutbuilder/zoneconfiguration(for:).md)
   Returns the zone configuration for the specified quantity type.
-### Instance Methods
 - [func zoneGroup(for: HKQuantityType) -> HKWorkoutZoneGroup?](hkworkoutbuilder/zonegroup(for:).md)
-  Returns the current zone group for the specified quantity type, including real-time duration calculations.
+  Returns the current zone group for the specified quantity type.
 
 ## Relationships
 

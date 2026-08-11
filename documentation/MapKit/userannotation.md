@@ -36,9 +36,23 @@ Displays the person’s current location using the system styled user location i
   Creates an annotation that displays a person’s current location using the system styled user location indicator with the specified anchor point using a custom view.
 - [init(anchor: UnitPoint, content: () -> Content)](userannotation/init(anchor:content:)-3e78j.md)
   Create an annotation that displays the person’s current location of the user using a custom view.
+### Setting the visibility of the title and subtitle
+- [func annotationTitles(Visibility) -> some MapContent](mapcontent/annotationtitles(_:).md)
+  Sets the visibility of titles for markers and annotations.
+- [func annotationSubtitles(Visibility) -> some MapContent](mapcontent/annotationsubtitles(_:).md)
+  Sets the visibility of subtitles for markers and annotations.
 ### Information about a person’s location
 - [struct UserLocation](userlocation.md)
   A structure that contains Information about the person’s current location.
+### Setting the overlay level
+- [func mapOverlayLevel(level: MKOverlayLevel) -> some MapContent](mapcontent/mapoverlaylevel(level:).md)
+  Specifies the position of overlays relative to other map content.
+### Setting the tag
+- [func tag<V>(V) -> some MapContent](mapcontent/tag(_:).md)
+  Sets the unique tag value of this piece of map content.
+### Type aliases
+- [associatedtype Body : MapContent](mapcontent/body-swift.associatedtype.md)
+  The content and behavior of the view.
 
 ## Relationships
 

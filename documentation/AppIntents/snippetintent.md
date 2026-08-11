@@ -39,12 +39,12 @@ struct ShowTodoListIntent: SnippetIntent {
     // ...
 
     @Parameter var todos: [Todo]
-    
+
     // ...
 
     func perform() async throws -> some IntentResult & ShowsSnippetView {
         // Fetch persisted todos to have the right
-        // up-to-date state performing this method. Make sure to
+        // up-to-date state when performing this method. Make sure to
         // consider that the system calls perform() several times.
         let currentTodos = await TodoStore().find(todos)
         let snippet = TodoListView(todos: currentTodos)
@@ -55,15 +55,22 @@ struct ShowTodoListIntent: SnippetIntent {
 
 When someone interacts with a snippet’s button or a toggle, the system first performs its associated app intent. When the button or toggle’s intent completes, the system calls the snippet intent’s `perform()` method again. In your snippet intent’s `perform()` implementation, make sure to handle multiple calls of `perform()`. For example, the example above would need to fetch the list of tasks to make sure it displays the most recent data. If a user completes a task from a snippet, the snippet needs to reflect this change and show the task as completed or remove it from the list of tasks.
 
-> ❗ **Important**: Only app intents that conform to this protocol can present views with interactive elements, like buttons and toggles, that work. Additionally, make sure to conform your intent to this protocol so that the system knows to call again your `perform` function to render the new state of the snippet after it performed the action of a button or toggle.
+> ❗ **Important**: Only app intents that conform to this protocol can present views with interactive elements, like buttons and toggles, that work. Additionally, make sure to conform your intent to this protocol so that the system knows to call your `perform` function again to render the new state of the snippet after it performed the action of a button or toggle.
+
+If the snippet is visible and your app detects that its content has changed, ask the system to reload the currently visible snippet by calling [`reload()`](snippetintent/reload().md).
+
+```swift
+func handleTodoUpdates(todos: [Todo]) {
+    //...
+
+    ShowTodoListIntent.reload()
+}
+```
 
 If your intent does more than just returning a snippet; for example, if you extend an app intent that returns a value to also return a snippet; the intent is automatically discoverable in the Shortcuts app and Spotlight. If an app intent conforms to `SnippetIntent` and only returns a snippet — their return type only conforms to [`IntentResult`](intentresult.md) and [`ShowsSnippetView`](showssnippetview.md) —, it’s nondiscoverable by the Shortcuts app and in Spotlight. To make such an intent discoverable, explicitly set [`isDiscoverable`](appintent/isdiscoverable.md) to `true`.
 
 ## Topics
 
-### Default implementation
-- [struct EmptySnippetIntent](emptysnippetintent.md)
-  A snippet intent that renders an empty view.
 ### Type Methods
 - [static func reload()](snippetintent/reload.md)
   Refreshes the intent’s snippet presentation.

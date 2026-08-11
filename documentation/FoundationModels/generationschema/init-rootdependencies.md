@@ -21,7 +21,7 @@ init(root: DynamicGenerationSchema, dependencies: [DynamicGenerationSchema]) thr
 
 #### Discussion
 
-> **Note**: Throws there are schemas with naming conflicts or references to undefined types.
+> **Note**: If there are schemas with naming conflicts or references to undefined types.
 
 ## Parameters
 
@@ -37,7 +37,7 @@ init(root: DynamicGenerationSchema, dependencies: [DynamicGenerationSchema]) thr
 - [init(type: any Generable.Type, description: String?, representNilExplicitlyInGeneratedContent: Bool, properties: [GenerationSchema.Property])](generationschema/init(type:description:representnilexplicitlyingeneratedcontent:properties:).md)
   Creates a schema by providing an array of properties.
 - [GenerationSchema.Property](generationschema/property.md)
-  Fields are named members of object types. Fields are strongly typed and have optional descriptions and guides.
+  A named, strongly typed member of an object type with an optional description and guides.
 
 
 ---

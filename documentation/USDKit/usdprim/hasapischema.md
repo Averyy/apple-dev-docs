@@ -3,7 +3,7 @@
 **Framework**: USDKit  
 **Kind**: method
 
-Returns true if this prim has a particular API schema applied.
+Returns `true` if this prim has a particular API schema applied.
 
 **Availability**:
 - iOS 27.0+ (Beta)

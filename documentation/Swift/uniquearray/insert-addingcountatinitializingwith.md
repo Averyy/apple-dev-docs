@@ -43,7 +43,9 @@ buffer.insert(capacity: 3, at: 1) { target in
 
 ## Parameters
 
+- `newItemCount`: The number of items to insert into the array.
 - `index`: The position at which to insert the new items. `index` must be a valid index in the array.
+- `initializer`: A callback that gets called at most once to directly populate newly reserved storage within the array. The function is called with an empty output span of capacity matching the supplied count, and it must fully populate it before returning.
 
 
 ---

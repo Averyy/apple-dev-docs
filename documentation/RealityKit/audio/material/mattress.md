@@ -3,6 +3,8 @@
 **Framework**: RealityKit  
 **Kind**: property
 
+A material that simulates the acoustic properties of a mattress.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -20,9 +22,13 @@ static let mattress: Audio.Material
 ## See Also
 
 - [static let carpet: Audio.Material](audio/material/carpet.md)
+  A material that simulates the acoustic properties of carpet.
 - [static let curtain: Audio.Material](audio/material/curtain.md)
+  A material that simulates the acoustic properties of a curtain.
 - [static let seatingUpholstered: Audio.Material](audio/material/seatingupholstered.md)
+  A material that simulates the acoustic properties of upholstered seating.
 - [static let seatingHard: Audio.Material](audio/material/seatinghard.md)
+  A material that simulates the acoustic properties of hard seating.
 
 
 ---

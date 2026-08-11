@@ -197,6 +197,8 @@ The [`NSAttributedString.Key`](nsattributedstring/key.md) type defines the attri
   Creates an attributed string key.
 - [init(rawValue: String)](nsattributedstring/key/init(rawvalue:).md)
   Creates an attributed string key with the specified raw value.
+### Type Properties
+- [static let AXSpeechAttributeSSML: NSAttributedString.Key](nsattributedstring/key/axspeechattributessml.md)
 
 ## Relationships
 

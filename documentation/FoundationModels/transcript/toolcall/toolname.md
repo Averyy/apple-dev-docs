@@ -23,7 +23,7 @@ var toolName: String
 
 - [var arguments: GeneratedContent](transcript/toolcall/arguments.md)
   Arguments to pass to the invoked tool.
-- [var metadata: [String : any Codable & Sendable & Equatable]](transcript/toolcall/metadata.md)
+- [var metadata: [String : GeneratedContent]](transcript/toolcall/metadata.md)
   Metadata produced by the model while generating this tool call.
 
 

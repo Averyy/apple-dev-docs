@@ -3,7 +3,7 @@
 **Framework**: App Intents  
 **Kind**: property
 
-App entity schema conformance for types you use for notes functionality.
+The collection of entity schemas in the notes domain.
 
 **Availability**:
 - iOS 27.0+ (Beta)

@@ -48,7 +48,7 @@ let inactiveGroups = prim.children(where: [.isGroup, !.isActive])
 - [static var isComponent: USDPrim.Predicate](usdprim/predicate/iscomponent.md)
   Returns true if this prim’s kind metadata identifies it as a model component.
 - [static var isDefined: USDPrim.Predicate](usdprim/predicate/isdefined.md)
-  True if the prim (and all its ancestors) are not a class and not an override.
+  True if the prim and all its ancestors have a `def` specifier.
 - [static var isGroup: USDPrim.Predicate](usdprim/predicate/isgroup.md)
   Returns true if this prim’s kind metadata identifies it as a model group.
 - [static var isInstance: USDPrim.Predicate](usdprim/predicate/isinstance.md)

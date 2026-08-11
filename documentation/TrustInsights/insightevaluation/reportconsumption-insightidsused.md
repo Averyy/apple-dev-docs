@@ -8,7 +8,6 @@ Reports the consumption status, and optionally provides one or more associated i
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 
 ## Declaration
 

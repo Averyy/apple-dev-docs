@@ -8,6 +8,7 @@ A Boolean value that determines whether or not the session wants to connect to n
 **Availability**:
 - iOS 3.0+
 - iPadOS 3.0+
+- Mac Catalyst 3.0+
 - macOS 10.8+
 - visionOS 1.0+
 - watchOS 2.0+

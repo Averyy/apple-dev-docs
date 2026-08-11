@@ -51,7 +51,6 @@ If an item named `name` already exists in the directory indicated by `directory`
 - [class FSRenameItemResult](fsrenameitemresult.md)
   The result of a rename-item call.
 - [func reclaimItem(FSItem, replyHandler: ((any Error)?) -> Void)](fsvolume/handler/reclaimitem(_:replyhandler:).md)
-  Reclaims an item, releasing any resources allocated for the item.
 
 
 ---

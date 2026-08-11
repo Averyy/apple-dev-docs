@@ -23,7 +23,7 @@ var assetIDs: [String]
 
 - [var segments: [Transcript.Segment]](transcript/response/segments.md)
   Ordered prompt segments.
-- [var metadata: [String : any Codable & Sendable & Equatable]](transcript/response/metadata.md)
+- [var metadata: [String : GeneratedContent]](transcript/response/metadata.md)
   Metadata associated with generating the response.
 
 

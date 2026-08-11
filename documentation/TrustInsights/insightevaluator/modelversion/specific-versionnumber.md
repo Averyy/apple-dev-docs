@@ -8,7 +8,6 @@ A value that defines a specific model version intended to be run in parallel wit
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 
 ## Declaration
 

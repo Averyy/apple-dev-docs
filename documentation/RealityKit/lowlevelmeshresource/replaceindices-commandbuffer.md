@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: method
 
-Retrieves a Metal index buffer for GPU replacement. The buffer’s contents are in an uninitialized state. The renderer waits for the command buffer to complete before using the buffer for rendering.
+Returns a Metal buffer you populate on the GPU with the new contents of the index buffer.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -21,20 +21,24 @@ final func replaceIndices(commandBuffer: (any MTLCommandBuffer)?) -> any MTLBuff
 
 A `MTLBuffer` ready for GPU write operations.
 
+#### Discussion
+
+Upon return the buffer’s contents are undefined; the caller is responsible for populating it with valid data. The renderer waits for the provided command buffer to complete before using the buffer for rendering.
+
 ## Parameters
 
-- `commandBuffer`: The command buffer writing to this buffer, or `nil` to skip synchronization.
+- `commandBuffer`: The command buffer that writes to this buffer, or `nil` to skip synchronization.
 
 ## See Also
 
 - [func readIndices<R, E>((RawSpan) throws(E) -> R) throws(E) -> R](lowlevelmeshresource/readindices(_:).md)
-  Reads the index buffer synchronously on the CPU. The buffer is only valid for the lifetime of the callback.
+  Reads the current contents of the index buffer synchronously on the CPU.
 - [func updateIndices<R, E>((inout MutableRawSpan) throws(E) -> R) throws(E) -> R](lowlevelmeshresource/updateindices(_:).md)
-  Updates the index buffer synchronously on the CPU. The buffer is only valid for the lifetime of the callback.
+  Updates the index buffer in place synchronously on the CPU.
 - [func replaceIndices<R, E>((inout MutableRawSpan) throws(E) -> R) throws(E) -> R](lowlevelmeshresource/replaceindices(_:).md)
-  Replaces the index buffer synchronously on the CPU. The buffer’s contents are unspecified; you must populate the buffer with valid data.
+  Replaces the entire contents of the index buffer synchronously on the CPU.
 - [func readIndices(commandBuffer: (any MTLCommandBuffer)?) -> any MTLBuffer](lowlevelmeshresource/readindices(commandbuffer:).md)
-  Retrieves the Metal index buffer for GPU reading.
+  Returns a Metal buffer containing the current contents of the index buffer for GPU read operations.
 
 
 ---

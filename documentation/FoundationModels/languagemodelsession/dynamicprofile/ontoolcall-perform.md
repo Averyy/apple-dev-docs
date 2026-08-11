@@ -26,7 +26,7 @@ func onToolCall(perform action: nonisolated(nonsending) sending @escaping () asy
 
 #### Discussion
 
-When the `onToolCall` closure throws an error, the caller’s `respond` or `response` will propagate that error.
+When the `onToolCall` closure throws an error, the caller’s `respond` or `response` propagates that error.
 
 Use this to track or log tool usage within a dynamic profile:
 
@@ -52,6 +52,8 @@ struct MyDynamicProfile: LanguageModelSession.DynamicProfile {
   Runs an action when this dynamic profile becomes inactive.
 - [func onPrompt(perform:)](languagemodelsession/dynamicprofile/onprompt(perform:).md)
   Runs an action before the model is invoked for this dynamic profile.
+- [func onReasoning(perform:)](languagemodelsession/dynamicprofile/onreasoning(perform:).md)
+  Runs an action whenever this dynamic profile produces reasoning.
 - [func onResponse(perform:)](languagemodelsession/dynamicprofile/onresponse(perform:).md)
   Runs an action after this dynamic profile produces a response.
 - [func onToolOutput(perform:)](languagemodelsession/dynamicprofile/ontooloutput(perform:).md)

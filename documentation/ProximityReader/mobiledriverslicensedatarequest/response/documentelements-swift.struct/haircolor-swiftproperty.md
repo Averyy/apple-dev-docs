@@ -8,6 +8,7 @@ The mobile identity document holder’s hair color on record with the issuer.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

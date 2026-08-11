@@ -31,7 +31,7 @@ This method must be implemented with great care, as wrongly returning `true` wou
 
 This check is not used when performing executor switching.
 
-This check is used when performing `Actor/assertIsolated()`, `Actor/preconditionIsolated()`, `Actor/assumeIsolated()` and similar APIs which assert about the same “exclusive serial execution context”.
+This check is used when performing [`assertIsolated(_:file:line:)`](actor/assertisolated(_:file:line:).md), [`preconditionIsolated(_:file:line:)`](actor/preconditionisolated(_:file:line:).md), [`assumeIsolated(_:file:line:)`](actor/assumeisolated(_:file:line:).md) and similar APIs which assert about the same “exclusive serial execution context”.
 
 ## Parameters
 

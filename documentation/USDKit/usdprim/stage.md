@@ -32,6 +32,7 @@ A prim’s state and validity is connected to its stage. A prim becomes invalid 
 - [var isValid: Bool](usdprim/isvalid.md)
   A Boolean value indicating whether this prim is valid.
 - [var specifier: USDPrim.Specifier](usdprim/specifier-swift.property.md)
+  The specifier that describes how this prim is defined, such as `def`, `over`, or `class`.
 - [var parent: USDPrim?](usdprim/parent.md)
   The immediate parent prim of this prim.
 - [var description: String](usdprim/description.md)

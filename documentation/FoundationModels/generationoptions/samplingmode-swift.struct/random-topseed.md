@@ -23,7 +23,7 @@ static func random(top k: Int, seed: UInt64? = nil) -> GenerationOptions.Samplin
 
 Also known as top-k.
 
-During the token-selection process, the vocabulary is sorted by probability a token is selected from among the top K candidates. Smaller values of K will ensure only the most probable tokens are candidates for selection, resulting in more deterministic and confident answers. Larger values of K will allow less probably tokens to be selected, raising non-determinism and creativity.
+During the token-selection process, the vocabulary is sorted by probability a token is selected from among the top K candidates. Smaller values of K ensure only the most probable tokens are candidates for selection, resulting in more deterministic and confident answers. Larger values of K allow less probably tokens to be selected, raising non-determinism and creativity.
 
 > **Note**: Setting a random seed is not guaranteed to result in fully deterministic output. It is best effort.
 

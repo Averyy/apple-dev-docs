@@ -19,6 +19,10 @@ An tool output provided back to the model.
 case toolOutput(Transcript.ToolOutput)
 ```
 
+## Mentions
+
+- [Inspecting session transcripts and reporting model feedback](inspecting-session-transcripts-and-reporting-model-feedback.md)
+
 ## See Also
 
 - [case instructions(Transcript.Instructions)](transcript/entry/instructions(_:).md)

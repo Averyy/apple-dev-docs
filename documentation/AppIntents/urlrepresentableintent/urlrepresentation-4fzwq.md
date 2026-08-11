@@ -4,6 +4,8 @@
 **Kind**: property  
 **Required**: Yes
 
+The URL representation of the app intent.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -17,6 +19,21 @@
 
 ```swift
 static var urlRepresentation: Self.URLRepresentation { get }
+```
+
+#### Discussion
+
+Use this property to store the URL for your app intent. When setting the value of this property, you can use a combination of static text and placeholder values to generate the final URL. The following code shows an app intent that opens a specific website page:
+
+```swift
+struct OpenAppleDotCom: URLRepresentableIntent {
+   static var urlRepresentation: URLRepresentation = "https://www.apple.com/\(\.$page)"
+
+   @Parameter(title: "Page")
+   var page: String
+
+   static var title: LocalizedStringResource = "Open Apple website"
+}
 ```
 
 

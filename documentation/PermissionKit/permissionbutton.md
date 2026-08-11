@@ -31,6 +31,9 @@ A button that presents a system UI to a parent or guardian to ask for an excepti
   The question to ask a parent or guardian about making an exception to their child’s communication limits.
 - [var body: some View](permissionbutton/body.md)
   The body of the view.
+### Initializers
+- [init(question: PermissionQuestion<Topic>, permissionFlow: PermissionFlow, onPermissionResult: (Result<PermissionResult, any Error>) -> Void, label: () -> Label)](permissionbutton/init(question:permissionflow:onpermissionresult:label:).md)
+  Creates a button that requests permission from parents or guardians, presenting a specific permission flow and reporting the outcome to a completion handler.
 
 ## Relationships
 

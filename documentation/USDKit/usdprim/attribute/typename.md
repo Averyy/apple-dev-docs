@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: property
 
+The type of the values this attribute stores.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -14,7 +16,7 @@
 ## Declaration
 
 ```swift
-var typeName: USDPrim.Attribute.ValueType { get set }
+var typeName: USDPrim.Attribute.ValueType { get }
 ```
 
 

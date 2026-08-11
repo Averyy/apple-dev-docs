@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: property
 
+The connection target paths authored on this attribute.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)

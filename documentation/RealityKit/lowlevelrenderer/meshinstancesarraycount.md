@@ -24,7 +24,7 @@ Increase this value before calling `setMeshInstances(_:at:)` to assign arrays to
 ## See Also
 
 - [func meshInstances(at: Int) -> LowLevelMeshInstanceArray?](lowlevelrenderer/meshinstances(at:).md)
-  Returns the mesh instance array at the given slot index, or the empty value if the slot is unoccupied.
+  Returns the mesh instance array at the given slot index, or `nil` if the slot is unoccupied.
 - [func setMeshInstances(LowLevelMeshInstanceArray?, at: Int) throws(LowLevelRendererError)](lowlevelrenderer/setmeshinstances(_:at:).md)
   Assigns a mesh instance array to the given slot index.
 

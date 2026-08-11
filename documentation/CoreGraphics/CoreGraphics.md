@@ -82,6 +82,8 @@ In macOS, Core Graphics also includes services for working with display hardware
 - [Core Graphics Functions](core-graphics-functions.md)
 - [Core Graphics Data Types](core-graphics-data-types.md)
 ### Classes
+- [class CGPDFMarkedContentItem](cgpdfmarkedcontentitem.md)
+- [class CGPDFStructureElement](cgpdfstructureelement.md)
 - [class CGRenderingBufferProvider](cgrenderingbufferprovider.md)
 ### Structures
 - [struct CGBitmapParameters](cgbitmapparameters-4v8wo.md)

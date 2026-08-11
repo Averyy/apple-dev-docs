@@ -18,6 +18,11 @@ var maximumNumberOfTouches: Int { get set }
 
 Set this property to 0 to require exactly `minimumNumberOfTouches` touches to recognize the gesture. Defaults to `NSIntegerMax`.
 
+## See Also
+
+- [var minimumNumberOfTouches: Int](nspangesturerecognizer/minimumnumberoftouches.md)
+  The minimum number of touches needed to recognize this gesture
+
 
 ---
 

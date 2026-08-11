@@ -21,7 +21,7 @@ final var availability: SystemLanguageModel.Availability { get }
 ## See Also
 
 - [var isAvailable: Bool](systemlanguagemodel/isavailable.md)
-  A convenience getter to check if the system is entirely ready.
+  A Boolean value that indicates whether the system is entirely ready.
 - [SystemLanguageModel.Availability](systemlanguagemodel/availability-swift.enum.md)
   The availability status for a specific system language model.
 

@@ -24,7 +24,7 @@ func onReasoning(perform action: nonisolated(nonsending) sending @escaping () as
 
 Reasoning is only produced by models that declare the `.reasoning` capability.
 
-When the `onReasoning` closure throws an error, the caller’s `respond` or `response` will propagate that error.
+When the `onReasoning` closure throws an error, the caller’s `respond` or `response` propagates that error.
 
 Use this to observe or log the model’s reasoning as it works toward a response:
 
@@ -40,6 +40,21 @@ struct MyDynamicProfile: LanguageModelSession.DynamicProfile {
   }
 }
 ```
+
+## See Also
+
+- [func onActivate(perform: sending () async -> Void) -> some LanguageModelSession.DynamicProfile](languagemodelsession/dynamicprofile/onactivate(perform:).md)
+  Runs an action when this dynamic profile becomes active.
+- [func onDeactivate(perform: sending () async -> Void) -> some LanguageModelSession.DynamicProfile](languagemodelsession/dynamicprofile/ondeactivate(perform:).md)
+  Runs an action when this dynamic profile becomes inactive.
+- [func onPrompt(perform:)](languagemodelsession/dynamicprofile/onprompt(perform:).md)
+  Runs an action before the model is invoked for this dynamic profile.
+- [func onResponse(perform:)](languagemodelsession/dynamicprofile/onresponse(perform:).md)
+  Runs an action after this dynamic profile produces a response.
+- [func onToolCall(perform:)](languagemodelsession/dynamicprofile/ontoolcall(perform:).md)
+  Runs an action whenever a tool is called within this dynamic profile.
+- [func onToolOutput(perform:)](languagemodelsession/dynamicprofile/ontooloutput(perform:).md)
+  Runs an action whenever a tool call output is received within this dynamic profile.
 
 
 ---

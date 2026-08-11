@@ -21,7 +21,7 @@ var reasoningTokenCount: Int
 
 #### Discussion
 
-This value will always be less than or equal to [`totalTokenCount`](languagemodelsession/usage-swift.struct/output-swift.struct/totaltokencount.md). A non-zero value requires the model to declare the [`reasoning`](languagemodelcapabilities/capability/reasoning.md) capability.
+This value is always less than or equal to [`totalTokenCount`](languagemodelsession/usage-swift.struct/output-swift.struct/totaltokencount.md). A non-zero value requires the model to declare the [`reasoning`](languagemodelcapabilities/capability/reasoning.md) capability.
 
 ## See Also
 

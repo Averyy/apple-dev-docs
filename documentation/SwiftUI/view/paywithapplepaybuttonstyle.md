@@ -8,6 +8,7 @@ Sets the style to be used by the button. (see `PayWithApplePayButtonStyle`).
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
+- Mac Catalyst 16.0+
 - macOS 13.0+
 - watchOS 9.0+
 

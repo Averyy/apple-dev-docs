@@ -18,6 +18,11 @@ var minimumNumberOfTouches: Int { get set }
 
 Defaults to 1.
 
+## See Also
+
+- [var maximumNumberOfTouches: Int](nspangesturerecognizer/maximumnumberoftouches.md)
+  The maximum number of touches allowed to recognize this gesture
+
 
 ---
 

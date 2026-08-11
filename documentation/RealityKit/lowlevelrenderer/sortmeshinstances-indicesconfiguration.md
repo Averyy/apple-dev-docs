@@ -34,9 +34,9 @@ Call this before `render(using:_:)` to produce a draw order for the callback. Op
 - [static func cullMeshInstances(LowLevelMeshInstanceArray, indices: Span<Int>, configuration: LowLevelRenderer.CullConfiguration) -> [Int]](lowlevelrenderer/cullmeshinstances(_:indices:configuration:).md)
   Culls mesh instances against a frustum and returns the surviving indices.
 - [LowLevelRenderer.CullConfiguration](lowlevelrenderer/cullconfiguration.md)
-  The parameters for a frustum culling operation.
+  The configuration for a frustum culling operation.
 - [LowLevelRenderer.SortConfiguration](lowlevelrenderer/sortconfiguration.md)
-  The parameters for a mesh instance sort pass.
+  The configuration for a mesh instance sort pass.
 
 
 ---

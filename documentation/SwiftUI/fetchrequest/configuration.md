@@ -29,7 +29,7 @@ You access or bind to a request’s configuration components through properties 
 
 ##### Configure Using a Binding
 
-Get a [`Binding`](binding.md) to a fetch request’s configuration structure by accessing the request’s [`projectedValue`](fetchrequest/projectedvalue.md), which you do by using the dollar sign (`$`) prefix on the associated results property. For example, you can create a request for `Quake` entities — a managed object type that the [`Loading and Displaying a Large Data Feed`](loading_and_displaying_a_large_data_feed.md) sample code project defines — that initially sorts the results by time:
+Get a [`Binding`](binding.md) to a fetch request’s configuration structure by accessing the request’s [`projectedValue`](fetchrequest/projectedvalue.md), which you do by using the dollar sign (`$`) prefix on the associated results property. For example, you can create a request for `Quake` entities — a managed object type that the [`Loading and displaying a large data feed`](loading-and-displaying-a-large-data-feed.md) sample code project defines — that initially sorts the results by time:
 
 ```swift
 @FetchRequest(sortDescriptors: [SortDescriptor(\.time, order: .reverse)])

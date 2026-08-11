@@ -8,6 +8,7 @@ A key-value observable property describing the output dimensions of the video bu
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

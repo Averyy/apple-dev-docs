@@ -3,7 +3,7 @@
 **Framework**: ColorSync  
 **Kind**: case
 
-Computed by Piecewise Cubic Hermite Interpolating Polynomial from the X/Y coordinates.
+The framework computes slopes by Piecewise Cubic Hermite Interpolating Polynomial from the X/Y coordinates.
 
 **Availability**:
 - iOS 27.0+ (Beta)

@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: method
 
-Check if a specific ability is supported.
+Returns a Boolean value that indicates whether the specified capability is supported.
 
 **Availability**:
 - iOS 27.0+ (Beta)

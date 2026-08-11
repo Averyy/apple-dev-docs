@@ -8,6 +8,7 @@ The visibility states for product promotion information.
 **Availability**:
 - iOS 16.4+
 - iPadOS 16.4+
+- Mac Catalyst 16.4+
 
 ## Declaration
 

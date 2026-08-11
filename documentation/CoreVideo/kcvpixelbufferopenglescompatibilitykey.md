@@ -8,6 +8,7 @@ A key to a Boolean value that indicates whether the pixel buffer is compatible w
 **Availability**:
 - iOS 6.0+
 - iPadOS 6.0+
+- Mac Catalyst 6.0+
 - tvOS 9.0+
 
 ## Declaration

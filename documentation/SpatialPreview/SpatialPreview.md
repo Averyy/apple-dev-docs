@@ -18,8 +18,8 @@ Use Spatial Preview to work with spatial content from a macOS app to a connected
 ### Essentials
 - [Working with content from your Mac app using Spatial Preview](working-with-content-from-your-mac-app-using-spatial-preview.md)
   Send and update documents, and work with 3D content live from your macOS app to a visionOS device through the Spatial Preview framework.
-- [Bridging an application’s custom USD runtime to Spatial Preview](bridging-an-external-usd-runtime-to-spatial-preview.md)
-  Sync edits between an application with its own OpenUSD runtime and a Spatial Preview session using a shared `USDLayer` as the exchange mechanism.
+- [Bridging an external USD runtime to Spatial Preview](bridging-an-external-usd-runtime-to-spatial-preview.md)
+  Sync edits between an app with its own OpenUSD runtime and a Spatial Preview session using a shared layer as the exchange mechanism.
 ### Nearby devices
 - [struct SpatialPreviewEndpoint](spatialpreviewendpoint.md)
   An endpoint representing a visionOS device you can connect to for spatial preview.

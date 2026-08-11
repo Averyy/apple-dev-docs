@@ -23,7 +23,7 @@ var segments: [Transcript.Segment]
 
 - [var assetIDs: [String]](transcript/response/assetids.md)
   Version aware identifiers for all assets used to generate this response.
-- [var metadata: [String : any Codable & Sendable & Equatable]](transcript/response/metadata.md)
+- [var metadata: [String : GeneratedContent]](transcript/response/metadata.md)
   Metadata associated with generating the response.
 
 

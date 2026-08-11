@@ -3,11 +3,12 @@
 **Framework**: USDKit  
 **Kind**: struct
 
-A non-fatal error produced during USD scene processing.
+An error produced when rendering a USD stage fails.
 
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
+- Mac Catalyst 27.0+ (Beta)
 - macOS 27.0+ (Beta)
 - tvOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
@@ -25,13 +26,14 @@ An error that occurs while rendering or converting a USD stage for RealityKit.
 ## Topics
 
 ### Instance Properties
-- [var localizedDescription: String](usdrendererror/localizeddescription.md)
-  Human-readable description of the error.
+- [var errorDescription: String?](usdrendererror/errordescription.md)
+  A localized message describing what error occurred.
 
 ## Relationships
 
 ### Conforms To
 - [Error](../Swift/Error.md)
+- [LocalizedError](../Foundation/LocalizedError.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
 

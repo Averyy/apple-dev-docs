@@ -22,6 +22,8 @@ final func logFeedbackAttachment(sentiment: LanguageModelFeedback.Sentiment?, is
 
 ## Mentions
 
+- [Inspecting session transcripts and reporting model feedback](inspecting-session-transcripts-and-reporting-model-feedback.md)
+- [Improving the safety of generative model output](improving-the-safety-of-generative-model-output.md)
 - [Prompting an on-device foundation model](prompting-an-on-device-foundation-model.md)
 
 #### Return Value

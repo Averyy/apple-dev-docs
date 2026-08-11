@@ -56,13 +56,13 @@ The system applies HAGC metadata embedded in HDR images and video automatically.
 - [var kColorSyncAlternateCurveCount: Unmanaged<CFString>](kcolorsyncalternatecurvecount.md)
   Number of alternate (tone-mapped) curves encoded in the metadata (uint8_t in the range [0, 4]). Each alternate targets a different display headroom.
 - [var kColorSyncAlternateGainCurveInfo: Unmanaged<CFString>](kcolorsyncalternategaincurveinfo.md)
-  CFArrayRef of per-alternate dictionaries (see Alternate curve keys below).
+  CFArrayRef of per-alternate dictionaries.
 - [var kColorSyncBaselineHeadroomStops: Unmanaged<CFString>](kcolorsyncbaselineheadroomstops.md)
   Headroom of the source (baseline) curve in stops (log2) above reference white (float in the range [0.0, 6.0]).
 - [var kColorSyncCustomHDRReferenceWhite: Unmanaged<CFString>](kcolorsynccustomhdrreferencewhite.md)
-  Custom reference white luminance in nits (float), overriding the standard 203-nit reference white. Must be greater than `0`. The encoding has a resolution of 0.2 nits and a maximum of 10000 nits; values are clamped to that range.
+  Custom reference white luminance in nits (float), overriding the standard 203-nit reference white.
 - [var kColorSyncHeadroomAdaptiveGainCurveApplicationVersion: Unmanaged<CFString>](kcolorsyncheadroomadaptivegaincurveapplicationversion.md)
-  Application version (uint8_t). 3-bit field from ST 2094-50 Table C.1. Must be `0`; any other value is rejected.
+  Application version (uint8_t). 3-bit field from ST 2094-50 Table C.1. Must be `0`; the framework rejects any other value.
 - [var kColorSyncHeadroomAdaptiveGainCurveColorVolumeTransform: Unmanaged<CFString>](kcolorsyncheadroomadaptivegaincurvecolorvolumetransform.md)
   Top-level container (CFDictionaryRef) for the color volume transform.
 - [var kColorSyncHeadroomAdaptiveGainCurveInfo: Unmanaged<CFString>](kcolorsyncheadroomadaptivegaincurveinfo.md)
@@ -73,23 +73,23 @@ The system applies HAGC metadata embedded in HDR images and video automatically.
 - [var kColorSyncAlternateCurveHeadroomStops: Unmanaged<CFString>](kcolorsyncalternatecurveheadroomstops.md)
   Target headroom of this alternate curve in stops (log2) above reference white (float in the range [0.0, 6.0]). The renderer selects the closest alternate to the actual display headroom.
 - [var kColorSyncCommonComponentMixing: Unmanaged<CFString>](kcolorsynccommoncomponentmixing.md)
-  CFBooleanRef. When true, all alternate curves share the component mixing configuration from array index 0, reducing bitstream size.
+  CFBooleanRef indicating whether alternate curves share one component-mixing configuration.
 - [var kColorSyncCommonCurveParameters: Unmanaged<CFString>](kcolorsynccommoncurveparameters.md)
-  CFBooleanRef. When true, all alternate curves share the gain curve x control points, and slope interpolate flag from array index 0, reducing bitstream size.
+  CFBooleanRef indicating whether alternate curves share common gain-curve parameters.
 - [var kColorSyncComponentMix: Unmanaged<CFString>](kcolorsynccomponentmix.md)
   Component mixing type (uint8_t) matching `component_mixing_value` in ST 2094-50.
 - [var kColorSyncControlPointSlopes: Unmanaged<CFString>](kcolorsynccontrolpointslopes.md)
-  CFArrayRef of floats — explicit tangent slopes at each control point, expressed as tan(slope_angle). Only present when `kColorSyncInterpolateSlopes` is false.
+  CFArrayRef of floats — explicit tangent slopes at each control point, expressed as tan(slope_angle). Only present when [`kColorSyncInterpolateSlopes`](kcolorsyncinterpolateslopes.md) is false.
 - [var kColorSyncControlPointsX: Unmanaged<CFString>](kcolorsynccontrolpointsx.md)
-  CFArrayRef of floating-point values representing the X-axis coordinates of the gain-curve control points, normalized by the reference white, thus a value of 1.0 corresponds to the signal value at reference white. Shared across all alternates from index 0 when `kColorSyncCommonCurveParameters` is true.
+  CFArrayRef of floats — the X-axis coordinates of the gain-curve control points.
 - [var kColorSyncControlPointsY: Unmanaged<CFString>](kcolorsynccontrolpointsy.md)
-  CFArrayRef of floats — Y-axis gain offsets at the control points, in stops (float in the range [0.0, 6.0]). Values must be non-negative; the gain direction (expand vs. compress) is inferred from the relationship between this alternate’s headroom and the baseline headroom.
+  CFArrayRef of floats — the Y-axis gain offsets at the control points.
 - [var kColorSyncGainCurveChromaticities: Unmanaged<CFString>](kcolorsyncgaincurvechromaticities.md)
   Chromaticity primaries used to compute the driving signal for the gain curve.
 - [var kColorSyncInterpolateSlopes: Unmanaged<CFString>](kcolorsyncinterpolateslopes.md)
-  CFBooleanRef. When true, slopes at control points are computed by Piecewise Cubic Hermite Interpolating Polynomial from the X,Y control point coordinates, and `kColorSyncControlPointSlopes` must be absent. When false, explicit slopes must be supplied in `kColorSyncControlPointSlopes` (see below). Shared across all alternates from index 0 when `kColorSyncCommonCurveParameters` is true.
+  CFBooleanRef controlling how the framework determines control-point slopes.
 - [var kColorSyncMaxControlPointIndex: Unmanaged<CFString>](kcolorsyncmaxcontrolpointindex.md)
-  Index of the last control point (uint8_t, 0–31), i.e. the number of control points minus 1. Shared across all alternates from index 0 when `kColorSyncCommonCurveParameters` is true.
+  Index of the last control point (uint8_t, 0–31), i.e. the number of control points minus 1. Shared across all alternates from index 0 when [`kColorSyncCommonCurveParameters`](kcolorsynccommoncurveparameters.md) is true.
 ### Weighting component-mix coefficients
 - [var kColorSyncCoefficientBlue: Unmanaged<CFString>](kcolorsynccoefficientblue.md)
   Weight for the blue channel in the free-style component mixing sum.
@@ -104,7 +104,7 @@ The system applies HAGC metadata embedded in HDR images and video automatically.
 - [var kColorSyncCoefficientRed: Unmanaged<CFString>](kcolorsynccoefficientred.md)
   Weight for the red channel in the free-style component mixing sum.
 - [var kColorSyncComponentCoefficients: Unmanaged<CFString>](kcolorsynccomponentcoefficients.md)
-  Sub-dictionary of custom linear-combination coefficients for free-style component mixing (component mixing type == 3).
+  Sub-dictionary of custom linear-combination coefficients for free-style component mixing.
 
 ## See Also
 

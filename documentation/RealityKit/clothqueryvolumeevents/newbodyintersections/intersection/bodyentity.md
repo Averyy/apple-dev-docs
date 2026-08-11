@@ -20,8 +20,6 @@ let bodyEntity: Entity
 
 - [var bodyComponent: ClothBodyComponent?](clothqueryvolumeevents/newbodyintersections/intersection/bodycomponent.md)
   The [`ClothBodyComponent`](clothbodycomponent.md) of the intersecting body, if still present on the entity.
-- [var particleIndices: Span<UInt32>](clothqueryvolumeevents/newbodyintersections/intersection/particleindices.md)
-  The indices of particles that intersected the volume.
 - [func withParticleIndices<Result>((Span<UInt32>) -> Result) -> Result](clothqueryvolumeevents/newbodyintersections/intersection/withparticleindices(_:).md)
   Provides access to the indices of particles that intersected the volume.
 

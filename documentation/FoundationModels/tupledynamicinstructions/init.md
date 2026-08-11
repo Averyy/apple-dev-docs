@@ -19,9 +19,9 @@ Creates a dynamic instructions instance that represents a tuple.
 init(_ contents: repeat each Content)
 ```
 
-#### Discussion
+## Parameters
 
-- Parameters - contents: The elements of the tuple.
+- `contents`: The elements of the tuple.
 
 
 ---

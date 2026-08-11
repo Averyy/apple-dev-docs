@@ -49,7 +49,7 @@ final class LowLevelDeviceResource
 - [class LowLevelTextureResource](lowleveltextureresource.md)
   A container for texture data in a custom format.
 - [class LowLevelMaterialResource](lowlevelmaterialresource.md)
-  A compiled material composed of three independently-replaceable shader stages.
+  A compiled material composed of three independently-replaceable shader functions.
 - [struct BoundingSphereBox](boundingspherebox.md)
   A combined bounding volume consisting of a bounding sphere and an optional axis-aligned bounding box.
 

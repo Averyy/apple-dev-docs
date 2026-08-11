@@ -26,7 +26,7 @@ typealias SessionProperty = LanguageModelSession.SessionProperty
 - [var parameters: GenerationSchema](tool/parameters.md)
   A schema for the parameters this tool accepts.
 - [var includesSchemaInInstructions: Bool](tool/includesschemaininstructions.md)
-  If true, the model’s name, description, and parameters schema will be injected into the instructions of sessions that leverage this tool.
+  A Boolean value that indicates whether the tool’s name, description, and parameters schema are injected into the instructions of sessions that leverage this tool.
 
 
 ---

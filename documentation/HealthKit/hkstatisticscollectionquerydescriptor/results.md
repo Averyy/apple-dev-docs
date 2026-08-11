@@ -19,13 +19,15 @@ An asynchronous sequence that emits updates from a statistics collection query.
 struct Results
 ```
 
+##### Creating an Iterator
+
+- [`HKStatisticsCollectionQueryDescriptor.Results.Iterator`](hkstatisticscollectionquerydescriptor/results/iterator.md)
+
 ## Topics
 
-### Creating an Iterator
+### Structures
 - [HKStatisticsCollectionQueryDescriptor.Results.Iterator](hkstatisticscollectionquerydescriptor/results/iterator.md)
   An iterator for statistics collection query results.
-- [HKStatisticsCollectionQueryDescriptor.Result](hkstatisticscollectionquerydescriptor/result.md)
-  A collection of results.
 
 ## Relationships
 

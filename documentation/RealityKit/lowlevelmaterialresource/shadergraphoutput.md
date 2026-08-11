@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: struct
 
-The compiled shader functions produced by a ShaderGraph compilation.
+The compiled Metal shader functions derived from a ShaderGraph.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -17,6 +17,10 @@ The compiled shader functions produced by a ShaderGraph compilation.
 struct ShaderGraphOutput
 ```
 
+#### Overview
+
+Obtain a `ShaderGraphOutput` by calling [`makeShaderGraphFunctions(shaderGraph:constantValues:)`](lowlevelrendercontextshadergraph/makeshadergraphfunctions(shadergraph:constantvalues:).md) on [`shaderGraph`](lowlevelrendercontext/shadergraph.md).
+
 ## Topics
 
 ### Specifying the shaders
@@ -26,9 +30,9 @@ struct ShaderGraphOutput
   The compiled geometry modifier, or `nil` if the ShaderGraph does not include one.
 ### Configuring blending
 - [var blending: LowLevelMaterialResource.ShaderGraphOutput.Blending](lowlevelmaterialresource/shadergraphoutput/blending-swift.property.md)
-  The blending mode recommended by the ShaderGraph compiler.
+  The blending mode derived from the ShaderGraph material.
 - [LowLevelMaterialResource.ShaderGraphOutput.Blending](lowlevelmaterialresource/shadergraphoutput/blending-swift.enum.md)
-  Indicates whether the ShaderGraph material should be rendered as opaque or transparent.
+  Indicates the blending mode of the ShaderGraph material.
 
 ## Relationships
 

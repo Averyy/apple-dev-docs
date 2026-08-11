@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: struct
 
+A property that connects a prim to one or more other objects in the stage by their paths.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -43,6 +45,7 @@ struct Relationship
 - [var stage: USDStage](usdprim/relationship/stage.md)
   The stage that owns this relationship.
 - [var targets: [USDLayer.Path]](usdprim/relationship/targets.md)
+  The target paths authored on this relationship.
 ### Default Implementations
 - [CustomStringConvertible Implementations](usdprim/relationship/customstringconvertible-implementations.md)
 
@@ -58,7 +61,7 @@ struct Relationship
 
 ## See Also
 
-- [func relationship(named: USDToken) -> USDPrim.Relationship?](usdprim/relationship(named:).md)
+- [func relationship(named: USDToken) -> USDPrim.Relationship](usdprim/relationship(named:).md)
   Returns the relationship with a given name on this prim.
 - [func relationship(at: USDLayer.Path) -> USDPrim.Relationship](usdprim/relationship(at:).md)
   Returns the relationship at a given path, relative to this prim.

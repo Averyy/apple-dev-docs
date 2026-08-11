@@ -20,6 +20,11 @@ When a view is set to `.exclusive`, and one or more of its gesture recognizers i
 
 Defaults to `.inherit`.
 
+## See Also
+
+- [NSView.ExclusiveGestureBehavior](nsview/exclusivegesturebehavior-swift.enum.md)
+  Exclusive gesture behavior
+
 
 ---
 

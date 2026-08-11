@@ -37,8 +37,6 @@ struct ReminderEntity {
 
     var title: String
     var note: AttributedString?
-    var images: [IntentFile]
-    var subtasks: [<#ReminderEntity#>]
     var tags: Set<String>
     var urls: [URL]
     var dueDate: DateComponents?
@@ -48,7 +46,6 @@ struct ReminderEntity {
     var creationDate: Date?
     var completionDate: Date?
     var list: <#ListEntity#>
-    var section: <#SectionEntity#>?
     var locationTrigger: <#LocationTriggerEntity#>?
 
     var displayRepresentation: DisplayRepresentation {

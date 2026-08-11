@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: struct
 
+A destination for authoring operations on a stage.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -19,20 +21,24 @@ struct EditTarget
 
 ## Topics
 
-### Initializers
-- [init()](usdstage/edittarget-swift.struct/init.md)
 ### Instance Properties
 - [var layer: USDLayer?](usdstage/edittarget-swift.struct/layer.md)
-  The layer referenced by this edit target.
+  The layer that authoring operations are directed to.
+### Default Implementations
+- [CustomStringConvertible Implementations](usdstage/edittarget-swift.struct/customstringconvertible-implementations.md)
 
 ## Relationships
 
 ### Conforms To
+- [Copyable](../Swift/Copyable.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Equatable](../Swift/Equatable.md)
+- [Escapable](../Swift/Escapable.md)
 
 ## See Also
 
 - [var editTarget: USDStage.EditTarget](usdstage/edittarget-swift.property.md)
+  The destination for authoring operations on this stage.
 
 
 ---

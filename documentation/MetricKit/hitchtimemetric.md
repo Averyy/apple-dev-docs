@@ -26,7 +26,7 @@ The ratio is normalized against total animation duration and incorporates percep
 ## Topics
 
 ### Measurements
-- [let ratio: Measurement<Unit>](hitchtimemetric/ratio.md)
+- [let ratio: Measurement<HitchTimeRatio>](hitchtimemetric/ratio.md)
   Ratio of time the application spent hitching during tracked animations.
 - [let totalHitchTime: Measurement<UnitDuration>](hitchtimemetric/totalhitchtime.md)
   Total time the application spent hitching during tracked animations.
@@ -55,8 +55,6 @@ The ratio is normalized against total animation duration and incorporates percep
   A metric that measures extended launch task durations.
 - [struct HangTimeMetric](hangtimemetric.md)
   A metric that measures app hang time.
-- [struct ScrollHitchTimeMetric](scrollhitchtimemetric.md)
-  A metric that measures scroll hitch time.
 
 
 ---

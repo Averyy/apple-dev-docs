@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: method
 
-Retrieves a Metal buffer for GPU replacement. The buffer’s contents are in an uninitialized state. The renderer waits for the command buffer to complete before using the buffer for rendering.
+Returns a Metal buffer you populate on the GPU with the new contents of the buffer resource.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -21,14 +21,18 @@ final func replace(commandBuffer: (any MTLCommandBuffer)?) -> any MTLBuffer
 
 A `MTLBuffer` ready for GPU write operations.
 
+#### Discussion
+
+Upon return the buffer’s contents are undefined; the caller is responsible for populating it with valid data. The renderer waits for the provided command buffer to complete before using the buffer for rendering.
+
 ## Parameters
 
-- `commandBuffer`: The command buffer writing to this buffer, or `nil` to skip synchronization.
+- `commandBuffer`: The command buffer that writes to this buffer, or `nil` to skip synchronization.
 
 ## See Also
 
 - [func replace<R, E>((inout MutableRawSpan) throws(E) -> R) throws(E) -> R](lowlevelbufferresource/replace(_:).md)
-  Replaces the buffer synchronously on the CPU. The buffer’s contents are unspecified; you must populate the buffer with valid data.
+  Replaces the entire contents of the buffer resource synchronously on the CPU.
 
 
 ---

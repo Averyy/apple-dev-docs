@@ -4,7 +4,7 @@
 **Kind**: method  
 **Required**: Yes
 
-Returns the current user’s contact information.
+Returns the information for the current contact.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -18,6 +18,10 @@ Returns the current user’s contact information.
 ```swift
 func userIdentity() -> ResolvedContact
 ```
+
+#### Return Value
+
+A resolved contact structure with information your app manages. Fill this structure with information you manage directly such as app-specific account details. You can also include information from sources to which your app has approved access such as the Contacts framework.
 
 
 ---

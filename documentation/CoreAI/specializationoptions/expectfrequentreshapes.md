@@ -18,6 +18,10 @@ Setting to allow more optimal specialization if the model performs frequent resh
 var expectFrequentReshapes: Bool
 ```
 
+## Mentions
+
+- [Managing model specialization and caching](managing-model-specialization-and-caching.md)
+
 
 ---
 

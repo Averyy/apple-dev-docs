@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: property
 
-Keep the current transcript as is.
+A policy that keeps the current transcript as is.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -26,7 +26,7 @@ The last entry of the transcript may be partially generated.
 ## See Also
 
 - [static let revertTranscript: TranscriptErrorHandlingPolicy](transcripterrorhandlingpolicy/reverttranscript.md)
-  Revert the transcript back to the state it was in just before the most recent request.
+  A policy that reverts the transcript back to the state it was in just before the most recent request.
 
 
 ---

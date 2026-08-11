@@ -27,7 +27,7 @@ A quota describes the model’s per-user request budget and where the caller cur
 
 ### Inspecting the quota limit
 - [var isLimitReached: Bool](privatecloudcomputelanguagemodel/quotausage-swift.struct/islimitreached.md)
-  A Boolean indicating whether the usage limit has been reached.
+  A Boolean value that indicates whether the usage limit has been reached.
 - [var limitIncreaseSuggestion: PrivateCloudComputeLanguageModel.QuotaUsage.LimitIncreaseSuggestion?](privatecloudcomputelanguagemodel/quotausage-swift.struct/limitincreasesuggestion-swift.property.md)
   A suggestion the user can act on to increase their quota.
 - [PrivateCloudComputeLanguageModel.QuotaUsage.LimitIncreaseSuggestion](privatecloudcomputelanguagemodel/quotausage-swift.struct/limitincreasesuggestion-swift.struct.md)
@@ -38,7 +38,7 @@ A quota describes the model’s per-user request budget and where the caller cur
 - [PrivateCloudComputeLanguageModel.QuotaUsage.Status](privatecloudcomputelanguagemodel/quotausage-swift.struct/status-swift.enum.md)
   The quota status of a language model.
 - [var resetDate: Date?](privatecloudcomputelanguagemodel/quotausage-swift.struct/resetdate.md)
-  The date at which the quota will refresh.
+  The date at which the quota refreshes.
 
 ## Relationships
 

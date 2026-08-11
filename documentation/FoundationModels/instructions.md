@@ -21,15 +21,16 @@ struct Instructions
 
 ## Mentions
 
+- [Improving the safety of generative model output](improving-the-safety-of-generative-model-output.md)
 - [Composing dynamic sessions with instructions and profiles](composing-dynamic-sessions-with-instructions-and-profiles.md)
 - [Generating content and performing tasks with Foundation Models](generating-content-and-performing-tasks-with-foundation-models.md)
-- [Improving the safety of generative model output](improving-the-safety-of-generative-model-output.md)
 - [Prompting an on-device foundation model](prompting-an-on-device-foundation-model.md)
+- [Running a Core AI model in a Foundation Models session](running-a-core-ai-model-in-a-foundation-models-session.md)
 - [Supporting languages and locales with Foundation Models](supporting-languages-and-locales-with-foundation-models.md)
 
 #### Overview
 
-Instructions are typically provided by you to define the role and behavior of the model. In the code below, the instructions specify that the model replies with topics rather than, for example, a recipe:
+You typically provide instructions to define the role and behavior of the model. In the code below, the instructions specify that the model replies with topics rather than, for example, a recipe:
 
 ```swift
 let instructions = """
@@ -87,10 +88,6 @@ For more information on managing the context window size, see [`Managing the con
   An object that represents a session that interacts with a language model.
 - [struct Prompt](prompt.md)
   A prompt from a person to the model.
-- [struct Transcript](transcript.md)
-  A linear history of entries that reflect an interaction with a session.
-- [struct TranscriptErrorHandlingPolicy](transcripterrorhandlingpolicy.md)
-  Options for controlling how a language model session manages the transcript when errors occur.
 - [struct GenerationOptions](generationoptions.md)
   Options that control how the model generates its response to a prompt.
 - [struct ContextOptions](contextoptions.md)

@@ -19,8 +19,8 @@ The Spatial Preview framework lets Mac apps send content to a nearby Apple Visio
 
 ## See Also
 
-- [Bridging an application’s custom USD runtime to Spatial Preview](bridging-an-external-usd-runtime-to-spatial-preview.md)
-  Sync edits between an application with its own OpenUSD runtime and a Spatial Preview session using a shared `USDLayer` as the exchange mechanism.
+- [Bridging an external USD runtime to Spatial Preview](bridging-an-external-usd-runtime-to-spatial-preview.md)
+  Sync edits between an app with its own OpenUSD runtime and a Spatial Preview session using a shared layer as the exchange mechanism.
 
 
 ---

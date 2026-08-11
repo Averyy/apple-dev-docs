@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: method
 
-The partially generated type of this struct.
+Returns the partially generated representation of the current instance.
 
 **Availability**:
 - iOS 26.0+

@@ -3,7 +3,7 @@
 **Framework**: Swift  
 **Kind**: init
 
-Convert this `UnownedJob/Priority` to a [`TaskPriority`](taskpriority.md).
+Convert this [`JobPriority`](jobpriority.md) to a [`TaskPriority`](taskpriority.md).
 
 **Availability**:
 - iOS 17.0+

@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: init
 
-Start a session by rehydrating from a transcript.
+Creates a session by rehydrating from a transcript.
 
 **Availability**:
 - iOS 26.0+
@@ -20,6 +20,7 @@ convenience init(model: SystemLanguageModel = .default, tools: [any Tool] = [], 
 
 ## Mentions
 
+- [Inspecting session transcripts and reporting model feedback](inspecting-session-transcripts-and-reporting-model-feedback.md)
 - [Managing the context window](managing-the-context-window.md)
 - [Optimizing key-value caching in language model sessions](optimizing-key-value-caching-in-language-model-sessions.md)
 
@@ -32,7 +33,7 @@ convenience init(model: SystemLanguageModel = .default, tools: [any Tool] = [], 
 ## See Also
 
 - [convenience(model:tools:instructions:)](languagemodelsession/init(model:tools:instructions:).md)
-  Start a new session in blank slate state with instructions builder.
+  Creates a session in a blank slate state with an instructions builder.
 
 
 ---

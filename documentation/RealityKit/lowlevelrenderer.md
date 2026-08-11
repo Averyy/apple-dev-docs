@@ -27,17 +27,17 @@ final class LowLevelRenderer
 - [convenience init(configuration: LowLevelRenderer.Configuration, renderContext: any LowLevelRenderContext) async throws](lowlevelrenderer/init(configuration:rendercontext:).md)
   Creates a renderer, asynchronously compiling all required GPU resources.
 - [LowLevelRenderer.Configuration](lowlevelrenderer/configuration.md)
-  The immutable configuration for a renderer, established at initialization.
+  The configuration for a renderer.
 ### Rendering a frame
 - [func render(using: any MTLCommandBuffer, (inout LowLevelRenderer.RenderState) -> ())](lowlevelrenderer/render(using:_:).md)
   Encodes draw calls for the frame into the given command buffer using a caller-controlled render callback.
 - [LowLevelRenderer.RenderState](lowlevelrenderer/renderstate.md)
   The per-frame render state passed to the `render(using:_:)` callback.
 - [LowLevelRenderer.Resources](lowlevelrenderer/resources.md)
-  Pre-compiled GPU resources for a renderer.
+  Prepared GPU resources for a renderer.
 ### Managing mesh instances
 - [func meshInstances(at: Int) -> LowLevelMeshInstanceArray?](lowlevelrenderer/meshinstances(at:).md)
-  Returns the mesh instance array at the given slot index, or the empty value if the slot is unoccupied.
+  Returns the mesh instance array at the given slot index, or `nil` if the slot is unoccupied.
 - [func setMeshInstances(LowLevelMeshInstanceArray?, at: Int) throws(LowLevelRendererError)](lowlevelrenderer/setmeshinstances(_:at:).md)
   Assigns a mesh instance array to the given slot index.
 - [var meshInstancesArrayCount: Int](lowlevelrenderer/meshinstancesarraycount.md)
@@ -48,11 +48,11 @@ final class LowLevelRenderer
 - [static func cullMeshInstances(LowLevelMeshInstanceArray, indices: Span<Int>, configuration: LowLevelRenderer.CullConfiguration) -> [Int]](lowlevelrenderer/cullmeshinstances(_:indices:configuration:).md)
   Culls mesh instances against a frustum and returns the surviving indices.
 - [LowLevelRenderer.CullConfiguration](lowlevelrenderer/cullconfiguration.md)
-  The parameters for a frustum culling operation.
+  The configuration for a frustum culling operation.
 - [static func sortMeshInstances(LowLevelMeshInstanceArray, indices: inout MutableSpan<Int>, configuration: LowLevelRenderer.SortConfiguration)](lowlevelrenderer/sortmeshinstances(_:indices:configuration:).md)
   Sorts the given mesh instances by sort category and, for transparent instances, by back-to-front distance from the camera.
 - [LowLevelRenderer.SortConfiguration](lowlevelrenderer/sortconfiguration.md)
-  The parameters for a mesh instance sort pass.
+  The configuration for a mesh instance sort pass.
 ### Configuring cameras
 - [var cameras: LowLevelRenderer.CameraArray](lowlevelrenderer/cameras.md)
   The array of active cameras.
@@ -88,14 +88,15 @@ final class LowLevelRenderer
 - [protocol LowLevelRenderContext](lowlevelrendercontext.md)
   An entry point for creating rendering resources and compiling materials.
 - [protocol LowLevelRenderContextLighting](lowlevelrendercontextlighting.md)
-  An entry point for creating lighting functions for use in materials.
+  The interface for creating lighting functions for use in materials.
 - [protocol LowLevelRenderContextShaderGraph](lowlevelrendercontextshadergraph.md)
+  The interface for creating Metal shader functions from a ShaderGraph.
 - [class LowLevelRenderContextStandalone](lowlevelrendercontextstandalone.md)
   A standalone Metal-backed render context for creating low-level rendering resources.
 - [struct LowLevelRenderContextError](lowlevelrendercontexterror.md)
-  An error thrown by render context factory methods when resource creation fails.
+  An error thrown when binding or updating a low-level rendering resource fails.
 - [struct LowLevelRendererError](lowlevelrenderererror.md)
-  An error thrown by the renderer during initialization or rendering.
+  An error thrown when creating or configuring a renderer.
 
 
 ---

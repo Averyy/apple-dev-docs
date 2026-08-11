@@ -3,7 +3,7 @@
 **Framework**: UIKit  
 **Kind**: property
 
-The gesture recognizer responsible for popping the top view controller off the navigation stack when a person swipes from the leading screen edge.
+The gesture recognizer that handles interactively popping the top view controller off the navigation stack when a person swipes from the leading screen edge.
 
 **Availability**:
 - iOS 7.0+
@@ -25,8 +25,6 @@ Use this property to retrieve the gesture recognizer and tie it to the behavior 
 
 ## See Also
 
-- [func gestureRecognizer(UIGestureRecognizer, shouldRecognizeSimultaneouslyWith: UIGestureRecognizer) -> Bool](uigesturerecognizerdelegate/gesturerecognizer(_:shouldrecognizesimultaneouslywith:).md)
-  Asks the delegate if two gesture recognizers should be allowed to recognize gestures simultaneously.
 - [func pushViewController(UIViewController, animated: Bool)](uinavigationcontroller/pushviewcontroller(_:animated:).md)
   Pushes a view controller onto the receiver’s stack and updates the display.
 - [func popViewController(animated: Bool) -> UIViewController?](uinavigationcontroller/popviewcontroller(animated:).md)

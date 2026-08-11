@@ -23,12 +23,18 @@ static var description: String { get }
 
 - [Making your indexed content available to Foundation Models](making-your-indexed-content-available-to-foundation-models.md)
 
+#### Discussion
+
+The model uses the value in this property as instructions on how to use the stage.
+
 ## See Also
 
 - [static var name: String](customstage/name.md)
-  The stage type name as it appears in the pipeline (e.g., “sentiment”).
+  The name of the stage as you want it to appear in the pipeline.
 - [static var inputTypes: [SearchPipelineDataType]](customstage/inputtypes.md)
   The data types this stage accepts as input.
+- [static var outputType: SearchPipelineDataType](customstage/outputtype.md)
+  The data type this stage produces as output.
 
 
 ---

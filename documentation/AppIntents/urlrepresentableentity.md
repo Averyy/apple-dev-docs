@@ -3,7 +3,7 @@
 **Framework**: App Intents  
 **Kind**: protocol
 
-An app entity with a URL representation.
+An interface you apply to an app entity type so the system can handle it like a universal link.
 
 **Availability**:
 - iOS 18.0+
@@ -22,16 +22,20 @@ protocol URLRepresentableEntity : AppEntity, CustomURLRepresentationParameterCon
 
 #### Overview
 
-Add support for `URLRepresentableEntity` to your app entities to add a URL representation. This allows Apple Intelligence, Siri, and Shortcuts to treat the entity like a universal link to specific content, allowing actions to open the URL or to make it sharable.
+If your app already supports universal links for content, use this protocol to express your app entity types as URLs. When your app entity supports this protocol, the system can use the provided URL to refer to the item. For example, when an [`OpenIntent`](openintent.md) type contains the entity, the system can open the item by sending the entity’s URL to your app’s URL handling code. Having a URL representation for your app entity also makes it easier to share the contents of that entity with Siri, Shortcuts, and other system features.
 
-Note that you need to use a universal link for your URL representation, you can’t use a custom URL scheme. For more information about universal links, see [`Allowing apps and websites to link to your content`](https://developer.apple.com/documentation/Xcode/allowing-apps-and-websites-to-link-to-your-content).
+> ❗ **Important**: This protocol requires your app to support universal links. You can’t use this protocol with a custom URL scheme or other approaches. For information about how to add support for universal links, see [`Allowing apps and websites to link to your content`](https://developer.apple.com/documentation/Xcode/allowing-apps-and-websites-to-link-to-your-content).
+
+Construct URLs using static text and the content of properties in your app entity. For information on how to create the URL representation, see [`EntityURLRepresentation`](entityurlrepresentation.md).
 
 ## Topics
 
 ### Type Aliases
 - [URLRepresentableEntity.URLRepresentation](urlrepresentableentity/urlrepresentation-swift.typealias.md)
+  The type that provides the URL for the app entity.
 ### Type Properties
 - [static var urlRepresentation: Self.URLRepresentation](urlrepresentableentity/urlrepresentation-swift.type.property.md)
+  The URL representation of the app entity.
 
 ## Relationships
 
@@ -51,8 +55,9 @@ Note that you need to use a universal link for your URL representation, you can�
 ## See Also
 
 - [struct EntityURLRepresentation](entityurlrepresentation.md)
-  The URL representation of an app entity.
+  The type that provides the URL for an app entity.
 - [protocol CustomURLRepresentationParameterConvertible](customurlrepresentationparameterconvertible.md)
+  An interface that allows a type to express its contents in a URL representation.
 
 
 ---

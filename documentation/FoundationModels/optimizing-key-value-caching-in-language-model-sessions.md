@@ -169,6 +169,8 @@ For more information about profiling and optimization techniques with Instrument
 
 ## See Also
 
+- [Running a Core AI model in a Foundation Models session](running-a-core-ai-model-in-a-foundation-models-session.md)
+  Send requests on device to an open source model you export with Core AI to get a consistent API experience.
 - [protocol LanguageModel](languagemodel.md)
   A protocol that you use to interface with a model.
 - [struct LanguageModelCapabilities](languagemodelcapabilities.md)

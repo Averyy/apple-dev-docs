@@ -19,7 +19,9 @@ final class LowLevelMeshPart
 
 #### Overview
 
-A mesh part selects a contiguous range of indices from the mesh’s index buffer and associates them with a primitive type, winding order, and bounding volume.
+A mesh part selects a contiguous range of indices from the mesh’s index buffer and associates it with a primitive type, winding order, and bounding volume.
+
+Create a `LowLevelMeshPart` using [`makeMeshPart(resource:indexOffset:indexCount:primitive:windingOrder:bounds:)`](lowlevelrendercontext/makemeshpart(resource:indexoffset:indexcount:primitive:windingorder:bounds:).md).
 
 ## Topics
 
@@ -57,7 +59,7 @@ A mesh part selects a contiguous range of indices from the mesh’s index buffer
 - [class LowLevelTextureResource](lowleveltextureresource.md)
   A container for texture data in a custom format.
 - [class LowLevelMaterialResource](lowlevelmaterialresource.md)
-  A compiled material composed of three independently-replaceable shader stages.
+  A compiled material composed of three independently-replaceable shader functions.
 - [class LowLevelDeviceResource](lowleveldeviceresource.md)
   Encapsulates a GPU device resource created by the application. On visionOS, resources must be allocated in shared memory that can be used by the renderer process. Once a device resource is in use by the renderer, changing its contents is unsafe and undefined.
 - [struct BoundingSphereBox](boundingspherebox.md)

@@ -26,7 +26,7 @@ The latest version of Xcode includes the following new features.
 
 ##### Asset Management
 
-- Use Icon Composer to adjust the strength of refraction in your icon layers, choose how highlights align with each layer, and preview your icon in previous operating system releases.
+- Use Icon Composer to adjust the strength of refraction in your icon layers, choose how highlights align with each layer, and preview your icon in previous operating system releases. For more information, see [`Creating your app icon using Icon Composer`](https://developer.apple.com/documentation/Xcode/creating-your-app-icon-using-icon-composer).
 
 ##### Devices and Simulators
 
@@ -46,7 +46,9 @@ The latest version of Xcode includes the following new features.
 
 ##### Xcode Cloud
 
-- Configure Xcode Cloud for building and testing your app without joining the Apple Developer Program. Later, add workflows to distribute your app through TestFlight or the App Store. In addition, Xcode Cloud supports webhooks and additional repositories. For more information, see [`Build, deliver, and automate with Xcode Cloud`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2026/261/).
+- Configure Xcode Cloud for building and testing your app without joining the Apple Developer Program. For more information, see [`Getting started with Xcode Cloud`](https://developer.apple.com/documentation/Xcode/getting-started-with-xcode-cloud).
+- Easily add a workflow to distribute your app through TestFlight. For more information, see [`Distributing your Xcode Cloud builds through TestFlight`](https://developer.apple.com/documentation/Xcode/distributing-your-xcode-cloud-builds-through-testflight).
+- Xcode Cloud supports webhooks and additional repositories. For more information, see [`Build, deliver, and automate with Xcode Cloud`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2026/261/).
 
 #### February 2026
 

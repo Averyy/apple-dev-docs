@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: class
 
-A table of buffer slices and textures bound to a single shader function stage.
+A table of buffer slices and textures bound to a single shader function.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -20,6 +20,8 @@ final class LowLevelArgumentTable
 #### Overview
 
 A `LowLevelArgumentTable` binds a set of `LowLevelBufferSlice` and `LowLevelTextureResource` objects at indexed slots. Its layout is described by an `LowLevelArgumentTable.Descriptor` that must match the `argumentTableDescriptor` on the corresponding material function.
+
+Create a `LowLevelArgumentTable` using [`makeArgumentTable(descriptor:buffers:textures:)`](lowlevelrendercontext/makeargumenttable(descriptor:buffers:textures:).md).
 
 ## Topics
 

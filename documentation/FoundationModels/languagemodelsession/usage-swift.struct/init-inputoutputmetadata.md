@@ -16,7 +16,7 @@ Creates a usage value with the given token counts.
 ## Declaration
 
 ```swift
-init(input: LanguageModelSession.Usage.Input, output: LanguageModelSession.Usage.Output, metadata: [String : any Sendable & Codable & Equatable] = [:])
+init(input: LanguageModelSession.Usage.Input, output: LanguageModelSession.Usage.Output, metadata: [String : any ConvertibleToGeneratedContent] = [:])
 ```
 
 ## Parameters

@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: method
 
-Retrieves the Metal buffer for GPU reading.
+Returns a Metal buffer containing the current contents of the buffer resource for GPU read operations.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -19,20 +19,20 @@ final func read(commandBuffer: (any MTLCommandBuffer)?) -> any MTLBuffer
 
 #### Return Value
 
-The underlying `MTLBuffer` for reading.
+A `MTLBuffer` ready for GPU read operations.
 
 #### Discussion
 
-The renderer waits for the command buffer to complete before discarding the buffer.
+The renderer waits for the provided command buffer to complete before discarding the buffer.
 
 ## Parameters
 
-- `commandBuffer`: The command buffer using this buffer, or `nil` to skip synchronization.
+- `commandBuffer`: The command buffer that reads from this buffer, or `nil` to skip synchronization.
 
 ## See Also
 
 - [func read<R, E>((RawSpan) throws(E) -> R) throws(E) -> R](lowlevelbufferresource/read(_:).md)
-  Reads the buffer synchronously on the CPU. The buffer is only valid for the lifetime of the callback.
+  Reads the current contents of the buffer resource synchronously on the CPU.
 
 
 ---

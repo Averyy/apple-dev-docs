@@ -8,6 +8,7 @@ The mechanism used to transmit data to other peers.
 **Availability**:
 - iOS 3.0+
 - iPadOS 3.0+
+- Mac Catalyst 3.0+
 - macOS 10.8+
 - tvOS 9.0+
 - visionOS 1.0+

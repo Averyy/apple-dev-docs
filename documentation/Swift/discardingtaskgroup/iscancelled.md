@@ -28,9 +28,9 @@ If the task that’s currently running this group is canceled, the group is also
 
 ##### Interaction with Task Cancellation Shields
 
-Cancellation may be suppressed by an active task cancellation shield (`withTaskCancellationShield(operation:)`), which may cause `isCancelled` to return `false` even though the task has been cancelled externally.
+Cancellation may be suppressed by an active task cancellation shield (`withTaskCancellationShield(operation:)-(()->Value)`), which may cause `isCancelled` to return `false` even though the task has been cancelled externally.
 
-> **Note**: `withTaskCancellationShield(operation:)`
+> **Note**: `withTaskCancellationShield(operation:)-(()->Value)`
 
 
 ---

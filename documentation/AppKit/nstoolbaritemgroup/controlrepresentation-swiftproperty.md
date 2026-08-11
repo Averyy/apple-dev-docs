@@ -24,6 +24,9 @@ var controlRepresentation: NSToolbarItemGroup.ControlRepresentation { get set }
   The selection mode of the grouped toolbar item.
 - [NSToolbarItemGroup.SelectionMode](nstoolbaritemgroup/selectionmode-swift.enum.md)
   A value that indicates how a grouped toolbar item selects its subitems.
+- [var role: NSToolbarItemGroup.Role](nstoolbaritemgroup/role-swift.property.md)
+  The semantic role of the item. Defaults to `NSToolbarItemGroupRoleAutomatic`.
+- [NSToolbarItemGroup.Role](nstoolbaritemgroup/role-swift.enum.md)
 
 
 ---

@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: property
 
-Revert the transcript back to the state it was in just before the most recent request.
+A policy that reverts the transcript back to the state it was in just before the most recent request.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -22,7 +22,7 @@ static let revertTranscript: TranscriptErrorHandlingPolicy
 ## See Also
 
 - [static let preserveTranscript: TranscriptErrorHandlingPolicy](transcripterrorhandlingpolicy/preservetranscript.md)
-  Keep the current transcript as is.
+  A policy that keeps the current transcript as is.
 
 
 ---

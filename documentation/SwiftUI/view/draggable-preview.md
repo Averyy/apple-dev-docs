@@ -44,6 +44,8 @@ Color.pink
 
 To customize the lift preview, shown while the system transitions to show your custom `preview`, apply a [`contentShape(_:_:eoFill:)`](view/contentshape(_:_:eofill:).md) with a [`dragPreview`](contentshapekinds/dragpreview.md) kind. For example, you can change the preview’s corner radius or use a nested view as the preview.
 
+> ❗ **Important**: Don’t perform work on the main actor while exporting the item. Doing so isn’t supported and might cause a hang. Make sure `T`‘s exporting closure doesn’t dispatch to the main actor.
+
 ## Parameters
 
 - `payload`: A closure that returns a single class instance or a value conforming to `Transferable` that represents the draggable data from this view.

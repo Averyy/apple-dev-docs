@@ -33,9 +33,6 @@ struct DisplayRepresentation
 - [var subtitle: LocalizedStringResource?](displayrepresentation/subtitle.md)
 - [var image: DisplayRepresentation.Image?](displayrepresentation/image-swift.property.md)
 - [DisplayRepresentation.Image](displayrepresentation/image-swift.struct.md)
-### Structures
-- [DisplayRepresentation.Components](displayrepresentation/components.md)
-  Components of the `DisplayRepresentation`.
 ### Initializers
 - [init(title: LocalizedStringResource, subtitle: LocalizedStringResource?, image: DisplayRepresentation.Image?, synonyms: [LocalizedStringResource])](displayrepresentation/init(title:subtitle:image:synonyms:).md)
 - [init(title: LocalizedStringResource, subtitle: LocalizedStringResource?, synonyms: [LocalizedStringResource], image: () async throws -> DisplayRepresentation.Image?)](displayrepresentation/init(title:subtitle:synonyms:image:).md)

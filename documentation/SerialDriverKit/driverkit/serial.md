@@ -16,6 +16,8 @@ namespace serial;
 
 ### Structures
 - [SerialPortInterface](driverkit/serial/serialportinterface.md)
+### Variables
+- [kSerialQueueLogSizeMax](driverkit/serial/kserialqueuelogsizemax.md)
 
 
 ---

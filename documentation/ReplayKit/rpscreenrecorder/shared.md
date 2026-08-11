@@ -6,12 +6,12 @@
 Returns an app’s instance of the shared screen recorder.
 
 **Availability**:
-- iOS ?+
-- iPadOS ?+
-- Mac Catalyst ?+
-- macOS ?+
-- tvOS ?+
-- visionOS ?+
+- iOS 9.0+
+- iPadOS 9.0+
+- Mac Catalyst 13.1+
+- macOS 11.0+
+- tvOS 10.0+
+- visionOS 1.0+
 
 ## Declaration
 

@@ -26,20 +26,22 @@ To get started, you need your key ID and issuer ID from App Store Connect. Then,
 
 ##### Get Your Key Id and Issuer Id From App Store Connect
 
-First you need your key ID for the JWS header and your issuer ID for the JWS payload. Sign in to [`App Store Connect`](https://developer.apple.comhttps://appstoreconnect.apple.com/) to get these values.
+First you need your key ID for the JWS header and your issuer ID for the JWS payload. Sign in to [`App Store Connect`](https://developer.apple.comhttps://appstoreconnect.apple.com/) to get these values. Use your In-App Purchase key, not your App Store Connect API key.
 
 To get the key ID:
 
-1. Select Users and Access, then select the Keys tab.
-2. Hover the cursor next to a key ID to display the Copy Key ID link. The key IDs appear in a column under the Active heading.
-3. Click Copy Key ID.
+1. Select Users and Access, then select Integrations.
+2. Select the In-App Purchase tab.
+3. Hover the cursor next to a key ID to display the Copy Key ID link. The key IDs appear in a column under the Active heading.
+4. Click Copy Key ID.
 
 If you have more than one API key, copy the key ID of the private key that you use to sign the JWS. For information about creating keys, see [`Creating API keys to authorize API requests`](https://developer.apple.com/documentation/AppStoreServerAPI/creating-api-keys-to-authorize-api-requests).
 
 To get the issuer ID:
 
-1. Select Users and Access, then select the Keys tab.
-2. To copy the issuer ID that appears near the top of the page, click Copy next to the ID.
+1. Select Users and Access, then select Integrations.
+2. Select the In-App Purchase tab.
+3. To copy the issuer ID that appears near the top of the page, click Copy next to the ID.
 
 ##### Create the Jws Header
 
@@ -71,7 +73,7 @@ Include the following base claims in the JWS payload:
 
 | **Payload field** | **Value** |
 | --- | --- |
-| `iss` - Issuer | Your issuer ID from the Keys page in App Store Connect (example: “`57246542-96fe-1a63-e053-0824d011072a"`) |
+| `iss` - Issuer | Your issuer ID from the In-App Purchase page in App Store Connect (example: “`57246542-96fe-1a63-e053-0824d011072a"`) |
 | `iat` - Issued At | The UNIX time, in seconds, that you issue the token, which the App Store server uses to calculate an expiration time (example: `1623085200`) |
 | `aud` - Audience | A value that depends on the feature you’re using (see the table below) |
 | `bid` - Bundle ID | Your app’s bundle ID (example: `“com.example.testbundleid”)` |

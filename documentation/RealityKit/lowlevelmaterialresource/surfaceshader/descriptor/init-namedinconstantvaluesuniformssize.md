@@ -19,7 +19,7 @@ init(named name: String, in library: any MTLLibrary, constantValues: MTLFunction
 
 #### Discussion
 
-Use this initializer when your Metal surface shader function reads per-draw parameters through a custom uniforms argument buffer, using the same mechanism as [`withMutableUniforms(ofType:stage:_:)`](custommaterial/withmutableuniforms(oftype:stage:_:).md). The function must be `[[stitchable]]` and declare the uniforms as a second `constant T &customParams` parameter:
+Use this initializer when your Metal surface shader function reads per-draw parameters through a custom uniforms argument buffer, using the same mechanism as [`CustomMaterial/withMutableUniforms(ofType:stage:_:)`](https://developer.apple.comhttps://developer.apple.com/documentation/realitykit/custommaterial/withmutableuniforms(oftype:stage:_:)). The function must be `[[stitchable]]` and declare the uniforms as a second `constant T &customParams` parameter:
 
 ```cpp
 [[stitchable]]
@@ -33,7 +33,7 @@ The renderer sizes the uniforms buffer to `uniformsSize` bytes and configures th
 
 - `name`: The name of the Metal function in the library.
 - `library`: The Metal library that contains the function.
-- `constantValues`: The Metal function constant values to specialize the function with.
+- `constantValues`: The Metal function constant values to specialize the function with. The function descriptor takes a snapshot of the constant values passed in.
 - `uniformsSize`: The size of the custom uniforms buffer, in bytes.
 
 ## See Also

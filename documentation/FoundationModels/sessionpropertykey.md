@@ -39,7 +39,6 @@ protocol SessionPropertyKey : SendableMetatype
 - [class SessionPropertyValues](sessionpropertyvalues.md)
   A container for property values.
 - [macro SessionPropertyEntry()](sessionpropertyentry().md)
-  A macro for defining a custom key.
 
 
 ---

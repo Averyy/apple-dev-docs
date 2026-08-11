@@ -3,6 +3,8 @@
 **Framework**: AVFoundation  
 **Kind**: property
 
+Indicates the export session settings are incompatible with resumable export.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -19,10 +21,12 @@ static let incompatibleSessionSettings: AVAssetExportSession.ResumptionFailureRe
 
 ## See Also
 
-- [static let incompatiblePreset: AVAssetExportSession.ResumptionFailureReason](avassetexportsession/resumptionfailurereason/incompatiblepreset.md)
 - [static let incompatibleTemporaryDirectoryContents: AVAssetExportSession.ResumptionFailureReason](avassetexportsession/resumptionfailurereason/incompatibletemporarydirectorycontents.md)
+  Indicates that the contents of the specified temporary files directory are inconsistent with the current resuming export.
 - [static let temporaryDirectoryDoesNotExist: AVAssetExportSession.ResumptionFailureReason](avassetexportsession/resumptionfailurereason/temporarydirectorydoesnotexist.md)
+  Indicates that the specified temporary files directory doesn’t exist.
 - [static let unsupportedForPresetOnPlatform: AVAssetExportSession.ResumptionFailureReason](avassetexportsession/resumptionfailurereason/unsupportedforpresetonplatform.md)
+  Indicates that resumption isn’t supported for this preset and platform combination.
 
 
 ---

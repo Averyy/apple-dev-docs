@@ -27,7 +27,7 @@ Use an instance of this class when you want to make an app besides yours, like a
 
 By default, the system requires that the app’s code signature is valid, and that either Apple distributes the app, or the developer notarizes the app or distributes it through the App Store. You can relax these requirements by setting the [`requiresSignatureValidation`](aeassessmentapplication/requiressignaturevalidation.md) property to `false`, but that creates a potential security risk. In that case, the only requirement is that the app has the specified bundle and team identifiers. Prefer to keep the signature requirement.
 
-Add the app to a session configuration by calling the [`setConfiguration(_:for:)`](aeassessmentconfiguration/setconfiguration(_:for:).md) method, and then apply the configuration to either a new session that you create, or an existing session with the [`update(to:)`](aeassessmentsession/update(to:).md) method.
+Add the app to a session configuration by calling the `AEAssessmentConfiguration/setConfiguration(_:for:)` method, and then apply the configuration to either a new session that you create, or an existing session with the [`update(to:)`](aeassessmentsession/update(to:).md) method.
 
 ## Topics
 
@@ -59,12 +59,8 @@ Add the app to a session configuration by calling the [`setConfiguration(_:for:)
 
 ## See Also
 
-- [func setConfiguration(AEAssessmentParticipantConfiguration, for: AEAssessmentApplication)](aeassessmentconfiguration/setconfiguration(_:for:).md)
-  Adds an app to the list of apps available during an assessment.
 - [var configurationsByApplication: [AEAssessmentApplication : AEAssessmentParticipantConfiguration]](aeassessmentconfiguration/configurationsbyapplication.md)
   The collection of apps available during an assessment, along with their associated configurations.
-- [func remove(AEAssessmentApplication)](aeassessmentconfiguration/remove(_:).md)
-  Removes the availability of a previously allowed app.
 - [var mainParticipantConfiguration: AEAssessmentParticipantConfiguration](aeassessmentconfiguration/mainparticipantconfiguration.md)
   The app-specific configuration for the app that invokes the assessment.
 - [class AEAssessmentParticipantConfiguration](aeassessmentparticipantconfiguration.md)

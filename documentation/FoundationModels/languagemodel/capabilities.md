@@ -22,7 +22,7 @@ var capabilities: LanguageModelCapabilities { get }
 
 #### Discussion
 
-If a developer attempts to use capabilities that your model does not support, then the system will automatically throw an error for you instead of calling `respond(to:)`.
+If a developer attempts to use capabilities that your model does not support, the system automatically throws an error for you instead of calling a respond method, like [`respond(to:options:)`](languagemodelsession/respond(to:options:)-6a2gb.md) or [`streamResponse(to:options:)`](languagemodelsession/streamresponse(to:options:)-2nlni.md).
 
 
 ---

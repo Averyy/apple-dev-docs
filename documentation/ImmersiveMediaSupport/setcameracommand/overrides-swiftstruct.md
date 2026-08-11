@@ -18,6 +18,10 @@ Override camera/venue params
 struct Overrides
 ```
 
+#### Overview
+
+> **Note**: The renderer only honors these overrides on visionOS 27, macOS 27, or later. Earlier runtimes ignore them during playback.
+
 ## Topics
 
 ### Initializers

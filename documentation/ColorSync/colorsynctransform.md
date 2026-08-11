@@ -3,6 +3,8 @@
 **Framework**: ColorSync  
 **Kind**: class
 
+A reference to a color transform that converts color data between profiles.
+
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+

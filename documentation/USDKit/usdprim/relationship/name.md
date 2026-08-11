@@ -21,7 +21,7 @@ var name: USDToken { get }
 
 #### Discussion
 
-A relationship’s name is the last component of its [`path`](usdprim/relationship/path.md). This property is equivalent to the `SdfPath/nameToken` property of that path.
+A relationship’s name is the last component of its [`path`](usdprim/relationship/path.md). This property is equivalent to the `USDLayer.Path/name` property of that path.
 
 
 ---

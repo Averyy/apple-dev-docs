@@ -8,7 +8,6 @@ Identifier for this evaluation result that can be recorded with other transactio
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 
 ## Declaration
 

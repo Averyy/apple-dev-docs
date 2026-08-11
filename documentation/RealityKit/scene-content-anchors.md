@@ -30,7 +30,7 @@ RealityKit anchors all entities in a scene to an anchor target in the same scene
   Defines types of real-world surfaces to seek as targets.
 ### Image and object tracking
 - [AnchoringComponent.ImageAnchoringSource](anchoringcomponent/imageanchoringsource.md)
-  Defines the source of object anchoring target based on how it is created.
+  Defines the source of image anchoring target based on how it is created.
 - [AnchoringComponent.ObjectAnchoringSource](anchoringcomponent/objectanchoringsource.md)
   Defines the source of object anchoring target based on how it is created.
 ### Hand tracking

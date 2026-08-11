@@ -28,6 +28,10 @@ Removing a gesture recognizer also removes the strong reference to it held by th
   The gesture recognize objects currently attached to the view.
 - [func addGestureRecognizer(NSGestureRecognizer)](nsview/addgesturerecognizer(_:).md)
   Attaches a gesture recognizer to the view.
+- [var exclusiveGestureBehavior: NSView.ExclusiveGestureBehavior](nsview/exclusivegesturebehavior-swift.property.md)
+  Declares whether gesture recognizers should be exclusive in this view and its subviews.
+- [NSView.ExclusiveGestureBehavior](nsview/exclusivegesturebehavior-swift.enum.md)
+  Exclusive gesture behavior
 
 
 ---

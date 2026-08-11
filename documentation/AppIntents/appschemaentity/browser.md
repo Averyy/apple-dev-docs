@@ -3,7 +3,7 @@
 **Framework**: App Intents  
 **Kind**: property
 
-App entity schema conformance for types you use for browser functionality.
+The collection of entity schemas in the browser domain.
 
 **Availability**:
 - iOS 18.0+

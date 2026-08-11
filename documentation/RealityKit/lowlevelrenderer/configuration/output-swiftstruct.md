@@ -39,7 +39,7 @@ struct Output
 - [var output: LowLevelRenderer.Configuration.Output](lowlevelrenderer/configuration/output-swift.property.md)
   The pixel format configuration for this renderer’s output attachments.
 - [var renderTargetDescriptor: LowLevelRenderTarget.Descriptor](lowlevelrenderer/configuration/rendertargetdescriptor.md)
-  The render target descriptor derived from this configuration.
+  The render target descriptor derived from this configuration’s [`output`](lowlevelrenderer/configuration/output-swift.property.md).
 
 
 ---

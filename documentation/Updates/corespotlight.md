@@ -8,6 +8,10 @@ Learn about important changes to Core Spotlight.
 
 Browse notable changes in [`Core Spotlight`](https://developer.apple.com/documentation/CoreSpotlight).
 
+#### July 2026
+
+- Follow the [`Searching indexed content with natural language`](https://developer.apple.com/documentation/CoreSpotlight/searching-indexed-content-with-natural-language) sample app to learn how you can give a language model access to your app’s Core Spotlight index and let people use natural language to search your app’s content.
+
 #### June 2026
 
 - Make your app’s indexed content available to Foundation models using [`SpotlightSearchTool`](https://developer.apple.com/documentation/CoreSpotlight/SpotlightSearchTool).

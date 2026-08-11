@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: property
 
-A convenience getter to check if the system is entirely ready.
+A Boolean value that indicates whether the system is entirely ready.
 
 **Availability**:
 - iOS 26.0+

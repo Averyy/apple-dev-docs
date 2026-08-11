@@ -24,23 +24,24 @@ In this gesture recognizer, the [`location(in:)`](nsgesturerecognizer/location(i
 
 ## Topics
 
-### Configuring the Gesture Recognizer
+### Configuring the gesture recognizer
 - [var buttonMask: Int](nspangesturerecognizer/buttonmask.md)
   A bit mask of the button (or buttons) required to recognize this gesture.
-- [var numberOfTouchesRequired: Int](nspangesturerecognizer/numberoftouchesrequired.md)
-  The number of necessary touches on a Touch Bar for the gesture recognizer to match.
-### Tracking the Location and Velocity of the Gesture
+### Setting the number of touches
+- [var maximumNumberOfTouches: Int](nspangesturerecognizer/maximumnumberoftouches.md)
+  The maximum number of touches allowed to recognize this gesture
+- [var minimumNumberOfTouches: Int](nspangesturerecognizer/minimumnumberoftouches.md)
+  The minimum number of touches needed to recognize this gesture
+### Tracking the location and velocity of the gesture
 - [func translation(in: NSView?) -> NSPoint](nspangesturerecognizer/translation(in:).md)
   The distance traveled by the mouse during the gesture.
 - [func setTranslation(NSPoint, in: NSView?)](nspangesturerecognizer/settranslation(_:in:).md)
   Changes the current translation value of the gesture recognizer.
 - [func velocity(in: NSView?) -> NSPoint](nspangesturerecognizer/velocity(in:).md)
   The velocity of the pan, measured in points per second.
-### Instance Properties
-- [var maximumNumberOfTouches: Int](nspangesturerecognizer/maximumnumberoftouches.md)
-  The maximum number of touches allowed to recognize this gesture
-- [var minimumNumberOfTouches: Int](nspangesturerecognizer/minimumnumberoftouches.md)
-  The minimum number of touches needed to recognize this gesture
+### Deprecated
+- [var numberOfTouchesRequired: Int](nspangesturerecognizer/numberoftouchesrequired.md)
+  The number of necessary touches on a Touch Bar for the gesture recognizer to match.
 
 ## Relationships
 

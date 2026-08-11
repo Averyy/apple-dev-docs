@@ -23,13 +23,9 @@ This event should be treated as having a non-escapable lifetime. Some of its dat
 ## Topics
 
 ### Accessing local space positions
-- [var localSpacePositions: Span<SIMD3<Float>>](clothbodyevents/newsimulationpositions/localspacepositions.md)
-  The new simulation positions of the body’s particles, in local space.
 - [func withLocalSpacePositions<Result>((Span<SIMD3<Float>>) -> Result) -> Result](clothbodyevents/newsimulationpositions/withlocalspacepositions(_:).md)
   Provides access to the new simulation positions of the body’s particles, in local space.
 ### Accessing simulation space positions
-- [var simulationSpacePositions: Span<SIMD3<Float>>](clothbodyevents/newsimulationpositions/simulationspacepositions.md)
-  The new simulation positions of the body’s particles, in simulation space.
 - [func withSimulationSpacePositions<Result>((Span<SIMD3<Float>>) -> Result) -> Result](clothbodyevents/newsimulationpositions/withsimulationspacepositions(_:).md)
   Provides access to the new simulation positions of the body’s particles, in simulation space.
 ### Identifying the event source

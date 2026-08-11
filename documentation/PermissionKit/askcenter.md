@@ -42,6 +42,11 @@ Access the shared instance to send permission requests and register for response
 - [func responses<Topic>(for: Topic.Type) -> some AsyncSequence<PermissionResponse<Topic>, Never>
 ](askcenter/responses(for:).md)
   Registers the topic type with the system and returns an asynchronous sequence of responses.
+### Instance Methods
+- [func askSignificantChangePermission(for: PermissionQuestion<SignificantAppUpdateTopic>, permissionFlow: PermissionFlow, in: NSWindow) async throws -> PermissionResult](askcenter/asksignificantchangepermission(for:permissionflow:in:)-85gmn.md)
+  Tells the system to request that the user send the significant app update permission question to the user’s parent/s and/or guardian/s using the specified permission flow. Throws an error if the system was unable to request the user to send the question.
+- [func askSignificantChangePermission(for: PermissionQuestion<SignificantAppUpdateTopic>, permissionFlow: PermissionFlow, in: UIViewController) async throws -> PermissionResult](askcenter/asksignificantchangepermission(for:permissionflow:in:)-nm9w.md)
+  Requests that a child send the significant app update permission question to their parent or guardian using the specified permission flow.
 
 ## See Also
 

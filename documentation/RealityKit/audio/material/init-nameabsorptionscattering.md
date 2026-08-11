@@ -3,6 +3,8 @@
 **Framework**: RealityKit  
 **Kind**: init
 
+Creates an audio material from absorption and scattering data.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -16,6 +18,12 @@
 ```swift
 init(name: String? = nil, absorption: Audio.Absorption, scattering: Audio.Scattering)
 ```
+
+## Parameters
+
+- `name`: An optional name for the material.
+- `absorption`: The absorption characteristics of the material.
+- `scattering`: The scattering characteristics of the material.
 
 
 ---

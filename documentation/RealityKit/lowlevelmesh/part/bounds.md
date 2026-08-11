@@ -25,6 +25,8 @@ RealityKit uses this bounding box for culling the mesh against the active camera
 
 Take care to maintain the bounds of each mesh part so that it completely contains the part’s geometry. Otherwise, RealityKit may not render your meshes correctly.
 
+> **Note**: On visionOS, if these bounds don’t completely contain the part’s geometry, you might see pixelated passthrough artifacts on the mesh due to inaccurate depth reprojection. Provide a correct bounding box for your virtual content, or if the mesh is animated by a shader, make the bounding box more conservative.
+
 ## See Also
 
 - [var indexOffset: Int](lowlevelmesh/part/indexoffset.md)

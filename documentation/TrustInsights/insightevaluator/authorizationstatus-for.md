@@ -8,7 +8,6 @@ Returns an authorization status that indicates whether a person permitted the ap
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 
 ## Declaration
 

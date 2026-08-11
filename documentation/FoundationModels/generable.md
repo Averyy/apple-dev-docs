@@ -60,16 +60,11 @@ If the [`Generable`](generable.md) type includes properties with clear names the
 
 ### Creating a Generable type
 - [macro Generable(description: String?)](generable(description:).md)
-  Conforms a type to [`Generable`](generable.md) protocol.
 - [macro Generable(description: String?, representNilExplicitlyInGeneratedContent: Bool)](generable(description:representnilexplicitlyingeneratedcontent:).md)
-  Conforms a type to [`Generable`](generable.md) protocol.
 - [macro Generable(name: String, description: String?, representNilExplicitlyInGeneratedContent: Bool)](generable(name:description:representnilexplicitlyingeneratedcontent:).md)
-  Conforms a type to [`Generable`](generable.md) protocol, using a custom name for the schema instead of the Swift type name.
 ### Creating a guide
 - [macro Guide(description: String)](guide(description:).md)
-  Allows for influencing the allowed values of properties of a generable type.
 - [macro Guide(description:_:)](guide(description:_:).md)
-  Allows for influencing the allowed values of properties of a generable type.
 - [struct GenerationGuide](generationguide.md)
   Guides that control how values are generated.
 ### Getting the schema
@@ -77,7 +72,7 @@ If the [`Generable`](generable.md) type includes properties with clear names the
   An instance of the generation schema.
 ### Converting to partially generated
 - [func asPartiallyGenerated() -> Self.PartiallyGenerated](generable/aspartiallygenerated.md)
-  The partially generated type of this struct.
+  Returns the partially generated representation of the current instance.
 - [associatedtype PartiallyGenerated : ConvertibleFromGeneratedContent = Self](generable/partiallygenerated.md)
   A representation of partially generated content
 
@@ -97,6 +92,8 @@ If the [`Generable`](generable.md) type includes properties with clear names the
 
 - [Generating Swift data structures with guided generation](generating-swift-data-structures-with-guided-generation.md)
   Create robust apps by describing output you want programmatically.
+- [macro Generable(description: String?)](generable(description:).md)
+- [macro Guide(description: String)](guide(description:).md)
 - [struct GenerationSchema](generationschema.md)
   A type that describes the properties of an object and any guides on their values.
 - [struct DynamicGenerationSchema](dynamicgenerationschema.md)

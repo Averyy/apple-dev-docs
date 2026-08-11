@@ -3,7 +3,7 @@
 **Framework**: USDKit  
 **Kind**: property
 
-A sentinel time code that represents the earliest authored sample for a value.
+A sentinel time code that resolves to the earliest authored sample of a value.
 
 **Availability**:
 - iOS 27.0+ (Beta)

@@ -20,6 +20,10 @@ Removes all members from the set.
 mutating func removeAll(keepingCapacity keepCapacity: Bool = false)
 ```
 
+## Parameters
+
+- `keepCapacity`: If `true`, the set’s buffer capacity is preserved; if `false`, the underlying buffer is released. The default is `false`.
+
 ## See Also
 
 - [func filter<E>((Element) throws(E) -> Bool) throws(E) -> Set<Element>](set/filter(_:).md)

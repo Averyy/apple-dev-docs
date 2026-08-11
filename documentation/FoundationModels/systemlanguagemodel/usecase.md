@@ -37,9 +37,9 @@ struct UseCase
 ## See Also
 
 - [convenience init(useCase: SystemLanguageModel.UseCase, guardrails: SystemLanguageModel.Guardrails)](systemlanguagemodel/init(usecase:guardrails:).md)
-  Creates a [`SystemLanguageModel`](systemlanguagemodel.md) for a specific use case.
+  Creates a system language model instance for a specific use case.
 - [SystemLanguageModel.Guardrails](systemlanguagemodel/guardrails.md)
-  Guardrails flag sensitive content from model input and output.
+  A set of controls that flag sensitive content from model input and output.
 
 
 ---

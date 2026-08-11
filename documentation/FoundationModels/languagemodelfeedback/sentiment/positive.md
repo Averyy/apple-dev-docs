@@ -19,6 +19,10 @@ A positive sentiment
 case positive
 ```
 
+## Mentions
+
+- [Inspecting session transcripts and reporting model feedback](inspecting-session-transcripts-and-reporting-model-feedback.md)
+
 ## See Also
 
 - [LanguageModelFeedback.Sentiment.negative](languagemodelfeedback/sentiment/negative.md)

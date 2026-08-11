@@ -86,7 +86,6 @@ struct UTF8Span
   `MutableSpan<Element>` represents a contiguous region of memory which contains initialized instances of `Element`.
 - [struct MutableRawSpan](mutablerawspan.md)
   `MutableRawSpan` represents a contiguous region of memory which contains initialized bytes.
-- [struct SpanIterator](spaniterator.md)
 
 
 ---

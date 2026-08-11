@@ -25,7 +25,7 @@ A binding to the request’s mutable configuration properties.
 
 SwiftUI returns the value associated with this property when you use [`FetchRequest`](fetchrequest.md) as a property wrapper on a [`FetchedResults`](fetchedresults.md) instance, and then access the results with a dollar sign (`$`) prefix. The value that SwiftUI returns is a [`Binding`](binding.md) to the request’s [`FetchRequest.Configuration`](fetchrequest/configuration.md) structure, which dynamically configures the request.
 
-For example, consider the following fetch request for a type that the [`Loading and Displaying a Large Data Feed`](loading_and_displaying_a_large_data_feed.md) sample code project defines to store earthquake data, sorted based on the `time` property:
+For example, consider the following fetch request for a type that the [`Loading and displaying a large data feed`](loading-and-displaying-a-large-data-feed.md) sample code project defines to store earthquake data, sorted based on the `time` property:
 
 ```swift
 @FetchRequest(sortDescriptors: [SortDescriptor(\.time, order: .reverse)])

@@ -20,7 +20,7 @@ var stateNames: [String] { get }
 
 #### Discussion
 
-States are function arguments that the function both reads and writes during inference. You must provide a mutable view for every state when calling `InferenceFunction/run(inputs:states:outputViews:)`.
+States are function arguments that the function both reads and writes during inference. You must provide a mutable view for every state when calling [`run(inputs:states:outputViews:)`](inferencefunction/run(inputs:states:outputviews:)-14emi.md).
 
 ## See Also
 

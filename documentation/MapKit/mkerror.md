@@ -37,7 +37,9 @@ struct MKError
   An unknown error occurred.
 - [MKError.Code](mkerror/code.md)
   Error constants for the MapKit framework.
-### Type Properties
+### Accessing error properties
+- [var localizedDescription: String](../Swift/Error/localizedDescription.md)
+  Retrieve the localized description for this error.
 - [static var errorDomain: String](mkerror/errordomain.md)
   The error domain.
 

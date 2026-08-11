@@ -14,7 +14,7 @@
 ## Declaration
 
 ```swift
-init(id: String, metadata: [String : any Codable & Sendable & Equatable], toolName: String, arguments: GeneratedContent)
+init(id: String, metadata: [String : any ConvertibleToGeneratedContent], toolName: String, arguments: GeneratedContent)
 ```
 
 ## See Also

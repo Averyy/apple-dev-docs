@@ -26,11 +26,11 @@ After the value of this property becomes `true`, it remains `true` indefinitely.
 
 ##### Interaction with Task Cancellation Shields
 
-Cancellation may be suppressed by an active task cancellation shield (`withTaskCancellationShield(operation:)`), which may cause `isCancelled` to return `false` even though the task has been cancelled externally.
+Cancellation may be suppressed by an active task cancellation shield (`withTaskCancellationShield(operation:)-(()->Value)`), which may cause `isCancelled` to return `false` even though the task has been cancelled externally.
 
 > **Note**: [`checkCancellation()`](task/checkcancellation().md)
 
-> **Note**: `withTaskCancellationShield(operation:)`
+> **Note**: `withTaskCancellationShield(operation:)-(()->Value)`
 
 ## See Also
 

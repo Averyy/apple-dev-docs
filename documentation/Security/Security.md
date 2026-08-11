@@ -117,7 +117,7 @@ As shown in the image below, you can also use lower level cryptographic resource
 - [var errSecCSUnsupportedAlgorithm: OSStatus](errseccsunsupportedalgorithm.md)
 - [var errSecMissingQualifiedCertStatement: OSStatus](errsecmissingqualifiedcertstatement.md)
 - [let kSecCFErrorDetachedCertificates: CFString](kseccferrordetachedcertificates.md)
-- [var kSecCS_MAX_SIGNATURES: Int32](kseccs_max_signatures.md)
+- [var kSecCSMaxSignatures: Int](kseccsmaxsignatures.md)
 - [let kSecCodeInfoChosenSignature: CFString](kseccodeinfochosensignature.md)
 - [let kSecCodeInfoSignerInfoSKID: CFString](kseccodeinfosignerinfoskid.md)
 - [let kSecCodeInfoTotalSignatures: CFString](kseccodeinfototalsignatures.md)

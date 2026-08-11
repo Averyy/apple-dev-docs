@@ -4,6 +4,8 @@
 **Kind**: property  
 **Required**: Yes
 
+The stage associated with this notice.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)

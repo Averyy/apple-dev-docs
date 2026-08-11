@@ -28,6 +28,17 @@ struct ContourStyle
 - [static var straight: MapPolyline.ContourStyle](mappolyline/contourstyle/straight.md)
   Straight-line segments between points.
 
+## See Also
+
+- [func stroke(some ShapeStyle, lineWidth: CGFloat) -> some MapContent](mapcontent/stroke(_:linewidth:).md)
+  Applies the given shape style to drawn map overlays using the line width you specify.
+- [func stroke(some ShapeStyle, style: StrokeStyle) -> some MapContent](mapcontent/stroke(_:style:).md)
+  Applies the given shape style to drawn map overlays using the stroke style you specify.
+- [func stroke(lineWidth: CGFloat) -> some MapContent](mapcontent/stroke(linewidth:).md)
+  Applies the given stoke drawn map overlays using the line width you specify.
+- [func strokeStyle(style: StrokeStyle) -> some MapContent](mapcontent/strokestyle(style:).md)
+  Applies the given stroke style to drawn map overlays.
+
 
 ---
 

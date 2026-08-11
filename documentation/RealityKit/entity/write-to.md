@@ -27,6 +27,7 @@ This method generates a file with a `.reality` suffix, automatically setting its
 - iOS 18 or later
 - macOS 15 or later
 - visionOS 2 or later
+- tvOS 26 or later
 
 Logs with the prefix [RealityKit File Compatibility Info] will be posted to the console whenever a component or asset requires a compatibility adjustment.
 

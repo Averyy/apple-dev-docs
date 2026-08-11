@@ -8,6 +8,7 @@ Calling this method resets the analyzer to its initial state so that a new run o
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

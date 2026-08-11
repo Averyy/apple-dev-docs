@@ -92,6 +92,13 @@ The `<service>` argument accepts the following values. When applicable, each ent
 - **`VoiceBanking`**: To reset access to Personal Voice and voice banking.
 - **`WebBrowserPublicKeyCredential`**: To reset access to public key credentials (passkeys and WebAuthn) in web browsers.
 
+## See Also
+
+- [Locating a missing debug symbol file](locating-a-missing-debug-symbol-file.md)
+  Find the debug symbol file (`.dSYM`) required to decode the hexadecimal address from a crash report.
+- [Acquiring operating system symbol information](acquiring-operating-system-symbol-information.md)
+  Download symbols for Apple system frameworks using Xcode or Terminal.
+
 
 ---
 

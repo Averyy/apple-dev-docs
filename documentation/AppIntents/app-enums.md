@@ -12,13 +12,14 @@ If your app intents or app entities expose variables with predefined values, sup
 
 ### Enumerated types
 - [protocol AppEnum](appenum.md)
-  An interface to express that a custom type has a predefined, static set of valid values to display.
+  An interface to express that a custom type has a predefined, static set of values.
 ### Universal link navigation
 - [protocol URLRepresentableEnum](urlrepresentableenum.md)
-  An app enum with a URL representation.
+  An interface you apply to an app enum type so the system can handle it like a universal link.
 - [struct EnumURLRepresentation](enumurlrepresentation.md)
-  The URL representation of an app enum.
+  The type that provides the URL for an app enum.
 - [protocol CustomURLRepresentationParameterConvertible](customurlrepresentationparameterconvertible.md)
+  An interface that allows a type to express its contents in a URL representation.
 
 ## See Also
 

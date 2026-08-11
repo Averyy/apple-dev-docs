@@ -23,7 +23,7 @@ associatedtype ActorID : Hashable, Sendable
 
 ##### A Note on Codable Ids
 
-If this type is `Codable`, then any `distributed actor` using this `ActorID` as its `DistributedActor/ID` will gain a synthesized `Codable` conformance which is implemented by encoding the `ID`. The decoding counter part of the `Codable` conformance is implemented by decoding the `ID` and passing it to the [`resolve(id:using:)`](distributedactor/resolve(id:using:).md) method.
+If this type is `Codable`, then any `distributed actor` using this `ActorID` as its [`id`](distributedactor/id.md) will gain a synthesized `Codable` conformance which is implemented by encoding the `ID`. The decoding counter part of the `Codable` conformance is implemented by decoding the `ID` and passing it to the [`resolve(id:using:)`](distributedactor/resolve(id:using:).md) method.
 
 
 ---

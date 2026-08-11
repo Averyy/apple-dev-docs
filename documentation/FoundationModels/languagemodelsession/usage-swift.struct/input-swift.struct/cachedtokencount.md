@@ -21,7 +21,7 @@ var cachedTokenCount: Int
 
 #### Discussion
 
-This value will always be less than or equal to [`totalTokenCount`](languagemodelsession/usage-swift.struct/input-swift.struct/totaltokencount.md).
+This value is always less than or equal to [`totalTokenCount`](languagemodelsession/usage-swift.struct/input-swift.struct/totaltokencount.md).
 
 ## See Also
 

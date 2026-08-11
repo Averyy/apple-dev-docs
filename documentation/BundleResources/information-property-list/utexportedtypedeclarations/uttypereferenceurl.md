@@ -25,6 +25,8 @@ The webpage for a reference document that describes this type.
   The bundle icon resource to associate with this type.
 - [UTTypeIconFiles](information-property-list/utexportedtypedeclarations/uttypeiconfiles.md)
   One or more bundle icon resources to associate with this type.
+- [UTTypeIcons](information-property-list/utexportedtypedeclarations/uttypeicons.md)
+  A dictionary that describes how the system represents this type as an icon or symbol.
 - [UTTypeIdentifier](information-property-list/utexportedtypedeclarations/uttypeidentifier.md)
   The Uniform Type Identifier to assign to this type.
 - [UTTypeTagSpecification](information-property-list/utexportedtypedeclarations/uttypetagspecification.md)

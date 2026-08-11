@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: class
 
-A compiled Metal function that implements the fragment surface shader stage.
+A compiled Metal function that implements the surface shader function.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -17,6 +17,10 @@ A compiled Metal function that implements the fragment surface shader stage.
 final class SurfaceShader
 ```
 
+#### Overview
+
+Create a `SurfaceShader` by compiling a [`LowLevelMaterialResource.SurfaceShader.Descriptor`](lowlevelmaterialresource/surfaceshader/descriptor.md) with [`makeSurfaceShader(descriptor:)`](lowlevelrendercontext/makesurfaceshader(descriptor:)-66tq8.md), or use [`makeSimpleSurfaceShader(descriptor:)`](lowlevelrendercontext/makesimplesurfaceshader(descriptor:)-74vhb.md) for the built-in simple surface shader function.
+
 ## Topics
 
 ### Describing the shader
@@ -24,7 +28,7 @@ final class SurfaceShader
   The name and library for a user-authored Metal surface shader function.
 ### Configuring shader parameters
 - [var parameterMapping: LowLevelMaterialParameterMapping?](lowlevelmaterialresource/surfaceshader/parametermapping.md)
-  The parameter name-to-slot mapping for this surface shader.
+  The parameter name-to-slot mapping for this surface shader function, or `nil` if it takes no custom parameters.
 - [var argumentTableDescriptor: LowLevelArgumentTable.Descriptor?](lowlevelmaterialresource/surfaceshader/argumenttabledescriptor.md)
   The argument table descriptor for this surface shader, or `nil` if it takes no per-draw arguments.
 
@@ -42,11 +46,11 @@ final class SurfaceShader
 - [var geometry: LowLevelMaterialResource.GeometryModifier](lowlevelmaterialresource/geometry.md)
   The compiled vertex-stage geometry modifier.
 - [LowLevelMaterialResource.GeometryModifier](lowlevelmaterialresource/geometrymodifier.md)
-  A compiled Metal function that implements the vertex geometry modifier stage.
+  A compiled Metal function that implements the geometry modifier function.
 - [LowLevelMaterialResource.LightingFunction](lowlevelmaterialresource/lightingfunction.md)
-  A compiled function that evaluates lighting for a surface shader stage.
+  A compiled Metal function that evaluates lighting.
 - [LowLevelMaterialResource.Function](lowlevelmaterialresource/function.md)
-  A compiled shader stage function that can receive per-draw parameters via an argument table.
+  A compiled shader function that can receive per-draw parameters via an argument table.
 
 
 ---

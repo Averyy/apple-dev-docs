@@ -27,7 +27,7 @@ init(imageURL: URL, orientation: CGImagePropertyOrientation? = nil)
 ## See Also
 
 - [init(_:orientation:)](attachment/init(_:orientation:).md)
-  Creates an attachment from a `CGImage`.
+  Creates an attachment from a Core Graphics image.
 
 
 ---

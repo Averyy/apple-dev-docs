@@ -28,7 +28,9 @@ The passed in executor reference is used to establish the executor context for t
 
 This operation consumes the job, preventing it accidental use after it has been run.
 
-> **Note**: `runSynchronously(on:)`
+> **Note**: [`runSynchronously(on:)`](executorjob/runsynchronously(on:)-9dhs1.md)
+
+> **Note**: [`runSynchronously(on:)`](executorjob/runsynchronously(on:)-6e565.md)
 
 ## Parameters
 

@@ -20,10 +20,11 @@ let memoryValues = entry.values.filter { $0.metricGroup == .memory }
 
 The majority of values are scalar values expressed as a [`Measurement`](https://developer.apple.com/documentation/Foundation/Measurement). A `Measurement` pairs a `Double` value with a unit. MetricKit uses unit types including:
 
-- [`UnitDuration`](https://developer.apple.com/documentation/Foundation/UnitDuration) — Time-based measurements such as CPU time, hang time, background activity durations, and launch times; also represents dimensionless ratios like hitch time and scroll hitch time, expressed as milliseconds per second.
-- [`UnitInformationStorage`](https://developer.apple.com/documentation/Foundation/UnitInformationStorage) — Byte-based measurements such as memory usage, network transfer totals, and disk sizes.
-- [`UnitFrequency`](https://developer.apple.com/documentation/Foundation/UnitFrequency) — Rate measurements such as frames per second in [`MetricResult.metalFrameRate(_:)`](metricresult/metalframerate(_:).md).
-- [`SignalBars`](signalbars.md) — The [`Dimension`](https://developer.apple.com/documentation/Foundation/Dimension) subclass used in [`MetricResult.cellularConditionTime(_:)`](metricresult/cellularconditiontime(_:).md) histograms to represent cellular signal strength levels.
+- **[`UnitDuration`](https://developer.apple.com/documentation/Foundation/UnitDuration)**: Time-based measurements such as CPU time, hang time, background activity durations, and launch times.
+- **[`UnitInformationStorage`](https://developer.apple.com/documentation/Foundation/UnitInformationStorage)**: Byte-based measurements such as memory usage, network transfer totals, and disk sizes.
+- **[`UnitFrequency`](https://developer.apple.com/documentation/Foundation/UnitFrequency)**: Rate measurements such as frames per second in [`MetricResult.metalFrameRate(_:)`](metricresult/metalframerate(_:).md).
+- **[`SignalBars`](signalbars.md)**: The [`Dimension`](https://developer.apple.com/documentation/Foundation/Dimension) subclass used in [`MetricResult.cellularConditionTime(_:)`](metricresult/cellularconditiontime(_:).md) histograms to represent cellular signal strength levels.
+- **[`HitchTimeRatio`](hitchtimeratio.md)**: The [`Dimension`](https://developer.apple.com/documentation/Foundation/Dimension) subclass used by [`ratio`](hitchtimemetric/ratio.md) and [`hitchTimeRatio`](signpostintervalmetric/hitchtimeratio.md) to represent the ratio of hitch time to total tracked time, expressed as milliseconds per second.
 
 #### Work with Histogram Distributions
 

@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: struct
 
-A generation event sent on a [`LanguageModelExecutorGenerationChannel`](languagemodelexecutorgenerationchannel.md).
+A generation event sent on a generation channel.
 
 **Availability**:
 - iOS 27.0+ (Beta)

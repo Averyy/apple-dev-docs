@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: property
 
-The image as a `CGImage`.
+The image as a Core Graphics image.
 
 **Availability**:
 - iOS 27.0+ (Beta)

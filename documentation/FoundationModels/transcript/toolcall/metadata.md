@@ -16,7 +16,7 @@ Metadata produced by the model while generating this tool call.
 ## Declaration
 
 ```swift
-var metadata: [String : any Codable & Sendable & Equatable]
+var metadata: [String : GeneratedContent]
 ```
 
 ## See Also

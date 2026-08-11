@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: property
 
-Returns a JSON string representation of the generated content.
+A JSON string representation of the generated content.
 
 **Availability**:
 - iOS 26.0+
@@ -19,16 +19,18 @@ Returns a JSON string representation of the generated content.
 var jsonString: String { get }
 ```
 
-#### Examples
+#### Discussion
+
+Use this type to retrieve a JSON representation, like:
 
 ```swift
-// Object with properties
+// Create an object with properties.
 let content = GeneratedContent(properties: [
     "name": "Johnny Appleseed",
     "age": 30,
 ])
+// Print the output: {"name": "Johnny Appleseed", "age": 30}
 print(content.jsonString)
-// Output: {"name": "Johnny Appleseed", "age": 30}
 ```
 
 ## See Also
@@ -38,11 +40,11 @@ print(content.jsonString)
 - [GeneratedContent.Kind](generatedcontent/kind-swift.enum.md)
   A representation of the different types of content that can be stored in generated content.
 - [func value<Value>(Value.Type) throws -> Value](generatedcontent/value(_:).md)
-  Reads a top level, concrete partially `Generable` type from a named property.
+  Reads a top level, concrete partially generable type from a named property.
 - [func value(_:forProperty:)](generatedcontent/value(_:forproperty:).md)
-  Reads a concrete `Generable` type from named property.
+  Reads a concrete generable type from a named property.
 - [var isComplete: Bool](generatedcontent/iscomplete.md)
-  A Boolean that indicates whether the generated content is completed.
+  A Boolean value that indicates whether the generated content is complete.
 - [var generatedContent: GeneratedContent](generatedcontent/generatedcontent.md)
   A representation of this instance.
 - [var debugDescription: String](generatedcontent/debugdescription.md)

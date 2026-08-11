@@ -17,6 +17,10 @@
 let kind: Transcript.ResponseFormat.Kind
 ```
 
+## See Also
+
+- [Transcript.ResponseFormat.Kind](transcript/responseformat/kind-swift.enum.md)
+
 
 ---
 

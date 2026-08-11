@@ -8,6 +8,7 @@ Called when a document interaction controller needs to know whether the specifie
 **Availability**:
 - iOS 3.2+
 - iPadOS 3.2+
+- Mac Catalyst 3.2+
 - visionOS 1.0+
 
 ## Declaration

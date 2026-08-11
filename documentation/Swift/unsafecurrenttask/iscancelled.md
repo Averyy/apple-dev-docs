@@ -24,7 +24,7 @@ var isCancelled: Bool { get }
 
 After the value of this property becomes `true`, it remains `true` indefinitely. There is no way to uncancel a task.
 
-This property returns the actual cancellation state of the task, regardless of whether a cancellation shield is active. Use `Task/isCancelled` (the static property) if you need cancellation checking that respects active shields.
+This property returns the actual cancellation state of the task, regardless of whether a cancellation shield is active. Use [`isCancelled`](task/iscancelled-swift.type.property.md) (the static property) if you need cancellation checking that respects active shields.
 
 ##### Instance Property Iscancelled Ignores Task Cancellation Shields
 
@@ -49,15 +49,15 @@ Which is equivalent to the contextually aware static `Task.isCancelled` property
 Task.isCancelled
 ```
 
-Prefer using `Task.isCancelled` (the static property) in most situations when checking the cancellation status from inside the task.
+Prefer using [`isCancelled`](task/iscancelled-swift.type.property.md) (the static property) in most situations when checking the cancellation status from inside the task.
 
-> **Note**: `Task/isCancelled`
+> **Note**: [`isCancelled`](task/iscancelled-swift.type.property.md)
 
 > **Note**: [`checkCancellation()`](task/checkcancellation().md)
 
 > **Note**: [`hasActiveCancellationShield`](task/hasactivecancellationshield.md)
 
-> **Note**: `withTaskCancellationShield(operation:)`
+> **Note**: `withTaskCancellationShield(operation:)-(()->Value)`
 
 
 ---

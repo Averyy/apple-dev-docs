@@ -8,6 +8,7 @@ Returns a Boolean value indicating whether region monitoring is currently enable
 **Availability**:
 - iOS 4.0+
 - iPadOS 4.0+
+- Mac Catalyst 4.0+
 - macOS 10.8+
 - visionOS 1.0+
 

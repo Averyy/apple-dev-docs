@@ -103,6 +103,7 @@ This class provides login configuration information for platform single sign-on.
 - [var hpkeAuthPublicKey: SecKey?](asauthorizationproviderextensionloginconfiguration/hpkeauthpublickey.md)
 - [var hpkePreSharedKey: Data?](asauthorizationproviderextensionloginconfiguration/hpkepresharedkey.md)
 - [var hpkePreSharedKeyID: Data?](asauthorizationproviderextensionloginconfiguration/hpkepresharedkeyid.md)
+- [var includePlatformSSOAuthorizationScopes: Bool](asauthorizationproviderextensionloginconfiguration/includeplatformssoauthorizationscopes.md)
 - [var loginRequestEncryptionAlgorithm: ASAuthorizationProviderExtensionEncryptionAlgorithm](asauthorizationproviderextensionloginconfiguration/loginrequestencryptionalgorithm.md)
 - [var loginRequestHPKEPreSharedKey: Data?](asauthorizationproviderextensionloginconfiguration/loginrequesthpkepresharedkey.md)
 - [var loginRequestHPKEPreSharedKeyID: Data?](asauthorizationproviderextensionloginconfiguration/loginrequesthpkepresharedkeyid.md)

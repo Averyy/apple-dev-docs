@@ -3,7 +3,7 @@
 **Framework**: App Intents  
 **Kind**: property
 
-App enum schema conformance for types you use for maps functionality.
+The collection of enum schemas in the maps domain.
 
 **Availability**:
 - iOS 27.0+ (Beta)

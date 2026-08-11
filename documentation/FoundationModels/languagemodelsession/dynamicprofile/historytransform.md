@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: method
 
-Apply a transformation to the history prior to invoking the model.
+Applies a transformation to the history prior to invoking the model.
 
 **Availability**:
 - iOS 27.0+ (Beta)

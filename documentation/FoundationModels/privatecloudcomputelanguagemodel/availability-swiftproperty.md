@@ -26,7 +26,7 @@ final var availability: PrivateCloudComputeLanguageModel.Availability { get }
 ## See Also
 
 - [var isAvailable: Bool](privatecloudcomputelanguagemodel/isavailable.md)
-  A convenience getter to check if the system is entirely ready.
+  A Boolean value that indicates whether the system is entirely ready.
 - [PrivateCloudComputeLanguageModel.Availability](privatecloudcomputelanguagemodel/availability-swift.enum.md)
   The availability status for a specific PCC language model.
 

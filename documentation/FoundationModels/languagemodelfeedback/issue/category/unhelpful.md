@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: case
 
-The response was not unhelpful.
+The response was unhelpful.
 
 **Availability**:
 - iOS 26.0+
@@ -18,6 +18,10 @@ The response was not unhelpful.
 ```swift
 case unhelpful
 ```
+
+## Mentions
+
+- [Inspecting session transcripts and reporting model feedback](inspecting-session-transcripts-and-reporting-model-feedback.md)
 
 #### Discussion
 

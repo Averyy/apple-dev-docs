@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: property
 
-The render target descriptor derived from this configuration.
+The render target descriptor derived from this configuration’s [`output`](lowlevelrenderer/configuration/output-swift.property.md).
 
 **Availability**:
 - iOS 27.0+ (Beta)

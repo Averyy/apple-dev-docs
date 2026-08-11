@@ -19,7 +19,7 @@ final func setMeshInstance(_ newElement: LowLevelMeshInstanceArray.Element, inde
 
 #### Discussion
 
-You are responsible for ensuring `index` is within `0..<count`.
+The `index` must be at least `0` and less than `count`.
 
 > **Note**: [`LowLevelRenderContextError`](lowlevelrendercontexterror.md) if the render target descriptors of the array are not a subset of the render target descriptors of the mesh instance’s pipeline state.
 

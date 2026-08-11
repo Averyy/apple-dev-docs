@@ -41,7 +41,7 @@ protocol ProgressReportingIntent : AppIntent
 - [protocol PushToTalkTransmissionIntent](pushtotalktransmissionintent.md)
   An intent that begins or ends an audio transmission with the Push to Talk framework.
 - [protocol ShowInAppSearchResultsIntent](showinappsearchresultsintent.md)
-  An app intent that takes a person to search results for a specified search term.
+  An app intent that displays a set of search results in the app’s interface.
 
 
 ---

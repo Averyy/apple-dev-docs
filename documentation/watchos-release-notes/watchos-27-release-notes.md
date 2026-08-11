@@ -1,4 +1,4 @@
-# watchOS 27 Beta 4 Release Notes
+# watchOS 27 Beta 5 Release Notes
 
 **Framework**: watchOS Release Notes
 
@@ -6,9 +6,13 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The watchOS 27 SDK provides support to develop watchOS apps for Apple Watch devices running watchOS 27 beta 4. The SDK comes bundled with Xcode 27, available from the Mac App Store. For information on the compatibility requirements for Xcode 27, see [`Xcode 27 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-27-release-notes).
+The watchOS 27 SDK provides support to develop watchOS apps for Apple Watch devices running watchOS 27 beta 5. The SDK comes bundled with Xcode 27, available from the Mac App Store. For information on the compatibility requirements for Xcode 27, see [`Xcode 27 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-27-release-notes).
 
 ##### App Intents
+
+###### Resolved Issues
+
+- Fixed: The notes.appendText schema erroneously disappeared from the SDK.  (182532125)
 
 ###### Known Issues
 
@@ -25,6 +29,12 @@ The watchOS 27 SDK provides support to develop watchOS apps for Apple Watch devi
 ###### Resolved Issues
 
 - Fixed: Cellular incoming and outgoing calls might fail on Verizon network if the user upgrades from previous watchOS release to watchOS 27.0 beta 2 or performs an erase/clean install of watchOS 27.0 beta 2. Text-to-911 might also fail on Verizon network.  (180062521)
+
+##### Communication Safety
+
+###### Resolved Issues
+
+- Fixed: Sensitive QRCode detected as non-sensitive, preventing 3rd party developers from testing API functionality.  (183962032)
 
 ##### Complications
 
@@ -61,11 +71,21 @@ The watchOS 27 SDK provides support to develop watchOS apps for Apple Watch devi
 
 - HealthKit now supports heart rate and cycling power zones.  (135746152)
 
+###### Resolved Issues
+
+- Fixed: null unit might incorrectly convert to count and percent units.  (171273931) (FB22066297)
+
 ##### Network Security
 
 ###### New Features
 
 - Starting in 27.0 operating systems, select system processes now enforce stricter network security (TLS) requirements. These new requirements might cause connections to fail if the server does not meet them. The affected processes are those involved in MDM, DDM, Automated Device Enrollment, configuration profile installation, app installation, and software updates. Servers must support TLS 1.2 at minimum, using cipher suites and certificates that meet App Transport Security (ATS) requirements. For additional details on affected processes, requirements, and how to audit and diagnose failures in managed environments, please reference [`Prepare your network environment for stricter security requirements`](https://developer.apple.comhttps://support.apple.com/en-us/126655). For additional details on ATS and the new requirements, please reference [`Preventing Insecure Network Connections`](https://developer.apple.comhttps://developer.apple.com/documentation/Security/preventing-insecure-network-connections) and [`NSRequiresNIAPTLSPackageVersion`](https://developer.apple.comhttps://developer.apple.com/documentation/BundleResources/Information-Property-List/NSRequiresNIAPTLSPackageVersion).  (176055825)
+
+##### Security
+
+###### Known Issues
+
+- Obtaining new certificates via ACME fails. New MDM enrollments using Managed Device Attestation fail.  (183456836) **Workaround:** Use SCEP if available as a temporary workaround, or ensure MDA-issued certificates are already installed before upgrading.
 
 ##### Siri
 
@@ -77,6 +97,7 @@ The watchOS 27 SDK provides support to develop watchOS apps for Apple Watch devi
 ###### Known Issues
 
 - Siri might appear to be listening when it is not after extended periods of silence while the Siri interface remains on screen.  (180434572)
+- As of beta 5, SiriAI conversation history no longer syncs to devices running a prior beta. iCloud sync works between devices updated to beta 5. No existing conversations will be lost.  (182145010)
 
 ##### Sleep Focus
 
@@ -104,9 +125,9 @@ The watchOS 27 SDK provides support to develop watchOS apps for Apple Watch devi
 - New `Product.ProductType` APIs represent subscription Bundles and subscription Suites. New APIs in `Product.SubscriptionInfo.BundledSubscription` let you fetch merchandising data about subscriptions contained in a Bundle. Transaction and RenewalInfo contain new fields that provide information about purchases and customer status regarding Bundles and Suites.  (160501742)
 - `partnerName` and `partnerId` properties for Advanced Commerce API are available in [`Transaction.AdvancedCommerceInfo`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/transaction/advancedcommerceinfo-swift.struct) and [`RenewalInfo.AdvancedCommerceInfo`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/product/subscriptioninfo/renewalinfo/advancedcommerceinfo-swift.struct).  (167808780)
 
-###### Known Issues
+###### Resolved Issues
 
-- Purchases of non-subscription In-App Purchases made using the SKTestSession.buyProduct() method might fail with an invalid product error. The billingPlanType(_:) PurchaseOption isn’t respected for subscription purchases.  (181842500)
+- Fixed: Purchases of non-subscription In-App Purchases made using the SKTestSession.buyProduct() method might fail with an invalid product error. The billingPlanType(_:) PurchaseOption isn’t respected for subscription purchases.  (181842500)
 
 ##### Storekit Testing in Xcode
 

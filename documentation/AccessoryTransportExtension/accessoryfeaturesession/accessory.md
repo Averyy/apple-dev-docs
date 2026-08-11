@@ -7,9 +7,9 @@
 The accessory associated with this feature session.
 
 **Availability**:
-- iOS 26.5+
-- iPadOS 26.5+
-- Mac Catalyst 26.5+
+- iOS 27.0+ (Beta)
+- iPadOS 27.0+ (Beta)
+- Mac Catalyst 27.0+ (Beta)
 
 ## Declaration
 

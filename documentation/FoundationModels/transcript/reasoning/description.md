@@ -18,7 +18,7 @@ var description: String { get }
 
 ## See Also
 
-- [var metadata: [String : any Codable & Sendable & Equatable]](transcript/reasoning/metadata.md)
+- [var metadata: [String : GeneratedContent]](transcript/reasoning/metadata.md)
   Metadata produced by the model while generating this reasoning entry.
 - [var segments: [Transcript.Segment]](transcript/reasoning/segments.md)
   Ordered reasoning segments.

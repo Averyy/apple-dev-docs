@@ -3,6 +3,8 @@
 **Framework**: App Intents  
 **Kind**: property
 
+The universal link you use to locate your app’s content.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+

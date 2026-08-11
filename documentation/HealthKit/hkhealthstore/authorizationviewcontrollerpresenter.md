@@ -45,6 +45,8 @@ By default, the system infers the correct view controller to show HealthKit’s 
   Requests permission to save and read the data types specified by an extension.
 - [func getEarliestAuthorizedSampleDate(for: Set<HKObjectType>, completion: ([HKObjectType : Date]?, (any Error)?) -> Void)](hkhealthstore/getearliestauthorizedsampledate(for:completion:).md)
   Returns the earliest date that the person permits your app to read samples for the given data types.
+- [func earliestAuthorizedSampleDate(for: Set<HKObjectType>) async throws -> [HKObjectType : Date]](hkhealthstore/earliestauthorizedsampledate(for:).md)
+  Returns the earliest date that the person permits your app to read samples for the given data types.
 - [func earliestPermittedSampleDate() -> Date](hkhealthstore/earliestpermittedsampledate.md)
   Returns the earliest date that the framework permits your app to save or read samples.
 

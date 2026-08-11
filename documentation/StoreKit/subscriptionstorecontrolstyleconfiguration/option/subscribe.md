@@ -8,6 +8,7 @@ Initiates a purchase when a customer activates a control to subscribe to the opt
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+

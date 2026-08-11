@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: init
 
-Create a new, unique `GenerationID`.
+Creates a unique identifier.
 
 **Availability**:
 - iOS 26.0+

@@ -8,6 +8,7 @@ A constant that indicates the mobile driver’s license holder is male as define
 **Availability**:
 - iOS 17.2+
 - iPadOS 17.2+
+- Mac Catalyst 17.2+
 
 ## Declaration
 

@@ -8,6 +8,7 @@ An array of application-specific providers to add to the list of account provide
 **Availability**:
 - iOS 14.2+
 - iPadOS 14.2+
+- Mac Catalyst 14.2+
 - macOS ?+
 - tvOS 14.2+
 - visionOS 1.0+

@@ -19,26 +19,28 @@ final class LowLevelRenderContextStandalone
 
 #### Overview
 
-`LowLevelRenderContextStandalone` is a concrete implementation of [`LowLevelRenderContext`](lowlevelrendercontext.md) and [`LowLevelRenderContextLighting`](lowlevelrendercontextlighting.md). Create one using the async initializer for full setup including shader and pipeline compilation, or the synchronous initializer using a pre-compiled [`LowLevelRenderContextStandalone.Resources`](lowlevelrendercontextstandalone/resources.md) instance.
+`LowLevelRenderContextStandalone` is a concrete implementation of [`LowLevelRenderContext`](lowlevelrendercontext.md), [`LowLevelRenderContextLighting`](lowlevelrendercontextlighting.md), and [`LowLevelRenderContextShaderGraph`](lowlevelrendercontextshadergraph.md). Create one using [`init(configuration:)`](lowlevelrendercontextstandalone/init(configuration:).md) , or [`init(configuration:resources:)`](lowlevelrendercontextstandalone/init(configuration:resources:).md) with a prepared [`LowLevelRenderContextStandalone.Resources`](lowlevelrendercontextstandalone/resources.md) instance.
 
 ## Topics
 
 ### Creating a render context
 - [init(configuration: LowLevelRenderContextStandalone.Configuration, resources: LowLevelRenderContextStandalone.Resources) throws](lowlevelrendercontextstandalone/init(configuration:resources:).md)
-  Creates a standalone render context using pre-compiled shader and pipeline resources.
+  Creates a standalone render context using resources prepared ahead of time.
 - [init(configuration: LowLevelRenderContextStandalone.Configuration) async throws](lowlevelrendercontextstandalone/init(configuration:).md)
-  Creates a standalone render context, asynchronously compiling all required shader and pipeline resources.
+  Creates a standalone render context, asynchronously preparing required resources.
 - [LowLevelRenderContextStandalone.Configuration](lowlevelrendercontextstandalone/configuration.md)
   Configuration for creating a standalone render context backed by a Metal device.
 - [LowLevelRenderContextStandalone.Resources](lowlevelrendercontextstandalone/resources.md)
-  Pre-compiled shader and pipeline resources shared across multiple render context instances.
+  Resources needed for a render context
 ### Creating lighting functions
 - [func makeImageBasedLightingFunction() -> sending LowLevelMaterialResource.LightingFunction](lowlevelrendercontextstandalone/makeimagebasedlightingfunction.md)
   Returns a lighting function using image-based lighting (IBL).
 - [func makeUnlitLightingFunction() -> sending LowLevelMaterialResource.LightingFunction](lowlevelrendercontextstandalone/makeunlitlightingfunction.md)
   Returns an unlit lighting function that emits the surface emissive color directly, without any lighting calculations.
 ### Default Implementations
+- [LowLevelRenderContext Implementations](lowlevelrendercontextstandalone/lowlevelrendercontext-implementations.md)
 - [LowLevelRenderContextLighting Implementations](lowlevelrendercontextstandalone/lowlevelrendercontextlighting-implementations.md)
+- [LowLevelRenderContextShaderGraph Implementations](lowlevelrendercontextstandalone/lowlevelrendercontextshadergraph-implementations.md)
 
 ## Relationships
 
@@ -56,12 +58,13 @@ final class LowLevelRenderContextStandalone
 - [protocol LowLevelRenderContext](lowlevelrendercontext.md)
   An entry point for creating rendering resources and compiling materials.
 - [protocol LowLevelRenderContextLighting](lowlevelrendercontextlighting.md)
-  An entry point for creating lighting functions for use in materials.
+  The interface for creating lighting functions for use in materials.
 - [protocol LowLevelRenderContextShaderGraph](lowlevelrendercontextshadergraph.md)
+  The interface for creating Metal shader functions from a ShaderGraph.
 - [struct LowLevelRenderContextError](lowlevelrendercontexterror.md)
-  An error thrown by render context factory methods when resource creation fails.
+  An error thrown when binding or updating a low-level rendering resource fails.
 - [struct LowLevelRendererError](lowlevelrenderererror.md)
-  An error thrown by the renderer during initialization or rendering.
+  An error thrown when creating or configuring a renderer.
 
 
 ---

@@ -14,7 +14,7 @@ Provide apps with access to an advertising identifier.
 
 #### Overview
 
-Use the AdSupport framework to obtain an advertising identifier. The [`advertisingIdentifier`](asidentifiermanager/advertisingidentifier.md) is an alphanumeric string that’s unique to each device, and which you only use for advertising. On devices running iOS 14.5 and later and iPadOS 14.5 and later, your app must support [`AppTrackingTransparency`](https://developer.apple.com/documentation/AppTrackingTransparency) and define the purpose string [`NSUserTrackingUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSUserTrackingUsageDescription) before it can get the [`advertisingIdentifier`](asidentifiermanager/advertisingidentifier.md) property.
+Use the AdSupport framework to obtain an advertising identifier. The [`advertisingIdentifier`](asidentifiermanager/advertisingidentifier.md) is an alphanumeric string that’s unique to each device, and which you only use for advertising. On devices running iOS 14.5 and later and iPadOS 14.5 and later, your app must support [`App Tracking Transparency`](https://developer.apple.com/documentation/AppTrackingTransparency) and define the purpose string [`NSUserTrackingUsageDescription`](https://developer.apple.com/documentation/BundleResources/Information-Property-List/NSUserTrackingUsageDescription) before it can get the [`advertisingIdentifier`](asidentifiermanager/advertisingidentifier.md) property.
 
 ##### Get an Advertising Identifier
 

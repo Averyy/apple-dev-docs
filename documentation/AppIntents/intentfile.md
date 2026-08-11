@@ -60,7 +60,7 @@ Provide an intent file entity implementation to describe data you store in a fil
 - [IntentFile.UnwrappedType](intentfile/unwrappedtype.md)
 - [IntentFile.ValueType](intentfile/valuetype.md)
 ### Type Properties
-- [static var defaultResolverSpecification: EmptyResolverSpecification<IntentFile>](intentfile/defaultresolverspecification.md)
+- [static var defaultResolverSpecification: some ResolverSpecification](intentfile/defaultresolverspecification.md)
 ### Enumerations
 - [IntentFile.IntentFileError](intentfile/intentfileerror.md)
 

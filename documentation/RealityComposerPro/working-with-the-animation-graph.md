@@ -132,8 +132,6 @@ The Animation Graph Editor provides a range of nodes organized by category. Each
   Root an animation Sequence at the right entity, then wire it to an Animation Library Component so it plays automatically at runtime.
 - [Building multi-track animation sequences](building-multi-track-animation-sequences.md)
   Root a Sequence correctly so it shows up as a clip and plays automatically at runtime.
-- [Automating motion path creation with editor-scripting commands](automating-motion-path-creation-with-editor-scripting-commands.md)
-  Build the same multi-track Sequence and Motion Path shown in the Sequencer UI programmatically, by chaining editor-scripting commands together.
 - [Building an advanced Animation Graph](building-an-advanced-animation-graph.md)
   Drive a character’s locomotion state machine from a Script Graph at runtime.
 - [Building a navmesh in Reality Composer Pro](building-a-navmesh-in-reality-composer-pro.md)

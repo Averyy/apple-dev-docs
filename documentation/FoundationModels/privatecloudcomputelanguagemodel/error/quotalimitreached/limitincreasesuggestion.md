@@ -22,7 +22,7 @@ var limitIncreaseSuggestion: PrivateCloudComputeLanguageModel.QuotaUsage.LimitIn
 ## See Also
 
 - [var resetDate: Date?](privatecloudcomputelanguagemodel/error/quotalimitreached/resetdate.md)
-  The date that the usage limit will reset.
+  The date that the usage limit resets.
 
 
 ---

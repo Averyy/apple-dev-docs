@@ -33,8 +33,8 @@ struct Factors
 - [init(rawValue: UInt)](avcapturedevice/systempressurestate-swift.class/factors-swift.struct/init(rawvalue:).md)
   Creates a system pressure factor from its raw string value.
 ### Type Properties
-- [static var systemStress: AVCaptureDevice.SystemPressureState.Factors](avcapturedevice/systempressurestate-swift.class/factors-swift.struct/systemstress.md)
-  Indicates that the system is 30 seconds away from unexpected power off.
+- [static var batteryStress: AVCaptureDevice.SystemPressureState.Factors](avcapturedevice/systempressurestate-swift.class/factors-swift.struct/batterystress.md)
+  Indicates that under the current battery conditions, the device will shut down within 30 seconds if system load is not reduced.
 
 ## Relationships
 

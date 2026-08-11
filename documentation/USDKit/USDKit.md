@@ -25,7 +25,7 @@ Typical work in USDKit includes generating USD documents procedurally, extractin
 
 ### Essentials
 - [struct USDStage](usdstage.md)
-  A composed, runtime view of a USD scene assembled from one or more layers.
+  A 3D scene composed from one or more Universal Scene Description (USD) documents.
 - [struct USDPrim](usdprim.md)
   A single node in a stage’s scene hierarchy that holds attributes, relationships, metadata, and child prims.
 - [struct USDLayer](usdlayer.md)
@@ -47,7 +47,7 @@ Typical work in USDKit includes generating USD documents procedurally, extractin
   Drives timeline playback of a USD stage and produces per-frame render data.
 ### Render diagnostics
 - [struct USDRenderError](usdrendererror.md)
-  A non-fatal error produced during USD scene processing.
+  An error produced when rendering a USD stage fails.
 ### Structures
 - [struct USDArray](usdarray.md)
 

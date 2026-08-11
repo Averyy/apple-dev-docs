@@ -80,6 +80,10 @@ Sheet presentation controllers specify a sheet’s size based on a *detent*, a h
 ### Animating changes to the sheet
 - [func animateChanges(() -> Void)](uisheetpresentationcontroller/animatechanges(_:).md)
   Animates the UI changes to the sheet’s properties.
+### Instance Properties
+- [var preferredPlacement: UISheetPresentationController.Placement](uisheetpresentationcontroller/preferredplacement.md)
+### Enumerations
+- [UISheetPresentationController.Placement](uisheetpresentationcontroller/placement.md)
 
 ## Relationships
 

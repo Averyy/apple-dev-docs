@@ -23,7 +23,7 @@ Creates a fully configured fetch request that uses the specified animation when 
 
 #### Discussion
 
-Use this initializer when you want to configure a fetch request with more than a predicate and sort descriptors. For example, you can vend a request from a `Quake` managed object that the [`Loading and Displaying a Large Data Feed`](loading_and_displaying_a_large_data_feed.md) sample code project defines to store earthquake data. Limit the number of results to `1000` by setting a [`fetchLimit`](https://developer.apple.com/documentation/CoreData/NSFetchRequest/fetchLimit) for the request:
+Use this initializer when you want to configure a fetch request with more than a predicate and sort descriptors. For example, you can vend a request from a `Quake` managed object that the [`Loading and displaying a large data feed`](loading-and-displaying-a-large-data-feed.md) sample code project defines to store earthquake data. Limit the number of results to `1000` by setting a [`fetchLimit`](https://developer.apple.com/documentation/CoreData/NSFetchRequest/fetchLimit) for the request:
 
 ```swift
 extension Quake {

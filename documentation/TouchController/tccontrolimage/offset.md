@@ -8,6 +8,7 @@ The offset from the center of the parent control in points.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

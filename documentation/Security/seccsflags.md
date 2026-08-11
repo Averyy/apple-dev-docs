@@ -35,8 +35,8 @@ All of the bits in the [`SecCSFlags`](seccsflags.md) enumeration are reserved by
 - [static var applyEmbeddedPolicy: SecCSFlags](seccsflags/applyembeddedpolicy.md)
 - [static var matchGuestRequirementInKernel: SecCSFlags](seccsflags/matchguestrequirementinkernel.md)
 - [static var stripDisallowedXattrs: SecCSFlags](seccsflags/stripdisallowedxattrs.md)
-- [static var useSignature1: SecCSFlags](seccsflags/usesignature1.md)
-- [static var useSignature2: SecCSFlags](seccsflags/usesignature2.md)
+- [static var useClassicalSignature: SecCSFlags](seccsflags/useclassicalsignature.md)
+- [static var usePostQuantumSignature: SecCSFlags](seccsflags/usepostquantumsignature.md)
 
 ## Relationships
 

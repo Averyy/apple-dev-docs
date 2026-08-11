@@ -16,7 +16,7 @@ Returns the relationship with a given name on this prim.
 ## Declaration
 
 ```swift
-func relationship(named name: USDToken) -> USDPrim.Relationship?
+func relationship(named name: USDToken) -> USDPrim.Relationship
 ```
 
 #### Discussion
@@ -30,6 +30,7 @@ If no relationship named `name` exists on this prim, returns an invalid relation
 - [func hasRelationship(named: USDToken) -> Bool](usdprim/hasrelationship(named:).md)
   Returns true if a relationship with a given name exists on this prim.
 - [USDPrim.Relationship](usdprim/relationship.md)
+  A property that connects a prim to one or more other objects in the stage by their paths.
 
 
 ---

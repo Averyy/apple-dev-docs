@@ -23,15 +23,6 @@ init(entries: some Sequence<Transcript.Entry> = [])
 
 - `entries`: An array of entries to seed the transcript.
 
-## See Also
-
-- [Transcript.Entry](transcript/entry.md)
-  An entry in a transcript.
-- [Transcript.Segment](transcript/segment.md)
-  The types of segments that may be included in a transcript entry.
-- [Transcript.Attachment](transcript/attachment.md)
-  The types of attached content.
-
 
 ---
 

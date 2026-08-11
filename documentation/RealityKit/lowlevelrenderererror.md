@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: struct
 
-An error thrown by the renderer during initialization or rendering.
+An error thrown when creating or configuring a renderer.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -48,12 +48,13 @@ struct LowLevelRendererError
 - [protocol LowLevelRenderContext](lowlevelrendercontext.md)
   An entry point for creating rendering resources and compiling materials.
 - [protocol LowLevelRenderContextLighting](lowlevelrendercontextlighting.md)
-  An entry point for creating lighting functions for use in materials.
+  The interface for creating lighting functions for use in materials.
 - [protocol LowLevelRenderContextShaderGraph](lowlevelrendercontextshadergraph.md)
+  The interface for creating Metal shader functions from a ShaderGraph.
 - [class LowLevelRenderContextStandalone](lowlevelrendercontextstandalone.md)
   A standalone Metal-backed render context for creating low-level rendering resources.
 - [struct LowLevelRenderContextError](lowlevelrendercontexterror.md)
-  An error thrown by render context factory methods when resource creation fails.
+  An error thrown when binding or updating a low-level rendering resource fails.
 
 
 ---

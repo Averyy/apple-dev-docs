@@ -8,6 +8,7 @@ A type representing an element that you can request from a mobile driver’s lic
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
+- Mac Catalyst 17.0+
 
 ## Declaration
 

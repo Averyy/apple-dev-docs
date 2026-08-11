@@ -3,7 +3,7 @@
 **Framework**: App Intents  
 **Kind**: protocol
 
-The result of performing an action that delivers an app intent back to the initiator of the action.
+A result type that indicates your app intent returns another app intent.
 
 **Availability**:
 - iOS 16.0+
@@ -23,6 +23,18 @@ protocol OpensIntent : IntentResult
 ## Mentions
 
 - [Creating your first app intent](creating-your-first-app-intent.md)
+
+#### Overview
+
+Add this protocol as a return type for an app intent’s [`perform()`](appintent/perform().md) method when the method returns another app intent to run. When returning the result, you can return any type of app intent that makes sense for the current action. For example, an app intent to create a photo album might return an app intent to open that album in the app’s interface. After you return an app intent as a result, the system runs it to perform its action.
+
+The following code shows how to add this protocol to your [`perform()`](appintent/perform().md) method. When returning an app intent, specify any type that adopts the [`AppIntent`](appintent.md) protocol.
+
+```swift
+func perform() async throws -> some ReturnsValue<Int> & OpensIntent {
+    .result(value: 1, opensIntent: MyCustomAppIntent())
+}
+```
 
 ## Relationships
 

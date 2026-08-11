@@ -16,7 +16,7 @@ Metadata to attach to the request
 ## Declaration
 
 ```swift
-var metadata: [String : any Sendable & Codable & Equatable]
+var metadata: [String : GeneratedContent]
 ```
 
 ## See Also

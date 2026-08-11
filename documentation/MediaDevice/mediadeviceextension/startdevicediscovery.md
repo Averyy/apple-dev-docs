@@ -24,7 +24,11 @@ func startDeviceDiscovery()
 
 #### Discussion
 
-Use the `Network`, `WiFiAware`, or `CoreBluetooth` frameworks for service discovery. As devices are found, report them to the system by calling [`foundDevice(_:)`](mediadeviceroutingmanager/founddevice(_:).md) on the routing manager. When a previously discovered device is no longer available, call [`lostDevice(_:)`](mediadeviceroutingmanager/lostdevice(_:).md). If discovery fails unexpectedly, call [`discoveryFailed(_:)`](mediadeviceroutingmanager/discoveryfailed(_:).md).
+Use the `Network`, `WiFiAware`, or `CoreBluetooth` frameworks for service discovery.
+
+> **Note**: During discovery, your extension will have local area network access, to include direct connections over WiFiAware and Bluetooth. It will not be permitted to connect to the internet or addresses outside the local network.
+
+As devices are found, report them to the system by calling [`foundDevice(_:)`](mediadeviceroutingmanager/founddevice(_:).md) on the routing manager. When a previously discovered device is no longer available, call [`lostDevice(_:)`](mediadeviceroutingmanager/lostdevice(_:).md). If discovery fails unexpectedly, call [`discoveryFailed(_:)`](mediadeviceroutingmanager/discoveryfailed(_:).md).
 
 
 ---

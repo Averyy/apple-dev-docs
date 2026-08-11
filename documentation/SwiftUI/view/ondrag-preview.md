@@ -31,6 +31,8 @@ To customize the lift preview, shown while the system transitions to show your c
 
 To use `Transferable` types directly and access a richer feature set — including multi-item drag via [`dragContainer(for:in:_:)`](view/dragcontainer(for:in:_:).md) — use [`draggable(_:)`](view/draggable(_:).md) instead.
 
+> ❗ **Important**: Don’t dispatch work to the main actor while exporting the item. Doing so isn’t supported and might cause a hang. If you register data representations on the item provider yourself, make sure their completion handlers don’t dispatch to the main thread.
+
 ## Parameters
 
 - `data`: A closure that returns a single [`NSItemProvider`](https://developer.apple.com/documentation/Foundation/NSItemProvider) that represents the draggable data from this view.

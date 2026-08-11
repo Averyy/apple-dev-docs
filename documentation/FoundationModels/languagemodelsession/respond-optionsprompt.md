@@ -32,7 +32,7 @@ A string composed of the tokens produced by sampling model output.
 ## See Also
 
 - [var isResponding: Bool](languagemodelsession/isresponding.md)
-  A Boolean value that indicates a response is being generated.
+  A Boolean value that indicates whether a response is being generated.
 - [func respond<Content>(generating: Content.Type, includeSchemaInPrompt: Bool, options: GenerationOptions, prompt: () throws -> Prompt) async throws -> LanguageModelSession.Response<Content>](languagemodelsession/respond(generating:includeschemainprompt:options:prompt:).md)
   Produces a generable object as a response to a prompt.
 - [func respond(schema: GenerationSchema, includeSchemaInPrompt: Bool, options: GenerationOptions, prompt: () throws -> Prompt) async throws -> LanguageModelSession.Response<GeneratedContent>](languagemodelsession/respond(schema:includeschemainprompt:options:prompt:).md)

@@ -35,7 +35,7 @@ The `id` and `name` route the event to a specific tool call within the `ToolCall
 - [var name: String](languagemodelexecutorgenerationchannel/toolcalls/toolcall/name.md)
   The name of the tool call.
 - [LanguageModelExecutorGenerationChannel.ToolCalls.ToolCall.ArgumentsFragment](languagemodelexecutorgenerationchannel/toolcalls/toolcall/argumentsfragment.md)
-  Append argument text to this tool call.
+  Argument text appended to this tool call.
 
 ## Relationships
 

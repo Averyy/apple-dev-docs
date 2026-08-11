@@ -8,6 +8,7 @@ A type representing an element that you can request from a photo ID.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

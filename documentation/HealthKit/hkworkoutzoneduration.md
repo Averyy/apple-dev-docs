@@ -49,6 +49,8 @@ This structure pairs a zone with the duration of time the person spent in that z
   A structure that defines a complete set of zones for a quantity type.
 - [struct HKWorkoutZoneGroup](hkworkoutzonegroup.md)
   A structure that contains zone configuration and time-in-zone data for a quantity type.
+- [class HKLiveWorkoutZoneUpdate](hkliveworkoutzoneupdate.md)
+  A structure that contains information about zone transitions during a live workout session.
 
 
 ---

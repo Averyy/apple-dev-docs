@@ -16,7 +16,7 @@ Language models that provide other kinds of usage statistics may encode them in 
 ## Declaration
 
 ```swift
-var metadata: [String : any Sendable]
+var metadata: [String : GeneratedContent]
 ```
 
 ## See Also
@@ -30,7 +30,7 @@ var metadata: [String : any Sendable]
 - [LanguageModelSession.Usage.Output](languagemodelsession/usage-swift.struct/output-swift.struct.md)
   Token counts for the output produced by the model.
 - [var totalTokenCount: Int](languagemodelsession/usage-swift.struct/totaltokencount.md)
-  The total number of tokens involved in this generation, equal to `input.totalTokenCount + output.totalTokenCount`.
+  The total number of tokens involved in this generation, combining input and output counts.
 
 
 ---

@@ -6,6 +6,7 @@
 
 ### Type Properties
 - [static var allCases: [HKAppleSleepingBreathingDisturbancesClassification]](hkapplesleepingbreathingdisturbancesclassification/allcases.md)
+  A collection of all values for Apple Sleeping Breathing Disturbances classification
 
 
 ---

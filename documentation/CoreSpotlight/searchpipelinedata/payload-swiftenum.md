@@ -3,7 +3,7 @@
 **Framework**: Core Spotlight  
 **Kind**: enum
 
-The typed variants of data a pipeline stage can produce or consume.
+The typed variants of data a pipeline stage can produce.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -20,25 +20,25 @@ enum Payload
 
 #### Overview
 
-`@unchecked Sendable` because `CSSearchableItem` is not `Sendable`. Pipeline stages must not mutate items received from prior stages.
+The [`SearchPipelineData`](searchpipelinedata.md) type uses this type to wrap the data you provide and store it for handoff to the next stage. The type is `@unchecked Sendable` because [`CSSearchableItem`](cssearchableitem.md) does not support the [`Sendable`](https://developer.apple.com/documentation/Swift/Sendable) protocol. Treat the data you store in this type as immutable.
 
 ## Topics
 
 ### Getting the payload data
 - [SearchPipelineData.Payload.items(_:)](searchpipelinedata/payload-swift.enum/items(_:).md)
-  Items from a Spotlight query.
+  The array of searchable items your stage produced.
 - [SearchPipelineData.Payload.scoredItems(_:)](searchpipelinedata/payload-swift.enum/scoreditems(_:).md)
-  Items annotated with caller-assigned relevance scores.
+  The scored searchable items your stage produced.
 - [case groupedItems([SearchableItemAttribute : [SearchableItem]])](searchpipelinedata/payload-swift.enum/groupeditems(_:).md)
-  Items partitioned by an attribute value (e.g. content type).
+  A dictionary that maps searchable attributes to the items that contain them.
 - [SearchPipelineData.Payload.text(_:)](searchpipelinedata/payload-swift.enum/text(_:).md)
-  LLM-generated text summary or analysis.
+  An text summary or analysis your stage produced.
 - [SearchPipelineData.Payload.count(_:)](searchpipelinedata/payload-swift.enum/count(_:).md)
-  A scalar count derived from items (e.g., 47).
+  A scalar count of items your stage produced.
 - [SearchPipelineData.Payload.statistic(name:value:)](searchpipelinedata/payload-swift.enum/statistic(name:value:).md)
-  A scalar statistic (sum, average, max, min, median, stddev).
+  A scalar value with a stastical calculation your stage produced.
 - [SearchPipelineData.Payload.table(_:)](searchpipelinedata/payload-swift.enum/table(_:).md)
-  Tabulated data — rows of labeled values.
+  Tabulated data your stage produced.
 
 ## Relationships
 
@@ -49,7 +49,7 @@ enum Payload
 ## See Also
 
 - [let payload: SearchPipelineData.Payload](searchpipelinedata/payload-swift.property.md)
-  The result payload produced by a stage.
+  The output data your custom stage produced.
 
 
 ---

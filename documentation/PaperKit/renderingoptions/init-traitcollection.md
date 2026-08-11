@@ -8,6 +8,7 @@ Creates the most suitable options for rendering on a device with the specified t
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 - visionOS 26.0+
 
 ## Declaration

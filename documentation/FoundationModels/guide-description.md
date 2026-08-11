@@ -3,8 +3,6 @@
 **Framework**: Foundation Models  
 **Kind**: macro
 
-Allows for influencing the allowed values of properties of a generable type.
-
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
@@ -23,7 +21,6 @@ Allows for influencing the allowed values of properties of a generable type.
 ## See Also
 
 - [macro Guide(description: String)](guide(description:).md)
-  Allows for influencing the allowed values of properties of a generable type.
 - [struct GenerationGuide](generationguide.md)
   Guides that control how values are generated.
 

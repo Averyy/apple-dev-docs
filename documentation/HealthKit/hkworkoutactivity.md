@@ -54,6 +54,8 @@ Workout activity objects partition a workout into a set of separate activities. 
 ### Accessing zone data
 - [var zoneGroupsByType: [HKQuantityType : HKWorkoutZoneGroup]?](hkworkoutactivity/zonegroupsbytype.md)
   A property that contains a dictionary that maps quantity types to their zone groups for this activity.
+- [func zoneGroup(for: HKQuantityType) -> HKWorkoutZoneGroup?](hkworkoutactivity/zonegroup(for:).md)
+  Returns a zone group for the specified quantity type.
 ### Specifying predicate key paths
 - [let HKPredicateKeyPathWorkoutActivity: String](hkpredicatekeypathworkoutactivity.md)
   The key path for accessing a specific workout activity.
@@ -76,8 +78,6 @@ Workout activity objects partition a workout into a set of separate activities. 
 ### Initializers
 - [init?(coder: NSCoder)](hkworkoutactivity/init(coder:).md)
 - [init(workoutConfiguration: HKWorkoutConfiguration, startDate: Date, endDate: Date?, metadata: [String : Any]?)](hkworkoutactivity/init(workoutconfiguration:startdate:enddate:metadata:).md)
-### Instance Methods
-- [func zoneGroup(for: HKQuantityType) -> HKWorkoutZoneGroup?](hkworkoutactivity/zonegroup(for:).md)
 
 ## Relationships
 

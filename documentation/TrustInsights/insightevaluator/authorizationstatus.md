@@ -8,7 +8,6 @@ Values that indicate the status of the app’s authorization to request evaluati
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 
 ## Declaration
 

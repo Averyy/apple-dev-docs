@@ -46,7 +46,6 @@ let results = try await descriptor.result(for: store)
 ## See Also
 
 - [associatedtype Output](hkasyncquery/output.md)
-  The type of data that the query returns.
 
 
 ---

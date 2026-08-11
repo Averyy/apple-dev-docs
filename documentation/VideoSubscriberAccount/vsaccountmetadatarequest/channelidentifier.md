@@ -8,6 +8,7 @@ The channel identifier for the request.
 **Availability**:
 - iOS 10.0+
 - iPadOS 10.0+
+- Mac Catalyst 10.0+
 - macOS ?+
 - tvOS 10.0+
 - visionOS 1.0+

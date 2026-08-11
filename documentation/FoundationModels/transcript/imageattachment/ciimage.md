@@ -19,7 +19,7 @@ var ciImage: CIImage { get }
 ## See Also
 
 - [var cgImage: CGImage](transcript/imageattachment/cgimage.md)
-  The image as a `CGImage`.
+  The image as a Core Graphics image.
 - [var orientation: CGImagePropertyOrientation](transcript/imageattachment/orientation.md)
   The display orientation of the image.
 - [var url: URL?](transcript/imageattachment/url.md)

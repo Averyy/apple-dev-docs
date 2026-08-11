@@ -40,12 +40,6 @@ The framework may require user action before Camera Assistance is fully operatio
 ### Inspecting the convergence state reason
 - [NIAlgorithmConvergenceStatus.Reason](nialgorithmconvergencestatus-2fnve/reason.md)
   The possible reasons for the Camera Assistance status.
-- [NIAlgorithmConvergenceStatusConverged](nialgorithmconvergencestatus-2fbmj/nialgorithmconvergencestatusconverged.md)
-  A status that indicates the framework’s Camera Assistance feature is operational.
-- [NIAlgorithmConvergenceStatusNotConverged](nialgorithmconvergencestatus-2fbmj/nialgorithmconvergencestatusnotconverged.md)
-  A status that indicates the framework’s Camera Assistance feature requires action from the user.
-- [NIAlgorithmConvergenceStatusUnknown](nialgorithmconvergencestatus-2fbmj/nialgorithmconvergencestatusunknown.md)
-  An indication that the framework is unsure of the Camera Assistance status.
 
 ## Relationships
 

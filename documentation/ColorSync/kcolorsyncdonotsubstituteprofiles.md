@@ -3,6 +3,8 @@
 **Framework**: ColorSync  
 **Kind**: var
 
+An option that, when set to `kCFBooleanTrue`, skips substituting a matching system-provided profile.
+
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
@@ -21,7 +23,9 @@ var kColorSyncDoNotSubstituteProfiles: Unmanaged<CFString>!
 ## See Also
 
 - [var kColorSyncCustomProfiles: Unmanaged<CFString>!](kcolorsynccustomprofiles.md)
+  A key whose value is a `CFDictionary` describing the device’s custom profiles.
 - [var kColorSyncFactoryProfiles: Unmanaged<CFString>!](kcolorsyncfactoryprofiles.md)
+  A key whose value is a `CFDictionary` describing the device’s factory profiles.
 
 
 ---

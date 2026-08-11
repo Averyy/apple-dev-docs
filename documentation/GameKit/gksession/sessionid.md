@@ -8,6 +8,7 @@ A string used to filter the list of peers who are allowed to see your session.
 **Availability**:
 - iOS 3.0+
 - iPadOS 3.0+
+- Mac Catalyst 3.0+
 - macOS 10.8+
 - visionOS 1.0+
 - watchOS 2.0+

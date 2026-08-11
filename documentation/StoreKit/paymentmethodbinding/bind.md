@@ -8,6 +8,7 @@ Asks the user to confirm whether to add the payment method to their Apple paymen
 **Availability**:
 - iOS 16.4+
 - iPadOS 16.4+
+- Mac Catalyst 16.4+
 - visionOS 1.0+
 
 ## Declaration

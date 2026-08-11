@@ -4,7 +4,7 @@
 **Kind**: property  
 **Required**: Yes
 
-Retrieve the executor for this distributed actor as an optimized, unowned reference. This API is equivalent to `Actor/unownedExecutor`, however, by default, it intentionally returns `nil` if this actor is a reference to a remote distributed actor, because the executor for remote references is effectively never g
+Retrieve the executor for this distributed actor as an optimized, unowned reference. This API is equivalent to `Actor.unownedExecutor`, however, by default, it intentionally returns `nil` if this actor is a reference to a remote distributed actor, because the executor for remote references is effectively never g
 
 **Availability**:
 - iOS 17.0+

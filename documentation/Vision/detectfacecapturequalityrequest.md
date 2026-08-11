@@ -8,6 +8,7 @@ A request that produces a floating-point number that represents the capture qual
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+

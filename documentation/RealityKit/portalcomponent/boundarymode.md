@@ -32,7 +32,7 @@ Pass this value to the factory entry points to configure [`clippingMode`](portal
   The portal clips its content to the boundary.
 - [PortalComponent.BoundaryMode.crossingOnly](portalcomponent/boundarymode/crossingonly.md)
   Entities with [`PortalCrossingComponent`](portalcrossingcomponent.md) cross the boundary.
-- [PortalComponent.BoundaryMode.disabled](portalcomponent/boundarymode/disabled.md)
+- [PortalComponent.BoundaryMode.none](portalcomponent/boundarymode/none.md)
   The portal renders without clipping or crossing.
 
 ## Relationships

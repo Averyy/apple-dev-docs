@@ -3,6 +3,8 @@
 **Framework**: Core Spotlight  
 **Kind**: init
 
+Initializes the type with the specified item and score values.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -15,6 +17,11 @@
 ```swift
 init(item: SearchableItem, score: Double)
 ```
+
+## Parameters
+
+- `item`: The searchable item from the app’s index.
+- `score`: The relevance score for `item`.
 
 
 ---

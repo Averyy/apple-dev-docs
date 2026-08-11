@@ -14,7 +14,7 @@ All endpoints (except for [`Service Configuration`](service-configuration.md)) r
 
 Content managers can download a location-based `sToken` from the Settings page in [`Upgrading to Apple School Manager and Apple Business`](upgrading-to-apple-school-manager-and-apple-business.md), and upload it into their device management service. This grants the device management service access to the licenses available at that location.
 
-![A screenshot of the My Server Tokens section in Apple School Manager or Apple Business, showing a table of locations with a Download link for each location’s server token. A help tag explains that you upload the downloaded tokens to your device management service or Apple Configurator to start assigning content to your devices.](https://docs-assets.developer.apple.com/published/64f7ab887e7d38afa4d27e12423d914d/media-3230503%402x.png)
+![A screenshot of the My Server Tokens section in Apple School Manager or Apple Business, showing a table of locations with a Download link for each location’s server token. A help tag explains that you upload the downloaded tokens to your device management service or Apple Configurator to start assigning content to your devices.](https://docs-assets.developer.apple.com/published/64f7ab887e7d38afa4d27e12423d914d/managing-apps-and-books-through-web-services-legacy%402x.png)
 
 The device management service should store the location-based token along with its other private, protected properties and pass this token in the `sToken` field of all VPP API requests.
 

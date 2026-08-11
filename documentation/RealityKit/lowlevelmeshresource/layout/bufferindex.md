@@ -19,7 +19,7 @@ var bufferIndex: Int { get set }
 
 #### Discussion
 
-Most usage scenarios use only one buffer. Use an index less than `LowLevelMeshResource.Descriptor.vertexBufferCount`.
+Most usage scenarios use only one buffer. Use an index less than [`maxVertexBufferCount`](lowlevelmeshresource/descriptor-swift.struct/maxvertexbuffercount.md).
 
 
 ---

@@ -123,7 +123,7 @@ LazyVStack {
 ##### Swiftdata
 
 - Read the latest article update to help you migrate your Core Data app to use SwiftData with [`Adopting SwiftData for a Core Data app`](https://developer.apple.com/documentation/CoreData/adopting-swiftdata-for-a-core-data-app).
-- Learn how to use [`sections`](https://developer.apple.com/documentation/SwiftData/Query/sections) with [`ResultsSectionCollection`](https://developer.apple.com/documentation/SwiftData/ResultsSectionCollection) and a SwiftData [`Query`](https://developer.apple.com/documentation/SwiftData/Query).
+- Learn how to use [`sections`](https://developer.apple.com/documentation/SwiftData/Query/sections) with doc://com.apple.documentation/documentation/swiftdata/resultssectioncollection and a SwiftData [`Query`](https://developer.apple.com/documentation/SwiftData/Query).
 
 ---
 

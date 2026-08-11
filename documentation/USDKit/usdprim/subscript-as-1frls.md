@@ -19,6 +19,10 @@ Access or modify the value of a named attribute on this prim.
 subscript<T>(attributeName: USDToken, as type: T.Type) -> T? where T : USDPrim.Attribute.Value { get nonmutating set }
 ```
 
+#### Overview
+
+If the attribute has time samples, this subscript operates at the [`default`](usdstage/timecode/default.md) time code.
+
 
 ---
 

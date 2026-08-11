@@ -21,7 +21,7 @@ init(predicates: [HKSamplePredicate<Sample>], sortDescriptors: [SortDescriptor<S
 
 #### Discussion
 
-The system sets the descriptor’s `HKSampleQueryDescriptor/Output` type based on the `predicates` parameter.
+The system sets the descriptor’s `Output` type based on the `predicates` parameter.
 
 ## Parameters
 

@@ -8,6 +8,7 @@ The scroll view associated with the web view.
 **Availability**:
 - iOS 5.0+
 - iPadOS 5.0+
+- Mac Catalyst 5.0+
 
 ## Declaration
 

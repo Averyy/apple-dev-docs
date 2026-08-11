@@ -8,6 +8,7 @@ A monitor owned by the device that recommends an optimal framing based on the co
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

@@ -60,14 +60,8 @@ For more information about the App Intents framework and the experiences it supp
   An intent schema that creates a new reminder list section.
 - [var deleteReminders: some AppSchemaIntent](appschema/remindersintent/deletereminders.md)
   An intent schema that deletes reminders.
-- [var updateGroup: some AppSchemaIntent](appschema/remindersintent/updategroup.md)
-  An intent schema that updates a reminder list group.
-- [var updateList: some AppSchemaIntent](appschema/remindersintent/updatelist.md)
-  An intent schema that updates a reminder list.
 - [var updateReminder: some AppSchemaIntent](appschema/remindersintent/updatereminder.md)
   An intent schema that updates a reminder.
-- [var updateSection: some AppSchemaIntent](appschema/remindersintent/updatesection.md)
-  An intent schema that updates a reminder list section.
 
 
 ---

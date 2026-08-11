@@ -26,8 +26,6 @@ The position of the specified vertex.
 
 ## See Also
 
-- [var positions: Span<SIMD3<Float>>](clothposeresource/positions.md)
-  The positions of all the vertices.
 - [func withPositions<Result>((Span<SIMD3<Float>>) -> Result) -> Result](clothposeresource/withpositions(_:).md)
   Provides access to the positions of all the vertices within a callback.
 - [var vertexCount: Int](clothposeresource/vertexcount.md)

@@ -12,6 +12,11 @@
 case automatic
 ```
 
+## See Also
+
+- [NSSegmentedControl.Role.tabs](nssegmentedcontrol/role-swift.enum/tabs.md)
+- [NSSegmentedControl.Role.valueSelection](nssegmentedcontrol/role-swift.enum/valueselection.md)
+
 
 ---
 

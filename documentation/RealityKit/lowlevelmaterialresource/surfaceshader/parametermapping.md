@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: property
 
-The parameter name-to-slot mapping for this surface shader.
+The parameter name-to-slot mapping for this surface shader function, or `nil` if it takes no custom parameters.
 
 **Availability**:
 - iOS 27.0+ (Beta)

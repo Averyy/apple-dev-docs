@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: method
 
+Sets this attribute’s value at the given time.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)

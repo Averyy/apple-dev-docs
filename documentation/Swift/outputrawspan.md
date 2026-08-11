@@ -79,11 +79,14 @@ struct OutputRawSpan
   Accesses the byte at the specified offset in the span.
 - [subscript(unchecked _: Int) -> UInt8](outputrawspan/subscript(unchecked:).md)
   Accesses the byte at the specified offset in the span.
+### Default Implementations
+- [Iterable Implementations](outputrawspan/iterable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
 - [ContiguousBytes](../Foundation/ContiguousBytes.md)
+- [Iterable](iterable.md)
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)
 
@@ -101,7 +104,6 @@ struct OutputRawSpan
   `MutableSpan<Element>` represents a contiguous region of memory which contains initialized instances of `Element`.
 - [struct MutableRawSpan](mutablerawspan.md)
   `MutableRawSpan` represents a contiguous region of memory which contains initialized bytes.
-- [struct SpanIterator](spaniterator.md)
 
 
 ---

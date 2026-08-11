@@ -38,7 +38,6 @@ struct NoteEntity {
     var name: AttributedString
     var content: AttributedString?
     var attachments: [IntentFile]
-    var tags: [<#TagEntity#>]
     var isPinned: Bool
     var creationDate: Date?
     var modificationDate: Date?

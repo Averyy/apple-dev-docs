@@ -3,7 +3,7 @@
 **Framework**: App Intents  
 **Kind**: property
 
-The default Spotlight attributes to associate with an entity.
+The default set of attributes to include with your app entity in the Spotlight index.
 
 **Availability**:
 - iOS 18.0+
@@ -20,14 +20,12 @@ var defaultAttributeSet: CSSearchableItemAttributeSet { get }
 
 #### Discussion
 
-Use this property to get the default attributes for any entity. This attribute set contains the title value taken from the entity’s [`displayRepresentation`](instancedisplayrepresentable/displayrepresentation.md) property. If the display representation also provides values for the subtitle and image, this attribute set contains those values too.
-
-If you create a custom attribute set for the [`attributeSet`](indexedentity/attributeset.md) property, add these default attributes in the new set you create.
+This property contains an attribute set with the title, subtitle, and image values from the entity’s display representaiton. Provide any custom attributes for your entity using the [`attributeSet`](indexedentity/attributeset.md) property instead of this one.
 
 ## See Also
 
 - [var attributeSet: CSSearchableItemAttributeSet](indexedentity/attributeset.md)
-  The custom Spotlight attributes to associate with the entity.
+  A custom attribute set that you include with your entity to improve search accuracy.
 
 
 ---

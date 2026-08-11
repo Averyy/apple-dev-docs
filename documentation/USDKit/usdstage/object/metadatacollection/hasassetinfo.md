@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: property
 
+A Boolean value that indicates whether this object has asset information.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)

@@ -26,7 +26,7 @@ let stateEntries: [MetricReport.StateEntry]
 
 `stateEntries` is only populated when the [`MetricManager`](metricmanager.md) was initialized with [`init(enabledStateReportingDomains:)`](metricmanager/init(enabledstatereportingdomains:).md). Each [`MetricReport.StateEntry`](metricreport/stateentry.md) contains metric values aggregated while the app was in a specific state, scoped to a specific [`MetricManager.ReportedState`](metricmanager/reportedstate.md).
 
-Only a subset of metrics appear in state entries, including hang time, hitch time, scroll hitch time, app termination counts, signpost intervals, location activity time, and app runtime metrics. CPU time, memory, network, disk I/O, GPU, app launch, and disk space metrics appear only in [`intervalEntries`](metricreport/intervalentries.md).
+Only a subset of metrics appear in state entries, including hang time, hitch time, app termination counts, signpost intervals, location activity time, and app runtime metrics. CPU time, memory, network, disk I/O, GPU, app launch, and disk space metrics appear only in [`intervalEntries`](metricreport/intervalentries.md).
 
 Use `byStateReportingDomain` on the collection to group entries by domain:
 

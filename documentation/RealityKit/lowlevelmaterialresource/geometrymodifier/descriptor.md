@@ -30,7 +30,7 @@ struct Descriptor
 - [var library: any MTLLibrary](lowlevelmaterialresource/geometrymodifier/descriptor/library.md)
   The Metal library that contains the function.
 - [var constantValues: MTLFunctionConstantValues](lowlevelmaterialresource/geometrymodifier/descriptor/constantvalues.md)
-  The constant values to use when creating the function. These correspond to constants defined in your metal code.
+  The constant values to use when creating the function. These correspond to constants defined in your Metal code.
 ### Initializers
 - [init(named: String, in: any MTLLibrary)](lowlevelmaterialresource/geometrymodifier/descriptor/init(named:in:).md)
   Creates a descriptor referencing the named function in the given library.

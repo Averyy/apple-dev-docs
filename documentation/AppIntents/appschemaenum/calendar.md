@@ -3,7 +3,7 @@
 **Framework**: App Intents  
 **Kind**: property
 
-App enum schema conformance for types you use for calendar functionality.
+The collection of enum schemas in the calendar domain.
 
 **Availability**:
 - iOS 27.0+ (Beta)

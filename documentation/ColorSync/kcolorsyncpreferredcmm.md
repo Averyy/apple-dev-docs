@@ -3,6 +3,8 @@
 **Framework**: ColorSync  
 **Kind**: var
 
+A key whose value is the [`ColorSyncCMM`](colorsynccmm.md) of the preferred CMM.
+
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+

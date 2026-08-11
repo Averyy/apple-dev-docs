@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: method
 
+Returns a Boolean value that indicates whether the dictionary-valued metadata for the given key has a value at `keyPath`.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)

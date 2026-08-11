@@ -29,6 +29,7 @@ If the array does not have sufficient capacity to hold all elements, then this r
 ## Parameters
 
 - `items`: A fully initialized buffer whose contents to move into the array.
+- `index`: The index at which to move `items`.
 
 
 ---

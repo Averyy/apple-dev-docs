@@ -8,6 +8,7 @@ The value that indicates how the user validated the mobile document response.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- Mac Catalyst 18.0+
 
 ## Declaration
 

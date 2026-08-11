@@ -23,6 +23,7 @@ class HKSample
 
 - [About the HealthKit framework](about-the-healthkit-framework.md)
 - [Saving data to HealthKit](saving-data-to-healthkit.md)
+- [Accessing condensed workout samples](accessing-condensed-workout-samples.md)
 - [Dividing a HealthKit workout into activities](dividing-a-healthkit-workout-into-activities.md)
 
 #### Overview

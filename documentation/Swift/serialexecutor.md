@@ -28,7 +28,7 @@ By default, all actor types execute tasks on a shared global concurrent pool. Th
 
 Sometimes it is important to be able to customize the execution behavior of an actor. For example, when an actor is known to perform heavy blocking operations (such as IO), and we would like to keep this work *off* the global shared pool, as blocking it may prevent other actors from being responsive.
 
-You can implement a custom executor, by conforming a type to the [`SerialExecutor`](serialexecutor.md) protocol, and implementing the `enqueue(_:)` method.
+You can implement a custom executor, by conforming a type to the [`SerialExecutor`](serialexecutor.md) protocol, and implementing the [`enqueue(_:)`](serialexecutor/enqueue(_:)-7sypu.md) method.
 
 Once implemented, you can configure an actor to use such executor by implementing the actor’s [`unownedExecutor`](actor/unownedexecutor.md) computed property. For example, you could accept an executor in the actor’s initializer, store it as a variable (in order to retain it for the duration of the actor’s lifetime), and return it from the `unownedExecutor` computed property like this:
 
@@ -77,7 +77,7 @@ Alternatively, you can also use existing serial executor implementations, such a
 - [func assertIsolated(@autoclosure () -> String, file: StaticString, line: UInt)](serialexecutor/assertisolated(_:file:line:).md)
   Stops program execution if the current task is not executing on this serial executor.
 - [func checkIsolated()](serialexecutor/checkisolated.md)
-  Last resort “fallback” isolation check, called when the concurrency runtime is comparing executors e.g. during `assumeIsolated()` and is unable to prove serial equivalence between the expected (this object), and the current executor.
+  Last resort “fallback” isolation check, called when the concurrency runtime is comparing executors e.g. during [`assumeIsolated(_:file:line:)`](actor/assumeisolated(_:file:line:).md) and is unable to prove serial equivalence between the expected (this object), and the current executor.
 - [func enqueue(UnownedJob)](serialexecutor/enqueue(_:)-229km.md)
 - [func enqueue(consuming Job)](serialexecutor/enqueue(_:)-2xi5n.md)
 - [func enqueue(consuming ExecutorJob)](serialexecutor/enqueue(_:)-7sypu.md)

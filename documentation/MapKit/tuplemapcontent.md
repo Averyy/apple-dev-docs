@@ -26,6 +26,9 @@ A view created from a Swift tuple of map content values.
 ### Accessing the tuple value
 - [var value: T](tuplemapcontent/value.md)
   The contents of the tuple.
+### Type aliases
+- [associatedtype Body : MapContent](mapcontent/body-swift.associatedtype.md)
+  The content and behavior of the view.
 
 ## Relationships
 

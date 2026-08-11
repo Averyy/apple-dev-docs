@@ -8,6 +8,7 @@ A type that describes a data request for any mobile document from a group of req
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

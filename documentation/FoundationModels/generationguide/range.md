@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: method
 
-Enforces values fall within a range.
+Enforces values that fall within a range.
 
 **Availability**:
 - iOS 26.0+

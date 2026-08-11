@@ -30,9 +30,11 @@ Create a `NavigationPreferences` value when you want to change the default rende
 ### Instance Properties
 - [var allowsContentJavaScript: Bool](webpage/navigationpreferences/allowscontentjavascript.md)
   Indicates whether JavaScript from web content is allowed to run.
+- [var allowsJSHandleCreationInPageWorld: Bool](webpage/navigationpreferences/allowsjshandlecreationinpageworld.md)
+  Indicates whether `window.webkit.createJSHandle` will be available in `WKContentWorld.page` The default value of this property is `false`.
 - [var alternateRequest: URLRequest?](webpage/navigationpreferences/alternaterequest.md)
   Used to make changes to the network request that will be used for this navigation’s main resource load.
-- [var globalPrivacyControlStatus: Bool](webpage/navigationpreferences/globalprivacycontrolstatus.md)
+- [var isGlobalPrivacyControlEnabled: Bool](webpage/navigationpreferences/isglobalprivacycontrolenabled.md)
   Whether the Global Privacy Control (GPC) signal is enabled for the navigation.
 - [var isLockdownModeEnabled: Bool](webpage/navigationpreferences/islockdownmodeenabled.md)
   A Boolean value that indicates whether to use Lockdown Mode in the web page.

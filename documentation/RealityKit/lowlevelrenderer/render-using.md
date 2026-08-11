@@ -33,7 +33,7 @@ You are responsible for committing the command buffer after this call returns.
 - [LowLevelRenderer.RenderState](lowlevelrenderer/renderstate.md)
   The per-frame render state passed to the `render(using:_:)` callback.
 - [LowLevelRenderer.Resources](lowlevelrenderer/resources.md)
-  Pre-compiled GPU resources for a renderer.
+  Prepared GPU resources for a renderer.
 
 
 ---

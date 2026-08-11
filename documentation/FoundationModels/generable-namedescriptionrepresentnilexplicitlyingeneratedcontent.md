@@ -3,8 +3,6 @@
 **Framework**: Foundation Models  
 **Kind**: macro
 
-Conforms a type to [`Generable`](generable.md) protocol, using a custom name for the schema instead of the Swift type name.
-
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -23,9 +21,7 @@ Conforms a type to [`Generable`](generable.md) protocol, using a custom name for
 ## See Also
 
 - [macro Generable(description: String?)](generable(description:).md)
-  Conforms a type to [`Generable`](generable.md) protocol.
 - [macro Generable(description: String?, representNilExplicitlyInGeneratedContent: Bool)](generable(description:representnilexplicitlyingeneratedcontent:).md)
-  Conforms a type to [`Generable`](generable.md) protocol.
 
 
 ---

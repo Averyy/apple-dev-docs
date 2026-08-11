@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: property
 
-The date at which the quota will refresh.
+The date at which the quota refreshes.
 
 **Availability**:
 - iOS 27.0+ (Beta)

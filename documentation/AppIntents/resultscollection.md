@@ -59,7 +59,7 @@ protocol ResultsCollection<Result>
 - [protocol ShowsSnippetView](showssnippetview.md)
   The result of performing an action that delivers a view back to the initiator of the action.
 - [protocol OpensIntent](opensintent.md)
-  The result of performing an action that delivers an app intent back to the initiator of the action.
+  A result type that indicates your app intent returns another app intent.
 
 
 ---

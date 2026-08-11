@@ -41,6 +41,7 @@ Use `TerminationCategory` to correlate individual crash diagnostics with the agg
 ## Relationships
 
 ### Conforms To
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)

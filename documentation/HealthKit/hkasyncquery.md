@@ -27,7 +27,6 @@ protocol HKAsyncQuery
 
 ### Running Queries
 - [associatedtype Output](hkasyncquery/output.md)
-  The type of data that the query returns.
 - [func result(for: HKHealthStore) async throws -> Self.Output](hkasyncquery/result(for:).md)
   Runs a one-shot query and asynchronously returns a snapshot of the current matching results.
 

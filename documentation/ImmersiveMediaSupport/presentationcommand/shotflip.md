@@ -18,6 +18,10 @@ A value that represents a command that mirrors a whole frame vertically for the 
 case shotFlip(ShotFlipCommand)
 ```
 
+#### Discussion
+
+> **Note**: The renderer only honors this command on visionOS 27, macOS 27, or later. Earlier runtimes ignore it during playback.
+
 
 ---
 

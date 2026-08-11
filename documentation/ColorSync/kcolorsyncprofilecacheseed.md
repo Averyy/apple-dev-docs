@@ -3,6 +3,8 @@
 **Framework**: ColorSync  
 **Kind**: var
 
+The current profile-cache seed (uint32_t), sent with [`kColorSyncProfileRepositoryChangeNotification`](kcolorsyncprofilerepositorychangenotification.md).
+
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
@@ -21,7 +23,9 @@ var kColorSyncProfileCacheSeed: Unmanaged<CFString>!
 ## See Also
 
 - [var kColorSyncProfileRepositoryChangeNotification: Unmanaged<CFString>!](kcolorsyncprofilerepositorychangenotification.md)
+  A notification that ColorSync posts when the profile repository changes.
 - [var kColorSyncWaitForCacheReply: Unmanaged<CFString>!](kcolorsyncwaitforcachereply.md)
+  An iteration option that waits for the profile cache to finish updating before returning.
 
 
 ---

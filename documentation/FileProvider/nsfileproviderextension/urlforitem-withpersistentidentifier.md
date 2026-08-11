@@ -8,6 +8,7 @@ Returns the URL for a given persistent identifier.
 **Availability**:
 - iOS 8.0+
 - iPadOS 8.0+
+- Mac Catalyst 8.0+
 - visionOS 1.0+
 
 ## Declaration

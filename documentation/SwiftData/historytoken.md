@@ -24,6 +24,8 @@ protocol HistoryToken : Comparable, Decodable, Encodable, Hashable, Identifiable
 ### Associated Types
 - [associatedtype TokenType : Decodable, Encodable, Hashable, Sendable](historytoken/tokentype.md)
 ### Instance Properties
+- [var storeIdentifier: String](historytoken/storeidentifier.md)
+  The on-disk identifier of the data store this token covers.
 - [var tokenValue: Self.TokenType?](historytoken/tokenvalue.md)
 
 ## Relationships

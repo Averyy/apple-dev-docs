@@ -36,7 +36,7 @@ struct ConditionalDynamicInstructions<TrueContent, FalseContent> where TrueConte
 
 - [struct DynamicInstructionsBuilder](dynamicinstructionsbuilder.md)
 - [struct EmptyDynamicInstructions](emptydynamicinstructions.md)
-  An empty dynamic instructions type..
+  An empty dynamic instructions type.
 - [struct AnyDynamicInstructions](anydynamicinstructions.md)
   A dynamic instructions type that’s type-erased.
 - [struct TupleDynamicInstructions](tupledynamicinstructions.md)

@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: struct
 
-Pre-compiled shader and pipeline resources shared across multiple render context instances.
+Resources needed for a render context
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -21,7 +21,7 @@ struct Resources
 
 ### Creating render resources
 - [init(device: any MTLDevice) async throws](lowlevelrendercontextstandalone/resources/init(device:).md)
-  Asynchronously compiles the shared shader and pipeline resources for the given device.
+  Asynchronously prepare resources for the given device.
 
 ## Relationships
 
@@ -32,9 +32,9 @@ struct Resources
 ## See Also
 
 - [init(configuration: LowLevelRenderContextStandalone.Configuration, resources: LowLevelRenderContextStandalone.Resources) throws](lowlevelrendercontextstandalone/init(configuration:resources:).md)
-  Creates a standalone render context using pre-compiled shader and pipeline resources.
+  Creates a standalone render context using resources prepared ahead of time.
 - [init(configuration: LowLevelRenderContextStandalone.Configuration) async throws](lowlevelrendercontextstandalone/init(configuration:).md)
-  Creates a standalone render context, asynchronously compiling all required shader and pipeline resources.
+  Creates a standalone render context, asynchronously preparing required resources.
 - [LowLevelRenderContextStandalone.Configuration](lowlevelrendercontextstandalone/configuration.md)
   Configuration for creating a standalone render context backed by a Metal device.
 

@@ -107,7 +107,7 @@ The sample code project uses two source files to implement the `PassthroughFSVol
 
 The sample also subclasses the [`FSItem`](fsitem.md) class as `PassthroughFSItem`, which the `PassthroughFSVolume` code uses for FSKit methods that pass an item type as a parameter or expect it as a return value. `PassthroughFSVolume` also defines a `rootItem` property as an instance of `PassthroughFSItem`, representing the root of the virtual file system.
 
-Given all this, `PassthroughFSVolume` implements many of its methods with calls to Darwin file system functions, using the `PassthroughFSItem`’s file descriptor with the low-level APIs. For example, the implementation of the [`FSVolume.Operations`](fsvolume/operations.md) method [`synchronize(flags:replyHandler:)`](fsvolume/operations/synchronize(flags:replyhandler:).md), which flushes in-memory buffers to the storage device, is effectively a wrapper around a call to the Darwin `fsync(2)` function:
+Given all this, `PassthroughFSVolume` implements many of its methods with calls to Darwin file system functions, using the `PassthroughFSItem`’s file descriptor with the low-level APIs. For example, the implementation of the [`FSVolume.Operations`](fsvolume/operations.md) method `FSVolume/Operations/synchronize(flags:replyHandler:)`, which flushes in-memory buffers to the storage device, is effectively a wrapper around a call to the Darwin `fsync(2)` function:
 
 ```swift
 public func synchronize(flags: FSSyncFlags,

@@ -3,7 +3,7 @@
 **Framework**: App Intents  
 **Kind**: property
 
-App enum schema conformance for types you use for reader functionality.
+The collection of enum schemas in the reader domain.
 
 **Availability**:
 - iOS 18.0+

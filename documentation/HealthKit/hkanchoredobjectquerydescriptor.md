@@ -71,7 +71,7 @@ repeat {
 
 To monitor the HealthKit store for changes, start by creating an [`HKAnchoredObjectQueryDescriptor`](hkanchoredobjectquerydescriptor.md) instance that matches the data you want to monitor. Pass in the anchor from the last time you read data from the HealthKit store.
 
-Next, call the query descriptor’s [`results(for:)`](hkanchoredobjectquerydescriptor/results(for:).md) method to start your long-running query. This method returns an [`AsyncSequence`](https://developer.apple.com/documentation/Swift/AsyncSequence) instance which HealthKit uses to return `Results/Element` instances. The first result represents any changes currently in the HealthKit store, and additional results represent changes as they occur.
+Next, call the query descriptor’s [`results(for:)`](hkanchoredobjectquerydescriptor/results(for:).md) method to start your long-running query. This method returns an [`AsyncSequence`](https://developer.apple.com/documentation/Swift/AsyncSequence) instance which HealthKit uses to return `Element` instances. The first result represents any changes currently in the HealthKit store, and additional results represent changes as they occur.
 
 ```swift
 let stepType = HKQuantityType(.stepCount)

@@ -554,10 +554,6 @@ When the destination array’s element type is a nonclass type that bridges to a
 ### Instance Methods
 - [func append<E>(addingCapacity: Int, initializingWith: (inout OutputSpan<Element>) throws(E) -> Void) throws(E)](array/append(addingcapacity:initializingwith:).md)
   Grows the array to have enough capacity for the specified number of elements, then calls the closure with an output span covering the array’s uninitialized memory.
-- [func applyListOrder([String])](array/applylistorder(_:)-33po6.md)
-  Reorders elements in place to match `order`, preserving elements not in `order`. Implements USD’s “ordered” list-op semantics.
-- [func applyListOrder([USDToken])](array/applylistorder(_:)-8ncuj.md)
-  Reorders elements in place to match `order`, preserving elements not in `order`. Implements USD’s “ordered” list-op semantics.
 - [func isTriviallyIdentical(to: Array<Element>) -> Bool](array/istriviallyidentical(to:).md)
   Returns a boolean value indicating whether this array is identical to `other`.
 - [func makeSamples<T>(Prompt, targetCount: Int, sessionProvider: (() -> LanguageModelSession)?, validator: ((ModelSample<T>) async throws -> Bool)?) -> some AsyncSequence<ModelSample<T>, any Error>

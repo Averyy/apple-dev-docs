@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: method
 
-Returns the mesh instance array at the given slot index, or the empty value if the slot is unoccupied.
+Returns the mesh instance array at the given slot index, or `nil` if the slot is unoccupied.
 
 **Availability**:
 - iOS 27.0+ (Beta)

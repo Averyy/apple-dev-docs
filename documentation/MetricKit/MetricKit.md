@@ -72,8 +72,6 @@ In iOS 27 and later and macOS 27 and later, [`MetricManager`](metricmanager.md) 
   A metric that measures app hang time.
 - [struct HitchTimeMetric](hitchtimemetric.md)
   A metric that measures animation hitch time.
-- [struct ScrollHitchTimeMetric](scrollhitchtimemetric.md)
-  A metric that measures scroll hitch time.
 ### CPU and memory metrics
 - [struct CPUTimeMetric](cputimemetric.md)
   A metric that measures the total CPU time used by the app.
@@ -156,6 +154,8 @@ In iOS 27 and later and macOS 27 and later, [`MetricManager`](metricmanager.md) 
   A value that encapsulates an average measurement with supporting statistical data.
 - [class SignalBars](signalbars.md)
   A unit for cellular signal strength measurements in bars.
+- [class HitchTimeRatio](hitchtimeratio.md)
+  A unit for animation hitch time ratio measurements.
 - [struct OSVersion](osversion.md)
   The version of the operating system on the device.
 ### MXMetricManager API

@@ -17,12 +17,12 @@ Advances the position of this iterator by the specified offset, or until the end
 ## Declaration
 
 ```swift
-mutating func skip(by offset: Int) -> Int
+mutating func skip(by offset: Int) throws(Self.Failure) -> Int
 ```
 
 #### Return Value
 
-The number of items that were skipped. If the returned count is less than `maximumOffset`, then the underlying type did not have enough elements left to skip the requested number of items. In that case, the iterator’s position is set to the end of the underlying type.
+The number of items that were skipped. If the returned count is less than `maxOffset`, then the underlying type did not have enough elements left to skip the requested number of items. In that case, the iterator’s position is set to the end of the underlying type.
 
 
 ---

@@ -8,6 +8,7 @@ An action that sends a permission question to a parent or guardian.
 **Availability**:
 - iOS 26.5+
 - iPadOS 26.5+
+- Mac Catalyst 26.5+
 - macOS 26.5+
 - visionOS 26.5+
 

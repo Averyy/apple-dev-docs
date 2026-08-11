@@ -30,7 +30,7 @@ An app that holds this entitlement can’t hold any other managed entitlements.
 
 Both the media device extension and its container app must declare this entitlement. The container app’s sole purpose must be the delivery and installation of the media device extension.
 
-For more information, see [`Adding capabilities to your app`](https://developer.apple.com/documentation/Xcode/adding-capabilities-to-your-app).
+For more information, see [`Creating a media device extension`](https://developer.apple.com/documentation/MediaDevice/creating-a-media-device-extension) and [`Adding capabilities to your app`](https://developer.apple.com/documentation/Xcode/adding-capabilities-to-your-app).
 
 ## See Also
 

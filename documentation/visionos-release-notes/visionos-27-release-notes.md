@@ -1,4 +1,4 @@
-# visionOS 27 Beta 4 Release Notes
+# visionOS 27 Beta 5 Release Notes
 
 **Framework**: visionOS Release Notes
 
@@ -6,7 +6,7 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The visionOS 27 SDK provides support to develop apps for Apple Vision Pro devices running visionOS 27 beta 4. The SDK comes bundled with Xcode 27, available from the Mac App Store. For information on the compatibility requirements for Xcode 27, see [`Xcode 27 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-27-release-notes).
+The visionOS 27 SDK provides support to develop apps for Apple Vision Pro devices running visionOS 27 beta 5. The SDK comes bundled with Xcode 27, available from the Mac App Store. For information on the compatibility requirements for Xcode 27, see [`Xcode 27 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-27-release-notes).
 
 ##### App Intents
 
@@ -14,9 +14,15 @@ The visionOS 27 SDK provides support to develop apps for Apple Vision Pro device
 
 - You can now pass a name parameter of type `AttributedString` to the `notes.createNote` and `notes.updateNote` schemas.  (173431080)
 
+###### Resolved Issues
+
+- Fixed: Requests that should result in an app’s `reminders.updateReminder`-conforming intent to be called might fail with “ cannot be used for this action right now.”  (181212609) (FB23526663)
+- Fixed: The notes.appendText schema erroneously disappeared from the SDK.  (182532125)
+
 ###### Known Issues
 
 - AppEntity instances have a cumulative size limit of 10MB, including all child properties and their values. Your app might crash if an entity exceeds this limit, and the exception is logged.  (181763422)
+- Existing entities that conformed to @AppEntity(schema: .photos.asset) in prior releases might no longer compile in the 27 SDKs because new properties were added to the schema in this release.  (181800016) (FB23652582) **Workaround:** To continue conforming to the schema, adopt the additional properties and move the code behind an availability check.
 
 ###### Deprecations
 
@@ -33,6 +39,7 @@ The visionOS 27 SDK provides support to develop apps for Apple Vision Pro device
 ###### Resolved Issues
 
 - Fixed: For room anchors delivered by the `RoomTrackingProvider` Swift API, `RoomAnchor.planeAnchorID`s and `RoomAnchor.meshAnchorID`s are always empty. Likewise, for the `room_tracking.h` C API, `ar_room_anchor_get_plane_anchor_identifiers` and `ar_room_anchor_get_mesh_anchor_identifiers` always return an empty list of identifiers.  (173005535)
+- Fixed: Due to a bug fix for ARKit Object Tracking, callers of the C API functions for loading reference objects (`ar_reference_object_load_from_url`, `ar_reference_object_load_with_name`, and similar) must now retain the reference objects and errors returned by the completion handlers that client code passes to these functions, in contexts where ARC is not enabled. Note, `ar_retain` must be called in the completion handler for reference objects, and also errors (if there is a desire to hold onto these items beyond the scope of the completion handler). Otherwise, the items will be invalid to use after the completion handler finishes execution.  (173812495)
 
 ##### Background Assets
 
@@ -46,11 +53,23 @@ The visionOS 27 SDK provides support to develop apps for Apple Vision Pro device
 
 - Spatial accessory tracking might not initialize when first paired via Bluetooth.  (181827411) **Workaround:** Turn the accessory off and then on, or turn Bluetooth off and on.
 
+##### Communication Safety
+
+###### Resolved Issues
+
+- Fixed: Sensitive QRCode detected as non-sensitive, preventing 3rd party developers from testing API functionality.  (183962032)
+
 ##### Compositor Services
 
 ###### Resolved Issues
 
 - Fixed: `RemoteImmersiveSpace` might be unable to discover the remote device, causing immersive content delivered to Apple Vision Pro to fail to display.  (177989580)
+
+##### Eye Setup
+
+###### Known Issues
+
+- You might experience a degradation in eye tracking quality after performing Eye Setup in visionOS 27.0 Beta 1 through Beta 4.  (175305506) **Workaround:** After updating to visionOS 27.0 Beta 5 or later, [`redo eye and hand setup on your Apple Vision Pro`](https://developer.apple.comhttps://support.apple.com/guide/apple-vision-pro/redo-eye-and-hand-setup-tanf67b02683/visionos).
 
 ##### Eyesight
 
@@ -69,14 +88,11 @@ The visionOS 27 SDK provides support to develop apps for Apple Vision Pro device
 ###### Resolved Issues
 
 - Fixed: Private Cloud Compute might not work when you use simulators.  (177684296)
+- Fixed: When using the on-device Apple Foundation Model for both tool calling and guided generation, some prompts might cause the model to call tools excessively.  (177748926)
 - Fixed: `@Generable` on an `enum` produces a deprecation warning about `GenerationError` that cannot be silenced.  (177899620)
 - Fixed: Truncating transcript history in the `onPrompt` modifier might cause an unexpected runtime error.  (177901494)
 - Fixed: `onPrompt` might not be called when applied to a `Profile` without instructions.  (177902488)
 - Fixed: `PrivateCloudComputeLanguageModel` always uses greedy decoding.  (178181782)
-
-###### Known Issues
-
-- When using the on-device Apple Foundation Model for both tool calling and guided generation, some prompts might cause the model to call tools excessively.  (177748926) **Workaround:** Adjust your instructions, prompts, and attachment labels.
 
 ##### Foveated Streaming
 
@@ -90,6 +106,12 @@ The visionOS 27 SDK provides support to develop apps for Apple Vision Pro device
 
 - Fixed: When a Freeform board is curved, the back button might become unresponsive after you exit preview mode for a spatial photo, spatial video, or USDZ file.  (172204615)
 
+##### Gaussian Splats
+
+###### Known Issues
+
+- When 3DGS content rendered by a GaussianSplatComponent is moved offscreen and then returns to the visible area, some splats might be missing or truncated. Camera or asset movement can restore rendering.  (183538823)
+
 ##### Genmoji
 
 ###### Resolved Issues
@@ -101,6 +123,12 @@ The visionOS 27 SDK provides support to develop apps for Apple Vision Pro device
 ###### Resolved Issues
 
 - Fixed: The battery percentage that appears in the status bar when you raise your hand and flip it over might be inconsistent with the percentage displayed in Control Center.  (175742923)
+
+##### Healthkit
+
+###### Resolved Issues
+
+- Fixed: null unit might incorrectly convert to count and percent units.  (171273931) (FB22066297)
 
 ##### Image Playground
 
@@ -141,9 +169,25 @@ The visionOS 27 SDK provides support to develop apps for Apple Vision Pro device
 
 ##### Persona
 
+###### Resolved Issues
+
+- Fixed: Spatial Personas might appear laggy during High Quality Recording.  (178441141)
+
+##### Photokit
+
+###### Resolved Issues
+
+- Fixed: The `addedDate` property on `PHAsset` might return `nil` even though it’s marked as non-nullable.  (175050631)
+
+###### Deprecations
+
+- The `originalFilename` property on `PHAssetResource` is incorrectly marked as non-nullable, which misrepresents the property value; a new, nullable `filename` property is available as a replacement.  (175412725) (FB22589474)
+
+##### Photos
+
 ###### Known Issues
 
-- Spatial Personas may appear laggy during High Quality Recording.  (178441141)
+- Toggling between 2D and Spatial views of a large panorama image (>300Mb) might cause the Photos application to unexpectedly quit.  (183442382) **Workaround:** Convert the asset to JPEG or HEIC before importing it into the photos library.
 
 ##### Quick Look
 
@@ -171,6 +215,7 @@ The visionOS 27 SDK provides support to develop apps for Apple Vision Pro device
 
 - Fixed: The `.highlight` hover effect style highlights the entire RealityKit entity hierarchy during direct interactions, rather than only the entity being targeted.  (158462269) (FB19680952)
 - Fixed: Soft Shadows and Spotlight Shadow Quality do not work in visionOS Simulator because the feature relies on the clustering system, which is disabled due to restricted tier 2 argument buffer issues.  (169054912)
+- Fixed: Some MaterialX 1.39 nodes are not supported.  (172875414)
 - Fixed: Content in a portal incorrectly receives outside environment probe lighting contribution.  (175363970)
 - RealityRenderer’s `isToneMappingEnabled` property enables and disables tone mapping if apps are rebuilt with the 27.0 SDK. Apps built with earlier versions of the SDK don’t see a behavior change.  (177283932)
 - Fixed: `ComputeGraphComponents` stored in a Reality file do not render when loaded.  (177674901)
@@ -180,10 +225,11 @@ The visionOS 27 SDK provides support to develop apps for Apple Vision Pro device
 - Fixed: When `OpacityComponent` is applied to an entity with opaque materials, `RealityRenderer` renders the opaque materials with transparency, revealing interior surfaces. Only the frontmost surface should appear with partial transparency.  (177976245)
 - Fixed: Shadow rendering memory is not counted against each application’s memory limit, which might prevent apps from consistently using up to 8 shadowed directional and spot lights depending on what other apps are running.  (177984485)
 - Fixed: Specular highlights in the PBR shading model do not fade out correctly at low specular values. A visible specular effect persists even when the specular parameter is set to 0, causing materials with zero specular to appear reflective instead of non-reflective.  (178289846)
+- Fixed: To use primitive restart with triangleStrip and lineStrips, set LowLevelMesh.Descriptor.allowsPrimitiveRestart = true.  (180878999)
 
 ###### Known Issues
 
-- Some MaterialX 1.39 nodes are not supported.  (172875414)
+- Subtitles might become clipped in Multiview when resizing tiles in Multiview in TV app.  (181267166) **Workaround:** Move back to Fullscreen Mode.
 - Shaders using the new RealityKit shader node name of `ND_realitykit_pbr_surfaceshader_2_0` will fail to load in Quick Look or with USDKit.  (181616779)
 
 ##### Screen Recording
@@ -192,6 +238,12 @@ The visionOS 27 SDK provides support to develop apps for Apple Vision Pro device
 
 - Fixed: With High Quality Recording enabled, capturing a High Quality recording while the device is warm may fail silently. No recording is saved and no error or feedback is shown.  (170105618)
 - Fixed: When you switch between High Quality Recording and Standard Recording in Screen Recording settings, the recording subsystem may enter an unrecoverable state; subsequent screen recordings from Control Center might not start.  (178467174)
+
+##### Security
+
+###### Known Issues
+
+- Obtaining new certificates via ACME fails. New MDM enrollments using Managed Device Attestation fail.  (183456836) **Workaround:** Use SCEP if available as a temporary workaround, or ensure MDA-issued certificates are already installed before upgrading.
 
 ##### Shadergraph
 
@@ -241,6 +293,7 @@ The visionOS 27 SDK provides support to develop apps for Apple Vision Pro device
 
 - When you ask Siri for Maps information, the response snippets might appear incomplete or display formatting issues.  (177116121) **Workaround:** Ask Siri to repeat the information, or open Maps directly for complete details.
 - Siri commands for Environments aren’t working.  (178082773) **Workaround:** Use gaze and pinch to open environments from the Home View.
+- As of beta 5, SiriAI conversation history no longer syncs to devices running a prior beta. iCloud sync works between devices updated to beta 5. No existing conversations will be lost.  (182145010)
 
 ##### Siri Setup
 
@@ -289,12 +342,9 @@ The visionOS 27 SDK provides support to develop apps for Apple Vision Pro device
 
 ###### Resolved Issues
 
+- Fixed: The refund request, offer code redemption, and manage subscriptions sheets might fail to present in TestFlight.  (180999342) (FB23487953)
 - Fixed: Displaying the offer code sheet or the manage subscription sheet consecutively might cause the app to hang when using StoreKit Testing in Xcode.  (181171733)
-
-###### Known Issues
-
-- The refund request, offer code redemption, and manage subscriptions sheets might fail to present in TestFlight.  (180999342) (FB23487953)
-- Purchases of non-subscription In-App Purchases made using the SKTestSession.buyProduct() method might fail with an invalid product error. The billingPlanType(_:) PurchaseOption isn’t respected for subscription purchases.  (181842500)
+- Fixed: Purchases of non-subscription In-App Purchases made using the SKTestSession.buyProduct() method might fail with an invalid product error. The billingPlanType(_:) PurchaseOption isn’t respected for subscription purchases.  (181842500)
 
 ##### Storekit Testing in Xcode
 
@@ -452,6 +502,12 @@ The visionOS 27 SDK provides support to develop apps for Apple Vision Pro device
 
 - `VTLowLatencySuperResolutionScalerConfiguration` now supports a 1.5x scale factor. Call `+supportedScaleFactorsForFrameWidth:frameHeight:` to discover the scale factors available for your source dimensions.  (177635243)
 - `VTLowLatencyFrameInterpolationConfiguration` now supports arbitrary source dimensions up to 1080p.  (179040806)
+
+##### Visionos Photos
+
+###### Known Issues
+
+- In some cases, toggling between 2D and Spatial views of a large panorama image (>300Mb) could cause the Photos application to unexpectedly quit.  (183442382) **Workaround:** Convert the asset to JPEG or HEIC before importing it into the photos library.
 
 ##### Webkit
 

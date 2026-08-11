@@ -17,6 +17,11 @@
 case randomProbabilityThreshold(Double, seed: UInt64?)
 ```
 
+## See Also
+
+- [GenerationOptions.SamplingMode.Kind.greedy](generationoptions/samplingmode-swift.struct/kind-swift.enum/greedy.md)
+- [GenerationOptions.SamplingMode.Kind.randomTopK(_:seed:)](generationoptions/samplingmode-swift.struct/kind-swift.enum/randomtopk(_:seed:).md)
+
 
 ---
 

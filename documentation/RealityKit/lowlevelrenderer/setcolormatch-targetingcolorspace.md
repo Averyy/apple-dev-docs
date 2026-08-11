@@ -21,6 +21,10 @@ final func setColorMatch(targetingColorSpace targetColorSpace: CGColorSpace) thr
 
 > **Note**: [`LowLevelRendererError`](lowlevelrenderererror.md) if the target color space is not a supported linear gamut.
 
+## Parameters
+
+- `targetColorSpace`: The target display color space to convert to.
+
 ## See Also
 
 - [var colorMatch: LowLevelRenderer.ColorMatch](lowlevelrenderer/colormatch-swift.property.md)

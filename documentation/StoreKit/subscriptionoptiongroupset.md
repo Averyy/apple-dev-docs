@@ -8,6 +8,7 @@ A set of groups of subscription options that include optional views for labels a
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+

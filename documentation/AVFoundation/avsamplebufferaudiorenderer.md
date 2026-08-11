@@ -61,6 +61,20 @@ You must add an instance of this class to an [`AVSampleBufferRenderSynchronizer`
   The error that caused the renderer to no longer render sample buffers.
 ### Classes
 - [AVSampleBufferAudioRenderer.Receiver](avsamplebufferaudiorenderer/receiver.md)
+### Instance Properties
+- [var hasSufficientMediaDataForReliablePlaybackStart: Bool](avsamplebufferaudiorenderer/hassufficientmediadataforreliableplaybackstart.md)
+  Indicates whether the enqueued media data meets the renderer’s preroll level.
+- [var isReadyForMoreMediaData: Bool](avsamplebufferaudiorenderer/isreadyformoremediadata.md)
+  Indicates the readiness of the receiver to accept more sample buffers.
+### Instance Methods
+- [func enqueue(CMSampleBuffer)](avsamplebufferaudiorenderer/enqueue(_:).md)
+  Sends a sample buffer in order to render its contents.
+- [func flush()](avsamplebufferaudiorenderer/flush.md)
+  Instructs the receiver to discard pending enqueued sample buffers.
+- [func requestMediaDataWhenReady(on: dispatch_queue_t, using: () -> Void)](avsamplebufferaudiorenderer/requestmediadatawhenready(on:using:).md)
+  Instructs the target to invoke a client-supplied block repeatedly, at its convenience, in order to gather sample buffers for playback.
+- [func stopRequestingMediaData()](avsamplebufferaudiorenderer/stoprequestingmediadata.md)
+  Cancels any current requestMediaDataWhenReadyOnQueue:usingBlock: call.
 
 ## Relationships
 

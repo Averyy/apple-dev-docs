@@ -25,7 +25,7 @@ static var greedy: GenerationOptions.SamplingMode { get }
 
 #### Discussion
 
-Using this mode will always result in the same output for a given input. Responses produced with greedy sampling are statistically likely, but may lack the human-like quality and variety of other sampling strategies.
+This mode always produces the same output for a given input. Responses produced with greedy sampling are statistically likely, but may lack the human-like quality and variety of other sampling strategies.
 
 > **Note**: Sampling modes [`random(top:seed:)`](generationoptions/samplingmode-swift.struct/random(top:seed:).md) and [`random(probabilityThreshold:seed:)`](generationoptions/samplingmode-swift.struct/random(probabilitythreshold:seed:).md)
 

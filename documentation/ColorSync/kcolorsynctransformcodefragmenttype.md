@@ -3,6 +3,8 @@
 **Framework**: ColorSync  
 **Kind**: var
 
+A key for the type of code fragment to create, or that the framework created.
+
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
@@ -21,7 +23,9 @@ var kColorSyncTransformCodeFragmentType: Unmanaged<CFString>!
 ## See Also
 
 - [func ColorSyncCreateCodeFragment(CFArray!, CFDictionary!) -> Unmanaged<CFTypeRef>!](colorsynccreatecodefragment(_:_:).md)
+  Creates a code fragment from a sequence of profiles.
 - [var kColorSyncTransformCodeFragmentMD5: Unmanaged<CFString>!](kcolorsynctransformcodefragmentmd5.md)
+  A key for the MD5 checksum of the code fragment.
 
 
 ---

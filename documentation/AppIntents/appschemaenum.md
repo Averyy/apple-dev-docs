@@ -22,33 +22,33 @@ protocol AppSchemaEnum : AppSchema.Kind
 
 ### Type Properties
 - [static var audio: some AppSchema.AudioEnum](appschemaenum/audio.md)
-  App enum schema conformance for types you use for audio functionality.
+  The collection of enum schemas in the audio domain.
 - [static var books: some AppSchema.BooksEnum](appschemaenum/books.md)
-  App enum schema conformance for types you use for books functionality.
+  The collection of enum schemas in the books domain.
 - [static var browser: some AppSchema.BrowserEnum](appschemaenum/browser.md)
-  App enum schema conformance for types you use for browser functionality.
+  The collection of enum schemas in the browser domain.
 - [static var calendar: some AppSchema.CalendarEnum](appschemaenum/calendar.md)
-  App enum schema conformance for types you use for calendar functionality.
+  The collection of enum schemas in the calendar domain.
 - [static var camera: some AppSchema.CameraEnum](appschemaenum/camera.md)
-  App enum schema conformance for types you use for camera functionality.
+  The collection of enum schemas in the camera domain.
 - [static var clock: some AppSchema.ClockEnum](appschemaenum/clock.md)
-  App enum schema conformance for types you use for clock functionality.
+  The collection of enum schemas in the clock domain.
 - [static var mail: some AppSchema.MailEnum](appschemaenum/mail.md)
-  App enum schema conformance for types you use for mail functionality.
+  The collection of enum schemas in the mail domain.
 - [static var maps: some AppSchema.MapsEnum](appschemaenum/maps.md)
-  App enum schema conformance for types you use for maps functionality.
+  The collection of enum schemas in the maps domain.
 - [static var messages: some AppSchema.MessagesEnum](appschemaenum/messages.md)
-  App enum schema conformance for types you use for messages functionality.
+  The collection of enum schemas in the messages domain.
 - [static var phone: some AppSchema.PhoneEnum](appschemaenum/phone.md)
-  App enum schema conformance for types you use for phone functionality.
+  The collection of enum schemas in the phone domain.
 - [static var photos: some AppSchema.PhotosEnum](appschemaenum/photos.md)
-  App enum schema conformance for types you use for photos functionality.
+  The collection of enum schemas in the photos domain.
 - [static var reader: some AppSchema.ReaderEnum](appschemaenum/reader.md)
-  App enum schema conformance for types you use for reader functionality.
+  The collection of enum schemas in the reader domain.
 - [static var reminders: some AppSchema.RemindersEnum](appschemaenum/reminders.md)
-  App enum schema conformance for types you use for reminders functionality.
+  The collection of enum schemas in the reminders domain.
 - [static var whiteboard: some AppSchema.WhiteboardEnum](appschemaenum/whiteboard.md)
-  App enum schema conformance for types you use for whiteboard functionality.
+  The collection of enum schemas in the whiteboard domain.
 
 ## Relationships
 

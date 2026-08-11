@@ -14,7 +14,7 @@
 ## Declaration
 
 ```swift
-var values: [String : any Sendable & Codable & Equatable]
+var values: [String : GeneratedContent]
 ```
 
 

@@ -46,6 +46,13 @@ Use this object to configure a [`VTFrameProcessor`](vtframeprocessor.md). Query 
 - [var destinationPixelBufferAttributes: [String : any Sendable]](vtlowlatencysuperresolutionscalerconfiguration/destinationpixelbufferattributes.md)
   Pixel buffer attributes dictionary that describes requirements for pixel buffers which represent destination frames.
 - [var supportedPixelFormats: [OSType]](vtlowlatencysuperresolutionscalerconfiguration/supportedpixelformats.md)
+### Type Properties
+- [class var supportedScaleFactors: [Float]](vtlowlatencysuperresolutionscalerconfiguration/supportedscalefactors-27vjh.md)
+### Type Methods
+- [class func maximumDimension(forSpatialScaleFactor: Float) -> Int?](vtlowlatencysuperresolutionscalerconfiguration/maximumdimension(forspatialscalefactor:).md)
+  The maximum value for either dimension of the source frame, in pixels, for a given spatial scale factor.
+- [class func maximumPixelCount(forSpatialScaleFactor: Float) -> Int?](vtlowlatencysuperresolutionscalerconfiguration/maximumpixelcount(forspatialscalefactor:).md)
+  The maximum total number of pixels in the source frame for a given spatial scale factor.
 
 ## Relationships
 

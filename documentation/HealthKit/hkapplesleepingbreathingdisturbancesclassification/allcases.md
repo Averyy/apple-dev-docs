@@ -3,6 +3,8 @@
 **Framework**: HealthKit  
 **Kind**: property
 
+A collection of all values for Apple Sleeping Breathing Disturbances classification
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+

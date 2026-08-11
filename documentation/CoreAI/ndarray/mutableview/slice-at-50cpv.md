@@ -40,7 +40,7 @@ func incrementRegion(
 }
 ```
 
-> **Note**: If you need to avoid `consuming` the view which this is called on, you can use `mutatingSlice`.
+> **Note**: If you need to avoid `consuming` the view which this is called on, you can use [`mutatingSlice(at:)`](ndarray/mutableview/mutatingslice(at:)-30asd.md).
 
 ## Parameters
 

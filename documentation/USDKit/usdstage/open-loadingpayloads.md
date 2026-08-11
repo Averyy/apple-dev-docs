@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: method
 
+Opens a stage using the file at a URL as its root layer.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -16,6 +18,19 @@
 ```swift
 static func open(_ url: URL, loadingPayloads: USDStage.InitialLoadRule = .all) throws -> USDStage
 ```
+
+#### Return Value
+
+A new stage rooted at the layer loaded from `url`.
+
+#### Discussion
+
+> **Note**: An error if the URL does not refer to a readable file.
+
+## Parameters
+
+- `url`: A file URL to use as the root layer of the new stage.
+- `loadingPayloads`: The rule that determines which payloads are loaded when opening the stage.
 
 ## See Also
 

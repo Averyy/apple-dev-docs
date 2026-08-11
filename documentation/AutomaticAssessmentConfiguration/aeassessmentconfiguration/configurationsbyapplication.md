@@ -19,14 +19,10 @@ var configurationsByApplication: [AEAssessmentApplication : AEAssessmentParticip
 
 #### Discussion
 
-Access this property to get a list of the currently allowed secondary apps and their individual configurations. Add apps to the list by calling the [`setConfiguration(_:for:)`](aeassessmentconfiguration/setconfiguration(_:for:).md) method. Remove them from the list by calling the [`remove(_:)`](aeassessmentconfiguration/remove(_:).md) method.
+Access this property to get a list of the currently allowed secondary apps and their individual configurations. Add apps to the list by calling the `AEAssessmentConfiguration/setConfiguration(_:for:)` method. Remove them from the list by calling the `AEAssessmentConfiguration/remove(_:)` method.
 
 ## See Also
 
-- [func setConfiguration(AEAssessmentParticipantConfiguration, for: AEAssessmentApplication)](aeassessmentconfiguration/setconfiguration(_:for:).md)
-  Adds an app to the list of apps available during an assessment.
-- [func remove(AEAssessmentApplication)](aeassessmentconfiguration/remove(_:).md)
-  Removes the availability of a previously allowed app.
 - [var mainParticipantConfiguration: AEAssessmentParticipantConfiguration](aeassessmentconfiguration/mainparticipantconfiguration.md)
   The app-specific configuration for the app that invokes the assessment.
 - [class AEAssessmentApplication](aeassessmentapplication.md)

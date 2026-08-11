@@ -23,7 +23,7 @@ associatedtype PartiallyGenerated : ConvertibleFromGeneratedContent = Self
 ## See Also
 
 - [func asPartiallyGenerated() -> Self.PartiallyGenerated](generable/aspartiallygenerated.md)
-  The partially generated type of this struct.
+  Returns the partially generated representation of the current instance.
 
 
 ---

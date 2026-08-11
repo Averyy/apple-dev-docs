@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: init
 
-Creates an refrence schema.
+Creates a reference schema.
 
 **Availability**:
 - iOS 26.0+

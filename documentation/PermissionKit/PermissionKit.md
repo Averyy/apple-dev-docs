@@ -59,6 +59,11 @@ Use `PermissionKit` in your app to adjust communication rules for a child accoun
 ### Structures
 - [struct AskPermissionAction](askpermissionaction.md)
   An action that sends a permission question to a parent or guardian.
+### Enumerations
+- [enum PermissionFlow](permissionflow.md)
+  Specifies which permission flow to present.
+- [enum PermissionResult](permissionresult.md)
+  Represents the outcome of the permission flow.
 
 
 ---

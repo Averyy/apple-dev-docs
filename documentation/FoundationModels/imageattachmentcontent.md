@@ -21,7 +21,7 @@ struct ImageAttachmentContent
 
 #### Overview
 
-You don’t create `ImageAttachmentContent` directly. Instead, use one of the [`Attachment`](attachment.md) initializers to attach a `CGImage`, `CIImage`, `CVPixelBuffer`, or image file URL.
+You don’t create `ImageAttachmentContent` directly. Instead, use one of the [`Attachment`](attachment.md) initializers to attach a [`CGImage`](https://developer.apple.com/documentation/CoreGraphics/CGImage), [`CIImage`](https://developer.apple.com/documentation/CoreImage/CIImage), [`CVPixelBuffer`](https://developer.apple.com/documentation/CoreVideo/cvpixelbuffer-q2e), or image file URL.
 
 ## Relationships
 

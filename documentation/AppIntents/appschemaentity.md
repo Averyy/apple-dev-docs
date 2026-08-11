@@ -22,43 +22,43 @@ protocol AppSchemaEntity : AppSchema.Kind
 
 ### Type Properties
 - [static var audio: some AppSchema.AudioEntity](appschemaentity/audio.md)
-  App entity schema conformance for types you use for audio functionality.
+  The collection of entity schemas in the audio domain.
 - [static var books: some AppSchema.BooksEntity](appschemaentity/books.md)
-  App entity schema conformance for types you use for books functionality.
+  The collection of entity schemas in the books domain.
 - [static var browser: some AppSchema.BrowserEntity](appschemaentity/browser.md)
-  App entity schema conformance for types you use for browser functionality.
+  The collection of entity schemas in the browser domain.
 - [static var calendar: some AppSchema.CalendarEntity](appschemaentity/calendar.md)
-  App entity schema conformance for types you use for calendar functionality.
+  The collection of entity schemas in the calendar domain.
 - [static var clock: some AppSchema.ClockEntity](appschemaentity/clock.md)
-  App entity schema conformance for types you use for clock functionality.
+  The collection of entity schemas in the clock domain.
 - [static var files: some AppSchema.FilesEntity](appschemaentity/files.md)
-  App entity schema conformance for types you use for files functionality.
+  The collection of entity schemas in the files domain.
 - [static var journal: some AppSchema.JournalEntity](appschemaentity/journal.md)
-  App entity schema conformance for types you use for journal functionality.
+  The collection of entity schemas in the journal domain.
 - [static var mail: some AppSchema.MailEntity](appschemaentity/mail.md)
-  App entity schema conformance for types you use for mail functionality.
+  The collection of entity schemas in the mail domain.
 - [static var maps: some AppSchema.MapsEntity](appschemaentity/maps.md)
-  App entity schema conformance for types you use for maps functionality.
+  The collection of entity schemas in the maps domain.
 - [static var messages: some AppSchema.MessagesEntity](appschemaentity/messages.md)
-  App entity schema conformance for types you use for messages functionality.
+  The collection of entity schemas in the messages domain.
 - [static var notes: some AppSchema.NotesEntity](appschemaentity/notes.md)
-  App entity schema conformance for types you use for notes functionality.
+  The collection of entity schemas in the notes domain.
 - [static var phone: some AppSchema.PhoneEntity](appschemaentity/phone.md)
-  App entity schema conformance for types you use for phone functionality.
+  The collection of entity schemas in the phone domain.
 - [static var photos: some AppSchema.PhotosEntity](appschemaentity/photos.md)
-  App entity schema conformance for types you use for photos functionality.
+  The collection of entity schemas in the photos domain.
 - [static var presentation: some AppSchema.PresentationEntity](appschemaentity/presentation.md)
-  App entity schema conformance for types you use for presentation functionality.
+  The collection of entity schemas in the presentation domain.
 - [static var reader: some AppSchema.ReaderEntity](appschemaentity/reader.md)
-  App entity schema conformance for types you use for reader functionality.
+  The collection of entity schemas in the reader domain.
 - [static var reminders: some AppSchema.RemindersEntity](appschemaentity/reminders.md)
-  App entity schema conformance for types you use for reminders functionality.
+  The collection of entity schemas in the reminders domain.
 - [static var spreadsheet: some AppSchema.SpreadsheetEntity](appschemaentity/spreadsheet.md)
-  App entity schema conformance for types you use for spreadsheet functionality.
+  The collection of entity schemas in the spreadsheet domain.
 - [static var whiteboard: some AppSchema.WhiteboardEntity](appschemaentity/whiteboard.md)
-  App entity schema conformance for types you use for whiteboard functionality.
+  The collection of entity schemas in the whiteboard domain.
 - [static var wordProcessor: some AppSchema.WordProcessorEntity](appschemaentity/wordprocessor.md)
-  App entity schema conformance for types you use for word processor functionality.
+  The collection of entity schemas in the word processor domain.
 
 ## Relationships
 

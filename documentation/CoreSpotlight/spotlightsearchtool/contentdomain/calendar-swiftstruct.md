@@ -28,7 +28,7 @@ struct Calendar
 - [var date: [SearchableItemAttribute]?](spotlightsearchtool/contentdomain/calendar-swift.struct/date.md)
   Attributes queried for the event date. Default: [`dueDate`](searchableitemattribute/duedate.md)
 - [var location: [SearchableItemAttribute]?](spotlightsearchtool/contentdomain/calendar-swift.struct/location.md)
-  Attributes queried for the event location. Default: [`city`](searchableitemattribute/city.md), [`stateOrProvince`](searchableitemattribute/stateorprovince.md)
+  Attributes queried for the event location. Default: [`namedLocation`](searchableitemattribute/namedlocation.md), [`city`](searchableitemattribute/city.md), [`stateOrProvince`](searchableitemattribute/stateorprovince.md)
 - [var organizer: [SearchableItemAttribute]?](spotlightsearchtool/contentdomain/calendar-swift.struct/organizer.md)
   Attributes queried for the event organizer/host.
 

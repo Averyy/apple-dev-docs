@@ -96,13 +96,13 @@ struct MutableRawSpan
 - [subscript(unchecked _: Int) -> UInt8](mutablerawspan/subscript(unchecked:).md)
   Accesses the byte at the specified offset in the span.
 ### Default Implementations
-- [BorrowingSequence Implementations](mutablerawspan/borrowingsequence-implementations.md)
+- [Iterable Implementations](mutablerawspan/iterable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
-- [BorrowingSequence](borrowingsequence.md)
 - [ContiguousBytes](../Foundation/ContiguousBytes.md)
+- [Iterable](iterable.md)
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)
 
@@ -120,7 +120,6 @@ struct MutableRawSpan
   A borrowed view into contiguous memory that contains validly-encoded UTF-8 code units.
 - [struct MutableSpan](mutablespan.md)
   `MutableSpan<Element>` represents a contiguous region of memory which contains initialized instances of `Element`.
-- [struct SpanIterator](spaniterator.md)
 
 
 ---

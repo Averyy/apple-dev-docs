@@ -8,6 +8,7 @@ An error that indicates the device isn’t allowed to perform the mobile documen
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
+- Mac Catalyst 17.0+
 
 ## Declaration
 

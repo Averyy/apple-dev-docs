@@ -3,7 +3,7 @@
 **Framework**: App Intents  
 **Kind**: property
 
-App entity schema conformance for types you use for reminders functionality.
+The collection of entity schemas in the reminders domain.
 
 **Availability**:
 - iOS 27.0+ (Beta)

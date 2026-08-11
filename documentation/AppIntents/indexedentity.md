@@ -33,9 +33,9 @@ For more information about adding entities to your app’s Spotlight index, see 
 
 ### Specifying entity-related attributes
 - [var attributeSet: CSSearchableItemAttributeSet](indexedentity/attributeset.md)
-  The custom Spotlight attributes to associate with the entity.
+  A custom attribute set that you include with your entity to improve search accuracy.
 - [var defaultAttributeSet: CSSearchableItemAttributeSet](indexedentity/defaultattributeset.md)
-  The default Spotlight attributes to associate with an entity.
+  The default set of attributes to include with your app entity in the Spotlight index.
 ### Hiding an entity from search results
 - [var hideInSpotlight: Bool](indexedentity/hideinspotlight.md)
   A Boolean value that indicates whether Spotlight prevents the inclusion of the entity in the index.

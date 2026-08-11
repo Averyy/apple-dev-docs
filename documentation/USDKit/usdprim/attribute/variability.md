@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: property
 
+The variability of this attribute, which indicates whether its value can change over time.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -14,7 +16,7 @@
 ## Declaration
 
 ```swift
-var variability: USDPrim.Property.Variability { get set }
+var variability: USDPrim.Property.Variability { get }
 ```
 
 

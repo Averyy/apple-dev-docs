@@ -8,6 +8,7 @@ A photo ID request that retrieves elements from the holder and returns the valid
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

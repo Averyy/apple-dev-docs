@@ -91,25 +91,25 @@ For more information about using the delegate to control the behavior of your ge
 
 ## Topics
 
-### Initializing a Gesture Recognizer
+### Initializing a gesture recognizer
 - [init(target: Any?, action: Selector?)](nsgesturerecognizer/init(target:action:).md)
   Initializes the gesture recognizer with the specified target and action information.
-### Accessing the Target and Action
+### Accessing the target and action
 - [var action: Selector?](nsgesturerecognizer/action.md)
   The action method to call when the gesture is recognized.
 - [var target: AnyObject?](nsgesturerecognizer/target.md)
   The object that implements the action method.
-### Getting the Location of Events
+### Getting the location of events
 - [func location(in: NSView?) -> NSPoint](nsgesturerecognizer/location(in:).md)
   Returns the point computed as the location of the gesture.
-### Accessing the Recognizer’s State
+### Accessing the recognizer’s state
 - [var state: NSGestureRecognizer.State](nsgesturerecognizer/state-swift.property.md)
   The current state of the gesture recognizer.
 - [var view: NSView?](nsgesturerecognizer/view.md)
   The view to which the gesture recognizer is attached.
 - [var isEnabled: Bool](nsgesturerecognizer/isenabled.md)
   A Boolean value indicating whether the gesture recognizer is able to handle events.
-### Delaying Events
+### Delaying events
 - [var delaysPrimaryMouseButtonEvents: Bool](nsgesturerecognizer/delaysprimarymousebuttonevents.md)
   A Boolean value that indicates whether primary mouse button events are delivered only after gesture recognition fails.
 - [var delaysSecondaryMouseButtonEvents: Bool](nsgesturerecognizer/delayssecondarymousebuttonevents.md)
@@ -122,10 +122,10 @@ For more information about using the delegate to control the behavior of your ge
   A Boolean value that indicates whether magnification events are delivered only after gesture recognition fails.
 - [var delaysRotationEvents: Bool](nsgesturerecognizer/delaysrotationevents.md)
   A Boolean value that indicates whether rotation events are delivered only after gesture recognition fails.
-### Accessing the Delegate
+### Accessing the delegate
 - [var delegate: (any NSGestureRecognizerDelegate)?](nsgesturerecognizer/delegate.md)
   The delegate of the gesture recognizer.
-### Methods for Subclasses
+### Overriding methods for subclasses
 - [func reset()](nsgesturerecognizer/reset.md)
   Overridden to reset the internal state of the gesture recognizer when an attempt completes.
 - [func mouseDown(with: NSEvent)](nsgesturerecognizer/mousedown(with:).md)
@@ -168,21 +168,21 @@ For more information about using the delegate to control the behavior of your ge
   Informs the current object that the user pressed or released a modifier key (Shift, Control, and so on).
 - [func pressureChange(with: NSEvent)](nsgesturerecognizer/pressurechange(with:).md)
   Informs the current object that a pressure change occurred on a system that supports pressure sensitivity.
-### Configuring Pressure
+### Configuring pressure
 - [var pressureConfiguration: NSPressureConfiguration](nsgesturerecognizer/pressureconfiguration.md)
   Configures the behavior and progression of the Force Touch trackpad when responding to recognized pressure gestures.
-### Constants
+### Getting state values
 - [NSGestureRecognizer.State](nsgesturerecognizer/state-swift.enum.md)
   The current state of the gesture recognizer.
-### Initializers
+### Initializing from a coder
 - [init?(coder: NSCoder)](nsgesturerecognizer/init(coder:).md)
-### Instance Properties
+### Getting additional recognizer information
 - [var allowedTouchTypes: NSTouch.TouchTypeMask](nsgesturerecognizer/allowedtouchtypes.md)
 - [var isCancellableByScrollGesture: Bool](nsgesturerecognizer/iscancellablebyscrollgesture.md)
   Causes the receiver to be cancelled when its enclosing scroll view’s gesture recognizer begins.
 - [var modifierFlags: NSEvent.ModifierFlags](nsgesturerecognizer/modifierflags.md)
 - [var name: String?](nsgesturerecognizer/name.md)
-### Instance Methods
+### Handling touch and mouse events
 - [func touchesBegan(with: NSEvent)](nsgesturerecognizer/touchesbegan(with:).md)
   Called when one or more fingers first make contact with an [`NSTouchBar`](nstouchbar.md) instance on the Touch Bar.
 - [func touchesCancelled(with: NSEvent)](nsgesturerecognizer/touchescancelled(with:).md)

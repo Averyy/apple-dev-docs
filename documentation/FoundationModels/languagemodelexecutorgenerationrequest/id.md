@@ -21,7 +21,7 @@ var id: UUID
 
 ## See Also
 
-- [var metadata: [String : any Sendable & Codable & Equatable]](languagemodelexecutorgenerationrequest/metadata.md)
+- [var metadata: [String : GeneratedContent]](languagemodelexecutorgenerationrequest/metadata.md)
   Metadata to attach to the request
 - [var contextOptions: ContextOptions](languagemodelexecutorgenerationrequest/contextoptions.md)
   Settings that configure how the model is prompted

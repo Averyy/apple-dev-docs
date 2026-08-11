@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: init
 
-Create a session with dynamic instructions.
+Creates a session with dynamic instructions.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -11,26 +11,27 @@ Create a session with dynamic instructions.
 - Mac Catalyst 27.0+ (Beta)
 - macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
+- watchOS 27.0+ (Beta)
 
 ## Declaration
 
 ```swift
-convenience init(model: some LanguageModel = SystemLanguageModel.default, dynamicInstructions: sending some DynamicInstructions, history: some Collection<Transcript.Entry> = [])
+convenience init(model: some LanguageModel, dynamicInstructions: sending some DynamicInstructions, history: some Collection<Transcript.Entry> = [])
 ```
 
 ## Mentions
 
 - [Composing dynamic sessions with instructions and profiles](composing-dynamic-sessions-with-instructions-and-profiles.md)
 
-#### Discussion
+## Parameters
 
-- Parameters - dynamicInstructions: The instructions to use for this session.
-- history: Transcript entries without the initial instructions, since that’s defined by the profile.
+- `dynamicInstructions`: The instructions to use for this session.
+- `history`: Transcript entries without the initial instructions, since that’s defined by the profile.
 
 ## See Also
 
 - [convenience init(profile: sending some LanguageModelSession.DynamicProfile, history: some Collection<Transcript.Entry>)](languagemodelsession/init(profile:history:).md)
-  Create a session with a profile.
+  Creates a session with a profile.
 - [LanguageModelSession.DynamicProfile](languagemodelsession/dynamicprofile.md)
   A dynamic profile that contains one or more profiles.
 - [LanguageModelSession.DynamicProfileModifier](languagemodelsession/dynamicprofilemodifier.md)

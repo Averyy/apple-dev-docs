@@ -21,6 +21,8 @@ final class LowLevelTextureResource
 
 Use `LowLevelTextureResource` when you want to bring your own texture data to the renderer or update your data frequently. Textures are updated on the GPU by writing to a `MTLTexture` returned by `replace(commandBuffer:)`. The descriptor is analogous to `MTLTextureDescriptor`.
 
+Create a `LowLevelTextureResource` using [`makeTextureResource(descriptor:)`](lowlevelrendercontext/maketextureresource(descriptor:).md).
+
 ## Topics
 
 ### Accessing the descriptor
@@ -30,9 +32,9 @@ Use `LowLevelTextureResource` when you want to bring your own texture data to th
   The configuration for a new low-level texture resource.
 ### Reading and writing texture data
 - [func read(commandBuffer: (any MTLCommandBuffer)?) -> any MTLTexture](lowleveltextureresource/read(commandbuffer:).md)
-  Retrieves the Metal texture for GPU reading.
+  Returns a Metal texture containing the current contents of the texture resource for GPU read operations.
 - [func replace(commandBuffer: (any MTLCommandBuffer)?) -> any MTLTexture](lowleveltextureresource/replace(commandbuffer:).md)
-  Retrieves a Metal texture that shaders can write to on the GPU. The texture’s contents are in an uninitialized state. The renderer waits for the command buffer to complete before using the texture for rendering.
+  Returns a Metal texture you populate on the GPU with the new contents of the texture resource.
 
 ## See Also
 
@@ -51,7 +53,7 @@ Use `LowLevelTextureResource` when you want to bring your own texture data to th
 - [struct LowLevelBufferSlice](lowlevelbufferslice.md)
   A reference to a sub-range of a buffer resource, used to bind a region of a buffer to an argument table slot.
 - [class LowLevelMaterialResource](lowlevelmaterialresource.md)
-  A compiled material composed of three independently-replaceable shader stages.
+  A compiled material composed of three independently-replaceable shader functions.
 - [class LowLevelDeviceResource](lowleveldeviceresource.md)
   Encapsulates a GPU device resource created by the application. On visionOS, resources must be allocated in shared memory that can be used by the renderer process. Once a device resource is in use by the renderer, changing its contents is unsafe and undefined.
 - [struct BoundingSphereBox](boundingspherebox.md)

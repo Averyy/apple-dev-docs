@@ -6,7 +6,11 @@
 Specifies an action to perform on each update of an ongoing drop operation activated by `dropDestination(_:)` or other drop modifiers.
 
 **Availability**:
+- iOS 27.0+ (Beta)
+- iPadOS 27.0+ (Beta)
+- Mac Catalyst 27.0+ (Beta)
 - macOS 26.0+
+- visionOS 27.0+ (Beta)
 
 ## Declaration
 

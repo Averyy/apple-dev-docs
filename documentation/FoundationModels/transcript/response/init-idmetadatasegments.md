@@ -14,7 +14,7 @@
 ## Declaration
 
 ```swift
-init(id: String = UUID().uuidString, metadata: [String : any Sendable & Codable & Equatable] = [:], segments: [Transcript.Segment])
+init(id: String = UUID().uuidString, metadata: [String : any ConvertibleToGeneratedContent] = [:], segments: [Transcript.Segment])
 ```
 
 ## See Also

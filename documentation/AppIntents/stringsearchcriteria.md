@@ -26,18 +26,17 @@ Use this type in app intents that match your app’s content against a string-ba
 
 ## Topics
 
-### Initializers
+### Creating the search criteria
 - [init(term: String)](stringsearchcriteria/init(term:).md)
   Initializes the type with the specified search term.
-### Instance Properties
+### Getting the search term
 - [var term: String](stringsearchcriteria/term.md)
   The string to use when matching items in your app.
-### Type Aliases
+### Getting related types
+- [static var defaultResolverSpecification: some ResolverSpecification](stringsearchcriteria/defaultresolverspecification.md)
 - [StringSearchCriteria.Specification](stringsearchcriteria/specification.md)
 - [StringSearchCriteria.UnwrappedType](stringsearchcriteria/unwrappedtype.md)
 - [StringSearchCriteria.ValueType](stringsearchcriteria/valuetype.md)
-### Type Properties
-- [static var defaultResolverSpecification: some ResolverSpecification](stringsearchcriteria/defaultresolverspecification.md)
 
 ## Relationships
 
@@ -54,11 +53,10 @@ Use this type in app intents that match your app’s content against a string-ba
 
 ## See Also
 
-- [var criteria: Self.Criteria](showinappsearchresultsintent/criteria-swift.property.md)
-  The information to use when performing the search.
-- [protocol SearchCriteria](searchcriteria.md)
-  An interface for defining the criteria to use when searching your app’s content.
-- [associatedtype Criteria : SearchCriteria](showinappsearchresultsintent/criteria-swift.associatedtype.md)
+- [protocol ShowInAppSearchResultsIntent](showinappsearchresultsintent.md)
+  An app intent that displays a set of search results in the app’s interface.
+- [enum StringSearchScope](stringsearchscope.md)
+  Constants that describe the types of content your app includes in search results when the search criteria is a string.
 
 
 ---

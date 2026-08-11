@@ -3,7 +3,7 @@
 **Framework**: Authentication Services  
 **Kind**: method
 
-Creates new encryption, signing, and Secure Enclave keys for the user.
+Creates new encryption, signing, and Secure Enclave keys.
 
 **Availability**:
 - macOS 13.0+

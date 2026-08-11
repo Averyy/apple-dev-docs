@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: method
 
-Retrieves the Metal texture for GPU reading.
+Returns a Metal texture containing the current contents of the texture resource for GPU read operations.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -19,20 +19,20 @@ final func read(commandBuffer: (any MTLCommandBuffer)?) -> any MTLTexture
 
 #### Return Value
 
-The underlying `MTLTexture` for reading.
+A `MTLTexture` ready for GPU read operations.
 
 #### Discussion
 
-The renderer waits for the command buffer to complete before using the texture for rendering.
+The renderer waits for the provided command buffer to complete before discarding the texture.
 
 ## Parameters
 
-- `commandBuffer`: The command buffer using this texture, or `nil` to skip synchronization.
+- `commandBuffer`: The command buffer that reads from this texture, or `nil` to skip synchronization.
 
 ## See Also
 
 - [func replace(commandBuffer: (any MTLCommandBuffer)?) -> any MTLTexture](lowleveltextureresource/replace(commandbuffer:).md)
-  Retrieves a Metal texture that shaders can write to on the GPU. The texture’s contents are in an uninitialized state. The renderer waits for the command buffer to complete before using the texture for rendering.
+  Returns a Metal texture you populate on the GPU with the new contents of the texture resource.
 
 
 ---

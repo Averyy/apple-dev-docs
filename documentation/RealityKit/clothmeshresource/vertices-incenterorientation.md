@@ -30,8 +30,6 @@ The indices of the vertices that lie inside the shape.
 
 - [var vertexCount: Int](clothmeshresource/vertexcount.md)
   The number of vertices in the mesh.
-- [var positions: Span<SIMD3<Float>>](clothmeshresource/positions.md)
-  The positions of all the vertices.
 - [func position(at: UInt32) -> SIMD3<Float>](clothmeshresource/position(at:).md)
   Returns the position of the vertex at the given index.
 - [func withPositions<Result>((Span<SIMD3<Float>>) -> Result) -> Result](clothmeshresource/withpositions(_:).md)

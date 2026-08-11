@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: method
 
+Removes the authored custom data value at the given key path.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)

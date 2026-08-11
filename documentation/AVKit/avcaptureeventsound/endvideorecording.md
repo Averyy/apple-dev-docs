@@ -8,6 +8,7 @@ The default sound for ending a video recording.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

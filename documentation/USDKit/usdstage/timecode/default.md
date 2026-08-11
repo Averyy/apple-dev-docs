@@ -3,7 +3,7 @@
 **Framework**: USDKit  
 **Kind**: property
 
-The default time code, used to represent un-time-varying authoring.
+The time code used to author and read values that do not vary over time.
 
 **Availability**:
 - iOS 27.0+ (Beta)

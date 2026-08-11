@@ -30,7 +30,6 @@ protocol InstructionsRepresentable
 ### Inherited By
 - [ConvertibleToGeneratedContent](convertibletogeneratedcontent.md)
 - [Generable](generable.md)
-- [Transcript.CustomSegment](transcript/customsegment.md)
 ### Conforming Types
 - [Attachment](attachment.md)
 - [GeneratedContent](generatedcontent.md)

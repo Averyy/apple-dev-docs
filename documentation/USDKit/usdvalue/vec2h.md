@@ -46,8 +46,8 @@ struct Vec2h
 - [Hashable](../Swift/Hashable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
-- [USDPrim.Attribute.MetadataValue](usdprim/attribute/metadatavalue.md)
 - [USDPrim.Attribute.Value](usdprim/attribute/value.md)
+- [USDStage.Object.MetadataValue](usdstage/object/metadatavalue.md)
 - [USDValueProtocol](usdvalueprotocol.md)
 
 

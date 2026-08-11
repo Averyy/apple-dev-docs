@@ -39,7 +39,7 @@ struct RenderState
 - [func render(using: any MTLCommandBuffer, (inout LowLevelRenderer.RenderState) -> ())](lowlevelrenderer/render(using:_:).md)
   Encodes draw calls for the frame into the given command buffer using a caller-controlled render callback.
 - [LowLevelRenderer.Resources](lowlevelrenderer/resources.md)
-  Pre-compiled GPU resources for a renderer.
+  Prepared GPU resources for a renderer.
 
 
 ---

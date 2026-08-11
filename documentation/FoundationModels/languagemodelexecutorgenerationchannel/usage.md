@@ -25,6 +25,9 @@ Producers report the current cumulative totals on every update and consumers rep
 
 ## Topics
 
+### Creating a usage token instance
+- [init(input: LanguageModelExecutorGenerationChannel.Usage.Input, output: LanguageModelExecutorGenerationChannel.Usage.Output, metadata: [String : any ConvertibleToGeneratedContent])](languagemodelexecutorgenerationchannel/usage/init(input:output:metadata:).md)
+  Creates a usage update.
 ### Updating the token counts
 - [var input: LanguageModelExecutorGenerationChannel.Usage.Input](languagemodelexecutorgenerationchannel/usage/input-swift.property.md)
   The input token counts from the transcript.
@@ -34,11 +37,8 @@ Producers report the current cumulative totals on every update and consumers rep
   The output token counts from the response.
 - [LanguageModelExecutorGenerationChannel.Usage.Output](languagemodelexecutorgenerationchannel/usage/output-swift.struct.md)
   Token counts for the output produced by the model.
-### Initializers
-- [init(input: LanguageModelExecutorGenerationChannel.Usage.Input, output: LanguageModelExecutorGenerationChannel.Usage.Output, metadata: [String : any Sendable & Codable & Equatable])](languagemodelexecutorgenerationchannel/usage/init(input:output:metadata:).md)
-  Creates a usage update.
-### Instance Properties
-- [var metadata: [String : any Sendable & Codable & Equatable]](languagemodelexecutorgenerationchannel/usage/metadata.md)
+### Accessing the metadata
+- [var metadata: [String : GeneratedContent]](languagemodelexecutorgenerationchannel/usage/metadata.md)
   The additional metadata with a token count.
 
 ## Relationships
@@ -56,9 +56,9 @@ Producers report the current cumulative totals on every update and consumers rep
 - [LanguageModelExecutorGenerationChannel.ReasoningSignature](languagemodelexecutorgenerationchannel/reasoningsignature.md)
   Payload for a reasoning entry’s signature update.
 - [LanguageModelExecutorGenerationChannel.TextFragment](languagemodelexecutorgenerationchannel/textfragment.md)
-  Append text to a streaming entry’s current text segment. Used by both `Response/Action/appendText(_:)` and `Reasoning/Action/appendText(_:)`.
+  Text appended to a streaming entry’s current text segment.
 - [LanguageModelExecutorGenerationChannel.TextSegmentReplacement](languagemodelexecutorgenerationchannel/textsegmentreplacement.md)
-  Replace a streaming entry’s current text segment with `content`.
+  A replacement for a streaming entry’s current text segment.
 - [LanguageModelExecutorGenerationChannel.Response](languagemodelexecutorgenerationchannel/response.md)
   A model-generated response event: text, segment replacements, citations, advisories, custom segments, metadata, or usage.
 - [LanguageModelExecutorGenerationChannel.ToolCalls](languagemodelexecutorgenerationchannel/toolcalls.md)

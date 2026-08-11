@@ -26,7 +26,7 @@ May be empty or a partial/summary representation; full text may not be available
 ## See Also
 
 - [var description: String](transcript/reasoning/description.md)
-- [var metadata: [String : any Codable & Sendable & Equatable]](transcript/reasoning/metadata.md)
+- [var metadata: [String : GeneratedContent]](transcript/reasoning/metadata.md)
   Metadata produced by the model while generating this reasoning entry.
 - [var signature: Data?](transcript/reasoning/signature.md)
   Opaque producer-supplied signature for this reasoning entry.

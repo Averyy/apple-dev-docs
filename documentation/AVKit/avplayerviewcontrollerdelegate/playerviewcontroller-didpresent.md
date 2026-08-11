@@ -8,6 +8,7 @@ Tells the delegate when the player view controller finishes playing a range of i
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
+- Mac Catalyst 16.0+
 - tvOS 9.0+
 - visionOS 1.0+
 

@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: struct
 
-An empty dynamic instructions type..
+An empty dynamic instructions type.
 
 **Availability**:
 - iOS 27.0+ (Beta)

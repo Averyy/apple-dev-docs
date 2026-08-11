@@ -28,11 +28,6 @@ The provided span is only valid for the lifetime of the callback.
 
 - `body`: A closure that receives a span over the local-space particle positions.
 
-## See Also
-
-- [var localSpacePositions: Span<SIMD3<Float>>](clothbodyevents/newsimulationpositions/localspacepositions.md)
-  The new simulation positions of the body’s particles, in local space.
-
 
 ---
 

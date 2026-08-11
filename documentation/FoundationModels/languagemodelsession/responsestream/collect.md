@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: method
 
-The result from a streaming response, after it completes.
+Returns the result from a streaming response, after it completes.
 
 **Availability**:
 - iOS 26.0+

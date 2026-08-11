@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: struct
 
-Pre-compiled GPU resources for a renderer.
+Prepared GPU resources for a renderer.
 
 **Availability**:
 - iOS 27.0+ (Beta)

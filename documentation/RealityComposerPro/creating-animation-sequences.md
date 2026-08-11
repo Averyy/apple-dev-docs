@@ -100,8 +100,6 @@ The Animation Clip Properties provide controls for configuring animation clips o
   Root an animation Sequence at the right entity, then wire it to an Animation Library Component so it plays automatically at runtime.
 - [Building multi-track animation sequences](building-multi-track-animation-sequences.md)
   Root a Sequence correctly so it shows up as a clip and plays automatically at runtime.
-- [Automating motion path creation with editor-scripting commands](automating-motion-path-creation-with-editor-scripting-commands.md)
-  Build the same multi-track Sequence and Motion Path shown in the Sequencer UI programmatically, by chaining editor-scripting commands together.
 - [Working with the Animation Graph](working-with-the-animation-graph.md)
   Build character animation state machines visually using the Animation Graph in Reality Composer Pro.
 - [Building an advanced Animation Graph](building-an-advanced-animation-graph.md)

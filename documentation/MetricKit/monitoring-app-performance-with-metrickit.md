@@ -8,7 +8,7 @@ Receive daily performance and diagnostic reports from real device usage.
 
 MetricKit collects performance data from real devices running your app. It provides profiling data to your app once per day, giving you a picture of how your app performs in conditions you can’t easily reproduce during development. You can collect statistics like CPU usage, memory consumption, network activity, launch time, disk I/O, and more, all through a single API.
 
-When you use the [`StateReporting`](https://developer.apple.com/documentation/StateReporting) framework to describe your app’s behavior, MetricKit can attribute metrics like scroll hitch time or slow app launch to a particular feature, an app-configurable setting, or any other labeled states that you define. With performance data broken down by states, you have more evidence to make targeted, confident decisions for the next version of your app.
+When you use the [`StateReporting`](https://developer.apple.com/documentation/StateReporting) framework to describe your app’s behavior, MetricKit can attribute metrics like hitch time or slow app launch to a particular feature, an app-configurable setting, or any other labeled states that you define. With performance data broken down by states, you have more evidence to make targeted, confident decisions for the next version of your app.
 
 #### Understand the Reporting Model
 
@@ -87,7 +87,6 @@ for await report in manager.metricReports {
         for value in entry.values {
             switch value {
             case let .hangTime(metric): uploadMetric(metric.histogram, state: entry.state.label)
-            case let .scrollHitchTime(metric): uploadMetric(metric.histogram, state: entry.state.label)
             @unknown default: break
             }
         }

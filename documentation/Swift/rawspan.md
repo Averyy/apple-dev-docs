@@ -86,14 +86,14 @@ A `RawSpan` instance is a non-owning, non-escaping view into memory. When a `Raw
 - [subscript(unchecked _: Int) -> UInt8](rawspan/subscript(unchecked:).md)
   Accesses the byte at the specified offset in the span.
 ### Default Implementations
-- [BorrowingSequence Implementations](rawspan/borrowingsequence-implementations.md)
+- [Iterable Implementations](rawspan/iterable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
 - [BitwiseCopyable](bitwisecopyable.md)
-- [BorrowingSequence](borrowingsequence.md)
 - [ContiguousBytes](../Foundation/ContiguousBytes.md)
+- [Iterable](iterable.md)
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)
 
@@ -111,7 +111,6 @@ A `RawSpan` instance is a non-owning, non-escaping view into memory. When a `Raw
   `MutableSpan<Element>` represents a contiguous region of memory which contains initialized instances of `Element`.
 - [struct MutableRawSpan](mutablerawspan.md)
   `MutableRawSpan` represents a contiguous region of memory which contains initialized bytes.
-- [struct SpanIterator](spaniterator.md)
 
 
 ---

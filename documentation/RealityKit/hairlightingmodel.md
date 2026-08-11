@@ -19,6 +19,23 @@ Configuration for RealityKit’s hair lighting model.
 struct HairLightingModel
 ```
 
+## Mentions
+
+- [Rendering high-fidelity characters](rendering-high-fidelity-characters.md)
+
+#### Overview
+
+`LitLightingModel` doesn’t accurately represent hair and fur, since their thin, nearly cylindrical strands scatter light differently than a typical opaque surface. Use this lighting model for materials that shade hair or fur.
+
+To render with the hair lighting model, set a `ShaderGraphMaterial.Program.Descriptor`’s `lightingModel` to `.hair()`:
+
+```None
+let descriptor = ShaderGraphMaterial.Program.Descriptor(shaderGraph: graph, lightingModel: .hair())
+let program = try await ShaderGraphMaterial.Program(descriptor: descriptor)
+```
+
+The surface output node in the descriptor’s `ShaderGraph` must produce hair-shading output for this model to take effect.
+
 ## Topics
 
 ### Initializers

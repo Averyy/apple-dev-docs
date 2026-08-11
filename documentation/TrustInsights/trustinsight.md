@@ -8,7 +8,6 @@ A protocol that describes the trust insight model and the associated evaluation 
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 
 ## Declaration
 

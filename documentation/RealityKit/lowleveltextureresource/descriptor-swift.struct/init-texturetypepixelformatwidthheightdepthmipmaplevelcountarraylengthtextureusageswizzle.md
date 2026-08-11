@@ -27,7 +27,7 @@ init(textureType: MTLTextureType = .type2D, pixelFormat: MTLPixelFormat = .inval
 - `mipmapLevelCount`: The number of mipmap levels for the texture. Defaults to `1`.
 - `arrayLength`: The number of array elements for this texture. Defaults to `1`.
 - `textureUsage`: The options that determine how the texture can be used. Defaults to `.unknown`.
-- `swizzle`: The channel swizzle pattern the GPU applies when sampling the texture. Defaults to identity.
+- `swizzle`: The channel swizzle pattern the GPU applies when sampling the texture. Defaults to the identity swizzle (`.red`, `.green`, `.blue`, `.alpha`).
 
 
 ---

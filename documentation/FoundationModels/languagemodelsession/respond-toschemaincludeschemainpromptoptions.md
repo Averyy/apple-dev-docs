@@ -32,13 +32,13 @@ Consider using the default value of `true` for `includeSchemaInPrompt`. The exce
 
 - `prompt`: A prompt for the model to respond to.
 - `schema`: A schema to guide the output with.
-- `includeSchemaInPrompt`: Inject the schema into the prompt to bias the model.
+- `includeSchemaInPrompt`: If `true`, injects the schema into the prompt to bias the model.
 - `options`: Options that control how tokens are sampled from the distribution the model produces.
 
 ## See Also
 
 - [var isResponding: Bool](languagemodelsession/isresponding.md)
-  A Boolean value that indicates a response is being generated.
+  A Boolean value that indicates whether a response is being generated.
 - [func respond(options: GenerationOptions, prompt: () throws -> Prompt) async throws -> LanguageModelSession.Response<String>](languagemodelsession/respond(options:prompt:).md)
   Produces a response to a prompt.
 - [func respond<Content>(generating: Content.Type, includeSchemaInPrompt: Bool, options: GenerationOptions, prompt: () throws -> Prompt) async throws -> LanguageModelSession.Response<Content>](languagemodelsession/respond(generating:includeschemainprompt:options:prompt:).md)

@@ -54,6 +54,8 @@ This is used as the dimension type in [`histogram`](cellularconditiontimemetric/
   A distribution of values organized into buckets.
 - [struct AverageStatistics](averagestatistics.md)
   A value that encapsulates an average measurement with supporting statistical data.
+- [class HitchTimeRatio](hitchtimeratio.md)
+  A unit for animation hitch time ratio measurements.
 - [struct OSVersion](osversion.md)
   The version of the operating system on the device.
 

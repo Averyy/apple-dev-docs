@@ -34,13 +34,6 @@ struct MountOptions
 - [SendableMetatype](../Swift/SendableMetatype.md)
 - [SetAlgebra](../Swift/SetAlgebra.md)
 
-## See Also
-
-- [var requestedMountOptions: FSVolume.MountOptions](fsvolume/handler/requestedmountoptions.md)
-  A property that allows the file system to request for specific mount options from FSKit.
-- [var enableOpenUnlinkEmulation: Bool](fsvolume/handler/enableopenunlinkemulation.md)
-  A property that allows the file system to use open-unlink emulation.
-
 
 ---
 

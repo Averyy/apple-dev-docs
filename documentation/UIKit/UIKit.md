@@ -113,7 +113,11 @@ To build a macOS app, you can use [`SwiftUI`](https://developer.apple.com/docume
   The UIKit framework defines data types that are used in multiple places throughout the framework.
 - [UIKit Functions](uikit-functions.md)
   The UIKit framework defines a number of functions, many of them used in graphics and drawing operations.
+### Protocols
+- [protocol UITraitBridgedEnvironmentKey](uitraitbridgedenvironmentkey.md)
 ### Structures
+- [struct UIConfigurationTextAttributesTransformer](uiconfigurationtextattributestransformer-swift.struct.md)
+  Defines a text transformation that can affect the visual appearance of a string.
 - [struct UITraitSystemPrefersReducedResourceUsage](uitraitsystemprefersreducedresourceusage-swift.struct.md)
 ### Macros
 - [macro Preview<T>(String?, traits: PreviewTrait<Preview.ViewTraits>..., arguments: [T], body: (T) -> UIView)](preview(_:traits:arguments:body:)-6gm4c.md)

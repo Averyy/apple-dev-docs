@@ -4,7 +4,7 @@
 **Kind**: property  
 **Required**: Yes
 
-The parameter name-to-slot mapping for this function, used to look up binding indices by name at runtime.
+The parameter name-to-slot mapping for this function, used to look up binding indices by name at runtime, or `nil` if the function takes no custom parameters.
 
 **Availability**:
 - iOS 27.0+ (Beta)

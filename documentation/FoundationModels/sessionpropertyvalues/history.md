@@ -16,7 +16,7 @@ The history portion of the session’s transcript.
 ## Declaration
 
 ```swift
-final var history: ArraySlice<Transcript.Entry> { get set }
+final var history: Transcript.HistoryView { get set }
 ```
 
 

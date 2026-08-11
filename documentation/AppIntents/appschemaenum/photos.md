@@ -3,7 +3,7 @@
 **Framework**: App Intents  
 **Kind**: property
 
-App enum schema conformance for types you use for photos functionality.
+The collection of enum schemas in the photos domain.
 
 **Availability**:
 - iOS 18.0+

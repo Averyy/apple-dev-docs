@@ -32,6 +32,7 @@ Changing the frame rotation value results in the posting of an [`frameDidChangeN
   Sets the size of the view’s frame rectangle to the specified dimensions, resizing it within its superview without affecting its coordinate system.
 - [class let frameDidChangeNotification: NSNotification.Name](nsview/framedidchangenotification.md)
   A notification that posts when the view’s frame rectangle changes to a new value.
+- [NSView.FrameDidChangeMessage](nsview/framedidchangemessage.md)
 - [var postsFrameChangedNotifications: Bool](nsview/postsframechangednotifications.md)
   A Boolean value indicating whether the view posts notifications when its frame rectangle changes.
 

@@ -1,4 +1,4 @@
-# iOS & iPadOS 27 Beta 4 Release Notes
+# iOS & iPadOS 27 Beta 5 Release Notes
 
 **Framework**: iOS & iPadOS Release Notes
 
@@ -6,7 +6,7 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad running iOS & iPadOS 27 beta 4. The SDK comes bundled with Xcode 27, available from the Mac App Store. For information on the compatibility requirements for Xcode 27, see [`Xcode 27 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-27-release-notes).
+The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad running iOS & iPadOS 27 beta 5. The SDK comes bundled with Xcode 27, available from the Mac App Store. For information on the compatibility requirements for Xcode 27, see [`Xcode 27 Release Notes`](https://developer.apple.com/documentation/Xcode-Release-Notes/xcode-27-release-notes).
 
 ##### Airplay
 
@@ -37,10 +37,13 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 - Fixed: Non-SF Symbol custom images for app entities might not always appear in Siri.  (175031314)
 - Fixed: Default values from schemas might not be applied for parameters that are of “Set” type.  (175534195)
 - Fixed: Entities you register using `RelevantEntities` for the workout audio context might not appear as suggestions in Fitness media picker.  (177996973)
+- Fixed: Requests that should result in an app’s `reminders.updateReminder`-conforming intent to be called might fail with “ cannot be used for this action right now.”  (181212609) (FB23526663)
+- Fixed: The notes.appendText schema erroneously disappeared from the SDK.  (182532125)
 
 ###### Known Issues
 
 - AppEntity instances have a cumulative size limit of 10MB, including all child properties and their values. Your app might crash if an entity exceeds this limit, and the exception is logged.  (181763422)
+- Existing entities that conformed to @AppEntity(schema: .photos.asset) in prior releases might no longer compile in the 27 SDKs because new properties were added to the schema in this release.  (181800016) (FB23652582) **Workaround:** To continue conforming to the schema, adopt the additional properties and move the code behind an availability check.
 
 ###### Deprecations
 
@@ -51,6 +54,12 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 ###### Resolved Issues
 
 - Fixed: When you view Apple Intelligence Report entries for Home Intelligence, some data that was sent to Private Cloud Compute won’t appear in the report.  (176056930)
+
+##### Apple Wallet
+
+###### Resolved Issues
+
+- Fixed: Updating to iOS 27.0 Beta 3 or 4 might cause Digital ID to expire and become unavailable for presentation affecting any device signed in to the same Apple Account, not just the device being updated.  (182055786)
 
 ##### Audioaccessorykit
 
@@ -82,13 +91,13 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 
 - Fixed: `CPNavigationSession` ETA Tray panel items might not receive focus.  (177508893)
 - Fixed: The panel delegate method `panelDidHide(_ panel: CPMapPanel)` might not be called.  (177590525)
+- Fixed: Under certain configurations, `CPMapPanel` might not dismiss when you tap the close button.  (177592347)
 - Fixed: The symbol button handler of `CPMapPanelButtonConfiguration` might not be called.  (177595560)
 - Fixed: Your vehicle’s next and previous track steering wheel buttons might not function correctly in CarPlay.  (177832695)
 - Fixed: In CarPlay, playback of stereo music content might be silent after playback of Spatial Audio content.  (178189709)
 
 ###### Known Issues
 
-- Under certain configurations, `CPMapPanel` might not dismiss when you tap the close button.  (177592347)
 - Siri might respond more slowly than expected in CarPlay, particularly under higher device temperatures or poor network conditions.  (178952858) **Workaround:** Try the request again after the device has cooled down or once you are in an area with better cellular reception.
 
 ##### Clock
@@ -102,6 +111,12 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 ###### Resolved Issues
 
 - Fixed: Saving a `CKShare` in which an administrator participant has changed their own role to `CKShareParticipantRole.privateUser` (self-demotion) has no effect.  (177621316)
+
+##### Communication Safety
+
+###### Resolved Issues
+
+- Fixed: Sensitive QRCode detected as non-sensitive, preventing 3rd party developers from testing API functionality.  (183962032)
 
 ##### Control Center
 
@@ -124,20 +139,29 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 - Fixed: When you run `InferenceFunction.run` on functions with both state arguments and outputs with dynamic shapes, the framework might be unable to infer the shape of the outputs and throw an error.  (176807213)
 - Fixed: On-device specialization fails when loading an `.aimodel` converted with `coreai-torch` v0.4.0.  (177008303)
 - Fixed: Inference might fail or crash for models with control flow over dynamic-shape tensors (for example, linear-attention LLMs such as Qwen3.5/3.6).  (177354777)
+- Fixed: Ahead-of-time (AOT) compilation might fail unexpectedly for certain models.  (177729331)
 - Fixed: When Metal API Validation is enabled, CoreAI models might fail to execute.  (177991751)
 - Fixed: Models with custom Metal kernels will fail to load.  (178056451)
 - Fixed: App-group support might not work as expected on certain model types.  (179732320)
 - Fixed: On-device specialization might fail when loading an `.aimodelc` compiled ahead of time using Xcode 27 Beta 2 or earlier.  (181264112)
-
-###### Known Issues
-
-- Ahead-of-time (AOT) compilation might fail unexpectedly for certain models.  (177729331)
 
 ##### Core Bluetooth
 
 ###### Resolved Issues
 
 - Fixed: The Channel Sounding API in Core Bluetooth is not returning ranging results.  (178333845)
+
+##### Core Spotlight
+
+###### Known Issues
+
+- Creating a SpotlightSearchTool without a configuration and using it with a LanguageModelSession backed by the on-device system language model fails with an error reporting that the number of tokens provided exceeds the maximum allowed. The tool’s default configuration is sized for models with large context windows, so the tool’s description and parameter schema alone exceed the on-device model’s context window before any prompt is added.  (183770678) **Workaround:** Configure the tool with a focused guide, which uses a compact schema sized for the on-device model: ```None
+  let configuration = SpotlightSearchTool.Configuration(
+    sources: [.coreSpotlight],
+    guide: .focused()
+  )
+  let tool = SpotlightSearchTool(configuration: configuration)
+``` To search a specific kind of content, pass a domain: `.focused(.communications)`, `.focused(.calendar)`, `.focused(.documents)`, `.focused(.visualMedia)`, or `.focused(.audio)`. A focused guide exposes a smaller set of search capabilities than the default configuration. Sessions backed by a model with a larger context window can continue to use the default configuration.
 
 ##### Developer Settings
 
@@ -154,13 +178,13 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 ###### Resolved Issues
 
 - Fixed: The “New Line” and “All Caps” formatting commands might not work reliably in the dictation UI.  (177959708)
+- Fixed: When you explicitly dictate punctuation— such as “Period” or “Colon” — both the spoken command word and the punctuation character might be inserted instead of the punctuation character alone.  (178078177)
+- Fixed: Dictation might not recognize names from your contacts.  (178079519)
 - Fixed: Dictation might insert extra words at the end of a dictated passage that you did not speak.  (178269104)
 
 ###### Known Issues
 
 - Voice Editing commands such as “Change X to Y”, “Delete X”, and “Undo/Redo” might not work reliably.  (173448573)
-- When you explicitly dictate punctuation— such as “Period” or “Colon” — both the spoken command word and the punctuation character might be inserted instead of the punctuation character alone.  (178078177)
-- Dictation might not recognize names from your contacts.  (178079519)
 
 ##### Family Settings
 
@@ -183,9 +207,9 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 
 ##### Findmy
 
-###### Known Issues
+###### Resolved Issues
 
-- Siri might not be able to find some of the people sharing location with you in FindMy.  (178384345)
+- Fixed: Siri might not be able to find some of the people sharing location with you in FindMy.  (178384345)
 
 ##### First Party App Search
 
@@ -201,6 +225,10 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 
 ##### Foundation
 
+###### New Features
+
+- `volumeAvailableCapacityKey` is truncated to 3 significant decimal digits at the block count level (e.g., 123,456,789 blocks becomes 123,000,000 blocks).  (75545872)
+
 ###### Resolved Issues
 
 - Fixed: `+[NSURL URLWithString:]` no longer double-encodes the `%` of valid percent-escape sequences when encoding other invalid characters.  (161588649) (FB20439045)
@@ -210,14 +238,11 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 ###### Resolved Issues
 
 - Fixed: Private Cloud Compute might not work when you use simulators.  (177684296)
+- Fixed: When using the on-device Apple Foundation Model for both tool calling and guided generation, some prompts might cause the model to call tools excessively.  (177748926)
 - Fixed: `@Generable` on an `enum` produces a deprecation warning about `GenerationError` that cannot be silenced.  (177899620)
 - Fixed: Truncating transcript history in the `onPrompt` modifier might cause an unexpected runtime error.  (177901494)
 - Fixed: `onPrompt` might not be called when applied to a `Profile` without instructions.  (177902488)
 - Fixed: `PrivateCloudComputeLanguageModel` always uses greedy decoding.  (178181782)
-
-###### Known Issues
-
-- When using the on-device Apple Foundation Model for both tool calling and guided generation, some prompts might cause the model to call tools excessively.  (177748926) **Workaround:** Adjust your instructions, prompts, and attachment labels.
 
 ##### Game Center
 
@@ -231,6 +256,12 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 
 - The PlayStation® Access™ controller is now supported on macOS, iPadOS, and iOS. You can create custom input profiles in game controller settings and save them to your Apple device.  (168071382)
 
+##### Gaussian Splats
+
+###### Known Issues
+
+- When 3DGS content rendered by a GaussianSplatComponent is moved offscreen and then returns to the visible area, some splats might be missing or truncated. Camera or asset movement can restore rendering.  (183538823)
+
 ##### Healthkit
 
 ###### New Features
@@ -238,6 +269,10 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 - HealthKit now supports heart rate and cycling power zones.  (135746152)
 - Updated HealthKit permissions flow now lets users grant apps access to limited history or full history.  (172310874)
 - HealthKit adds support for tracking menopausal state and bleeding after menopause; two new sample types are available. HKCategoryTypeIdentifierMenopausalState records a person’s current menopausal state. Values defined by HKCategoryValueMenopausalState are menopause, perimenopause, and none. HKCategoryTypeIdentifierBleedingAfterMenopause records bleeding episodes occurring after menopause. Values use the existing vaginal bleeding flow levels: unspecified, light, medium, and heavy. Both types are read/write, classified under Reproductive Health, and require the standard HealthKit category type authorization.  (178532053)
+
+###### Resolved Issues
+
+- Fixed: null unit might incorrectly convert to count and percent units.  (171273931) (FB22066297)
 
 ##### Hearing Test
 
@@ -349,10 +384,13 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 - `MemoryExceptionDiagnostic` are available when your app or app extension is terminated for exceeding its memory limit.  (159890067)
 - A new application-level `MetalFrameRateMetric` is available for Metal frame pacing rendering insights per `CAMetalLayer`.  (159890165)
 - A new Swift-first `MetricManager` API enables your app to receive `MetricReport` and `DiagnosticReport` objects through `AsyncStream`. `MetricReport` contains a daily aggregated entry along with interval-based breakdowns that are typically a few hours each.  (164439529)
+- `LocationActivityTimeMetric` now includes a `reducedAccuracy` property that reports the time your app spent tracking location using reduced accuracy (`kCLLocationAccuracyReduced`). Xcode’s simulated metric payloads also include sample data for this accuracy level, so you can test against it before your app receives real reports.  (170513251)
+- `HitchTimeMetric.ratio` and `SignpostIntervalMetric.hitchTimeRatio` now use the new `HitchTimeRatio` type, a `Dimension` subclass that expresses hitch time as a ratio of milliseconds hitching per second of tracked duration. Recompile your app with the latest SDK to pick up this type change and avoid any crashes on launch.  (180024784) (FB23242495)
 
 ###### Deprecations
 
 - The original MetricKit APIs — including `MXMetricManager`, `MXMetricManagerSubscriber`, `MXMetricPayload`, and `MXDiagnosticPayload` — are no longer recommended for new adoption. Use `MetricManager` instead.  (174892111)
+- The `scrollHitchTime(_:)` case of `MetricResult` and the `ScrollHitchTimeMetric` type are no longer part of the new Swift MetricKit API, and `MetricReport` values no longer contain scroll hitch entries. Use the `hitchTime(_:)` case and `HitchTimeMetric` instead, which report per-app animation hitch time. Recompile your app with the latest SDK to avoid a missing symbol crash if it references `ScrollHitchTimeMetric` or `scrollHitchTime(_:)`.  (180455992)
 
 ##### Nearby Interaction
 
@@ -376,7 +414,13 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 
 ###### Resolved Issues
 
-- Fixed: Critical alerts will be automatically turned on for any apps that request your permission to enable notifications.  (179179362)
+- Fixed: Critical alerts are automatically turned on for any apps that request your permission to enable notifications.  (179179362)
+
+##### Nowplaying
+
+###### Known Issues
+
+- Newly created RemoteMediaSession won’t be visible in control center if created while the app is open in the foreground.  (183641494) **Workaround:** Background the app and open it again.
 
 ##### On Demand Resources
 
@@ -390,6 +434,16 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 
 - `__PKStrokeRenderState` has been renamed to `PKStrokeRenderStateReference`, with `PKStrokeRenderStateReference.init(…)` replacing `PKStrokeRenderState.asObjCRenderState()`.  (176410709)
 
+##### Photokit
+
+###### Resolved Issues
+
+- Fixed: The `addedDate` property on `PHAsset` might return `nil` even though it’s marked as non-nullable.  (175050631)
+
+###### Deprecations
+
+- The `originalFilename` property on `PHAssetResource` is incorrectly marked as non-nullable, which misrepresents the property value; a new, nullable `filename` property is available as a replacement.  (175412725) (FB22589474)
+
 ##### Photos
 
 ###### Resolved Issues
@@ -401,9 +455,9 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 
 ##### Photos Edit
 
-###### Known Issues
+###### Resolved Issues
 
-- A thin white line might be visible in photos that have had Spatial Reframing applied.  (178183850)
+- Fixed: A thin white line might be visible in photos that have had Spatial Reframing applied.  (178183850)
 
 ##### Podcasts
 
@@ -419,12 +473,9 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 
 ###### Resolved Issues
 
+- Fixed: Some MaterialX 1.39 nodes are not supported.  (172875414)
 - Fixed: `ComputeGraphComponents` stored in a Reality file do not render when loaded.  (177674901)
 - Fixed: When `OpacityComponent` is applied to an entity with opaque materials, `RealityRenderer` renders the opaque materials with transparency, revealing interior surfaces. Only the frontmost surface should appear with partial transparency.  (177976245)
-
-###### Known Issues
-
-- Some MaterialX 1.39 nodes are not supported.  (172875414)
 
 ##### Related Receipts
 
@@ -458,6 +509,12 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 
 - Fixed: Screen Time restrictions might not apply to child accounts despite being configured.  (175437403)
 
+##### Security
+
+###### Known Issues
+
+- Obtaining new certificates via ACME fails. New MDM enrollments using Managed Device Attestation fail.  (183456836) **Workaround:** Use SCEP if available as a temporary workaround, or ensure MDA-issued certificates are already installed before upgrading.
+
 ##### Sensorkit
 
 ###### Resolved Issues
@@ -482,7 +539,7 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 
 - If an app intent uses Duration or `LPLinkMetadata`, creating a shortcut with that intent and then attempting to edit it with “Describe a change” might fail.  (166068090) **Workaround:** If the model discards the action, press “Undo” to recover the unsupported intent.
 - When an app intent defines a `UnionValue` parameter with two number-related types (for example, both Int and Double), the number option appears twice in the parameter picker menu and shows as double-selected.  (168315587) **Workaround:** Define only one number-related type in the `UnionValue` parameter (for example, use only Int or only Double, not both).
-- Shortcuts containing the Send Message action might fail when importing or sharing.  (182745894)
+- Shortcuts containing the Send Message action might fail to import or share.  (182745894)
 
 ##### Siri
 
@@ -490,6 +547,7 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 
 - Fixed: Siri ignores custom values for navigation preferences, transport, and incident types in apps that use `maps.startNavigation` or `maps.reportIncident` intent schemas.  (175230813)
 - Fixed: When location data is unavailable or only coarse-accuracy location data is available, Maps searches initiated through Siri might return empty or imprecise results.  (175380461)
+- Fixed: When you turn off Siri, some photo-related questions might return web search results instead of prompting you to share the photo with ChatGPT.  (175884006)
 - Fixed: When you ask Siri to work with reminder lists, you might need to use the exact list name. Siri might not recognize similar or partial list names.  (176400964)
 - Fixed: App Intents with `@UnionValue` types that accept a `PlaceDescriptorEntity` and a `String` always receive `String` values instead of `PlaceDescriptorEntity` entities.  (176844035)
 - Fixed: Starting a call with Siri might fail with an error in apps that adopt CallKit and the `phone.startCall` AppSchema.  (177190637)
@@ -503,8 +561,10 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 - Fixed: Siri might not find app-specific contacts that are only indexed in Spotlight and do not appear in the Contacts app.  (177679168)
 - Fixed: Siri cannot create a recurring reminder or update an existing reminder to be reoccurring.  (177722240)
 - Fixed: With AirPods connected to iPhone and Announce Notifications enabled, responding “yes” by voice or head gesture to a long incoming notification (for example, a message) prompts you to unlock iPhone instead of reading the full message aloud.  (177733317)
+- Fixed: New American English Siri voices 6 and 7 might default to legacy US voices when your device is overheated or in Low Power Mode.  (177742977)
 - Fixed: When you use ChatGPT with Apple Intelligence, some responses used in follow-up queries or when you resume a chat might be logged by Apple.  (177755742)
 - Fixed: When you ask Siri to find, search, or read reminders, Siri might list or read the reminders instead of showing a snippet. When reminder lists are displayed, the list color might not appear correctly.  (177762533)
+- Fixed: After enabling Expressive Voices, you are not able to modify Pace or Expressiveness in the Settings pane.  (177969955)
 - Fixed: Siri might run the incorrect `OpenIntent` or `system.open` intent when multiple intents targeting different entity types are available in your app.  (177992979)
 - Fixed: After creating a list through Siri, tapping the list icon might result in an error instead of opening the list in the Reminders app.  (177998395)
 - Fixed: When you tap the Send button in the Siri message confirmation flow, the message might fail to send.  (178025056)
@@ -518,28 +578,21 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 - Fixed: Siri might not respond to your voice correctly.  (178489724)
 - Fixed: In the Siri app, conversations might be deleted a few minutes after receiving streaming responses.  (178560562)
 - Fixed: When you say “Save Parking Location,” the parking location information displays with reduced detail compared to Beta 1.  (179195692)
+- Fixed: On macOS, Siri AI cannot search within specific folders such as Desktop or Documents. File searches might return results from unintended locations.  (180333394)
 - Fixed: When the Camera app is open, the Siri “orb” waveform will not animate correctly on some older iPads and “Hey Siri” requests might fail. Affected devices are iPad Air (5th generation, 2022), iPad mini (7th generation, 2024), iPad Pro 11-inch (3rd generation, 2021), and iPad Pro 12.9-inch (5th generation, 2021).  (180751246)
 - Fixed: Siri encounters an error when asked to compose emails if the Mail app is not open in the background.  (181041601)
 
 ###### Known Issues
 
 - After Siri returns photo search results and you select photos, Siri might not detect which photos are selected on screen. Commands like “Send these” might apply to all photos returned from the search rather than only the selected ones.  (171728298) **Workaround:** Open Photos, select the photos you want to act on, then perform the action using Siri — for example, “Send these photos to Bob”.
-- When you turn off Siri, some photo-related questions might return web search results instead of prompting you to share the photo with ChatGPT.  (175884006)
 - Siri doesn’t support voice commands to interact with specific photos. For example, you can’t refer to photos by number, such as “photo one” or “photo four.”  (176812955) **Workaround:** Use the photo picker to select the photo you want, or tap to select photos directly.
 - When you ask Siri for Maps information, the response snippets might appear incomplete or display formatting issues.  (177116121) **Workaround:** Ask Siri to repeat the information, or open Maps directly for complete details.
 - When you ask Siri to add photos to an album, the confirmation prompt and spoken response might report or display more photos than will actually be added.  (177376984) **Workaround:** Add photos to the album manually in the Photos app: tap Select, tap the photos you want to add, tap the Share button, tap Add to Album, then tap the album.
-- New American English Siri voices 6 and 7 might default to legacy US voices when your device is overheated or in Low Power Mode.  (177742977) **Workaround:** Turn off Low Power Mode or wait for your device to cool down.
-- After enabling Expressive Voices, you are not able to modify Pace or Expressiveness in the Settings pane.  (177969955)
 - Non-SF Symbol custom images for entities might not appear in Siri results for third-party apps.  (177984074)
 - When you ask Siri to read your last message, Siri might read an unread message from an unknown sender, such as spam, instead of the most recent message from a known contact.  (178049066) **Workaround:** Name the sender in your request – for example, “Read my last message from .”
 - Siri might respond more slowly than expected in CarPlay, particularly under higher device temperatures or poor network conditions.  (178274714) **Workaround:** Try the request again after the device has cooled down or once you are in an area with better cellular reception.
 - Siri might cut off the end of words during navigation.  (181266301) **Workaround:** Reduce voice expressivity from the fastest pace, or turn off expressive voices.
-
-##### Siri Ai
-
-###### Resolved Issues
-
-- Fixed: On macOS, Siri AI cannot search within specific folders such as Desktop or Documents. File searches might return results from unintended locations.  (180333394)
+- As of beta 5, SiriAI conversation history no longer syncs to devices running a prior beta. iCloud sync works between devices updated to beta 5. No existing conversations will be lost.  (182145010)
 
 ##### Siri Spotlight and Mail App Search
 
@@ -574,10 +627,10 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 - New `Product.ProductType` APIs represent subscription Bundles and subscription Suites. New APIs in `Product.SubscriptionInfo.BundledSubscription` let you fetch merchandising data about subscriptions contained in a Bundle. Transaction and RenewalInfo contain new fields that provide information about purchases and customer status regarding Bundles and Suites.  (160501742)
 - `partnerName` and `partnerId` properties for Advanced Commerce API are available in [`Transaction.AdvancedCommerceInfo`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/transaction/advancedcommerceinfo-swift.struct) and [`RenewalInfo.AdvancedCommerceInfo`](https://developer.apple.comhttps://developer.apple.com/documentation/storekit/product/subscriptioninfo/renewalinfo/advancedcommerceinfo-swift.struct).  (167808780)
 
-###### Known Issues
+###### Resolved Issues
 
-- The refund request, offer code redemption, and manage subscriptions sheets might fail to present in TestFlight.  (180999342) (FB23487953)
-- Purchases of non-subscription In-App Purchases made using the SKTestSession.buyProduct() method might fail with an invalid product error. The billingPlanType(_:) PurchaseOption isn’t respected for subscription purchases.  (181842500)
+- Fixed: The refund request, offer code redemption, and manage subscriptions sheets might fail to present in TestFlight.  (180999342) (FB23487953)
+- Fixed: Purchases of non-subscription In-App Purchases made using the SKTestSession.buyProduct() method might fail with an invalid product error. The billingPlanType(_:) PurchaseOption isn’t respected for subscription purchases.  (181842500)
 
 ##### Storekit Testing in Xcode
 
@@ -789,17 +842,17 @@ The iOS & iPadOS 27 SDK provides support to develop apps for iPhone and iPad run
 - `VTLowLatencySuperResolutionScalerConfiguration` now supports a 1.5x scale factor. Call `+supportedScaleFactorsForFrameWidth:frameHeight:` to discover the scale factors available for your source dimensions.  (177635243)
 - `VTLowLatencyFrameInterpolationConfiguration` now supports arbitrary source dimensions up to 1080p.  (179040806)
 
+##### Voice Control
+
+###### Known Issues
+
+- Voice Control might not respond when using Flexible Item Names to describe items on the screen.  (184088006) **Workaround:** Target items on the screen using numbers (“Show numbers”) or names (“Show names”)
+
 ##### Watch Connectivity
 
 ###### Resolved Issues
 
 - Fixed: The `WCSession.transferCurrentComplicationUserInfo` method does not work with complications built using WidgetKit on watchOS.  (113202790) (FB12819178)
-
-##### Weather Highlights
-
-###### Known Issues
-
-- Weather Highlights is currently only available in US English.  (164408676)
 
 ##### Widgetkit
 

@@ -21,7 +21,7 @@ init(name: String, description: String? = nil, anyOf choices: [DynamicGeneration
 
 ## Parameters
 
-- `name`: A name this schema can be referenecd by.
+- `name`: A name this schema can be referenced by.
 - `description`: A natural language description of this [`DynamicGenerationSchema`](dynamicgenerationschema.md).
 - `choices`: An array of schemas this one will be a union of.
 
@@ -34,7 +34,7 @@ init(name: String, description: String? = nil, anyOf choices: [DynamicGeneration
 - [init(name: String, description: String?, representNilExplicitlyInGeneratedContent: Bool, properties: [DynamicGenerationSchema.Property])](dynamicgenerationschema/init(name:description:representnilexplicitlyingeneratedcontent:properties:).md)
   Creates an object schema.
 - [init(referenceTo: String)](dynamicgenerationschema/init(referenceto:).md)
-  Creates an refrence schema.
+  Creates a reference schema.
 - [init<Value>(type: Value.Type, guides: [GenerationGuide<Value>])](dynamicgenerationschema/init(type:guides:).md)
   Creates a schema from a generable type and guides.
 - [DynamicGenerationSchema.Property](dynamicgenerationschema/property.md)

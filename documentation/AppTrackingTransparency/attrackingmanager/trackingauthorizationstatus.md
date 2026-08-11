@@ -29,6 +29,11 @@ If the user has not yet been prompted to approve access, the return value will e
 
 Use the [`trackingAuthorizationStatus`](attrackingmanager/trackingauthorizationstatus.md) property to check authorization status.
 
+## See Also
+
+- [ATTrackingManager.AuthorizationStatus](attrackingmanager/authorizationstatus.md)
+  The status values for app tracking authorization.
+
 
 ---
 

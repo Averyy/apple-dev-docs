@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: property
 
-Controls the amount of thinking that the model is allowed to output before producing a response.
+Controls the amount of reasoning that the model is allowed to output before producing a response.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -22,7 +22,7 @@ var reasoningLevel: ContextOptions.ReasoningLevel?
 ## See Also
 
 - [ContextOptions.ReasoningLevel](contextoptions/reasoninglevel-swift.enum.md)
-  Controls the amount of thinking that the model is allowed to output before producing a response.
+  Controls the amount of reasoning that the model is allowed to output before producing a response.
 
 
 ---

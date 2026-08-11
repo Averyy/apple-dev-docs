@@ -8,7 +8,6 @@ A value that defines the latest version and includes adjustments as fraud patter
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 
 ## Declaration
 

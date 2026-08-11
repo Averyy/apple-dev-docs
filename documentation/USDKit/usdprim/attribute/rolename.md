@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: property
 
+The name of this attribute type’s role, which clarifies the semantic purpose of its values.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)

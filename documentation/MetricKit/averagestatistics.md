@@ -60,6 +60,8 @@ print(statistics.standardDeviation) // Double — negative if unavailable
   A distribution of values organized into buckets.
 - [class SignalBars](signalbars.md)
   A unit for cellular signal strength measurements in bars.
+- [class HitchTimeRatio](hitchtimeratio.md)
+  A unit for animation hitch time ratio measurements.
 - [struct OSVersion](osversion.md)
   The version of the operating system on the device.
 

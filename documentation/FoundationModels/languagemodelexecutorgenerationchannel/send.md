@@ -27,7 +27,7 @@ nonisolated
 ## See Also
 
 - [LanguageModelExecutorGenerationChannel.Event](languagemodelexecutorgenerationchannel/event.md)
-  A generation event sent on a [`LanguageModelExecutorGenerationChannel`](languagemodelexecutorgenerationchannel.md).
+  A generation event sent on a generation channel.
 
 
 ---

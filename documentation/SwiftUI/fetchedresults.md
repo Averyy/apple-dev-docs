@@ -23,7 +23,7 @@ A collection of results retrieved from a Core Data store.
 
 #### Overview
 
-Use a `FetchedResults` instance to show or edit Core Data managed objects in your app’s user interface. You request a particular set of results by specifying a `Result` type as the entity type, and annotating the fetched results property declaration with a [`FetchRequest`](fetchrequest.md) property wrapper. For example, you can create a request to list all `Quake` managed objects that the [`Loading and Displaying a Large Data Feed`](loading_and_displaying_a_large_data_feed.md) sample code project defines to store earthquake data, sorted by their `time` property:
+Use a `FetchedResults` instance to show or edit Core Data managed objects in your app’s user interface. You request a particular set of results by specifying a `Result` type as the entity type, and annotating the fetched results property declaration with a [`FetchRequest`](fetchrequest.md) property wrapper. For example, you can create a request to list all `Quake` managed objects that the [`Loading and displaying a large data feed`](loading-and-displaying-a-large-data-feed.md) sample code project defines to store earthquake data, sorted by their `time` property:
 
 ```swift
 @FetchRequest(sortDescriptors: [SortDescriptor(\.time, order: .reverse)])

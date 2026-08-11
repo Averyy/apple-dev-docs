@@ -42,7 +42,7 @@ After calling `configureForResumableExport()`, this returned state details wheth
 - [func configureForResumableExport() async -> AVAssetExportSession.ResumptionState](avassetexportsession/configureforresumableexport.md)
   Configures the export session for resumable export.
 - [AVAssetExportSession.ResumptionFailureReason](avassetexportsession/resumptionfailurereason.md)
-  An enum that identifies various reasons why resumable export configuration has failed.
+  The reason that configuring the export session for resumption failed.
 
 
 ---

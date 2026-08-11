@@ -15,7 +15,7 @@
 ## Declaration
 
 ```swift
-typealias Specification = EmptyResolverSpecification<IntentFile>
+typealias Specification = some ResolverSpecification
 ```
 
 

@@ -10,10 +10,12 @@ Manage software updates, migrate managed devices, and return them into service.
 - [Configuring multiple devices using profiles](configuring-multiple-devices-using-profiles.md)
   Create and deploy configuration profiles to managed devices.
 ### Software updates
-- [Deploy software updates using declarative management](deploy-software-updates-using-declarative-management.md)
+- [Deploying software updates using declarative management](deploying-software-updates-using-declarative-management.md)
   Use declarative configurations to deploy and manage software updates on managed devices.
 - [Phases of software update enforcement](phases-of-software-update-enforcement.md)
   Enforcing software updates on Apple devices goes through specific phases.
+- [Enrolling a device in a beta program](enrolling-a-device-in-a-beta-program.md)
+  Use program tokens to manage beta program enrollment.
 ### Return to Service
 - [Returning a managed device to service](returning-a-managed-device-to-service.md)
   Use a device management service to return managed devices to service quickly after use.

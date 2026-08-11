@@ -31,6 +31,10 @@ print("First character's UTF-16 code unit: \(greeting.utf16[i])")
 // Prints "First character's UTF-16 code unit: 72"
 ```
 
+## Parameters
+
+- `idx`: A valid index of the view. `idx` must be less than the view’s end index.
+
 
 ---
 

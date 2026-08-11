@@ -24,7 +24,7 @@ init(size: Int)
 ## See Also
 
 - [var size: Int](lowlevelargumenttable/descriptor-swift.struct/buffer/size.md)
-  The size of the buffer slot, in bytes.
+  The minimum size, in bytes, that a buffer slice must have to be bound to this slot.
 
 
 ---

@@ -22,7 +22,7 @@ var orientation: CGImagePropertyOrientation { get }
 ## See Also
 
 - [var cgImage: CGImage](transcript/imageattachment/cgimage.md)
-  The image as a `CGImage`.
+  The image as a Core Graphics image.
 - [var ciImage: CIImage](transcript/imageattachment/ciimage.md)
 - [var url: URL?](transcript/imageattachment/url.md)
   The URL of the original image asset, if the attachment was created from a URL.

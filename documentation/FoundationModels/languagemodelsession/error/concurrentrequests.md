@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: case
 
-Multiple requests were made to the session concurrently.
+The session received multiple concurrent requests.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -26,7 +26,7 @@ A language model session only supports one request at a time. Wait for the curre
 ## See Also
 
 - [LanguageModelSession.Error.transcriptMutationWhileResponding](languagemodelsession/error/transcriptmutationwhileresponding.md)
-  The session’s transcript was mutated while a request was in progress.
+  A request mutated the session’s transcript while it was in progress.
 
 
 ---

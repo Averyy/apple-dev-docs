@@ -51,8 +51,6 @@ Hang durations that exceed 9 seconds of wall clock time are reported in the hist
   A metric that measures extended launch task durations.
 - [struct HitchTimeMetric](hitchtimemetric.md)
   A metric that measures animation hitch time.
-- [struct ScrollHitchTimeMetric](scrollhitchtimemetric.md)
-  A metric that measures scroll hitch time.
 
 
 ---

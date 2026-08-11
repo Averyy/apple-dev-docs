@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: property
 
-The date that the usage limit will reset.
+The date that the usage limit resets.
 
 **Availability**:
 - iOS 27.0+ (Beta)

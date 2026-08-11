@@ -26,6 +26,8 @@ An `NSSegmentStyle` value that specifies the visual display used by the control.
   Constants that specify the type of tracking behavior a segmented control exhibits.
 - [NSSegmentedControl.Style](nssegmentedcontrol/style.md)
   The following constants specify the visual style used to display the segmented control. They are used by [`segmentStyle`](nssegmentedcontrol/segmentstyle.md).
+- [var role: NSSegmentedControl.Role](nssegmentedcontrol/role-swift.property.md)
+- [NSSegmentedControl.Role](nssegmentedcontrol/role-swift.enum.md)
 
 
 ---

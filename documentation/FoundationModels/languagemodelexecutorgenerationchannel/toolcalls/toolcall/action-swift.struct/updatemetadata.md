@@ -14,7 +14,7 @@
 ## Declaration
 
 ```swift
-static func updateMetadata(_ values: [String : any Sendable & Codable & Equatable]) -> LanguageModelExecutorGenerationChannel.ToolCalls.ToolCall.Action
+static func updateMetadata(_ values: [String : any ConvertibleToGeneratedContent]) -> LanguageModelExecutorGenerationChannel.ToolCalls.ToolCall.Action
 ```
 
 ## See Also

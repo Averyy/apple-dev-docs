@@ -16,7 +16,7 @@ enum State
 
 ## Topics
 
-### Constants
+### Getting state values
 - [NSGestureRecognizer.State.possible](nsgesturerecognizer/state-swift.enum/possible.md)
   The gesture recognizer has not yet recognized its gesture but may be evaluating events. This is the default state.
 - [NSGestureRecognizer.State.began](nsgesturerecognizer/state-swift.enum/began.md)
@@ -31,7 +31,7 @@ enum State
   The gesture recognizer failed to recognize its gesture and will not call its action method. The gesture recognizer resets itself to the [`NSGestureRecognizer.State.possible`](nsgesturerecognizer/state-swift.enum/possible.md) state.
 - [static var recognized: NSGestureRecognizer.State](nsgesturerecognizer/state-swift.enum/recognized.md)
   The gesture recognizer successfully recognized its gesture. It calls its action method at the next cycle of the run loop and resets its state to [`NSGestureRecognizer.State.possible`](nsgesturerecognizer/state-swift.enum/possible.md).
-### Initializers
+### Creating a state
 - [init?(rawValue: Int)](nsgesturerecognizer/state-swift.enum/init(rawvalue:).md)
 
 ## Relationships

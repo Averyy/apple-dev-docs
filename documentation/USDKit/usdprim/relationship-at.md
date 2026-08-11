@@ -25,11 +25,12 @@ If `path` is relative, it is anchored to this prim’s path. If no relationship 
 
 ## See Also
 
-- [func relationship(named: USDToken) -> USDPrim.Relationship?](usdprim/relationship(named:).md)
+- [func relationship(named: USDToken) -> USDPrim.Relationship](usdprim/relationship(named:).md)
   Returns the relationship with a given name on this prim.
 - [func hasRelationship(named: USDToken) -> Bool](usdprim/hasrelationship(named:).md)
   Returns true if a relationship with a given name exists on this prim.
 - [USDPrim.Relationship](usdprim/relationship.md)
+  A property that connects a prim to one or more other objects in the stage by their paths.
 
 
 ---

@@ -82,17 +82,13 @@ The following articles, Xcode Help topics, and WWDC session videos contain more 
 - [`Eliminate Animation Hitches With XCTest`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020/10077)
 - [`Instruments Help`](https://developer.apple.comhttps://help.apple.com/instruments/mac/current)
 - [`Logging`](https://developer.apple.com/documentation/os/logging)
-- [`Performance on iOS and watchOS`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2015/230/)
 - [`Practical Approaches to Great App Performance`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2018/407/)
 - [`Time Profiler`](https://developer.apple.comhttps://help.apple.com/instruments/mac/current/#/dev44b2b437)
-- [`Visual Debugging with Xcode`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2016/410/)
 - [`What’s New in MetricKit`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2020/10081)
 - [`Writing and running performance tests`](writing-and-running-performance-tests.md)
 
 ###### Energy Consumption
 
-- [`Achieving All-day Battery Life`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2015/707/)
-- [`Debugging Energy Issues`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2015/708/)
 - [`Energy Efficiency and the User Experience`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Performance/Conceptual/power_efficiency_guidelines_osx/index.html#//apple_ref/doc/uid/TP40013929-CH15)
 - [`Energy Efficiency Guide for iOS Apps`](https://developer.apple.comhttps://developer.apple.com/library/archive/documentation/Performance/Conceptual/EnergyGuide-iOS/index.html#//apple_ref/doc/uid/TP40015243)
 - [`Energy Efficiency Guide for Mac Apps`](https://developer.apple.comhttps://developer.apple.com/library/archive/releasenotes/MacOSX/WhatsNewInOSX/Articles/MacOSX10_11.html#//apple_ref/doc/uid/TP40016227-SW14)
@@ -100,8 +96,6 @@ The following articles, Xcode Help topics, and WWDC session videos contain more 
 - [`Monitor a running app using debug gauges`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/index.html?localePath=en.lproj#/dev94c128b7b)
 - [`Monitor your app’s energy usage`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/index.html?localePath=en.lproj#/devf7f7c5fcd)
 - [`Profile your app’s energy use`](https://developer.apple.comhttps://help.apple.com/instruments/mac/current/#/dev7b8f6eb6)
-- [`What’s New in Energy Debugging`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2018/228/)
-- [`Writing Energy Efficient Apps`](https://developer.apple.comhttps://developer.apple.com/videos/play/wwdc2017/238/)
 - [`Xcode Energy Organizer`](https://developer.apple.comhttps://help.apple.com/xcode/mac/current/index.html?localePath=en.lproj#/dev36a5a9141)
 
 ## See Also

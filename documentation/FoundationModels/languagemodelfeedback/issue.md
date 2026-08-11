@@ -19,11 +19,15 @@ An issue with the model’s response.
 struct Issue
 ```
 
+## Mentions
+
+- [Inspecting session transcripts and reporting model feedback](inspecting-session-transcripts-and-reporting-model-feedback.md)
+
 ## Topics
 
 ### Creating an issue
 - [init(category: LanguageModelFeedback.Issue.Category, explanation: String?)](languagemodelfeedback/issue/init(category:explanation:).md)
-  Creates a new issue
+  Creates an issue.
 - [LanguageModelFeedback.Issue.Category](languagemodelfeedback/issue/category.md)
   Categories for model response issues.
 

@@ -14,10 +14,10 @@ struct TouchCapabilities
 
 ## Topics
 
+### Getting touch capability values
+- [static var multiTouch: NSScreen.TouchCapabilities](nsscreen/touchcapabilities-swift.struct/multitouch.md)
 ### Initializers
 - [init(rawValue: UInt)](nsscreen/touchcapabilities-swift.struct/init(rawvalue:).md)
-### Type Properties
-- [static var multiTouch: NSScreen.TouchCapabilities](nsscreen/touchcapabilities-swift.struct/multitouch.md)
 
 ## Relationships
 

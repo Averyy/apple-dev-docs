@@ -3,7 +3,7 @@
 **Framework**: ColorSync  
 **Kind**: var
 
-CFArrayRef of per-alternate dictionaries (see Alternate curve keys below).
+CFArrayRef of per-alternate dictionaries.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -22,7 +22,7 @@ var kColorSyncAlternateGainCurveInfo: Unmanaged<CFString>
 
 #### Discussion
 
-Count equals `kColorSyncAlternateCurveCount`. Only present when the alternate curve count is greater than 0.
+Count equals [`kColorSyncAlternateCurveCount`](kcolorsyncalternatecurvecount.md). Only present when the alternate curve count is greater than 0. See the alternate curve keys below.
 
 ## See Also
 
@@ -31,9 +31,9 @@ Count equals `kColorSyncAlternateCurveCount`. Only present when the alternate cu
 - [var kColorSyncBaselineHeadroomStops: Unmanaged<CFString>](kcolorsyncbaselineheadroomstops.md)
   Headroom of the source (baseline) curve in stops (log2) above reference white (float in the range [0.0, 6.0]).
 - [var kColorSyncCustomHDRReferenceWhite: Unmanaged<CFString>](kcolorsynccustomhdrreferencewhite.md)
-  Custom reference white luminance in nits (float), overriding the standard 203-nit reference white. Must be greater than `0`. The encoding has a resolution of 0.2 nits and a maximum of 10000 nits; values are clamped to that range.
+  Custom reference white luminance in nits (float), overriding the standard 203-nit reference white.
 - [var kColorSyncHeadroomAdaptiveGainCurveApplicationVersion: Unmanaged<CFString>](kcolorsyncheadroomadaptivegaincurveapplicationversion.md)
-  Application version (uint8_t). 3-bit field from ST 2094-50 Table C.1. Must be `0`; any other value is rejected.
+  Application version (uint8_t). 3-bit field from ST 2094-50 Table C.1. Must be `0`; the framework rejects any other value.
 - [var kColorSyncHeadroomAdaptiveGainCurveColorVolumeTransform: Unmanaged<CFString>](kcolorsyncheadroomadaptivegaincurvecolorvolumetransform.md)
   Top-level container (CFDictionaryRef) for the color volume transform.
 - [var kColorSyncHeadroomAdaptiveGainCurveInfo: Unmanaged<CFString>](kcolorsyncheadroomadaptivegaincurveinfo.md)

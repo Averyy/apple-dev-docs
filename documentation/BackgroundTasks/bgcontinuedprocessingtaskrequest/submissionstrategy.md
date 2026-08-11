@@ -8,6 +8,7 @@ The ways your app suggests the system handle your task’s submission under vary
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

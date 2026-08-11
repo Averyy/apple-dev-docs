@@ -4,6 +4,8 @@
 **Kind**: associatedtype  
 **Required**: Yes
 
+The type of the item to open.
+
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+

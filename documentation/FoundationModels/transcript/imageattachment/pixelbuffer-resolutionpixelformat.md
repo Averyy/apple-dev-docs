@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: method
 
-Returns the image as a `CVPixelBuffer`, optionally resampled to a given resolution and pixel format.
+Returns the image as a pixel buffer, optionally resampled to a given resolution and pixel format.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -21,7 +21,7 @@ func pixelBuffer(resolution: CGSize? = nil, pixelFormat: OSType? = nil) throws -
 
 ## Parameters
 
-- `resolution`: The desired resolution of the pixel buffer. Default behavior will use the image’s original resolution.
+- `resolution`: The desired resolution of the pixel buffer. Defaults to the image’s original resolution.
 - `pixelFormat`: The pixel format of the pixel buffer. Defaults to `kCVPixelFormatType_32BGRA`.
 
 

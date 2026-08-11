@@ -28,8 +28,6 @@ enum Segment
   A segment containing an attachment.
 - [case structure(Transcript.StructuredSegment)](transcript/segment/structure(_:).md)
   A segment containing structured content.
-- [case custom(any Transcript.CustomSegment)](transcript/segment/custom(_:).md)
-  A segment containing custom content.
 
 ## Relationships
 
@@ -44,12 +42,12 @@ enum Segment
 
 ## See Also
 
-- [init(entries: some Sequence<Transcript.Entry>)](transcript/init(entries:).md)
-  Creates a transcript.
-- [Transcript.Entry](transcript/entry.md)
-  An entry in a transcript.
-- [Transcript.Attachment](transcript/attachment.md)
-  The types of attached content.
+- [Transcript.TextSegment](transcript/textsegment.md)
+  A segment containing text.
+- [Transcript.StructuredSegment](transcript/structuredsegment.md)
+  A segment containing structured content.
+- [Transcript.AttachmentSegment](transcript/attachmentsegment.md)
+  A segment containing attached files or images.
 
 
 ---

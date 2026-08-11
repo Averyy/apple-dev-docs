@@ -20,7 +20,7 @@ See the `exclusiveGestureBehavior` property of `NSView` more information.
 
 ## Topics
 
-### Enumeration Cases
+### Getting exclusivity values
 - [NSView.ExclusiveGestureBehavior.exclusive](nsview/exclusivegesturebehavior-swift.enum/exclusive.md)
   This view and its subviews have exclusive gestures
 - [NSView.ExclusiveGestureBehavior.inherit](nsview/exclusivegesturebehavior-swift.enum/inherit.md)
@@ -39,6 +39,11 @@ See the `exclusiveGestureBehavior` property of `NSView` more information.
 - [RawRepresentable](../Swift/RawRepresentable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [var exclusiveGestureBehavior: NSView.ExclusiveGestureBehavior](nsview/exclusivegesturebehavior-swift.property.md)
+  Declares whether gesture recognizers should be exclusive in this view and its subviews.
 
 
 ---

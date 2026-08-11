@@ -16,7 +16,7 @@ The additional metadata with a token count.
 ## Declaration
 
 ```swift
-var metadata: [String : any Sendable & Codable & Equatable]
+var metadata: [String : GeneratedContent]
 ```
 
 

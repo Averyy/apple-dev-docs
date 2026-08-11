@@ -19,7 +19,7 @@ func deviceRegistrationsNeedsRepair()
 - [func userRegistrationsNeedsRepair()](asauthorizationproviderextensionloginmanager/userregistrationsneedsrepair.md)
   Invokes the user registration to run again so the current user can repair it.
 - [func resetKeys()](asauthorizationproviderextensionloginmanager/resetkeys.md)
-  Creates new encryption, signing, and Secure Enclave keys for the user.
+  Creates new encryption, signing, and Secure Enclave keys.
 
 
 ---

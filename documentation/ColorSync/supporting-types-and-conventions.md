@@ -16,6 +16,7 @@ These symbols support the main color-management tasks rather than being entry po
 ### Versioning
 - [var COLORSYNC_API_VERSION: Int](colorsync_api_version.md)
 - [func ColorSyncAPIVersion() -> UInt32](colorsyncapiversion().md)
+  Returns the version of the ColorSync API.
 - [var icVersion4Number: Int](icversion4number.md)
 - [var icVersion4Point4Number: Int](icversion4point4number.md)
 

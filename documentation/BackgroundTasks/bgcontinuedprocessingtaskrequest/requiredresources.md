@@ -8,6 +8,7 @@ An option that indicates any special system resources that the task requires.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

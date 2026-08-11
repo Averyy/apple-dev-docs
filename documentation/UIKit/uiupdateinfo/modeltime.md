@@ -8,6 +8,7 @@ The time interval that represents a reference point for the current time of the 
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- Mac Catalyst 18.0+
 - tvOS 18.0+
 - visionOS 2.0+
 

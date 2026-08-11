@@ -15,6 +15,11 @@
 case automatic
 ```
 
+## See Also
+
+- [NSToolbarItemGroup.Role.tabs](nstoolbaritemgroup/role-swift.enum/tabs.md)
+- [NSToolbarItemGroup.Role.valueSelection](nstoolbaritemgroup/role-swift.enum/valueselection.md)
+
 
 ---
 

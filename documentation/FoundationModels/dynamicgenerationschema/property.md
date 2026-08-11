@@ -46,7 +46,7 @@ Fields are named members of object types. Fields are strongly typed and have opt
 - [init(name: String, description: String?, representNilExplicitlyInGeneratedContent: Bool, properties: [DynamicGenerationSchema.Property])](dynamicgenerationschema/init(name:description:representnilexplicitlyingeneratedcontent:properties:).md)
   Creates an object schema.
 - [init(referenceTo: String)](dynamicgenerationschema/init(referenceto:).md)
-  Creates an refrence schema.
+  Creates a reference schema.
 - [init<Value>(type: Value.Type, guides: [GenerationGuide<Value>])](dynamicgenerationschema/init(type:guides:).md)
   Creates a schema from a generable type and guides.
 

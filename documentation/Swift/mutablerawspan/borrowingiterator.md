@@ -17,7 +17,7 @@ A type that provides the sequence’s iteration interface and encapsulates its i
 ## Declaration
 
 ```swift
-typealias BorrowingIterator = SpanIterator<UInt8>
+typealias BorrowingIterator = Span<UInt8>.BorrowingIterator
 ```
 
 

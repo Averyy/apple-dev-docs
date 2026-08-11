@@ -31,18 +31,18 @@ Your app’s Spotlight search index provides fast access to your app’s content
   An attribute from a content item that the Spotlight search tool can include in search results.
 ### Tool customization
 - [protocol CustomStage](customstage.md)
-  A custom processing stage in a Spotlight search pipeline.
+  A custom processing stage the Spotlight search tool uses to identify search results.
 - [struct SearchPipelineData](searchpipelinedata.md)
-  The value that flows between pipeline stages, carrying a typed payload.
+  The type you use to store the output from a custom stage.
 - [enum SearchPipelineDataType](searchpipelinedatatype.md)
-  Declares the kind of data a pipeline stage accepts or produces.
+  Data types that a pipeline stage accepts or produces.
 - [struct ScoredSearchableItem](scoredsearchableitem.md)
   A searchable item paired with a caller-assigned relevance score.
 ### Contact resolution
 - [protocol ContactResolver](contactresolver.md)
-  Resolves the current user’s identity for search queries involving people.
+  An interface you use to help Foundation models resolve references to the person using the app.
 - [struct ResolvedContact](resolvedcontact.md)
-  Contact information used to match person and organization references in search queries.
+  Contact information to help a search query match references to a person or organization.
 ### Search results
 - [struct SearchCount](searchcount.md)
   A scalar count result (e.g., “47 emails from John”).

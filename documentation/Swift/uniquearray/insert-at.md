@@ -33,6 +33,7 @@ All existing elements at or following the specified position are moved to make r
 ## Parameters
 
 - `item`: The new element to insert into the array.
+- `index`: The position at which to insert the new element. `index` must be a valid index in the array.
 
 
 ---

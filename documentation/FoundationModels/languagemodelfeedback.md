@@ -19,10 +19,6 @@ Feedback appropriate for logging or attaching to Feedback Assistant.
 struct LanguageModelFeedback
 ```
 
-## Mentions
-
-- [Improving the safety of generative model output](improving-the-safety-of-generative-model-output.md)
-
 #### Overview
 
 `LanguageModelFeedback` is a namespace with  structures for describing feedback in a consistent way. [`LanguageModelFeedback.Sentiment`](languagemodelfeedback/sentiment.md) describes the sentiment of the feedback, while [`LanguageModelFeedback.Issue`](languagemodelfeedback/issue.md) offers a standard template for issues.

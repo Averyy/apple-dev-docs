@@ -25,9 +25,9 @@ struct Action
 
 ## Topics
 
-### Tool call action constants
+### Tool call actions
 - [static func appendArguments(String, tokenCount: Int) -> LanguageModelExecutorGenerationChannel.ToolCalls.ToolCall.Action](languagemodelexecutorgenerationchannel/toolcalls/toolcall/action-swift.struct/appendarguments(_:tokencount:).md)
-- [static func updateMetadata([String : any Sendable & Codable & Equatable]) -> LanguageModelExecutorGenerationChannel.ToolCalls.ToolCall.Action](languagemodelexecutorgenerationchannel/toolcalls/toolcall/action-swift.struct/updatemetadata(_:).md)
+- [static func updateMetadata([String : any ConvertibleToGeneratedContent]) -> LanguageModelExecutorGenerationChannel.ToolCalls.ToolCall.Action](languagemodelexecutorgenerationchannel/toolcalls/toolcall/action-swift.struct/updatemetadata(_:).md)
 
 ## Relationships
 
@@ -44,7 +44,7 @@ struct Action
 - [var name: String](languagemodelexecutorgenerationchannel/toolcalls/toolcall/name.md)
   The name of the tool call.
 - [LanguageModelExecutorGenerationChannel.ToolCalls.ToolCall.ArgumentsFragment](languagemodelexecutorgenerationchannel/toolcalls/toolcall/argumentsfragment.md)
-  Append argument text to this tool call.
+  Argument text appended to this tool call.
 
 
 ---

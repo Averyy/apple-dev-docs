@@ -24,11 +24,6 @@ struct Iterator
 ### Conforms To
 - [AsyncIteratorProtocol](../Swift/AsyncIteratorProtocol.md)
 
-## See Also
-
-- [HKStatisticsCollectionQueryDescriptor.Result](hkstatisticscollectionquerydescriptor/result.md)
-  A collection of results.
-
 
 ---
 

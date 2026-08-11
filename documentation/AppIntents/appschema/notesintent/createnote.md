@@ -27,10 +27,9 @@ The following example shows an intent that conforms to the `createNote` schema:
 ```swift
 @AppIntent(schema: .notes.createNote)
 struct CreateNoteIntent {
-    var name: String
+    var name: AttributedString
     var content: AttributedString?
     var attachments: [IntentFile]
-    var tags: [<#TagEntity#>]
     var isPinned: Bool
     var folder: <#FolderEntity#>?
 

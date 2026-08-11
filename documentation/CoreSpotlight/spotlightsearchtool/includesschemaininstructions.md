@@ -3,7 +3,7 @@
 **Framework**: Core Spotlight  
 **Kind**: property
 
-On-device uses includesSchemaInInstructions: true; .dynamic uses false (schema in compact notation prose instead).
+A Boolean value that indicates whether to inject the model’s name, description, and parameters schema into the instructions of sessions.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -18,10 +18,14 @@ On-device uses includesSchemaInInstructions: true; .dynamic uses false (schema i
 var includesSchemaInInstructions: Bool { get }
 ```
 
+#### Discussion
+
+The Spotlight search tool implements this property as part of its conformance to the [`Tool`](https://developer.apple.com/documentation/FoundationModels/Tool) protocol.
+
 ## See Also
 
 - [var parameters: GenerationSchema](spotlightsearchtool/parameters.md)
-  Dynamic schema: use the native tool’s schema based on capabilities.
+  The schema for the parameters this tool accepts.
 
 
 ---

@@ -28,6 +28,10 @@ The newly decoded logical type `Self`.
 
 > **Note**: This is not an atomic operation. This simply decodes the storage representation used in atomic operations back into the logical type for normal use, `Self`.
 
+## Parameters
+
+- `representation`: The storage representation for `Self` that’s used within atomic operations.
+
 
 ---
 

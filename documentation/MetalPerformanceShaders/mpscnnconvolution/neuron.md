@@ -8,6 +8,7 @@ The neuron filter to be applied as part of the convolution operation.
 **Availability**:
 - iOS 10.0+
 - iPadOS 10.0+
+- Mac Catalyst 10.0+
 - macOS 10.13+
 - tvOS 10.0+
 - visionOS 1.0+

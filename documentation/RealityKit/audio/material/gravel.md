@@ -3,6 +3,8 @@
 **Framework**: RealityKit  
 **Kind**: property
 
+A material that simulates the acoustic properties of gravel.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
@@ -20,11 +22,17 @@ static let gravel: Audio.Material
 ## See Also
 
 - [static let water: Audio.Material](audio/material/water.md)
+  A material that simulates the acoustic properties of water.
 - [static let ice: Audio.Material](audio/material/ice.md)
+  A material that simulates the acoustic properties of ice.
 - [static let snow: Audio.Material](audio/material/snow.md)
+  A material that simulates the acoustic properties of snow.
 - [static let sand: Audio.Material](audio/material/sand.md)
+  A material that simulates the acoustic properties of sand.
 - [static let soil: Audio.Material](audio/material/soil.md)
+  A material that simulates the acoustic properties of soil.
 - [static let trees: Audio.Material](audio/material/trees.md)
+  A material that simulates the acoustic properties of trees.
 
 
 ---

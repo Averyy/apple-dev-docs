@@ -3,7 +3,7 @@
 **Framework**: HealthKit  
 **Kind**: method
 
-Sets the zone configuration for the specified quantity type for this workout. In order to provide a custom workout zone configuration, this must be called before beginning collection on the builder. If a custom configuration is not provided, the user’s preferred workout zone configuration will be used for zone calculations.
+Overrides the preferred zone configuration with a custom zone for the current workout.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -25,17 +25,19 @@ func setCustomZoneConfiguration(_ configuration: HKWorkoutZoneConfiguration?, fo
 
 #### Discussion
 
-> **Note**: An error if the configuration cannot be set or is incompatible with the quantity type.
+Call this method before calling [`beginCollection(withStart:completion:)`](hkworkoutbuilder/begincollection(withstart:completion:).md) to apply custom zones. If you don’t set a custom configuration, the system uses the person’s preferred zone configuration from Health Settings for zone calculations. Custom configurations apply only to this workout and don’t modify the person’s preferred zones.
 
 ## Parameters
 
-- `configuration`: The zone configuration to use. Setting to `nil` will remove any custom configuration and use the preferred zone configuration for the quantity type.
-- `quantityType`: The quantity type to apply the configuration to.
+- `configuration`: The zone configuration to use, or `nil` to remove any custom configuration and use the person’s preferred zones.
+- `quantityType`: The quantity type to which to apply the configuration.
 
 ## See Also
 
 - [func zoneConfiguration(for: HKQuantityType) async throws -> HKWorkoutZoneConfiguration?](hkworkoutbuilder/zoneconfiguration(for:).md)
   Returns the zone configuration for the specified quantity type.
+- [func zoneGroup(for: HKQuantityType) -> HKWorkoutZoneGroup?](hkworkoutbuilder/zonegroup(for:).md)
+  Returns the current zone group for the specified quantity type.
 
 
 ---

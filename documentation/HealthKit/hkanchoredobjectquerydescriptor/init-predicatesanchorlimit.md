@@ -21,7 +21,7 @@ init(predicates: [HKSamplePredicate<Sample>], anchor: HKQueryAnchor?, limit: Int
 
 #### Discussion
 
-The system sets the descriptor’s `HKAnchoredObjectQueryDescriptor/Output` type based on the `predicates` parameter.
+The system sets the descriptor’s `Output` type based on the `predicates` parameter.
 
 ## Parameters
 

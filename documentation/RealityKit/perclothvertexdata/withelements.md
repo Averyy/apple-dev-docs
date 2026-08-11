@@ -32,8 +32,6 @@ The provided span is only valid for the lifetime of the callback.
 
 - [var vertexCount: Int](perclothvertexdata/vertexcount.md)
   The number of vertices this structure holds data for.
-- [var mutableElements: MutableSpan<ElementType>](perclothvertexdata/mutableelements.md)
-  A mutable view of the per-vertex data.
 - [func withMutableElements<Result>((inout MutableSpan<ElementType>) -> Result) -> Result](perclothvertexdata/withmutableelements(_:).md)
   Provides mutable access to the per-vertex data within a callback.
 

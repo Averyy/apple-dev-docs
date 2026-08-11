@@ -26,7 +26,7 @@ var action: LanguageModelExecutorGenerationChannel.Response.Action
 - [var entryID: String?](languagemodelexecutorgenerationchannel/response/entryid.md)
   The identifier for the entry.
 - [LanguageModelExecutorGenerationChannel.TextSegmentReplacement](languagemodelexecutorgenerationchannel/textsegmentreplacement.md)
-  Replace a streaming entry’s current text segment with `content`.
+  A replacement for a streaming entry’s current text segment.
 
 
 ---

@@ -33,7 +33,7 @@ var viewport: AVViewport { get }
 - [var groupExperienceCoordinator: AVGroupExperienceCoordinator](avplayerviewcontroller/groupexperiencecoordinator.md)
   The group experience coordinator for this view controller.
 - [class AVViewport](avviewport.md)
-  A configuration object that manages viewport settings for different presentation modes.
+  Provides configuration options for how content is displayed in different viewing contexts. Use this object to customize the visual presentation of your content.
 
 
 ---

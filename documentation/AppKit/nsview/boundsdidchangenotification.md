@@ -44,6 +44,7 @@ To observe this notification using Swift concurrency, use [`NSView.BoundsDidChan
   Sets the size of the view’s bounds rectangle to specified dimensions, inversely scaling its coordinate system relative to its frame rectangle.
 - [var boundsRotation: CGFloat](nsview/boundsrotation.md)
   The angle of rotation, measured in degrees, applied to the view’s bounds rectangle relative to its frame rectangle.
+- [NSView.BoundsDidChangeMessage](nsview/boundsdidchangemessage.md)
 - [var postsBoundsChangedNotifications: Bool](nsview/postsboundschangednotifications.md)
   A Boolean value indicating whether the view posts notifications when its bounds rectangle changes.
 

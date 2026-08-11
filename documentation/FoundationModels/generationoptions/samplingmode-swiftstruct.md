@@ -46,13 +46,13 @@ A model builds its response to a prompt in a loop. At each iteration in the loop
 ## See Also
 
 - [var temperature: Double?](generationoptions/temperature.md)
-  Temperature influences the confidence of the models response.
+  A value that influences the confidence of the model’s response.
 - [var sampling: GenerationOptions.SamplingMode?](generationoptions/sampling.md)
   A sampling strategy for how the model picks tokens when generating a response.
 - [var samplingMode: GenerationOptions.SamplingMode?](generationoptions/samplingmode-swift.property.md)
   A sampling strategy for how the model picks tokens when generating a response.
 - [var toolCallingMode: GenerationOptions.ToolCallingMode?](generationoptions/toolcallingmode-swift.property.md)
-  Configure the tool calling requirements.
+  The tool calling requirements.
 - [GenerationOptions.ToolCallingMode](generationoptions/toolcallingmode-swift.struct.md)
   A value you use to describe the model behavior when it comes to tool usage.
 - [var maximumResponseTokens: Int?](generationoptions/maximumresponsetokens.md)

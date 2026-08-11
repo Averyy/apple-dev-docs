@@ -25,7 +25,7 @@ A property wrapper type that retrieves entities, grouped into sections, from a C
 
 Use a `SectionedFetchRequest` property wrapper to declare a [`SectionedFetchResults`](sectionedfetchresults.md) property that provides a grouped collection of Core Data managed objects to a SwiftUI view. If you don’t need sectioning, use [`FetchRequest`](fetchrequest.md) instead.
 
-Configure a sectioned fetch request with an optional predicate and sort descriptors, and include a `sectionIdentifier` parameter to indicate how to group the fetched results. Be sure that you choose sorting and sectioning that work together to avoid discontiguous sections. For example, you can request a list of earthquakes, composed of `Quake` managed objects that the [`Loading and Displaying a Large Data Feed`](loading_and_displaying_a_large_data_feed.md) sample code project defines to store earthquake data, sorted by time and grouped by date:
+Configure a sectioned fetch request with an optional predicate and sort descriptors, and include a `sectionIdentifier` parameter to indicate how to group the fetched results. Be sure that you choose sorting and sectioning that work together to avoid discontiguous sections. For example, you can request a list of earthquakes, composed of `Quake` managed objects that the [`Loading and displaying a large data feed`](loading-and-displaying-a-large-data-feed.md) sample code project defines to store earthquake data, sorted by time and grouped by date:
 
 ```swift
 @SectionedFetchRequest<String, Quake>(

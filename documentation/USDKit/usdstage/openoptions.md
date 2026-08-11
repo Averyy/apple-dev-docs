@@ -21,8 +21,6 @@ struct OpenOptions
 
 ## Topics
 
-### Initializers
-- [init()](usdstage/openoptions/init.md)
 ### Type Properties
 - [static var createNew: USDStage.OpenOptions](usdstage/openoptions/createnew.md)
   Creates a new layer instead of opening an existing file. Any existing file at the specified path will be overwritten.
@@ -44,6 +42,7 @@ struct OpenOptions
 - [static func open(FilePath, sessionLayer: USDLayer?, options: USDStage.OpenOptions) throws -> USDStage](usdstage/open(_:sessionlayer:options:).md)
   Opens a stage using a file as the root layer.
 - [static func open(URL, loadingPayloads: USDStage.InitialLoadRule) throws -> USDStage](usdstage/open(_:loadingpayloads:).md)
+  Opens a stage using the file at a URL as its root layer.
 - [USDStage.InitialLoadRule](usdstage/initialloadrule.md)
   Specifies the rule used when opening a stage to determine if referenced payloads are loaded.
 

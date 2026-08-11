@@ -22,6 +22,7 @@ init<Owner>(unsafeAddress pointer: UnsafeMutablePointer<Value>, mutating owner: 
 
 ## Parameters
 
+- `pointer`: The address to use to mutably reference an instance of type `Value`.
 - `owner`: The owning instance that this `MutableRef` instance’s lifetime is based on.
 
 

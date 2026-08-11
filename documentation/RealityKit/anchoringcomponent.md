@@ -64,10 +64,11 @@ For more information about anchors, see [`ARKit`](https://developer.apple.com/do
   Describes the physics simulation space of the entity and its descendants.
 ### Structures
 - [AnchoringComponent.AccessoryAnchoringSource](anchoringcomponent/accessoryanchoringsource.md)
+  Defines the source of accessory anchoring target based on how it is created.
 - [AnchoringComponent.AccessoryLocation](anchoringcomponent/accessorylocation.md)
   A reference to points of interest on a tracked accessory.
 - [AnchoringComponent.ImageAnchoringSource](anchoringcomponent/imageanchoringsource.md)
-  Defines the source of object anchoring target based on how it is created.
+  Defines the source of image anchoring target based on how it is created.
 - [AnchoringComponent.ObjectAnchoringSource](anchoringcomponent/objectanchoringsource.md)
   Defines the source of object anchoring target based on how it is created.
 

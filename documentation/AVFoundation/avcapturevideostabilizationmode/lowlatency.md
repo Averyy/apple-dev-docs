@@ -8,6 +8,7 @@ Indicates that video should be stabilized using the low latency stabilization al
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

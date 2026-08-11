@@ -20,7 +20,7 @@ final var argumentTableDescriptor: LowLevelArgumentTable.Descriptor? { get }
 ## See Also
 
 - [var parameterMapping: LowLevelMaterialParameterMapping?](lowlevelmaterialresource/geometrymodifier/parametermapping.md)
-  The parameter name-to-slot mapping for this geometry modifier.
+  The parameter name-to-slot mapping for this geometry modifier, or `nil` if it takes no custom parameters.
 
 
 ---

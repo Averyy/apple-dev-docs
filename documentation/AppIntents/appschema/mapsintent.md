@@ -53,6 +53,8 @@ protocol MapsIntent : AppSchema.Kind
   An intent schema that ends navigation.
 - [var stopShareETA: some AppSchemaIntent](appschema/mapsintent/stopshareeta.md)
   An intent schema that stops sharing ETA.
+- [var updateNavigationWaypoints: some AppSchemaIntent](appschema/mapsintent/updatenavigationwaypoints.md)
+  An intent schema that updates the list of waypoints for a navigation session.
 
 
 ---

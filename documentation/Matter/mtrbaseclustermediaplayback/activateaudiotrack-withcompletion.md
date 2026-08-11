@@ -22,7 +22,7 @@ func activateAudioTrack(with params: MTRMediaPlaybackClusterActivateAudioTrackPa
 
 #### Discussion
 
-Upon receipt, the server SHALL set the active Audio Track to the one identified by the TrackID in the Track catalog for the streaming media. If the TrackID does not exist in the Track catalog, OR does not correspond to the streaming media OR no media is being streamed at the time of receipt of this command, the server will return an error status of INVALID_ARGUMENT.
+This command is used to activate a specific Audio Track for the media being played.
 
 
 ---

@@ -123,7 +123,7 @@ Adopt the delegate protocol and implement the [`workoutBuilder(_:didUpdateWorkou
 extension WorkoutManager: HKLiveWorkoutBuilderDelegate {
     func workoutBuilder(
         _ workoutBuilder: HKLiveWorkoutBuilder,
-        didUpdateWorkoutZone zoneUpdate: HKLiveWorkoutBuilder.ZoneUpdate
+        didUpdateWorkoutZone zoneUpdate: HKLiveWorkoutZoneUpdate
     ) {
         // Update the UI to show the person's zone.
         if let newZone = zoneUpdate.newZoneDuration {
@@ -195,6 +195,8 @@ Custom configurations apply only to the workout created; they don’t modify the
   A structure that represents the time spent in a specific zone during a workout or activity.
 - [struct HKWorkoutZoneGroup](hkworkoutzonegroup.md)
   A structure that contains zone configuration and time-in-zone data for a quantity type.
+- [class HKLiveWorkoutZoneUpdate](hkliveworkoutzoneupdate.md)
+  A structure that contains information about zone transitions during a live workout session.
 
 
 ---

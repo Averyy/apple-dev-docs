@@ -3,7 +3,7 @@
 **Framework**: Core Spotlight  
 **Kind**: enum
 
-Declares the kind of data a pipeline stage accepts or produces.
+Data types that a pipeline stage accepts or produces.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -20,25 +20,25 @@ enum SearchPipelineDataType
 
 #### Overview
 
-Use these values to describe the expected input and output shapes of a [`CustomStage`](customstage.md). The pipeline runtime uses them to validate wiring between stages.
+Use this type to specify the input and output values your [`CustomStage`](customstage.md) supports. Foundation models use this information to validate that data can pass from one stage to the next.
 
 ## Topics
 
 ### Getting the pipeline data type
 - [SearchPipelineDataType.items](searchpipelinedatatype/items.md)
-  [`SearchableItem`](searchableitem.md) results.
+  Searchable items from the app’s index.
 - [SearchPipelineDataType.scoredItems](searchpipelinedatatype/scoreditems.md)
-  [`SearchableItem`](searchableitem.md) results with caller-assigned scores.
+  Searchable items with an assigned score.
 - [SearchPipelineDataType.groupedItems](searchpipelinedatatype/groupeditems.md)
-  Items partitioned into named groups.
+  A dictionary that maps searchable items to the attributes they contain.
 - [SearchPipelineDataType.text](searchpipelinedatatype/text.md)
-  LLM-generated text summary or analysis.
+  An LLM-generated text summary or analysis.
 - [SearchPipelineDataType.count](searchpipelinedatatype/count.md)
-  A scalar count (e.g., “47 emails from John”).
+  A scalar count of the number of items.
 - [SearchPipelineDataType.statistic](searchpipelinedatatype/statistic.md)
-  A scalar statistic (sum, average, max, min, median, stddev).
+  A scalar value that reflects a stastical calculation such as an average, minimum, or maximum.
 - [SearchPipelineDataType.table](searchpipelinedatatype/table.md)
-  Tabulated data suitable for a table or chart.
+  Data suitable for a table or chart.
 
 ## Relationships
 
@@ -57,9 +57,9 @@ Use these values to describe the expected input and output shapes of a [`CustomS
 ## See Also
 
 - [protocol CustomStage](customstage.md)
-  A custom processing stage in a Spotlight search pipeline.
+  A custom processing stage the Spotlight search tool uses to identify search results.
 - [struct SearchPipelineData](searchpipelinedata.md)
-  The value that flows between pipeline stages, carrying a typed payload.
+  The type you use to store the output from a custom stage.
 - [struct ScoredSearchableItem](scoredsearchableitem.md)
   A searchable item paired with a caller-assigned relevance score.
 

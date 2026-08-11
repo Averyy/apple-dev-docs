@@ -20,7 +20,7 @@ var library: any MTLLibrary { get set }
 ## See Also
 
 - [var constantValues: MTLFunctionConstantValues](lowlevelmaterialresource/geometrymodifier/descriptor/constantvalues.md)
-  The constant values to use when creating the function. These correspond to constants defined in your metal code.
+  The constant values to use when creating the function. These correspond to constants defined in your Metal code.
 
 
 ---

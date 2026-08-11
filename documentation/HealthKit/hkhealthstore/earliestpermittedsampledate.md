@@ -59,6 +59,8 @@ This date is a systemwide platform constraint that applies equally to all apps. 
   The view controller that presents HealthKit authorization sheets.
 - [func getEarliestAuthorizedSampleDate(for: Set<HKObjectType>, completion: ([HKObjectType : Date]?, (any Error)?) -> Void)](hkhealthstore/getearliestauthorizedsampledate(for:completion:).md)
   Returns the earliest date that the person permits your app to read samples for the given data types.
+- [func earliestAuthorizedSampleDate(for: Set<HKObjectType>) async throws -> [HKObjectType : Date]](hkhealthstore/earliestauthorizedsampledate(for:).md)
+  Returns the earliest date that the person permits your app to read samples for the given data types.
 
 
 ---

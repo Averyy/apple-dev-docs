@@ -8,6 +8,7 @@ The technologies an app can use to discover Downlink Time-Difference-of-Arrival 
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
+- Mac Catalyst 27.0+ (Beta)
 
 ## Declaration
 

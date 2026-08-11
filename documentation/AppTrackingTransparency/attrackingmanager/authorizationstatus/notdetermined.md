@@ -23,6 +23,15 @@ case notDetermined
 
 > **Note**: If you call `ATTrackingManager.trackingAuthorizationStatus` in macOS, the result is always `ATTrackingManager.AuthorizationStatus.notDetermined`.
 
+## See Also
+
+- [ATTrackingManager.AuthorizationStatus.authorized](attrackingmanager/authorizationstatus/authorized.md)
+  The value that returns if the user authorizes access to app-related data for tracking the user or the device.
+- [ATTrackingManager.AuthorizationStatus.denied](attrackingmanager/authorizationstatus/denied.md)
+  The value that returns if the user denies authorization to access app-related data for tracking the user or the device.
+- [ATTrackingManager.AuthorizationStatus.restricted](attrackingmanager/authorizationstatus/restricted.md)
+  The value that returns if authorization to access app-related data for tracking the user or the device has a restricted status.
+
 
 ---
 

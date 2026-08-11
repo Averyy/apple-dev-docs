@@ -8,6 +8,7 @@ Uses the given keyframes to animate the camera of a `Map` when the given trigger
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
+- Mac Catalyst 17.0+
 - macOS 14.0+
 - tvOS 17.0+
 - watchOS 10.0+

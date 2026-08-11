@@ -4,7 +4,7 @@
 **Kind**: method  
 **Required**: Yes
 
-Last resort “fallback” isolation check, called when the concurrency runtime is comparing executors e.g. during `assumeIsolated()` and is unable to prove serial equivalence between the expected (this object), and the current executor.
+Last resort “fallback” isolation check, called when the concurrency runtime is comparing executors e.g. during [`assumeIsolated(_:file:line:)`](actor/assumeisolated(_:file:line:).md) and is unable to prove serial equivalence between the expected (this object), and the current executor.
 
 **Availability**:
 - iOS 18.0+

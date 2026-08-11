@@ -8,6 +8,7 @@ A Bluetooth connection to a device.
 **Availability**:
 - iOS 3.0+
 - iPadOS 3.0+
+- Mac Catalyst 3.0+
 - visionOS 1.0+
 
 ## Declaration

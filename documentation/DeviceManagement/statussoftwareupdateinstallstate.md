@@ -22,7 +22,7 @@ object StatusSoftwareUpdateInstallState
 ## Mentions
 
 - [Phases of software update enforcement](phases-of-software-update-enforcement.md)
-- [Deploy software updates using declarative management](deploy-software-updates-using-declarative-management.md)
+- [Deploying software updates using declarative management](deploying-software-updates-using-declarative-management.md)
 
 #### Discussion
 

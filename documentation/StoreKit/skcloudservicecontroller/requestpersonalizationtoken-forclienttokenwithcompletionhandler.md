@@ -6,6 +6,7 @@
 **Availability**:
 - iOS 10.3+
 - iPadOS 10.3+
+- Mac Catalyst 10.3+
 - tvOS 10.3+
 
 ## Declaration

@@ -30,8 +30,6 @@ This operation consumes the job, preventing it accidental use after it has been 
 
 Converting a `ExecutorJob` to an [`UnownedJob`](unownedjob.md) and invoking ``UnownedJob/runSynchronously(_:)` on it multiple times is undefined behavior, as a job can only ever be run once, and must not be accessed after it has been run.
 
-> **Note**: [`runSynchronously(isolatedTo:taskExecutor:)`](unownedjob/runsynchronously(isolatedto:taskexecutor:).md)
-
 ## Parameters
 
 - `executor`: The task executor this job will be run on.

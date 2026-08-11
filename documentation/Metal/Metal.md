@@ -70,6 +70,8 @@ Many high-level Apple frameworks leverage the performance of Metal, including [`
 - [Resource synchronization](resource-synchronization.md)
   Prevent multiple commands that can access the same resources simultaneously by coordinating those reads and writes with barriers, fences, or events.
 ### Shader compilation and libraries
+- [Writing reusable GPU functions with generic pointers](writing-reusable-gpu-functions-with-generic-pointers.md)
+  Define utility functions once for multiple address spaces, and share types with your app’s main code.
 - [Using the Metal 4 compilation API](using-the-metal-4-compilation-api.md)
   Control when and how you compile an app’s shaders.
 - [Shader libraries](shader-libraries.md)

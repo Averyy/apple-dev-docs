@@ -8,7 +8,7 @@ Examine the steps between the user, client, device management service, and Apple
 
 To implement account-driven enrollment, you need to support a series of interactions between the user’s device and your device management service. The following diagrams illustrate the interactions, and the sections below detail each of the interaction steps.
 
-![A sequence diagram showing the first five interactions between the user, client, device management service, and Apple servers for simple authentication.](https://docs-assets.developer.apple.com/published/fa5cc1380a63b8e86b14bb2b74ee9ab2/media-4091468%402x.png)
+![A sequence diagram showing the first five interactions between the user, client, device management service, and Apple servers for simple authentication.](https://docs-assets.developer.apple.com/published/fa5cc1380a63b8e86b14bb2b74ee9ab2/implementing-the-simple-authentication-account-driven-enrollment-flow01%402x.png)
 
 #### Sign in Step 1
 
@@ -134,7 +134,7 @@ If the client’s enrollment request is invalid, you return a standard HTTP erro
 
 The client adds a query item to the web-auth URL with the name `user-identifier`, and sets the value to the user account identifier that the person enters. The client creates an [`ASWebAuthenticationSession`](https://developer.apple.com/documentation/AuthenticationServices/ASWebAuthenticationSession) using the web-auth URL and a callback scheme that it sets to `apple-remotemanagement-user-login`, and then starts the session.
 
-![A sequence diagram showing interactions 6-11 between the user, client, device management service, and Apple servers for simple authentication.](https://docs-assets.developer.apple.com/published/2cbae61d89a077cac0cdb9199db8c767/media-4091469%402x.png)
+![A sequence diagram showing interactions 6-11 between the user, client, device management service, and Apple servers for simple authentication.](https://docs-assets.developer.apple.com/published/2cbae61d89a077cac0cdb9199db8c767/implementing-the-simple-authentication-account-driven-enrollment-flow02%402x.png)
 
 The [`ASWebAuthenticationSession`](https://developer.apple.com/documentation/AuthenticationServices/ASWebAuthenticationSession) performs an HTTPS `GET` request for the web-auth URL, and presents the resulting HTML data to the user in a web view. A simple HTML sign-in page might contain a form with a user ID and password entry, OK and Cancel buttons, optional terms and conditions, optional branding, and so on.
 
@@ -192,7 +192,7 @@ If authentication fails, the service returns an appropriate HTTP error response 
 
 The client repeats the HTTP `POST` request it made in the first enrollment attempt, using the same request body. However, this time it also includes an `Authorization HTTP` request header. This header uses the `Bearer` scheme and includes the access token that the client retrieved from the authentication session flow.
 
-![A sequence diagram showing interactions 12-20 between the user, client, device management service, and Apple servers for simple authentication.](https://docs-assets.developer.apple.com/published/026ef73dede367fd03e1fd87061241e6/media-4091470%402x.png)
+![A sequence diagram showing interactions 12-20 between the user, client, device management service, and Apple servers for simple authentication.](https://docs-assets.developer.apple.com/published/026ef73dede367fd03e1fd87061241e6/implementing-the-simple-authentication-account-driven-enrollment-flow03%402x.png)
 
 When the service processes the HTTP request, it authorizes the request by verifying the validity of the access token in the `Authorization HTTP` request header. If the access token is invalid, or the header isn’t present or has incorrect values, the service needs to reject the request with a suitable HTTP error response status. If the access token is valid, the service returns an `HTTP 200 OK` response with a response body containing the device management (MDM) enrollment profile that the client uses to enroll with the device management service.
 

@@ -19,6 +19,11 @@ Reasoning from the model.
 case reasoning(Transcript.Reasoning)
 ```
 
+## Mentions
+
+- [Inspecting session transcripts and reporting model feedback](inspecting-session-transcripts-and-reporting-model-feedback.md)
+- [Running a Core AI model in a Foundation Models session](running-a-core-ai-model-in-a-foundation-models-session.md)
+
 ## See Also
 
 - [case instructions(Transcript.Instructions)](transcript/entry/instructions(_:).md)

@@ -6,6 +6,8 @@
 Creates a representation of an app using its bundle and team identifiers.
 
 **Availability**:
+- iOS 27.0+ (Beta)
+- iPadOS 27.0+ (Beta)
 - Mac Catalyst 15.0+
 - macOS 12.0+
 

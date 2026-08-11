@@ -35,9 +35,9 @@ Common errors include:
 
 The completion handler is called on an arbitrary queue.
 
-> **Note**: The completion handler may be invoked on a arbitrary queue after an arbitrary amount of delay. Do not call this method from the main thread or performance-critical contexts.
+> **Note**: The completion handler may be invoked on an arbitrary queue after an arbitrary amount of delay. Do not call this method from the main thread or performance-critical contexts.
 
-This method replaces the deprecated [`submit(_:)`](bgtaskscheduler/submit(_:).md) method
+This method replaces the deprecated [`submit(_:)`](bgtaskscheduler/submit(_:).md) method.
 
 ## Parameters
 

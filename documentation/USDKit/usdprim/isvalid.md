@@ -32,6 +32,7 @@ A prim will also expire if its stage no longer defines that prim. `isValid` is f
 - [var primPath: USDLayer.Path](usdprim/primpath.md)
   The complete scene path to this prim, relative to its stage.
 - [var specifier: USDPrim.Specifier](usdprim/specifier-swift.property.md)
+  The specifier that describes how this prim is defined, such as `def`, `over`, or `class`.
 - [var stage: USDStage](usdprim/stage.md)
   The stage that owns this prim.
 - [var parent: USDPrim?](usdprim/parent.md)

@@ -155,7 +155,6 @@ Use RealityKit’s rich functionality to create compelling augmented reality (AR
   A transient component that stores typed uniform values shared across all ComputeGraph simulations.
 - [class GaussianSplatResource](gaussiansplatresource.md)
   A container for the splat data and rendering options that a Gaussian splat component displays.
-- [class MaterialXTarget](materialxtarget.md)
 - [class ShaderGraph](shadergraph.md)
 ### Structures
 - [struct BoundingBoxCalculator](boundingboxcalculator.md)
@@ -170,8 +169,6 @@ Use RealityKit’s rich functionality to create compelling augmented reality (AR
   A transient component that provides camera viewpoint information to the particle simulation.
 - [struct GaussianSplatComponent](gaussiansplatcomponent.md)
   A component that renders 3D Gaussian splat data.
-- [struct MaterialDecodingConfiguration](materialdecodingconfiguration.md)
-- [struct MaterialXVersion](materialxversion.md)
 - [struct RenormalizingDeformer](renormalizingdeformer.md)
   Recalculates tangent frame based on current state of positions
 - [struct SubdivisionSurfaceDeformer](subdivisionsurfacedeformer.md)
@@ -179,10 +176,6 @@ Use RealityKit’s rich functionality to create compelling augmented reality (AR
 ### Enumerations
 - [enum GaussianSplatEvents](gaussiansplatevents.md)
   A namespace for events about Gaussian splat rendering.
-- [enum MaterialXAvailability](materialxavailability.md)
-- [enum SGBlending](sgblending.md)
-- [enum SGDataType](sgdatatype.md)
-- [enum SGLightingModel](sglightingmodel.md)
 
 
 ---

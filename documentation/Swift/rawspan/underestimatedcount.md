@@ -17,6 +17,7 @@ A value less than or equal to the number of elements in the sequence, calculated
 ## Declaration
 
 ```swift
+@export(implementation)
 var underestimatedCount: Int { get }
 ```
 

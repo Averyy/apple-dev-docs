@@ -8,7 +8,6 @@ A value that indicates the app couldn’t use the insights because of a technica
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 
 ## Declaration
 

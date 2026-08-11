@@ -3,7 +3,7 @@
 **Framework**: Core Spotlight  
 **Kind**: property
 
-Attributes queried for the event location. Default: [`city`](searchableitemattribute/city.md), [`stateOrProvince`](searchableitemattribute/stateorprovince.md)
+Attributes queried for the event location. Default: [`namedLocation`](searchableitemattribute/namedlocation.md), [`city`](searchableitemattribute/city.md), [`stateOrProvince`](searchableitemattribute/stateorprovince.md)
 
 **Availability**:
 - iOS 27.0+ (Beta)

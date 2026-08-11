@@ -26,8 +26,6 @@ A pose resource provides an alternate set of positions for the vertices of a [`C
 - [convenience init(positions: [SIMD3<Float>]) throws](clothposeresource/init(positions:).md)
   Creates a cloth pose resource with the given vertex positions.
 ### Accessing pose positions
-- [var positions: Span<SIMD3<Float>>](clothposeresource/positions.md)
-  The positions of all the vertices.
 - [func withPositions<Result>((Span<SIMD3<Float>>) -> Result) -> Result](clothposeresource/withpositions(_:).md)
   Provides access to the positions of all the vertices within a callback.
 - [func position(at: UInt32) -> SIMD3<Float>](clothposeresource/position(at:).md)

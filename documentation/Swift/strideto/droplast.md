@@ -38,6 +38,10 @@ print(numbers.dropLast(10))
 
 > **Note**: O(*n*), where *n* is the length of the sequence.
 
+## Parameters
+
+- `k`: The number of elements to drop off the end of the sequence. `k` must be greater than or equal to zero.
+
 
 ---
 

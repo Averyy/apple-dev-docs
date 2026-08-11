@@ -3,6 +3,8 @@
 **Framework**: ColorSync  
 **Kind**: class
 
+A reference to a mutable ICC color profile.
+
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
@@ -29,6 +31,7 @@ class ColorSyncMutableProfile
 ## See Also
 
 - [class ColorSyncProfile](colorsyncprofile.md)
+  A reference to an immutable International Color Consortium (ICC) color profile.
 
 
 ---

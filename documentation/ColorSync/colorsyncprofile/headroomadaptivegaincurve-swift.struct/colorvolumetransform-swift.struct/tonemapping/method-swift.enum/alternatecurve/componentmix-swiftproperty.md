@@ -3,7 +3,7 @@
 **Framework**: ColorSync  
 **Kind**: property
 
-How the scalar driving signal is derived from each RGB pixel.
+How the framework derives the scalar driving signal from each RGB pixel.
 
 **Availability**:
 - iOS 27.0+ (Beta)

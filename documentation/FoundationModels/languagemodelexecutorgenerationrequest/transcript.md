@@ -23,7 +23,7 @@ var transcript: Transcript
 
 - [var id: UUID](languagemodelexecutorgenerationrequest/id.md)
   A request id for logging and tracing purposes
-- [var metadata: [String : any Sendable & Codable & Equatable]](languagemodelexecutorgenerationrequest/metadata.md)
+- [var metadata: [String : GeneratedContent]](languagemodelexecutorgenerationrequest/metadata.md)
   Metadata to attach to the request
 - [var contextOptions: ContextOptions](languagemodelexecutorgenerationrequest/contextoptions.md)
   Settings that configure how the model is prompted

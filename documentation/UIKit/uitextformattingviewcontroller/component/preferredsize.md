@@ -8,6 +8,7 @@ Specifies preferred size of the component in text formatting view.
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- Mac Catalyst 18.0+
 - visionOS 26.0+
 
 ## Declaration

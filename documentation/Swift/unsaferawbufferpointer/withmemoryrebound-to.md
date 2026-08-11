@@ -41,7 +41,7 @@ After executing `body`, this method rebinds memory back to its original binding 
 ## Parameters
 
 - `type`: The type to temporarily bind the memory referenced by this buffer.
-- `body`: A closure that takes a typed pointer to the same memory as this pointer, only bound to type `T`. The closure’s pointer argument is valid only for the duration of the closure’s execution. If `body` has a return value, that value is also used as the return value for the `withMemoryRebound(to:capacity:_:)` method.
+- `body`: A closure that takes a typed pointer to the same memory as this pointer, only bound to type `T`. The closure’s pointer argument is valid only for the duration of the closure’s execution. If `body` has a return value, that value is also used as the return value for the `withMemoryRebound(to:capacity:_:)` method. - **buffer**: The buffer temporarily bound to instances of `T`.
 
 
 ---

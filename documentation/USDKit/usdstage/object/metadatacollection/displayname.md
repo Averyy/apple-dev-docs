@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: property
 
+A non-unique display name authored on this object.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)

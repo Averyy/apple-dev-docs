@@ -55,7 +55,7 @@ try await exportSession.export(to: outputURL, as: .mov)
 - [AVAssetExportSession.ResumptionState](avassetexportsession/resumptionstate.md)
   Represents the resumption state of the export session.
 - [AVAssetExportSession.ResumptionFailureReason](avassetexportsession/resumptionfailurereason.md)
-  An enum that identifies various reasons why resumable export configuration has failed.
+  The reason that configuring the export session for resumption failed.
 
 
 ---

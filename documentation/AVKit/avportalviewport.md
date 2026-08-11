@@ -3,7 +3,7 @@
 **Framework**: AVKit  
 **Kind**: class
 
-A viewport configuration used when displaying content in portals.
+Defines the visual parameters for content displayed within a portal frame. Use this configuration to create cinematic viewing experiences with custom framing.
 
 **Availability**:
 - visionOS 27.0+ (Beta)
@@ -15,8 +15,6 @@ class AVPortalViewport
 ```
 
 #### Overview
-
-Defines the visual parameters for content displayed within a portal frame. Use this configuration to create cinematic viewing experiences with custom framing.
 
 Portal viewports allow you to control how immersive content is framed and presented to users. You can specify the aspect ratio of the portal frame to achieve the desired visual effect.
 
@@ -71,7 +69,7 @@ playerViewController.viewport.portal = portalViewport
 - [class AVGroupExperienceCoordinator](avgroupexperiencecoordinator.md)
   An object that synchronizes viewing environment state across participants in a SharePlay session.
 - [class AVViewport](avviewport.md)
-  A configuration object that manages viewport settings for different presentation modes.
+  Provides configuration options for how content is displayed in different viewing contexts. Use this object to customize the visual presentation of your content.
 - [Third-party casting support](third-party-casting-support.md)
   Provide custom playback controls for third-party casting services and other media sources.
 

@@ -3,7 +3,7 @@
 **Framework**: SwiftUI  
 **Kind**: property
 
-The search item added by a `View/searchable(text:isPresented:placement:prompt)` modifier.
+The search item added by a [`searchable(text:isPresented:placement:prompt:)`](view/searchable(text:ispresented:placement:prompt:).md) modifier.
 
 **Availability**:
 - iOS 26.0+
@@ -20,7 +20,7 @@ static let search: ToolbarDefaultItemKind
 
 #### Discussion
 
-Use a `.search` default item kind with `DefaultToolbarItem/init(kind:placment:)` to customize the [`ToolbarItemPlacement`](toolbaritemplacement.md) of a default item kind. The search default item kind can be placed in the `.bottomBar` on iPhone only. All available platforms support `.topBarTrailing` and `.automatic`.
+Use a `.search` default item kind with [`init(kind:placement:)`](defaulttoolbaritem/init(kind:placement:).md) to customize the [`ToolbarItemPlacement`](toolbaritemplacement.md) of a default item kind. The search default item kind can be placed in the [`bottomBar`](toolbaritemplacement/bottombar.md) on all supported platforms. On iOS, it can also be placed in the top bar.
 
 
 ---

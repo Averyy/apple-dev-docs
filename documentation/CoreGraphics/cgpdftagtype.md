@@ -71,6 +71,7 @@ enum CGPDFTagType
 - [CGPDFTagType.warichu](cgpdftagtype/warichu.md)
 - [CGPDFTagType.warichuPunctiation](cgpdftagtype/warichupunctiation.md)
 - [CGPDFTagType.warichuText](cgpdftagtype/warichutext.md)
+- [CGPDFTagType.artifact](cgpdftagtype/artifact.md)
 ### Instance Properties
 - [var name: UnsafePointer<CChar>](cgpdftagtype/name.md)
 ### Initializers

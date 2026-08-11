@@ -4,7 +4,7 @@
 **Kind**: method  
 **Required**: Yes
 
-Determines the size and alignment required to hold the data of a tensor you create with a descriptor in a buffer.
+Determines the size and alignment required to hold the data plane of a tensor you create with a descriptor in a buffer.
 
 **Availability**:
 - iOS 26.0+
@@ -22,11 +22,15 @@ func tensorSizeAndAlign(descriptor: MTLTensorDescriptor) -> MTLSizeAndAlign
 
 #### Return Value
 
-The size and alignment required to hold the data of a tensor you create with `descriptor` in a buffer.
+The size and alignment required to hold the data plane of a tensor you create with `descriptor` in a buffer.
+
+#### Discussion
+
+This method requires that `descriptor` does not configure any auxiliary planes.
 
 ## Parameters
 
-- `descriptor`: A description of the properties for the new tensor.
+- `descriptor`: The tensor descriptor configuring the data plane.
 
 
 ---

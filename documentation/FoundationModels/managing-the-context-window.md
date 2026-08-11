@@ -245,10 +245,6 @@ The first transcript entry often contains important instructions and the last en
   Details you provide that define the model’s intended behavior on prompts.
 - [struct Prompt](prompt.md)
   A prompt from a person to the model.
-- [struct Transcript](transcript.md)
-  A linear history of entries that reflect an interaction with a session.
-- [struct TranscriptErrorHandlingPolicy](transcripterrorhandlingpolicy.md)
-  Options for controlling how a language model session manages the transcript when errors occur.
 - [struct GenerationOptions](generationoptions.md)
   Options that control how the model generates its response to a prompt.
 - [struct ContextOptions](contextoptions.md)

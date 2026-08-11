@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: property
 
+A Boolean value that indicates whether this object has an authored `isHidden` opinion.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)

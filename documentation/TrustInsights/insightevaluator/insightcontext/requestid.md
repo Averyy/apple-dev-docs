@@ -8,7 +8,6 @@ An optional identifier you can use to tie an assessment to a specific transactio
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 
 ## Declaration
 

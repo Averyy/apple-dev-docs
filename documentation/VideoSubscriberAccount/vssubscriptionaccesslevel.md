@@ -8,6 +8,7 @@ Constants representing a subscriber’s level of access to your content.
 **Availability**:
 - iOS 11.0+
 - iPadOS 11.0+
+- Mac Catalyst 11.0+
 - macOS ?+
 - tvOS 11.0+
 - visionOS 1.0+

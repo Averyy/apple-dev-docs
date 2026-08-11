@@ -148,7 +148,7 @@ All entities inherit a few common components from the [`Entity`](entity.md) base
 - [func playAnimation(named: String, transitionDuration: TimeInterval, startsPaused: Bool, recursive: Bool) -> AnimationPlaybackController](entity/playanimation(named:transitionduration:startspaused:recursive:).md)
   Plays all the animations with the given name on the entity.
 - [var bindableValues: BindableValuesReference](entity/bindablevalues.md)
-- [subscript(_:)](entity/subscript(_:).md)
+- [subscript(BindTarget.EntityPath) -> Entity?](entity/subscript(_:).md)
   Resolves the entity from the given entity path.
 ### Animating and controlling characters
 - [var characterController: CharacterControllerComponent?](entity/charactercontroller.md)
@@ -218,9 +218,6 @@ All entities inherit a few common components from the [`Entity`](entity.md) base
 ### Playing spatial audio
 - [func playAudio(AudioResource, at: AVAudioTime) throws -> AudioPlaybackController](entity/playaudio(_:at:).md)
   Asynchronously prepares and plays a new audio playback instance at a specified time on this entity.
-### Accessing components without animation
-- [subscript<T>(withoutAnimation _: T.Type) -> T?](entity/subscript(withoutanimation:).md)
-  Gets or sets the component of the specified type, without considering implicit animations.
 ### Structures
 - [Entity.Observable](entity/observable-swift.struct.md)
   An observable interface to an entity’s properties and components, enabling reactive updates using Swift’s Observation framework.

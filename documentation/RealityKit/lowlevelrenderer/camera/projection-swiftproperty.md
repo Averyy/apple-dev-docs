@@ -20,7 +20,7 @@ var projection: LowLevelRenderer.Camera.Projection { get set }
 ## See Also
 
 - [LowLevelRenderer.Camera.Projection](lowlevelrenderer/camera/projection-swift.struct.md)
-  A projection transform that maps from camera space to clip space.
+  A projection transform that maps from view space to clip space.
 
 
 ---

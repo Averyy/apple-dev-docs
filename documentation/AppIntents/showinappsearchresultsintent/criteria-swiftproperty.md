@@ -27,11 +27,9 @@ Use this property to get the search terms or other criteria to use when you perf
 
 ## See Also
 
+- [associatedtype Criteria : SearchCriteria](showinappsearchresultsintent/criteria-swift.associatedtype.md)
 - [protocol SearchCriteria](searchcriteria.md)
   An interface for defining the criteria to use when searching your app’s content.
-- [struct StringSearchCriteria](stringsearchcriteria.md)
-  A type that tells your app to match its items against a provided string.
-- [associatedtype Criteria : SearchCriteria](showinappsearchresultsintent/criteria-swift.associatedtype.md)
 
 
 ---

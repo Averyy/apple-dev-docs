@@ -11,7 +11,7 @@ Methods that all volumes implement to provide required capabilities.
 ## Declaration
 
 ```swift
-protocol Operations : FSVolume.PathConfOperations
+protocol Operations : FSVolume.CommonOperations, FSVolume.PathConfOperations
 ```
 
 #### Overview
@@ -33,11 +33,6 @@ Conform to this protocol in your subclass of [`FSVolume`](fsvolume.md). To provi
   Tears down a previously initialized volume instance.
 - [struct FSDeactivateOptions](fsdeactivateoptions.md)
   Options that affect the behavior of deactivate methods.
-### Mounting and unmounting
-- [func mount(options: FSTaskOptions, replyHandler: ((any Error)?) -> Void)](fsvolume/operations/mount(options:replyhandler:).md)
-  Mounts this volume, using the specified options.
-- [func unmount(replyHandler: () -> Void)](fsvolume/operations/unmount(replyhandler:).md)
-  Unmounts this volume.
 ### Working with items
 - [func createItem(named: FSFileName, type: FSItem.ItemType, inDirectory: FSItem, attributes: FSItem.SetAttributesRequest, replyHandler: (FSItem?, FSFileName?, (any Error)?) -> Void)](fsvolume/operations/createitem(named:type:indirectory:attributes:replyhandler:).md)
   Creates a new file or directory item.
@@ -53,8 +48,6 @@ Conform to this protocol in your subclass of [`FSVolume`](fsvolume.md). To provi
   Removes an existing item from a given directory.
 - [func renameItem(FSItem, inDirectory: FSItem, named: FSFileName, to: FSFileName, inDirectory: FSItem, overItem: FSItem?, replyHandler: (FSFileName?, (any Error)?) -> Void)](fsvolume/operations/renameitem(_:indirectory:named:to:indirectory:overitem:replyhandler:).md)
   Renames an item from one path in the file system to another.
-- [func reclaimItem(FSItem, replyHandler: ((any Error)?) -> Void)](fsvolume/operations/reclaimitem(_:replyhandler:).md)
-  Reclaims an item, releasing any resources allocated for the item.
 ### Working with links
 - [func createLink(to: FSItem, named: FSFileName, inDirectory: FSItem, replyHandler: (FSFileName?, (any Error)?) -> Void)](fsvolume/operations/createlink(to:named:indirectory:replyhandler:).md)
   Creates a new hard link.
@@ -85,30 +78,21 @@ Conform to this protocol in your subclass of [`FSVolume`](fsvolume.md). To provi
 - [class FSDirectoryEntryPacker](fsdirectoryentrypacker.md)
   An object used to provide items during a directory enumeration.
 ### Synchronizing with a resource
-- [func synchronize(flags: FSSyncFlags, replyHandler: ((any Error)?) -> Void)](fsvolume/operations/synchronize(flags:replyhandler:).md)
-  Synchronizes the volume with its underlying resource.
 - [enum FSSyncFlags](fssyncflags.md)
   Behavior flags for use with synchronization calls.
 ### Inspecting required volume properties
-- [var supportedVolumeCapabilities: FSVolume.SupportedCapabilities](fsvolume/operations/supportedvolumecapabilities.md)
-  A property that provides the supported capabilities of the volume.
 - [FSVolume.SupportedCapabilities](fsvolume/supportedcapabilities.md)
   A type that represents capabilities supported by a volume, such as hard and symbolic links, journaling, and large file sizes.
-- [var volumeStatistics: FSStatFSResult](fsvolume/operations/volumestatistics.md)
-  A property that provides up-to-date statistics of the volume.
 - [class FSStatFSResult](fsstatfsresult.md)
   A type used to report a volume’s statistics.
 ### Inspecting optional volume properties
-- [var requestedMountOptions: FSVolume.MountOptions](fsvolume/operations/requestedmountoptions.md)
-  A property that allows the file system to request for specific mount options from FSKit.
 - [FSVolume.MountOptions](fsvolume/mountoptions.md)
   Mount options to be requested from FSKit using the `requestedMountOptions` property.
-- [var enableOpenUnlinkEmulation: Bool](fsvolume/operations/enableopenunlinkemulation.md)
-  A property that allows the file system to use open-unlink emulation.
 
 ## Relationships
 
 ### Inherits From
+- [FSVolume.CommonOperations](fsvolume/commonoperations.md)
 - [FSVolume.PathConfOperations](fsvolume/pathconfoperations.md)
 - [NSObjectProtocol](../ObjectiveC/NSObjectProtocol.md)
 

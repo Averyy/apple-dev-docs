@@ -30,8 +30,6 @@ This span is only available during the subscription callback of this event. The 
 
 ## See Also
 
-- [var collisions: Span<ClothColliderEvents.NewBodyCollisions.Collision>](clothcolliderevents/newbodycollisions/collisions.md)
-  The collisions with cloth bodies that took place.
 - [ClothColliderEvents.NewBodyCollisions.Collision](clothcolliderevents/newbodycollisions/collision.md)
   A collision with a cloth body.
 

@@ -13,6 +13,10 @@
 let kSecCodeInfoTotalSignatures: CFString
 ```
 
+#### Discussion
+
+Key in the dictionary returned by SecCodeCopySigningInformation. The value is a CFNumber giving the total number of signature slots present on the code object (ranging from 1 to kSecCSMaxSignatures).
+
 
 ---
 

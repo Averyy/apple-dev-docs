@@ -34,10 +34,8 @@ Setting this property updates the underlying [`fetchDescriptor`](resultsobserver
   The model context from which models are fetched.
 - [var sectionBy: PartialKeyPath<Element>?](resultsobserver/sectionby.md)
   The key path on the element used to determine section grouping.
-- [var sections: ResultsSectionCollection<Element, SectionName>?](resultsobserver/sections.md)
+- [var sections: SectionedResults<Element, SectionTitle>?](resultsobserver/sections.md)
   The sections computed from the current results, grouped by [`sectionBy`](resultsobserver/sectionby.md).
-- [struct ResultsSectionCollection](resultssectioncollection.md)
-  A collection of sections as returned by [`sections`](resultsobserver/sections.md) or `Query.sections`.
 
 
 ---

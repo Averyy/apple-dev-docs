@@ -57,6 +57,8 @@ For more information, see [`Setting up HealthKit`](setting-up-healthkit.md).
   The view controller that presents HealthKit authorization sheets.
 - [func getEarliestAuthorizedSampleDate(for: Set<HKObjectType>, completion: ([HKObjectType : Date]?, (any Error)?) -> Void)](hkhealthstore/getearliestauthorizedsampledate(for:completion:).md)
   Returns the earliest date that the person permits your app to read samples for the given data types.
+- [func earliestAuthorizedSampleDate(for: Set<HKObjectType>) async throws -> [HKObjectType : Date]](hkhealthstore/earliestauthorizedsampledate(for:).md)
+  Returns the earliest date that the person permits your app to read samples for the given data types.
 - [func earliestPermittedSampleDate() -> Date](hkhealthstore/earliestpermittedsampledate.md)
   Returns the earliest date that the framework permits your app to save or read samples.
 ### Querying HealthKit data
@@ -92,7 +94,7 @@ For more information, see [`Setting up HealthKit`](setting-up-healthkit.md).
 - [func preferredUnits(for: Set<HKQuantityType>, completion: ([HKQuantityType : HKUnit], (any Error)?) -> Void)](hkhealthstore/preferredunits(for:completion:).md)
   Returns the user’s preferred units for the given quantity types.
 - [func preferredWorkoutZoneConfiguration(for: HKQuantityType) async throws -> HKWorkoutZoneConfiguration?](hkhealthstore/preferredworkoutzoneconfiguration(for:).md)
-  Returns someone’s preferred zone configuration for the specified quantity type.
+  Returns a person’s preferred zone configuration for a quantity type.
 - [static let HKUserPreferencesDidChange: NSNotification.Name](../Foundation/NSNotification/Name-swift.struct/HKUserPreferencesDidChange.md)
   Notifies observers whenever the user changes his or her preferred units.
 ### Managing background delivery
@@ -138,7 +140,6 @@ For more information, see [`Setting up HealthKit`](setting-up-healthkit.md).
 ### Structures
 - [HKHealthStore.HKUserPreferencesDidChangeMessage](hkhealthstore/hkuserpreferencesdidchangemessage.md)
 ### Instance Methods
-- [func earliestAuthorizedSampleDate(for: Set<HKObjectType>) async throws -> [HKObjectType : Date]](hkhealthstore/earliestauthorizedsampledate(for:).md)
 - [func relateWorkoutEffortSample(HKSample, with: HKWorkout, activity: HKWorkoutActivity?, completion: (Bool, (any Error)?) -> Void)](hkhealthstore/relateworkouteffortsample(_:with:activity:completion:).md)
 - [func unrelateWorkoutEffortSample(HKSample, from: HKWorkout, activity: HKWorkoutActivity?, completion: (Bool, (any Error)?) -> Void)](hkhealthstore/unrelateworkouteffortsample(_:from:activity:completion:).md)
 

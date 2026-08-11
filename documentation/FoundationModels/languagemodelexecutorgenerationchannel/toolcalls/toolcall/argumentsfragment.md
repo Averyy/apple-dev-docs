@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: struct
 
-Append argument text to this tool call.
+Argument text appended to this tool call.
 
 **Availability**:
 - iOS 27.0+ (Beta)

@@ -14,7 +14,7 @@ All server endpoints except [`Service Config`](service-config.md) require a cont
 
 Content managers can download a location-based `sToken` from the Apps and Books section under the Settings tab in Apple School Manager or Apple Business, and upload it into their device management service.
 
-![The Apps and Books settings section in Apple School Manager and Apple Business for downloading content tokens.](https://docs-assets.developer.apple.com/published/041893ffc57ed18a43ef0cac764049d1/media-3737907.png)
+![The Apps and Books settings section in Apple School Manager and Apple Business for downloading content tokens.](https://docs-assets.developer.apple.com/published/041893ffc57ed18a43ef0cac764049d1/getting-started-with-the-management-api.png)
 
 The device management service stores the location-based content token along with its other private, protected properties, and passes this token in the `Authorization` header of API requests.
 

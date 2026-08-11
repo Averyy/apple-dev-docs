@@ -41,7 +41,7 @@ Every distributed actor must declare what type of actor system it is part of by 
 This causes a number of other properties of the actor to be inferred:
 
 - the [`SerializationRequirement`](distributedactor/serializationrequirement.md) that will be used at compile time to verify `distributed` target declarations are well formed,
-- if the distributed actor is `Codable`, based on the `ID` being Codable or not,
+- if the distributed actor is `Codable`, based on the [`id`](distributedactor/id.md) being Codable or not,
 - the type of the [`ActorSystem`](distributedactor/actorsystem-swift.associatedtype.md) accepted in the synthesized default initializer.
 
 A distributed actor must declare what type of actor system it is ready to work with by fulfilling the [`ActorSystem`](distributedactor/actorsystem-swift.associatedtype.md) type member requirement:
@@ -128,7 +128,7 @@ init(name: String, actorSystem: Self.ActorSystem) {
 
 [`id`](distributedactor/id.md) is assigned by the actor system during the distributed actor’s initialization, and cannot be set or mutated by the actor itself.
 
-[`id`](distributedactor/id.md) is the effective identity of the actor, and is used in equality checks, as well as the actor’s synthesized `Codable` conformance if the `ID` type conforms to `Codable`.
+[`id`](distributedactor/id.md) is the effective identity of the actor, and is used in equality checks, as well as the actor’s synthesized `Codable` conformance if the [`id`](distributedactor/id.md) type conforms to `Codable`.
 
 #### Automatic Conformances
 
@@ -146,19 +146,17 @@ If created with an actor system whose [`ActorID`](distributedactorsystem/actorid
 
 This is necessary to support distributed calls where the `SerializationRequirement` is `Codable` and thus users may want to pass actors as arguments to remote calls.
 
-The synthesized implementations use a single `SingleValueEncodingContainer` to encode/decode the [`id`](distributedactor/id.md) property of the actor. The `Decoder` required `Decoder/init(from:)` is implemented by retrieving an actor system from the decoders’ `userInfo`, effectively like as follows:
+The synthesized implementations use a single `SingleValueEncodingContainer` to encode/decode the [`id`](distributedactor/id.md) property of the actor. The `Decoder` required `Decoder.init(from:)` is implemented by retrieving an actor system from the decoders’ `userInfo`, effectively like as follows:
 
 ```swift
 decoder.userInfo[.actorSystemKey] as? ActorSystem
 
-The such obtained actor system is then used to ``resolve(id:using:)`` the decoded ``ID``.
+The such obtained actor system is then used to ``resolve(id:using:)`` the decoded ``id``.
 
-Use the ``CodingUserInfoKey/actorSystemKey`` to provide the necessary
+Use the `CodingUserInfoKey.actorSystemKey` to provide the necessary
 actor system for the decoding initializer when decoding a distributed actor.
 
 - SeeAlso: ``DistributedActorSystem``
-- SeeAlso: ``Actor``
-- SeeAlso: ``AnyActor``
 ```
 
 ## Topics
@@ -170,7 +168,7 @@ actor system for the decoding initializer when decoding a distributed actor.
   The serialization requirement to apply to all distributed declarations inside the actor.
 ### Initializers
 - [init(from: any Decoder) throws](distributedactor/init(from:).md)
-  Initializes an instance of this distributed actor by decoding its [`id`](distributedactor/id.md), and passing it to the [`DistributedActorSystem`](distributedactorsystem.md) obtained from `decoder.userInfo[actorSystemKey]`.
+  Initializes an instance of this distributed actor by decoding its [`id`](distributedactor/id.md), and passing it to the `DistributedActorSystem` obtained from `decoder.userInfo[actorSystemKey]`.
 ### Instance Properties
 - [var actorSystem: Self.ActorSystem](distributedactor/actorsystem-swift.property.md)
   The [`DistributedActorSystem`](distributedactorsystem.md) that is managing this distributed actor.
@@ -179,7 +177,7 @@ actor system for the decoding initializer when decoding a distributed actor.
 - [var id: Self.ID](distributedactor/id.md)
   Logical identity of this distributed actor.
 - [var unownedExecutor: UnownedSerialExecutor](distributedactor/unownedexecutor.md)
-  Retrieve the executor for this distributed actor as an optimized, unowned reference. This API is equivalent to `Actor/unownedExecutor`, however, by default, it intentionally returns `nil` if this actor is a reference to a remote distributed actor, because the executor for remote references is effectively never g
+  Retrieve the executor for this distributed actor as an optimized, unowned reference. This API is equivalent to `Actor.unownedExecutor`, however, by default, it intentionally returns `nil` if this actor is a reference to a remote distributed actor, because the executor for remote references is effectively never g
 ### Instance Methods
 - [func assertIsolated(@autoclosure () -> String, file: StaticString, line: UInt)](distributedactor/assertisolated(_:file:line:).md)
   Stops program execution if the current task is not executing on this actor’s serial executor.

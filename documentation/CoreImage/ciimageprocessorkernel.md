@@ -102,10 +102,10 @@ To apply your custom image processor class to filter one or more images, call th
   Override this class method to implement your processor’s ROI callback.
 - [class func roiTileArray(forInput: Int32, arguments: [String : Any]?, outputRect: CGRect) -> [CIVector]](ciimageprocessorkernel/roitilearray(forinput:arguments:outputrect:).md)
   Override this class method to implement your processor’s tiled ROI callback.
+- [class func apply(tiledExtent: [CIVector], inputs: [CIImage]?, arguments: [String : Any]?) throws -> CIImage](ciimageprocessorkernel/apply(tiledextent:inputs:arguments:).md)
+  Call this method on your Core Image Processor Kernel subclass to create a new image based on an array of tile extents that together cover the output.
 - [class func apply(withExtents: [CIVector], inputs: [CIImage]?, arguments: [String : Any]?) throws -> [CIImage]](ciimageprocessorkernel/apply(withextents:inputs:arguments:).md)
   Call this method on your multiple-output Core Image Processor Kernel subclass to create an array of new image objects given the specified array of extents.
-- [class func apply(withTiledExtent: [CIVector], inputs: [CIImage]?, arguments: [String : Any]?) throws -> CIImage](ciimageprocessorkernel/apply(withtiledextent:inputs:arguments:).md)
-  Call this method on your Core Image Processor Kernel subclass to create a new image based on an array of tile extents that together cover the output.
 - [class func outputFormat(at: Int32, arguments: [String : Any]?) -> CIFormat](ciimageprocessorkernel/outputformat(at:arguments:).md)
   Override this class method if your processor has more than one output and you want your processor’s output to be in a specific supported `CIPixelFormat`.
 - [class func process(with: [any CIImageProcessorInput]?, arguments: [String : Any]?, outputs: [any CIImageProcessorOutput]) throws](ciimageprocessorkernel/process(with:arguments:outputs:).md)

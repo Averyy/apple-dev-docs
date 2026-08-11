@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: method
 
+Sets the asset information value at the given key path.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)

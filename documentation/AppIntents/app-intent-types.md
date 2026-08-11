@@ -12,23 +12,29 @@ The app intents you create conform to the [`AppIntent`](appintent.md) protocol f
 
 ### Common actions
 - [protocol OpenIntent](openintent.md)
-  Open the associated item.
+  An app intent that opens and displays a specific item in your app’s interface.
 - [struct OpenURLIntent](openurlintent.md)
-  An intent that opens a universal link.
+  An app intent that opens one of your universal links and displays its contents.
 - [protocol SetValueIntent](setvalueintent.md)
   An intent that contains a value which can be set.
 - [protocol DeleteIntent](deleteintent.md)
   Delete the associated entity(s).
 - [protocol DeprecatedAppIntent](deprecatedappintent.md)
   An app intent that marks an action as deprecated and informs people which action to use instead.
+### Search
 - [protocol ShowInAppSearchResultsIntent](showinappsearchresultsintent.md)
-  An app intent that takes a person to search results for a specified search term.
+  An app intent that displays a set of search results in the app’s interface.
+- [struct StringSearchCriteria](stringsearchcriteria.md)
+  A type that tells your app to match its items against a provided string.
+- [enum StringSearchScope](stringsearchscope.md)
+  Constants that describe the types of content your app includes in search results when the search criteria is a string.
 ### Universal link navigation
 - [protocol URLRepresentableIntent](urlrepresentableintent.md)
-  An app intent with a URL representation.
+  An interface you add to an app intent type so the system can handle it like a universal link.
 - [struct IntentURLRepresentation](intenturlrepresentation.md)
-  The URL representation of an app intent.
+  The type that provides the URL for an app intent.
 - [protocol CustomURLRepresentationParameterConvertible](customurlrepresentationparameterconvertible.md)
+  An interface that allows a type to express its contents in a URL representation.
 ### Media actions
 - [protocol AudioPlaybackIntent](audioplaybackintent.md)
   An App Intent that plays, pauses, or otherwise modifies audio playback state when it executes.
@@ -45,7 +51,7 @@ The app intents you create conform to the [`AppIntent`](appintent.md) protocol f
 - [protocol PushToTalkTransmissionIntent](pushtotalktransmissionintent.md)
   An intent that begins or ends an audio transmission with the Push to Talk framework.
 - [protocol ShowInAppSearchResultsIntent](showinappsearchresultsintent.md)
-  An app intent that takes a person to search results for a specified search term.
+  An app intent that displays a set of search results in the app’s interface.
 ### Controls, widgets, and Live Activities
 - [protocol ControlConfigurationIntent](controlconfigurationintent.md)
   An interface for configuring a Control Center module.

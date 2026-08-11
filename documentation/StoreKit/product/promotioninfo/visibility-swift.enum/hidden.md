@@ -8,6 +8,7 @@ A visibility value that hides a promoted in-app purchase on the App Store on a u
 **Availability**:
 - iOS 16.4+
 - iPadOS 16.4+
+- Mac Catalyst 16.4+
 
 ## Declaration
 

@@ -14,12 +14,13 @@ The ratio of the total time spent hitching to the total time spent animating dur
 ## Declaration
 
 ```swift
-let hitchTimeRatio: Measurement<Unit>?
+let hitchTimeRatio: Measurement<HitchTimeRatio>?
 ```
 
 ## Mentions
 
 - [Monitoring app performance with MetricKit](monitoring-app-performance-with-metrickit.md)
+- [Analyzing app performance with MetricKit](analyzing-app-performance-with-metrickit.md)
 
 ## See Also
 

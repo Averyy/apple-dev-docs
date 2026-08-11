@@ -132,6 +132,8 @@ You can also query this object to find out about the supported camera models, de
 - [var isDespeckleSupported: Bool](cirawfilter/isdespecklesupported.md)
 - [var isHighlightRecoveryEnabled: Bool](cirawfilter/ishighlightrecoveryenabled.md)
 - [var isHighlightRecoverySupported: Bool](cirawfilter/ishighlightrecoverysupported.md)
+### Instance Methods
+- [func downloadResources(timeout: TimeInterval, completionHandler: ((any Error)?) -> Void) -> Progress](cirawfilter/downloadresources(timeout:completionhandler:).md)
 ### Type Methods
 - [class func supportedCameraModels(with: CIRAWDecoderVersion) -> [String]](cirawfilter/supportedcameramodels(with:).md)
 

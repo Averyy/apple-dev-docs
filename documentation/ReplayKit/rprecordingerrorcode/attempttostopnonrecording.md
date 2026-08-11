@@ -10,7 +10,7 @@ Attempted to stop a recording that’s not in a recording state.
 - iPadOS 9.0+
 - Mac Catalyst 13.1+
 - macOS 11.0+
-- tvOS 9.0+
+- tvOS 10.0+
 - visionOS 1.0+
 
 ## Declaration

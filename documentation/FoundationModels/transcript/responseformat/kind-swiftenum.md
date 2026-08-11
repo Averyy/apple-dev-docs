@@ -19,7 +19,7 @@ enum Kind
 
 ## Topics
 
-### Enumeration Cases
+### Response formats
 - [Transcript.ResponseFormat.Kind.schema(_:)](transcript/responseformat/kind-swift.enum/schema(_:).md)
 
 ## Relationships
@@ -28,6 +28,10 @@ enum Kind
 - [Equatable](../Swift/Equatable.md)
 - [Sendable](../Swift/Sendable.md)
 - [SendableMetatype](../Swift/SendableMetatype.md)
+
+## See Also
+
+- [let kind: Transcript.ResponseFormat.Kind](transcript/responseformat/kind-swift.property.md)
 
 
 ---

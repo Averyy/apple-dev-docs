@@ -3,7 +3,7 @@
 **Framework**: Distributed  
 **Kind**: init
 
-Initializes an instance of this distributed actor by decoding its [`id`](distributedactor/id.md), and passing it to the [`DistributedActorSystem`](distributedactorsystem.md) obtained from `decoder.userInfo[actorSystemKey]`.
+Initializes an instance of this distributed actor by decoding its [`id`](distributedactor/id.md), and passing it to the `DistributedActorSystem` obtained from `decoder.userInfo[actorSystemKey]`.
 
 **Availability**:
 - iOS 16.0+
@@ -29,7 +29,7 @@ the [`ActorSystem`](distributedactor/actorsystem-swift.associatedtype.md) that t
 
 ## Parameters
 
-- `decoder`: Used to decode the `ID` of this distributed actor.
+- `decoder`: Used to decode the [`id`](distributedactor/id.md) of this distributed actor.
 
 
 ---

@@ -3,6 +3,8 @@
 **Framework**: ColorSync  
 **Kind**: var
 
+The signature of the PCS-to-device transform tag for the saturation rendering intent.
+
 **Availability**:
 - iOS 16.0+
 - iPadOS 16.0+
@@ -21,10 +23,15 @@ var kColorSyncSigBToA2Tag: Unmanaged<CFString>!
 ## See Also
 
 - [var kColorSyncSigAToB0Tag: Unmanaged<CFString>!](kcolorsyncsigatob0tag.md)
+  The signature of the device-to-PCS transform tag for the perceptual rendering intent.
 - [var kColorSyncSigAToB1Tag: Unmanaged<CFString>!](kcolorsyncsigatob1tag.md)
+  The signature of the device-to-PCS transform tag for the media-relative colorimetric rendering intent.
 - [var kColorSyncSigAToB2Tag: Unmanaged<CFString>!](kcolorsyncsigatob2tag.md)
+  The signature of the device-to-PCS transform tag for the saturation rendering intent.
 - [var kColorSyncSigBToA0Tag: Unmanaged<CFString>!](kcolorsyncsigbtoa0tag.md)
+  The signature of the PCS-to-device transform tag for the perceptual rendering intent.
 - [var kColorSyncSigBToA1Tag: Unmanaged<CFString>!](kcolorsyncsigbtoa1tag.md)
+  The signature of the PCS-to-device transform tag for the media-relative colorimetric rendering intent.
 
 
 ---

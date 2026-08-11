@@ -22,9 +22,9 @@ protocol DistributedTargetInvocationDecoder<SerializationRequirement>
 
 ##### Decoding Distributedactor Arguments Using Codable
 
-When using an actor system where `ActorID` is `Codable`, every distributed actor using that system is also implicitly `Codable` (see [`DistributedActorSystem`](distributedactorsystem.md)). Such distributed actors are encoded as their `ActorID` stored in an `Encoder/singleValueContainer`. When `Codable` is being used by such a system, the `decodeNextArgument` method will be using `Decoder` to decode the incoming values, which may themselves be distributed actors.
+When using an actor system where `ActorID` is `Codable`, every distributed actor using that system is also implicitly `Codable` (see [`DistributedActorSystem`](distributedactorsystem.md)). Such distributed actors are encoded as their `ActorID` stored in an `Encoder.singlevaluecontainer()`. When `Codable` is being used by such a system, the [`decodeNextArgument()`](distributedtargetinvocationdecoder/decodenextargument().md) method will be using `Decoder` to decode the incoming values, which may themselves be distributed actors.
 
-An actor system must be provided to the `Decoder` in order for a distributed actor’s `Decodable/init(from:)` to be able to return the instance of the actor. Specifically, the decoded`ActorID` is passed to the actor system’s `resolve(id:as:)` method in order to return either a local instance identified by this ID, or creating a remote actor reference. Thus, you must set the actor system the decoding is performed for, on the decoder’s `userInfo`, as follows:
+An actor system must be provided to the `Decoder` in order for a distributed actor’s `Decodable.init(from:)` to be able to return the instance of the actor. Specifically, the decoded `ActorID` is passed to the actor system’s `resolve(id:as:)` method in order to return either a local instance identified by this ID, or creating a remote actor reference. Thus, you must set the actor system the decoding is performed for, on the decoder’s `userInfo`, as follows:
 
 ```swift
 mutating func decodeNextArgument<Argument: SerializationRequirement>() throws -> Argument {

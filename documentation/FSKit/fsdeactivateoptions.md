@@ -36,14 +36,10 @@ struct FSDeactivateOptions
 
 ## See Also
 
-- [func activate(options: FSTaskOptions, replyHandler: (FSActivateResult?, (any Error)?) -> Void)](fsvolume/handler/activate(options:replyhandler:).md)
-  Activates the volume using the specified options.
 - [class FSItem](fsitem.md)
   A distinct object in a file hierarchy, such as a file, directory, symlink, socket, and more.
 - [class FSActivateResult](fsactivateresult.md)
   The result of an activate call.
-- [func deactivate(options: FSDeactivateOptions, replyHandler: ((any Error)?) -> Void)](fsvolume/handler/deactivate(options:replyhandler:).md)
-  Tears down a previously initialized volume instance.
 
 
 ---

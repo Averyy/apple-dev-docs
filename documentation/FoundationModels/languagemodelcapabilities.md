@@ -35,7 +35,7 @@ struct MyLanguageModel: LanguageModel {
 }
 ```
 
-Apps can inspect [`capabilities`](languagemodel/capabilities.md) ahead of time to detect what the model supports before performing the request:
+Inspect [`capabilities`](languagemodel/capabilities.md) ahead of time to detect what the model supports before performing the request:
 
 ```swift
 // Before prompting the model with a generable type, check whether it
@@ -51,14 +51,12 @@ When a model doesn’t support a capability, the framework can refuse to dispatc
 
 ### Creating an instance
 - [init([LanguageModelCapabilities.Capability])](languagemodelcapabilities/init(_:).md)
-  Specify a list of supported capabilities
-- [init(capabilities: [LanguageModelCapabilities.Capability])](languagemodelcapabilities/init(capabilities:).md)
-  Specify a list of supported capabilities
+  Creates a capabilities instance from a list of supported capabilities.
 - [LanguageModelCapabilities.Capability](languagemodelcapabilities/capability.md)
   A capability that a given language model may or may not have.
 ### Inspecting model capabilities
 - [func contains(LanguageModelCapabilities.Capability) -> Bool](languagemodelcapabilities/contains(_:).md)
-  Check if a specific ability is supported.
+  Returns a Boolean value that indicates whether the specified capability is supported.
 
 ## Relationships
 
@@ -68,6 +66,8 @@ When a model doesn’t support a capability, the framework can refuse to dispatc
 
 ## See Also
 
+- [Running a Core AI model in a Foundation Models session](running-a-core-ai-model-in-a-foundation-models-session.md)
+  Send requests on device to an open source model you export with Core AI to get a consistent API experience.
 - [Optimizing key-value caching in language model sessions](optimizing-key-value-caching-in-language-model-sessions.md)
   Prevent repeated token processing by preserving the cached state across turns.
 - [protocol LanguageModel](languagemodel.md)

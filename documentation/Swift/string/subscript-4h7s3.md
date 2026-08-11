@@ -53,6 +53,10 @@ print(streetsSlice[0])
 
 > **Note**: O(1)
 
+## Parameters
+
+- `r`: A range of the collection’s indices. The bounds of the range must be valid indices of the collection.
+
 ## See Also
 
 - [subscript(Range<String.Index>) -> Substring](string/subscript(_:)-2so14.md)

@@ -25,7 +25,8 @@ static let indirectTouch: GestureInputKinds
 Examples:
 
 - performing a multi-touch gesture on a trackpad’s surface,
-- swiping on Siri Remote’s surface in tvOS.
+- swiping on Siri Remote’s surface in tvOS,
+- indirectly pinching content while looking at it in visionOS.
 
 ## See Also
 

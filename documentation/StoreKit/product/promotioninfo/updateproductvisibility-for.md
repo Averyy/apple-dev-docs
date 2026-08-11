@@ -8,6 +8,7 @@ Updates a value that indicates whether a promoted in-app purchase appears in the
 **Availability**:
 - iOS 16.4+
 - iPadOS 16.4+
+- Mac Catalyst 16.4+
 
 ## Declaration
 

@@ -74,6 +74,7 @@ You can load and configure audio with an [`AudioResource`](audioresource.md) sub
   The different ways that audio intensity diminishes as the distance between the listener and the sound source increases.
 ### Acoustics and group playback
 - [class ReverbMeshResource](reverbmeshresource.md)
+  A high-level representation of a collection of vertices and edges that define a shape used for simulating reverb.
 - [class AudioPlaybackGroupController](audioplaybackgroupcontroller.md)
   A controller that manages synchronized playback for a group of audio resources.
 

@@ -26,7 +26,7 @@ func onResponse(perform action: nonisolated(nonsending) sending @escaping () asy
 
 #### Discussion
 
-When the `onResponse` closure throws an error, the caller’s `respond` or `response` will propagate that error.
+When the `onResponse` closure throws an error, the caller’s `respond` or `response` propagates that error.
 
 Use this to perform cleanup or state updates when a dynamic profile completes:
 
@@ -51,6 +51,8 @@ struct MyDynamicProfile: LanguageModelSession.DynamicProfile {
   Runs an action when this dynamic profile becomes inactive.
 - [func onPrompt(perform:)](languagemodelsession/dynamicprofile/onprompt(perform:).md)
   Runs an action before the model is invoked for this dynamic profile.
+- [func onReasoning(perform:)](languagemodelsession/dynamicprofile/onreasoning(perform:).md)
+  Runs an action whenever this dynamic profile produces reasoning.
 - [func onToolCall(perform:)](languagemodelsession/dynamicprofile/ontoolcall(perform:).md)
   Runs an action whenever a tool is called within this dynamic profile.
 - [func onToolOutput(perform:)](languagemodelsession/dynamicprofile/ontooloutput(perform:).md)

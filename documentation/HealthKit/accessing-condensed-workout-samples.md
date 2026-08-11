@@ -34,7 +34,7 @@ The condensing and coalescing processes preserve all the data from the original 
 
 ##### Query High Frequency Data From a Condensed Workout
 
-Because HealthKit condenses and coalesces older workout data, any samples associated with a workout may actually represent a series of higher-frequency data. In many cases, you don’t need to operate on the `HKSamples` or the backing quantity series data. Instead, you should use [`HKStatisticsQuery`](hkstatisticsquery.md) and [`HKStatisticsCollectionQuery`](hkstatisticscollectionquery.md) to transparently compute statistics for the underlying data.
+Because HealthKit condenses and coalesces older workout data, any samples associated with a workout may actually represent a series of higher-frequency data. In many cases, you don’t need to operate on the [`HKSample`](hksample.md) instances or the backing quantity series data. Instead, you should use [`HKStatisticsQuery`](hkstatisticsquery.md) and [`HKStatisticsCollectionQuery`](hkstatisticscollectionquery.md) to transparently compute statistics for the underlying data.
 
 However, if your app needs to access the underlying data directly, start by querying for all the samples associated with a workout:
 

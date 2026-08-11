@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: struct
 
-Guardrails flag sensitive content from model input and output.
+A set of controls that flag sensitive content from model input and output.
 
 **Availability**:
 - iOS 26.0+
@@ -42,7 +42,7 @@ struct Guardrails
 ## See Also
 
 - [convenience init(useCase: SystemLanguageModel.UseCase, guardrails: SystemLanguageModel.Guardrails)](systemlanguagemodel/init(usecase:guardrails:).md)
-  Creates a [`SystemLanguageModel`](systemlanguagemodel.md) for a specific use case.
+  Creates a system language model instance for a specific use case.
 - [SystemLanguageModel.UseCase](systemlanguagemodel/usecase.md)
   A type that represents the use case for prompting.
 

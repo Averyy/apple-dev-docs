@@ -21,13 +21,12 @@ class ATTrackingManager
 
 ## Topics
 
-### Type Properties
-- [class var trackingAuthorizationStatus: ATTrackingManager.AuthorizationStatus](attrackingmanager/trackingauthorizationstatus.md)
-  The authorization status that is current for the calling application.
-### Type Methods
+### Requesting Authorization
 - [class func requestTrackingAuthorization(completionHandler: (ATTrackingManager.AuthorizationStatus) -> Void)](attrackingmanager/requesttrackingauthorization(completionhandler:).md)
   The request for user authorization to access app-related data.
-### Enumerations
+### Determining Tracking Authorization Status
+- [class var trackingAuthorizationStatus: ATTrackingManager.AuthorizationStatus](attrackingmanager/trackingauthorizationstatus.md)
+  The authorization status that is current for the calling application.
 - [ATTrackingManager.AuthorizationStatus](attrackingmanager/authorizationstatus.md)
   The status values for app tracking authorization.
 

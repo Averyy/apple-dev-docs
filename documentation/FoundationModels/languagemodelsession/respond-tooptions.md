@@ -24,6 +24,7 @@ nonisolated(nonsending) final func respond(to prompt: Prompt, options: Generatio
 
 - [Optimizing key-value caching in language model sessions](optimizing-key-value-caching-in-language-model-sessions.md)
 - [Composing dynamic sessions with instructions and profiles](composing-dynamic-sessions-with-instructions-and-profiles.md)
+- [Running a Core AI model in a Foundation Models session](running-a-core-ai-model-in-a-foundation-models-session.md)
 - [Supporting languages and locales with Foundation Models](supporting-languages-and-locales-with-foundation-models.md)
 
 #### Return Value
@@ -38,7 +39,7 @@ A string composed of the tokens produced by sampling model output.
 ## See Also
 
 - [var isResponding: Bool](languagemodelsession/isresponding.md)
-  A Boolean value that indicates a response is being generated.
+  A Boolean value that indicates whether a response is being generated.
 - [func respond(options: GenerationOptions, prompt: () throws -> Prompt) async throws -> LanguageModelSession.Response<String>](languagemodelsession/respond(options:prompt:).md)
   Produces a response to a prompt.
 - [func respond<Content>(generating: Content.Type, includeSchemaInPrompt: Bool, options: GenerationOptions, prompt: () throws -> Prompt) async throws -> LanguageModelSession.Response<Content>](languagemodelsession/respond(generating:includeschemainprompt:options:prompt:).md)

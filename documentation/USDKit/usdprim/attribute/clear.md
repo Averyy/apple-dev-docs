@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: method
 
+Clears the authored value of this attribute.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)

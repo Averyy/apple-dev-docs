@@ -24,7 +24,6 @@ Allocate and manage memory manually.
   `MutableSpan<Element>` represents a contiguous region of memory which contains initialized instances of `Element`.
 - [struct MutableRawSpan](mutablerawspan.md)
   `MutableRawSpan` represents a contiguous region of memory which contains initialized bytes.
-- [struct SpanIterator](spaniterator.md)
 ### Safe Access to Raw Bytes
 - [typealias FullyInhabited](fullyinhabited.md)
   A protocol for types whose memory can safely be written as or read from raw bytes.

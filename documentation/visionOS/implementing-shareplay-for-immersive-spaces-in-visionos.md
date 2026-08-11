@@ -50,7 +50,7 @@ See [`Defining your app’s SharePlay activities`](https://developer.apple.com/d
 
 ##### Start a Shareplay Session
 
-The app displays a Start button when someone isn’t part of an active SharePlay sesssion. When a person presses the Start button, the sample calls [`activate()`](https://developer.apple.com/documentation/GroupActivities/GroupActivity/activate()) to configure a session and invite other participants to join the activity.
+The app displays a Start button when someone isn’t part of an active SharePlay session. When a person presses the Start button, the sample calls [`activate()`](https://developer.apple.com/documentation/GroupActivities/GroupActivity/activate()) to configure a session and invite other participants to join the activity.
 
 ```swift
   var sharePlayButton: some View {

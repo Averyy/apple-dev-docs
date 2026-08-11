@@ -25,7 +25,7 @@ A collection of fetched results that share a specified identifier.
 
 Examine a `Section` instance to find the entities that satisfy a [`SectionedFetchRequest`](sectionedfetchrequest.md) predicate, and that have a particular property with the value stored in the section’s [`id`](sectionedfetchresults/section/id.md) parameter. You specify which property by setting the fetch request’s `sectionIdentifier` parameter during initialization, or by modifying the corresponding [`SectionedFetchResults`](sectionedfetchresults.md) instance’s [`sectionIdentifier`](sectionedfetchresults/sectionidentifier.md) property.
 
-Obtain specific sections by treating the fetch results as a collection. For example, consider the following property declaration that fetches `Quake` managed objects that the [`Loading and Displaying a Large Data Feed`](loading_and_displaying_a_large_data_feed.md) sample code project defines to store earthquake data:
+Obtain specific sections by treating the fetch results as a collection. For example, consider the following property declaration that fetches `Quake` managed objects that the [`Loading and displaying a large data feed`](loading-and-displaying-a-large-data-feed.md) sample code project defines to store earthquake data:
 
 ```swift
 @SectionedFetchRequest<String, Quake>(

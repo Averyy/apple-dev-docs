@@ -34,10 +34,8 @@ This descriptor defines the complete fetch criteria including predicate, sort de
   The sort descriptors used to order the results.
 - [var sectionBy: PartialKeyPath<Element>?](resultsobserver/sectionby.md)
   The key path on the element used to determine section grouping.
-- [var sections: ResultsSectionCollection<Element, SectionName>?](resultsobserver/sections.md)
+- [var sections: SectionedResults<Element, SectionTitle>?](resultsobserver/sections.md)
   The sections computed from the current results, grouped by [`sectionBy`](resultsobserver/sectionby.md).
-- [struct ResultsSectionCollection](resultssectioncollection.md)
-  A collection of sections as returned by [`sections`](resultsobserver/sections.md) or `Query.sections`.
 
 
 ---

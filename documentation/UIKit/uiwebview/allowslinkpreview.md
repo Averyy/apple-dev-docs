@@ -8,6 +8,7 @@ A Boolean value that determines whether pressing on a link displays a preview of
 **Availability**:
 - iOS 9.0+
 - iPadOS 9.0+
+- Mac Catalyst 9.0+
 
 ## Declaration
 

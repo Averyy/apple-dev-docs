@@ -8,6 +8,7 @@ The label for the up button, if the control isn’t a composite direction pad.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

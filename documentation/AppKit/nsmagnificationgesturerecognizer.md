@@ -22,7 +22,7 @@ This gesture recognizer automatically sets the value of the [`delaysMagnificatio
 
 ## Topics
 
-### Finding the Magnification Factor
+### Finding the magnification factor
 - [var magnification: CGFloat](nsmagnificationgesturerecognizer/magnification.md)
   The amount of magnification to apply.
 

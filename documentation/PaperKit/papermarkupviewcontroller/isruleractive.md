@@ -8,6 +8,7 @@ A Boolean value that indicates whether a ruler view is visible on the canvas.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 - visionOS 26.0+
 
 ## Declaration

@@ -57,14 +57,13 @@ To use Apple Foundation Models, people need a device that supports Apple Intelli
   Details you provide that define the model’s intended behavior on prompts.
 - [struct Prompt](prompt.md)
   A prompt from a person to the model.
-- [struct Transcript](transcript.md)
-  A linear history of entries that reflect an interaction with a session.
-- [struct TranscriptErrorHandlingPolicy](transcripterrorhandlingpolicy.md)
-  Options for controlling how a language model session manages the transcript when errors occur.
 - [struct GenerationOptions](generationoptions.md)
   Options that control how the model generates its response to a prompt.
 - [struct ContextOptions](contextoptions.md)
   Options that configure details that should appear in the prompt.
+### Session transcripts
+- [Transcripts](transcripts.md)
+  Inspect a session’s history and work with the entries, segments, and attachments it contains.
 ### Prompt attachments
 - [Analyzing images with multimodal prompting](analyzing-images-with-multimodal-prompting.md)
   Analyze and extract information from images by combining them with descriptive text prompts.
@@ -91,6 +90,8 @@ To use Apple Foundation Models, people need a device that supports Apple Intelli
 ### Structured output
 - [Generating Swift data structures with guided generation](generating-swift-data-structures-with-guided-generation.md)
   Create robust apps by describing output you want programmatically.
+- [macro Generable(description: String?)](generable(description:).md)
+- [macro Guide(description: String)](guide(description:).md)
 - [protocol Generable](generable.md)
   A type that the model uses when responding to prompts.
 - [struct GenerationSchema](generationschema.md)
@@ -125,8 +126,10 @@ To use Apple Foundation Models, people need a device that supports Apple Intelli
 - [com.apple.developer.private-cloud-compute](../BundleResources/Entitlements/com.apple.developer.private-cloud-compute.md)
   A Boolean value that indicates whether the app can use Private Cloud Compute.
 - [class PrivateCloudComputeLanguageModel](privatecloudcomputelanguagemodel.md)
-  A variant of Apple Foundation Models that runs on Private Cloud Compute (PCC) to provide enhanced capabilities while maintaining privacy guarantees.
+  A variant of Apple Foundation Models that runs on Private Cloud Compute to provide enhanced capabilities while maintaining privacy guarantees.
 ### Custom language model provider
+- [Running a Core AI model in a Foundation Models session](running-a-core-ai-model-in-a-foundation-models-session.md)
+  Send requests on device to an open source model you export with Core AI to get a consistent API experience.
 - [Optimizing key-value caching in language model sessions](optimizing-key-value-caching-in-language-model-sessions.md)
   Prevent repeated token processing by preserving the cached state across turns.
 - [protocol LanguageModel](languagemodel.md)
@@ -147,7 +150,6 @@ To use Apple Foundation Models, people need a device that supports Apple Intelli
 - [class SessionPropertyValues](sessionpropertyvalues.md)
   A container for property values.
 - [macro SessionPropertyEntry()](sessionpropertyentry().md)
-  A macro for defining a custom key.
 ### Safety
 - [Improving the safety of generative model output](improving-the-safety-of-generative-model-output.md)
   Create generative experiences that appropriately handle sensitive inputs and respect people.

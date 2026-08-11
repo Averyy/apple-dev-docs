@@ -8,6 +8,7 @@ Returns a Boolean value that indicates whether a ring around this circle’s cir
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
+- Mac Catalyst 18.0+
 - macOS 15.0+
 - tvOS 18.0+
 - visionOS 2.0+

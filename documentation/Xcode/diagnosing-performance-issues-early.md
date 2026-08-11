@@ -83,9 +83,14 @@ If you configure Xcode to report runtime issues in tests as warnings, Xcode show
 
 ![A screenshot of the Test Report showing a runtime issue that Xcode detected during a test.](https://docs-assets.developer.apple.com/published/630eeabf08b3e4870829c0206027de09/diagnosing-performance-issues-early-4%402x.png)
 
-##### Disable the Thread Performance Checker Tool
+##### Follow Profiling Guidance with the Thread Performance Checker Tool
 
-The Thread Performance Checker tool is enabled by default for schemes that build an app in your project. To disable it, choose Product > Scheme > Edit Scheme to display the scheme editor. Select the Run schemes, navigate to the Diagnostics section, and unselect the Thread Performance Checker tool checkbox.
+Xcode enables the Thread Performance Checker tool by default for the Run action. The Thread Performance Checker tool works by inserting checks to detect issues such as priority inversions and dependencies between operations of different quality-of-service levels. This overhead is minimal in most cases, but some apps can trigger conditions that cause that overhead to appear in their call stacks. If you profile your app and want to be sure that the Thread Performance Checker tool’s overhead never appears in your call stacks, do one of the following:
+
+- Use the Profile action instead of the Run action.
+- Launch the tool from Instruments instead of attaching to a process that you already launched from Xcode.
+
+For higher confidence in your profiling results, disable the Thread Performance Checker tool. Choose Product > Scheme > Edit Scheme to display the scheme editor. Select the Run schemes, navigate to the Diagnostics section, and unselect the Thread Performance Checker tool checkbox.
 
 ![A screenshot of the Scheme Editor with the Thread Performance Checker checkbox selected.](https://docs-assets.developer.apple.com/published/982a500a5193deb7fde595751b084213/diagnosing-performance-issues-early-3%402x.png)
 

@@ -11,20 +11,35 @@ Generative AI models have powerful creativity, but with this creativity comes th
 The Foundation Models framework has two base layers of safety, where the framework uses:
 
 - Apple Foundation Models, running on-device and on Private Cloud Compute, trained to handle sensitive topics with care.
-- *Guardrails* that aim to block harmful or sensitive content, such as self-harm, violence, and adult materials, from both model input and output.
+- Guardrails that aim to block harmful or sensitive content, such as self-harm, violence, and adult materials.
 
-Because safety risks are often contextual, some harms might bypass both built-in framework safety layers. It’s vital to design additional safety layers specific to your app. When developing your feature, decide what’s acceptable or might be harmful in your generative AI feature, based on your app’s use case, cultural context, and audience.
+Because safety risks are often contextual, some harms might bypass both built-in framework safety layers. It’s vital to consider whether to design additional safety layers specific to your app. When developing your feature, decide what’s acceptable or might be harmful in your generative AI feature, based on your app’s use case, cultural context, and audience.
 
 For more information on designing generative AI experiences responsibly, see Human Interface Guidelines > Foundations > [`Generative AI`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/generative-ai).
 
+#### Review Guardrails for a Model
+
+Guardrails are a safety system tied to a specific model. For example, all on-device Apple Foundation Models you use through [`SystemLanguageModel`](systemlanguagemodel.md) have guardrails that check the input prompt and the model’s output. Use [`SystemLanguageModel.Guardrails`](systemlanguagemodel/guardrails.md) to configure the guardrail level most appropriate for your use case. The Apple Foundation Models on Private Cloud Compute (PCC) also have guardrails, but they have different policies that you can’t directly configure.
+
+For any foundation model you use, consider the following questions early when designing your feature:
+
+- Does the model have a guardrail system? If so, are they configurable?
+- When does the model throw errors like [`LanguageModelError.guardrailViolation(_:)`](languagemodelerror/guardrailviolation(_:).md) or [`LanguageModelError.refusal(_:)`](languagemodelerror/refusal(_:).md)?
+- When might this model respond with a refusal message such as *“Sorry I cannot help…”*?
+
+Additionally, consider the following questions for your use case and audience:
+
+- Where might the model or its guardrails be too permissive? This is where you need to design additional layers of protection specific to your app.
+- Where might the model or its guardrails be too restrictive? This is where you need to work with the model’s guardrail configurations, if any exist, or design your feature to better fit within the model’s policy to provide a better user experience.
+
 #### Handle Guardrail Errors
 
-When you send a prompt to the model, [`SystemLanguageModel.Guardrails`](systemlanguagemodel/guardrails.md) check the input prompt and the model’s output. If either fails the guardrail’s safety check, the model session throws a [`LanguageModelError.guardrailViolation(_:)`](languagemodelerror/guardrailviolation(_:).md) error:
+When you send a prompt to the model, the input prompt and the model output are both checked by a guardrail. If either fails the safety check, the model session throws a [`LanguageModelError.guardrailViolation(_:)`](languagemodelerror/guardrailviolation(_:).md) error:
 
 ```swift
 do {
     let session = LanguageModelSession()
-    let topic = // A potentially harmful topic.
+    let topic = "" // A potentially sensitive topic.
     let prompt = "Write a respectful and funny story about \(topic)."
     let response = try await session.respond(to: prompt)
 } catch LanguageModelError.guardrailViolation(let violation) {
@@ -36,24 +51,27 @@ If you encounter a guardrail violation error for any built-in prompt in your app
 
 #### Handle Model Refusals
 
-The on-device language model may not be suitable for handling all requests and may refuse requests for a topic. When you generate a string response, and the model refuses a request, it generates a message that begins with a refusal like “Sorry, I can’t help with”.
+A model can freely refuse to respond to an input. For example, the on-device [`SystemLanguageModel`](systemlanguagemodel.md) isn’t suitable for all topics, and it may refuse to discuss sensitive subjects. When you generate a string response and the model refuses a request, it generates a message that might begin with a refusal like *“Sorry, I can’t help with that…”*.
 
 Design your app experience with refusal messages in mind and present the message to the person using your app. You might not be able to programmatically determine whether a string response is a normal response or a refusal, so design the experience to anticipate both. If it’s critical to determine whether the response is a refusal message, initialize a new [`LanguageModelSession`](languagemodelsession.md) and prompt the model to classify whether the string is a refusal.
 
-When you use guided generation to generate Swift structures or types, there’s no placeholder for a refusal message. Instead, the model throws a [`LanguageModelSession.GenerationError.refusal(_:_:)`](languagemodelsession/generationerror/refusal(_:_:).md) error. When you catch the error, you can ask the model to generate a string refusal message:
+When you use guided generation to generate Swift structures or types, there’s no placeholder for a refusal message. Instead, the model throws a [`LanguageModelError.refusal(_:)`](languagemodelerror/refusal(_:).md) error. When you catch the error, ask the model to generate a string refusal message:
 
 ```swift
 do {
     let session = LanguageModelSession()
     let topic = ""  // A sensitive topic.
-    let response = try session.respond(
+    let response = try await session.respond(
         to: "List five key points about: \(topic)",
         generating: [String].self
     )
-} catch LanguageModelSession.GenerationError.refusal(let refusal, _) {
-    // Generate an explanation for the refusal.
-    if let message = try? await refusal.explanation {
-        // Display the refusal message.
+} catch LanguageModelError.refusal(let refusal) {
+    do {
+        // Attempt to retrieve an explanation for the refusal.
+        let explanation = try await refusal.explanation.content
+    } catch {
+        // The explanation request may fail, so fall back to the debug text.
+        let explanation = refusal.debugDescription
     }
 }
 ```
@@ -63,6 +81,17 @@ Display the explanation in your app to tell people why a request failed, and off
 If you encounter a refusal message, or refusal error, for any built-in prompts in your app, experiment with re-phrasing your prompt to avoid any sensitive topics that might cause the refusal.
 
 For more information about guided generation, see [`Generating Swift data structures with guided generation`](generating-swift-data-structures-with-guided-generation.md).
+
+#### Consider Multimodal Safety
+
+Multimodal models accept more than one type of input. For example, Apple Foundation Models can take both images and text in their input, and Apple’s guardrails cover both input types. When handling multimodal input, consider:
+
+- Each media input individually.
+- The full multimedia input considered together.
+
+For example, an inappropriate image may be in the same prompt as a benign text question, or a sensitive text question might be in the same prompt as a seemingly harmless image. There are also cases where both the text and image may be harmless on their own, but become inappropriate or offensive when taken together.
+
+If your feature uses a person’s personal photos in a prompt, it’s your responsibility to be transparent about any privacy risks. While Apple Foundation Models on-device and on PCC are designed to protect a person’s privacy, sending a photo to some model providers may mean inadvertently giving that photo to the model provider to use in their training data or other uses. Get to know the privacy features of any model you use and clearly communicate how your app uses a photo when you request access to a person’s Photos library. For more, see Human Interface Guidelines > Foundations > [`Privacy`](https://developer.apple.comhttps://developer.apple.com/design/human-interface-guidelines/privacy).
 
 #### Build Boundaries on Input and Output
 
@@ -113,7 +142,7 @@ do {
         you must decline with 'Sorry, I can't do that.'
         """
     let session = LanguageModelSession(instructions: instructions)
-    let prompt = // Open input from a person using the app.
+    let prompt = "" // Open input from a person using the app.
     let response = try await session.respond(to: prompt)
 } catch LanguageModelError.guardrailViolation(let violation) {
     // Handle the safety error.
@@ -125,12 +154,14 @@ do {
 If you want to include open-input from people, instructions for safety are recommended. For an additional layer of safety, use a format string in normal prompts that wraps people’s input in your own content that specifies how the model should respond:
 
 ```swift
-let userInput = // The input a person enters in the app.
+let userInput = "" // The input a person enters in the app.
 let prompt = """
     Generate a wholesome and empathetic journal prompt that helps \
     this person reflect on their day. They said: \(userInput)
     """
 ```
+
+Adding [`Instructions`](instructions.md) is a way to help reduce over-blocking by helping a model understand what content is appropriate in your context. The very beginning of an [`Instructions`](instructions.md) string is an effective place to give the model a clear role with permission to work in a domain, such as *“You are an AI assistant for a personal finance app who can assist with…”* or *“You are an AI tutor who can help secondary school students understand biology”*. By telling the model more about your app’s goal and audience, you help the model more accurately assess the safety of a request.
 
 #### Add a Deny List of Blocked Terms
 
@@ -138,7 +169,7 @@ If you allow prompt input from people or outside sources, consider adding your o
 
 ```swift
 let session = LanguageModelSession()
-let userInput = // The input a person enters in the app.
+let userInput = "" // The input a person enters in the app.
 let prompt = "Generate a wholesome story about: \(userInput)"
 
 // A function you create that evaluates whether the input 
@@ -176,7 +207,7 @@ This mode only works for generating a string value. When you use guided generati
 
 Before you use permissive content mode, consider what’s appropriate for your audience. The session skips the guardrail checks in this mode, so it never throws a [`LanguageModelError.guardrailViolation(_:)`](languagemodelerror/guardrailviolation(_:).md) error when generating string responses.
 
-However, even with the [`SystemLanguageModel`](systemlanguagemodel.md) guardrails off, the on-device system language model still has a layer of safety. For some content, the model may still produce a refusal message that’s similar to, “Sorry, I can’t help with.”
+However, even with the [`SystemLanguageModel`](systemlanguagemodel.md) guardrails off, the on-device system language model still has a layer of safety. For some content, the model may still produce a refusal message that’s similar to, “Sorry, I can’t help with that.”
 
 #### Create a Risk Assessment
 
@@ -205,9 +236,11 @@ Although most people will interact with your app in respectful ways, it’s impo
 - Input that is nonsensical, snippets of code, or random characters.
 - Input that includes sensitive content.
 - Input that includes controversial topics.
-- Vague or unclear input that could be misinterpreted.
+- Vague or unclear input that’s easy to misinterpret.
 
-Create a list of potentially harmful prompt inputs that you can run as part of your app’s tests. Include every prompt in your app — even safe ones — as part of your app testing. For each prompt test, log the timestamp, full input prompt, the model’s response, and whether it activates any built-in safety or mitigations you’ve included in your app. When starting out, manually read the model’s response on all tests to ensure it meets your design and safety goals. To scale your tests, consider using a frontier LLM to auto-grade the safety of each prompt. Building a test pipeline for prompts and safety is a worthwhile investment for tracking changes in how your app responds over time.
+Create a list of potentially harmful prompt inputs that you can run as part of your app’s tests. Include every prompt in your app, even safe ones, as part of your app testing. For each prompt test, log the timestamp, full input prompt, the model’s response, and whether it activates any built-in safety or mitigations you’ve included in your app. When starting out, manually read the model’s response on all tests to ensure it meets your design and safety goals. To scale your tests, consider using a frontier LLM to auto-grade the safety of each prompt. Building a test pipeline for prompts and safety is a worthwhile investment for tracking changes in how your app responds over time.
+
+> 💡 **Tip**: Evaluations are tests for generative model features. Use the [`Evaluations`](https://developer.apple.com/documentation/Evaluations) framework to create them for your app.
 
 Someone might purposefully attempt to break your feature or produce bad output — especially someone who won’t be harmed by their actions. But, keep in mind that it’s very important to identify cases where someone might *accidentally* be harmed during normal app use.
 
@@ -217,15 +250,22 @@ Don’t engage in any testing that could cause you or others harm. Apple’s bui
 
 #### Report Safety Concerns
 
-Somewhere in your app, it’s important to include a way that people can report potentially harmful content. Continuously monitor the feedback you receive, and be responsive to quickly handling any safety issues that arise. If someone reports a safety concern that you believe isn’t being properly handled by Apple’s built-in guardrails, report it to Apple with [`Feedback Assistant`](https://developer.apple.comhttps://support.apple.com/guide/feedback-assistant/get-started-fbab81460adb/mac).
+It’s important to include a way that people can report potentially harmful content. Continuously monitor the feedback you receive, and be responsive when handling any safety issues that arise. If someone reports a safety concern that you believe isn’t handled by Apple’s built-in guardrails, report it to Apple using [`Feedback Assistant`](https://developer.apple.comhttps://support.apple.com/guide/feedback-assistant/get-started-fbab81460adb/mac).
 
-The Foundation Models framework offers utilities for feedback. Use [`LanguageModelFeedback`](languagemodelfeedback.md) to retrieve language model session transcripts from people using your app. After collecting feedback, you can serialize it into a JSON file and include it in the report you send with Feedback Assistant.
+When you provide a report, include:
+
+- The model your app is calling.
+- The prompt and any guided generation types in the request.
+- The name and argument types of any tools in the request.
+- The language and region.
+
+Use [`logFeedbackAttachment(sentiment:issues:desiredOutput:)`](languagemodelsession/logfeedbackattachment(sentiment:issues:desiredoutput:).md) to produce a `Data` object containing the session’s transcript and any feedback information you specify. Save the JSON-encoded feedback to a file and include it in the report you send with Feedback Assistant.
 
 #### Monitor Safety for Model or Guardrail Updates
 
-Apple releases updates to the system model as part of regular OS updates. If you participate in the developer beta program you can test your app with new model version ahead of people using your app. When the model updates, it’s important to re-run your full prompt tests in addition to your adversarial safety tests because the model’s response may change. Your risk assessment can help you track any change to safety risks in your app.
+Apple releases updates to the on-device model as part of regular OS updates. If you participate in the developer beta program you can test your app with new model versions ahead of people using your app.
 
-Apple may update the built-in guardrails at any time outside of the regular OS update cycle. This is done to rapidly respond, for example, to reported safety concerns that require a fast response. Include all of the prompts you use in your app in your test suite, and run tests regularly to identify when prompts start activating the guardrails.
+When any model you use updates, it’s important to re-run all of your prompt tests in addition to your adversarial safety tests because the model’s response may change. Your risk assessment helps you track any change to safety risks in your app. Use the [`Evaluations`](https://developer.apple.com/documentation/Evaluations) framework to regularly test your prompts and help you track your test results over time.
 
 
 ---

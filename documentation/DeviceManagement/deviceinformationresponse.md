@@ -22,7 +22,7 @@ object DeviceInformationResponse
 
 ## Mentions
 
-- [Deploy software updates using declarative management](deploy-software-updates-using-declarative-management.md)
+- [Deploying software updates using declarative management](deploying-software-updates-using-declarative-management.md)
 
 ## Topics
 

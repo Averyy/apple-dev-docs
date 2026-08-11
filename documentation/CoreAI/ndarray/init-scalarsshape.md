@@ -30,7 +30,7 @@ var ndArray = NDArray(scalars: (0..<4) as Range<Int32>, shape: [2, 2])
 
 ## Parameters
 
-- `scalars`: A sequence of scalars to be copied into the new ndArray. Note that `Scalar` must be a type that corresponds to a scalar type found on the `NDArray.ScalarType` enum.
+- `scalars`: A sequence of scalars to be copied into the new ndArray. Note that `Scalar` must be a type that corresponds to a scalar type found on the [`NDArray.ScalarType`](ndarray/scalartype-swift.enum.md) enum.
 - `shape`: The shape of the new ndArray. The ndArray will be stored in row-major order and the scalars will be assigned in row-major order.
 
 ## See Also

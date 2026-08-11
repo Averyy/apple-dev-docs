@@ -18,6 +18,10 @@ Creates a policy with the specified purge conditions.
 init(purgeConditions: AIModelCache.Policy.PurgeConditions)
 ```
 
+#### Discussion
+
+> **Note**: On tvOS this policy will be made purgeable for storagePressure.
+
 ## Parameters
 
 - `purgeConditions`: The set of conditions under which the system can purge specialized assets.

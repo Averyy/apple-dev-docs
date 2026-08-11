@@ -69,7 +69,7 @@ struct BoundingSphereBox
 - [class LowLevelTextureResource](lowleveltextureresource.md)
   A container for texture data in a custom format.
 - [class LowLevelMaterialResource](lowlevelmaterialresource.md)
-  A compiled material composed of three independently-replaceable shader stages.
+  A compiled material composed of three independently-replaceable shader functions.
 - [class LowLevelDeviceResource](lowleveldeviceresource.md)
   Encapsulates a GPU device resource created by the application. On visionOS, resources must be allocated in shared memory that can be used by the renderer process. Once a device resource is in use by the renderer, changing its contents is unsafe and undefined.
 

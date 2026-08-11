@@ -32,12 +32,12 @@ Prompts can contain content written by you, an outside source, or input directly
 let prompt = Prompt("What are miniature schnauzers known for?")
 ```
 
-Use [`PromptBuilder`](promptbuilder.md) to dynamically control the prompt’s content based on your app’s state. The code below shows that if the Boolean is `true`, the prompt includes a second line of text:
+Use [`PromptBuilder`](promptbuilder.md) to dynamically control the prompt’s content based on your app’s state. The code below shows if the Boolean is `true`, the prompt includes a second line of text:
 
 ```swift
 let responseShouldRhyme = true
 let prompt = Prompt {
-    "Answer the following question from the user: \(userInput)"
+    "Answer the following question: Do Siberian Huskies love cold weather?"
     if responseShouldRhyme {
         "Your response MUST rhyme!"
     }
@@ -78,10 +78,6 @@ Prompting the same session eventually leads to exceeding the context window size
   An object that represents a session that interacts with a language model.
 - [struct Instructions](instructions.md)
   Details you provide that define the model’s intended behavior on prompts.
-- [struct Transcript](transcript.md)
-  A linear history of entries that reflect an interaction with a session.
-- [struct TranscriptErrorHandlingPolicy](transcripterrorhandlingpolicy.md)
-  Options for controlling how a language model session manages the transcript when errors occur.
 - [struct GenerationOptions](generationoptions.md)
   Options that control how the model generates its response to a prompt.
 - [struct ContextOptions](contextoptions.md)

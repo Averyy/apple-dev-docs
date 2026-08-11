@@ -34,10 +34,6 @@ Each line in the file is expected to be a valid JSON object representing an eval
 
 ## See Also
 
-- [func saveJSON(to: URL, includeReportMetadata: Bool) throws -> URL](evaluationresult/savejson(to:includereportmetadata:).md)
-  Saves evaluation results to a single JSON file.
-- [func jsonData(includeReportMetadata: Bool, jsonOptions: JSONSerialization.WritingOptions) throws -> Data](evaluationresult/jsondata(includereportmetadata:jsonoptions:).md)
-  Returns the evaluation results as JSON data.
 - [static func loadJSON(from: URL) throws -> EvaluationResult](evaluationresult/loadjson(from:).md)
   Loads an evaluation result from a JSON file on disk.
 - [init(jsonData: Data) throws](evaluationresult/init(jsondata:).md)

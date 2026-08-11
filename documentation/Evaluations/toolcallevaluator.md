@@ -30,12 +30,11 @@ Produces both a strict and partial result from a single evaluation pass.
 
 Supports ordered sequences, unordered expectations, disallowed tool checks, and group steps.
 
-```swift
-let toolsAllPass = Metric("Tools All Pass")
-let toolsPercentagePass = Metric("Tools Percentage Pass")
+Use the [`toolsAllPass`](metric/toolsallpass.md) and [`toolsPercentagePass`](metric/toolspercentagepass.md) conveniences for the standard metrics:
 
+```swift
 let evaluator = ToolCallEvaluator<ModelSample<String>>(
-    allPass: toolsAllPass, percentagePass: toolsPercentagePass
+    allPass: .toolsAllPass, percentagePass: .toolsPercentagePass
 )
 ```
 

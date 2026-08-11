@@ -30,7 +30,7 @@ nonisolated
 ## See Also
 
 - [LowLevelRenderer.Configuration](lowlevelrenderer/configuration.md)
-  The immutable configuration for a renderer, established at initialization.
+  The configuration for a renderer.
 
 
 ---

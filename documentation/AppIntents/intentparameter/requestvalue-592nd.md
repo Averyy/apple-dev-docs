@@ -20,10 +20,6 @@ Request a value from the user for this parameter.
 final func requestValue(_ dialog: IntentDialog? = nil) async throws -> Value.ValueType
 ```
 
-## Mentions
-
-- [Adding parameters to an app intent](adding-parameters-to-an-app-intent.md)
-
 #### Return Value
 
 The value supplied by the user

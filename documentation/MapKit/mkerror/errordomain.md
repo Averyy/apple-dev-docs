@@ -20,6 +20,11 @@ The error domain.
 static var errorDomain: String { get }
 ```
 
+## See Also
+
+- [var localizedDescription: String](../Swift/Error/localizedDescription.md)
+  Retrieve the localized description for this error.
+
 
 ---
 

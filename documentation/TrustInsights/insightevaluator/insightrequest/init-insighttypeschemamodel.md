@@ -8,7 +8,6 @@ Initializes a new insight request with the provided insight type, schema, and mo
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 
 ## Declaration
 

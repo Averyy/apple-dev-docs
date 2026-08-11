@@ -16,7 +16,7 @@ An optional closure that decides whether a generated sample is valid.
 ## Declaration
 
 ```swift
-var validator: (nonisolated(nonsending) @Sendable (SampleType) async throws -> Bool)?
+var validator: (nonisolated(nonsending) @Sendable (SampleType) async throws -> Bool)? { get }
 ```
 
 #### Discussion

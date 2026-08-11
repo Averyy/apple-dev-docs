@@ -21,7 +21,7 @@ init?(_ object: USDPrim.Property)
 
 #### Discussion
 
-Returns `nil` if the property] is not a relationship..
+Returns `nil` if the property is not a relationship.
 
 
 ---

@@ -19,11 +19,11 @@ Note that the example doesn’t provide localized text for the `title` and `desc
 
 ##### Make a Parameter Optional or Required
 
-How you define your parameter variables determines whether the system treats that parameter as required or optional. If you define a variable as a non-optional type, the system knows the parameter is required and, when necessary, requests a value. Conversely, if you define a variable as an optional type, the system assumes the parameter is optional and doesn’t request a value. In this scenario, use the property wrapper’s [`requestValue(_:)`](intentparameter/requestvalue(_:)-592nd.md) method to pause execution and request a value if the intent can’t proceed otherwise.
+How you define your parameter variables determines whether the system treats that parameter as required or optional. If you define a variable as a non-optional type, the system knows the parameter is required and, when necessary, requests a value. Conversely, if you define a variable as an optional type, the system assumes the parameter is optional and doesn’t request a value. In this scenario, pause the intent and request a value when the intent can’t otherwise proceed by throwing the property wrapper’s [`needsValueError(_:)`](intentparameter/needsvalueerror(_:).md).
 
 ```swift
 guard let date = date else {
-    throw $date.requestValue("What date would you like to use?")
+    throw $date.needsValueError("What date would you like to use?")
 }
 ```
 

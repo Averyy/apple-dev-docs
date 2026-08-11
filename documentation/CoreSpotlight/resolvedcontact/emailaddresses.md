@@ -3,7 +3,7 @@
 **Framework**: Core Spotlight  
 **Kind**: property
 
-Email addresses associated with this contact.
+The email addresses for this contact.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -18,10 +18,14 @@ Email addresses associated with this contact.
 var emailAddresses: [String]
 ```
 
+#### Discussion
+
+Specify each email address as a separate string in the array.
+
 ## See Also
 
 - [var phoneNumbers: [String]](resolvedcontact/phonenumbers.md)
-  Phone numbers associated with this contact.
+  The phone numbers for this contact.
 
 
 ---

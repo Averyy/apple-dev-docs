@@ -8,6 +8,7 @@ Processes a purchase for the product.
 **Availability**:
 - iOS 18.4+
 - iPadOS 18.4+
+- Mac Catalyst 18.4+
 - tvOS 18.4+
 - visionOS 2.4+
 

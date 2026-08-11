@@ -88,6 +88,9 @@ For design guidance on how to implement features that involve [`Widgets`](https:
 ### Deprecated
 - [Deprecated symbols](deprecated-symbols.md)
   Review unsupported symbols and their replacements.
+### Structures
+- [struct EmptySnippetIntent](emptysnippetintent.md)
+  A snippet intent that renders an empty view.
 
 
 ---

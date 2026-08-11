@@ -25,22 +25,22 @@ Walking Steadiness classifications measures the ability of the user to move with
 
 ## Topics
 
-### Accessing Classifications
+### Accessing classifications
 - [HKAppleWalkingSteadinessClassification.ok](hkapplewalkingsteadinessclassification/ok.md)
   A classification indicating that the stability of the user’s gait is within the normal range.
 - [HKAppleWalkingSteadinessClassification.low](hkapplewalkingsteadinessclassification/low.md)
   A classification indicating that the stability of the user’s gate is below normal.
 - [HKAppleWalkingSteadinessClassification.veryLow](hkapplewalkingsteadinessclassification/verylow.md)
   A classification indicating that the stability of the user’s gate is considerably below normal.
+### Accessing extremes
+- [var minimum: HKQuantity](hkapplewalkingsteadinessclassification/minimum.md)
+  The maximum walking steadiness percentage for the classification.
+- [var maximum: HKQuantity](hkapplewalkingsteadinessclassification/maximum.md)
+  The minimum walking steadiness percentage for the classification.
 ### Initializers
 - [init(for: HKQuantity) throws](hkapplewalkingsteadinessclassification/init(for:).md)
   Creates a new classification for the provided percentage.
 - [init?(rawValue: Int)](hkapplewalkingsteadinessclassification/init(rawvalue:).md)
-### Instance Properties
-- [var maximum: HKQuantity](hkapplewalkingsteadinessclassification/maximum.md)
-  The minimum walking steadiness percentage for the classification.
-- [var minimum: HKQuantity](hkapplewalkingsteadinessclassification/minimum.md)
-  The maximum walking steadiness percentage for the classification.
 ### Default Implementations
 - [CaseIterable Implementations](hkapplewalkingsteadinessclassification/caseiterable-implementations.md)
 

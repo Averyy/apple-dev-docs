@@ -20,6 +20,10 @@ A representation of a texture.
 @preconcurrency class TextureResource
 ```
 
+## Mentions
+
+- [Rendering high-fidelity characters](rendering-high-fidelity-characters.md)
+
 #### Overview
 
 A texture resource holds pixel data accessible by the GPU, organized as an image, a cube of images, an array of images, or a 3D image (volume texture).

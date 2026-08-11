@@ -51,6 +51,8 @@ The system creates workout zones as part of an [`HKWorkoutZoneConfiguration`](hk
   A structure that represents the time spent in a specific zone during a workout or activity.
 - [struct HKWorkoutZoneGroup](hkworkoutzonegroup.md)
   A structure that contains zone configuration and time-in-zone data for a quantity type.
+- [class HKLiveWorkoutZoneUpdate](hkliveworkoutzoneupdate.md)
+  A structure that contains information about zone transitions during a live workout session.
 
 
 ---

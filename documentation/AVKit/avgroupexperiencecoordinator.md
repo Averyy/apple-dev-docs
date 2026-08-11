@@ -56,9 +56,9 @@ Access an experience coordinator by querying a player view controller for its [`
 - [class AVMultiviewManager](avmultiviewmanager.md)
   An object that manages viewing multiple videos at once.
 - [class AVViewport](avviewport.md)
-  A configuration object that manages viewport settings for different presentation modes.
+  Provides configuration options for how content is displayed in different viewing contexts. Use this object to customize the visual presentation of your content.
 - [class AVPortalViewport](avportalviewport.md)
-  A viewport configuration used when displaying content in portals.
+  Defines the visual parameters for content displayed within a portal frame. Use this configuration to create cinematic viewing experiences with custom framing.
 - [Third-party casting support](third-party-casting-support.md)
   Provide custom playback controls for third-party casting services and other media sources.
 

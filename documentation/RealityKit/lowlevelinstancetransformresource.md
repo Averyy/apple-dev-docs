@@ -23,6 +23,8 @@ Assign a `LowLevelInstanceTransformResource` to a [`LowLevelMeshInstance`](lowle
 
 Create a `LowLevelInstanceTransformResource` using [`makeInstanceTransformResource(instanceCapacity:)`](lowlevelrendercontext/makeinstancetransformresource(instancecapacity:).md).
 
+> ❗ **Important**: After creation, [`instanceCount`](lowlevelinstancetransformresource/instancecount.md) is `0`. Set it to the number of transforms you write before rendering.
+
 ## Topics
 
 ### Inspecting instance counts
@@ -32,17 +34,17 @@ Create a `LowLevelInstanceTransformResource` using [`makeInstanceTransformResour
   The maximum number of instances the buffer holds.
 ### Reading transform data
 - [func read<R, E>((consuming Span<float4x4>) throws(E) -> R) throws(E) -> R](lowlevelinstancetransformresource/read(_:).md)
-  Provides read-only CPU access to the transform data.
+  Reads the current transform data synchronously on the CPU.
 - [func read(commandBuffer: (any MTLCommandBuffer)?) -> any MTLBuffer](lowlevelinstancetransformresource/read(commandbuffer:).md)
-  Returns a `MTLBuffer` for GPU-side read access to the transform data.
+  Returns a Metal buffer containing the current transform data for GPU read operations.
 ### Replacing transform data
 - [func replace<R, E>((inout MutableSpan<float4x4>) throws(E) -> R) throws(E) -> R](lowlevelinstancetransformresource/replace(_:).md)
-  Provides full read-write CPU access, replacing all transform data.
+  Replaces all transform data synchronously on the CPU.
 - [func replace(commandBuffer: (any MTLCommandBuffer)?) -> any MTLBuffer](lowlevelinstancetransformresource/replace(commandbuffer:).md)
-  Returns a `MTLBuffer` for GPU-side write access to the transform data.
+  Returns a Metal buffer you populate on the GPU with the new transform data.
 ### Instance Methods
 - [func update<R, E>((inout MutableSpan<float4x4>) throws(E) -> R) throws(E) -> R](lowlevelinstancetransformresource/update(_:).md)
-  Provides partial read-write CPU access to the transform data.
+  Updates the transform data in place synchronously on the CPU.
 
 ## See Also
 
@@ -61,7 +63,7 @@ Create a `LowLevelInstanceTransformResource` using [`makeInstanceTransformResour
 - [class LowLevelTextureResource](lowleveltextureresource.md)
   A container for texture data in a custom format.
 - [class LowLevelMaterialResource](lowlevelmaterialresource.md)
-  A compiled material composed of three independently-replaceable shader stages.
+  A compiled material composed of three independently-replaceable shader functions.
 - [class LowLevelDeviceResource](lowleveldeviceresource.md)
   Encapsulates a GPU device resource created by the application. On visionOS, resources must be allocated in shared memory that can be used by the renderer process. Once a device resource is in use by the renderer, changing its contents is unsafe and undefined.
 - [struct BoundingSphereBox](boundingspherebox.md)

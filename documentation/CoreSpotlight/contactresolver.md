@@ -3,7 +3,7 @@
 **Framework**: Core Spotlight  
 **Kind**: protocol
 
-Resolves the current user’s identity for search queries involving people.
+An interface you use to help Foundation models resolve references to the person using the app.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -24,9 +24,9 @@ protocol ContactResolver : Sendable
 
 #### Overview
 
-When a search involves people (e.g., “emails from me”, “notes I created yesterday”), the search tool needs to know who “me” is. Implement this protocol to provide the current user’s contact information from your app’s identity source — such as an account profile, Contacts framework, or other source.
+When a search involves people, the search tool needs to know how to resolve references to “I” or “me” in any conversations. Implement this protocol in a custom type and assign it to the Spotlight search tool you use with your Foundation models session. Your custom type returns a [`ResolvedContact`](resolvedcontact.md) structure, which contains any information your app uses to refer to the person. For example, fill the structure with name information, email addresses, or phone numbers from the account your app manages.
 
-**Example:**
+The following example shows an implementation of this structure and the code you use to assign it to your Spotlight search tool.
 
 ```swift
 struct MyContactResolver: ContactResolver {
@@ -45,7 +45,7 @@ configuration.contactResolver = MyContactResolver()
 
 ### Returning the identity data
 - [func userIdentity() -> ResolvedContact](contactresolver/useridentity.md)
-  Returns the current user’s contact information.
+  Returns the information for the current contact.
 
 ## Relationships
 
@@ -56,7 +56,7 @@ configuration.contactResolver = MyContactResolver()
 ## See Also
 
 - [struct ResolvedContact](resolvedcontact.md)
-  Contact information used to match person and organization references in search queries.
+  Contact information to help a search query match references to a person or organization.
 
 
 ---

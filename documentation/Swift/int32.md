@@ -173,8 +173,8 @@ struct Int32
 - [SignedInteger](signedinteger.md)
 - [SignedNumeric](signednumeric.md)
 - [Strideable](strideable.md)
-- [USDPrim.Attribute.MetadataValue](../USDKit/USDPrim/Attribute/MetadataValue.md)
 - [USDPrim.Attribute.Value](../USDKit/USDPrim/Attribute/Value.md)
+- [USDStage.Object.MetadataValue](../USDKit/USDStage/Object/MetadataValue.md)
 - [USDValueProtocol](../USDKit/USDValueProtocol.md)
 - [vDSP_IntegerConvertable](../Accelerate/vDSP_IntegerConvertable.md)
 

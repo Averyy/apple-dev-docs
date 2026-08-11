@@ -17,6 +17,17 @@ The semantic role of the item. Defaults to `NSToolbarItemGroupRoleAutomatic`.
 var role: NSToolbarItemGroup.Role { get set }
 ```
 
+## See Also
+
+- [var controlRepresentation: NSToolbarItemGroup.ControlRepresentation](nstoolbaritemgroup/controlrepresentation-swift.property.md)
+  A value that represents how a toolbar displays a grouped toolbar item.
+- [NSToolbarItemGroup.ControlRepresentation](nstoolbaritemgroup/controlrepresentation-swift.enum.md)
+- [var selectionMode: NSToolbarItemGroup.SelectionMode](nstoolbaritemgroup/selectionmode-swift.property.md)
+  The selection mode of the grouped toolbar item.
+- [NSToolbarItemGroup.SelectionMode](nstoolbaritemgroup/selectionmode-swift.enum.md)
+  A value that indicates how a grouped toolbar item selects its subitems.
+- [NSToolbarItemGroup.Role](nstoolbaritemgroup/role-swift.enum.md)
+
 
 ---
 

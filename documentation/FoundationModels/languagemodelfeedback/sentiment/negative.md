@@ -19,6 +19,10 @@ A negative sentiment
 case negative
 ```
 
+## Mentions
+
+- [Inspecting session transcripts and reporting model feedback](inspecting-session-transcripts-and-reporting-model-feedback.md)
+
 ## See Also
 
 - [LanguageModelFeedback.Sentiment.neutral](languagemodelfeedback/sentiment/neutral.md)

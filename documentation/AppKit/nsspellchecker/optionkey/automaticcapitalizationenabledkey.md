@@ -12,6 +12,11 @@
 static let automaticCapitalizationEnabledKey: NSSpellChecker.OptionKey
 ```
 
+## See Also
+
+- [static let generateInlinePredictionsKey: NSSpellChecker.OptionKey](nsspellchecker/optionkey/generateinlinepredictionskey.md)
+- [static let waitForAllGrammarCheckingResultsKey: NSSpellChecker.OptionKey](nsspellchecker/optionkey/waitforallgrammarcheckingresultskey.md)
+
 
 ---
 

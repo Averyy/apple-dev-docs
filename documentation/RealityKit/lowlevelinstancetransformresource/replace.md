@@ -3,7 +3,7 @@
 **Framework**: RealityKit  
 **Kind**: method
 
-Provides full read-write CPU access, replacing all transform data.
+Replaces all transform data synchronously on the CPU.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -17,14 +17,20 @@ Provides full read-write CPU access, replacing all transform data.
 final func replace<R, E>(_ body: @_lifetime(0: copy 0) (inout MutableSpan<float4x4>) throws(E) -> R) throws(E) -> R where E : Error, R : ~Copyable
 ```
 
+#### Discussion
+
+You pass a closure that receives a mutable span representing the transform data. Upon entry the transform data is undefined; the closure is responsible for populating it with valid data. This span is valid only for the duration of the closure.
+
+> **Note**: Any error thrown by `body`.
+
 ## Parameters
 
-- `body`: A closure that receives a `MutableSpan<float4x4>` for the new transform data. The span is valid only for the duration of the closure.
+- `body`: A closure that receives a mutable span over the transform data and fully populates it.
 
 ## See Also
 
 - [func replace(commandBuffer: (any MTLCommandBuffer)?) -> any MTLBuffer](lowlevelinstancetransformresource/replace(commandbuffer:).md)
-  Returns a `MTLBuffer` for GPU-side write access to the transform data.
+  Returns a Metal buffer you populate on the GPU with the new transform data.
 
 
 ---

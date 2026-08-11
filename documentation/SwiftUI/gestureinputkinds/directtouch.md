@@ -25,8 +25,7 @@ static let directTouch: GestureInputKinds
 Examples:
 
 - touching a screen directly with fingers,
-- directly touching or pinching content in visionOS,
-- indirectly pinching content while looking at it in visionOS.
+- directly touching or pinching content in visionOS.
 
 > **Note**: In visionOS, you can further customize what hand motions your gesture recognizes using [`handActivationBehavior(_:)`](gesture/handactivationbehavior(_:).md).
 

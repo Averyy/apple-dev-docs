@@ -32,6 +32,7 @@ This property is safe to access on an invalid or expired prim.
 - [var isValid: Bool](usdprim/isvalid.md)
   A Boolean value indicating whether this prim is valid.
 - [var specifier: USDPrim.Specifier](usdprim/specifier-swift.property.md)
+  The specifier that describes how this prim is defined, such as `def`, `over`, or `class`.
 - [var stage: USDStage](usdprim/stage.md)
   The stage that owns this prim.
 - [var parent: USDPrim?](usdprim/parent.md)

@@ -18,6 +18,12 @@
 static var defaultResolverSpecification: some ResolverSpecification { get }
 ```
 
+## See Also
+
+- [StringSearchCriteria.Specification](stringsearchcriteria/specification.md)
+- [StringSearchCriteria.UnwrappedType](stringsearchcriteria/unwrappedtype.md)
+- [StringSearchCriteria.ValueType](stringsearchcriteria/valuetype.md)
+
 
 ---
 

@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: property
 
+Every authored metadata value on this object.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)

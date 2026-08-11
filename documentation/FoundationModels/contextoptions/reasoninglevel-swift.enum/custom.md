@@ -22,11 +22,11 @@ case custom(String)
 ## See Also
 
 - [ContextOptions.ReasoningLevel.deep](contextoptions/reasoninglevel-swift.enum/deep.md)
-  A level that indicates deep thinking that’s good for more analysis over a request.
+  A level that indicates deep reasoning that’s good for more analysis over a request.
 - [ContextOptions.ReasoningLevel.light](contextoptions/reasoninglevel-swift.enum/light.md)
-  A level that indicates light thinking that’s good for quick responses.
+  A level that indicates light reasoning that’s good for quick responses.
 - [ContextOptions.ReasoningLevel.moderate](contextoptions/reasoninglevel-swift.enum/moderate.md)
-  A level that indicates a moderate amount thinking.
+  A level that indicates a moderate amount of reasoning.
 
 
 ---

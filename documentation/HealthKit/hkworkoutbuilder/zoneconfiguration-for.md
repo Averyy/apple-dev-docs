@@ -21,11 +21,11 @@ func zoneConfiguration(for quantityType: HKQuantityType) async throws -> HKWorko
 
 #### Return Value
 
-The zone configuration, or `nil` if no configuration exists for the quantity type.
+This method returns a custom configuration set by `setZoneConfiguration(_:for:)`, if it exists. Otherwise, this method returns the person’s preferred workout zone configuration from the health store.
 
 #### Discussion
 
-This method returns any custom configuration set with [`setCustomZoneConfiguration(_:for:)`](hkworkoutbuilder/setcustomzoneconfiguration(_:for:).md), or the person’s preferred configuration if no custom configuration has been set.
+This method throws an error if the framework can’t retrieve a zone configuration for the given quantity type.
 
 ## Parameters
 
@@ -34,7 +34,9 @@ This method returns any custom configuration set with [`setCustomZoneConfigurati
 ## See Also
 
 - [func setCustomZoneConfiguration(HKWorkoutZoneConfiguration?, for: HKQuantityType) async throws](hkworkoutbuilder/setcustomzoneconfiguration(_:for:).md)
-  Sets the zone configuration for the specified quantity type for this workout. In order to provide a custom workout zone configuration, this must be called before beginning collection on the builder. If a custom configuration is not provided, the user’s preferred workout zone configuration will be used for zone calculations.
+  Overrides the preferred zone configuration with a custom zone for the current workout.
+- [func zoneGroup(for: HKQuantityType) -> HKWorkoutZoneGroup?](hkworkoutbuilder/zonegroup(for:).md)
+  Returns the current zone group for the specified quantity type.
 
 
 ---

@@ -29,7 +29,7 @@ The testing library defines a number of traits that you can add to test function
 ## Topics
 
 ### Type Methods
-- [static func evaluates(any Evaluation, info: [String : String]) -> Self](testtrait/evaluates(_:info:).md)
+- [static func evaluates(any Evaluation, info: [String : String], recordTranscripts: Bool) -> Self](testtrait/evaluates(_:info:recordtranscripts:).md)
   Creates a trait that runs a single evaluation and makes its result available through the current evaluation context.
 
 ## Relationships

@@ -3,6 +3,8 @@
 **Framework**: App Intents  
 **Kind**: init
 
+Creates a URL representation for an app intent using the provided Swift string.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -17,6 +19,10 @@
 ```swift
 init(_ value: String)
 ```
+
+## Parameters
+
+- `value`: The Swift string to use for the URL.
 
 
 ---

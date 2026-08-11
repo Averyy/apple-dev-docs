@@ -40,7 +40,7 @@ You can use this control in conjunction with [`Map`](map.md) as a standalone vie
     }
 ```
 
-Alternatively, use `MapPitchToggle` in conjunction with the `mapControls(_:)` modifier. For example:
+Alternatively, use `MapPitchToggle` in conjunction with the [`mapControls(_:)`](https://developer.apple.com/documentation/SwiftUI/View/mapControls(_:)) modifier. For example:
 
 ```swift
     Map()
@@ -54,6 +54,19 @@ Alternatively, use `MapPitchToggle` in conjunction with the `mapControls(_:)` mo
 ### Creating a map pitch toggle
 - [init(scope: Namespace.ID?)](mappitchtoggle/init(scope:).md)
   Creates a new map pitch toggle control with the provided scope.
+### Managing map control sizing and visibility
+- [func mapControlVisibility(Visibility) -> some View
+](../SwiftUI/View/mapControlVisibility(_:).md)
+  Configures all Map controls in the environment to have the specified visibility
+- [func mapControls(() -> some View) -> some View
+](../SwiftUI/View/mapControls(_:).md)
+  Configures all `Map` views in the associated environment to have standard size and position controls
+- [func controlSize(_:)](../SwiftUI/View/controlSize(_:).md)
+  Sets the size for controls within this view.
+### Setting the namespace Identifier
+- [func mapScope(Namespace.ID) -> some View
+](../SwiftUI/View/mapScope(_:).md)
+  Creates a mapScope that SwiftUI uses to connect map controls to an associated map.
 
 ## Relationships
 

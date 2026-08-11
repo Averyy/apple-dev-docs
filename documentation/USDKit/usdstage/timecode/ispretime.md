@@ -3,7 +3,7 @@
 **Framework**: USDKit  
 **Kind**: property
 
-Whether this time code is a pre-time (the limit approaching from the left of a discontinuous value).
+A Boolean value that indicates whether this time code represents the limit of a value approaching from the left of a discontinuity.
 
 **Availability**:
 - iOS 27.0+ (Beta)

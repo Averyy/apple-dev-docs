@@ -23,7 +23,7 @@ struct ResponseStream<Content> where Content : Generable
 
 ### Collecting the response stream
 - [func collect() async throws -> sending LanguageModelSession.Response<Content>](languagemodelsession/responsestream/collect.md)
-  The result from a streaming response, after it completes.
+  Returns the result from a streaming response, after it completes.
 ### Getting a snapshot of a partial response
 - [LanguageModelSession.ResponseStream.Snapshot](languagemodelsession/responsestream/snapshot.md)
   A snapshot of partially generated content.

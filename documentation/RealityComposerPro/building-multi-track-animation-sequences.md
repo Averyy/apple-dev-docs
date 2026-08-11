@@ -16,7 +16,7 @@ Motion Path deserves special attention because it’s a small system in itself: 
 
 ![A screenshot of Reality Composer Pro showing an animation sequence with an Animation Motion Path selected.](https://docs-assets.developer.apple.com/published/ab9f9db12f08f1aa7e7ecf2de677514c/AnimationMotionPath3%402x.png)
 
-> **Note**: The tracks and actions you author are wasted work at runtime unless the Sequence is rooted where its Animation Library Component expects to find it. The sections below build up multi-track authoring using tracks, actions, and Motion Path. Once your Sequence is ready, see [`Creating animation sequences for auto-play`](creating-animation-sequences-for-autoplay.md) to wire it for auto-play, or [`Automating motion path creation with editor-scripting commands`](automating-motion-path-creation-with-editor-scripting-commands.md) to build the same Motion Path programmatically with editor-scripting commands.
+> **Note**: The tracks and actions you author are wasted work at runtime unless the Sequence is rooted where its Animation Library Component expects to find it. The sections below build up multi-track authoring using tracks, actions, and Motion Path. Once your Sequence is ready, see [`Creating animation sequences for auto-play`](creating-animation-sequences-for-autoplay.md) to wire it for auto-play, or doc:automating-motion-path-creation-with-editor-scripting-commands to build the same Motion Path programmatically with editor-scripting commands.
 
 If you haven’t created a Sequence yet, start there before returning to this article — this one assumes you already know how to open the Sequence Editor, assign a basic Root Entity, and drop a single clip on a track. See [`Creating animation sequences`](creating-animation-sequences.md) to learn the basics.
 
@@ -68,7 +68,7 @@ Rather than placing every point by hand, the Shape dropdown in the Motion Path I
 
 A handful of other Motion Path toggles apply regardless of shape. Look Along Path, when enabled, automatically orients the entity to face its direction of travel. Closed Shape connects the path’s end back to its start, the same result you’d get by manually closing a Custom path. Constant Speed keeps the entity moving at a uniform rate along the whole path regardless of how unevenly the points are spaced in time.
 
-A generated shape still slots into a multi-track Sequence exactly like the manual path described above — pair it with an Enable/Disable Entity, Play Audio, or Billboard Blend track on a sub-track of the same entity to trigger those actions in sync with the motion. To build a Motion Path like this programmatically instead of through the Sequencer UI, see [`Automating motion path creation with editor-scripting commands`](automating-motion-path-creation-with-editor-scripting-commands.md).
+A generated shape still slots into a multi-track Sequence exactly like the manual path described above — pair it with an Enable/Disable Entity, Play Audio, or Billboard Blend track on a sub-track of the same entity to trigger those actions in sync with the motion. To build a Motion Path like this programmatically instead of through the Sequencer UI, see doc:automating-motion-path-creation-with-editor-scripting-commands.
 
 #### Manage Overlapping Clips with Cross Fades
 
@@ -80,8 +80,6 @@ There’s a hard ceiling on how much overlap the cross-fade system supports: 0.7
   Build animation sequences that drive entity behavior across multiple tracks in Reality Composer Pro.
 - [Creating animation sequences for auto-play](creating-animation-sequences-for-autoplay.md)
   Root an animation Sequence at the right entity, then wire it to an Animation Library Component so it plays automatically at runtime.
-- [Automating motion path creation with editor-scripting commands](automating-motion-path-creation-with-editor-scripting-commands.md)
-  Build the same multi-track Sequence and Motion Path shown in the Sequencer UI programmatically, by chaining editor-scripting commands together.
 - [Working with the Animation Graph](working-with-the-animation-graph.md)
   Build character animation state machines visually using the Animation Graph in Reality Composer Pro.
 - [Building an advanced Animation Graph](building-an-advanced-animation-graph.md)

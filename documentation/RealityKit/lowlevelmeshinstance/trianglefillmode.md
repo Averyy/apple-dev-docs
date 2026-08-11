@@ -3,6 +3,8 @@
 **Framework**: RealityKit  
 **Kind**: property
 
+The fill mode used when rasterizing this mesh instance’s triangles.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)

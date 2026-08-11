@@ -8,6 +8,7 @@ A type that contains the response information from a successful photo ID data re
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

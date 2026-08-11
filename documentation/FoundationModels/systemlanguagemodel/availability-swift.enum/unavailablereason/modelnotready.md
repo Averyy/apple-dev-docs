@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: case
 
-The model(s) aren’t available on the user’s device.
+The models aren’t available on the user’s device.
 
 **Availability**:
 - iOS 26.0+

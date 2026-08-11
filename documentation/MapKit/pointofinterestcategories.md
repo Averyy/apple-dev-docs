@@ -22,6 +22,9 @@ struct PointOfInterestCategories
 
 ## Topics
 
+### Creating point of interest categories
+- [init(arrayLiteral: Self.ArrayLiteralElement...)](../Swift/ExpressibleByArrayLiteral/init(arrayLiteral:).md)
+  Creates an instance initialized with the given elements.
 ### Categories to include or exclude
 - [static var all: PointOfInterestCategories](pointofinterestcategories/all.md)
   A list of all points of interest categories, both included and excluded.
@@ -36,6 +39,9 @@ struct PointOfInterestCategories
   Show only points of interest belonging to certain categories from the provided array.
 - [static func including(MKPointOfInterestCategory...) -> PointOfInterestCategories](pointofinterestcategories/including(_:)-6flda.md)
   Show only points of interest belonging to certain categories from the provided list.
+### Type aliases
+- [associatedtype ArrayLiteralElement](../Swift/ExpressibleByArrayLiteral/ArrayLiteralElement.md)
+  The type of the elements of an array literal.
 
 ## Relationships
 

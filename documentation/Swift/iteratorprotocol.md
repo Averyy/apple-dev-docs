@@ -200,8 +200,6 @@ for count in threeTwoOne {
 - [protocol BorrowingIteratorProtocol](borrowingiteratorprotocol.md)
   A type that provides borrowed access to the values of a borrowing sequence.
 - [struct BorrowingIteratorAdapter](borrowingiteratoradapter.md)
-- [protocol BorrowingSequence](borrowingsequence.md)
-  A type that provides sequential, borrowing access to its elements.
 
 
 ---

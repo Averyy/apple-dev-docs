@@ -276,6 +276,8 @@ Finally, the render loop draws each submesh in the model with the specific LOD p
 
 ## See Also
 
+- [Writing reusable GPU functions with generic pointers](writing-reusable-gpu-functions-with-generic-pointers.md)
+  Define utility functions once for multiple address spaces, and share types with your app’s main code.
 - [Using the Metal 4 compilation API](using-the-metal-4-compilation-api.md)
   Control when and how you compile an app’s shaders.
 - [Shader libraries](shader-libraries.md)

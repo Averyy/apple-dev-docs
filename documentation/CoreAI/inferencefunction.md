@@ -24,7 +24,7 @@ struct InferenceFunction
 
 #### Overview
 
-An `InferenceFunction` owns the resources needed for inference, including model weights and intermediate buffers. You load a function from an [`AIModel`](aimodel.md) and call `run(inputs:states:outputViews:)` to perform inference.
+An `InferenceFunction` owns the resources needed for inference, including model weights and intermediate buffers. You load a function from an [`AIModel`](aimodel.md) and call [`run(inputs:states:outputViews:)`](inferencefunction/run(inputs:states:outputviews:)-14emi.md) to perform inference.
 
 This type is `Sendable`, so you can run it concurrently from multiple tasks. The function automatically allocates additional intermediate buffers as needed to support concurrency.
 

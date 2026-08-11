@@ -16,7 +16,7 @@ The strategy for selecting existing samples as examples in the prompt.
 ## Declaration
 
 ```swift
-var samplingStrategy: SampleGenerator<SampleType>.SamplingStrategy?
+var samplingStrategy: SampleGenerator<SampleType>.SamplingStrategy? { get }
 ```
 
 #### Discussion

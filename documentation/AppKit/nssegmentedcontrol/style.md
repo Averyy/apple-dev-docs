@@ -54,6 +54,8 @@ enum Style
   Constants that specify the type of tracking behavior a segmented control exhibits.
 - [var segmentStyle: NSSegmentedControl.Style](nssegmentedcontrol/segmentstyle.md)
   The visual style used to display the control.
+- [var role: NSSegmentedControl.Role](nssegmentedcontrol/role-swift.property.md)
+- [NSSegmentedControl.Role](nssegmentedcontrol/role-swift.enum.md)
 
 
 ---

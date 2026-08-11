@@ -8,6 +8,7 @@ An object that represents a request made for subscriber account information.
 **Availability**:
 - iOS 10.0+
 - iPadOS 10.0+
+- Mac Catalyst 10.0+
 - macOS ?+
 - tvOS 10.0+
 - visionOS 1.0+

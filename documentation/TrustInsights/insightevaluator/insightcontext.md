@@ -8,7 +8,6 @@ A structure that provides details about the evaluations to request and provides 
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
-- Mac Catalyst 27.0+ (Beta)
 
 ## Declaration
 

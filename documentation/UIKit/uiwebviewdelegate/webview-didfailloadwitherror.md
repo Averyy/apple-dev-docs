@@ -8,6 +8,7 @@ Sent if a web view failed to load a frame.
 **Availability**:
 - iOS 2.0+
 - iPadOS 2.0+
+- Mac Catalyst 2.0+
 
 ## Declaration
 

@@ -23,7 +23,7 @@ var contextOptions: ContextOptions
 
 - [var id: UUID](languagemodelexecutorgenerationrequest/id.md)
   A request id for logging and tracing purposes
-- [var metadata: [String : any Sendable & Codable & Equatable]](languagemodelexecutorgenerationrequest/metadata.md)
+- [var metadata: [String : GeneratedContent]](languagemodelexecutorgenerationrequest/metadata.md)
   Metadata to attach to the request
 - [var enabledToolDefinitions: [Transcript.ToolDefinition]](languagemodelexecutorgenerationrequest/enabledtooldefinitions.md)
   The subset tool definitions that the model is allowed to call

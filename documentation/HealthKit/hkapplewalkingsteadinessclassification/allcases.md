@@ -3,7 +3,7 @@
 **Framework**: HealthKit  
 **Kind**: property
 
-An array that contains all valid walking steadiness classifications.
+A collection of all values for Apple Walking Steadiness classification
 
 **Availability**:
 - iOS 15.0+

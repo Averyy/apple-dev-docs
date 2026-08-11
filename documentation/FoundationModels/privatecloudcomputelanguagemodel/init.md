@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: init
 
-Creates a new Private Cloud Compute language model instance.
+Creates a Private Cloud Compute language model instance.
 
 **Availability**:
 - iOS 27.0+ (Beta)

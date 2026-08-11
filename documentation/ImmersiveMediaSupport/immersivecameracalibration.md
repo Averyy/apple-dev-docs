@@ -47,7 +47,7 @@ This data includes calibration type, calibration name, calibration file name, le
 - [var name: String](immersivecameracalibration/name.md)
   A string identifying this calibration.
 - [var origin: ImmersiveCameraCalibration.CameraOrigin](immersivecameracalibration/origin.md)
-  Position information that represents the origin from which to render the calibration in 3D space relative to the person’s eye.
+  Position information, in meters, that represents the origin from which to render the calibration in 3D space relative to the person’s eye.
 - [var positionable: Bool](immersivecameracalibration/positionable.md)
   A Boolean value that indicates whether to anchor this calibration in mixed reality 3D space rather than centering it on the person’s eye position.
 - [var textureMapping: ImmersiveCameraCalibration.CameraTextureMapping](immersivecameracalibration/texturemapping.md)

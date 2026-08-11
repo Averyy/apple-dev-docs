@@ -38,7 +38,7 @@ Use `MapUserLocationButton` in conjunction with [`Map`](map.md) as a stand alone
     }
 ```
 
-You can also use `MapUserLocationButton` in conjunction with the `Map/mapControls(_:)` modifier as shown in this example:
+You can also use `MapUserLocationButton` in conjunction with the [`mapControls(_:)`](https://developer.apple.com/documentation/SwiftUI/View/mapControls(_:)) modifier as shown in this example:
 
 ```swift
     Map()
@@ -52,6 +52,25 @@ You can also use `MapUserLocationButton` in conjunction with the `Map/mapControl
 ### Creating a map user location button
 - [init(scope: Namespace.ID?)](mapuserlocationbutton/init(scope:).md)
   Creates a new user location button with the scope you specify.
+### Managing map control sizing and visibility
+- [func mapControlVisibility(Visibility) -> some View
+](../SwiftUI/View/mapControlVisibility(_:).md)
+  Configures all Map controls in the environment to have the specified visibility
+- [func mapControls(() -> some View) -> some View
+](../SwiftUI/View/mapControls(_:).md)
+  Configures all `Map` views in the associated environment to have standard size and position controls
+- [func controlSize(_:)](../SwiftUI/View/controlSize(_:).md)
+  Sets the size for controls within this view.
+### Setting the namespace Identifier
+- [func mapScope(Namespace.ID) -> some View
+](../SwiftUI/View/mapScope(_:).md)
+  Creates a mapScope that SwiftUI uses to connect map controls to an associated map.
+### Setting the tint and border shape
+- [func buttonBorderShape(ButtonBorderShape) -> some View
+](../SwiftUI/View/buttonBorderShape(_:).md)
+  Sets the border shape for buttons in this view.
+- [func tint<S>(S) -> some MapContent](mapcontent/tint(_:).md)
+  The tint shape style to apply to map content.
 
 ## Relationships
 

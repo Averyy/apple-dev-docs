@@ -33,7 +33,7 @@ The renderer sizes the uniforms buffer to `uniformsSize` bytes and configures th
 
 - `name`: The name of the Metal function in the library.
 - `library`: The Metal library that contains the function.
-- `constantValues`: The Metal function constant values to specialize the function with.
+- `constantValues`: The Metal function constant values to specialize the function with. The function descriptor takes a snapshot of the constant values passed in.
 - `uniformsSize`: The size of the custom uniforms buffer, in bytes.
 
 ## See Also

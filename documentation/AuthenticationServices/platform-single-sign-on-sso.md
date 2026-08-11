@@ -73,6 +73,8 @@ For more information, see [`Configuring Platform Single Sign-on`](https://develo
   Use a system-supported method to authenticate with an identity provider.
 - [Implementing web-based authentication with Platform Single Sign-on](implementing-web-based-authentication.md)
   Support modern, phishing-resistant, and flexible authentication methods.
+- [Using access keys with Platform Single Sign-on](using-access-keys-with-platform-single-sign-on.md)
+  Authenticate users with access keys stored in Apple Wallet.
 - [class ASAuthorizationProviderExtensionKerberosMapping](asauthorizationproviderextensionkerberosmapping.md)
   A set of Kerberos mappings that the system login process uses.
 

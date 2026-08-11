@@ -16,21 +16,22 @@ These types give you direct access to the rendering pipeline and the GPU resourc
 - [protocol LowLevelRenderContext](lowlevelrendercontext.md)
   An entry point for creating rendering resources and compiling materials.
 - [protocol LowLevelRenderContextLighting](lowlevelrendercontextlighting.md)
-  An entry point for creating lighting functions for use in materials.
+  The interface for creating lighting functions for use in materials.
 - [protocol LowLevelRenderContextShaderGraph](lowlevelrendercontextshadergraph.md)
+  The interface for creating Metal shader functions from a ShaderGraph.
 - [class LowLevelRenderContextStandalone](lowlevelrendercontextstandalone.md)
   A standalone Metal-backed render context for creating low-level rendering resources.
 - [struct LowLevelRenderContextError](lowlevelrendercontexterror.md)
-  An error thrown by render context factory methods when resource creation fails.
+  An error thrown when binding or updating a low-level rendering resource fails.
 - [struct LowLevelRendererError](lowlevelrenderererror.md)
-  An error thrown by the renderer during initialization or rendering.
+  An error thrown when creating or configuring a renderer.
 ### Pipeline and render targets
 - [class LowLevelRenderPipelineState](lowlevelrenderpipelinestate.md)
   A compiled Metal render pipeline state for a specific mesh descriptor, material, and render target configuration.
 - [class LowLevelRenderTarget](lowlevelrendertarget.md)
   An object that describes the pixel format configuration for a render pass’s color and depth attachments.
 - [class LowLevelArgumentTable](lowlevelargumenttable.md)
-  A table of buffer slices and textures bound to a single shader function stage.
+  A table of buffer slices and textures bound to a single shader function.
 - [struct LowLevelMaterialParameterMapping](lowlevelmaterialparametermapping.md)
   A mapping of named buffer and texture parameters to binding indices for a compiled shader function.
 ### GPU resources
@@ -51,7 +52,7 @@ These types give you direct access to the rendering pipeline and the GPU resourc
 - [class LowLevelTextureResource](lowleveltextureresource.md)
   A container for texture data in a custom format.
 - [class LowLevelMaterialResource](lowlevelmaterialresource.md)
-  A compiled material composed of three independently-replaceable shader stages.
+  A compiled material composed of three independently-replaceable shader functions.
 - [class LowLevelDeviceResource](lowleveldeviceresource.md)
   Encapsulates a GPU device resource created by the application. On visionOS, resources must be allocated in shared memory that can be used by the renderer process. Once a device resource is in use by the renderer, changing its contents is unsafe and undefined.
 - [struct BoundingSphereBox](boundingspherebox.md)

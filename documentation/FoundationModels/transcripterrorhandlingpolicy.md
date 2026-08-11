@@ -23,9 +23,9 @@ struct TranscriptErrorHandlingPolicy
 
 ### Error handling policies
 - [static let preserveTranscript: TranscriptErrorHandlingPolicy](transcripterrorhandlingpolicy/preservetranscript.md)
-  Keep the current transcript as is.
+  A policy that keeps the current transcript as is.
 - [static let revertTranscript: TranscriptErrorHandlingPolicy](transcripterrorhandlingpolicy/reverttranscript.md)
-  Revert the transcript back to the state it was in just before the most recent request.
+  A policy that reverts the transcript back to the state it was in just before the most recent request.
 
 ## Relationships
 
@@ -35,24 +35,8 @@ struct TranscriptErrorHandlingPolicy
 
 ## See Also
 
-- [Prompting an on-device foundation model](prompting-an-on-device-foundation-model.md)
-  Tailor your prompts to get effective results from an on-device model.
-- [Managing the context window](managing-the-context-window.md)
-  Optimize your app’s token usage when prompting a model with the Foundation Models framework.
-- [Updating prompts for new model versions](updating-prompts-for-new-model-versions.md)
-  Manage the prompts your app uses by versioning them to make the most out of model improvements.
-- [class LanguageModelSession](languagemodelsession.md)
-  An object that represents a session that interacts with a language model.
-- [struct Instructions](instructions.md)
-  Details you provide that define the model’s intended behavior on prompts.
-- [struct Prompt](prompt.md)
-  A prompt from a person to the model.
-- [struct Transcript](transcript.md)
-  A linear history of entries that reflect an interaction with a session.
-- [struct GenerationOptions](generationoptions.md)
-  Options that control how the model generates its response to a prompt.
-- [struct ContextOptions](contextoptions.md)
-  Options that configure details that should appear in the prompt.
+- [var transcriptErrorHandlingPolicy: TranscriptErrorHandlingPolicy?](languagemodelsession/transcripterrorhandlingpolicy.md)
+  The session’s policy for managing the transcript when errors occur.
 
 
 ---

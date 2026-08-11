@@ -24,7 +24,7 @@ An image-based [`LowLevelMaterialResource.LightingFunction`](lowlevelmaterialres
 
 #### Discussion
 
-The lighting function expects two cubemap textures bound via its corresponding [`LowLevelArgumentTable`](lowlevelargumenttable.md): one for diffuse and one for specular. Prepare these using `LowLevelTextureProcessingContext/generateImageBasedLightDiffuse` and `LowLevelTextureProcessingContext/generateImageBasedLightSpecular`.
+The lighting function expects two cubemap textures bound via its corresponding [`LowLevelArgumentTable`](lowlevelargumenttable.md): one for diffuse and one for specular. Prepare these using [`ImageBasedLightTextureGenerator.generateDiffuse(using:fromSkyboxCube:quality:into:)`](https://developer.apple.comhttps://developer.apple.com/documentation/realitykit/imagebasedlighttexturegenerator/generatediffuse(using:fromskyboxcube:quality:into:)) and [`ImageBasedLightTextureGenerator.generateSpecular(using:fromSkyboxCube:quality:into:)`](https://developer.apple.comhttps://developer.apple.com/documentation/realitykit/imagebasedlighttexturegenerator/generatespecular(using:fromskyboxcube:quality:into:)).
 
 ## See Also
 

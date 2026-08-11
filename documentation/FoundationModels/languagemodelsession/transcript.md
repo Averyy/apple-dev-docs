@@ -21,6 +21,7 @@ final var transcript: Transcript { get set }
 
 ## Mentions
 
+- [Inspecting session transcripts and reporting model feedback](inspecting-session-transcripts-and-reporting-model-feedback.md)
 - [Optimizing key-value caching in language model sessions](optimizing-key-value-caching-in-language-model-sessions.md)
 - [Expanding generation with tool calling](expanding-generation-with-tool-calling.md)
 

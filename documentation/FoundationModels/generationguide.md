@@ -33,7 +33,7 @@ struct GenerationGuide<Value>
   Enforces a guide on the elements within the array.
 ### Getting the count
 - [static count(_:)](generationguide/count(_:).md)
-  Enforces that the array has exactly a certain number elements.
+  Enforces that the array has exactly a certain number of elements.
 ### Getting the constant
 - [static func constant(String) -> GenerationGuide<String>](generationguide/constant(_:).md)
   Enforces that the string be precisely the given value.
@@ -41,7 +41,7 @@ struct GenerationGuide<Value>
   Enforces that the string be one of the provided values.
 ### Getting a range
 - [static range(_:)](generationguide/range(_:).md)
-  Enforces values fall within a range.
+  Enforces values that fall within a range.
 ### Getting the minimum value
 - [static minimum(_:)](generationguide/minimum(_:).md)
   Enforces a minimum value.
@@ -56,9 +56,7 @@ struct GenerationGuide<Value>
 ## See Also
 
 - [macro Guide(description: String)](guide(description:).md)
-  Allows for influencing the allowed values of properties of a generable type.
 - [macro Guide(description:_:)](guide(description:_:).md)
-  Allows for influencing the allowed values of properties of a generable type.
 
 
 ---

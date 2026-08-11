@@ -60,6 +60,11 @@ The framework reports an error if you try to start an assessment from an app run
   Error codes that the framework returns if a session fails.
 - [let AEAssessmentErrorDomain: String](aeassessmenterrordomain.md)
   A constant representing the error domain that the framework uses when issuing errors.
+### Classes
+- [class AEAssessmentBinaryExecutable](aeassessmentbinaryexecutable.md)
+  A non-bundled, non-UI executable (e.g. a launchd daemon) designated as an assessment participant by its on-disk path.
+- [class AEAssessmentBinaryExecutableConfiguration](aeassessmentbinaryexecutableconfiguration.md)
+  The configuration applied to an [`AEAssessmentBinaryExecutable`](aeassessmentbinaryexecutable.md) participant.
 ### Structures
 - [struct AEAppleMenuItem](aeapplemenuitem.md)
   Identifies an item in the Apple menu.

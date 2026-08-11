@@ -39,7 +39,7 @@ For information about the language-level concurrency model that `UnsafeCurrentTa
 - [var basePriority: TaskPriority](unsafecurrenttask/basepriority.md)
   The current task’s base priority.
 - [var hasActiveCancellationShield: Bool](unsafecurrenttask/hasactivecancellationshield.md)
-  Checks if this task is executing in a scope with a task cancellation shield activated by the `withTaskCancellationShield(operation:)` function.
+  Checks if this task is executing in a scope with a task cancellation shield activated by the `withTaskCancellationShield(operation:)-(()->Value)` function.
 - [var isCancelled: Bool](unsafecurrenttask/iscancelled.md)
   A Boolean value that indicates whether the current task was canceled.
 - [var name: String?](unsafecurrenttask/name.md)

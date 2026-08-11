@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: property
 
+The specifier that describes how this prim is defined, such as `def`, `over`, or `class`.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)

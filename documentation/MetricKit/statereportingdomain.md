@@ -38,6 +38,7 @@ Pass a set of `StateReportingDomain` values to [`init(enabledStateReportingDomai
 ### Conforms To
 - [CodingKeyRepresentable](../Swift/CodingKeyRepresentable.md)
 - [Copyable](../Swift/Copyable.md)
+- [CustomStringConvertible](../Swift/CustomStringConvertible.md)
 - [Decodable](../Swift/Decodable.md)
 - [Encodable](../Swift/Encodable.md)
 - [Equatable](../Swift/Equatable.md)

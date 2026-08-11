@@ -20,7 +20,7 @@ final var argumentTableDescriptor: LowLevelArgumentTable.Descriptor? { get }
 ## See Also
 
 - [var parameterMapping: LowLevelMaterialParameterMapping?](lowlevelmaterialresource/surfaceshader/parametermapping.md)
-  The parameter name-to-slot mapping for this surface shader.
+  The parameter name-to-slot mapping for this surface shader function, or `nil` if it takes no custom parameters.
 
 
 ---

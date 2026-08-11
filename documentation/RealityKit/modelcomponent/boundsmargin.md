@@ -29,6 +29,8 @@ When determining which entities are currently visible, RealityKit tests each ent
 
 RealityKit adds the value of `boundsMargin` to the bounding box before determining which entities are visible.
 
+> **Note**: On visionOS, if a mesh has an incorrect axis-aligned bounding box (AABB), you might see pixelated passthrough artifacts on the mesh due to inaccurate depth reprojection. Provide a correct AABB for your virtual content, or if the mesh is animated by a shader, make the AABB more conservative using this property.
+
 
 ---
 

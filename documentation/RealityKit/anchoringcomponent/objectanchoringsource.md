@@ -41,7 +41,7 @@ struct ObjectAnchoringSource
 ## See Also
 
 - [AnchoringComponent.ImageAnchoringSource](anchoringcomponent/imageanchoringsource.md)
-  Defines the source of object anchoring target based on how it is created.
+  Defines the source of image anchoring target based on how it is created.
 
 
 ---

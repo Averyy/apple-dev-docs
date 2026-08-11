@@ -3,6 +3,8 @@
 **Framework**: USDKit  
 **Kind**: property
 
+The namespace prefix of this property’s name, or an empty token if it has none.
+
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)

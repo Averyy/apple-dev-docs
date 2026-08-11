@@ -13,7 +13,7 @@
 ## Declaration
 
 ```swift
-func getCookies(for url: URL) async -> [HTTPCookie]
+func cookies(for url: URL) async -> [HTTPCookie]
 ```
 
 #### Discussion

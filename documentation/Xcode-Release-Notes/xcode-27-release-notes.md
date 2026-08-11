@@ -1,4 +1,4 @@
-# Xcode 27 Beta 4 Release Notes
+# Xcode 27 Beta 5 Release Notes
 
 **Framework**: Xcode Release Notes
 
@@ -6,7 +6,7 @@ Update your apps to use new features, and test your apps against API changes.
 
 #### Overview
 
-Xcode 27 beta 4 includes Swift 6.4 and SDKs for iOS 27, iPadOS 27, tvOS 27, watchOS 27, macOS 27, and visionOS 27. Xcode 27 beta 4 supports on-device debugging in iOS 17 and later, tvOS 17 and later, watchOS 10 and later, and visionOS. Xcode 27 beta 4 requires a Mac running macOS Tahoe 26.4 or later.
+Xcode 27 beta 5 includes Swift 6.4 and SDKs for iOS 27, iPadOS 27, tvOS 27, watchOS 27, macOS 27, and visionOS 27. Xcode 27 beta 5 supports on-device debugging in iOS 17 and later, tvOS 17 and later, watchOS 10 and later, and visionOS. Xcode 27 beta 5 requires a Mac running macOS Tahoe 26.4 or later.
 
 See [`Xcode Support`](https://developer.apple.comhttps://developer.apple.com/support/xcode/) to learn more about compatible platforms and deployment targets.
 
@@ -24,9 +24,15 @@ See [`Xcode Support`](https://developer.apple.comhttps://developer.apple.com/sup
 
 ##### Coding Intelligence
 
+###### New Features
+
+- Coding Intelligence agents can now verify watchOS apps, including rotating and pressing the Digital Crown, and pressing the side and Action buttons (Apple Watch Ultra).  (181147968)
+- Xcode 27 Beta 5 adds a preview of a new MCP server experience that runs without requiring an open Xcode workspace. This new experience also allows you to grant code-signed agents permission to use projects within a directory tree for extended periods of time without being asked for additional permissions. You can turn this experience on by using `sudo xcrun mcp-server enable`. Check its state afterward with `xcrun mcp-server status`. Developers running agents in unattended environments can approve all permissions upfront with `sudo xcrun mcp-server enable --unsafe-always-allow-all-agents`. This is not a recommended configuration for at-desk use. In this early preview, some aspects of the `xcrun mcp-server` command line utility may not work in all configurations, and some settings or permissions may occasionally require relaunching Xcode or rebooting your machine to apply.  (181836944)
+- Coding Intelligence agents can now verify tvOS apps, navigating with the Siri Remote to move focus, select, and go Home, and entering text into focused fields.  (183317784)
+
 ###### Known Issues
 
-- If the plan-mode confirmation bar (“Implement the plan?” with Yes/No buttons) appears while the agent is still streaming a response, clicking either button may trigger a new agent turn on top of the in-flight one, leaving the conversation in an inconsistent state. As a workaround, wait for the agent to finish responding before confirming or dismissing the plan.  (178673449)
+- If the plan-mode confirmation bar (“Implement the plan?” with Yes/No buttons) appears while the agent is still streaming a response, clicking either button may trigger a new agent turn on top of the in-flight one, leaving the conversation in an inconsistent state.  (178673449) **Workaround:** Wait for the agent to finish responding before confirming or dismissing the plan.
 
 ##### Console
 
@@ -40,13 +46,12 @@ See [`Xcode Support`](https://developer.apple.comhttps://developer.apple.com/sup
 
 - The option to extract inputs from prediction events in the Core AI gauge in Xcode may not work reliably.  (172502576)
 
-##### Debugging
+##### Device Hub
 
 ###### New Features
 
-- LLDB can now inspect data types with ~Copyable fields in the standard library and other system frameworks.  (176282041)
-
-##### Device Hub
+- A device’s UUID is now shown by default in the Info Inspector under ‘Hardware Properties’.  (183547490)
+- To reduce confusion with other unique identifier, the CoreDevice ID is no longer shown by default in the Info Inspector. You can use the ‘Edit Visibility’ button at the bottom of the Info inspector to make the CoreDevice ID visible.  (183763393)
 
 ###### Known Issues
 
@@ -55,7 +60,7 @@ See [`Xcode Support`](https://developer.apple.comhttps://developer.apple.com/sup
 - Device Hub doesn’t currently support sending a two-finger touch to a device or simulator.  (169537162)
 - The Controls->Shake menu item does not work.  (171282777)
 - Sound Output and Input for simulators cannot be set to None.  (175714711)
-- Device Hub.app downloads app data containers to a folder named with the bundle identifier of the app.  (176313137) **Workaround:** Add `.xcappdata` to the folder created by Device Hub when downloading app data containers. Inside that folder make a new folder named AppData. Move the other content in that folder into AppData. For example, ```None
+- Device Hub.app downloads app data containers to a folder named with the bundle identifier of the app instead of .xcappdata.  (176313137) **Workaround:** To make a .xcappdata bundle for use in Xcode’s Run scheme action do the following. Add `.xcappdata` to the folder created by Device Hub when downloading app data containers. Inside that folder make a new folder named AppData. Move the other content in that folder into AppData. For example, ```None
  com.example.MyApp/{Documents,Library,tmp}
 ``` becomes: ```None
  com.example.MyApp.xcappdata/AppData/{Documents,Library,tmp}
@@ -69,17 +74,39 @@ See [`Xcode Support`](https://developer.apple.comhttps://developer.apple.com/sup
 - With Apple Watch - simulator or physical - scrolling with the mouse pointer over the watch face does not emulate rotating the digital crown.  (179079031) (FB22992052) **Workaround:** Move the pointer over the crown in the device bezel.
 - visionOS simulator takes longer to boot than expected and may stall when deploying an app.  (180078336) **Workaround:** Please reboot your machine.
 - When an iPad connects to Device Hub without viewing the screen while the software keyboard is on screen, it can disappear.  (181166904) **Workaround:** In Device Hub, toggle the Device > Keyboard > Simulate Hardware Keyboard menu item. This can be done without viewing the device screen.
+- Keyboard and mouse inputs to simulators for OS versions before iOS 18.0, tvOS 18.0, watchOS 11.0, and visionOS 2.0 are not supported.  (181945323)
+- After disconnecting a physical device from Device Hub when “Simulate Hardware Keyboard” was in use, the device may remain in “hardware keyboard” mode for up to 2 minutes. This will cause the software keyboard to not appear when selecting a text field.  (182553164) **Workaround:** Wait 2 minutes for the condition to clear.
 
-###### Deprecations
-
-- Input interactions such as keyboard or pointer are only supported on the following OS versions and newer: macOS 15.0, iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0.  (160482487)
-
-##### Instruments
+##### Devicectl
 
 ###### New Features
 
-- Errors preventing recording now appear next to the Record button.  (112283690)
-- `xctrace export` allows for specifying files like .atrc and .logarchive as input, removing the need for a two-step process of running `xctrace import` followed by `xctrace export`.  (179742657)
+- As of JSON version 5, devicectl now adds a ‘_deprecationNotice’ field to any JSON result that contains deprecated properties. Here is the deprecation notice shown for the JSON for device details: ```None
+ "_deprecationNotice" : { 
+     "deprecatedFields" : [ 
+         "hardwareProperties", 
+         "deviceProperties", 
+         "connectionProperties" 
+     ], 
+     "message" : "The 'hardwareProperties', 'deviceProperties', 'connectionProperties' fields are deprecated and will be removed in a future release. Use the 'properties' dictionary instead.", 
+     "replacement" : "properties" 
+ },
+ ```  (170812159)  
+
+```
+- ‘devicectl list devices’ now shows a unique identifier for devices. If a UDID is available, that is presented, otherwise, if available, the ECID is presented, otherwise the CoreDevice identifier is shown. The JSON returned by the command is unaffected.  (183766625)
+
+###### Resolved Issues
+
+- Fixed issues where passing a key path to a `--filter` flag would fail to find matches or just return an error.  (176141854)
+- Fixed: `--filter`, `--columns`, or `--sort-by` flags now work properly when provided a JSON keypath like “properties.state.visibilityClass”.  (183772989)
+- Fixed issues with various devicectl commands not respecting `--filter` or `--sort-by` flags.  (183773087)
+
+###### Deprecations
+
+- As of JSON version 5, the following JSON fields in a device details result have been deprecated: ‘hardwareProperties’, ‘deviceProperties’, ‘connectionProperties’. These fields will be removed in a future release. Please use the ‘properties’ dictionary instead.  (183772705)
+
+##### Instruments
 
 ###### Known Issues
 
@@ -89,38 +116,28 @@ See [`Xcode Support`](https://developer.apple.comhttps://developer.apple.com/sup
 
 ###### Resolved Issues
 
-- Fixed: `ibtool` fails to compile documents with non-adaptive “Popover” or “Replace” segues.  (180632487) (FB23399800)
-
-##### Localization
-
-###### New Features
-
-- When agents use the “Prepare Project for Localization” tool, String Catalog artifacts now show any keys that were removed due to no longer being found in source code.  (179755385)
-
-###### Resolved Issues
-
-- Fixed: Resolved an issue where Xcode could use too much memory when generating comments or translating strings.  (179800456) (FB23193029)
+- Fixed: `ibtool` fails to compile documents containing a “Peek & Pop” segue originating from a table view cell.  (180655818) (FB23403072)
+- Fixed: `ibtool` fails to compile documents containing trait variations involving directional edge insets.  (182214955) (FB23746623)
 
 ##### Previews
 
 ###### New Features
 
-- The RenderPreview MCP tool now supports rendering Previews using the new group feature.  (174692209)
-- You can now preview your UI in a different localization.  (181040291)
+- Interactive previews in the iOS Simulator now support drag-to-reorder (such as via the new SwiftUI API `.reorderContainer`).  (179271044)
+- Previews can now show variants for the accessibility mode Increase Contrast.  (181612731)
+- Previews can now show variants for the accessibility mode Show Button Borders.  (181850835)
+- The RenderPreview MCP tool now returns the display name and line number of the preview it rendered.  (182215198)
 
 ###### Resolved Issues
 
-- Fixed an issue where the canvas size could reset to its initial size when editing code in Resizable Canvas mode.  (178765518)
-- Fixed an issue where the RenderPreview MCP tool wasn’t working correctly for a macOS preview group preview.  (180460302)
-- Fixed an issue that could prevent previews from working when a Mac Catalyst run destination was selected.  (180547070)
-- Fixed: Improved error when an appropriate preview device can’t be found.  (180669830)
+- Fixed: In macOS’s Run as App preview mode, the “Bring Forward” button is now disabled until the preview app is ready to activate.  (180638710)
+- Fixed: Previews no longer show a localization variant when a project has only one localization.  (181858899)
 
 ##### Previews Playgrounds
 
 ###### Resolved Issues
 
-- Fixed a hang that could occur when a large number of edits were applied to a file at once, such as during an AI-assisted edit.  (163125754)
-- Fixed an issue where a preview could stop updating due to an error.  (181559530)
+- Fixed: Simulators used for previewing are now shut down proactively rather than remaining running until Xcode quits.  (105131888)
 
 ###### Known Issues
 
@@ -133,12 +150,6 @@ See [`Xcode Support`](https://developer.apple.comhttps://developer.apple.com/sup
 - An extra control for keyboard capture mode appears in the Device Hub toolbar under the view for the visionOS simulator.  (177082480)
 - An extra control for Simulate Trackpad or Mouse mode appears in the Device Hub toolbar under the view for the visionOS simulator.  (177086926)
 - The simulator sometimes does not get cleared after deletion.  (178661525) **Workaround:** Restart the machine and re-attempt to remove it.
-
-##### Source Editor
-
-###### Resolved Issues
-
-- Fixed: Use Selection for Find (Cmd-E) did not function for text selections in the “old” side of an inline diff display.  (52361137)
 
 ##### Swift Compiler
 
@@ -155,17 +166,81 @@ See [`Xcode Support`](https://developer.apple.comhttps://developer.apple.com/sup
  }
 ``` This is a known source break from SE-0508.  (180969028) **Workaround:** Swap the `init` accessor and the getter such that the `init` accessor is declared first.
 
+#### Updates in Xcode 27 Beta 4
+
+##### Debugging
+
+###### New Features in Xcode 27 Beta 4
+
+- LLDB can now inspect data types with ~Copyable fields in the standard library and other system frameworks.  (176282041)
+
+##### Device Hub
+
+###### Deprecations in Xcode 27 Beta 4
+
+- Input interactions such as keyboard or pointer are only supported on the following OS versions and newer: macOS 15.0, iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0.  (160482487)
+
+##### Instruments
+
+###### New Features in Xcode 27 Beta 4
+
+- Errors preventing recording now appear next to the Record button.  (112283690)
+- `xctrace export` allows for specifying files like .atrc and .logarchive as input, removing the need for a two-step process of running `xctrace import` followed by `xctrace export`.  (179742657)
+
+##### Interface Builder
+
+###### Resolved Issues in Xcode 27 Beta 4
+
+- Fixed: `ibtool` fails to compile documents with non-adaptive “Popover” or “Replace” segues.  (180632487) (FB23399800)
+
+##### Localization
+
+###### New Features in Xcode 27 Beta 4
+
+- When agents use the “Prepare Project for Localization” tool, String Catalog artifacts now show any keys that were removed due to no longer being found in source code.  (179755385)
+
+###### Resolved Issues in Xcode 27 Beta 4
+
+- Fixed: Resolved an issue where Xcode could use too much memory when generating comments or translating strings.  (179800456) (FB23193029)
+
+##### Previews
+
+###### New Features in Xcode 27 Beta 4
+
+- The RenderPreview MCP tool now supports rendering Previews using the new group feature.  (174692209)
+- You can now preview your UI in a different localization.  (181040291)
+
+###### Resolved Issues in Xcode 27 Beta 4
+
+- Fixed an issue where the canvas size could reset to its initial size when editing code in Resizable Canvas mode.  (178765518)
+- Fixed an issue where the RenderPreview MCP tool wasn’t working correctly for a macOS preview group preview.  (180460302)
+- Fixed an issue that could prevent previews from working when a Mac Catalyst run destination was selected.  (180547070)
+- Fixed: Improved error when an appropriate preview device can’t be found.  (180669830)
+
+##### Previews Playgrounds
+
+###### Resolved Issues in Xcode 27 Beta 4
+
+- Fixed a hang that could occur when a large number of edits were applied to a file at once, such as during an AI-assisted edit.  (163125754)
+- Fixed an issue where a preview could stop updating due to an error.  (181559530)
+
+##### Source Editor
+
+###### Resolved Issues in Xcode 27 Beta 4
+
+- Fixed: Use Selection for Find (Cmd-E) did not function for text selections in the “old” side of an inline diff display.  (52361137)
+
 ##### Themes
 
-###### New Features
+###### New Features in Xcode 27 Beta 4
 
 - Customized and imported themes are now stored on disk alongside legacy theme files.  (177747192)
 
 ##### Xcode
 
-###### Resolved Issues
+###### Resolved Issues in Xcode 27 Beta 4
 
-- Fixed: If you installed Xcode 27 beta on macOS Tahoe 26.5.1 and earlier, macOS virtual machine installation will fail due to a known bug. To restore virtual machine installation functionality, follow the [`How to reinstall macOS guide.`](https://developer.apple.comhttps://support.apple.com/en-us/102655)  (179068335)
+- Fixed: If you installed Xcode 27 beta on macOS Tahoe 26.5.1 and earlier, macOS virtual machine installation will fail due to a known bug. To restore virtual machine installation functionality, follow the [`How to reinstall macOS guide`](https://developer.apple.comhttps://support.apple.com/en-us/102655).  (179068335)
 
 #### Updates in Xcode 27 Beta 3
 
@@ -242,7 +317,7 @@ See [`Xcode Support`](https://developer.apple.comhttps://developer.apple.com/sup
 
 ###### Deprecations in Xcode 27 Beta 3
 
-- PreviewProvider and its family of preview modifiers  (144168701)
+- `PreviewProvider` and its family of preview modifiers.  (144168701)
 
 ##### Previews Playgrounds
 
@@ -258,7 +333,7 @@ See [`Xcode Support`](https://developer.apple.comhttps://developer.apple.com/sup
 ###### New Features in Xcode 27 Beta 3
 
 - The new “adopt-c-bounds-safety” Code Intelligence skill can help you adopt the bounds safety extension for C (-fbounds-safety) with a file-by-file adoption workflow. For more information about the C bounds safety extension, see https://developer.apple.com/documentation/xcode/enabling-enhanced-security-for-your-app#Adopt-bounds-checking-in-C.  (177739344)
-- The new “audit-xcode-security-settings” Code Intelligence skill can help you audit your app to suggest enabling additional security-oriented build settings and entitlements. For more information on these settings, see https://developer.apple.com/documentation/xcode/enabling-enhanced-security-for-your-app  (181104536)
+- The new “audit-xcode-security-settings” Code Intelligence skill can help you audit your app to suggest enabling additional security-oriented build settings and entitlements. For more information on these settings, see [`Enabling enhanced security for your app`](https://developer.apple.comhttps://developer.apple.com/documentation/xcode/enabling-enhanced-security-for-your-app).  (181104536)
 
 ##### Simulator
 
@@ -338,7 +413,7 @@ See [`Xcode Support`](https://developer.apple.comhttps://developer.apple.com/sup
 
 ###### New Features in Xcode 27 Beta 2
 
-- You can now use natural language to search the developer documentation. Matching documents will be returned based on semantic matching.  (165476491)
+- You can now use natural language to search the developer documentation. Matching documents are returned based on semantic matching.  (165476491)
 
 ##### Device Hub
 
@@ -350,15 +425,15 @@ See [`Xcode Support`](https://developer.apple.comhttps://developer.apple.com/sup
 ###### Resolved Issues in Xcode 27 Beta 2
 
 - Fixed: Renaming a device in Device Hub may cut off the renaming prematurely.  (178477422)
-- Fixed: Renaming a device now works properly if the sidebar is not visible  (178538834)
+- Fixed: Renaming a device now works properly if the sidebar is not visible.  (178538834)
 - Fixed: Added a preference to control whether key combos are sent to Device Hub or to the remote device. ```None
  defaults -container com.apple.dt.Devices write com.apple.dt.Devices hostKeybindingPolicy -int <value>
-``` Use these values to define a specific behavior: - 0 - Device Hub uses rich key combos shortcuts
-- 1 - Minimized when interacting with device
-- 2 - Device Hub uses minimal key combo shortcuts  (178920247)
+``` Use these values to define a specific behavior: - 0 - Device Hub uses rich key combo shortcuts.
+- 1 - Minimized when interacting with device.
+- 2 - Device Hub uses minimal key combo shortcuts.  (178920247)
 - Fixed: When pasteboard data takes longer than 5s to transfer (eg: misbehaving apps serving data, data taking a long time to process, or large data taking a long time to transfer), resolution will now only block apps attempting to paste for up to 5s.  After the 5s timeout, the paste will fail but data will continue to be transferred in the background such that the paste can be retried and will succeed after the data has been transferred.  (179132581)
-- Fixed: Improved reliability of pasteboard synchronization  (179200521)
-- Fixed: Device Hub synchronization no longer attempts to synchronize pasteboard data provided by Universal Clipboard  (179287395)
+- Fixed: Improved reliability of pasteboard synchronization.  (179200521)
+- Fixed: Device Hub synchronization no longer attempts to synchronize pasteboard data provided by Universal Clipboard.  (179287395)
 - Fixed: If the user specified a location to save screenshots from Simulator, Device Hub will honor that location before falling back to the global default screenshot location. Preference order: `com.apple.dt.devices` screenCaptureLocation `com.apple.iphonesimulator` ScreenShotSaveLocation `com.apple.screencapture` location  (179402694)
 
 ##### Devicectl
@@ -519,8 +594,8 @@ See [`Xcode Support`](https://developer.apple.comhttps://developer.apple.com/sup
 - The ABI flag `_LIBCPP_ABI_NO_REVERSE_ITERATOR_SECOND_MEMBER` has been split off from `_LIBCPP_ABI_NO_ITERATOR_BASES`. If you are using this flag and require ABI stability, you should set `_LIBCPP_ABI_NO_REVERSE_ITERATOR_SECOND_MEMBER` as well. ABI-affecting changes: - The ABI flag `_LIBCPP_ABI_NO_REVERSE_ITERATOR_SECOND_MEMBER` has been split off from `_LIBCPP_ABI_NO_ITERATOR_BASES`. If you are using this flag and require ABI stability, you should set `_LIBCPP_ABI_NO_REVERSE_ITERATOR_SECOND_MEMBER` as well.
 - The internal types `__map_value_compare`, `__unordered_map_hasher`, `__unordered_map_equal`, `__hash_map_hasher` and `__hash_map_equal` have been refactored to use `_LIBCPP_COMPRESSED_ELEMENT` instead of potentially inheriting from the types they wrap. At this point in time we are not aware of any ABI changes caused by this.
 - `ranges::iota_view` is now aware of `__int128`. This causes `iota_view::difference_type` to change from `long long` to `__int128` in some cases.
-- `std::allocator` is now trivially default-constructible. The behaviour can be reverted by defining `_LIBCPP_DEPRECATED_ABI_NON_TRIVIAL_ALLOCATOR`. This compatibility macro is going to be removed in an upcoming release.
-- `bitset::operator[]` now returns `bool`, making libc++ conform to the Standard. The behaviour can be reverted by defining `_LIBCPP_DEPRECATED_ABI_BITSET_CONST_SUBSCRIPT_RETURN_REF`. This compatibility macro is going to be removed in an upcoming release.  (178191050)
+- `std::allocator` is now trivially default-constructible. The behavior can be reverted by defining `_LIBCPP_DEPRECATED_ABI_NON_TRIVIAL_ALLOCATOR`. This compatibility macro is going to be removed in an upcoming release.
+- `bitset::operator[]` now returns `bool`, making libc++ conform to the Standard. The behavior can be reverted by defining `_LIBCPP_DEPRECATED_ABI_BITSET_CONST_SUBSCRIPT_RETURN_REF`. This compatibility macro is going to be removed in an upcoming release.  (178191050)
 
 ##### Coding Intelligence
 
@@ -595,7 +670,7 @@ See [`Xcode Support`](https://developer.apple.comhttps://developer.apple.com/sup
 
 ###### New Features in Xcode 27 Beta
 
-- Icon Composer 2.0 supports a new sharper rendering mode for upcoming 2027 operating systems with support for refractivity, outside specular, and deeper shadows. Use the group inspector to edit the new properties, and the toolbar to preview in either the new or original design generation. When your icon looks great in both design generations, add it to your Xcode project and it will be used for all OS versions.  (172404678)
+- Icon Composer 2.0 supports a new sharper rendering mode for upcoming 2027 operating systems with support for refractivity, outside specular, and deeper shadows. Use the group inspector to edit the new properties, and the toolbar to preview in either the new or original design generation. When your icon looks great in both design generations, add it to your Xcode project to use it with all OS versions.  (172404678)
 
 ##### Instruments
 
@@ -612,7 +687,7 @@ See [`Xcode Support`](https://developer.apple.comhttps://developer.apple.com/sup
 - When recording os_log Instrument together with an Instrument that creates process or thread tracks (like Time Profiler, CPU Profiler, or others), you can now overlay logging information on these tracks by enabling “os_log” graph in the “Track Graph Display” popover.  (170113899)
 - A new Swift Executors instrument is now available. It displays tracks for the Cooperative Thread Pool, the Main Actor, and any types conforming to TaskExecutor or SerialExecutor. Instruments properly captures and displays on iOS 27, iPadOS 27, macOS 27, tvOS 27, watchOS 27, visionOS 27. On older systems, executor names fall back to “Unknown executor”.  (171189428)
 - Swift Concurrency Task tracks now appear in new “Swift Task Collection” tracks. Instruments sorts Tasks into Collections based on their name or place of creation. You can switch Collection tracks between displaying task lifetimes and task states.  (173885662)
-- When opening files like `.atrc` or `.logarchive`, you can now specify a preferred template using ‘Settings → General → Templates for Import’  (58151217)
+- When opening files like `.atrc` or `.logarchive`, you can now specify a preferred template using ‘Settings → General → Templates for Import’.  (58151217)
 - New setting in the ‘General’ tab allows for overriding preferred template used for opening files such as .atrc or .logarchive.  (73868296)
 - Call Tree and Top Functions tables now persist selected rows.  (120794625)
 - Individual backtraces shown in the inspector now offer improved collapsing logic and are more consistent with the call tree’s “Heaviest Stack Trace” view.  (130279660)
@@ -684,9 +759,9 @@ See [`Xcode Support`](https://developer.apple.comhttps://developer.apple.com/sup
 ###### New Features in Xcode 27 Beta
 
 - Exporting localizations now extracts `NSLocalizedString` and similar macros from header files in addition to implementation files.  (19191207) (FB5500560)
-- Agents in Xcode can now be used to translate strings in String Catalogs. You can ask an agent to translate strings ranging from a single feature to an entire project, into one or more languages. Xcode will add languages to your project settings, create missing String Catalogs, and provide guidance and context to agents as they translate.  (111514130) (FB12479690)
-- Strings in code with a localization comment of “do not translate” will be automatically marked as “Don’t Translate” in String Catalogs and `translate="no"` in exported XLIFFs.  (111715368)
-- Exported XLIFFs will use `state-qualifier="leveraged-mt"` to indicate strings that were translated using machine translation.  (161775544)
+- Agents in Xcode can now be used to translate strings in String Catalogs. You can ask an agent to translate strings ranging from a single feature to an entire project, into one or more languages. Xcode adds languages to your project settings, creates missing String Catalogs, and provides guidance and context to agents as they translate.  (111514130) (FB12479690)
+- Strings in code with a localization comment of “do not translate” are automatically marked as “Don’t Translate” in String Catalogs and `translate="no"` in exported XLIFFs.  (111715368)
+- Exported XLIFFs use `state-qualifier="leveraged-mt"` to indicate strings that were translated using machine translation.  (161775544)
 - The String Catalog editor now includes a Generate Translations button as a shortcut to ask an agent to translate strings. You can also use the context menu to translate specific strings.  (169559347)
 
 ###### Resolved Issues in Xcode 27 Beta
@@ -705,7 +780,7 @@ See [`Xcode Support`](https://developer.apple.comhttps://developer.apple.com/sup
 
 ###### Resolved Issues in Xcode 27 Beta
 
-- Fixed: The Queue Debugging setting to Enable Backtrace Recording is off by default. To view the process grouped by dispatch queues in the debug navigator, or to get recorded backtraces indicating the originating dispatch operation when viewing the process grouped by thread, please enable the setting in the scheme editor under Run > Options > Queue Debugging > Enable Backtrace Recording  (164183224)
+- Fixed: The Queue Debugging setting to Enable Backtrace Recording is off by default. To view the process grouped by dispatch queues in the debug navigator, or to get recorded backtraces indicating the originating dispatch operation when viewing the process grouped by thread, please enable the setting in the scheme editor under Run > Options > Queue Debugging > Enable Backtrace Recording.  (164183224)
 
 ##### On Demand Resources
 
@@ -729,7 +804,7 @@ See [`Xcode Support`](https://developer.apple.comhttps://developer.apple.com/sup
 
 - Canvas can now display a grid of previews for each argument passed to the new `#Preview(arguments:)` syntax. Clicking on a preview in argument or variant grids opens the preview in the Interactive mode.  (167544057)
 - Holding command will cause the input events (zooming and scrolling) to be handled by the canvas. This can be disabled with the new ‘Send Command-Modified Input to Canvas’ toggle in the Editor > Canvas menu.  (170072429)
-- iOS previews have a new Resizable Canvas mode that enables viewing the preview in arbitrarily sized containers  (171013421)
+- iOS previews have a new Resizable Canvas mode that enables viewing the preview in arbitrarily sized containers.  (171013421)
 
 ##### Previews Playgrounds
 

@@ -132,18 +132,18 @@ An *empty* `InlineArray`’s size is zero. Its stride and alignment are both one
 - [InlineArray.Index](inlinearray/index.md)
   A type that represents a position in the array.
 ### Default Implementations
-- [BorrowingSequence Implementations](inlinearray/borrowingsequence-implementations.md)
+- [Iterable Implementations](inlinearray/iterable-implementations.md)
 
 ## Relationships
 
 ### Conforms To
 - [BitwiseCopyable](bitwisecopyable.md)
-- [BorrowingSequence](borrowingsequence.md)
 - [ContiguousBytes](../Foundation/ContiguousBytes.md)
 - [ConvertibleFromBytes](convertiblefrombytes.md)
 - [ConvertibleToBytes](convertibletobytes.md)
 - [Copyable](copyable.md)
 - [Escapable](escapable.md)
+- [Iterable](iterable.md)
 - [Sendable](sendable.md)
 - [SendableMetatype](sendablemetatype.md)
 

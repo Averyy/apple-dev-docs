@@ -8,6 +8,8 @@ Returns the referenced image from the transcript.
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
+- Mac Catalyst 27.0+ (Beta)
+- macOS 27.0+ (Beta)
 - visionOS 27.0+ (Beta)
 - watchOS 27.0+ (Beta)
 
@@ -19,7 +21,7 @@ func resolved(in transcript: some Sequence<Transcript.Entry>) -> Transcript.Imag
 
 #### Return Value
 
-The `ImageAttachment` for this reference, or `nil` if no attachment with label [`attachmentLabel`](imagereference/attachmentlabel.md) is found in the transcript.
+The [`Transcript.ImageAttachment`](transcript/imageattachment.md) for this reference, or `nil` if no attachment with label [`attachmentLabel`](imagereference/attachmentlabel.md) is found in the transcript.
 
 #### Discussion
 

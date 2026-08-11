@@ -8,6 +8,7 @@ The photo ID holder’s given name or first name.
 **Availability**:
 - iOS 26.0+
 - iPadOS 26.0+
+- Mac Catalyst 26.0+
 
 ## Declaration
 

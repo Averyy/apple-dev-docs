@@ -36,9 +36,12 @@ func buildEvaluators() -> [any EvaluatorProtocol<ModelSample<String>, ModelSubje
 ## Topics
 
 ### Type Methods
-- [static func buildBlock(any EvaluatorProtocol<Sample, Subject>...) -> [any EvaluatorProtocol<Sample, Subject>]](evaluatorsbuilder/buildblock(_:).md)
 - [static func buildExpression(any EvaluatorProtocol<Sample, Subject>) -> any EvaluatorProtocol<Sample, Subject>](evaluatorsbuilder/buildexpression(_:).md)
 - [static func buildOptional([any EvaluatorProtocol<Sample, Subject>]?) -> [any EvaluatorProtocol<Sample, Subject>]](evaluatorsbuilder/buildoptional(_:).md)
+- [static func buildPartialBlock(accumulated: [any EvaluatorProtocol<Sample, Subject>], next: [any EvaluatorProtocol<Sample, Subject>]) -> [any EvaluatorProtocol<Sample, Subject>]](evaluatorsbuilder/buildpartialblock(accumulated:next:)-7lvjo.md)
+- [static func buildPartialBlock(accumulated: [any EvaluatorProtocol<Sample, Subject>], next: any EvaluatorProtocol<Sample, Subject>) -> [any EvaluatorProtocol<Sample, Subject>]](evaluatorsbuilder/buildpartialblock(accumulated:next:)-88zf9.md)
+- [static func buildPartialBlock(first: [any EvaluatorProtocol<Sample, Subject>]) -> [any EvaluatorProtocol<Sample, Subject>]](evaluatorsbuilder/buildpartialblock(first:)-3o70b.md)
+- [static func buildPartialBlock(first: any EvaluatorProtocol<Sample, Subject>) -> [any EvaluatorProtocol<Sample, Subject>]](evaluatorsbuilder/buildpartialblock(first:)-875f9.md)
 
 ## See Also
 

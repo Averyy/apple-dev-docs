@@ -18,36 +18,30 @@ The sections computed from the current results, grouped by the `sectionBy` key p
 
 ```swift
 @MainActor
-@preconcurrency var sections: ResultsSectionCollection<Element, String> { get }
+@preconcurrency var sections: SectionedResults<Element, String> { get }
 ```
 
 #### Discussion
 
 Section names are `String`-typed. Both `KeyPath<Element, String>` and `KeyPath<Element, String?>` section keys produce `String` names — `nil` values map to the empty-string section.
 
-Returns an empty collection when the query was not created with a `sectionBy` parameter. Access this from the query’s stored property using the underscore prefix:
+Returns an empty collection when the query was not created with a `sectionBy` parameter. For `SectionedResults`-typed queries, access sections through the property directly; for `[Element]`-typed queries, use the underscore-prefix accessor:
 
 ```swift
-struct ItemList: View {
-    @Query(sort: \.category, sectionBy: \.category)
-    var items: [Item]
+// Preferred — SectionedResults result type
+@Query(sort: \.name, sectionBy: \.category)
+var items: SectionedResults<Item, String>
 
-    var body: some View {
-        List {
-            ForEach(_items.sections) { section in
-                Section(section.name) {
-                    ForEach(section) { item in Text(item.name) }
-                }
+var body: some View {
+    List {
+        ForEach(items) { section in
+            Section(section.title) {
+                ForEach(section) { item in Text(item.name) }
             }
         }
     }
 }
 ```
-
-## See Also
-
-- [struct ResultsSectionCollection](resultssectioncollection.md)
-  A collection of sections as returned by [`sections`](resultsobserver/sections.md) or `Query.sections`.
 
 
 ---

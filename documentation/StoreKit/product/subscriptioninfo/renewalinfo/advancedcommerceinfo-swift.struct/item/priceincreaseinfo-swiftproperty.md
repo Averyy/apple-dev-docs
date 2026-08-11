@@ -8,6 +8,7 @@ A structure that describes the details of a subscription price increase, such as
 **Availability**:
 - iOS 26.2+
 - iPadOS 26.2+
+- Mac Catalyst 26.2+
 - macOS 26.2+
 - tvOS 26.2+
 - visionOS 26.2+

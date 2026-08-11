@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: method
 
-The session’s policy for managing the transcript when errors occur.
+Sets the policy for managing the transcript when errors occur.
 
 **Availability**:
 - iOS 27.0+ (Beta)

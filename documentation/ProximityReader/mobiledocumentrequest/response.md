@@ -9,6 +9,7 @@ A type that represents the response type of the request.
 **Availability**:
 - iOS 17.0+
 - iPadOS 17.0+
+- Mac Catalyst 17.0+
 
 ## Declaration
 

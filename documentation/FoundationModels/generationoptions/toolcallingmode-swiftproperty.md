@@ -3,7 +3,7 @@
 **Framework**: Foundation Models  
 **Kind**: property
 
-Configure the tool calling requirements.
+The tool calling requirements.
 
 **Availability**:
 - iOS 27.0+ (Beta)
@@ -22,7 +22,7 @@ var toolCallingMode: GenerationOptions.ToolCallingMode?
 ## See Also
 
 - [var temperature: Double?](generationoptions/temperature.md)
-  Temperature influences the confidence of the models response.
+  A value that influences the confidence of the model’s response.
 - [var sampling: GenerationOptions.SamplingMode?](generationoptions/sampling.md)
   A sampling strategy for how the model picks tokens when generating a response.
 - [var samplingMode: GenerationOptions.SamplingMode?](generationoptions/samplingmode-swift.property.md)

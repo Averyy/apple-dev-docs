@@ -32,14 +32,14 @@ struct TimeCode
   The instant directly before the given time value.
 ### Instance Properties
 - [var isPreTime: Bool](usdstage/timecode/ispretime.md)
-  Whether this time code is a pre-time (the limit approaching from the left of a discontinuous value).
+  A Boolean value that indicates whether this time code represents the limit of a value approaching from the left of a discontinuity.
 - [var value: Double?](usdstage/timecode/value.md)
-  The numeric value of this time code, or `nil` for the default time code.
+  The numeric value of this time code, or `nil` if it is the default time code.
 ### Type Properties
 - [static var `default`: USDStage.TimeCode](usdstage/timecode/default.md)
-  The default time code, used to represent un-time-varying authoring.
+  The time code used to author and read values that do not vary over time.
 - [static var earliest: USDStage.TimeCode](usdstage/timecode/earliest.md)
-  A sentinel time code that represents the earliest authored sample for a value.
+  A sentinel time code that resolves to the earliest authored sample of a value.
 ### Type Methods
 - [static func safeStep(maxValue: Double, maxCompression: Double) -> Double](usdstage/timecode/safestep(maxvalue:maxcompression:).md)
   Returns a time delta small enough to represent a jump discontinuity, but large enough to survive scaling and shifting without collapsing to zero.
@@ -62,9 +62,9 @@ struct TimeCode
 ## See Also
 
 - [var timeCodeRange: ClosedRange<USDStage.TimeCode>](usdstage/timecoderange.md)
-  The animation range authored on this stage, in time codes.
+  The range of time codes over which this stage has authored animation.
 - [var timeCodesPerSecond: Double](usdstage/timecodespersecond.md)
-  The rate at which time codes advance per second on this stage.
+  The number of time codes per second of playback for this stage.
 
 
 ---

@@ -19,13 +19,6 @@ Returns whether this value holds a value of type `T`.
 func isHolding<T>(_ type: T.Type) -> Bool where T : USDValueProtocol
 ```
 
-## See Also
-
-- [func get<T>() -> T?](usdvalue/get.md)
-  Returns the wrapped value if it is of type `T`, otherwise `nil`.
-- [func uncheckedGet<T>() -> T](usdvalue/uncheckedget.md)
-  Returns the wrapped value as `T` without checking the dynamic type.
-
 
 ---
 

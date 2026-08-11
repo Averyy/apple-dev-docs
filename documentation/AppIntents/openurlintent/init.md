@@ -3,6 +3,8 @@
 **Framework**: App Intents  
 **Kind**: init
 
+Configures the app intent with the provided URL.
+
 **Availability**:
 - iOS 18.0+
 - iPadOS 18.0+
@@ -17,6 +19,10 @@
 ```swift
 init(_ url: URL)
 ```
+
+## Parameters
+
+- `url`: A universal link to your app’s content.
 
 
 ---

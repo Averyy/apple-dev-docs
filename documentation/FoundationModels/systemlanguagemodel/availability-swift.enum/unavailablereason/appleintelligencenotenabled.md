@@ -23,7 +23,7 @@ case appleIntelligenceNotEnabled
 - [SystemLanguageModel.Availability.UnavailableReason.deviceNotEligible](systemlanguagemodel/availability-swift.enum/unavailablereason/devicenoteligible.md)
   The device does not support Apple Intelligence.
 - [SystemLanguageModel.Availability.UnavailableReason.modelNotReady](systemlanguagemodel/availability-swift.enum/unavailablereason/modelnotready.md)
-  The model(s) aren’t available on the user’s device.
+  The models aren’t available on the user’s device.
 
 
 ---

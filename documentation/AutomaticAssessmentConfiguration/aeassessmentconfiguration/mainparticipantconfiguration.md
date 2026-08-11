@@ -37,12 +37,8 @@ AEAssessmentConfiguration *config = [[AEAssessmentConfiguration alloc] init];
 
 ## See Also
 
-- [func setConfiguration(AEAssessmentParticipantConfiguration, for: AEAssessmentApplication)](aeassessmentconfiguration/setconfiguration(_:for:).md)
-  Adds an app to the list of apps available during an assessment.
 - [var configurationsByApplication: [AEAssessmentApplication : AEAssessmentParticipantConfiguration]](aeassessmentconfiguration/configurationsbyapplication.md)
   The collection of apps available during an assessment, along with their associated configurations.
-- [func remove(AEAssessmentApplication)](aeassessmentconfiguration/remove(_:).md)
-  Removes the availability of a previously allowed app.
 - [class AEAssessmentApplication](aeassessmentapplication.md)
   A representation of an app that users can access during an assessment.
 - [class AEAssessmentParticipantConfiguration](aeassessmentparticipantconfiguration.md)

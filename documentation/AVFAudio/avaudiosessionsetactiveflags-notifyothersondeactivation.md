@@ -8,6 +8,7 @@ A flag that indicates that when your audio session deactivates, any audio sessio
 **Availability**:
 - iOS 4.0+
 - iPadOS 4.0+
+- Mac Catalyst 4.0+
 - visionOS 1.0+
 
 ## Declaration

@@ -29,12 +29,12 @@ For more information about quota limits, see “Handle usage limits from using P
 
 ### Creating a quota reached error
 - [init(limitIncreaseSuggestion: PrivateCloudComputeLanguageModel.QuotaUsage.LimitIncreaseSuggestion?, resetDate: Date?, debugDescription: String)](privatecloudcomputelanguagemodel/error/quotalimitreached/init(limitincreasesuggestion:resetdate:debugdescription:).md)
-  Creates a new quota limit reached instance.
+  Creates a quota limit reached instance.
 ### Inspecting a quota reached error
 - [var limitIncreaseSuggestion: PrivateCloudComputeLanguageModel.QuotaUsage.LimitIncreaseSuggestion?](privatecloudcomputelanguagemodel/error/quotalimitreached/limitincreasesuggestion.md)
   A suggestion to increase the usage limit, if one exists.
 - [var resetDate: Date?](privatecloudcomputelanguagemodel/error/quotalimitreached/resetdate.md)
-  The date that the usage limit will reset.
+  The date that the usage limit resets.
 ### Getting the error description
 - [var debugDescription: String](privatecloudcomputelanguagemodel/error/quotalimitreached/debugdescription.md)
   A debug description of the usage limit.

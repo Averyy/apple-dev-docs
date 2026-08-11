@@ -8,6 +8,7 @@ Locations mentioned in the text that can be used to filter photos.
 **Availability**:
 - iOS 27.0+ (Beta)
 - iPadOS 27.0+ (Beta)
+- Mac Catalyst 27.0+ (Beta)
 
 ## Declaration
 
